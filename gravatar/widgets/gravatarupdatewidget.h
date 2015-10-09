@@ -24,7 +24,7 @@ class QLabel;
 class QPushButton;
 class QCheckBox;
 
-namespace PimCommon
+namespace Gravatar
 {
 class GravatarResolvUrlJob;
 }
@@ -46,7 +46,7 @@ public:
 private Q_SLOTS:
     void slotSearchGravatar();
 
-    void slotSearchGravatarFinished(PimCommon::GravatarResolvUrlJob *job);
+    void slotSearchGravatarFinished(Gravatar::GravatarResolvUrlJob *job);
     void slotResolvUrl(const QUrl &url);
 
 Q_SIGNALS:
