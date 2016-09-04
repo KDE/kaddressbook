@@ -211,7 +211,7 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
         contact.setNickName(value);
         break;
     case ContactFields::Birthday:
-        contact.setBirthday(QDateTime::fromString(value, Qt::ISODate));
+        contact.setBirthday(QDate::fromString(value, Qt::ISODate));
         break;
     case ContactFields::Anniversary:
         contact.insertCustom(QStringLiteral("KADDRESSBOOK"),

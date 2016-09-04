@@ -314,7 +314,7 @@ KContacts::Addressee::List VCardXXPort::filterContacts(const KContacts::Addresse
         addr.setFieldGroupList((*it).fieldGroupList());
 
         if (exportFieldType & VCardExportSelectionWidget::Private) {
-            addr.setBirthday((*it).birthday());
+            addr.setBirthday((*it).birthday(), (*it).birthdayHasTime());
             addr.setNote((*it).note());
         }
 
