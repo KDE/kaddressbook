@@ -26,19 +26,41 @@
 
 #include <pimcommon/genericplugin.h>
 
-KAddressBookPluginInterface::KAddressBookPluginInterface(KActionCollection *ac, QObject *parent)
-    : PimCommon::PluginInterface(ac, parent),
+class KAddressBookPluginInterfacePrivate
+{
+public:
+    KAddressBookPluginInterfacePrivate()
+        : kaddressBookPluginInterface(new KAddressBookPluginInterface)
+    {
+    }
+
+    ~KAddressBookPluginInterfacePrivate()
+    {
+        delete kaddressBookPluginInterface;
+    }
+    KAddressBookPluginInterface *kaddressBookPluginInterface;
+};
+
+Q_GLOBAL_STATIC(KAddressBookPluginInterfacePrivate, sInstance)
+
+KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
+    : PimCommon::PluginInterface(parent),
       mMainWidget(Q_NULLPTR)
 {
     setPluginName(QStringLiteral("kaddressbook"));
     setServiceTypeName(QStringLiteral("KAddressBook/MainViewPlugin"));
-    initializePlugins();
 }
 
 KAddressBookPluginInterface::~KAddressBookPluginInterface()
 {
 
 }
+
+KAddressBookPluginInterface *KAddressBookPluginInterface::self()
+{
+    return sInstance->kaddressBookPluginInterface;
+}
+
 
 void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::GenericPluginInterface *interface)
 {

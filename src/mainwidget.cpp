@@ -144,8 +144,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
       mXmlGuiClient(guiClient),
       mGrantleeThemeManager(Q_NULLPTR),
       mQuickSearchAction(Q_NULLPTR),
-      mServerSideSubscription(Q_NULLPTR),
-      mPluginInterface(Q_NULLPTR)
+      mServerSideSubscription(Q_NULLPTR)
 {
 
     (void) new KaddressbookAdaptor(this);
@@ -154,7 +153,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mXXPortManager = new XXPortManager(this);
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
 
-    mPluginInterface = new KAddressBookPluginInterface(guiClient->actionCollection(), this);
+    KAddressBookPluginInterface::self()->setActionCollection(guiClient->actionCollection());
+    KAddressBookPluginInterface::self()->initializePlugins();
     setupGui();
     setupActions(guiClient->actionCollection());
 
@@ -572,14 +572,14 @@ void MainWidget::setupGui()
 
 void MainWidget::initializePluginActions()
 {
-    mPluginInterface->initializePluginActions(QStringLiteral("kaddressbook"), mXmlGuiClient);
+    KAddressBookPluginInterface::self()->initializePluginActions(QStringLiteral("kaddressbook"), mXmlGuiClient);
 }
 
 void MainWidget::setupActions(KActionCollection *collection)
 {
-    mPluginInterface->setParentWidget(this);
-    mPluginInterface->setMainWidget(this);
-    mPluginInterface->createPluginInterface();
+    KAddressBookPluginInterface::self()->setParentWidget(this);
+    KAddressBookPluginInterface::self()->setMainWidget(this);
+    KAddressBookPluginInterface::self()->createPluginInterface();
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
             QStringLiteral("theme.desktop"),
             collection,

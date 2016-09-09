@@ -31,12 +31,13 @@ class KAddressBookPluginInterface : public PimCommon::PluginInterface
 {
     Q_OBJECT
 public:
-    explicit KAddressBookPluginInterface(KActionCollection *ac, QObject *parent = Q_NULLPTR);
+    explicit KAddressBookPluginInterface(QObject *parent = Q_NULLPTR);
     ~KAddressBookPluginInterface();
 
     void setMainWidget(MainWidget *mainWidget);
 
     void initializeInterfaceRequires(PimCommon::GenericPluginInterface *interface) Q_DECL_OVERRIDE;
+    static KAddressBookPluginInterface *self();
 private:
     MainWidget *mMainWidget;
 };

@@ -64,7 +64,6 @@ class XXPortManager;
 class QActionGroup;
 class CategorySelectWidget;
 class CategoryFilterProxyModel;
-class KAddressBookPluginInterface;
 class KADDRESSBOOK_EXPORT MainWidget : public QWidget
 {
     Q_OBJECT
@@ -164,7 +163,6 @@ private:
     Akonadi::EntityTreeModel *entityTreeModel() const;
     QAction *mQuickSearchAction;
     QAction *mServerSideSubscription;
-    KAddressBookPluginInterface *mPluginInterface;
 };
 
 #endif
