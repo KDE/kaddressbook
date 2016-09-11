@@ -352,6 +352,7 @@ void MainWidget::configure()
     KCMultiDialog dlg(this);
     dlg.addModule(QStringLiteral("akonadicontact_actions.desktop"));
     dlg.addModule(QStringLiteral("kcmldap.desktop"));
+    dlg.addModule(QStringLiteral("kaddressbook_config_plugins.desktop"));
 
     dlg.exec();
 }
