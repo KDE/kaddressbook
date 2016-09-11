@@ -15,6 +15,8 @@ add_subdirectory(domain)
 add_subdirectory(icons)
 add_subdirectory(printing)
 add_subdirectory(kconf_update)
+add_subdirectory(configuration)
+
 
 if(KF5Gpgmepp_FOUND)
     add_definitions(-DQGPGME_FOUND)
