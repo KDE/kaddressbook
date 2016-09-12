@@ -1,6 +1,7 @@
 
 set(kcm_config_plugins_SRCS
     kaddressbook_config_plugins.cpp
+    kaddressbookconfigpluginlistwidget.cpp
     )
 
 add_library(kaddressbook_config_plugins MODULE ${kcm_config_plugins_SRCS})
