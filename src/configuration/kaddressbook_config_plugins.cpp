@@ -18,6 +18,7 @@
 */
 
 #include "kaddressbook_config_plugins.h"
+#include "kaddressbookconfigpluginlistwidget.h"
 #include <KAboutData>
 #include <KPluginFactory>
 #include <KLocalizedString>
@@ -44,7 +45,7 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
 
     setAboutData(about);
-    mConfigurePluginWidget = new PimCommon::ConfigurePluginsWidget(this);
+    mConfigurePluginWidget = new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(this), this);
     connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
 }
 
