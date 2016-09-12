@@ -48,5 +48,7 @@ void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 void KAddressBookConfigPluginListWidget::initialize()
 {
     mListWidget->clear();
+
+    mListWidget->expandAll();
 }
 
