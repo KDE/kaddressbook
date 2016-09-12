@@ -23,6 +23,10 @@
 #include <KCModule>
 
 #include <QVariant>
+namespace PimCommon
+{
+class ConfigurePluginsWidget;
+}
 namespace KAddressBook
 {
 class KCMKaddressbookPluginsConfig : public KCModule
@@ -35,6 +39,8 @@ public:
     void defaults() Q_DECL_OVERRIDE;
 private Q_SLOTS:
     void slotConfigChanged();
+private:
+    PimCommon::ConfigurePluginsWidget *mConfigurePluginWidget;
 };
 }
 #endif // KCMKaddressbookPluginsConfig_H

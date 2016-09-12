@@ -21,6 +21,8 @@
 #include <KAboutData>
 #include <KPluginFactory>
 #include <KLocalizedString>
+#include <PimCommon/ConfigurePluginsWidget>
+#include <PimCommon/ConfigurePluginsListWidget>
 
 #include <QVBoxLayout>
 
@@ -42,7 +44,8 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
 
     setAboutData(about);
-    //TODO
+    mConfigurePluginWidget = new PimCommon::ConfigurePluginsWidget(this);
+    connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
 }
 
 void KCMKaddressbookPluginsConfig::slotConfigChanged()
@@ -52,14 +55,17 @@ void KCMKaddressbookPluginsConfig::slotConfigChanged()
 
 void KCMKaddressbookPluginsConfig::save()
 {
+    mConfigurePluginWidget->save();
 }
 
 void KCMKaddressbookPluginsConfig::load()
 {
+    mConfigurePluginWidget->doLoadFromGlobalSettings();
 }
 
 void KCMKaddressbookPluginsConfig::defaults()
 {
+    mConfigurePluginWidget->doResetToDefaultsOther();
 }
 
 #include "kaddressbook_config_plugins.moc"
