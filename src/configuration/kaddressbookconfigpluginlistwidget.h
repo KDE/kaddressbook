@@ -33,6 +33,8 @@ public:
     void doLoadFromGlobalSettings() Q_DECL_OVERRIDE;
     void doResetToDefaultsOther() Q_DECL_OVERRIDE;
     void initialize() Q_DECL_OVERRIDE;
+private:
+    QList<PluginItem *> mPluginGenericItems;
 };
 
 

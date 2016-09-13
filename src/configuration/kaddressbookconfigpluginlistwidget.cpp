@@ -18,6 +18,8 @@
 */
 
 #include "kaddressbookconfigpluginlistwidget.h"
+#include "../plugininterface/kaddressbookplugininterface.h"
+#include <KLocalizedString>
 
 KAddressBookConfigPluginListWidget::KAddressBookConfigPluginListWidget(QWidget *parent)
     : PimCommon::ConfigurePluginsListWidget(parent)
@@ -32,7 +34,9 @@ KAddressBookConfigPluginListWidget::~KAddressBookConfigPluginListWidget()
 
 void KAddressBookConfigPluginListWidget::save()
 {
-    //TODO
+    PimCommon::ConfigurePluginsListWidget::savePlugins(KAddressBookPluginInterface::self()->configGroupName(),
+                KAddressBookPluginInterface::self()->configPrefixSettingKey(),
+                mPluginGenericItems);
 }
 
 void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
@@ -42,13 +46,19 @@ void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
 
 void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 {
-    //TODO
+    Q_FOREACH (PluginItem *item, mPluginGenericItems) {
+        item->setCheckState(0, item->mEnableByDefault ? Qt::Checked : Qt::Unchecked);
+    }
 }
 
 void KAddressBookConfigPluginListWidget::initialize()
 {
     mListWidget->clear();
-
+    //Necessary to initialize pluging when we load it outside kmail
+    KAddressBookPluginInterface::self()->initializePlugins();
+    PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(), i18n("Tools Plugins"),
+                 KAddressBookPluginInterface::self()->configGroupName(),
+                 KAddressBookPluginInterface::self()->configPrefixSettingKey(), mPluginGenericItems);
     mListWidget->expandAll();
 }
 

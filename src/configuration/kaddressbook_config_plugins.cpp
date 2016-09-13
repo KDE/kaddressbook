@@ -47,6 +47,7 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     setAboutData(about);
     mConfigurePluginWidget = new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(this), this);
     connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
+    lay->addWidget(mConfigurePluginWidget);
 }
 
 void KCMKaddressbookPluginsConfig::slotConfigChanged()
