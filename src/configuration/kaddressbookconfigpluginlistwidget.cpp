@@ -55,7 +55,7 @@ void KAddressBookConfigPluginListWidget::initialize()
 {
     mListWidget->clear();
     //Necessary to initialize pluging when we load it outside kmail
-    KAddressBookPluginInterface::self()->initializePlugins();
+    //KAddressBookPluginInterface::self()->initializePlugins();
     PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(), i18n("Tools Plugins"),
                  KAddressBookPluginInterface::self()->configGroupName(),
                  KAddressBookPluginInterface::self()->configPrefixSettingKey(), mPluginGenericItems);
