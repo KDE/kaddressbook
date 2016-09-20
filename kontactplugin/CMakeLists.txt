@@ -3,7 +3,7 @@ include_directories(${kaddressbook_SOURCE_DIR})
 set(kontact_kaddressbookplugin_PART_SRCS
     kaddressbook_plugin.cpp
 )
-ecm_qt_declare_logging_category(kontact_kaddressbookplugin_PART_SRCS HEADER kaddressbookplugin_debug.h IDENTIFIER KADDRESSBOOKPLUGIN_LOG CATEGORY_NAME log_kaddressbook_plugin)
+ecm_qt_declare_logging_category(kontact_kaddressbookplugin_PART_SRCS HEADER kaddressbookplugin_debug.h IDENTIFIER KADDRESSBOOKPLUGIN_LOG CATEGORY_NAME org.kde.pim.kaddressbook_plugin)
 
 qt5_add_dbus_interfaces(kontact_kaddressbookplugin_PART_SRCS ../src/org.kde.kaddressbook.xml)
 

@@ -4,7 +4,7 @@ set(kcm_config_plugins_SRCS
     kaddressbookconfigpluginlistwidget.cpp
     ../plugininterface/kaddressbookplugininterface.cpp
     )
-ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_debug.h IDENTIFIER KADDRESSBOOK_LOG CATEGORY_NAME log_kaddressbook)
+ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_debug.h IDENTIFIER KADDRESSBOOK_LOG CATEGORY_NAME org.kde.pim.kaddressbook)
 
 
 add_library(kaddressbook_config_plugins MODULE ${kcm_config_plugins_SRCS})
