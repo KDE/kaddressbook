@@ -46,9 +46,7 @@ void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
 
 void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 {
-    Q_FOREACH (PluginItem *item, mPluginGenericItems) {
-        item->setCheckState(0, item->mEnableByDefault ? Qt::Checked : Qt::Unchecked);
-    }
+    PimCommon::ConfigurePluginsListWidget::changeState(mPluginGenericItems);
 }
 
 void KAddressBookConfigPluginListWidget::initialize()
