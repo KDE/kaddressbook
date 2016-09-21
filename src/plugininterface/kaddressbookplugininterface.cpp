@@ -61,7 +61,6 @@ KAddressBookPluginInterface *KAddressBookPluginInterface::self()
     return sInstance->kaddressBookPluginInterface;
 }
 
-
 void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::GenericPluginInterface *interface)
 {
     if (!mMainWidget) {

@@ -35,8 +35,8 @@ KAddressBookConfigPluginListWidget::~KAddressBookConfigPluginListWidget()
 void KAddressBookConfigPluginListWidget::save()
 {
     PimCommon::ConfigurePluginsListWidget::savePlugins(KAddressBookPluginInterface::self()->configGroupName(),
-                KAddressBookPluginInterface::self()->configPrefixSettingKey(),
-                mPluginGenericItems);
+            KAddressBookPluginInterface::self()->configPrefixSettingKey(),
+            mPluginGenericItems);
 }
 
 void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
@@ -55,8 +55,8 @@ void KAddressBookConfigPluginListWidget::initialize()
     //Necessary to initialize pluging when we load it outside kmail
     //KAddressBookPluginInterface::self()->initializePlugins();
     PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(), i18n("Tools Plugins"),
-                 KAddressBookPluginInterface::self()->configGroupName(),
-                 KAddressBookPluginInterface::self()->configPrefixSettingKey(), mPluginGenericItems);
+            KAddressBookPluginInterface::self()->configGroupName(),
+            KAddressBookPluginInterface::self()->configPrefixSettingKey(), mPluginGenericItems);
     mListWidget->expandAll();
 }
 

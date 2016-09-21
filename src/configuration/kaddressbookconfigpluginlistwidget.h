@@ -37,5 +37,4 @@ private:
     QList<PluginItem *> mPluginGenericItems;
 };
 
-
 #endif // KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
