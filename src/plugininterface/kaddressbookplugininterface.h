@@ -36,7 +36,7 @@ public:
 
     void setMainWidget(MainWidget *mainWidget);
 
-    void initializeInterfaceRequires(PimCommon::GenericPluginInterface *interface) Q_DECL_OVERRIDE;
+    void initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *interface) Q_DECL_OVERRIDE;
     static KAddressBookPluginInterface *self();
 private:
     MainWidget *mMainWidget;

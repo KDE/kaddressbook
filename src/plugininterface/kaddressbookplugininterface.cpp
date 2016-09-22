@@ -61,12 +61,13 @@ KAddressBookPluginInterface *KAddressBookPluginInterface::self()
     return sInstance->kaddressBookPluginInterface;
 }
 
-void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::GenericPluginInterface *interface)
+void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *abstractInterface)
 {
     if (!mMainWidget) {
         qCCritical(KADDRESSBOOK_LOG) << "Main windows pointer not defined";
         return;
     }
+    PimCommon::GenericPluginInterface *interface = static_cast<PimCommon::GenericPluginInterface *>(abstractInterface);
     PimCommon::GenericPluginInterface::RequireTypes requires = interface->requires();
     if (requires & PimCommon::GenericPluginInterface::CurrentItems) {
         interface->setCurrentItems(mMainWidget->collectSelectedAllContactsItem());
