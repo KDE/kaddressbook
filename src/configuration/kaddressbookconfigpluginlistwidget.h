@@ -34,6 +34,7 @@ public:
     void doResetToDefaultsOther() Q_DECL_OVERRIDE;
     void initialize() Q_DECL_OVERRIDE;
 private:
+    void slotConfigureClicked(const QString &configureGroupName, const QString &identifier);
     QList<PluginItem *> mPluginGenericItems;
 };
 
