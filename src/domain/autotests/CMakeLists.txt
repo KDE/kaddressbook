@@ -1,0 +1,5 @@
+set( kaddressbook_domain_contactgroup_SRCS contactgrouptest.cpp )
+add_executable( kaddressbookdomaincontactgrouptest ${kaddressbook_domain_contactgroup_SRCS} )
+add_test( kaddressbookdomaincontactgrouptest kaddressbookdomaincontactgrouptest )
+ecm_mark_as_test(kaddressbookdomaincontactgrouptest)
+target_link_libraries( kaddressbookdomaincontactgrouptest Qt5::Test  kaddressbookdomain)

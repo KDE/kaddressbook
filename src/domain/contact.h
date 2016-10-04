@@ -21,12 +21,21 @@
 #ifndef CONTACT_H
 #define CONTACT_H
 
+#include <KContacts/Address>
+#include "kaddressbookdomain_export.h"
 namespace Domain
 {
-class Contact
+class KADDRESSBOOKDOMAIN_EXPORT Contact
 {
 public:
     Contact();
+    ~Contact();
+
+    KContacts::Address address() const;
+    void setAddress(const KContacts::Address &address);
+
+private:
+    KContacts::Address mAddress;
 };
 }
 

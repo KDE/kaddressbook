@@ -18,26 +18,18 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "contact.h"
 
-using namespace Domain;
+#ifndef CONTACTGROUPTEST_H
+#define CONTACTGROUPTEST_H
 
-Contact::Contact()
+#include <QObject>
+
+class ContactGroupTest : public QObject
 {
+    Q_OBJECT
+public:
+    explicit ContactGroupTest(QObject *parent = Q_NULLPTR);
+    ~ContactGroupTest();
+};
 
-}
-
-Contact::~Contact()
-{
-
-}
-
-KContacts::Address Contact::address() const
-{
-    return mAddress;
-}
-
-void Contact::setAddress(const KContacts::Address &address)
-{
-    mAddress = address;
-}
+#endif // CONTACTGROUPTEST_H

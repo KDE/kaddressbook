@@ -22,8 +22,7 @@
 
 using namespace Domain;
 
-ContactGroup::ContactGroup(QObject *parent)
-    : QObject(parent)
+ContactGroup::ContactGroup()
 {
 
 }
@@ -31,4 +30,14 @@ ContactGroup::ContactGroup(QObject *parent)
 ContactGroup::~ContactGroup()
 {
 
+}
+
+QString ContactGroup::groupName() const
+{
+    return mGroupName;
+}
+
+void ContactGroup::setGroupName(const QString &groupName)
+{
+    mGroupName = groupName;
 }

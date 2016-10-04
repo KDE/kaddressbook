@@ -1,9 +1,12 @@
 set(kaddressbook_domain_SRCS contactgroup.cpp contact.cpp)
 
+
 add_library(kaddressbookdomain ${kaddressbook_domain_SRCS})
 generate_export_header(kaddressbookdomain BASE_NAME kaddressbookdomain)
 
 target_link_libraries(kaddressbookdomain
+    PUBLIC
+    KF5::Contacts
     PRIVATE
     Qt5::Core
     )

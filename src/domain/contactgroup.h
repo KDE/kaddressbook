@@ -21,16 +21,22 @@
 #ifndef DOMAINCONTACTGROUP_H
 #define DOMAINCONTACTGROUP_H
 
-#include <QObject>
+#include <QString>
+#include "kaddressbookdomain_export.h"
 
 namespace Domain
 {
-class ContactGroup : public QObject
+class KADDRESSBOOKDOMAIN_EXPORT ContactGroup
 {
-    Q_OBJECT
 public:
-    explicit ContactGroup(QObject *parent = Q_NULLPTR);
+    ContactGroup();
     ~ContactGroup();
+
+    QString groupName() const;
+    void setGroupName(const QString &groupName);
+
+private:
+    QString mGroupName;
 };
 }
 
