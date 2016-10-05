@@ -3,3 +3,10 @@ add_executable( kaddressbookdomaincontactgrouptest ${kaddressbook_domain_contact
 add_test( kaddressbookdomaincontactgrouptest kaddressbookdomaincontactgrouptest )
 ecm_mark_as_test(kaddressbookdomaincontactgrouptest)
 target_link_libraries( kaddressbookdomaincontactgrouptest Qt5::Test  kaddressbookdomain)
+
+
+set( kaddressbook_domain_contact_SRCS contacttest.cpp )
+add_executable( kaddressbookdomaincontacttest ${kaddressbook_domain_contact_SRCS} )
+add_test( kaddressbookdomaincontacttest kaddressbookdomaincontacttest )
+ecm_mark_as_test(kaddressbookdomaincontacttest)
+target_link_libraries( kaddressbookdomaincontacttest Qt5::Test  kaddressbookdomain)

@@ -30,6 +30,9 @@ class ContactGroupTest : public QObject
 public:
     explicit ContactGroupTest(QObject *parent = Q_NULLPTR);
     ~ContactGroupTest();
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
+    void shouldAssignGroupName();
 };
 
 #endif // CONTACTGROUPTEST_H

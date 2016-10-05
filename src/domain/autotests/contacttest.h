@@ -18,34 +18,17 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
+#ifndef CONTACTTEST_H
+#define CONTACTTEST_H
 
-#include "contactgrouptest.h"
-#include "../contactgroup.h"
-#include <QTest>
+#include <QObject>
 
-ContactGroupTest::ContactGroupTest(QObject *parent)
-    : QObject(parent)
+class ContactTest : public QObject
 {
+    Q_OBJECT
+public:
+    explicit ContactTest(QObject *parent = Q_NULLPTR);
+    ~ContactTest();
+};
 
-}
-
-ContactGroupTest::~ContactGroupTest()
-{
-
-}
-
-void ContactGroupTest::shouldHaveDefaultValue()
-{
-    Domain::ContactGroup grp;
-    QVERIFY(grp.groupName().isEmpty());
-}
-
-void ContactGroupTest::shouldAssignGroupName()
-{
-    Domain::ContactGroup grp;
-    const QString grpname(QStringLiteral("foo"));
-    grp.setGroupName(grpname);
-    QCOMPARE(grp.groupName(), grpname);
-}
-
-QTEST_MAIN(ContactGroupTest)
+#endif // CONTACTTEST_H
