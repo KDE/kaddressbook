@@ -30,6 +30,8 @@ public:
     ContactGroupRepository();
     virtual ~ContactGroupRepository();
     virtual KJob *createContactGroup(Domain::ContactGroup *contactGroup) = 0;
+    virtual KJob *removeContactGroup(Domain::ContactGroup *contactGroup) = 0;
+    virtual KJob *updateContactGroup(Domain::ContactGroup *contactGroup) = 0;
 };
 }
 #endif // CONTACTGROUPREPOSITORY_H
