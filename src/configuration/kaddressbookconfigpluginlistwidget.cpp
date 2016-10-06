@@ -21,6 +21,7 @@
 #include "../plugininterface/kaddressbookplugininterface.h"
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
+#include <PimCommon/GenericPlugin>
 
 namespace
 {
@@ -75,7 +76,8 @@ void KAddressBookConfigPluginListWidget::slotConfigureClicked(const QString &con
 {
     if (!configureGroupName.isEmpty() && !identifier.isEmpty()) {
         if (configureGroupName == kaddressbookPluginToolsGroupName()) {
-            //TODO
+            PimCommon::GenericPlugin *plugin = KAddressBookPluginInterface::self()->pluginFromIdentifier(identifier);
+            plugin->showConfigureDialog(this);
         } else {
             qCWarning(KADDRESSBOOK_LOG) << "Unknown configureGroupName" << configureGroupName;
         }
