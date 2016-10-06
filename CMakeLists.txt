@@ -57,6 +57,8 @@ find_package(KF5DocTools ${KF5_VERSION} REQUIRED)
 find_package(KF5KCMUtils ${KF5_VERSION} CONFIG REQUIRED)
 find_package(KF5Crash ${KF5_VERSION} REQUIRED)
 
+option(NEW_LISTVIEW_EXPERIMENTAL "Enable this feature if you want to build experimental qml listview. Not Stable yet." FALSE)
+
 
 # Find KdepimLibs Package
 find_package(KF5PimTextEdit ${KPIMTEXTEDIT_LIB_VERSION} CONFIG REQUIRED)

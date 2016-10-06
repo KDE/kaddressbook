@@ -119,7 +119,6 @@ else()
 endif()
 if (BUILD_TESTING)
     add_subdirectory(autotests)
-    add_subdirectory(tests)
 endif()
 
 if(KF5Gpgmepp_FOUND)
@@ -183,3 +182,7 @@ install(FILES
 install(FILES data/kaddressbook_themes.knsrc DESTINATION ${KDE_INSTALL_CONFDIR} )
 
 install(DIRECTORY printing/grantlee/themes/ DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/ )
+
+if (NEW_LISTVIEW_EXPERIMENTAL)
+    add_subdirectory(listview)
+endif()
