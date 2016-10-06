@@ -1,4 +1,4 @@
-set(kaddressbook_domain_SRCS contactgroup.cpp contact.cpp)
+set(kaddressbook_domain_SRCS contactgroup.cpp contact.cpp contactrepository.cpp)
 
 
 add_library(kaddressbookdomain ${kaddressbook_domain_SRCS})
