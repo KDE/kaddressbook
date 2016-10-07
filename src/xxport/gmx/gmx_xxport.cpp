@@ -123,9 +123,9 @@ static bool checkDateTime(const QString &dateStr, QDateTime &dt)
 
 /* import */
 
-ContactList GMXXXPort::importContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList GMXXXPort::importContacts() const
 {
-    ContactList contactList;
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList;
     QString fileName =
         QFileDialog::getOpenFileName(parentWidget(), QString(), QDir::homePath(), GMX_FILESELECTION_STRING);
 
@@ -346,7 +346,7 @@ ContactList GMXXXPort::importContacts() const
 
 /* export */
 
-bool GMXXXPort::exportContacts(const ContactList &list, VCardExportSelectionWidget::ExportFields) const
+bool GMXXXPort::exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &list, VCardExportSelectionWidget::ExportFields) const
 {
     QUrl url = QFileDialog::getSaveFileUrl(parentWidget(), QString(), QUrl::fromLocalFile(QDir::homePath() + QLatin1String("/addressbook.gmx")), GMX_FILESELECTION_STRING);
     if (url.isEmpty()) {

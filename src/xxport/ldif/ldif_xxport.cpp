@@ -50,7 +50,7 @@
 #include <QTextStream>
 #include <QFileDialog>
 
-void doExport(QFile *file, const ContactList &list)
+void doExport(QFile *file, const KAddressBookImportExport::KAddressBookImportExportContactList &list)
 {
     QString data;
     KContacts::LDIFConverter::addresseeAndContactGroupToLDIF(list.addressList(), list.contactGroupList(), data);
@@ -65,9 +65,9 @@ LDIFXXPort::LDIFXXPort(QWidget *parentWidget)
 {
 }
 
-ContactList LDIFXXPort::importContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList LDIFXXPort::importContacts() const
 {
-    ContactList contactList;
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList;
     const QString fileName = QFileDialog::getOpenFileName(parentWidget(), QString(),  QDir::homePath(), i18n("LDif Files (*.ldif)"));
     if (fileName.isEmpty()) {
         return contactList;
@@ -94,7 +94,7 @@ ContactList LDIFXXPort::importContacts() const
     return contactList;
 }
 
-bool LDIFXXPort::exportContacts(const ContactList &list, VCardExportSelectionWidget::ExportFields) const
+bool LDIFXXPort::exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &list, VCardExportSelectionWidget::ExportFields) const
 {
     const QUrl url =
         QFileDialog::getSaveFileUrl(parentWidget(), QString(), QUrl::fromLocalFile(QDir::homePath() + QLatin1String("/addressbook.ldif")), i18n("LDif Files (*.ldif)"));

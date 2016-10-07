@@ -32,8 +32,8 @@ class LDAPXXPort : public XXPort
 {
 public:
     explicit LDAPXXPort(QWidget *parent = Q_NULLPTR);
-    ContactList importContacts() const Q_DECL_OVERRIDE;
-    bool exportContacts(const ContactList &contacts, VCardExportSelectionWidget::ExportFields) const Q_DECL_OVERRIDE;
+    KAddressBookImportExport::KAddressBookImportExportContactList importContacts() const Q_DECL_OVERRIDE;
+    bool exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &contacts, VCardExportSelectionWidget::ExportFields) const Q_DECL_OVERRIDE;
 };
 
 #endif

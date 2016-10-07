@@ -67,7 +67,7 @@ Akonadi::Item::List ContactSelectionDialog::selectedItems() const
     return mSelectionWidget->selectedItems();
 }
 
-ContactList ContactSelectionDialog::selectedContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList ContactSelectionDialog::selectedContacts() const
 {
     return mSelectionWidget->selectedContacts();
 }

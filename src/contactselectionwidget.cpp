@@ -83,7 +83,7 @@ Akonadi::Item::List ContactSelectionWidget::selectedItems() const
     return Akonadi::Item::List();
 }
 
-ContactList ContactSelectionWidget::selectedContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList ContactSelectionWidget::selectedContacts() const
 {
     if (mAllContactsButton->isChecked()) {
         return collectAllContacts();
@@ -93,7 +93,7 @@ ContactList ContactSelectionWidget::selectedContacts() const
         return collectAddressBookContacts();
     }
 
-    return ContactList();
+    return KAddressBookImportExport::KAddressBookImportExportContactList();
 }
 
 void ContactSelectionWidget::setAddGroupContact(bool addGroupContact)
@@ -189,9 +189,9 @@ Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
     return job->items();
 }
 
-ContactList ContactSelectionWidget::collectAllContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList ContactSelectionWidget::collectAllContacts() const
 {
-    ContactList contacts;
+    KAddressBookImportExport::KAddressBookImportExportContactList contacts;
     Akonadi::RecursiveItemFetchJob *job =
         new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(),
                                            QStringList() << KContacts::Addressee::mimeType());
@@ -231,9 +231,9 @@ Akonadi::Item::List ContactSelectionWidget::collectSelectedItems() const
     return items;
 }
 
-ContactList ContactSelectionWidget::collectSelectedContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList ContactSelectionWidget::collectSelectedContacts() const
 {
-    ContactList contacts;
+    KAddressBookImportExport::KAddressBookImportExportContactList contacts;
 
     const QModelIndexList indexes = mSelectionModel->selectedRows(0);
     for (int i = 0; i < indexes.count(); ++i) {
@@ -286,9 +286,9 @@ Akonadi::Item::List ContactSelectionWidget::collectAddressBookItems() const
 
 }
 
-ContactList ContactSelectionWidget::collectAddressBookContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList ContactSelectionWidget::collectAddressBookContacts() const
 {
-    ContactList contacts;
+    KAddressBookImportExport::KAddressBookImportExportContactList contacts;
 
     const Akonadi::Collection collection = mAddressBookSelection->currentCollection();
     if (!collection.isValid()) {

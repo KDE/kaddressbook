@@ -65,7 +65,6 @@ set(kaddressbook_plugin_SRCS
     )
 
 set(kaddressbook_LIB_SRCS
-    contactlist.cpp
     aboutdata.cpp
     categoryfilterproxymodel.cpp
     categoryselectwidget.cpp
@@ -111,6 +110,7 @@ target_link_libraries(kaddressbookprivate
     Qt5::PrintSupport
     KF5::AkonadiSearchDebug
     KF5::I18n
+    KF5::KaddressbookImportExport
     )
 if (WIN32)
     target_link_libraries(kaddressbookprivate KF5::Gpgmepp)

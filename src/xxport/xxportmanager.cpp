@@ -92,7 +92,7 @@ void XXPortManager::importFile(const QUrl &url)
         return;
     }
     xxport->setOption(QStringLiteral("importUrl"), url.path());
-    ContactList contactList = xxport->importContacts();
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList = xxport->importContacts();
 
     delete xxport;
     import(contactList);
@@ -104,13 +104,13 @@ void XXPortManager::slotImport(const QString &identifier)
     if (!xxport) {
         return;
     }
-    ContactList contactList = xxport->importContacts();
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList = xxport->importContacts();
 
     delete xxport;
     import(contactList);
 }
 
-void XXPortManager::import(const ContactList &contacts)
+void XXPortManager::import(const KAddressBookImportExport::KAddressBookImportExportContactList &contacts)
 {
     if (contacts.isEmpty()) {   // nothing to import
         return;
@@ -209,7 +209,7 @@ void XXPortManager::slotExport(const QString &identifier)
     if (!xxport) {
         return;
     }
-    ContactList contactLists;
+    KAddressBookImportExport::KAddressBookImportExportContactList contactLists;
     contactLists.setAddressList(contacts);
     xxport->exportContacts(contactLists, exportFields);
 

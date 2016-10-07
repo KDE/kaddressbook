@@ -22,7 +22,7 @@
 
 #include <KContacts/Addressee>
 #include <AkonadiCore/Item>
-#include "contactlist.h"
+#include "KAddressBookImportExport/KAddressBookImportExportContactList"
 
 #include <QWidget>
 
@@ -68,16 +68,16 @@ public:
     /**
      * Returns the list of selected contacts.
      */
-    ContactList selectedContacts() const;
+    KAddressBookImportExport::KAddressBookImportExportContactList selectedContacts() const;
 
     void setAddGroupContact(bool addGroupContact);
     Akonadi::Item::List selectedItems() const;
 private:
     void initGui();
 
-    ContactList collectAllContacts() const;
-    ContactList collectSelectedContacts() const;
-    ContactList collectAddressBookContacts() const;
+    KAddressBookImportExport::KAddressBookImportExportContactList collectAllContacts() const;
+    KAddressBookImportExport::KAddressBookImportExportContactList collectSelectedContacts() const;
+    KAddressBookImportExport::KAddressBookImportExportContactList collectAddressBookContacts() const;
 
     Akonadi::Item::List collectAllItems() const;
     Akonadi::Item::List collectSelectedItems() const;

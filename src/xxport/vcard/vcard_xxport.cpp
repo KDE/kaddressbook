@@ -58,7 +58,7 @@ VCardXXPort::VCardXXPort(QWidget *parent)
 {
 }
 
-bool VCardXXPort::exportContacts(const ContactList &contacts, VCardExportSelectionWidget::ExportFields exportFields) const
+bool VCardXXPort::exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &contacts, VCardExportSelectionWidget::ExportFields exportFields) const
 {
     KContacts::VCardConverter converter;
     QUrl url;
@@ -147,9 +147,9 @@ bool VCardXXPort::exportContacts(const ContactList &contacts, VCardExportSelecti
     return ok;
 }
 
-ContactList VCardXXPort::importContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList VCardXXPort::importContacts() const
 {
-    ContactList contactList;
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList;
     KContacts::Addressee::List addrList;
     QList<QUrl> urls;
 

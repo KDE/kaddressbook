@@ -23,7 +23,7 @@
 #include <KContacts/Addressee>
 #include <KContacts/ContactGroup>
 #include "xxport/vcard/vcardexportselectionwidget.h"
-#include "contactlist.h"
+#include "KAddressBookImportExport/KAddressBookImportExportContactList"
 #include <QHash>
 
 /**
@@ -51,12 +51,12 @@ public:
     /**
      * Imports a list of contacts.
      */
-    virtual ContactList importContacts() const = 0;
+    virtual KAddressBookImportExport::KAddressBookImportExportContactList importContacts() const = 0;
 
     /**
      * Exports the list of @p contacts.
      */
-    virtual bool exportContacts(const ContactList &contacts, VCardExportSelectionWidget::ExportFields) const = 0;
+    virtual bool exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &contacts, VCardExportSelectionWidget::ExportFields) const = 0;
 
     /**
      * Sets module specific options.

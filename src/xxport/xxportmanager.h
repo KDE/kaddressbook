@@ -93,7 +93,7 @@ private Q_SLOTS:
     void slotImportJobDone(KJob *);
 
 private:
-    void import(const ContactList &contacts);
+    void import(const KAddressBookImportExport::KAddressBookImportExportContactList &contacts);
     QItemSelectionModel *mSelectionModel;
     QWidget *mParentWidget;
     XXPortFactory mFactory;

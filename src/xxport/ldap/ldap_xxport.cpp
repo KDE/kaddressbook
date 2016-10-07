@@ -34,9 +34,9 @@ LDAPXXPort::LDAPXXPort(QWidget *parentWidget)
 {
 }
 
-ContactList LDAPXXPort::importContacts() const
+KAddressBookImportExport::KAddressBookImportExportContactList LDAPXXPort::importContacts() const
 {
-    ContactList contactList;
+    KAddressBookImportExport::KAddressBookImportExportContactList contactList;
     QPointer<KLDAP::LdapSearchDialog> dlg = new KLDAP::LdapSearchDialog(parentWidget());
 
     if (dlg->exec() && dlg) {
@@ -47,7 +47,7 @@ ContactList LDAPXXPort::importContacts() const
     return contactList;
 }
 
-bool LDAPXXPort::exportContacts(const ContactList &, VCardExportSelectionWidget::ExportFields) const
+bool LDAPXXPort::exportContacts(const KAddressBookImportExport::KAddressBookImportExportContactList &, VCardExportSelectionWidget::ExportFields) const
 {
     return false;
 }

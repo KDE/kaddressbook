@@ -23,7 +23,7 @@
 
 #include <KContacts/Addressee>
 #include <QDialog>
-#include <contactlist.h>
+#include <KAddressBookImportExport/KAddressBookImportExportContactList>
 #include <xxport/vcard/vcardexportselectionwidget.h>
 #include <AkonadiCore/Item>
 class QItemSelectionModel;
@@ -64,7 +64,7 @@ public:
     /**
      * Returns the list of selected contacts.
      */
-    ContactList selectedContacts() const;
+    KAddressBookImportExport::KAddressBookImportExportContactList selectedContacts() const;
 
     VCardExportSelectionWidget::ExportFields exportType() const;
     void setAddGroupContact(bool addGroupContact);
