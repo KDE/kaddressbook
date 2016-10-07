@@ -19,14 +19,21 @@
 
 
 #include "addressbookquickwidget.h"
+#include <QUrl>
 
 AddressBookQuickWidget::AddressBookQuickWidget(QWidget *parent)
     : QQuickWidget(parent)
 {
-
+    resize(400, 500);
+    setResizeMode(QQuickWidget::SizeRootObjectToView);
 }
 
 AddressBookQuickWidget::~AddressBookQuickWidget()
 {
 
+}
+
+void AddressBookQuickWidget::loadQmlFile(const QString &qmlFilePath)
+{
+    setSource(QUrl(qmlFilePath));
 }

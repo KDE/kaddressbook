@@ -29,6 +29,8 @@ class AddressBookQuickWidget : public QQuickWidget
 public:
     explicit AddressBookQuickWidget(QWidget *parent = Q_NULLPTR);
     ~AddressBookQuickWidget();
+
+    void loadQmlFile(const QString &qmlFilePath);
 };
 
 #endif // ADDRESSBOOKQUICKWIDGET_H
