@@ -16,5 +16,7 @@ target_link_libraries(newdesigntest
     KF5::IconThemes
     KF5::WidgetsAddons
     Qt5::QuickWidgets
+    KF5::AkonadiCore
+    KF5::AkonadiWidgets
     )
 

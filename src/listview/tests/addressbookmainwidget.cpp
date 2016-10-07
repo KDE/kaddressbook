@@ -19,11 +19,13 @@
 
 #include "addressbookmainwidget.h"
 #include <QVBoxLayout>
+#include <QSplitter>
+#include <KLocalizedString>
 
 AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     : QWidget(parent)
 {
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    setupGui();
 #if 0
     mCollectionTree = new Akonadi::EntityMimeTypeFilterModel(this);
     mCollectionTree->setDynamicSortFilter(true);
@@ -70,12 +72,6 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(mCategoryFilterModel);
 
-    connect(mQuickSearchWidget, &QuickSearchWidget::filterStringChanged,
-            mContactsFilterModel, &Akonadi::ContactsFilterProxyModel::setFilterString);
-    connect(mQuickSearchWidget, &QuickSearchWidget::filterStringChanged,
-            this, &MainWidget::selectFirstItem);
-    connect(mQuickSearchWidget, &QuickSearchWidget::arrowDownKeyPressed,
-            this, &MainWidget::setFocusToTreeView);
     mItemView->setModel(mContactsFilterModel);
     mItemView->setXmlGuiClient(guiClient);
     mItemView->setSelectionMode(QAbstractItemView::ExtendedSelection);
@@ -88,26 +84,6 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     mActionManager->setCollectionSelectionModel(mCollectionView->selectionModel());
     mActionManager->setItemSelectionModel(mItemView->selectionModel());
 
-    QList<Akonadi::StandardActionManager::Type> standardActions;
-    standardActions << Akonadi::StandardActionManager::CreateCollection
-                    << Akonadi::StandardActionManager::DeleteCollections
-                    << Akonadi::StandardActionManager::SynchronizeCollections
-                    << Akonadi::StandardActionManager::CollectionProperties
-                    << Akonadi::StandardActionManager::CopyItems
-                    << Akonadi::StandardActionManager::Paste
-                    << Akonadi::StandardActionManager::DeleteItems
-                    << Akonadi::StandardActionManager::CutItems
-                    << Akonadi::StandardActionManager::CreateResource
-                    << Akonadi::StandardActionManager::DeleteResources
-                    << Akonadi::StandardActionManager::ResourceProperties
-                    << Akonadi::StandardActionManager::SynchronizeResources
-                    << Akonadi::StandardActionManager::SynchronizeCollectionsRecursive
-                    << Akonadi::StandardActionManager::MoveItemToMenu
-                    << Akonadi::StandardActionManager::CopyItemToMenu;
-
-    Q_FOREACH (Akonadi::StandardActionManager::Type standardAction, standardActions) {
-        mActionManager->createAction(standardAction);
-    }
     guiClient->actionCollection()->setDefaultShortcut(mActionManager->action(Akonadi::StandardActionManager::DeleteItems), QKeySequence(Qt::Key_Delete));
     QList<Akonadi::StandardContactActionManager::Type> contactActions;
     contactActions << Akonadi::StandardContactActionManager::CreateContact
@@ -117,19 +93,7 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     Q_FOREACH (Akonadi::StandardContactActionManager::Type contactAction, contactActions) {
         mActionManager->createAction(contactAction);
     }
-    static bool pageRegistered = false;
 
-    if (!pageRegistered) {
-        Akonadi::CollectionPropertiesDialog::registerPage(new PimCommon::CollectionAclPageFactory);
-        pageRegistered = true;
-    }
-
-    const QStringList pages =
-        QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage")
-        << QStringLiteral("Akonadi::CachePolicyPage")
-        << QStringLiteral("PimCommon::CollectionAclPage");
-
-    mActionManager->setCollectionPropertiesPageNames(pages);
 
     connect(mItemView, SIGNAL(currentChanged(Akonadi::Item)),
             this, SLOT(itemSelected(Akonadi::Item)));
@@ -163,3 +127,93 @@ AddressBookMainWidget::~AddressBookMainWidget()
 {
 
 }
+
+void AddressBookMainWidget::setupGui()
+{
+    // the horizontal main layout
+    QHBoxLayout *layout = new QHBoxLayout(this);
+    layout->setMargin(0);
+#if 0
+    // Splitter 1 contains the two main parts of the GUI:
+    //  - collection and item view splitter 2 on the left (see below)
+    //  - details pane on the right, that contains
+    //   - details view stack on the top
+    //   - contact switcher at the bottom
+    mMainWidgetSplitter1 = new QSplitter(Qt::Horizontal);
+    mMainWidgetSplitter1->setObjectName(QStringLiteral("MainWidgetSplitter1"));
+    layout->addWidget(mMainWidgetSplitter1);
+
+    // Splitter 2 contains the remaining parts of the GUI:
+    //  - collection view on either the left or the top
+    //  - item view on either the right or the bottom
+    // The orientation of this splitter is changed for either
+    // a three or two column view;  in simple mode it is hidden.
+    mMainWidgetSplitter2 = new QSplitter(Qt::Vertical);
+    mMainWidgetSplitter2->setObjectName(QStringLiteral("MainWidgetSplitter2"));
+    mMainWidgetSplitter1->addWidget(mMainWidgetSplitter2);
+
+    // the collection view
+    mCollectionView = new Akonadi::EntityTreeView();
+    mMainWidgetSplitter2->addWidget(mCollectionView);
+
+    // the items view
+    mItemView = new Akonadi::EntityTreeView();
+    mItemView->setObjectName(QStringLiteral("ContactView"));
+    mItemView->setDefaultPopupMenu(QStringLiteral("akonadi_itemview_contextmenu"));
+    mItemView->setAlternatingRowColors(true);
+    mMainWidgetSplitter2->addWidget(mItemView);
+
+    // the details pane that contains the details view stack and contact switcher
+    mDetailsPane = new QWidget;
+    mMainWidgetSplitter1->addWidget(mDetailsPane);
+
+    mMainWidgetSplitter1->setStretchFactor(1, 9);          // maximum width for detail
+    mMainWidgetSplitter2->setStretchFactor(1, 9);          // for intuitive resizing
+    mMainWidgetSplitter2->setChildrenCollapsible(false);
+    mMainWidgetSplitter1->setChildrenCollapsible(false);
+
+    QVBoxLayout *detailsPaneLayout = new QVBoxLayout(mDetailsPane);
+    detailsPaneLayout->setMargin(0);
+
+    // the details view stack
+    mDetailsViewStack = new QStackedWidget();
+    detailsPaneLayout->addWidget(mDetailsViewStack);
+
+    // the details widget for contacts
+    mContactDetails = new Akonadi::ContactViewer(mDetailsViewStack);
+    mDetailsViewStack->addWidget(mContactDetails);
+
+    // the details widget for contact groups
+    mContactGroupDetails = new Akonadi::ContactGroupViewer(mDetailsViewStack);
+    mDetailsViewStack->addWidget(mContactGroupDetails);
+
+    // the details widget for empty items
+    mEmptyDetails = new QTextBrowser(mDetailsViewStack);
+    mDetailsViewStack->addWidget(mEmptyDetails);
+
+    // the contact switcher for the simple gui mode
+    mContactSwitcher = new ContactSwitcher;
+    detailsPaneLayout->addWidget(mContactSwitcher);
+    mContactSwitcher->setVisible(false);
+
+    // the quick search widget which is embedded in the toolbar action
+    mQuickSearchWidget = new QuickSearchWidget;
+    mQuickSearchWidget->setMaximumWidth(500);
+
+    // the category filter widget which is embedded in the toolbar action
+    mCategorySelectWidget = new CategorySelectWidget;
+
+    // setup the default actions
+    Akonadi::ContactDefaultActions *actions = new Akonadi::ContactDefaultActions(this);
+    actions->connectToView(mContactDetails);
+    actions->connectToView(mContactGroupDetails);
+    mFormatter = new KAddressBookGrantlee::GrantleeContactFormatter;
+
+    mContactDetails->setContactFormatter(mFormatter);
+
+    mGroupFormatter = new KAddressBookGrantlee::GrantleeContactGroupFormatter;
+
+    mContactGroupDetails->setContactGroupFormatter(mGroupFormatter);
+#endif
+}
+

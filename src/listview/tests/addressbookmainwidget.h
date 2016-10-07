@@ -20,7 +20,24 @@
 #ifndef ADDRESSBOOKMAINWIDGET_H
 #define ADDRESSBOOKMAINWIDGET_H
 
+#include <QActionGroup>
+#include <QSplitter>
+#include <QStackedWidget>
 #include <QWidget>
+
+#include <AkonadiCore/entitymimetypefiltermodel.h>
+
+#include <Akonadi/Contact/ContactGroupViewer>
+#include <Akonadi/Contact/ContactViewer>
+#include <Akonadi/Contact/ContactsFilterProxyModel>
+#include <Akonadi/Contact/StandardContactActionManager>
+
+#include <AkonadiWidgets/EntityTreeView>
+
+#include <KaddressbookGrantlee/GrantleeContactFormatter>
+#include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
+
+#include <GrantleeTheme/GrantleeThemeManager>
 
 class AddressBookMainWidget : public QWidget
 {
@@ -28,6 +45,34 @@ class AddressBookMainWidget : public QWidget
 public:
     explicit AddressBookMainWidget(QWidget *parent = Q_NULLPTR);
     ~AddressBookMainWidget();
+private:
+    void setupGui();
+    Akonadi::EntityMimeTypeFilterModel *mCollectionTree;
+    Akonadi::EntityMimeTypeFilterModel *mItemTree;
+    Akonadi::EntityMimeTypeFilterModel *mAllContactsModel;
+    Akonadi::ContactsFilterProxyModel *mContactsFilterModel;
+    Akonadi::EntityTreeView *mCollectionView;
+    Akonadi::EntityTreeView *mItemView;
+
+    QWidget *mDetailsPane;
+    QStackedWidget *mDetailsViewStack;
+    //ContactSwitcher *mContactSwitcher;
+
+    QSplitter *mMainWidgetSplitter1;
+    QSplitter *mMainWidgetSplitter2;
+    Akonadi::ContactViewer *mContactDetails;
+    Akonadi::ContactGroupViewer *mContactGroupDetails;
+    QWidget *mEmptyDetails;
+    Akonadi::StandardContactActionManager *mActionManager;
+    QItemSelectionModel *mCollectionSelectionModel;
+
+    QActionGroup *mViewModeGroup;
+
+    //ModelColumnManager *mModelColumnManager;
+    //KXMLGUIClient *mXmlGuiClient;
+    KAddressBookGrantlee::GrantleeContactFormatter *mFormatter;
+    KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter;
+    GrantleeTheme::ThemeManager *mGrantleeThemeManager;
 };
 
 #endif // ADDRESSBOOKMAINWIDGET_H
