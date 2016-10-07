@@ -2,6 +2,7 @@ set(newdesigntest_SRCS
     main.cpp
     mainwindow.cpp
     addressbookmainwidget.cpp
+    addressbookquickwidget.cpp
     )
 
 qt5_add_resources(newdesigntest_SRCS listview.qrc)
@@ -14,5 +15,6 @@ target_link_libraries(newdesigntest
     KF5::I18n
     KF5::IconThemes
     KF5::WidgetsAddons
+    Qt5::QuickWidgets
     )
 
