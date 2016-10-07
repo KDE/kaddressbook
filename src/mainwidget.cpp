@@ -55,6 +55,7 @@
 #include <QPointer>
 #include "PimCommon/ManageServerSideSubscriptionJob"
 #include "PimCommon/PimUtil"
+#include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>
