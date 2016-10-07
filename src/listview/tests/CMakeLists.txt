@@ -4,6 +4,8 @@ set(newdesigntest_SRCS
     addressbookmainwidget.cpp
     )
 
+qt5_add_resources(newdesigntest_SRCS listview.qrc)
+
 add_executable(newdesigntest ${newdesigntest_SRCS})
 
 target_link_libraries(newdesigntest
