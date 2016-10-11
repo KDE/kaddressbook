@@ -57,6 +57,7 @@
 #include "PimCommon/PimUtil"
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
+#include <KAddressBookImportExport/KAddressBookImportExportPluginInterface>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>
@@ -581,6 +582,14 @@ void MainWidget::initializePluginActions()
     KAddressBookPluginInterface::self()->initializePluginActions(QStringLiteral("kaddressbook"), mXmlGuiClient);
 }
 
+void MainWidget::slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface)
+{
+    KAddressBookImportExport::KAddressBookImportExportPluginInterface *importExportInterface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(interface);
+    if (importExportInterface) {
+        importExportInterface->exec();
+    }
+}
+
 void MainWidget::setupActions(KActionCollection *collection)
 {
     KAddressBookPluginInterface::self()->setParentWidget(this);
@@ -589,7 +598,10 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
     Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
-        PimCommon::AbstractGenericPluginInterface *interface = plugin->createInterface(collection, this);
+        KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
+        interface->setItemSelectionModel(mItemView->selectionModel());
+        mImportExportPluginInterfaceList.append(interface);
+        connect(interface, &PimCommon::AbstractGenericPluginInterface::emitPluginActivated, this, &MainWidget::slotImportExportActivated);
     }
 
 
@@ -1102,6 +1114,9 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
+    Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+        interface->setDefaultCollection(col);
+    }
     mXXPortManager->setDefaultAddressBook(col);
     bool isOnline;
     mServerSideSubscription->setEnabled(PimCommon::Util::isImapFolder(col, isOnline));

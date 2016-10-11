@@ -43,6 +43,10 @@ class Item;
 class StandardContactActionManager;
 class EntityTreeModel;
 }
+namespace PimCommon
+{
+class AbstractGenericPluginInterface;
+}
 
 namespace KAddressBookGrantlee
 {
@@ -52,6 +56,7 @@ class GrantleeContactGroupFormatter;
 namespace KAddressBookImportExport
 {
 class KAddressBookImportExportPluginManager;
+class KAddressBookImportExportPluginInterface;
 }
 class ContactSwitcher;
 class KActionCollection;
@@ -99,6 +104,7 @@ public Q_SLOTS:
     void handleCommandLine(const QStringList &arguments);
 
 private Q_SLOTS:
+    void slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface);
     void delayedInit();
 
     void itemSelected(const Akonadi::Item &item);
@@ -167,6 +173,7 @@ private:
     QAction *mQuickSearchAction;
     QAction *mServerSideSubscription;
     KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager;
+    QList<KAddressBookImportExport::KAddressBookImportExportPluginInterface *> mImportExportPluginInterfaceList;
 };
 
 #endif
