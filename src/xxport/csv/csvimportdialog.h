@@ -20,7 +20,7 @@
 #ifndef CSVIMPORTDIALOG_H
 #define CSVIMPORTDIALOG_H
 
-#include "contactfields.h"
+#include "kaddressbookimportexportcontactfields.h"
 
 #include <KContacts/Addressee>
 
@@ -89,7 +89,7 @@ private:
     QString mDelimiter;
     QMap<QString, uint> mTypeMap;
     QIODevice *mDevice;
-    ContactFields::Fields mFieldSelection;
+    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields mFieldSelection;
     QPushButton *mUser1Button;
     QPushButton *mUser2Button;
     QPushButton *mOkButton;

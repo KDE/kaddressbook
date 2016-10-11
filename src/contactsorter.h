@@ -21,18 +21,18 @@
 #ifndef CONTACTSORTER_H
 #define CONTACTSORTER_H
 
-#include "contactfields.h"
+#include "kaddressbookimportexportcontactfields.h"
 
 class ContactSorter
 {
 public:
-    explicit ContactSorter(ContactFields::Field field,
+    explicit ContactSorter(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field,
                            Qt::SortOrder sortOrder = Qt::AscendingOrder);
 
     void sort(KContacts::Addressee::List &contacts) const;
 
 private:
-    const ContactFields::Field mSortField;
+    const KAddressBookImportExport::KAddressBookImportExportContactFields::Field mSortField;
     const Qt::SortOrder mSortOrder;
 };
 

@@ -35,11 +35,11 @@
 #include <KLocalizedString>
 
 // helper method to sort contact fields by field label
-static bool contactFieldsNameLesser(const ContactFields::Field &field,
-                                    const ContactFields::Field &otherField)
+static bool contactFieldsNameLesser(const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field,
+                                    const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &otherField)
 {
-    return (QString::localeAwareCompare(ContactFields::label(field),
-                                        ContactFields::label(otherField)) < 0);
+    return (QString::localeAwareCompare(KAddressBookImportExport::KAddressBookImportExportContactFields::label(field),
+                                        KAddressBookImportExport::KAddressBookImportExportContactFields::label(otherField)) < 0);
 }
 
 StylePage::StylePage(QWidget *parent, const QString &name)
@@ -79,7 +79,7 @@ void StylePage::clearStyleNames()
     mStyleCombo->clear();
 }
 
-void StylePage::setSortField(ContactFields::Field field)
+void StylePage::setSortField(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field)
 {
     mFieldCombo->setCurrentIndex(mFields.indexOf(field));
 }
@@ -93,10 +93,10 @@ void StylePage::setSortOrder(Qt::SortOrder sortOrder)
     }
 }
 
-ContactFields::Field StylePage::sortField() const
+KAddressBookImportExport::KAddressBookImportExportContactFields::Field StylePage::sortField() const
 {
     if (mFieldCombo->currentIndex() == -1) {
-        return ContactFields::GivenName;
+        return KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName;
     }
 
     return mFields[ mFieldCombo->currentIndex() ];
@@ -111,15 +111,15 @@ void StylePage::initFieldCombo()
 {
     mFieldCombo->clear();
 
-    mFields = ContactFields::allFields();
-    mFields.remove(0);   // remove ContactFields::Undefined
+    mFields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
+    mFields.remove(0);   // remove KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined
 
     std::sort(mFields.begin(), mFields.end(), contactFieldsNameLesser);
 
-    ContactFields::Fields::ConstIterator it;
-    ContactFields::Fields::ConstIterator end(mFields.constEnd());
+    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields::ConstIterator it;
+    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields::ConstIterator end(mFields.constEnd());
     for (it = mFields.constBegin(); it != end; ++it) {
-        mFieldCombo->addItem(ContactFields::label(*it));
+        mFieldCombo->addItem(KAddressBookImportExport::KAddressBookImportExportContactFields::label(*it));
     }
 }
 

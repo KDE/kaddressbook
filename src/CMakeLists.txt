@@ -68,7 +68,6 @@ set(kaddressbook_LIB_SRCS
     aboutdata.cpp
     categoryfilterproxymodel.cpp
     categoryselectwidget.cpp
-    contactfields.cpp
     contactselectionwidget.cpp
     contactsorter.cpp
     contactswitcher.cpp
@@ -116,9 +115,6 @@ if (WIN32)
     target_link_libraries(kaddressbookprivate KF5::Gpgmepp)
 else()
     target_link_libraries(kaddressbookprivate PRIVATE KF5::Gpgmepp-pthread)
-endif()
-if (BUILD_TESTING)
-    add_subdirectory(autotests)
 endif()
 
 if(KF5Gpgmepp_FOUND)

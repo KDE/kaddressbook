@@ -253,7 +253,7 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
     : PrintStyle(parent), mPageAppearance(new AppearancePage(parent))
 {
     setPreview(QStringLiteral("detailed-style.png"));
-    setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
+    setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, Qt::AscendingOrder);
 
     addPage(mPageAppearance, i18n("Detailed Print Style - Appearance"));
 

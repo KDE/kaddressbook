@@ -71,9 +71,9 @@ public:
     {
         fillFieldMap();
 
-        addItem(ContactFields::label(ContactFields::Undefined), ContactFields::Undefined);
+        addItem(KAddressBookImportExport::KAddressBookImportExportContactFields::label(KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined), KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined);
 
-        QMapIterator<QString, ContactFields::Field> it(mFieldMap);
+        QMapIterator<QString, KAddressBookImportExport::KAddressBookImportExportContactFields::Field> it(mFieldMap);
         while (it.hasNext()) {
             it.next();
 
@@ -90,14 +90,14 @@ public:
         setFixedSize(sizeHint());
     }
 
-    void setCurrentField(ContactFields::Field field)
+    void setCurrentField(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field)
     {
         setCurrentIndex(findData((uint)field));
     }
 
-    ContactFields::Field currentField() const
+    KAddressBookImportExport::KAddressBookImportExportContactFields::Field currentField() const
     {
-        return (ContactFields::Field)itemData(currentIndex()).toUInt();
+        return (KAddressBookImportExport::KAddressBookImportExportContactFields::Field)itemData(currentIndex()).toUInt();
     }
 
 private:
@@ -107,18 +107,18 @@ private:
             return;
         }
 
-        ContactFields::Fields fields = ContactFields::allFields();
-        fields.remove(ContactFields::Undefined);
+        KAddressBookImportExport::KAddressBookImportExportContactFields::Fields fields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
+        fields.remove(KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined);
 
         for (int i = 0; i < fields.count(); ++i) {
-            mFieldMap.insert(ContactFields::label(fields.at(i)), fields.at(i));
+            mFieldMap.insert(KAddressBookImportExport::KAddressBookImportExportContactFields::label(fields.at(i)), fields.at(i));
         }
     }
 
-    static QMap<QString, ContactFields::Field> mFieldMap;
+    static QMap<QString, KAddressBookImportExport::KAddressBookImportExportContactFields::Field> mFieldMap;
 };
 
-QMap<QString, ContactFields::Field> ContactFieldComboBox::mFieldMap;
+QMap<QString, KAddressBookImportExport::KAddressBookImportExportContactFields::Field> ContactFieldComboBox::mFieldMap;
 
 class ContactFieldDelegate : public QStyledItemDelegate
 {
@@ -130,7 +130,7 @@ public:
 
     QString displayText(const QVariant &value, const QLocale &) const Q_DECL_OVERRIDE
     {
-        return ContactFields::label((ContactFields::Field)value.toUInt());
+        return KAddressBookImportExport::KAddressBookImportExportContactFields::label((KAddressBookImportExport::KAddressBookImportExportContactFields::Field)value.toUInt());
     }
 
     QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &,
@@ -146,7 +146,7 @@ public:
         const unsigned int value = index.model()->data(index, Qt::EditRole).toUInt();
 
         ContactFieldComboBox *fieldCombo = static_cast<ContactFieldComboBox *>(editor);
-        fieldCombo->setCurrentField((ContactFields::Field)value);
+        fieldCombo->setCurrentField((KAddressBookImportExport::KAddressBookImportExportContactFields::Field)value);
     }
 
     void setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const Q_DECL_OVERRIDE
@@ -233,17 +233,17 @@ KContacts::AddresseeList CSVImportDialog::contacts() const
             if (!value.isEmpty()) {
                 emptyRow = false;
 
-                const ContactFields::Field field =
-                    (ContactFields::Field)mModel->data(mModel->index(0, column)).toUInt();
+                const KAddressBookImportExport::KAddressBookImportExportContactFields::Field field =
+                    (KAddressBookImportExport::KAddressBookImportExportContactFields::Field)mModel->data(mModel->index(0, column)).toUInt();
 
                 // convert the custom date format to ISO format
-                if (field == ContactFields::Birthday || field == ContactFields::Anniversary) {
+                if (field == KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday || field == KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary) {
                     value = dateParser.parse(value).toString(Qt::ISODate);
                 }
 
                 value.replace(QLatin1String("\\n"), QStringLiteral("\n"));
 
-                ContactFields::setValue(field, value, contact);
+                KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(field, value, contact);
             }
         }
 
@@ -563,7 +563,7 @@ void CSVImportDialog::skipFirstRowChanged(bool checked, bool reload)
     mFieldSelection.clear();
     for (int column = 0; column < mModel->columnCount(); ++column) {
         mFieldSelection.append(
-            (ContactFields::Field)mModel->data(mModel->index(0, column)).toInt());
+            (KAddressBookImportExport::KAddressBookImportExportContactFields::Field)mModel->data(mModel->index(0, column)).toInt());
     }
 
     if (checked) {
@@ -593,7 +593,7 @@ void CSVImportDialog::slotOk()
 
     for (int column = 0; column < mModel->columnCount(); ++column) {
         if (mModel->data(mModel->index(0, column),
-                         Qt::DisplayRole).toUInt() != ContactFields::Undefined) {
+                         Qt::DisplayRole).toUInt() != KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined) {
             assigned = true;
             break;
         }

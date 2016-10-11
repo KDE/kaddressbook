@@ -18,7 +18,7 @@
 */
 
 #include "csv_xxport.h"
-#include "contactfields.h"
+#include "kaddressbookimportexportcontactfields.h"
 #include "csvimportdialog.h"
 
 #include "PimCommon/RenameFileDialog"
@@ -96,8 +96,8 @@ void CsvXXPort::exportToFile(QFile *file, const KContacts::Addressee::List &cont
     QTextStream stream(file);
     stream.setCodec(QTextCodec::codecForLocale());
 
-    ContactFields::Fields fields = ContactFields::allFields();
-    fields.remove(ContactFields::Undefined);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields fields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
+    fields.remove(KAddressBookImportExport::KAddressBookImportExportContactFields::Undefined);
 
     bool first = true;
 
@@ -108,7 +108,7 @@ void CsvXXPort::exportToFile(QFile *file, const KContacts::Addressee::List &cont
         }
 
         // add quoting as defined in RFC 4180
-        QString label = ContactFields::label(fields.at(i));
+        QString label = KAddressBookImportExport::KAddressBookImportExportContactFields::label(fields.at(i));
         label.replace(QLatin1Char('"'), QStringLiteral("\"\""));
 
         stream << "\"" << label << "\"";
@@ -128,15 +128,15 @@ void CsvXXPort::exportToFile(QFile *file, const KContacts::Addressee::List &cont
             }
 
             QString content;
-            if (fields.at(j) == ContactFields::Birthday ||
-                    fields.at(j) == ContactFields::Anniversary) {
+            if (fields.at(j) == KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday ||
+                    fields.at(j) == KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary) {
                 const QDateTime dateTime =
-                    QDateTime::fromString(ContactFields::value(fields.at(j), contact), Qt::ISODate);
+                    QDateTime::fromString(KAddressBookImportExport::KAddressBookImportExportContactFields::value(fields.at(j), contact), Qt::ISODate);
                 if (dateTime.isValid()) {
                     content = dateTime.date().toString(Qt::ISODate);
                 }
             } else {
-                content = ContactFields::value(fields.at(j), contact).replace(QLatin1Char('\n'), QStringLiteral("\\n"));
+                content = KAddressBookImportExport::KAddressBookImportExportContactFields::value(fields.at(j), contact).replace(QLatin1Char('\n'), QStringLiteral("\\n"));
             }
 
             // add quoting as defined in RFC 4180

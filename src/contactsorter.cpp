@@ -25,7 +25,7 @@
 class ContactSortHelper
 {
 public:
-    ContactSortHelper(ContactFields::Field field, Qt::SortOrder sortOrder)
+    ContactSortHelper(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field, Qt::SortOrder sortOrder)
         : mSortField(field), mSortOrder(sortOrder)
     {
     }
@@ -35,26 +35,26 @@ public:
     {
         int result =
             QString::localeAwareCompare(
-                ContactFields::value(mSortField, contact),
-                ContactFields::value(mSortField, otherContact));
+                KAddressBookImportExport::KAddressBookImportExportContactFields::value(mSortField, contact),
+                KAddressBookImportExport::KAddressBookImportExportContactFields::value(mSortField, otherContact));
 
         if (result == 0) {
             int givenNameResult =
                 QString::localeAwareCompare(
-                    ContactFields::value(ContactFields::GivenName, contact),
-                    ContactFields::value(ContactFields::GivenName, otherContact));
+                    KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName, contact),
+                    KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName, otherContact));
 
             if (givenNameResult == 0) {
                 int familyNameResult =
                     QString::localeAwareCompare(
-                        ContactFields::value(ContactFields::FamilyName, contact),
-                        ContactFields::value(ContactFields::FamilyName, otherContact));
+                        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, contact),
+                        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, otherContact));
 
                 if (familyNameResult == 0) {
                     result =
                         QString::localeAwareCompare(
-                            ContactFields::value(ContactFields::FormattedName, contact),
-                            ContactFields::value(ContactFields::FormattedName, otherContact));
+                            KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, contact),
+                            KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, otherContact));
                 } else {
                     result = familyNameResult;
                 }
@@ -73,11 +73,11 @@ public:
     }
 
 private:
-    const ContactFields::Field mSortField;
+    const KAddressBookImportExport::KAddressBookImportExportContactFields::Field mSortField;
     const Qt::SortOrder mSortOrder;
 };
 
-ContactSorter::ContactSorter(ContactFields::Field field, Qt::SortOrder sortOrder)
+ContactSorter::ContactSorter(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field, Qt::SortOrder sortOrder)
     : mSortField(field), mSortOrder(sortOrder)
 {
 }
