@@ -2,7 +2,6 @@ configure_file(kaddressbook-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/kaddress
 
 
 include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/xxport/shared
     ${CMAKE_CURRENT_SOURCE_DIR}/printing/
     )
 
@@ -41,25 +40,6 @@ ki18n_wrap_ui(kaddressbook_printing_SRCS
     printing/compact/compactstyle.ui
     )
 
-
-set(kaddressbook_xxport_SRCS
-    xxport/csv/csv_xxport.cpp
-    xxport/csv/csvimportdialog.cpp
-    xxport/csv/dateparser.cpp
-    xxport/csv/qcsvmodel.cpp
-    xxport/csv/qcsvreader.cpp
-    xxport/csv/templateselectiondialog.cpp
-    xxport/ldif/ldif_xxport.cpp
-    xxport/ldap/ldap_xxport.cpp
-    xxport/gmx/gmx_xxport.cpp
-    xxport/shared/xxport.cpp
-    xxport/vcard/vcard_xxport.cpp
-    xxport/xxportfactory.cpp
-    xxport/xxportmanager.cpp
-    xxport/vcard/vcardviewerdialog.cpp
-    xxport/vcard/vcardexportselectionwidget.cpp
-    )
-
 set(kaddressbook_plugin_SRCS
     plugininterface/kaddressbookplugininterface.cpp
     )
@@ -68,7 +48,6 @@ set(kaddressbook_LIB_SRCS
     aboutdata.cpp
     categoryfilterproxymodel.cpp
     categoryselectwidget.cpp
-    contactselectionwidget.cpp
     contactsorter.cpp
     contactswitcher.cpp
     globalcontactmodel.cpp
@@ -76,9 +55,7 @@ set(kaddressbook_LIB_SRCS
     modelcolumnmanager.cpp
     widgets/quicksearchwidget.cpp
     kaddressbookmigrateapplication.cpp
-    contactselectiondialog.cpp
     ${kaddressbook_printing_SRCS}
-    ${kaddressbook_xxport_SRCS}
     ${kaddressbook_plugin_SRCS}
     )
 

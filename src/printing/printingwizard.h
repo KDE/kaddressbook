@@ -32,7 +32,10 @@
 
 #include <QStringList>
 
-class ContactSelectionWidget;
+namespace KAddressBookImportExport
+{
+class KAddressBookContactSelectionWidget;
+}
 class StylePage;
 
 class QItemSelectionModel;
@@ -132,7 +135,7 @@ protected:
     PrintProgress *mProgress;
 
     StylePage *mStylePage;
-    ContactSelectionWidget *mSelectionPage;
+    KAddressBookImportExport::KAddressBookContactSelectionWidget *mSelectionPage;
 
     /**
      * Overloaded accept slot. This is used to do the actual

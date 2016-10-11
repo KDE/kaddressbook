@@ -68,7 +68,6 @@ class QModelIndex;
 class QSplitter;
 class QStackedWidget;
 class QuickSearchWidget;
-class XXPortManager;
 class QActionGroup;
 class CategorySelectWidget;
 class CategoryFilterProxyModel;
@@ -80,7 +79,6 @@ public:
     explicit MainWidget(KXMLGUIClient *guiClient, QWidget *parent = Q_NULLPTR);
     ~MainWidget();
 
-    XXPortManager *importManager() const;
     void updateQuickSearchText();
     const Akonadi::Item::List collectSelectedAllContactsItem();
 
@@ -163,7 +161,6 @@ private:
 
     QActionGroup *mViewModeGroup;
 
-    XXPortManager *mXXPortManager;
     ModelColumnManager *mModelColumnManager;
     KXMLGUIClient *mXmlGuiClient;
     KAddressBookGrantlee::GrantleeContactFormatter *mFormatter;

@@ -21,7 +21,6 @@
 #include "mainwindow.h"
 #include "mainwidget.h"
 #include "settings.h"
-#include "xxport/xxportmanager.h"
 
 #include <KConfigGroup>
 #include <KToolBar>

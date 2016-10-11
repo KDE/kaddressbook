@@ -25,12 +25,10 @@
 #include "printing/printingwizard.h"
 #include "widgets/quicksearchwidget.h"
 #include "settings.h"
-#include "xxport/xxportmanager.h"
 #include "kaddressbookadaptor.h"
 #include "categoryselectwidget.h"
 #include "categoryfilterproxymodel.h"
 #include "kaddressbook_options.h"
-#include "contactselectiondialog.h"
 
 #include "KaddressbookGrantlee/GrantleeContactFormatter"
 #include "KaddressbookGrantlee/GrantleeContactGroupFormatter"
@@ -58,6 +56,7 @@
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
 #include <KAddressBookImportExport/KAddressBookImportExportPluginInterface>
+#include <KAddressBookImportExport/KAddressBookContactSelectionDialog>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>
@@ -156,7 +155,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     mImportExportPluginManager = KAddressBookImportExport::KAddressBookImportExportPluginManager::self();
 
-    mXXPortManager = new XXPortManager(this);
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
 
     KAddressBookPluginInterface::self()->setActionCollection(guiClient->actionCollection());
@@ -273,8 +271,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mItemView->setRootIsDecorated(false);
     mItemView->header()->setDefaultAlignment(Qt::AlignCenter);
 
-    mXXPortManager->setSelectionModel(mItemView->selectionModel());
-
     mActionManager = new Akonadi::StandardContactActionManager(guiClient->actionCollection(), this);
     mActionManager->setCollectionSelectionModel(mCollectionView->selectionModel());
     mActionManager->setItemSelectionModel(mItemView->selectionModel());
@@ -371,14 +367,14 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
 
     if (parser.isSet(QStringLiteral("import"))) {
         for (const QString &url : parser.positionalArguments()) {
-            importManager()->importFile(QUrl::fromUserInput(url));
+            Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+                if (interface->canImportFileType(QUrl::fromUserInput(url))) {
+                    //FIXME import file
+                    break;
+                }
+            }
         }
     }
-}
-
-XXPortManager *MainWidget::importManager() const
-{
-    return mXXPortManager;
 }
 
 void MainWidget::updateQuickSearchText()
@@ -597,11 +593,34 @@ void MainWidget::setupActions(KActionCollection *collection)
     KAddressBookPluginInterface::self()->createPluginInterface();
 
     const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
+    QList<QAction *> importActions;
+    QList<QAction *> exportActions;
     Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
-        KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
-        interface->setItemSelectionModel(mItemView->selectionModel());
-        mImportExportPluginInterfaceList.append(interface);
-        connect(interface, &PimCommon::AbstractGenericPluginInterface::emitPluginActivated, this, &MainWidget::slotImportExportActivated);
+        if (plugin->isEnabled()) {
+            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
+            interface->setItemSelectionModel(mItemView->selectionModel());
+            interface->createAction(collection);
+            importActions.append(interface->importActions());
+            exportActions.append(interface->exportActions());
+            mImportExportPluginInterfaceList.append(interface);
+            connect(interface, &PimCommon::AbstractGenericPluginInterface::emitPluginActivated, this, &MainWidget::slotImportExportActivated);
+        }
+    }
+
+
+    if (!importActions.isEmpty()) {
+        KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
+        collection->addAction(QStringLiteral("import_menu"), importMenu);
+        Q_FOREACH(QAction *act, importActions) {
+            importMenu->addAction(act);
+        }
+    }
+    if (!exportActions.isEmpty()) {
+        KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
+        collection->addAction(QStringLiteral("export_menu"), exportMenu);
+        Q_FOREACH(QAction *act, exportActions) {
+            exportMenu->addAction(act);
+        }
     }
 
 
@@ -675,62 +694,6 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     connect(mViewModeGroup, SIGNAL(triggered(QAction*)), SLOT(setViewMode(QAction*)));
 
-    // import actions
-    action = collection->addAction(QStringLiteral("file_import_vcard"));
-    action->setText(i18n("Import vCard..."));
-    action->setWhatsThis(i18n("Import contacts from a vCard file."));
-    mXXPortManager->addImportAction(action, QStringLiteral("vcard30"));
-
-    action = collection->addAction(QStringLiteral("file_import_csv"));
-    action->setText(i18n("Import CSV file..."));
-    action->setWhatsThis(i18n("Import contacts from a file in comma separated value format."));
-    mXXPortManager->addImportAction(action, QStringLiteral("csv"));
-
-    action = collection->addAction(QStringLiteral("file_import_ldif"));
-    action->setText(i18n("Import LDIF file..."));
-    action->setWhatsThis(i18n("Import contacts from an LDIF file."));
-    mXXPortManager->addImportAction(action, QStringLiteral("ldif"));
-
-    action = collection->addAction(QStringLiteral("file_import_ldap"));
-    action->setText(i18n("Import From LDAP server..."));
-    action->setWhatsThis(i18n("Import contacts from an LDAP server."));
-    mXXPortManager->addImportAction(action, QStringLiteral("ldap"));
-
-    action = collection->addAction(QStringLiteral("file_import_gmx"));
-    action->setText(i18n("Import GMX file..."));
-    action->setWhatsThis(i18n("Import contacts from a GMX address book file."));
-    mXXPortManager->addImportAction(action, QStringLiteral("gmx"));
-
-    // export actions
-    action = collection->addAction(QStringLiteral("file_export_vcard40"));
-    action->setText(i18n("Export vCard 4.0..."));
-    action->setWhatsThis(i18n("Export contacts to a vCard 4.0 file."));
-    mXXPortManager->addExportAction(action, QStringLiteral("vcard40"));
-
-    action = collection->addAction(QStringLiteral("file_export_vcard30"));
-    action->setText(i18n("Export vCard 3.0..."));
-    action->setWhatsThis(i18n("Export contacts to a vCard 3.0 file."));
-    mXXPortManager->addExportAction(action, QStringLiteral("vcard30"));
-
-    action = collection->addAction(QStringLiteral("file_export_vcard21"));
-    action->setText(i18n("Export vCard 2.1..."));
-    action->setWhatsThis(i18n("Export contacts to a vCard 2.1 file."));
-    mXXPortManager->addExportAction(action, QStringLiteral("vcard21"));
-
-    action = collection->addAction(QStringLiteral("file_export_csv"));
-    action->setText(i18n("Export CSV file..."));
-    action->setWhatsThis(i18n("Export contacts to a file in comma separated value format."));
-    mXXPortManager->addExportAction(action, QStringLiteral("csv"));
-
-    action = collection->addAction(QStringLiteral("file_export_ldif"));
-    action->setText(i18n("Export LDIF file..."));
-    action->setWhatsThis(i18n("Export contacts to an LDIF file."));
-    mXXPortManager->addExportAction(action, QStringLiteral("ldif"));
-
-    action = collection->addAction(QStringLiteral("file_export_gmx"));
-    action->setText(i18n("Export GMX file..."));
-    action->setWhatsThis(i18n("Export contacts to a GMX address book file."));
-    mXXPortManager->addExportAction(action, QStringLiteral("gmx"));
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
@@ -882,8 +845,8 @@ void MainWidget::setQRCodeShow(bool on)
 Akonadi::Item::List MainWidget::selectedItems()
 {
     Akonadi::Item::List items;
-    QPointer<ContactSelectionDialog> dlg =
-        new ContactSelectionDialog(mItemView->selectionModel(), false, this);
+    QPointer<KAddressBookImportExport::KAddressBookContactSelectionDialog> dlg =
+        new KAddressBookImportExport::KAddressBookContactSelectionDialog(mItemView->selectionModel(), false, this);
     dlg->setDefaultAddressBook(currentAddressBook());
     if (!dlg->exec() || !dlg) {
         delete dlg;
@@ -1117,7 +1080,6 @@ void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
     Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
         interface->setDefaultCollection(col);
     }
-    mXXPortManager->setDefaultAddressBook(col);
     bool isOnline;
     mServerSideSubscription->setEnabled(PimCommon::Util::isImapFolder(col, isOnline));
 }
