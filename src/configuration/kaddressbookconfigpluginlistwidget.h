@@ -36,6 +36,7 @@ public:
 private:
     void slotConfigureClicked(const QString &configureGroupName, const QString &identifier);
     QList<PluginItem *> mPluginGenericItems;
+    QList<PluginItem *> mPluginImportExportItems;
 };
 
 #endif // KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
