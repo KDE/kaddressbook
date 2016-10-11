@@ -56,6 +56,7 @@
 #include "PimCommon/ManageServerSideSubscriptionJob"
 #include "PimCommon/PimUtil"
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
+#include <KAddressBookImportExport/KAddressBookImportExportPlugin>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>
@@ -150,6 +151,9 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     (void) new KaddressbookAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
+
+
+    mImportExportPluginManager = KAddressBookImportExport::KAddressBookImportExportPluginManager::self();
 
     mXXPortManager = new XXPortManager(this);
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
@@ -582,6 +586,13 @@ void MainWidget::setupActions(KActionCollection *collection)
     KAddressBookPluginInterface::self()->setParentWidget(this);
     KAddressBookPluginInterface::self()->setMainWidget(this);
     KAddressBookPluginInterface::self()->createPluginInterface();
+
+    const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
+    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
+        PimCommon::AbstractGenericPluginInterface *interface = plugin->createInterface(collection, this);
+    }
+
+
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
             QStringLiteral("theme.desktop"),
             collection,

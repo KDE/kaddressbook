@@ -49,7 +49,10 @@ namespace KAddressBookGrantlee
 class GrantleeContactFormatter;
 class GrantleeContactGroupFormatter;
 }
-
+namespace KAddressBookImportExport
+{
+class KAddressBookImportExportPluginManager;
+}
 class ContactSwitcher;
 class KActionCollection;
 class KXMLGUIClient;
@@ -163,6 +166,7 @@ private:
     Akonadi::EntityTreeModel *entityTreeModel() const;
     QAction *mQuickSearchAction;
     QAction *mServerSideSubscription;
+    KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager;
 };
 
 #endif
