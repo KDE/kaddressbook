@@ -402,10 +402,11 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
     parser.process(arguments);
 
     if (parser.isSet(QStringLiteral("import"))) {
-        for (const QString &url : parser.positionalArguments()) {
+        for (const QString &urlStr : parser.positionalArguments()) {
+            const QUrl url(QUrl::fromUserInput(urlStr));
             Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
-                if (interface->canImportFileType(QUrl::fromUserInput(url))) {
-                    //FIXME import file
+                if (interface->canImportFileType(url)) {
+                    interface->importFile(url);
                     break;
                 }
             }
