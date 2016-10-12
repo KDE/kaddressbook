@@ -17,8 +17,8 @@ add_subdirectory(kconf_update)
 add_subdirectory(configuration)
 
 
-if(KF5Gpgmepp_FOUND)
-    add_definitions(-DQGPGME_FOUND)
+if(QGpgme_FOUND)
+    add_definitions(-DHAVE_QGPGME)
 endif()
 
 
@@ -88,14 +88,9 @@ target_link_libraries(kaddressbookprivate
     KF5::I18n
     KF5::KaddressbookImportExport
     )
-if (WIN32)
-    target_link_libraries(kaddressbookprivate KF5::Gpgmepp)
-else()
-    target_link_libraries(kaddressbookprivate PRIVATE KF5::Gpgmepp-pthread)
-endif()
 
-if(KF5Gpgmepp_FOUND)
-    target_link_libraries(kaddressbookprivate PRIVATE KF5::QGpgme)
+if(QGpgme_FOUND)
+    target_link_libraries(kaddressbookprivate PRIVATE QGpgme)
 endif()
 if(KF5Prison_FOUND)
     target_link_libraries(kaddressbookprivate PRIVATE KF5::Prison)
@@ -125,10 +120,6 @@ target_link_libraries(kaddressbook
     KF5::Crash
     KF5::KaddressbookImportExport
     )
-
-if(KF5Gpgmepp_FOUND)
-    target_link_libraries(kaddressbook KF5::QGpgme)
-endif()
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS data/org.kde.kaddressbook.desktop data/kaddressbook-importer.desktop DESTINATION ${KDE_INSTALL_APPDIR})
