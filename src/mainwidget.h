@@ -133,6 +133,7 @@ private:
     void setViewMode(int mode);
     void saveSplitterStates() const;
     void restoreSplitterStates();
+    void initializeImportExportPlugin(KActionCollection *collection);
 
     QAbstractItemModel *allContactsModel();
 

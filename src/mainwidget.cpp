@@ -339,6 +339,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mModelColumnManager->setWidget(mItemView->header());
     mModelColumnManager->load();
 
+    initializeImportExportPlugin(guiClient->actionCollection());
+
     QMetaObject::invokeMethod(this, "delayedInit", Qt::QueuedConnection);
     updateQuickSearchText();
     slotSelectionChanged();
@@ -347,6 +349,41 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 void MainWidget::setFocusToTreeView()
 {
     mItemView->setFocus();
+}
+
+void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
+{
+    const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
+    QList<QAction *> importActions;
+    QList<QAction *> exportActions;
+    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
+        if (plugin->isEnabled()) {
+            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
+            interface->setItemSelectionModel(mItemView->selectionModel());
+            qDebug()<<" mItemView->selectionModel()"<<mItemView->selectionModel();
+            interface->createAction(collection);
+            importActions.append(interface->importActions());
+            exportActions.append(interface->exportActions());
+            mImportExportPluginInterfaceList.append(interface);
+            connect(interface, &PimCommon::AbstractGenericPluginInterface::emitPluginActivated, this, &MainWidget::slotImportExportActivated);
+        }
+    }
+
+
+    if (!importActions.isEmpty()) {
+        KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
+        collection->addAction(QStringLiteral("import_menu"), importMenu);
+        Q_FOREACH(QAction *act, importActions) {
+            importMenu->addAction(act);
+        }
+    }
+    if (!exportActions.isEmpty()) {
+        KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
+        collection->addAction(QStringLiteral("export_menu"), exportMenu);
+        Q_FOREACH(QAction *act, exportActions) {
+            exportMenu->addAction(act);
+        }
+    }
 }
 
 void MainWidget::configure()
@@ -591,38 +628,6 @@ void MainWidget::setupActions(KActionCollection *collection)
     KAddressBookPluginInterface::self()->setParentWidget(this);
     KAddressBookPluginInterface::self()->setMainWidget(this);
     KAddressBookPluginInterface::self()->createPluginInterface();
-
-    const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
-    QList<QAction *> importActions;
-    QList<QAction *> exportActions;
-    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
-        if (plugin->isEnabled()) {
-            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
-            interface->setItemSelectionModel(mItemView->selectionModel());
-            interface->createAction(collection);
-            importActions.append(interface->importActions());
-            exportActions.append(interface->exportActions());
-            mImportExportPluginInterfaceList.append(interface);
-            connect(interface, &PimCommon::AbstractGenericPluginInterface::emitPluginActivated, this, &MainWidget::slotImportExportActivated);
-        }
-    }
-
-
-    if (!importActions.isEmpty()) {
-        KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
-        collection->addAction(QStringLiteral("import_menu"), importMenu);
-        Q_FOREACH(QAction *act, importActions) {
-            importMenu->addAction(act);
-        }
-    }
-    if (!exportActions.isEmpty()) {
-        KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
-        collection->addAction(QStringLiteral("export_menu"), exportMenu);
-        Q_FOREACH(QAction *act, exportActions) {
-            exportMenu->addAction(act);
-        }
-    }
-
 
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
             QStringLiteral("theme.desktop"),
