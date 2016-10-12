@@ -19,7 +19,7 @@
 */
 
 #include "contacttest.h"
-
+#include "../contact.h"
 #include <QTest>
 
 ContactTest::ContactTest(QObject *parent)
@@ -29,6 +29,11 @@ ContactTest::ContactTest(QObject *parent)
 }
 
 ContactTest::~ContactTest()
+{
+
+}
+
+void ContactTest::shouldHaveDefaultValue()
 {
 
 }

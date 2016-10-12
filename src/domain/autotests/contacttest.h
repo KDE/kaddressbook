@@ -29,6 +29,9 @@ class ContactTest : public QObject
 public:
     explicit ContactTest(QObject *parent = Q_NULLPTR);
     ~ContactTest();
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
+
 };
 
 #endif // CONTACTTEST_H
