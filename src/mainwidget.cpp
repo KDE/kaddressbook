@@ -360,7 +360,6 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
         if (plugin->isEnabled()) {
             KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
             interface->setItemSelectionModel(mItemView->selectionModel());
-            qDebug()<<" mItemView->selectionModel()"<<mItemView->selectionModel();
             interface->createAction(collection);
             importActions.append(interface->importActions());
             exportActions.append(interface->exportActions());
