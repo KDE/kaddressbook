@@ -122,7 +122,6 @@ private Q_SLOTS:
     void slotDebugBaloo();
     void slotServerSideSubscription();
     void slotCurrentCollectionChanged(const Akonadi::Collection &col);
-    void slotSelectionChanged();
     void setFocusToTreeView();
 private:
     const Akonadi::Item::List collectSelectedAllContactsItem(QItemSelectionModel *model);

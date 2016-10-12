@@ -325,8 +325,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
             SLOT(trigger()));
     connect(mItemView->selectionModel(), &QItemSelectionModel::currentChanged,
             this, &MainWidget::itemSelectionChanged);
-    connect(mItemView->selectionModel(), &QItemSelectionModel::selectionChanged,
-            this, &MainWidget::slotSelectionChanged);
 
     // show the contact details view as default
     mDetailsViewStack->setCurrentWidget(mContactDetails);
@@ -343,7 +341,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     QMetaObject::invokeMethod(this, "delayedInit", Qt::QueuedConnection);
     updateQuickSearchText();
-    slotSelectionChanged();
 }
 
 void MainWidget::setFocusToTreeView()
@@ -1089,13 +1086,4 @@ void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
     mServerSideSubscription->setEnabled(PimCommon::Util::isImapFolder(col, isOnline));
 }
 
-void MainWidget::slotSelectionChanged()
-{
-#if 0
-    bool hasUniqSelection = false;
-    if (mItemView->selectionModel()->selection().count() == 1) {
-        hasUniqSelection = (mItemView->selectionModel()->selection().at(0).height() == 1);
-    }
-#endif
-}
 
