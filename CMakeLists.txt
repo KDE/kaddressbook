@@ -76,8 +76,9 @@ find_package(KF5KaddressbookGrantlee ${KDEPIM_APPS_LIB_VERSION_LIB} CONFIG REQUI
 find_package(KF5KaddressbookImportExport ${KDEPIM_APPS_LIB_VERSION_LIB} CONFIG REQUIRED)
 find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION_LIB} CONFIG REQUIRED)
 
-find_package(Gpgmepp 1.7.0 CONFIG)
-set_package_properties(Gpgmepp PROPERTIES DESCRIPTION "GpgME library" URL "http://www.gnupg.org" TYPE OPTIONAL)
+
+set(GPGMEPP_LIB_VERSION "1.7.1")
+find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
 find_package(KF5AkonadiSearch "5.3.40" CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "http://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
