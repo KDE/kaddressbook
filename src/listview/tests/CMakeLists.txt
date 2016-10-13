@@ -3,6 +3,7 @@ set(newdesigntest_SRCS
     mainwindow.cpp
     addressbookmainwidget.cpp
     addressbookquickwidget.cpp
+    ../../globalcontactmodel.cpp
     )
 
 qt5_add_resources(newdesigntest_SRCS listview.qrc)
@@ -18,5 +19,7 @@ target_link_libraries(newdesigntest
     Qt5::QuickWidgets
     KF5::AkonadiCore
     KF5::AkonadiWidgets
+    KF5::AkonadiContact
+    KF5::KaddressbookGrantlee
     )
 

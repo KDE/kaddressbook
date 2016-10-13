@@ -21,12 +21,59 @@
 #include <QVBoxLayout>
 #include <QSplitter>
 #include <KLocalizedString>
+#include <QTextBrowser>
+#include <ContactDefaultActions>
+#include <KCheckableProxyModel>
+#include <KSelectionProxyModel>
+#include "../../globalcontactmodel.h"
+#include <Akonadi/Contact/ContactsTreeModel>
+#include <QHeaderView>
+#include <KContacts/ContactGroup>
+#include <KContacts/Addressee>
+
+static bool isStructuralCollection(const Akonadi::Collection &collection)
+{
+    QStringList mimeTypes;
+    mimeTypes << KContacts::Addressee::mimeType() << KContacts::ContactGroup::mimeType();
+    const QStringList collectionMimeTypes = collection.contentMimeTypes();
+    foreach (const QString &mimeType, mimeTypes) {
+        if (collectionMimeTypes.contains(mimeType)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+class StructuralCollectionsNotCheckableProxy : public KCheckableProxyModel
+{
+public:
+    explicit StructuralCollectionsNotCheckableProxy(QObject *parent)
+        : KCheckableProxyModel(parent)
+    {
+    }
+
+    QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE
+    {
+        if (!index.isValid()) {
+            return QVariant();
+        }
+
+        if (role == Qt::CheckStateRole) {
+            // Don't show the checkbox if the collection can't contain incidences
+            const Akonadi::Collection collection =
+                index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            if (collection.isValid() && isStructuralCollection(collection)) {
+                return QVariant();
+            }
+        }
+        return KCheckableProxyModel::data(index, role);
+    }
+};
 
 AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     : QWidget(parent)
 {
     setupGui();
-#if 0
     mCollectionTree = new Akonadi::EntityMimeTypeFilterModel(this);
     mCollectionTree->setDynamicSortFilter(true);
     mCollectionTree->setSortCaseSensitivity(Qt::CaseInsensitive);
@@ -35,22 +82,24 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
+
     StructuralCollectionsNotCheckableProxy *checkableProxyModel =
         new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
     checkableProxyModel->setSourceModel(mCollectionTree);
 
     mCollectionView->setModel(checkableProxyModel);
-    mCollectionView->setXmlGuiClient(guiClient);
+    //mCollectionView->setXmlGuiClient(guiClient);
     mCollectionView->header()->setDefaultAlignment(Qt::AlignCenter);
     mCollectionView->header()->setSortIndicatorShown(false);
 
+#if 0
     connect(mCollectionView->model(), &QAbstractItemModel::rowsInserted,
             this, &MainWidget::slotCheckNewCalendar);
 
     connect(mCollectionView, SIGNAL(currentChanged(Akonadi::Collection)),
             this, SLOT(slotCurrentCollectionChanged(Akonadi::Collection)));
-
+#endif
     KSelectionProxyModel *selectionProxyModel =
         new KSelectionProxyModel(mCollectionSelectionModel, this);
     selectionProxyModel->setSourceModel(GlobalContactModel::instance()->model());
@@ -60,7 +109,7 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     mItemTree->setSourceModel(selectionProxyModel);
     mItemTree->addMimeTypeExclusionFilter(Akonadi::Collection::mimeType());
     mItemTree->setHeaderGroup(Akonadi::EntityTreeModel::ItemListHeaders);
-
+#if 0
     mCategoryFilterModel = new CategoryFilterProxyModel(this);
     mCategoryFilterModel->setSourceModel(mItemTree);
     mCategoryFilterModel->setFilterCategories(mCategorySelectWidget->filterTags());
@@ -71,13 +120,11 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
 
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(mCategoryFilterModel);
-
     mItemView->setModel(mContactsFilterModel);
-    mItemView->setXmlGuiClient(guiClient);
+    //mItemView->setXmlGuiClient(guiClient);
     mItemView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mItemView->setRootIsDecorated(false);
     mItemView->header()->setDefaultAlignment(Qt::AlignCenter);
-
     mXXPortManager->setSelectionModel(mItemView->selectionModel());
 
     mActionManager = new Akonadi::StandardContactActionManager(guiClient->actionCollection(), this);
@@ -133,7 +180,6 @@ void AddressBookMainWidget::setupGui()
     // the horizontal main layout
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->setMargin(0);
-#if 0
     // Splitter 1 contains the two main parts of the GUI:
     //  - collection and item view splitter 2 on the left (see below)
     //  - details pane on the right, that contains
@@ -190,19 +236,6 @@ void AddressBookMainWidget::setupGui()
     // the details widget for empty items
     mEmptyDetails = new QTextBrowser(mDetailsViewStack);
     mDetailsViewStack->addWidget(mEmptyDetails);
-
-    // the contact switcher for the simple gui mode
-    mContactSwitcher = new ContactSwitcher;
-    detailsPaneLayout->addWidget(mContactSwitcher);
-    mContactSwitcher->setVisible(false);
-
-    // the quick search widget which is embedded in the toolbar action
-    mQuickSearchWidget = new QuickSearchWidget;
-    mQuickSearchWidget->setMaximumWidth(500);
-
-    // the category filter widget which is embedded in the toolbar action
-    mCategorySelectWidget = new CategorySelectWidget;
-
     // setup the default actions
     Akonadi::ContactDefaultActions *actions = new Akonadi::ContactDefaultActions(this);
     actions->connectToView(mContactDetails);
@@ -214,6 +247,5 @@ void AddressBookMainWidget::setupGui()
     mGroupFormatter = new KAddressBookGrantlee::GrantleeContactGroupFormatter;
 
     mContactGroupDetails->setContactGroupFormatter(mGroupFormatter);
-#endif
 }
 
