@@ -10,6 +10,7 @@ if(KF5Prison_FOUND)
 endif()
 
 add_subdirectory(domain)
+add_subdirectory(akonadi)
 
 add_subdirectory(icons)
 add_subdirectory(printing)

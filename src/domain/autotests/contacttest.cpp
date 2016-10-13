@@ -35,7 +35,8 @@ ContactTest::~ContactTest()
 
 void ContactTest::shouldHaveDefaultValue()
 {
-
+    Domain::Contact contact;
+    QVERIFY(contact.address().isEmpty());
 }
 
 QTEST_MAIN(ContactTest)

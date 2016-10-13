@@ -18,24 +18,30 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
+#include "akonadicontactgrouprepository.h"
 
-#ifndef CONTACTREPOSITORY_H
-#define CONTACTREPOSITORY_H
-#include "kaddressbookdomain_export.h"
-class KJob;
-
-namespace Domain {
-class Contact;
-class KADDRESSBOOKDOMAIN_EXPORT ContactRepository
+AkonadiContactGroupRepository::AkonadiContactGroupRepository()
+    : Domain::ContactGroupRepository()
 {
-public:
-    ContactRepository();
-    virtual ~ContactRepository();
-    virtual KJob *createContact(Domain::Contact *contact) = 0;
-    virtual KJob *removeContact(Domain::Contact *contact) = 0;
-    virtual KJob *updateContact(Domain::Contact *contact) = 0;
 
-};
 }
 
-#endif // CONTACTREPOSITORY_H
+AkonadiContactGroupRepository::~AkonadiContactGroupRepository()
+{
+
+}
+
+KJob *AkonadiContactGroupRepository::createContactGroup(Domain::ContactGroup *contactGroup)
+{
+    return {};
+}
+
+KJob *AkonadiContactGroupRepository::removeContactGroup(Domain::ContactGroup *contactGroup)
+{
+    return {};
+}
+
+KJob *AkonadiContactGroupRepository::updateContactGroup(Domain::ContactGroup *contactGroup)
+{
+    return {};
+}

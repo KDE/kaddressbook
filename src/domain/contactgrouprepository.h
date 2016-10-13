@@ -20,11 +20,11 @@
 
 #ifndef CONTACTGROUPREPOSITORY_H
 #define CONTACTGROUPREPOSITORY_H
-
+#include "kaddressbookdomain_export.h"
 class KJob;
 namespace Domain {
 class ContactGroup;
-class ContactGroupRepository
+class KADDRESSBOOKDOMAIN_EXPORT ContactGroupRepository
 {
 public:
     ContactGroupRepository();

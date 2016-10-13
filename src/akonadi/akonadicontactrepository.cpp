@@ -19,23 +19,30 @@
 */
 
 
-#ifndef CONTACTREPOSITORY_H
-#define CONTACTREPOSITORY_H
-#include "kaddressbookdomain_export.h"
-class KJob;
+#include "akonadicontactrepository.h"
 
-namespace Domain {
-class Contact;
-class KADDRESSBOOKDOMAIN_EXPORT ContactRepository
+AkonadiContactRepository::AkonadiContactRepository()
 {
-public:
-    ContactRepository();
-    virtual ~ContactRepository();
-    virtual KJob *createContact(Domain::Contact *contact) = 0;
-    virtual KJob *removeContact(Domain::Contact *contact) = 0;
-    virtual KJob *updateContact(Domain::Contact *contact) = 0;
 
-};
 }
 
-#endif // CONTACTREPOSITORY_H
+AkonadiContactRepository::~AkonadiContactRepository()
+{
+
+}
+
+
+KJob *AkonadiContactRepository::createContact(Domain::Contact *contact)
+{
+    return {};
+}
+
+KJob *AkonadiContactRepository::removeContact(Domain::Contact *contact)
+{
+    return {};
+}
+
+KJob *AkonadiContactRepository::updateContact(Domain::Contact *contact)
+{
+    return {};
+}
