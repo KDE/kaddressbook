@@ -52,11 +52,13 @@ set(LIBKDEPIM_LIB_VERSION_LIB "5.3.42")
 set(KDEPIM_APPS_LIB_VERSION_LIB "5.3.54")
 set(LIBGRANTLEETHEME_LIB_VERSION_LIB "5.3.40")
 set(PIMCOMMON_LIB_VERSION_LIB "5.3.53")
+set(LIBKLEO_LIB_VERSION "5.3.46")
 # Find KF5 package
 find_package(KF5DBusAddons ${KF5_VERSION} CONFIG REQUIRED)
 find_package(KF5DocTools ${KF5_VERSION} REQUIRED)
 find_package(KF5KCMUtils ${KF5_VERSION} CONFIG REQUIRED)
 find_package(KF5Crash ${KF5_VERSION} REQUIRED)
+find_package(KF5Libkleo ${LIBKLEO_LIB_VERSION} CONFIG REQUIRED)
 
 option(NEW_LISTVIEW_EXPERIMENTAL "Enable this feature if you want to build experimental qml listview. Not Stable yet." FALSE)
 
