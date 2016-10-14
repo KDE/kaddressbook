@@ -45,6 +45,8 @@ class AddressBookMainWidget : public QWidget
 public:
     explicit AddressBookMainWidget(QWidget *parent = Q_NULLPTR);
     ~AddressBookMainWidget();
+private Q_SLOTS:
+    void itemSelected(const Akonadi::Item &item);
 private:
     void setupGui();
     Akonadi::EntityMimeTypeFilterModel *mCollectionTree;

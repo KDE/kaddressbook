@@ -30,6 +30,7 @@
 #include <QHeaderView>
 #include <KContacts/ContactGroup>
 #include <KContacts/Addressee>
+#include <AkonadiCore/MimeTypeChecker>
 
 static bool isStructuralCollection(const Akonadi::Collection &collection)
 {
@@ -118,15 +119,15 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     connect(mCategorySelectWidget, &CategorySelectWidget::filterChanged,
             mCategoryFilterModel, &CategoryFilterProxyModel::setFilterCategories);
 
+#endif
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
-    mContactsFilterModel->setSourceModel(mCategoryFilterModel);
+    mContactsFilterModel->setSourceModel(/*mCategoryFilterModel*/mItemTree);
     mItemView->setModel(mContactsFilterModel);
     //mItemView->setXmlGuiClient(guiClient);
     mItemView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mItemView->setRootIsDecorated(false);
     mItemView->header()->setDefaultAlignment(Qt::AlignCenter);
-    mXXPortManager->setSelectionModel(mItemView->selectionModel());
-
+#if 0
     mActionManager = new Akonadi::StandardContactActionManager(guiClient->actionCollection(), this);
     mActionManager->setCollectionSelectionModel(mCollectionView->selectionModel());
     mActionManager->setItemSelectionModel(mItemView->selectionModel());
@@ -141,9 +142,10 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
         mActionManager->createAction(contactAction);
     }
 
-
+#endif
     connect(mItemView, SIGNAL(currentChanged(Akonadi::Item)),
             this, SLOT(itemSelected(Akonadi::Item)));
+#if 0
     connect(mItemView, SIGNAL(doubleClicked(Akonadi::Item)),
             mActionManager->action(Akonadi::StandardContactActionManager::EditItem),
             SLOT(trigger()));
@@ -174,6 +176,18 @@ AddressBookMainWidget::~AddressBookMainWidget()
 {
 
 }
+
+void AddressBookMainWidget::itemSelected(const Akonadi::Item &item)
+{
+    if (Akonadi::MimeTypeChecker::isWantedItem(item, KContacts::Addressee::mimeType())) {
+        mDetailsViewStack->setCurrentWidget(mContactDetails);
+        mContactDetails->setContact(item);
+    } else if (Akonadi::MimeTypeChecker::isWantedItem(item, KContacts::ContactGroup::mimeType())) {
+        mDetailsViewStack->setCurrentWidget(mContactGroupDetails);
+        mContactGroupDetails->setContactGroup(item);
+    }
+}
+
 
 void AddressBookMainWidget::setupGui()
 {
