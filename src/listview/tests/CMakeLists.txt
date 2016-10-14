@@ -2,13 +2,19 @@ set(newdesigntest_SRCS
     main.cpp
     mainwindow.cpp
     addressbookmainwidget.cpp
-    addressbookquickwidget.cpp
     ../../globalcontactmodel.cpp
     )
 
+set(newdesigntest_quick_SRCS
+    addressbookquickwidget.cpp
+    addressbooklistviewmodel.cpp
+    )
+
+
+
 qt5_add_resources(newdesigntest_SRCS listview.qrc)
 
-add_executable(newdesigntest ${newdesigntest_SRCS})
+add_executable(newdesigntest ${newdesigntest_quick_SRCS} ${newdesigntest_SRCS})
 
 target_link_libraries(newdesigntest
     Qt5::Widgets

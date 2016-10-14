@@ -18,6 +18,7 @@
 */
 
 #include "addressbookmainwidget.h"
+#include "addressbookquickwidget.h"
 #include <QVBoxLayout>
 #include <QSplitter>
 #include <KLocalizedString>
@@ -246,6 +247,10 @@ void AddressBookMainWidget::setupGui()
     mItemView->setDefaultPopupMenu(QStringLiteral("akonadi_itemview_contextmenu"));
     mItemView->setAlternatingRowColors(true);
     mMainWidgetSplitter2->addWidget(mItemView);
+
+    mAddressbookQuickWidget = new AddressBookQuickWidget(this);
+    mAddressbookQuickWidget->setSource(QUrl(QStringLiteral("qrc:/qml/data/addressbooklistview.qml")));
+    mMainWidgetSplitter2->addWidget(mAddressbookQuickWidget);
 
     // the details pane that contains the details view stack and contact switcher
     mDetailsPane = new QWidget;

@@ -38,7 +38,7 @@
 #include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
 
 #include <GrantleeTheme/GrantleeThemeManager>
-
+class AddressBookQuickWidget;
 class AddressBookMainWidget : public QWidget
 {
     Q_OBJECT
@@ -77,6 +77,8 @@ private:
     KAddressBookGrantlee::GrantleeContactFormatter *mFormatter;
     KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter;
     GrantleeTheme::ThemeManager *mGrantleeThemeManager;
+
+    AddressBookQuickWidget *mAddressbookQuickWidget;
 };
 
 #endif // ADDRESSBOOKMAINWIDGET_H
