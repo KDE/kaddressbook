@@ -48,7 +48,9 @@ public:
 private Q_SLOTS:
     void itemSelected(const Akonadi::Item &item);
 private:
+    void initGrantleeThemeName();
     void setupGui();
+    void setupAction(KActionCollection *collection);
     Akonadi::EntityMimeTypeFilterModel *mCollectionTree;
     Akonadi::EntityMimeTypeFilterModel *mItemTree;
     Akonadi::EntityMimeTypeFilterModel *mAllContactsModel;

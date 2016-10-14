@@ -25,6 +25,7 @@
 #include <ContactDefaultActions>
 #include <KCheckableProxyModel>
 #include <KSelectionProxyModel>
+#include <kactioncollection.h>
 #include "../../globalcontactmodel.h"
 #include <Akonadi/Contact/ContactsTreeModel>
 #include <QHeaderView>
@@ -75,6 +76,8 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     : QWidget(parent)
 {
     setupGui();
+    setupAction(new KActionCollection(this));
+    initGrantleeThemeName();
     mCollectionTree = new Akonadi::EntityMimeTypeFilterModel(this);
     mCollectionTree->setDynamicSortFilter(true);
     mCollectionTree->setSortCaseSensitivity(Qt::CaseInsensitive);
@@ -188,6 +191,27 @@ void AddressBookMainWidget::itemSelected(const Akonadi::Item &item)
     }
 }
 
+void AddressBookMainWidget::initGrantleeThemeName()
+{
+    QString themeName = mGrantleeThemeManager->configuredThemeName();
+    if (themeName.isEmpty()) {
+        themeName = QStringLiteral("default");
+    }
+    mFormatter->setGrantleeTheme(mGrantleeThemeManager->theme(themeName));
+    mGroupFormatter->setGrantleeTheme(mGrantleeThemeManager->theme(themeName));
+}
+
+
+void AddressBookMainWidget::setupAction(KActionCollection *collection)
+{
+    mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
+            QStringLiteral("theme.desktop"),
+            collection,
+            QStringLiteral("kaddressbook/viewertemplates/"));
+    mGrantleeThemeManager->setDownloadNewStuffConfigFile(QStringLiteral("kaddressbook_themes.knsrc"));
+    //connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
+    //connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
+}
 
 void AddressBookMainWidget::setupGui()
 {

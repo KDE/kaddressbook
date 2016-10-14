@@ -21,5 +21,7 @@ target_link_libraries(newdesigntest
     KF5::AkonadiWidgets
     KF5::AkonadiContact
     KF5::KaddressbookGrantlee
+    KF5::XmlGui
+    KF5::GrantleeTheme
     )
 
