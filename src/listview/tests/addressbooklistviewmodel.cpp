@@ -33,7 +33,30 @@ AddressBookListViewModel::~AddressBookListViewModel()
 
 QHash<int, QByteArray> AddressBookListViewModel::roleNames() const
 {
-    //TODO
     QHash<int, QByteArray> roles;
+    roles[AddressEmail] = "addressemail";
+    roles[AddressName] = "addressname";
+    roles[AddressSection] = "addresssection";
+    roles[AddressIcon] = "addressicon";
     return roles;
+}
+
+QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) const
+{
+    //TODO
+#if 0
+    if (index.row() < 0 || index.row() >= mListAddressBook.count())
+        return QVariant();
+    const AddressBook &add = mListAddressBook[index.row()];
+    if (role == AddressEmail) {
+        return add.email();
+    } else if (role == AddressName) {
+        return add.name();
+    } else if (role == AddressSection) {
+        return add.section();
+    } else if (role == AddressIcon) {
+        return add.iconUrl();
+    }
+#endif
+    return QVariant();
 }

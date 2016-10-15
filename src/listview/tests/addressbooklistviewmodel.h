@@ -29,9 +29,16 @@ class AddressBookListViewModel : public QIdentityProxyModel
 public:
     explicit AddressBookListViewModel(QObject *parent = Q_NULLPTR);
     ~AddressBookListViewModel();
+    enum AddressBookRoles {
+        AddressEmail = Qt::UserRole + 1,
+        AddressName = Qt::UserRole + 2,
+        AddressSection = Qt::UserRole + 3,
+        AddressIcon = Qt::UserRole + 4
+    };
 
 protected:
-    QHash<int, QByteArray> roleNames() const;
+    QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
 };
 
 #endif // ADDRESSBOOKLISTVIEWMODEL_H

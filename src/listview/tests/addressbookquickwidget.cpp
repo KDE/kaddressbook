@@ -19,6 +19,8 @@
 
 
 #include "addressbookquickwidget.h"
+#include "addressbooklistviewmodel.h"
+#include <QQmlContext>
 #include <QUrl>
 
 AddressBookQuickWidget::AddressBookQuickWidget(QWidget *parent)
@@ -26,6 +28,9 @@ AddressBookQuickWidget::AddressBookQuickWidget(QWidget *parent)
 {
     resize(400, 500);
     setResizeMode(QQuickWidget::SizeRootObjectToView);
+    QQmlContext *ctxt = rootContext();
+
+    //TODOctxt->setContextProperty("addressModel", sortProxy/*mModel*/);
 }
 
 AddressBookQuickWidget::~AddressBookQuickWidget()
