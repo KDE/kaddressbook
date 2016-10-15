@@ -84,12 +84,10 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         return true;
     }
 
-    //qCDebug(KADDRESSBOOK_LOG) << "for row" << row << "item" << item.url() << "filter" << d->filterIdList;
     if (item.hasPayload<KContacts::Addressee>()) {
         const KContacts::Addressee contact = item.payload<KContacts::Addressee>();
 
         const QStringList categories = contact.categories();
-        //qCDebug(KADDRESSBOOK_LOG) << "is contact" << contact.assembledName() << "cats" << categories;
 
         int validCategories = 0;
         int count = categories.count();
@@ -101,7 +99,6 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
                     ++validCategories;
                     Tag::Id id = cat.midRef(idx + 5).toInt();
                     if (d->filterIdList.contains(id)) {
-                        //qCDebug(KADDRESSBOOK_LOG) << "matches category" << cat;
                         return true;            // a category matches filter
                     }
                 }
@@ -109,10 +106,8 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         }
 
         if (validCategories > 0) {
-            //qCDebug(KADDRESSBOOK_LOG) << "valid item but no match";
             return false;               // categorised but no match
         } else {
-            //qCDebug(KADDRESSBOOK_LOG) << "item with no categories";
             return d->filterIdList.contains(CategorySelectWidget::FilterUntagged);
         }
     } else if (item.hasPayload<KContacts::ContactGroup>()) { // a contact group item
@@ -127,7 +122,6 @@ void CategoryFilterProxyModel::setFilterCategories(const QList<Akonadi::Tag::Id>
     Q_D(CategoryFilterProxyModel);
 
     if (idList != d->filterIdList) {
-        //qCDebug(KADDRESSBOOK_LOG) << idList;
         d->filterIdList = idList;
         invalidateFilter();
     }
@@ -138,7 +132,6 @@ void CategoryFilterProxyModel::setFilterEnabled(bool enable)
     Q_D(CategoryFilterProxyModel);
 
     if (enable != d->filterEnabled) {
-        //qCDebug(KADDRESSBOOK_LOG) << enable;
         d->filterEnabled = enable;
         invalidateFilter();
     }
