@@ -27,9 +27,10 @@ AddressBookQuickWidget::AddressBookQuickWidget(QWidget *parent)
 {
     resize(400, 500);
     setResizeMode(QQuickWidget::SizeRootObjectToView);
+    mAddressBookModel = new AddressBookListViewModel(this);
     QQmlContext *ctxt = rootContext();
 
-    //TODOctxt->setContextProperty("addressModel", sortProxy/*mModel*/);
+    ctxt->setContextProperty(QStringLiteral("addressModel"), mAddressBookModel);
 }
 
 AddressBookQuickWidget::~AddressBookQuickWidget()
@@ -40,4 +41,9 @@ AddressBookQuickWidget::~AddressBookQuickWidget()
 void AddressBookQuickWidget::loadQmlFile(const QString &qmlFilePath)
 {
     setSource(QUrl(qmlFilePath));
+}
+
+AddressBookListViewModel *AddressBookQuickWidget::addressBookModel() const
+{
+    return mAddressBookModel;
 }

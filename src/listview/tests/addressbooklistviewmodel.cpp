@@ -42,6 +42,19 @@ QHash<int, QByteArray> AddressBookListViewModel::roleNames() const
 
 QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) const
 {
+    if (index.row() < 0) {
+        return QVariant();
+    }
+    //TODO
+    if (role == AddressEmail) {
+        return {};
+    } else if (role == AddressName) {
+        return {};
+    } else if (role == AddressSection) {
+        return {};
+    } else if (role == AddressIcon) {
+        return {};
+    }
     //TODO
 #if 0
     if (index.row() < 0 || index.row() >= mListAddressBook.count()) {
