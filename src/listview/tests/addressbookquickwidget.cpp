@@ -17,7 +17,6 @@
     02110-1301, USA.
 */
 
-
 #include "addressbookquickwidget.h"
 #include "addressbooklistviewmodel.h"
 #include <QQmlContext>

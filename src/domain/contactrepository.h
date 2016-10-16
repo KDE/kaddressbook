@@ -18,13 +18,13 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-
 #ifndef CONTACTREPOSITORY_H
 #define CONTACTREPOSITORY_H
 #include "kaddressbookdomain_export.h"
 class KJob;
 
-namespace Domain {
+namespace Domain
+{
 class Contact;
 class KADDRESSBOOKDOMAIN_EXPORT ContactRepository
 {

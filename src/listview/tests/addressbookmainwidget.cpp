@@ -202,7 +202,6 @@ void AddressBookMainWidget::initGrantleeThemeName()
     mGroupFormatter->setGrantleeTheme(mGrantleeThemeManager->theme(themeName));
 }
 
-
 void AddressBookMainWidget::setupAction(KActionCollection *collection)
 {
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),

@@ -81,7 +81,7 @@ void KAddressBookConfigPluginListWidget::initialize()
             kaddressbookPluginToolsGroupName());
 
     PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsDataList(),
-                                                        i18n("Import/Export Plugins"),
+            i18n("Import/Export Plugins"),
             KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configGroupName(),
             KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configPrefixSettingKey(),
             mPluginImportExportItems,

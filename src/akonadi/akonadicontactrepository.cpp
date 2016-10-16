@@ -18,7 +18,6 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-
 #include "akonadicontactrepository.h"
 
 AkonadiContactRepository::AkonadiContactRepository()
@@ -30,7 +29,6 @@ AkonadiContactRepository::~AkonadiContactRepository()
 {
 
 }
-
 
 KJob *AkonadiContactRepository::createContact(Domain::Contact *contact)
 {

@@ -17,7 +17,6 @@
     02110-1301, USA.
 */
 
-
 #include "addressbooklistviewmodel.h"
 
 AddressBookListViewModel::AddressBookListViewModel(QObject *parent)
@@ -45,8 +44,9 @@ QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) cons
 {
     //TODO
 #if 0
-    if (index.row() < 0 || index.row() >= mListAddressBook.count())
+    if (index.row() < 0 || index.row() >= mListAddressBook.count()) {
         return QVariant();
+    }
     const AddressBook &add = mListAddressBook[index.row()];
     if (role == AddressEmail) {
         return add.email();

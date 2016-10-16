@@ -23,7 +23,8 @@
 
 #include "contactgrouprepository.h"
 #include <QObject>
-namespace Domain {
+namespace Domain
+{
 class ContactGroup;
 }
 class KJob;

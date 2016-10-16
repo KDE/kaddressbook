@@ -152,7 +152,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     (void) new KaddressbookAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
 
-
     mImportExportPluginManager = KAddressBookImportExport::KAddressBookImportExportPluginManager::self();
 
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
@@ -365,18 +364,17 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
         }
     }
 
-
     if (!importActions.isEmpty()) {
         KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
         collection->addAction(QStringLiteral("import_menu"), importMenu);
-        Q_FOREACH(QAction *act, importActions) {
+        Q_FOREACH (QAction *act, importActions) {
             importMenu->addAction(act);
         }
     }
     if (!exportActions.isEmpty()) {
         KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
         collection->addAction(QStringLiteral("export_menu"), exportMenu);
-        Q_FOREACH(QAction *act, exportActions) {
+        Q_FOREACH (QAction *act, exportActions) {
             exportMenu->addAction(act);
         }
     }
@@ -401,7 +399,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
     if (parser.isSet(QStringLiteral("import"))) {
         for (const QString &urlStr : parser.positionalArguments()) {
             const QUrl url(QUrl::fromUserInput(urlStr));
-            Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+            Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
                 if (interface->canImportFileType(url)) {
                     interface->importFile(url);
                     break;
@@ -695,7 +693,6 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
     connect(mViewModeGroup, SIGNAL(triggered(QAction*)), SLOT(setViewMode(QAction*)));
-
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
@@ -1079,11 +1076,10 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
-    Q_FOREACH(KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
         interface->setDefaultCollection(col);
     }
     bool isOnline;
     mServerSideSubscription->setEnabled(PimCommon::Util::isImapFolder(col, isOnline));
 }
-
 
