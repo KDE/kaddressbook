@@ -47,11 +47,11 @@ QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) cons
     }
     //TODO
     if (role == AddressEmail) {
-        return {};
+        return QStringLiteral("foo");
     } else if (role == AddressName) {
-        return {};
+        return QStringLiteral("email");
     } else if (role == AddressSection) {
-        return {};
+        return QStringLiteral("section");
     } else if (role == AddressIcon) {
         return {};
     }

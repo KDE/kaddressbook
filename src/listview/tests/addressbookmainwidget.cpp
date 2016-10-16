@@ -19,6 +19,7 @@
 
 #include "addressbookmainwidget.h"
 #include "addressbookquickwidget.h"
+#include "addressbooklistviewmodel.h"
 #include <QVBoxLayout>
 #include <QSplitter>
 #include <KLocalizedString>
@@ -127,6 +128,7 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(/*mCategoryFilterModel*/mItemTree);
     mItemView->setModel(mContactsFilterModel);
+    mAddressbookQuickWidget->addressBookModel()->setSourceModel(mContactsFilterModel);
     //mItemView->setXmlGuiClient(guiClient);
     mItemView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mItemView->setRootIsDecorated(false);
