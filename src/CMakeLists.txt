@@ -9,8 +9,10 @@ if(KF5Prison_FOUND)
     add_definitions(-DHAVE_PRISON)
 endif()
 
-add_subdirectory(domain)
-add_subdirectory(akonadi)
+if (DOMAIN_EXPERIMENTAL)
+    add_subdirectory(domain)
+    add_subdirectory(akonadi)
+endif()
 
 add_subdirectory(icons)
 add_subdirectory(printing)

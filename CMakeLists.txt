@@ -61,6 +61,7 @@ find_package(KF5Crash ${KF5_VERSION} REQUIRED)
 find_package(KF5Libkleo ${LIBKLEO_LIB_VERSION} CONFIG REQUIRED)
 
 option(NEW_LISTVIEW_EXPERIMENTAL "Enable this feature if you want to build experimental qml listview. Not Stable yet." FALSE)
+option(DOMAIN_EXPERIMENTAL "Enable this feature if you want to build experimental domain library. Not Stable yet." FALSE)
 
 
 # Find KdepimLibs Package
