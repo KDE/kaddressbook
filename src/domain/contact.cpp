@@ -32,12 +32,12 @@ Contact::~Contact()
 
 }
 
-KContacts::Address Contact::address() const
+KContacts::Addressee Contact::addressee() const
 {
-    return mAddress;
+    return mAddressee;
 }
 
-void Contact::setAddress(const KContacts::Address &address)
+void Contact::setAddressee(const KContacts::Addressee &address)
 {
-    mAddress = address;
+    mAddressee = address;
 }

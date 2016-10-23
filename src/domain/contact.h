@@ -21,7 +21,7 @@
 #ifndef CONTACT_H
 #define CONTACT_H
 
-#include <KContacts/Address>
+#include <KContacts/Addressee>
 #include "kaddressbookdomain_export.h"
 namespace Domain
 {
@@ -31,11 +31,11 @@ public:
     Contact();
     ~Contact();
 
-    KContacts::Address address() const;
-    void setAddress(const KContacts::Address &address);
+    KContacts::Addressee addressee() const;
+    void setAddressee(const KContacts::Addressee &address);
 
 private:
-    KContacts::Address mAddress;
+    KContacts::Addressee mAddressee;
 };
 }
 

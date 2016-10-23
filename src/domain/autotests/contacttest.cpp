@@ -36,7 +36,17 @@ ContactTest::~ContactTest()
 void ContactTest::shouldHaveDefaultValue()
 {
     Domain::Contact contact;
-    QVERIFY(contact.address().isEmpty());
+    QVERIFY(contact.addressee().isEmpty());
+}
+
+void ContactTest::shouldAssignAddresse()
+{
+    Domain::Contact contact;
+    KContacts::Addressee address;
+    address.setEmails(QStringList() << QStringLiteral("foo@foo.foo") << QStringLiteral("foo@foo.foo2"));
+    contact.setAddressee(address);
+
+    QCOMPARE(contact.addressee(), address);
 }
 
 QTEST_MAIN(ContactTest)

@@ -34,7 +34,6 @@ public:
     virtual KJob *createContact(Domain::Contact *contact) = 0;
     virtual KJob *removeContact(Domain::Contact *contact) = 0;
     virtual KJob *updateContact(Domain::Contact *contact) = 0;
-
 };
 }
 
