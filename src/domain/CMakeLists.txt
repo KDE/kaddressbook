@@ -16,7 +16,6 @@ set_target_properties(kaddressbookdomain
     PROPERTIES VERSION ${KDEPIM_LIB_VERSION} SOVERSION ${KDEPIM_LIB_SOVERSION}
     )
 
-# Don't install it yet
-#install(TARGETS kaddressbookdomain ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
+install(TARGETS kaddressbookdomain ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
 
 add_subdirectory(autotests)
