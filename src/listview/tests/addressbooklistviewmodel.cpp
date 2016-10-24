@@ -45,7 +45,7 @@ QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) cons
     if (index.row() < 0) {
         return QVariant();
     }
-    //TODO
+    //TODO use data from model
     if (role == AddressEmail) {
         return QStringLiteral("foo");
     } else if (role == AddressName) {
@@ -55,21 +55,5 @@ QVariant AddressBookListViewModel::data(const QModelIndex &index, int role) cons
     } else if (role == AddressIcon) {
         return {};
     }
-    //TODO
-#if 0
-    if (index.row() < 0 || index.row() >= mListAddressBook.count()) {
-        return QVariant();
-    }
-    const AddressBook &add = mListAddressBook[index.row()];
-    if (role == AddressEmail) {
-        return add.email();
-    } else if (role == AddressName) {
-        return add.name();
-    } else if (role == AddressSection) {
-        return add.section();
-    } else if (role == AddressIcon) {
-        return add.iconUrl();
-    }
-#endif
     return QVariant();
 }
