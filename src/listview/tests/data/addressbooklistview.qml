@@ -50,7 +50,7 @@ Rectangle {
         Rectangle {
             width: container.width
             height: childrenRect.height
-            //color: "lightsteelblue"
+            color: "lightsteelblue"
 
             Text {
                 text: section
@@ -95,17 +95,9 @@ Rectangle {
             GridLayout {
                 rows: 3
                 columns: 2
-//                Rectangle {
-//                    color: "red"
-//                    Layout.column: 0
-//                    Layout.rowSpan: 1
-//                    width: 50
-//                    height: 30
-//                }
-
                 Image {
                     id: image
-                    source: addressicon ? addressicon :  "qrc:/images/images/akregator.svg"
+                    source: addressicon ? addressicon :  "qrc:/image/data/view-pim-contacts.svg"
                     //source: addressicon
                 }
                 Text {
