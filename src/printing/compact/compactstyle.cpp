@@ -102,8 +102,8 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
         QStringList values;
         foreach (const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field, fields) {
             // we need only values with content
-            QString value = KAddressBookImportExport::KAddressBookImportExportContactFields::value(field, contact).trimmed();
-            if (value.size() > 0) {
+            const QString value = KAddressBookImportExport::KAddressBookImportExportContactFields::value(field, contact).trimmed();
+            if (!value.isEmpty()) {
                 values << value;
             }
         }
