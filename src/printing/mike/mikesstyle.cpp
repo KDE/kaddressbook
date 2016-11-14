@@ -48,10 +48,12 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 
     const int middle = allFields.count() / 2;
 
+    leftFields.reserve(middle);
     for (int i = 0; i < middle; ++i) {
         leftFields.append(allFields.at(i));
     }
 
+    rightFields.reserve(allFields.count() - middle);
     for (int i = middle; i < allFields.count(); ++i) {
         rightFields.append(allFields.at(i));
     }
