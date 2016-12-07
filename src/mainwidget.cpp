@@ -29,6 +29,7 @@
 #include "categoryselectwidget.h"
 #include "categoryfilterproxymodel.h"
 #include "kaddressbook_options.h"
+#include "manageshowcollectionproperties.h"
 
 #include "KaddressbookGrantlee/GrantleeContactFormatter"
 #include "KaddressbookGrantlee/GrantleeContactGroupFormatter"
@@ -36,7 +37,6 @@
 
 #include "Libkdepim/UiStateSaver"
 
-#include <PimCommon/CollectionAclPage>
 #include <PimCommon/ImapAclAttribute>
 
 #include <AkonadiWidgets/ETMViewStateSaver>
@@ -152,6 +152,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     (void) new KaddressbookAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
 
+    mManageShowCollectionProperties = new ManageShowCollectionProperties(this, this);
     mImportExportPluginManager = KAddressBookImportExport::KAddressBookImportExportPluginManager::self();
 
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
@@ -303,19 +304,9 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     Q_FOREACH (Akonadi::StandardContactActionManager::Type contactAction, contactActions) {
         mActionManager->createAction(contactAction);
     }
-    static bool pageRegistered = false;
 
-    if (!pageRegistered) {
-        Akonadi::CollectionPropertiesDialog::registerPage(new PimCommon::CollectionAclPageFactory);
-        pageRegistered = true;
-    }
-
-    const QStringList pages =
-        QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage")
-        << QStringLiteral("Akonadi::CachePolicyPage")
-        << QStringLiteral("PimCommon::CollectionAclPage");
-
-    mActionManager->setCollectionPropertiesPageNames(pages);
+    mActionManager->interceptAction(Akonadi::StandardActionManager::CollectionProperties);
+    connect(mActionManager->action(Akonadi::StandardActionManager::CollectionProperties), &QAction::triggered, mManageShowCollectionProperties, &ManageShowCollectionProperties::showCollectionProperties);
 
     connect(mItemView, SIGNAL(currentChanged(Akonadi::Item)),
             this, SLOT(itemSelected(Akonadi::Item)));

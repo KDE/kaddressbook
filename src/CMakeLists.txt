@@ -55,6 +55,7 @@ set(kaddressbook_LIB_SRCS
     contactswitcher.cpp
     globalcontactmodel.cpp
     mainwidget.cpp
+    manageshowcollectionproperties.cpp
     modelcolumnmanager.cpp
     widgets/quicksearchwidget.cpp
     kaddressbookmigrateapplication.cpp

@@ -71,6 +71,7 @@ class QuickSearchWidget;
 class QActionGroup;
 class CategorySelectWidget;
 class CategoryFilterProxyModel;
+class ManageShowCollectionProperties;
 class KADDRESSBOOK_EXPORT MainWidget : public QWidget
 {
     Q_OBJECT
@@ -171,6 +172,7 @@ private:
     QAction *mServerSideSubscription;
     KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager;
     QList<KAddressBookImportExport::KAddressBookImportExportPluginInterface *> mImportExportPluginInterfaceList;
+    ManageShowCollectionProperties *mManageShowCollectionProperties;
 };
 
 #endif
