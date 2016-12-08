@@ -23,13 +23,13 @@
 
 #include <QObject>
 #include <QPointer>
-#include <MailCommon/FolderCollection>
-
+#include <AkonadiCore/Collection>
 namespace Akonadi
 {
 class CollectionPropertiesDialog;
 }
 class MainWidget;
+class KJob;
 class ManageShowCollectionProperties : public QObject
 {
     Q_OBJECT
