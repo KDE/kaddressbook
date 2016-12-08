@@ -69,7 +69,6 @@ void ManageShowCollectionProperties::showCollectionProperties()
 
 void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job)
 {
-    QString pageToShow;
     if (job) {
         Akonadi::CollectionAttributesSynchronizationJob *sync
             = qobject_cast<Akonadi::CollectionAttributesSynchronizationJob *>(job);
