@@ -114,7 +114,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
                             i18n("Telephone:") :
                             i18n("Telephones:"));
 
-            foreach (const KContacts::PhoneNumber &number, numbers) {
+            for (const KContacts::PhoneNumber &number : numbers) {
                 const QString line = number.typeLabel() + QLatin1String(": ") + number.number();
                 block.entries.append(line);
             }
@@ -133,7 +133,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
         if (!contact.addresses().isEmpty()) {
             const KContacts::Address::List addresses = contact.addresses();
 
-            foreach (const KContacts::Address &address, addresses) {
+            for (const KContacts::Address &address : addresses) {
                 ContactBlock block;
 
                 switch (address.type()) {

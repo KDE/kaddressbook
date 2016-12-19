@@ -40,7 +40,7 @@ static bool isStructuralCollection(const Akonadi::Collection &collection)
     QStringList mimeTypes;
     mimeTypes << KContacts::Addressee::mimeType() << KContacts::ContactGroup::mimeType();
     const QStringList collectionMimeTypes = collection.contentMimeTypes();
-    foreach (const QString &mimeType, mimeTypes) {
+    for (const QString &mimeType : mimeTypes) {
         if (collectionMimeTypes.contains(mimeType)) {
             return false;
         }

@@ -63,7 +63,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
     content += QLatin1String(" <body>\n");
     content += QLatin1String("  <table style=\"border-width: 1px; border-style: solid; "
                              "border-color: gray;\" width=\"100%\" cellspacing=\"0\">\n");
-    foreach (const KContacts::Addressee &contact, contacts) {
+    for (const KContacts::Addressee &contact : contacts) {
         QString nameString = contact.familyName() + QLatin1String(", ") + contact.givenName();
 
         if (fields & Organization) {
@@ -81,13 +81,13 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         QStringList leftBlock, rightBlock;
         if (fields & PhoneNumbers) {
             const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
-            foreach (const KContacts::PhoneNumber &number, numbers) {
+            for (const KContacts::PhoneNumber &number : numbers) {
                 rightBlock.append(number.typeLabel() + QLatin1String(": ") + number.number());
             }
         }
         if (fields & Emails) {
             const QStringList emails = contact.emails();
-            foreach (const QString &email, emails) {
+            for (const QString &email : emails) {
                 rightBlock.append(email);
             }
         }
@@ -100,7 +100,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         }
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
-            foreach (const KContacts::Address &address, addresses) {
+            for (const KContacts::Address &address : addresses) {
                 const QString data =
                     address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
                 const QString subBlock = QLatin1String("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1String("</p>");
