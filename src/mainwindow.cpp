@@ -51,6 +51,8 @@ MainWindow::MainWindow()
     setupGUI(Save | Create, QStringLiteral("kaddressbookui.rc"));
 
     setAutoSaveSettings();
+
+    mHideMenuBarAction->setChecked(Settings::self()->showMenuBar());
     slotToggleMenubar(true);
 }
 
