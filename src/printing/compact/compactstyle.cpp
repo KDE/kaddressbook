@@ -97,7 +97,7 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     content += QLatin1String("  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n");
 
     bool odd = false;
-    foreach (const KContacts::Addressee &contact, contacts) {
+    for (const KContacts::Addressee &contact : contacts) {
         // get the values
         QStringList values;
         foreach (const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field, fields) {

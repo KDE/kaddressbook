@@ -71,7 +71,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
     content += QLatin1String("  </style>\n");
     content += QLatin1String(" </head>\n");
     content += QLatin1String(" <body>\n");
-    foreach (const KContacts::Addressee &contact, contacts) {
+    for (const KContacts::Addressee &contact : contacts) {
         QString name = contact.realName();
         if (!contact.title().isEmpty() || !contact.role().isEmpty()) {
             QStringList content;
