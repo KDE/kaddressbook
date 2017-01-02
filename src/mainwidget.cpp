@@ -142,11 +142,11 @@ public:
 
 MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     : QWidget(parent),
-      mAllContactsModel(Q_NULLPTR),
+      mAllContactsModel(nullptr),
       mXmlGuiClient(guiClient),
-      mGrantleeThemeManager(Q_NULLPTR),
-      mQuickSearchAction(Q_NULLPTR),
-      mServerSideSubscription(Q_NULLPTR)
+      mGrantleeThemeManager(nullptr),
+      mQuickSearchAction(nullptr),
+      mServerSideSubscription(nullptr)
 {
 
     (void) new KaddressbookAdaptor(this);
@@ -988,7 +988,7 @@ Akonadi::EntityTreeModel *MainWidget::entityTreeModel() const
     }
 
     qCWarning(KADDRESSBOOK_LOG) << "Couldn't find EntityTreeModel";
-    return Q_NULLPTR;
+    return nullptr;
 }
 
 void MainWidget::slotCheckNewCalendar(const QModelIndex &parent, int begin, int end)

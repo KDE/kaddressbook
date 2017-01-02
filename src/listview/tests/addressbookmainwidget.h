@@ -43,7 +43,7 @@ class AddressBookMainWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit AddressBookMainWidget(QWidget *parent = Q_NULLPTR);
+    explicit AddressBookMainWidget(QWidget *parent = nullptr);
     ~AddressBookMainWidget();
 private Q_SLOTS:
     void itemSelected(const Akonadi::Item &item);

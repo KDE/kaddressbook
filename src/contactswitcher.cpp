@@ -27,7 +27,7 @@
 #include <QPushButton>
 
 ContactSwitcher::ContactSwitcher(QWidget *parent)
-    : QWidget(parent), mView(Q_NULLPTR)
+    : QWidget(parent), mView(nullptr)
 {
     QHBoxLayout *layout = new QHBoxLayout(this);
 

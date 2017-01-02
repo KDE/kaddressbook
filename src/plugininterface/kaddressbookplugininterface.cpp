@@ -45,7 +45,7 @@ Q_GLOBAL_STATIC(KAddressBookPluginInterfacePrivate, sInstance)
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent),
-      mMainWidget(Q_NULLPTR)
+      mMainWidget(nullptr)
 {
     setPluginName(QStringLiteral("kaddressbook"));
     setServiceTypeName(QStringLiteral("KAddressBook/MainViewPlugin"));

@@ -43,7 +43,7 @@ public:
      *
      * @param parent The parent widget
      **/
-    explicit CategorySelectWidget(QWidget *parent = Q_NULLPTR);
+    explicit CategorySelectWidget(QWidget *parent = nullptr);
 
     /**
      * Destructor.

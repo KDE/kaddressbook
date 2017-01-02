@@ -111,7 +111,7 @@ KParts::ReadOnlyPart *KAddressBookPlugin::createPart()
 {
     KParts::ReadOnlyPart *part = loadPart();
     if (!part) {
-        return Q_NULLPTR;
+        return nullptr;
     }
 
     // disable the Ctrl+N shortcut, as it is used by Kontact already

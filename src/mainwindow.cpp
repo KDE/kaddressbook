@@ -36,7 +36,7 @@
 #include <QMenuBar>
 
 MainWindow::MainWindow()
-    : KXmlGuiWindow(Q_NULLPTR)
+    : KXmlGuiWindow(nullptr)
 {
     mMainWidget = new MainWidget(this, this);
 

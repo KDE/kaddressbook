@@ -26,7 +26,7 @@ class AddressBookListViewModel : public QIdentityProxyModel
 {
     Q_OBJECT
 public:
-    explicit AddressBookListViewModel(QObject *parent = Q_NULLPTR);
+    explicit AddressBookListViewModel(QObject *parent = nullptr);
     ~AddressBookListViewModel();
     enum AddressBookRoles {
         AddressEmail = Qt::UserRole + 1,

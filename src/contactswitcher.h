@@ -44,7 +44,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    explicit ContactSwitcher(QWidget *parent = Q_NULLPTR);
+    explicit ContactSwitcher(QWidget *parent = nullptr);
 
     /**
      * Sets the @p view the contact switcher shall work on.

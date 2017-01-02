@@ -70,10 +70,10 @@ private:
 
 CategorySelectWidgetPrivate::CategorySelectWidgetPrivate(CategorySelectWidget *parent)
     : QObject(),
-      tagModel(Q_NULLPTR),
+      tagModel(nullptr),
       rowOffset(0),
-      updateTimer(Q_NULLPTR),
-      checkCombo(Q_NULLPTR),
+      updateTimer(nullptr),
+      checkCombo(nullptr),
       q_ptr(parent)
 {
 }
@@ -139,7 +139,7 @@ void CategorySelectWidgetPrivate::init()
 QStandardItemModel *CategorySelectWidgetPrivate::itemModel() const
 {
     QStandardItemModel *m = qobject_cast<QStandardItemModel *>(checkCombo->model());
-    Q_ASSERT(m != Q_NULLPTR);
+    Q_ASSERT(m != nullptr);
     return m;
 }
 
@@ -152,7 +152,7 @@ void CategorySelectWidgetPrivate::slotTagsChanged(const QModelIndex &topLeft, co
 {
     for (int row = topLeft.row(); row <= bottomRight.row(); ++row) {
         QStandardItem *it = itemModel()->item(row + rowOffset);
-        Q_ASSERT(it != Q_NULLPTR);
+        Q_ASSERT(it != nullptr);
 
         QModelIndex idx = tagModel->index(row, 0);
         it->setText(tagModel->data(idx, TagModel::NameRole).toString());
@@ -260,7 +260,7 @@ QList<Akonadi::Tag::Id> CategorySelectWidgetPrivate::filterTags() const
     bool allOn = true;
     for (int row = 0; row < itemModel()->rowCount(); ++row) {
         const QStandardItem *it = itemModel()->item(row);
-        Q_ASSERT(it != Q_NULLPTR);
+        Q_ASSERT(it != nullptr);
         if (it->checkState() == Qt::Checked) {
             Tag::Id id = it->data(FILTER_ROLE).toInt();
             if (id != 0) {

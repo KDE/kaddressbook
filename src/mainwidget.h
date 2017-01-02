@@ -77,7 +77,7 @@ class KADDRESSBOOK_EXPORT MainWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit MainWidget(KXMLGUIClient *guiClient, QWidget *parent = Q_NULLPTR);
+    explicit MainWidget(KXMLGUIClient *guiClient, QWidget *parent = nullptr);
     ~MainWidget();
 
     void updateQuickSearchText();

@@ -71,7 +71,7 @@ public:
      */
     PrintingWizard(QPrinter *printer,
                    QItemSelectionModel *selectionModel,
-                   QWidget *parent = Q_NULLPTR);
+                   QWidget *parent = nullptr);
 
     /**
      * Destroys the printing wizard.
@@ -119,7 +119,7 @@ protected:
     class PrintStyleDefinition
     {
     public:
-        PrintStyleDefinition(PrintStyleFactory *factory = Q_NULLPTR, PrintStyle *style = Q_NULLPTR)
+        PrintStyleDefinition(PrintStyleFactory *factory = nullptr, PrintStyle *style = nullptr)
             : printstyleFactory(factory),
               printStyle(style)
         {
