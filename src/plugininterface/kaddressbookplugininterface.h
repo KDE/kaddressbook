@@ -25,7 +25,6 @@
 
 #include <pimcommon/genericplugininterface.h>
 #include <pimcommon/plugininterface.h>
-class KActionCollection;
 class MainWidget;
 class KAddressBookPluginInterface : public PimCommon::PluginInterface
 {
