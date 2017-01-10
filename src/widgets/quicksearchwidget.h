@@ -46,7 +46,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    explicit QuickSearchWidget(QWidget *parent = Q_NULLPTR);
+    explicit QuickSearchWidget(QWidget *parent = nullptr);
 
     /**
      * Destroys the quick search widget.
