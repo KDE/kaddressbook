@@ -23,6 +23,7 @@
 
 #include "printstyle.h"
 #include "printingwizard.h"
+#include "helper_p.h"
 
 #include "kaddressbook_debug.h"
 
@@ -104,7 +105,7 @@ void PrintStyle::showPages()
 
 void PrintStyle::hidePages()
 {
-    Q_FOREACH (QWidget *wdg, mPageList) {
+    for (QWidget *wdg : qAsConst(mPageList)) {
         mWizard->setAppropriate(mPageItems[ wdg ], false);
     }
 }

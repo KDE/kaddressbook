@@ -19,6 +19,7 @@
 */
 
 #include "mainwidget.h"
+#include "helper_p.h"
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
 #include "modelcolumnmanager.h"
@@ -101,8 +102,7 @@ namespace
 {
 static bool isStructuralCollection(const Akonadi::Collection &collection)
 {
-    QStringList mimeTypes;
-    mimeTypes << KContacts::Addressee::mimeType() << KContacts::ContactGroup::mimeType();
+    const QStringList mimeTypes = {KContacts::Addressee::mimeType(), KContacts::ContactGroup::mimeType()};
     const QStringList collectionMimeTypes = collection.contentMimeTypes();
     for (const QString &mimeType : mimeTypes) {
         if (collectionMimeTypes.contains(mimeType)) {
@@ -292,7 +292,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
                     << Akonadi::StandardActionManager::MoveItemToMenu
                     << Akonadi::StandardActionManager::CopyItemToMenu;
 
-    Q_FOREACH (Akonadi::StandardActionManager::Type standardAction, standardActions) {
+    for (Akonadi::StandardActionManager::Type standardAction : qAsConst(standardActions)) {
         mActionManager->createAction(standardAction);
     }
     guiClient->actionCollection()->setDefaultShortcut(mActionManager->action(Akonadi::StandardActionManager::DeleteItems), QKeySequence(Qt::Key_Delete));
@@ -301,7 +301,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
                    << Akonadi::StandardContactActionManager::CreateContactGroup
                    << Akonadi::StandardContactActionManager::EditItem;
 
-    Q_FOREACH (Akonadi::StandardContactActionManager::Type contactAction, contactActions) {
+    for (Akonadi::StandardContactActionManager::Type contactAction : qAsConst(contactActions)) {
         mActionManager->createAction(contactAction);
     }
 
@@ -343,7 +343,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
     QList<QAction *> importActions;
     QList<QAction *> exportActions;
-    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin, listPlugins) {
+    for (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
             KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
             interface->setItemSelectionModel(mItemView->selectionModel());
@@ -358,14 +358,14 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     if (!importActions.isEmpty()) {
         KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
         collection->addAction(QStringLiteral("import_menu"), importMenu);
-        Q_FOREACH (QAction *act, importActions) {
+        for (QAction *act : qAsConst(importActions)) {
             importMenu->addAction(act);
         }
     }
     if (!exportActions.isEmpty()) {
         KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
         collection->addAction(QStringLiteral("export_menu"), exportMenu);
-        Q_FOREACH (QAction *act, exportActions) {
+        for (QAction *act : qAsConst(exportActions)) {
             exportMenu->addAction(act);
         }
     }
@@ -390,7 +390,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
     if (parser.isSet(QStringLiteral("import"))) {
         for (const QString &urlStr : parser.positionalArguments()) {
             const QUrl url(QUrl::fromUserInput(urlStr));
-            Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+            for (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
                 if (interface->canImportFileType(url)) {
                     interface->importFile(url);
                     break;
@@ -1067,7 +1067,7 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
-    Q_FOREACH (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface, mImportExportPluginInterfaceList) {
+    for (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
         interface->setDefaultCollection(col);
     }
     bool isOnline;

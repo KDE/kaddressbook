@@ -25,6 +25,7 @@
 #include "kaddressbookimportexportcontactfields.h"
 #include "printprogress.h"
 #include "printstyle.h"
+#include "helper_p.h"
 #include "printingwizard.h"
 #include "ui_compactstyle.h"
 
@@ -100,7 +101,7 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     for (const KContacts::Addressee &contact : contacts) {
         // get the values
         QStringList values;
-        foreach (const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field, fields) {
+        for (const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field : qAsConst(fields)) {
             // we need only values with content
             const QString value = KAddressBookImportExport::KAddressBookImportExportContactFields::value(field, contact).trimmed();
             if (!value.isEmpty()) {

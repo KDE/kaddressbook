@@ -25,6 +25,7 @@
 
 #include "printingwizard.h"
 #include "settings.h"
+#include "helper_p.h"
 
 #include <KAddressBookImportExport/KAddressBookContactSelectionWidget>
 #include "contactsorter.h"
@@ -127,7 +128,7 @@ void PrintingWizard::loadGrantleeStyle()
         }
     }
 
-    Q_FOREACH (const QString &directory, themesDirectories) {
+    for (const QString &directory : qAsConst(themesDirectories)) {
         QDirIterator dirIt(directory, QStringList(), QDir::AllDirs | QDir::NoDotAndDotDot);
         QStringList alreadyLoadedThemeName;
         while (dirIt.hasNext()) {

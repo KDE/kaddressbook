@@ -117,7 +117,7 @@ void StylePage::initFieldCombo()
     std::sort(mFields.begin(), mFields.end(), contactFieldsNameLesser);
 
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields::ConstIterator it;
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields::ConstIterator end(mFields.constEnd());
+    const KAddressBookImportExport::KAddressBookImportExportContactFields::Fields::ConstIterator end(mFields.constEnd());
     for (it = mFields.constBegin(); it != end; ++it) {
         mFieldCombo->addItem(KAddressBookImportExport::KAddressBookImportExportContactFields::label(*it));
     }
