@@ -93,7 +93,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         }
         if (fields & Note) {
             if (!contact.note().isEmpty()) {
-                const QString note = QLatin1String("Note: ") + contact.note().replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString note = i18n("Note: ") + contact.note().replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
 
                 rightBlock.append(note);
             }
