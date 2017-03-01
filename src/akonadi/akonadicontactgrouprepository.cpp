@@ -33,15 +33,18 @@ AkonadiContactGroupRepository::~AkonadiContactGroupRepository()
 
 KJob *AkonadiContactGroupRepository::createContactGroup(Domain::ContactGroup *contactGroup)
 {
+    Q_UNUSED(contactGroup);
     return {};
 }
 
 KJob *AkonadiContactGroupRepository::removeContactGroup(Domain::ContactGroup *contactGroup)
 {
+    Q_UNUSED(contactGroup);
     return {};
 }
 
 KJob *AkonadiContactGroupRepository::updateContactGroup(Domain::ContactGroup *contactGroup)
 {
+    Q_UNUSED(contactGroup);
     return {};
 }

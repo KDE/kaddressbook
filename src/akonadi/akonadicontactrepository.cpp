@@ -32,15 +32,18 @@ AkonadiContactRepository::~AkonadiContactRepository()
 
 KJob *AkonadiContactRepository::createContact(Domain::Contact *contact)
 {
+    Q_UNUSED(contact);
     return {};
 }
 
 KJob *AkonadiContactRepository::removeContact(Domain::Contact *contact)
 {
+    Q_UNUSED(contact);
     return {};
 }
 
 KJob *AkonadiContactRepository::updateContact(Domain::Contact *contact)
 {
+    Q_UNUSED(contact);
     return {};
 }
