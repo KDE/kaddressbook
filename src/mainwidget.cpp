@@ -38,7 +38,8 @@
 
 #include "Libkdepim/UiStateSaver"
 
-#include <PimCommon/ImapAclAttribute>
+#include <PimCommonAkonadi/ImapAclAttribute>
+#include <PimCommonAkonadi/MailUtil>
 
 #include <AkonadiWidgets/ETMViewStateSaver>
 #include <AkonadiCore/CollectionFilterProxyModel>
@@ -52,7 +53,7 @@
 #include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
 #include <QPointer>
-#include "PimCommon/ManageServerSideSubscriptionJob"
+#include "PimCommonAkonadi/ManageServerSideSubscriptionJob"
 #include "PimCommon/PimUtil"
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
@@ -1071,6 +1072,6 @@ void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
         interface->setDefaultCollection(col);
     }
     bool isOnline;
-    mServerSideSubscription->setEnabled(PimCommon::Util::isImapFolder(col, isOnline));
+    mServerSideSubscription->setEnabled(PimCommon::MailUtil::isImapFolder(col, isOnline));
 }
 

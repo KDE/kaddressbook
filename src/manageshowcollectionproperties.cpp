@@ -21,7 +21,7 @@
 #include "manageshowcollectionproperties.h"
 #include "mainwidget.h"
 #include "kaddressbook_debug.h"
-#include <PimCommon/CollectionAclPage>
+#include <PimCommonAkonadi/CollectionAclPage>
 
 #include <AkonadiWidgets/CollectionPropertiesDialog>
 #include <AkonadiCore/CollectionAttributesSynchronizationJob>

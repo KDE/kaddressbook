@@ -72,7 +72,7 @@ add_library(kaddressbookprivate ${kaddressbook_LIB_SRCS})
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
 target_link_libraries(kaddressbookprivate
     PUBLIC
-    KF5::PimCommon
+    KF5::PimCommonAkonadi
     PRIVATE
     KF5::Libkdepim
     KF5::KaddressbookGrantlee

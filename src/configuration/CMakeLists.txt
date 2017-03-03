@@ -13,7 +13,7 @@ target_link_libraries(kaddressbook_config_plugins
     KF5::KCMUtils
     KF5::I18n
     KF5::IconThemes
-    KF5::PimCommon
+    KF5::PimCommonAkonadi
     kaddressbookprivate
     KF5::XmlGui
     KF5::KaddressbookImportExport

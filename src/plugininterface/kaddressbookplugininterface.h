@@ -23,8 +23,8 @@
 #include <QObject>
 #include <QVector>
 
-#include <pimcommon/genericplugininterface.h>
-#include <pimcommon/plugininterface.h>
+#include <PimCommonAkonadi/GenericPluginInterface>
+#include <pimcommonakonadi/plugininterface.h>
 class MainWidget;
 class KAddressBookPluginInterface : public PimCommon::PluginInterface
 {

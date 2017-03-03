@@ -23,7 +23,7 @@
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
-#include <PimCommon/GenericPlugin>
+#include <PimCommonAkonadi/GenericPlugin>
 
 namespace
 {
