@@ -20,7 +20,7 @@
 #ifndef KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
 #define KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
 
-#include <PimCommonAkonadi/ConfigurePluginsListWidget>
+#include <PimCommon/ConfigurePluginsListWidget>
 
 class KAddressBookConfigPluginListWidget : public PimCommon::ConfigurePluginsListWidget
 {

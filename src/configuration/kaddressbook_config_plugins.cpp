@@ -22,8 +22,8 @@
 #include <KAboutData>
 #include <KPluginFactory>
 #include <KLocalizedString>
-#include <PimCommonAkonadi/ConfigurePluginsWidget>
-#include <PimCommonAkonadi/ConfigurePluginsListWidget>
+#include <PimCommon/ConfigurePluginsWidget>
+#include <PimCommon/ConfigurePluginsListWidget>
 
 #include <QVBoxLayout>
 
