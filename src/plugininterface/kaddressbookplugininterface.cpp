@@ -24,7 +24,7 @@
 
 #include <KActionCollection>
 
-#include <pimcommonakonadi/genericplugin.h>
+#include <pimcommon/genericplugin.h>
 
 class KAddressBookPluginInterfacePrivate
 {
