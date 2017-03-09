@@ -122,7 +122,6 @@ target_link_libraries(kaddressbook
     KF5::KontactInterface
     kaddressbookprivate
     KF5::Crash
-    KF5::KaddressbookImportExport
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
