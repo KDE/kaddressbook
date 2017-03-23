@@ -39,7 +39,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent,
                                    const QVariantList &)
     : KParts::ReadOnlyPart(parent)
 {
-    setComponentName(QStringLiteral("kaddressbook"), QStringLiteral("kaddressbook"));
+    setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
     KAddressBookMigrateApplication migrate;
     migrate.migrate();
 
