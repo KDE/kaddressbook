@@ -24,6 +24,8 @@ if(QGpgme_FOUND)
     add_definitions(-DHAVE_QGPGME)
 endif()
 
+set(kaddressbook_qrc_SRCS)
+qt5_add_resources(kaddressbook_qrc_SRCS kaddressbook.qrc)
 
 set(kaddressbook_printing_SRCS
     printing/detailled/detailledstyle.cpp
@@ -111,6 +113,7 @@ set(kaddressbook_SRCS
     kaddressbook_debug.cpp
     main.cpp
     mainwindow.cpp
+    ${kaddressbook_qrc_SRCS}
     )
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
@@ -127,9 +130,8 @@ target_link_libraries(kaddressbook
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS data/org.kde.kaddressbook.desktop data/kaddressbook-importer.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES kaddressbookui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kaddressbook)
 
-set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp)
+set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp ${kaddressbook_qrc_SRCS})
 add_library(kaddressbookpart MODULE ${kaddressbook_PART_SRCS})
 target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::Parts KF5::IconThemes)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
