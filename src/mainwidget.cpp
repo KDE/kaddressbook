@@ -19,7 +19,7 @@
 */
 
 #include "mainwidget.h"
-#include "helper_p.h"
+
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
 #include "modelcolumnmanager.h"

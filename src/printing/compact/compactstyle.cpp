@@ -25,7 +25,7 @@
 #include "kaddressbookimportexportcontactfields.h"
 #include "printprogress.h"
 #include "printstyle.h"
-#include "helper_p.h"
+
 #include "printingwizard.h"
 #include "ui_compactstyle.h"
 

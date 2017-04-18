@@ -23,7 +23,7 @@
 
 #include "printstyle.h"
 #include "printingwizard.h"
-#include "helper_p.h"
+
 
 #include "kaddressbook_debug.h"
 

@@ -25,7 +25,7 @@
 
 #include "printingwizard.h"
 #include "settings.h"
-#include "helper_p.h"
+
 
 #include <KAddressBookImportExport/KAddressBookContactSelectionWidget>
 #include "contactsorter.h"
