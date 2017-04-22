@@ -24,8 +24,10 @@
 #include <PimCommonAkonadi/CollectionAclPage>
 
 #include <AkonadiWidgets/CollectionPropertiesDialog>
+#include <AkonadiWidgets/CollectionMaintenancePage>
 #include <AkonadiCore/CollectionAttributesSynchronizationJob>
 #include <AkonadiCore/CollectionFetchJob>
+#include <AkonadiCore/CollectionFetchScope>
 
 #include <KLocalizedString>
 
@@ -37,11 +39,13 @@ ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainW
 
     if (!pageRegistered) {
         Akonadi::CollectionPropertiesDialog::registerPage(new PimCommon::CollectionAclPageFactory);
+        Akonadi::CollectionPropertiesDialog::registerPage(new Akonadi::CollectionMaintenancePageFactory);
         pageRegistered = true;
     }
     mPages = QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage")
                            << QStringLiteral("Akonadi::CachePolicyPage")
-                           << QStringLiteral("PimCommon::CollectionAclPage");
+                           << QStringLiteral("PimCommon::CollectionAclPage")
+                           << QStringLiteral("Akonadi::CollectionMaintenancePage");
 }
 
 ManageShowCollectionProperties::~ManageShowCollectionProperties()
@@ -79,6 +83,7 @@ void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job
     }
     Akonadi::CollectionFetchJob *fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(),
             Akonadi::CollectionFetchJob::Base);
+    fetch->fetchScope().setIncludeStatistics(true);
     connect(fetch, &KJob::result,
             this, &ManageShowCollectionProperties::slotCollectionPropertiesFinished);
 }

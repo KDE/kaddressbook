@@ -50,6 +50,7 @@
 #include <AkonadiCore/MimeTypeChecker>
 #include <AkonadiCore/AttributeFactory>
 #include <AkonadiWidgets/CollectionPropertiesDialog>
+#include <AkonadiWidgets/CollectionMaintenancePage>
 #include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
 #include <QPointer>
