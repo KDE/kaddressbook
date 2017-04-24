@@ -59,9 +59,7 @@ struct ColorSettings {
 
 QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSettings &settings)
 {
-    QString content;
-
-    content += QLatin1String("<html>\n");
+    QString content = QLatin1String("<html>\n");
     content += QLatin1String(" <head>\n");
     content += QLatin1String("  <style type=\"text/css\">\n");
     content += QLatin1String("    td.indented {\n");

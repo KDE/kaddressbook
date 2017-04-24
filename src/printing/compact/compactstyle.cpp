@@ -91,9 +91,7 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
         fields  << KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday;
     }
 
-    QString content;
-
-    content += QLatin1String("<html>\n");
+    QString content = QLatin1String("<html>\n");
     content += QLatin1String(" <body>\n");
     content += QLatin1String("  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n");
 

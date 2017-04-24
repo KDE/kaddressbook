@@ -40,7 +40,6 @@ using namespace KABPrinting;
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 {
-    QString content;
 
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields leftFields, rightFields;
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields allFields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
@@ -59,7 +58,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
     }
 
     int counter = 0;
-    content += QLatin1String("<html>\n");
+    QString content = QLatin1String("<html>\n");
     content += QLatin1String(" <body>\n");
     for (const KContacts::Addressee &contact : contacts) {
         const int max = qMax(leftFields.count(), rightFields.count());
