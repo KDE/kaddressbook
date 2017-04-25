@@ -96,8 +96,9 @@ void PrintStyle::showPages()
 {
     QWidget *wdg = nullptr;
 
-    Q_FOREACH (wdg, mPageList) {
-        mWizard->setAppropriate(mPageItems[ wdg ], true);
+    for (QWidget *wdg2 : qAsConst(mPageList)) {
+        mWizard->setAppropriate(mPageItems[ wdg2 ], true);
+        wdg = wdg2;
     }
     mWizard->nextButton()->setEnabled(wdg);
     mWizard->finishButton()->setEnabled(!wdg);
