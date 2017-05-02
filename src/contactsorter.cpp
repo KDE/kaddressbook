@@ -85,5 +85,5 @@ ContactSorter::ContactSorter(KAddressBookImportExport::KAddressBookImportExportC
 
 void ContactSorter::sort(KContacts::Addressee::List &contacts) const
 {
-    qStableSort(contacts.begin(), contacts.end(), ContactSortHelper(mSortField, mSortOrder));
+    std::stable_sort(contacts.begin(), contacts.end(), ContactSortHelper(mSortField, mSortOrder));
 }
