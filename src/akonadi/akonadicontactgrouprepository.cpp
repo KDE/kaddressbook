@@ -23,12 +23,10 @@
 AkonadiContactGroupRepository::AkonadiContactGroupRepository()
     : Domain::ContactGroupRepository()
 {
-
 }
 
 AkonadiContactGroupRepository::~AkonadiContactGroupRepository()
 {
-
 }
 
 KJob *AkonadiContactGroupRepository::createContactGroup(Domain::ContactGroup *contactGroup)

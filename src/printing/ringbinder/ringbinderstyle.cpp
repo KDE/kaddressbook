@@ -99,8 +99,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
             for (const KContacts::Address &address : addresses) {
-                const QString data =
-                    address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString data
+                    = address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
                 const QString subBlock = QLatin1String("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1String("</p>");
 
                 leftBlock.append(subBlock);
@@ -109,11 +109,11 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
 
         content += QLatin1String("   <tr>\n");
         content += QLatin1String("    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
-                                 "padding-bottom: 3px;\">") +
-                   nameString + leftBlock.join(QString()) + QLatin1String("</td>\n");
+                                 "padding-bottom: 3px;\">")
+                   +nameString + leftBlock.join(QString()) + QLatin1String("</td>\n");
         content += QLatin1String("    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
-                                 "padding-bottom: 3px;\">") +
-                   rightBlock.join(QStringLiteral("<br/>")) + QLatin1String("</td>\n");
+                                 "padding-bottom: 3px;\">")
+                   +rightBlock.join(QStringLiteral("<br/>")) + QLatin1String("</td>\n");
         content += QLatin1String("   </tr>\n");
     }
     content += QLatin1String("  </table>\n");
@@ -123,9 +123,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
     return content;
 }
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class RingBinderStyleAppearanceForm : public QWidget, public Ui::RingBinderStyleAppearanceForm_Base
 {
 public:
@@ -136,12 +134,11 @@ public:
         setupUi(this);
     }
 };
-
 }
 
 RingBinderPrintStyle::RingBinderPrintStyle(PrintingWizard *parent)
-    : PrintStyle(parent),
-      mPageAppearance(new RingBinderStyleAppearanceForm(parent))
+    : PrintStyle(parent)
+    , mPageAppearance(new RingBinderStyleAppearanceForm(parent))
 {
     setPreview(QStringLiteral("ringbinder-style.png"));
     setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, Qt::AscendingOrder);

@@ -32,8 +32,7 @@
 
 #include <QStringList>
 
-namespace KAddressBookImportExport
-{
+namespace KAddressBookImportExport {
 class KAddressBookContactSelectionWidget;
 }
 class StylePage;
@@ -41,14 +40,11 @@ class StylePage;
 class QItemSelectionModel;
 class QPrinter;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Collection;
 }
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class PrintProgress;
 class PrintStyle;
 class PrintStyleFactory;
@@ -69,9 +65,7 @@ public:
      * @param selectionModel The selection model to get the selected contacts from.
      * @param parent The parent widget.
      */
-    PrintingWizard(QPrinter *printer,
-                   QItemSelectionModel *selectionModel,
-                   QWidget *parent = nullptr);
+    PrintingWizard(QPrinter *printer, QItemSelectionModel *selectionModel, QWidget *parent = nullptr);
 
     /**
      * Destroys the printing wizard.
@@ -120,11 +114,11 @@ protected:
     {
     public:
         PrintStyleDefinition(PrintStyleFactory *factory = nullptr, PrintStyle *style = nullptr)
-            : printstyleFactory(factory),
-              printStyle(style)
+            : printstyleFactory(factory)
+            , printStyle(style)
         {
-
         }
+
         PrintStyleFactory *printstyleFactory;
         PrintStyle *printStyle;
     };
@@ -151,7 +145,6 @@ private:
     void readConfig();
     void loadGrantleeStyle();
 };
-
 }
 
 #endif

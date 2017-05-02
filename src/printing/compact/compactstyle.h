@@ -26,9 +26,7 @@
 
 #include "printstyle.h"
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class CompactStyleForm;
 
 class CompactStyle : public PrintStyle
@@ -76,7 +74,6 @@ public:
     PrintStyle *create() const Q_DECL_OVERRIDE;
     QString description() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -24,8 +24,7 @@
 #include <QString>
 #include "kaddressbookdomain_export.h"
 
-namespace Domain
-{
+namespace Domain {
 class KADDRESSBOOKDOMAIN_EXPORT ContactGroup
 {
 public:

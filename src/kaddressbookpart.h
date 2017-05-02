@@ -27,7 +27,7 @@
 
 class MainWidget;
 
-class KAddressBookPart: public KParts::ReadOnlyPart
+class KAddressBookPart : public KParts::ReadOnlyPart
 {
     Q_OBJECT
 

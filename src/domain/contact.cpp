@@ -24,12 +24,10 @@ using namespace Domain;
 
 Contact::Contact()
 {
-
 }
 
 Contact::~Contact()
 {
-
 }
 
 KContacts::Addressee Contact::addressee() const

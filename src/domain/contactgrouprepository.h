@@ -22,8 +22,7 @@
 #define CONTACTGROUPREPOSITORY_H
 #include "kaddressbookdomain_export.h"
 class KJob;
-namespace Domain
-{
+namespace Domain {
 class ContactGroup;
 class KADDRESSBOOKDOMAIN_EXPORT ContactGroupRepository
 {

@@ -70,9 +70,9 @@ void GrantleePrintStyle::print(const KContacts::Addressee::List &contacts, Print
 }
 
 GrantleeStyleFactory::GrantleeStyleFactory(const QString &name, const QString &themePath, PrintingWizard *parent)
-    : PrintStyleFactory(parent),
-      mThemePath(themePath),
-      mName(name)
+    : PrintStyleFactory(parent)
+    , mThemePath(themePath)
+    , mName(name)
 {
 }
 
@@ -85,4 +85,3 @@ QString GrantleeStyleFactory::description() const
 {
     return mName;
 }
-

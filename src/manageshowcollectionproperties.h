@@ -17,15 +17,13 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #ifndef MANAGESHOWCOLLECTIONPROPERTIES_H
 #define MANAGESHOWCOLLECTIONPROPERTIES_H
 
 #include <QObject>
 #include <QPointer>
 #include <AkonadiCore/Collection>
-namespace Akonadi
-{
+namespace Akonadi {
 class CollectionPropertiesDialog;
 }
 class MainWidget;

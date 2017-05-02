@@ -38,8 +38,8 @@
 static bool contactFieldsNameLesser(const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field,
                                     const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &otherField)
 {
-    return (QString::localeAwareCompare(KAddressBookImportExport::KAddressBookImportExportContactFields::label(field),
-                                        KAddressBookImportExport::KAddressBookImportExportContactFields::label(otherField)) < 0);
+    return QString::localeAwareCompare(KAddressBookImportExport::KAddressBookImportExportContactFields::label(field),
+                                       KAddressBookImportExport::KAddressBookImportExportContactFields::label(otherField)) < 0;
 }
 
 StylePage::StylePage(QWidget *parent, const QString &name)
@@ -104,7 +104,7 @@ KAddressBookImportExport::KAddressBookImportExportContactFields::Field StylePage
 
 Qt::SortOrder StylePage::sortOrder() const
 {
-    return (mSortTypeCombo->currentIndex() == 0 ? Qt::AscendingOrder : Qt::DescendingOrder);
+    return mSortTypeCombo->currentIndex() == 0 ? Qt::AscendingOrder : Qt::DescendingOrder;
 }
 
 void StylePage::initFieldCombo()
@@ -129,8 +129,8 @@ void StylePage::initGUI()
 
     QGridLayout *topLayout = new QGridLayout(this);
 
-    QLabel *label =
-        new QLabel(
+    QLabel *label
+        = new QLabel(
         i18nc("@label:textbox",
               "What should the print look like?\n"
               "KAddressBook has several printing styles, designed for different purposes.\n"
@@ -205,4 +205,3 @@ void StylePage::setPrintingStyle(int index)
 {
     mStyleCombo->setCurrentIndex(index);
 }
-

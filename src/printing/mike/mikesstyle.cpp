@@ -40,7 +40,6 @@ using namespace KABPrinting;
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 {
-
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields leftFields, rightFields;
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields allFields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
     allFields.remove(0);   // drop 'Undefined' field
@@ -154,4 +153,3 @@ QString MikesStyleFactory::description() const
 {
     return i18n("Mike's Printing Style");
 }
-

@@ -24,7 +24,6 @@
 #include "printstyle.h"
 #include "printingwizard.h"
 
-
 #include "kaddressbook_debug.h"
 
 #include <QPushButton>
@@ -35,7 +34,8 @@
 using namespace KABPrinting;
 
 PrintStyle::PrintStyle(PrintingWizard *parent)
-    : QObject(parent), mWizard(parent)
+    : QObject(parent)
+    , mWizard(parent)
 {
     mSortField = KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName;
     mSortOrder = Qt::AscendingOrder;
@@ -135,4 +135,3 @@ PrintStyleFactory::PrintStyleFactory(PrintingWizard *parent)
 PrintStyleFactory::~PrintStyleFactory()
 {
 }
-

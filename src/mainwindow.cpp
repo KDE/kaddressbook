@@ -70,8 +70,8 @@ void MainWindow::initActions()
     KStandardAction::quit(this, &MainWindow::close, actionCollection());
     mHideMenuBarAction = KStandardAction::showMenubar(this, &MainWindow::slotToggleMenubar, actionCollection());
 
-    QAction *action =
-        KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
+    QAction *action
+        = KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
     action->setWhatsThis(
         i18nc("@info:whatsthis",
               "You will be presented with a dialog where you can configure "

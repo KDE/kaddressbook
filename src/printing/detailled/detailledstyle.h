@@ -28,9 +28,7 @@
 
 #include <KContacts/Addressee>
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class AppearancePage;
 
 class DetailledPrintStyle : public PrintStyle
@@ -55,7 +53,6 @@ public:
     PrintStyle *create() const Q_DECL_OVERRIDE;
     QString description() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -22,14 +22,11 @@
 
 #include "printstyle.h"
 
-namespace KAddressBookGrantlee
-{
+namespace KAddressBookGrantlee {
 class GrantleePrint;
 }
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class PrintProgress;
 
 class GrantleePrintStyle : public PrintStyle
@@ -56,7 +53,6 @@ private:
     QString mThemePath;
     QString mName;
 };
-
 }
 
 #endif // GRANTLEEPRINTSTYLE_H

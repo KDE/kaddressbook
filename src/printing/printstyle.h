@@ -35,9 +35,7 @@
 
 class KPageWidgetItem;
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class PrintingWizard;
 class PrintProgress;
 
@@ -186,7 +184,6 @@ public:
 protected:
     PrintingWizard *mParent;
 };
-
 }
 
 #endif

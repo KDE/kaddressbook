@@ -58,8 +58,8 @@ void PrintProgress::addMessage(const QString &msg)
 {
     mMessages.append(msg);
 
-    QString head = QLatin1String("<qt><b>") + i18n("Progress") +
-                   QLatin1String(":</b><ul>");
+    QString head = QLatin1String("<qt><b>") + i18n("Progress")
+                   +QLatin1String(":</b><ul>");
 
     const QString foot = QStringLiteral("</ul></qt>");
 
@@ -79,4 +79,3 @@ void PrintProgress::setProgress(int step)
     mProgressBar->setValue(step);
     qApp->processEvents();
 }
-

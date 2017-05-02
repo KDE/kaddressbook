@@ -24,10 +24,8 @@ using namespace Domain;
 
 ContactGroupRepository::ContactGroupRepository()
 {
-
 }
 
 ContactGroupRepository::~ContactGroupRepository()
 {
-
 }

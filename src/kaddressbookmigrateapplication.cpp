@@ -78,4 +78,3 @@ void KAddressBookMigrateApplication::initializeMigrator()
 
     //TODO add folder to migrate
 }
-

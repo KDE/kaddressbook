@@ -33,7 +33,9 @@
 #include <QWidget>
 
 ModelColumnManager::ModelColumnManager(Akonadi::ContactsTreeModel *model, QObject *parent)
-    : QObject(parent), mModel(model), mWidget(nullptr)
+    : QObject(parent)
+    , mModel(model)
+    , mWidget(nullptr)
 {
 }
 
@@ -206,4 +208,3 @@ void ModelColumnManager::adaptHeaderView()
         view->setDefaultAlignment(mModel->columns().count() == 1 ? Qt::AlignCenter : Qt::AlignLeft);
     }
 }
-

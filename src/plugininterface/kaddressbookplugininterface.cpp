@@ -38,14 +38,15 @@ public:
     {
         delete kaddressBookPluginInterface;
     }
+
     KAddressBookPluginInterface *kaddressBookPluginInterface;
 };
 
 Q_GLOBAL_STATIC(KAddressBookPluginInterfacePrivate, sInstance)
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
-    : PimCommon::PluginInterface(parent),
-      mMainWidget(nullptr)
+    : PimCommon::PluginInterface(parent)
+    , mMainWidget(nullptr)
 {
     setPluginName(QStringLiteral("kaddressbook"));
     setServiceTypeName(QStringLiteral("KAddressBook/MainViewPlugin"));
@@ -53,7 +54,6 @@ KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
 
 KAddressBookPluginInterface::~KAddressBookPluginInterface()
 {
-
 }
 
 KAddressBookPluginInterface *KAddressBookPluginInterface::self()
@@ -87,4 +87,3 @@ void KAddressBookPluginInterface::setMainWidget(MainWidget *mainWidget)
 {
     mMainWidget = mainWidget;
 }
-

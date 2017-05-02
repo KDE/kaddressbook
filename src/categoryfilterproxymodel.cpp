@@ -48,15 +48,15 @@ private:
 };
 
 CategoryFilterProxyModelPrivate::CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent)
-    : QObject(),
-      filterEnabled(false),
-      q_ptr(parent)
+    : QObject()
+    , filterEnabled(false)
+    , q_ptr(parent)
 {
 }
 
 CategoryFilterProxyModel::CategoryFilterProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent),
-      d_ptr(new CategoryFilterProxyModelPrivate(this))
+    : QSortFilterProxyModel(parent)
+    , d_ptr(new CategoryFilterProxyModelPrivate(this))
 {
     setDynamicSortFilter(true);
 }

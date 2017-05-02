@@ -96,9 +96,9 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
         if (!contact.emails().isEmpty()) {
             ContactBlock block;
-            block.header = (contact.emails().count() == 1 ?
-                            i18n("Email address:") :
-                            i18n("Email addresses:"));
+            block.header = (contact.emails().count() == 1
+                            ? i18n("Email address:")
+                            : i18n("Email addresses:"));
             block.entries = contact.emails();
 
             blocks.append(block);
@@ -108,9 +108,9 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
             const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
 
             ContactBlock block;
-            block.header = (numbers.count() == 1 ?
-                            i18n("Telephone:") :
-                            i18n("Telephones:"));
+            block.header = (numbers.count() == 1
+                            ? i18n("Telephone:")
+                            : i18n("Telephones:"));
 
             for (const KContacts::PhoneNumber &number : numbers) {
                 const QString line = number.typeLabel() + QLatin1String(": ") + number.number();
@@ -176,14 +176,14 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
         content += QLatin1String("  <table style=\"border-width: 0px; border-spacing: 0px; "
                                  "page-break-inside: avoid\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n");
         content += QLatin1String("   <tr>\n");
-        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor +
-                   QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor +
-                   QLatin1String("\" style=\"padding-left: 20px\">") +
-                   name +  QLatin1String("</td>\n");
-        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor +
-                   QLatin1String(";\" align=\"right\" bgcolor=\"") + settings.headerBackgroundColor +
-                   QLatin1String("\" style=\"padding-right: 20px\">") +
-                   birthday + QLatin1String("</td>\n");
+        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
+                   +QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor
+                   +QLatin1String("\" style=\"padding-left: 20px\">")
+                   +name +  QLatin1String("</td>\n");
+        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
+                   +QLatin1String(";\" align=\"right\" bgcolor=\"") + settings.headerBackgroundColor
+                   +QLatin1String("\" style=\"padding-right: 20px\">")
+                   +birthday + QLatin1String("</td>\n");
         content += QLatin1String("   </tr>\n");
 
         for (int i = 0; i < blocks.count(); i += 2) {
@@ -195,9 +195,9 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
             // add real block data
             const ContactBlock leftBlock = blocks.at(i);
-            const ContactBlock rightBlock = ((i + 1 < blocks.count()) ?
-                                             blocks.at(i + 1) :
-                                             ContactBlock());
+            const ContactBlock rightBlock = ((i + 1 < blocks.count())
+                                             ? blocks.at(i + 1)
+                                             : ContactBlock());
 
             content += QLatin1String("   <tr>\n");
             content += QLatin1String("    <td>") + leftBlock.header + QLatin1String("</td>\n");
@@ -248,7 +248,8 @@ public:
 };
 
 DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
-    : PrintStyle(parent), mPageAppearance(new AppearancePage(parent))
+    : PrintStyle(parent)
+    , mPageAppearance(new AppearancePage(parent))
 {
     setPreview(QStringLiteral("detailed-style.png"));
     setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, Qt::AscendingOrder);
@@ -262,7 +263,6 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
 
     mPageAppearance->kcbHeaderTextColor->
     setColor(config.readEntry(ContactHeaderForeColor, QColor(Qt::white)));
-
 }
 
 DetailledPrintStyle::~DetailledPrintStyle()
@@ -316,4 +316,3 @@ QString DetailledPrintStyleFactory::description() const
 {
     return i18n("Detailed Style");
 }
-

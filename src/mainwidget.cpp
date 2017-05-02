@@ -100,8 +100,7 @@
 
 #include "plugininterface/kaddressbookplugininterface.h"
 
-namespace
-{
+namespace {
 static bool isStructuralCollection(const Akonadi::Collection &collection)
 {
     const QStringList mimeTypes = {KContacts::Addressee::mimeType(), KContacts::ContactGroup::mimeType()};
@@ -130,8 +129,8 @@ public:
 
         if (role == Qt::CheckStateRole) {
             // Don't show the checkbox if the collection can't contain incidences
-            const Akonadi::Collection collection =
-                index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const Akonadi::Collection collection
+                = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid() && isStructuralCollection(collection)) {
                 return QVariant();
             }
@@ -139,19 +138,17 @@ public:
         return KCheckableProxyModel::data(index, role);
     }
 };
-
 }
 
 MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
-    : QWidget(parent),
-      mAllContactsModel(nullptr),
-      mXmlGuiClient(guiClient),
-      mGrantleeThemeManager(nullptr),
-      mQuickSearchAction(nullptr),
-      mServerSideSubscription(nullptr)
+    : QWidget(parent)
+    , mAllContactsModel(nullptr)
+    , mXmlGuiClient(guiClient)
+    , mGrantleeThemeManager(nullptr)
+    , mQuickSearchAction(nullptr)
+    , mServerSideSubscription(nullptr)
 {
-
-    (void) new KaddressbookAdaptor(this);
+    (void)new KaddressbookAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
 
     mManageShowCollectionProperties = new ManageShowCollectionProperties(this, this);
@@ -224,8 +221,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
-    StructuralCollectionsNotCheckableProxy *checkableProxyModel =
-        new StructuralCollectionsNotCheckableProxy(this);
+    StructuralCollectionsNotCheckableProxy *checkableProxyModel
+        = new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
     checkableProxyModel->setSourceModel(mCollectionTree);
 
@@ -240,8 +237,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mCollectionView, SIGNAL(currentChanged(Akonadi::Collection)),
             this, SLOT(slotCurrentCollectionChanged(Akonadi::Collection)));
 
-    KSelectionProxyModel *selectionProxyModel =
-        new KSelectionProxyModel(mCollectionSelectionModel, this);
+    KSelectionProxyModel *selectionProxyModel
+        = new KSelectionProxyModel(mCollectionSelectionModel, this);
     selectionProxyModel->setSourceModel(GlobalContactModel::instance()->model());
     selectionProxyModel->setFilterBehavior(KSelectionProxyModel::ChildrenOfExactSelection);
 
@@ -308,7 +305,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     }
 
     mActionManager->interceptAction(Akonadi::StandardActionManager::CollectionProperties);
-    connect(mActionManager->action(Akonadi::StandardActionManager::CollectionProperties), &QAction::triggered, mManageShowCollectionProperties, &ManageShowCollectionProperties::showCollectionProperties);
+    connect(mActionManager->action(
+                Akonadi::StandardActionManager::CollectionProperties), &QAction::triggered, mManageShowCollectionProperties, &ManageShowCollectionProperties::showCollectionProperties);
 
     connect(mItemView, SIGNAL(currentChanged(Akonadi::Item)),
             this, SLOT(itemSelected(Akonadi::Item)));
@@ -347,7 +345,8 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     QList<QAction *> exportActions;
     for (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
-            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
+            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface
+                = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
             interface->setItemSelectionModel(mItemView->selectionModel());
             interface->createAction(collection);
             importActions.append(interface->importActions());
@@ -618,14 +617,14 @@ void MainWidget::setupActions(KActionCollection *collection)
     KAddressBookPluginInterface::self()->createPluginInterface();
 
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
-            QStringLiteral("theme.desktop"),
-            collection,
-            QStringLiteral("kaddressbook/viewertemplates/"));
+                                                            QStringLiteral("theme.desktop"),
+                                                            collection,
+                                                            QStringLiteral("kaddressbook/viewertemplates/"));
     mGrantleeThemeManager->setDownloadNewStuffConfigFile(QStringLiteral("kaddressbook_themes.knsrc"));
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
 
-    KActionMenu *themeMenu  = new KActionMenu(i18n("&Themes"), this);
+    KActionMenu *themeMenu = new KActionMenu(i18n("&Themes"), this);
     collection->addAction(QStringLiteral("theme_menu"), themeMenu);
 
     initGrantleeThemeName();
@@ -677,7 +676,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     act->setCheckable(true);
     act->setData(2);
     collection->addAction(QStringLiteral("view_mode_2columns"), act);
-    collection->setDefaultShortcut(act,  QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_2));
+    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_2));
 
     act = new QAction(i18nc("@action:inmenu", "Three Columns"), mViewModeGroup);
     act->setCheckable(true);
@@ -685,7 +684,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
-    connect(mViewModeGroup, SIGNAL(triggered(QAction*)), SLOT(setViewMode(QAction*)));
+    connect(mViewModeGroup, SIGNAL(triggered(QAction *)), SLOT(setViewMode(QAction *)));
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
@@ -801,8 +800,8 @@ void MainWidget::selectFirstItem()
     // in the item view, so that the detailsview is updated
     if (mItemView && mItemView->selectionModel()) {
         mItemView->selectionModel()->setCurrentIndex(mItemView->model()->index(0, 0),
-                QItemSelectionModel::Rows |
-                QItemSelectionModel::ClearAndSelect);
+                                                     QItemSelectionModel::Rows
+                                                     |QItemSelectionModel::ClearAndSelect);
     }
 }
 
@@ -837,8 +836,8 @@ void MainWidget::setQRCodeShow(bool on)
 Akonadi::Item::List MainWidget::selectedItems()
 {
     Akonadi::Item::List items;
-    QPointer<KAddressBookImportExport::KAddressBookContactSelectionDialog> dlg =
-        new KAddressBookImportExport::KAddressBookContactSelectionDialog(mItemView->selectionModel(), false, this);
+    QPointer<KAddressBookImportExport::KAddressBookContactSelectionDialog> dlg
+        = new KAddressBookImportExport::KAddressBookContactSelectionDialog(mItemView->selectionModel(), false, this);
     dlg->setDefaultAddressBook(currentAddressBook());
     if (!dlg->exec() || !dlg) {
         delete dlg;
@@ -855,8 +854,8 @@ Akonadi::Collection MainWidget::currentAddressBook() const
 {
     if (mCollectionView->selectionModel() && mCollectionView->selectionModel()->hasSelection()) {
         const QModelIndex index = mCollectionView->selectionModel()->selectedIndexes().first();
-        const Akonadi::Collection collection =
-            index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::Collection collection
+            = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         return collection;
     }
@@ -1044,10 +1043,10 @@ const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem(QItemSelect
     for (int i = 0; i < indexes.count(); ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item =
-                index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const Akonadi::Item item
+                = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
-                if (item.hasPayload<KContacts::Addressee>()  || item.hasPayload<KContacts::ContactGroup>()) {
+                if (item.hasPayload<KContacts::Addressee>() || item.hasPayload<KContacts::ContactGroup>()) {
                     lst.append(item);
                 }
             }
@@ -1075,4 +1074,3 @@ void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
     bool isOnline;
     mServerSideSubscription->setEnabled(PimCommon::MailUtil::isImapFolder(col, isOnline));
 }
-

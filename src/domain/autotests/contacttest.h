@@ -32,7 +32,6 @@ public:
 private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldAssignAddresse();
-
 };
 
 #endif // CONTACTTEST_H

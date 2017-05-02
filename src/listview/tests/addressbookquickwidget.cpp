@@ -35,7 +35,6 @@ AddressBookQuickWidget::AddressBookQuickWidget(QWidget *parent)
 
 AddressBookQuickWidget::~AddressBookQuickWidget()
 {
-
 }
 
 void AddressBookQuickWidget::loadQmlFile(const QString &qmlFilePath)

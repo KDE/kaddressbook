@@ -22,12 +22,10 @@
 
 AkonadiContactRepository::AkonadiContactRepository()
 {
-
 }
 
 AkonadiContactRepository::~AkonadiContactRepository()
 {
-
 }
 
 KJob *AkonadiContactRepository::createContact(Domain::Contact *contact)

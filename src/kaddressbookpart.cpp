@@ -33,10 +33,10 @@
 
 #include <QVBoxLayout>
 
-K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
+K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();
+                 )
 
-KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent,
-                                   const QVariantList &)
+KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const QVariantList &)
     : KParts::ReadOnlyPart(parent)
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
@@ -91,7 +91,6 @@ bool KAddressBookPart::openFile()
 
 void KAddressBookPart::guiActivateEvent(KParts::GUIActivateEvent *e)
 {
-
     KParts::ReadOnlyPart::guiActivateEvent(e);
     mMainWidget->initializePluginActions();
 }

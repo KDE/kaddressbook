@@ -64,8 +64,8 @@ public:
 
         if (role == Qt::CheckStateRole) {
             // Don't show the checkbox if the collection can't contain incidences
-            const Akonadi::Collection collection =
-                index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const Akonadi::Collection collection
+                = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid() && isStructuralCollection(collection)) {
                 return QVariant();
             }
@@ -89,8 +89,8 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
 
-    StructuralCollectionsNotCheckableProxy *checkableProxyModel =
-        new StructuralCollectionsNotCheckableProxy(this);
+    StructuralCollectionsNotCheckableProxy *checkableProxyModel
+        = new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
     checkableProxyModel->setSourceModel(mCollectionTree);
 
@@ -106,8 +106,8 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
     connect(mCollectionView, SIGNAL(currentChanged(Akonadi::Collection)),
             this, SLOT(slotCurrentCollectionChanged(Akonadi::Collection)));
 #endif
-    KSelectionProxyModel *selectionProxyModel =
-        new KSelectionProxyModel(mCollectionSelectionModel, this);
+    KSelectionProxyModel *selectionProxyModel
+        = new KSelectionProxyModel(mCollectionSelectionModel, this);
     selectionProxyModel->setSourceModel(GlobalContactModel::instance()->model());
     selectionProxyModel->setFilterBehavior(KSelectionProxyModel::ChildrenOfExactSelection);
 
@@ -126,7 +126,7 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
 
 #endif
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
-    mContactsFilterModel->setSourceModel(/*mCategoryFilterModel*/mItemTree);
+    mContactsFilterModel->setSourceModel(/*mCategoryFilterModel*/ mItemTree);
     mItemView->setModel(mContactsFilterModel);
     mAddressbookQuickWidget->addressBookModel()->setSourceModel(mContactsFilterModel);
     //mItemView->setXmlGuiClient(guiClient);
@@ -180,7 +180,6 @@ AddressBookMainWidget::AddressBookMainWidget(QWidget *parent)
 
 AddressBookMainWidget::~AddressBookMainWidget()
 {
-
 }
 
 void AddressBookMainWidget::itemSelected(const Akonadi::Item &item)
@@ -207,9 +206,9 @@ void AddressBookMainWidget::initGrantleeThemeName()
 void AddressBookMainWidget::setupAction(KActionCollection *collection)
 {
     mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
-            QStringLiteral("theme.desktop"),
-            collection,
-            QStringLiteral("kaddressbook/viewertemplates/"));
+                                                            QStringLiteral("theme.desktop"),
+                                                            collection,
+                                                            QStringLiteral("kaddressbook/viewertemplates/"));
     mGrantleeThemeManager->setDownloadNewStuffConfigFile(QStringLiteral("kaddressbook_themes.knsrc"));
     //connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     //connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
@@ -292,4 +291,3 @@ void AddressBookMainWidget::setupGui()
 
     mContactGroupDetails->setContactGroupFormatter(mGroupFormatter);
 }
-

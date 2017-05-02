@@ -23,12 +23,10 @@
 #include <KCModule>
 
 #include <QVariant>
-namespace PimCommon
-{
+namespace PimCommon {
 class ConfigurePluginsWidget;
 }
-namespace KAddressBook
-{
+namespace KAddressBook {
 class KCMKaddressbookPluginsConfig : public KCModule
 {
     Q_OBJECT

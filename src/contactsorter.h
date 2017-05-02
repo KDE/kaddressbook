@@ -26,8 +26,7 @@
 class ContactSorter
 {
 public:
-    explicit ContactSorter(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field,
-                           Qt::SortOrder sortOrder = Qt::AscendingOrder);
+    explicit ContactSorter(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field, Qt::SortOrder sortOrder = Qt::AscendingOrder);
 
     void sort(KContacts::Addressee::List &contacts) const;
 

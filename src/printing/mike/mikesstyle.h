@@ -27,9 +27,7 @@
 
 #include "printstyle.h"
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class PrintProgress;
 
 class MikesStyle : public PrintStyle
@@ -51,7 +49,6 @@ public:
     PrintStyle *create() const Q_DECL_OVERRIDE;
     QString description() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

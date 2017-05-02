@@ -24,12 +24,10 @@ using namespace Domain;
 
 ContactGroup::ContactGroup()
 {
-
 }
 
 ContactGroup::~ContactGroup()
 {
-
 }
 
 QString ContactGroup::groupName() const

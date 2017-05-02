@@ -43,9 +43,9 @@ KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVari
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
 
-    QAction *action =
-        new QAction(QIcon::fromTheme(QStringLiteral("contact-new")),
-                    i18nc("@action:inmenu", "New Contact..."), this);
+    QAction *action
+        = new QAction(QIcon::fromTheme(QStringLiteral("contact-new")),
+                      i18nc("@action:inmenu", "New Contact..."), this);
     actionCollection()->addAction(QStringLiteral("new_contact"), action);
     connect(action, &QAction::triggered, this, &KAddressBookPlugin::slotNewContact);
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_C));
@@ -56,9 +56,9 @@ KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVari
               "You will be presented with a dialog where you can create a new contact."));
     insertNewAction(action);
 
-    action =
-        new QAction(QIcon::fromTheme(QStringLiteral("user-group-new")),
-                    i18nc("@action:inmenu", "New Contact Group..."), this);
+    action
+        = new QAction(QIcon::fromTheme(QStringLiteral("user-group-new")),
+                      i18nc("@action:inmenu", "New Contact Group..."), this);
     actionCollection()->addAction(QStringLiteral("new_contactgroup"), action);
     connect(action, &QAction::triggered, this, &KAddressBookPlugin::slotNewContactGroup);
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_G));

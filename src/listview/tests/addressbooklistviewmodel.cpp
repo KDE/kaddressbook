@@ -22,12 +22,10 @@
 AddressBookListViewModel::AddressBookListViewModel(QObject *parent)
     : QIdentityProxyModel(parent)
 {
-
 }
 
 AddressBookListViewModel::~AddressBookListViewModel()
 {
-
 }
 
 QHash<int, QByteArray> AddressBookListViewModel::roleNames() const

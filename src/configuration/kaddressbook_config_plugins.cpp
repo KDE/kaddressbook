@@ -29,7 +29,8 @@
 
 using namespace KAddressBook;
 
-K_PLUGIN_FACTORY(KCMKaddressbookPluginsConfigFactory, registerPlugin<KCMKaddressbookPluginsConfig>();)
+K_PLUGIN_FACTORY(KCMKaddressbookPluginsConfigFactory, registerPlugin<KCMKaddressbookPluginsConfig>();
+                 )
 
 KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)

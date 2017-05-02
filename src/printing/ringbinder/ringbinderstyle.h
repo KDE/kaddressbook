@@ -28,9 +28,7 @@
 
 #include "printstyle.h"
 
-namespace KABPrinting
-{
-
+namespace KABPrinting {
 class RingBinderStyleAppearanceForm;
 
 class RingBinderPrintStyle : public PrintStyle
@@ -53,7 +51,6 @@ public:
     PrintStyle *create() const Q_DECL_OVERRIDE;
     QString description() const Q_DECL_OVERRIDE;
 };
-
 }
 
 #endif

@@ -25,12 +25,10 @@
 ContactGroupTest::ContactGroupTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 ContactGroupTest::~ContactGroupTest()
 {
-
 }
 
 void ContactGroupTest::shouldHaveDefaultValue()

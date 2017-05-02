@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "manageshowcollectionproperties.h"
 #include "mainwidget.h"
 #include "kaddressbook_debug.h"
@@ -32,8 +31,8 @@
 #include <KLocalizedString>
 
 ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainWidget, QObject *parent)
-    : QObject(parent),
-      mMainWidget(mainWidget)
+    : QObject(parent)
+    , mMainWidget(mainWidget)
 {
     static bool pageRegistered = false;
 
@@ -50,7 +49,6 @@ ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainW
 
 ManageShowCollectionProperties::~ManageShowCollectionProperties()
 {
-
 }
 
 void ManageShowCollectionProperties::showCollectionProperties()
@@ -82,7 +80,7 @@ void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job
         }
     }
     Akonadi::CollectionFetchJob *fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(),
-            Akonadi::CollectionFetchJob::Base);
+                                                                         Akonadi::CollectionFetchJob::Base);
     fetch->fetchScope().setIncludeStatistics(true);
     connect(fetch, &KJob::result,
             this, &ManageShowCollectionProperties::slotCollectionPropertiesFinished);

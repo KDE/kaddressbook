@@ -27,7 +27,8 @@
 #include <QPushButton>
 
 ContactSwitcher::ContactSwitcher(QWidget *parent)
-    : QWidget(parent), mView(nullptr)
+    : QWidget(parent)
+    , mView(nullptr)
 {
     QHBoxLayout *layout = new QHBoxLayout(this);
 
@@ -84,8 +85,8 @@ void ContactSwitcher::nextClicked()
     }
 
     mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0),
-            QItemSelectionModel::Rows |
-            QItemSelectionModel::ClearAndSelect);
+                                             QItemSelectionModel::Rows
+                                             |QItemSelectionModel::ClearAndSelect);
 
     updateStatus();
 }
@@ -104,8 +105,8 @@ void ContactSwitcher::previousClicked()
     }
 
     mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0),
-            QItemSelectionModel::Rows |
-            QItemSelectionModel::ClearAndSelect);
+                                             QItemSelectionModel::Rows
+                                             |QItemSelectionModel::ClearAndSelect);
 
     updateStatus();
 }
@@ -133,4 +134,3 @@ void ContactSwitcher::updateStatus()
         mStatusLabel->clear();
     }
 }
-

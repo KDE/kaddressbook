@@ -69,12 +69,12 @@ private:
 };
 
 CategorySelectWidgetPrivate::CategorySelectWidgetPrivate(CategorySelectWidget *parent)
-    : QObject(),
-      tagModel(nullptr),
-      rowOffset(0),
-      updateTimer(nullptr),
-      checkCombo(nullptr),
-      q_ptr(parent)
+    : QObject()
+    , tagModel(nullptr)
+    , rowOffset(0)
+    , updateTimer(nullptr)
+    , checkCombo(nullptr)
+    , q_ptr(parent)
 {
 }
 
@@ -110,7 +110,7 @@ void CategorySelectWidgetPrivate::init()
     connect(updateTimer, &QTimer::timeout, this, &CategorySelectWidgetPrivate::slotCheckedItemsTimer);
 
     QToolButton *but = new QToolButton(q);
-    but ->setAutoRaise(true);
+    but->setAutoRaise(true);
     but->setIcon(QIcon::fromTheme(QStringLiteral("edit-undo")));
     but->setToolTip(i18nc("@action:button", "Reset category filter"));
     connect(but, &QToolButton::clicked, this, &CategorySelectWidgetPrivate::slotSelectAll);
@@ -184,8 +184,8 @@ void CategorySelectWidgetPrivate::slotTagsInserted(const QModelIndex &parent, in
         if (parent != QModelIndex()) {
             const Tag::Id parentId = tagModel->data(idx, TagModel::IdRole).value<Tag::Id>();
             QModelIndexList matchList = itemModel()->match(itemModel()->index(0, 0), FILTER_ROLE,
-                                        parentId, 1,
-                                        Qt::MatchExactly | Qt::MatchRecursive);
+                                                           parentId, 1,
+                                                           Qt::MatchExactly | Qt::MatchRecursive);
             if (matchList.count() == 1) {       // found the parent tag
                 QModelIndex parentIndex = matchList.at(0);
                 itemModel()->itemFromIndex(parentIndex)->appendRow(it);
@@ -281,8 +281,8 @@ QList<Akonadi::Tag::Id> CategorySelectWidgetPrivate::filterTags() const
 }
 
 CategorySelectWidget::CategorySelectWidget(QWidget *parent)
-    : QWidget(parent),
-      d_ptr(new CategorySelectWidgetPrivate(this))
+    : QWidget(parent)
+    , d_ptr(new CategorySelectWidgetPrivate(this))
 {
     Q_D(CategorySelectWidget);
     d->init();

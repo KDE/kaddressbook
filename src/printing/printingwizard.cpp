@@ -26,7 +26,6 @@
 #include "printingwizard.h"
 #include "settings.h"
 
-
 #include <KAddressBookImportExport/KAddressBookContactSelectionWidget>
 #include "contactsorter.h"
 #include "printprogress.h"
@@ -52,17 +51,18 @@
 
 using namespace KABPrinting;
 
-PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selectionModel,
-                               QWidget *parent)
-    : KAssistantDialog(parent), mPrinter(printer), mStyle(nullptr)
+PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selectionModel, QWidget *parent)
+    : KAssistantDialog(parent)
+    , mPrinter(printer)
+    , mStyle(nullptr)
 {
     setWindowTitle(i18n("Print Contacts"));
 
     mSelectionPage = new KAddressBookImportExport::KAddressBookContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
 
-    KPageWidgetItem *mSelectionPageItem =
-        new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
+    KPageWidgetItem *mSelectionPageItem
+        = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
     addPage(mSelectionPageItem);
     setAppropriate(mSelectionPageItem, true);
 
@@ -77,9 +77,9 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
         slotStyleSelected(Settings::self()->printingStyle());
     }
 
-    mStylePage->setSortOrder(Settings::self()->sortOrder() == 0 ?
-                             Qt::AscendingOrder :
-                             Qt::DescendingOrder);
+    mStylePage->setSortOrder(Settings::self()->sortOrder() == 0
+                             ? Qt::AscendingOrder
+                             : Qt::DescendingOrder);
     readConfig();
 }
 
@@ -234,4 +234,3 @@ void PrintingWizard::print()
     button(QDialogButtonBox::Cancel)->setEnabled(false);
     mStyle->print(contacts, mProgress);
 }
-

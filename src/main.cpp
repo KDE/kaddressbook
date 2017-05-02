@@ -36,10 +36,11 @@ class KAddressBookApplication : public KontactInterface::PimUniqueApplication
 {
 public:
     KAddressBookApplication(int &argc, char **argv[])
-        : KontactInterface::PimUniqueApplication(argc, argv),
-          mMainWindow(nullptr)
+        : KontactInterface::PimUniqueApplication(argc, argv)
+        , mMainWindow(nullptr)
     {
     }
+
     int activate(const QStringList &arguments, const QString &) Q_DECL_OVERRIDE;
 
 private:

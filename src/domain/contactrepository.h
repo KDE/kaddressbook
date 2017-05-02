@@ -23,8 +23,7 @@
 #include "kaddressbookdomain_export.h"
 class KJob;
 
-namespace Domain
-{
+namespace Domain {
 class Contact;
 class KADDRESSBOOKDOMAIN_EXPORT ContactRepository
 {
