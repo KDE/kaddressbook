@@ -1,11 +1,13 @@
 <html>
 
-<h1>KAddressBook</h1>
+<h1>AddressBook</h1>
 {% if contacts %}
 {% for contact in contacts %}
 <h1>{{ contact.realName|safe }}</h1>
 <p>{{ contact.emails|safe }}</p>
+{% if contact.note %}
 <p>{{ contact.note|safe }}</p>
+{% endif %}
 <br>
 <br>
 {% endfor %}
