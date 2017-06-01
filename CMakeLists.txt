@@ -85,15 +85,15 @@ set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Sear
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 add_definitions(-DQT_USE_QSTRINGBUILDER)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
-add_definitions( -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 )
+add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 
 find_package(KF5Prison ${KF5_VERSION} CONFIG)
 set_package_properties(Prison PROPERTIES DESCRIPTION "The Prison library" URL "http://projects.kde.org/prison" TYPE OPTIONAL PURPOSE "Needed to show mobile barcodes of your contacts")
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
-add_definitions( -DQT_NO_CAST_FROM_ASCII )
-add_definitions( -DQT_NO_CAST_TO_ASCII )
-add_definitions( -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT )
+add_definitions(-DQT_NO_CAST_FROM_ASCII)
+add_definitions(-DQT_NO_CAST_TO_ASCII)
+add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 
 add_subdirectory(src)
 add_subdirectory(kontactplugin)
