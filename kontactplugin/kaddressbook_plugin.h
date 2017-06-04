@@ -36,8 +36,8 @@ public:
     {
     }
 
-    void loadCommandLineOptions(QCommandLineParser *parser) Q_DECL_OVERRIDE;
-    int activate(const QStringList &args, const QString &workingDir) Q_DECL_OVERRIDE;
+    void loadCommandLineOptions(QCommandLineParser *parser) override;
+    int activate(const QStringList &args, const QString &workingDir) override;
 };
 
 class KAddressBookPlugin : public KontactInterface::Plugin
@@ -48,17 +48,17 @@ public:
     KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &);
     ~KAddressBookPlugin();
 
-    bool isRunningStandalone() const Q_DECL_OVERRIDE;
-    int weight() const Q_DECL_OVERRIDE
+    bool isRunningStandalone() const override;
+    int weight() const override
     {
         return 300;
     }
 
-    QStringList invisibleToolbarActions() const Q_DECL_OVERRIDE;
-    void shortcutChanged() Q_DECL_OVERRIDE;
+    QStringList invisibleToolbarActions() const override;
+    void shortcutChanged() override;
 
 protected:
-    KParts::ReadOnlyPart *createPart() Q_DECL_OVERRIDE;
+    KParts::ReadOnlyPart *createPart() override;
 
 private Q_SLOTS:
     void slotNewContact();

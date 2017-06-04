@@ -40,7 +40,7 @@ public:
     /**
      * prints the contacts
      */
-    void print(const KContacts::Addressee::List &, PrintProgress *) Q_DECL_OVERRIDE;
+    void print(const KContacts::Addressee::List &, PrintProgress *) override;
 
 private:
     QString contactsToHtml(const KContacts::Addressee::List &contacts) const;
@@ -71,8 +71,8 @@ class CompactStyleFactory : public PrintStyleFactory
 public:
     explicit CompactStyleFactory(PrintingWizard *parent);
 
-    PrintStyle *create() const Q_DECL_OVERRIDE;
-    QString description() const Q_DECL_OVERRIDE;
+    PrintStyle *create() const override;
+    QString description() const override;
 };
 }
 

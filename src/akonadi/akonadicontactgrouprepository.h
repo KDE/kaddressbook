@@ -34,9 +34,9 @@ public:
     AkonadiContactGroupRepository();
     ~AkonadiContactGroupRepository();
 
-    KJob *createContactGroup(Domain::ContactGroup *contactGroup) Q_DECL_OVERRIDE;
-    KJob *removeContactGroup(Domain::ContactGroup *contactGroup) Q_DECL_OVERRIDE;
-    KJob *updateContactGroup(Domain::ContactGroup *contactGroup) Q_DECL_OVERRIDE;
+    KJob *createContactGroup(Domain::ContactGroup *contactGroup) override;
+    KJob *removeContactGroup(Domain::ContactGroup *contactGroup) override;
+    KJob *updateContactGroup(Domain::ContactGroup *contactGroup) override;
 };
 
 #endif // AKONADICONTACTGROUPREPOSITORY_H

@@ -37,7 +37,7 @@ public:
     explicit RingBinderPrintStyle(PrintingWizard *parent);
     ~RingBinderPrintStyle();
 
-    void print(const KContacts::Addressee::List &contacts, PrintProgress *) Q_DECL_OVERRIDE;
+    void print(const KContacts::Addressee::List &contacts, PrintProgress *) override;
 
 private:
     RingBinderStyleAppearanceForm *mPageAppearance;
@@ -48,8 +48,8 @@ class RingBinderPrintStyleFactory : public PrintStyleFactory
 public:
     explicit RingBinderPrintStyleFactory(PrintingWizard *parent);
 
-    PrintStyle *create() const Q_DECL_OVERRIDE;
-    QString description() const Q_DECL_OVERRIDE;
+    PrintStyle *create() const override;
+    QString description() const override;
 };
 }
 

@@ -56,7 +56,7 @@ public:
     /**
      * Returns the size hint of the quick search widget.
      */
-    QSize sizeHint() const Q_DECL_OVERRIDE;
+    QSize sizeHint() const override;
 
     void updateQuickSearchText(const QString &text);
 
@@ -85,7 +85,7 @@ private Q_SLOTS:
     void delayedTextChanged();
 
 protected:
-    void keyPressEvent(QKeyEvent *) Q_DECL_OVERRIDE;
+    void keyPressEvent(QKeyEvent *) override;
 
 private:
     QLineEdit *mEdit;

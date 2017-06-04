@@ -36,7 +36,7 @@ public:
 private Q_SLOTS:
     void configure();
     void configureKeyBindings();
-    void configureToolbars() Q_DECL_OVERRIDE;
+    void configureToolbars() override;
     void newToolbarConfig();
 
     void slotToggleMenubar(bool dontShowWarning = true);

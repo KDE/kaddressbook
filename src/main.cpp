@@ -41,7 +41,7 @@ public:
     {
     }
 
-    int activate(const QStringList &arguments, const QString &) Q_DECL_OVERRIDE;
+    int activate(const QStringList &arguments, const QString &) override;
 
 private:
     MainWindow *mMainWindow;

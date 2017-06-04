@@ -31,9 +31,9 @@ public:
     AkonadiContactRepository();
     ~AkonadiContactRepository();
 
-    KJob *createContact(Domain::Contact *contact) Q_DECL_OVERRIDE;
-    KJob *removeContact(Domain::Contact *contact) Q_DECL_OVERRIDE;
-    KJob *updateContact(Domain::Contact *contact) Q_DECL_OVERRIDE;
+    KJob *createContact(Domain::Contact *contact) override;
+    KJob *removeContact(Domain::Contact *contact) override;
+    KJob *updateContact(Domain::Contact *contact) override;
 };
 
 #endif // AKONADICONTACTREPOSITORY_H
