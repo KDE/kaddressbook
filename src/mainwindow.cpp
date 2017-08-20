@@ -34,6 +34,7 @@
 #include <KMessageBox>
 #include <KToggleAction>
 #include <QMenuBar>
+#include <QPointer>
 
 MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)
@@ -97,9 +98,10 @@ void MainWindow::configureToolbars()
     KConfigGroup grp = KSharedConfig::openConfig()->group("MainWindow");
     saveMainWindowSettings(grp);
 
-    KEditToolBar dlg(factory());
-    connect(&dlg, &KEditToolBar::newToolBarConfig, this, &MainWindow::newToolbarConfig);
-    dlg.exec();
+    QPointer<KEditToolBar> dlg = new KEditToolBar(factory());
+    connect(dlg, &KEditToolBar::newToolBarConfig, this, &MainWindow::newToolbarConfig);
+    dlg->exec();
+    delete dlg;
 }
 
 void MainWindow::newToolbarConfig()

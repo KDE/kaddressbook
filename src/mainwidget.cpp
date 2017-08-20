@@ -374,12 +374,13 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
 void MainWidget::configure()
 {
-    KCMultiDialog dlg(this);
-    dlg.addModule(QStringLiteral("akonadicontact_actions.desktop"));
-    dlg.addModule(QStringLiteral("kcmldap.desktop"));
-    dlg.addModule(QStringLiteral("kaddressbook_config_plugins.desktop"));
+    QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
+    dlg->addModule(QStringLiteral("akonadicontact_actions.desktop"));
+    dlg->addModule(QStringLiteral("kcmldap.desktop"));
+    dlg->addModule(QStringLiteral("kaddressbook_config_plugins.desktop"));
 
-    dlg.exec();
+    dlg->exec();
+    delete dlg;
 }
 
 void MainWidget::handleCommandLine(const QStringList &arguments)
@@ -717,10 +718,10 @@ void MainWidget::printPreview()
     printer.setOutputFormat(QPrinter::PdfFormat);
     printer.setCollateCopies(true);
 
-    PimCommon::KPimPrintPreviewDialog previewdlg(&printer, this);
+    QPointer<PimCommon::KPimPrintPreviewDialog> previewdlg = new PimCommon::KPimPrintPreviewDialog(&printer, this);
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());
-    connect(&previewdlg, &QPrintPreviewDialog::paintRequested, this, [&wizard]() {
+    connect(previewdlg, &QPrintPreviewDialog::paintRequested, this, [&wizard]() {
         wizard.print();
     });
 
@@ -729,8 +730,9 @@ void MainWidget::printPreview()
         Settings::self()->setDefaultFileName(printer.outputFileName());
         Settings::self()->setPrintingStyle(wizard.printingStyle());
         Settings::self()->setSortOrder(wizard.sortOrder());
-        previewdlg.exec();
+        previewdlg->exec();
     }
+    delete previewdlg;
 }
 
 void MainWidget::print()
