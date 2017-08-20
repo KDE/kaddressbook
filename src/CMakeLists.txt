@@ -149,7 +149,5 @@ install(FILES
     DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/viewertemplates/default/
     )
 
-install(FILES data/kaddressbook_themes.knsrc DESTINATION ${KDE_INSTALL_CONFDIR} )
-
 install(DIRECTORY printing/grantlee/themes/ DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/ )
 
