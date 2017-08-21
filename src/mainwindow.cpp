@@ -99,7 +99,7 @@ void MainWindow::configureToolbars()
     saveMainWindowSettings(grp);
 
     QPointer<KEditToolBar> dlg = new KEditToolBar(factory());
-    connect(dlg, &KEditToolBar::newToolBarConfig, this, &MainWindow::newToolbarConfig);
+    connect(dlg.data(), &KEditToolBar::newToolBarConfig, this, &MainWindow::newToolbarConfig);
     dlg->exec();
     delete dlg;
 }

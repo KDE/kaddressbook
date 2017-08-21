@@ -721,7 +721,7 @@ void MainWidget::printPreview()
     QPointer<PimCommon::KPimPrintPreviewDialog> previewdlg = new PimCommon::KPimPrintPreviewDialog(&printer, this);
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());
-    connect(previewdlg, &QPrintPreviewDialog::paintRequested, this, [&wizard]() {
+    connect(previewdlg.data(), &QPrintPreviewDialog::paintRequested, this, [&wizard]() {
         wizard.print();
     });
 
