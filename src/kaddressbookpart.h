@@ -45,7 +45,7 @@ protected:
     void guiActivateEvent(KParts::GUIActivateEvent *) override;
     void initAction();
 private:
-    MainWidget *mMainWidget;
+    MainWidget *mMainWidget = nullptr;
 };
 
 #endif

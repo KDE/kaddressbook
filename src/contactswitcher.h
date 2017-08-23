@@ -69,10 +69,10 @@ private Q_SLOTS:
     void updateStatus();
 
 private:
-    QAbstractItemView *mView;
-    QPushButton *mNextButton;
-    QPushButton *mPreviousButton;
-    QLabel *mStatusLabel;
+    QAbstractItemView *mView = nullptr;
+    QPushButton *mNextButton = nullptr;
+    QPushButton *mPreviousButton = nullptr;
+    QLabel *mStatusLabel = nullptr;
 };
 
 #endif

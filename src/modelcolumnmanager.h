@@ -71,9 +71,9 @@ private Q_SLOTS:
     void adaptHeaderView();
 
 private:
-    Akonadi::ContactsTreeModel *mModel;
+    Akonadi::ContactsTreeModel *mModel = nullptr;
     Akonadi::ContactsTreeModel::Columns mColumns;
-    QWidget *mWidget;
+    QWidget *mWidget = nullptr;
 };
 
 #endif

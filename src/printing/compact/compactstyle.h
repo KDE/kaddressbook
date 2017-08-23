@@ -45,7 +45,7 @@ public:
 private:
     QString contactsToHtml(const KContacts::Addressee::List &contacts) const;
 
-    CompactStyleForm *mPageSettings;
+    CompactStyleForm *mPageSettings = nullptr;
 
     /**
      * various settings

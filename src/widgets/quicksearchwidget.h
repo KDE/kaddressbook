@@ -88,8 +88,8 @@ protected:
     void keyPressEvent(QKeyEvent *) override;
 
 private:
-    QLineEdit *mEdit;
-    QTimer *mTimer;
+    QLineEdit *mEdit = nullptr;
+    QTimer *mTimer = nullptr;
 };
 
 #endif

@@ -42,7 +42,7 @@ public:
     void print(const KContacts::Addressee::List &contacts, PrintProgress *) override;
 
 private:
-    AppearancePage *mPageAppearance;
+    AppearancePage *mPageAppearance = nullptr;
 };
 
 class DetailledPrintStyleFactory : public PrintStyleFactory

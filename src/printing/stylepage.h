@@ -99,10 +99,10 @@ private:
     void initGUI();
     void initFieldCombo();
 
-    KComboBox *mFieldCombo;
-    KComboBox *mSortTypeCombo;
-    KComboBox *mStyleCombo;
-    QLabel *mPreview;
+    KComboBox *mFieldCombo = nullptr;
+    KComboBox *mSortTypeCombo = nullptr;
+    KComboBox *mStyleCombo = nullptr;
+    QLabel *mPreview = nullptr;
 
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields mFields;
 };

@@ -132,42 +132,42 @@ private:
 
     QAbstractItemModel *allContactsModel();
 
-    Akonadi::EntityMimeTypeFilterModel *mCollectionTree;
-    Akonadi::EntityMimeTypeFilterModel *mItemTree;
-    Akonadi::EntityMimeTypeFilterModel *mAllContactsModel;
-    Akonadi::ContactsFilterProxyModel *mContactsFilterModel;
-    CategoryFilterProxyModel *mCategoryFilterModel;
+    Akonadi::EntityMimeTypeFilterModel *mCollectionTree = nullptr;
+    Akonadi::EntityMimeTypeFilterModel *mItemTree = nullptr;
+    Akonadi::EntityMimeTypeFilterModel *mAllContactsModel = nullptr;
+    Akonadi::ContactsFilterProxyModel *mContactsFilterModel = nullptr;
+    CategoryFilterProxyModel *mCategoryFilterModel = nullptr;
 
-    QuickSearchWidget *mQuickSearchWidget;
-    Akonadi::EntityTreeView *mCollectionView;
-    Akonadi::EntityTreeView *mItemView;
-    CategorySelectWidget *mCategorySelectWidget;
+    QuickSearchWidget *mQuickSearchWidget = nullptr;
+    Akonadi::EntityTreeView *mCollectionView = nullptr;
+    Akonadi::EntityTreeView *mItemView = nullptr;
+    CategorySelectWidget *mCategorySelectWidget = nullptr;
 
-    QWidget *mDetailsPane;
-    QStackedWidget *mDetailsViewStack;
-    ContactSwitcher *mContactSwitcher;
+    QWidget *mDetailsPane = nullptr;
+    QStackedWidget *mDetailsViewStack = nullptr;
+    ContactSwitcher *mContactSwitcher = nullptr;
 
-    QSplitter *mMainWidgetSplitter1;
-    QSplitter *mMainWidgetSplitter2;
-    Akonadi::ContactViewer *mContactDetails;
-    Akonadi::ContactGroupViewer *mContactGroupDetails;
-    QWidget *mEmptyDetails;
-    Akonadi::StandardContactActionManager *mActionManager;
-    QItemSelectionModel *mCollectionSelectionModel;
+    QSplitter *mMainWidgetSplitter1 = nullptr;
+    QSplitter *mMainWidgetSplitter2 = nullptr;
+    Akonadi::ContactViewer *mContactDetails = nullptr;
+    Akonadi::ContactGroupViewer *mContactGroupDetails = nullptr;
+    QWidget *mEmptyDetails = nullptr;
+    Akonadi::StandardContactActionManager *mActionManager = nullptr;
+    QItemSelectionModel *mCollectionSelectionModel = nullptr;
 
-    QActionGroup *mViewModeGroup;
+    QActionGroup *mViewModeGroup = nullptr;
 
-    ModelColumnManager *mModelColumnManager;
-    KXMLGUIClient *mXmlGuiClient;
-    KAddressBookGrantlee::GrantleeContactFormatter *mFormatter;
-    KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter;
-    GrantleeTheme::ThemeManager *mGrantleeThemeManager;
+    ModelColumnManager *mModelColumnManager = nullptr;
+    KXMLGUIClient *mXmlGuiClient = nullptr;
+    KAddressBookGrantlee::GrantleeContactFormatter *mFormatter = nullptr;
+    KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter = nullptr;
+    GrantleeTheme::ThemeManager *mGrantleeThemeManager = nullptr;
     Akonadi::EntityTreeModel *entityTreeModel() const;
-    QAction *mQuickSearchAction;
-    QAction *mServerSideSubscription;
-    KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager;
+    QAction *mQuickSearchAction = nullptr;
+    QAction *mServerSideSubscription = nullptr;
+    KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager = nullptr;
     QList<KAddressBookImportExport::KAddressBookImportExportPluginInterface *> mImportExportPluginInterfaceList;
-    ManageShowCollectionProperties *mManageShowCollectionProperties;
+    ManageShowCollectionProperties *mManageShowCollectionProperties = nullptr;
 };
 
 #endif

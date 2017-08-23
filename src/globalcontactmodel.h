@@ -57,9 +57,9 @@ private:
 
     static GlobalContactModel *mInstance;
 
-    Akonadi::Session *mSession;
-    Akonadi::ChangeRecorder *mMonitor;
-    Akonadi::ContactsTreeModel *mModel;
+    Akonadi::Session *mSession = nullptr;
+    Akonadi::ChangeRecorder *mMonitor = nullptr;
+    Akonadi::ContactsTreeModel *mModel = nullptr;
 };
 
 #endif

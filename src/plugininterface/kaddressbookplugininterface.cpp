@@ -28,7 +28,6 @@
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent)
-    , mMainWidget(nullptr)
 {
     setPluginName(QStringLiteral("kaddressbook"));
     setServiceTypeName(QStringLiteral("KAddressBook/MainViewPlugin"));

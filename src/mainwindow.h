@@ -43,8 +43,8 @@ private Q_SLOTS:
 private:
     void initActions();
 
-    MainWidget *mMainWidget;
-    KToggleAction *mHideMenuBarAction;
+    MainWidget *mMainWidget = nullptr;
+    KToggleAction *mHideMenuBarAction = nullptr;
 };
 
 #endif

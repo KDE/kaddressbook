@@ -153,7 +153,7 @@ protected:
     void addPage(QWidget *page, const QString &title);
 
 private:
-    PrintingWizard *mWizard;
+    PrintingWizard *mWizard = nullptr;
     QPixmap mPreview;
     QList<QWidget *> mPageList;
     QHash<QWidget *, KPageWidgetItem *> mPageItems;
