@@ -130,6 +130,11 @@ bool KAddressBookPlugin::isRunningStandalone() const
     return mUniqueAppWatcher->isRunningStandalone();
 }
 
+int KAddressBookPlugin::weight() const
+{
+    return 300;
+}
+
 QStringList KAddressBookPlugin::invisibleToolbarActions() const
 {
     QStringList actions;

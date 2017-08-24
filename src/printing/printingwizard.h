@@ -124,12 +124,12 @@ protected:
     };
 
     QList<PrintStyleDefinition *> mPrintStyleDefinition;
-    QPrinter *mPrinter;
-    PrintStyle *mStyle;
-    PrintProgress *mProgress;
+    QPrinter *mPrinter = nullptr;
+    PrintStyle *mStyle = nullptr;
+    PrintProgress *mProgress = nullptr;
 
-    StylePage *mStylePage;
-    KAddressBookImportExport::KAddressBookContactSelectionWidget *mSelectionPage;
+    StylePage *mStylePage = nullptr;
+    KAddressBookImportExport::KAddressBookContactSelectionWidget *mSelectionPage = nullptr;
 
     /**
      * Overloaded accept slot. This is used to do the actual

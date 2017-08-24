@@ -49,10 +49,7 @@ public:
     ~KAddressBookPlugin();
 
     bool isRunningStandalone() const override;
-    int weight() const override
-    {
-        return 300;
-    }
+    int weight() const override;
 
     QStringList invisibleToolbarActions() const override;
     void shortcutChanged() override;

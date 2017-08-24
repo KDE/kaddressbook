@@ -182,7 +182,7 @@ public:
     virtual QString description() const = 0;
 
 protected:
-    PrintingWizard *mParent;
+    PrintingWizard *mParent = nullptr;
 };
 }
 
