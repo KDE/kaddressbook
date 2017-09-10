@@ -657,8 +657,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
 #if defined(HAVE_PRISON)
-    KToggleAction *qrtoggleAction;
-    qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
+    KToggleAction *qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
     qrtoggleAction->setText(i18n("Show QR Codes"));
     qrtoggleAction->setWhatsThis(i18n("Show QR Codes in the contact."));
     connect(qrtoggleAction, &KToggleAction::toggled, this, &MainWidget::setQRCodeShow);

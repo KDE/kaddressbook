@@ -119,8 +119,8 @@ protected:
         {
         }
 
-        PrintStyleFactory *printstyleFactory;
-        PrintStyle *printStyle;
+        PrintStyleFactory *printstyleFactory = nullptr;
+        PrintStyle *printStyle = nullptr;
     };
 
     QList<PrintStyleDefinition *> mPrintStyleDefinition;

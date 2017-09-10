@@ -43,10 +43,10 @@ class CategorySelectWidgetPrivate : public QObject
 public:
     explicit CategorySelectWidgetPrivate(CategorySelectWidget *parent);
 
-    Akonadi::TagModel *tagModel;
+    Akonadi::TagModel *tagModel = nullptr;
     int rowOffset;
-    QTimer *updateTimer;
-    KPIM::KCheckComboBox *checkCombo;
+    QTimer *updateTimer = nullptr;
+    KPIM::KCheckComboBox *checkCombo = nullptr;
 
     void init();
     QStandardItemModel *itemModel() const;

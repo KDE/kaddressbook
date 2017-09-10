@@ -62,7 +62,7 @@ private Q_SLOTS:
     void slotNewContactGroup();
 
 private:
-    KontactInterface::UniqueAppWatcher *mUniqueAppWatcher;
+    KontactInterface::UniqueAppWatcher *mUniqueAppWatcher = nullptr;
 };
 
 #endif

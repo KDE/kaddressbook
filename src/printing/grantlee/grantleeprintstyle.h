@@ -39,7 +39,7 @@ public:
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
 private:
-    KAddressBookGrantlee::GrantleePrint *mGrantleePrint;
+    KAddressBookGrantlee::GrantleePrint *mGrantleePrint = nullptr;
 };
 
 class GrantleeStyleFactory : public PrintStyleFactory

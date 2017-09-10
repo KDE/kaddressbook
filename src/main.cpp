@@ -44,7 +44,7 @@ public:
     int activate(const QStringList &arguments, const QString &) override;
 
 private:
-    MainWindow *mMainWindow;
+    MainWindow *mMainWindow = nullptr;
 };
 
 int KAddressBookApplication::activate(const QStringList &arguments, const QString &)

@@ -40,7 +40,7 @@ public:
     void print(const KContacts::Addressee::List &contacts, PrintProgress *) override;
 
 private:
-    RingBinderStyleAppearanceForm *mPageAppearance;
+    RingBinderStyleAppearanceForm *mPageAppearance = nullptr;
 };
 
 class RingBinderPrintStyleFactory : public PrintStyleFactory
