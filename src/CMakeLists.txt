@@ -5,9 +5,7 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/printing/
     )
 
-if(KF5Prison_FOUND)
-    add_definitions(-DHAVE_PRISON)
-endif()
+add_definitions(-DHAVE_PRISON)
 
 if (DOMAIN_EXPERIMENTAL)
     add_subdirectory(domain)
@@ -93,13 +91,11 @@ target_link_libraries(kaddressbookprivate
     KF5::AkonadiSearchDebug
     KF5::I18n
     KF5::KaddressbookImportExport
+    KF5::Prison
     )
 
 if(QGpgme_FOUND)
     target_link_libraries(kaddressbookprivate PRIVATE QGpgme)
-endif()
-if(KF5Prison_FOUND)
-    target_link_libraries(kaddressbookprivate PRIVATE KF5::Prison)
 endif()
 
 target_include_directories(kaddressbookprivate PUBLIC "$<BUILD_INTERFACE:${kaddressbook_SOURCE_DIR};${kaddressbook_BINARY_DIR}>")
