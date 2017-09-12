@@ -414,9 +414,7 @@ void MainWidget::delayedInit()
     const KConfigGroup group(Settings::self()->config(), "UiState_ContactView");
     KPIM::UiStateSaver::restoreState(mItemView, group);
 
-#if defined(HAVE_PRISON)
     mXmlGuiClient->actionCollection()->action(QStringLiteral("options_show_qrcodes"))->setChecked(showQRCodes());
-#endif
 
     connect(GlobalContactModel::instance()->model(), &QAbstractItemModel::modelAboutToBeReset,
             this, &MainWidget::saveState);
@@ -656,12 +654,10 @@ void MainWidget::setupActions(KActionCollection *collection)
     action->setWhatsThis(i18n("Select all contacts in the current address book view."));
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
-#if defined(HAVE_PRISON)
     KToggleAction *qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
     qrtoggleAction->setText(i18n("Show QR Codes"));
     qrtoggleAction->setWhatsThis(i18n("Show QR Codes in the contact."));
     connect(qrtoggleAction, &KToggleAction::toggled, this, &MainWidget::setQRCodeShow);
-#endif
 
     mViewModeGroup = new QActionGroup(this);
 
@@ -808,18 +804,13 @@ void MainWidget::selectFirstItem()
 
 bool MainWidget::showQRCodes()
 {
-#if defined(HAVE_PRISON)
     KConfig config(QStringLiteral("akonadi_contactrc"));
     KConfigGroup group(&config, QStringLiteral("View"));
     return group.readEntry("QRCodes", true);
-#else
-    return true;
-#endif
 }
 
 void MainWidget::setQRCodeShow(bool on)
 {
-#if defined(HAVE_PRISON)
     // must write the configuration setting first before updating the view.
     KConfig config(QStringLiteral("akonadi_contactrc"));
     KConfigGroup group(&config, QStringLiteral("View"));
@@ -829,9 +820,6 @@ void MainWidget::setQRCodeShow(bool on)
         mFormatter->setShowQRCode(on);
         mContactDetails->setShowQRCode(on);
     }
-#else
-    Q_UNUSED(on);
-#endif
 }
 
 Akonadi::Item::List MainWidget::selectedItems()

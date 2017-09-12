@@ -5,7 +5,6 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/printing/
     )
 
-add_definitions(-DHAVE_PRISON)
 
 if (DOMAIN_EXPERIMENTAL)
     add_subdirectory(domain)
