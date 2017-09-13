@@ -31,7 +31,6 @@
 #include <QVBoxLayout>
 
 #include <KComboBox>
-#include <QDialog>
 #include <KLocalizedString>
 
 // helper method to sort contact fields by field label

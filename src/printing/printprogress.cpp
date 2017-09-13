@@ -24,7 +24,6 @@
 #include "printprogress.h"
 
 #include <QApplication>
-#include <QDialog>
 #include <KLocalizedString>
 #include <QTextBrowser>
 

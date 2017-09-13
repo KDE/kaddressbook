@@ -30,7 +30,6 @@
 #include "ui_ds_appearance.h"
 
 #include <KConfig>
-#include <QDialog>
 #include <KLocalizedString>
 #include <KConfigGroup>
 #include <QCheckBox>

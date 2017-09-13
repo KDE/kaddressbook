@@ -30,7 +30,6 @@
 #include <KContacts/Addressee>
 #include <KAssistantDialog>
 
-#include <QStringList>
 
 namespace KAddressBookImportExport {
 class KAddressBookContactSelectionWidget;

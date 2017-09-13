@@ -20,7 +20,6 @@
 #include "kaddressbookmigrateapplication.h"
 
 #include <Kdelibs4ConfigMigrator>
-#include <QDebug>
 
 KAddressBookMigrateApplication::KAddressBookMigrateApplication()
 {

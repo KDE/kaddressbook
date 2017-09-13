@@ -32,7 +32,6 @@
 #include <QIcon>
 
 #include <QDBusConnection>
-#include <QDBusMessage>
 #include <QDBusReply>
 #include <QStandardPaths>
 

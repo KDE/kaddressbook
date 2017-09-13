@@ -21,9 +21,8 @@
 #include "mainwindow.h"
 #include "mainwidget.h"
 #include "settings.h"
-
-#include <KConfigGroup>
 #include <KToolBar>
+#include <KConfigGroup>
 #include <QAction>
 #include <KActionCollection>
 #include <KEditToolBar>
@@ -32,7 +31,6 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 #include <KMessageBox>
-#include <KToggleAction>
 #include <QMenuBar>
 #include <QPointer>
 

@@ -83,7 +83,6 @@
 #include <KToggleAction>
 #include <KCMultiDialog>
 #include <KXMLGUIClient>
-#include <KMessageBox>
 
 #include <QActionGroup>
 #include <QHBoxLayout>
@@ -94,7 +93,6 @@
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QDBusConnection>
-#include <QDesktopServices>
 #include <ItemModifyJob>
 #include <KPimPrintPreviewDialog>
 

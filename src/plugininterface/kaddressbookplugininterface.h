@@ -21,7 +21,6 @@
 #define KADDRESSBOOKPLUGININTERFACE_H
 
 #include <QObject>
-#include <QVector>
 
 #include <PimCommonAkonadi/GenericPluginInterface>
 #include <pimcommonakonadi/plugininterface.h>

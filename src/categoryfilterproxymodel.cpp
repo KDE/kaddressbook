@@ -20,7 +20,6 @@
 #include "categoryfilterproxymodel.h"
 
 #include "kaddressbook_debug.h"
-#include <KLocalizedString>
 
 #include <AkonadiCore/entitytreemodel.h>
 #include <AkonadiCore/item.h>

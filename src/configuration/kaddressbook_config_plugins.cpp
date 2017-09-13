@@ -24,8 +24,7 @@
 #include <KLocalizedString>
 #include <PimCommon/ConfigurePluginsWidget>
 #include <PimCommon/ConfigurePluginsListWidget>
-
-#include <QVBoxLayout>
+#include <QHBoxLayout>
 
 using namespace KAddressBook;
 

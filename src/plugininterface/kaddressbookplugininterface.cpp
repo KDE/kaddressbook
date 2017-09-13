@@ -22,7 +22,6 @@
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
 
-#include <KActionCollection>
 
 #include <pimcommon/genericplugin.h>
 
