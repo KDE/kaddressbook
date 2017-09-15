@@ -691,11 +691,11 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
     collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT + Qt::Key_Q));
 
-    if (!qEnvironmentVariableIsEmpty("KDEPIM_BALOO_DEBUG")) {
-        action = collection->addAction(QStringLiteral("debug_baloo"));
+    if (!qEnvironmentVariableIsEmpty("AKONADI_SEARCH_DEBUG")) {
+        action = collection->addAction(QStringLiteral("debug_akonadi_search"));
         //Don't translate it. It's just for debug
-        action->setText(QStringLiteral("Debug baloo..."));
-        connect(action, &QAction::triggered, this, &MainWidget::slotDebugBaloo);
+        action->setText(QStringLiteral("Debug Akonadi Search..."));
+        connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
 
     mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription..."), this);
@@ -1008,7 +1008,7 @@ const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem()
     return collectSelectedAllContactsItem(mItemView->selectionModel());
 }
 
-void MainWidget::slotDebugBaloo()
+void MainWidget::slotDebugAkonadiSearch()
 {
     const Akonadi::Item::List lst = collectSelectedAllContactsItem(mItemView->selectionModel());
     if (lst.isEmpty()) {

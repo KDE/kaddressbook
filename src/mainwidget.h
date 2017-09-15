@@ -115,7 +115,7 @@ private Q_SLOTS:
     void slotGrantleeThemesUpdated();
     void slotCheckNewCalendar(const QModelIndex &parent, int begin, int end);
 
-    void slotDebugBaloo();
+    void slotDebugAkonadiSearch();
     void slotServerSideSubscription();
     void slotCurrentCollectionChanged(const Akonadi::Collection &col);
     void setFocusToTreeView();
