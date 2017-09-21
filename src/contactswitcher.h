@@ -51,7 +51,7 @@ public:
      */
     void setView(QAbstractItemView *view);
 
-private Q_SLOTS:
+private:
     /**
      * This slot is called when the 'Next' button is clicked.
      */
@@ -68,7 +68,6 @@ private Q_SLOTS:
      */
     void updateStatus();
 
-private:
     QAbstractItemView *mView = nullptr;
     QPushButton *mNextButton = nullptr;
     QPushButton *mPreviousButton = nullptr;

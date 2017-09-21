@@ -67,10 +67,8 @@ public:
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 
-private Q_SLOTS:
-    void adaptHeaderView();
-
 private:
+    void adaptHeaderView();
     Akonadi::ContactsTreeModel *mModel = nullptr;
     Akonadi::ContactsTreeModel::Columns mColumns;
     QWidget *mWidget = nullptr;

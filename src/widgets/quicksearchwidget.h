@@ -80,14 +80,12 @@ Q_SIGNALS:
      */
     void arrowDownKeyPressed();
 
-private Q_SLOTS:
-    void resetTimer();
-    void delayedTextChanged();
-
 protected:
     void keyPressEvent(QKeyEvent *) override;
 
 private:
+    void resetTimer();
+    void delayedTextChanged();
     QLineEdit *mEdit = nullptr;
     QTimer *mTimer = nullptr;
 };

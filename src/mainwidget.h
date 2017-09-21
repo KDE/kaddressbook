@@ -129,6 +129,7 @@ private:
     void saveSplitterStates() const;
     void restoreSplitterStates();
     void initializeImportExportPlugin(KActionCollection *collection);
+    Akonadi::EntityTreeModel *entityTreeModel() const;
 
     QAbstractItemModel *allContactsModel();
 
@@ -162,7 +163,6 @@ private:
     KAddressBookGrantlee::GrantleeContactFormatter *mFormatter = nullptr;
     KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter = nullptr;
     GrantleeTheme::ThemeManager *mGrantleeThemeManager = nullptr;
-    Akonadi::EntityTreeModel *entityTreeModel() const;
     QAction *mQuickSearchAction = nullptr;
     QAction *mServerSideSubscription = nullptr;
     KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager = nullptr;

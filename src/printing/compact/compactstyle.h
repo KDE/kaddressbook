@@ -50,15 +50,15 @@ private:
     /**
      * various settings
      */
-    bool withAlternating;
-    bool withBusinessAddress;
-    bool withHomeAddress;
-    bool withBirthday;
-    bool withEMail;
+    bool withAlternating = false;
+    bool withBusinessAddress = false;
+    bool withHomeAddress = false;
+    bool withBirthday = false;
+    bool withEMail = false;
     QColor firstColor;
     QColor secondColor;
 
-private Q_SLOTS:
+private:
     /**
      * Enable or disable the controls for color selection. The colors
      * are needed for alternating background color of the rows.

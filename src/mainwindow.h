@@ -33,14 +33,14 @@ public:
     MainWindow();
     ~MainWindow();
     MainWidget *mainWidget() const;
-private Q_SLOTS:
+private:
     void configure();
     void configureKeyBindings();
     void configureToolbars() override;
     void newToolbarConfig();
 
-    void slotToggleMenubar(bool dontShowWarning = true);
-private:
+    void slotToggleMenubar(bool dontShowWarning);
+
     void initActions();
 
     MainWidget *mMainWidget = nullptr;
