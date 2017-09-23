@@ -678,7 +678,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
-    connect(mViewModeGroup, SIGNAL(triggered(QAction *)), SLOT(setViewMode(QAction *)));
+    connect(mViewModeGroup, SIGNAL(triggered(QAction*)), SLOT(setViewMode(QAction*)));
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
