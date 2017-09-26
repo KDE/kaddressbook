@@ -232,8 +232,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mCollectionView->model(), &QAbstractItemModel::rowsInserted,
             this, &MainWidget::slotCheckNewCalendar);
 
-    connect(mCollectionView, SIGNAL(currentChanged(Akonadi::Collection)),
-            this, SLOT(slotCurrentCollectionChanged(Akonadi::Collection)));
+    connect(mCollectionView, QOverload<const Akonadi::Collection &>::of(&Akonadi::EntityTreeView::currentChanged),
+            this, &MainWidget::slotCurrentCollectionChanged);
 
     KSelectionProxyModel *selectionProxyModel
         = new KSelectionProxyModel(mCollectionSelectionModel, this);
@@ -306,11 +306,10 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mActionManager->action(
                 Akonadi::StandardActionManager::CollectionProperties), &QAction::triggered, mManageShowCollectionProperties, &ManageShowCollectionProperties::showCollectionProperties);
 
-    connect(mItemView, SIGNAL(currentChanged(Akonadi::Item)),
-            this, SLOT(itemSelected(Akonadi::Item)));
-    connect(mItemView, SIGNAL(doubleClicked(Akonadi::Item)),
-            mActionManager->action(Akonadi::StandardContactActionManager::EditItem),
-            SLOT(trigger()));
+    connect(mItemView, QOverload<const Akonadi::Item &>::of(&Akonadi::EntityTreeView::currentChanged),
+            this, &MainWidget::itemSelected);
+    connect(mItemView, QOverload<const Akonadi::Item &>::of(&Akonadi::EntityTreeView::doubleClicked),
+            mActionManager->action(Akonadi::StandardContactActionManager::EditItem), &QAction::trigger);
     connect(mItemView->selectionModel(), &QItemSelectionModel::currentChanged,
             this, &MainWidget::itemSelectionChanged);
 
@@ -678,7 +677,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
-    connect(mViewModeGroup, SIGNAL(triggered(QAction*)), SLOT(setViewMode(QAction*)));
+    connect(mViewModeGroup, QOverload<QAction *>::of(&QActionGroup::triggered), this, QOverload<QAction *>::of(&MainWidget::setViewMode));
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
