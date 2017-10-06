@@ -690,7 +690,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
     collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT + Qt::Key_Q));
 
-    if (!qEnvironmentVariableIsEmpty("AKONADI_SEARCH_DEBUG")) {
+    if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
         action = collection->addAction(QStringLiteral("debug_akonadi_search"));
         //Don't translate it. It's just for debug
         action->setText(QStringLiteral("Debug Akonadi Search..."));
