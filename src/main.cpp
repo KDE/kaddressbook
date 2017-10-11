@@ -64,6 +64,7 @@ int main(int argc, char **argv)
     qputenv("QT_QPA_PLATFORM", "xcb");
 #endif
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
     app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
