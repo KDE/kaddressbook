@@ -57,7 +57,7 @@ enum PrintField {
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fields)
 {
-    QString content = QLatin1String("<html>\n");
+    QString content = QStringLiteral("<html>\n");
     content += QLatin1String(" <body>\n");
     content += QLatin1String("  <table style=\"border-width: 1px; border-style: solid; "
                              "border-color: gray;\" width=\"100%\" cellspacing=\"0\">\n");
