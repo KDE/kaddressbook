@@ -17,5 +17,6 @@ set_target_properties(kaddressbookdomain
     )
 
 install(TARGETS kaddressbookdomain ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
-
-add_subdirectory(autotests)
+if (BUILD_TESTING)
+    add_subdirectory(autotests)
+endif()
