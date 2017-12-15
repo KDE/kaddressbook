@@ -53,6 +53,7 @@ void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::Abstrac
         interface->setCurrentItems(mMainWidget->collectSelectedAllContactsItem());
     }
     if (requires & PimCommon::GenericPluginInterface::Items) {
+        qDebug() << " void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *abstractInterface)";
         interface->setItems(mMainWidget->selectedItems());
     }
     if (requires & PimCommon::GenericPluginInterface::CurrentCollection) {
