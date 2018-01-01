@@ -1,5 +1,5 @@
 /*
-   Copyright (C) 2016-2017 Montel Laurent <montel@kde.org>
+   Copyright (C) 2016-2018 Montel Laurent <montel@kde.org>
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public
@@ -40,7 +40,7 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     KAboutData *about = new KAboutData(QStringLiteral("kcmakrpluginsconfig"),
                                        i18n("Configure Plugins"),
                                        QString(), QString(), KAboutLicense::GPL,
-                                       i18n("(c), 2016-2017 Laurent Montel"));
+                                       i18n("(c), 2016-2018 Laurent Montel"));
 
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
 

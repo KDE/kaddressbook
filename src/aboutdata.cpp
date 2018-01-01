@@ -1,7 +1,7 @@
 /*
   This file is part of KAddressBook.
 
-  Copyright (c) 2009-2017 Laurent Montel <montel@kde.org>
+  Copyright (c) 2009-2018 Laurent Montel <montel@kde.org>
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ AboutData::AboutData()
                  QStringLiteral(KADDRESSBOOK_VERSION),
                  i18n("The KDE Address Book Application"),
                  KAboutLicense::GPL_V2,
-                 i18n("Copyright © 2007–2017 KAddressBook authors"))
+                 i18n("Copyright © 2007–2018 KAddressBook authors"))
 {
     addAuthor(i18n("Laurent Montel"), i18n("Current maintainer"), QStringLiteral("montel@kde.org"));
     addAuthor(i18n("Tobias Koenig"), i18n("Previous maintainer"), QStringLiteral("tokoe@kde.org"));
