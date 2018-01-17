@@ -128,4 +128,10 @@ StartupNotify=true
 Categories=Qt;KDE;Office;ContactManagement;
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kaddressbook
+Actions=NewContact;
+
+[Desktop Action NewContact]
+Name=New Contact...
+Icon=contact-new
+Exec=kaddressbook --newcontact
 

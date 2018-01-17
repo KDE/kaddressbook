@@ -399,6 +399,8 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
                 }
             }
         }
+    } else if (parser.isSet(QStringLiteral("newcontact"))) {
+        newContact();
     }
 }
 

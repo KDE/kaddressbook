@@ -31,6 +31,11 @@ static void kaddressbook_options(QCommandLineParser *parser)
             QStringLiteral("import"),
             i18n("Import the given file")));
 
+    parser->addOption(
+        QCommandLineOption(
+            QStringLiteral("newcontact"),
+            i18n("Open the 'New Contact' dialog")));
+
     parser->addPositionalArgument(
         QStringLiteral("urls"),
         i18n("Files or URLs. The user will be asked whether to import."),
