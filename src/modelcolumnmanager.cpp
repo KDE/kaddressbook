@@ -45,7 +45,7 @@ void ModelColumnManager::load()
     Akonadi::ContactsTreeModel::Columns columns;
 
     for (int column : settingsColumns) {
-        columns.append((Akonadi::ContactsTreeModel::Column)column);
+        columns.append(static_cast<Akonadi::ContactsTreeModel::Column>(column));
     }
 
     mModel->setColumns(columns);
@@ -57,7 +57,7 @@ void ModelColumnManager::store()
     QList<int> settingsColumns;
 
     for (int column : columns) {
-        settingsColumns.append((int)column);
+        settingsColumns.append(static_cast<int>(column));
     }
 
     Settings::setContactModelColumns(settingsColumns);
@@ -143,7 +143,7 @@ bool ModelColumnManager::eventFilter(QObject *watched, QEvent *event)
             noteAction->setChecked(
                 columns.contains(Akonadi::ContactsTreeModel::Note));
 
-            if (menu.exec(((QContextMenuEvent *)event)->globalPos())) {
+            if (menu.exec((static_cast<QContextMenuEvent *>(event))->globalPos())) {
                 Akonadi::ContactsTreeModel::Columns columns;
 
                 if (fullNameAction->isChecked()) {
