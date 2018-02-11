@@ -33,7 +33,7 @@ class KAddressBookPart : public KParts::ReadOnlyPart
 
 public:
     KAddressBookPart(QWidget *parentWidget, QObject *parent, const QVariantList &);
-    virtual ~KAddressBookPart();
+    ~KAddressBookPart() override;
 
 public Q_SLOTS:
     void newContact();

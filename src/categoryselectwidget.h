@@ -48,7 +48,7 @@ public:
     /**
      * Destructor.
      **/
-    virtual ~CategorySelectWidget();
+    ~CategorySelectWidget() override;
 
     /**
      * Special @c Akonadi::Tag::Id values for filtering.

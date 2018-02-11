@@ -28,7 +28,7 @@ class KADDRESSBOOKDOMAIN_EXPORT ContactGroupRepository
 {
 public:
     ContactGroupRepository();
-    virtual ~ContactGroupRepository();
+    ~ContactGroupRepository() override;
     virtual KJob *createContactGroup(Domain::ContactGroup *contactGroup) = 0;
     virtual KJob *removeContactGroup(Domain::ContactGroup *contactGroup) = 0;
     virtual KJob *updateContactGroup(Domain::ContactGroup *contactGroup) = 0;

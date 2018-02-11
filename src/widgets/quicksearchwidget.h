@@ -51,7 +51,7 @@ public:
     /**
      * Destroys the quick search widget.
      */
-    virtual ~QuickSearchWidget();
+    ~QuickSearchWidget() override;
 
     /**
      * Returns the size hint of the quick search widget.

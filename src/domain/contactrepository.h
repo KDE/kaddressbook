@@ -29,7 +29,7 @@ class KADDRESSBOOKDOMAIN_EXPORT ContactRepository
 {
 public:
     ContactRepository();
-    virtual ~ContactRepository();
+    ~ContactRepository() override;
     virtual KJob *createContact(Domain::Contact *contact) = 0;
     virtual KJob *removeContact(Domain::Contact *contact) = 0;
     virtual KJob *updateContact(Domain::Contact *contact) = 0;

@@ -49,7 +49,7 @@ public:
     /**
      * Destructor.
      **/
-    virtual ~CategoryFilterProxyModel();
+    ~CategoryFilterProxyModel() override;
 
 public Q_SLOTS:
     /**
