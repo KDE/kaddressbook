@@ -35,7 +35,7 @@ class GrantleePrintStyle : public PrintStyle
 
 public:
     explicit GrantleePrintStyle(const QString &themePath, PrintingWizard *parent);
-    ~GrantleePrintStyle();
+    ~GrantleePrintStyle() override;
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
 private:

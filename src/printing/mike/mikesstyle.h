@@ -36,7 +36,7 @@ class MikesStyle : public PrintStyle
 
 public:
     explicit MikesStyle(PrintingWizard *parent);
-    ~MikesStyle();
+    ~MikesStyle() override;
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
 };

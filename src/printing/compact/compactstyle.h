@@ -35,7 +35,7 @@ class CompactStyle : public PrintStyle
 
 public:
     explicit CompactStyle(PrintingWizard *parent);
-    ~CompactStyle();
+    ~CompactStyle() override;
 
     /**
      * prints the contacts

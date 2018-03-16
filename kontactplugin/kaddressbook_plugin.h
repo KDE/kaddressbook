@@ -46,7 +46,7 @@ class KAddressBookPlugin : public KontactInterface::Plugin
 
 public:
     KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &);
-    ~KAddressBookPlugin();
+    ~KAddressBookPlugin() override;
 
     bool isRunningStandalone() const override;
     int weight() const override;

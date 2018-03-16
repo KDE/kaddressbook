@@ -31,7 +31,7 @@ class MainWindow : public KXmlGuiWindow
 
 public:
     MainWindow();
-    ~MainWindow();
+    ~MainWindow() override;
     MainWidget *mainWidget() const;
 private:
     void configure();

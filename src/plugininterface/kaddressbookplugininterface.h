@@ -30,7 +30,7 @@ class KAddressBookPluginInterface : public PimCommon::PluginInterface
     Q_OBJECT
 public:
     explicit KAddressBookPluginInterface(QObject *parent = nullptr);
-    ~KAddressBookPluginInterface();
+    ~KAddressBookPluginInterface() override;
 
     void setMainWidget(MainWidget *mainWidget);
 

@@ -68,7 +68,7 @@ public:
     /**
      * Destroys the printing wizard.
      */
-    ~PrintingWizard();
+    ~PrintingWizard() override;
 
     /**
      * Sets the default addressbook of the contact selection.

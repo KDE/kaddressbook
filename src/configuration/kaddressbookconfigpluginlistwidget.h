@@ -27,7 +27,7 @@ class KAddressBookConfigPluginListWidget : public PimCommon::ConfigurePluginsLis
     Q_OBJECT
 public:
     explicit KAddressBookConfigPluginListWidget(QWidget *parent = nullptr);
-    ~KAddressBookConfigPluginListWidget();
+    ~KAddressBookConfigPluginListWidget() override;
 
     void save() override;
     void doLoadFromGlobalSettings() override;

@@ -29,7 +29,7 @@ class AkonadiContactRepository : public QObject, public Domain::ContactRepositor
     Q_OBJECT
 public:
     AkonadiContactRepository();
-    ~AkonadiContactRepository();
+    ~AkonadiContactRepository() override;
 
     KJob *createContact(Domain::Contact *contact) override;
     KJob *removeContact(Domain::Contact *contact) override;

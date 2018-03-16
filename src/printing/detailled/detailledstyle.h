@@ -37,7 +37,7 @@ class DetailledPrintStyle : public PrintStyle
 
 public:
     explicit DetailledPrintStyle(PrintingWizard *parent);
-    ~DetailledPrintStyle();
+    ~DetailledPrintStyle() override;
 
     void print(const KContacts::Addressee::List &contacts, PrintProgress *) override;
 

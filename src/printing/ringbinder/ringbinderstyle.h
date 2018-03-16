@@ -35,7 +35,7 @@ class RingBinderPrintStyle : public PrintStyle
 {
 public:
     explicit RingBinderPrintStyle(PrintingWizard *parent);
-    ~RingBinderPrintStyle();
+    ~RingBinderPrintStyle() override;
 
     void print(const KContacts::Addressee::List &contacts, PrintProgress *) override;
 
