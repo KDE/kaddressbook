@@ -38,13 +38,13 @@
 
 using namespace KABPrinting;
 
-const char *RingBinderConfigSectionName = "RingBinderPrintStyle";
-const char *ShowPhoneNumbers = "ShowPhoneNumbers";
-const char *ShowEmailAddresses = "ShowEmailAddresses";
-const char *ShowStreetAddresses = "ShowStreetAddresses";
-const char *ShowOrganization = "ShowOrganization";
-const char *ShowBirthday = "ShowBirthday";
-const char *ShowNote = "ShowNote";
+static const char RingBinderConfigSectionName[] = "RingBinderPrintStyle";
+static const char ShowPhoneNumbers[] = "ShowPhoneNumbers";
+static const char ShowEmailAddresses[] = "ShowEmailAddresses";
+static const char ShowStreetAddresses[] = "ShowStreetAddresses";
+static const char ShowOrganization[] = "ShowOrganization";
+static const char ShowBirthday[] = "ShowBirthday";
+static const char ShowNote[] = "ShowNote";
 
 enum PrintField {
     PhoneNumbers = 1,

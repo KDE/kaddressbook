@@ -40,9 +40,9 @@
 
 using namespace KABPrinting;
 
-const char *ConfigSectionName = "DetailedPrintStyle";
-const char *ContactHeaderForeColor = "ContactHeaderForeColor";
-const char *ContactHeaderBGColor = "ContactHeaderBGColor";
+static const char ConfigSectionName[] = "DetailedPrintStyle";
+static const char ContactHeaderForeColor[] = "ContactHeaderForeColor";
+static const char ContactHeaderBGColor[] = "ContactHeaderBGColor";
 
 struct ContactBlock {
     typedef QVector<ContactBlock> List;

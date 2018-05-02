@@ -32,7 +32,6 @@ class PrintProgress;
 class GrantleePrintStyle : public PrintStyle
 {
     Q_OBJECT
-
 public:
     explicit GrantleePrintStyle(const QString &themePath, PrintingWizard *parent);
     ~GrantleePrintStyle() override;

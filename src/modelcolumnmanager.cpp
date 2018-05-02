@@ -35,7 +35,6 @@
 ModelColumnManager::ModelColumnManager(Akonadi::ContactsTreeModel *model, QObject *parent)
     : QObject(parent)
     , mModel(model)
-    , mWidget(nullptr)
 {
 }
 
