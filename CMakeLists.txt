@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-set(KDEPIM_VERSION_NUMBER "5.8.40")
+set(KDEPIM_VERSION_NUMBER "5.8.80")
 project(kaddressbook VERSION ${KDEPIM_VERSION_NUMBER})
 
 set(KF5_VERSION "5.47.0")
