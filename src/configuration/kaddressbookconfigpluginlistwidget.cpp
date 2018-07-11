@@ -66,6 +66,7 @@ void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
 void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 {
     PimCommon::ConfigurePluginsListWidget::changeState(mPluginGenericItems);
+    PimCommon::ConfigurePluginsListWidget::changeState(mPluginImportExportItems);
 }
 
 void KAddressBookConfigPluginListWidget::initialize()
