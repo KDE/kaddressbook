@@ -133,6 +133,9 @@ void CategorySelectWidgetPrivate::init()
     item->setData(CategorySelectWidget::FilterGroups, FILTER_ROLE);
     itemModel()->appendRow(item);
 
+    checkCombo->setAlwaysShowDefaultText(false);
+    checkCombo->setDefaultText(i18n("(All)"));
+
     rowOffset = itemModel()->rowCount();
 }
 
