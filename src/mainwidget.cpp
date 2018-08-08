@@ -51,7 +51,7 @@
 #include <AkonadiCore/AttributeFactory>
 #include <AkonadiWidgets/CollectionPropertiesDialog>
 #include <AkonadiWidgets/CollectionMaintenancePage>
-#include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
+//#include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
 #include <QPointer>
 #include "PimCommonAkonadi/ManageServerSideSubscriptionJob"
@@ -695,12 +695,14 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
     collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT + Qt::Key_Q));
 
+#ifdef AKONADISEARCH_PORT
     if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
         action = collection->addAction(QStringLiteral("debug_akonadi_search"));
         //Don't translate it. It's just for debug
         action->setText(QStringLiteral("Debug Akonadi Search..."));
         connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
+#endif
 
     mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription..."), this);
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
@@ -1018,12 +1020,14 @@ void MainWidget::slotDebugAkonadiSearch()
     if (lst.isEmpty()) {
         return;
     }
+#ifdef AKONADISEARCH_PORT
     QPointer<Akonadi::Search::AkonadiSearchDebugDialog> dlg = new Akonadi::Search::AkonadiSearchDebugDialog;
     dlg->setAkonadiId(lst.at(0).id());
     dlg->setAttribute(Qt::WA_DeleteOnClose);
     dlg->setSearchType(Akonadi::Search::AkonadiSearchDebugSearchPathComboBox::Contacts);
     dlg->doSearch();
     dlg->show();
+#endif
 }
 
 const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem(QItemSelectionModel *model)
