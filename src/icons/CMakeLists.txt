@@ -1,7 +1,7 @@
 ########### install files ###############
-
+file(GLOB icons "*-apps-kaddressbook.*")
 ecm_install_icons(
-    ICONS 48-apps-kaddressbook.svg
+    ICONS ${icons}
     DESTINATION ${KDE_INSTALL_ICONDIR}
     THEME hicolor
 )
