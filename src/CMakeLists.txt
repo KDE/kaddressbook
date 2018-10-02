@@ -111,7 +111,7 @@ set(kaddressbook_SRCS
     ${kaddressbook_qrc_SRCS}
     )
 
-file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
+file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.svg")
 ecm_add_app_icon(kaddressbook_SRCS ICONS ${ICONS_SRCS})
 
 add_executable(kaddressbook ${kaddressbook_SRCS})
