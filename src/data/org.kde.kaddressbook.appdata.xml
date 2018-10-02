@@ -3,6 +3,7 @@
   <id>org.kde.kaddressbook.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
+  <developer_name>The KDE Community</developer_name>
   <name>KAddressBook</name>
   <name xml:lang="ar">دفتر عناوينك</name>
   <name xml:lang="ast">KAddressBook</name>
@@ -71,7 +72,7 @@
   <summary xml:lang="x-test">xxAn address book managerxx</summary>
   <summary xml:lang="zh-CN">地址簿管家</summary>
   <description>
-    <p>KAddressBook stores all the personal details of your family, friends and other contacts.</p>
+    <p>KAddressBook stores all the personal details of your family, friends and other contacts. It supports large variety of services, including NextCloud, Kolab, Google Contacts, Microsoft Exchange (EWS) or any standard CalDAV server.</p>
     <p xml:lang="ar">يخزّن «دفتر عناوينك» كلّ التّفاصيل الشّخصيّة عن عائلتك، وأصدقائك ومتراسليك الآخرين.</p>
     <p xml:lang="ca">El KAddressBook emmagatzema totes les dades personals de la vostra família, amics i altres contactes.</p>
     <p xml:lang="ca-valencia">El KAddressBook emmagatzema totes les dades personals de la vostra família, amics i altres contactes.</p>
@@ -144,7 +145,41 @@
     <p xml:lang="zh-CN">功能：</p>
     <p xml:lang="zh-TW">功能：</p>
     <ul>
-      <li>Imports and exports to nearly every address book standard</li>
+      <li>Powerful search - KAddressBook has configurable filters and powerful search capabilities.</li>
+      <li xml:lang="ar">مرشّحات يمكن ضبطها وإمكانيّات بحث قويّة</li>
+      <li xml:lang="ca">Filtres configurables i potents capacitats de cerca</li>
+      <li xml:lang="ca-valencia">Filtres configurables i potents capacitats de cerca</li>
+      <li xml:lang="de">Einstellbare Filter und leistungsfähige Suchfunktionen</li>
+      <li xml:lang="en-GB">Configurable filters and powerful search capabilities</li>
+      <li xml:lang="es">Filtros configurables y poderosas capacidades de búsqueda</li>
+      <li xml:lang="et">Seadistatavad filtrid ja võimas otsing</li>
+      <li xml:lang="fi">Muokattavat suodattimet ja tehokkaat hakuominaisuudet</li>
+      <li xml:lang="fr">Filtres personnalisables et fonctions de recherche poussées</li>
+      <li xml:lang="gl">Permite configurar filtros e conta con potentes funcionalidades de busca.</li>
+      <li xml:lang="hu">Konfigurálható szűrők és hatékony keresési képességek</li>
+      <li xml:lang="it">Filtri configurabili e potenti funzionalità di ricerca</li>
+      <li xml:lang="ko">설정 가능한 필터와 강력한 검색 기능</li>
+      <li xml:lang="nb">Fleksible filtre og kraftige søkemuligheter</li>
+      <li xml:lang="nds">Instellbor Filtern un en deegt Söök</li>
+      <li xml:lang="nl">In te stellen filters en krachtige zoekfuncties</li>
+      <li xml:lang="pl">Ustawialne filtry i zaawansowane możliwości wyszukiwania</li>
+      <li xml:lang="pt">Capacidades para filtros configuráveis e pesquisa poderosa</li>
+      <li xml:lang="pt-BR">Capacidade de configuração de filtros e pesquisa poderosa</li>
+      <li xml:lang="ru">Настраиваемые фильтры и эффективная функция поиска;</li>
+      <li xml:lang="sk">Nastaviteľné filtre a silné možnosti hľadania</li>
+      <li xml:lang="sl">Prilagodljivi filtri in zmogljiv iskalnik</li>
+      <li xml:lang="sr">Подесиви филтери и моћне способности претраге.</li>
+      <li xml:lang="sr-Latn">Podesivi filteri i moćne sposobnosti pretrage.</li>
+      <li xml:lang="sr-ijekavian">Подесиви филтери и моћне способности претраге.</li>
+      <li xml:lang="sr-ijekavianlatin">Podesivi filteri i moćne sposobnosti pretrage.</li>
+      <li xml:lang="sv">Inställningsbara filter och kraftfulla sökmöjligheter</li>
+      <li xml:lang="tr">Ayarlanabilir filtreler ve güçlü arama yetenekleri</li>
+      <li xml:lang="uk">зручні фільтри та потужні можливості з пошуку;</li>
+      <li xml:lang="x-test">xxConfigurable filters and powerful search capabilitiesxx</li>
+      <li xml:lang="zh-CN">可配置的过滤器和强大的搜索能力</li>
+      <li xml:lang="zh-TW">可設定的過濾器與強大的搜尋機制</li>
+      <li>Duplicate detection and merging - KAddressBook can find duplicated contacts from multiple sources and can merge them into a single contact.</li>
+      <li>Good standard support - KAddressBook can import and export from and to nearly every address book standard.</li>
       <li xml:lang="ar">الاستيراد والتّصدير إلى ما يقارب كلّ معيار لدفاتر العناوين</li>
       <li xml:lang="ca">Importa i exporta a gairebé tots els estàndards de la llibreta d'adreces</li>
       <li xml:lang="ca-valencia">Importa i exporta a gairebé tots els estàndards de la llibreta d'adreces</li>
@@ -178,40 +213,7 @@
       <li xml:lang="x-test">xxImports and exports to nearly every address book standardxx</li>
       <li xml:lang="zh-CN">导入和导出几乎所有地址簿标准格式</li>
       <li xml:lang="zh-TW">可以匯入與匯出幾乎所有的通訊錄標準格式</li>
-      <li>Reads .vcf format files, and can import and export vCards and csv format files</li>
-      <li xml:lang="ar">قراءة ملفّات النّسق ‎.vcf، وإمكانيّة استيراد بطاقات vCard وملفّات النّسق csv وتصديرها</li>
-      <li xml:lang="ca">Llegeix el format de fitxer .vcf, i pot importar i exportar els formats de fitxer vCard i CSV</li>
-      <li xml:lang="ca-valencia">Llig el format de fitxer .vcf, i pot importar i exportar els formats de fitxer vCard i CSV</li>
-      <li xml:lang="de">Lesen von Dateien im Format „vcf“ und Import und Export von Dateien im Format vCard und CSV</li>
-      <li xml:lang="en-GB">Reads .vcf format files, and can import and export vCards and csv format files</li>
-      <li xml:lang="es">Lee archivos de formato .vcf, y puede importar y exportar formatos de archivo vCard y csv</li>
-      <li xml:lang="et">.vcf-vormingus failide lugemine ning vCard- ja CSV-vormingus failide importimine ja eksportimine</li>
-      <li xml:lang="fi">Lukee .vcf-muotoisia tiedostoja ja voi tuoda ja viedä vCard- ja CSC-muotoisia tiedostoja</li>
-      <li xml:lang="fr">Lit les fichiers au format VCF, et importe et exporte les fichiers aux formats vCard et CSV</li>
-      <li xml:lang="gl">Pode ler ficheiros no formato «.vcf», e pode importar e exportar ficheiros en formato vCard ou CSV.</li>
-      <li xml:lang="hu">A .vcf fájlformátum olvasása, vCard és CSV fájlok importálása és exportálása</li>
-      <li xml:lang="it">Legge file in formato .vcf, e può importare ed esportare vCard e file in formato csv</li>
-      <li xml:lang="ko">.vcf 형식 파일을 읽고, vCard 및 CSV 파일로 가져오고 내보내기</li>
-      <li xml:lang="nb">Leser filer i .vcf format, og kan importere og eksportere vCards og filer i csv format</li>
-      <li xml:lang="nds">Leest Dateien in't VCF-Formaat un kann Daten ut vCard- un CSV-Dateien importeren un dor ok hen exporteren.</li>
-      <li xml:lang="nl">Leest .vcf-formaat bestanden en kan vCards importeren en exporteren en csv-formaat bestanden</li>
-      <li xml:lang="pl">Czytanie plików w postaci .vcf oraz importowanie i eksportowanie wizytówek w postaci vCard i csv</li>
-      <li xml:lang="pt">Lê os ficheiros no formato .vcf e poderá importar e exportar os formatos de ficheiros vCard e CSV</li>
-      <li xml:lang="pt-BR">Lê arquivos no formato .vcf e pode importar e exportar os formatos de arquivo vCard e CSV</li>
-      <li xml:lang="ru">Чтение файлов .vcf; импорт и экспорт в форматы vCard (электронные визитные карточки) и CSV;</li>
-      <li xml:lang="sk">Číta súbory formátu .vcf a vie importovať a exportovať vCards a súbory formátu csv</li>
-      <li xml:lang="sl">Branje datotek vrste .vcf in uvoz/izvoz vizitk vCard ter datotek csv</li>
-      <li xml:lang="sr">Читање в‑кард фајлова, увоз и извоз за формате в‑кард и ЦСВ.</li>
-      <li xml:lang="sr-Latn">Čitanje vCard fajlova, uvoz i izvoz za formate vCard i CSV.</li>
-      <li xml:lang="sr-ijekavian">Читање в‑кард фајлова, увоз и извоз за формате в‑кард и ЦСВ.</li>
-      <li xml:lang="sr-ijekavianlatin">Čitanje vCard fajlova, uvoz i izvoz za formate vCard i CSV.</li>
-      <li xml:lang="sv">Läser filer med .vcf-format, och kan importera och exportera filer med vCard- och csv-format</li>
-      <li xml:lang="tr">.vcf biçim dosyalarını okur, ve vCard ve csv biçim dosyalarını içe ve dışa aktarabilir</li>
-      <li xml:lang="uk">читання файлів у форматі .vcf, імпортування та експортування даних у форматах vCard та CSV;</li>
-      <li xml:lang="x-test">xxReads .vcf format files, and can import and export vCards and csv format filesxx</li>
-      <li xml:lang="zh-CN">读取 .vcf 格式文件，可以导入和导出 vCard 和 csv 格式文件</li>
-      <li xml:lang="zh-TW">讀取 .vcf 格式檔案，並可匯入與匯出 vCards 與 csv 格式檔案。</li>
-      <li>Can use multiple LDAP servers</li>
+      <li>LDAP integration - Can connect to multiple LDAP servers, which can then be used for contact autocompletion when composing emails in KMail.</li>
       <li xml:lang="ar">إمكانيّة استخدام خواديم LDAP متعدّدة</li>
       <li xml:lang="ca">Pot usar múltiples servidors LDAP</li>
       <li xml:lang="ca-valencia">Pot usar múltiples servidors LDAP</li>
@@ -242,40 +244,7 @@
       <li xml:lang="x-test">xxCan use multiple LDAP serversxx</li>
       <li xml:lang="zh-CN">能够使用多个 LDAP 服务器</li>
       <li xml:lang="zh-TW">可以使用多個 LDAP 伺服器</li>
-      <li>Configurable filters and powerful search capabilities</li>
-      <li xml:lang="ar">مرشّحات يمكن ضبطها وإمكانيّات بحث قويّة</li>
-      <li xml:lang="ca">Filtres configurables i potents capacitats de cerca</li>
-      <li xml:lang="ca-valencia">Filtres configurables i potents capacitats de cerca</li>
-      <li xml:lang="de">Einstellbare Filter und leistungsfähige Suchfunktionen</li>
-      <li xml:lang="en-GB">Configurable filters and powerful search capabilities</li>
-      <li xml:lang="es">Filtros configurables y poderosas capacidades de búsqueda</li>
-      <li xml:lang="et">Seadistatavad filtrid ja võimas otsing</li>
-      <li xml:lang="fi">Muokattavat suodattimet ja tehokkaat hakuominaisuudet</li>
-      <li xml:lang="fr">Filtres personnalisables et fonctions de recherche poussées</li>
-      <li xml:lang="gl">Permite configurar filtros e conta con potentes funcionalidades de busca.</li>
-      <li xml:lang="hu">Konfigurálható szűrők és hatékony keresési képességek</li>
-      <li xml:lang="it">Filtri configurabili e potenti funzionalità di ricerca</li>
-      <li xml:lang="ko">설정 가능한 필터와 강력한 검색 기능</li>
-      <li xml:lang="nb">Fleksible filtre og kraftige søkemuligheter</li>
-      <li xml:lang="nds">Instellbor Filtern un en deegt Söök</li>
-      <li xml:lang="nl">In te stellen filters en krachtige zoekfuncties</li>
-      <li xml:lang="pl">Ustawialne filtry i zaawansowane możliwości wyszukiwania</li>
-      <li xml:lang="pt">Capacidades para filtros configuráveis e pesquisa poderosa</li>
-      <li xml:lang="pt-BR">Capacidade de configuração de filtros e pesquisa poderosa</li>
-      <li xml:lang="ru">Настраиваемые фильтры и эффективная функция поиска;</li>
-      <li xml:lang="sk">Nastaviteľné filtre a silné možnosti hľadania</li>
-      <li xml:lang="sl">Prilagodljivi filtri in zmogljiv iskalnik</li>
-      <li xml:lang="sr">Подесиви филтери и моћне способности претраге.</li>
-      <li xml:lang="sr-Latn">Podesivi filteri i moćne sposobnosti pretrage.</li>
-      <li xml:lang="sr-ijekavian">Подесиви филтери и моћне способности претраге.</li>
-      <li xml:lang="sr-ijekavianlatin">Podesivi filteri i moćne sposobnosti pretrage.</li>
-      <li xml:lang="sv">Inställningsbara filter och kraftfulla sökmöjligheter</li>
-      <li xml:lang="tr">Ayarlanabilir filtreler ve güçlü arama yetenekleri</li>
-      <li xml:lang="uk">зручні фільтри та потужні можливості з пошуку;</li>
-      <li xml:lang="x-test">xxConfigurable filters and powerful search capabilitiesxx</li>
-      <li xml:lang="zh-CN">可配置的过滤器和强大的搜索能力</li>
-      <li xml:lang="zh-TW">可設定的過濾器與強大的搜尋機制</li>
-      <li>Integrates with other Kontact components, e.g. exporting Birthday reminders to KOrganizer</li>
+      <li>Integration - Integrates with other Kontact components, e.g. exporting birthday reminders to KOrganizer</li>
       <li xml:lang="ar">التّكامل مع مكوّنات «متراسلك» الأخرى، كتصدير تذكير تواريخ الميلاد إلى «منظّمك»</li>
       <li xml:lang="ca">S'integra amb els altres components del Kontact, p. ex., l'exportació dels recordatoris d'aniversari pel KOrganizer</li>
       <li xml:lang="ca-valencia">S'integra amb els altres components del Kontact, p. ex., l'exportació dels recordatoris d'aniversari pel KOrganizer</li>
@@ -308,78 +277,14 @@
       <li xml:lang="x-test">xxIntegrates with other Kontact components, e.g. exporting Birthday reminders to KOrganizerxx</li>
       <li xml:lang="zh-CN">和其他 Kontact 组件集成，例如导出生日提醒到 KOrganizer</li>
       <li xml:lang="zh-TW">可與其它的 Kontact 組件整合，如匯出生日提醒到 KOrganizer</li>
-      <li>Capable of groupware integration</li>
-      <li xml:lang="ar">إمكانيّة التّكامل مع البرمجيّات التّعاونيّة</li>
-      <li xml:lang="ca">Capaç d'integrar-se amb el treball en grup</li>
-      <li xml:lang="ca-valencia">Capaç d'integrar-se amb el treball en grup</li>
-      <li xml:lang="de">Einbindung in Groupware ist möglich</li>
-      <li xml:lang="en-GB">Capable of groupware integration</li>
-      <li xml:lang="es">Capaz de integración con herramientas de colaboración</li>
-      <li xml:lang="et">Grupitööga lõimimise võimalus</li>
-      <li xml:lang="fi">Osaa integroitua työryhmäohjelmistoihin</li>
-      <li xml:lang="fr">Possibilités d'intégration en logiciel de groupe de travail</li>
-      <li xml:lang="gl">Pode integrarse con software de xestión de grupos.</li>
-      <li xml:lang="hu">Csoportmunka-integráció</li>
-      <li xml:lang="it">Supporta l'integrazione di groupware</li>
-      <li xml:lang="ko">그룹웨어 통합 기능</li>
-      <li xml:lang="nb">Kan integreres i gruppevare</li>
-      <li xml:lang="nds">Arbeit mit Arbeitkoppelprogrammen tosamen</li>
-      <li xml:lang="nl">Kan met groupware integreren</li>
-      <li xml:lang="pl">Możliwość integracji z oprogramowaniem groupware</li>
-      <li xml:lang="pt">Capacidades de integração em grupo</li>
-      <li xml:lang="pt-BR">Capacidades de integração com groupware</li>
-      <li xml:lang="ru">Возможна интеграция с серверами совместной работы;</li>
-      <li xml:lang="sk">Schopnosť integrácie s groupware</li>
-      <li xml:lang="sl">Podpira programe za skupinsko delo</li>
-      <li xml:lang="sr">Могуће уклапање са групвером.</li>
-      <li xml:lang="sr-Latn">Moguće uklapanje sa grupverom.</li>
-      <li xml:lang="sr-ijekavian">Могуће уклапање са групвером.</li>
-      <li xml:lang="sr-ijekavianlatin">Moguće uklapanje sa grupverom.</li>
-      <li xml:lang="sv">Klarar av integrering med grupprogram</li>
-      <li xml:lang="tr">Groupware tümleştirmesini destekler</li>
-      <li xml:lang="uk">можливість інтегрування з програмним забезпеченням для групової роботи;</li>
-      <li xml:lang="x-test">xxCapable of groupware integrationxx</li>
-      <li xml:lang="zh-CN">支持群件集成</li>
-      <li xml:lang="zh-TW">可做群組整合</li>
-      <li>Powered by Akonadi</li>
-      <li xml:lang="ar">يدعمه «أكونادي»</li>
-      <li xml:lang="ca">Desenvolupat per a l'Akonadi</li>
-      <li xml:lang="ca-valencia">Desenvolupat per a l'Akonadi</li>
-      <li xml:lang="de">Unterstützt durch Akonadi</li>
-      <li xml:lang="en-GB">Powered by Akonadi</li>
-      <li xml:lang="es">Basado en Akonadi</li>
-      <li xml:lang="et">Akonadi avarad võimalused</li>
-      <li xml:lang="fi">Toimii Akonadin avulla</li>
-      <li xml:lang="fr">Fonctionne avec Akonadi</li>
-      <li xml:lang="gl">Está baseado en Akonadi.</li>
-      <li xml:lang="hu">Akonadi támogatás</li>
-      <li xml:lang="it">Powered by Akonadi</li>
-      <li xml:lang="ko">Akonadi 기반</li>
-      <li xml:lang="nb">Drives av Akonadi</li>
-      <li xml:lang="nds">Akonadi arbeidt in'n Achtergrund</li>
-      <li xml:lang="nl">Powered door Akonadi</li>
-      <li xml:lang="pl">Napędzane przez Akonadi</li>
-      <li xml:lang="pt">Reforçado pelo Akonadi</li>
-      <li xml:lang="pt-BR">Desenvolvido por Akonadi</li>
-      <li xml:lang="ru">Программа построена на архитектуре Akonadi.</li>
-      <li xml:lang="sk">Založené na Akonadi</li>
-      <li xml:lang="sl">Temelji na Akonadiju</li>
-      <li xml:lang="sr">Изграђено над Аконадијем.</li>
-      <li xml:lang="sr-Latn">Izgrađeno nad Akonadijem.</li>
-      <li xml:lang="sr-ijekavian">Изграђено над Аконадијем.</li>
-      <li xml:lang="sr-ijekavianlatin">Izgrađeno nad Akonadijem.</li>
-      <li xml:lang="sv">Drivs av Akonadi</li>
-      <li xml:lang="tr">Akonadi tarafından güçlendirilmiştir</li>
-      <li xml:lang="uk">усі додаткові можливості, роботу яких забезпечує Akonadi.</li>
-      <li xml:lang="x-test">xxPowered by Akonadixx</li>
-      <li xml:lang="zh-CN">由 Akonadi 支持</li>
-      <li xml:lang="zh-TW">使用 Akonadi </li>
+      <li>QR codes - KAddressBook can display a QR code for each contact to quickly scan it into your phone or send to someone.</li>
     </ul>
   </description>
+  <url type="homepage">https://kontact.kde.org/components/kaddressbook.html</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kaddressbook</url>
   <screenshots>
     <screenshot type="default">
-      <image>http://kde.org/images/screenshots/kaddressbook.png</image>
+      <image type="source" width="1280" height="720">https://kontact.org/assets/img/appstream/kontact-kaddressbook.png</image>
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
