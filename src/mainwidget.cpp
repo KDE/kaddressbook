@@ -883,7 +883,7 @@ void MainWidget::setViewMode(int mode)
     }
 
     if (mode == 0) {
-        mode = currentMode;// initialisation, no save
+        mode = currentMode;// initialization, no save
     } else {
         saveSplitterStates();                                // for 2- or 3-column mode
     }

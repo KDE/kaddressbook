@@ -35,7 +35,7 @@ namespace KABPrinting {
 /**
   This defines a simple widget to display print progress
   information. It is provided to all print styles during a print
-  process. It displays messages and a a progress bar.
+  process. It displays messages and a progress bar.
  */
 class PrintProgress : public QWidget
 {

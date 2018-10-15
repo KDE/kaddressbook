@@ -17,8 +17,8 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KCMKaddressbookPluginsConfig_H
-#define KCMKaddressbookPluginsConfig_H
+#ifndef KCM_Kaddressbook_Config_Plugins_H
+#define KCM_Kaddressbook_Config_Plugins_H
 
 #include <KCModule>
 
@@ -40,4 +40,4 @@ private:
     PimCommon::ConfigurePluginsWidget *mConfigurePluginWidget = nullptr;
 };
 }
-#endif // KCMKaddressbookPluginsConfig_H
+#endif // KCM_Kaddressbook_Config_Plugins_H

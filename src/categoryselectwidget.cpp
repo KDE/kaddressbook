@@ -183,7 +183,7 @@ void CategorySelectWidgetPrivate::slotTagsInserted(const QModelIndex &parent, in
         // must already have arrived.  So there is no need for a list of pending
         // tags, as is required in Akonadi::TagModel.
         //
-        // FIXME: not tested (no way to create hierarchial tags at present)
+        // FIXME: not tested (no way to create hierarchical tags at present)
         if (parent != QModelIndex()) {
             const Tag::Id parentId = tagModel->data(idx, TagModel::IdRole).value<Tag::Id>();
             QModelIndexList matchList = itemModel()->match(itemModel()->index(0, 0), FILTER_ROLE,

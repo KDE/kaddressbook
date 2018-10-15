@@ -90,7 +90,7 @@ public:
 
 Q_SIGNALS:
     /**
-     * This signal is emmited when the user selects a new style in the
+     * This signal is emitted when the user selects a new style in the
      * style combo box.
      */
     void styleChanged(int index);
