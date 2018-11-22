@@ -346,8 +346,9 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     for (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
             KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface
-                = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(collection, this));
+                = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(this));
             interface->setItemSelectionModel(mItemView->selectionModel());
+            interface->setParentWidget(this);
             interface->createAction(collection);
             importActions.append(interface->importActions());
             exportActions.append(interface->exportActions());
