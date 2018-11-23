@@ -72,7 +72,7 @@ void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 void KAddressBookConfigPluginListWidget::initialize()
 {
     mListWidget->clear();
-    //Necessary to initialize pluging when we load it outside kaddressbook
+    //Necessary to initialize plugins when we load it outside kaddressbook
     KAddressBookPluginInterface::self()->initializePlugins();
     PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(), i18n("Tools Plugins"),
                                                         KAddressBookPluginInterface::self()->configGroupName(),

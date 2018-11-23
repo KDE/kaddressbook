@@ -71,7 +71,7 @@ public:
     /**
      * Creates a new print style.
      *
-     * @wizard The wizard the style belongs to.
+     * @param wizard The wizard the style belongs to.
      */
     explicit PrintStyle(PrintingWizard *wizard);
 
@@ -148,7 +148,7 @@ protected:
      * page for the style.
      *
      * @param page The page widget.
-     * @param tile The page title.
+     * @param title The page title.
      */
     void addPage(QWidget *page, const QString &title);
 

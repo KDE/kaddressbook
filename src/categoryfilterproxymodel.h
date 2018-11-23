@@ -65,7 +65,7 @@ public Q_SLOTS:
      * Enable or disable the filter.
      *
      * @param enable If @c true, enable the filter to accept only those categories
-     * set by @c setFilterCategories().  If @false, disable the filter so that all
+     * set by @c setFilterCategories().  If false, disable the filter so that all
      * entries are accepted.
      *
      * The default state is that the filter is disabled.

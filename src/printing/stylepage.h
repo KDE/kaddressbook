@@ -43,7 +43,7 @@ public:
     ~StylePage();
 
     /**
-     * Set a preview image. If @ref pixmap is 'null' a text will
+     * Set a preview image. If @p pixmap is 'null' a text will
      * be displayed instead.
      */
     void setPreview(const QPixmap &pixmap);
