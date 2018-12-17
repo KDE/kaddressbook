@@ -325,11 +325,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mModelColumnManager->load();
 
     initializeImportExportPlugin(guiClient->actionCollection());
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
-#else
-    QMetaObject::invokeMethod(this, "delayedInit", Qt::QueuedConnection);
-#endif
     updateQuickSearchText();
 }
 
