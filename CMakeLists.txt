@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.5)
 set(KDEPIM_VERSION_NUMBER "5.10.40")
 project(kaddressbook VERSION ${KDEPIM_VERSION_NUMBER})
 
-set(KF5_VERSION "5.53.0")
+set(KF5_MIN_VERSION "5.53.0")
 
-find_package(ECM ${KF5_VERSION} CONFIG REQUIRED)
+find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(ECMInstallIcons)
 
@@ -53,11 +53,11 @@ set(LIBGRANTLEETHEME_LIB_VERSION_LIB "5.10.40")
 set(PIMCOMMON_LIB_VERSION_LIB "5.10.41")
 set(LIBKLEO_LIB_VERSION "5.10.40")
 # Find KF5 package
-find_package(KF5DBusAddons ${KF5_VERSION} CONFIG REQUIRED)
-find_package(KF5DocTools ${KF5_VERSION} REQUIRED)
-find_package(KF5KCMUtils ${KF5_VERSION} CONFIG REQUIRED)
-find_package(KF5Crash ${KF5_VERSION} REQUIRED)
-find_package(KF5IconThemes ${KF5_VERSION} REQUIRED)
+find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5DocTools ${KF5_MIN_VERSION} REQUIRED)
+find_package(KF5KCMUtils ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5Crash ${KF5_MIN_VERSION} REQUIRED)
+find_package(KF5IconThemes ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5Libkleo ${LIBKLEO_LIB_VERSION} CONFIG REQUIRED)
 
 option(DOMAIN_EXPERIMENTAL "Enable this feature if you want to build experimental domain library. Not Stable yet." FALSE)
@@ -84,7 +84,7 @@ set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Sear
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 
-find_package(KF5Prison ${KF5_VERSION} CONFIG REQUIRED)
+find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 
