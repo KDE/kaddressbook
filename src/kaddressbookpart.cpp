@@ -54,7 +54,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     initAction();
 
     topLayout->addWidget(mMainWidget);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(0, 0, 0, 0);
     setXMLFile(QStringLiteral("kaddressbookui.rc"));
 }
 

@@ -32,7 +32,7 @@ QuickSearchWidget::QuickSearchWidget(QWidget *parent)
     : QWidget(parent)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     mEdit = new QLineEdit(this);
     //If change shortcut changes it in mainwidget
