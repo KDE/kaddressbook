@@ -21,10 +21,10 @@
 
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
-#include <qtoolbutton.h>
-#include <qlayout.h>
-#include <qstandarditemmodel.h>
-#include <qtimer.h>
+#include <QToolButton>
+#include <QLayout>
+#include <QStandardItemModel>
+#include <QTimer>
 
 #include <AkonadiCore/monitor.h>
 #include <AkonadiCore/tagmodel.h>

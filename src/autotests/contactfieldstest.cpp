@@ -1,6 +1,6 @@
 #include "../kaddressbookimportexportcontactfields.h"
 
-#include <qtest.h>
+#include <QTest>
 
 #include <QObject>
 

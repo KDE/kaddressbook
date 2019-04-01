@@ -20,7 +20,7 @@
 #ifndef CATEGORYFILTERPROXYMODEL_H
 #define CATEGORYFILTERPROXYMODEL_H
 
-#include <qsortfilterproxymodel.h>
+#include <QSortFilterProxyModel>
 
 #include <AkonadiCore/tag.h>
 

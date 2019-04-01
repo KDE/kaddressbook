@@ -20,7 +20,7 @@
 #ifndef CATEGORYSELECTWIDGET_H
 #define CATEGORYSELECTWIDGET_H
 
-#include <qwidget.h>
+#include <QWidget>
 #include <AkonadiCore/tag.h>
 
 class CategorySelectWidgetPrivate;
