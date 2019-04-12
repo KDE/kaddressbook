@@ -87,7 +87,7 @@ include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
-
+set(CMAKE_CXX_STANDARD 14)
 # workaround for https://bugreports.qt.io/browse/QTBUG-74665 (bug in qt5.13 reevaluate it)
 if (${Qt5Widgets_VERSION} STRGREATER "5.13")
    MESSAGE(STATUS "Qt version: ${Qt5Widgets_VERSION} DISABLE compile without deprecated methods. bug QTBUG-74665")

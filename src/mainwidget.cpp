@@ -232,7 +232,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mCollectionView->model(), &QAbstractItemModel::rowsInserted,
             this, &MainWidget::slotCheckNewCalendar);
 
-    connect(mCollectionView, QOverload<const Akonadi::Collection &>::of(&Akonadi::EntityTreeView::currentChanged),
+    connect(mCollectionView, qOverload<const Akonadi::Collection &>(&Akonadi::EntityTreeView::currentChanged),
             this, &MainWidget::slotCurrentCollectionChanged);
 
     KSelectionProxyModel *selectionProxyModel
@@ -306,9 +306,9 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mActionManager->action(
                 Akonadi::StandardActionManager::CollectionProperties), &QAction::triggered, mManageShowCollectionProperties, &ManageShowCollectionProperties::showCollectionProperties);
 
-    connect(mItemView, QOverload<const Akonadi::Item &>::of(&Akonadi::EntityTreeView::currentChanged),
+    connect(mItemView, qOverload<const Akonadi::Item &>(&Akonadi::EntityTreeView::currentChanged),
             this, &MainWidget::itemSelected);
-    connect(mItemView, QOverload<const Akonadi::Item &>::of(&Akonadi::EntityTreeView::doubleClicked),
+    connect(mItemView, qOverload<const Akonadi::Item &>(&Akonadi::EntityTreeView::doubleClicked),
             mActionManager->action(Akonadi::StandardContactActionManager::EditItem), &QAction::trigger);
     connect(mItemView->selectionModel(), &QItemSelectionModel::currentChanged,
             this, &MainWidget::itemSelectionChanged);
@@ -679,7 +679,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
-    connect(mViewModeGroup, QOverload<QAction *>::of(&QActionGroup::triggered), this, QOverload<QAction *>::of(&MainWidget::setViewMode));
+    connect(mViewModeGroup, qOverload<QAction *>(&QActionGroup::triggered), this, qOverload<QAction *>(&MainWidget::setViewMode));
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
