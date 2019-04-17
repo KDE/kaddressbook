@@ -45,11 +45,10 @@
       {% endfor %}
 
       {% for email in contact.emails %}
-        {% with contact.emailsi18n as title %}
-        {% with email|safe as value %}
-        {% include "contact_row.html" %}
-        {% endwith %}
-        {% endwith %}
+      <tr>
+          <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.emailsi18n }}</font></b></td>
+          <td align="left" valign="top" colspan="2"><a href="mailto:{{ email.email }}">{{ email.email }}</a></td>
+      </tr>
       {% endfor %}
 
       {% for imAddress in contact.imAddresses %}
