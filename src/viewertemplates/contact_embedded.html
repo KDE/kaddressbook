@@ -72,13 +72,20 @@
       {% endif %}
 
       {% for address in contact.addresses %}
-        {% with address.type as title %}
-        {% with address.formattedAddressLink|safe as value %}
-        {% with address.formattedAddressIcon|safe as value2 %}
-        {% include "contact_row.html" %}
-        {% endwith %}
-        {% endwith %}
-        {% endwith %}
+      <tr>
+         <td align="right" valign="top" width="30%"><b><font color="grey">{{ address.typeLabel }}</font></b></td>
+         <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
+         {% with address.formattedAddress as fa %}
+           {% for line in fa.splitlines %}
+             {{ line }}
+             {% if line and not forloop.last %}<br/>{% endif %}
+           {% endfor %}
+         {% endwith %}
+         </a></td>
+         <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
+            <img src="map_icon" align="top"/>
+         </a></td>
+      </tr>
       {% endfor %}
 
       {% if contact.profession %}

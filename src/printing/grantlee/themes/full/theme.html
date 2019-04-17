@@ -82,8 +82,12 @@
 
   {% if address.formattedAddress %}
   <tr>
-   <td class=data_header>{{ address.type }}</td>
-   <td class=last_data>{{ address.formattedAddress|safe }}</td>
+   <td class=data_header>{{ address.typeLabel }}</td>
+   <td class=last_data>
+    {% with address.formattedAddress as fa %}
+    {% for line in fa.splitlines %}{{ line }}<br/>{% endfor %}
+    {% endwith %}
+   </td>
   </tr>
   {% endif %}
   {% endfor %}
