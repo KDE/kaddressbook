@@ -27,21 +27,15 @@
       {% endif %}
 
       {% for phoneNumber in contact.phoneNumbers %}
-        {% if phoneNumber.smsLink %}
-          {% with phoneNumber.type as title %}
-          {% with phoneNumber.numberLink|safe as value %}
-          {% with phoneNumber.smsLink|safe as value2 %}
-          {% include "contact_row.html" %}
-          {% endwith %}
-          {% endwith %}
-          {% endwith %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{{ phoneNumber.typeLabel }}</font></b></td>
+        {% if phoneNumber.supportsSms %}
+          <td align="left" valign="top"><a href="phone:?index={{ forloop.counter0 }}">{{ phoneNumber.number }}</a></td>
+          <td align="left" valign="top"><a href="sms:?index={{ forloop.counter0 }}"><img src="sms_icon" align="top"/></a></td>
         {% else %}
-          {% with phoneNumber.type as title %}
-          {% with phoneNumber.numberLink|safe as value %}
-          {% include "contact_row.html" %}
-          {% endwith %}
-          {% endwith %}
+          <td align="left" valign="top" colspan="2"><a href="phone:?index={{ forloop.counter0 }}">{{ phoneNumber.number }}</a></td>
         {% endif %}
+      </tr>
       {% endfor %}
 
       {% for email in contact.emails %}
