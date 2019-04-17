@@ -4,7 +4,9 @@
 {% if contacts %}
 {% for contact in contacts %}
 <h1>{{ contact.realName|safe }}</h1>
-<p>{{ contact.emails|safe }}</p>
+<p>{% for email in contact.emails %}
+    {{ email.email }}{% if not forloop.last %}, {% endif %}
+{% endfor %}</p>
 {% if contact.note %}
 <p>{{ contact.note|safe }}</p>
 {% endif %}

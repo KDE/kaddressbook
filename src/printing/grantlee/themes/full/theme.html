@@ -40,7 +40,11 @@
   {% if contact.emails %}
   <tr>
    <td class=data_header>{{ contacti18n.emailsi18n }}</td>
-   <td class=data>{{ contact.emails|safe }}</td>
+   <td class=data>
+   {% for email in contact.emails %}
+      {{ email.email }}{% if not forloop.last %}, {% endif %}
+   {% endfor %}
+   </td>
   </tr>
   {% endif %}
   {% if contact.organization %}
