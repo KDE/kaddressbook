@@ -53,10 +53,10 @@
    <td class=last_data>{{ contact.organization }}</td>
   </tr>
   {% endif %}
-  {% if contact.webPage %}
+  {% if contact.url.url %}
   <tr>
    <td class=data_header>{{ contacti18n.websitei18n }}</td>
-   <td class=last_data>{{ contact.webPage|safe }}</td>
+   <td class=last_data>{{ contact.url.url }}</td>
   </tr>
   {% endif %}
   {% if contact.birthday %}

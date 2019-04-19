@@ -55,20 +55,30 @@
           {% endwith %}
       {% endfor %}
       
-      {% for website in contact.websites %}
-        {% with contact.websitei18n as title %}
-        {% with website|safe as value %}
-        {% include "contact_row.html" %}
-        {% endwith %}
-        {% endwith %}
+      {% for website in contact.urls %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.websitei18n }}</font></b></td>
+        <td align="left" valign="top" colspan="2">
+        {% if website.url.scheme %}
+            <a href="{{ website.url }}">
+        {% else %}
+            <a href="https://{{ website.url }}">
+        {% endif %}
+        {{ website.url }}</a></td>
+      </tr>
       {% endfor %}
 
-      {% if contact.blogUrl %}
-        {% with "Blog Feed" as title %}
-        {% with contact.blogUrl|safe as value %}
-        {% include "contact_row.html" %}
-        {% endwith %}
-        {% endwith %}
+      {% if contact.blogFeed %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.blogUrli18n }}</font></b></td>
+        <td align="left" valign="top" colspan="2">
+        {% if contact.blogFeed.scheme %}
+            <a href="{{ contact.blogFeed }}">
+        {% else %}
+            <a href="https://{{ contact.blogFeed }}">
+        {% endif %}
+        {{ contact.blogFeed }}</a>
+      </tr>
       {% endif %}
 
       {% for address in contact.addresses %}
