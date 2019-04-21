@@ -4,26 +4,30 @@
         <td align="right" valign="top" width="30%" rowspan="3">
           <img src="contact_photo" width="100" vspace="1">
         </td>
-        <td align="left" width="70%" colspan="2"><font size="+2" ><b>{{ contact.name }}</b></font></td>
+        <td align="left" width="70%" colspan="2"><font size="+2" ><b>{{ contact.realName }}</b></font></td>
       </tr>
       <tr>
-        <td align="left" colspan="2">{{ contact.job }}</td>
+        <td align="left" colspan="2">
+        {% if contact.title %}
+            {{ contact.title }}
+        {% elif contact.role %}
+            {{ contact.role }}
+        {% else %}
+            {{ contact.profession }}
+        {% endif %}
+        </td>
       </tr>
       <tr>
         <td align="left" colspan="2">{{ contact.organization }}</td>
       </tr>
+
       {% if contact.birthday %}
-        {% with contact.birthdayi18n as title %}
-        {% if contact.birthdayage %}
-          {% with contact.birthdayage|safe as value %}
-          {% include "contact_row.html" %}
-          {% endwith %}
-        {% else %}
-          {% with contact.birthday|safe as value %}
-          {% include "contact_row.html" %}
-          {% endwith %}
-        {% endif %}
-        {% endwith %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Birthday" %}</font></b></td>
+        <td align="left" valign="top" colspan="2">
+          {{ contact.formattedBirthday }}&nbsp;{% i18np "(One year old)" "(%1 years old)" contact.age %}
+        </td>
+      </tr>
       {% endif %}
 
       {% for phoneNumber in contact.phoneNumbers %}
@@ -40,24 +44,22 @@
 
       {% for email in contact.emails %}
       <tr>
-          <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.emailsi18n }}</font></b></td>
+          <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Email" %}</font></b></td>
           <td align="left" valign="top" colspan="2"><a href="mailto:{{ email.email }}">{{ email.email }}</a></td>
       </tr>
       {% endfor %}
 
       {% for imAddress in contact.imAddresses %}
-          {% with imAddress.type as title %}
-          {% with imAddress.imAddress|safe as value %}
-          {% with imAddress.imIcon|safe as value2 %}
-          {% include "contact_row.html" %}
-          {% endwith %}
-          {% endwith %}
-          {% endwith %}
+      <tr>
+          <td align="right" valign="top" width="30%"><b><font color="grey">{{ imAddress.serviceLabel }}</font></b></td>
+          <td align="left" valign="top">{{ imAddress.address|safe }}</td>
+          <td align="left" valign="top">{% icon imAddress.serviceIcon small %}</td>
+      </tr>
       {% endfor %}
       
       {% for website in contact.urls %}
       <tr>
-        <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.websitei18n }}</font></b></td>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Website" %}</font></b></td>
         <td align="left" valign="top" colspan="2">
         {% if website.url.scheme %}
             <a href="{{ website.url }}">
@@ -70,7 +72,7 @@
 
       {% if contact.blogFeed %}
       <tr>
-        <td align="right" valign="top" width="30%"><b><font color="grey">{{ contact.blogUrli18n }}</font></b></td>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Blog Feed" %}</font></b></td>
         <td align="left" valign="top" colspan="2">
         {% if contact.blogFeed.scheme %}
             <a href="{{ contact.blogFeed }}">
@@ -99,7 +101,7 @@
       {% endfor %}
 
       {% if contact.profession %}
-        {% with contact.Professioni18n as title %}
+        {% with contact.professionLabel as title %}
         {% with contact.profession as value %}
         {% include "contact_row.html" %}
         {% endwith %}
@@ -107,7 +109,7 @@
       {% endif %}
 
       {% if contact.department %}
-        {% with contact.departmenti18n as title %}
+        {% with contact.departmentLabel as title %}
         {% with contact.department as value %}
         {% include "contact_row.html" %}
         {% endwith %}
@@ -115,46 +117,46 @@
       {% endif %}
 
       {% if contact.office %}
-        {% with contact.officei18n as title %}
+        {% with contact.officeLabel as title %}
         {% with contact.office as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
 
-      {% if contact.manager %}
-        {% with contact.manageri18n as title %}
-        {% with contact.manager as value %}
+      {% if contact.managersName %}
+        {% with contact.managerLabel as title %}
+        {% with contact.managersName as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
 
-      {% if contact.assistant %}
-        {% with contact.assistanti18n as title %}
-        {% with contact.assistant as value %}
+      {% if contact.assistantsName %}
+        {% with contact.assistantLabel as title %}
+        {% with contact.assistantsName as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
 
-      {% if contact.spouse %}
-        {% with contact.spousei18n as title %}
-        {% with contact.spouse as value %}
+      {% if contact.spousesName %}
+        {% with contact.spouseLabel as title %}
+        {% with contact.spousesName as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
 
       {% if contact.anniversary %}
-        {% with contact.anniversaryi18n as title %}
-        {% with contact.anniversary as value %}
+        {% with contact.anniversaryLabel as title %}
+        {% with contact.formattedAnniversary as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
 
-      {% for customField in contact.customFieldsUrl %}
+      {% for customField in customFieldsUrl %}
         {% with customField.title as title %}
         {% with customField.value|safe as value %}
         {% include "contact_row.html" %}
@@ -162,7 +164,7 @@
         {% endwith %}
       {% endfor %}
 
-      {% for customField in contact.customFields %}
+      {% for customField in customFields %}
         {% with customField.title as title %}
         {% with customField.value as value %}
         {% include "contact_row.html" %}
@@ -171,21 +173,21 @@
       {% endfor %}
 
       {% if contact.addressBookName %}
-        {% with contact.addressBookNamei18n as title %}
+        {% with contact.addressBookLabel as title %}
         {% with contact.addressBookName as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
       {% if contact.note %}
-        {% with contact.notei18n as title %}
-        {% with contact.note|safe as value %}
+        {% with contact.noteLabel as title %}
+        {% with contact.note|linebreaksbr as value %}
         {% include "contact_row.html" %}
         {% endwith %}
         {% endwith %}
       {% endif %}
     </table>
-    {% if contact.hasqrcode %}
+    {% if hasqrcode %}
       <p align="center">
        <img src="qrcode" vspace="1">
       </p>

@@ -587,6 +587,7 @@ void MainWidget::setupGui()
     actions->connectToView(mContactDetails);
     actions->connectToView(mContactGroupDetails);
     mFormatter = new KAddressBookGrantlee::GrantleeContactFormatter;
+    mFormatter->setApplicationDomain("kaddressbook");
 
     mContactDetails->setContactFormatter(mFormatter);
 
