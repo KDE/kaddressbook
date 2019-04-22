@@ -62,7 +62,7 @@
   {% if contact.birthday %}
   <tr>
    <td class=data_header>{{ contacti18n.birthdayi18n }}</td>
-   <td class=last_data>{{ contact.birthday }}</td>
+   <td class=last_data>{{ contact.formattedBirthday }}</td>
   </tr>
   {% endif %}
   {% if contact.note %}
@@ -98,9 +98,9 @@
    <td class=last_data>{{ listphone.number }}</td>
   </tr>
   {% endfor %}
-  {% for im in contact.instantManging %}
+  {% for im in contact.imAddresses %}
   <tr>
-   <td class=data_header>{{ im.type }}</td>
+   <td class=data_header>{{ im.serviceLabel }}</td>
    <td class=last_data>{{ im.address }}</td>
   </tr>
   {% endfor %}
