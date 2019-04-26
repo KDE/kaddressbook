@@ -76,7 +76,7 @@ find_package(KF5KaddressbookImportExport ${KDEPIM_APPS_LIB_VERSION_LIB} CONFIG R
 find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION_LIB} CONFIG REQUIRED)
 
 
-set(GPGMEPP_LIB_VERSION "1.8.0")
+set(GPGMEPP_LIB_VERSION "1.11.1")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
 find_package(KF5AkonadiSearch "5.11.40" CONFIG REQUIRED)
