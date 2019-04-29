@@ -1,12 +1,12 @@
 set( kaddressbook_domain_contactgroup_SRCS contactgrouptest.cpp )
 add_executable( kaddressbookdomaincontactgrouptest ${kaddressbook_domain_contactgroup_SRCS} )
-add_test( kaddressbookdomaincontactgrouptest kaddressbookdomaincontactgrouptest )
+add_test( NAME kaddressbookdomaincontactgrouptest COMMAND kaddressbookdomaincontactgrouptest )
 ecm_mark_as_test(kaddressbookdomaincontactgrouptest)
 target_link_libraries( kaddressbookdomaincontactgrouptest Qt5::Test  kaddressbookdomain)
 
 
 set( kaddressbook_domain_contact_SRCS contacttest.cpp )
 add_executable( kaddressbookdomaincontacttest ${kaddressbook_domain_contact_SRCS} )
-add_test( kaddressbookdomaincontacttest kaddressbookdomaincontacttest )
+add_test( NAME kaddressbookdomaincontacttest COMMAND kaddressbookdomaincontacttest )
 ecm_mark_as_test(kaddressbookdomaincontacttest)
 target_link_libraries( kaddressbookdomaincontacttest Qt5::Test  kaddressbookdomain)
