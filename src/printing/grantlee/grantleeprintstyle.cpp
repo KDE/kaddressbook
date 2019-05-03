@@ -37,8 +37,9 @@ using namespace KABPrinting;
 
 GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard *parent)
     : PrintStyle(parent)
+    , m_themePath(themePath)
 {
-    mGrantleePrint = new KAddressBookGrantlee::GrantleePrint(themePath, this);
+
     QFile previewFile(QString(themePath + QDir::separator() + QStringLiteral("preview.png")));
     if (previewFile.exists()) {
         setPreview(previewFile.fileName());
@@ -57,7 +58,9 @@ void GrantleePrintStyle::print(const KContacts::Addressee::List &contacts, Print
 
     progress->addMessage(i18n("Setting up document"));
 
-    const QString html = mGrantleePrint->contactsToHtml(contacts);
+    KAddressBookGrantlee::GrantleePrint grantleePrint(m_themePath);
+    grantleePrint.setApplicationDomain("kaddressbook");
+    const QString html = grantleePrint.contactsToHtml(contacts);
 
     QTextDocument document;
     document.setHtml(html);
