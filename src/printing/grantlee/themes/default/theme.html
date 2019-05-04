@@ -32,14 +32,14 @@
 {% if contact.name %}
 <div class=name>{{ contact.name }}</div>
 {% else %}
-<div class=name>{{ contacti18n.nextcontacti18n }}</div>
+<div class=name>{% i18n "Contact" %}</div>
 {% endif %}
 <div class=last_extra_name>{{ contact.realName|safe }}</div>
 
 <table cellpadding=0>
   {% if contact.emails %}
   <tr>
-   <td class=data_header>{{ contacti18n.emailsi18n }}</td>
+   <td class=data_header>{% i18n "Emails" %}</td>
    <td class=data>
    {% for email in contact.emails %}
       {{ email.email }}{% if not forloop.last %}, {% endif %}
@@ -49,25 +49,25 @@
   {% endif %}
   {% if contact.organization %}
   <tr>
-   <td class=data_header>{{ contacti18n.organizationi18n }}</td>
+   <td class=data_header>{% i18n "Organization" %}</td>
    <td class=last_data>{{ contact.organization }}</td>
   </tr>
   {% endif %}
   {% if contact.url.url %}
   <tr>
-   <td class=data_header>{{ contacti18n.websitei18n }}</td>
+   <td class=data_header>{% i18n "Website" %}</td>
    <td class=last_data>{{ contact.url.url }}</td>
   </tr>
   {% endif %}
   {% if contact.birthday %}
   <tr>
-   <td class=data_header>{{ contacti18n.birthdayi18n }}</td>
+   <td class=data_header>{% i18n "Birthday" %}</td>
    <td class=last_data>{{ contact.formattedBirthday }}</td>
   </tr>
   {% endif %}
   {% if contact.note %}
   <tr>
-   <td class=data_header>{{ contacti18n.notei18n }}</td>
+   <td class=data_header>{% i18n "Note" %}</td>
    <td class=last_data>{{ contact.note }}</td>
   </tr>
   {% endif %}
