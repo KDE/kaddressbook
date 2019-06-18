@@ -22,10 +22,9 @@
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
 #include <QToolButton>
-#include <QLayout>
 #include <QStandardItemModel>
 #include <QTimer>
-
+#include <QHBoxLayout>
 #include <AkonadiCore/monitor.h>
 #include <AkonadiCore/tagmodel.h>
 
