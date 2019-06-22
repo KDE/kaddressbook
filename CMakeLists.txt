@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 set(KDEPIM_VERSION_NUMBER "5.11.40")
 project(kaddressbook VERSION ${KDEPIM_VERSION_NUMBER})
 
-set(KF5_MIN_VERSION "5.58.0")
+set(KF5_MIN_VERSION "5.59.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -94,10 +94,6 @@ add_definitions(-DQT_NO_FOREACH)
 add_subdirectory(src)
 add_subdirectory(kontactplugin)
 
-if (${ECM_VERSION} STRGREATER "5.58.0")
-    install(FILES kaddressbook.renamecategories kaddressbook.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-else()
-    install(FILES kaddressbook.renamecategories kaddressbook.categories  DESTINATION ${KDE_INSTALL_CONFDIR})
-endif()
+install(FILES kaddressbook.renamecategories kaddressbook.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
