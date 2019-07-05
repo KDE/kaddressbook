@@ -59,10 +59,6 @@ int KAddressBookApplication::activate(const QStringList &arguments, const QStrin
 
 int main(int argc, char **argv)
 {
-    //Fix QtWebEngine + wayland
-#if defined(Q_OS_UNIX) && QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
-    qputenv("QT_QPA_PLATFORM", "xcb");
-#endif
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
