@@ -98,10 +98,10 @@
    <td class=last_data>{{ listphone.number }}</td>
   </tr>
   {% endfor %}
-  {% for im in contact.imAddresses %}
+  {% for im in contact.impps %}
   <tr>
    <td class=data_header>{{ im.serviceLabel }}</td>
-   <td class=last_data>{{ im.address }}</td>
+   <td class=last_data>{{ im.address.path }}</td>
   </tr>
   {% endfor %}
 </table>
