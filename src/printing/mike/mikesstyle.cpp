@@ -82,13 +82,13 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 
             if (i < leftFields.count()) {
                 leftTitle = KAddressBookImportExport::KAddressBookImportExportContactFields::label(leftFields.at(i)) + QLatin1Char(':');
-                leftTitle = leftTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
+                leftTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
                 leftValue = KAddressBookImportExport::KAddressBookImportExportContactFields::value(leftFields.at(i), contact);
             }
 
             if (i < rightFields.count()) {
                 rightTitle = KAddressBookImportExport::KAddressBookImportExportContactFields::label(rightFields.at(i)) + QLatin1Char(':');
-                rightTitle = rightTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
+                rightTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
                 rightValue = KAddressBookImportExport::KAddressBookImportExportContactFields::value(rightFields.at(i), contact);
             }
 
