@@ -88,7 +88,10 @@ find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 set(CMAKE_CXX_STANDARD 14)
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
+   add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+endif()
+
 add_definitions(-DQT_NO_FOREACH)
 
 add_subdirectory(src)
