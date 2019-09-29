@@ -100,3 +100,6 @@ add_subdirectory(kontactplugin)
 install(FILES kaddressbook.renamecategories kaddressbook.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+if(KF5DocTools_FOUND)
+    add_subdirectory(doc)
+endif()
