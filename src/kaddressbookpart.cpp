@@ -23,7 +23,6 @@
 #include "kaddressbookmigrateapplication.h"
 
 #include "kaddressbook_debug.h"
-#include <KIconLoader>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KParts/StatusBarExtension>
@@ -43,7 +42,6 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     KAddressBookMigrateApplication migrate;
     migrate.migrate();
 
-    KIconLoader::global()->addAppDir(QStringLiteral("kaddressbook"));
     // create a canvas to insert our widget
     QWidget *canvas = new QWidget(parentWidget);
     canvas->setFocusPolicy(Qt::ClickFocus);

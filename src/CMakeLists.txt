@@ -81,7 +81,6 @@ target_link_libraries(kaddressbookprivate
     KF5::KCMUtils
     KF5::Codecs
     KF5::GrantleeTheme
-    KF5::IconThemes
     KF5::Completion
     KF5::XmlGui
     KF5::JobWidgets
@@ -128,7 +127,7 @@ install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_ME
 
 set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp ${kaddressbook_qrc_SRCS})
 add_library(kaddressbookpart MODULE ${kaddressbook_PART_SRCS})
-target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::Parts KF5::IconThemes)
+target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 install(FILES data/kaddressbookpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 
