@@ -421,7 +421,7 @@
 </chapter>
 
 <chapter id="integration-with-other-kde-programs">
-<title>Integration With Other KDE Programs</title>
+<title>Integration With Other &kde; Programs</title>
   
   <sect1 id="integration-overview">
   <title>Integration Overview -- &kmail;</title>
@@ -553,9 +553,9 @@
   <para>&nbsp;</para> <!-- add more white space after screenshot @dcb -->
   <para>When you receive an email message from someone who is not yet in your address book, &kmail; makes it very 
   easy to create a new contact. Simply point your cursor at the email address you want to save, then click the &RMB; and
-  a context menu will appear (see above). Select <guimenuitem>&nbsp;+ Add to Address Book&nbsp;</guimenuitem>
+  a context menu will appear (see above). Select <guimenuitem>&nbsp;&plus; Add to Address Book&nbsp;</guimenuitem>
   to add the selected email address to one of your address books. If you recognize this person as somebody who's already
-  in your address book, and he is using a new email address, you may click on <guimenuitem>&nbsp;+ Add to Existing Contact&nbsp;</guimenuitem>
+  in your address book, and he is using a new email address, you may click on <guimenuitem>&nbsp;&plus; Add to Existing Contact&nbsp;</guimenuitem>
   instead -- this enters a dialog that will direct &nbsp;&kaddressbook; to the spot where you want to insert the new email address.</para>
   <para>&nbsp;</para> <!-- add more white space before next picture @dcb -->
   
@@ -724,13 +724,13 @@
     <guibutton>&nbsp;Select ...<inlinemediaobject><imageobject><imagedata fileref="go-down.png" format="PNG"/></imageobject></inlinemediaobject></guibutton>
     Drop Down Box permits you to identify thirteen categories of IM services: <glossterm linkend="gloss-aim">AIM,</glossterm>
     Facebook, <glossterm linkend="gloss-gadu-gadu">Gadu-Gadu</glossterm>, Google Talk, <glossterm linkend="gloss-gpws">GroupWise</glossterm>, 
-    <glossterm linkend="gloss-icq"><acronym>ICQ</acronym></glossterm>, <glossterm linkend="gloss-irc"><acronym>IRC</acronym></glossterm>, 
+    <glossterm linkend="gloss-icq"><acronym>ICQ</acronym></glossterm>, <glossterm linkend="gloss-irc">&irc;</glossterm>, 
     <glossterm linkend="gloss-jabber">Jabber</glossterm>, <glossterm linkend="gloss-mnwhl">Meanwhile</glossterm>, 
     <glossterm linkend="gloss-sms"><acronym>SMS</acronym></glossterm>, Skype, Twitter, and Yahoo. (MSN Messenger is
     still on the list of IM services in version 5.10.3; it has been defunct since 2014.)</para></listitem>
     </varlistentry>
     
-    <varlistentry><term>Web</term><listitem><para>You may associate one or more web site URLs with this
+    <varlistentry><term>Web</term><listitem><para>You may associate one or more web site &URL;s with this
     person. Use the <guibutton>&nbsp;&plus;&nbsp;</guibutton> and <guibutton>&nbsp;&minus;&nbsp;</guibutton>
     buttons to add or delete Web address fields. The <guibutton>&nbsp;Select ...<inlinemediaobject><imageobject>
     <imagedata fileref="go-down.png" format="PNG"/></imageobject></inlinemediaobject></guibutton>
@@ -771,7 +771,7 @@
     <guibutton>&nbsp;✔&nbsp;OK&nbsp;</guibutton> button to add the selected tags to this contact.</para></listitem>
     </varlistentry>
     
-    <varlistentry><term>Blog Feed</term><listitem><para>Use this field to record the URL associated with this
+    <varlistentry><term>Blog Feed</term><listitem><para>Use this field to record the &URL; associated with this
     contact's web log, or blog.</para></listitem>
     </varlistentry>
     
@@ -1029,7 +1029,7 @@
 <variablelist>
     <varlistentry><term>Allowed Protocols</term><listitem><para>Choose which mode of encryption you wish to use when
     sending a message to this person: <glossterm linkend="gloss-inline-pgp">Inline OpenPGP</glossterm>, <glossterm 
-    linkend="gloss-open-pgp">OpenPGP/<acronym>MIME</acronym></glossterm>, <glossterm linkend="gloss-mime"><acronym>S/MIME</acronym>
+    linkend="gloss-open-pgp">OpenPGP/&MIME;</glossterm>, <glossterm linkend="gloss-mime"><acronym>S/MIME</acronym>
     </glossterm>, or <glossterm linkend="gloss-opaque"><acronym>S/MIME</acronym> Opaque</glossterm>.</para></listitem>
     </varlistentry>
 
@@ -1178,7 +1178,7 @@
     <term><menuchoice><guimenu>File</guimenu><guisubmenu><inlinemediaobject><imageobject><imagedata fileref="document-preview-archive.png" format="PNG"/>
     </imageobject></inlinemediaobject>Print Preview</guisubmenu></menuchoice></term>
     <listitem><para>Opens a print preview dialog, which also permits you to format the report, select which items to include, and
-    specify a sort order, etc. See &nbsp;<link linkend="file-print-preview">the appendix</link> for further details.</para></listitem>
+    specify a sort order, &etc; See &nbsp;<link linkend="file-print-preview">the appendix</link> for further details.</para></listitem>
     </varlistentry>
     
     <varlistentry>
@@ -1256,15 +1256,15 @@
     <varlistentry>
     <term><menuchoice><guimenu>Edit</guimenu><guisubmenu><inlinemediaobject><imageobject><imagedata fileref="edit-copy.png" format="PNG"/></imageobject>
     </inlinemediaobject>Copy Contact To &nbsp; &gt;</guisubmenu><guimenuitem>(a variable list)</guimenuitem></menuchoice></term>
-    <listitem><para>Combines the <quote>Copy</quote> and <quote>Paste</quote> operations into a single click of the left
-    mouse button. The list of destinations displayed depends on how many address books you have created.</para></listitem>
+    <listitem><para>Combines the <quote>Copy</quote> and <quote>Paste</quote> operations into a single click of the &LMB;. 
+    The list of destinations displayed depends on how many address books you have created.</para></listitem>
     </varlistentry>
     
     <varlistentry>
     <term><menuchoice><guimenu>Edit</guimenu><guisubmenu><inlinemediaobject><imageobject><imagedata fileref="go-jump.png" format="PNG"/></imageobject>
     </inlinemediaobject>Move Contact To &nbsp; &gt;</guisubmenu><guimenuitem>(a variable list)</guimenuitem></menuchoice></term>
     <listitem><para>Works just like the <quote>Copy Contact To</quote> operation described above, except that it combines
-    <quote>Cut</quote> and <quote>Paste</quote> into a single click of the left mouse button.</para></listitem>
+    <quote>Cut</quote> and <quote>Paste</quote> into a single click of the &LMB;.</para></listitem>
     </varlistentry>
     
     <varlistentry>
@@ -1399,8 +1399,8 @@
     <term><menuchoice><guimenu>Action</guimenu><guisubmenu><inlinemediaobject><imageobject><imagedata fileref="mail-message-new.png" 
     format="PNG"/></imageobject></inlinemediaobject>Send an email...</guisubmenu></menuchoice></term>
     <listitem><para>This option provides an alternate method for setting a new email message's recipient list.
-    Press &Ctrl; (or &Shift;) and select the people to whom you wish to send the new message, by using your left
-    mouse button. Then click on <quote>Send an Email...</quote>; this will open a &kmail; composition window. All 
+    Press &Ctrl; (or &Shift;) and select the people to whom you wish to send the new message, by using your &LMB;. 
+    Then click on <quote>Send an Email...</quote>; this will open a &kmail; composition window. All 
     the selected contacts will be listed as <quote>To</quote> addressees.</para></listitem>
     </varlistentry>
     
@@ -1668,10 +1668,10 @@
     <varlistentry>
     <term>[ Search...&nbsp;<keycombo action="simul">&Alt;<keycap>Q</keycap></keycombo> ]</term>
     <listitem><para>This tool searches through all the contacts in selected address books as you type.
-    Pressing &nbsp;&Alt;&plus;Q simply positions the cursor inside the <quote>Search...</quote>
-    box. Be aware that this function searches the entirety of each contact record; a search for
-    <quote>and</quote> may return not only Andy Brown and Andrew Jones, but also Bill 
-    Smith (who happens to work for Brown and Root Construction Company).</para></listitem>
+    Pressing <keycombo>&Alt;<keycap>Q</keycap></keycombo> simply positions the cursor inside the 
+    <quote>Search...</quote> box. Be aware that this function searches the entirety of each contact 
+    record; a search for <quote>and</quote> may return not only Andy Brown and Andrew Jones, but also 
+    Bill Smith (who happens to work for Brown and Root Construction Company).</para></listitem>
     </varlistentry>
     
   </variablelist>
@@ -1732,7 +1732,7 @@
   <sect1 id="context-menus">
   <title>The Context Menus</title>
   
-  <para>When you click the right mouse button anywhere inside the main Text Area, a context menu will appear, as illustrated below.
+  <para>When you click the &RMB; anywhere inside the main Text Area, a context menu will appear, as illustrated below.
   The particular menu that appears depends on both the panel within which the right-click occurred and the particular data item that
   was selected, if any.</para>
   
@@ -1903,7 +1903,7 @@
     <term><menuchoice><guimenu><inlinemediaobject><imageobject><imagedata fileref="document-preview-archive.png" format="PNG"/>
     </imageobject></inlinemediaobject>Print Preview</guimenu></menuchoice></term>
     <listitem><para>This context menu option opens a print preview dialog, which also permits you to format the report, select which items to
-    include, and specify a sort order, etc. See &nbsp;<link linkend="file-print-preview">the appendix</link> for further details.</para></listitem>
+    include, and specify a sort order, &etc; See &nbsp;<link linkend="file-print-preview">the appendix</link> for further details.</para></listitem>
     </varlistentry>
     
     <varlistentry>
@@ -1963,7 +1963,7 @@
   
   <glossentry id="gloss-akonadi">
   <glossterm>&akonadi;</glossterm>
-  <glossdef><para>An extensible cross-desktop storage service for PIM data and meta data providing 
+  <glossdef><para>An extensible cross-desktop storage service for &PIM; data and meta data providing 
   concurrent read, write, and query access. &nbsp;&nbsp;&nbsp;&akonadi; can be manipulated with the akonadictl 
   command: enter <quote>akonadictl --help</quote> in a console window to learn more.</para></glossdef>
   </glossentry>
@@ -2048,9 +2048,9 @@
   
   <glossentry id="gloss-imap">
   <glossterm>&IMAP;</glossterm>
-  <glossdef><para><acronym>IMAP</acronym> stands for Internet Message Access Protocol, a widely 
-  available method for managing email messages. IMAP maintains and synchronizes local and remote 
-  copies of a set of messages -- in other words, the locally stored data for an IMAP account are 
+  <glossdef><para>&IMAP; stands for Internet Message Access Protocol, a widely 
+  available method for managing email messages. &IMAP; maintains and synchronizes local and remote 
+  copies of a set of messages -- in other words, the locally stored data for an &IMAP; account are 
   a mirror image of the messages on the server.</para></glossdef>
   </glossentry>
   
@@ -2063,9 +2063,9 @@
   </glossentry>
   
   <glossentry id="gloss-irc">
-  <glossterm><acronym>IRC</acronym></glossterm>
-  <glossdef><para><acronym>IRC</acronym> stands for Internet Relay Chat, an IM service that has its
-  roots in a Finnish predecessor of the World Wide Web called OuluBox (1988). <acronym>IRC</acronym>
+  <glossterm>&irc;</glossterm>
+  <glossdef><para>&irc; stands for Internet Relay Chat, an IM service that has its
+  roots in a Finnish predecessor of the World Wide Web called OuluBox (1988). &irc;
   has been losing users steadily for many years as social media platforms like Facebook have become
   more popular. The largest remaining network is known as Freenode; it can be accessed <ulink
   url="https://webchat.freenode.net/">via this web site</ulink>.</para></glossdef>
@@ -2131,19 +2131,19 @@
   </glossentry>
 
   <glossentry id="gloss-acro-mime">
-  <glossterm><acronym>MIME</acronym></glossterm>
-  <glossdef><para><acronym>MIME</acronym> stands for Multipurpose Internet Mail Extensions,
+  <glossterm>&MIME;</glossterm>
+  <glossdef><para>&MIME; stands for Multipurpose Internet Mail Extensions,
   a set of coding conventions designed to make email messages more flexible by enabling features
   like extended character sets, embedded images, <quote>rich text</quote> coding, &etc; The original
   email coding conventions supported nothing besides plain text (or encrypted) messages written with 7-bit
-  ASCII code. Almost all contemporary email messages are <acronym>MIME</acronym> encoded.</para></glossdef>
+  ASCII code. Almost all contemporary email messages are &MIME; encoded.</para></glossdef>
   </glossentry>
    
   <glossentry id="gloss-open-pgp">
-  <glossterm>OpenPGP/<acronym>MIME</acronym></glossterm>
-  <glossdef><para>OpenPGP/<acronym>MIME</acronym> refers to an encryption convention for <glossterm 
-  linkend="gloss-acro-mime"><acronym>MIME</acronym></glossterm> encoded email messages. A special set
-  of <acronym>MIME</acronym> headers are wrapped around the PGP signature, allowing an email client
+  <glossterm>OpenPGP/&MIME;</glossterm>
+  <glossdef><para>OpenPGP/&MIME; refers to an encryption convention for <glossterm 
+  linkend="gloss-acro-mime">&MIME;</glossterm> encoded email messages. A special set
+  of &MIME; headers are wrapped around the PGP signature, allowing an email client
   program to conceal the signature when the message is displayed.</para></glossdef>
   </glossentry>
   
@@ -2207,8 +2207,8 @@
   <glossterm><acronym>S/MIME</acronym> Opaque</glossterm>
   <glossdef><para><acronym>S/MIME</acronym> Opaque stands for the <quote>opaque</quote> version of Secure /
   Multipurpose Internet Mail Extensions. It is similar to the <quote>S/MIME</quote> format defined above,
-  but the entire contents of the message are rolled up into a single MIME object. (Most MIME encoded
-  email messages consist of two or more separate MIME objects.)</para></glossdef>
+  but the entire contents of the message are rolled up into a single &MIME; object. (Most &MIME; encoded
+  email messages consist of two or more separate &MIME; objects.)</para></glossdef>
   </glossentry>
  
   <glossentry id="gloss-sms">
