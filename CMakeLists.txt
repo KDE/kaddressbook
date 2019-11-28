@@ -47,19 +47,11 @@ set(KDEPIM_LIB_SOVERSION "5")
 
 set(QT_REQUIRED_VERSION "5.12.0")
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus PrintSupport)
-<<<<<<< HEAD
 set(LIBKDEPIM_LIB_VERSION_LIB "5.13.40")
 set(KDEPIM_APPS_LIB_VERSION_LIB "5.13.40")
 set(LIBGRANTLEETHEME_LIB_VERSION_LIB "5.13.40")
 set(PIMCOMMON_LIB_VERSION_LIB "5.13.40")
 set(LIBKLEO_LIB_VERSION "5.13.40")
-=======
-set(LIBKDEPIM_LIB_VERSION_LIB "5.12.90")
-set(KDEPIM_APPS_LIB_VERSION_LIB "5.12.90")
-set(LIBGRANTLEETHEME_LIB_VERSION_LIB "5.12.90")
-set(PIMCOMMON_LIB_VERSION_LIB "5.12.90")
-set(LIBKLEO_LIB_VERSION "5.12.90")
->>>>>>> origin/release/19.12
 # Find KF5 package
 find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DocTools ${KF5_MIN_VERSION} REQUIRED)
@@ -86,11 +78,7 @@ find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION_LIB} CONFIG REQUIRE
 set(GPGMEPP_LIB_VERSION "1.11.1")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
-<<<<<<< HEAD
 find_package(KF5AkonadiSearch "5.13.40" CONFIG REQUIRED)
-=======
-find_package(KF5AkonadiSearch "5.12.90" CONFIG REQUIRED)
->>>>>>> origin/release/19.12
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
