@@ -32,7 +32,7 @@
 
 class QLabel;
 class QPixmap;
-class KComboBox;
+class QComboBox;
 
 class StylePage : public QWidget
 {
@@ -99,9 +99,9 @@ private:
     void initGUI();
     void initFieldCombo();
 
-    KComboBox *mFieldCombo = nullptr;
-    KComboBox *mSortTypeCombo = nullptr;
-    KComboBox *mStyleCombo = nullptr;
+    QComboBox *mFieldCombo = nullptr;
+    QComboBox *mSortTypeCombo = nullptr;
+    QComboBox *mStyleCombo = nullptr;
     QLabel *mPreview = nullptr;
 
     KAddressBookImportExport::KAddressBookImportExportContactFields::Fields mFields;

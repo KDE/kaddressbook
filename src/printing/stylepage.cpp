@@ -30,7 +30,7 @@
 #include <QPixmap>
 #include <QVBoxLayout>
 
-#include <KComboBox>
+#include <QComboBox>
 #include <KLocalizedString>
 
 // helper method to sort contact fields by field label
@@ -52,7 +52,7 @@ StylePage::StylePage(QWidget *parent, const QString &name)
     mSortTypeCombo->addItem(i18nc("@item:inlistbox Ascending sort order", "Ascending"));
     mSortTypeCombo->addItem(i18nc("@item:inlistbox Descending sort order", "Descending"));
 
-    connect(mStyleCombo, qOverload<int>(&KComboBox::activated), this, &StylePage::styleChanged);
+    connect(mStyleCombo, qOverload<int>(&QComboBox::activated), this, &StylePage::styleChanged);
 }
 
 StylePage::~StylePage()
@@ -144,7 +144,7 @@ void StylePage::initGUI()
     label = new QLabel(i18nc("@label:listbox", "Criterion:"), group);
     sortLayout->addWidget(label, 0, 0);
 
-    mFieldCombo = new KComboBox(false, group);
+    mFieldCombo = new QComboBox(group);
     mFieldCombo->setToolTip(
         i18nc("@info:tooltip", "Select the primary sort field"));
     mFieldCombo->setWhatsThis(
@@ -157,7 +157,7 @@ void StylePage::initGUI()
     label = new QLabel(i18nc("@label:listbox", "Order:"), group);
     sortLayout->addWidget(label, 1, 0);
 
-    mSortTypeCombo = new KComboBox(false, group);
+    mSortTypeCombo = new QComboBox(group);
     mSortTypeCombo->setToolTip(
         i18nc("@info:tooltip", "Select the sorting order"));
     mSortTypeCombo->setWhatsThis(
@@ -173,7 +173,7 @@ void StylePage::initGUI()
     QVBoxLayout *styleLayout = new QVBoxLayout();
     group->setLayout(styleLayout);
 
-    mStyleCombo = new KComboBox(false, group);
+    mStyleCombo = new QComboBox(group);
     mStyleCombo->setToolTip(
         i18nc("@info:tooltip", "Select the print style"));
     mStyleCombo->setWhatsThis(
