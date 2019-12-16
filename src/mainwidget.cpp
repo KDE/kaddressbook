@@ -739,7 +739,7 @@ void MainWidget::print()
 
     QPointer<QPrintDialog> printDialog = new QPrintDialog(&printer, this);
 
-    printDialog->setWindowTitle(i18n("Print Contacts"));
+    printDialog->setWindowTitle(i18nc("@title:window", "Print Contacts"));
     if (!printDialog->exec() || !printDialog) {
         delete printDialog;
         return;

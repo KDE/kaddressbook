@@ -56,7 +56,7 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
     , mPrinter(printer)
     , mStyle(nullptr)
 {
-    setWindowTitle(i18n("Print Contacts"));
+    setWindowTitle(i18nc("@title:window", "Print Contacts"));
 
     mSelectionPage = new KAddressBookImportExport::KAddressBookContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
