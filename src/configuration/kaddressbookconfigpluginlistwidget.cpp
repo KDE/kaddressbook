@@ -21,7 +21,7 @@
 #include "../plugininterface/kaddressbookplugininterface.h"
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
-#include "kaddressbook_debug.h"
+#include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
 
@@ -100,7 +100,7 @@ void KAddressBookConfigPluginListWidget::slotConfigureClicked(const QString &con
             KAddressBookImportExport::KAddressBookImportExportPlugin *plugin = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginFromIdentifier(identifier);
             plugin->showConfigureDialog(this);
         } else {
-            qCWarning(KADDRESSBOOK_LOG) << "Unknown configureGroupName" << configureGroupName;
+            qCWarning(KADDRESSBOOK_CONFIGURE_LOG) << "Unknown configureGroupName" << configureGroupName;
         }
     }
 }

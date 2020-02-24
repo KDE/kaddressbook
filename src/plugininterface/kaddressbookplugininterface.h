@@ -25,7 +25,12 @@
 #include <PimCommonAkonadi/GenericPluginInterface>
 #include <pimcommonakonadi/plugininterface.h>
 class MainWidget;
-class KAddressBookPluginInterface : public PimCommon::PluginInterface
+
+#include "kaddressbook_export.h"
+
+#include <KAboutData>
+
+class KADDRESSBOOK_EXPORT KAddressBookPluginInterface : public PimCommon::PluginInterface
 {
     Q_OBJECT
 public:
