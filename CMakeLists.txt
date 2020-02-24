@@ -59,9 +59,6 @@ find_package(KF5KCMUtils ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5Crash ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5Libkleo ${LIBKLEO_LIB_VERSION} CONFIG REQUIRED)
 
-option(DOMAIN_EXPERIMENTAL "Enable this feature if you want to build experimental domain library. Not Stable yet." FALSE)
-
-
 # Find KdepimLibs Package
 find_package(KF5PimTextEdit ${KPIMTEXTEDIT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
@@ -93,6 +90,14 @@ if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
 endif()
 
 add_definitions(-DQT_NO_FOREACH)
+
+find_package(KUserFeedback)
+set_package_properties(KUserFeedback PROPERTIES DESCRIPTION "User Feedback lib" TYPE OPTIONAL PURPOSE "Allow to send Telemetry Information (optional). It can be disable in apps.")
+
+if (TARGET KUserFeedbackWidgets)
+    add_definitions(-DWITH_KUSERFEEDBACK)
+endif()
+
 
 add_subdirectory(src)
 add_subdirectory(kontactplugin)

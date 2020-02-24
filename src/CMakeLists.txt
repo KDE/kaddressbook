@@ -1,15 +1,15 @@
 configure_file(kaddressbook-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h @ONLY)
 
+set(kaddressbook_userfeedback_LIB)
+if (TARGET KUserFeedbackWidgets)
+    set(kaddressbook_userfeedback_LIB KUserFeedbackWidgets)
+endif()
+
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/printing/
     )
 
-
-if (DOMAIN_EXPERIMENTAL)
-    add_subdirectory(domain)
-    add_subdirectory(akonadi)
-endif()
 
 add_subdirectory(icons)
 add_subdirectory(printing)
@@ -46,6 +46,14 @@ set(kaddressbook_plugin_SRCS
     plugininterface/kaddressbookplugininterface.cpp
     )
 
+set(kaddressbook_userfeedback_SRCS)
+if (TARGET KUserFeedbackWidgets)
+    set(kaddressbook_userfeedback_SRCS ${kaddressbook_userfeedback_SRCS}
+        userfeedback/userfeedbackmanager.cpp
+        )
+endif()
+
+
 set(kaddressbook_LIB_SRCS
     aboutdata.cpp
     categoryfilterproxymodel.cpp
@@ -60,6 +68,7 @@ set(kaddressbook_LIB_SRCS
     kaddressbookmigrateapplication.cpp
     ${kaddressbook_printing_SRCS}
     ${kaddressbook_plugin_SRCS}
+    ${kaddressbook_userfeedback_SRCS}
     )
 
 if (ECM_VERSION VERSION_LESS "5.68.0")
@@ -99,6 +108,7 @@ target_link_libraries(kaddressbookprivate
     KF5::I18n
     KF5::KaddressbookImportExport
     KF5::Prison
+    ${kaddressbook_userfeedback_LIB}
     )
 
 if(QGpgme_FOUND)
