@@ -33,6 +33,11 @@
 #include <KMessageBox>
 #include <QMenuBar>
 #include <QPointer>
+#ifdef WITH_KUSERFEEDBACK
+#include <KUserFeedback/NotificationPopup>
+#include <KUserFeedback/Provider>
+#include "userfeedback/userfeedbackmanager.h"
+#endif
 
 MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)
@@ -53,6 +58,10 @@ MainWindow::MainWindow()
 
     mHideMenuBarAction->setChecked(Settings::self()->showMenuBar());
     slotToggleMenubar(true);
+#ifdef WITH_KUSERFEEDBACK
+    KUserFeedback::NotificationPopup *userFeedBackNotificationPopup = new KUserFeedback::NotificationPopup(this);
+    userFeedBackNotificationPopup->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
+#endif
 }
 
 MainWindow::~MainWindow()

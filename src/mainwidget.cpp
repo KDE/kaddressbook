@@ -375,6 +375,9 @@ void MainWidget::configure()
     dlg->addModule(QStringLiteral("akonadicontact_actions.desktop"));
     dlg->addModule(QStringLiteral("kcmldap.desktop"));
     dlg->addModule(QStringLiteral("kaddressbook_config_plugins.desktop"));
+#ifdef WITH_KUSERFEEDBACK
+    dlg->addModule(QStringLiteral("kaddressbook_config_userfeedback.desktop"));
+#endif
 
     dlg->exec();
     delete dlg;

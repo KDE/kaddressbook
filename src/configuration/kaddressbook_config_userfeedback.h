@@ -17,27 +17,27 @@
    Boston, MA 02110-1301, USA.
 */
 
+#ifndef KCM_Kaddressbook_Config_Plugins_H
+#define KCM_Kaddressbook_Config_Plugins_H
 
-#ifndef USERFEEDBACKMANAGER_H
-#define USERFEEDBACKMANAGER_H
+#include <KCModule>
 
-#include <QObject>
-#include "kaddressbook_export.h"
+#include <QVariant>
 namespace KUserFeedback {
-class Provider;
+class FeedbackConfigWidget;
 }
 
-class KADDRESSBOOK_EXPORT UserFeedBackManager : public QObject
+namespace KAddressBook {
+class KCMKaddressbookUserFeedBackConfig : public KCModule
 {
     Q_OBJECT
 public:
-    explicit UserFeedBackManager(QObject *parent = nullptr);
-    static UserFeedBackManager *self();
-
-    KUserFeedback::Provider *userFeedbackProvider() const;
-
+    KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args);
+    void load() override;
+    void save() override;
+    void defaults() override;
 private:
-    KUserFeedback::Provider *mUserFeedbackProvider = nullptr;
+    KUserFeedback::FeedbackConfigWidget *mUserFeedbackWidget = nullptr;
 };
-
-#endif // USERFEEDBACKMANAGER_H
+}
+#endif // KCM_Kaddressbook_Config_Plugins_H

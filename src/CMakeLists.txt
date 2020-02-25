@@ -138,6 +138,7 @@ target_link_libraries(kaddressbook
     KF5::KontactInterface
     kaddressbookprivate
     KF5::Crash
+    ${kaddressbook_userfeedback_LIB}
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
