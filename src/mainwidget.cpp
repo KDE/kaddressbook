@@ -390,7 +390,8 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
     parser.process(arguments);
 
     if (parser.isSet(QStringLiteral("import"))) {
-        for (const QString &urlStr : parser.positionalArguments()) {
+        const QStringList lst = parser.positionalArguments();
+        for (const QString &urlStr : lst) {
             const QUrl url(QUrl::fromUserInput(urlStr));
             for (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
                 if (interface->canImportFileType(url)) {

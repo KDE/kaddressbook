@@ -57,7 +57,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
     }
 
     int counter = 0;
-    QString content = QLatin1String("<html>\n");
+    QString content = QStringLiteral("<html>\n");
     content += QLatin1String(" <body>\n");
     for (const KContacts::Addressee &contact : contacts) {
         const int max = qMax(leftFields.count(), rightFields.count());
