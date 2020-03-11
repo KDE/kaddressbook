@@ -4,14 +4,10 @@ set(kcm_config_plugins_SRCS
     kaddressbookconfigpluginlistwidget.cpp
     )
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure)
-else()
-    ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure
+ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure
         DESCRIPTION "kaddressbook (configure)"
         EXPORT KADDRESSBOOK
     )
-endif()
 
 
 
