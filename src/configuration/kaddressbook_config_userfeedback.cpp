@@ -61,10 +61,13 @@ void KCMKaddressbookUserFeedBackConfig::save()
 
 void KCMKaddressbookUserFeedBackConfig::load()
 {
+    mUserFeedbackWidget->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 }
 
 void KCMKaddressbookUserFeedBackConfig::defaults()
 {
+    //FIXME ?
+    mUserFeedbackWidget->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 }
 
 #include "kaddressbook_config_userfeedback.moc"
