@@ -17,22 +17,19 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "kaddressbookuserfeedbackprovider.h"
-#include "userfeedbackmanager.h"
 
-UserFeedBackManager::UserFeedBackManager(QObject *parent)
-    : QObject(parent)
-{
-    mUserFeedbackProvider = new KAddressBookUserFeedbackProvider(this);
-}
+#ifndef KADDRESSBOOKUSERFEEDBACKPROVIDER_H
+#define KADDRESSBOOKUSERFEEDBACKPROVIDER_H
 
-UserFeedBackManager *UserFeedBackManager::self()
-{
-    static UserFeedBackManager s_self;
-    return &s_self;
-}
+#include <KUserFeedback/Provider>
+#include "kaddressbook_export.h"
 
-KUserFeedback::Provider *UserFeedBackManager::userFeedbackProvider() const
+class KADDRESSBOOK_EXPORT KAddressBookUserFeedbackProvider : public KUserFeedback::Provider
 {
-    return mUserFeedbackProvider;
-}
+    Q_OBJECT
+public:
+    explicit KAddressBookUserFeedbackProvider(QObject *parent = nullptr);
+    ~KAddressBookUserFeedbackProvider();
+};
+
+#endif // KADDRESSBOOKUSERFEEDBACKPROVIDER_H

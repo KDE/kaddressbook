@@ -50,6 +50,7 @@ set(kaddressbook_userfeedback_SRCS)
 if (TARGET KUserFeedbackWidgets)
     set(kaddressbook_userfeedback_SRCS ${kaddressbook_userfeedback_SRCS}
         userfeedback/userfeedbackmanager.cpp
+        userfeedback/kaddressbookuserfeedbackprovider.cpp
         )
 endif()
 
