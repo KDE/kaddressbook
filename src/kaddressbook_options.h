@@ -40,6 +40,10 @@ static void kaddressbook_options(QCommandLineParser *parser)
         QStringLiteral("urls"),
         i18n("Files or URLs. The user will be asked whether to import."),
         QStringLiteral("[urls...]"));
+
+#ifdef WITH_KUSERFEEDBACK
+    parser->addOption(QCommandLineOption(QStringLiteral("feedback"), i18n("Lists the available options for user feedback")));
+#endif
 }
 
 #endif // KADDRESSBOOK_OPTIONS_H

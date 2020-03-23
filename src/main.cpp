@@ -29,6 +29,9 @@
 
 #include "kaddressbook_debug.h"
 #include <kontactinterface/pimuniqueapplication.h>
+#ifdef WITH_KUSERFEEDBACK
+#include "userfeedback/kaddressbookuserfeedbackprovider.h"
+#endif
 
 //-----------------------------------------------------------------------------
 
@@ -76,6 +79,15 @@ int main(int argc, char **argv)
     const QStringList args = QCoreApplication::arguments();
     cmdArgs->process(args);
     about.processCommandLine(cmdArgs);
+
+#ifdef WITH_KUSERFEEDBACK
+    if(cmdArgs->isSet(QStringLiteral("feedback"))) {
+        KAddressBookUserFeedbackProvider *userFeedBack = new KAddressBookUserFeedbackProvider(nullptr);
+        QTextStream(stdout) << userFeedBack->describeDataSources() << '\n';
+        delete userFeedBack;
+        return 0;
+    }
+#endif
 
     if (!KAddressBookApplication::start(args)) {
         qCWarning(KADDRESSBOOK_LOG) << "kaddressbook is already running, exiting.";
