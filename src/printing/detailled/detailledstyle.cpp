@@ -71,14 +71,14 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
     for (const KContacts::Addressee &contact : contacts) {
         QString name = contact.realName();
         if (!contact.title().isEmpty() || !contact.role().isEmpty()) {
-            QStringList content;
+            QStringList contentAddress;
             if (!contact.title().isEmpty()) {
-                content << contact.title();
+                contentAddress << contact.title();
             }
             if (!contact.role().isEmpty()) {
-                content << contact.role();
+                contentAddress << contact.role();
             }
-            name += QStringLiteral(" (%1)").arg(content.join(QStringLiteral(", ")));
+            name += QStringLiteral(" (%1)").arg(contentAddress.join(QStringLiteral(", ")));
         }
 
         const QString birthday = QLocale().toString(contact.birthday().date(), QLocale::ShortFormat);

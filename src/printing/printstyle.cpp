@@ -36,9 +36,9 @@ using namespace KABPrinting;
 PrintStyle::PrintStyle(PrintingWizard *parent)
     : QObject(parent)
     , mWizard(parent)
+    , mSortField(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName)
+    , mSortOrder(Qt::AscendingOrder)
 {
-    mSortField = KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName;
-    mSortOrder = Qt::AscendingOrder;
 }
 
 PrintStyle::~PrintStyle()
