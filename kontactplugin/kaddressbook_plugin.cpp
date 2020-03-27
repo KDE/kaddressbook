@@ -164,6 +164,7 @@ int KAddressBookUniqueAppHandler::activate(const QStringList &arguments, const Q
     (void)plugin()->part();
     org::kde::kaddressbook kaddressbook(QStringLiteral("org.kde.kaddressbook"), QStringLiteral("/KAddressBook"), QDBusConnection::sessionBus());
     QDBusReply<bool> reply = kaddressbook.handleCommandLine(arguments);
+    Q_UNUSED(reply);
 
     return KontactInterface::UniqueAppHandler::activate(arguments, workingDir);
 }
