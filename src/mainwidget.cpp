@@ -32,11 +32,11 @@
 #include "kaddressbook_options.h"
 #include "manageshowcollectionproperties.h"
 
-#include "KaddressbookGrantlee/GrantleeContactFormatter"
-#include "KaddressbookGrantlee/GrantleeContactGroupFormatter"
-#include "grantleetheme/grantleethememanager.h"
+#include <KaddressbookGrantlee/GrantleeContactFormatter>
+#include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
+#include <GrantleeTheme/GrantleeThemeManager>
 
-#include "Libkdepim/UiStateSaver"
+#include <Libkdepim/UiStateSaver>
 
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
@@ -54,8 +54,8 @@
 #include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
 #include <QPointer>
-#include "PimCommonAkonadi/ManageServerSideSubscriptionJob"
-#include "PimCommon/PimUtil"
+#include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
+#include <PimCommon/PimUtil>
 #include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
 #include <KAddressBookImportExport/KAddressBookImportExportPlugin>
 #include <KAddressBookImportExport/KAddressBookImportExportPluginInterface>
