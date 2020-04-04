@@ -27,7 +27,7 @@
 
 class MainWidget;
 
-class KAddressBookPart : public KParts::ReadOnlyPart
+class KAddressBookPart : public KParts::Part
 {
     Q_OBJECT
 
@@ -41,7 +41,6 @@ public Q_SLOTS:
     void updateQuickSearchText();
 
 protected:
-    bool openFile() override;
     void guiActivateEvent(KParts::GUIActivateEvent *) override;
     void initAction();
 private:

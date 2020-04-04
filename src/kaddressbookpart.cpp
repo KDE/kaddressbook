@@ -25,7 +25,6 @@
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KParts/StatusBarExtension>
 #include <QAction>
 #include <KActionCollection>
 #include <QIcon>
@@ -36,7 +35,7 @@ K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();
                  )
 
 KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const QVariantList &)
-    : KParts::ReadOnlyPart(parent)
+    : KParts::Part(parent)
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
     KAddressBookMigrateApplication migrate;
@@ -82,14 +81,9 @@ KAddressBookPart::~KAddressBookPart()
 {
 }
 
-bool KAddressBookPart::openFile()
-{
-    return false;
-}
-
 void KAddressBookPart::guiActivateEvent(KParts::GUIActivateEvent *e)
 {
-    KParts::ReadOnlyPart::guiActivateEvent(e);
+    KParts::Part::guiActivateEvent(e);
     mMainWidget->initializePluginActions();
 }
 
