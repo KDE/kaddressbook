@@ -22,7 +22,7 @@
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
 
-#include <pimcommon/genericplugin.h>
+#include <PimCommon/GenericPlugin>
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent)
