@@ -78,7 +78,7 @@ KAddressBookPlugin::~KAddressBookPlugin()
 
 void KAddressBookPlugin::slotNewContact()
 {
-    KParts::ReadOnlyPart *part = createPart();
+    KParts::Part *part = createPart();
     if (!part) {
         return;
     }
@@ -93,7 +93,7 @@ void KAddressBookPlugin::slotNewContact()
 
 void KAddressBookPlugin::slotNewContactGroup()
 {
-    KParts::ReadOnlyPart *part = createPart();
+    KParts::Part *part = createPart();
     if (!part) {
         return;
     }
@@ -106,9 +106,9 @@ void KAddressBookPlugin::slotNewContactGroup()
     QMetaObject::invokeMethod(part, "newGroup");
 }
 
-KParts::ReadOnlyPart *KAddressBookPlugin::createPart()
+KParts::Part *KAddressBookPlugin::createPart()
 {
-    KParts::ReadOnlyPart *part = loadPart();
+    KParts::Part *part = loadPart();
     if (!part) {
         return nullptr;
     }
@@ -143,7 +143,7 @@ QStringList KAddressBookPlugin::invisibleToolbarActions() const
 
 void KAddressBookPlugin::shortcutChanged()
 {
-    KParts::ReadOnlyPart *localPart = part();
+    KParts::Part *localPart = part();
     if (localPart) {
         if (localPart->metaObject()->indexOfMethod("updateQuickSearchText()") == -1) {
             qCWarning(KADDRESSBOOKPLUGIN_LOG) << "KAddressBook part is missing slot updateQuickSearchText()";
