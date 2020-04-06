@@ -61,6 +61,7 @@ void KAddressBookConfigPluginListWidget::save()
 void KAddressBookConfigPluginListWidget::doLoadFromGlobalSettings()
 {
     initialize();
+    initializeDone();
 }
 
 void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
