@@ -40,7 +40,7 @@ GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard 
     , m_themePath(themePath)
 {
 
-    QFile previewFile(QString(themePath + QDir::separator() + QStringLiteral("preview.png")));
+    QFile previewFile(QString(themePath + QStringLiteral("/preview.png")));
     if (previewFile.exists()) {
         setPreview(previewFile.fileName());
     }
