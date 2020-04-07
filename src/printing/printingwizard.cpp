@@ -133,7 +133,7 @@ void PrintingWizard::loadGrantleeStyle()
         QStringList alreadyLoadedThemeName;
         while (dirIt.hasNext()) {
             dirIt.next();
-            const QString themeInfoFile = dirIt.filePath() + QDir::separator() + QStringLiteral("theme.desktop");
+            const QString themeInfoFile = dirIt.filePath() + QStringLiteral("/theme.desktop");
             KConfig config(themeInfoFile);
             KConfigGroup group(&config, QStringLiteral("Desktop Entry"));
             QString name = group.readEntry("Name", QString());
@@ -148,7 +148,7 @@ void PrintingWizard::loadGrantleeStyle()
                     ++i;
                 }
             }
-            const QString printThemePath(dirIt.filePath() + QDir::separator());
+            const QString printThemePath(dirIt.filePath() + QLatin1Char('/'));
             if (!printThemePath.isEmpty()) {
                 alreadyLoadedThemeName << name;
                 mPrintStyleDefinition.append(new PrintStyleDefinition(new GrantleeStyleFactory(name, printThemePath, this)));
