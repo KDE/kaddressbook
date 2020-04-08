@@ -16,7 +16,8 @@ add_library(kontact_kaddressbookplugin MODULE ${kontact_kaddressbookplugin_PART_
 target_link_libraries(kontact_kaddressbookplugin
     KF5::KontactInterface
 )
+kcoreaddons_desktop_to_json(kontact_kaddressbookplugin kaddressbookplugin.desktop)
 
-install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR})
+install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/kontact5)
 install(FILES kaddressbookplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR}/kontact)
 install(FILES kaddressbook.setdlg DESTINATION ${KDE_INSTALL_DATADIR}/kontact/ksettingsdialog)

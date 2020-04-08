@@ -35,7 +35,7 @@
 #include <QDBusReply>
 #include <QStandardPaths>
 
-EXPORT_KONTACT_PLUGIN(KAddressBookPlugin, kaddressbook)
+EXPORT_KONTACT_PLUGIN_WITH_JSON(KAddressBookPlugin, "kaddressbookplugin.json")
 
 KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &)
     : KontactInterface::Plugin(core, core, "kaddressbook")
