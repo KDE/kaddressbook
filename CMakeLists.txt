@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 set(PIM_VERSION "5.14.40")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "20.07.40")
-set(KF5_MIN_VERSION "5.68.0")
+set(KF5_MIN_VERSION "5.69.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
