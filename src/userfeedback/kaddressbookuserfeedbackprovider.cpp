@@ -17,7 +17,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #include "kaddressbookuserfeedbackprovider.h"
 #include <KUserFeedback/ApplicationVersionSource>
 #include <KUserFeedback/PlatformInfoSource>
@@ -50,5 +49,4 @@ KAddressBookUserFeedbackProvider::KAddressBookUserFeedbackProvider(QObject *pare
 
 KAddressBookUserFeedbackProvider::~KAddressBookUserFeedbackProvider()
 {
-
 }

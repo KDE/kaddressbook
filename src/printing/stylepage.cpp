@@ -34,8 +34,7 @@
 #include <KLocalizedString>
 
 // helper method to sort contact fields by field label
-static bool contactFieldsNameLesser(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field,
-                                    KAddressBookImportExport::KAddressBookImportExportContactFields::Field otherField)
+static bool contactFieldsNameLesser(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field, KAddressBookImportExport::KAddressBookImportExportContactFields::Field otherField)
 {
     return QString::localeAwareCompare(KAddressBookImportExport::KAddressBookImportExportContactFields::label(field),
                                        KAddressBookImportExport::KAddressBookImportExportContactFields::label(otherField)) < 0;
