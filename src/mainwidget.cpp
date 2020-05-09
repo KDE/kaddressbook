@@ -402,6 +402,9 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
         }
     } else if (parser.isSet(QStringLiteral("newcontact"))) {
         newContact();
+    } else if (parser.isSet(QStringLiteral("view"))) {
+        const auto url = QUrl{parser.value(QStringLiteral("view"))};
+        mPendingSelection = Akonadi::Item::fromUrl(url);
     }
 }
 
@@ -472,8 +475,14 @@ void MainWidget::restoreState()
         saver->setView(mItemView);
         saver->setSelectionModel(mItemView->selectionModel());
 
-        const KConfigGroup group(Settings::self()->config(), "ItemViewState");
-        saver->restoreState(group);
+        if (mPendingSelection.isValid()) {
+            saver->selectItems({mPendingSelection});
+            saver->setCurrentItem(mPendingSelection);
+            mPendingSelection = {};
+        } else {
+            const KConfigGroup group(Settings::self()->config(), "ItemViewState");
+            saver->restoreState(group);
+        }
     }
 }
 

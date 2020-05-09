@@ -139,7 +139,11 @@ target_link_libraries(kaddressbook
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(PROGRAMS data/org.kde.kaddressbook.desktop data/kaddressbook-importer.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(PROGRAMS
+    data/org.kde.kaddressbook.desktop
+    data/kaddressbook-view.desktop
+    data/kaddressbook-importer.desktop
+    DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp ${kaddressbook_qrc_SRCS})

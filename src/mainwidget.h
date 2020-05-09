@@ -168,6 +168,8 @@ private:
     KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager = nullptr;
     QList<KAddressBookImportExport::KAddressBookImportExportPluginInterface *> mImportExportPluginInterfaceList;
     ManageShowCollectionProperties *mManageShowCollectionProperties = nullptr;
+
+    Akonadi::Item mPendingSelection;
 };
 
 #endif

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=KAddressBook View
+Comment=Display contact specified by URL
+Type=Application
+Exec=kaddressbook --view %u
+Icon=kaddressbook
+Terminal=false
+StartupNotify=true
+MimeType=text/directory;application/x-vnd.kde.contactgroup
+
+X-KDE-StartupNotify=true
+X-DBUS-StartupType=Unique
+X-DBUS-ServiceName=org.kde.kaddressbook
+
