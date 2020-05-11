@@ -32,6 +32,12 @@
 #include "kaddressbook_options.h"
 #include "manageshowcollectionproperties.h"
 
+#include "importexport/kaddressbookimportexportpluginmanager.h"
+#include "importexport/kaddressbookimportexportplugin.h"
+#include "importexport/kaddressbookimportexportplugininterface.h"
+#include "importexport/kaddressbookcontactselectiondialog.h"
+
+
 #include <KaddressbookGrantlee/GrantleeContactFormatter>
 #include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
@@ -56,10 +62,6 @@
 #include <QPointer>
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
 #include <PimCommon/PimUtil>
-#include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
-#include <KAddressBookImportExport/KAddressBookImportExportPlugin>
-#include <KAddressBookImportExport/KAddressBookImportExportPluginInterface>
-#include <KAddressBookImportExport/KAddressBookContactSelectionDialog>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>

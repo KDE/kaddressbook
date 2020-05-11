@@ -18,8 +18,8 @@ target_link_libraries(kaddressbook_config_plugins
     KF5::I18n
     KF5::PimCommon
     kaddressbookprivate
+    kaddressbookimportexport
     KF5::XmlGui
-    KF5::KaddressbookImportExport
     )
 
 kcoreaddons_desktop_to_json(kaddressbook_config_plugins kaddressbook_config_plugins.desktop SERVICE_TYPES kcmodule.desktop)
@@ -39,8 +39,8 @@ if (TARGET KUserFeedbackWidgets)
         KF5::I18n
         KF5::PimCommon
         kaddressbookprivate
+        kaddressbookimportexport
         KF5::XmlGui
-        KF5::KaddressbookImportExport
         KUserFeedbackWidgets
         )
 

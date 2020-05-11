@@ -54,6 +54,7 @@ set(PIMCOMMON_LIB_VERSION_LIB "5.14.40")
 set(LIBKLEO_LIB_VERSION "5.14.40")
 # Find KF5 package
 find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5CoreAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DocTools ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5KCMUtils ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5Crash ${KF5_MIN_VERSION} REQUIRED)
@@ -73,6 +74,9 @@ find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION_LIB} CONFIG REQUIRE
 
 set(GPGMEPP_LIB_VERSION "1.11.1")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
+
+set(QGPGME_LIB_VERSION "1.13.0")
+find_package(QGpgme ${QGPGME_LIB_VERSION} CONFIG REQUIRED)
 
 find_package(KF5AkonadiSearch "5.14.40" CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")

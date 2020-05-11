@@ -19,8 +19,9 @@
 
 #include "kaddressbookconfigpluginlistwidget.h"
 #include "../plugininterface/kaddressbookplugininterface.h"
-#include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
-#include <KAddressBookImportExport/KAddressBookImportExportPlugin>
+#include "../importexport/kaddressbookimportexportpluginmanager.h"
+#include "../importexport/kaddressbookimportexportplugin.h"
+
 #include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
