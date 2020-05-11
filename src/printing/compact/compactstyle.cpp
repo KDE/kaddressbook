@@ -6,7 +6,7 @@
 */
 
 #include "compactstyle.h"
-#include "kaddressbookimportexportcontactfields.h"
+#include "importexport/contactfields.h"
 #include "printprogress.h"
 #include "printstyle.h"
 
@@ -23,6 +23,7 @@
 #include <KSharedConfig>
 
 using namespace KABPrinting;
+using namespace KAddressBookImportExport;
 
 const char *CompactStyleConfigSectionName = "CompactStyle";
 const char *WithAlternating = "WithAlternating";
@@ -49,27 +50,27 @@ public:
 QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts) const
 {
     // collect the fields are need to print
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields fields;
-    fields << KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName;
+    ContactFields::Fields fields;
+    fields << ContactFields::FormattedName;
     if (this->withHomeAddress) {
-        fields << KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressStreet
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostalCode
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLocality
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::HomePhone
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::MobilePhone;
+        fields << ContactFields::HomeAddressStreet
+               << ContactFields::HomeAddressPostalCode
+               << ContactFields::HomeAddressLocality
+               << ContactFields::HomePhone
+               << ContactFields::MobilePhone;
     }
     if (this->withBusinessAddress) {
-        fields << KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressStreet
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostalCode
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLocality
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessPhone;
+        fields << ContactFields::BusinessAddressStreet
+               << ContactFields::BusinessAddressPostalCode
+               << ContactFields::BusinessAddressLocality
+               << ContactFields::BusinessPhone;
     }
     if (this->withEMail) {
-        fields << KAddressBookImportExport::KAddressBookImportExportContactFields::PreferredEmail
-               << KAddressBookImportExport::KAddressBookImportExportContactFields::Email2;
+        fields << ContactFields::PreferredEmail
+               << ContactFields::Email2;
     }
     if (this->withBirthday) {
-        fields << KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday;
+        fields << ContactFields::Birthday;
     }
 
     QString content = QStringLiteral("<html>\n");
@@ -80,9 +81,9 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     for (const KContacts::Addressee &contact : contacts) {
         // get the values
         QStringList values;
-        for (const KAddressBookImportExport::KAddressBookImportExportContactFields::Field &field : qAsConst(fields)) {
+        for (const ContactFields::Field &field : qAsConst(fields)) {
             // we need only values with content
-            const QString value = KAddressBookImportExport::KAddressBookImportExportContactFields::value(field, contact).trimmed();
+            const QString value = ContactFields::value(field, contact).trimmed();
             if (!value.isEmpty()) {
                 values << value;
             }
@@ -112,7 +113,7 @@ CompactStyle::CompactStyle(PrintingWizard *parent)
     , mPageSettings(new CompactStyleForm(parent))
 {
     setPreview(QStringLiteral("compact-style.png"));
-    setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, Qt::AscendingOrder);
+    setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
 
     addPage(mPageSettings, i18n("Compact Style"));
 

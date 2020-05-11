@@ -22,6 +22,12 @@
 #include "kaddressbook_options.h"
 #include "manageshowcollectionproperties.h"
 
+#include "importexport/pluginmanager.h"
+#include "importexport/plugin.h"
+#include "importexport/plugininterface.h"
+#include "importexport/contactselectiondialog.h"
+
+
 #include <KaddressbookGrantlee/GrantleeContactFormatter>
 #include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
@@ -46,10 +52,6 @@
 #include <QPointer>
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
 #include <PimCommon/PimUtil>
-#include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
-#include <KAddressBookImportExport/KAddressBookImportExportPlugin>
-#include <KAddressBookImportExport/KAddressBookImportExportPluginInterface>
-#include <KAddressBookImportExport/KAddressBookContactSelectionDialog>
 
 #include <Akonadi/Contact/ContactDefaultActions>
 #include <Akonadi/Contact/ContactGroupEditorDialog>
@@ -140,7 +142,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
 
     mManageShowCollectionProperties = new ManageShowCollectionProperties(this, this);
-    mImportExportPluginManager = KAddressBookImportExport::KAddressBookImportExportPluginManager::self();
 
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
 
@@ -330,13 +331,13 @@ void MainWidget::setFocusToTreeView()
 
 void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 {
-    const QVector<KAddressBookImportExport::KAddressBookImportExportPlugin *> listPlugins = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsList();
+    const QVector<KAddressBookImportExport::Plugin *> listPlugins = KAddressBookImportExport::PluginManager::self()->pluginsList();
     QList<QAction *> importActions;
     QList<QAction *> exportActions;
-    for (KAddressBookImportExport::KAddressBookImportExportPlugin *plugin : listPlugins) {
+    for (KAddressBookImportExport::Plugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
-            KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface
-                = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(plugin->createInterface(this));
+            KAddressBookImportExport::PluginInterface *interface
+                = static_cast<KAddressBookImportExport::PluginInterface *>(plugin->createInterface(this));
             interface->setItemSelectionModel(mItemView->selectionModel());
             interface->setParentWidget(this);
             interface->createAction(collection);
@@ -387,7 +388,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
         const QStringList lst = parser.positionalArguments();
         for (const QString &urlStr : lst) {
             const QUrl url(QUrl::fromUserInput(urlStr));
-            for (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
+            for (KAddressBookImportExport::PluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
                 if (interface->canImportFileType(url)) {
                     interface->importFile(url);
                     break;
@@ -610,7 +611,7 @@ void MainWidget::initializePluginActions()
 
 void MainWidget::slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface)
 {
-    KAddressBookImportExport::KAddressBookImportExportPluginInterface *importExportInterface = static_cast<KAddressBookImportExport::KAddressBookImportExportPluginInterface *>(interface);
+    auto *importExportInterface = static_cast<KAddressBookImportExport::PluginInterface *>(interface);
     if (importExportInterface) {
         importExportInterface->exec();
     }
@@ -832,8 +833,8 @@ void MainWidget::setQRCodeShow(bool on)
 Akonadi::Item::List MainWidget::selectedItems()
 {
     Akonadi::Item::List items;
-    QPointer<KAddressBookImportExport::KAddressBookContactSelectionDialog> dlg
-        = new KAddressBookImportExport::KAddressBookContactSelectionDialog(mItemView->selectionModel(), false, this);
+    QPointer<KAddressBookImportExport::ContactSelectionDialog> dlg
+        = new KAddressBookImportExport::ContactSelectionDialog(mItemView->selectionModel(), false, this);
     dlg->setDefaultAddressBook(currentAddressBook());
     if (!dlg->exec() || !dlg) {
         delete dlg;
@@ -1064,7 +1065,7 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
-    for (KAddressBookImportExport::KAddressBookImportExportPluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
+    for (auto *interface : qAsConst(mImportExportPluginInterfaceList)) {
         interface->setDefaultCollection(col);
     }
     bool isOnline;

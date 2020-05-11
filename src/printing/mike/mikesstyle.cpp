@@ -8,7 +8,7 @@
 */
 
 #include "mikesstyle.h"
-#include "kaddressbookimportexportcontactfields.h"
+#include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
 #include "printstyle.h"
@@ -21,11 +21,12 @@
 #include <QTextDocument>
 
 using namespace KABPrinting;
+using namespace KAddressBookImportExport;
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 {
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields leftFields, rightFields;
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields allFields = KAddressBookImportExport::KAddressBookImportExportContactFields::allFields();
+    ContactFields::Fields leftFields, rightFields;
+    ContactFields::Fields allFields = ContactFields::allFields();
     allFields.remove(0);   // drop 'Undefined' field
 
     const int middle = allFields.count() / 2;
@@ -65,15 +66,15 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
             QString leftTitle, leftValue, rightTitle, rightValue;
 
             if (i < leftFields.count()) {
-                leftTitle = KAddressBookImportExport::KAddressBookImportExportContactFields::label(leftFields.at(i)) + QLatin1Char(':');
+                leftTitle = ContactFields::label(leftFields.at(i)) + QLatin1Char(':');
                 leftTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
-                leftValue = KAddressBookImportExport::KAddressBookImportExportContactFields::value(leftFields.at(i), contact);
+                leftValue = ContactFields::value(leftFields.at(i), contact);
             }
 
             if (i < rightFields.count()) {
-                rightTitle = KAddressBookImportExport::KAddressBookImportExportContactFields::label(rightFields.at(i)) + QLatin1Char(':');
+                rightTitle = ContactFields::label(rightFields.at(i)) + QLatin1Char(':');
                 rightTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
-                rightValue = KAddressBookImportExport::KAddressBookImportExportContactFields::value(rightFields.at(i), contact);
+                rightValue = ContactFields::value(rightFields.at(i), contact);
             }
 
             content += QLatin1String("   <tr>\n");
@@ -97,7 +98,7 @@ MikesStyle::MikesStyle(PrintingWizard *parent)
     : PrintStyle(parent)
 {
     setPreview(QStringLiteral("mike-style.png"));
-    setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, Qt::AscendingOrder);
+    setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
 }
 
 MikesStyle::~MikesStyle()

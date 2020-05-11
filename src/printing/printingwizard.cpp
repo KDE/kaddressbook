@@ -10,7 +10,7 @@
 #include "printingwizard.h"
 #include "settings.h"
 
-#include <KAddressBookImportExport/KAddressBookContactSelectionWidget>
+#include "importexport/contactselectionwidget.h"
 #include "contactsorter.h"
 #include "printprogress.h"
 #include "printstyle.h"
@@ -42,7 +42,7 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
 {
     setWindowTitle(i18nc("@title:window", "Print Contacts"));
 
-    mSelectionPage = new KAddressBookImportExport::KAddressBookContactSelectionWidget(selectionModel, this);
+    mSelectionPage = new KAddressBookImportExport::ContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
 
     KPageWidgetItem *mSelectionPageItem
