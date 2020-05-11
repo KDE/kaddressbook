@@ -8,7 +8,7 @@
 #ifndef PRINTSTYLE_H
 #define PRINTSTYLE_H
 
-#include "kaddressbookimportexportcontactfields.h"
+#include "importexport/contactfields.h"
 
 #include <KContacts/Addressee>
 
@@ -94,7 +94,7 @@ public:
     /**
      * Returns the preferred contact field that shall be used for sorting.
      */
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Field preferredSortField() const;
+    KAddressBookImportExport::ContactFields::Field preferredSortField() const;
 
     /**
      * Returns the preferred order that shall be used for sorting.
@@ -119,7 +119,7 @@ protected:
     /**
      * Sets the preferred sort options for this printing style.
      */
-    void setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::Field,
+    void setPreferredSortOptions(KAddressBookImportExport::ContactFields::Field,
                                  Qt::SortOrder sortOrder = Qt::AscendingOrder);
 
     /**
@@ -143,7 +143,7 @@ private:
     QHash<QWidget *, KPageWidgetItem *> mPageItems;
     QStringList mPageTitles;
 
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Field mSortField;
+    KAddressBookImportExport::ContactFields::Field mSortField;
     Qt::SortOrder mSortOrder;
 };
 

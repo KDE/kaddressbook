@@ -6,8 +6,9 @@
 
 #include "kaddressbookconfigpluginlistwidget.h"
 #include "../plugininterface/kaddressbookplugininterface.h"
-#include <KAddressBookImportExport/KAddressBookImportExportPluginManager>
-#include <KAddressBookImportExport/KAddressBookImportExportPlugin>
+#include "../importexport/pluginmanager.h"
+#include "../importexport/plugin.h"
+
 #include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
@@ -40,8 +41,8 @@ void KAddressBookConfigPluginListWidget::save()
                                                        KAddressBookPluginInterface::self()->configPrefixSettingKey(),
                                                        mPluginGenericItems);
 
-    PimCommon::ConfigurePluginsListWidget::savePlugins(KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configGroupName(),
-                                                       KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configPrefixSettingKey(),
+    PimCommon::ConfigurePluginsListWidget::savePlugins(KAddressBookImportExport::PluginManager::self()->configGroupName(),
+                                                       KAddressBookImportExport::PluginManager::self()->configPrefixSettingKey(),
                                                        mPluginImportExportItems);
 }
 
@@ -68,10 +69,10 @@ void KAddressBookConfigPluginListWidget::initialize()
                                                         mPluginGenericItems,
                                                         kaddressbookPluginToolsGroupName());
 
-    PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginsDataList(),
+    PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookImportExport::PluginManager::self()->pluginsDataList(),
                                                         i18n("Import/Export Plugins"),
-                                                        KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configGroupName(),
-                                                        KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->configPrefixSettingKey(),
+                                                        KAddressBookImportExport::PluginManager::self()->configGroupName(),
+                                                        KAddressBookImportExport::PluginManager::self()->configPrefixSettingKey(),
                                                         mPluginImportExportItems,
                                                         kaddressbookImportExportGroupName());
 
@@ -85,7 +86,7 @@ void KAddressBookConfigPluginListWidget::slotConfigureClicked(const QString &con
             PimCommon::GenericPlugin *plugin = KAddressBookPluginInterface::self()->pluginFromIdentifier(identifier);
             plugin->showConfigureDialog(this);
         } else if (configureGroupName == kaddressbookImportExportGroupName()) {
-            KAddressBookImportExport::KAddressBookImportExportPlugin *plugin = KAddressBookImportExport::KAddressBookImportExportPluginManager::self()->pluginFromIdentifier(identifier);
+            auto *plugin = KAddressBookImportExport::PluginManager::self()->pluginFromIdentifier(identifier);
             plugin->showConfigureDialog(this);
         } else {
             qCWarning(KADDRESSBOOK_CONFIGURE_LOG) << "Unknown configureGroupName" << configureGroupName;

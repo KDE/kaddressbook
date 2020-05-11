@@ -15,11 +15,7 @@ add_subdirectory(icons)
 add_subdirectory(printing)
 add_subdirectory(kconf_update)
 add_subdirectory(configuration)
-
-
-if(QGpgme_FOUND)
-    add_definitions(-DHAVE_QGPGME)
-endif()
+add_subdirectory(importexport)
 
 set(kaddressbook_qrc_SRCS)
 qt5_add_resources(kaddressbook_qrc_SRCS kaddressbook.qrc)
@@ -53,7 +49,6 @@ if (TARGET KUserFeedbackWidgets)
         userfeedback/kaddressbookuserfeedbackprovider.cpp
         )
 endif()
-
 
 set(kaddressbook_LIB_SRCS
     aboutdata.cpp
@@ -91,6 +86,7 @@ target_link_libraries(kaddressbookprivate
     PUBLIC
     KF5::PimCommonAkonadi
     PRIVATE
+    KPimAddressbookImportExport
     KF5::Libkdepim
     KF5::KaddressbookGrantlee
     KF5::AkonadiCore
@@ -106,7 +102,6 @@ target_link_libraries(kaddressbookprivate
     Qt5::PrintSupport
     KF5::AkonadiSearchDebug
     KF5::I18n
-    KF5::KaddressbookImportExport
     KF5::Prison
     ${kaddressbook_userfeedback_LIB}
     )

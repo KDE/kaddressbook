@@ -16,11 +16,12 @@
 #include <QStandardPaths>
 
 using namespace KABPrinting;
+using namespace KAddressBookImportExport;
 
 PrintStyle::PrintStyle(PrintingWizard *parent)
     : QObject(parent)
     , mWizard(parent)
-    , mSortField(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName)
+    , mSortField(ContactFields::GivenName)
     , mSortOrder(Qt::AscendingOrder)
 {
 }
@@ -95,13 +96,13 @@ void PrintStyle::hidePages()
     }
 }
 
-void PrintStyle::setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field, Qt::SortOrder sortOrder)
+void PrintStyle::setPreferredSortOptions(ContactFields::Field field, Qt::SortOrder sortOrder)
 {
     mSortField = field;
     mSortOrder = sortOrder;
 }
 
-KAddressBookImportExport::KAddressBookImportExportContactFields::Field PrintStyle::preferredSortField() const
+ContactFields::Field PrintStyle::preferredSortField() const
 {
     return mSortField;
 }

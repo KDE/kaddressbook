@@ -38,8 +38,7 @@ class GrantleeContactFormatter;
 class GrantleeContactGroupFormatter;
 }
 namespace KAddressBookImportExport {
-class KAddressBookImportExportPluginManager;
-class KAddressBookImportExportPluginInterface;
+class PluginInterface;
 }
 class ContactSwitcher;
 class KActionCollection;
@@ -153,8 +152,7 @@ private:
     GrantleeTheme::ThemeManager *mGrantleeThemeManager = nullptr;
     QAction *mQuickSearchAction = nullptr;
     QAction *mServerSideSubscription = nullptr;
-    KAddressBookImportExport::KAddressBookImportExportPluginManager *mImportExportPluginManager = nullptr;
-    QList<KAddressBookImportExport::KAddressBookImportExportPluginInterface *> mImportExportPluginInterfaceList;
+    QList<KAddressBookImportExport::PluginInterface *> mImportExportPluginInterfaceList;
     ManageShowCollectionProperties *mManageShowCollectionProperties = nullptr;
 
     Akonadi::Item mPendingSelection;

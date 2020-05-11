@@ -11,7 +11,7 @@
 #define STYLEPAGE_H
 
 #include <QWidget>
-#include "kaddressbookimportexportcontactfields.h"
+#include "importexport/contactfields.h"
 
 class QLabel;
 class QPixmap;
@@ -44,12 +44,12 @@ public:
     /**
      * Set the sort criterion field.
      */
-    void setSortField(KAddressBookImportExport::KAddressBookImportExportContactFields::Field field);
+    void setSortField(KAddressBookImportExport::ContactFields::Field field);
 
     /**
      * Returns the sort criterion field.
      */
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Field sortField() const;
+    KAddressBookImportExport::ContactFields::Field sortField() const;
 
     /**
      * Sets the sort order.
@@ -87,7 +87,7 @@ private:
     QComboBox *mStyleCombo = nullptr;
     QLabel *mPreview = nullptr;
 
-    KAddressBookImportExport::KAddressBookImportExportContactFields::Fields mFields;
+    KAddressBookImportExport::ContactFields::Fields mFields;
 };
 
 #endif // STYLEPAGE_H

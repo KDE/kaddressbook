@@ -125,7 +125,7 @@ RingBinderPrintStyle::RingBinderPrintStyle(PrintingWizard *parent)
     , mPageAppearance(new RingBinderStyleAppearanceForm(parent))
 {
     setPreview(QStringLiteral("ringbinder-style.png"));
-    setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, Qt::AscendingOrder);
+    setPreferredSortOptions(KAddressBookImportExport::ContactFields::FamilyName, Qt::AscendingOrder);
 
     addPage(mPageAppearance, i18n("Ring Binder Printing Style - Appearance"));
 

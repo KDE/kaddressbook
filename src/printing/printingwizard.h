@@ -14,7 +14,7 @@
 #include <KAssistantDialog>
 
 namespace KAddressBookImportExport {
-class KAddressBookContactSelectionWidget;
+class ContactSelectionWidget;
 }
 class StylePage;
 
@@ -110,7 +110,7 @@ protected:
     PrintProgress *mProgress = nullptr;
 
     StylePage *mStylePage = nullptr;
-    KAddressBookImportExport::KAddressBookContactSelectionWidget *mSelectionPage = nullptr;
+    KAddressBookImportExport::ContactSelectionWidget *mSelectionPage = nullptr;
 
     /**
      * Overloaded accept slot. This is used to do the actual

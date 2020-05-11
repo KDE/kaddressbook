@@ -5,7 +5,7 @@
 */
 
 #include "grantleeprintstyle.h"
-#include "kaddressbookimportexportcontactfields.h"
+#include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
 #include "printstyle.h"
@@ -29,7 +29,7 @@ GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard 
     if (previewFile.exists()) {
         setPreview(previewFile.fileName());
     }
-    setPreferredSortOptions(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, Qt::AscendingOrder);
+    setPreferredSortOptions(KAddressBookImportExport::ContactFields::FormattedName, Qt::AscendingOrder);
 }
 
 GrantleePrintStyle::~GrantleePrintStyle()
