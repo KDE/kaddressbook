@@ -31,7 +31,6 @@
 #include <QPrinter>
 #include <QTextDocument>
 #include <QFile>
-#include <QDir>
 
 using namespace KABPrinting;
 
