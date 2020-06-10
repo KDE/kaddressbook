@@ -68,7 +68,9 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
     content += QLatin1String("  </style>\n");
     content += QLatin1String(" </head>\n");
     content += QLatin1String(" <body>\n");
+    ContactBlock::List blocks;
     for (const KContacts::Addressee &contact : contacts) {
+        blocks.clear();
         QString name = contact.realName();
         if (!contact.title().isEmpty() || !contact.role().isEmpty()) {
             QStringList contentAddress;
@@ -83,7 +85,6 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
         const QString birthday = QLocale().toString(contact.birthday().date(), QLocale::ShortFormat);
 
-        ContactBlock::List blocks;
 
         if (!contact.organization().isEmpty()) {
             ContactBlock block;

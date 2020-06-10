@@ -42,6 +42,7 @@ void ModelColumnManager::load()
 {
     const QList<int> settingsColumns = Settings::contactModelColumns();
     Akonadi::ContactsTreeModel::Columns columns;
+    columns.reserve(settingsColumns.count());
 
     for (int column : settingsColumns) {
         columns.append(static_cast<Akonadi::ContactsTreeModel::Column>(column));
@@ -54,6 +55,7 @@ void ModelColumnManager::store()
 {
     const Akonadi::ContactsTreeModel::Columns columns = mModel->columns();
     QList<int> settingsColumns;
+    settingsColumns.reserve(columns.count());
 
     for (int column : columns) {
         settingsColumns.append(static_cast<int>(column));
