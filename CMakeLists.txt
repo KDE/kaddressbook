@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.14.80")
+set(PIM_VERSION "5.15.40")
 project(kaddressbook VERSION ${PIM_VERSION})
-set(RELEASE_SERVICE_VERSION "20.07.80")
+set(RELEASE_SERVICE_VERSION "20.11.80")
 set(KF5_MIN_VERSION "5.71.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
@@ -28,7 +28,7 @@ include(ECMQtDeclareLoggingCategory)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION beta)
+set(KDEPIM_DEV_VERSION alpha)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
