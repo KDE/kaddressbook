@@ -28,7 +28,7 @@ include(ECMQtDeclareLoggingCategory)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION rc)
+set(KDEPIM_DEV_VERSION alpha)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
@@ -52,6 +52,8 @@ set(KDEPIM_APPS_LIB_VERSION_LIB "5.15.40")
 set(LIBGRANTLEETHEME_LIB_VERSION_LIB "5.15.40")
 set(PIMCOMMON_LIB_VERSION_LIB "5.15.40")
 set(LIBKLEO_LIB_VERSION "5.15.40")
+set(AKONADI_SEARCH_VERSION "5.15.40")
+
 # Find KF5 package
 find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DocTools ${KF5_MIN_VERSION} REQUIRED)
@@ -74,7 +76,7 @@ find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION_LIB} CONFIG REQUIRE
 set(GPGMEPP_LIB_VERSION "1.11.1")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
-find_package(KF5AkonadiSearch "5.15.40" CONFIG REQUIRED)
+find_package(KF5AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
 set_package_properties(KF5AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://www.kde.org" TYPE REQUIRED PURPOSE "Provides search capabilities in KMail and Akonadi")
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
