@@ -85,7 +85,6 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
         const QString birthday = QLocale().toString(contact.birthday().date(), QLocale::ShortFormat);
 
-
         if (!contact.organization().isEmpty()) {
             ContactBlock block;
             block.header = i18n("Organization:");

@@ -28,7 +28,6 @@ class MainWidget;
 
 #include "kaddressbook_export.h"
 
-
 class KADDRESSBOOK_EXPORT KAddressBookPluginInterface : public PimCommon::PluginInterface
 {
     Q_OBJECT
