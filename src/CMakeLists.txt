@@ -59,12 +59,14 @@ set(kaddressbook_LIB_SRCS
     aboutdata.cpp
     categoryfilterproxymodel.cpp
     categoryselectwidget.cpp
+    contactinfoproxymodel.cpp
     contactsorter.cpp
     contactswitcher.cpp
     globalcontactmodel.cpp
     mainwidget.cpp
     manageshowcollectionproperties.cpp
     modelcolumnmanager.cpp
+    stylecontactlistdelegate.cpp
     widgets/quicksearchwidget.cpp
     kaddressbookmigrateapplication.cpp
     ${kaddressbook_printing_SRCS}

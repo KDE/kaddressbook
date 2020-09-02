@@ -8,6 +8,8 @@
 
 #include "mainwidget.h"
 
+#include "stylecontactlistdelegate.h"
+#include "contactinfoproxymodel.h"
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
 #include "modelcolumnmanager.h"
@@ -243,6 +245,9 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(mCategoryFilterModel);
+    
+    ContactInfoProxyModel *contactInfoProxyModel = new ContactInfoProxyModel(this);
+    contactInfoProxyModel->setSourceModel(mContactsFilterModel);
 
     connect(mQuickSearchWidget, &QuickSearchWidget::filterStringChanged,
             mContactsFilterModel, &Akonadi::ContactsFilterProxyModel::setFilterString);
@@ -250,7 +255,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
             this, &MainWidget::selectFirstItem);
     connect(mQuickSearchWidget, &QuickSearchWidget::arrowDownKeyPressed,
             this, &MainWidget::setFocusToTreeView);
-    mItemView->setModel(mContactsFilterModel);
+    mItemView->setModel(contactInfoProxyModel);
+    mItemView->setItemDelegate(new StyleContactListDelegate(this));
     mItemView->setXmlGuiClient(guiClient);
     mItemView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mItemView->setRootIsDecorated(false);
