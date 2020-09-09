@@ -64,6 +64,7 @@ set(kaddressbook_LIB_SRCS
     contactswitcher.cpp
     globalcontactmodel.cpp
     mainwidget.cpp
+    uistatesaver.cpp
     manageshowcollectionproperties.cpp
     modelcolumnmanager.cpp
     stylecontactlistdelegate.cpp

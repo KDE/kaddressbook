@@ -26,7 +26,7 @@
 #include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
 
-#include <Libkdepim/UiStateSaver>
+#include "uistatesaver.h"
 
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
@@ -412,7 +412,7 @@ void MainWidget::delayedInit()
     setViewMode(0);                                        // get default from settings
 
     const KConfigGroup group(Settings::self()->config(), "UiState_ContactView");
-    KPIM::UiStateSaver::restoreState(mItemView, group);
+    KAddressBook::UiStateSaver::restoreState(mItemView, group);
 
     mXmlGuiClient->actionCollection()->action(QStringLiteral("options_show_qrcodes"))->setChecked(showQRCodes());
 
@@ -433,7 +433,7 @@ MainWidget::~MainWidget()
     saveSplitterStates();
 
     KConfigGroup group(Settings::self()->config(), "UiState_ContactView");
-    KPIM::UiStateSaver::saveState(mItemView, group);
+    KAddressBook::UiStateSaver::saveState(mItemView, group);
 
     saveState();
     delete mGrantleeThemeManager;
@@ -928,8 +928,8 @@ void MainWidget::saveSplitterStates() const
     const QString groupName = QStringLiteral("UiState_MainWidgetSplitter_%1").arg(currentMode);
     //qCDebug(KADDRESSBOOK_LOG) << "saving to group" << groupName;
     KConfigGroup group(Settings::self()->config(), groupName);
-    KPIM::UiStateSaver::saveState(mMainWidgetSplitter1, group);
-    KPIM::UiStateSaver::saveState(mMainWidgetSplitter2, group);
+    KAddressBook::UiStateSaver::saveState(mMainWidgetSplitter1, group);
+    KAddressBook::UiStateSaver::saveState(mMainWidgetSplitter2, group);
 }
 
 void MainWidget::restoreSplitterStates()
@@ -944,8 +944,8 @@ void MainWidget::restoreSplitterStates()
     const QString groupName = QStringLiteral("UiState_MainWidgetSplitter_%1").arg(currentMode);
     //qCDebug(KADDRESSBOOK_LOG) << "restoring from group" << groupName;
     KConfigGroup group(Settings::self()->config(), groupName);
-    KPIM::UiStateSaver::restoreState(mMainWidgetSplitter1, group);
-    KPIM::UiStateSaver::restoreState(mMainWidgetSplitter2, group);
+    KAddressBook::UiStateSaver::restoreState(mMainWidgetSplitter1, group);
+    KAddressBook::UiStateSaver::restoreState(mMainWidgetSplitter2, group);
 }
 
 void MainWidget::initGrantleeThemeName()
