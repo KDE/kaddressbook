@@ -57,7 +57,7 @@ protected:
 
 private:
     void adaptHeaderView();
-    Akonadi::ContactsTreeModel *mModel = nullptr;
+    Akonadi::ContactsTreeModel *const mModel;
     Akonadi::ContactsTreeModel::Columns mColumns;
     QWidget *mWidget = nullptr;
 };

@@ -9,8 +9,8 @@
 
 UserFeedBackManager::UserFeedBackManager(QObject *parent)
     : QObject(parent)
+    , mUserFeedbackProvider(new KAddressBookUserFeedbackProvider(this))
 {
-    mUserFeedbackProvider = new KAddressBookUserFeedbackProvider(this);
 }
 
 UserFeedBackManager *UserFeedBackManager::self()

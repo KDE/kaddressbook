@@ -88,7 +88,7 @@ private:
     mutable Cache mGroupsCache;
     mutable QStringList mPendingGroups;
     const QVector<int>mKrole {PictureRole, InitialsRole, DescriptionRole};
-    Akonadi::Monitor *mMonitor = nullptr;
+    Akonadi::Monitor *const mMonitor;
 };
 
 #endif // CONTACTINFOPROXYMODEL_H

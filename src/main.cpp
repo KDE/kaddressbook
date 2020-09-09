@@ -28,7 +28,6 @@ class KAddressBookApplication : public KontactInterface::PimUniqueApplication
 public:
     KAddressBookApplication(int &argc, char **argv[])
         : KontactInterface::PimUniqueApplication(argc, argv)
-        , mMainWindow(nullptr)
     {
     }
 

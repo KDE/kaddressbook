@@ -30,7 +30,7 @@ public:
     explicit CategorySelectWidgetPrivate(CategorySelectWidget *parent);
 
     Akonadi::TagModel *tagModel = nullptr;
-    int rowOffset;
+    int rowOffset = 0;
     QTimer *updateTimer = nullptr;
     KPIM::KCheckComboBox *checkCombo = nullptr;
 
@@ -51,15 +51,11 @@ public Q_SLOTS:
     void slotCheckedItemsTimer();
 
 private:
-    CategorySelectWidget *q_ptr;
+    CategorySelectWidget *const q_ptr;
 };
 
 CategorySelectWidgetPrivate::CategorySelectWidgetPrivate(CategorySelectWidget *parent)
     : QObject()
-    , tagModel(nullptr)
-    , rowOffset(0)
-    , updateTimer(nullptr)
-    , checkCombo(nullptr)
     , q_ptr(parent)
 {
 }

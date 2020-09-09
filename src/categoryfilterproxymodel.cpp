@@ -27,15 +27,14 @@ public:
     CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent);
 
     QList<Tag::Id> filterIdList;
-    bool filterEnabled;
+    bool filterEnabled = false;
 
 private:
-    CategoryFilterProxyModel *q_ptr;
+    CategoryFilterProxyModel *const q_ptr;
 };
 
 CategoryFilterProxyModelPrivate::CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent)
     : QObject()
-    , filterEnabled(false)
     , q_ptr(parent)
 {
 }

@@ -25,7 +25,7 @@ public:
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
 private:
-    QString m_themePath;
+    const QString m_themePath;
 };
 
 class GrantleeStyleFactory : public PrintStyleFactory

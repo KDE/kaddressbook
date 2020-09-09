@@ -30,7 +30,7 @@ private:
     void slotCollectionPropertiesFinished(KJob *job);
     QHash<Akonadi::Collection::Id, QPointer<Akonadi::CollectionPropertiesDialog> > mHashDialogBox;
     QStringList mPages;
-    MainWidget *mMainWidget = nullptr;
+    MainWidget *const mMainWidget;
 };
 
 #endif // MANAGESHOWCOLLECTIONPROPERTIES_H
