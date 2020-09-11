@@ -88,7 +88,6 @@ target_link_libraries(kaddressbookprivate
     PRIVATE
     KPimAddressbookImportExport
     KF5::Libkdepim
-    KF5::KaddressbookGrantlee
     KF5::AkonadiCore
     KF5::Contacts
     KF5::AkonadiContact
