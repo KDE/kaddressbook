@@ -28,8 +28,8 @@
 #include "importexport/contactselectiondialog.h"
 
 
-#include <KaddressbookGrantlee/GrantleeContactFormatter>
-#include <KaddressbookGrantlee/GrantleeContactGroupFormatter>
+#include <Akonadi/Contact/GrantleeContactFormatter>
+#include <Akonadi/Contact/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
 
 #include "uistatesaver.h"

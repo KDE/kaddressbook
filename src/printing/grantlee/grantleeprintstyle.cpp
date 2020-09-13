@@ -9,7 +9,7 @@
 #include "printingwizard.h"
 #include "printprogress.h"
 #include "printstyle.h"
-#include <KaddressbookGrantlee/GrantleePrint>
+#include <Akonadi/Contact/GrantleePrint>
 
 #include <KContacts/Addressee>
 
