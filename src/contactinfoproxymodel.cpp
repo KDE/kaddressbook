@@ -102,7 +102,7 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
                             }
                         }
                     }
-                    if (groupItemsList.size() && groupRefIdsList.size()) {
+                    if (!groupItemsList.isEmpty() && !groupRefIdsList.isEmpty()) {
                         properties.insert("groupRefIdsList", QVariant::fromValue(groupRefIdsList));
                         fetchItems(groupItemsList, properties);
                     }
