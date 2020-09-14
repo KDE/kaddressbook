@@ -10,7 +10,6 @@
 #include "contactinfoproxymodel.h"
 
 #include <Akonadi/Contact/ContactsTreeModel>
-#include <KLocalizedString>
 
 #include <QApplication>
 #include <QPainter>
