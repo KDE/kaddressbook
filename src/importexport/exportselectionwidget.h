@@ -12,7 +12,6 @@
 
 class QCheckBox;
 namespace KAddressBookImportExport {
-
 /** Addressbool export selection widget. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ExportSelectionWidget : public QWidget
 {

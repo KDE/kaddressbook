@@ -15,14 +15,12 @@
 #include <QIdentityProxyModel>
 #include <QPersistentModelIndex>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 class Monitor;
 }
 
-namespace KContacts
-{
+namespace KContacts {
 class Addressee;
 class ContactGroup;
 }
@@ -49,10 +47,13 @@ private:
         ContactCacheData(const ContactCacheData &) = default;
 
         ContactCacheData(const KContacts::ContactGroup::ContactReference &other)
-            : uid(other.uid()), gid(other.gid()) {
+            : uid(other.uid())
+            , gid(other.gid())
+        {
         }
 
-        ContactCacheData(const Akonadi::Item &other) {
+        ContactCacheData(const Akonadi::Item &other)
+        {
             uid = QString::number(other.id());
             gid = other.gid();
         }
@@ -78,7 +79,7 @@ private:
     Q_REQUIRED_RESULT bool groupFetchDone(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const;
     Q_REQUIRED_RESULT ContactCacheData::ListIterator findCacheItem(const QModelIndex &index, const ContactCacheData &cacheContact);
     Q_REQUIRED_RESULT ContactCacheData::ConstListIterator findCacheItem(const QModelIndex &index, const ContactCacheData &cacheContact) const;
-    void fetchItems(const Akonadi::Item::List &items, const QMap<const char*, QVariant> &properties) const;
+    void fetchItems(const Akonadi::Item::List &items, const QMap<const char *, QVariant> &properties) const;
     void slotFetchJobFinished(KJob *job);
     void slotItemChanged(const Akonadi::Item &item, const QSet<QByteArray> &partIdentifiers);
     void slotItemRemoved(const Akonadi::Item &item);
@@ -87,7 +88,7 @@ private:
     using Cache = QMap<QPersistentModelIndex, ContactCacheData::List>;
     mutable Cache mGroupsCache;
     mutable QStringList mPendingGroups;
-    const QVector<int>mKrole {PictureRole, InitialsRole, DescriptionRole};
+    const QVector<int> mKrole {PictureRole, InitialsRole, DescriptionRole};
     Akonadi::Monitor *const mMonitor;
 };
 

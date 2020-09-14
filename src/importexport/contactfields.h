@@ -12,7 +12,6 @@
 #include <KContacts/Addressee>
 #include "kaddressbook_importexport_export.h"
 namespace KAddressBookImportExport {
-
 /** Contact fields for import/export. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ContactFields
 {

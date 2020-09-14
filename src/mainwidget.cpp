@@ -27,7 +27,6 @@
 #include "importexport/plugininterface.h"
 #include "importexport/contactselectiondialog.h"
 
-
 #include <Akonadi/Contact/GrantleeContactFormatter>
 #include <Akonadi/Contact/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
@@ -246,7 +245,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(mCategoryFilterModel);
-    
+
     ContactInfoProxyModel *contactInfoProxyModel = new ContactInfoProxyModel(this);
     contactInfoProxyModel->setSourceModel(mContactsFilterModel);
 

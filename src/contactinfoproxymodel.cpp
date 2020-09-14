@@ -25,8 +25,8 @@
 #include <QRegularExpression>
 
 ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
-    : QIdentityProxyModel(parent),
-      mMonitor(new Akonadi::Monitor(this))
+    : QIdentityProxyModel(parent)
+    , mMonitor(new Akonadi::Monitor(this))
 {
     mMonitor->setTypeMonitored(Akonadi::Monitor::Items);
     mMonitor->itemFetchScope().fetchFullPayload(true);
@@ -68,8 +68,7 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
                     return i18n("Loading contacts details ...");
                 }
                 if (!mPendingGroups.contains(groupContacts.id())) {
-
-                    QMap<const char*, QVariant> properties{
+                    QMap<const char *, QVariant> properties{
                         {"groupPersistentModelIndex", QVariant::fromValue(index)},
                         {"groupId", QVariant::fromValue(groupContacts.id())},
                     };
@@ -162,7 +161,7 @@ QString ContactInfoProxyModel::getDescription(const KContacts::Addressee &contac
     const QList<KContacts::PhoneNumber> phoneList = contact.phoneNumbers().toList();
     QList<KContacts::PhoneNumber>::const_reverse_iterator itPhone = std::find_if(phoneList.rbegin(),
                                                                                  phoneList.rend(),
-    [&phoneList](const KContacts::PhoneNumber &phone) {
+                                                                                 [&phoneList](const KContacts::PhoneNumber &phone) {
         return phone.isPreferred() || phoneList.at(0) == phone;
     });
     if (itPhone != phoneList.rend()) {
@@ -182,14 +181,13 @@ QString ContactInfoProxyModel::getDescription(const QModelIndex &index, const KC
 
     for (int idx = 0; idx < groupContacts.dataCount(); idx++) {
         QString dataSeparator;
-        if (!groupContacts.data(idx).name().isEmpty() &&
-            !groupContacts.data(idx).email().isEmpty()) {
+        if (!groupContacts.data(idx).name().isEmpty()
+            && !groupContacts.data(idx).email().isEmpty()) {
             dataSeparator = QStringLiteral("-");
         }
         contactDescription = i18n("%1 %2 %3", groupContacts.data(idx).name(), dataSeparator, groupContacts.data(idx).email());
         groupDescription << contactDescription.trimmed();
         contactDescription.clear();
-
     }
     for (int idx = 0; idx < groupContacts.contactReferenceCount(); ++idx) {
         const KContacts::ContactGroup::ContactReference contactRef = groupContacts.contactReference(idx);
@@ -214,9 +212,8 @@ QString ContactInfoProxyModel::getDescription(const QModelIndex &index, const KC
 void ContactInfoProxyModel::updateCache(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const
 {
     mGroupsCache[index].erase(std::remove_if(mGroupsCache[index].begin(), mGroupsCache[index].end(),
-    [&groupContacts](const ContactCacheData &cacheContact) -> bool {
-        for (int idx = 0; idx < groupContacts.contactReferenceCount(); ++idx)
-        {
+                                             [&groupContacts](const ContactCacheData &cacheContact) -> bool {
+        for (int idx = 0; idx < groupContacts.contactReferenceCount(); ++idx) {
             const KContacts::ContactGroup::ContactReference &reference = groupContacts.contactReference(idx);
 
             if (cacheContact == reference) {
@@ -233,8 +230,8 @@ bool ContactInfoProxyModel::groupFetchDone(const QModelIndex &index, const KCont
     QStringList contactCacheIds;
 
     auto sortFunc = [](const QString &lhs, const QString &rhs) -> bool {
-        return lhs.toLongLong() < rhs.toLongLong();
-    };
+                        return lhs.toLongLong() < rhs.toLongLong();
+                    };
 
     for (int idx = 0; idx < groupContacts.contactReferenceCount(); ++idx) {
         const KContacts::ContactGroup::ContactReference &reference = groupContacts.contactReference(idx);
@@ -252,26 +249,27 @@ bool ContactInfoProxyModel::groupFetchDone(const QModelIndex &index, const KCont
     return std::equal(contactRefIds.begin(), contactRefIds.end(), contactCacheIds.begin(), contactCacheIds.end());
 }
 
-ContactInfoProxyModel::ContactCacheData::ListIterator ContactInfoProxyModel::findCacheItem(const QModelIndex &index,
-                                                                                           const ContactInfoProxyModel::ContactCacheData &cacheContact)
+ContactInfoProxyModel::ContactCacheData::ListIterator ContactInfoProxyModel::findCacheItem(const QModelIndex &index, const ContactInfoProxyModel::ContactCacheData &cacheContact)
 {
     ContactCacheData::ListIterator it = std::find_if(mGroupsCache[index].begin(), mGroupsCache[index].end(),
-                                        [&cacheContact](const ContactCacheData &contact) -> bool
-    { return contact == cacheContact; });
+                                                     [&cacheContact](const ContactCacheData &contact) -> bool
+    {
+        return contact == cacheContact;
+    });
     return it;
 }
 
-
-ContactInfoProxyModel::ContactCacheData::ConstListIterator ContactInfoProxyModel::findCacheItem(const QModelIndex &index,
-                                                                                                const ContactInfoProxyModel::ContactCacheData &cacheContact) const
+ContactInfoProxyModel::ContactCacheData::ConstListIterator ContactInfoProxyModel::findCacheItem(const QModelIndex &index, const ContactInfoProxyModel::ContactCacheData &cacheContact) const
 {
     ContactCacheData::ConstListIterator it = std::find_if(mGroupsCache[index].cbegin(), mGroupsCache[index].cend(),
-                                        [&cacheContact](const ContactCacheData &contact) -> bool
-    { return contact == cacheContact; });
+                                                          [&cacheContact](const ContactCacheData &contact) -> bool
+    {
+        return contact == cacheContact;
+    });
     return it;
 }
 
-void ContactInfoProxyModel::fetchItems(const Akonadi::Item::List &items, const QMap<const char*, QVariant> &properties) const
+void ContactInfoProxyModel::fetchItems(const Akonadi::Item::List &items, const QMap<const char *, QVariant> &properties) const
 {
     Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(items);
     job->fetchScope().fetchFullPayload();
@@ -294,7 +292,7 @@ void ContactInfoProxyModel::slotFetchJobFinished(KJob *job)
 
     const QPersistentModelIndex index = job->property("groupPersistentModelIndex").value<QPersistentModelIndex>();
     const QString groupId = job->property("groupId").value<QString>();
-    const QList<QJsonObject> groupRefIdsList = job->property("groupRefIdsList").value<QList<QJsonObject>>();
+    const QList<QJsonObject> groupRefIdsList = job->property("groupRefIdsList").value<QList<QJsonObject> >();
 
     for (const QJsonObject &refId : groupRefIdsList) {
         ContactCacheData cacheContact;
@@ -303,8 +301,8 @@ void ContactInfoProxyModel::slotFetchJobFinished(KJob *job)
 
         for (const Akonadi::Item &item : fetchJob->items()) {
             if (item.isValid()) {
-                if ((!item.gid().isEmpty() && refId[QStringLiteral("gid")].toString() == item.gid()) ||
-                    QString::number(item.id()) == refId[QStringLiteral("uid")].toString()) {
+                if ((!item.gid().isEmpty() && refId[QStringLiteral("gid")].toString() == item.gid())
+                    || QString::number(item.id()) == refId[QStringLiteral("uid")].toString()) {
                     if (item.hasPayload<KContacts::Addressee>()) {
                         mMonitor->setItemMonitored(item);
                         const KContacts::Addressee contact = item.payload<KContacts::Addressee>();

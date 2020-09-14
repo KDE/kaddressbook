@@ -16,9 +16,7 @@
 class QProgressDialog;
 class KJob;
 
-namespace KAddressBookImportExport
-{
-
+namespace KAddressBookImportExport {
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ImportExportEngine : public QObject
 {
     Q_OBJECT
@@ -44,7 +42,6 @@ private:
     int mNumberElementToImport = -1;
     int mImportDone = 0;
 };
-
 }
 
 #endif // IMPORTEXPORTENGINE_H

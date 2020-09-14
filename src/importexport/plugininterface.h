@@ -15,9 +15,8 @@
 class QItemSelectionModel;
 
 namespace KAddressBookImportExport {
-
 /** Import/export plugin interface. */
-class KADDRESSBOOK_IMPORTEXPORT_EXPORT PluginInterface: public PimCommon::AbstractGenericPluginInterface
+class KADDRESSBOOK_IMPORTEXPORT_EXPORT PluginInterface : public PimCommon::AbstractGenericPluginInterface
 {
     Q_OBJECT
 public:
