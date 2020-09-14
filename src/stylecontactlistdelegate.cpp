@@ -96,10 +96,12 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
         painter->drawText(nameTextRect, Qt::AlignLeft | Qt::AlignVCenter,
                           painter->fontMetrics().elidedText(name, Qt::ElideRight, nameTextRect.width()));
 
-        painter->setFont(QFont(option.font.family(), 8, -1, true));
         const QString description = index.data(ContactInfoProxyModel::Roles::DescriptionRole).value<QString>();
-        painter->drawText(descriptionTextRect, Qt::AlignLeft | Qt::AlignVCenter,
-                          painter->fontMetrics().elidedText(description, Qt::ElideRight, descriptionTextRect.width()));
+        if (!description.isEmpty()) {
+            painter->setFont(QFont(option.font.family(), 8, -1, true));
+            painter->drawText(descriptionTextRect, Qt::AlignLeft | Qt::AlignVCenter,
+                              painter->fontMetrics().elidedText(description, Qt::ElideRight, descriptionTextRect.width()));
+        }
         return;
     }
     QStyledItemDelegate::paint(painter, option, index);
