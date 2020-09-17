@@ -116,17 +116,17 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
 QString ContactInfoProxyModel::getInitials(const KContacts::Addressee &contact) const
 {
     QString initials;
-    QString names = contact.realName();
-    names.remove(contact.prefix());
-    names.remove(contact.suffix());
-    names.remove(contact.additionalName());
-
-    const QStringList contactListNames = names.split(QRegularExpression(QStringLiteral("\\s+")));
-    for (const QString &name : contactListNames) {
-        if (!name.isEmpty()) {
-            initials.append(name.front());
-        }
+    if (!contact.givenName().isEmpty()) {
+        initials.append(contact.givenName().front());
     }
+    if (!contact.familyName().isEmpty()) {
+        initials.append(contact.familyName().front());
+    }
+    
+    if (initials.isEmpty()  && !contact.realName().isEmpty()) {
+        initials.append(contact.realName().front());
+    }
+
     return initials.toUpper();
 }
 
