@@ -11,8 +11,6 @@
 #include "kaddressbook_debug.h"
 
 #include <QPushButton>
-#include <QPixmap>
-#include <QWidget>
 #include <QStandardPaths>
 
 using namespace KABPrinting;

@@ -10,14 +10,12 @@
 
 #include "kaddressbook_debug.h"
 
-#include <AkonadiCore/EntityTreeModel>
 #include <AkonadiCore/Item>
 #include <AkonadiCore/ItemFetchJob>
 #include <AkonadiCore/ItemFetchScope>
 #include <AkonadiCore/Monitor>
 #include <KLocalizedString>
 #include <kcontacts/addressee.h>
-#include <kcontacts/contactgroup.h>
 
 #include <KJob>
 #include <QImage>

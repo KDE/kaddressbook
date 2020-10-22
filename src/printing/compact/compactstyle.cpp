@@ -8,7 +8,6 @@
 #include "compactstyle.h"
 #include "importexport/contactfields.h"
 #include "printprogress.h"
-#include "printstyle.h"
 
 #include "printingwizard.h"
 #include "ui_compactstyle.h"

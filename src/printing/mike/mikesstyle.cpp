@@ -11,7 +11,6 @@
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
-#include "printstyle.h"
 
 #include <KContacts/Addressee>
 
