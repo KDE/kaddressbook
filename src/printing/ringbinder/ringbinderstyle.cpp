@@ -159,7 +159,7 @@ void RingBinderPrintStyle::print(const KContacts::Addressee::List &contacts, Pri
     config.sync();
 
     QPrinter *printer = wizard()->printer();
-    printer->setPageMargins(50, 20, 0, 50, QPrinter::DevicePixel);
+    printer->setPageMargins(QMarginsF(50, 20, 0, 50), QPageLayout::Point);
 
     progress->addMessage(i18n("Setting up document"));
 

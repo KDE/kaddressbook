@@ -168,7 +168,7 @@ void CompactStyle::print(const KContacts::Addressee::List &contacts, PrintProgre
 
     // print
     QPrinter *printer = wizard()->printer();
-    printer->setPageMargins(20, 20, 20, 20, QPrinter::DevicePixel);
+    printer->setPageMargins(QMarginsF(20, 20, 20, 20), QPageLayout::Point);
 
     progress->addMessage(i18n("Setting up document"));
 
