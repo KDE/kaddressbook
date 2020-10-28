@@ -53,8 +53,8 @@ private:
         }
 
         ContactCacheData(const Akonadi::Item &other)
-            : uid(QString::number(other.id())),
-              gid(other.gid())
+            : uid(QString::number(other.id()))
+            , gid(other.gid())
         {
         }
 

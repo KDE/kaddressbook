@@ -8,7 +8,6 @@
 #include "plugin.h"
 #include "libkaddressbookexportimport_debug.h"
 
-
 #include <QFileInfo>
 #include <QSet>
 #include <KPluginLoader>

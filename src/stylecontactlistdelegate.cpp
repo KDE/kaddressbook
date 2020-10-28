@@ -96,7 +96,6 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
             painter->drawText(nameTextRect, Qt::AlignLeft | Qt::AlignVCenter,
                               painter->fontMetrics().elidedText(name, Qt::ElideRight, nameTextRect.width()));
         }
-        
 
         const QString description = index.data(ContactInfoProxyModel::Roles::DescriptionRole).value<QString>();
         if (!description.isEmpty()) {

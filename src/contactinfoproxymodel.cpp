@@ -120,8 +120,8 @@ QString ContactInfoProxyModel::getInitials(const KContacts::Addressee &contact) 
     if (!contact.familyName().isEmpty()) {
         initials.append(contact.familyName().front());
     }
-    
-    if (initials.isEmpty()  && !contact.realName().isEmpty()) {
+
+    if (initials.isEmpty() && !contact.realName().isEmpty()) {
         initials.append(contact.realName().front());
     }
 

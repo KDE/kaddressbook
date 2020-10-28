@@ -40,7 +40,6 @@ public:
     Q_REQUIRED_RESULT Akonadi::Collection defaultCollection() const;
     void setDefaultCollection(const Akonadi::Collection &defaultCollection);
 
-
     Q_REQUIRED_RESULT QItemSelectionModel *itemSelectionModel() const;
     void setItemSelectionModel(QItemSelectionModel *itemSelectionModel);
 
