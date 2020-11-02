@@ -68,7 +68,7 @@ void PrintStyle::addPage(QWidget *page, const QString &title)
         mPageList.append(page);
         mPageTitles.append(title);
 
-        KPageWidgetItem *item = new KPageWidgetItem(page, title);
+        auto *item = new KPageWidgetItem(page, title);
         mPageItems.insert(page, item);
         mWizard->addPage(item);
         mWizard->setAppropriate(item, false);

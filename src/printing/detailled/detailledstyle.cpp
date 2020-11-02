@@ -169,11 +169,11 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
         content += QLatin1String("   <tr>\n");
         content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
                    +QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor
-                   +QLatin1String("\" style=\"padding-left: 20px\">")
+                   +QLatin1String(R"(" style="padding-left: 20px">)")
                    +name +  QLatin1String("</td>\n");
         content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
-                   +QLatin1String(";\" align=\"right\" bgcolor=\"") + settings.headerBackgroundColor
-                   +QLatin1String("\" style=\"padding-right: 20px\">")
+                   +QLatin1String(R"(;" align="right" bgcolor=")") + settings.headerBackgroundColor
+                   +QLatin1String(R"(" style="padding-right: 20px">)")
                    +birthday + QLatin1String("</td>\n");
         content += QLatin1String("   </tr>\n");
 

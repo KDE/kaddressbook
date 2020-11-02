@@ -209,7 +209,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
-    StructuralCollectionsNotCheckableProxy *checkableProxyModel
+    auto *checkableProxyModel
         = new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
     checkableProxyModel->setSourceModel(mCollectionTree);
@@ -225,7 +225,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mCollectionView, qOverload<const Akonadi::Collection &>(&Akonadi::EntityTreeView::currentChanged),
             this, &MainWidget::slotCurrentCollectionChanged);
 
-    KSelectionProxyModel *selectionProxyModel
+    auto *selectionProxyModel
         = new KSelectionProxyModel(mCollectionSelectionModel, this);
     selectionProxyModel->setSourceModel(GlobalContactModel::instance()->model());
     selectionProxyModel->setFilterBehavior(KSelectionProxyModel::ChildrenOfExactSelection);
@@ -246,7 +246,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mContactsFilterModel = new Akonadi::ContactsFilterProxyModel(this);
     mContactsFilterModel->setSourceModel(mCategoryFilterModel);
 
-    ContactInfoProxyModel *contactInfoProxyModel = new ContactInfoProxyModel(this);
+    auto *contactInfoProxyModel = new ContactInfoProxyModel(this);
     contactInfoProxyModel->setSourceModel(mContactsFilterModel);
 
     connect(mQuickSearchWidget, &QuickSearchWidget::filterStringChanged,
@@ -335,7 +335,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     QList<QAction *> exportActions;
     for (KAddressBookImportExport::Plugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
-            KAddressBookImportExport::PluginInterface *interface
+            auto *interface
                 = static_cast<KAddressBookImportExport::PluginInterface *>(plugin->createInterface(this));
             interface->setItemSelectionModel(mItemView->selectionModel());
             interface->setParentWidget(this);
@@ -447,7 +447,7 @@ void MainWidget::restoreState()
 {
     // collection view
     {
-        Akonadi::ETMViewStateSaver *saver = new Akonadi::ETMViewStateSaver;
+        auto *saver = new Akonadi::ETMViewStateSaver;
         saver->setView(mCollectionView);
 
         const KConfigGroup group(Settings::self()->config(), "CollectionViewState");
@@ -456,7 +456,7 @@ void MainWidget::restoreState()
 
     // collection view
     {
-        Akonadi::ETMViewStateSaver *saver = new Akonadi::ETMViewStateSaver;
+        auto *saver = new Akonadi::ETMViewStateSaver;
         saver->setSelectionModel(mCollectionSelectionModel);
 
         const KConfigGroup group(Settings::self()->config(), "CollectionViewCheckState");
@@ -465,7 +465,7 @@ void MainWidget::restoreState()
 
     // item view
     {
-        Akonadi::ETMViewStateSaver *saver = new Akonadi::ETMViewStateSaver;
+        auto *saver = new Akonadi::ETMViewStateSaver;
         saver->setView(mItemView);
         saver->setSelectionModel(mItemView->selectionModel());
 
@@ -517,7 +517,7 @@ void MainWidget::saveState()
 void MainWidget::setupGui()
 {
     // the horizontal main layout
-    QHBoxLayout *layout = new QHBoxLayout(this);
+    auto *layout = new QHBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     // Splitter 1 contains the two main parts of the GUI:
@@ -558,7 +558,7 @@ void MainWidget::setupGui()
     mMainWidgetSplitter2->setChildrenCollapsible(false);
     mMainWidgetSplitter1->setChildrenCollapsible(false);
 
-    QVBoxLayout *detailsPaneLayout = new QVBoxLayout(mDetailsPane);
+    auto *detailsPaneLayout = new QVBoxLayout(mDetailsPane);
     detailsPaneLayout->setContentsMargins(0, 0, 0, 0);
 
     // the details view stack
@@ -590,7 +590,7 @@ void MainWidget::setupGui()
     mCategorySelectWidget = new CategorySelectWidget;
 
     // setup the default actions
-    Akonadi::ContactDefaultActions *actions = new Akonadi::ContactDefaultActions(this);
+    auto *actions = new Akonadi::ContactDefaultActions(this);
     actions->connectToView(mContactDetails);
     actions->connectToView(mContactGroupDetails);
     mFormatter = new KAddressBookGrantlee::GrantleeContactFormatter;
@@ -634,7 +634,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->addAction(QStringLiteral("theme_menu"), themeMenu);
 
     initGrantleeThemeName();
-    QActionGroup *group = new QActionGroup(this);
+    auto *group = new QActionGroup(this);
     mGrantleeThemeManager->setThemeMenu(themeMenu);
     mGrantleeThemeManager->setActionGroup(group);
 
@@ -645,12 +645,12 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     KStandardAction::printPreview(this, &MainWidget::printPreview, collection);
 
-    QWidgetAction *quicksearch = new QWidgetAction(this);
+    auto *quicksearch = new QWidgetAction(this);
     quicksearch->setText(i18n("Quick search"));
     quicksearch->setDefaultWidget(mQuickSearchWidget);
     collection->addAction(QStringLiteral("quick_search"), quicksearch);
 
-    QWidgetAction *categoryFilter = new QWidgetAction(this);
+    auto *categoryFilter = new QWidgetAction(this);
     categoryFilter->setText(i18n("Category filter"));
     categoryFilter->setDefaultWidget(mCategorySelectWidget);
     collection->addAction(QStringLiteral("category_filter"), categoryFilter);
@@ -661,7 +661,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     action->setWhatsThis(i18n("Select all contacts in the current address book view."));
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
-    KToggleAction *qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
+    auto *qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
     qrtoggleAction->setText(i18n("Show QR Codes"));
     qrtoggleAction->setWhatsThis(i18n("Show QR Codes in the contact."));
     connect(qrtoggleAction, &KToggleAction::toggled, this, &MainWidget::setQRCodeShow);
@@ -862,7 +862,7 @@ Akonadi::Collection MainWidget::currentAddressBook() const
 QAbstractItemModel *MainWidget::allContactsModel()
 {
     if (!mAllContactsModel) {
-        KDescendantsProxyModel *descendantsModel = new KDescendantsProxyModel(this);
+        auto *descendantsModel = new KDescendantsProxyModel(this);
         descendantsModel->setSourceModel(GlobalContactModel::instance()->model());
 
         mAllContactsModel = new Akonadi::EntityMimeTypeFilterModel(this);
@@ -975,9 +975,9 @@ void MainWidget::slotGrantleeThemesUpdated()
 
 Akonadi::EntityTreeModel *MainWidget::entityTreeModel() const
 {
-    QAbstractProxyModel *proxy = qobject_cast<QAbstractProxyModel *>(mCollectionView->model());
+    auto *proxy = qobject_cast<QAbstractProxyModel *>(mCollectionView->model());
     while (proxy) {
-        Akonadi::EntityTreeModel *etm = qobject_cast<Akonadi::EntityTreeModel *>(proxy->sourceModel());
+        auto *etm = qobject_cast<Akonadi::EntityTreeModel *>(proxy->sourceModel());
         if (etm) {
             return etm;
         }
@@ -1055,7 +1055,7 @@ void MainWidget::slotServerSideSubscription()
 {
     Akonadi::Collection collection = currentAddressBook();
     if (collection.isValid()) {
-        PimCommon::ManageServerSideSubscriptionJob *job = new PimCommon::ManageServerSideSubscriptionJob(this);
+        auto *job = new PimCommon::ManageServerSideSubscriptionJob(this);
         job->setCurrentCollection(collection);
         job->setParentWidget(this);
         job->start();

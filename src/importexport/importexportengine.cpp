@@ -91,7 +91,7 @@ void ImportExportEngine::importContacts()
         item.setPayload<KContacts::Addressee>(mContactsList.addressList().at(i));
         item.setMimeType(KContacts::Addressee::mimeType());
 
-        Akonadi::ItemCreateJob *job = new Akonadi::ItemCreateJob(item, collection);
+        auto *job = new Akonadi::ItemCreateJob(item, collection);
         connect(job, &Akonadi::ItemCreateJob::result, this, &ImportExportEngine::slotImportJobDone);
     }
     const int numberGroup(mContactsList.contactGroupList().count());

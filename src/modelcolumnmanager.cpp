@@ -190,7 +190,7 @@ bool ModelColumnManager::eventFilter(QObject *watched, QEvent *event)
 
 void ModelColumnManager::adaptHeaderView()
 {
-    QHeaderView *view = qobject_cast<QHeaderView *>(mWidget);
+    auto *view = qobject_cast<QHeaderView *>(mWidget);
     if (view) {
         view->resizeSections(QHeaderView::Stretch);
 

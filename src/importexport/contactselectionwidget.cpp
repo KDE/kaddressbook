@@ -98,18 +98,18 @@ void ContactSelectionWidget::setAddGroupContact(bool addGroupContact)
 
 void ContactSelectionWidget::initGui()
 {
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     mMessageLabel = new QLabel;
     layout->addWidget(mMessageLabel);
     mMessageLabel->hide();
 
-    QButtonGroup *group = new QButtonGroup(this);
+    auto *group = new QButtonGroup(this);
 
-    QGroupBox *groupBox = new QGroupBox;
+    auto *groupBox = new QGroupBox;
 
-    QGridLayout *boxLayout = new QGridLayout;
+    auto *boxLayout = new QGridLayout;
     groupBox->setLayout(boxLayout);
 
     mAllContactsButton = new QRadioButton(i18nc("@option:radio", "All contacts"));
@@ -159,7 +159,7 @@ void ContactSelectionWidget::initGui()
     boxLayout->addWidget(mSelectedContactsButton, 1, 0, 1, 2);
     boxLayout->addWidget(mAddressBookContactsButton, 2, 0, Qt::AlignTop);
 
-    QVBoxLayout *addressBookLayout = new QVBoxLayout;
+    auto *addressBookLayout = new QVBoxLayout;
     addressBookLayout->setContentsMargins(0, 0, 0, 0);
     addressBookLayout->addWidget(mAddressBookSelection);
     addressBookLayout->addWidget(mAddressBookSelectionRecursive);
@@ -276,7 +276,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAddressBookItems() const
 
         items = job->items();
     } else {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(collection);
+        auto *job = new Akonadi::ItemFetchJob(collection);
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {
@@ -314,7 +314,7 @@ ContactList ContactSelectionWidget::collectAddressBookContacts() const
             }
         }
     } else {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(collection);
+        auto *job = new Akonadi::ItemFetchJob(collection);
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {

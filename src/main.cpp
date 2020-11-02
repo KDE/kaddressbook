@@ -69,7 +69,7 @@ int main(int argc, char **argv)
 
 #ifdef WITH_KUSERFEEDBACK
     if (cmdArgs->isSet(QStringLiteral("feedback"))) {
-        KAddressBookUserFeedbackProvider *userFeedBack = new KAddressBookUserFeedbackProvider(nullptr);
+        auto *userFeedBack = new KAddressBookUserFeedbackProvider(nullptr);
         QTextStream(stdout) << userFeedBack->describeDataSources() << '\n';
         delete userFeedBack;
         return 0;
