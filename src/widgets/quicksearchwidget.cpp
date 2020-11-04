@@ -48,7 +48,7 @@ QuickSearchWidget::~QuickSearchWidget()
 QSize QuickSearchWidget::sizeHint() const
 {
     const QSize size = mEdit->sizeHint();
-    return QSize(200, size.height());
+    return {200, size.height()};
 }
 
 void QuickSearchWidget::slotFocusQuickSearch()

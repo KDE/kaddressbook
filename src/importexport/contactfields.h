@@ -82,7 +82,7 @@ public:
     /**
      * Defines a list of Field enums.
      */
-    typedef QVector<Field> Fields;
+    using Fields = QVector<Field>;
 
     /**
      * Returns the i18n label for the @p field.
