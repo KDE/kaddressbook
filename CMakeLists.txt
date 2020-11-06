@@ -74,7 +74,7 @@ find_package(KF5GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 set(GPGMEPP_LIB_VERSION "1.11.1")
 find_package(Gpgmepp ${GPGMEPP_LIB_VERSION} CONFIG REQUIRED)
 
-set(QGPGME_LIB_VERSION "1.13.0")
+set(QGPGME_LIB_VERSION "1.11.1")
 find_package(QGpgme ${QGPGME_LIB_VERSION} CONFIG REQUIRED)
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
