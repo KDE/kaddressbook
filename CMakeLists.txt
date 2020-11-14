@@ -9,6 +9,12 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(ECMInstallIcons)
 
 
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(ECMAddAppIcon)
+include(ECMQtDeclareLoggingCategory)
+
 include(ECMSetupVersion)
 include(ECMAddTests)
 
@@ -18,13 +24,6 @@ include(ECMGenerateHeaders)
 include(FeatureSummary)
 include(CheckFunctionExists)
 include(ECMGeneratePriFile)
-
-
-include(KDEInstallDirs)
-include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
-include(ECMAddAppIcon)
-include(ECMQtDeclareLoggingCategory)
 
 
 # Do NOT add quote
