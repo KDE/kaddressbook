@@ -67,13 +67,13 @@ void PluginInterface::setItemSelectionModel(QItemSelectionModel *itemSelectionMo
 
 bool PluginInterface::canImportFileType(const QUrl &url)
 {
-    Q_UNUSED(url);
+    Q_UNUSED(url)
     return false;
 }
 
 void PluginInterface::importFile(const QUrl &url)
 {
-    Q_UNUSED(url);
+    Q_UNUSED(url)
 }
 
 bool PluginInterface::canImportData() const
@@ -83,5 +83,5 @@ bool PluginInterface::canImportData() const
 
 void PluginInterface::importData(const QByteArray &data)
 {
-    Q_UNUSED(data);
+    Q_UNUSED(data)
 }
