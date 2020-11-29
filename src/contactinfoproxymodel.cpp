@@ -18,9 +18,8 @@
 #include <kcontacts/addressee.h>
 
 #include <KJob>
-#include <QImage>
 #include <QJsonObject>
-#include <QRegularExpression>
+#include <QImage>
 
 ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
     : QIdentityProxyModel(parent)
