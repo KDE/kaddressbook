@@ -23,7 +23,7 @@ class StylePage : public QWidget
 
 public:
     explicit StylePage(QWidget *parent = nullptr, const QString &name = QString());
-    ~StylePage();
+    ~StylePage() override;
 
     /**
      * Set a preview image. If @p pixmap is 'null' a text will

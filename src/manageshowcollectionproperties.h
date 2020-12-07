@@ -20,7 +20,7 @@ class ManageShowCollectionProperties : public QObject
     Q_OBJECT
 public:
     explicit ManageShowCollectionProperties(MainWidget *mainWidget, QObject *parent = nullptr);
-    ~ManageShowCollectionProperties();
+    ~ManageShowCollectionProperties() override;
 
 public Q_SLOTS:
     void showCollectionProperties();

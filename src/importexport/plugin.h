@@ -18,7 +18,7 @@ class KADDRESSBOOK_IMPORTEXPORT_EXPORT Plugin : public PimCommon::AbstractGeneri
     Q_OBJECT
 public:
     explicit Plugin(QObject *parent = nullptr);
-    ~Plugin();
+    ~Plugin() override;
 };
 }
 

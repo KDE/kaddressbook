@@ -18,7 +18,7 @@ class KCMKaddressbookPluginsConfig : public KCModule
 {
     Q_OBJECT
 public:
-    KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args);
+    explicit KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args);
     void load() override;
     void save() override;
     void defaults() override;

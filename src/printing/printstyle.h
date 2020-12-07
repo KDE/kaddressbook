@@ -62,7 +62,7 @@ public:
     /**
      * Destroys the print style.
      */
-    virtual ~PrintStyle();
+    ~PrintStyle() override;
 
     /**
      * This method must be reimplemented to actually print something.

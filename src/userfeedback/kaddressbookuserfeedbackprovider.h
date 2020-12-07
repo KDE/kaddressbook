@@ -15,7 +15,7 @@ class KADDRESSBOOK_EXPORT KAddressBookUserFeedbackProvider : public KUserFeedbac
     Q_OBJECT
 public:
     explicit KAddressBookUserFeedbackProvider(QObject *parent = nullptr);
-    ~KAddressBookUserFeedbackProvider();
+    ~KAddressBookUserFeedbackProvider() override;
 };
 
 #endif // KADDRESSBOOKUSERFEEDBACKPROVIDER_H

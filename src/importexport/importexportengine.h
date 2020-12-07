@@ -22,7 +22,7 @@ class KADDRESSBOOK_IMPORTEXPORT_EXPORT ImportExportEngine : public QObject
     Q_OBJECT
 public:
     explicit ImportExportEngine(QObject *parent = nullptr);
-    ~ImportExportEngine();
+    ~ImportExportEngine() override;
     void setContactList(const ContactList &contacts);
 
     void importContacts();

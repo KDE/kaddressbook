@@ -27,7 +27,7 @@ class PrintProgress : public QWidget
 
 public:
     explicit PrintProgress(QWidget *parent);
-    ~PrintProgress();
+    ~PrintProgress() override;
 
     /**
       Add a message to the message log. Give the user something to admire :-)

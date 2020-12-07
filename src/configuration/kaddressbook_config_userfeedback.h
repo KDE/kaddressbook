@@ -19,7 +19,7 @@ class KCMKaddressbookUserFeedBackConfig : public KCModule
 {
     Q_OBJECT
 public:
-    KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args);
+    explicit KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args);
     void load() override;
     void save() override;
     void defaults() override;

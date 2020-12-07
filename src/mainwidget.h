@@ -60,7 +60,7 @@ class KADDRESSBOOK_EXPORT MainWidget : public QWidget
 
 public:
     explicit MainWidget(KXMLGUIClient *guiClient, QWidget *parent = nullptr);
-    ~MainWidget();
+    ~MainWidget() override;
 
     void updateQuickSearchText();
     const Akonadi::Item::List collectSelectedAllContactsItem();
