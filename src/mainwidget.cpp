@@ -657,7 +657,7 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     action = collection->addAction(QStringLiteral("select_all"));
     action->setText(i18n("Select All"));
-    collection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_A));
+    collection->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_A));
     action->setWhatsThis(i18n("Select all contacts in the current address book view."));
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
@@ -671,7 +671,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     QAction *act = new QAction(i18nc("@action:inmenu", "Simple (one column)"), mViewModeGroup);
     act->setCheckable(true);
     act->setData(1);
-    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_1));
+    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_1));
     act->setWhatsThis(i18n("Show a simple mode of the address book view."));
     collection->addAction(QStringLiteral("view_mode_simple"), act);
 
@@ -679,12 +679,12 @@ void MainWidget::setupActions(KActionCollection *collection)
     act->setCheckable(true);
     act->setData(2);
     collection->addAction(QStringLiteral("view_mode_2columns"), act);
-    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_2));
+    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_2));
 
     act = new QAction(i18nc("@action:inmenu", "Three Columns"), mViewModeGroup);
     act->setCheckable(true);
     act->setData(3);
-    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_3));
+    collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
     connect(mViewModeGroup, qOverload<QAction *>(&QActionGroup::triggered), this, qOverload<QAction *>(&MainWidget::setViewMode));
@@ -698,7 +698,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     //If change shortcut change in quicksearchwidget->lineedit->setPlaceholderText
     collection->addAction(QStringLiteral("focus_to_quickseach"), mQuickSearchAction);
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
-    collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT + Qt::Key_Q));
+    collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT | Qt::Key_Q));
 
     if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
         action = collection->addAction(QStringLiteral("debug_akonadi_search"));
