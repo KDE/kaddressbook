@@ -92,7 +92,6 @@ target_link_libraries(kaddressbookprivate
     KF5::Contacts
     KF5::AkonadiContact
     KF5::KCMUtils
-    KF5::Codecs
     KF5::GrantleeTheme
     KF5::Completion
     KF5::XmlGui
