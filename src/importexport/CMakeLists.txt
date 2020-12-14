@@ -26,6 +26,10 @@ ecm_qt_declare_logging_category(kaddressbook_importexport_LIB_SRCS
 
 
 add_library(KPimAddressbookImportExport ${kaddressbook_importexport_LIB_SRCS})
+if (COMPILE_WITH_CMAKE_SUPPORT)
+    set_target_properties(KPimAddressbookImportExport PROPERTIES UNITY_BUILD ON)
+endif()
+
 generate_export_header(KPimAddressbookImportExport BASE_NAME kaddressbook_importexport)
 
 add_library(KPim::AddressbookImportExport ALIAS KPimAddressbookImportExport)
