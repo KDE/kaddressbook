@@ -12,7 +12,7 @@ ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_conf
 
 
 add_library(kaddressbook_config_plugins MODULE ${kcm_config_plugins_SRCS})
-if (COMPILE_WITH_CMAKE_SUPPORT)
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook_config_plugins PROPERTIES UNITY_BUILD ON)
 endif()
 target_link_libraries(kaddressbook_config_plugins

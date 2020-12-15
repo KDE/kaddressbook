@@ -81,7 +81,7 @@ qt5_add_dbus_adaptor( kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.
 
 kconfig_add_kcfg_files(kaddressbook_LIB_SRCS settings/settings.kcfgc)
 add_library(kaddressbookprivate ${kaddressbook_LIB_SRCS})
-if (COMPILE_WITH_CMAKE_SUPPORT)
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbookprivate PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
@@ -128,7 +128,7 @@ set(kaddressbook_SRCS
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
 ecm_add_app_icon(kaddressbook_SRCS ICONS ${ICONS_SRCS})
 add_executable(kaddressbook ${kaddressbook_SRCS})
-if (COMPILE_WITH_CMAKE_SUPPORT)
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
 
