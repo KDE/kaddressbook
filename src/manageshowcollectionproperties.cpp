@@ -79,7 +79,7 @@ void ManageShowCollectionProperties::slotCollectionPropertiesFinished(KJob *job)
         return;
     }
 
-    auto *fetch = qobject_cast<Akonadi::CollectionFetchJob *>(job);
+    auto fetch = qobject_cast<Akonadi::CollectionFetchJob *>(job);
     Q_ASSERT(fetch);
     if (fetch->collections().isEmpty()) {
         qCWarning(KADDRESSBOOK_LOG) << "no collection";

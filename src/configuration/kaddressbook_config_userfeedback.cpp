@@ -22,7 +22,7 @@ K_PLUGIN_FACTORY(KCMKaddressbookUserFeedBackConfigFactory, registerPlugin<KCMKad
 KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
 {
-    auto *lay = new QHBoxLayout(this);
+    auto lay = new QHBoxLayout(this);
     lay->setContentsMargins(0, 0, 0, 0);
 
     KAboutData *about = new KAboutData(QStringLiteral("kcmaddressbookuserfeedbackconfig"),

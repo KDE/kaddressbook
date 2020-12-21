@@ -19,12 +19,12 @@ using namespace KAddressBookImportExport;
 ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
     : QWidget(parent)
 {
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins(0, 0, 0, 0);
     QGroupBox *gbox = new QGroupBox(
         i18nc("@title:group", "Fields to be exported"), this);
     mainLayout->addWidget(gbox);
-    auto *layout = new QGridLayout;
+    auto layout = new QGridLayout;
     gbox->setLayout(layout);
     gbox->setFlat(true);
 
@@ -77,7 +77,7 @@ ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
         i18nc("@title:group", "Export options"), this);
     gbox->setFlat(true);
     mainLayout->addWidget(gbox);
-    auto *gbLayout = new QHBoxLayout;
+    auto gbLayout = new QHBoxLayout;
     gbox->setLayout(gbLayout);
 
     mDisplayNameBox = new QCheckBox(i18nc("@option:check", "Display name as full name"), this);

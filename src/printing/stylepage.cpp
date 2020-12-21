@@ -111,7 +111,7 @@ void StylePage::initGUI()
 {
     setWindowTitle(i18nc("@title:window", "Choose Printing Style"));
 
-    auto *topLayout = new QGridLayout(this);
+    auto topLayout = new QGridLayout(this);
 
     QLabel *label
         = new QLabel(
@@ -122,7 +122,7 @@ void StylePage::initGUI()
     topLayout->addWidget(label, 0, 0, 1, 2);
 
     QGroupBox *group = new QGroupBox(i18nc("@title:group", "Sorting"), this);
-    auto *sortLayout = new QGridLayout();
+    auto sortLayout = new QGridLayout();
     group->setLayout(sortLayout);
     sortLayout->setAlignment(Qt::AlignTop);
 
@@ -155,7 +155,7 @@ void StylePage::initGUI()
     topLayout->addWidget(group, 1, 0);
 
     group = new QGroupBox(i18nc("@title:group", "Print Style"), this);
-    auto *styleLayout = new QVBoxLayout();
+    auto styleLayout = new QVBoxLayout();
     group->setLayout(styleLayout);
 
     mStyleCombo = new QComboBox(group);

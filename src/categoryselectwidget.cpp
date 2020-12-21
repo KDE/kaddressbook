@@ -64,7 +64,7 @@ void CategorySelectWidgetPrivate::init()
 {
     Q_Q(CategorySelectWidget);
 
-    auto *hbox = new QHBoxLayout(q);
+    auto hbox = new QHBoxLayout(q);
     hbox->setSpacing(0);
     hbox->setContentsMargins(0, 0, 0, 0);
 
@@ -75,7 +75,7 @@ void CategorySelectWidgetPrivate::init()
             this, &CategorySelectWidgetPrivate::slotCheckedItemsChanged);
     hbox->addWidget(checkCombo);
 
-    auto *monitor = new Monitor(this);
+    auto monitor = new Monitor(this);
     monitor->setTypeMonitored(Monitor::Tags);
     tagModel = new Akonadi::TagModel(monitor, this);
 
@@ -91,7 +91,7 @@ void CategorySelectWidgetPrivate::init()
     updateTimer->setInterval(200);
     connect(updateTimer, &QTimer::timeout, this, &CategorySelectWidgetPrivate::slotCheckedItemsTimer);
 
-    auto *but = new QToolButton(q);
+    auto but = new QToolButton(q);
     but->setAutoRaise(true);
     but->setIcon(QIcon::fromTheme(QStringLiteral("edit-undo")));
     but->setToolTip(i18nc("@action:button", "Reset category filter"));
@@ -123,7 +123,7 @@ void CategorySelectWidgetPrivate::init()
 
 QStandardItemModel *CategorySelectWidgetPrivate::itemModel() const
 {
-    auto *m = qobject_cast<QStandardItemModel *>(checkCombo->model());
+    auto m = qobject_cast<QStandardItemModel *>(checkCombo->model());
     Q_ASSERT(m != nullptr);
     return m;
 }

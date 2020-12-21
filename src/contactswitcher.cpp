@@ -16,7 +16,7 @@
 ContactSwitcher::ContactSwitcher(QWidget *parent)
     : QWidget(parent)
 {
-    auto *layout = new QHBoxLayout(this);
+    auto layout = new QHBoxLayout(this);
 
     mPreviousButton = new QPushButton(i18nc("@action:button Previous contact", "Previous"));
     mPreviousButton->setToolTip(

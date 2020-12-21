@@ -47,7 +47,7 @@ MainWindow::MainWindow()
     mHideMenuBarAction->setChecked(Settings::self()->showMenuBar());
     slotToggleMenubar(true);
 #ifdef WITH_KUSERFEEDBACK
-    auto *userFeedBackNotificationPopup = new KUserFeedback::NotificationPopup(this);
+    auto userFeedBackNotificationPopup = new KUserFeedback::NotificationPopup(this);
     userFeedBackNotificationPopup->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 #endif
 }

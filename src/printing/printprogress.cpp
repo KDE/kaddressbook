@@ -21,7 +21,7 @@ PrintProgress::PrintProgress(QWidget *parent)
 {
     setWindowTitle(i18nc("@title:window", "Printing: Progress"));
 
-    auto *topLayout = new QGridLayout(this);
+    auto topLayout = new QGridLayout(this);
 
     mLogBrowser = new QTextBrowser(this);
     topLayout->addWidget(mLogBrowser, 0, 0);

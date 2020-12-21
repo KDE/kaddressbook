@@ -19,7 +19,7 @@ ContactSelectionDialog::ContactSelectionDialog(QItemSelectionModel *selectionMod
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Select Contacts"));
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
 
     mSelectionWidget = new ContactSelectionWidget(selectionModel, this);
     if (allowToSelectTypeToExport) {

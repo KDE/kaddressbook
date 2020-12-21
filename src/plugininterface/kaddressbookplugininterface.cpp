@@ -34,7 +34,7 @@ void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::Abstrac
         qCCritical(KADDRESSBOOK_LOG) << "Main windows pointer not defined";
         return;
     }
-    auto *interface = static_cast<PimCommon::GenericPluginInterface *>(abstractInterface);
+    auto interface = static_cast<PimCommon::GenericPluginInterface *>(abstractInterface);
     PimCommon::GenericPluginInterface::RequireTypes requires = interface->requires();
     if (requires & PimCommon::GenericPluginInterface::CurrentItems) {
         interface->setCurrentItems(mMainWidget->collectSelectedAllContactsItem());

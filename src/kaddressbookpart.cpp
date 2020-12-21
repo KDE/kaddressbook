@@ -33,7 +33,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     QWidget *canvas = new QWidget(parentWidget);
     canvas->setFocusPolicy(Qt::ClickFocus);
     setWidget(canvas);
-    auto *topLayout = new QVBoxLayout(canvas);
+    auto topLayout = new QVBoxLayout(canvas);
 
     mMainWidget = new MainWidget(this, canvas);
     initAction();

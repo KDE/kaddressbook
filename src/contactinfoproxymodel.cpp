@@ -268,7 +268,7 @@ ContactInfoProxyModel::ContactCacheData::ConstListIterator ContactInfoProxyModel
 
 void ContactInfoProxyModel::fetchItems(const Akonadi::Item::List &items, const QMap<const char *, QVariant> &properties) const
 {
-    auto *job = new Akonadi::ItemFetchJob(items);
+    auto job = new Akonadi::ItemFetchJob(items);
     job->fetchScope().fetchFullPayload();
     job->fetchScope().setIgnoreRetrievalErrors(true);
 
@@ -285,7 +285,7 @@ void ContactInfoProxyModel::slotFetchJobFinished(KJob *job)
         qCWarning(KADDRESSBOOK_LOG) << " error during fetching items" << job->errorString();
         return;
     }
-    auto *fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
+    auto fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
 
     const QPersistentModelIndex index = job->property("groupPersistentModelIndex").value<QPersistentModelIndex>();
     const QString groupId = job->property("groupId").value<QString>();
