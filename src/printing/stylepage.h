@@ -2,7 +2,7 @@
   This file is part of KAddressBook.
   SPDX-FileCopyrightText: 2002 Anders Lund <anders.lund@lund.tdcadsl.dk>
   SPDX-FileCopyrightText: Tobias Koenig <tokoe@kde.org>
-  SPDX-FileCopyrightText: 2009-2020 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2009-2021 Laurent Montel <montel@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
