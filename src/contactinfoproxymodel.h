@@ -13,7 +13,6 @@
 #include <kcontacts/contactgroup.h>
 #include <QObject>
 #include <QIdentityProxyModel>
-#include <QPersistentModelIndex>
 
 namespace Akonadi {
 class Item;
@@ -42,52 +41,64 @@ private:
     class ContactCacheData
     {
     public:
+        using List = QVector<ContactCacheData>;
+        using ListIterator = ContactCacheData::List::iterator;
+        using ConstListIterator = ContactCacheData::List::ConstIterator;
+        
         ContactCacheData() = default;
         ~ContactCacheData() = default;
         ContactCacheData(const ContactCacheData &) = default;
 
         ContactCacheData(const KContacts::ContactGroup::ContactReference &other)
-            : uid(other.uid())
-            , gid(other.gid())
+            : mUid(other.uid())
+            , mGid(other.gid())
         {
         }
 
         ContactCacheData(const Akonadi::Item &other)
-            : uid(QString::number(other.id()))
-            , gid(other.gid())
+            : mUid(QString::number(other.id()))
+            , mGid(other.gid())
         {
         }
+        
+        Q_REQUIRED_RESULT bool setData(const Akonadi::Item &item);
 
         friend bool operator==(const ContactCacheData &lhs, const ContactCacheData &rhs);
-
-        using List = QVector<ContactCacheData>;
-        using ListIterator = ContactCacheData::List::iterator;
-        using ConstListIterator = ContactCacheData::List::ConstIterator;
-
-        QString uid;
-        QString gid;
-        QString name;
-        QString email;
+        
+        Q_REQUIRED_RESULT QString uid() const { return mUid; }
+        Q_REQUIRED_RESULT QString gid() const { return mGid; }
+        Q_REQUIRED_RESULT QString name() const { return mName; }
+        Q_REQUIRED_RESULT QString email() const { return mEmail; }
+    private:
+        Q_REQUIRED_RESULT bool validateItem(const Akonadi::Item &item) const;
+        QString mUid;
+        QString mGid;
+        QString mName;
+        QString mEmail;
     };
 
     Q_REQUIRED_RESULT QString getInitials(const KContacts::Addressee &contact) const;
-    Q_REQUIRED_RESULT QString getInitials(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const;
+    Q_REQUIRED_RESULT QString getInitials(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
     Q_REQUIRED_RESULT QString getDescription(const KContacts::Addressee &contact) const;
-    Q_REQUIRED_RESULT QString getDescription(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const;
-
-    void updateCache(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const;
-    Q_REQUIRED_RESULT bool groupFetchDone(const QModelIndex &index, const KContacts::ContactGroup &groupContacts) const;
-    Q_REQUIRED_RESULT ContactCacheData::ListIterator findCacheItem(const QModelIndex &index, const ContactCacheData &cacheContact);
-    Q_REQUIRED_RESULT ContactCacheData::ConstListIterator findCacheItem(const QModelIndex &index, const ContactCacheData &cacheContact) const;
+    Q_REQUIRED_RESULT QString getDescription(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
+    Q_REQUIRED_RESULT QStringList getIdsContactGroup(const KContacts::ContactGroup &group) const;
+    Q_REQUIRED_RESULT QStringList getIdsCacheContactGroup(const Akonadi::Item::Id groupItemId) const;
+    Q_REQUIRED_RESULT bool isCacheItemToFetch(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &group) const;
+    Q_REQUIRED_RESULT ContactCacheData::ListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact);
+    Q_REQUIRED_RESULT ContactCacheData::ConstListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact) const;
+    Q_REQUIRED_RESULT QMap<const char *, QVariant> buildFetchProperties(const Akonadi::Item::Id groupItemId) const;
+    
+    void resolveGroup(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
     void fetchItems(const Akonadi::Item::List &items, const QMap<const char *, QVariant> &properties) const;
+    
     void slotFetchJobFinished(KJob *job);
     void slotItemChanged(const Akonadi::Item &item, const QSet<QByteArray> &partIdentifiers);
-    void slotItemRemoved(const Akonadi::Item &item);
+    void slotRowsAboutToBeRemoved(const QModelIndex &parent, int first, int last);
 
     friend bool operator==(const ContactCacheData &lhs, const ContactCacheData &rhs);
-    using Cache = QMap<QPersistentModelIndex, ContactCacheData::List>;
+    using Cache = QMap<Akonadi::Item::Id, ContactCacheData::List>;
     mutable Cache mGroupsCache;
-    mutable QStringList mPendingGroups;
+    mutable QList<Akonadi::Item::Id> mPendingGroupItems;
     const QVector<int> mKrole {PictureRole, InitialsRole, DescriptionRole};
     Akonadi::Monitor *const mMonitor;
 };
