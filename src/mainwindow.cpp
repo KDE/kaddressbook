@@ -9,22 +9,22 @@
 #include "mainwindow.h"
 #include "mainwidget.h"
 #include "settings.h"
-#include <KToolBar>
-#include <KConfigGroup>
-#include <QAction>
 #include <KActionCollection>
+#include <KConfigGroup>
 #include <KEditToolBar>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KSharedConfig>
 #include <KShortcutsDialog>
 #include <KStandardAction>
-#include <KLocalizedString>
-#include <KSharedConfig>
-#include <KMessageBox>
+#include <KToolBar>
+#include <QAction>
 #include <QMenuBar>
 #include <QPointer>
 #ifdef WITH_KUSERFEEDBACK
+#include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
 #include <KUserFeedback/Provider>
-#include "userfeedback/userfeedbackmanager.h"
 #endif
 
 MainWindow::MainWindow()
@@ -66,12 +66,10 @@ void MainWindow::initActions()
     KStandardAction::quit(this, &MainWindow::close, actionCollection());
     mHideMenuBarAction = KStandardAction::showMenubar(this, &MainWindow::slotToggleMenubar, actionCollection());
 
-    QAction *action
-        = KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
-    action->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "You will be presented with a dialog where you can configure "
-              "the application-wide shortcuts."));
+    QAction *action = KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
+    action->setWhatsThis(i18nc("@info:whatsthis",
+                               "You will be presented with a dialog where you can configure "
+                               "the application-wide shortcuts."));
     KStandardAction::configureToolbars(this, &MainWindow::configureToolbars, actionCollection());
     KStandardAction::preferences(this, &MainWindow::configure, actionCollection());
 }
@@ -116,8 +114,10 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
                 const QString accel = mHideMenuBarAction->shortcut().toString();
                 KMessageBox::information(this,
                                          i18n("<qt>This will hide the menu bar completely."
-                                              " You can show it again by typing %1.</qt>", accel),
-                                         i18n("Hide menu bar"), QStringLiteral("HideMenuBarWarning"));
+                                              " You can show it again by typing %1.</qt>",
+                                              accel),
+                                         i18n("Hide menu bar"),
+                                         QStringLiteral("HideMenuBarWarning"));
             }
             menuBar()->hide();
         }

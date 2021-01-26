@@ -10,27 +10,27 @@
 #include "printingwizard.h"
 #include "settings.h"
 
-#include "importexport/contactselectionwidget.h"
 #include "contactsorter.h"
+#include "importexport/contactselectionwidget.h"
 #include "printprogress.h"
 #include "printstyle.h"
 #include "stylepage.h"
 
 // including the styles
+#include "compact/compactstyle.h"
 #include "detailled/detailledstyle.h"
 #include "mike/mikesstyle.h"
-#include "ringbinder/ringbinderstyle.h"
-#include "compact/compactstyle.h"
 #include "printing/grantlee/grantleeprintstyle.h"
+#include "ringbinder/ringbinderstyle.h"
 
-#include <QApplication>
 #include "kaddressbook_debug.h"
 #include <KLocalizedString>
+#include <QApplication>
 
-#include <QPushButton>
-#include <QPrinter>
-#include <QDirIterator>
 #include <KSharedConfig>
+#include <QDirIterator>
+#include <QPrinter>
+#include <QPushButton>
 #include <QStandardPaths>
 
 using namespace KABPrinting;
@@ -45,8 +45,7 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
     mSelectionPage = new KAddressBookImportExport::ContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
 
-    KPageWidgetItem *mSelectionPageItem
-        = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
+    KPageWidgetItem *mSelectionPageItem = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
     addPage(mSelectionPageItem);
     setAppropriate(mSelectionPageItem, true);
 
@@ -57,13 +56,11 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
     registerStyles();
 
     if (mPrintStyleDefinition.count() > Settings::self()->printingStyle()) {
-        mStylePage->setPrintingStyle(Settings::self()->printingStyle());   // should Q_EMIT styleChanged
+        mStylePage->setPrintingStyle(Settings::self()->printingStyle()); // should Q_EMIT styleChanged
         slotStyleSelected(Settings::self()->printingStyle());
     }
 
-    mStylePage->setSortOrder(Settings::self()->sortOrder() == 0
-                             ? Qt::AscendingOrder
-                             : Qt::DescendingOrder);
+    mStylePage->setSortOrder(Settings::self()->sortOrder() == 0 ? Qt::AscendingOrder : Qt::DescendingOrder);
     readConfig();
 }
 
@@ -105,7 +102,7 @@ void PrintingWizard::loadGrantleeStyle()
     const QString relativePath = QStringLiteral("kaddressbook/printing/themes/");
     QStringList themesDirectories = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, relativePath, QStandardPaths::LocateDirectory);
     if (themesDirectories.count() < 2) {
-        //Make sure to add local directory
+        // Make sure to add local directory
         const QString localDirectory = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + relativePath;
         if (!themesDirectories.contains(localDirectory)) {
             themesDirectories.append(localDirectory);

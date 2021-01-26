@@ -7,16 +7,17 @@
 #ifndef IMPORTEXPORTENGINE_H
 #define IMPORTEXPORTENGINE_H
 
-#include <QObject>
 #include <AkonadiCore/Collection>
+#include <QObject>
 
-#include "kaddressbook_importexport_export.h"
 #include "contactlist.h"
+#include "kaddressbook_importexport_export.h"
 
 class QProgressDialog;
 class KJob;
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ImportExportEngine : public QObject
 {
     Q_OBJECT

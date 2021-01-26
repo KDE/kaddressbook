@@ -62,5 +62,5 @@ void KAddressBookMigrateApplication::initializeMigrator()
 
     mMigrator.setCurrentConfigVersion(currentVersion);
 
-    //TODO add folder to migrate
+    // TODO add folder to migrate
 }

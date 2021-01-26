@@ -7,20 +7,19 @@
 */
 
 #include "kaddressbookpart.h"
-#include "mainwidget.h"
 #include "kaddressbookmigrateapplication.h"
+#include "mainwidget.h"
 
 #include "kaddressbook_debug.h"
+#include <KActionCollection>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <QAction>
-#include <KActionCollection>
 #include <QIcon>
 
 #include <QVBoxLayout>
 
-K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();
-                 )
+K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
 
 KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const QVariantList &)
     : KParts::Part(parent)

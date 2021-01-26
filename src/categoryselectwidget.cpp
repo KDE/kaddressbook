@@ -7,13 +7,13 @@
 #include "categoryselectwidget.h"
 
 #include "kaddressbook_debug.h"
-#include <KLocalizedString>
-#include <QToolButton>
-#include <QStandardItemModel>
-#include <QTimer>
-#include <QHBoxLayout>
 #include <AkonadiCore/monitor.h>
 #include <AkonadiCore/tagmodel.h>
+#include <KLocalizedString>
+#include <QHBoxLayout>
+#include <QStandardItemModel>
+#include <QTimer>
+#include <QToolButton>
 
 #include <Libkdepim/KCheckComboBox>
 
@@ -71,20 +71,16 @@ void CategorySelectWidgetPrivate::init()
     checkCombo = new KPIM::KCheckComboBox;
     checkCombo->setMinimumWidth(150);
     checkCombo->setSqueezeText(true);
-    connect(checkCombo, &KPIM::KCheckComboBox::checkedItemsChanged,
-            this, &CategorySelectWidgetPrivate::slotCheckedItemsChanged);
+    connect(checkCombo, &KPIM::KCheckComboBox::checkedItemsChanged, this, &CategorySelectWidgetPrivate::slotCheckedItemsChanged);
     hbox->addWidget(checkCombo);
 
     auto monitor = new Monitor(this);
     monitor->setTypeMonitored(Monitor::Tags);
     tagModel = new Akonadi::TagModel(monitor, this);
 
-    connect(tagModel, &QAbstractItemModel::rowsInserted,
-            this, &CategorySelectWidgetPrivate::slotTagsInserted);
-    connect(tagModel, &QAbstractItemModel::rowsRemoved,
-            this, &CategorySelectWidgetPrivate::slotTagsRemoved);
-    connect(tagModel, &QAbstractItemModel::dataChanged,
-            this, &CategorySelectWidgetPrivate::slotTagsChanged);
+    connect(tagModel, &QAbstractItemModel::rowsInserted, this, &CategorySelectWidgetPrivate::slotTagsInserted);
+    connect(tagModel, &QAbstractItemModel::rowsRemoved, this, &CategorySelectWidgetPrivate::slotTagsRemoved);
+    connect(tagModel, &QAbstractItemModel::dataChanged, this, &CategorySelectWidgetPrivate::slotTagsChanged);
 
     updateTimer = new QTimer(this);
     updateTimer->setSingleShot(true);
@@ -168,10 +164,8 @@ void CategorySelectWidgetPrivate::slotTagsInserted(const QModelIndex &parent, in
         // FIXME: not tested (no way to create hierarchical tags at present)
         if (parent != QModelIndex()) {
             const auto parentId = tagModel->data(idx, TagModel::IdRole).value<Tag::Id>();
-            QModelIndexList matchList = itemModel()->match(itemModel()->index(0, 0), FILTER_ROLE,
-                                                           parentId, 1,
-                                                           Qt::MatchExactly | Qt::MatchRecursive);
-            if (matchList.count() == 1) {       // found the parent tag
+            QModelIndexList matchList = itemModel()->match(itemModel()->index(0, 0), FILTER_ROLE, parentId, 1, Qt::MatchExactly | Qt::MatchRecursive);
+            if (matchList.count() == 1) { // found the parent tag
                 QModelIndex parentIndex = matchList.at(0);
                 itemModel()->itemFromIndex(parentIndex)->appendRow(it);
             } else {
@@ -261,7 +255,7 @@ QList<Akonadi::Tag::Id> CategorySelectWidgetPrivate::filterTags() const
         filter.append(CategorySelectWidget::FilterAll);
     }
 
-    //qCDebug(KADDRESSBOOK_LOG) << "filter" << filter;
+    // qCDebug(KADDRESSBOOK_LOG) << "filter" << filter;
     return filter;
 }
 

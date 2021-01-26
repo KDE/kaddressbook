@@ -6,18 +6,17 @@
 
 #include "kaddressbook_config_userfeedback.h"
 #include <KAboutData>
-#include <KPluginFactory>
 #include <KLocalizedString>
+#include <KPluginFactory>
 #include <QHBoxLayout>
 #ifdef WITH_KUSERFEEDBACK
-#include <KUserFeedback/FeedbackConfigWidget>
 #include "userfeedback/userfeedbackmanager.h"
+#include <KUserFeedback/FeedbackConfigWidget>
 #endif
 
 using namespace KAddressBook;
 
-K_PLUGIN_FACTORY(KCMKaddressbookUserFeedBackConfigFactory, registerPlugin<KCMKaddressbookUserFeedBackConfig>();
-                 )
+K_PLUGIN_FACTORY(KCMKaddressbookUserFeedBackConfigFactory, registerPlugin<KCMKaddressbookUserFeedBackConfig>();)
 
 KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
@@ -27,7 +26,9 @@ KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *pa
 
     KAboutData *about = new KAboutData(QStringLiteral("kcmaddressbookuserfeedbackconfig"),
                                        i18n("Configure User FeedBack"),
-                                       QString(), QString(), KAboutLicense::GPL,
+                                       QString(),
+                                       QString(),
+                                       KAboutLicense::GPL,
                                        i18n("(c), 2020 Laurent Montel"));
 
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
@@ -53,7 +54,7 @@ void KCMKaddressbookUserFeedBackConfig::load()
 
 void KCMKaddressbookUserFeedBackConfig::defaults()
 {
-    //FIXME ?
+    // FIXME ?
     mUserFeedbackWidget->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 }
 

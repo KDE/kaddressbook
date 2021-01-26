@@ -10,10 +10,11 @@
 #ifndef PRINTINGWIZARD_H
 #define PRINTINGWIZARD_H
 
-#include <KContacts/Addressee>
 #include <KAssistantDialog>
+#include <KContacts/Addressee>
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class ContactSelectionWidget;
 }
 class StylePage;
@@ -21,11 +22,13 @@ class StylePage;
 class QItemSelectionModel;
 class QPrinter;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Collection;
 }
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class PrintProgress;
 class PrintStyle;
 class PrintStyleFactory;

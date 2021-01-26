@@ -9,11 +9,13 @@
 
 #include "printstyle.h"
 
-namespace KAddressBookGrantlee {
+namespace KAddressBookGrantlee
+{
 class GrantleePrint;
 }
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class PrintProgress;
 
 class GrantleePrintStyle : public PrintStyle
@@ -24,6 +26,7 @@ public:
     ~GrantleePrintStyle() override;
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
+
 private:
     const QString m_themePath;
 };
@@ -35,6 +38,7 @@ public:
 
     PrintStyle *create() const override;
     QString description() const override;
+
 private:
     QString mThemePath;
     QString mName;

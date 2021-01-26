@@ -75,13 +75,13 @@ struct Restorer {
     }
 };
 
-#define PROCESS_TYPE(T) \
-    { \
-        T *obj = qobject_cast<T *>(w); \
-        if (obj) { \
-            Op::process(obj, config); \
-            continue; \
-        } \
+#define PROCESS_TYPE(T)                                                                                                                                        \
+    {                                                                                                                                                          \
+        T *obj = qobject_cast<T *>(w);                                                                                                                         \
+        if (obj) {                                                                                                                                             \
+            Op::process(obj, config);                                                                                                                          \
+            continue;                                                                                                                                          \
+        }                                                                                                                                                      \
     }
 
 template<typename Op, typename Config> static void processWidgets(QWidget *widget, Config config)

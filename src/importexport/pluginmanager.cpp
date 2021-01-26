@@ -5,14 +5,14 @@
 */
 
 #include "pluginmanager.h"
-#include "plugin.h"
 #include "libkaddressbookexportimport_debug.h"
+#include "plugin.h"
 
-#include <QFileInfo>
-#include <QSet>
+#include <KPluginFactory>
 #include <KPluginLoader>
 #include <KPluginMetaData>
-#include <KPluginFactory>
+#include <QFileInfo>
+#include <QSet>
 
 using namespace KAddressBookImportExport;
 
@@ -39,14 +39,16 @@ public:
 
 Q_GLOBAL_STATIC(PluginManagerHolder, sInstance)
 
-namespace {
+namespace
+{
 QString pluginVersion()
 {
     return QStringLiteral("1.0");
 }
 }
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class PluginManagerPrivate
 {
 public:
@@ -64,6 +66,7 @@ public:
     QString configGroupName() const;
     QString configPrefixSettingKey() const;
     Plugin *pluginFromIdentifier(const QString &id);
+
 private:
     QVector<ImportExportInfo> mPluginList;
     QVector<PimCommon::PluginUtilData> mPluginDataList;
@@ -84,10 +87,11 @@ bool PluginManagerPrivate::initializePlugins()
         ImportExportInfo info;
         const KPluginMetaData data = i.previous();
 
-        //1) get plugin data => name/description etc.
+        // 1) get plugin data => name/description etc.
         info.pluginData = PimCommon::PluginUtil::createPluginMetaData(data);
-        //2) look at if plugin is activated
-        const bool isPluginActivated = PimCommon::PluginUtil::isPluginActivated(pair.first, pair.second, info.pluginData.mEnableByDefault, info.pluginData.mIdentifier);
+        // 2) look at if plugin is activated
+        const bool isPluginActivated =
+            PimCommon::PluginUtil::isPluginActivated(pair.first, pair.second, info.pluginData.mEnableByDefault, info.pluginData.mIdentifier);
         info.isEnabled = isPluginActivated;
         info.metaDataFileNameBaseName = QFileInfo(data.fileName()).baseName();
         info.metaDataFileName = data.fileName();

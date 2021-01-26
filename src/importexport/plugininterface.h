@@ -8,13 +8,14 @@
 #define KADDRESSBOOKIMPORTEXPORTPLUGININTERFACE_H
 
 #include "kaddressbook_importexport_export.h"
+#include <AkonadiCore/Collection>
 #include <PimCommon/AbstractGenericPluginInterface>
 #include <QList>
-#include <AkonadiCore/Collection>
 
 class QItemSelectionModel;
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 /** Import/export plugin interface. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT PluginInterface : public PimCommon::AbstractGenericPluginInterface
 {
@@ -23,10 +24,7 @@ public:
     explicit PluginInterface(QObject *parent = nullptr);
     ~PluginInterface() override;
 
-    enum ImportExportAction {
-        Import = 0,
-        Export = 1
-    };
+    enum ImportExportAction { Import = 0, Export = 1 };
 
     Q_REQUIRED_RESULT QList<QAction *> importActions() const;
     void setImportActions(const QList<QAction *> &importAction);

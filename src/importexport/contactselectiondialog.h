@@ -8,20 +8,22 @@
 #ifndef IMPORTEXPORT_KADDRESSBOOKCONTACTSELECTIONDIALOG_H
 #define IMPORTEXPORT_KADDRESSBOOKCONTACTSELECTIONDIALOG_H
 
-#include "kaddressbook_importexport_export.h"
 #include "contactlist.h"
 #include "exportselectionwidget.h"
+#include "kaddressbook_importexport_export.h"
 
+#include <AkonadiCore/Item>
 #include <KContacts/Addressee>
 #include <QDialog>
-#include <AkonadiCore/Item>
 
 class QItemSelectionModel;
-namespace Akonadi {
+namespace Akonadi
+{
 class Collection;
 }
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class ContactSelectionWidget;
 
 /**
@@ -61,6 +63,7 @@ public:
     void setAddGroupContact(bool addGroupContact);
 
     Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
+
 private:
     ContactSelectionWidget *mSelectionWidget = nullptr;
     ExportSelectionWidget *mVCardExport = nullptr;

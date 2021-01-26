@@ -8,11 +8,11 @@
 
 #include "globalcontactmodel.h"
 
+#include <Akonadi/Contact/ContactsTreeModel>
 #include <AkonadiCore/ChangeRecorder>
 #include <AkonadiCore/EntityDisplayAttribute>
 #include <AkonadiCore/ItemFetchScope>
 #include <AkonadiCore/Session>
-#include <Akonadi/Contact/ContactsTreeModel>
 
 #include <KContacts/Addressee>
 #include <KContacts/ContactGroup>

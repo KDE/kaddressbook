@@ -14,16 +14,15 @@
 #include <QPixmap>
 #include <QVBoxLayout>
 
-#include <QComboBox>
 #include <KLocalizedString>
+#include <QComboBox>
 
 using namespace KAddressBookImportExport;
 
 // helper method to sort contact fields by field label
 static bool contactFieldsNameLesser(ContactFields::Field field, ContactFields::Field otherField)
 {
-    return QString::localeAwareCompare(ContactFields::label(field),
-                                       ContactFields::label(otherField)) < 0;
+    return QString::localeAwareCompare(ContactFields::label(field), ContactFields::label(otherField)) < 0;
 }
 
 StylePage::StylePage(QWidget *parent, const QString &name)
@@ -83,7 +82,7 @@ ContactFields::Field StylePage::sortField() const
         return ContactFields::GivenName;
     }
 
-    return mFields[ mFieldCombo->currentIndex() ];
+    return mFields[mFieldCombo->currentIndex()];
 }
 
 Qt::SortOrder StylePage::sortOrder() const
@@ -96,7 +95,7 @@ void StylePage::initFieldCombo()
     mFieldCombo->clear();
 
     mFields = ContactFields::allFields();
-    mFields.remove(0);   // remove ContactFields::Undefined
+    mFields.remove(0); // remove ContactFields::Undefined
 
     std::sort(mFields.begin(), mFields.end(), contactFieldsNameLesser);
 
@@ -113,12 +112,11 @@ void StylePage::initGUI()
 
     auto topLayout = new QGridLayout(this);
 
-    QLabel *label
-        = new QLabel(
-              i18nc("@label:textbox",
-                    "What should the print look like?\n"
-                    "KAddressBook has several printing styles, designed for different purposes.\n"
-                    "Choose the style that suits your needs below."), this);
+    QLabel *label = new QLabel(i18nc("@label:textbox",
+                                     "What should the print look like?\n"
+                                     "KAddressBook has several printing styles, designed for different purposes.\n"
+                                     "Choose the style that suits your needs below."),
+                               this);
     topLayout->addWidget(label, 0, 0, 1, 2);
 
     QGroupBox *group = new QGroupBox(i18nc("@title:group", "Sorting"), this);
@@ -130,26 +128,22 @@ void StylePage::initGUI()
     sortLayout->addWidget(label, 0, 0);
 
     mFieldCombo = new QComboBox(group);
-    mFieldCombo->setToolTip(
-        i18nc("@info:tooltip", "Select the primary sort field"));
-    mFieldCombo->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "From this list you can select the field on which your contacts are sorted "
-              "in the print output.  Use the sorting order option to determine if the "
-              "sort will be in ascending or descending order."));
+    mFieldCombo->setToolTip(i18nc("@info:tooltip", "Select the primary sort field"));
+    mFieldCombo->setWhatsThis(i18nc("@info:whatsthis",
+                                    "From this list you can select the field on which your contacts are sorted "
+                                    "in the print output.  Use the sorting order option to determine if the "
+                                    "sort will be in ascending or descending order."));
     sortLayout->addWidget(mFieldCombo, 0, 1);
 
     label = new QLabel(i18nc("@label:listbox", "Order:"), group);
     sortLayout->addWidget(label, 1, 0);
 
     mSortTypeCombo = new QComboBox(group);
-    mSortTypeCombo->setToolTip(
-        i18nc("@info:tooltip", "Select the sorting order"));
-    mSortTypeCombo->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Choose if you want to sort your contacts in ascending or descending order. "
-              "Use the sorting criterion option to specify on which contact field the sorting "
-              "will be performed."));
+    mSortTypeCombo->setToolTip(i18nc("@info:tooltip", "Select the sorting order"));
+    mSortTypeCombo->setWhatsThis(i18nc("@info:whatsthis",
+                                       "Choose if you want to sort your contacts in ascending or descending order. "
+                                       "Use the sorting criterion option to specify on which contact field the sorting "
+                                       "will be performed."));
     sortLayout->addWidget(mSortTypeCombo, 1, 1);
 
     topLayout->addWidget(group, 1, 0);
@@ -159,11 +153,8 @@ void StylePage::initGUI()
     group->setLayout(styleLayout);
 
     mStyleCombo = new QComboBox(group);
-    mStyleCombo->setToolTip(
-        i18nc("@info:tooltip", "Select the print style"));
-    mStyleCombo->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Choose your desired printing style. See the preview image to help you decide."));
+    mStyleCombo->setToolTip(i18nc("@info:tooltip", "Select the print style"));
+    mStyleCombo->setWhatsThis(i18nc("@info:whatsthis", "Choose your desired printing style. See the preview image to help you decide."));
 
     styleLayout->addWidget(mStyleCombo);
 

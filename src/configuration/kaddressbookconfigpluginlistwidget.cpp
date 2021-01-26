@@ -5,15 +5,16 @@
 */
 
 #include "kaddressbookconfigpluginlistwidget.h"
-#include "../plugininterface/kaddressbookplugininterface.h"
-#include "../importexport/pluginmanager.h"
 #include "../importexport/plugin.h"
+#include "../importexport/pluginmanager.h"
+#include "../plugininterface/kaddressbookplugininterface.h"
 
 #include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
 
-namespace {
+namespace
+{
 QString kaddressbookPluginToolsGroupName()
 {
     return QStringLiteral("kaddressbookplugintoolsgroupname");
@@ -61,9 +62,10 @@ void KAddressBookConfigPluginListWidget::doResetToDefaultsOther()
 void KAddressBookConfigPluginListWidget::initialize()
 {
     mListWidget->clear();
-    //Necessary to initialize plugins when we load it outside kaddressbook
+    // Necessary to initialize plugins when we load it outside kaddressbook
     KAddressBookPluginInterface::self()->initializePlugins();
-    PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(), i18n("Tools Plugins"),
+    PimCommon::ConfigurePluginsListWidget::fillTopItems(KAddressBookPluginInterface::self()->pluginsDataList(),
+                                                        i18n("Tools Plugins"),
                                                         KAddressBookPluginInterface::self()->configGroupName(),
                                                         KAddressBookPluginInterface::self()->configPrefixSettingKey(),
                                                         mPluginGenericItems,

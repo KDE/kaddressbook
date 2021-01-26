@@ -7,14 +7,15 @@
 #ifndef KADDRESSBOOKMIGRATEAPPLICATION_H
 #define KADDRESSBOOKMIGRATEAPPLICATION_H
 
-#include <PimCommon/MigrateApplicationFiles>
 #include "kaddressbook_export.h"
+#include <PimCommon/MigrateApplicationFiles>
 
 class KADDRESSBOOK_EXPORT KAddressBookMigrateApplication
 {
 public:
     KAddressBookMigrateApplication();
     void migrate();
+
 private:
     void initializeMigrator();
     PimCommon::MigrateApplicationFiles mMigrator;

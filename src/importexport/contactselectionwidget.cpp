@@ -8,14 +8,15 @@
 #include "contactselectionwidget.h"
 #include <QDebug>
 
-#include <AkonadiWidgets/CollectionComboBox>
 #include <AkonadiCore/EntityTreeModel>
 #include <AkonadiCore/ItemFetchJob>
 #include <AkonadiCore/ItemFetchScope>
 #include <AkonadiCore/RecursiveItemFetchJob>
+#include <AkonadiWidgets/CollectionComboBox>
 
 #include <KLocalizedString>
 
+#include <QApplication>
 #include <QButtonGroup>
 #include <QCheckBox>
 #include <QGridLayout>
@@ -25,7 +26,6 @@
 #include <QProgressDialog>
 #include <QRadioButton>
 #include <QVBoxLayout>
-#include <QApplication>
 
 using namespace KAddressBookImportExport;
 
@@ -113,43 +113,35 @@ void ContactSelectionWidget::initGui()
     groupBox->setLayout(boxLayout);
 
     mAllContactsButton = new QRadioButton(i18nc("@option:radio", "All contacts"));
-    mAllContactsButton->setToolTip(
-        i18nc("@info:tooltip", "All contacts from all your address books"));
-    mAllContactsButton->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Choose this option you want to select all your contacts from "
-              "all your address books."));
+    mAllContactsButton->setToolTip(i18nc("@info:tooltip", "All contacts from all your address books"));
+    mAllContactsButton->setWhatsThis(i18nc("@info:whatsthis",
+                                           "Choose this option you want to select all your contacts from "
+                                           "all your address books."));
 
     mSelectedContactsButton = new QRadioButton(i18nc("@option:radio", "Selected contacts"));
-    mSelectedContactsButton->setToolTip(
-        i18nc("@info:tooltip", "Only the contacts currently selected"));
-    mSelectedContactsButton->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Choose this option if you want only the contacts you have already "
-              "selected in the graphical interface."));
+    mSelectedContactsButton->setToolTip(i18nc("@info:tooltip", "Only the contacts currently selected"));
+    mSelectedContactsButton->setWhatsThis(i18nc("@info:whatsthis",
+                                                "Choose this option if you want only the contacts you have already "
+                                                "selected in the graphical interface."));
 
     mAddressBookContactsButton = new QRadioButton(i18nc("@option:radio", "All contacts from:"));
-    mAddressBookContactsButton->setToolTip(
-        i18nc("@info:tooltip", "All contacts from a chosen address book"));
-    mAddressBookContactsButton->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Choose this option if you want to select all the contacts from only one "
-              "of your address books.  Once this option is clicked you will be provided "
-              "a drop down box listing all those address books and permitted to select "
-              "the one you want."));
+    mAddressBookContactsButton->setToolTip(i18nc("@info:tooltip", "All contacts from a chosen address book"));
+    mAddressBookContactsButton->setWhatsThis(i18nc("@info:whatsthis",
+                                                   "Choose this option if you want to select all the contacts from only one "
+                                                   "of your address books.  Once this option is clicked you will be provided "
+                                                   "a drop down box listing all those address books and permitted to select "
+                                                   "the one you want."));
 
     mAddressBookSelection = new Akonadi::CollectionComboBox;
     mAddressBookSelection->setMimeTypeFilter(QStringList() << KContacts::Addressee::mimeType());
     mAddressBookSelection->setAccessRightsFilter(Akonadi::Collection::ReadOnly);
     mAddressBookSelection->setExcludeVirtualCollections(true);
     mAddressBookSelectionRecursive = new QCheckBox(i18nc("@option:check", "Include Subfolders"));
-    mAddressBookSelectionRecursive->setToolTip(
-        i18nc("@info:tooltip", "Select all subfolders including the top-level folder"));
-    mAddressBookSelectionRecursive->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to select all contacts from this folder, "
-              "including all subfolders.  If you only want the contacts from the "
-              "top-level folder then leave this box unchecked."));
+    mAddressBookSelectionRecursive->setToolTip(i18nc("@info:tooltip", "Select all subfolders including the top-level folder"));
+    mAddressBookSelectionRecursive->setWhatsThis(i18nc("@info:whatsthis",
+                                                       "Check this box if you want to select all contacts from this folder, "
+                                                       "including all subfolders.  If you only want the contacts from the "
+                                                       "top-level folder then leave this box unchecked."));
 
     group->addButton(mAllContactsButton);
     group->addButton(mSelectedContactsButton);
@@ -172,9 +164,7 @@ void ContactSelectionWidget::initGui()
 
 Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
 {
-    Akonadi::RecursiveItemFetchJob *job
-        = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(),
-                                             QStringList() << KContacts::Addressee::mimeType());
+    Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
     job->fetchScope().fetchFullPayload();
     QProgressDialog progressDialog(nullptr);
     progressDialog.setWindowTitle(i18nc("@title:window", "Collect Contacts"));
@@ -195,9 +185,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
 ContactList ContactSelectionWidget::collectAllContacts() const
 {
     ContactList contacts;
-    Akonadi::RecursiveItemFetchJob *job
-        = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(),
-                                             QStringList() << KContacts::Addressee::mimeType());
+    Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
     job->fetchScope().fetchFullPayload();
 
     if (!job->exec()) {
@@ -223,8 +211,7 @@ Akonadi::Item::List ContactSelectionWidget::collectSelectedItems() const
     for (int i = 0, total = indexes.count(); i < total; ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item
-                = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
                 items.append(item);
             }
@@ -242,8 +229,7 @@ ContactList ContactSelectionWidget::collectSelectedContacts() const
     for (int i = 0, total = indexes.count(); i < total; ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item
-                = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
                 if (item.hasPayload<KContacts::Addressee>()) {
                     contacts.append(item.payload<KContacts::Addressee>());
@@ -265,9 +251,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAddressBookItems() const
     }
 
     if (mAddressBookSelectionRecursive->isChecked()) {
-        Akonadi::RecursiveItemFetchJob *job
-            = new Akonadi::RecursiveItemFetchJob(collection,
-                                                 QStringList() << KContacts::Addressee::mimeType());
+        Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {
@@ -298,9 +282,7 @@ ContactList ContactSelectionWidget::collectAddressBookContacts() const
     }
 
     if (mAddressBookSelectionRecursive->isChecked()) {
-        Akonadi::RecursiveItemFetchJob *job
-            = new Akonadi::RecursiveItemFetchJob(collection,
-                                                 QStringList() << KContacts::Addressee::mimeType());
+        Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {

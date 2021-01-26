@@ -121,54 +121,12 @@ ContactFields::Fields ContactFields::allFields()
 {
     Fields fields;
 
-    fields << Undefined
-           << FormattedName
-           << Prefix
-           << GivenName
-           << AdditionalName
-           << FamilyName
-           << Suffix
-           << NickName
-           << Birthday
-           << Anniversary
-           << PreferredEmail
-           << Email2
-           << Email3
-           << Email4
-           << HomeAddressStreet
-           << HomeAddressPostOfficeBox
-           << HomeAddressLocality
-           << HomeAddressRegion
-           << HomeAddressPostalCode
-           << HomeAddressCountry
-           << HomeAddressLabel
-           << BusinessAddressStreet
-           << BusinessAddressPostOfficeBox
-           << BusinessAddressLocality
-           << BusinessAddressRegion
-           << BusinessAddressPostalCode
-           << BusinessAddressCountry
-           << BusinessAddressLabel
-           << HomePhone
-           << BusinessPhone
-           << MobilePhone
-           << HomeFax
-           << BusinessFax
-           << CarPhone
-           << Isdn
-           << Pager
-           << Mailer
-           << Title
-           << Role
-           << Organization
-           << Note
-           << Homepage
-           << BlogFeed
-           << Profession
-           << Office
-           << Manager
-           << Assistant
-           << Spouse;
+    fields << Undefined << FormattedName << Prefix << GivenName << AdditionalName << FamilyName << Suffix << NickName << Birthday << Anniversary
+           << PreferredEmail << Email2 << Email3 << Email4 << HomeAddressStreet << HomeAddressPostOfficeBox << HomeAddressLocality << HomeAddressRegion
+           << HomeAddressPostalCode << HomeAddressCountry << HomeAddressLabel << BusinessAddressStreet << BusinessAddressPostOfficeBox
+           << BusinessAddressLocality << BusinessAddressRegion << BusinessAddressPostalCode << BusinessAddressCountry << BusinessAddressLabel << HomePhone
+           << BusinessPhone << MobilePhone << HomeFax << BusinessFax << CarPhone << Isdn << Pager << Mailer << Title << Role << Organization << Note << Homepage
+           << BlogFeed << Profession << Office << Manager << Assistant << Spouse;
 
     return fields;
 }
@@ -203,8 +161,7 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
         contact.setBirthday(QDate::fromString(value, Qt::ISODate));
         break;
     case ContactFields::Anniversary:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-Anniversary"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"), value);
         break;
     case ContactFields::PreferredEmail:
         contact.insertEmail(value, true);
@@ -227,8 +184,7 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
     case ContactFields::Mailer:
         contact.setMailer(value);
         break;
-    case ContactFields::Homepage:
-    {
+    case ContactFields::Homepage: {
         KContacts::ResourceLocatorUrl url;
         url.setUrl(QUrl(value));
         contact.setUrl(url);
@@ -240,186 +196,156 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
     case ContactFields::Note:
         contact.setNote(value);
         break;
-    case ContactFields::HomePhone:
-    {
+    case ContactFields::HomePhone: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Home);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::BusinessPhone:
-    {
+    case ContactFields::BusinessPhone: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Work);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::MobilePhone:
-    {
+    case ContactFields::MobilePhone: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Cell);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::HomeFax:
-    {
-        KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Home
-                                                            |KContacts::PhoneNumber::Fax);
+    case ContactFields::HomeFax: {
+        KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Home | KContacts::PhoneNumber::Fax);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::BusinessFax:
-    {
-        KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Work
-                                                            |KContacts::PhoneNumber::Fax);
+    case ContactFields::BusinessFax: {
+        KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Work | KContacts::PhoneNumber::Fax);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::CarPhone:
-    {
+    case ContactFields::CarPhone: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Car);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::Isdn:
-    {
+    case ContactFields::Isdn: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Isdn);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
-    case ContactFields::Pager:
-    {
+    case ContactFields::Pager: {
         KContacts::PhoneNumber number = contact.phoneNumber(KContacts::PhoneNumber::Pager);
         number.setNumber(value);
         contact.insertPhoneNumber(number);
         break;
     }
 
-    case ContactFields::HomeAddressStreet:
-    {
+    case ContactFields::HomeAddressStreet: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setStreet(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressPostOfficeBox:
-    {
+    case ContactFields::HomeAddressPostOfficeBox: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setPostOfficeBox(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressLocality:
-    {
+    case ContactFields::HomeAddressLocality: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setLocality(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressRegion:
-    {
+    case ContactFields::HomeAddressRegion: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setRegion(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressPostalCode:
-    {
+    case ContactFields::HomeAddressPostalCode: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setPostalCode(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressCountry:
-    {
+    case ContactFields::HomeAddressCountry: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setCountry(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::HomeAddressLabel:
-    {
+    case ContactFields::HomeAddressLabel: {
         KContacts::Address address = contact.address(KContacts::Address::Home);
         address.setLabel(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressStreet:
-    {
+    case ContactFields::BusinessAddressStreet: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setStreet(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressPostOfficeBox:
-    {
+    case ContactFields::BusinessAddressPostOfficeBox: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setPostOfficeBox(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressLocality:
-    {
+    case ContactFields::BusinessAddressLocality: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setLocality(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressRegion:
-    {
+    case ContactFields::BusinessAddressRegion: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setRegion(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressPostalCode:
-    {
+    case ContactFields::BusinessAddressPostalCode: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setPostalCode(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressCountry:
-    {
+    case ContactFields::BusinessAddressCountry: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setCountry(value);
         contact.insertAddress(address);
         break;
     }
-    case ContactFields::BusinessAddressLabel:
-    {
+    case ContactFields::BusinessAddressLabel: {
         KContacts::Address address = contact.address(KContacts::Address::Work);
         address.setLabel(value);
         contact.insertAddress(address);
         break;
     }
     case BlogFeed:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("BlogFeed"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("BlogFeed"), value);
         break;
     case Profession:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-Profession"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Profession"), value);
         break;
     case Office:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-Office"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Office"), value);
         break;
     case Manager:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-ManagersName"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-ManagersName"), value);
         break;
     case Assistant:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-AssistantsName"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-AssistantsName"), value);
         break;
     case Spouse:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                             QStringLiteral("X-SpousesName"), value);
+        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"), value);
         break;
     }
 }
@@ -443,8 +369,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         return contact.suffix();
     case NickName:
         return contact.nickName();
-    case Birthday:
-    {
+    case Birthday: {
         const QDateTime birthday = contact.birthday();
         if (birthday.date().isValid()) {
             return birthday.date().toString(Qt::ISODate);
@@ -454,73 +379,59 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
     }
     case Anniversary:
         return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"));
-    case HomeAddressStreet:
-    {
+    case HomeAddressStreet: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.street();
     }
-    case HomeAddressPostOfficeBox:
-    {
+    case HomeAddressPostOfficeBox: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.postOfficeBox();
     }
-    case HomeAddressLocality:
-    {
+    case HomeAddressLocality: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.locality();
     }
-    case HomeAddressRegion:
-    {
+    case HomeAddressRegion: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.region();
     }
-    case HomeAddressPostalCode:
-    {
+    case HomeAddressPostalCode: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.postalCode();
     }
-    case HomeAddressCountry:
-    {
+    case HomeAddressCountry: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.country();
     }
-    case HomeAddressLabel:
-    {
+    case HomeAddressLabel: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.label();
     }
-    case BusinessAddressStreet:
-    {
+    case BusinessAddressStreet: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.street();
     }
-    case BusinessAddressPostOfficeBox:
-    {
+    case BusinessAddressPostOfficeBox: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.postOfficeBox();
     }
-    case BusinessAddressLocality:
-    {
+    case BusinessAddressLocality: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.locality();
     }
-    case BusinessAddressRegion:
-    {
+    case BusinessAddressRegion: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.region();
     }
-    case BusinessAddressPostalCode:
-    {
+    case BusinessAddressPostalCode: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.postalCode();
     }
-    case BusinessAddressCountry:
-    {
+    case BusinessAddressCountry: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.country();
     }
-    case BusinessAddressLabel:
-    {
+    case BusinessAddressLabel: {
         const KContacts::Address address = contact.address(KContacts::Address::Work);
         return address.label();
     }
@@ -540,8 +451,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         return contact.phoneNumber(KContacts::PhoneNumber::Isdn).number();
     case Pager:
         return contact.phoneNumber(KContacts::PhoneNumber::Pager).number();
-    case PreferredEmail:
-    {
+    case PreferredEmail: {
         const QStringList emails = contact.emails();
         if (!emails.isEmpty()) {
             return emails.at(0);
@@ -549,8 +459,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
             return QString();
         }
     }
-    case Email2:
-    {
+    case Email2: {
         const QStringList emails = contact.emails();
         if (emails.count() > 1) {
             return emails.at(1);
@@ -558,8 +467,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
             return QString();
         }
     }
-    case Email3:
-    {
+    case Email3: {
         const QStringList emails = contact.emails();
         if (emails.count() > 2) {
             return emails.at(2);
@@ -567,8 +475,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
             return QString();
         }
     }
-    case Email4:
-    {
+    case Email4: {
         const QStringList emails = contact.emails();
         if (emails.count() > 3) {
             return emails.at(3);

@@ -9,14 +9,14 @@
 #ifndef KAddressBookImportExportCONTACTFIELDS_H
 #define KAddressBookImportExportCONTACTFIELDS_H
 
-#include <KContacts/Addressee>
 #include "kaddressbook_importexport_export.h"
-namespace KAddressBookImportExport {
+#include <KContacts/Addressee>
+namespace KAddressBookImportExport
+{
 /** Contact fields for import/export. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ContactFields
 {
 public:
-
     /**
      * Describes the standard fields that are available for every contact
      */

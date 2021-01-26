@@ -75,124 +75,333 @@ void ContactFieldsTest::testSetGet()
 {
     KContacts::Addressee contact;
 
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, s_formattedName, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Prefix, s_prefix, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName, s_givenName, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::AdditionalName, s_additionalName, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, s_familyName, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Suffix, s_suffix, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::NickName, s_nickName, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday, s_birthday, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary, s_anniversary, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressStreet, s_homeAddressStreet, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostOfficeBox, s_homeAddressPostOfficeBox,
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName,
+                                                                              s_formattedName,
                                                                               contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLocality, s_homeAddressLocality, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressRegion, s_homeAddressRegion, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostalCode, s_homeAddressPostalCode, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressCountry, s_homeAddressCountry, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLabel, s_homeAddressLabel, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressStreet, s_businessAddressStreet, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostOfficeBox,
-                                                                              s_businessAddressPostOfficeBox, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLocality, s_businessAddressLocality,
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Prefix,
+                                                                              s_prefix,
                                                                               contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressRegion, s_businessAddressRegion, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostalCode, s_businessAddressPostalCode,
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName,
+                                                                              s_givenName,
                                                                               contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressCountry, s_businessAddressCountry,
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::AdditionalName,
+                                                                              s_additionalName,
                                                                               contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLabel, s_businessAddressLabel, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomePhone, s_homePhone, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessPhone, s_businessPhone, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::MobilePhone, s_mobilePhone, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeFax, s_homeFax, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessFax, s_businessFax, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::CarPhone, s_carPhone, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Isdn, s_isdn, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Pager, s_pager, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::PreferredEmail, s_preferredEmail, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email2, s_email2, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email3, s_email3, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email4, s_email4, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Mailer, s_mailer, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Title, s_title, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Role, s_role, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Organization, s_organization, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Note, s_note, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Homepage, s_homepage, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BlogFeed, s_blogFeed, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Profession, s_profession, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Office, s_office, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Manager, s_manager, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Assistant, s_assistant, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary, s_anniversary, contact);
-    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Spouse, s_spouse, contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName,
+                                                                              s_familyName,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Suffix,
+                                                                              s_suffix,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::NickName,
+                                                                              s_nickName,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday,
+                                                                              s_birthday,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary,
+                                                                              s_anniversary,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressStreet,
+        s_homeAddressStreet,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostOfficeBox,
+        s_homeAddressPostOfficeBox,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLocality,
+        s_homeAddressLocality,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressRegion,
+        s_homeAddressRegion,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostalCode,
+        s_homeAddressPostalCode,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressCountry,
+        s_homeAddressCountry,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLabel,
+                                                                              s_homeAddressLabel,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressStreet,
+        s_businessAddressStreet,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostOfficeBox,
+        s_businessAddressPostOfficeBox,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLocality,
+        s_businessAddressLocality,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressRegion,
+        s_businessAddressRegion,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostalCode,
+        s_businessAddressPostalCode,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressCountry,
+        s_businessAddressCountry,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLabel,
+        s_businessAddressLabel,
+        contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomePhone,
+                                                                              s_homePhone,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessPhone,
+                                                                              s_businessPhone,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::MobilePhone,
+                                                                              s_mobilePhone,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeFax,
+                                                                              s_homeFax,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessFax,
+                                                                              s_businessFax,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::CarPhone,
+                                                                              s_carPhone,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Isdn,
+                                                                              s_isdn,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Pager,
+                                                                              s_pager,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::PreferredEmail,
+                                                                              s_preferredEmail,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email2,
+                                                                              s_email2,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email3,
+                                                                              s_email3,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Email4,
+                                                                              s_email4,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Mailer,
+                                                                              s_mailer,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Title,
+                                                                              s_title,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Role,
+                                                                              s_role,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Organization,
+                                                                              s_organization,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Note,
+                                                                              s_note,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Homepage,
+                                                                              s_homepage,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::BlogFeed,
+                                                                              s_blogFeed,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Profession,
+                                                                              s_profession,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Office,
+                                                                              s_office,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Manager,
+                                                                              s_manager,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Assistant,
+                                                                              s_assistant,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary,
+                                                                              s_anniversary,
+                                                                              contact);
+    KAddressBookImportExport::KAddressBookImportExportContactFields::setValue(KAddressBookImportExport::KAddressBookImportExportContactFields::Spouse,
+                                                                              s_spouse,
+                                                                              contact);
 
     const KContacts::Addressee contactCopy = contact;
 
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName, contactCopy), s_formattedName);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Prefix, contactCopy), s_prefix);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName, contactCopy), s_givenName);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::AdditionalName, contactCopy), s_additionalName);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName, contactCopy), s_familyName);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Suffix, contactCopy), s_suffix);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::NickName, contactCopy), s_nickName);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday, contactCopy), s_birthday);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary, contactCopy), s_anniversary);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressStreet,
-                                                                                    contactCopy), s_homeAddressStreet);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostOfficeBox,
-                                                                                    contactCopy), s_homeAddressPostOfficeBox);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLocality,
-                                                                                    contactCopy), s_homeAddressLocality);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressRegion,
-                                                                                    contactCopy), s_homeAddressRegion);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostalCode,
-                                                                                    contactCopy), s_homeAddressPostalCode);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressCountry,
-                                                                                    contactCopy), s_homeAddressCountry);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLabel, contactCopy),
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FormattedName,
+                                                                               contactCopy),
+        s_formattedName);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Prefix,
+                                                                                    contactCopy),
+             s_prefix);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::GivenName,
+                                                                                    contactCopy),
+             s_givenName);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::AdditionalName,
+                                                                               contactCopy),
+        s_additionalName);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::FamilyName,
+                                                                                    contactCopy),
+             s_familyName);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Suffix,
+                                                                                    contactCopy),
+             s_suffix);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::NickName,
+                                                                                    contactCopy),
+             s_nickName);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Birthday,
+                                                                                    contactCopy),
+             s_birthday);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary,
+                                                                               contactCopy),
+        s_anniversary);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressStreet,
+                 contactCopy),
+             s_homeAddressStreet);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostOfficeBox,
+                 contactCopy),
+             s_homeAddressPostOfficeBox);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLocality,
+                 contactCopy),
+             s_homeAddressLocality);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressRegion,
+                 contactCopy),
+             s_homeAddressRegion);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressPostalCode,
+                 contactCopy),
+             s_homeAddressPostalCode);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressCountry,
+                 contactCopy),
+             s_homeAddressCountry);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::HomeAddressLabel,
+                 contactCopy),
              s_homeAddressLabel);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressStreet,
-                                                                                    contactCopy), s_businessAddressStreet);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostOfficeBox,
-                                                                                    contactCopy), s_businessAddressPostOfficeBox);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLocality,
-                                                                                    contactCopy), s_businessAddressLocality);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressRegion,
-                                                                                    contactCopy), s_businessAddressRegion);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostalCode,
-                                                                                    contactCopy), s_businessAddressPostalCode);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressCountry,
-                                                                                    contactCopy), s_businessAddressCountry);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLabel,
-                                                                                    contactCopy), s_businessAddressLabel);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomePhone, contactCopy), s_homePhone);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessPhone, contactCopy), s_businessPhone);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::MobilePhone, contactCopy), s_mobilePhone);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeFax, contactCopy), s_homeFax);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessFax, contactCopy), s_businessFax);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::CarPhone, contactCopy), s_carPhone);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Isdn, contactCopy), s_isdn);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Pager, contactCopy), s_pager);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::PreferredEmail, contactCopy), s_preferredEmail);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email2, contactCopy), s_email2);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email3, contactCopy), s_email3);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email4, contactCopy), s_email4);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Mailer, contactCopy), s_mailer);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Title, contactCopy), s_title);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Role, contactCopy), s_role);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Organization, contactCopy), s_organization);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Note, contactCopy), s_note);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Homepage, contactCopy), s_homepage);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BlogFeed, contactCopy), s_blogFeed);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Profession, contactCopy), s_profession);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Office, contactCopy), s_office);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Manager, contactCopy), s_manager);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Assistant, contactCopy), s_assistant);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary, contactCopy), s_anniversary);
-    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Spouse, contactCopy), s_spouse);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressStreet,
+                 contactCopy),
+             s_businessAddressStreet);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostOfficeBox,
+                 contactCopy),
+             s_businessAddressPostOfficeBox);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLocality,
+                 contactCopy),
+             s_businessAddressLocality);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressRegion,
+                 contactCopy),
+             s_businessAddressRegion);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressPostalCode,
+                 contactCopy),
+             s_businessAddressPostalCode);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressCountry,
+                 contactCopy),
+             s_businessAddressCountry);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(
+                 KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessAddressLabel,
+                 contactCopy),
+             s_businessAddressLabel);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomePhone,
+                                                                                    contactCopy),
+             s_homePhone);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessPhone,
+                                                                               contactCopy),
+        s_businessPhone);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::MobilePhone,
+                                                                               contactCopy),
+        s_mobilePhone);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::HomeFax,
+                                                                                    contactCopy),
+             s_homeFax);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BusinessFax,
+                                                                               contactCopy),
+        s_businessFax);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::CarPhone,
+                                                                                    contactCopy),
+             s_carPhone);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Isdn,
+                                                                                    contactCopy),
+             s_isdn);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Pager,
+                                                                                    contactCopy),
+             s_pager);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::PreferredEmail,
+                                                                               contactCopy),
+        s_preferredEmail);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email2,
+                                                                                    contactCopy),
+             s_email2);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email3,
+                                                                                    contactCopy),
+             s_email3);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Email4,
+                                                                                    contactCopy),
+             s_email4);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Mailer,
+                                                                                    contactCopy),
+             s_mailer);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Title,
+                                                                                    contactCopy),
+             s_title);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Role,
+                                                                                    contactCopy),
+             s_role);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Organization,
+                                                                               contactCopy),
+        s_organization);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Note,
+                                                                                    contactCopy),
+             s_note);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Homepage,
+                                                                                    contactCopy),
+             s_homepage);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::BlogFeed,
+                                                                                    contactCopy),
+             s_blogFeed);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Profession,
+                                                                                    contactCopy),
+             s_profession);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Office,
+                                                                                    contactCopy),
+             s_office);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Manager,
+                                                                                    contactCopy),
+             s_manager);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Assistant,
+                                                                                    contactCopy),
+             s_assistant);
+    QCOMPARE(
+        KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Anniversary,
+                                                                               contactCopy),
+        s_anniversary);
+    QCOMPARE(KAddressBookImportExport::KAddressBookImportExportContactFields::value(KAddressBookImportExport::KAddressBookImportExportContactFields::Spouse,
+                                                                                    contactCopy),
+             s_spouse);
 }
 
 #include "contactfieldstest.moc"

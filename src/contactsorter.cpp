@@ -23,28 +23,19 @@ public:
 
     inline bool operator()(const KContacts::Addressee &contact, const KContacts::Addressee &otherContact) const
     {
-        int result
-            = QString::localeAwareCompare(
-                  ContactFields::value(mSortField, contact),
-                  ContactFields::value(mSortField, otherContact));
+        int result = QString::localeAwareCompare(ContactFields::value(mSortField, contact), ContactFields::value(mSortField, otherContact));
 
         if (result == 0) {
-            int givenNameResult
-                = QString::localeAwareCompare(
-                      ContactFields::value(ContactFields::GivenName, contact),
-                      ContactFields::value(ContactFields::GivenName, otherContact));
+            int givenNameResult = QString::localeAwareCompare(ContactFields::value(ContactFields::GivenName, contact),
+                                                              ContactFields::value(ContactFields::GivenName, otherContact));
 
             if (givenNameResult == 0) {
-                int familyNameResult
-                    = QString::localeAwareCompare(
-                          ContactFields::value(ContactFields::FamilyName, contact),
-                          ContactFields::value(ContactFields::FamilyName, otherContact));
+                int familyNameResult = QString::localeAwareCompare(ContactFields::value(ContactFields::FamilyName, contact),
+                                                                   ContactFields::value(ContactFields::FamilyName, otherContact));
 
                 if (familyNameResult == 0) {
-                    result
-                        = QString::localeAwareCompare(
-                              ContactFields::value(ContactFields::FormattedName, contact),
-                              ContactFields::value(ContactFields::FormattedName, otherContact));
+                    result = QString::localeAwareCompare(ContactFields::value(ContactFields::FormattedName, contact),
+                                                         ContactFields::value(ContactFields::FormattedName, otherContact));
                 } else {
                     result = familyNameResult;
                 }

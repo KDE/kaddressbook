@@ -26,7 +26,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 {
     ContactFields::Fields leftFields, rightFields;
     ContactFields::Fields allFields = ContactFields::allFields();
-    allFields.remove(0);   // drop 'Undefined' field
+    allFields.remove(0); // drop 'Undefined' field
 
     const int middle = allFields.count() / 2;
 
@@ -57,8 +57,10 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 
         content += QLatin1String("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1String("\" width=\"100%\">\n");
         content += QLatin1String("   <tr>\n");
-        content += QLatin1String("    <th align=\"left\" style=\"color: black;\" bgcolor=\"gray\" "
-                                 "style=\"padding-left: 20px\" colspan=\"4\">") + name + QLatin1String("</th>\n");
+        content += QLatin1String(
+                       "    <th align=\"left\" style=\"color: black;\" bgcolor=\"gray\" "
+                       "style=\"padding-left: 20px\" colspan=\"4\">")
+            + name + QLatin1String("</th>\n");
         content += QLatin1String("   </tr>\n");
 
         for (int i = 0; i < max; ++i) {

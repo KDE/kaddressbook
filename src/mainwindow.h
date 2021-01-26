@@ -21,6 +21,7 @@ public:
     MainWindow();
     ~MainWindow() override;
     MainWidget *mainWidget() const;
+
 private:
     void configure();
     void configureKeyBindings();

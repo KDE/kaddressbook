@@ -12,7 +12,8 @@
 
 #include <KContacts/Addressee>
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class AppearancePage;
 
 class DetailledPrintStyle : public PrintStyle

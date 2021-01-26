@@ -15,7 +15,8 @@ class QString;
 
 class QTextBrowser;
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 /**
   This defines a simple widget to display print progress
   information. It is provided to all print styles during a print

@@ -8,11 +8,12 @@
 
 #ifndef KAddressBookImportExportCONTACTLIST_H
 #define KAddressBookImportExportCONTACTLIST_H
+#include "kaddressbook_importexport_export.h"
 #include <KContacts/Addressee>
 #include <KContacts/ContactGroup>
-#include "kaddressbook_importexport_export.h"
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 /** Import/export contact list. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT ContactList
 {

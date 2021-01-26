@@ -14,12 +14,12 @@
 
 #include <KContacts/Addressee>
 
-#include <KLocalizedString>
 #include <KConfigGroup>
+#include <KLocalizedString>
+#include <KSharedConfig>
 #include <QCheckBox>
 #include <QPrinter>
 #include <QTextDocument>
-#include <KSharedConfig>
 
 using namespace KABPrinting;
 using namespace KAddressBookImportExport;
@@ -33,7 +33,8 @@ const char *WithEMail = "WithEMail";
 const char *FirstColor = "FirstColor";
 const char *SecondColor = "SecondColor";
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class CompactStyleForm : public QWidget, public Ui::CompactStyleForm_Base
 {
 public:
@@ -52,21 +53,15 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     ContactFields::Fields fields;
     fields << ContactFields::FormattedName;
     if (this->withHomeAddress) {
-        fields << ContactFields::HomeAddressStreet
-               << ContactFields::HomeAddressPostalCode
-               << ContactFields::HomeAddressLocality
-               << ContactFields::HomePhone
+        fields << ContactFields::HomeAddressStreet << ContactFields::HomeAddressPostalCode << ContactFields::HomeAddressLocality << ContactFields::HomePhone
                << ContactFields::MobilePhone;
     }
     if (this->withBusinessAddress) {
-        fields << ContactFields::BusinessAddressStreet
-               << ContactFields::BusinessAddressPostalCode
-               << ContactFields::BusinessAddressLocality
+        fields << ContactFields::BusinessAddressStreet << ContactFields::BusinessAddressPostalCode << ContactFields::BusinessAddressLocality
                << ContactFields::BusinessPhone;
     }
     if (this->withEMail) {
-        fields << ContactFields::PreferredEmail
-               << ContactFields::Email2;
+        fields << ContactFields::PreferredEmail << ContactFields::Email2;
     }
     if (this->withBirthday) {
         fields << ContactFields::Birthday;

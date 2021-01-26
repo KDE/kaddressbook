@@ -8,10 +8,10 @@
 #ifndef KAddressBookCONTACTSELECTIONWIDGET_H
 #define KAddressBookCONTACTSELECTIONWIDGET_H
 
-#include <KContacts/Addressee>
-#include <AkonadiCore/Item>
-#include "kaddressbook_importexport_export.h"
 #include "contactlist.h"
+#include "kaddressbook_importexport_export.h"
+#include <AkonadiCore/Item>
+#include <KContacts/Addressee>
 
 #include <QWidget>
 
@@ -20,12 +20,14 @@ class QItemSelectionModel;
 class QLabel;
 class QRadioButton;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Collection;
 class CollectionComboBox;
 }
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 /**
  * @short A widget to select a group of contacts.
  *
@@ -61,6 +63,7 @@ public:
 
     void setAddGroupContact(bool addGroupContact);
     Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
+
 private:
     void initGui();
 

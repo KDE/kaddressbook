@@ -13,11 +13,11 @@
 
 #include <KLocalizedString>
 
-#include <QEvent>
-#include <QTimer>
 #include <QContextMenuEvent>
+#include <QEvent>
 #include <QHeaderView>
 #include <QMenu>
+#include <QTimer>
 #include <QWidget>
 
 ModelColumnManager::ModelColumnManager(Akonadi::ContactsTreeModel *model, QObject *parent)
@@ -68,69 +68,56 @@ bool ModelColumnManager::eventFilter(QObject *watched, QEvent *event)
 
             QAction *fullNameAction = menu.addAction(i18n("Full Name"));
             fullNameAction->setCheckable(true);
-            fullNameAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::FullName));
+            fullNameAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::FullName));
             fullNameAction->setEnabled(false);
 
             QAction *familyNameAction = menu.addAction(i18n("Family Name"));
             familyNameAction->setCheckable(true);
-            familyNameAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::FamilyName));
+            familyNameAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::FamilyName));
 
             QAction *givenNameAction = menu.addAction(i18n("Given Name"));
             givenNameAction->setCheckable(true);
-            givenNameAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::GivenName));
+            givenNameAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::GivenName));
 
             QAction *birthdayAction = menu.addAction(KContacts::Addressee::birthdayLabel());
             birthdayAction->setCheckable(true);
-            birthdayAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::Birthday));
+            birthdayAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::Birthday));
 
             QAction *homeAddressAction = menu.addAction(i18n("Home Address"));
             homeAddressAction->setCheckable(true);
-            homeAddressAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::HomeAddress));
+            homeAddressAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::HomeAddress));
 
             QAction *businessAddressAction = menu.addAction(i18n("Business Address"));
             businessAddressAction->setCheckable(true);
-            businessAddressAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::BusinessAddress));
+            businessAddressAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::BusinessAddress));
 
             QAction *phoneNumbersAction = menu.addAction(i18n("Phone Numbers"));
             phoneNumbersAction->setCheckable(true);
-            phoneNumbersAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::PhoneNumbers));
+            phoneNumbersAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::PhoneNumbers));
 
             QAction *preferredEmailAction = menu.addAction(i18n("Preferred EMail"));
             preferredEmailAction->setCheckable(true);
-            preferredEmailAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::PreferredEmail));
+            preferredEmailAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::PreferredEmail));
 
             QAction *allEmailsAction = menu.addAction(i18n("All EMails"));
             allEmailsAction->setCheckable(true);
-            allEmailsAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::AllEmails));
+            allEmailsAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::AllEmails));
 
             QAction *organizationAction = menu.addAction(KContacts::Addressee::organizationLabel());
             organizationAction->setCheckable(true);
-            organizationAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::Organization));
+            organizationAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::Organization));
 
             QAction *roleAction = menu.addAction(KContacts::Addressee::roleLabel());
             roleAction->setCheckable(true);
-            roleAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::Role));
+            roleAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::Role));
 
             QAction *homepageAction = menu.addAction(KContacts::Addressee::urlLabel());
             homepageAction->setCheckable(true);
-            homepageAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::Homepage));
+            homepageAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::Homepage));
 
             QAction *noteAction = menu.addAction(KContacts::Addressee::noteLabel());
             noteAction->setCheckable(true);
-            noteAction->setChecked(
-                modelColumns.contains(Akonadi::ContactsTreeModel::Note));
+            noteAction->setChecked(modelColumns.contains(Akonadi::ContactsTreeModel::Note));
 
             if (menu.exec((static_cast<QContextMenuEvent *>(event))->globalPos())) {
                 Akonadi::ContactsTreeModel::Columns columns;

@@ -7,11 +7,12 @@
 #ifndef KADDRESSBOOKIMPORTEXPORTPLUGINMANAGER_H
 #define KADDRESSBOOKIMPORTEXPORTPLUGINMANAGER_H
 
-#include <QObject>
-#include <PimCommon/PluginUtil>
 #include "kaddressbook_importexport_export.h"
+#include <PimCommon/PluginUtil>
+#include <QObject>
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class Plugin;
 class PluginManagerPrivate;
 
@@ -32,6 +33,7 @@ public:
     Q_REQUIRED_RESULT QString configGroupName() const;
     Q_REQUIRED_RESULT QString configPrefixSettingKey() const;
     Plugin *pluginFromIdentifier(const QString &id);
+
 private:
     QScopedPointer<PluginManagerPrivate> const d;
 };

@@ -10,7 +10,8 @@
 
 #include "printstyle.h"
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class CompactStyleForm;
 
 class CompactStyle : public PrintStyle

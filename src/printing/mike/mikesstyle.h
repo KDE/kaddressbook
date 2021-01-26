@@ -11,7 +11,8 @@
 
 #include "printstyle.h"
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class PrintProgress;
 
 class MikesStyle : public PrintStyle

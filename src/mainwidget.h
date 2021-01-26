@@ -14,11 +14,13 @@
 #include <QItemSelection>
 #include <QWidget>
 
-namespace GrantleeTheme {
+namespace GrantleeTheme
+{
 class ThemeManager;
 }
 class QAction;
-namespace Akonadi {
+namespace Akonadi
+{
 class Collection;
 class ContactGroupViewer;
 class ContactViewer;
@@ -29,15 +31,18 @@ class Item;
 class StandardContactActionManager;
 class EntityTreeModel;
 }
-namespace PimCommon {
+namespace PimCommon
+{
 class AbstractGenericPluginInterface;
 }
 
-namespace KAddressBookGrantlee {
+namespace KAddressBookGrantlee
+{
 class GrantleeContactFormatter;
 class GrantleeContactGroupFormatter;
 }
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 class PluginInterface;
 }
 class ContactSwitcher;
@@ -106,6 +111,7 @@ private Q_SLOTS:
     void slotServerSideSubscription();
     void slotCurrentCollectionChanged(const Akonadi::Collection &col);
     void setFocusToTreeView();
+
 private:
     const Akonadi::Item::List collectSelectedAllContactsItem(QItemSelectionModel *model);
     void initGrantleeThemeName();

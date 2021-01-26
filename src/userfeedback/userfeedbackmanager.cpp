@@ -4,8 +4,8 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include "kaddressbookuserfeedbackprovider.h"
 #include "userfeedbackmanager.h"
+#include "kaddressbookuserfeedbackprovider.h"
 
 UserFeedBackManager::UserFeedBackManager(QObject *parent)
     : QObject(parent)

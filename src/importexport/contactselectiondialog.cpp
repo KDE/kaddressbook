@@ -8,10 +8,10 @@
 #include "contactselectiondialog.h"
 #include "contactselectionwidget.h"
 
-#include <QVBoxLayout>
 #include <KLocalizedString>
 #include <QDialogButtonBox>
 #include <QPushButton>
+#include <QVBoxLayout>
 
 using namespace KAddressBookImportExport;
 

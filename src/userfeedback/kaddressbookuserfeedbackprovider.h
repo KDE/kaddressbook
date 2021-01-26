@@ -7,8 +7,8 @@
 #ifndef KADDRESSBOOKUSERFEEDBACKPROVIDER_H
 #define KADDRESSBOOKUSERFEEDBACKPROVIDER_H
 
-#include <KUserFeedback/Provider>
 #include "kaddressbook_export.h"
+#include <KUserFeedback/Provider>
 
 class KADDRESSBOOK_EXPORT KAddressBookUserFeedbackProvider : public KUserFeedback::Provider
 {

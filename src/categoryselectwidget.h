@@ -7,8 +7,8 @@
 #ifndef CATEGORYSELECTWIDGET_H
 #define CATEGORYSELECTWIDGET_H
 
-#include <QWidget>
 #include <AkonadiCore/tag.h>
+#include <QWidget>
 
 class CategorySelectWidgetPrivate;
 
@@ -41,9 +41,9 @@ public:
      * Special @c Akonadi::Tag::Id values for filtering.
      **/
     enum FilterTag {
-        FilterAll = -2,                 /**< All items */
-        FilterUntagged = -3,                /**< Untagged items */
-        FilterGroups = -4               /**< Contact groups */
+        FilterAll = -2, /**< All items */
+        FilterUntagged = -3, /**< Untagged items */
+        FilterGroups = -4 /**< Contact groups */
     };
 
     /**
@@ -70,4 +70,4 @@ private:
     CategorySelectWidgetPrivate *const d_ptr;
 };
 
-#endif                          // CATEGORYSELECTWIDGET_H
+#endif // CATEGORYSELECTWIDGET_H

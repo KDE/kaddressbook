@@ -11,7 +11,8 @@
 
 #include <KontactInterface/UniqueAppHandler>
 
-namespace KontactInterface {
+namespace KontactInterface
+{
 class Plugin;
 }
 

@@ -5,15 +5,15 @@
 */
 
 #include "manageshowcollectionproperties.h"
-#include "mainwidget.h"
 #include "kaddressbook_debug.h"
+#include "mainwidget.h"
 #include <PimCommonAkonadi/CollectionAclPage>
 
-#include <AkonadiWidgets/CollectionPropertiesDialog>
-#include <AkonadiWidgets/CollectionMaintenancePage>
 #include <AkonadiCore/CollectionAttributesSynchronizationJob>
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/CollectionFetchScope>
+#include <AkonadiWidgets/CollectionMaintenancePage>
+#include <AkonadiWidgets/CollectionPropertiesDialog>
 
 #include <KLocalizedString>
 
@@ -28,10 +28,8 @@ ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainW
         Akonadi::CollectionPropertiesDialog::registerPage(new Akonadi::CollectionMaintenancePageFactory);
         pageRegistered = true;
     }
-    mPages = QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage")
-                           << QStringLiteral("Akonadi::CachePolicyPage")
-                           << QStringLiteral("PimCommon::CollectionAclPage")
-                           << QStringLiteral("Akonadi::CollectionMaintenancePage");
+    mPages = QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage") << QStringLiteral("Akonadi::CachePolicyPage")
+                           << QStringLiteral("PimCommon::CollectionAclPage") << QStringLiteral("Akonadi::CollectionMaintenancePage");
 }
 
 ManageShowCollectionProperties::~ManageShowCollectionProperties()
@@ -48,29 +46,24 @@ void ManageShowCollectionProperties::showCollectionProperties()
         dlg->raise();
         return;
     }
-    auto *sync
-        = new Akonadi::CollectionAttributesSynchronizationJob(col);
+    auto *sync = new Akonadi::CollectionAttributesSynchronizationJob(col);
     sync->setProperty("collectionId", id);
-    connect(sync, &KJob::result,
-            this, &ManageShowCollectionProperties::slotCollectionPropertiesContinued);
+    connect(sync, &KJob::result, this, &ManageShowCollectionProperties::slotCollectionPropertiesContinued);
     sync->start();
 }
 
 void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job)
 {
     if (job) {
-        auto *sync
-            = qobject_cast<Akonadi::CollectionAttributesSynchronizationJob *>(job);
+        auto *sync = qobject_cast<Akonadi::CollectionAttributesSynchronizationJob *>(job);
         Q_ASSERT(sync);
         if (sync->property("collectionId") != mMainWidget->currentAddressBook().id()) {
             return;
         }
     }
-    Akonadi::CollectionFetchJob *fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(),
-                                                                         Akonadi::CollectionFetchJob::Base);
+    Akonadi::CollectionFetchJob *fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(), Akonadi::CollectionFetchJob::Base);
     fetch->fetchScope().setIncludeStatistics(true);
-    connect(fetch, &KJob::result,
-            this, &ManageShowCollectionProperties::slotCollectionPropertiesFinished);
+    connect(fetch, &KJob::result, this, &ManageShowCollectionProperties::slotCollectionPropertiesFinished);
 }
 
 void ManageShowCollectionProperties::slotCollectionPropertiesFinished(KJob *job)

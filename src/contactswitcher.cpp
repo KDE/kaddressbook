@@ -19,18 +19,12 @@ ContactSwitcher::ContactSwitcher(QWidget *parent)
     auto layout = new QHBoxLayout(this);
 
     mPreviousButton = new QPushButton(i18nc("@action:button Previous contact", "Previous"));
-    mPreviousButton->setToolTip(
-        i18nc("@info:tooltip", "Move to the previous contact in the list"));
-    mPreviousButton->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Press this button to move to the previous contact in the list."));
+    mPreviousButton->setToolTip(i18nc("@info:tooltip", "Move to the previous contact in the list"));
+    mPreviousButton->setWhatsThis(i18nc("@info:whatsthis", "Press this button to move to the previous contact in the list."));
 
     mNextButton = new QPushButton(i18nc("@action:button Next contact", "Next"));
-    mNextButton->setToolTip(
-        i18nc("@info:tooltip", "Move to the next contact in the list"));
-    mNextButton->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Press this button to move to the next contact in the list."));
+    mNextButton->setToolTip(i18nc("@info:tooltip", "Move to the next contact in the list"));
+    mNextButton->setWhatsThis(i18nc("@info:whatsthis", "Press this button to move to the next contact in the list."));
 
     mStatusLabel = new QLabel();
 
@@ -70,9 +64,7 @@ void ContactSwitcher::nextClicked()
         row = index.row() + 1;
     }
 
-    mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0),
-                                             QItemSelectionModel::Rows
-                                             |QItemSelectionModel::ClearAndSelect);
+    mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0), QItemSelectionModel::Rows | QItemSelectionModel::ClearAndSelect);
 
     updateStatus();
 }
@@ -90,9 +82,7 @@ void ContactSwitcher::previousClicked()
         row = index.row() - 1;
     }
 
-    mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0),
-                                             QItemSelectionModel::Rows
-                                             |QItemSelectionModel::ClearAndSelect);
+    mView->selectionModel()->setCurrentIndex(mView->model()->index(row, 0), QItemSelectionModel::Rows | QItemSelectionModel::ClearAndSelect);
 
     updateStatus();
 }
@@ -114,8 +104,7 @@ void ContactSwitcher::updateStatus()
     mNextButton->setEnabled((mView->model()->rowCount() != 0) && (row != (mView->model()->rowCount() - 1)));
 
     if (mView->model()->rowCount() > 0) {
-        mStatusLabel->setText(i18nc("@info:status",
-                                    "%1 out of %2", row + 1, mView->model()->rowCount()));
+        mStatusLabel->setText(i18nc("@info:status", "%1 out of %2", row + 1, mView->model()->rowCount()));
     } else {
         mStatusLabel->clear();
     }

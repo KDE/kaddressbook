@@ -14,9 +14,9 @@
 
 #include <KLocalizedString>
 
+#include <QFile>
 #include <QPrinter>
 #include <QTextDocument>
-#include <QFile>
 
 using namespace KABPrinting;
 

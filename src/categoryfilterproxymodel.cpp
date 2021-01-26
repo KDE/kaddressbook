@@ -59,10 +59,10 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
     const Akonadi::Item item = index.data(EntityTreeModel::ItemRole).value<Akonadi::Item>();
 
     if (!d->filterEnabled) {
-        return true;    // filter not enabled
+        return true; // filter not enabled
     }
     if (d->filterIdList.isEmpty()) {
-        return false;    // nothing accepted
+        return false; // nothing accepted
     }
     // all accepted
     if (d->filterIdList.at(0) == CategorySelectWidget::FilterAll) {
@@ -84,14 +84,14 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
                     ++validCategories;
                     Tag::Id id = cat.midRef(idx + 5).toInt();
                     if (d->filterIdList.contains(id)) {
-                        return true;            // a category matches filter
+                        return true; // a category matches filter
                     }
                 }
             }
         }
 
         if (validCategories > 0) {
-            return false;               // categorised but no match
+            return false; // categorised but no match
         } else {
             return d->filterIdList.contains(CategorySelectWidget::FilterUntagged);
         }
@@ -99,7 +99,7 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         return d->filterIdList.contains(CategorySelectWidget::FilterGroups);
     }
 
-    return true;                    // not a recognised item
+    return true; // not a recognised item
 }
 
 void CategoryFilterProxyModel::setFilterCategories(const QList<Akonadi::Tag::Id> &idList)

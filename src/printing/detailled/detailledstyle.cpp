@@ -14,13 +14,13 @@
 #include "ui_ds_appearance.h"
 
 #include <KConfig>
-#include <KLocalizedString>
 #include <KConfigGroup>
+#include <KLocalizedString>
+#include <KSharedConfig>
 #include <QCheckBox>
+#include <QLocale>
 #include <QPrinter>
 #include <QTextDocument>
-#include <KSharedConfig>
-#include <QLocale>
 
 using namespace KABPrinting;
 
@@ -79,9 +79,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
         if (!contact.emails().isEmpty()) {
             ContactBlock block;
-            block.header = (contact.emails().count() == 1
-                            ? i18n("Email address:")
-                            : i18n("Email addresses:"));
+            block.header = (contact.emails().count() == 1 ? i18n("Email address:") : i18n("Email addresses:"));
             block.entries = contact.emails();
 
             blocks.append(block);
@@ -91,9 +89,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
             const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
 
             ContactBlock block;
-            block.header = (numbers.count() == 1
-                            ? i18n("Telephone:")
-                            : i18n("Telephones:"));
+            block.header = (numbers.count() == 1 ? i18n("Telephone:") : i18n("Telephones:"));
 
             for (const KContacts::PhoneNumber &number : numbers) {
                 const QString line = number.typeLabel() + QLatin1String(": ") + number.number();
@@ -164,17 +160,14 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
         }
 
         // add header
-        content += QLatin1String("  <table style=\"border-width: 0px; border-spacing: 0px; "
-                                 "page-break-inside: avoid\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n");
+        content += QLatin1String(
+            "  <table style=\"border-width: 0px; border-spacing: 0px; "
+            "page-break-inside: avoid\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n");
         content += QLatin1String("   <tr>\n");
-        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
-                   +QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor
-                   +QLatin1String(R"(" style="padding-left: 20px">)")
-                   +name +  QLatin1String("</td>\n");
-        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor
-                   +QLatin1String(R"(;" align="right" bgcolor=")") + settings.headerBackgroundColor
-                   +QLatin1String(R"(" style="padding-right: 20px">)")
-                   +birthday + QLatin1String("</td>\n");
+        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor + QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor
+            + QLatin1String(R"(" style="padding-left: 20px">)") + name + QLatin1String("</td>\n");
+        content += QLatin1String("    <td style=\"color: ") + settings.headerTextColor + QLatin1String(R"(;" align="right" bgcolor=")")
+            + settings.headerBackgroundColor + QLatin1String(R"(" style="padding-right: 20px">)") + birthday + QLatin1String("</td>\n");
         content += QLatin1String("   </tr>\n");
 
         for (int i = 0; i < blocks.count(); i += 2) {
@@ -186,9 +179,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
             // add real block data
             const ContactBlock leftBlock = blocks.at(i);
-            const ContactBlock rightBlock = ((i + 1 < blocks.count())
-                                             ? blocks.at(i + 1)
-                                             : ContactBlock());
+            const ContactBlock rightBlock = ((i + 1 < blocks.count()) ? blocks.at(i + 1) : ContactBlock());
 
             content += QLatin1String("   <tr>\n");
             content += QLatin1String("    <td>") + leftBlock.header + QLatin1String("</td>\n");
@@ -249,11 +240,9 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
 
     KConfigGroup config(KSharedConfig::openConfig(), ConfigSectionName);
 
-    mPageAppearance->kcbHeaderBGColor->
-    setColor(config.readEntry(ContactHeaderBGColor, QColor(Qt::black)));
+    mPageAppearance->kcbHeaderBGColor->setColor(config.readEntry(ContactHeaderBGColor, QColor(Qt::black)));
 
-    mPageAppearance->kcbHeaderTextColor->
-    setColor(config.readEntry(ContactHeaderForeColor, QColor(Qt::white)));
+    mPageAppearance->kcbHeaderTextColor->setColor(config.readEntry(ContactHeaderForeColor, QColor(Qt::white)));
 }
 
 DetailledPrintStyle::~DetailledPrintStyle()

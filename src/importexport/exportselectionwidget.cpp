@@ -21,73 +21,59 @@ ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins(0, 0, 0, 0);
-    QGroupBox *gbox = new QGroupBox(
-        i18nc("@title:group", "Fields to be exported"), this);
+    QGroupBox *gbox = new QGroupBox(i18nc("@title:group", "Fields to be exported"), this);
     mainLayout->addWidget(gbox);
     auto layout = new QGridLayout;
     gbox->setLayout(layout);
     gbox->setFlat(true);
 
     mPrivateBox = new QCheckBox(i18nc("@option:check", "Private fields"), this);
-    mPrivateBox->setToolTip(
-        i18nc("@info:tooltip", "Export private fields"));
-    mPrivateBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's "
-              "private fields to the vCard output file."));
+    mPrivateBox->setToolTip(i18nc("@info:tooltip", "Export private fields"));
+    mPrivateBox->setWhatsThis(i18nc("@info:whatsthis",
+                                    "Check this box if you want to export the contact's "
+                                    "private fields to the vCard output file."));
     layout->addWidget(mPrivateBox, 1, 0);
 
     mBusinessBox = new QCheckBox(i18nc("@option:check", "Business fields"), this);
-    mBusinessBox->setToolTip(
-        i18nc("@info:tooltip", "Export business fields"));
-    mBusinessBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's "
-              "business fields to the vCard output file."));
+    mBusinessBox->setToolTip(i18nc("@info:tooltip", "Export business fields"));
+    mBusinessBox->setWhatsThis(i18nc("@info:whatsthis",
+                                     "Check this box if you want to export the contact's "
+                                     "business fields to the vCard output file."));
     layout->addWidget(mBusinessBox, 2, 0);
 
     mOtherBox = new QCheckBox(i18nc("@option:check", "Other fields"), this);
-    mOtherBox->setToolTip(
-        i18nc("@info:tooltip", "Export other fields"));
-    mOtherBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's "
-              "other fields to the vCard output file."));
+    mOtherBox->setToolTip(i18nc("@info:tooltip", "Export other fields"));
+    mOtherBox->setWhatsThis(i18nc("@info:whatsthis",
+                                  "Check this box if you want to export the contact's "
+                                  "other fields to the vCard output file."));
     layout->addWidget(mOtherBox, 3, 0);
 
     mEncryptionKeys = new QCheckBox(i18nc("@option:check", "Encryption keys"), this);
-    mEncryptionKeys->setToolTip(
-        i18nc("@info:tooltip", "Export encryption keys"));
-    mEncryptionKeys->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's "
-              "encryption keys to the vCard output file."));
+    mEncryptionKeys->setToolTip(i18nc("@info:tooltip", "Export encryption keys"));
+    mEncryptionKeys->setWhatsThis(i18nc("@info:whatsthis",
+                                        "Check this box if you want to export the contact's "
+                                        "encryption keys to the vCard output file."));
     layout->addWidget(mEncryptionKeys, 1, 1);
 
     mPictureBox = new QCheckBox(i18nc("@option:check", "Pictures"), this);
-    mPictureBox->setToolTip(
-        i18nc("@info:tooltip", "Export pictures"));
-    mPictureBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's "
-              "picture to the vCard output file."));
+    mPictureBox->setToolTip(i18nc("@info:tooltip", "Export pictures"));
+    mPictureBox->setWhatsThis(i18nc("@info:whatsthis",
+                                    "Check this box if you want to export the contact's "
+                                    "picture to the vCard output file."));
     layout->addWidget(mPictureBox, 2, 1);
 
-    gbox = new QGroupBox(
-        i18nc("@title:group", "Export options"), this);
+    gbox = new QGroupBox(i18nc("@title:group", "Export options"), this);
     gbox->setFlat(true);
     mainLayout->addWidget(gbox);
     auto gbLayout = new QHBoxLayout;
     gbox->setLayout(gbLayout);
 
     mDisplayNameBox = new QCheckBox(i18nc("@option:check", "Display name as full name"), this);
-    mDisplayNameBox->setToolTip(
-        i18nc("@info:tooltip", "Export display name as full name"));
-    mDisplayNameBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Check this box if you want to export the contact's display name "
-              "in the vCard's full name field.  This may be required to get the "
-              "name shown correctly in GMail or Android."));
+    mDisplayNameBox->setToolTip(i18nc("@info:tooltip", "Export display name as full name"));
+    mDisplayNameBox->setWhatsThis(i18nc("@info:whatsthis",
+                                        "Check this box if you want to export the contact's display name "
+                                        "in the vCard's full name field.  This may be required to get the "
+                                        "name shown correctly in GMail or Android."));
     gbLayout->addWidget(mDisplayNameBox);
 
     readSettings();

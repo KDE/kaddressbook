@@ -69,4 +69,4 @@ private:
     CategoryFilterProxyModelPrivate *const d_ptr;
 };
 
-#endif                          // CATEGORYFILTERPROXYMODEL_H
+#endif // CATEGORYFILTERPROXYMODEL_H

@@ -12,13 +12,13 @@
 #include "ui_rbs_appearance.h"
 
 #include <KConfig>
-#include <KLocalizedString>
 #include <KConfigGroup>
+#include <KLocalizedString>
 
-#include <QPrinter>
-#include <QTextDocument>
 #include <KSharedConfig>
 #include <QLocale>
+#include <QPrinter>
+#include <QTextDocument>
 
 using namespace KABPrinting;
 
@@ -30,21 +30,15 @@ static const char ShowOrganization[] = "ShowOrganization";
 static const char ShowBirthday[] = "ShowBirthday";
 static const char ShowNote[] = "ShowNote";
 
-enum PrintField {
-    PhoneNumbers = 1,
-    Emails = 2,
-    Addresses = 4,
-    Organization = 8,
-    Birthday = 16,
-    Note = 32
-};
+enum PrintField { PhoneNumbers = 1, Emails = 2, Addresses = 4, Organization = 8, Birthday = 16, Note = 32 };
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fields)
 {
     QString content = QStringLiteral("<html>\n");
     content += QLatin1String(" <body>\n");
-    content += QLatin1String("  <table style=\"border-width: 1px; border-style: solid; "
-                             "border-color: gray;\" width=\"100%\" cellspacing=\"0\">\n");
+    content += QLatin1String(
+        "  <table style=\"border-width: 1px; border-style: solid; "
+        "border-color: gray;\" width=\"100%\" cellspacing=\"0\">\n");
     for (const KContacts::Addressee &contact : contacts) {
         QString nameString = contact.familyName() + QLatin1String(", ") + contact.givenName();
 
@@ -83,8 +77,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
             for (const KContacts::Address &address : addresses) {
-                const QString data
-                    = address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString data =
+                    address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
                 const QString subBlock = QLatin1String("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1String("</p>");
 
                 leftBlock.append(subBlock);
@@ -92,12 +86,14 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         }
 
         content += QLatin1String("   <tr>\n");
-        content += QLatin1String("    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
-                                 "padding-bottom: 3px;\">")
-                   +nameString + leftBlock.join(QString()) + QLatin1String("</td>\n");
-        content += QLatin1String("    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
-                                 "padding-bottom: 3px;\">")
-                   +rightBlock.join(QLatin1String("<br/>")) + QLatin1String("</td>\n");
+        content += QLatin1String(
+                       "    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
+                       "padding-bottom: 3px;\">")
+            + nameString + leftBlock.join(QString()) + QLatin1String("</td>\n");
+        content += QLatin1String(
+                       "    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
+                       "padding-bottom: 3px;\">")
+            + rightBlock.join(QLatin1String("<br/>")) + QLatin1String("</td>\n");
         content += QLatin1String("   </tr>\n");
     }
     content += QLatin1String("  </table>\n");
@@ -107,7 +103,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
     return content;
 }
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class RingBinderStyleAppearanceForm : public QWidget, public Ui::RingBinderStyleAppearanceForm_Base
 {
 public:

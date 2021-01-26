@@ -13,13 +13,14 @@
 #include <KContacts/Addressee>
 
 #include <QHash>
-#include <QStringList>
 #include <QPixmap>
+#include <QStringList>
 #include <QWidget>
 
 class KPageWidgetItem;
 
-namespace KABPrinting {
+namespace KABPrinting
+{
 class PrintingWizard;
 class PrintProgress;
 
@@ -119,8 +120,7 @@ protected:
     /**
      * Sets the preferred sort options for this printing style.
      */
-    void setPreferredSortOptions(KAddressBookImportExport::ContactFields::Field,
-                                 Qt::SortOrder sortOrder = Qt::AscendingOrder);
+    void setPreferredSortOptions(KAddressBookImportExport::ContactFields::Field, Qt::SortOrder sortOrder = Qt::AscendingOrder);
 
     /**
      * Returns the printing wizard that is responsible for this style.

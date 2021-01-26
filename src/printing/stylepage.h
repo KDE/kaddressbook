@@ -10,8 +10,8 @@
 #ifndef STYLEPAGE_H
 #define STYLEPAGE_H
 
-#include <QWidget>
 #include "importexport/contactfields.h"
+#include <QWidget>
 
 class QLabel;
 class QPixmap;

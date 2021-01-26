@@ -11,7 +11,8 @@
 
 #include "kaddressbook_importexport_export.h"
 
-namespace KAddressBookImportExport {
+namespace KAddressBookImportExport
+{
 /** Import/export plugin. */
 class KADDRESSBOOK_IMPORTEXPORT_EXPORT Plugin : public PimCommon::AbstractGenericPlugin
 {

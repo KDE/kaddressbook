@@ -7,8 +7,8 @@
 
 #include "printprogress.h"
 
-#include <QApplication>
 #include <KLocalizedString>
+#include <QApplication>
 #include <QTextBrowser>
 
 #include <QGridLayout>
@@ -41,8 +41,7 @@ void PrintProgress::addMessage(const QString &msg)
 {
     mMessages.append(msg);
 
-    QString head = QLatin1String("<qt><b>") + i18n("Progress")
-                   +QLatin1String(":</b><ul>");
+    QString head = QLatin1String("<qt><b>") + i18n("Progress") + QLatin1String(":</b><ul>");
 
     const QString foot = QStringLiteral("</ul></qt>");
 

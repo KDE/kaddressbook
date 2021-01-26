@@ -7,9 +7,10 @@
 #ifndef USERFEEDBACKMANAGER_H
 #define USERFEEDBACKMANAGER_H
 
-#include <QObject>
 #include "kaddressbook_export.h"
-namespace KUserFeedback {
+#include <QObject>
+namespace KUserFeedback
+{
 class Provider;
 }
 

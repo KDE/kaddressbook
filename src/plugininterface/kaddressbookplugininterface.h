@@ -26,6 +26,7 @@ public:
 
     void initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *interface) override;
     static KAddressBookPluginInterface *self();
+
 private:
     MainWidget *mMainWidget = nullptr;
 };

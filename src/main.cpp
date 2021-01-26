@@ -7,10 +7,10 @@
 */
 
 #include "aboutdata.h"
-#include "mainwindow.h"
-#include "mainwidget.h"
 #include "kaddressbook_options.h"
 #include "kaddressbookmigrateapplication.h"
+#include "mainwidget.h"
+#include "mainwindow.h"
 
 #include <KCrash>
 #include <QCommandLineParser>

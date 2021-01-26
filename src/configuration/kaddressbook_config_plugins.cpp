@@ -7,16 +7,15 @@
 #include "kaddressbook_config_plugins.h"
 #include "kaddressbookconfigpluginlistwidget.h"
 #include <KAboutData>
-#include <KPluginFactory>
 #include <KLocalizedString>
-#include <PimCommon/ConfigurePluginsWidget>
+#include <KPluginFactory>
 #include <PimCommon/ConfigurePluginsListWidget>
+#include <PimCommon/ConfigurePluginsWidget>
 #include <QHBoxLayout>
 
 using namespace KAddressBook;
 
-K_PLUGIN_FACTORY(KCMKaddressbookPluginsConfigFactory, registerPlugin<KCMKaddressbookPluginsConfig>();
-                 )
+K_PLUGIN_FACTORY(KCMKaddressbookPluginsConfigFactory, registerPlugin<KCMKaddressbookPluginsConfig>();)
 
 KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
@@ -26,7 +25,9 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
 
     KAboutData *about = new KAboutData(QStringLiteral("kcmakrpluginsconfig"),
                                        i18n("Configure Plugins"),
-                                       QString(), QString(), KAboutLicense::GPL,
+                                       QString(),
+                                       QString(),
+                                       KAboutLicense::GPL,
                                        i18n("(c), 2016-2020 Laurent Montel"));
 
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
