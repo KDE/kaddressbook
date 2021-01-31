@@ -100,7 +100,7 @@ target_link_libraries(kaddressbookprivate
     KF5::XmlGui
     KF5::JobWidgets
     KF5::KIOWidgets
-    Qt5::PrintSupport
+    Qt::PrintSupport
     KF5::AkonadiSearchDebug
     KF5::I18n
     KF5::Prison
