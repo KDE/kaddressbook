@@ -17,9 +17,6 @@ add_subdirectory(kconf_update)
 add_subdirectory(configuration)
 add_subdirectory(importexport)
 
-set(kaddressbook_qrc_SRCS)
-qt5_add_resources(kaddressbook_qrc_SRCS kaddressbook.qrc)
-
 set(kaddressbook_printing_SRCS
     printing/detailled/detailledstyle.cpp
     printing/mike/mikesstyle.cpp
@@ -122,7 +119,7 @@ set(kaddressbook_SRCS
     kaddressbook_debug.cpp
     main.cpp
     mainwindow.cpp
-    ${kaddressbook_qrc_SRCS}
+    kaddressbook.qrc
     )
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
@@ -147,7 +144,7 @@ install(PROGRAMS
     DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
-set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp ${kaddressbook_qrc_SRCS})
+set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp kaddressbook.qrc)
 add_library(kaddressbookpart MODULE ${kaddressbook_PART_SRCS})
 target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
