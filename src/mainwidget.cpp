@@ -209,7 +209,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
-    auto *checkableProxyModel = new StructuralCollectionsNotCheckableProxy(this);
+    auto checkableProxyModel = new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
     checkableProxyModel->setSourceModel(mCollectionTree);
 
@@ -222,7 +222,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     connect(mCollectionView, qOverload<const Akonadi::Collection &>(&Akonadi::EntityTreeView::currentChanged), this, &MainWidget::slotCurrentCollectionChanged);
 
-    auto *selectionProxyModel = new KSelectionProxyModel(mCollectionSelectionModel, this);
+    auto selectionProxyModel = new KSelectionProxyModel(mCollectionSelectionModel, this);
     selectionProxyModel->setSourceModel(GlobalContactModel::instance()->model());
     selectionProxyModel->setFilterBehavior(KSelectionProxyModel::ChildrenOfExactSelection);
 
@@ -320,7 +320,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     QList<QAction *> exportActions;
     for (KAddressBookImportExport::Plugin *plugin : listPlugins) {
         if (plugin->isEnabled()) {
-            auto *interface = static_cast<KAddressBookImportExport::PluginInterface *>(plugin->createInterface(this));
+            auto interface = static_cast<KAddressBookImportExport::PluginInterface *>(plugin->createInterface(this));
             interface->setItemSelectionModel(mItemView->selectionModel());
             interface->setParentWidget(this);
             interface->createAction(collection);

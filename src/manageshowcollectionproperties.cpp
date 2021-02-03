@@ -46,7 +46,7 @@ void ManageShowCollectionProperties::showCollectionProperties()
         dlg->raise();
         return;
     }
-    auto *sync = new Akonadi::CollectionAttributesSynchronizationJob(col);
+    auto sync = new Akonadi::CollectionAttributesSynchronizationJob(col);
     sync->setProperty("collectionId", id);
     connect(sync, &KJob::result, this, &ManageShowCollectionProperties::slotCollectionPropertiesContinued);
     sync->start();
@@ -55,7 +55,7 @@ void ManageShowCollectionProperties::showCollectionProperties()
 void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job)
 {
     if (job) {
-        auto *sync = qobject_cast<Akonadi::CollectionAttributesSynchronizationJob *>(job);
+        auto sync = qobject_cast<Akonadi::CollectionAttributesSynchronizationJob *>(job);
         Q_ASSERT(sync);
         if (sync->property("collectionId") != mMainWidget->currentAddressBook().id()) {
             return;
