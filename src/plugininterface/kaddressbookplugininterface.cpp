@@ -35,17 +35,17 @@ void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::Abstrac
         return;
     }
     auto interface = static_cast<PimCommon::GenericPluginInterface *>(abstractInterface);
-    PimCommon::GenericPluginInterface::RequireTypes requires = interface->requires();
-    if (requires & PimCommon::GenericPluginInterface::CurrentItems) {
+    PimCommon::GenericPluginInterface::RequireTypes requiresFeatures = interface->requiresFeatures();
+    if (requiresFeatures & PimCommon::GenericPluginInterface::CurrentItems) {
         interface->setCurrentItems(mMainWidget->collectSelectedAllContactsItem());
     }
-    if (requires & PimCommon::GenericPluginInterface::Items) {
+    if (requiresFeatures & PimCommon::GenericPluginInterface::Items) {
         interface->setItems(mMainWidget->selectedItems());
     }
-    if (requires & PimCommon::GenericPluginInterface::CurrentCollection) {
+    if (requiresFeatures & PimCommon::GenericPluginInterface::CurrentCollection) {
         interface->setCurrentCollection(mMainWidget->currentAddressBook());
     }
-    if (requires & PimCommon::GenericPluginInterface::Collections) {
+    if (requiresFeatures & PimCommon::GenericPluginInterface::Collections) {
         qCDebug(KADDRESSBOOK_LOG) << "PimCommon::GenericPluginInterface::Collections not implemented";
     }
 }
