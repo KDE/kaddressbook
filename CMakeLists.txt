@@ -87,8 +87,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
 add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055000)
 
-add_definitions(-DQT_NO_FOREACH)
-add_definitions(-DQT_NO_KEYWORDS)
 
 find_package(KUserFeedback 1.0.0 CONFIG) # Needs Provider::describeDataSources()
 set_package_properties(KUserFeedback PROPERTIES DESCRIPTION "User Feedback lib" TYPE OPTIONAL PURPOSE "Allow to send Telemetry Information (optional). It can be disable in apps.")
