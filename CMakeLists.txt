@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
-set(PIM_VERSION "5.16.80")
+set(PIM_VERSION "5.17.40")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "20.07.90")
 set(KF5_MIN_VERSION "5.71.0")
@@ -28,7 +28,7 @@ include(ECMGeneratePriFile)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION beta)
+set(KDEPIM_DEV_VERSION alpha)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
@@ -85,7 +85,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
-add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055000)
+add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055100)
 
 
 find_package(KUserFeedback 1.0.0 CONFIG) # Needs Provider::describeDataSources()
