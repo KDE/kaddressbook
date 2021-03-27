@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef IMPORTEXPORTENGINE_H
-#define IMPORTEXPORTENGINE_H
+#pragma once
 
 #include <AkonadiCore/Collection>
 #include <QObject>
@@ -45,4 +44,3 @@ private:
 };
 }
 
-#endif // IMPORTEXPORTENGINE_H

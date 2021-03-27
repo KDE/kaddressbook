@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKPLUGININTERFACE_H
-#define KADDRESSBOOKPLUGININTERFACE_H
+#pragma once
 
 #include <QObject>
 
@@ -31,4 +30,3 @@ private:
     MainWidget *mMainWidget = nullptr;
 };
 
-#endif // KADDRESSBOOKPLUGININTERFACE_H

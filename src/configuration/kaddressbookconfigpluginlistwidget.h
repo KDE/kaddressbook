@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
-#define KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H
+#pragma once
 
 #include <PimCommon/ConfigurePluginsListWidget>
 
@@ -27,4 +26,3 @@ private:
     QVector<PluginItem *> mPluginImportExportItems;
 };
 
-#endif // KADDRESSBOOKCONFIGPLUGINLISTWIDGET_H

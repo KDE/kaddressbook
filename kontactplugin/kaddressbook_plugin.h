@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOK_PLUGIN_H
-#define KADDRESSBOOK_PLUGIN_H
+#pragma once
 
 #include <KontactInterface/UniqueAppHandler>
 
@@ -53,4 +52,3 @@ private:
     KontactInterface::UniqueAppWatcher *mUniqueAppWatcher = nullptr;
 };
 
-#endif

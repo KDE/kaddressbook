@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef PRINTINGWIZARD_H
-#define PRINTINGWIZARD_H
+#pragma once
 
 #include <KAssistantDialog>
 #include <KContacts/Addressee>
@@ -131,4 +130,3 @@ private:
 };
 }
 
-#endif

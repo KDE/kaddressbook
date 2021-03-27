@@ -6,8 +6,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef QUICKSEARCHWIDGET_H
-#define QUICKSEARCHWIDGET_H
+#pragma once
 
 #include <QWidget>
 
@@ -77,4 +76,3 @@ private:
     QTimer *mTimer = nullptr;
 };
 
-#endif

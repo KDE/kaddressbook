@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MODELCOLUMNMANAGER_H
-#define MODELCOLUMNMANAGER_H
+#pragma once
 
 #include <Akonadi/Contact/ContactsTreeModel>
 
@@ -62,4 +61,3 @@ private:
     QWidget *mWidget = nullptr;
 };
 
-#endif

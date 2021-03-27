@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef STYLEPAGE_H
-#define STYLEPAGE_H
+#pragma once
 
 #include "importexport/contactfields.h"
 #include <QWidget>
@@ -90,4 +89,3 @@ private:
     KAddressBookImportExport::ContactFields::Fields mFields;
 };
 
-#endif // STYLEPAGE_H

@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKEXPORTSELECTIONWIDGET_H
-#define KADDRESSBOOKEXPORTSELECTIONWIDGET_H
+#pragma once
 
 #include "kaddressbook_importexport_export.h"
 #include <QWidget>
@@ -38,4 +37,3 @@ private:
     QCheckBox *mDisplayNameBox = nullptr;
 };
 }
-#endif // KADDRESSBOOKEXPORTSELECTIONWIDGET_H

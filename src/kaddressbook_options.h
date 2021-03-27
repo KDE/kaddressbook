@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOK_OPTIONS_H
-#define KADDRESSBOOK_OPTIONS_H
+#pragma once
 
 #include <KLocalizedString>
 #include <QCommandLineOption>
@@ -26,4 +25,3 @@ static void kaddressbook_options(QCommandLineParser *parser)
 #endif
 }
 
-#endif // KADDRESSBOOK_OPTIONS_H

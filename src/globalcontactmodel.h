@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef GLOBALCONTACTMODEL_H
-#define GLOBALCONTACTMODEL_H
+#pragma once
 
 namespace Akonadi
 {
@@ -51,4 +50,3 @@ private:
     Akonadi::ContactsTreeModel *mModel = nullptr;
 };
 
-#endif

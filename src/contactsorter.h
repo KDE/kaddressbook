@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef CONTACTSORTER_H
-#define CONTACTSORTER_H
+#pragma once
 
 #include "importexport/contactfields.h"
 
@@ -23,4 +22,3 @@ private:
     const Qt::SortOrder mSortOrder;
 };
 
-#endif

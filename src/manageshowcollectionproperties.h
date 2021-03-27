@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MANAGESHOWCOLLECTIONPROPERTIES_H
-#define MANAGESHOWCOLLECTIONPROPERTIES_H
+#pragma once
 
 #include <AkonadiCore/Collection>
 #include <QObject>
@@ -34,4 +33,3 @@ private:
     MainWidget *const mMainWidget;
 };
 
-#endif // MANAGESHOWCOLLECTIONPROPERTIES_H

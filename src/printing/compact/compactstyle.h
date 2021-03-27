@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef COMPACTSTYLE_H
-#define COMPACTSTYLE_H
+#pragma once
 
 #include "printstyle.h"
 
@@ -61,4 +60,3 @@ public:
 };
 }
 
-#endif

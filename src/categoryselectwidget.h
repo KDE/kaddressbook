@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CATEGORYSELECTWIDGET_H
-#define CATEGORYSELECTWIDGET_H
+#pragma once
 
 #include <AkonadiCore/tag.h>
 #include <QWidget>
@@ -70,4 +69,3 @@ private:
     CategorySelectWidgetPrivate *const d_ptr;
 };
 
-#endif // CATEGORYSELECTWIDGET_H

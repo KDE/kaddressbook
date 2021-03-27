@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef CONTACTINFOPROXYMODEL_H
-#define CONTACTINFOPROXYMODEL_H
+#pragma once
 
 #include <AkonadiCore/EntityTreeModel>
 #include <QIdentityProxyModel>
@@ -117,4 +116,3 @@ private:
     Akonadi::Monitor *const mMonitor;
 };
 
-#endif // CONTACTINFOPROXYMODEL_H

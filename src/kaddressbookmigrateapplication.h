@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKMIGRATEAPPLICATION_H
-#define KADDRESSBOOKMIGRATEAPPLICATION_H
+#pragma once
 
 #include "kaddressbook_export.h"
 #include <PimCommon/MigrateApplicationFiles>
@@ -21,4 +20,3 @@ private:
     PimCommon::MigrateApplicationFiles mMigrator;
 };
 
-#endif // KADDRESSBOOKMIGRATEAPPLICATION_H

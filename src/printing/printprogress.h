@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef PRINTPROGRESS_H
-#define PRINTPROGRESS_H
+#pragma once
 
 #include <QWidget>
 
@@ -48,4 +47,3 @@ private:
 };
 }
 
-#endif

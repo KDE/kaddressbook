@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef PRINTSTYLE_H
-#define PRINTSTYLE_H
+#pragma once
 
 #include "importexport/contactfields.h"
 
@@ -170,4 +169,3 @@ protected:
 };
 }
 
-#endif

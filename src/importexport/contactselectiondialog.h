@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef IMPORTEXPORT_KADDRESSBOOKCONTACTSELECTIONDIALOG_H
-#define IMPORTEXPORT_KADDRESSBOOKCONTACTSELECTIONDIALOG_H
+#pragma once
 
 #include "contactlist.h"
 #include "exportselectionwidget.h"
@@ -69,4 +68,3 @@ private:
     ExportSelectionWidget *mVCardExport = nullptr;
 };
 }
-#endif

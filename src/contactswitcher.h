@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CONTACTSWITCHER_H
-#define CONTACTSWITCHER_H
+#pragma once
 
 #include <QWidget>
 
@@ -61,4 +60,3 @@ private:
     QLabel *mStatusLabel = nullptr;
 };
 
-#endif

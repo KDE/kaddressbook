@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CATEGORYFILTERPROXYMODEL_H
-#define CATEGORYFILTERPROXYMODEL_H
+#pragma once
 
 #include <QSortFilterProxyModel>
 
@@ -69,4 +68,3 @@ private:
     CategoryFilterProxyModelPrivate *const d_ptr;
 };
 
-#endif // CATEGORYFILTERPROXYMODEL_H

@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAINWIDGET_H
-#define MAINWIDGET_H
+#pragma once
 
 #include "kaddressbook_export.h"
 #include <AkonadiCore/Item>
@@ -164,4 +163,3 @@ private:
     Akonadi::Item mPendingSelection;
 };
 
-#endif

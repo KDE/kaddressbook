@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKPART_H
-#define KADDRESSBOOKPART_H
+#pragma once
 
 #include <KParts/Event>
 #include <KParts/Part>
@@ -36,4 +35,3 @@ private:
     MainWidget *mMainWidget = nullptr;
 };
 
-#endif

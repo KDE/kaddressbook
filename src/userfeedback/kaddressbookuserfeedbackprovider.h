@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKUSERFEEDBACKPROVIDER_H
-#define KADDRESSBOOKUSERFEEDBACKPROVIDER_H
+#pragma once
 
 #include "kaddressbook_export.h"
 #include <KUserFeedback/Provider>
@@ -18,4 +17,3 @@ public:
     ~KAddressBookUserFeedbackProvider() override;
 };
 
-#endif // KADDRESSBOOKUSERFEEDBACKPROVIDER_H

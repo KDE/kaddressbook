@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef KAddressBookCONTACTSELECTIONWIDGET_H
-#define KAddressBookCONTACTSELECTIONWIDGET_H
+#pragma once
 
 #include "contactlist.h"
 #include "kaddressbook_importexport_export.h"
@@ -86,4 +85,3 @@ private:
     bool mAddContactGroup = false;
 };
 }
-#endif

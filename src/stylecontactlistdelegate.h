@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef STYLECONTACTLISTDELEGATE_H
-#define STYLECONTACTLISTDELEGATE_H
+#pragma once
 
 #include <QStyledItemDelegate>
 
@@ -24,4 +23,3 @@ private:
     const qreal mKMargin = 5.0;
 };
 
-#endif // STYLECONTACTLISTDELEGATE_H

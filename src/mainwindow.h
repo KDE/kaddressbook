@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <KXmlGuiWindow>
 
@@ -36,4 +35,3 @@ private:
     KToggleAction *mHideMenuBarAction = nullptr;
 };
 
-#endif

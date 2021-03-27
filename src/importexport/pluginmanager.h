@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKIMPORTEXPORTPLUGINMANAGER_H
-#define KADDRESSBOOKIMPORTEXPORTPLUGINMANAGER_H
+#pragma once
 
 #include "kaddressbook_importexport_export.h"
 #include <PimCommon/PluginUtil>
@@ -39,4 +38,3 @@ private:
 };
 }
 
-#endif // KADDRESSBOOKIMPORTEXPORTPLUGINMANAGER_H

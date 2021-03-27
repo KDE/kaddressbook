@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef GRANTLEEPRINTSTYLE_H
-#define GRANTLEEPRINTSTYLE_H
+#pragma once
 
 #include "printstyle.h"
 
@@ -45,4 +44,3 @@ private:
 };
 }
 
-#endif // GRANTLEEPRINTSTYLE_H

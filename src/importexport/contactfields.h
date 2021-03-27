@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KAddressBookImportExportCONTACTFIELDS_H
-#define KAddressBookImportExportCONTACTFIELDS_H
+#pragma once
 
 #include "kaddressbook_importexport_export.h"
 #include <KContacts/Addressee>
@@ -106,4 +105,3 @@ public:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
    SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef KADDRESSBOOKIMPORTEXPORTPLUGININTERFACE_H
-#define KADDRESSBOOKIMPORTEXPORTPLUGININTERFACE_H
+#pragma once
 
 #include "kaddressbook_importexport_export.h"
 #include <AkonadiCore/Collection>
@@ -55,4 +54,3 @@ protected:
     QItemSelectionModel *mItemSelectionModel = nullptr;
 };
 }
-#endif // KADDRESSBOOKIMPORTEXPORTPLUGININTERFACE_H
