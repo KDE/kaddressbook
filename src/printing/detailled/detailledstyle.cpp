@@ -138,11 +138,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
                 }
                 block.header += QLatin1Char(':');
 
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-                block.entries = address.formattedAddress().split(QLatin1Char('\n'), QString::KeepEmptyParts);
-#else
                 block.entries = address.formattedAddress().split(QLatin1Char('\n'), Qt::KeepEmptyParts);
-#endif
                 blocks.append(block);
             }
         }
@@ -150,11 +146,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
         if (!contact.note().isEmpty()) {
             ContactBlock block;
             block.header = i18n("Notes:");
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-            block.entries = contact.note().split(QLatin1Char('\n'), QString::KeepEmptyParts);
-#else
             block.entries = contact.note().split(QLatin1Char('\n'), Qt::KeepEmptyParts);
-#endif
 
             blocks.append(block);
         }
