@@ -8,7 +8,10 @@
 
 #include "aboutdata.h"
 #include "kaddressbook_options.h"
+#include <kcoreaddons_version.h>
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include "kaddressbookmigrateapplication.h"
+#endif
 #include "mainwidget.h"
 #include "mainwindow.h"
 
@@ -80,8 +83,9 @@ int main(int argc, char **argv)
         qCWarning(KADDRESSBOOK_LOG) << "kaddressbook is already running, exiting.";
         return 0;
     }
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
     KAddressBookMigrateApplication migrate;
     migrate.migrate();
-
+#endif
     return app.exec();
 }
