@@ -14,6 +14,7 @@ qt5_add_dbus_interfaces(kontact_kaddressbookplugin_PART_SRCS ../src/org.kde.kadd
 
 add_library(kontact_kaddressbookplugin MODULE ${kontact_kaddressbookplugin_PART_SRCS})
 target_link_libraries(kontact_kaddressbookplugin
+    KF5::I18n
     KF5::KontactInterface
 )
 kcoreaddons_desktop_to_json(kontact_kaddressbookplugin kaddressbookplugin.desktop)

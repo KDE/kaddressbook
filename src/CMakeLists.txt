@@ -130,6 +130,7 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 
 target_link_libraries(kaddressbook
+    KF5::I18n
     KF5::KontactInterface
     kaddressbookprivate
     KF5::Crash
@@ -146,7 +147,7 @@ install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_ME
 
 set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp kaddressbook.qrc)
 add_library(kaddressbookpart MODULE ${kaddressbook_PART_SRCS})
-target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::Parts)
+target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::I18n KF5::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 install(FILES
