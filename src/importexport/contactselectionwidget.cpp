@@ -164,7 +164,7 @@ void ContactSelectionWidget::initGui()
 
 Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
 {
-    Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
+    auto job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
     job->fetchScope().fetchFullPayload();
     QProgressDialog progressDialog(nullptr);
     progressDialog.setWindowTitle(i18nc("@title:window", "Collect Contacts"));
@@ -185,7 +185,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
 ContactList ContactSelectionWidget::collectAllContacts() const
 {
     ContactList contacts;
-    Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
+    auto job = new Akonadi::RecursiveItemFetchJob(Akonadi::Collection::root(), QStringList() << KContacts::Addressee::mimeType());
     job->fetchScope().fetchFullPayload();
 
     if (!job->exec()) {
@@ -211,7 +211,7 @@ Akonadi::Item::List ContactSelectionWidget::collectSelectedItems() const
     for (int i = 0, total = indexes.count(); i < total; ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const auto item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
                 items.append(item);
             }
@@ -229,7 +229,7 @@ ContactList ContactSelectionWidget::collectSelectedContacts() const
     for (int i = 0, total = indexes.count(); i < total; ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const auto item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
                 if (item.hasPayload<KContacts::Addressee>()) {
                     contacts.append(item.payload<KContacts::Addressee>());
@@ -251,7 +251,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAddressBookItems() const
     }
 
     if (mAddressBookSelectionRecursive->isChecked()) {
-        Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
+        auto job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {
@@ -282,7 +282,7 @@ ContactList ContactSelectionWidget::collectAddressBookContacts() const
     }
 
     if (mAddressBookSelectionRecursive->isChecked()) {
-        Akonadi::RecursiveItemFetchJob *job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
+        auto job = new Akonadi::RecursiveItemFetchJob(collection, QStringList() << KContacts::Addressee::mimeType());
         job->fetchScope().fetchFullPayload();
 
         if (!job->exec()) {

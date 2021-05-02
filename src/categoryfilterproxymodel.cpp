@@ -56,7 +56,7 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
     Q_D(const CategoryFilterProxyModel);
 
     const QModelIndex index = sourceModel()->index(row, 0, parent);
-    const Akonadi::Item item = index.data(EntityTreeModel::ItemRole).value<Akonadi::Item>();
+    const auto item = index.data(EntityTreeModel::ItemRole).value<Akonadi::Item>();
 
     if (!d->filterEnabled) {
         return true; // filter not enabled
@@ -70,7 +70,7 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
     }
 
     if (item.hasPayload<KContacts::Addressee>()) {
-        const KContacts::Addressee contact = item.payload<KContacts::Addressee>();
+        const auto contact = item.payload<KContacts::Addressee>();
 
         const QStringList categories = contact.categories();
 

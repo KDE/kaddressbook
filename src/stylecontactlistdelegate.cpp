@@ -75,9 +75,9 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
         painter->drawPath(path);
         painter->setFont(QFont(option.font.family(), 12, QFont::Bold, true));
 
-        QImage image(index.data(ContactInfoProxyModel::Roles::PictureRole).value<QImage>());
+        auto image(index.data(ContactInfoProxyModel::Roles::PictureRole).value<QImage>());
         if (image.isNull()) {
-            const QString initials = index.data(ContactInfoProxyModel::Roles::InitialsRole).value<QString>();
+            const auto initials = index.data(ContactInfoProxyModel::Roles::InitialsRole).value<QString>();
             painter->drawText(pictureRect, Qt::AlignCenter, painter->fontMetrics().elidedText(initials, Qt::ElideRight, pictureRect.width() - qreal(10)));
         } else {
             const qreal dpr = qApp->devicePixelRatio();
@@ -88,13 +88,13 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
 
         painter->restore();
 
-        const QString name = index.data(Qt::DisplayRole).value<QString>();
+        const auto name = index.data(Qt::DisplayRole).value<QString>();
         if (!name.isEmpty()) {
             painter->setFont(QFont(option.font.family(), 11));
             painter->drawText(nameTextRect, Qt::AlignLeft | Qt::AlignVCenter, painter->fontMetrics().elidedText(name, Qt::ElideRight, nameTextRect.width()));
         }
 
-        const QString description = index.data(ContactInfoProxyModel::Roles::DescriptionRole).value<QString>();
+        const auto description = index.data(ContactInfoProxyModel::Roles::DescriptionRole).value<QString>();
         if (!description.isEmpty()) {
             painter->setFont(QFont(option.font.family(), 8, -1, true));
             painter->drawText(descriptionTextRect,

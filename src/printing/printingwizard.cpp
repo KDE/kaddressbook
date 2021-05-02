@@ -45,7 +45,7 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
     mSelectionPage = new KAddressBookImportExport::ContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
 
-    KPageWidgetItem *mSelectionPageItem = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
+    auto mSelectionPageItem = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
     addPage(mSelectionPageItem);
     setAppropriate(mSelectionPageItem, true);
 
@@ -198,7 +198,7 @@ void PrintingWizard::print()
 {
     // create and show print progress widget:
     mProgress = new PrintProgress(this);
-    KPageWidgetItem *progressItem = new KPageWidgetItem(mProgress, i18n("Print Progress"));
+    auto progressItem = new KPageWidgetItem(mProgress, i18n("Print Progress"));
     addPage(progressItem);
     setCurrentPage(progressItem);
     qApp->processEvents();

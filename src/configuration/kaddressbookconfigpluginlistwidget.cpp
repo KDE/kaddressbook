@@ -88,7 +88,7 @@ void KAddressBookConfigPluginListWidget::slotConfigureClicked(const QString &con
             PimCommon::GenericPlugin *plugin = KAddressBookPluginInterface::self()->pluginFromIdentifier(identifier);
             plugin->showConfigureDialog(this);
         } else if (configureGroupName == kaddressbookImportExportGroupName()) {
-            auto *plugin = KAddressBookImportExport::PluginManager::self()->pluginFromIdentifier(identifier);
+            auto plugin = KAddressBookImportExport::PluginManager::self()->pluginFromIdentifier(identifier);
             plugin->showConfigureDialog(this);
         } else {
             qCWarning(KADDRESSBOOK_CONFIGURE_LOG) << "Unknown configureGroupName" << configureGroupName;

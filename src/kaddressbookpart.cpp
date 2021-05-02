@@ -34,7 +34,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
 #endif
 
     // create a canvas to insert our widget
-    QWidget *canvas = new QWidget(parentWidget);
+    auto canvas = new QWidget(parentWidget);
     canvas->setFocusPolicy(Qt::ClickFocus);
     setWidget(canvas);
     auto topLayout = new QVBoxLayout(canvas);
@@ -54,7 +54,7 @@ void KAddressBookPart::updateQuickSearchText()
 
 void KAddressBookPart::initAction()
 {
-    QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("configure")), i18n("&Configure KAddressBook..."), this);
+    auto action = new QAction(QIcon::fromTheme(QStringLiteral("configure")), i18n("&Configure KAddressBook..."), this);
     actionCollection()->addAction(QStringLiteral("kaddressbook_configure"), action);
     connect(action, &QAction::triggered, mMainWidget, &MainWidget::configure);
 }

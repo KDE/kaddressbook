@@ -30,7 +30,7 @@ KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVari
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
 
-    QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("contact-new")), i18nc("@action:inmenu", "New Contact..."), this);
+    auto action = new QAction(QIcon::fromTheme(QStringLiteral("contact-new")), i18nc("@action:inmenu", "New Contact..."), this);
     actionCollection()->addAction(QStringLiteral("new_contact"), action);
     connect(action, &QAction::triggered, this, &KAddressBookPlugin::slotNewContact);
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_C));

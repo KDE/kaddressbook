@@ -61,7 +61,7 @@ void ManageShowCollectionProperties::slotCollectionPropertiesContinued(KJob *job
             return;
         }
     }
-    Akonadi::CollectionFetchJob *fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(), Akonadi::CollectionFetchJob::Base);
+    auto fetch = new Akonadi::CollectionFetchJob(mMainWidget->currentAddressBook(), Akonadi::CollectionFetchJob::Base);
     fetch->fetchScope().setIncludeStatistics(true);
     connect(fetch, &KJob::result, this, &ManageShowCollectionProperties::slotCollectionPropertiesFinished);
 }

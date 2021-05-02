@@ -101,7 +101,7 @@ void CategorySelectWidgetPrivate::init()
     connect(but, &QToolButton::clicked, this, &CategorySelectWidgetPrivate::slotSelectNone);
     hbox->addWidget(but);
 
-    QStandardItem *item = new QStandardItem(i18n("(Untagged)"));
+    auto item = new QStandardItem(i18n("(Untagged)"));
     item->setCheckState(Qt::Checked);
     item->setData(CategorySelectWidget::FilterUntagged, FILTER_ROLE);
     itemModel()->appendRow(item);
@@ -152,7 +152,7 @@ void CategorySelectWidgetPrivate::slotTagsInserted(const QModelIndex &parent, in
                                   << "tag" << tagModel->data(idx, TagModel::TagRole)
                                   << "id" << tagModel->data(idx, TagModel::IdRole).toInt();
 #endif
-        QStandardItem *it = new QStandardItem(tagModel->data(idx, TagModel::NameRole).toString());
+        auto it = new QStandardItem(tagModel->data(idx, TagModel::NameRole).toString());
         it->setIcon(tagModel->data(idx, Qt::DecorationRole).value<QIcon>());
         it->setData(tagModel->data(idx, TagModel::IdRole), FILTER_ROLE);
         it->setCheckState(Qt::Checked);

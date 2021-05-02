@@ -21,7 +21,7 @@ ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins(0, 0, 0, 0);
-    QGroupBox *gbox = new QGroupBox(i18nc("@title:group", "Fields to be exported"), this);
+    auto gbox = new QGroupBox(i18nc("@title:group", "Fields to be exported"), this);
     mainLayout->addWidget(gbox);
     auto layout = new QGridLayout;
     gbox->setLayout(layout);

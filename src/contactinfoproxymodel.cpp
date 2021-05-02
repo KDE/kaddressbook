@@ -37,10 +37,10 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
         qCWarning(KADDRESSBOOK_LOG) << "invalid index!";
     }
     if (role >= Roles::PictureRole && role <= Roles::DescriptionRole) {
-        const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+        const auto item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
         Q_ASSERT(item.isValid());
         if (item.hasPayload<KContacts::Addressee>()) {
-            const KContacts::Addressee contact = item.payload<KContacts::Addressee>();
+            const auto contact = item.payload<KContacts::Addressee>();
             switch (role) {
             case Roles::PictureRole:
                 return contact.photo().data();
@@ -50,7 +50,7 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
                 return getDescription(contact);
             }
         } else if (item.hasPayload<KContacts::ContactGroup>()) {
-            const KContacts::ContactGroup groupContacts = item.payload<KContacts::ContactGroup>();
+            const auto groupContacts = item.payload<KContacts::ContactGroup>();
             if (!mPendingGroupItems.contains(item.id())) {
                 if (!mGroupsCache.contains(item.id())) {
                     mMonitor->setItemMonitored(item);
@@ -282,7 +282,7 @@ void ContactInfoProxyModel::slotFetchJobFinished(KJob *job)
     }
     auto fetchJob = qobject_cast<Akonadi::ItemFetchJob *>(job);
 
-    const Akonadi::Item::Id groupItemId = job->property("groupItemId").value<Akonadi::Item::Id>();
+    const auto groupItemId = job->property("groupItemId").value<Akonadi::Item::Id>();
 
     const auto items = fetchJob->items();
     for (const Akonadi::Item &item : items) {
@@ -324,7 +324,7 @@ void ContactInfoProxyModel::slotItemChanged(const Akonadi::Item &item, const QSe
         }
     } else if (item.hasPayload<KContacts::ContactGroup>()) {
         if (mGroupsCache.contains(item.id())) {
-            const KContacts::ContactGroup groupContacts = item.payload<KContacts::ContactGroup>();
+            const auto groupContacts = item.payload<KContacts::ContactGroup>();
             mGroupsCache[item.id()].clear();
             if (groupContacts.contactReferenceCount() > 0 && isCacheItemToFetch(item.id(), groupContacts)) {
                 resolveGroup(item.id(), groupContacts);
@@ -338,7 +338,7 @@ void ContactInfoProxyModel::slotItemChanged(const Akonadi::Item &item, const QSe
 void ContactInfoProxyModel::slotRowsAboutToBeRemoved(const QModelIndex &parent, int first, int last)
 {
     for (int idx = first; idx <= last; idx++) {
-        const Akonadi::Item item = this->index(idx, 0, parent).data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+        const auto item = this->index(idx, 0, parent).data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
         Q_ASSERT(item.isValid());
         if (item.hasPayload<KContacts::Addressee>()) {
             QMapIterator<Akonadi::Item::Id, ContactCacheData::List> it_group(mGroupsCache);
@@ -361,7 +361,7 @@ bool ContactInfoProxyModel::ContactCacheData::setData(const Akonadi::Item &item)
 {
     bool result(false);
     if (validateItem(item)) {
-        const KContacts::Addressee contact = item.payload<KContacts::Addressee>();
+        const auto contact = item.payload<KContacts::Addressee>();
         mName = contact.realName();
         mEmail = contact.preferredEmail();
         result = true;

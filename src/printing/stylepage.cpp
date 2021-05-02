@@ -112,14 +112,15 @@ void StylePage::initGUI()
 
     auto topLayout = new QGridLayout(this);
 
-    QLabel *label = new QLabel(i18nc("@label:textbox",
-                                     "What should the print look like?\n"
-                                     "KAddressBook has several printing styles, designed for different purposes.\n"
-                                     "Choose the style that suits your needs below."),
-                               this);
+    auto label = new QLabel(i18nc("@label:textbox",
+                                  "What should the print look like?\n"
+                                  "KAddressBook has several printing styles, designed "
+                                  "for different purposes.\n"
+                                  "Choose the style that suits your needs below."),
+                            this);
     topLayout->addWidget(label, 0, 0, 1, 2);
 
-    QGroupBox *group = new QGroupBox(i18nc("@title:group", "Sorting"), this);
+    auto group = new QGroupBox(i18nc("@title:group", "Sorting"), this);
     auto sortLayout = new QGridLayout();
     group->setLayout(sortLayout);
     sortLayout->setAlignment(Qt::AlignTop);

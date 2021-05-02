@@ -119,7 +119,7 @@ public:
 
         if (role == Qt::CheckStateRole) {
             // Don't show the checkbox if the collection can't contain incidences
-            const Akonadi::Collection collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+            const auto collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid() && isStructuralCollection(collection)) {
                 return QVariant();
             }
@@ -332,14 +332,14 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     }
 
     if (!importActions.isEmpty()) {
-        KActionMenu *importMenu = new KActionMenu(i18n("Import"), this);
+        auto importMenu = new KActionMenu(i18n("Import"), this);
         collection->addAction(QStringLiteral("import_menu"), importMenu);
         for (QAction *act : qAsConst(importActions)) {
             importMenu->addAction(act);
         }
     }
     if (!exportActions.isEmpty()) {
-        KActionMenu *exportMenu = new KActionMenu(i18n("Export"), this);
+        auto exportMenu = new KActionMenu(i18n("Export"), this);
         collection->addAction(QStringLiteral("export_menu"), exportMenu);
         for (QAction *act : qAsConst(exportActions)) {
             exportMenu->addAction(act);
@@ -613,7 +613,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
 
-    KActionMenu *themeMenu = new KActionMenu(i18n("&Themes"), this);
+    auto themeMenu = new KActionMenu(i18n("&Themes"), this);
     collection->addAction(QStringLiteral("theme_menu"), themeMenu);
 
     initGrantleeThemeName();
@@ -642,14 +642,14 @@ void MainWidget::setupActions(KActionCollection *collection)
     action->setWhatsThis(i18n("Select all contacts in the current address book view."));
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
-    auto *qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
+    auto qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
     qrtoggleAction->setText(i18n("Show QR Codes"));
     qrtoggleAction->setWhatsThis(i18n("Show QR Codes in the contact."));
     connect(qrtoggleAction, &KToggleAction::toggled, this, &MainWidget::setQRCodeShow);
 
     mViewModeGroup = new QActionGroup(this);
 
-    QAction *act = new QAction(i18nc("@action:inmenu", "Simple (one column)"), mViewModeGroup);
+    auto act = new QAction(i18nc("@action:inmenu", "Simple (one column)"), mViewModeGroup);
     act->setCheckable(true);
     act->setData(1);
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_1));
@@ -829,7 +829,7 @@ Akonadi::Collection MainWidget::currentAddressBook() const
 {
     if (mCollectionView->selectionModel() && mCollectionView->selectionModel()->hasSelection()) {
         const QModelIndex index = mCollectionView->selectionModel()->selectedIndexes().first();
-        const Akonadi::Collection collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const auto collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 
         return collection;
     }
@@ -1017,7 +1017,7 @@ const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem(QItemSelect
     for (int i = 0; i < indexes.count(); ++i) {
         const QModelIndex index = indexes.at(i);
         if (index.isValid()) {
-            const Akonadi::Item item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+            const auto item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
             if (item.isValid()) {
                 if (item.hasPayload<KContacts::Addressee>() || item.hasPayload<KContacts::ContactGroup>()) {
                     lst.append(item);
@@ -1041,7 +1041,7 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
-    for (auto *interface : qAsConst(mImportExportPluginInterfaceList)) {
+    for (auto interface : qAsConst(mImportExportPluginInterfaceList)) {
         interface->setDefaultCollection(col);
     }
     bool isOnline;
