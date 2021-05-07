@@ -9,7 +9,7 @@ ecm_qt_declare_logging_category(kontact_kaddressbookplugin_PART_SRCS HEADER kadd
         EXPORT KADDRESSBOOK
     )
 
-qt5_add_dbus_interfaces(kontact_kaddressbookplugin_PART_SRCS ../src/org.kde.kaddressbook.xml)
+qt_add_dbus_interfaces(kontact_kaddressbookplugin_PART_SRCS ../src/org.kde.kaddressbook.xml)
 
 
 add_library(kontact_kaddressbookplugin MODULE ${kontact_kaddressbookplugin_PART_SRCS})

@@ -74,7 +74,7 @@ ecm_qt_declare_logging_category(kaddressbook_LIB_SRCS HEADER kaddressbook_debug.
     )
 
 
-qt5_add_dbus_adaptor( kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.h MainWidget)
+qt_add_dbus_adaptor( kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.h MainWidget)
 
 kconfig_add_kcfg_files(kaddressbook_LIB_SRCS settings/settings.kcfgc)
 add_library(kaddressbookprivate ${kaddressbook_LIB_SRCS})
