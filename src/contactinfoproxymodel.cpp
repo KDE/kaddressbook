@@ -102,7 +102,8 @@ QString ContactInfoProxyModel::getInitials(const Akonadi::Item::Id groupItemId, 
         }
     }
 
-    for (const ContactCacheData &cacheContact : mGroupsCache[groupItemId]) {
+    const auto groupCacheId = mGroupsCache[groupItemId];
+    for (const ContactCacheData &cacheContact : groupCacheId) {
         const QString name = cacheContact.name().trimmed();
         if (!name.isEmpty()) {
             initials.append(name.front());
