@@ -1,18 +1,19 @@
 include_directories(${kaddressbook_SOURCE_DIR})
+add_library(kontact_kaddressbookplugin MODULE)
 
-set(kontact_kaddressbookplugin_PART_SRCS
+target_sources(kontact_kaddressbookplugin PRIVATE
     kaddressbook_plugin.cpp
 )
-ecm_qt_declare_logging_category(kontact_kaddressbookplugin_PART_SRCS HEADER kaddressbookplugin_debug.h IDENTIFIER KADDRESSBOOKPLUGIN_LOG CATEGORY_NAME org.kde.pim.kaddressbook_plugin
+ecm_qt_declare_logging_category(kontact_kaddressbookplugin HEADER kaddressbookplugin_debug.h IDENTIFIER KADDRESSBOOKPLUGIN_LOG CATEGORY_NAME org.kde.pim.kaddressbook_plugin
         DESCRIPTION "kaddressbook (kaddressbook kontact plugins)"
         OLD_CATEGORY_NAMES log_kaddressbook_plugin
         EXPORT KADDRESSBOOK
     )
+set(kontact_kaddressbook_interface_SRCS)
+qt_add_dbus_interfaces(kontact_kaddressbook_interface_SRCS ../src/org.kde.kaddressbook.xml)
+target_sources(kontact_kaddressbookplugin PRIVATE ${kontact_kaddressbook_interface_SRCS})
 
-qt_add_dbus_interfaces(kontact_kaddressbookplugin_PART_SRCS ../src/org.kde.kaddressbook.xml)
 
-
-add_library(kontact_kaddressbookplugin MODULE ${kontact_kaddressbookplugin_PART_SRCS})
 target_link_libraries(kontact_kaddressbookplugin
     KF5::I18n
     KF5::KontactInterface

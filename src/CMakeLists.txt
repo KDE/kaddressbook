@@ -1,9 +1,5 @@
 configure_file(kaddressbook-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h @ONLY)
 
-set(kaddressbook_userfeedback_LIB)
-if (TARGET KUserFeedbackWidgets)
-    set(kaddressbook_userfeedback_LIB KUserFeedbackWidgets)
-endif()
 
 
 include_directories(
@@ -101,8 +97,10 @@ target_link_libraries(kaddressbookprivate
     KF5::AkonadiSearchDebug
     KF5::I18n
     KF5::Prison
-    ${kaddressbook_userfeedback_LIB}
     )
+if (TARGET KUserFeedbackWidgets)
+    target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets)
+endif()
 
 if(QGpgme_FOUND)
     target_link_libraries(kaddressbookprivate PRIVATE QGpgme)
@@ -115,7 +113,8 @@ install(TARGETS kaddressbookprivate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY 
 
 ########### next target ###############
 
-set(kaddressbook_SRCS
+add_executable(kaddressbook)
+target_sources(kaddressbook PRIVATE
     kaddressbook_debug.cpp
     main.cpp
     mainwindow.cpp
@@ -123,10 +122,13 @@ set(kaddressbook_SRCS
     )
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
-ecm_add_app_icon(kaddressbook_SRCS ICONS ${ICONS_SRCS})
-add_executable(kaddressbook ${kaddressbook_SRCS})
+ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
+endif()
+set(KUserFeedbackWidgets_LIBS)
+if (TARGET KUserFeedbackWidgets)
+    set(KUserFeedbackWidgets_LIBS  KUserFeedbackWidgets)
 endif()
 
 target_link_libraries(kaddressbook
@@ -134,7 +136,7 @@ target_link_libraries(kaddressbook
     KF5::KontactInterface
     kaddressbookprivate
     KF5::Crash
-    ${kaddressbook_userfeedback_LIB}
+    ${KUserFeedbackWidgets_LIBS}
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -145,8 +147,10 @@ install(PROGRAMS
     DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
-set(kaddressbook_PART_SRCS kaddressbookpart.cpp kaddressbook_debug.cpp kaddressbook.qrc)
-add_library(kaddressbookpart MODULE ${kaddressbook_PART_SRCS})
+####################################"
+add_library(kaddressbookpart MODULE)
+
+target_sources(kaddressbookpart PRIVATE kaddressbookpart.cpp kaddressbook_debug.cpp kaddressbook.qrc)
 target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::I18n KF5::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 

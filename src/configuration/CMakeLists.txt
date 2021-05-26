@@ -1,17 +1,17 @@
+add_library(kaddressbook_config_plugins MODULE)
 
-set(kcm_config_plugins_SRCS
+target_sources(kaddressbook_config_plugins PRIVATE
     kaddressbook_config_plugins.cpp
     kaddressbookconfigpluginlistwidget.cpp
     )
 
-ecm_qt_declare_logging_category(kcm_config_plugins_SRCS HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure
+ecm_qt_declare_logging_category(kaddressbook_config_plugins HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure
         DESCRIPTION "kaddressbook (configure)"
         EXPORT KADDRESSBOOK
     )
 
 
 
-add_library(kaddressbook_config_plugins MODULE ${kcm_config_plugins_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook_config_plugins PROPERTIES UNITY_BUILD ON)
 endif()
@@ -30,11 +30,12 @@ install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}
 
 ##################################################
 if (TARGET KUserFeedbackWidgets)
-    set(kcm_config_userfeedback_SRCS
+    add_library(kaddressbook_config_userfeedback MODULE)
+
+    target_sources(kaddressbook_config_userfeedback PRIVATE
         kaddressbook_config_userfeedback.cpp
         )
 
-    add_library(kaddressbook_config_userfeedback MODULE ${kcm_config_userfeedback_SRCS})
 
     target_link_libraries(kaddressbook_config_userfeedback
         KF5::KCMUtils

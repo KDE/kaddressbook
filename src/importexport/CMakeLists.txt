@@ -1,10 +1,13 @@
+add_library(KPimAddressbookImportExport)
+add_library(KPim::AddressbookImportExport ALIAS KPimAddressbookImportExport)
+
 ecm_setup_version(PROJECT VARIABLE_PREFIX KADDRESSBOOKIMPORTEXPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kaddressbookimportexport_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPimAddressbookImportExportConfigVersion.cmake"
     SOVERSION 5
 )
 
-set(kaddressbook_importexport_LIB_SRCS
+target_sources(KPimAddressbookImportExport PRIVATE
     contactfields.cpp
     contactlist.cpp
     contactselectiondialog.cpp
@@ -16,7 +19,7 @@ set(kaddressbook_importexport_LIB_SRCS
     pluginmanager.cpp
 )
 
-ecm_qt_declare_logging_category(kaddressbook_importexport_LIB_SRCS
+ecm_qt_declare_logging_category(KPimAddressbookImportExport
     HEADER libkaddressbookexportimport_debug.h
     IDENTIFIER LIBKADDRESSBOOKIMPORTEXPORT_LOG
     CATEGORY_NAME org.kde.pim.kaddressbookimportexport
@@ -25,14 +28,11 @@ ecm_qt_declare_logging_category(kaddressbook_importexport_LIB_SRCS
 )
 
 
-add_library(KPimAddressbookImportExport ${kaddressbook_importexport_LIB_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPimAddressbookImportExport PROPERTIES UNITY_BUILD ON)
 endif()
 
 generate_export_header(KPimAddressbookImportExport BASE_NAME kaddressbook_importexport)
-
-add_library(KPim::AddressbookImportExport ALIAS KPimAddressbookImportExport)
 
 target_include_directories(KPimAddressbookImportExport
     INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim;${KDE_INSTALL_INCLUDEDIR}/KPim/KAddressBookImportExport/;${KDE_INSTALL_INCLUDEDIR}/KPim/kaddressbookimportexport>"
