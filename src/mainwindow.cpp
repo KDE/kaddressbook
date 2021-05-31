@@ -72,6 +72,30 @@ void MainWindow::initActions()
                                "the application-wide shortcuts."));
     KStandardAction::configureToolbars(this, &MainWindow::configureToolbars, actionCollection());
     KStandardAction::preferences(this, &MainWindow::configure, actionCollection());
+    mHamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
+    mHamburgerMenu->setShowMenuBarAction(mShowMenuBarAction);
+    mHamburgerMenu->setMenuBar(menuBar());
+    connect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, [this]() {
+        updateHamburgerMenu();
+        // Immediately disconnect. We only need to run this once, but on demand.
+        // NOTE: The nullptr at the end disconnects all connections between
+        // q and mHamburgerMenu's aboutToShowMenu signal.
+        disconnect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, nullptr);
+    });
+}
+
+void MainWindow::updateHamburgerMenu()
+{
+    QMenu *menu = new QMenu;
+    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_create")));
+    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_group_create")));
+    menu->addSeparator();
+    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_item_edit")));
+    menu->addSeparator();
+    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Print))));
+    menu->addSeparator();
+    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Quit))));
+    mHamburgerMenu->setMenu(menu);
 }
 
 void MainWindow::configure()
@@ -110,7 +134,7 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
         if (mShowMenuBarAction->isChecked()) {
             menuBar()->show();
         } else {
-            if (!dontShowWarning) {
+            if (!dontShowWarning && (!toolBar()->isVisible() || !toolBar()->actions().contains(mHamburgerMenu))) {
                 const QString accel = mShowMenuBarAction->shortcut().toString();
                 KMessageBox::information(this,
                                          i18n("<qt>This will hide the menu bar completely."

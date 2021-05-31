@@ -12,6 +12,7 @@
 
 class MainWidget;
 class KToggleAction;
+class KHamburgerMenu;
 class MainWindow : public KXmlGuiWindow
 {
     Q_OBJECT
@@ -30,8 +31,10 @@ private:
     void slotToggleMenubar(bool dontShowWarning);
 
     void initActions();
+    void updateHamburgerMenu();
 
     MainWidget *mMainWidget = nullptr;
     KToggleAction *mShowMenuBarAction = nullptr;
+    KHamburgerMenu *mHamburgerMenu = nullptr;
 };
 
