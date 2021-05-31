@@ -44,7 +44,7 @@ MainWindow::MainWindow()
 
     setAutoSaveSettings();
 
-    mHideMenuBarAction->setChecked(Settings::self()->showMenuBar());
+    mShowMenuBarAction->setChecked(Settings::self()->showMenuBar());
     slotToggleMenubar(true);
 #ifdef WITH_KUSERFEEDBACK
     auto userFeedBackNotificationPopup = new KUserFeedback::NotificationPopup(this);
@@ -64,7 +64,7 @@ MainWidget *MainWindow::mainWidget() const
 void MainWindow::initActions()
 {
     KStandardAction::quit(this, &MainWindow::close, actionCollection());
-    mHideMenuBarAction = KStandardAction::showMenubar(this, &MainWindow::slotToggleMenubar, actionCollection());
+    mShowMenuBarAction = KStandardAction::showMenubar(this, &MainWindow::slotToggleMenubar, actionCollection());
 
     QAction *action = KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
     action->setWhatsThis(i18nc("@info:whatsthis",
@@ -107,11 +107,11 @@ void MainWindow::newToolbarConfig()
 void MainWindow::slotToggleMenubar(bool dontShowWarning)
 {
     if (menuBar()) {
-        if (mHideMenuBarAction->isChecked()) {
+        if (mShowMenuBarAction->isChecked()) {
             menuBar()->show();
         } else {
             if (!dontShowWarning) {
-                const QString accel = mHideMenuBarAction->shortcut().toString();
+                const QString accel = mShowMenuBarAction->shortcut().toString();
                 KMessageBox::information(this,
                                          i18n("<qt>This will hide the menu bar completely."
                                               " You can show it again by typing %1.</qt>",
@@ -121,6 +121,6 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
             }
             menuBar()->hide();
         }
-        Settings::self()->setShowMenuBar(mHideMenuBarAction->isChecked());
+        Settings::self()->setShowMenuBar(mShowMenuBarAction->isChecked());
     }
 }

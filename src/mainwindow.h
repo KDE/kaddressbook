@@ -32,6 +32,6 @@ private:
     void initActions();
 
     MainWidget *mMainWidget = nullptr;
-    KToggleAction *mHideMenuBarAction = nullptr;
+    KToggleAction *mShowMenuBarAction = nullptr;
 };
 
