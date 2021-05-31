@@ -87,11 +87,6 @@ void MainWindow::initActions()
 void MainWindow::updateHamburgerMenu()
 {
     QMenu *menu = new QMenu;
-    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_create")));
-    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_group_create")));
-    menu->addSeparator();
-    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_contact_item_edit")));
-    menu->addSeparator();
     menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Print))));
     menu->addSeparator();
     menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Quit))));
