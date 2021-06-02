@@ -34,12 +34,12 @@ MainWindow::MainWindow()
 
     setCentralWidget(mMainWidget);
 
-    initActions();
 
     setStandardToolBarMenuEnabled(true);
 
     toolBar()->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
+    initActions();
     setupGUI(Save | Create, QStringLiteral("kaddressbookui.rc"));
 
     setAutoSaveSettings();
@@ -87,8 +87,13 @@ void MainWindow::initActions()
 void MainWindow::updateHamburgerMenu()
 {
     QMenu *menu = new QMenu;
-    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Print))));
+    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
     menu->addSeparator();
+
+    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Print))));
+    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::PrintPreview))));
+    menu->addSeparator();
+
     menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Quit))));
     mHamburgerMenu->setMenu(menu);
 }
