@@ -72,16 +72,18 @@ void MainWindow::initActions()
                                "the application-wide shortcuts."));
     KStandardAction::configureToolbars(this, &MainWindow::configureToolbars, actionCollection());
     KStandardAction::preferences(this, &MainWindow::configure, actionCollection());
-    mHamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
-    mHamburgerMenu->setShowMenuBarAction(mShowMenuBarAction);
-    mHamburgerMenu->setMenuBar(menuBar());
-    connect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, [this]() {
-        updateHamburgerMenu();
-        // Immediately disconnect. We only need to run this once, but on demand.
-        // NOTE: The nullptr at the end disconnects all connections between
-        // q and mHamburgerMenu's aboutToShowMenu signal.
-        disconnect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, nullptr);
-    });
+    if (menuBar()) {
+        mHamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
+        mHamburgerMenu->setShowMenuBarAction(mShowMenuBarAction);
+        mHamburgerMenu->setMenuBar(menuBar());
+        connect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, [this]() {
+            updateHamburgerMenu();
+            // Immediately disconnect. We only need to run this once, but on demand.
+            // NOTE: The nullptr at the end disconnects all connections between
+            // q and mHamburgerMenu's aboutToShowMenu signal.
+            disconnect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, nullptr);
+        });
+    }
 }
 
 void MainWindow::updateHamburgerMenu()
