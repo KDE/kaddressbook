@@ -13,7 +13,10 @@ add_subdirectory(kconf_update)
 add_subdirectory(configuration)
 add_subdirectory(importexport)
 
-set(kaddressbook_printing_SRCS
+add_library(kaddressbookprivate)
+
+
+target_sources(kaddressbookprivate PRIVATE
     printing/detailled/detailledstyle.cpp
     printing/mike/mikesstyle.cpp
     printing/printingwizard.cpp
@@ -23,27 +26,7 @@ set(kaddressbook_printing_SRCS
     printing/compact/compactstyle.cpp
     printing/grantlee/grantleeprintstyle.cpp
     printing/stylepage.cpp
-    )
-
-ki18n_wrap_ui(kaddressbook_printing_SRCS
-    printing/ringbinder/rbs_appearance.ui
-    printing/detailled/ds_appearance.ui
-    printing/compact/compactstyle.ui
-    )
-
-set(kaddressbook_plugin_SRCS
     plugininterface/kaddressbookplugininterface.cpp
-    )
-
-set(kaddressbook_userfeedback_SRCS)
-if (TARGET KUserFeedbackWidgets)
-    set(kaddressbook_userfeedback_SRCS ${kaddressbook_userfeedback_SRCS}
-        userfeedback/userfeedbackmanager.cpp
-        userfeedback/kaddressbookuserfeedbackprovider.cpp
-        )
-endif()
-
-set(kaddressbook_LIB_SRCS
     aboutdata.cpp
     categoryfilterproxymodel.cpp
     categoryselectwidget.cpp
@@ -58,12 +41,25 @@ set(kaddressbook_LIB_SRCS
     stylecontactlistdelegate.cpp
     widgets/quicksearchwidget.cpp
     kaddressbookmigrateapplication.cpp
-    ${kaddressbook_printing_SRCS}
-    ${kaddressbook_plugin_SRCS}
-    ${kaddressbook_userfeedback_SRCS}
+
     )
 
-ecm_qt_declare_logging_category(kaddressbook_LIB_SRCS HEADER kaddressbook_debug.h IDENTIFIER KADDRESSBOOK_LOG CATEGORY_NAME org.kde.pim.kaddressbook
+ki18n_wrap_ui(kaddressbookprivate
+    printing/ringbinder/rbs_appearance.ui
+    printing/detailled/ds_appearance.ui
+    printing/compact/compactstyle.ui
+    )
+
+
+if (TARGET KUserFeedbackWidgets)
+    target_sources(kaddressbookprivate PRIVATE
+        userfeedback/userfeedbackmanager.cpp
+        userfeedback/kaddressbookuserfeedbackprovider.cpp
+        )
+endif()
+
+
+ecm_qt_declare_logging_category(kaddressbookprivate HEADER kaddressbook_debug.h IDENTIFIER KADDRESSBOOK_LOG CATEGORY_NAME org.kde.pim.kaddressbook
         DESCRIPTION "kaddressbook (kaddressbook)"
         OLD_CATEGORY_NAMES log_kaddressbook
         EXPORT KADDRESSBOOK
@@ -71,9 +67,9 @@ ecm_qt_declare_logging_category(kaddressbook_LIB_SRCS HEADER kaddressbook_debug.
 
 
 qt_add_dbus_adaptor( kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.h MainWidget)
+target_sources(kaddressbookprivate PRIVATE ${kaddressbook_LIB_SRCS})
 
-kconfig_add_kcfg_files(kaddressbook_LIB_SRCS settings/settings.kcfgc)
-add_library(kaddressbookprivate ${kaddressbook_LIB_SRCS})
+kconfig_add_kcfg_files(kaddressbookprivate settings/settings.kcfgc)
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbookprivate PROPERTIES UNITY_BUILD ON)
 endif()
@@ -126,9 +122,8 @@ ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
-set(KUserFeedbackWidgets_LIBS)
 if (TARGET KUserFeedbackWidgets)
-    set(KUserFeedbackWidgets_LIBS  KUserFeedbackWidgets)
+    target_link_libraries(kaddressbook  KUserFeedbackWidgets)
 endif()
 
 target_link_libraries(kaddressbook
@@ -136,7 +131,6 @@ target_link_libraries(kaddressbook
     KF5::KontactInterface
     kaddressbookprivate
     KF5::Crash
-    ${KUserFeedbackWidgets_LIBS}
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
