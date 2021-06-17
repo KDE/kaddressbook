@@ -350,11 +350,11 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
-    dlg->addModule(QStringLiteral("akonadicontact_actions.desktop"));
-    dlg->addModule(QStringLiteral("kcmldap.desktop"));
-    dlg->addModule(QStringLiteral("kaddressbook_config_plugins.desktop"));
+    dlg->addModule(QStringLiteral("akonadicontact_actions"));
+    dlg->addModule(QStringLiteral("kcmldap"));
+    dlg->addModule(QStringLiteral("kaddressbook_config_plugins"));
 #ifdef WITH_KUSERFEEDBACK
-    dlg->addModule(QStringLiteral("kaddressbook_config_userfeedback.desktop"));
+    dlg->addModule(QStringLiteral("kaddressbook_config_userfeedback"));
 #endif
 
     dlg->exec();
