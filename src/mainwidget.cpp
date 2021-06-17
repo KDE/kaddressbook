@@ -353,7 +353,6 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
-    dlg->addModule(QStringLiteral("akonadicontact_actions"));
     dlg->addModule(QStringLiteral("kcmldap"));
     const QVector<KPluginMetaData> availablePlugins = KPluginLoader::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
