@@ -15,6 +15,7 @@
 #include "globalcontactmodel.h"
 #include "kaddressbook_options.h"
 #include "kaddressbookadaptor.h"
+#include "kcmutils_version.h"
 #include "manageshowcollectionproperties.h"
 #include "modelcolumnmanager.h"
 #include "printing/printingwizard.h"
@@ -68,6 +69,8 @@
 #include <KContacts/ContactGroup>
 #include <KDescendantsProxyModel>
 #include <KLocalizedString>
+#include <KPluginLoader>
+#include <KPluginMetaData>
 #include <KSelectionProxyModel>
 #include <KToggleAction>
 #include <KXMLGUIClient>
@@ -352,11 +355,14 @@ void MainWidget::configure()
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
     dlg->addModule(QStringLiteral("akonadicontact_actions"));
     dlg->addModule(QStringLiteral("kcmldap"));
-    dlg->addModule(QStringLiteral("kaddressbook_config_plugins"));
-#ifdef WITH_KUSERFEEDBACK
-    dlg->addModule(QStringLiteral("kaddressbook_config_userfeedback"));
+    const QVector<KPluginMetaData> availablePlugins = KPluginLoader::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
+    for (const KPluginMetaData &metaData : availablePlugins) {
+#if KCMUTILS_VERSION >= QT_VERSION_CHECK(5, 84, 0)
+        dlg->addModule(metaData);
+#else
+        dlg->addModule(metaData.pluginId());
 #endif
-
+    }
     dlg->exec();
     delete dlg;
 }

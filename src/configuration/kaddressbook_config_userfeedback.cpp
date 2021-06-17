@@ -16,7 +16,7 @@
 
 using namespace KAddressBook;
 
-K_PLUGIN_FACTORY(KCMKaddressbookUserFeedBackConfigFactory, registerPlugin<KCMKaddressbookUserFeedBackConfig>();)
+K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookUserFeedBackConfig, "kaddressbook_config_userfeedback.json")
 
 KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)

@@ -15,7 +15,7 @@
 
 using namespace KAddressBook;
 
-K_PLUGIN_FACTORY(KCMKaddressbookPluginsConfigFactory, registerPlugin<KCMKaddressbookPluginsConfig>();)
+K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookPluginsConfig, "kaddressbook_config_plugins.json")
 
 KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
