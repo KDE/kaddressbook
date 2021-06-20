@@ -108,15 +108,16 @@ void MainWindow::configure()
 
 void MainWindow::configureKeyBindings()
 {
-#if KXMLGUI_VERSION < QT_VERSION_CHECK(5, 84, 0)
-    if (KShortcutsDialog::configure(actionCollection(), KShortcutsEditor::LetterShortcutsAllowed, this)) {
+    KShortcutsDialog *dlg = new KShortcutsDialog(KShortcutsEditor::AllActions, KShortcutsEditor::LetterShortcutsAllowed, this);
+    dlg->setAttribute(Qt::WA_DeleteOnClose);
+    dlg->setModal(false);
+    dlg->addCollection(actionCollection());
+
+    connect(dlg, &KShortcutsDialog::saved, this, [this]() {
         mMainWidget->updateQuickSearchText();
-    }
-#else
-    KShortcutsDialog::showDialog(actionCollection(), KShortcutsEditor::LetterShortcutsAllowed, /*isModal*/ true, this);
-    // We can't detect if we accepted or not => update quick search all the time. Perhaps in the future we will have a signal.
-    mMainWidget->updateQuickSearchText();
-#endif
+    });
+
+    dlg->configure(true /* save settings on accept*/);
 }
 
 void MainWindow::configureToolbars()
