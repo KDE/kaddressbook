@@ -21,6 +21,7 @@
 #include <QAction>
 #include <QMenuBar>
 #include <QPointer>
+#include <kxmlgui_version.h>
 #ifdef WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
@@ -107,9 +108,15 @@ void MainWindow::configure()
 
 void MainWindow::configureKeyBindings()
 {
+#if KXMLGUI_VERSION < QT_VERSION_CHECK(5, 84, 0)
     if (KShortcutsDialog::configure(actionCollection(), KShortcutsEditor::LetterShortcutsAllowed, this)) {
         mMainWidget->updateQuickSearchText();
     }
+#else
+    KShortcutsDialog::showDialog(actionCollection(), KShortcutsEditor::LetterShortcutsAllowed, /*isModal*/ true, this);
+    // We can't detect if we accepted or not => update quick search all the time. Perhaps in the future we will have a signal.
+    mMainWidget->updateQuickSearchText();
+#endif
 }
 
 void MainWindow::configureToolbars()
