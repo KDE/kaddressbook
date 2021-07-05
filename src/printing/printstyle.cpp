@@ -79,7 +79,7 @@ void PrintStyle::showPages()
 {
     QWidget *wdg = nullptr;
 
-    for (QWidget *wdg2 : qAsConst(mPageList)) {
+    for (QWidget *wdg2 : std::as_const(mPageList)) {
         mWizard->setAppropriate(mPageItems[wdg2], true);
         wdg = wdg2;
     }
@@ -89,7 +89,7 @@ void PrintStyle::showPages()
 
 void PrintStyle::hidePages()
 {
-    for (QWidget *wdg : qAsConst(mPageList)) {
+    for (QWidget *wdg : std::as_const(mPageList)) {
         mWizard->setAppropriate(mPageItems[wdg], false);
     }
 }

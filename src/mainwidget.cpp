@@ -270,7 +270,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
                     << Akonadi::StandardActionManager::SynchronizeResources << Akonadi::StandardActionManager::SynchronizeCollectionsRecursive
                     << Akonadi::StandardActionManager::MoveItemToMenu << Akonadi::StandardActionManager::CopyItemToMenu;
 
-    for (Akonadi::StandardActionManager::Type standardAction : qAsConst(standardActions)) {
+    for (Akonadi::StandardActionManager::Type standardAction : std::as_const(standardActions)) {
         mActionManager->createAction(standardAction);
     }
     guiClient->actionCollection()->setDefaultShortcut(mActionManager->action(Akonadi::StandardActionManager::DeleteItems), QKeySequence(Qt::Key_Delete));
@@ -278,7 +278,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     contactActions << Akonadi::StandardContactActionManager::CreateContact << Akonadi::StandardContactActionManager::CreateContactGroup
                    << Akonadi::StandardContactActionManager::EditItem;
 
-    for (Akonadi::StandardContactActionManager::Type contactAction : qAsConst(contactActions)) {
+    for (Akonadi::StandardContactActionManager::Type contactAction : std::as_const(contactActions)) {
         mActionManager->createAction(contactAction);
     }
 
@@ -337,14 +337,14 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
     if (!importActions.isEmpty()) {
         auto importMenu = new KActionMenu(i18n("Import"), this);
         collection->addAction(QStringLiteral("import_menu"), importMenu);
-        for (QAction *act : qAsConst(importActions)) {
+        for (QAction *act : std::as_const(importActions)) {
             importMenu->addAction(act);
         }
     }
     if (!exportActions.isEmpty()) {
         auto exportMenu = new KActionMenu(i18n("Export"), this);
         collection->addAction(QStringLiteral("export_menu"), exportMenu);
-        for (QAction *act : qAsConst(exportActions)) {
+        for (QAction *act : std::as_const(exportActions)) {
             exportMenu->addAction(act);
         }
     }
@@ -375,7 +375,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
         const QStringList lst = parser.positionalArguments();
         for (const QString &urlStr : lst) {
             const QUrl url(QUrl::fromUserInput(urlStr));
-            for (KAddressBookImportExport::PluginInterface *interface : qAsConst(mImportExportPluginInterfaceList)) {
+            for (KAddressBookImportExport::PluginInterface *interface : std::as_const(mImportExportPluginInterfaceList)) {
                 if (interface->canImportFileType(url)) {
                     interface->importFile(url);
                     break;
@@ -1045,7 +1045,7 @@ void MainWidget::slotServerSideSubscription()
 
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
-    for (auto interface : qAsConst(mImportExportPluginInterfaceList)) {
+    for (auto interface : std::as_const(mImportExportPluginInterfaceList)) {
         interface->setDefaultCollection(col);
     }
     bool isOnline;

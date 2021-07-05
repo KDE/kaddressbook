@@ -88,7 +88,7 @@ template<typename Op, typename Config> static void processWidgets(QWidget *widge
 {
     QList<QWidget *> widgets = widget->findChildren<QWidget *>();
     widgets << widget;
-    for (QWidget *w : qAsConst(widgets)) {
+    for (QWidget *w : std::as_const(widgets)) {
         if (w->objectName().isEmpty()) {
             continue;
         }

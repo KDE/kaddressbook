@@ -109,7 +109,7 @@ void PrintingWizard::loadGrantleeStyle()
         }
     }
 
-    for (const QString &directory : qAsConst(themesDirectories)) {
+    for (const QString &directory : std::as_const(themesDirectories)) {
         QDirIterator dirIt(directory, QStringList(), QDir::AllDirs | QDir::NoDotAndDotDot);
         QStringList alreadyLoadedThemeName;
         while (dirIt.hasNext()) {
