@@ -89,7 +89,7 @@ void MainWindow::initActions()
 
 void MainWindow::updateHamburgerMenu()
 {
-    QMenu *menu = new QMenu;
+    QMenu *menu = new QMenu(this);
     menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
     menu->addSeparator();
 
