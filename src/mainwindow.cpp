@@ -108,7 +108,11 @@ void MainWindow::configure()
 
 void MainWindow::configureKeyBindings()
 {
+#if KXMLGUI_VERSION <= QT_VERSION_CHECK(5, 84, 0)
     KShortcutsDialog *dlg = new KShortcutsDialog(KShortcutsEditor::AllActions, KShortcutsEditor::LetterShortcutsAllowed, this);
+#else
+    KShortcutsDialog *dlg = new KShortcutsDialog(this);
+#endif
     dlg->setAttribute(Qt::WA_DeleteOnClose);
     dlg->setModal(false);
     dlg->addCollection(actionCollection());
