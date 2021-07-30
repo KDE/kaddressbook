@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.17.90")
+set(PIM_VERSION "5.18.0")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "21.08.0")
 set(KF5_MIN_VERSION "5.83.0")
@@ -28,7 +28,7 @@ include(ECMGeneratePriFile)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION rc)
+set(KDEPIM_DEV_VERSION )
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
