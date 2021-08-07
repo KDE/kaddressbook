@@ -355,11 +355,7 @@ void MainWidget::configure()
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
     const QVector<KPluginMetaData> availablePlugins = KPluginLoader::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
-#if KCMUTILS_VERSION >= QT_VERSION_CHECK(5, 84, 0)
         dlg->addModule(metaData);
-#else
-        dlg->addModule(metaData.pluginId());
-#endif
     }
     dlg->exec();
     delete dlg;
