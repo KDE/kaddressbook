@@ -156,7 +156,8 @@ QString ContactInfoProxyModel::getDescription(const Akonadi::Item::Id groupItemI
 
         ContactCacheData::ConstListIterator it = findCacheItem(groupItemId, contactRef);
         if (it != mGroupsCache[groupItemId].end()) {
-            QString cacheSeparator, email;
+            QString cacheSeparator;
+            QString email;
             email = contactRef.preferredEmail().isEmpty() ? it->email() : contactRef.preferredEmail();
             if (it->name().isEmpty() && email.isEmpty()) {
                 continue;

@@ -54,7 +54,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
             }
         }
 
-        QStringList leftBlock, rightBlock;
+        QStringList leftBlock;
+        QStringList rightBlock;
         if (fields & PhoneNumbers) {
             const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
             for (const KContacts::PhoneNumber &number : numbers) {

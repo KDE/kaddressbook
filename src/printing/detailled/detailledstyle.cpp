@@ -180,7 +180,8 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 
             const int maxLines = qMax(leftBlock.entries.count(), rightBlock.entries.count());
             for (int j = 0; j < maxLines; ++j) {
-                QString leftLine, rightLine;
+                QString leftLine;
+                QString rightLine;
 
                 if (j < leftBlock.entries.count()) {
                     leftLine = leftBlock.entries.at(j);

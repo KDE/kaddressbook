@@ -24,7 +24,8 @@ using namespace KAddressBookImportExport;
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 {
-    ContactFields::Fields leftFields, rightFields;
+    ContactFields::Fields leftFields;
+    ContactFields::Fields rightFields;
     ContactFields::Fields allFields = ContactFields::allFields();
     allFields.remove(0); // drop 'Undefined' field
 
@@ -64,7 +65,10 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
         content += QLatin1String("   </tr>\n");
 
         for (int i = 0; i < max; ++i) {
-            QString leftTitle, leftValue, rightTitle, rightValue;
+            QString leftTitle;
+            QString leftValue;
+            QString rightTitle;
+            QString rightValue;
 
             if (i < leftFields.count()) {
                 leftTitle = ContactFields::label(leftFields.at(i)) + QLatin1Char(':');
