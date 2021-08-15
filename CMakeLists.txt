@@ -45,7 +45,7 @@ set(KDEPIM_LIB_VERSION "${PIM_VERSION}")
 set(KDEPIM_LIB_SOVERSION "5")
 
 
-set(QT_REQUIRED_VERSION "5.15.0")
+set(QT_REQUIRED_VERSION "5.15.2")
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus PrintSupport)
 set(LIBKDEPIM_LIB_VERSION "5.18.40")
 set(LIBGRANTLEETHEME_LIB_VERSION "5.18.40")
@@ -87,7 +87,7 @@ include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
+add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
 add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055600)
 
 
