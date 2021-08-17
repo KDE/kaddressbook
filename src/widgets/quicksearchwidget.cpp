@@ -14,6 +14,9 @@
 #include <QKeyEvent>
 #include <QTimer>
 #include <QVBoxLayout>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 QuickSearchWidget::QuickSearchWidget(QWidget *parent)
     : QWidget(parent)
@@ -57,7 +60,7 @@ void QuickSearchWidget::slotFocusQuickSearch()
 void QuickSearchWidget::resetTimer()
 {
     mTimer->stop();
-    mTimer->start(500);
+    mTimer->start(500ms);
 }
 
 void QuickSearchWidget::delayedTextChanged()
