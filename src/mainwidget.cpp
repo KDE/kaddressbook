@@ -16,6 +16,7 @@
 #include "kaddressbook_options.h"
 #include "kaddressbookadaptor.h"
 #include "kcmutils_version.h"
+#include "kcoreaddons_version.h"
 #include "manageshowcollectionproperties.h"
 #include "modelcolumnmanager.h"
 #include "printing/printingwizard.h"
@@ -353,7 +354,11 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(5, 86, 0)
     const QVector<KPluginMetaData> availablePlugins = KPluginLoader::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
+#else
+    const QVector<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
+#endif
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg->addModule(metaData);
     }
