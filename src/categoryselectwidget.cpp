@@ -16,7 +16,8 @@
 #include <QToolButton>
 
 #include <Libkdepim/KCheckComboBox>
-
+#include <chrono>
+using namespace std::chrono_literals;
 using namespace Akonadi;
 
 static const int FILTER_ROLE = Qt::UserRole + 1;
@@ -84,7 +85,7 @@ void CategorySelectWidgetPrivate::init()
 
     updateTimer = new QTimer(this);
     updateTimer->setSingleShot(true);
-    updateTimer->setInterval(200);
+    updateTimer->setInterval(200ms);
     connect(updateTimer, &QTimer::timeout, this, &CategorySelectWidgetPrivate::slotCheckedItemsTimer);
 
     auto but = new QToolButton(q);
