@@ -21,7 +21,9 @@ AboutData::AboutData()
                  i18n("Copyright © 2007–2021 KAddressBook authors"))
 {
     addAuthor(i18n("Laurent Montel"), i18n("Current maintainer"), QStringLiteral("montel@kde.org"));
-    addAuthor(i18n("Tobias Koenig"), i18n("Previous maintainer"), QStringLiteral("tokoe@kde.org"));
+    addAuthor(i18n("Tobias König"), i18n("Previous maintainer"), QStringLiteral("tokoe@kde.org"));
+    addAuthor(i18n("Stefan Taferner"), i18n("Original Author (1998)"), QStringLiteral("taferner@kde.org"));
+    addAuthor(i18n("David Bryant"), i18n("Documentation (2019)"), QStringLiteral("davidbryant@gvtc.com"), QStringLiteral("https://davidcbryant.net"));
 }
 
 AboutData::~AboutData()
