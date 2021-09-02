@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.18.1")
+set(PIM_VERSION "5.18.2")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "21.08.1")
 set(KF5_MIN_VERSION "5.83.0")
