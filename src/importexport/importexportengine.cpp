@@ -6,9 +6,9 @@
 
 #include "importexportengine.h"
 
-#include <AkonadiCore/Item>
-#include <AkonadiCore/ItemCreateJob>
-#include <AkonadiWidgets/CollectionDialog>
+#include <Akonadi/CollectionDialog>
+#include <Akonadi/Item>
+#include <Akonadi/ItemCreateJob>
 #include <KLocalizedString>
 #include <QPointer>
 #include <QProgressDialog>

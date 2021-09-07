@@ -7,8 +7,8 @@
 #include "categoryselectwidget.h"
 
 #include "kaddressbook_debug.h"
-#include <AkonadiCore/monitor.h>
-#include <AkonadiCore/tagmodel.h>
+#include <Akonadi/Monitor>
+#include <Akonadi/TagModel>
 #include <KLocalizedString>
 #include <QHBoxLayout>
 #include <QStandardItemModel>

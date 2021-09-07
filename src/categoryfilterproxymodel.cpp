@@ -8,7 +8,7 @@
 
 #include "kaddressbook_debug.h"
 
-#include <AkonadiCore/entitytreemodel.h>
+#include <Akonadi/EntityTreeModel>
 #include <AkonadiCore/item.h>
 
 #include <kcontacts/addressee.h>

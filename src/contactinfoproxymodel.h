@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <AkonadiCore/EntityTreeModel>
+#include <Akonadi/EntityTreeModel>
 #include <QIdentityProxyModel>
 #include <QObject>
 #include <kcontacts/contactgroup.h>

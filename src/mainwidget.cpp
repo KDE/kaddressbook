@@ -38,17 +38,17 @@
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
 
-#include <AkonadiCore/AttributeFactory>
-#include <AkonadiCore/CollectionFilterProxyModel>
-#include <AkonadiCore/EntityMimeTypeFilterModel>
-#include <AkonadiCore/MimeTypeChecker>
+#include <Akonadi/AttributeFactory>
+#include <Akonadi/CollectionFilterProxyModel>
+#include <Akonadi/CollectionMaintenancePage>
+#include <Akonadi/CollectionPropertiesDialog>
+#include <Akonadi/ControlGui>
+#include <Akonadi/ETMViewStateSaver>
+#include <Akonadi/EntityMimeTypeFilterModel>
+#include <Akonadi/EntityTreeView>
+#include <Akonadi/ItemView>
+#include <Akonadi/MimeTypeChecker>
 #include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
-#include <AkonadiWidgets/CollectionMaintenancePage>
-#include <AkonadiWidgets/CollectionPropertiesDialog>
-#include <AkonadiWidgets/ControlGui>
-#include <AkonadiWidgets/ETMViewStateSaver>
-#include <AkonadiWidgets/EntityTreeView>
-#include <AkonadiWidgets/ItemView>
 #include <KContacts/Addressee>
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>

@@ -9,11 +9,11 @@
 #include "mainwidget.h"
 #include <PimCommonAkonadi/CollectionAclPage>
 
-#include <AkonadiCore/CollectionAttributesSynchronizationJob>
-#include <AkonadiCore/CollectionFetchJob>
-#include <AkonadiCore/CollectionFetchScope>
-#include <AkonadiWidgets/CollectionMaintenancePage>
-#include <AkonadiWidgets/CollectionPropertiesDialog>
+#include <Akonadi/CollectionAttributesSynchronizationJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionFetchScope>
+#include <Akonadi/CollectionMaintenancePage>
+#include <Akonadi/CollectionPropertiesDialog>
 
 #include <KLocalizedString>
 

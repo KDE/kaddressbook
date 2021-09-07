@@ -9,7 +9,7 @@
 #pragma once
 
 #include "kaddressbook_export.h"
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 #include <QItemSelection>
 #include <QWidget>
 

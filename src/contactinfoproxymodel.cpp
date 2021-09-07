@@ -10,10 +10,10 @@
 
 #include "kaddressbook_debug.h"
 
-#include <AkonadiCore/Item>
-#include <AkonadiCore/ItemFetchJob>
-#include <AkonadiCore/ItemFetchScope>
-#include <AkonadiCore/Monitor>
+#include <Akonadi/Item>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
+#include <Akonadi/Monitor>
 #include <KLocalizedString>
 #include <kcontacts/addressee.h>
 
