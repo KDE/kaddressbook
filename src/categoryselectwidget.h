@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <AkonadiCore/tag.h>
+#include <Akonadi/Tag>
 #include <QWidget>
 
 class CategorySelectWidgetPrivate;

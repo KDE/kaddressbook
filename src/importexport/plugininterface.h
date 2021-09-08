@@ -7,7 +7,7 @@
 #pragma once
 
 #include "kaddressbook_importexport_export.h"
-#include <AkonadiCore/Collection>
+#include <Akonadi/Collection>
 #include <PimCommon/AbstractGenericPluginInterface>
 #include <QList>
 

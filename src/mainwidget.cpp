@@ -79,7 +79,7 @@
 #include <QApplication>
 #include <QTextBrowser>
 
-#include <ItemModifyJob>
+#include <Akonadi/ItemModifyJob>
 #include <KPimPrintPreviewDialog>
 #include <QActionGroup>
 #include <QDBusConnection>

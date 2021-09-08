@@ -8,7 +8,7 @@
 
 #include <QSortFilterProxyModel>
 
-#include <AkonadiCore/tag.h>
+#include <Akonadi/Tag>
 
 class CategoryFilterProxyModelPrivate;
 
