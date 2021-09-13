@@ -15,8 +15,6 @@
 #include "globalcontactmodel.h"
 #include "kaddressbook_options.h"
 #include "kaddressbookadaptor.h"
-#include "kcmutils_version.h"
-#include "kcoreaddons_version.h"
 #include "manageshowcollectionproperties.h"
 #include "modelcolumnmanager.h"
 #include "printing/printingwizard.h"

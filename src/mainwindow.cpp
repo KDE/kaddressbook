@@ -21,7 +21,6 @@
 #include <QAction>
 #include <QMenuBar>
 #include <QPointer>
-#include <kxmlgui_version.h>
 #ifdef WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>

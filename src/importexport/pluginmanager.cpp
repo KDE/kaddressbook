@@ -5,7 +5,6 @@
 */
 
 #include "pluginmanager.h"
-#include "kcoreaddons_version.h"
 #include "libkaddressbookexportimport_debug.h"
 #include "plugin.h"
 
