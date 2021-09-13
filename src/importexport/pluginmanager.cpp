@@ -10,7 +10,6 @@
 #include "plugin.h"
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KPluginMetaData>
 #include <QFileInfo>
 #include <QSet>
@@ -32,7 +31,6 @@ class ImportExportInfo
 {
 public:
     QString metaDataFileNameBaseName;
-    QString metaDataFileName;
     PimCommon::PluginUtilData pluginData;
     KPluginMetaData data;
     Plugin *plugin = nullptr;
@@ -78,11 +76,7 @@ private:
 
 bool PluginManagerPrivate::initializePlugins()
 {
-#if KCOREADDONS_VERSION > QT_VERSION_CHECK(5, 85, 0)
     const QVector<KPluginMetaData> plugins = KPluginMetaData::findPlugins(QStringLiteral("kaddressbook/importexportplugin"));
-#else
-    const QVector<KPluginMetaData> plugins = KPluginLoader::findPlugins(QStringLiteral("kaddressbook/importexportplugin"));
-#endif
 
     const QPair<QStringList, QStringList> pair = PimCommon::PluginUtil::loadPluginSetting(configGroupName(), configPrefixSettingKey());
 
@@ -99,7 +93,6 @@ bool PluginManagerPrivate::initializePlugins()
             PimCommon::PluginUtil::isPluginActivated(pair.first, pair.second, info.pluginData.mEnableByDefault, info.pluginData.mIdentifier);
         info.isEnabled = isPluginActivated;
         info.metaDataFileNameBaseName = QFileInfo(data.fileName()).baseName();
-        info.metaDataFileName = data.fileName();
         info.data = data;
         if (pluginVersion() == data.version()) {
             info.plugin = nullptr;
@@ -117,22 +110,12 @@ bool PluginManagerPrivate::initializePlugins()
 
 void PluginManagerPrivate::loadPlugin(ImportExportInfo *item)
 {
-#if KCOREADDONS_VERSION > QT_VERSION_CHECK(5, 85, 0)
     if (auto plugin = KPluginFactory::instantiatePlugin<Plugin>(item->data, q, QVariantList() << item->metaDataFileNameBaseName).plugin) {
         item->plugin = plugin;
         item->plugin->setIsEnabled(item->isEnabled);
         item->pluginData.mHasConfigureDialog = item->plugin->hasConfigureDialog();
         mPluginDataList.append(item->pluginData);
     }
-#else
-    KPluginLoader pluginLoader(item->metaDataFileName);
-    if (pluginLoader.factory()) {
-        item->plugin = pluginLoader.factory()->create<Plugin>(q, QVariantList() << item->metaDataFileNameBaseName);
-        item->plugin->setIsEnabled(item->isEnabled);
-        item->pluginData.mHasConfigureDialog = item->plugin->hasConfigureDialog();
-        mPluginDataList.append(item->pluginData);
-    }
-#endif
 }
 
 QVector<Plugin *> PluginManagerPrivate::pluginsList() const
