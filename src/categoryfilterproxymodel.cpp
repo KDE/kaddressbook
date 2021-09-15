@@ -11,8 +11,8 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/Item>
 
-#include <kcontacts/addressee.h>
-#include <kcontacts/contactgroup.h>
+#include <KContacts/Addressee>
+#include <KContacts/ContactGroup>
 
 #include "categoryselectwidget.h"
 

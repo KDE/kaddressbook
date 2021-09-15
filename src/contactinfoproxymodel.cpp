@@ -14,8 +14,8 @@
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/Monitor>
+#include <KContacts/Addressee>
 #include <KLocalizedString>
-#include <kcontacts/addressee.h>
 
 #include <KJob>
 #include <QImage>

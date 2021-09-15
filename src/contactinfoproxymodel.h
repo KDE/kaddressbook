@@ -9,9 +9,9 @@
 #pragma once
 
 #include <Akonadi/EntityTreeModel>
+#include <KContacts/ContactGroup>
 #include <QIdentityProxyModel>
 #include <QObject>
-#include <kcontacts/contactgroup.h>
 
 namespace Akonadi
 {
