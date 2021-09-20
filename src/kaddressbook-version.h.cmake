@@ -15,10 +15,5 @@
   build against older kdelibs releases.
 */
 
-#ifndef KADDRESSBOOK_VERSION_H
-#define KADDRESSBOOK_VERSION_H
-
-
+#pragma once
 #define KADDRESSBOOK_VERSION "@KDEPIM_VERSION@"
-
-#endif
