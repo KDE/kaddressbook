@@ -96,7 +96,7 @@ private Q_SLOTS:
     void itemSelectionChanged(const QModelIndex &, const QModelIndex &);
     void selectFirstItem();
 
-    void setViewMode(QAction *action);
+    void setActivateViewMode(QAction *action);
     void setQRCodeShow(bool on);
 
     void restoreState();

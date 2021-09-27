@@ -666,7 +666,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_3));
     collection->addAction(QStringLiteral("view_mode_3columns"), act);
 
-    connect(mViewModeGroup, qOverload<QAction *>(&QActionGroup::triggered), this, qOverload<QAction *>(&MainWidget::setViewMode));
+    connect(mViewModeGroup, &QActionGroup::triggered, this, &MainWidget::setActivateViewMode);
 
     KToggleAction *actTheme = mGrantleeThemeManager->actionForTheme();
     if (actTheme) {
@@ -850,7 +850,7 @@ QAbstractItemModel *MainWidget::allContactsModel()
     return mAllContactsModel;
 }
 
-void MainWidget::setViewMode(QAction *action)
+void MainWidget::setActivateViewMode(QAction *action)
 {
     setViewMode(action->data().toInt());
 }
