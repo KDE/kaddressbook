@@ -37,9 +37,6 @@ generate_export_header(KPimAddressbookImportExport BASE_NAME kaddressbook_import
 target_include_directories(KPimAddressbookImportExport
     INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim;${KDE_INSTALL_INCLUDEDIR}/KPim/KAddressBookImportExport/;${KDE_INSTALL_INCLUDEDIR}/KPim/kaddressbookimportexport>"
 )
-target_include_directories(KPimAddressbookImportExport
-    PUBLIC "$<BUILD_INTERFACE:${Grantlee_INCLUDE_DIRS}>"
-)
 
 target_link_libraries(KPimAddressbookImportExport
     PRIVATE
