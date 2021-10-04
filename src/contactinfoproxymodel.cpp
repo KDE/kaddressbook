@@ -18,7 +18,6 @@
 #include <KLocalizedString>
 
 #include <KJob>
-#include <QImage>
 
 ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
     : QIdentityProxyModel(parent)
