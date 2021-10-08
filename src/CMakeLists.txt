@@ -98,10 +98,6 @@ if (TARGET KUserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets)
 endif()
 
-if(QGpgme_FOUND)
-    target_link_libraries(kaddressbookprivate PRIVATE QGpgme)
-endif()
-
 target_include_directories(kaddressbookprivate PUBLIC "$<BUILD_INTERFACE:${kaddressbook_SOURCE_DIR};${kaddressbook_BINARY_DIR}>")
 
 set_target_properties(kaddressbookprivate PROPERTIES VERSION ${KDEPIM_LIB_VERSION} SOVERSION ${KDEPIM_LIB_SOVERSION})
