@@ -10,6 +10,8 @@
 
 #include <Akonadi/Tag>
 
+#include <memory>
+
 class CategoryFilterProxyModelPrivate;
 
 /**
@@ -65,6 +67,6 @@ protected:
     bool filterAcceptsRow(int row, const QModelIndex &parent) const override;
 
 private:
-    CategoryFilterProxyModelPrivate *const d_ptr;
+    std::unique_ptr<CategoryFilterProxyModelPrivate> const d_ptr;
 };
 

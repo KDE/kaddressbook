@@ -9,6 +9,8 @@
 #include <Akonadi/Tag>
 #include <QWidget>
 
+#include <memory>
+
 class CategorySelectWidgetPrivate;
 
 /**
@@ -66,6 +68,6 @@ Q_SIGNALS:
     void filterChanged(const QList<Akonadi::Tag::Id> &idList);
 
 private:
-    CategorySelectWidgetPrivate *const d_ptr;
+    std::unique_ptr<CategorySelectWidgetPrivate> const d_ptr;
 };
 

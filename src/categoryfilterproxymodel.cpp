@@ -46,10 +46,7 @@ CategoryFilterProxyModel::CategoryFilterProxyModel(QObject *parent)
     setDynamicSortFilter(true);
 }
 
-CategoryFilterProxyModel::~CategoryFilterProxyModel()
-{
-    delete d_ptr;
-}
+CategoryFilterProxyModel::~CategoryFilterProxyModel() = default;
 
 bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &parent) const
 {

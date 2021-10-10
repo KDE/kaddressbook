@@ -268,10 +268,7 @@ CategorySelectWidget::CategorySelectWidget(QWidget *parent)
     d->init();
 }
 
-CategorySelectWidget::~CategorySelectWidget()
-{
-    delete d_ptr;
-}
+CategorySelectWidget::~CategorySelectWidget() = default;
 
 QList<Akonadi::Tag::Id> CategorySelectWidget::filterTags() const
 {
