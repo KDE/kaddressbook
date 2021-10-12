@@ -21,7 +21,7 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     : KCModule(parent, args)
 {
     auto lay = new QHBoxLayout(this);
-    lay->setContentsMargins(0, 0, 0, 0);
+    lay->setContentsMargins({});
 
     auto about = new KAboutData(QStringLiteral("kcmakrpluginsconfig"),
                                 i18n("Configure Plugins"),

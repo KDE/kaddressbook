@@ -498,7 +498,7 @@ void MainWidget::setupGui()
 {
     // the horizontal main layout
     auto layout = new QHBoxLayout(this);
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     // Splitter 1 contains the two main parts of the GUI:
     //  - collection and item view splitter 2 on the left (see below)
@@ -539,7 +539,7 @@ void MainWidget::setupGui()
     mMainWidgetSplitter1->setChildrenCollapsible(false);
 
     auto detailsPaneLayout = new QVBoxLayout(mDetailsPane);
-    detailsPaneLayout->setContentsMargins(0, 0, 0, 0);
+    detailsPaneLayout->setContentsMargins({});
 
     // the details view stack
     mDetailsViewStack = new QStackedWidget();

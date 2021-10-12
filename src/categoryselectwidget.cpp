@@ -67,7 +67,7 @@ void CategorySelectWidgetPrivate::init()
 
     auto hbox = new QHBoxLayout(q);
     hbox->setSpacing(0);
-    hbox->setContentsMargins(0, 0, 0, 0);
+    hbox->setContentsMargins({});
 
     checkCombo = new KPIM::KCheckComboBox;
     checkCombo->setMinimumWidth(150);

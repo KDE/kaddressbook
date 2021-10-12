@@ -22,7 +22,7 @@ KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *pa
     : KCModule(parent, args)
 {
     auto lay = new QHBoxLayout(this);
-    lay->setContentsMargins(0, 0, 0, 0);
+    lay->setContentsMargins({});
 
     auto about = new KAboutData(QStringLiteral("kcmaddressbookuserfeedbackconfig"),
                                 i18n("Configure User FeedBack"),

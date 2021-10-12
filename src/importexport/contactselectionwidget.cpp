@@ -99,7 +99,7 @@ void ContactSelectionWidget::setAddGroupContact(bool addGroupContact)
 void ContactSelectionWidget::initGui()
 {
     auto layout = new QVBoxLayout(this);
-    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setContentsMargins({});
 
     mMessageLabel = new QLabel;
     layout->addWidget(mMessageLabel);
@@ -152,7 +152,7 @@ void ContactSelectionWidget::initGui()
     boxLayout->addWidget(mAddressBookContactsButton, 2, 0, Qt::AlignTop);
 
     auto addressBookLayout = new QVBoxLayout;
-    addressBookLayout->setContentsMargins(0, 0, 0, 0);
+    addressBookLayout->setContentsMargins({});
     addressBookLayout->addWidget(mAddressBookSelection);
     addressBookLayout->addWidget(mAddressBookSelectionRecursive);
 
