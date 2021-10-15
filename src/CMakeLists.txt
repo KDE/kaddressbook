@@ -9,7 +9,6 @@ include_directories(
 
 add_subdirectory(icons)
 add_subdirectory(printing)
-add_subdirectory(kconf_update)
 add_subdirectory(configuration)
 add_subdirectory(importexport)
 
