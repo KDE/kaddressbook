@@ -44,7 +44,6 @@
 #include <Akonadi/ETMViewStateSaver>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeView>
-#include <Akonadi/ItemView>
 #include <Akonadi/MimeTypeChecker>
 #include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
