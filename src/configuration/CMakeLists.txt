@@ -3,6 +3,8 @@ add_library(kaddressbook_config_plugins MODULE)
 target_sources(kaddressbook_config_plugins PRIVATE
     kaddressbook_config_plugins.cpp
     kaddressbookconfigpluginlistwidget.cpp
+    kaddressbook_config_plugins.h
+    kaddressbookconfigpluginlistwidget.h
     )
 
 ecm_qt_declare_logging_category(kaddressbook_config_plugins HEADER kaddressbook_configure_debug.h IDENTIFIER KADDRESSBOOK_CONFIGURE_LOG CATEGORY_NAME org.kde.pim.kaddressbook_configure
@@ -35,6 +37,7 @@ if (TARGET KUserFeedbackWidgets)
 
     target_sources(kaddressbook_config_userfeedback PRIVATE
         kaddressbook_config_userfeedback.cpp
+        kaddressbook_config_userfeedback.h
         )
 
 

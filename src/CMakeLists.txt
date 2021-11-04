@@ -40,6 +40,30 @@ target_sources(kaddressbookprivate PRIVATE
     stylecontactlistdelegate.cpp
     widgets/quicksearchwidget.cpp
     kaddressbookmigrateapplication.cpp
+    printing/detailled/detailledstyle.h
+    printing/mike/mikesstyle.h
+    printing/printingwizard.h
+    printing/printprogress.h
+    printing/printstyle.h
+    printing/ringbinder/ringbinderstyle.h
+    printing/compact/compactstyle.h
+    printing/grantlee/grantleeprintstyle.h
+    printing/stylepage.h
+    plugininterface/kaddressbookplugininterface.h
+    aboutdata.h
+    categoryfilterproxymodel.h
+    categoryselectwidget.h
+    contactinfoproxymodel.h
+    contactsorter.h
+    contactswitcher.h
+    globalcontactmodel.h
+    mainwidget.h
+    uistatesaver.h
+    manageshowcollectionproperties.h
+    modelcolumnmanager.h
+    stylecontactlistdelegate.h
+    widgets/quicksearchwidget.h
+    kaddressbookmigrateapplication.h
 
     )
 
@@ -54,6 +78,8 @@ if (TARGET KUserFeedbackWidgets)
     target_sources(kaddressbookprivate PRIVATE
         userfeedback/userfeedbackmanager.cpp
         userfeedback/kaddressbookuserfeedbackprovider.cpp
+        userfeedback/userfeedbackmanager.h
+        userfeedback/kaddressbookuserfeedbackprovider.h
         )
 endif()
 
@@ -107,8 +133,9 @@ install(TARGETS kaddressbookprivate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY 
 add_executable(kaddressbook)
 target_sources(kaddressbook PRIVATE
     kaddressbook_debug.cpp
-    main.cpp
     mainwindow.cpp
+    mainwindow.h
+    main.cpp
     kaddressbook.qrc
     )
 

@@ -3,6 +3,7 @@ add_library(kontact_kaddressbookplugin MODULE)
 
 target_sources(kontact_kaddressbookplugin PRIVATE
     kaddressbook_plugin.cpp
+    kaddressbook_plugin.h
 )
 ecm_qt_declare_logging_category(kontact_kaddressbookplugin HEADER kaddressbookplugin_debug.h IDENTIFIER KADDRESSBOOKPLUGIN_LOG CATEGORY_NAME org.kde.pim.kaddressbook_plugin
         DESCRIPTION "kaddressbook (kaddressbook kontact plugins)"

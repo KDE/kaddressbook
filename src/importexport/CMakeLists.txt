@@ -17,6 +17,15 @@ target_sources(KPimAddressbookImportExport PRIVATE
     plugin.cpp
     plugininterface.cpp
     pluginmanager.cpp
+    contactfields.h
+    contactlist.h
+    contactselectiondialog.h
+    contactselectionwidget.h
+    exportselectionwidget.h
+    importexportengine.h
+    plugin.h
+    plugininterface.h
+    pluginmanager.h
 )
 
 ecm_qt_declare_logging_category(KPimAddressbookImportExport
