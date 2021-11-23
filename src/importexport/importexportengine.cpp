@@ -20,9 +20,7 @@ ImportExportEngine::ImportExportEngine(QObject *parent)
 {
 }
 
-ImportExportEngine::~ImportExportEngine()
-{
-}
+ImportExportEngine::~ImportExportEngine() = default;
 
 void ImportExportEngine::setContactList(const ContactList &contacts)
 {

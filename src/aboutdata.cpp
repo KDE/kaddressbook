@@ -26,6 +26,4 @@ AboutData::AboutData()
     addAuthor(i18n("David Bryant"), i18n("Documentation (2019)"), QStringLiteral("davidbryant@gvtc.com"), QStringLiteral("https://davidcbryant.net"));
 }
 
-AboutData::~AboutData()
-{
-}
+AboutData::~AboutData() = default;

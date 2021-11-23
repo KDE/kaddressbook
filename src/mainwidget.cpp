@@ -114,14 +114,14 @@ public:
     Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role) const override
     {
         if (!index.isValid()) {
-            return QVariant();
+            return {};
         }
 
         if (role == Qt::CheckStateRole) {
             // Don't show the checkbox if the collection can't contain incidences
             const auto collection = index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
             if (collection.isValid() && isStructuralCollection(collection)) {
-                return QVariant();
+                return {};
             }
         }
         return KCheckableProxyModel::data(index, role);
@@ -831,7 +831,7 @@ Akonadi::Collection MainWidget::currentAddressBook() const
         return collection;
     }
 
-    return Akonadi::Collection();
+    return {};
 }
 
 QAbstractItemModel *MainWidget::allContactsModel()

@@ -33,6 +33,4 @@ KAddressBookUserFeedbackProvider::KAddressBookUserFeedbackProvider(QObject *pare
     addDataSource(new KUserFeedback::LocaleInfoSource);
 }
 
-KAddressBookUserFeedbackProvider::~KAddressBookUserFeedbackProvider()
-{
-}
+KAddressBookUserFeedbackProvider::~KAddressBookUserFeedbackProvider() = default;

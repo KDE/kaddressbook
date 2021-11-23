@@ -33,9 +33,7 @@ PrintProgress::PrintProgress(QWidget *parent)
     resize(QSize(370, 220).expandedTo(minimumSizeHint()));
 }
 
-PrintProgress::~PrintProgress()
-{
-}
+PrintProgress::~PrintProgress() = default;
 
 void PrintProgress::addMessage(const QString &msg)
 {

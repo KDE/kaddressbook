@@ -106,9 +106,7 @@ MikesStyle::MikesStyle(PrintingWizard *parent)
     setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
 }
 
-MikesStyle::~MikesStyle()
-{
-}
+MikesStyle::~MikesStyle() = default;
 
 void MikesStyle::print(const KContacts::Addressee::List &contacts, PrintProgress *progress)
 {

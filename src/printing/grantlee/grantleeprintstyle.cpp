@@ -31,9 +31,7 @@ GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard 
     setPreferredSortOptions(KAddressBookImportExport::ContactFields::FormattedName, Qt::AscendingOrder);
 }
 
-GrantleePrintStyle::~GrantleePrintStyle()
-{
-}
+GrantleePrintStyle::~GrantleePrintStyle() = default;
 
 void GrantleePrintStyle::print(const KContacts::Addressee::List &contacts, PrintProgress *progress)
 {

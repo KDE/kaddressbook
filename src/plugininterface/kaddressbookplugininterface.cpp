@@ -18,9 +18,7 @@ KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     setPluginDirectory(QStringLiteral("kaddressbook/mainview"));
 }
 
-KAddressBookPluginInterface::~KAddressBookPluginInterface()
-{
-}
+KAddressBookPluginInterface::~KAddressBookPluginInterface() = default;
 
 KAddressBookPluginInterface *KAddressBookPluginInterface::self()
 {

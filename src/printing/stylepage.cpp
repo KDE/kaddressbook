@@ -39,9 +39,7 @@ StylePage::StylePage(QWidget *parent, const QString &name)
     connect(mStyleCombo, &QComboBox::activated, this, &StylePage::styleChanged);
 }
 
-StylePage::~StylePage()
-{
-}
+StylePage::~StylePage() = default;
 
 void StylePage::setPreview(const QPixmap &pixmap)
 {

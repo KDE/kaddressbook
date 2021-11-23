@@ -137,9 +137,7 @@ RingBinderPrintStyle::RingBinderPrintStyle(PrintingWizard *parent)
     mPageAppearance->cbNote->setChecked(config.readEntry(ShowNote, false));
 }
 
-RingBinderPrintStyle::~RingBinderPrintStyle()
-{
-}
+RingBinderPrintStyle::~RingBinderPrintStyle() = default;
 
 void RingBinderPrintStyle::print(const KContacts::Addressee::List &contacts, PrintProgress *progress)
 {

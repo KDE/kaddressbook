@@ -69,9 +69,7 @@ void KAddressBookPart::newGroup()
     mMainWidget->newGroup();
 }
 
-KAddressBookPart::~KAddressBookPart()
-{
-}
+KAddressBookPart::~KAddressBookPart() = default;
 
 void KAddressBookPart::guiActivateEvent(KParts::GUIActivateEvent *e)
 {

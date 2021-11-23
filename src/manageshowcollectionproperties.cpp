@@ -32,9 +32,7 @@ ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainW
                            << QStringLiteral("PimCommon::CollectionAclPage") << QStringLiteral("Akonadi::CollectionMaintenancePage");
 }
 
-ManageShowCollectionProperties::~ManageShowCollectionProperties()
-{
-}
+ManageShowCollectionProperties::~ManageShowCollectionProperties() = default;
 
 void ManageShowCollectionProperties::showCollectionProperties()
 {

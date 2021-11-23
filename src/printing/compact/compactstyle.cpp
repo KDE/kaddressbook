@@ -134,9 +134,7 @@ CompactStyle::CompactStyle(PrintingWizard *parent)
     setAlternatingColors();
 }
 
-CompactStyle::~CompactStyle()
-{
-}
+CompactStyle::~CompactStyle() = default;
 
 void CompactStyle::print(const KContacts::Addressee::List &contacts, PrintProgress *progress)
 {

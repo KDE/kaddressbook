@@ -24,9 +24,7 @@ PrintStyle::PrintStyle(PrintingWizard *parent)
 {
 }
 
-PrintStyle::~PrintStyle()
-{
-}
+PrintStyle::~PrintStyle() = default;
 
 const QPixmap &PrintStyle::preview() const
 {
@@ -115,6 +113,4 @@ PrintStyleFactory::PrintStyleFactory(PrintingWizard *parent)
 {
 }
 
-PrintStyleFactory::~PrintStyleFactory()
-{
-}
+PrintStyleFactory::~PrintStyleFactory() = default;

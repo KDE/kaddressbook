@@ -52,9 +52,7 @@ MainWindow::MainWindow()
 #endif
 }
 
-MainWindow::~MainWindow()
-{
-}
+MainWindow::~MainWindow() = default;
 
 MainWidget *MainWindow::mainWidget() const
 {
@@ -88,7 +86,7 @@ void MainWindow::initActions()
 
 void MainWindow::updateHamburgerMenu()
 {
-    QMenu *menu = new QMenu(this);
+    auto menu = new QMenu(this);
     menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
     menu->addSeparator();
 
@@ -107,7 +105,7 @@ void MainWindow::configure()
 
 void MainWindow::configureKeyBindings()
 {
-    KShortcutsDialog *dlg = new KShortcutsDialog(this);
+    auto dlg = new KShortcutsDialog(this);
     dlg->setAttribute(Qt::WA_DeleteOnClose);
     dlg->setModal(false);
     dlg->addCollection(actionCollection());

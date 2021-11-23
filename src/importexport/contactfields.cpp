@@ -116,7 +116,7 @@ QString ContactFields::label(Field field)
         return i18n("Spouse");
     }
 
-    return QString();
+    return {};
 }
 
 ContactFields::Fields ContactFields::allFields()
@@ -363,7 +363,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
 {
     switch (field) {
     case Undefined:
-        return QString();
+        return {};
     case FormattedName:
         return contact.formattedName();
     case Prefix:
@@ -383,7 +383,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         if (birthday.date().isValid()) {
             return birthday.date().toString(Qt::ISODate);
         } else {
-            return QString();
+            return {};
         }
     }
     case Anniversary:
@@ -465,7 +465,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         if (!emails.isEmpty()) {
             return emails.at(0);
         } else {
-            return QString();
+            return {};
         }
     }
     case Email2: {
@@ -473,7 +473,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         if (emails.count() > 1) {
             return emails.at(1);
         } else {
-            return QString();
+            return {};
         }
     }
     case Email3: {
@@ -481,7 +481,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         if (emails.count() > 2) {
             return emails.at(2);
         } else {
-            return QString();
+            return {};
         }
     }
     case Email4: {
@@ -489,7 +489,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         if (emails.count() > 3) {
             return emails.at(3);
         } else {
-            return QString();
+            return {};
         }
     }
     case Mailer:
@@ -518,5 +518,5 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"));
     }
 
-    return QString();
+    return {};
 }

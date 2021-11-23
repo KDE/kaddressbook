@@ -51,9 +51,7 @@ KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVari
     mUniqueAppWatcher = new KontactInterface::UniqueAppWatcher(new KontactInterface::UniqueAppHandlerFactory<KAddressBookUniqueAppHandler>(), this);
 }
 
-KAddressBookPlugin::~KAddressBookPlugin()
-{
-}
+KAddressBookPlugin::~KAddressBookPlugin() = default;
 
 void KAddressBookPlugin::slotNewContact()
 {

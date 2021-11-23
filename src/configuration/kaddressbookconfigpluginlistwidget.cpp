@@ -32,9 +32,7 @@ KAddressBookConfigPluginListWidget::KAddressBookConfigPluginListWidget(QWidget *
     connect(this, &KAddressBookConfigPluginListWidget::configureClicked, this, &KAddressBookConfigPluginListWidget::slotConfigureClicked);
 }
 
-KAddressBookConfigPluginListWidget::~KAddressBookConfigPluginListWidget()
-{
-}
+KAddressBookConfigPluginListWidget::~KAddressBookConfigPluginListWidget() = default;
 
 void KAddressBookConfigPluginListWidget::save()
 {

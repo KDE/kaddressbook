@@ -32,7 +32,7 @@ ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
 QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid()) {
-        return QVariant();
+        return {};
         qCWarning(KADDRESSBOOK_LOG) << "invalid index!";
     }
     if (role >= Roles::PictureRole && role <= Roles::DescriptionRole) {
@@ -62,7 +62,7 @@ QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
             }
             switch (role) {
             case Roles::PictureRole:
-                return QVariant();
+                return {};
             case Roles::InitialsRole:
                 return mPendingGroupItems.contains(item.id()) ? i18n("...") : getInitials(item.id(), groupContacts);
             case Roles::DescriptionRole:

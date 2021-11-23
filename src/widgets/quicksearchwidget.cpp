@@ -42,9 +42,7 @@ QuickSearchWidget::QuickSearchWidget(QWidget *parent)
     connect(mTimer, &QTimer::timeout, this, &QuickSearchWidget::delayedTextChanged);
 }
 
-QuickSearchWidget::~QuickSearchWidget()
-{
-}
+QuickSearchWidget::~QuickSearchWidget() = default;
 
 QSize QuickSearchWidget::sizeHint() const
 {

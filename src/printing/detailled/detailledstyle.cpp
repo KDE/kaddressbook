@@ -238,9 +238,7 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
     mPageAppearance->kcbHeaderTextColor->setColor(config.readEntry(ContactHeaderForeColor, QColor(Qt::white)));
 }
 
-DetailledPrintStyle::~DetailledPrintStyle()
-{
-}
+DetailledPrintStyle::~DetailledPrintStyle() = default;
 
 void DetailledPrintStyle::print(const KContacts::Addressee::List &contacts, PrintProgress *progress)
 {

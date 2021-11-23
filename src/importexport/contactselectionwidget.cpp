@@ -75,7 +75,7 @@ Akonadi::Item::List ContactSelectionWidget::selectedItems() const
         qWarning() << " It's a bug here.";
     }
 
-    return Akonadi::Item::List();
+    return {};
 }
 
 ContactList ContactSelectionWidget::selectedContacts() const
@@ -176,7 +176,7 @@ Akonadi::Item::List ContactSelectionWidget::collectAllItems() const
     qApp->processEvents();
 
     if (!job->exec()) {
-        return Akonadi::Item::List();
+        return {};
     }
 
     return job->items();
