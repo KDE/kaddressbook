@@ -52,7 +52,9 @@ int KAddressBookApplication::activate(const QStringList &arguments, const QStrin
 
 int main(int argc, char **argv)
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
+#endif
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
     KAddressBookApplication app(argc, &argv);
