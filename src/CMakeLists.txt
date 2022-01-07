@@ -168,7 +168,7 @@ install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_ME
 ####################################"
 add_library(kaddressbookpart MODULE)
 
-target_sources(kaddressbookpart PRIVATE kaddressbookpart.cpp kaddressbook_debug.cpp kaddressbook.qrc)
+target_sources(kaddressbookpart PRIVATE kaddressbookpart.cpp kaddressbookpart.h kaddressbook_debug.cpp kaddressbook.qrc)
 target_link_libraries(kaddressbookpart  kaddressbookprivate KF5::I18n KF5::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
