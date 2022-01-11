@@ -10,7 +10,6 @@
 
 #include <KLocalizedString>
 #include <QUrl>
-#include <kcontacts_version.h>
 
 using namespace KAddressBookImportExport;
 
@@ -166,23 +165,15 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
         contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"), value);
         break;
     case ContactFields::PreferredEmail: {
-#if KContacts_VERSION < QT_VERSION_CHECK(5, 88, 0)
-        contact.insertEmail(value, true);
-#else
         KContacts::Email email(value);
         email.setPreferred(true);
         contact.addEmail(email);
-#endif
         break;
     }
     case ContactFields::Email2:
     case ContactFields::Email3:
     case ContactFields::Email4:
-#if KContacts_VERSION < QT_VERSION_CHECK(5, 88, 0)
-        contact.insertEmail(value, false);
-#else
         contact.addEmail(KContacts::Email(value));
-#endif
         break;
     case ContactFields::Role:
         contact.setRole(value);
