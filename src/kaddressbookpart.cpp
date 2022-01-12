@@ -7,8 +7,7 @@
 */
 
 #include "kaddressbookpart.h"
-#include <kcoreaddons_version.h>
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include "kaddressbookmigrateapplication.h"
 #endif
 #include "mainwidget.h"
@@ -28,7 +27,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     : KParts::Part(parent)
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     KAddressBookMigrateApplication migrate;
     migrate.migrate();
 #endif
