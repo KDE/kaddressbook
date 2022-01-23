@@ -5,8 +5,9 @@
 */
 
 #pragma once
-
 #include "kaddressbook_export.h"
+#include <QObject>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <PimCommon/MigrateApplicationFiles>
 
 class KADDRESSBOOK_EXPORT KAddressBookMigrateApplication
@@ -19,4 +20,4 @@ private:
     void initializeMigrator();
     PimCommon::MigrateApplicationFiles mMigrator;
 };
-
+#endif

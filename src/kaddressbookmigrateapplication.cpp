@@ -3,8 +3,8 @@
 
    SPDX-License-Identifier: GPL-2.0-or-later
 */
-
 #include "kaddressbookmigrateapplication.h"
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 
 #include <Kdelibs4ConfigMigrator>
 
@@ -64,3 +64,4 @@ void KAddressBookMigrateApplication::initializeMigrator()
 
     // TODO add folder to migrate
 }
+#endif
