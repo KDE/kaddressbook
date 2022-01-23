@@ -76,7 +76,7 @@
 #include <QTextBrowser>
 
 #include <Akonadi/ItemModifyJob>
-#include <KPimPrintPreviewDialog>
+#include <PimCommon/KPimPrintPreviewDialog>
 #include <QActionGroup>
 #include <QDBusConnection>
 #include <QHBoxLayout>
