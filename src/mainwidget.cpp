@@ -70,13 +70,13 @@
 #include <KPluginMetaData>
 #include <KSelectionProxyModel>
 #include <KToggleAction>
+#include <KWindowStateSaver>
 #include <KXMLGUIClient>
 #include <QAction>
 #include <QApplication>
 #include <QTextBrowser>
 
 #include <Akonadi/ItemModifyJob>
-#include <PimCommon/KPimPrintPreviewDialog>
 #include <QActionGroup>
 #include <QDBusConnection>
 #include <QHBoxLayout>
@@ -694,7 +694,8 @@ void MainWidget::printPreview()
     printer.setOutputFormat(QPrinter::PdfFormat);
     printer.setCollateCopies(true);
 
-    QPointer<PimCommon::KPimPrintPreviewDialog> previewdlg = new PimCommon::KPimPrintPreviewDialog(&printer, this);
+    QPointer<QPrintPreviewDialog> previewdlg = new QPrintPreviewDialog(&printer, this);
+    new KWindowStateSaver(previewdlg.data(), "AddressBookPrintPreviewDialog");
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());
     connect(previewdlg.data(), &QPrintPreviewDialog::paintRequested, this, [&wizard]() {
