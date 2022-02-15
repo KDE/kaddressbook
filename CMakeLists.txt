@@ -16,6 +16,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMAddAppIcon)
 include(ECMQtDeclareLoggingCategory)
+include(ECMDeprecationSettings)
 
 include(ECMSetupVersion)
 include(ECMAddTests)
@@ -84,8 +85,7 @@ include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
-add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055800)
+ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.88.0)
 
 
 find_package(KUserFeedback 1.2.0 CONFIG)
