@@ -8,7 +8,7 @@
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
-#include <Akonadi/Contact/GrantleePrint>
+#include <Akonadi/GrantleePrint>
 
 #include <KContacts/Addressee>
 

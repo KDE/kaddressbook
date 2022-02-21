@@ -9,7 +9,7 @@
 #include "stylecontactlistdelegate.h"
 #include "contactinfoproxymodel.h"
 
-#include <Akonadi/Contact/ContactsTreeModel>
+#include <Akonadi/ContactsTreeModel>
 
 #include <QApplication>
 #include <QImage>

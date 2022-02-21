@@ -27,8 +27,8 @@
 #include "importexport/plugininterface.h"
 #include "importexport/pluginmanager.h"
 
-#include <Akonadi/Contact/GrantleeContactFormatter>
-#include <Akonadi/Contact/GrantleeContactGroupFormatter>
+#include <Akonadi/GrantleeContactFormatter>
+#include <Akonadi/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
 
 #include "uistatesaver.h"
@@ -51,13 +51,13 @@
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
 #include <QPointer>
 
-#include <Akonadi/Contact/ContactDefaultActions>
-#include <Akonadi/Contact/ContactGroupEditorDialog>
-#include <Akonadi/Contact/ContactGroupViewer>
-#include <Akonadi/Contact/ContactViewer>
-#include <Akonadi/Contact/ContactsFilterProxyModel>
-#include <Akonadi/Contact/ContactsTreeModel>
-#include <Akonadi/Contact/StandardContactActionManager>
+#include <Akonadi/ContactDefaultActions>
+#include <Akonadi/ContactGroupEditorDialog>
+#include <Akonadi/ContactGroupViewer>
+#include <Akonadi/ContactViewer>
+#include <Akonadi/ContactsFilterProxyModel>
+#include <Akonadi/ContactsTreeModel>
+#include <Akonadi/StandardContactActionManager>
 
 #include "kaddressbook_debug.h"
 #include <KActionCollection>
