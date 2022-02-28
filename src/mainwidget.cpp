@@ -45,7 +45,7 @@
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeView>
 #include <Akonadi/MimeTypeChecker>
-#include <AkonadiSearch/Debug/akonadisearchdebugdialog.h>
+#include <Debug/akonadisearchdebugdialog.h>
 #include <KContacts/Addressee>
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
