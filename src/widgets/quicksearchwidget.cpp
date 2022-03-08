@@ -20,11 +20,12 @@ using namespace std::chrono_literals;
 
 QuickSearchWidget::QuickSearchWidget(QWidget *parent)
     : QWidget(parent)
+    , mEdit(new QLineEdit(this))
+    , mTimer(new QTimer(this))
 {
     auto layout = new QVBoxLayout(this);
     layout->setContentsMargins({});
 
-    mEdit = new QLineEdit(this);
     // If change shortcut changes it in mainwidget
     mEdit->setClearButtonEnabled(true);
     mEdit->setToolTip(i18nc("@info:tooltip", "Search contacts in list"));
@@ -36,7 +37,6 @@ QuickSearchWidget::QuickSearchWidget(QWidget *parent)
 
     layout->addWidget(mEdit);
 
-    mTimer = new QTimer(this);
 
     connect(mEdit, &QLineEdit::textChanged, this, &QuickSearchWidget::resetTimer);
     connect(mTimer, &QTimer::timeout, this, &QuickSearchWidget::delayedTextChanged);

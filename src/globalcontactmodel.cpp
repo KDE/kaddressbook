@@ -20,14 +20,14 @@
 GlobalContactModel *GlobalContactModel::mInstance = nullptr;
 
 GlobalContactModel::GlobalContactModel()
+    : mSession(new Akonadi::Session("KAddressBook::GlobalContactSession"))
+    , mMonitor(new Akonadi::ChangeRecorder)
 {
-    mSession = new Akonadi::Session("KAddressBook::GlobalContactSession");
 
     Akonadi::ItemFetchScope scope;
     scope.fetchFullPayload(true);
     scope.fetchAttribute<Akonadi::EntityDisplayAttribute>();
 
-    mMonitor = new Akonadi::ChangeRecorder;
     mMonitor->setSession(mSession);
     mMonitor->fetchCollection(true);
     mMonitor->setItemFetchScope(scope);

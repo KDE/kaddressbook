@@ -15,18 +15,18 @@
 
 ContactSwitcher::ContactSwitcher(QWidget *parent)
     : QWidget(parent)
+    , mNextButton(new QPushButton(i18nc("@action:button Next contact", "Next"), this))
+    , mPreviousButton(new QPushButton(i18nc("@action:button Previous contact", "Previous"), this))
+    , mStatusLabel(new QLabel(this))
 {
     auto layout = new QHBoxLayout(this);
 
-    mPreviousButton = new QPushButton(i18nc("@action:button Previous contact", "Previous"));
     mPreviousButton->setToolTip(i18nc("@info:tooltip", "Move to the previous contact in the list"));
     mPreviousButton->setWhatsThis(i18nc("@info:whatsthis", "Press this button to move to the previous contact in the list."));
 
-    mNextButton = new QPushButton(i18nc("@action:button Next contact", "Next"));
     mNextButton->setToolTip(i18nc("@info:tooltip", "Move to the next contact in the list"));
     mNextButton->setWhatsThis(i18nc("@info:whatsthis", "Press this button to move to the next contact in the list."));
 
-    mStatusLabel = new QLabel();
 
     layout->addWidget(mPreviousButton);
     layout->addWidget(mNextButton);

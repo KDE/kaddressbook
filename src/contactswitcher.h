@@ -55,8 +55,8 @@ private:
     void updateStatus();
 
     QAbstractItemView *mView = nullptr;
-    QPushButton *mNextButton = nullptr;
-    QPushButton *mPreviousButton = nullptr;
-    QLabel *mStatusLabel = nullptr;
+    QPushButton *const mNextButton;
+    QPushButton *const mPreviousButton;
+    QLabel *const mStatusLabel;
 };
 

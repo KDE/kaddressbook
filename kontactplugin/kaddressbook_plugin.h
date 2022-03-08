@@ -33,7 +33,7 @@ class KAddressBookPlugin : public KontactInterface::Plugin
     Q_OBJECT
 
 public:
-    KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &);
+    explicit KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &);
     ~KAddressBookPlugin() override;
 
     bool isRunningStandalone() const override;

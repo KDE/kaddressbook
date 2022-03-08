@@ -72,7 +72,7 @@ protected:
 private:
     void resetTimer();
     void delayedTextChanged();
-    QLineEdit *mEdit = nullptr;
-    QTimer *mTimer = nullptr;
+    QLineEdit *const mEdit;
+    QTimer *const mTimer;
 };
 

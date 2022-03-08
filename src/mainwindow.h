@@ -33,7 +33,7 @@ private:
     void initActions();
     void updateHamburgerMenu();
 
-    MainWidget *mMainWidget = nullptr;
+    MainWidget *const mMainWidget;
     KToggleAction *mShowMenuBarAction = nullptr;
     KHamburgerMenu *mHamburgerMenu = nullptr;
 };

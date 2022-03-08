@@ -131,11 +131,7 @@ public:
 
 MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     : QWidget(parent)
-    , mAllContactsModel(nullptr)
     , mXmlGuiClient(guiClient)
-    , mGrantleeThemeManager(nullptr)
-    , mQuickSearchAction(nullptr)
-    , mServerSideSubscription(nullptr)
 {
     (void)new KaddressbookAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);

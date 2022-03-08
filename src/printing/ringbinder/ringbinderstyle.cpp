@@ -78,8 +78,9 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
             for (const KContacts::Address &address : addresses) {
-                const QString data =
-                    address.formattedAddress().replace(QLatin1String("\n\n"), QStringLiteral("\n")).replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString data = address.formatted(KContacts::AddressFormatStyle::Postal)
+                                         .replace(QLatin1String("\n\n"), QStringLiteral("\n"))
+                                         .replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
                 const QString subBlock = QLatin1String("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1String("</p>");
 
                 leftBlock.append(subBlock);

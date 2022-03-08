@@ -138,7 +138,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
                 }
                 block.header += QLatin1Char(':');
 
-                block.entries = address.formattedAddress().split(QLatin1Char('\n'), Qt::KeepEmptyParts);
+                block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).split(QLatin1Char('\n'), Qt::KeepEmptyParts);
                 blocks.append(block);
             }
         }
