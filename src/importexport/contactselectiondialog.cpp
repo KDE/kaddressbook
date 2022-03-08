@@ -17,11 +17,11 @@ using namespace KAddressBookImportExport;
 
 ContactSelectionDialog::ContactSelectionDialog(QItemSelectionModel *selectionModel, bool allowToSelectTypeToExport, QWidget *parent)
     : QDialog(parent)
+    , mSelectionWidget(new ContactSelectionWidget(selectionModel, this))
 {
     setWindowTitle(i18nc("@title:window", "Select Contacts"));
     auto mainLayout = new QVBoxLayout(this);
 
-    mSelectionWidget = new ContactSelectionWidget(selectionModel, this);
     if (allowToSelectTypeToExport) {
         mainLayout->addWidget(mSelectionWidget);
         mVCardExport = new ExportSelectionWidget(this);

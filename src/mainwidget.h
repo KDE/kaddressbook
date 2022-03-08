@@ -151,7 +151,7 @@ private:
     QActionGroup *mViewModeGroup = nullptr;
 
     ModelColumnManager *mModelColumnManager = nullptr;
-    KXMLGUIClient *mXmlGuiClient = nullptr;
+    KXMLGUIClient *const mXmlGuiClient;
     KAddressBookGrantlee::GrantleeContactFormatter *mFormatter = nullptr;
     KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter = nullptr;
     GrantleeTheme::ThemeManager *mGrantleeThemeManager = nullptr;

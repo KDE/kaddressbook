@@ -64,7 +64,7 @@ public:
     Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
 
 private:
-    ContactSelectionWidget *mSelectionWidget = nullptr;
+    ContactSelectionWidget *const mSelectionWidget;
     ExportSelectionWidget *mVCardExport = nullptr;
 };
 }
