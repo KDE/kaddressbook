@@ -19,6 +19,7 @@ K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookPluginsConfig, "kaddressbook_config_plug
 
 KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
+    , mConfigurePluginWidget(new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(this), this))
 {
     auto lay = new QHBoxLayout(this);
     lay->setContentsMargins({});
@@ -33,7 +34,6 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, cons
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
 
     setAboutData(about);
-    mConfigurePluginWidget = new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(this), this);
     connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
     lay->addWidget(mConfigurePluginWidget);
 }

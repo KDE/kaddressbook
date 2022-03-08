@@ -20,6 +20,7 @@ K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookUserFeedBackConfig, "kaddressbook_config
 
 KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
+    , mUserFeedbackWidget(new KUserFeedback::FeedbackConfigWidget(this))
 {
     auto lay = new QHBoxLayout(this);
     lay->setContentsMargins({});
@@ -34,7 +35,6 @@ KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QWidget *pa
     about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
 
     setAboutData(about);
-    mUserFeedbackWidget = new KUserFeedback::FeedbackConfigWidget(this);
     connect(mUserFeedbackWidget, &KUserFeedback::FeedbackConfigWidget::configurationChanged, this, &KCMKaddressbookUserFeedBackConfig::markAsChanged);
 
     lay->addWidget(mUserFeedbackWidget);

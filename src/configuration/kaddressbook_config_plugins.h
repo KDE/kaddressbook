@@ -26,6 +26,6 @@ public:
 
 private:
     void slotConfigChanged();
-    PimCommon::ConfigurePluginsWidget *mConfigurePluginWidget = nullptr;
+    PimCommon::ConfigurePluginsWidget *const mConfigurePluginWidget;
 };
 }
