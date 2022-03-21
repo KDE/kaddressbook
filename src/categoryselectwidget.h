@@ -70,4 +70,3 @@ Q_SIGNALS:
 private:
     std::unique_ptr<CategorySelectWidgetPrivate> const d_ptr;
 };
-

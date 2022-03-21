@@ -115,4 +115,3 @@ private:
     const QVector<int> mKrole{PictureRole, InitialsRole, DescriptionRole};
     Akonadi::Monitor *const mMonitor;
 };
-

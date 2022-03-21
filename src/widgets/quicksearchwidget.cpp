@@ -37,7 +37,6 @@ QuickSearchWidget::QuickSearchWidget(QWidget *parent)
 
     layout->addWidget(mEdit);
 
-
     connect(mEdit, &QLineEdit::textChanged, this, &QuickSearchWidget::resetTimer);
     connect(mTimer, &QTimer::timeout, this, &QuickSearchWidget::delayedTextChanged);
 }

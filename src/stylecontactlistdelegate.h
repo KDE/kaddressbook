@@ -22,4 +22,3 @@ private:
     const QSize mKImageSize;
     const qreal mKMargin = 5.0;
 };
-

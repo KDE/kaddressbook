@@ -48,4 +48,3 @@ KADDRESSBOOK_EXPORT void saveState(QWidget *widget, KConfigGroup &config);
 KADDRESSBOOK_EXPORT void restoreState(QWidget *widget, const KConfigGroup &config);
 }
 }
-

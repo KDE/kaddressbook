@@ -21,4 +21,3 @@ private:
     const KAddressBookImportExport::ContactFields::Field mSortField;
     const Qt::SortOrder mSortOrder;
 };
-

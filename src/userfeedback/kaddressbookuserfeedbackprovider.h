@@ -16,4 +16,3 @@ public:
     explicit KAddressBookUserFeedbackProvider(QObject *parent = nullptr);
     ~KAddressBookUserFeedbackProvider() override;
 };
-

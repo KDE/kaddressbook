@@ -31,9 +31,7 @@ MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)
     , mMainWidget(new MainWidget(this, this))
 {
-
     setCentralWidget(mMainWidget);
-
 
     setStandardToolBarMenuEnabled(true);
 

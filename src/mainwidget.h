@@ -162,4 +162,3 @@ private:
 
     Akonadi::Item mPendingSelection;
 };
-

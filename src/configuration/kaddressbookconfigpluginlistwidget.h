@@ -25,4 +25,3 @@ private:
     QVector<PluginItem *> mPluginGenericItems;
     QVector<PluginItem *> mPluginImportExportItems;
 };
-

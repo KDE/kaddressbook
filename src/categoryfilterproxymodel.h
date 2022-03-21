@@ -69,4 +69,3 @@ protected:
 private:
     std::unique_ptr<CategoryFilterProxyModelPrivate> const d_ptr;
 };
-

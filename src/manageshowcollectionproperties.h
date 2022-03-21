@@ -32,4 +32,3 @@ private:
     QStringList mPages;
     MainWidget *const mMainWidget;
 };
-

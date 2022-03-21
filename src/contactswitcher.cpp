@@ -27,7 +27,6 @@ ContactSwitcher::ContactSwitcher(QWidget *parent)
     mNextButton->setToolTip(i18nc("@info:tooltip", "Move to the next contact in the list"));
     mNextButton->setWhatsThis(i18nc("@info:whatsthis", "Press this button to move to the next contact in the list."));
 
-
     layout->addWidget(mPreviousButton);
     layout->addWidget(mNextButton);
     layout->addStretch(1);

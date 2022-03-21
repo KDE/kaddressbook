@@ -51,4 +51,3 @@ private:
 
     KontactInterface::UniqueAppWatcher *mUniqueAppWatcher = nullptr;
 };
-

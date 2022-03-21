@@ -34,4 +34,3 @@ protected:
 private:
     MainWidget *mMainWidget = nullptr;
 };
-

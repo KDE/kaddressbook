@@ -129,4 +129,3 @@ private:
     void loadGrantleeStyle();
 };
 }
-

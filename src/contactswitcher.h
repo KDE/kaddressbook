@@ -59,4 +59,3 @@ private:
     QPushButton *const mPreviousButton;
     QLabel *const mStatusLabel;
 };
-

@@ -36,4 +36,3 @@ private:
     KContacts::ContactGroup::List mContactGroupList;
 };
 }
-

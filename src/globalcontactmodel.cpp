@@ -23,7 +23,6 @@ GlobalContactModel::GlobalContactModel()
     : mSession(new Akonadi::Session("KAddressBook::GlobalContactSession"))
     , mMonitor(new Akonadi::ChangeRecorder)
 {
-
     Akonadi::ItemFetchScope scope;
     scope.fetchFullPayload(true);
     scope.fetchAttribute<Akonadi::EntityDisplayAttribute>();

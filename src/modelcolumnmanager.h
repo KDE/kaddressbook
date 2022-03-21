@@ -60,4 +60,3 @@ private:
     Akonadi::ContactsTreeModel::Columns mColumns;
     QWidget *mWidget = nullptr;
 };
-

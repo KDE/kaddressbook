@@ -37,4 +37,3 @@ private:
     QScopedPointer<PluginManagerPrivate> const d;
 };
 }
-

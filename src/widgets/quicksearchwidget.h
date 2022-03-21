@@ -75,4 +75,3 @@ private:
     QLineEdit *const mEdit;
     QTimer *const mTimer;
 };
-

@@ -59,4 +59,3 @@ public:
     QString description() const override;
 };
 }
-

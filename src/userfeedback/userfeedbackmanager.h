@@ -25,4 +25,3 @@ public:
 private:
     KUserFeedback::Provider *const mUserFeedbackProvider;
 };
-

@@ -104,4 +104,3 @@ public:
     Q_REQUIRED_RESULT static QString value(Field field, const KContacts::Addressee &contact);
 };
 }
-

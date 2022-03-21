@@ -49,4 +49,3 @@ private:
     Akonadi::ChangeRecorder *const mMonitor;
     Akonadi::ContactsTreeModel *mModel = nullptr;
 };
-

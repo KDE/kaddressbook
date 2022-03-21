@@ -88,4 +88,3 @@ private:
 
     KAddressBookImportExport::ContactFields::Fields mFields;
 };
-

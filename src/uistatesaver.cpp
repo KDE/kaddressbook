@@ -84,7 +84,8 @@ struct Restorer {
         }                                                                                                                                                      \
     }
 
-template<typename Op, typename Config> static void processWidgets(QWidget *widget, Config config)
+template<typename Op, typename Config>
+static void processWidgets(QWidget *widget, Config config)
 {
     QList<QWidget *> widgets = widget->findChildren<QWidget *>();
     widgets << widget;

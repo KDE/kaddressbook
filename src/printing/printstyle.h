@@ -168,4 +168,3 @@ protected:
     PrintingWizard *mParent = nullptr;
 };
 }
-

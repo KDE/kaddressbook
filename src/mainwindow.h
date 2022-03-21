@@ -37,4 +37,3 @@ private:
     KToggleAction *mShowMenuBarAction = nullptr;
     KHamburgerMenu *mHamburgerMenu = nullptr;
 };
-
