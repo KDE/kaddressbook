@@ -20,13 +20,13 @@
 #include <KToggleFullScreenAction>
 #include <KToolBar>
 #include <QAction>
+#include <QFontDatabase>
 #include <QMenuBar>
 #include <QPointer>
 #ifdef WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
 #include <KUserFeedback/Provider>
-#include <QFontDatabase>
 #endif
 
 MainWindow::MainWindow()
