@@ -13,6 +13,7 @@
 class MainWidget;
 class KToggleAction;
 class KHamburgerMenu;
+class KToggleFullScreenAction;
 class MainWindow : public KXmlGuiWindow
 {
     Q_OBJECT
@@ -32,8 +33,10 @@ private:
 
     void initActions();
     void updateHamburgerMenu();
+    void slotFullScreen(bool t);
 
     MainWidget *const mMainWidget;
     KToggleAction *mShowMenuBarAction = nullptr;
     KHamburgerMenu *mHamburgerMenu = nullptr;
+    KToggleFullScreenAction *mShowFullScreenAction = nullptr;
 };

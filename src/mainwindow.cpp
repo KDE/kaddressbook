@@ -17,6 +17,7 @@
 #include <KSharedConfig>
 #include <KShortcutsDialog>
 #include <KStandardAction>
+#include <KToggleFullScreenAction>
 #include <KToolBar>
 #include <QAction>
 #include <QMenuBar>
@@ -25,6 +26,7 @@
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
 #include <KUserFeedback/Provider>
+#include <QFontDatabase>
 #endif
 
 MainWindow::MainWindow()
@@ -79,6 +81,29 @@ void MainWindow::initActions()
             // q and mHamburgerMenu's aboutToShowMenu signal.
             disconnect(mHamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, nullptr);
         });
+    }
+    mShowFullScreenAction = KStandardAction::fullScreen(nullptr, nullptr, this, actionCollection());
+    actionCollection()->setDefaultShortcut(mShowFullScreenAction, Qt::Key_F11);
+    connect(mShowFullScreenAction, &QAction::toggled, this, &MainWindow::slotFullScreen);
+}
+
+void MainWindow::slotFullScreen(bool t)
+{
+    KToggleFullScreenAction::setFullScreen(this, t);
+    QMenuBar *mb = menuBar();
+    if (t) {
+        auto b = new QToolButton(mb);
+        b->setDefaultAction(mShowFullScreenAction);
+        b->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Ignored));
+        b->setFont(QFontDatabase::systemFont(QFontDatabase::SmallestReadableFont));
+        mb->setCornerWidget(b, Qt::TopRightCorner);
+        b->setVisible(true);
+        b->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    } else {
+        QWidget *w = mb->cornerWidget(Qt::TopRightCorner);
+        if (w) {
+            w->deleteLater();
+        }
     }
 }
 
