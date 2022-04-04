@@ -88,6 +88,9 @@ public Q_SLOTS:
 
     void handleCommandLine(const QStringList &arguments);
 
+protected:
+    Q_REQUIRED_RESULT bool event(QEvent *e) override;
+
 private Q_SLOTS:
     void slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface);
     void delayedInit();
@@ -121,6 +124,7 @@ private:
     void saveSplitterStates() const;
     void restoreSplitterStates();
     void initializeImportExportPlugin(KActionCollection *collection);
+    void slotGeneralPaletteChanged();
     Akonadi::EntityTreeModel *entityTreeModel() const;
 
     QAbstractItemModel *allContactsModel();

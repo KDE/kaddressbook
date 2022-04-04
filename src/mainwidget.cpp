@@ -303,6 +303,25 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     initializeImportExportPlugin(guiClient->actionCollection());
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
     updateQuickSearchText();
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    connect(qApp, &QApplication::paletteChanged, this, &MainWidget::slotGeneralPaletteChanged);
+#endif
+}
+
+void MainWidget::slotGeneralPaletteChanged()
+{
+    mContactDetails->updateView();
+    mContactGroupDetails->updateView();
+}
+
+bool MainWidget::event(QEvent *e)
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    if (e->type() == QEvent::ApplicationPaletteChange) {
+        slotGeneralPaletteChanged();
+    }
+#endif
+    return QWidget::event(e);
 }
 
 void MainWidget::setFocusToTreeView()
