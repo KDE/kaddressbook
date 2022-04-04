@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui name="kaddressbook" version="44" translationDomain="kaddressbook">
+<gui name="kaddressbook" version="45" translationDomain="kaddressbook">
 
   <MenuBar>
     <Menu name="file"><text>&amp;File</text>
@@ -48,6 +48,7 @@
       <Action name="options_show_qrcodes"/>
       <Separator/>
       <Action name="fullscreen"/>
+
     </Menu>
 
     <Menu name="action" noMerge="1"><text>&amp;Action</text>
@@ -60,6 +61,8 @@
 
     <Menu name="settings"><text>&amp;Settings</text>
       <Action name="kaddressbook_configure" />
+      <Separator/>
+      <Action name="colorscheme_menu" />
     </Menu>
   </MenuBar>
 

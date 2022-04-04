@@ -76,6 +76,7 @@
 #include <QTextBrowser>
 
 #include <Akonadi/ItemModifyJob>
+#include <KColorSchemeManager>
 #include <KWindowStateSaver>
 #include <QActionGroup>
 #include <QDBusConnection>
@@ -684,6 +685,9 @@ void MainWidget::setupActions(KActionCollection *collection)
     mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription..."), this);
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
+
+    auto manager = new KColorSchemeManager(this);
+    collection->addAction(QStringLiteral("colorscheme_menu"), manager->createSchemeSelectionMenu(this));
 }
 
 void MainWidget::printPreview()
