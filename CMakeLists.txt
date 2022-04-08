@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.19.90")
+set(PIM_VERSION "5.20.0")
 project(kaddressbook VERSION ${PIM_VERSION})
-set(RELEASE_SERVICE_VERSION "22.03.90")
+set(RELEASE_SERVICE_VERSION "22.04.0")
 set(KF5_MIN_VERSION "5.91.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
@@ -34,7 +34,7 @@ include(ECMGeneratePriFile)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION rc)
+set(KDEPIM_DEV_VERSION)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
