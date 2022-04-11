@@ -7,10 +7,14 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@latest'
     'pim/akonadi' : '@same'
     'pim/akonadi-contacts' : '@same'
-    'pim/akonadi-search' : '@same'
     'pim/grantleetheme' : '@same'
     'pim/kontactinterface' : '@same'
     'pim/kpimtextedit' : '@same'
     'pim/libkdepim' : '@same'
     'pim/pimcommon' : '@same'
     'third-party/grantlee' : '@stable'
+
+- 'on': ['Linux', 'FreeBSD', 'macOS']
+  'require':
+    'pim/akonadi-search' : '@same'
+
