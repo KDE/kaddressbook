@@ -117,12 +117,17 @@ target_link_libraries(kaddressbookprivate
     KF5::JobWidgets
     KF5::KIOWidgets
     Qt${QT_MAJOR_VERSION}::PrintSupport
-    KF5::AkonadiSearchDebug
     KF5::I18n
     KF5::Prison
     )
 if (TARGET KUserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets)
+endif()
+
+if (KF5AkonadiSearch_FOUND)
+    target_link_libraries(kaddressbookprivate
+        PRIVATE
+        KF5::AkonadiSearchDebug)
 endif()
 
 target_include_directories(kaddressbookprivate PUBLIC "$<BUILD_INTERFACE:${kaddressbook_SOURCE_DIR};${kaddressbook_BINARY_DIR}>")

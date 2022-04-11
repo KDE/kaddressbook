@@ -45,7 +45,9 @@
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeView>
 #include <Akonadi/MimeTypeChecker>
+#ifndef FORCE_DISABLE_AKONADI_SEARCH
 #include <Debug/akonadisearchdebugdialog.h>
+#endif
 #include <KContacts/Addressee>
 #include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
@@ -693,14 +695,14 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->addAction(QStringLiteral("focus_to_quickseach"), mQuickSearchAction);
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
     collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT | Qt::Key_Q));
-
+#ifndef FORCE_DISABLE_AKONADI_SEARCH
     if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
         action = collection->addAction(QStringLiteral("debug_akonadi_search"));
         // Don't translate it. It's just for debug
         action->setText(QStringLiteral("Debug Akonadi Search..."));
         connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
-
+#endif
     mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription..."), this);
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
@@ -1015,6 +1017,7 @@ const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem()
 
 void MainWidget::slotDebugAkonadiSearch()
 {
+#ifndef FORCE_DISABLE_AKONADI_SEARCH
     const Akonadi::Item::List lst = collectSelectedAllContactsItem(mItemView->selectionModel());
     if (lst.isEmpty()) {
         return;
@@ -1025,6 +1028,7 @@ void MainWidget::slotDebugAkonadiSearch()
     dlg->setSearchType(Akonadi::Search::AkonadiSearchDebugSearchPathComboBox::Contacts);
     dlg->doSearch();
     dlg->show();
+#endif
 }
 
 const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem(QItemSelectionModel *model)
