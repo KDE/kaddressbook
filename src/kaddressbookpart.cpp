@@ -43,7 +43,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
 
     topLayout->addWidget(mMainWidget);
     topLayout->setContentsMargins({});
-    setXMLFile(QStringLiteral("kaddressbookui.rc"));
+    setXMLFile(QStringLiteral("kaddressbookui_part.rc"));
 }
 
 void KAddressBookPart::updateQuickSearchText()

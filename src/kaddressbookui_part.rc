@@ -1,0 +1,128 @@
+<!DOCTYPE gui>
+<gui name="kaddressbook" version="46" translationDomain="kaddressbook">
+
+  <MenuBar>
+    <Menu name="file"><text>&amp;File</text>
+      <Menu name="file_new">
+        <text>&amp;New</text>
+        <Action name="akonadi_contact_create"/>
+        <Action name="akonadi_contact_group_create"/>
+        <Separator/>
+        <Action name="akonadi_resource_create"/>
+      </Menu>
+      <Separator/>
+      <Action name="import_menu"/>
+      <Action name="export_menu"/>
+      <Separator/>
+      <Action name="file_print"/>
+      <Action name="file_print_preview"/>
+      <Separator/>
+      <ActionList name="kaddressbook_plugins_file"/>
+      <Separator/>
+      <Action name="file_quit"/>
+    </Menu>
+
+    <Menu name="edit" noMerge="1"><text>&amp;Edit</text>
+      <Action name="akonadi_contact_item_edit" append="edit_edit_merge"/>
+      <Action name="akonadi_item_cut" append="edit_cut_merge"/>
+      <Action name="akonadi_item_copy" append="edit_copy_merge"/>
+      <Action name="akonadi_paste" append="edit_paste_merge"/>
+      <Separator/>
+      <Action name="akonadi_item_copy_to_menu" />
+      <Action name="akonadi_item_move_to_menu" />
+      <Separator/>
+      <Action name="akonadi_item_delete" append="edit_delete_merge"/>
+      <Separator/>
+      <Action name="akonadi_resource_delete"/>
+      <Separator/>
+      <ActionList name="kaddressbook_plugins_edit"/>
+    </Menu>
+
+    <Menu name="view" noMerge="1"><text>&amp;View</text>
+      <Action name="theme_menu"/>
+      <Separator/>
+      <Action name="view_mode_simple"/>
+      <Action name="view_mode_2columns"/>
+      <Action name="view_mode_3columns"/>
+      <Separator/>
+      <Action name="options_show_qrcodes"/>
+      <Separator/>
+      <Action name="fullscreen"/>
+
+    </Menu>
+
+    <Menu name="action" noMerge="1"><text>&amp;Action</text>
+      <ActionList name="kaddressbook_plugins_actions"/>
+    </Menu>
+
+    <Menu name="tools" noMerge="1"><text>&amp;Tools</text>
+      <ActionList name="kaddressbook_plugins_tools"/>
+    </Menu>
+
+    <Menu name="settings"><text>&amp;Settings</text>
+      <Action name="kaddressbook_configure" />
+    </Menu>
+  </MenuBar>
+
+  <Menu name="akonadi_collectionview_contextmenu">
+    <Action name="akonadi_collection_create"/>
+    <Action name="akonadi_collection_delete"/>
+    <Separator/>
+    <Action name="akonadi_collection_move_to_menu"/>
+    <Action name="akonadi_collection_copy_to_menu"/>
+    <Separator/>
+    <Action name="akonadi_resource_create"/>
+    <Action name="akonadi_resource_delete"/>
+    <Action name="akonadi_collection_sync"/>
+    <Separator/>
+    <Action name="akonadi_collection_properties"/>
+    <Action name="akonadi_resource_properties"/>
+    <Separator/>
+    <Action name="serverside_subscription"/>
+  </Menu>
+
+  <Menu name="akonadi_itemview_contextmenu">
+    <Action name="akonadi_contact_create"/>
+    <Action name="akonadi_contact_group_create"/>
+    <Action name="akonadi_contact_item_edit"/>
+    <Separator/>
+      <Menu name="file_export">
+        <text>&amp;Export</text>
+        <Action name="file_export_vcard40"/>
+        <Action name="file_export_vcard30"/>
+        <Action name="file_export_vcard21"/>
+        <Action name="file_export_csv"/>
+        <Action name="file_export_ldif"/>
+        <Action name="file_export_gmx"/>
+      </Menu>
+    <Separator/>
+    <Action name="search_gravatar"/>
+    <Separator/>
+    <Action name="akonadi_item_copy_to_menu" />
+    <Action name="akonadi_item_move_to_menu" />
+    <Separator/>
+    <ActionList name="kaddressbook_plugins_popupmenu_actions"/>
+    <Separator/>
+      <Action name="file_print"/>
+      <Action name="file_print_preview"/>
+    <Separator/>
+    <Action name="akonadi_item_delete"/>
+    <Separator/>
+    <Action name="debug_akonadi_search"/>
+  </Menu>
+
+  <ToolBar name="mainToolBar" noMerge="1"><text>Main Toolbar</text>
+    <Action name="akonadi_contact_create"/>
+    <Action name="akonadi_contact_group_create"/>
+    <Separator/>
+    <Action name="akonadi_contact_item_edit" append="edit_edit_merge"/>
+    <Separator/>
+    <Action name="quick_search"/>
+    <Action name="category_filter"/>
+    <Separator/>
+    <ActionList name="kaddressbook_toolbar_actions"/>
+    <Spacer/>
+    <Action name="hamburger_menu"/>
+  </ToolBar>
+
+</gui>
