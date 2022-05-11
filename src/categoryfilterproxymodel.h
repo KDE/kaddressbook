@@ -47,7 +47,7 @@ public Q_SLOTS:
      * which are to be accepted by the filter.
      * @see CategorySelectModel::filterChanged
      **/
-    void setFilterCategories(const QList<Akonadi::Tag::Id> &idList);
+    void setFilterCategories(const QList<Akonadi::Tag> &idList);
 
     /**
      * Enable or disable the filter.

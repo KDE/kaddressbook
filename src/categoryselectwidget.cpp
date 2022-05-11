@@ -38,7 +38,7 @@ public:
     void init();
     Q_REQUIRED_RESULT QStandardItemModel *itemModel() const;
     void selectAll(Qt::CheckState state) const;
-    Q_REQUIRED_RESULT QList<Akonadi::Tag::Id> filterTags() const;
+    Q_REQUIRED_RESULT QList<Akonadi::Tag> filterTags() const;
 
 public Q_SLOTS:
     void slotSelectAll();
@@ -234,17 +234,18 @@ void CategorySelectWidgetPrivate::slotCheckedItemsTimer()
     Q_EMIT q->filterChanged(filterTags());
 }
 
-QList<Akonadi::Tag::Id> CategorySelectWidgetPrivate::filterTags() const
+QList<Akonadi::Tag> CategorySelectWidgetPrivate::filterTags() const
 {
-    QList<Tag::Id> filter;
+    QList<Tag> filter;
     bool allOn = true;
     for (int row = 0; row < itemModel()->rowCount(); ++row) {
         const QStandardItem *it = itemModel()->item(row);
         Q_ASSERT(it != nullptr);
         if (it->checkState() == Qt::Checked) {
-            Tag::Id id = it->data(FILTER_ROLE).toInt();
-            if (id != 0) {
-                filter.append(id);
+            Tag tag(it->data(FILTER_ROLE).toInt());
+            tag.setName(it->text());
+            if (tag.id() != 0) {
+                filter.append(tag);
             }
         } else {
             allOn = false;
@@ -253,7 +254,7 @@ QList<Akonadi::Tag::Id> CategorySelectWidgetPrivate::filterTags() const
 
     if (allOn) {
         filter.clear();
-        filter.append(CategorySelectWidget::FilterAll);
+        filter.append(Tag(CategorySelectWidget::FilterAll));
     }
 
     // qCDebug(KADDRESSBOOK_LOG) << "filter" << filter;
@@ -270,7 +271,7 @@ CategorySelectWidget::CategorySelectWidget(QWidget *parent)
 
 CategorySelectWidget::~CategorySelectWidget() = default;
 
-QList<Akonadi::Tag::Id> CategorySelectWidget::filterTags() const
+QList<Akonadi::Tag> CategorySelectWidget::filterTags() const
 {
     Q_D(const CategorySelectWidget);
     return d->filterTags();

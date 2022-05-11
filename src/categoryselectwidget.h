@@ -54,7 +54,7 @@ public:
      *
      * @see filterChanged
      **/
-    QList<Akonadi::Tag::Id> filterTags() const;
+    QList<Akonadi::Tag> filterTags() const;
 
 Q_SIGNALS:
     /**
@@ -65,7 +65,7 @@ Q_SIGNALS:
      *
      * @see CategorySelectModel::filterChanged
      **/
-    void filterChanged(const QList<Akonadi::Tag::Id> &idList);
+    void filterChanged(const QList<Akonadi::Tag> &tagList);
 
 private:
     std::unique_ptr<CategorySelectWidgetPrivate> const d_ptr;

@@ -26,8 +26,27 @@ class CategoryFilterProxyModelPrivate : public QObject
 public:
     CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent);
 
-    QList<Tag::Id> filterIdList;
+    QList<Tag> filterTagList;
     bool filterEnabled = false;
+
+    bool containsId(Akonadi::Tag::Id id) const
+    {
+        for (const Tag &tag : filterTagList) {
+            if (tag.id() == id) {
+                return true; // a category matches filter
+            }
+        }
+        return false;
+    }
+    bool containsName(const QString &cat) const
+    {
+        for (const Tag &tag : filterTagList) {
+            if (tag.name() == cat) {
+                return true; // a category matches filter
+            }
+        }
+        return false;
+    }
 
 private:
     CategoryFilterProxyModel *const q_ptr;
@@ -58,11 +77,11 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
     if (!d->filterEnabled) {
         return true; // filter not enabled
     }
-    if (d->filterIdList.isEmpty()) {
+    if (d->filterTagList.isEmpty()) {
         return false; // nothing accepted
     }
     // all accepted
-    if (d->filterIdList.at(0) == CategorySelectWidget::FilterAll) {
+    if (d->filterTagList.at(0).id() == CategorySelectWidget::FilterAll) {
         return true;
     }
 
@@ -80,9 +99,14 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
                 if (idx >= 0) {
                     ++validCategories;
                     Tag::Id id = cat.midRef(idx + 5).toInt();
-                    if (d->filterIdList.contains(id)) {
+                    if (d->containsId(id)) {
                         return true; // a category matches filter
                     }
+                }
+            } else {
+                ++validCategories;
+                if (d->containsName(cat)) {
+                    return true; // a category matches filter
                 }
             }
         }
@@ -90,21 +114,21 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         if (validCategories > 0) {
             return false; // categorised but no match
         } else {
-            return d->filterIdList.contains(CategorySelectWidget::FilterUntagged);
+            return d->containsId(CategorySelectWidget::FilterUntagged);
         }
     } else if (item.hasPayload<KContacts::ContactGroup>()) { // a contact group item
-        return d->filterIdList.contains(CategorySelectWidget::FilterGroups);
+        return d->containsId(CategorySelectWidget::FilterGroups);
     }
 
     return true; // not a recognised item
 }
 
-void CategoryFilterProxyModel::setFilterCategories(const QList<Akonadi::Tag::Id> &idList)
+void CategoryFilterProxyModel::setFilterCategories(const QList<Akonadi::Tag> &tagList)
 {
     Q_D(CategoryFilterProxyModel);
 
-    if (idList != d->filterIdList) {
-        d->filterIdList = idList;
+    if (tagList != d->filterTagList) {
+        d->filterTagList = tagList;
         invalidateFilter();
     }
 }
