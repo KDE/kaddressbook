@@ -71,7 +71,7 @@ PrintingWizard::~PrintingWizard()
 
 void PrintingWizard::readConfig()
 {
-    KConfigGroup grp(KSharedConfig::openConfig(), "PrintingWizard");
+    KConfigGroup grp(KSharedConfig::openStateConfig(), "PrintingWizard");
     const QSize size = grp.readEntry("Size", QSize(300, 200));
     if (size.isValid()) {
         resize(size);
@@ -80,7 +80,7 @@ void PrintingWizard::readConfig()
 
 void PrintingWizard::writeConfig()
 {
-    KConfigGroup grp(KSharedConfig::openConfig(), "PrintingWizard");
+    KConfigGroup grp(KSharedConfig::openStateConfig(), "PrintingWizard");
     grp.writeEntry("Size", size());
     grp.sync();
 }
