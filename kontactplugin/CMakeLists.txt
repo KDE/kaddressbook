@@ -23,5 +23,5 @@ target_link_libraries(kontact_kaddressbookplugin
 )
 kcoreaddons_desktop_to_json(kontact_kaddressbookplugin kaddressbookplugin.desktop SERVICE_TYPES kcmodule.desktop)
 
-install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/kontact5)
+install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/kontact${QT_MAJOR_VERSION})
 install(FILES kaddressbookplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR}/kontact)
