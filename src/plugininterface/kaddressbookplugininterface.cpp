@@ -15,7 +15,7 @@ KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent)
 {
     setPluginName(QStringLiteral("kaddressbook"));
-    setPluginDirectory(QStringLiteral("kaddressbook/mainview"));
+    setPluginDirectory(QStringLiteral("pim" QT_STRINGIFY(QT_VERSION_MAJOR)) + QStringLiteral("/kaddressbook/mainview"));
 }
 
 KAddressBookPluginInterface::~KAddressBookPluginInterface() = default;
