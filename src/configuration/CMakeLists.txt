@@ -26,9 +26,6 @@ target_link_libraries(kaddressbook_config_plugins
     KPimAddressbookImportExport
     )
 
-
-kcoreaddons_desktop_to_json(kaddressbook_config_plugins kaddressbook_config_plugins.desktop SERVICE_TYPES kcmodule.desktop)
-install(FILES kaddressbook_config_plugins.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
 install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim/kcms/kaddressbook)
 
 ##################################################
@@ -51,8 +48,6 @@ if (TARGET KUserFeedbackWidgets)
         KUserFeedbackWidgets
         )
 
-    kcoreaddons_desktop_to_json(kaddressbook_config_userfeedback kaddressbook_config_userfeedback.desktop SERVICE_TYPES kcmodule.desktop)
-    install(FILES kaddressbook_config_userfeedback.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
     install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim/kcms/kaddressbook)
 
 endif()
