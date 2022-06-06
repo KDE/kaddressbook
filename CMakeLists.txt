@@ -45,7 +45,7 @@ set(KDEPIM_VERSION "${PIM_VERSION}${KDEPIM_DEV_VERSION} (${RELEASE_SERVICE_VERSI
 
 set(KPIMTEXTEDIT_LIB_VERSION "5.20.40")
 set(AKONADI_VERSION "5.20.40")
-set(KONTACTINTERFACE_LIB_VERSION "5.20.40")
+set(KONTACTINTERFACE_LIB_VERSION "5.20.41")
 
 set(KDEPIM_LIB_VERSION "${PIM_VERSION}")
 set(KDEPIM_LIB_SOVERSION "5")
@@ -98,7 +98,7 @@ find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 ecm_set_disabled_deprecation_versions(QT 5.15.2
     KF 5.95.0
-    KCOREADDONS 5.88.0 #KPluginFactory::registerPlugin
+    KCOREADDONS 5.88.0 #KPluginFactory::registerPlugin Remove it when we depend againt kf5.95
 )
 
 

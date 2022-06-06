@@ -25,8 +25,8 @@
 
 EXPORT_KONTACT_PLUGIN_WITH_JSON(KAddressBookPlugin, "kaddressbookplugin.json")
 
-KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const QVariantList &)
-    : KontactInterface::Plugin(core, core, "kaddressbook")
+KAddressBookPlugin::KAddressBookPlugin(KontactInterface::Core *core, const KPluginMetaData &data, const QVariantList &)
+    : KontactInterface::Plugin(core, core, data, "kaddressbook")
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
 
