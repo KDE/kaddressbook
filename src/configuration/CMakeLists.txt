@@ -26,7 +26,7 @@ target_link_libraries(kaddressbook_config_plugins
     KPimAddressbookImportExport
     )
 
-install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim/kcms/kaddressbook)
+install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kcms/kaddressbook)
 
 ##################################################
 if (TARGET KUserFeedbackWidgets)
@@ -48,6 +48,6 @@ if (TARGET KUserFeedbackWidgets)
         KUserFeedbackWidgets
         )
 
-    install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim/kcms/kaddressbook)
+    install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kcms/kaddressbook)
 
 endif()

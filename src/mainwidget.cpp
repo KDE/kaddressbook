@@ -368,7 +368,8 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
-    const QVector<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim/kcms/kaddressbook"));
+    const QVector<KPluginMetaData> availablePlugins =
+        KPluginMetaData::findPlugins(QStringLiteral("pim" QT_STRINGIFY(QT_VERSION_MAJOR)) + QStringLiteral("/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg->addModule(metaData);
     }

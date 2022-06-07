@@ -34,7 +34,7 @@
         ],
         "Version": "0.1"
     },
-    "X-KDE-ConfigModuleNamespace": "pim/kcms/kaddressbook/",
+    "X-KDE-ConfigModuleNamespace": "pim@QT_MAJOR_VERSION@/kcms/kaddressbook/",
     "X-KDE-KontactPartExecutableName": "kaddressbook",
     "X-KDE-KontactPartLibraryName": "kaddressbookpart",
     "X-KDE-KontactPartLoadOnStart": false,
