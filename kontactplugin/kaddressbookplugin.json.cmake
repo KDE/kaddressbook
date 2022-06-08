@@ -10,6 +10,7 @@
         "Description[pt]": "'Plugin' de KAddressBook do Kontact",
         "Description[sl]": "Vtičnik Kontact adresar",
         "Description[sv]": "Kontact-insticksprogram för adressbok",
+        "Description[tr]": "Kontact K Adres Defteri Eklentisi",
         "Description[uk]": "Додаток адресної книги Kontact",
         "Description[x-test]": "xxKontact KAddressBook Pluginxx",
         "EnabledByDefault": true,
@@ -26,6 +27,7 @@
         "Name[pt]": "Contactos",
         "Name[sl]": "Contacts",
         "Name[sv]": "Kontakter",
+        "Name[tr]": "Kişiler",
         "Name[uk]": "Контакти",
         "Name[x-test]": "xxContactsxx",
         "ServiceTypes": [
