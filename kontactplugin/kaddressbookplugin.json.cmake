@@ -1,7 +1,7 @@
 {
     "KPlugin": {
         "Description": "Kontact KAddressBook Plugin",
-        "Description[ca@valencia]": "Conector de la llibreta d'adreces de Kontact",
+        "Description[ca@valencia]": "Connector de la llibreta d'adreces de Kontact",
         "Description[ca]": "Connector de la llibreta d'adreces del Kontact",
         "Description[de]": "Adressbuch-Modul für Kontact",
         "Description[es]": "Complemento KAddressBook de Kontact",
