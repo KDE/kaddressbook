@@ -1,6 +1,7 @@
 {
     "KPlugin": {
         "Description": "Kontact KAddressBook Plugin",
+        "Description[az]": "Kontact KAddressBook qoşması",
         "Description[ca@valencia]": "Connector de la llibreta d'adreces de Kontact",
         "Description[ca]": "Connector de la llibreta d'adreces del Kontact",
         "Description[de]": "Adressbuch-Modul für Kontact",
@@ -21,6 +22,7 @@
         "Id": "kontact_kaddressbookplugin",
         "License": "GPL",
         "Name": "Contacts",
+        "Name[az]": "Əlaqələr",
         "Name[ca@valencia]": "Contactes",
         "Name[ca]": "Contactes",
         "Name[de]": "Kontakte",
