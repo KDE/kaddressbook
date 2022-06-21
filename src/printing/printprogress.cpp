@@ -18,15 +18,15 @@ using namespace KABPrinting;
 
 PrintProgress::PrintProgress(QWidget *parent)
     : QWidget(parent)
+    , mLogBrowser(new QTextBrowser(this))
+    , mProgressBar(new QProgressBar(this))
 {
     setWindowTitle(i18nc("@title:window", "Printing: Progress"));
 
     auto topLayout = new QGridLayout(this);
 
-    mLogBrowser = new QTextBrowser(this);
     topLayout->addWidget(mLogBrowser, 0, 0);
 
-    mProgressBar = new QProgressBar(this);
     mProgressBar->setValue(0);
     topLayout->addWidget(mProgressBar, 1, 0);
 

@@ -42,7 +42,7 @@ public:
 private:
     QStringList mMessages;
 
-    QTextBrowser *mLogBrowser = nullptr;
-    QProgressBar *mProgressBar = nullptr;
+    QTextBrowser *const mLogBrowser;
+    QProgressBar *const mProgressBar;
 };
 }

@@ -38,7 +38,6 @@ using namespace KABPrinting;
 PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selectionModel, QWidget *parent)
     : KAssistantDialog(parent)
     , mPrinter(printer)
-    , mStyle(nullptr)
 {
     setWindowTitle(i18nc("@title:window", "Print Contacts"));
 

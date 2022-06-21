@@ -20,7 +20,15 @@ public:
     explicit ExportSelectionWidget(QWidget *parent = nullptr);
     ~ExportSelectionWidget() override;
 
-    enum ExportField { None = 0, Private = 1, Business = 2, Other = 4, Encryption = 8, Picture = 16, DiplayName = 32 };
+    enum ExportField {
+        None = 0,
+        Private = 1,
+        Business = 2,
+        Other = 4,
+        Encryption = 8,
+        Picture = 16,
+        DiplayName = 32,
+    };
     Q_ENUM(ExportField)
     Q_DECLARE_FLAGS(ExportFields, ExportField)
 
@@ -29,11 +37,11 @@ public:
 private:
     void readSettings();
     void writeSettings();
-    QCheckBox *mPrivateBox = nullptr;
-    QCheckBox *mBusinessBox = nullptr;
-    QCheckBox *mOtherBox = nullptr;
-    QCheckBox *mEncryptionKeys = nullptr;
-    QCheckBox *mPictureBox = nullptr;
-    QCheckBox *mDisplayNameBox = nullptr;
+    QCheckBox *const mPrivateBox;
+    QCheckBox *const mBusinessBox;
+    QCheckBox *const mOtherBox;
+    QCheckBox *const mEncryptionKeys;
+    QCheckBox *const mPictureBox;
+    QCheckBox *const mDisplayNameBox;
 };
 }

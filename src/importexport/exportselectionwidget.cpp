@@ -18,6 +18,12 @@ using namespace KAddressBookImportExport;
 
 ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
     : QWidget(parent)
+    , mPrivateBox(new QCheckBox(i18nc("@option:check", "Private fields"), this))
+    , mBusinessBox(new QCheckBox(i18nc("@option:check", "Business fields"), this))
+    , mOtherBox(new QCheckBox(i18nc("@option:check", "Other fields"), this))
+    , mEncryptionKeys(new QCheckBox(i18nc("@option:check", "Encryption keys"), this))
+    , mPictureBox(new QCheckBox(i18nc("@option:check", "Pictures"), this))
+    , mDisplayNameBox(new QCheckBox(i18nc("@option:check", "Display name as full name"), this))
 {
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins({});
@@ -27,35 +33,30 @@ ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
     gbox->setLayout(layout);
     gbox->setFlat(true);
 
-    mPrivateBox = new QCheckBox(i18nc("@option:check", "Private fields"), this);
     mPrivateBox->setToolTip(i18nc("@info:tooltip", "Export private fields"));
     mPrivateBox->setWhatsThis(i18nc("@info:whatsthis",
                                     "Check this box if you want to export the contact's "
                                     "private fields to the vCard output file."));
     layout->addWidget(mPrivateBox, 1, 0);
 
-    mBusinessBox = new QCheckBox(i18nc("@option:check", "Business fields"), this);
     mBusinessBox->setToolTip(i18nc("@info:tooltip", "Export business fields"));
     mBusinessBox->setWhatsThis(i18nc("@info:whatsthis",
                                      "Check this box if you want to export the contact's "
                                      "business fields to the vCard output file."));
     layout->addWidget(mBusinessBox, 2, 0);
 
-    mOtherBox = new QCheckBox(i18nc("@option:check", "Other fields"), this);
     mOtherBox->setToolTip(i18nc("@info:tooltip", "Export other fields"));
     mOtherBox->setWhatsThis(i18nc("@info:whatsthis",
                                   "Check this box if you want to export the contact's "
                                   "other fields to the vCard output file."));
     layout->addWidget(mOtherBox, 3, 0);
 
-    mEncryptionKeys = new QCheckBox(i18nc("@option:check", "Encryption keys"), this);
     mEncryptionKeys->setToolTip(i18nc("@info:tooltip", "Export encryption keys"));
     mEncryptionKeys->setWhatsThis(i18nc("@info:whatsthis",
                                         "Check this box if you want to export the contact's "
                                         "encryption keys to the vCard output file."));
     layout->addWidget(mEncryptionKeys, 1, 1);
 
-    mPictureBox = new QCheckBox(i18nc("@option:check", "Pictures"), this);
     mPictureBox->setToolTip(i18nc("@info:tooltip", "Export pictures"));
     mPictureBox->setWhatsThis(i18nc("@info:whatsthis",
                                     "Check this box if you want to export the contact's "
@@ -68,7 +69,6 @@ ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)
     auto gbLayout = new QHBoxLayout;
     gbox->setLayout(gbLayout);
 
-    mDisplayNameBox = new QCheckBox(i18nc("@option:check", "Display name as full name"), this);
     mDisplayNameBox->setToolTip(i18nc("@info:tooltip", "Export display name as full name"));
     mDisplayNameBox->setWhatsThis(i18nc("@info:whatsthis",
                                         "Check this box if you want to export the contact's display name "
