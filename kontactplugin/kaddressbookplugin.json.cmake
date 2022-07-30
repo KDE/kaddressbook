@@ -52,10 +52,6 @@
         "Name[tr]": "Kişiler",
         "Name[uk]": "Контакти",
         "Name[x-test]": "xxContactsxx",
-        "ServiceTypes": [
-            "Kontact/Plugin",
-            "KPluginInfo"
-        ],
         "Version": "0.1"
     },
     "X-KDE-ConfigModuleNamespace": "pim@QT_MAJOR_VERSION@/kcms/kaddressbook/",
