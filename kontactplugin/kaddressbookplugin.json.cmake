@@ -1,6 +1,7 @@
 {
     "KPlugin": {
         "Description": "Kontact KAddressBook Plugin",
+        "Description[ar]": "ملحقة «دفتر عناوينك» ل‍«متراسلك»",
         "Description[az]": "Kontact KAddressBook qoşması",
         "Description[ca@valencia]": "Connector de la llibreta d'adreces de Kontact",
         "Description[ca]": "Connector de la llibreta d'adreces del Kontact",
@@ -13,6 +14,7 @@
         "Description[fr]": "Module externe « KAddressBook » de Kontact",
         "Description[ia]": "Plug-in pro Kontact KAddressBook",
         "Description[it]": "Estensione per Kontact di KAddressbook",
+        "Description[ka]": "Kontact -ის დამატება KAddressBook-ისთვის",
         "Description[ko]": "Kontact KAddressBook 플러그인",
         "Description[nl]": "Kontact KAddressBook-plug-in",
         "Description[pl]": "Wtyczka Kontact do współpracy z Książką Adresową",
@@ -29,6 +31,7 @@
         "Id": "kontact_kaddressbookplugin",
         "License": "GPL",
         "Name": "Contacts",
+        "Name[ar]": "المتراسلون",
         "Name[az]": "Əlaqələr",
         "Name[ca@valencia]": "Contactes",
         "Name[ca]": "Contactes",
@@ -41,6 +44,7 @@
         "Name[fr]": "Recherche de contact « PIM »",
         "Name[ia]": "Contactos",
         "Name[it]": "Contatti",
+        "Name[ka]": "კონტაქტები",
         "Name[ko]": "연락처",
         "Name[nl]": "Contactpersonen",
         "Name[pl]": "Kontakty",
