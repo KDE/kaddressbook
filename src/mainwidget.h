@@ -67,16 +67,16 @@ public:
     ~MainWidget() override;
 
     void updateQuickSearchText();
-    const Akonadi::Item::List collectSelectedAllContactsItem();
+    Q_REQUIRED_RESULT const Akonadi::Item::List collectSelectedAllContactsItem();
 
     /**
      * Returns the address book collection that is currently
      * selected by the user or an invalid collection if no
      * address book is selected.
      */
-    Akonadi::Collection currentAddressBook() const;
+    Q_REQUIRED_RESULT Akonadi::Collection currentAddressBook() const;
 
-    Akonadi::Item::List selectedItems();
+    Q_REQUIRED_RESULT Akonadi::Item::List selectedItems(bool &canceled);
     void initializePluginActions();
 
 public Q_SLOTS:

@@ -829,18 +829,20 @@ void MainWidget::setQRCodeShow(bool on)
     }
 }
 
-Akonadi::Item::List MainWidget::selectedItems()
+Akonadi::Item::List MainWidget::selectedItems(bool &canceled)
 {
     Akonadi::Item::List items;
     QPointer<KAddressBookImportExport::ContactSelectionDialog> dlg =
         new KAddressBookImportExport::ContactSelectionDialog(mItemView->selectionModel(), false, this);
     dlg->setDefaultAddressBook(currentAddressBook());
     if (!dlg->exec() || !dlg) {
+        canceled = true;
         delete dlg;
         return items;
     }
 
     items = dlg->selectedItems();
+    canceled = false;
     delete dlg;
 
     return items;

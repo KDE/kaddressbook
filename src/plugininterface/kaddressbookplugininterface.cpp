@@ -26,25 +26,31 @@ KAddressBookPluginInterface *KAddressBookPluginInterface::self()
     return &s_self;
 }
 
-void KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *abstractInterface)
+bool KAddressBookPluginInterface::initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *abstractInterface)
 {
     if (!mMainWidget) {
         qCCritical(KADDRESSBOOK_LOG) << "Main windows pointer not defined";
-        return;
+        return false;
     }
+    bool canceled = false;
     auto interface = static_cast<PimCommon::GenericPluginInterface *>(abstractInterface);
-    PimCommon::GenericPluginInterface::RequireTypes requiresFeatures = interface->requiresFeatures();
+    const PimCommon::GenericPluginInterface::RequireTypes requiresFeatures = interface->requiresFeatures();
     if (requiresFeatures & PimCommon::GenericPluginInterface::CurrentItems) {
         interface->setCurrentItems(mMainWidget->collectSelectedAllContactsItem());
     }
     if (requiresFeatures & PimCommon::GenericPluginInterface::Items) {
-        interface->setItems(mMainWidget->selectedItems());
+        interface->setItems(mMainWidget->selectedItems(canceled));
     }
     if (requiresFeatures & PimCommon::GenericPluginInterface::CurrentCollection) {
         interface->setCurrentCollection(mMainWidget->currentAddressBook());
     }
     if (requiresFeatures & PimCommon::GenericPluginInterface::Collections) {
         qCDebug(KADDRESSBOOK_LOG) << "PimCommon::GenericPluginInterface::Collections not implemented";
+    }
+    if (canceled) {
+        return false;
+    } else {
+        return true;
     }
 }
 
