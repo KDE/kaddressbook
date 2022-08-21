@@ -63,7 +63,7 @@ set_target_properties(KPimAddressbookImportExport PROPERTIES
 
 install(TARGETS
     KPimAddressbookImportExport
-    EXPORT KPimAddressbookImportExportTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPimAddressbookImportExportTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(KaddressbookImportExport_CamelCase_HEADERS
