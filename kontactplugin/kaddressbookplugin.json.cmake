@@ -41,7 +41,7 @@
         "Name[es]": "Contactos",
         "Name[eu]": "Kontaktuak",
         "Name[fi]": "Yhteystiedot",
-        "Name[fr]": "Recherche de contact « PIM »",
+        "Name[fr]": "Contacts",
         "Name[ia]": "Contactos",
         "Name[it]": "Contatti",
         "Name[ka]": "კონტაქტები",
