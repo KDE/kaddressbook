@@ -97,7 +97,7 @@ find_package(KF5Prison ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 ecm_set_disabled_deprecation_versions(QT 5.15.2
-    KF 5.97.0
+    KF 5.98.0
 )
 
 
