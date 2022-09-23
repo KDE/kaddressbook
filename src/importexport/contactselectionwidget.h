@@ -10,7 +10,6 @@
 #include "contactlist.h"
 #include "kaddressbook_importexport_export.h"
 #include <Akonadi/Item>
-#include <KContacts/Addressee>
 
 #include <QWidget>
 

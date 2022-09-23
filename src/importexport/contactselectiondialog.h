@@ -12,7 +12,6 @@
 #include "kaddressbook_importexport_export.h"
 
 #include <Akonadi/Item>
-#include <KContacts/Addressee>
 #include <QDialog>
 
 class QItemSelectionModel;

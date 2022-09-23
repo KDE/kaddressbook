@@ -10,7 +10,6 @@
 #pragma once
 
 #include <KAssistantDialog>
-#include <KContacts/Addressee>
 
 namespace KAddressBookImportExport
 {
