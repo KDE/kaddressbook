@@ -28,10 +28,12 @@
 #include <QApplication>
 
 #include <KSharedConfig>
+#include <KWindowConfig>
 #include <QDirIterator>
 #include <QPrinter>
 #include <QPushButton>
 #include <QStandardPaths>
+#include <QWindow>
 
 using namespace KABPrinting;
 
@@ -70,17 +72,17 @@ PrintingWizard::~PrintingWizard()
 
 void PrintingWizard::readConfig()
 {
-    KConfigGroup grp(KSharedConfig::openStateConfig(), "PrintingWizard");
-    const QSize size = grp.readEntry("Size", QSize(300, 200));
-    if (size.isValid()) {
-        resize(size);
-    }
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(300, 200));
+    KConfigGroup group(KSharedConfig::openStateConfig(), "PrintingWizard");
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void PrintingWizard::writeConfig()
 {
     KConfigGroup grp(KSharedConfig::openStateConfig(), "PrintingWizard");
-    grp.writeEntry("Size", size());
+    KWindowConfig::saveWindowSize(windowHandle(), grp);
     grp.sync();
 }
 
