@@ -1,0 +1,1272 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>26 серпня 2019 року</date>
+<releaseinfo
+>5.10.3 (Програми 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; є доволі складною програмою із багатьма вбудованими можливостями. Деякі із додаткових можливостей &kaddressbook; описано у цьому додатку, основним призначенням якого є запобігання надмірному розростанню та плутаності основної документації. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>електронна пошта</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>Довідковий розділ щодо розширених можливостей &kaddressbook;</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>Вікно створення групи</title>
+    
+  <para
+>Якщо ви скористаєтеся кнопкою <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Створити групу</guibutton
+>, програма відкриє діалогове вікно, яке показано нижче.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>Знімок вікна створення групи у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна створення групи у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно «Створити групу контактів» &kaddressbook; після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Створити&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Створити групу</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Скористайтеся спадним списком <quote
+>Додати до:</quote
+> для вибору адресної книги, до якої має бути додано нову групу. Скористайтеся полем <quote
+>Назва</quote
+> для надання групі назви. Введіть адреси електронної пошти або частини адрес електронної пошти у блакитну область <quote
+>&plus;</quote
+>. Буде показано список потенціальних відповідників. Виберіть пункт у списку, який буде показано, і пункт із новою назвою буде додано до списку. Продовжіть додавати контакти до списку, доки його не буде завершено, а потім натисніть кнопку <guibutton
+>&nbsp;✔&nbsp;Гаразд&nbsp;</guibutton
+>, щоб додати цю групу до вашої адресної книги. Якщо ви хочете вилучити пункт зі списку, натисніть піктограму <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>, яку розташовано праворуч від відповідного пункту. Якщо згодом у вас виникне потреба у внесенні змін до групи, просто позначте пункт групи і скористайтеся меню «Зміни» або кнопкою «Змінити параметри контакту» на панелі інструментів, щоб відкрити подібне діалогове вікно, за допомогою якого ви зможете внести бажані зміни.</para>
+
+  <para
+>У програмі &kmail; передбачено альтернативний спосіб створення нової групи у &kaddressbook;. Після надсилання повідомлення електронної пошти декільком адресатам програма надає вам можливість додати нову групу до вашої адресної книги, як це показано нижче.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>Знімок вікна створення групи у &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна створення групи у &kmail;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вікно створення групи у &kmail; після вибору пункту <guibutton
+>Зберегти список...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Після адресування повідомлення групі осіб натискання кнопки <guibutton
+>&nbsp;Зберегти список...&nbsp;</guibutton
+> праворуч від поля введення адрес призведе до відкриття діалогового вікна з наведеної вище ілюстрації. Надайте списку назву і натисніть кнопку <guibutton
+>&nbsp;Зберегти список&nbsp;</guibutton
+>. У відповідь буде відкрито ще одне діалогове вікно, у якому програма попросить вас вибрати адресну книгу. Виберіть адресну книгу, і програма створить у ній вказану групу.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>Діалогове вікно попереднього перегляду друку</title>
+    
+  <para
+>За допомогою можливості «Попередній перегляд друку» &kaddressbook; ви зможете налаштувати друк копії вашої адресної книги на папері.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вікно «Попередній перегляд друку» &kaddressbook;. Ви можете вибрати одну або декілька цілих адресних книг або просто позначити пункти окремих контактів.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>На першому кроці виберіть контакти, які буде включено до друкованої версії. Якщо ви хочете надрукувати лише декілька окремих записів контактів, вам слід вибрати записи контактів, які буде надруковано, до відкриття діалогового вікна <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Перегляд друку</guisubmenu
+></menuchoice
+>. Якщо ви хочете вибрати усі записи контактів або усі контакти у певній адресній книзі, ви можете зробити це тут. Натисніть кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Далі</guibutton
+>, коли вибір буде здійснено. У відповідь буде відкрито нову сторінку.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>Другий знімок вікна «Попередній перегляд друку» &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Друга сторінка діалогового вікна попереднього перегляду друку &kaddressbook;. Ви можете вибрати поле критерію упорядковування і напрямок упорядковування (за зростанням або за спаданням). Ви також можете вибрати одне із семи різних компонувань сторінки для друку.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Тут ви можете вибрати поле для упорядковування (будь-яке поле із 47 іменованих полів у записі контакту), напрям упорядковування і будь-який із семи різних компонувань. Після натискання кнопки <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Далі</guibutton
+> ви зможете вибрати схему кольорів, яку буде використано.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Третій знімок вікна «Попередній перегляд друку» &kaddressbook;. Тут ви можете вибрати схему кольорів.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Ось зображення завершеного звіту. Цей звіт готовий до друку.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна «Попередній перегляд друку» &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно попереднього перегляду &kaddressbook; після створення готового до друку списку контактів. За допомогою цього вікна ви можете вибрати орієнтацію сторінки (альбомну чи книжкову) і розпочати друк.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>Налаштовування LDAP</title>
+    
+  <para
+>Це знімок першої сторінки вікна налаштовування, яке буде відкрито після натискання кнопки <guibutton
+>Налаштувати сервери LDAP...</guibutton
+> у діалоговому вікні, яке можна викликати за допомогою пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+>Імпорт&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Імпортувати з сервера LDAP...</guimenuitem
+> </menuchoice
+> або пункту меню <menuchoice
+><guimenu
+>Параметри</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Налаштувати &kaddressbook;...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>Знімок вікна налаштовування сервера LDAP у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна налаштовування сервера LDAP у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вікно налаштовування сервера LDAP &kaddressbook; після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Імпорт&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Імпортувати з сервера LDAP...</guimenuitem
+></menuchoice
+> і натискання кнопки <guibutton
+>Налаштувати сервери LDAP...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Якщо вами вже налаштовано один або декілька серверів <acronym
+>LDAP</acronym
+>, скористайтеся цією сторінкою для вибору серверів, щоб вибрати сервери, які слід опитати, коли ви шукаєте ім'я або адресу електронної пошти. Скористайтеся кнопкою <guibutton
+>Додати вузол...</guibutton
+>, щоб додати новий сервер до списку доступних вузлів <acronym
+>LDAP</acronym
+>. Скористайтеся кнопкою <guibutton
+>Змінити вузол...</guibutton
+> для зміни налаштувань сервера, запис якого є у списку, або кнопкою <guibutton
+>Вилучити вузол</guibutton
+> для вилучення запису, який вам вже не потрібен. Кнопкою <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Скинути</guibutton
+> можна скористатися для скасовування змін, які було внесено під час останньої дії із додавання або вилучення записів серверів. Кнопка <quote
+>Типові значення</quote
+> у випуску 5.10.3 не працює. Решта кнопок («Гаразд», «Застосувати», «Скасувати») виконують своє звичне призначення: застосувати зміни і закрити вікно, застосувати зміни і не закривати вікна і закрити вікно без застосування змін, відповідно.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Якщо ви натиснете кнопку <guibutton
+>Додати вузол...</guibutton
+> або <guibutton
+>Змінити вузол...</guibutton
+>, буде відкрито наведене нижче діалогове вікно.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>Другий знімок вікна налаштовування сервера LDAP у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Другий знімок вікна налаштовування сервера LDAP у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно налаштовування сервера LDAP &kaddressbook; після натискання кнопки <guibutton
+>Додати вузол...</guibutton
+> або <guibutton
+>Змінити вузол...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Перші чотири поля (<quote
+>Користувач:</quote
+>, <quote
+>DN для прив'язки:</quote
+>, <quote
+>Область:</quote
+> та <quote
+>Пароль:</quote
+>) будуть неактивними, якщо для доступу до сервера не треба проходити розпізнавання. Якщо розпізнавання все ж треба проходити, дані, які слід вказати у цих полях, має бути отримано від адміністратора сервера LDAP. Вкажіть відповідну адресу у полі <quote
+>Вузол:</quote
+>. Типові значення для полів <quote
+>Порт:</quote
+>, <quote
+>Обмеження розміру:</quote
+> тощо мають працювати для більшості користувачів. Ви можете скористатися кнопкою <guibutton
+>Опитати сервер</guibutton
+> для налаштовування поля <quote
+>DN:</quote
+>. Автор цього підручника не знає, для чого призначено поле <quote
+>Фільтр:</quote
+>. Якщо вам відоме призначення цього поля, будь ласка, повідомте автора про це (davidbryant AT gvtc.com).</para>
+
+  <para
+>Скористайтеся розділом <quote
+>Безпека</quote
+> для визначення способу шифрування, яким слід скористатися: <quote
+>Немає</quote
+> для нешифрованого з'єднання, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> для визначення захисту Transport Layer Security, або <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> для визначення захисту Secure Socket Layer. Скористайтеся розділом <quote
+>Автентифікація</quote
+> для визначення рівня розпізнавання, який потрібен для доступу до сервера: <quote
+>Анонімна</quote
+>, якщо ім'я користувача і пароль вказувати не потрібно, <quote
+>Проста</quote
+>, якщо має бути надано <quote
+>DN для прив'язки</quote
+> і <quote
+>Пароль</quote
+>, і <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (Simple Authentication and Security Layer), якщо слід надати усі дані (в усіх чотирьох полях для введення даних). Якщо вибрано варіант <quote
+>SASL</quote
+>, скористайтеся кнопкою <guibutton
+>Опитати сервер</guibutton
+>, щоб встановити додаткові параметри для цього вузла.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>Функціональна можливість імпортування файлів CSV</title>
+    
+  <para
+>Після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Імпорт&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>Імпортувати файл CSV...</guimenuitem
+></menuchoice
+> програма покаже вам діалогове вікно. Після натискання кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> і вибору файла для імпортування вікно виглядатиме, як показано на знімку.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>Знімок вікна імпортування файлів CSV у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна імпортування файлів CSV у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно імпортування даних з файла CSV &kaddressbook; після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Імпорт &gt;</guisubmenu
+><guimenuitem
+>Імпортувати з файла CSV...</guimenuitem
+></menuchoice
+> і вибору файла для імпортування.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Скористайтеся розділом <quote
+>Роздільник</quote
+> цього діалогового вікна для визначення того, який символ роздільника визначає кінець поля у вибраному файлі вхідних даних. Якщо для відокремлення полів використовуються лапки та вбудовані символи відокремлення, ви можете вказати стиль (одинарні або подвійні лапки) за допомогою спадного списку <quote
+>Символ лапок:</quote
+>. Якщо у файлі вхідних даних містяться дати, скористайтеся полем <quote
+>Формат дати:</quote
+> для визначення способу кодування дат. Типовим форматом є рррр-мм-дд. Якщо формат запису дат не такий, наведіть вказівник миші на поле <quote
+>Формат дати:</quote
+>, щоб переглянути підказку щодо форматування запису. Якщо кодуванням файла вхідних даних не є UTF-8, скористайтеся спадним списком <quote
+>Текстовий кодек:</quote
+> для визначення двійкової схеми кодування, якою слід скористатися. Якщо у першому рядку файла містяться назви заголовків стовпчиків, позначте пункт <quote
+>Пропустити перший рядок файла</quote
+>, щоб уникнути імпортування заголовків стовпчиків як даних. Скористайтеся полями <quote
+>Не визначено</quote
+> у верхній частині кожного зі стовпчиків для визначення, які з полів даних слід імпортувати і де вміст цих полів слід зберегти, як це показано нижче.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>Другий знімок вікна імпортування файлів CSV у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Другий знімок вікна імпортування файлів CSV у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно імпортування даних з файла CSV &kaddressbook; після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Імпорт &gt;</guisubmenu
+><guimenuitem
+>Імпортувати з файла CSV...</guimenuitem
+></menuchoice
+>, вибору файла для імпортування і визначення полів для імпортування.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Якщо ви хочете імпортувати вміст поточного стовпчика, виберіть призначення зі списку назв полів, який показано під блакитним полем <quote
+>Не визначено</quote
+>. Див. <link linkend="export-csv-data"
+>наступний розділ</link
+>, у якому наведено список попередньо визначених полів. Скористайтеся горизонтальною смужкою гортання, розташованою у нижній частині вікна, щоб переглянути список усіх стовпчиків у файлі вхідних даних. Щойно вибір буде зроблено, натисніть кнопку <guibutton
+>&nbsp;✔&nbsp;Гаразд&nbsp;</guibutton
+>. Якщо вами визначено декілька адресних книг, програма попросить вас вказати, якою адресною книгою слід скористатися. Після цього &kaddressbook; імпортує вибрані дані як нові контакти.</para>
+
+  <para
+>Якщо ви маєте намір надалі імпортувати набори даних у тому самому форматі, ви можете натиснути кнопку <guibutton
+>Зберегти шаблон...</guibutton
+> (цю кнопку можна бачити на першій ілюстрації цього розділу), щоб зберегти визначені вами параметри. Програма попросить вас вказати назву шаблона. Згодом, коли виникне потреба імпортувати нові дані із тим самим компонуванням, ви можете заощадити трохи часу, натиснувши кнопку <guibutton
+>Застосувати шаблон...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>Функціональна можливість експортування файлів CSV</title>
+    
+  <para
+>Якщо ви скористаєтеся пунктом меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Експорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Експортувати до файла CSV...</guimenuitem
+></menuchoice
+>, програма відкриє діалогове вікно.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>Знімок вікна експортування файлів CSV у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна експортування файлів CSV у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно експортування до файла CSV &kaddressbook; після вибору пункту меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Експорт&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Експортувати до файла CSV...</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Ви можете вибрати усі дані контакту або лише їхню частину. Після натискання кнопки <guibutton
+>&nbsp;✔&nbsp;Гаразд&nbsp;</guibutton
+> програма дозволить вам вибрати назву створеного файла і каталог, до якого буде записано цей файл. Файл виведених даних міститиме наступні сорок сім (47) полів, у вказаному порядку справа ліворуч. Цей список назв полів буде включено до файла як перший запис.</para>
+
+  <para
+>Formatted Name | Honorific Prefixes | Given Name | Additional Names | Family Name | Honorific Suffixes | Nick Name | Birthday | Anniversary | EMail (preferred) | EMail (2) | EMail (3) | EMail (4) | Home Address Street | Home Address Post Office Box | Home Address City | Home Address State | Home Address Zip Code | Home Address Country | Home Address Label | Business Address Street | Business Address Post Office Box | Business Address City | Business Address State | Business Address Zip Code | Business Address Country | Business Address Label | Home Phone | Business Phone | Mobile Phone | Home Fax | Business Fax | Car Phone | ISDN | Pager | Mail Client | Title | Role | Organization | Note | Homepage | Blog Feed | Profession | Office | Manager | Assistant | Spouse</para>
+
+  <para
+>Усі поля форматуються як дані класу символів. Дати (дні народження, річниці, якщо такі вказано) кодуються у форматі рррр-мм-дд (рік, місяць, день).</para>
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>Функціональна можливість зміни кількості стовпчиків</title>
+    
+  <para
+>Після відкриття меню <menuchoice
+><guimenu
+>Перегляд</guimenu
+></menuchoice
+> ви побачите наведене нижче вікно.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>Знімок меню «Перегляд» у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок меню «Перегляд» у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню <quote
+>Перегляд</quote
+> &kaddressbook; після вибору пункту <menuchoice
+><guimenu
+>Перегляд</guimenu
+></menuchoice
+> на смужці меню вікна програми.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Не подобається стандартне компонування у три стовпчики, яке показано вище? Скористайтеся мінімалістичним підходом.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>Знімок вікна &kaddressbook; із однопанельним компонуванням.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна &kaddressbook; із однопанельним компонуванням.</phrase>
+    </textobject>
+    <caption>
+      <para
+>«Просте (у один стовпчик)» компонування вікна &kaddressbook;. Показано лише основні дані записів контактів.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Зауважте, що якщо використано «Просте» компонування, програма не показуватиме дані щодо переліку наявних та використаних адресних книг. Буде показано лише дані контактів з адресних книг, які було позначено до перемикання на цей режим перегляду.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Якщо просте компонування вам не подобається, можете спробувати стиль «У два стовпчики».</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>Знімок вікна &kaddressbook; із двопанельним компонуванням.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна &kaddressbook; із двопанельним компонуванням.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Двопанельне компонування вікна &kaddressbook;. Список адресних книг показано над упорядкованим за абеткою списком записів контактів.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Девізом &kde; є «Будь вільним!» Нашою метою є забезпечення максимальної гнучкості у коригуванні поведінки та налаштовуванні нашого програмного забезпечення відповідно до ваших уподобань. Ми гралися із ідеєю додавання додаткових панелей до вікна &kaddressbook; (чотири стовпчики або п'ять стовпчиків), але врешті вирішили, щоб трьох панелей достатньо.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>Налаштовування клавіатурних скорочень</title>
+    
+  <para
+>Це діалогове вікно, яке ви побачите, коли вперше виберете пункт меню <menuchoice
+><guimenu
+>Параметри</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Налаштувати скорочення...</guisubmenu
+> </menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>Знімок вікна налаштовування клавіатурних скорочень у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна налаштовування клавіатурних скорочень у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно «Налаштувати скорочення» &kaddressbook;. Скористайтеся полем «Шукати» або вертикальною смужкою гортання для пошуку пункту дії, для якого слід визначити нове клавіатурне скорочення.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Дії &kaddressbook; для кожного клавіатурного скорочення вже визначено і чітко позначено у стовпчику <quote
+>Скорочення</quote
+>. Ви можете або призначити додаткові клавіатурні скорочення за допомогою стовпчиків <quote
+>Альтернативне</quote
+>, <quote
+>Загальні скорочення</quote
+> і <quote
+>Загальне альтернативне</quote
+> у цій таблиці, або призначити нове скорочення до дії, для якої ще не визначено клавіатурного скорочення. Виберіть дію, скорочення для якої слід налаштувати, за допомогою клацання на її назві, як це показано вище. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Якщо ви клацнете лівою кнопкою миші на кнопці <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Немає</guibutton
+>, напис на ній буде змінено на <quote
+>Ввід...</quote
+>. Далі, ви можете записати комбінацію клавіш, яку ви хочете призначити до вибраної дії. (Наведіть вказівник миші на кнопку <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Немає</guibutton
+>, щоб переглянути підказку щодо цієї процедури.) Програма запише клавіші, які ви натисли, до нового запису клавіатурного скорочення, як це показано нижче. Якщо вами буде вибрано комбінацію, яка конфліктує із наявним клавіатурним скороченням, програма покаже вам повідомлення щодо помилки і попросить вас вибрати інше скорочення. Ви можете скористатися кнопкою <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>, щоб скасувати ваш вибір.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>Другий знімок вікна налаштовування клавіатурних скорочень у &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Другий знімок вікна налаштовування клавіатурних скорочень у &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно «Налаштувати скорочення» &kaddressbook; після введення нового клавіатурного скорочення, але до збереження нових налаштувань.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Натисніть кнопку <guibutton
+>&nbsp;✔&nbsp;Гаразд&nbsp;</guibutton
+>, щоб зберегти внесені вами зміни. Натисніть кнопку <guibutton
+>&nbsp;⦸&nbsp;Скасувати&nbsp;</guibutton
+>, щоб закрити вікно без збереження внесених вами змін. Натисніть кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Типові значення</guibutton
+>, щоб відновити типовий набір скорочень &kaddressbook;. Скористайтеся кнопкою <guibutton
+>&nbsp;Керування схемами&nbsp;&gt;&gt;&nbsp;</guibutton
+>, щоб інтегрувати ваші нетипові скорочення до більшої схеми клавіатурних скорочень. Див. розділ <ulink url="help:/fundamentals/config.html"
+>Налаштовування програмного забезпечення &kde;</ulink
+> у підручнику з основ &kde;, щоб дізнатися більше.</para>
+
+  <para
+>Ви можете натиснути кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Друкувати</guibutton
+> для створення друкованої копії списку клавіатурних скорочень. Нижче наведено приклад надрукованої таблиці.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>Знімок вікна друку &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна друку &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Зразок надрукованого списку клавіатурних скорочень &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>Налаштовування панелей інструментів</title>
+    
+  <para
+>Знімок вікна, яке буде відкрито у відповідь на вибір пункту меню <menuchoice
+><guimenu
+>Параметри</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Налаштувати пенали...</guisubmenu
+></menuchoice
+>.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>Знімок діалогового вікна налаштовування пеналів &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок діалогового вікна налаштовування пеналів &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно налаштовування панелей інструментів &kaddressbook;. Пункти, які вже показано на панелі інструментів, буде розташовано у діалоговому вікні праворуч. Пункти у лівій частині вікна може бути додано на панель інструментів у спосіб, описаний нижче.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Скористайтеся будь-яким з полів <quote
+>Фільтр</quote
+> для обмеження діапазону варіантів у відповідному вікні. Виберіть пункт дії у лівій частині вікна (як показано вище), якщо ви хочете додати його на панель інструментів. Клацніть лівою кнопкою миші на кнопці <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+>, щоб додати пункт до списку у правій частині вікна (а отже, і на панель інструментів &kaddressbook;). Якщо ви хочете прибрати пункт із панелі інструментів, просто виконайте зворотну процедуру: позначте пункт, який слід прибрати, у правій частині вікна і натисніть кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. Позначений пункт буде прибрано з панелі інструментів.</para>
+  
+  <para
+>Ви можете виправити порядок, у якому пункти буде показано на панелі інструментів за допомогою перетягування зі скиданням пунктів у правій частині вікна. Порядок пунктів на панелі, зліва праворуч, відповідає порядку пунктів у вікні, згори вниз. Додаткові зміни до вигляду панелі інструментів можна внести за допомогою кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Змінити піктограму...</guibutton
+>. Таким чином можна змінити піктограму, яку пов'язано із пунктом дії. Так само, ви можете змінити опис кожного з пунктів на панелі інструментів натисканням кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Змінити текст...</guibutton
+>.</para>
+  
+  <para
+>Натисніть кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Типові значення</guibutton
+>, щоб відновити типові параметри панелі інструментів. Натисніть кнопку <quote
+>Гаразд</quote
+>, щоб зберегти внесені зміни і закрити діалогове вікно; кнопку <quote
+>Застосувати</quote
+>, щоб застосувати внесені зміни, не закриваючи діалогове вікно; або кнопку <quote
+>Скасувати</quote
+>, щоб закрити діалогове вікно без внесення змін. (Див. розділ <ulink url="help:/fundamentals/config.html"
+>Налаштування програмного забезпечення &kde;</ulink
+> у підручнику з основ роботи у &kde;, щоб ознайомитися із докладним описом процедури.)</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>Налаштовування &kaddressbook;</title>
+    
+  <para
+>Після вибору пункту меню <menuchoice
+><guimenu
+>Параметри</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Налаштувати &kaddressbook;...</guisubmenu
+></menuchoice
+> ви побачите наведене нижче вікно.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>Знімок вікна налаштовування &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Знімок вікна налаштовування &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Діалогове вікно налаштовування дій із записами контактів &kaddressbook;. Доступні за допомогою цього вікна можливості усе ще є експериментальними і не усі є повністю працездатними.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>У першому діалоговому вікні зібрано пункти експериментальних можливостей, які, здається, ще не реалізовано повністю. Ви можете налаштувати параметри під заголовками <quote
+>Показ адреси</quote
+>, <quote
+>Набрати номер телефону</quote
+> або <quote
+>Надіслати SMS</quote
+>, але програмного забезпечення для виконання цих завдань ще не передбачено.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Наступна сторінка, <quote
+>Параметри серверів LDAP</quote
+>, є тим самим діалоговим вікном, яке документовано у попередньому розділі, <link linkend="configure-ldap-server"
+><quote
+>Вікно налаштовування LDAP</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>Другий знімок вікна налаштовування &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Другий знімок вікна налаштовування &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вікно налаштовування LDAP &kaddressbook;. Документацію щодо цього вікна та дочірніх вікон наведено у <link linkend="configure-ldap-server"
+>попередньому розділі</link
+> додатка.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Останній набір параметрів налаштовування &kaddressbook; буде показано, якщо ви виберете сторінку <quote
+>Додатки</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>Третій знімок вікна налаштовування &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Третій знімок вікна налаштовування &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Сторінка «Додатки» вікна налаштовування &kaddressbook;. Передбачено загалом десять додатків. Типово, сім з них активовано, як це показано вище.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Підтримку цих дій реалізовано за допомогою семи типових додатків, документацію з яких наведено у попередніх розділах цього підручника. Пункти <quote
+>Імпортувати та Експортувати <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> та <quote
+>Імпортувати та Експортувати <glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+>, якщо позначити відповідні пункти на цій сторінці, буде показано у меню <menuchoice
+><guimenu
+>Файл</guimenu
+></menuchoice
+>. Пункт <quote
+>Перевірити <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> буде показано у меню <menuchoice
+><guimenu
+>Інструменти</guimenu
+> </menuchoice
+>. Зауважте, що внесені вами за допомогою сторінки «Додатки» зміни набудуть чинності лише після перезапуску &kaddressbook;. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Авторські права та ліцензування</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Авторські права на KAddressBook належать розробникам, <email
+>montel@kde.org</email
+>, 2007–2019 </para>
+  
+  <para
+>Авторські права на документацію належать David C. Bryant <email
+>davidbryant@gvtc.com</email
+>, 2019 </para>
+
+  <para
+>Переклад українською: Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> 
+&underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Натисніть, щоб повернутися до списку змісту цього додатка.</link
+></para>
+
+</sect1>
+
+</appendix>

@@ -1,0 +1,5242 @@
+# translation of kaddressbook.po to Tajik
+# translation of kaddressbook.po to Тоҷикӣ
+# Copyright (C) 2004, 2005 Free Software Foundation, Inc.
+# 2004, infoDev, a World Bank organization
+# 2004, Khujand Computer Technologies, Inc.
+# 2004, Youth Opportunities, NGO
+# Victor Ibragimov <youth_opportunities@tajik.net>, 2004.
+# Marina Kolucheva <youth_opportunities@tajik.net>, 2004.
+# Roger V Kovacs, <rkovacs@khujand.org>, 2004.
+# Akmal Salomov <youth_opportunities@tajik.net>, 2004.
+# Victor Ibragimov <youth_opportunities@tajikngo.org>, 2005, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2019-09-29 12:44+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"* НПО \"Имкониятҳои ҷавонон\" * Tajik Linux Users Group * Young Ladies Tajik "
+"Linux Users Group * http://www.khujand.org * http://www.tajikngo.org * "
+"http://www.yo-tj.org *,Роҷер Ковакс, Виктор Ибрагимов, Марина Колючева, "
+"Евгения Фатхеева, Акмал Ватаншоев, Абророва Хиромон, Акмал Саломов, Акбар "
+"Ватаншоев, Фарход Ахмедов, Эркин Пулатов, Гулшод Довуди, Гулноз Курбанова, "
+"Зарина Косымова, Шухрат Лоиқов, Сурайё Ҷурахонова *"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+",rkovacs@khujand.org,youth_opportunities@tajikngo.org,MarinaKL@tajikngo."
+"org,,,,,,,,,,,,"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, fuzzy, kde-format
+msgid "Address Book"
+msgstr "Китобҳои адресӣ"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contains"
+msgid "Contact"
+msgstr "дорои"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "Почтаи электронӣ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Ташкилот"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, fuzzy, kde-format
+msgid "Birthday"
+msgstr "Рӯзи таваллуд:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "Нишонот:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "Ном"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "Почтаи электронӣ"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr ""
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "&Алоқоти нав..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "Танзимоти тугмаҳои мутобиқшудаи барномот"
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Алоқоти %1 ёфт шуд:"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "Танзимоти тугмаҳои мутобиқшудаи барномот"
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "Китоби адресии KDE"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Мушоиати ҷорӣ "
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr ""
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Мушоиати ҷорӣ "
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr ""
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Муаллифи ибтидоӣ "
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Истифода аз филтри фаъоли охирин"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Истифода аз филтри фаъоли охирин"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "Нест"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Афзудан..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "E-Mail:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+msgid "Phone: %1"
+msgstr "Телефон:"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Text"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Матн"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Копӣ кардани алоқоти интихобшуда ба буфери иввазотба формати vCard."
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr ""
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Номаълум"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Солгард"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Истифода аз дархостӣ"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Почтаи электронӣ"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Почтаи электронӣ"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Почтаи электронӣ"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Ихтисос"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Ҷои кор"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Бирма"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Ёрдамчӣ"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "А&лоқотҳои интихобшуда"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "&Тамоми алоқот"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Китоби адресии %1"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Навъи китоби адресӣ:"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "А&лоқотҳои интихобшуда"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "&Тамоми алоқот"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "&Тамоми алоқот"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Китоби адресии %1"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "А&лоқотҳои интихобшуда"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgid "Fetch Contacts"
+msgstr "А&лоқотҳои интихобшуда"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Заминаҳои ғайрирасмӣ"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Координатҳои корӣ"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Дигар заминот"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Калидҳои рамзгузорӣ"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Сурат"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Воридот аз файл:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Заминаҳои ғайрирасмӣ"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Координатҳои корӣ"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Дигар заминот"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Калидҳои рамзгузорӣ"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Сурат"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Содирот ба телефони мобилӣ ба итмом расид."
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Китобҳои адресӣ"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Тағйироти гурӯҳҳое, ки метавон дар алоқотҳо интихоб кард."
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Воридоти алоқот"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Воридоти алоқот"
+msgstr[1] "Воридоти алоқот"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "Воридоти vCard"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "Воридоти китоби адресии KDE 2..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, fuzzy, kde-format
+msgid "&File"
+msgstr "Филтр:"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "Эҷод кардан..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, fuzzy, kde-format
+msgid "&Edit"
+msgstr "&Таъғир додан..."
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, fuzzy, kde-format
+msgid "&View"
+msgstr "Афзудани нафъ"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Latin1"
+msgid "&Action"
+msgstr "Latin1"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, fuzzy, kde-format
+msgid "&Tools"
+msgstr "Асбобҳо"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, fuzzy, kde-format
+msgid "&Settings"
+msgstr "Танзимоти ҳарф"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Содирот"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, fuzzy, kde-format
+msgid "Main Toolbar"
+msgstr "Лавҳаи абзорҳои Алоқот"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+msgid "Import"
+msgstr "&Воридот"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Содирот"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Ҷустуҷӯ:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Тағйироти гурӯҳҳое, ки метавон дар алоқотҳо интихоб кард."
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "Ҷустуҷӯи рекурсивӣ"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "Категория"
+
+#: src/mainwidget.cpp:656
+#, fuzzy, kde-format
+msgid "Select All"
+msgstr "Барҳам додани интихоб"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "Интихоби тамоми алоқаҳои намоён дар намудиравон."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "Навъи китоби адресӣ:"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Алоқа"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr "Танзимоти тугмаҳои мутобиқшудаи барномот"
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "Пинҳон кардани навори гузариш"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Филтри китоби адресӣ "
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Номи пурра"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "Фамилия:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "Ном:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Адреси хонагӣ"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "Business Address"
+msgstr "Координатҳои корӣ"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+msgid "Phone Numbers"
+msgstr "Рақами телефон"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "Адреси асосӣ"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "Email"
+msgid "All EMails"
+msgstr "Почтаи электронӣ"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Корхона"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "Ҳуруфот ва ранг"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Чоп"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Иҷро шуд"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "Усули чоп"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, fuzzy, kde-format
+msgid "Appearance"
+msgstr "Намуди зоҳири"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Заминаҳо"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Адреси хонагӣ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "with business address"
+msgstr "Координатҳои корӣ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "Алоқа"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+msgid "with birthday"
+msgstr "Рӯзи таваллуд:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+msgid "with e-mail"
+msgstr "Почтаи электронӣ"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "Ранги замина"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Ранги заминаи унвон"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "Ранги сатри табдилёбанда"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "Ташкилот"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Адреси почтаи электронӣ:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "Адресҳои почтаи электронӣ:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Телефон:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Телефонҳо:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Саҳифаи Веб:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Адрес дар дохили шаҳр"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Адреси байналхалқӣ"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Адреси почтавӣ"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Адрес барои фиристодан"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Адреси корӣ"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Адреси асосӣ"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "Нишонот:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Муҳрӣ тақвимӣ - Намуди зоҳири"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "Ҳуруфот ва ранг"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Усули маълумот"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Намуди зоҳири"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Алоқаҳои унвонӣ"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Ранги заминаи унвон"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Ранги заминаи унвон"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Ранги матнии унвонҳо:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Ранги матнии унвонҳо:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Усули чопи Майк"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Кадом алоқотро мехоҳед нашр кунед?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Чопи алоқот"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Усули чоп"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Амали чоп"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Дар ҳоли чоп аст"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Амалиёт"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+msgid "Print contact phone numbers"
+msgstr "Рақами телефон"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, fuzzy, kde-format
+msgid "Phone numbers"
+msgstr "Рақами телефон"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "Адреси почтавӣ"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, fuzzy, kde-format
+msgid "Email addresses"
+msgstr "Адресҳои почтаи электронӣ:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+msgid "Print contact street addresses"
+msgstr "Чопи адрес"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "Адреси почтавӣ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact organizations"
+msgstr "Алоқа"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "Алоқа"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "Алоқа"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "Нишонот:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, fuzzy, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Муҳрӣ тақвимӣ - Намуди зоҳири"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "Ҳуруфот ва ранг"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Аз рӯи вусъатот"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Аз рӯи камшавӣ"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(пешнамоишот дастрас нест)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Усули чоп"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Ба кадом шакл алоқотро чоп кунам?\n"
+"Дар китоби адресӣ якчанд усули чоп мавҷуд аст, ки барои ҳадафоти гуногун "
+"муқаррар шудааст.\n"
+"Поёнтар метавонед усуле, ки ба шумо лозим аст, интихоб кунед."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Батартибдарорӣ"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Дастур:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select incremental search field"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Замина барои ҷустуҷӯӣ ҳангоми чопкунӣ"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Тартибот:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Усули чоп"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Интихоби комбинатсияи тугмаҳо:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "А&лоқотҳои интихобшуда"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Воридот"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Воридоти vCard..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Алоқотро ворид кунам?"
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "Воридоти рӯйхат ба формати CSV..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "Воридоти китоби адресӣ аз LDIF..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Алоқотро ворид кунам?"
+
+#, fuzzy
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Воридот аз телефони мобилии Nokia..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Алоқотро ворид кунам?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "Воридоти ҳама..."
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Китоби адресии %1"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Содироти vCard 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Содироти vCard 3.0..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Содироти vCard 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Содироти vCard 3.0..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Содироти vCard 2.1..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Содироти vCard 2.1..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "Содироти рӯйхат ба формати CSV..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "Содироти китоби адресӣ ба формати LDIF..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Содироти китоби адресӣ ба формати LDIF..."
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "Содироти китоби адресӣ ба формати LDIF..."
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Китоби адресии %1"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Наметавонам файли <b>%1</b>-ро боз кунам.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Наметавонам файли <b>%1</b>-ро боз кунам.</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "Воридот аз CSV"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Воридоти алоқот"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Воридот аз файл:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "vCard барои воридот интихоб кунед"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Ҷудокунанда"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "вергул"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Ҳузфи замина:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "нуқта-вергул"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Ҳузфи замина:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "табулятсия"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "фосила"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "дигар"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Матн дар нохунак:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Интихоби комбинатсияи тугмаҳо:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Нест"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Формати сана:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<ul><li>y: сол аз ду ишора иборат бошад</li><li>Y: сол аз чаҳор ишора "
+#~ "иборат бошад</li><li>m: адади моҳ аз як ё ду ишора иборат бошад</"
+#~ "li><li>M: адади моҳ аз ду ишора иборат бошад</li><li>d: адади рӯз аз як ё "
+#~ "ду ишора иборат бошад</li> <li>D: адади рӯз аз ду ишора иборат бошад</"
+#~ "li></ul>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<ul><li>y: сол аз ду ишора иборат бошад</li><li>Y: сол аз чаҳор ишора "
+#~ "иборат бошад</li><li>m: адади моҳ аз як ё ду ишора иборат бошад</"
+#~ "li><li>M: адади моҳ аз ду ишора иборат бошад</li><li>d: адади рӯз аз як ё "
+#~ "ду ишора иборат бошад</li> <li>D: адади рӯз аз ду ишора иборат бошад</"
+#~ "li></ul>"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Матн дар нохунак:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Интихоби комбинатсияи тугмаҳо:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Истифодаи қолиб..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Нигоҳ доштан ҳамчун қолиб..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Локали ҷорӣ (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Шумо бояд фавқан як сутунро муайян кунед."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(пешнамоишот дастрас нест)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(пешнамоишот дастрас нест)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Номи қолиб"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Номи қолибро ворид кунед:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Наметавонам файли воридиро боз кунам."
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>Китоби адресии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Интихоби қолиб"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Қолибро, ки ба файли CSV мутобиқ аст, интихоб кунед:"
+
+#, fuzzy
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "Китоби адресии %1"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Наметавонам <b>%1</b>-ро барои хондан боз кунам.</qt>"
+
+#, fuzzy
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "Китоби адресии %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Шумо якчанд алоқот интихоб кардед. Оё мехоҳед онҳоро ба якчанд файл содир "
+#~ "кунед?"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Содирот ба телефони мобилӣ ба итмом расид."
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Содирот ба телефони мобилӣ ба итмом расид."
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "vCard барои воридот интихоб кунед"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Хатои воридоти vCard"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>Наметавонам дастрасӣ ба <b>%1</b> гирам.</qt>"
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "vCard дорои ягон алоқоте намебошад."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Воридоти vCard"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact in your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Ин алоқотро ба китоби адресӣ ворид кунам?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Воридоти ҳама..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Кадом алоқаҳоро шумо мехоҳед содир кунед?"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Копӣ кардани алоқоти интихобшуда ба буфери иввазотба формати vCard."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "Ҳузфи намудот"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "Адреси почтаи электронӣ:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Нигоҳ доштан ҳамчун қолиб..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Нигоҳ доштан ҳамчун қолиб..."
+
+#, fuzzy
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "Ҷустуҷӯ"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "Мактубро ба адресҳои интихобшуда фиристодан."
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "A contact group was selected."
+#~ msgstr "&Тамоми алоқот"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "&Фиристодани алоқот..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Копӣ кардани алоқоти интихобшуда ба буфери иввазотба формати vCard."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Мактубро ба адресҳои интихобшуда фиристодан."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "Воридоти vCard..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "&Муттаҳидшавии алоқаҳо"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~ msgid "Select AddressBook:"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Шумо бояд фавқан як сутунро муайян кунед."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "No contacts selected."
+#~ msgstr "&Тамоми алоқот"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "Харидорон"
+
+#, fuzzy
+#~| msgid "Mobile Phone information:"
+#~ msgid "Missing Selected Information"
+#~ msgstr "Иттилоот доир ба телефони мобилӣ:"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Номаълум"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "&Муттаҳидшавии алоқаҳо"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Воридоти алоқот"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "&Муттаҳидшавии алоқаҳо"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Интихоби заминаи vCard"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "А&лоқотҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Илова кардани адресҳои интихобшуда"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "Коркарди алоқот"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Усули чоп"
+
+#~ msgid "Department"
+#~ msgstr "Шӯъба"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Роҳбар"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Ёрдамчӣ:"
+
+#, fuzzy
+#~ msgid "Partner's Name"
+#~ msgstr "Роҳбар"
+
+#~ msgid "IM Address"
+#~ msgstr "Адреси IM "
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Намудҳо"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "<qt>Китоби адресии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr ""
+#~ "Дар инҷо метавонед заминаҳое, ки ба vCard содир карда мешаванд, интихоб "
+#~ "кунед."
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Нишон ё пинҳон кардани ҷузъиёти алоқаҳои интихобшуда."
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "Филтри китоби адресӣ "
+
+#, fuzzy
+#~ msgid "Show Contacts View"
+#~ msgstr "Алоқоти %1 ёфт шуд:"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Нишон ё пинҳон кардани ҷузъиёти алоқаҳои интихобшуда."
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "Ном/номгӯи алоқа"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Нишон додани ҷузъиёт"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Нишон ё пинҳон кардани ҷузъиёти алоқаҳои интихобшуда."
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "Пинҳони ҷузъиёт"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Афзудани китоби адресӣ"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Филтри китоби адресӣ "
+#~ msgstr[1] "Филтри китоби адресӣ "
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Навъи китоби адресӣ:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Филтри китоби адресӣ "
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Навъи китоби адресӣ:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Филтри китоби адресӣ "
+#~ msgstr[1] "Филтри китоби адресӣ "
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Навъи китоби адресӣ:"
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Навъи китоби адресӣ:"
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "&Таъғири алоқот."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Ҳузфи намудот"
+#~ msgstr[1] "Ҳузфи намудот"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "Тағйирот..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Афзудани китоби адресӣ"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Афзудани китоби адресӣ"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Афзудани китоби адресӣ"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>Китоби адресии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#, fuzzy
+#~ msgid "Delete Address Book?"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Create a new contact<p>You will be presented with a dialog where you can "
+#~| "add all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Эҷоди алоқоти нав <p>Тирезаи диалогӣ барои пур кардани иттилоот доир ба "
+#~ "алоқот, ҳамчунин адресҳо ва рақами телефонҳо низ кушода мешаванд."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Эҷод кардан..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Таъғири филтрҳои алоқот <p>Дар ин диалог метавонед дастури филтрҳоро "
+#~ "илова, ҳузф ё таъғир диҳед."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit a contact<p>You will be presented with a dialog where you can "
+#~| "change all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Таъғири алоқот<p>Тирезаи диалогӣ барои таъғири иттилоот доир ба алоқот, "
+#~ "ҳамчунин адресҳо ва рақами телефонҳо низ кушода мешаванд."
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "Афзудани китоби адресӣ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Таъғири филтрҳои алоқот <p>Дар ин диалог метавонед дастури филтрҳоро "
+#~ "илова, ҳузф ё таъғир диҳед."
+
+#, fuzzy
+#~ msgid "&Delete Address Book"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Китоби адресӣ "
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "Афзудани алоқот"
+
+#~ msgid "Home Number"
+#~ msgstr "Хонагӣ"
+
+#~ msgid "Work Number"
+#~ msgstr "Корӣ"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Мобилӣ"
+
+#~ msgid "Fax Number"
+#~ msgstr "Факс"
+
+#~ msgid "Pager"
+#~ msgstr "Пейҷер"
+
+#~ msgid "Street"
+#~ msgstr "Кӯча"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Штат/минтақа"
+
+#~ msgid "Country"
+#~ msgstr "Мамлакат"
+
+#~ msgid "City"
+#~ msgstr "Шаҳр"
+
+#~ msgid "Zip Code"
+#~ msgstr "Индекс"
+
+#~ msgid "Description"
+#~ msgstr "Тасвирот"
+
+#~ msgid "User ID"
+#~ msgstr "ID-и истифодабаранда"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Штат/минтақа"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Алоқотро ворид кунам?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Ҷустуҷӯи адрес дар каталог"
+
+#~ msgid "Search for:"
+#~ msgstr "Ҷустуҷӯӣ:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Почтаи электронӣ"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Хонагӣ"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Корӣ"
+
+#~ msgid "Recursive search"
+#~ msgstr "Ҷустуҷӯи рекурсивӣ"
+
+#~ msgid "Contains"
+#~ msgstr "дорои"
+
+#~ msgid "Starts With"
+#~ msgstr "оғозшавӣ аз"
+
+#~ msgid "Unselect All"
+#~ msgstr "Барҳам додани интихоб"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "&Танзимоти KAddressBook..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Почтаи электронӣ"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Мактубро ба адресҳои интихобшуда фиристодан."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "&Танзимоти KAddressBook..."
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "Алоқа"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Афзудан..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&Таъғир додан..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "Ҳузфи рӯйхат"
+
+#, fuzzy
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2004, дастаи KDE PIМ"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Рақами телефон"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Адреси асосӣ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Почтаи электронӣ"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "&Тамоми алоқот"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "Роҳбар"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "Исландия"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Нишон додани &заминаи холӣ"
+
+#~ msgid "Font Settings"
+#~ msgstr "Танзимоти ҳарф"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Ҳарфҳои стандартии KDE-ро истифода бурдан"
+
+#~ msgid "Details font:"
+#~ msgstr "Ҳуруфоти тавсилотӣ:"
+
+#~ msgid "Size:"
+#~ msgstr "Андоза:"
+
+#~ msgid "Body font:"
+#~ msgstr "Маълумотҳои ҳарф:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Қайд кардани ҳодисаҳои ҳарф:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Ҳуруфоти сарҳавла:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Унвонот:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Алоқаҳои унвонии рангаро истифода бурдан"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Расонидан ба:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Лабаҳо ва фосилот"
+
+#~ msgid "Preparing"
+#~ msgstr "Тайёр кардан"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Чоп ба %1 аз китоби адресии KDE (http://www.kde.org)"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Чопи алоқотҳои интихобшуда."
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Интихоби алоқот барои чоп"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Нашри тамоми китоби адресӣ"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Танҳо алоқотҳои интихобшударо аз китоби адресӣ чоп кардан.\n"
+#~ "Агар алоқоти интихобшуда набошад, ин интихобот кор нахоҳад кард."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Аз рӯи &филтр"
+
+#, fuzzy
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Танҳо алоқотҳое, ки ба филтри муайян мутобиқ аст, чоп хоҳанд шуд.\n"
+#~ "Агар ягон филтр интихоб нашуда бошад, ин интихобот кор нахоҳад кард."
+
+#~ msgid "Category &members"
+#~ msgstr "Дараҷотҳои &ишорашуда"
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Танҳо алоқотҳое, ки дараҷоташон аз рӯйхати чапбуда ишора ва интихоб "
+#~ "шудааст чоп хоҳанд шуд.\n"
+#~ "Агар ягон дараҷот интихоб нашуда бошад, ин интихобот кор нахоҳад кард."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Филтр барои ҷудо кардани алоқотҳои нашр мешуда низ интихоб кунед."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Дараҷот барои ҷудо кардани алоқотҳои нашр мешуда низ интихоб кунед."
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Алоқоти %1-ро ба китоби адресӣ шумо ворид кунам?"
+#~ msgstr[1] "Алоқоти %1-ро ба китоби адресӣ шумо ворид кунам?"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Select the address book"
+#~ msgstr "Китоби адресии %1"
+
+#, fuzzy
+#~ msgid "New Contact"
+#~ msgstr "Алоқоти %1 ёфт шуд:"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Алоқа"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "Афзудан..."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(пешнамоишот дастрас нест)"
+
+#~ msgid "Play"
+#~ msgstr "Бозикунӣ"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "Тағйири навъ..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "Эҷод кардан..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "дигар"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "Афзудан..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Рақами телефон"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Ин рақами телефони дархостӣ"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Адресҳои E-Mail"
+
+#~ msgid "Edit..."
+#~ msgstr "Тағйирот..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Асосӣ кардан"
+
+#, fuzzy
+#~ msgid "Add Email"
+#~ msgstr "Почтаи электронӣ"
+
+#, fuzzy
+#~ msgid "New Email:"
+#~ msgstr "E-Mail:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "E-Mail:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>Адреси почтаи электронии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Тадқиқи ҳузф кардан"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "&Боздоштани ҳузфот"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "Тағйири навъ..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "Нигоҳ доштан ҳамчун қолиб..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "Ҳузфи рӯйхат"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "Тағйири адреси почтаи электронӣ..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "Нигоҳ доштан ҳамчун қолиб..."
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Эҷод кардан..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Тағйирот..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Ҳузфи намудот"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "Адреси интихобшударо ҳузф кунам?"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Адреси почтавӣ"
+
+#, fuzzy
+#~ msgid "Edit Label..."
+#~ msgstr "Ном..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Адреси дархостӣ"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Навъи адрес"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Намудҳои адрес"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "Номи оддӣ"
+
+#, fuzzy
+#~| msgid "Reverse Name with Comma"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Ном дар бозгашти мутақобил бо вергул"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "Ном дар бозгашти мутақобил"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "Ташкилот"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "Танзим"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Тахаллус:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "Ташкилот"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "Саҳифаи Веб:"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "&Лаба:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "Адресҳо:"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Coordinates"
+#~ msgstr "дорои"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "Кор"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "Умумӣ"
+
+#~ msgid "Profession:"
+#~ msgstr "Ихтисос:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "Унвон:"
+
+#~ msgid "Department:"
+#~ msgstr "Шӯъба:"
+
+#~ msgid "Office:"
+#~ msgstr "Ҷои кор:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Роҳбар:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "Хонавода"
+
+#~ msgid "Birthdate:"
+#~ msgstr "Рӯзи таваллуд:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Солгард:"
+
+#, fuzzy
+#~ msgid "Partner's name:"
+#~ msgstr "Роҳбар:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "Алоқа"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Заминаҳои истифодабарӣ"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Нишон додани муҳаррири алоқот боадреси почтаи электронии нишондод"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Нишон додани муҳаррири алоқот бо UID-и нишондод"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Ба кор даровардан танҳо ба тартиботи муҳаррир"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Ба кор сар додани муҳаррир барои алоқоти нав"
+
+#~ msgid "Work on given file"
+#~ msgstr "Кор бо файл"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "Адресҳои &почтавӣ..."
+
+#, fuzzy
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Алоқа"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Муҳарирри алоқот"
+
+#, fuzzy
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "&Тафсилот"
+
+#~ msgid "Misc"
+#~ msgstr "Иловагӣ"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Шумо бояд санаи дурустро нишон диҳед"
+
+#, fuzzy
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Шумо бояд санаи дурустро нишон диҳед"
+
+#~ msgid "Add View"
+#~ msgstr "Афзудани нафъ"
+
+#~ msgid "View name:"
+#~ msgstr "Номи намуд:"
+
+#~ msgid "View Type"
+#~ msgstr "Навъи намуд"
+
+#~ msgid "Add Field"
+#~ msgstr "Афзудани заминот"
+
+#~ msgid "Type:"
+#~ msgstr "Навъ:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Ба тамоми алоқот дастрас аст"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Адад"
+
+#~ msgid "Boolean"
+#~ msgstr "Аҳамияти мантиқӣ"
+
+#~ msgid "Time"
+#~ msgstr "Вақт"
+
+#~ msgid "Date & Time"
+#~ msgstr "Сана ва вақт"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr "Замина бо чунин ном аллакай вуҷуд аст, номи дигарро ишора кунед."
+
+#~ msgid "Remove Field"
+#~ msgstr "Ҳузфи замина"
+
+#~ msgid "Add Field..."
+#~ msgstr "Афзудани замина..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Таъғири номи замина..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "Рӯйхати ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr "Замина бо чунин ном аллакай вуҷуд аст, номи дигарро ишора кунед."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "Китобҳои адресӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "Замина бо чунин ном аллакай вуҷуд аст, номи дигарро ишора кунед."
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Адресҳои E-Mail..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "Нишон додани алоқоти категорияҳои муайян "
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Намоиши тамоми алоқот ғайр аз онҳое, ки ба категорияҳои интихобшуда "
+#~ "тааллуқ доранд"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Филтрҳои китоби адресӣ"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#~ msgid "Filter:"
+#~ msgstr "Филтр:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "Маҳали иттилоот доир ба вақти шурӯъӣ:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Координатҳои ҷуғрофӣ"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Вусъатот:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Давомнокӣ:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Координатҳои ҷуғрофӣ..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Координатҳои ҷуғрофӣ"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Намоиши шонздаҳкарата"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Вусъатот:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Шимол"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Ҷануб"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Давомнокӣ:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Шарқ"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Ғарб"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Номаълум"
+
+#~ msgid "Reset"
+#~ msgstr "Партофтан"
+
+#, fuzzy
+#~ msgid "IM address:"
+#~ msgstr "Адреси &IM:"
+
+#, fuzzy
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Адресҳои &почтавӣ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Ҷустуҷӯӣ ҳангоми чопкунӣ<p> Барои ҷустуҷӯи алоқа, вориди мантро оғоз "
+#~ "кунед. Ҳангоми вориди ҳуруфот, алоқоте, ки ба ин матни дар замина "
+#~ "воридшуда мутобиқ аст, интихоб хоҳад шуд. Заминаҳои алоқоте, кидар ин "
+#~ "ҷустуҷӯӣ истифода шуда истодааст имкони танзимот аст."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "&дар:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr ""
+#~ "Дар инҷо метавонед заминае, ки дар дохили кадомеҷустуҷӯӣ ҳангоми чопкунӣ "
+#~ "амалӣ мешавад."
+
+#, fuzzy
+#~ msgid "Visible Fields"
+#~ msgstr "Тамоми заминот"
+
+#~ msgid "All Fields"
+#~ msgstr "Тамоми заминот"
+
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "Алоқаҳои унвонӣ"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Мушоиат, ба портҳо ҷудокунии libkabc, воридот/содироти CSV"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Интерфейс ва таъғири дизайн"
+
+#~ msgid "DCOP interface"
+#~ msgstr "Интерфейс ба DCOP"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "Ҷустуҷуӣ дар LDAP "
+
+#, fuzzy
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "Адреси интихобшударо ҳузф кунам?"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "Адреси интихобшударо ҳузф кунам?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Фақат як алоқаро нишон диҳед."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>Адреси почтаи электронии <b>%1</b>-ро дар варақаи алоқоти нав "
+#~ "истифода кунам?</qt>"
+
+#, fuzzy
+#~ msgid "Use"
+#~ msgstr "ID-и истифодабаранда"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Наметавонам китоби адресии навъи <b>%1</b>-ро эҷод кунам.</qt>"
+
+#, fuzzy
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "Ҳуқуқи дастрасии нокифоя барои нигоҳ доштани китоби адрес."
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Дар KDE-и сабтшуда, пуштибонии LDAP ғоиб аст. Ба мудири системаи худ ё ба "
+#~ "таъминкунандаи дистрибутив барои иттилооти иловагӣ низ муроҷиат кунед."
+
+#, fuzzy
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Интерфейс дар LDAP сабт нашудааст"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Чопи адрес"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "&Фиристондани мактуб..."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Нигоҳ доштани тамоми таъғиротҳои китоби адресӣ. "
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Эҷод кардан..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Фиристодани мактуб бо замимаи алоқоти ишорашуда."
+
+#~ msgid "Chat &With..."
+#~ msgstr "&Оғози гуфтугӯ..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Оғози гуфтугӯ бо алоқаи интихобшуда."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&Таъғир додан..."
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr "Буриши алоқоти интихобшуда ба буфери иввазотба формати vCard."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr ""
+#~ "Гузоштани алоқоти пешакӣ бурида ва ё копӣ кардашуда аз буфери иввазот."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "&Ҳузф кардан"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Ҳузфи тамоми алоқотҳои интихобшуда."
+
+#, fuzzy
+#~ msgid "C&opy Contact To..."
+#~ msgstr "&Алоқоти нав..."
+
+#, fuzzy
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Алоқоти нав..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "Нишон додани панели гузариш"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Нишон ё пинҳон кардани панели гузариш."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr "Таъғири танзимоти китоби адресии KDE."
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "Ҷустуҷуӣ дар LDAP "
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Ҷустуҷӯи алоқот дар сервери LDAP <p> Намоиши гуфтугӯе, ки дар он "
+#~ "метавонед алоқотро дар сервери LDAP ёбед ва онҳоро ба китоби адресии "
+#~ "локалии худ ҷойгир кунед."
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "Ҳамчун маълумотҳои инфиродӣ ишора намудан"
+
+#, fuzzy
+#~| msgid ""
+#~| "Set the personal contact<p>The data of this contact will be used in many "
+#~| "other KDE applications, so you do not have to input your personal data "
+#~| "several times."
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Ҳамчун маълумотҳои инфиродӣ ишора намудан <p>Маълумотҳои шахсии шумо ба "
+#~ "дигар барномаҳои KDE истифода мешаванд, чӣ лавозимоти ишора намудани он "
+#~ "ба ҳар як барномаро надорад."
+
+#~ msgid "Select Categories..."
+#~ msgstr "Дараҷот..."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Бо гурӯҳҳои мавҷудбуда якҷоя кунам?"
+
+#, fuzzy
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#~ msgid "Keys:"
+#~ msgstr "Тугмаҳо:"
+
+#~ msgid "Export..."
+#~ msgstr "Содирот..."
+
+#~ msgid "Key Type"
+#~ msgstr "Комбинатсияи тугмаҳо"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Адреси почтаи электронии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Шумо бояд коргузори LDAP-ро барои ҷустуҷӯ нишон диҳед.\n"
+#~ "Шумо метавонед инро дар пункти менюи Танзимотӣ/Танзимоти KAddressBook "
+#~ "кунед. "
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Мубаддал кардан:"
+
+#~ msgid "Additional names:"
+#~ msgstr "Номи падар:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Суффикс:"
+
+#~ msgid "Formatted name:"
+#~ msgstr "Намоиш додан чун:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Номҳоро автомати такмил додан"
+
+#~ msgid "Dr."
+#~ msgstr "Духтур"
+
+#~ msgid "Miss"
+#~ msgstr "Хонум"
+
+#~ msgid "Mr."
+#~ msgstr "Ҷаноб"
+
+#~ msgid "Mrs."
+#~ msgstr "Хонум"
+
+#~ msgid "Ms."
+#~ msgstr "Хонум"
+
+#~ msgid "Prof."
+#~ msgstr "Профессор."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "хурд"
+
+#~ msgid "Sr."
+#~ msgstr "калон"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Номи пурра"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Ташкилот"
+
+#, fuzzy
+#~ msgid "Birthday:"
+#~ msgstr "Рӯзи таваллуд:"
+
+#, fuzzy
+#~ msgid "Partners name:"
+#~ msgstr "Роҳбар:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Таъғири ном"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Ном..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "Ташкилот"
+
+#~ msgid "Tools"
+#~ msgstr "Асбобҳо"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Худкорона коркарди ном барои адресҳои нав"
+
+#, fuzzy
+#~ msgid "Fax"
+#~ msgstr "Факс:"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Боз кардани диалоги таъғироти алоқот бо як клики муш"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "E-Mail:"
+
+#~ msgid "Store as URL"
+#~ msgstr "Ҳамчун истинодот нигоҳ доштан"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+#~ msgstr[1] "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Интихоби заминаҳо барои тасвир"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "&Заминаҳои интихобшуда:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Филтри пешфарзӣ ҳангоми намоиши намуд фаъол сохта мешавад. Ин интихобот "
+#~ "иҷозат медиҳадтанзимоти намумудҳоеро, ки танҳо алоқотҳои дастури муайянро "
+#~ "қонеъ мегардонад ва дар филтр дода шудааст, намоиш медиҳад. Баъди намоиши "
+#~ "намуд, филтр метавонад дар ягон вақт таъғир шавад."
+
+#~ msgid "No default filter"
+#~ msgstr "Филтри пешфарзӣ нест "
+
+#~ msgid "Use filter:"
+#~ msgstr "Истифодаи филтри:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Филтри пешфарзӣ"
+
+#~ msgid "Modify View: "
+#~ msgstr "Намуд:"
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Ҳузфи намудот"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Намуди <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Тасдиқи ҳузфкунӣ"
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Алоқоти %1-ро ба китоби адресӣ шумо ворид кунам?"
+#~ msgstr[1] "Алоқоти %1-ро ба китоби адресӣ шумо ворид кунам?"
+
+#, fuzzy
+#~ msgid "Do Not Import"
+#~ msgstr "&Боздоштани воридот"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Нест"
+
+#, fuzzy
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Номаълум"
+
+#~ msgid "Select View"
+#~ msgstr "Интихоби навъ"
+
+#~ msgid "Modify View..."
+#~ msgstr "Тағйири навъ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Дар диалоги тағйироти намуд, шумо метавонед заминаро, ки дар намуди "
+#~ "зоҳирӣ намоиш мешаванд, ҳамчун мисоли, ном ё телефон низ илова ё ҳузф "
+#~ "кунед."
+
+#~ msgid "Add View..."
+#~ msgstr "Афзудани навъ..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Шумо метавонед намуди навро бо интихоби намуди он дар диалоге, ки баъди "
+#~ "пахши ин кнопка зоҳир мешавад, илова кунед. Ҳамчунин номи намудро барои "
+#~ "фарқ намудани он дар рӯйхати намудҳои дастрасӣ низ ишора намудан лозим "
+#~ "аст."
+
+#~ msgid "Delete View"
+#~ msgstr "Ҳузфи намудот"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr "Ҳузфи намуди ҷорӣ, ки қабле эҷод шуда буд."
+
+#~ msgid "Refresh View"
+#~ msgstr "Нав кардани намуд"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Нав кардани рӯйхати алоқот дар намуди равон."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "Таъғири &филтрҳо..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Таъғири филтрҳои алоқот <p>Дар ин диалог метавонед дастури филтрҳоро "
+#~ "илова, ҳузф ё таъғир диҳед."
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Модули дастрасие барои воридоти <b>%1</b> нест.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Модули дастрасие барои содироти <b>%1</b> нест.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Наметавонам алоқаҳоро содир кунам. "
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Содироти алоқот"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Аз рӯи вусъатот"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Аз рӯи камшавӣ"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "Интихобшуда"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "Содироти тамоми китобҳои адресӣ"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Танҳо алоқотҳои интихобшуда аз китоби адресӣ содир карда мешаванд.\n"
+#~ "Агар алоқотҳои интихобшуда набошанд, ин интихобот кор нахоҳад кард."
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Танҳо алоқотҳое, ки ба филтри муайян мутобиқ аст, содир карда мешавад.\n"
+#~ "Агар ягон филтр муайян нашуда бошад, ин нтихобот кор нахоҳад кард."
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Танҳо он алоқотҳое, ки дараҷоти он аз рӯйхати чап буда ишора ва интихоб "
+#~ "шудааст, содир карда мешаванд.\n"
+#~ "Агар ягон дараҷот муайян нашуда бошад, ин нтихобот кор нахоҳад кард."
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "Интихоби филтр."
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Омӯзиш"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Дӯстон"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "Ҷустуҷӯи коргузор бо харита дода нашудааст! \n"
+#~ "Дар муколамаи танзимот ақаллан якто илова кунед. "
+
+#~ msgid "Crypto Settings"
+#~ msgstr "Танзимоти рамзгузорӣ"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "Протоколҳои дастрасӣ"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "Калиди асосии OpenPGP :"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "Сертификати асосии S/MIME:"
+
+#~ msgid "Message Preference"
+#~ msgstr "Танзимоти иттиолоот"
+
+#~ msgid "Sign:"
+#~ msgstr "Имзо:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "Рамзгузорӣ:"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Рӯйхати ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "Remove distribution list"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Наметавонам китоби адресии навъи <b>%1</b>-ро эҷод кунам.</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "Китоби адресии %1"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "Филтрҳои китоби адресӣ"
+
+#~ msgid "Look & Feel"
+#~ msgstr "Намуди зоҳирӣ ва интерфейс"
+
+#~ msgid "Text Color"
+#~ msgstr "Ранги матн"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Ранги унвонот, чорчӯба ва хати ҷудокунӣ"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Ранги матни унвонот"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Ранги зерравшанӣ"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Ранги матни зерравшанӣ"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Умумӣ"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Чопи &хати ҷудокунӣ"
+
+#~ msgid "Separator &width:"
+#~ msgstr "&Васеъии хати ҷудокунӣ:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Фосилот:"
+
+#~ msgid "Cards"
+#~ msgstr "Варақот"
+
+#~ msgid "Draw &borders"
+#~ msgstr "Чопи &чорчӯба"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Заминаи варақа -- ин фосилоти (дар нуқта) байни лабаи варақа ва маълумот "
+#~ "мебошад. Вусъати замина ба вусъати фосилоти байни чорчӯбаи варақа ва "
+#~ "маълумот меорад."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Фосилотҳо фосилаи (дар нуқта) байни варақот ва ҷузъоти дигарро низ "
+#~ "муқаррар мекунад:чорчӯба, дигар варақот ё ҷудокунаки сутун."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Фосила байни ҷудокунаки сутун"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&Макон"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "Истифода аз &ранг"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Рангҳо"
+
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "Агар нишонаи дигар рангҳо фаъол бошад, метавонед рангро барои намуд, ки "
+#~ "поёнтар ишора шудааст интихоб кунед. Вагарна рангҳои системавии KDE "
+#~ "истифода карда мешаванд."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Барои интихоби ранги он ба рӯи ҷузъ ду маротиба ё ENTER-ро клик кунед."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "Истифода аз &дигар ҳуруфот"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Ҳуруфи матн:"
+
+#~ msgid "Choose..."
+#~ msgstr "Интихоб..."
+
+#~ msgid "&Header font:"
+#~ msgstr "Ҳуруфи &унвон:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Агар нишонаи истифодаи дигар ҳуруфот фаъол сохта шуда бошад, шумо "
+#~ "метавонед ҳуруфотро барои намуде, ки поёнтар ишора шудааст, интихоб "
+#~ "кунед. Вагарна ҳуруфотҳои KDE-и пешфарзӣ ба усули нимағафс барои унвонот "
+#~ "ва усули оддӣ барои навиштан низ истифода мешаванд."
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Fonts"
+#~ msgstr "дорои"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "Нишон додани &заминаи холӣ"
+
+#~ msgid "Show field &labels"
+#~ msgstr "Нишон додани &заминаи навиштаҷот"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "Р&афтор"
+
+#~ msgid "Row Separator"
+#~ msgstr "Ҷудокунаки сатр"
+
+#~ msgid "Single line"
+#~ msgstr "Як сатр"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Нест"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Тасвироти заминавӣ:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Намоиши луқма дар алоқот"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "Варақа"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr ""
+#~ "Услуби варақоти Rolodex, алоқотро дар андозаи мутобиқ намоиш медиҳад."
+
+#~ msgid "Icon"
+#~ msgstr "Ишоротҳо"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Намоиши алоқот ба намуди ишорот. Аз ҳама намуди соддатарин."
+
+#~ msgid "Table"
+#~ msgstr "Ҷадвал"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "Намоиши алоқот ба намуди ҷадвал. Ҳар як ячейкаи ҷадвал заминаи алоқотро "
+#~ "нишон медиҳад."
+
+#~ msgid "Presence"
+#~ msgstr "Мавҷудият"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Содироти гузориш..."
+
+#~ msgid "AddressBook"
+#~ msgstr "Китоби адресӣ"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Аз сатр оғоз кардан:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Рад кардани ҷудокунакҳои такроршаванда"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[авто]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Алоқот бомуваффақият содир карда шуданд."
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Воридоти китоби адресии Eudora..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Китоби адресии оддии Eudora (*.txt) "
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Воридоти китоби адресӣ аз LDIF..."
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Содир кардан ба телефони мобилӣ"
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "Хатои истифодаи китобхонаи Gnokii."
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Истифодоти китобхонаи Gnokii сабт нашудааст."
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Хатои блоконии файл.\n"
+#~ "Тамоми барномаҳое, ки китобхонаи Gnokii-ро истифода мекунанд, пӯшед. "
+#~ "Ҳуқуқи қайд ба каталоги /var/lock-ро биозмоед ва боз сайъ кунед."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Mobile Phone interface initialization failed.<br><br>The "
+#~| "returned error message was:<br><b>%1</b><br><br>You might try to run "
+#~| "\"gnokii --identify\" on the command line to check any cable/transport "
+#~| "issues and to verify if your gnokii configuration is correct.</center></"
+#~| "qt>"
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Хатогӣ ҳангоми пайвастшавӣ ба телефони мобилӣ."
+#~ "<br><br>Тасвироти хатогӣ:<br><b>%1</b><br><br>Ин \"gnokii --identify\"-ро "
+#~ "дар сатри дастур барои тафтиши кабел, интерфейс ва тасҳеҳоти танзими "
+#~ "gnokii, ба кор дароред.</center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "хатои номаълум"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Истеҳсолкунанда"
+
+#~ msgid "Phone model"
+#~ msgstr "Услуби телефон"
+
+#~ msgid "Revision"
+#~ msgstr "Раванд"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "Вазъияти китоби адресӣ"
+
+#, fuzzy
+#~| msgid "%1 out of %2 contacts used"
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "%1-и аз %2 алоқот, пур аст"
+#~ msgstr[1] "%1-и аз %2 алоқот, пур аст"
+
+#~ msgid "internal memory"
+#~ msgstr "хотираи дохилӣ"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "Хотираи сим-корт"
+
+#~ msgid "unknown memory"
+#~ msgstr "хотира муайян нашуд"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Воридоти <b>%1</b> аз <b>%2</b> алоқотаз телефони мобилӣ.<br><br>%3</"
+#~ "qt>"
+#~ msgstr[1] ""
+#~ "<qt>Воридоти <b>%1</b> аз <b>%2</b> алоқотаз телефони мобилӣ.<br><br>%3</"
+#~ "qt>"
+
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Интерфейси Gnokii дастрас нест.\n"
+#~ "Истеҳсолкунандаи дистрибутиви худро бипурсед, ки китоби адресии KDE-ро бо "
+#~ "дастгирии китобхонаи gnokii,ҷамъ кунад."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Телефони мобилиро ба компютер пайваст кунед ва ба рӯи <b>Идома</b> "
+#~ "барои оғози вориди алоқот, пахш кунед.<br><br>Дар хотир доред, ки агар "
+#~ "телефони мобилӣ нодуруст пайваст шуда бошад, амали зоҳиркунӣ метавонад ду "
+#~ "дақиқа ва ё зиёдеро гирад, дар муддати кадоме китоби адресии KDE, чавоб "
+#~ "нахоҳад дод.</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Воридот аз телефони мобилӣ"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Establishing connection to the Mobile Phone.<br><br>Please "
+#~| "wait...</center></qt>"
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Сабткунии пайвастшавӣ бо телефони мобилӣ.<br><br> Интизор "
+#~ "шавед...</center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "&Боздоштани воридот"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start exporting the selected personal contacts."
+#~| "<br><br>Please note that if your Mobile Phone is not properly connected "
+#~| "the following detection phase might take up to two minutes, during which "
+#~| "KAddressbook will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Телефони мобилиро ба компютер пайваст кунед ва ба рӯи <b>Идома</b> "
+#~ "барои оғози содироти алоқоти интихобшуда, пахш кунед.<br><br>Дар хотир "
+#~ "доред, ки агар телефони мобилӣ нодуруст пайваст шуда бошад, амали "
+#~ "зоҳиркунӣ метавонад ду дақиқа ва ё зиёдеро гирад, дар муддати кадоме "
+#~ "китоби адресии KDE, чавоб нахоҳад дод.</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "Содирот ба телефони мобилӣ"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~| "current mobile phonebook or should they <b>replace</b> all currently "
+#~| "existing phonebook entries ?<br><br>Please note, that in case you choose "
+#~| "to replace the phonebook entries, every contact in your phone will be "
+#~| "deleted and only the newly exported contacts will be available from "
+#~| "inside your phone.</qt>"
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt>Шумо мехоҳед, ки алоқотҳои интихобшуда,ба китоби адресии телефони "
+#~ "мобилӣ <b>илова</b> шаванд ё онҳо тамоми қайдоти мавҷудиро дар телефони "
+#~ "мобилӣ <b>ивваз</b> кунанд?<br><br>Дар хотир доред, ки ҳангоми иввази "
+#~ "алоқот дар телефони мобилӣ тамоми алоқотҳои дар он мавҷудбуда ҳузф карда "
+#~ "мешаванд ва танҳо алоқотҳои воридотӣ пайдо мешаванд.</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Содир кардан ба телефони мобилӣ"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "&Афзудан ба китоби телефонии ҷорӣ"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "&Ивваз кардани қайдот дар китоби телефонӣ ба алоқотҳои нав"
+
+#~ msgid "&Stop Export"
+#~ msgstr "&Боздоштани содирот"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Содир карда мешавад <b>%1</b> аз <b>%2</b>алоқот ба телефони мобилӣ."
+#~ "<br><br>%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Содир карда мешавад <b>%1</b> аз <b>%2</b>алоқот ба телефони мобилӣ."
+#~ "<br><br>%3</qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Тамоми алоқотҳо бомуваффақият ба телефони мобилӣ копӣ карда "
+#~ "шуданд.<br><br>Лутфан, интизор шавед, ҳоло аз телефони мобилӣ алоқотҳои "
+#~ "кӯҳна ҳузф карда мешаванд.</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "&Боздоштани ҳузфот"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "Содирот ба телефони мобилӣ ба итмом расид."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~| "Possible Reasons for this problem could be:<br><ul><li>The contacts "
+#~| "contain more information per entry than the phone can store.</"
+#~| "li><li>Your phone does not allow to store multiple addresses, emails, "
+#~| "homepages, ...</li><li>other storage size related problems.</li></ul>To "
+#~| "avoid those kind of problems in the future please reduce the amount of "
+#~| "different fields in the above contacts.</qt>"
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt>Алоқотҳои ишорашуда наметавонад ба телефони мобилӣ содир шаванд. "
+#~ "Сабабҳои эҳтимолии содиркунии номуваффақ:<br><ul><li>Алоқот дорои "
+#~ "иттилооти иловагие, ки наметавонад ба телефони мобилӣ нигоҳ дошта шавад, "
+#~ "мебошад.</li><li>Телефони мобилии шумо наметавонад адресҳои почтавӣ, "
+#~ "электрониро, истинодотро ва ғайраро нигоҳ дорад.</li><li>Мумкин масъалаи "
+#~ "бо норасоии ҷои холӣ бошад.</li></ul> Барои пешгирии рӯй додани чунин "
+#~ "масъала дар оянда миқдори заминаи алоқоти содиршавандаро кам кунед.</qt>"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Наметавонам китоби адресии KDE 2 <b>%1</b>-ро ёбам.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Қайдоти пештар ворид кардаро аз нав нависам?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Воридоти китоби адресии KDE 2"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Воридот аз китоби адреси инфиродии Opera..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Воридот аз китоби адреси инфиродии MS Exchange (*.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "Наметавонам %1-ро барои хондан боз кунам"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr ""
+#~ "%1 дорои идентификатори PAB, ки пуштибонӣ мешавад, мебошад. Бадал кардан "
+#~ "канда шуд."
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "Файли китоби адреси инфиродии MS Exchange (*.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Наметавонам китоби адресии инфиродии MS Exchange <b>%1</b>-ро ёбам.</"
+#~ "qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Афғонистон"
+
+#~ msgid "Albania"
+#~ msgstr "Албания"
+
+#~ msgid "Algeria"
+#~ msgstr "Алҷазоир"
+
+#~ msgid "American Samoa"
+#~ msgstr "Самоаи Амрико"
+
+#~ msgid "Andorra"
+#~ msgstr "Андорра"
+
+#~ msgid "Angola"
+#~ msgstr "Ангола"
+
+#~ msgid "Anguilla"
+#~ msgstr "Ангилла"
+
+#~ msgid "Antarctica"
+#~ msgstr "Антарктида"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Антигуа ва Барбуда"
+
+#~ msgid "Argentina"
+#~ msgstr "Аргентина"
+
+#~ msgid "Armenia"
+#~ msgstr "Арманистон"
+
+#~ msgid "Aruba"
+#~ msgstr "Аруба"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ашмор ва ҷазираҳои Картерӣ"
+
+#~ msgid "Australia"
+#~ msgstr "Австралия"
+
+#~ msgid "Austria"
+#~ msgstr "Австрия"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Озарбойҷон"
+
+#~ msgid "Bahamas"
+#~ msgstr "Ҷазираҳои Багам"
+
+#~ msgid "Bahrain"
+#~ msgstr "Баҳрейн"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Бангладеш"
+
+#~ msgid "Barbados"
+#~ msgstr "Барбадос"
+
+#~ msgid "Belarus"
+#~ msgstr "Белоруссия"
+
+#~ msgid "Belgium"
+#~ msgstr " Белгия"
+
+#~ msgid "Belize"
+#~ msgstr "Белиз"
+
+#~ msgid "Benin"
+#~ msgstr "Бенин"
+
+#~ msgid "Bermuda"
+#~ msgstr "Ҷазираҳои Бермуд"
+
+#~ msgid "Bhutan"
+#~ msgstr "Бутон"
+
+#~ msgid "Bolivia"
+#~ msgstr "Боливия"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Босния ва Герсеговина"
+
+#~ msgid "Botswana"
+#~ msgstr "Ботсвана"
+
+#~ msgid "Brazil"
+#~ msgstr "Бразилия"
+
+#~ msgid "Brunei"
+#~ msgstr "Бруней"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Болғория"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Буркина-Фассо "
+
+#~ msgid "Burundi"
+#~ msgstr "Бурунди"
+
+#~ msgid "Cambodia"
+#~ msgstr "Комбоҷа"
+
+#~ msgid "Cameroon"
+#~ msgstr "Камерун"
+
+#~ msgid "Canada"
+#~ msgstr "Канада"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Кабо-Верде "
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Ҷазираҳои Кайман"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Ҷумҳурии Африко"
+
+#~ msgid "Chad"
+#~ msgstr "Чад "
+
+#~ msgid "Chile"
+#~ msgstr "Чили"
+
+#~ msgid "China"
+#~ msgstr "Хитой"
+
+#~ msgid "Colombia"
+#~ msgstr "Колумбия"
+
+#~ msgid "Comoros"
+#~ msgstr "Ҷазираҳои Камар"
+
+#~ msgid "Congo"
+#~ msgstr "Конго (Броззовил) "
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Конго (республикаи демократии Конго)"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Коста-Рика"
+
+#~ msgid "Croatia"
+#~ msgstr "Хорватия"
+
+#~ msgid "Cuba"
+#~ msgstr "Куба"
+
+#~ msgid "Cyprus"
+#~ msgstr "Кипр"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Ҷумҳурии Чехия"
+
+#~ msgid "Denmark"
+#~ msgstr "Дания"
+
+#~ msgid "Djibouti"
+#~ msgstr "Ҷибути "
+
+#~ msgid "Dominica"
+#~ msgstr "Доминика"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Ҷумҳурии Доминикан"
+
+#~ msgid "Ecuador"
+#~ msgstr "Эквадор"
+
+#~ msgid "Egypt"
+#~ msgstr "Миср"
+
+#~ msgid "El Salvador"
+#~ msgstr "Салвадор"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Гвинеяи экваториалӣ"
+
+#~ msgid "Eritrea"
+#~ msgstr "Эритрея"
+
+#~ msgid "Estonia"
+#~ msgstr "Эстония"
+
+#~ msgid "England"
+#~ msgstr "Англия"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Эфиопия"
+
+#~ msgid "European Union"
+#~ msgstr "Иттифоқи Европои"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Ҷазираи Фарер"
+
+#~ msgid "Fiji"
+#~ msgstr "Фиҷи "
+
+#~ msgid "Finland"
+#~ msgstr "Финляндия"
+
+#~ msgid "France"
+#~ msgstr "Франсия"
+
+#~ msgid "French Polynesia"
+#~ msgstr " Полинезияи Франсавӣ"
+
+#~ msgid "Gabon"
+#~ msgstr "Габон "
+
+#~ msgid "Gambia"
+#~ msgstr "Гамбия"
+
+#~ msgid "Georgia"
+#~ msgstr "Гурҷистон"
+
+#~ msgid "Germany"
+#~ msgstr "Германия"
+
+#~ msgid "Ghana"
+#~ msgstr "Гана"
+
+#~ msgid "Greece"
+#~ msgstr "Юнон"
+
+#~ msgid "Greenland"
+#~ msgstr "Гренландия"
+
+#~ msgid "Grenada"
+#~ msgstr "Гренада"
+
+#~ msgid "Guam"
+#~ msgstr "Гуам"
+
+#~ msgid "Guatemala"
+#~ msgstr "Гватемала"
+
+#~ msgid "Guinea"
+#~ msgstr "Гвинея"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Гвинея-Бисау"
+
+#~ msgid "Guyana"
+#~ msgstr "Гвианаи (Франсавӣ)"
+
+#~ msgid "Haiti"
+#~ msgstr "Гаити"
+
+#~ msgid "Honduras"
+#~ msgstr "Гондурас"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Гонконг"
+
+#~ msgid "Hungary"
+#~ msgstr "Венгрия"
+
+#~ msgid "India"
+#~ msgstr "Ҳиндустон"
+
+#~ msgid "Indonesia"
+#~ msgstr "Индонезия"
+
+#~ msgid "Iran"
+#~ msgstr "Эрон"
+
+#~ msgid "Iraq"
+#~ msgstr "Ироқ"
+
+#~ msgid "Ireland"
+#~ msgstr "Ирландия"
+
+#~ msgid "Israel"
+#~ msgstr "Исроил"
+
+#~ msgid "Italy"
+#~ msgstr "Италия"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Соҳили оҷ"
+
+#~ msgid "Jamaica"
+#~ msgstr "Ямайка"
+
+#~ msgid "Japan"
+#~ msgstr "Япония"
+
+#~ msgid "Jordan"
+#~ msgstr "Ӯрдун"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Қазоқистон"
+
+#~ msgid "Kenya"
+#~ msgstr "Кения"
+
+#~ msgid "Kiribati"
+#~ msgstr "Кирибати"
+
+#~ msgid "Korea, North"
+#~ msgstr "Кореяи шимолӣ"
+
+#~ msgid "Korea, South"
+#~ msgstr "Кареяи ҷанубӣ"
+
+#~ msgid "Kuwait"
+#~ msgstr "Қувайт"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Қирғизистон"
+
+#~ msgid "Laos"
+#~ msgstr "Лаос"
+
+#~ msgid "Latvia"
+#~ msgstr "Латвия"
+
+#~ msgid "Lebanon"
+#~ msgstr "Ливан"
+
+#~ msgid "Lesotho"
+#~ msgstr "Лесото "
+
+#~ msgid "Liberia"
+#~ msgstr "Либерия"
+
+#~ msgid "Libya"
+#~ msgstr "Ливия"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Лихтенштейн"
+
+#~ msgid "Lithuania"
+#~ msgstr "Литва"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Люксембург"
+
+#~ msgid "Macau"
+#~ msgstr "Макао"
+
+#~ msgid "Madagascar"
+#~ msgstr "Мадагаскар"
+
+#~ msgid "Malawi"
+#~ msgstr " Малави"
+
+#~ msgid "Malaysia"
+#~ msgstr "Малайзия"
+
+#~ msgid "Maldives"
+#~ msgstr "Ҷазираҳои  Малдив"
+
+#~ msgid "Mali"
+#~ msgstr "Мали"
+
+#~ msgid "Malta"
+#~ msgstr "Малта"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Ҷазираҳои Маршалл"
+
+#~ msgid "Martinique"
+#~ msgstr "Мартиника"
+
+#~ msgid "Mauritania"
+#~ msgstr "Мавритания"
+
+#~ msgid "Mauritius"
+#~ msgstr "Маврикия"
+
+#~ msgid "Mexico"
+#~ msgstr "Мексика"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr " Микронезия"
+
+#~ msgid "Moldova"
+#~ msgstr "Малдав"
+
+#~ msgid "Monaco"
+#~ msgstr "Монако"
+
+#~ msgid "Mongolia"
+#~ msgstr "Муғулистон"
+
+#~ msgid "Montserrat"
+#~ msgstr "Монтсеррат "
+
+#~ msgid "Morocco"
+#~ msgstr "Марокаш"
+
+#~ msgid "Mozambique"
+#~ msgstr "Мозамбик"
+
+#~ msgid "Namibia"
+#~ msgstr "Намибия"
+
+#~ msgid "Nauru"
+#~ msgstr "Науру"
+
+#~ msgid "Nepal"
+#~ msgstr "Непал"
+
+#~ msgid "Netherlands"
+#~ msgstr "Нидерланд"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Нидерландаи Ҷазираҳои Антил"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Каледонияи Нав"
+
+#~ msgid "New Zealand"
+#~ msgstr "Зеландияи Нав"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Никарагуа"
+
+#~ msgid "Niger"
+#~ msgstr "Нигер"
+
+#~ msgid "Nigeria"
+#~ msgstr "Нигерия"
+
+#~ msgid "Niue"
+#~ msgstr "Ниуе"
+
+#~ msgid "North Korea"
+#~ msgstr "Кореяи шимолӣ"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Ирландияи шимолӣ"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Ҷазираҳои Шимоли Мариана"
+
+#~ msgid "Norway"
+#~ msgstr "Норвегия"
+
+#~ msgid "Oman"
+#~ msgstr "Уммон"
+
+#~ msgid "Pakistan"
+#~ msgstr "Покистон"
+
+#~ msgid "Palau"
+#~ msgstr "Палау"
+
+#~ msgid "Palestinian"
+#~ msgstr "Палестина"
+
+#~ msgid "Panama"
+#~ msgstr "Панама"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Папуа-Гвинеяи Нав"
+
+#~ msgid "Paraguay"
+#~ msgstr "Парагвай"
+
+#~ msgid "Peru"
+#~ msgstr "Перу"
+
+#~ msgid "Philippines"
+#~ msgstr "Филиппин"
+
+#~ msgid "Poland"
+#~ msgstr "Полша"
+
+#~ msgid "Portugal"
+#~ msgstr "Португалия"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Пуэрто-Рико"
+
+#~ msgid "Qatar"
+#~ msgstr "Қатар"
+
+#~ msgid "Romania"
+#~ msgstr "Руминия"
+
+#~ msgid "Russia"
+#~ msgstr "Р"
+
+#~ msgid "Rwanda"
+#~ msgstr "Руанда"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "Сент-Кристоферс ва Невис"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Сент-Люсия"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Сент-Винсент ва Гренадинҳо"
+
+#~ msgid "San Marino"
+#~ msgstr "Сан-Марино "
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Сан-Томе ва Принсипи "
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Арабистони Суудӣ"
+
+#~ msgid "Senegal"
+#~ msgstr "Сенегал"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Сербия"
+
+#~ msgid "Seychelles"
+#~ msgstr "Ҷазираҳои Сейшел"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Серра-Леоне"
+
+#~ msgid "Singapore"
+#~ msgstr "Сингапур"
+
+#~ msgid "Slovakia"
+#~ msgstr "Словакия"
+
+#~ msgid "Slovenia"
+#~ msgstr "Словения"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Ҷазираҳои Соломон"
+
+#~ msgid "Somalia"
+#~ msgstr "Сомалӣ"
+
+#~ msgid "South Africa"
+#~ msgstr "Африкаи Ҷанубӣ"
+
+#~ msgid "South Korea"
+#~ msgstr "Кореяи ҷанубӣ"
+
+#~ msgid "Spain"
+#~ msgstr "Испания"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Шри-Ланка"
+
+#~ msgid "Sudan"
+#~ msgstr "Судон"
+
+#~ msgid "Suriname"
+#~ msgstr "Суринам"
+
+#~ msgid "Swaziland"
+#~ msgstr "Свазиленд"
+
+#~ msgid "Sweden"
+#~ msgstr "Швесия"
+
+#~ msgid "Switzerland"
+#~ msgstr "Швейсария"
+
+#~ msgid "Syria"
+#~ msgstr "Сирия"
+
+#~ msgid "Taiwan"
+#~ msgstr "Тайван"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Тоҷикистон"
+
+#~ msgid "Tanzania"
+#~ msgstr "Танзания"
+
+#~ msgid "Thailand"
+#~ msgstr "Таиланд"
+
+#~ msgid "Tibet"
+#~ msgstr "Тибет"
+
+#~ msgid "Togo"
+#~ msgstr "Того"
+
+#~ msgid "Tonga"
+#~ msgstr "Тонга"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Тринидад ва Тобаго"
+
+#~ msgid "Tunisia"
+#~ msgstr "Тунис"
+
+#~ msgid "Turkey"
+#~ msgstr "Туркия"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Туркманистон"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Теркс ва Кайкос"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Тувалу"
+
+#~ msgid "Uganda"
+#~ msgstr "Уганда"
+
+#~ msgid "Ukraine"
+#~ msgstr "Украина"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Муттаҳидаи Эмиратҳои Араб"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Британияи кабир"
+
+#~ msgid "United States"
+#~ msgstr "Штатҳои Муттаҳидаи Амрико"
+
+#~ msgid "Uruguay"
+#~ msgstr "Уругвай"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Ӯзбекистон"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Вануату"
+
+#~ msgid "Vatican City"
+#~ msgstr "Ватикан"
+
+#~ msgid "Venezuela"
+#~ msgstr "Венесуэла"
+
+#~ msgid "Vietnam"
+#~ msgstr "Ветнам"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Самоаи ғарбӣ"
+
+#~ msgid "Yemen"
+#~ msgstr "Яман"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Югославия"
+
+#~ msgid "Zaire"
+#~ msgstr "Заир"
+
+#~ msgid "Zambia"
+#~ msgstr "Замбия"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Зимбабве"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Нест"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Унвон:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Ном"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Почтаи электронӣ"
+
+#, fuzzy
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Намоиши ҳозирбудан дар хизматгоҳи иввазоти иттилоот"
+
+#~ msgid "Address:"
+#~ msgstr "Адресҳо:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Эҷод кардан..."
+
+#~ msgid "&General"
+#~ msgstr "&Умумӣ"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "Матн"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "Замина бо чунин ном аллакай вуҷуд аст, номи дигарро ишора кунед."
+
+#, fuzzy
+#~ msgid "Blog feed at '%1' does not contain an image."
+#~ msgstr "vCard дорои ягон алоқоте намебошад."
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "Рӯйхати ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Нест"
+
+#~ msgid "New List..."
+#~ msgstr "Рӯйхати нав..."
+
+#~ msgid "Rename List..."
+#~ msgstr "Тағйири номи рӯйхат..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "Ҳузфи алоқот"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Лутфан, номро ворид кунед:"
+
+#~ msgid "The name already exists"
+#~ msgstr "Номи ишорашуда мавҷуд аст"
+
+#, fuzzy
+#~ msgid "Rename Distribution List"
+#~ msgstr "Рӯйхати нави ба ҳар сӯ фиристонӣ"
+
+#, fuzzy
+#~ msgid "The name already exists."
+#~ msgstr "Номи ишорашуда мавҷуд аст"
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>Рӯйхати ба ҳар сӯ фиристонии <b>%1</b>-ро ҳузф кунам?</qt>"
+
+#, fuzzy
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "Алоқоти %1 ёфт шуд:"
+#~ msgstr[1] "Алоқоти %1 ёфт шуд:"
+
+#~ msgid "Select Email Address"
+#~ msgstr "Адреси E-Mail"
+
+#~ msgid "Email Addresses"
+#~ msgstr "Адресҳои почтаи эллектронӣ"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "Намоиши панели иловагӣ"
+
+#~ msgid "Using codec '%1'"
+#~ msgstr "Истифода аз кодгузории '%1'"
+
+#~ msgid "Encoding"
+#~ msgstr "Кодгузорӣ"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "Ҷустуҷӯи адресҳо &дар каталоги LDAP..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "Панели асбобҳои Алоқот"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "Гузориш дар китоби адресӣ"
+
+#~ msgid "Check the categories whose members you want to export."
+#~ msgstr "Интихоби дараҷот."
+
+#~ msgid "Unable to load '%1'."
+#~ msgstr "Наметавонам '%1'-ро пурбор кунам."
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.%2.</qt>"
+#~ msgstr "<qt>Наметавонам файли <b>%1</b>-ро боз кунам.%2.</qt>"

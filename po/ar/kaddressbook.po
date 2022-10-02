@@ -1,0 +1,5359 @@
+# translation of kaddressbook.po to
+# This the translation file for the KDE Address Book in .
+# Copyright (C) 2001, 2004, 2006, 2007 Free Software Foundation, Inc.
+# Ammer Alsabbagh <whollyboss@yahoo.com>, 2001.
+# Ahmad M. Zawawi <zawawi@arabeyes.org>, 2004.
+# Munzir Taha <munzir@kacst.edu.sa>, 2004.
+# محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٦, 2018.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2022-01-04 14:43+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 21.07.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "صفا الفليج"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "safa1996alfulaij@gmail.com"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "دفتر العناوين"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "المتراسل"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "البُرد الإلكترونيّة"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "المنظّمة"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "موقع الوبّ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "عيد الميلاد"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "الملاحظة"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "العنوان"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(حديث الولادة)"
+msgstr[1] "(عمره سنة واحدة)"
+msgstr[2] "(عمره سنتان)"
+msgstr[3] "(عمره %1 سنوات)"
+msgstr[4] "(عمره %1 سنة)"
+msgstr[5] "(عمره %1 سنة)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "تغذية المدوّنة"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "دفتر عناوينك"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "متراسل جديد..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "سيُعرض حواريّ يمكنك منه إنشاء متراسل جديد."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "مجموعة متراسلون جديدة..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "سيُعرض حواريّ يمكنك منه إنشاء مجموعة متراسلين جديد."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "تطبيق «كدي» لدفتر العناوين"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "الحقوق محفوظة © ٢٠٠٧-%1 لمؤلّفي «دفتر عناوينك»"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "المصين الحاليّ"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "المصين السّابق"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "المؤلف الأصلي (1998)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "التّوثيق"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "صفّر مرشّح الفئات"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "امسح مرشّح الفئات"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(غير الموسوم)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(المجموعات)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(الكلّ)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(بلا)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr " و"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<html dir=\"rtl\">مرشّح الفئات: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "اضبط الملحقات"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "(c), 2016-2021 Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "اضبط إعدادات مشاركة البيانات"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "(c), 2020-2021 Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "ملحقات الأدوات"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "ملحقات الاستيراد والتّصدير"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "يحمل تفاصيل المتراسلين..."
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "البريد الإلكتروني: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "الهاتف: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "‏%1‏%2 ‏%3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "‏%1 %2‏ ‏%3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "التّالي"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "السّابق"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "انتقل إلى المتراسل السّابق في القائمة"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "انقر هذا الزّرّ للانتقال إلى المتراسل السّابق في القائمة."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "انتقل إلى المتراسل التّالي في القائمة"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "انقر هذا الزّرّ للانتقال إلى المتراسل التّالي في القائمة."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 من أصل %2"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "غير معرّف"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "السّنويّة"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "البريد الإلكترونيّ (المفضّل)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "البريد الإلكترونيّ (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "البريد الإلكترونيّ (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "البريد الإلكترونيّ (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "المهنة"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "المكتب"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "المدير"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "المساعد"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "الزّوج/الزّوجة"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "حدّد المتراسلين"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "كلّ المتراسلين"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "كلّ المتراسلين من دفاتر العناوين"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "اختر هذا الخيار إن أردت تحديد كلّ المتراسلين من كلّ دفاتر العناوين."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "المتراسلون المحدّدون"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "المتراسلون المحدّدون حاليًّا فقط"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"اختر هذا الخيار إن أردت تحديد المتراسلين المحدّدين في الواجهة الرّسوميّة "
+"المعروضة فقط."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "كلّ المتراسلين من:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "كلّ المتراسلين من دفتر عناوين معيّن"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"اختر هذا الخيار إن أردت تحديد كلّ المتراسلين من أحد دفاتر العناوين. ما إن "
+"يُنقر الخيار سيُعرض مربّع قائمة منسدلة يعرض كلّ دفاتر العناوين ويطلب منك اختيار "
+"أحدها."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "ضمّن المجلّدات الفرعيّة"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "حدّد كلّ المجلّدات الفرعيّة بما فيه المجلّد في أعلى مستوًى"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"أشّر هذا المربّع إن أردت تحديد كلّ المتراسلين في هذا المجلّد، كما وكلّ المجلّدات "
+"الفرعيّة. إن أردت المتراسلين من المجلّد الأعلى مستوًى فقط، فاترك هذا المربع بلا "
+"تأشير."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "اجمع المتراسلون"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "اجلب المتراسلون"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "الحقول الخاصّة"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "حقول العمل"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "الحقول الأخرى"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "مفاتيح التّعمية"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "الصّور"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "اعرض الاسم كاسم كامل"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "الحقول لتصديرها"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "صدّر الحقول الخاصّة"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr "أشّر هذا المربّع إن أردت تصدير حقول المتراسل الخاصّة إلى ملفّ الخرج vCard."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "صدّر حقول العمل"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"أشّر هذا المربّع إن أردت تصدير حقول المتراسل الخاصّة بالعمل إلى ملفّ الخرج vCard."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "صدّر الحقول الأخرى"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr "أشّر هذا المربّع إن أردت تصدير حقول المتراسل الأخرى إلى ملفّ الخرج vCard."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "صدّر مفاتيح التّعمية"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"أشّر هذا المربّع إن أردت تصدير مفاتيح تعمية المتراسل إلى ملفّ الخرج vCard."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "صدّر الصّور"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr "أشّر هذا المربّع إن أردت تصدير صورة المتراسل إلى ملفّ الخرج vCard."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "خيارات التّصدير"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "صدّر اسم العرض كاسم كامل"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"أشّر هذا المربّع إن أردت تصدير اسم عرض المتراسل في حقل الاسم الكامل ل‍vCard. قد "
+"يكون هذا مطلوبًا ليُعرض الاسم كما في \"جي‌ميل\" أو أندرويد."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "اختر دفتر عناوين"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "اختر دفتر العناوين لحفظ المتراسلين المستوردين فيه:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "استورد مراسلين"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "لا يستورد شيئًا إلى %2"
+msgstr[1] "يستورد متراسلًا واحدًا إلى %2"
+msgstr[2] "يستورد متراسلين إلى %2"
+msgstr[3] "يستورد %1 متراسلين إلى %2"
+msgstr[4] "يستورد %1 متراسلًا إلى %2"
+msgstr[5] "يستورد %1 متراسل إلى %2"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "استورد الملفّ المعطى"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "افتح حواريّ ’متراسل جديد‘"
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "اعرض المتراسل المحدد (بواسطة المسار)"
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr "ملفّات أو مسارات. سيُسأل المستخدم أيّهما يجب استيراده."
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "يسرد الخيارات المتاحة لمشاركة بياناتك"
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "ا&ضبط «دفتر عناوينك»..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&ملفّ"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&جديد"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "ت&حرير"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "من&ظور"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "إجرا&ء"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "أ&دوات"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "إ&عدادات"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&صدّر"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "شريط الأدوات الرّئيسيّ"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "استورد"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "صدّر"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "ابحث... <%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "سما&ت"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "اطبع دفتر العناوين الكامل أو عددًا محدّدًا من المتراسلين."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "بحث سريع"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "مرشّح الفئات"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "حدّد الكلّ"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "حدّد كلّ المتراسلين في منظور دفتر العناوين الحاليّ."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "اعرض رموز QR"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "اعرض رموز QR في المتراسل."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "بسيط (عمود واحد)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "اعرض وضعًا بسيطًا لمنظور دفتر العناوين."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "عمودان"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "ثلاث أعمدة"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "اضبط التّركيز على البحث السّريع"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "الاشتراك من جانب الخادوم..."
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "اطبع المتراسلين"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr "سيُعرض حواريّ يمكنك منه ضبط الاختصارات على مستوى التّطبيق."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<html dir=\"rtl\">سيُخفي هذا شريط القوائم بالكامل. يمكنك عرضه مجدّدًا بضغط %1.</"
+"html>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "أخفِ شريط القوائم"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "خصائص مجلّد دفاتر العناوين %1"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "اسم العائلة"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "الاسم المُعطى"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "عنوان المنزل"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "عنوان العمل"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "أرقام الهواتف"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "البريد الإلكترونيّ المفضّل"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "كلّ البُرد الإلكترونيّة"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "النّمط المتراصّ"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "يضبط المستند"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "يطبع"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "تمّ"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "نمط الطّباعة المتراصّ"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "المظهر"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "الحقول"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr "اطبع عنوان المنزل ورقم هاتف المنزل ورقم الهاتف المحمول"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "بعنوان المنزل"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "اطبع عنوان العمل ورقم هاتف العمل"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "بعنوان العمل"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "اطبع عيد الميلاد"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "بعيد الميلاد"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "اطبع حقليّ البريد الإلكترونيّ المفضل والثّاني"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "بالبريد الإلكترونيّ"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "أوّل لون، إن كان تناوب الألوان مفعّلًا"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "أوّل لون"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "ثاني لون، إن كان تناوب الألوان مفعّلًا"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "ثاني لون"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "غيّر لون خلفيّة كلّ صفّ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "تناوب ألوان الخلفيّة"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "المنظّمة:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "عنوان البريد الإلكترونيّ:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "عناوين البريد الإلكترونيّ:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "الهاتف:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "الهواتف:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "صفحة الوبّ:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "العنوان المحليّ"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "العنوان العالميّ"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "العنوان البريديّ"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "عنوان الطّرود"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "عنوان العمل"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "العنوان المفضّل"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "ملاحظات:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "نمط الطّباعة المفصّل - المظهر"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "يضبط الألوان"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "النّمط المفصّل"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "صفحة المظهر"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "ترويسات المتراسل"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "اختر لون خلفيّة نصّ العنوان"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr "انقر هذا الزرّ لبدء منقي ألوان يتيح لك ضبط لون خلفيّة العنوان."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "لون خلفيّة العنوان:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "لون نصّ العنوان:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "اختر لون نصّ العنوان"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr "انقر هذا الزرّ لبدء منقي ألوان يتيح لك ضبط لون النّصّ."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "نمط ”مايك“ للطّباعة"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "أيّ المتراسلين تريد طباعتهم؟"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "اختر المتراسلين لطباعتهم"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "اختر نمط الطّباعة"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "تقدّم الطّباعة"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "تقدم الطباعة"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "التّقدّم"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "اطبع معلومات المتراسل"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "اطبع أرقام هواتف المتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr "أشّر هذا المربّع إن أردت طباعة أرقام هواتف المتراسل."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "أرقام الهواتف"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "اطبع عناوين البريد الإلكتروني للمتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr "أشّر على هذا المربّع إن أردت طباعة عناوين بريد المتراسل الإلكترونيّ."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "عناوين البريد الإلكترونيّ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "اطبع عناوين الشّوارع للمتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr "أشّر على هذا المربّع إن أردت طباعة العناوين البريديّة للمتراسل."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "العناوين البريديّة"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "اطبع منظّمات المتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "أشّر على هذا المربّع إن أردت طباعة منظّمات المتراسل."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "اطبع عيد ميلاد المتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "أشّر على هذا المربّع إن أردت طباعة عيد ميلاد المتراسل."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "اطبع ملاحظات المتراسل"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "أشّر على هذا المربّع إن أردت طباعة ملاحظات المتراسل."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "ملاحظة: "
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "نمط الطّباعة للتّغليف الحلزونيّ - المظهر"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "يضبط الحقول"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "طباعة للتّغليف حلزونيًّا"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "تصاعديًّا"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "تنازليًّا"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(لا معاينة متوفّرة.)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "اختر نمط الطّباعة"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"كيف يجب أن يكون النّاتج؟\n"
+"يحتوي «دفتر عناوينك» عددًا من أنماط الطّباعة، صُمّمت لمختلف الأغراض.\n"
+"اختر النّمط الذي يناسب حاجتك أدناه."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "الفرز"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "المعيار:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "اختر حقل الفرز الأساسيّ"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"يمكنك من هذا الحقل اختيار طريقة ترتيب المتراسلين في خرج الطّباعة. استخدم خيار "
+"ترتيب الفرز لتحديد فيما إذا كان التّرتيب تصاعديّ أم تنازليّ."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "التّرتيب:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "اختر ترتيب الفرز"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"اختر فيما إذن كنت تريد فرز المتراسلين في ترتيب تصاعديّ أم تنازليّ. استخدم خيار "
+"معيار الفرز لتحديد حقل المتراسل الذي ستُجرى عمليّة التّرتيب بناءً عليه."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "نمط الطّباعة"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "اختر نمط الطّباعة"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr "اختر نمط الطّباعة الذي تريد. طالع المعاينة لمساعدتك في اختيار واحد."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "ابحث في المتراسلين في القائمة"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"ابدأ بكتابة نصّ في هذا المربع وستُعرض قائمة المتراسلين المطابقة له. هذه طريقة "
+"سريعة للبحث عن المتراسلين المهتمّ بمعرفتهم."
+
+#~ msgid "&Import"
+#~ msgstr "ا&ستورد"
+
+#~ msgid "Import vCard..."
+#~ msgstr "استورد vCard..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "استورد متراسلين من ملفّ vCard."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "استورد ملفّ CSV..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "استورد متراسلين من ملفّ بنسق \"قيم مفصولة بفواصل\"."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "استورد ملفّ LDIF..."
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "استورد متراسلين من ملفّ LDIF."
+
+#~ msgid "Import From LDAP server..."
+#~ msgstr "استورد من خادوم LDAP..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "استورد متراسلين من خادوم LDAP."
+
+#~ msgid "Import GMX file..."
+#~ msgstr "استورد ملفّ GMX..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "استورد متراسلين من ملفّ دفتر عناوين GMX."
+
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "صدّر vCard الإصدارة 4.0..."
+
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "صدّر المتراسلين إلى ملفّ vCard الإصدارة 4.0."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "صدّر vCard الإصدارة 3.0..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "صدّر المتراسلين إلى ملفّ vCard الإصدارة 3.0."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "صدّر vCard الإصدارة 2.1..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "صدّر المتراسلين إلى ملفّ vCard الإصدارة 2.1."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "صدّر ملفّ CSV..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "صدّر المتراسلين إلى ملفّ بنسق \"قيم مفصولة بفواصل\"."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "صدّر ملفّ LDIF..."
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "صدّر المتراسلين إلى ملفّ LDIF."
+
+#~ msgid "Export GMX file..."
+#~ msgstr "صدّر ملفّ GMX..."
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "صدّر المتراسلين إلى ملفّ دفتر عناوين GMX."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>تعذّر فتح الملفّ <b>%1</b></qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>تعذّر فتح الملفّ <b>%1</b>.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "حواريّ استيراد CSV"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "يستورد المتراسلين"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "الملفّ لاستيراده:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "اختر ملفّ CSV لاستيراده"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Click this button to start a file chooser that will allow you to select a "
+#~ "csv file to import."
+#~ msgstr "انقر هذا الزّرّ لبدء منتقي ملفّات يسمح لك باختيار ملفّ CSV لاستيراده."
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "المحدِّد"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "فاصلة"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "اضبط فاصل الحقول ليكون فاصلة"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the comma as a field separator."
+#~ msgstr "اختر هذا الخيار إن كان ملفّ CSV يستخدم الفاصلة كفاصل حقول."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "فاصلة منقوطة"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "اضبط فاصل الحقول ليكون فاصلة منقوطة"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the semicolon as a field "
+#~ "separator."
+#~ msgstr "اختر هذا الخيار إن كان ملفّ CSV يستخدم الفاصلة المنقوطة كفاصل حقول."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "جدولة"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a tab character"
+#~ msgstr "اضبط فاصل الحقول ليكون محرف جدولة"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the tab character as a field "
+#~ "separator."
+#~ msgstr "اختر هذا الخيار إن كان ملفّ CSV يستخدم محرف الجدولة كفاصل حقول."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "مسافة"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a space character"
+#~ msgstr "اضبط فاصل الحقول ليكون محرف مسافة"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the space character as a field "
+#~ "separator."
+#~ msgstr "اختر هذا الخيار إن كان ملفّ CSV يستخدم محرف المسافة كفاصل حقول."
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "أخرى"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a custom character"
+#~ msgstr "اضبط فاصل الحقول ليكون محرفًا مخصّصًا"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if to use some other character as the field delimiter "
+#~ "for the data in your csv file."
+#~ msgstr ""
+#~ "اختر هذا الخيار إن كنت تسخدم محرفًا آخرًا كمحدِّد للحقول في البيانات داخل ملفّ "
+#~ "CSV."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the custom delimiter character"
+#~ msgstr "اضبط محرفًا خاصًّا للمحدِّد"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Enter a custom character to use as the delimiter character. If you enter "
+#~ "more than 1 character, only the first will be used and the remaining "
+#~ "characters will be ignored."
+#~ msgstr ""
+#~ "أدخل محرفًا مخصّصًا لاستخدامه كمحرف محدِّد. إن أدخلت أكثر من محرف واحد، "
+#~ "فسيُستخدم الأوّل وستُتجاهل البقيّة."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "اقتباس النّصّ:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "اختر محرف الاقتباس"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Choose the character that your csv data uses to \"quote\" the field "
+#~ "delimiter if that character happens to occur within the data.  For "
+#~ "example, if the comma is the field delimiter, then any comma occurring "
+#~ "with the data will be \"quoted\" by the character specified here."
+#~ msgstr ""
+#~ "اختر المحرف الذي تستخدمه بيانات CSV \"لاقتباس\" محدِّد الحقول إن حصل وكان "
+#~ "ضمن البيانات. مثلًا، إن كانت الفاصلة هي محدِّد الحقول، فأيّ فاصلة أخرى داخل "
+#~ "البيانات \"ستُقتبس\" بالمحرف المحدّد هنا."
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "بلا"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "نسق التّاريخ:"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "ترميز النّصّ:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "اختر ترميز النّصّ"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose the character encoding of the data in your csv file."
+#~ msgstr "اختر ترميز المحارف للبيانات داخل ملفّ CSV."
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "تخطّ أوّل صفّ في الملفّ"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "تخطّ أوّل صفّ في ملفّ CSV عند الاستيراد"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this box if you want the import to skip over the first row of the "
+#~ "csv data. In many cases, the first line of a csv file will be a comment "
+#~ "line describing the order of the data fields included in the file."
+#~ msgstr ""
+#~ "أشّر هذا المربّع إن أردت تخطّي أوّل صفّ في بيانات CSV. غالبًا ما يكون أوّل سطر "
+#~ "تعليقًا يصف ترتيب حقول البيانات داخل الملفّ."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "طبّق القالب..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "احفظ القالب..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "محليّ (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "اللاتينيّة1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "يونيكود"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "يونيكود مايكروسوفت"
+
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "عليك تعيين عمود واحد على الأقلّ."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "لا قوالب متوفّرة بعد."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "لا قوالب متوفّرة"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "اسم القالب"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "فضلًا أدخل اسمًا للقالب:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "تعذّر فتح الملفّ الدّخل."
+
+#~ msgid "Device is not open"
+#~ msgstr "الجهاز ليس مفتوحًا"
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "أمتأكّد من حذف القالب '%1'؟"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "اختيار القالب"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "فضلًا اختر قالبًا يطابق ملفّ CSV:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "ملفّ دفتر عناوين GMX (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>تعذّر فتح <b>%1</b> للقراءة.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "ليس %1 ملفّ دفتر عناوين GMX."
+
+#~ msgid "LDif Files (*.ldif)"
+#~ msgstr "ملفّات LDif (*.ldif)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr "لقد حدّدت عدّة متراسلين، أيجب تصديرها إلى عدّة ملفّات؟"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "صدّر إلى ملفّ واحد"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "صدّر إلى عدّة ملفّات"
+
+#~ msgid ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|all files (*)"
+#~ msgstr ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|كلّ الملفّات (*)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "اختر vCard لاستيرادها"
+
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "فشل استيراد vCard"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>تعذّر النّفاذ إلى vCard:</para><para>%1</para>"
+
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "لم يُستورد أيّ متراسل بسبب الأخطاء ببطاقات vCard."
+
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "ليس في vCard أيّ متراسلين."
+
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "استيراد vCard"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "أتريد استيراد هذا المتراسل إلى دفتر العناوين؟"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "استورد الكلّ..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "أيّ متراسل تريد تصديره؟"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "لم تحدّد أيّ متراسلين لتصديرهم."
+
+#, fuzzy
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "Ungrouped"
+#~ msgstr "تفكيك خطاب"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "خطاب المجموعات"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "عنوان البريد الالكتروني:"
+
+#, fuzzy
+#~ msgid "Save Image"
+#~ msgstr "احفظ قالب."
+
+#, fuzzy
+#~ msgid "Save Image URL"
+#~ msgstr "احفظ قالب."
+
+#, fuzzy
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "البرتوكول"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "إ&بحث"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "إرسال بريد إلى كل عناوين المراسلة المختارة."
+
+#, fuzzy
+#~ msgid "A contact group was selected."
+#~ msgstr "&كل عناوين المراسلة"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "إرسال &عنوان المراسلة..."
+
+#, fuzzy
+#~ msgid "You have not selected any contacts."
+#~ msgstr "نسخ عناوين المراسلة المختارة حاليا إلى حافظة النظام في نسق vCard."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "إرسال بريد إلى كل عناوين المراسلة المختارة."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "استيراد vCard..."
+
+#, fuzzy
+#~ msgid "Merge Contacts..."
+#~ msgstr "دمج المراسَلون"
+
+#, fuzzy
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "Select Contacts to merge"
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr "ضبط الأصناف لعناوين المراسلة المختارة."
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "دمج"
+
+#, fuzzy
+#~ msgid "Duplicate contact %1"
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "Select AddressBook:"
+#~ msgstr "دفتر العناوين"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "دمج"
+
+#, fuzzy
+#~ msgid "You must select at least two elements."
+#~ msgstr "يجب عليك تعيين عمود واحد على الأقل."
+
+#, fuzzy
+#~ msgid "No duplicated contact found."
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~ msgid "No contacts selected."
+#~ msgstr "&كل عناوين المراسلة"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "زبون"
+
+#, fuzzy
+#~ msgid "Missing Selected Information"
+#~ msgstr "اطبع المراسَل s معلومات"
+
+#, fuzzy
+#~ msgid "(Undefined)"
+#~ msgstr "غير معرف"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr "<qt> متى إلى قراءة vCard خطأ ملفّ</qt>"
+
+#, fuzzy
+#~ msgid "Merged Contact"
+#~ msgstr "دمج المراسَلون"
+
+#, fuzzy
+#~ msgid "Error while merging contacts."
+#~ msgstr "جاري استيراد عناوين المراسلة"
+
+#, fuzzy
+#~ msgid "Merge contact"
+#~ msgstr "دمج المراسَلون"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "انتقِ vCard حقول"
+
+#, fuzzy
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "عناوين المراسلة ال&مختارة"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "أضف الإختيار"
+
+#, fuzzy
+#~ msgid "Kontact integration"
+#~ msgstr "شبك اتصال"
+
+#, fuzzy
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "اختر أسلوب الطباعة"
+
+#~ msgid "Department"
+#~ msgstr "قسم"
+
+#~ msgid "Manager's Name"
+#~ msgstr "اسم المدير"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "اسم المساعد:"
+
+#, fuzzy
+#~ msgid "Partner's Name"
+#~ msgstr "اسم الشريك"
+
+#~ msgid "IM Address"
+#~ msgstr "عنوان IM"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "أنواع"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "<qt>هل تريد فعلا حذف دفتر العناوين  <b>%1</b> ؟</qt>"
+
+#, fuzzy
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "انتقِ بوصة vCard."
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "دفاتر العناوين"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "يظهر/يخفي صفحة التفاصيل."
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "تحرير فلتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "Show Contacts View"
+#~ msgstr "مراسَل جديد"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "يظهر/يخفي صفحة التفاصيل."
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "تحرير اسم عنوان المراسلة"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "اظهار التفاصيل"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "يظهر/يخفي صفحة التفاصيل."
+
+#, fuzzy
+#~ msgid "Hide Details View"
+#~ msgstr "أخفي التفاصيل"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "إضافة دفتر عناوين"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "تحرير فلتر دفتر العناوين"
+#~ msgstr[1] "تحرير فلتر دفتر العناوين"
+#~ msgstr[2] "تحرير فلتر دفتر العناوين"
+#~ msgstr[3] "تحرير فلتر دفتر العناوين"
+#~ msgstr[4] "تحرير فلتر دفتر العناوين"
+#~ msgstr[5] "تحرير فلتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "رجاء تحديد نوع من جديد عنوان كتاب:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "تحرير فلتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "رجاء تحديد نوع من جديد عنوان كتاب:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "تحرير فلتر دفتر العناوين"
+#~ msgstr[1] "تحرير فلتر دفتر العناوين"
+#~ msgstr[2] "تحرير فلتر دفتر العناوين"
+#~ msgstr[3] "تحرير فلتر دفتر العناوين"
+#~ msgstr[4] "تحرير فلتر دفتر العناوين"
+#~ msgstr[5] "تحرير فلتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "رجاء تحديد نوع من جديد عنوان كتاب:"
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "قص المراسَل"
+#~ msgstr[1] "قص المراسَل"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "احذف المراسَل"
+#~ msgstr[1] "احذف المراسَل"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "رجاء تحديد نوع من جديد عنوان كتاب:"
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "قص المراسَل"
+#~ msgstr[1] "قص المراسَل"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "&تحرير عنوان المراسلة..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "خطاب المجموعات"
+#~ msgstr[1] "خطاب المجموعات"
+#~ msgstr[2] "خطاب المجموعات"
+#~ msgstr[3] "خطاب المجموعات"
+#~ msgstr[4] "خطاب المجموعات"
+#~ msgstr[5] "خطاب المجموعات"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "حرّر..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "إضافة دفتر عناوين"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "إضافة دفتر عناوين"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "إضافة دفتر عناوين"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>هل تريد فعلا حذف دفتر العناوين  <b>%1</b> ؟</qt>"
+
+#, fuzzy
+#~ msgid "Delete Address Book?"
+#~ msgstr "دفتر العناوين"
+
+#, fuzzy
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "إنشاء a جديد مراسَل واحد<p> أنت مع a حوار اضف الكل البيانات حوْل a عناوين "
+#~ "و</p>"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "جديد..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr "تحرير مراسَل واحد<p> أنت مع a حوار اضف أزِل و حرّر</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "تحرير a مراسَل واحد<p> أنت مع a حوار تغيير الكل البيانات حوْل a عناوين و</p>"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "إضافة دفتر عناوين"
+
+#, fuzzy
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "تخزين a مراسَل واحد بوصة a مختلف دفتر العناوين<p> أنت مع a حوار تحديد a "
+#~ "جديد تخزين لـ مراسَل واحد</p>"
+
+#, fuzzy
+#~ msgid "&Delete Address Book"
+#~ msgstr "دفتر العناوين"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "مستعرض دفتر العناوين"
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "إضافة عنوان مراسلة"
+
+#~ msgid "Home Number"
+#~ msgstr "رقم المنزل"
+
+#~ msgid "Work Number"
+#~ msgstr "رقم العمل"
+
+#~ msgid "Mobile Number"
+#~ msgstr "رقم الهاتف النقَال"
+
+#~ msgid "Fax Number"
+#~ msgstr "رقم الفاكس"
+
+#~ msgid "Pager"
+#~ msgstr "جهاز النداء"
+
+#~ msgid "Street"
+#~ msgstr "الشارع"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "الولاية"
+
+#~ msgid "Country"
+#~ msgstr "البلد"
+
+#, fuzzy
+#~ msgid "City"
+#~ msgstr "المدينة"
+
+#, fuzzy
+#~ msgid "Zip Code"
+#~ msgstr "الرمز البريدي"
+
+#~ msgid "Description"
+#~ msgstr "الوصف"
+
+#~ msgid "User ID"
+#~ msgstr "هوية المستخدم"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "الولاية"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "العنوان"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "استيراد عناوين المراسلة?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "البحث عن العناوين في الدليل"
+
+#~ msgid "Search for:"
+#~ msgstr "بحث عن:"
+
+#, fuzzy
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "بوصة"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكتروني"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "رقم المنزل"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "رقم العمل"
+
+#, fuzzy
+#~ msgid "Stop"
+#~ msgstr "قف"
+
+#~ msgid "Recursive search"
+#~ msgstr "بحث تكراري"
+
+#, fuzzy
+#~ msgid "Contains"
+#~ msgstr "يحتوي"
+
+#, fuzzy
+#~ msgid "Starts With"
+#~ msgstr "يبدء مع"
+
+#~ msgid "Unselect All"
+#~ msgstr "إلغاء اختيار الكل"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "اضبط العنوان كتاب."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكتروني"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "إرسال بريد إلى كل عناوين المراسلة المختارة."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "اضبط العنوان كتاب."
+
+#, fuzzy
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "كونيج"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "تحرير عنوان المراسلة"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "ا&ضف..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&حرر..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "حذف القائمة"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2005 ، طاقم KDE لمنظم المعلومات الشخصي"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "دفاتر العناوين"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "الهاتف"
+
+#, fuzzy
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "مفضلة عنوان"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "البريد الإلكتروني"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "&كل عناوين المراسلة"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "اسم المدير"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "أيسلاندا"
+
+#, fuzzy
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "متنوع"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the minimum number of empty fields that have to be printed in "
+#~ "addition to real entries; if this number is not reached on the first "
+#~ "page, more pages with empty fields only may be appended."
+#~ msgstr ""
+#~ "هذا هو الأدنى رقم من فارغ إلى بوصة إلى حقيقي خانات IF رقم هو ليس يعمل "
+#~ "الأوّل صفحة المزيد مع فارغ أيار."
+
+#, fuzzy
+#~ msgid ""
+#~ "If you often add contacts to your printout manually before entering them "
+#~ "into the KDE address book, you should set this option to a value greater "
+#~ "than 0: it determines how many empty address fields are to be printed; if "
+#~ "this many do not fit onto the page, another page with only empty fields "
+#~ "will be printed."
+#~ msgstr ""
+#~ "إذا اضف إلى يدويّاً قبل كدي set خيار إلى a قيمة الإيطالية فارغ عنوان IF ليس "
+#~ "تناسب صفحة صفحة مع فارغ."
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "الحد الأدنى رقم من فارغ:"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is turned on, behind the contacts on a page the remaining "
+#~ "space will be filled with empty fields so you can add contacts manually "
+#~ "later"
+#~ msgstr "إذا خيار هو يعمل يعمل a صفحة باقٍ فراغ مع فارغ اضف يدويّاً"
+
+#, fuzzy
+#~ msgid "Fill pages with empty address fields"
+#~ msgstr "ملأ مع فارغ عنوان"
+
+#, fuzzy
+#~ msgid "Letter Groups"
+#~ msgstr "خطاب المجموعات"
+
+#, fuzzy
+#~ msgid ""
+#~ "Here you can group letters together as they are grouped in your time "
+#~ "planner. Press 'group letter' to combine the selected letter with the "
+#~ "letter group above it, press 'ungroup letter' to remove the last letter "
+#~ "from a selected group."
+#~ msgstr ""
+#~ "هنا المجموعة بوصة وقت ضغط المجموعة حرف إلى مُنتقى حرف مع حرف المجموعة أعلى "
+#~ "الإيطالية ضغط حرف إلى أزِل الأخير حرف من a مُنتقى المجموعة."
+
+#, fuzzy
+#~ msgid "Group Letter"
+#~ msgstr "المجموعة خطاب"
+
+#~ msgid "Font Settings"
+#~ msgstr "تعيينات المحرف"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "إستعمل محارف KDE المعيارية"
+
+#~ msgid "Details font:"
+#~ msgstr "خط التفاصيل:"
+
+#~ msgid "Size:"
+#~ msgstr "الحجم:"
+
+#~ msgid "Body font:"
+#~ msgstr "خط الجسم:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "الخط الثابت العرض:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "خط ترويسة عنوان المراسلة:"
+
+#~ msgid "Headlines:"
+#~ msgstr "العناوين البارزة:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "استخدم ترويسات اتصال ملوّنة"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(سلّم إلى:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "ضبط الهوامِش والفراغات"
+
+#~ msgid "Preparing"
+#~ msgstr "جاري الإستعداد"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr ""
+#~ "طبع في %1 بواسطة برنامج دفتر العناوين KAddressBook (http://www.kde.org)"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "طباعة رقم خاص من عناوين المراسلة."
+
+#, fuzzy
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "إذا مربّع هو مؤكّد عند صفحة لـ كل حرف المجموعة من خانات لـ حرف المجموعة هذا "
+#~ "هو بوصة اقتران مع خيار ملء مع فارغ عنوان."
+
+#, fuzzy
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "دائماً طبع لـ الكل"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "أختر أى عناوين المراسلة تريد طباعتها"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "طباعة كل دفتر العناوين"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "يطبع فقط عناوين مراسلة المختارة في برنامج دفتر عناوين KAddressBook.\n"
+#~ "هذا الخيار معطَل إذا لم تكن هناك أي عناوين مراسلة مختارة."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "عناوين المراسلة المطابقة لل&فلتر"
+
+#, fuzzy
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr "فقط طبع مواءمة مُنتقى المرشّح خيار هو معطل IF ليس أي منها."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "قم بطباعة جهات الاتصال الذين هم أعضاء في الفئة التي تم تحديدها في القائمة "
+#~ "إلى اليسار.\n"
+#~ "إذا لم يكن لديك فئة يكون هذا الخيار معطّلاً."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "اختر فلتر لتقرير أي عناوين المراسلة يتم طباعتها."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "اختر الأصناف التي تريد طباعة أعضائهم."
+
+#, fuzzy
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "استيراد مراسَل واحد?"
+#~ msgstr[1] "استيراد مراسَل واحد?"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Select the address book"
+#~ msgstr "عنوان كتاب"
+
+#, fuzzy
+#~ msgid "New Contact"
+#~ msgstr "مراسَل جديد"
+
+#~ msgid "Edit Contact"
+#~ msgstr "تحرير عنوان المراسلة"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "إضافة"
+
+#, fuzzy
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "هذا مراسَل واحد s صورة موجود."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(لا معاينة موجودة)"
+
+#, fuzzy
+#~ msgid "Play"
+#~ msgstr "تشغيل"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "غيّر النوع..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "جديد..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "أخرى..."
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "إضافة"
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "تحرير رقم الهاتف"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "هذا هو رقم الهاتف المفضَل"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "حرّر عناوين البريد الإلكتروني"
+
+#~ msgid "Edit..."
+#~ msgstr "حرّر..."
+
+#~ msgid "Set Standard"
+#~ msgstr "عيين كمعياري"
+
+#, fuzzy
+#~ msgid "Add Email"
+#~ msgstr "إضافة البريد الإلكتروني"
+
+#, fuzzy
+#~ msgid "New Email:"
+#~ msgstr "جديد البريد الإلكتروني:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "البريد الإلكتروني:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>هل أنت متأكد من حذف عنوان البريد الإلكتروني  <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "تأكيد الحذف"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "ا&حذف"
+
+#, fuzzy
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "هذا مراسَل واحد s صورة موجود."
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "غيّر النوع..."
+
+#, fuzzy
+#~ msgid "Save photo..."
+#~ msgstr "احفظ قالب."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "حذف القائمة"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "غيّر البريد الإلكتروني..."
+
+#, fuzzy
+#~ msgid "Save logo..."
+#~ msgstr "احفظ قالب."
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "جديد..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "حرّر..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "تنفيذ إلى حذف مُنتقى عنوان?"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "تحرير العنوان"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "حرّر اللاصقة..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "هذا هو مفضًل عنوان"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "تحرير العنوان النوع"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "العنوان أنواع"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "الاسم البسيط"
+
+#, fuzzy
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "عكس الاسم مع فاصلة"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "الاسم معكوس"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "المؤسسة"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "مخصص"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~ msgid "Nickname:"
+#~ msgstr "الاسم المستعار:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "المؤسسة"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "صفحة إنترنت:"
+
+#, fuzzy
+#~ msgid "Blog:"
+#~ msgstr "المدوّنة"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "ال&هامش:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "العناوين:"
+
+#, fuzzy
+#~ msgid "Coordinates"
+#~ msgstr "يحتوي"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "العمل"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "عام"
+
+#~ msgid "Profession:"
+#~ msgstr "المهنة:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "العنوان:"
+
+#~ msgid "Department:"
+#~ msgstr "القسم:"
+
+#~ msgid "Office:"
+#~ msgstr "المكتب:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "اسم المدير:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "التاريخ"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "العائلة"
+
+#, fuzzy
+#~ msgid "Birthdate:"
+#~ msgstr "تاريخ ميلاد:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "العيد:"
+
+#, fuzzy
+#~ msgid "Partner's name:"
+#~ msgstr "مشارك s الاسم:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "تحرير عنوان المراسلة"
+
+#~ msgid "Custom Fields"
+#~ msgstr "الحقول المعتادة"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "يظهر محرر عناوين المراسلة ذات البريد الإلكتروني المعطى"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "إظهار محرر الاتصال برقم المستخدم المعطى"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "التشغيل في نظام المحرر"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "يشغل المحرر لعنوان المراسلة الجديد"
+
+#, fuzzy
+#~ msgid "Work on given file"
+#~ msgstr "العمل يعمل ملفّ"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "تحرير العناوين."
+
+#, fuzzy
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "تحرير المراسَل"
+
+#~ msgid "Contact Editor"
+#~ msgstr "محرر عناوين المراسلة"
+
+#, fuzzy
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "تفا&صيل"
+
+#, fuzzy
+#~ msgid "Misc"
+#~ msgstr "متفرقات"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "وجب عليك تحديد تاريخ صحيح"
+
+#, fuzzy
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "أنت إلى أدخل a سليم."
+
+#, fuzzy
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "أنت إلى أدخل a سليم."
+
+#~ msgid "Add View"
+#~ msgstr "إضافة عرض"
+
+#~ msgid "View name:"
+#~ msgstr "اسم العرض:"
+
+#~ msgid "View Type"
+#~ msgstr "نوع العرض"
+
+#~ msgid "Add Field"
+#~ msgstr "أضف الحقل"
+
+#~ msgid "Type:"
+#~ msgstr "النوع:"
+
+#, fuzzy
+#~ msgid "Is available for all contacts"
+#~ msgstr "هو متوفّر لـ الكل"
+
+#~ msgid "Numeric Value"
+#~ msgstr "القيمة الرقمية"
+
+#~ msgid "Boolean"
+#~ msgstr "بولياني"
+
+#~ msgid "Time"
+#~ msgstr "الوقت"
+
+#~ msgid "Date & Time"
+#~ msgstr "التاريخ و الوقت"
+
+#, fuzzy
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr "A حقل مع الاسم موجود اختيار."
+
+#, fuzzy
+#~ msgid "Remove Field"
+#~ msgstr "احذف الحقل"
+
+#~ msgid "Add Field..."
+#~ msgstr "أضف الحقل..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "أحف الحقل..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "محرر قائمة التوزيع"
+
+#, fuzzy
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr "A حقل مع الاسم موجود اختيار."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "دفتر العناوين"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "إعادة تسمية توزيعة قائمة"
+
+#, fuzzy
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "A حقل مع الاسم موجود اختيار."
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "حرّر عناوين البريد الإلكتروني..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "أظهر فقط عناوين المراسلة التي تطابق الأصناف المختارة"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr "أظهر كل عناوين المراسلة التي لا تطابق الأصناف المختارة"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "تحرير فلاتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "أ&زل"
+
+#~ msgid "Filter:"
+#~ msgstr "الفلتر:"
+
+#, fuzzy
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "الموقع من متفرّغ مشغول معلومات:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "استعمل البيانات الجغرافية"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "خط الطول:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "خط العرض:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "تحرير البيانات الجغرافية..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "إدخال البيانات الجغرافية"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "الكسر الستَوني"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "خط الطول:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "شمال"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "جنوب"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "خط العرض:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "شرق"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "غرب"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "غير معرف"
+
+#, fuzzy
+#~ msgid "Reset"
+#~ msgstr "إعادة تعيين"
+
+#, fuzzy
+#~ msgid "IM address:"
+#~ msgstr "رسالة فورية عنوان:"
+
+#, fuzzy
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "تحرير رسالة فورية العناوين."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "الـ ازديادي ابحث<p> إدخال بعض نص تشغيل ابحث لـ مراسَل واحد ابحث التشكيلة "
+#~ "الـ جزء من مراسَل واحد مُستخدَم لـ مواءمة يتطلّب يعمل حقل منتقى</p>"
+
+#, fuzzy
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "بوصة:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "هنا يمكنك إختيار الحقل الذي سيستعمل في البحث التدريجي."
+
+#, fuzzy
+#~ msgid "Visible Fields"
+#~ msgstr "مرئي حقول"
+
+#~ msgid "All Fields"
+#~ msgstr "كل الحقول"
+
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "دون ساندرز"
+
+#, fuzzy
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "المشرف المساعد، كتابة libkabc port، واستيراد/تصدير CSV"
+
+#, fuzzy
+#~ msgid "Mike Pilone"
+#~ msgstr "Mike"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "الواجهة الرسومية واعادة تصميم النظام"
+
+#, fuzzy
+#~ msgid "Greg Stern"
+#~ msgstr "جريج مؤخّرة القارب"
+
+#~ msgid "DCOP interface"
+#~ msgstr "واجهة DCOP"
+
+#, fuzzy
+#~ msgid "Mark Westcott"
+#~ msgstr "علامة"
+
+#, fuzzy
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "بوير"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "بحث LDAP"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "تنفيذ إلى حذف مراسَل واحد?"
+#~ msgstr[1] "تنفيذ إلى حذف مراسَل واحد?"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "تنفيذ إلى حذف مراسَل واحد?"
+#~ msgstr[1] "تنفيذ إلى حذف مراسَل واحد?"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "Please select only one contact."
+#~ msgstr "الرجاء اختيار عنوان مراسلة واحد."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>هل تريد فعلا استخدام <b>%1</b> كعنوان مراسلتك الشخصي الجديد؟</qt>"
+
+#, fuzzy
+#~ msgid "Use"
+#~ msgstr "إستعمل"
+
+#, fuzzy
+#~ msgid "Do Not Use"
+#~ msgstr "لا تستخدم"
+
+#~ msgid "New Distribution List"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt> عاجز إلى حفظ عنوان كتاب<b></b></qt>"
+
+#, fuzzy
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt> عاجز إلى get وصول لـ عنوان كتاب<b></b></qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "ملكك كدي تثبيت هو مفقود LDAP دعم اسأل مسيّر أو موزّع لـ المزيد معلومات."
+
+#, fuzzy
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "لا LDAP العبد متوفر"
+
+#~ msgid "Print Addresses"
+#~ msgstr "طباعة العناوين"
+
+#, fuzzy
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "أرسِل البريد الإلكتروني إلى المراسَل."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "حفظ كل تغييرات دفتر العناوين إلى خلفية التخزين."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "جديد..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "قائمة توزيع جديدة"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "إرسال بريد مع كل عنوان مراسلة كملحق."
+
+#, fuzzy
+#~ msgid "Chat &With..."
+#~ msgstr "&تكلّم مع..."
+
+#, fuzzy
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "ابدأ a محادثة مع مُنتقى مراسَل واحد."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&حرّر"
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr "قص عناوين المراسلة المختارة حاليا إلى حافظة النظام في نسق vCard."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "لصق عناوين المراسلة المقصوصة أو المنسوخة مسبقا من حافظة النظام."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "&حذف عنوان مراسلة"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "حذف كل العناوين المختارة."
+
+#, fuzzy
+#~ msgid "C&opy Contact To..."
+#~ msgstr "تخزين المراسَل داخل."
+
+#, fuzzy
+#~ msgid "&Move Contact To..."
+#~ msgstr "تخزين المراسَل داخل."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "إظهار عمود القفز"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "يظهر/يخفي عمود زر القفز."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "سيقدم لك مربع الحوار الذي يعرض عليك كل امكانيات تهيئة برنامج دفتر "
+#~ "العناوين KAddressBook."
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "بحث LDAP"
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "ابحث لـ يعمل a LDAP خادم<p> أنت مع a حوار ابحث لـ و تحديد إلى اضف إلى "
+#~ "محليّ عنوان كتاب</p>"
+
+#, fuzzy
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "ضبط شخصي المراسَل البيانات"
+
+#, fuzzy
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "ضبط مراسَل واحد<p> الـ البيانات من مراسَل واحد مُستخدَم بوصة غير ذلك كدي "
+#~ "تطبيقات ليس إلى دَخْل البيانات الوقت</p>"
+
+#~ msgid "Select Categories..."
+#~ msgstr "اختيار الأصناف..."
+
+#, fuzzy
+#~ msgid "Clear Search Bar"
+#~ msgstr "امسح ابحث عمود"
+
+#, fuzzy
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr "امسح ابحث عمود<br /><br /> يوضّح المحتوى من ابحث شريط."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "هل تريد الدمج مع الأصناف الموجودة?"
+
+#, fuzzy
+#~ msgid "Do Not Merge"
+#~ msgstr "تنفيذ لا دمج"
+
+#, fuzzy
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "مراسَل واحد"
+#~ msgstr[1] "مراسَل واحد"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "قائمة توزيع جديدة"
+
+#~ msgid "Keys:"
+#~ msgstr "المفاتيح:"
+
+#~ msgid "Export..."
+#~ msgstr "تصدير..."
+
+#~ msgid "Key Type"
+#~ msgstr "نوع المفتاح"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>هل تريد فعلا حذف المفتاح <b>%1</b>؟</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "قائمة توزيع جديدة"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "وجب عليك تحديد خادم LDAP قبل عملية البحث.\n"
+#~ "تستطيع فعل ذلك من القائمة إعدادات/هيئ برنامج دفتر العناوين KAddressBook."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "بادئات التشريف:"
+
+#, fuzzy
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr "الـ موسّع بوصة خصائص حوار."
+
+#~ msgid "Additional names:"
+#~ msgstr "اسماء إضافيةّ:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "نهايات التشريف:"
+
+#, fuzzy
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr "الـ موسّع بوصة خصائص حوار."
+
+#~ msgid "Formatted name:"
+#~ msgstr "الاسم المنسق:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "أعرب الاسم تلقائيا"
+
+#~ msgid "Dr."
+#~ msgstr "د."
+
+#~ msgid "Miss"
+#~ msgstr "الآنسة"
+
+#~ msgid "Mr."
+#~ msgstr "السيد"
+
+#~ msgid "Mrs."
+#~ msgstr "السيدة"
+
+#~ msgid "Ms."
+#~ msgstr "الآنسة"
+
+#~ msgid "Prof."
+#~ msgstr "بروفسير"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "الأصغر"
+
+#~ msgid "Sr."
+#~ msgstr "الأكبر"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "الاسم الكامل"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "المؤسسة"
+
+#, fuzzy
+#~ msgid "Birthday:"
+#~ msgstr "عيد الميلاد"
+
+#, fuzzy
+#~ msgid "Partners name:"
+#~ msgstr "مشارك s الاسم:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "تحرير اسم عنوان المراسلة"
+
+#~ msgid "Edit Name..."
+#~ msgstr "تحرير الاسم..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "أ&زل"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "المؤسسة"
+
+#~ msgid "Tools"
+#~ msgstr "أدوات"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "تحرير العنوان"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "ال&مراسيم:"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "ال&عنوان:"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "ال&شبكة:"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "رسالة فورية العناوين"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr ""
+#~ "الـ رسالة فورية العنوان هو set قياسي هو عنوان هو بوصة رئيسي محرِّر نافذة."
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt> فقط رسالة فورية العنوان set قياسي رسالة فورية العنوان<br> الـ قياسي "
+#~ "رسالة فورية العنوان هو بوصة رئيسي محرِّر نافذة و غير ذلك أيار استخدام "
+#~ "تلْميحة لـ رسالة فورية العنوان إلى إظهار</qt>"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "ضبط قياسي"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "أ&زل"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "&حرر..."
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "أ&ضف..."
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "العنوان"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em> ملاحظة</em> رجاء قراءة مساعدة صفحة قبل أو لحظي مراسلة العناوين."
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "جاري تحليل الاسم لعناوين المراسلة الجديدة"
+
+#, fuzzy
+#~ msgid "Fax"
+#~ msgstr "فاكس"
+
+#, fuzzy
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#, fuzzy
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr "الـ برنامج نصي مُستخدَم إلى إرسال a SMS نص رسالة إلى نقّال"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "احترم نقرة KDE الواحدة"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "البريد الإلكتروني:"
+
+#~ msgid "Store as URL"
+#~ msgstr "خزَن كعنوان انترنت"
+
+#, fuzzy
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr "هذا حقل a صوت ملفّ يحتوي الاسم من مراسَل واحد إلى."
+
+#, fuzzy
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr "احفظ URL إلى صوت ملفّ ليس كائن."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "قائمة توزيع جديدة"
+#~ msgstr[1] "قائمة توزيع جديدة"
+#~ msgstr[2] "قائمة توزيع جديدة"
+#~ msgstr[3] "قائمة توزيع جديدة"
+#~ msgstr[4] "قائمة توزيع جديدة"
+#~ msgstr[5] "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "لصق المراسَل"
+#~ msgstr[1] "لصق المراسَل"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "اختر الحقول المراد إظهارها"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "الحقول ال&مختارة:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "سيتم تمكين عامل التصفية الافتراضي عند هذا العرض. هذه الميزة تسمح لك "
+#~ "بإعداد العروض التي تتفاعل فقط مع أنواع معيّنة من المعلومات بناءً على عامل "
+#~ "التصفية. وبمجرّد تنشيط هذا العرض يمكن تغيير عامل التصفية في أي لحظة."
+
+#~ msgid "No default filter"
+#~ msgstr "بلا فلتر افتراضي"
+
+#~ msgid "Use filter:"
+#~ msgstr "استعمل الفلتر:"
+
+#~ msgid "Default Filter"
+#~ msgstr "فلتر افتراضي"
+
+#~ msgid "Modify View: "
+#~ msgstr "تعديل العرض: "
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "حذف عرض"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>هل أنت متأكد أنك تريد حذف العرض  <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "تأكيد الحذف"
+
+#, fuzzy
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "استيراد مراسَل واحد?"
+#~ msgstr[1] "استيراد مراسَل واحد?"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#, fuzzy
+#~ msgid "Do Not Import"
+#~ msgstr "عدم الإستيراد"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "بلا"
+
+#, fuzzy
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "غير مسجّل في المكان المحدّد بالقانون"
+
+#~ msgid "Select View"
+#~ msgstr "اختر عرضا"
+
+#~ msgid "Modify View..."
+#~ msgstr "تعديل عرض..."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "بالضغط على هذا الزر سيفتح مربّع حوار يسمح لك بتعديل عرض دفتر العناوين، حيث "
+#~ "يمكنك إضافة أو إزالة الحقول التي تودّ إظهارها أو إخفائها في دفتر العناوين "
+#~ "مثل الاسم."
+
+#~ msgid "Add View..."
+#~ msgstr "إضافة عرض..."
+
+#, fuzzy
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "أنت اضف a جديد اعرض أداء من حوار بعد زر أنت إلى إعطاءها اعرض a الاسم بين "
+#~ "مختلف."
+
+#~ msgid "Delete View"
+#~ msgstr "حذف عرض"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr "بالضغط على هذا الزر تستطيع حذف العرض الفعلي الذي أضفته مسبقاً."
+
+#~ msgid "Refresh View"
+#~ msgstr "تحديث العرض"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "سيحدث العرض عند ضغط هذا الزر."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "تحرير &فلاتر..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr "تحرير مراسَل واحد<p> أنت مع a حوار اضف أزِل و حرّر</p>"
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>لا وجود لفلتر استيراد ل <b>%1</b>.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>لا وجود لفلتر تصدير ل <b>%1</b>.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "عاجز عن تصدير عناوين المراسلة."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "أختر عناوين المراسلة للتصدير"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "تصاعدي"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "تنازلي"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "التحديد"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "تصدير كل دفتر العناوين"
+
+#, fuzzy
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "مختار مراسَل واحد"
+#~ msgstr[1] "مختار مراسَل واحد"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "يصدَر فقط عناوين مراسلة المختارة في برنامج دفتر عناوين KAddressBook.\n"
+#~ "هذا الخيار معطَل إذا لم تكن هناك أي عناوين مراسلة مختارة."
+
+#, fuzzy
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr "فقط تصدير مواءمة مُنتقى المرشّح خيار هو معطل IF ليس أي منها"
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "قم بتصدير جهات الاتصال الذين هم أعضاء في الفئة التي تم تحديدها في القائمة "
+#~ "إلى اليسار.\n"
+#~ "إذا لم يكن لديك فئة يكون هذا الخيار معطّلاً."
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "اختر الفلتر الذي سيقرر أى عناوين المراسلة سيتم تصديرها."
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "المدرسة"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "صديق"
+
+#, fuzzy
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr "لا خدمة موفّر متوفّر لـ خريطة بحث اضف بوصة تشكيل حوار."
+
+#, fuzzy
+#~ msgid "Crypto Settings"
+#~ msgstr "مساعد التعمية إعدادات"
+
+#, fuzzy
+#~ msgid "Allowed Protocols"
+#~ msgstr "مسموح بروتوكولات"
+
+#, fuzzy
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "مفضلة OpenPGP تشفير  مفتاح:"
+
+#, fuzzy
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "مفضلة S تشفير  شهادة:"
+
+#, fuzzy
+#~ msgid "Message Preference"
+#~ msgstr "رسالة التفضيل"
+
+#, fuzzy
+#~ msgid "Sign:"
+#~ msgstr "توقيع:"
+
+#, fuzzy
+#~ msgid "Encrypt:"
+#~ msgstr "تشفير:"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "تحرير لحظي مراسلة العنوان"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "إضافة العنوان"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "محرر قائمة التوزيع"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "Remove distribution list"
+#~ msgstr "إعادة تسمية توزيعة قائمة"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "قائمة توزيع جديدة"
+
+#, fuzzy
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt> عاجز إلى إ_نشئ عنوان كتاب من نوع<b></b></qt>"
+
+#, fuzzy
+#~ msgid "%1 address book"
+#~ msgstr "عنوان كتاب"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "تحرير فلاتر دفتر العناوين"
+
+#, fuzzy
+#~ msgid "Look & Feel"
+#~ msgstr "الشكل"
+
+#~ msgid "Text Color"
+#~ msgstr "لون النص"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "لون الترويسة، الحدود ،والفاصل"
+
+#~ msgid "Header Text Color"
+#~ msgstr "لون نص الترويسة"
+
+#~ msgid "Highlight Color"
+#~ msgstr "لون التظليل"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "لون النص المظلل"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "عام"
+
+#~ msgid "Draw &separators"
+#~ msgstr "أرسم &فواصل"
+
+#~ msgid "Separator &width:"
+#~ msgstr "&عرض الفاصل:"
+
+#~ msgid "&Padding:"
+#~ msgstr "ال&حشو:"
+
+#~ msgid "Cards"
+#~ msgstr "بطاقات"
+
+#~ msgid "Draw &borders"
+#~ msgstr "رسم ال&حدود"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "هامش العنصر هو المسافة (بالبكسل) بين حافّة العنصر وبيانات العنصر. الشيء "
+#~ "الجدير بالملاحظة أن زيادة هامش العنصر تضيف مسافة بين مستطيل التركيز "
+#~ "وبيانات العنصر."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "يحدد هذا العنصر المسافة (بالبيكسلات) بين العناصر وأي شيئ آخر: حدود العرض، "
+#~ "عناصر أخرى أو فواصل أعمدة."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "يضبط عرض فواصل الأعمدة"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&تخطيط"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "&تمكين ألوان مخصصة"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "أ&لوان"
+
+#, fuzzy
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "إذا مخصص ألوان هو ممكن أيار اختيار ألوان لـ اعرض أسفل ما عدا ذلك ألوان من "
+#~ "الحالي كدي اللّون مخطط، خطة مُستخدَم."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "انقر نقراً مزدوجاً أو اضغط RETURN على أي عنصر لاختيار لون للعبارات النصّيّة "
+#~ "ذات الصلة في العرض."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "&تمكين خطوط مخصصة"
+
+#~ msgid "&Text font:"
+#~ msgstr "خط ال&نص:"
+
+#~ msgid "Choose..."
+#~ msgstr "اختر..."
+
+#~ msgid "&Header font:"
+#~ msgstr "خط ال&ترويسة:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "إذا تمّ تمكين الخطوط المخصّصة فبإمكانك اختيار أي من الخطوط تود استخدامها "
+#~ "لهذا العرض في الأسفل. وإلّا فإن خط KDE الافتراضي سيتم استخدامه بنمط عريض "
+#~ "للعناوين وبنمك عادي للبيانات."
+
+#, fuzzy
+#~ msgid "Fonts"
+#~ msgstr "&خطوط"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "إظهار الحقول ال&فارغة"
+
+#~ msgid "Show field &labels"
+#~ msgstr "أظهر &عناوين الحقول"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "ال&سلوك"
+
+#~ msgid "Row Separator"
+#~ msgstr "فاصل صف"
+
+#~ msgid "Single line"
+#~ msgstr "سطر واحد"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "بلا"
+
+#~ msgid "Enable background image:"
+#~ msgstr "تمكين صورة الخلفية:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "تمكين تلميحات عنوان المراسلة"
+
+#, fuzzy
+#~ msgid "Show instant messaging presence"
+#~ msgstr "اعرض"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "بطاقة"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "تمثَل بطاقات أسلوب Rolodex عناوين المراسلة."
+
+#~ msgid "Icon"
+#~ msgstr "رمز رسومي"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "تمثل الأيقونات عناوين المراسلة. عرض بسيط جدا."
+
+#~ msgid "Table"
+#~ msgstr "جدول"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "قائمة من عناوين المراسلة في جدول. تحمل كل خانة من الجدول حقلا من عنوان "
+#~ "المراسلة."
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "الوجود"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "تصدير قائمة المحفوظات..."
+
+#~ msgid "AddressBook"
+#~ msgstr "دفتر العناوين"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "ابدأ على السطر:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "تجاهل المحدّدات المتكرّرة"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "تخمين"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "تم تصدير عناوين المراسلة بنجاح."
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "استيراد دفتر العناوين Eudora..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "دفتر العناوين Eudora Light (*.txt("
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "استيراد العنوان كتاب."
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "صدِّر إلى محمول الهاتف."
+
+#, fuzzy
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr ""
+#~ "فشل إلى يهيئ\n"
+#~ "يُبدِء التشغيلئ مكتبة."
+
+#, fuzzy
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "هو ليس مُهيّء."
+
+#, fuzzy
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "a أقفل ملف خطأ\n"
+#~ " رجاء خروج الكل غير ذلك جاري التنفيذ من تفقّد IF كتابة الصلاحيات بوصة قفل "
+#~ "دليل و."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center> محمول الهاتف واجهة failed<br /><br /> الـ خطأ رسالة<br /"
+#~ "><b></b><br /><br /> أنت إلى تنفيذ تعرّف يعمل أمر سطر إلى تفقّد أي منها كبل "
+#~ "نقل و إلى تأكد من، فحص IF تشكيل هو صح</center></qt>"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "مجهول"
+
+#, fuzzy
+#~ msgid "Mobile Phone information:"
+#~ msgstr "محمول الهاتف معلومات:"
+
+#, fuzzy
+#~ msgid "Manufacturer"
+#~ msgstr "المصنّع"
+
+#, fuzzy
+#~ msgid "Phone model"
+#~ msgstr "الهاتف شكل ، نموذج"
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "مراجعة"
+
+#, fuzzy
+#~ msgid "IMEI"
+#~ msgstr "II"
+
+#, fuzzy
+#~ msgid "Phonebook status"
+#~ msgstr "الحالة"
+
+#, fuzzy
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "خارج من مُستخدَم"
+#~ msgstr[1] "خارج من مُستخدَم"
+#~ msgstr[2] "خارج من مُستخدَم"
+#~ msgstr[3] "خارج من مُستخدَم"
+#~ msgstr[4] "خارج من مُستخدَم"
+#~ msgstr[5] "خارج من مُستخدَم"
+
+#, fuzzy
+#~ msgid "internal memory"
+#~ msgstr "داخلي ذاكرة"
+
+#, fuzzy
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM بطاقة ذاكرة"
+
+#, fuzzy
+#~ msgid "unknown memory"
+#~ msgstr "مجهول ذاكرة"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[1] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[2] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[3] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[4] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[5] ""
+#~ "<qt> يجري الاستيراد<b></b> من<b></b> من محمول الهاتف<br /><br /></qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr "واجهة هو ليس متوفّر اسأل موزّع إلى اضف عند ترجمة وقت."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt> رجاء اتصال محمول الهاتف إلى حاسوب و ضغط<b> استمر</b> إلى تشغيل<br /"
+#~ "><br /> رجاء ملاحظة IF محمول الهاتف هو ليس متابعة اكتشاف أعلى إلى إثنان "
+#~ "دقائق</qt>"
+
+#, fuzzy
+#~ msgid "Mobile Phone Import"
+#~ msgstr "محمول الهاتف استيراد"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center> التأسيس اتصال إلى محمول الهاتف<br /><br /> رجاء أنتطر</"
+#~ "center></qt>"
+
+#, fuzzy
+#~ msgid "&Stop Import"
+#~ msgstr "قف استيراد"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt> رجاء اتصال محمول الهاتف إلى حاسوب و ضغط<b> استمر</b> إلى تشغيل "
+#~ "مُنتقى<br /><br /> رجاء ملاحظة IF محمول الهاتف هو ليس متابعة اكتشاف أعلى "
+#~ "إلى إثنان دقائق</qt>"
+
+#, fuzzy
+#~ msgid "Mobile Phone Export"
+#~ msgstr "محمول الهاتف صدِّر"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt> تنفيذ مُنتقى إلى<b></b> إلى الحالي نقّال أو<b> إستبدال</b> الكل موجود "
+#~ "خانات<br /><br /> رجاء ملاحظة بوصة حالة اختيار إلى إستبدال خانات كل مراسَل "
+#~ "واحد بوصة محذوف و متوفّر من داخل</qt>"
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "صدِّر إلى محمول الهاتف"
+
+#, fuzzy
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "إلحاقالحاقأضف إلى الحالي"
+
+#, fuzzy
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "استبدل الحالي مع جديد المراسَلون"
+
+#, fuzzy
+#~ msgid "&Stop Export"
+#~ msgstr "قف صدِّر"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[1] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[2] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[3] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[4] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+#~ msgstr[5] ""
+#~ "<qt> جاري التصدير<b></b> إلى<b></b> من محمول الهاتف<br /><br /></qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center> الكل مُنتقى إلى محمول الهاتف<br /><br /> رجاء أنتطر حتّى الكل "
+#~ "باقٍ من محمول الهاتف محذوف</center></qt>"
+
+#, fuzzy
+#~ msgid "&Stop Delete"
+#~ msgstr "قف احذف"
+
+#, fuzzy
+#~ msgid "Export to phone finished."
+#~ msgstr "صدِّر إلى إنتهيت."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt> الـ متابعة ليس إلى محمول الهاتف محتمل الأسباب لـ<br /><ul><li> الـ "
+#~ "تحوي على المزيد معلومات خانة تخزين</li><li> ملكك ليس اسمح إلى تخزين متعدد "
+#~ "عناوين</li><li> غير ذلك تخزين حجم</li></ul> إلى من بوصة نقص قَدْر من مختلف "
+#~ "بوصة أعلى</qt>"
+
+#, fuzzy
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt> يمكن أن ليس ابحث a كدي عنوان كتاب<b></b></qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "إهمال المدخلات المستوردة سابقا؟"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "استيراد من دفتر عناوين KDE 2"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "استيراد دفتر عناوين Opera..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "استيراد دفتر عناوين MS Exchange Personal (.PAB)"
+
+#, fuzzy
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "لا يستطيع فتح لـ القراءة"
+
+#, fuzzy
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "لا هوية I من تحويل"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "ملفات دفتر عناوين MS Exchange Personal (*.pab)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr "<qt> يمكن أن ليس ابحث a التبادل شخصي العنوان كتاب<b></b></qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "أفغانستان"
+
+#~ msgid "Albania"
+#~ msgstr "ألبانيا"
+
+#~ msgid "Algeria"
+#~ msgstr "الجزائر"
+
+#~ msgid "American Samoa"
+#~ msgstr "ساموا الأمريكية"
+
+#~ msgid "Andorra"
+#~ msgstr "أندورا"
+
+#~ msgid "Angola"
+#~ msgstr "أنغولا"
+
+#~ msgid "Anguilla"
+#~ msgstr "أنغويلا"
+
+#~ msgid "Antarctica"
+#~ msgstr "القطب الجنوبي"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "أنتيغوا وباربودا"
+
+#~ msgid "Argentina"
+#~ msgstr "الأرجنتين"
+
+#~ msgid "Armenia"
+#~ msgstr "أرمينيا"
+
+#~ msgid "Aruba"
+#~ msgstr "أروبا"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "أشمور وجزر الكارتير"
+
+#~ msgid "Australia"
+#~ msgstr "أستراليا"
+
+#~ msgid "Austria"
+#~ msgstr "النمسا"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "أذربيجان"
+
+#~ msgid "Bahamas"
+#~ msgstr "جزر الباهاما"
+
+#~ msgid "Bahrain"
+#~ msgstr "البحرين"
+
+#~ msgid "Bangladesh"
+#~ msgstr "بنغلاديش"
+
+#~ msgid "Barbados"
+#~ msgstr "باربادوس"
+
+#~ msgid "Belarus"
+#~ msgstr "بيلاروس"
+
+#~ msgid "Belgium"
+#~ msgstr "بلجيكا"
+
+#~ msgid "Belize"
+#~ msgstr "بيليز"
+
+#~ msgid "Benin"
+#~ msgstr "بنين"
+
+#~ msgid "Bermuda"
+#~ msgstr "برمودا"
+
+#~ msgid "Bhutan"
+#~ msgstr "بوتان"
+
+#~ msgid "Bolivia"
+#~ msgstr "بوليفيا"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "البوسنة والهرسك"
+
+#~ msgid "Botswana"
+#~ msgstr "بوتسوانا"
+
+#~ msgid "Brazil"
+#~ msgstr "البرازيل"
+
+#~ msgid "Brunei"
+#~ msgstr "سلطنة بروناي"
+
+#~ msgid "Bulgaria"
+#~ msgstr "بلغاريا"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "بوركينا فاسو"
+
+#~ msgid "Burundi"
+#~ msgstr "بوروندي"
+
+#~ msgid "Cambodia"
+#~ msgstr "كامبوديا"
+
+#~ msgid "Cameroon"
+#~ msgstr "الكاميرون"
+
+#~ msgid "Canada"
+#~ msgstr "كندا"
+
+#~ msgid "Cape Verde"
+#~ msgstr "كاب فردي"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "جزر الكايمان"
+
+#~ msgid "Central African Republic"
+#~ msgstr "جمهورية وسط أفريقيا"
+
+#~ msgid "Chad"
+#~ msgstr "تشاد"
+
+#~ msgid "Chile"
+#~ msgstr "تشيلي"
+
+#~ msgid "China"
+#~ msgstr "الصين"
+
+#~ msgid "Colombia"
+#~ msgstr "كولومبيا"
+
+#~ msgid "Comoros"
+#~ msgstr "كوموروس"
+
+#~ msgid "Congo"
+#~ msgstr "كونغو"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "جمهورية الكونفو الديمقراطية"
+
+#~ msgid "Costa Rica"
+#~ msgstr "كوستا ريكا"
+
+#~ msgid "Croatia"
+#~ msgstr "كرواتيا"
+
+#~ msgid "Cuba"
+#~ msgstr "كوبا"
+
+#~ msgid "Cyprus"
+#~ msgstr "قبرص"
+
+#~ msgid "Czech Republic"
+#~ msgstr "جمهورية التشيك"
+
+#~ msgid "Denmark"
+#~ msgstr "الدنمارك"
+
+#~ msgid "Djibouti"
+#~ msgstr "جيبوتي"
+
+#~ msgid "Dominica"
+#~ msgstr "دومينيكا"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "جمهورية دومينيكان"
+
+#~ msgid "Ecuador"
+#~ msgstr "الإكوادور"
+
+#~ msgid "Egypt"
+#~ msgstr "مصر"
+
+#~ msgid "El Salvador"
+#~ msgstr "السلفادور"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "غوينا الاستوائية"
+
+#~ msgid "Eritrea"
+#~ msgstr "إريتريا"
+
+#~ msgid "Estonia"
+#~ msgstr "إستونيا"
+
+#~ msgid "England"
+#~ msgstr "بريطانيا"
+
+#~ msgid "Ethiopia"
+#~ msgstr "أثيوبيا"
+
+#~ msgid "European Union"
+#~ msgstr "الاتحاد الأوروبي"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "جزر الفارو"
+
+#~ msgid "Fiji"
+#~ msgstr "فيجي"
+
+#~ msgid "Finland"
+#~ msgstr "فنلندا"
+
+#~ msgid "France"
+#~ msgstr "فرنسا"
+
+#~ msgid "French Polynesia"
+#~ msgstr "بولينيسيا الفرنسية"
+
+#~ msgid "Gabon"
+#~ msgstr "الغابون"
+
+#~ msgid "Gambia"
+#~ msgstr "غامبيا"
+
+#~ msgid "Georgia"
+#~ msgstr "جورجيا"
+
+#~ msgid "Germany"
+#~ msgstr "ألمانيا"
+
+#~ msgid "Ghana"
+#~ msgstr "غانا"
+
+#~ msgid "Greece"
+#~ msgstr "اليونان"
+
+#~ msgid "Greenland"
+#~ msgstr "الأرض الخضراء"
+
+#~ msgid "Grenada"
+#~ msgstr "غرينادا"
+
+#~ msgid "Guam"
+#~ msgstr "غوام"
+
+#~ msgid "Guatemala"
+#~ msgstr "غوانتيمالا"
+
+#~ msgid "Guinea"
+#~ msgstr "غينيا"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "غينيا-بيساو"
+
+#~ msgid "Guyana"
+#~ msgstr "غويانا"
+
+#~ msgid "Haiti"
+#~ msgstr "هاييتي"
+
+#~ msgid "Honduras"
+#~ msgstr "هونديوراس"
+
+#~ msgid "Hong Kong"
+#~ msgstr "هونغ كونغ"
+
+#~ msgid "Hungary"
+#~ msgstr "هنغاريا"
+
+#~ msgid "India"
+#~ msgstr "الهند"
+
+#~ msgid "Indonesia"
+#~ msgstr "إندونيسيا"
+
+#~ msgid "Iran"
+#~ msgstr "إيران"
+
+#~ msgid "Iraq"
+#~ msgstr "العراق"
+
+#~ msgid "Ireland"
+#~ msgstr "إيرلندا"
+
+#~ msgid "Israel"
+#~ msgstr "اسرائيل"
+
+#~ msgid "Italy"
+#~ msgstr "إيطاليا"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "ساحل العاج"
+
+#~ msgid "Jamaica"
+#~ msgstr "جامايكا"
+
+#~ msgid "Japan"
+#~ msgstr "اليابان"
+
+#~ msgid "Jordan"
+#~ msgstr "الأردن"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "كازاخستان"
+
+#~ msgid "Kenya"
+#~ msgstr "كينيا"
+
+#~ msgid "Kiribati"
+#~ msgstr "كيريباتي"
+
+#~ msgid "Korea, North"
+#~ msgstr "كوريا الشمالية"
+
+#~ msgid "Korea, South"
+#~ msgstr "كوريا الجنوبية"
+
+#~ msgid "Kuwait"
+#~ msgstr "الكويت"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "قيرغيزستان"
+
+#~ msgid "Laos"
+#~ msgstr "لاوس"
+
+#~ msgid "Latvia"
+#~ msgstr "لاتفيا"
+
+#~ msgid "Lebanon"
+#~ msgstr "لبنان"
+
+#~ msgid "Lesotho"
+#~ msgstr "ليسوتو"
+
+#~ msgid "Liberia"
+#~ msgstr "ليبيريا"
+
+#~ msgid "Libya"
+#~ msgstr "ليبيا"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "ليشينستين"
+
+#~ msgid "Lithuania"
+#~ msgstr "ليتوانيا"
+
+#~ msgid "Luxembourg"
+#~ msgstr "لوكسمبورغ"
+
+#~ msgid "Macau"
+#~ msgstr "ماكاو"
+
+#~ msgid "Madagascar"
+#~ msgstr "مدغشقر"
+
+#~ msgid "Malawi"
+#~ msgstr "مالاوي"
+
+#~ msgid "Malaysia"
+#~ msgstr "ماليزيا"
+
+#~ msgid "Maldives"
+#~ msgstr "جزر المالديف"
+
+#~ msgid "Mali"
+#~ msgstr "مالي"
+
+#~ msgid "Malta"
+#~ msgstr "مالطة"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "جزر المارشال"
+
+#~ msgid "Martinique"
+#~ msgstr "مارتينيق"
+
+#~ msgid "Mauritania"
+#~ msgstr "موريتانيا"
+
+#~ msgid "Mauritius"
+#~ msgstr "موريشيوس"
+
+#~ msgid "Mexico"
+#~ msgstr "المكسيك"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "الولايات المتحدة الميكرونيزية"
+
+#~ msgid "Moldova"
+#~ msgstr "مولدوفا"
+
+#~ msgid "Monaco"
+#~ msgstr "موناكو"
+
+#~ msgid "Mongolia"
+#~ msgstr "منغوليا"
+
+#~ msgid "Montserrat"
+#~ msgstr "مونتسيرات"
+
+#~ msgid "Morocco"
+#~ msgstr "المغرب"
+
+#~ msgid "Mozambique"
+#~ msgstr "موزامبيق"
+
+#~ msgid "Namibia"
+#~ msgstr "ناميبيا"
+
+#~ msgid "Nauru"
+#~ msgstr "نورو"
+
+#~ msgid "Nepal"
+#~ msgstr "نيبال"
+
+#~ msgid "Netherlands"
+#~ msgstr "هولندا"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "أنتيلز هولندا"
+
+#~ msgid "New Caledonia"
+#~ msgstr "كالدونيا الجديدة"
+
+#~ msgid "New Zealand"
+#~ msgstr "نيوزيلاندا"
+
+#~ msgid "Nicaragua"
+#~ msgstr "نيكاراغوا"
+
+#~ msgid "Niger"
+#~ msgstr "النيجر"
+
+#~ msgid "Nigeria"
+#~ msgstr "نيجيريا"
+
+#~ msgid "Niue"
+#~ msgstr "نيو"
+
+#~ msgid "North Korea"
+#~ msgstr "كوريا الشمالية"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "إيرلندا الشمالية"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "جزر ماريانا الشمالية"
+
+#~ msgid "Norway"
+#~ msgstr "النرويج"
+
+#~ msgid "Oman"
+#~ msgstr "عمان"
+
+#~ msgid "Pakistan"
+#~ msgstr "باكستان"
+
+#~ msgid "Palau"
+#~ msgstr "بالو"
+
+#~ msgid "Palestinian"
+#~ msgstr "(غزة و الضفة)فلسطين"
+
+#~ msgid "Panama"
+#~ msgstr "باناما"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "بابو غينيا الجديدة"
+
+#~ msgid "Paraguay"
+#~ msgstr "باراغواي"
+
+#~ msgid "Peru"
+#~ msgstr "البيرو"
+
+#~ msgid "Philippines"
+#~ msgstr "الفلبين"
+
+#~ msgid "Poland"
+#~ msgstr "بولندا"
+
+#~ msgid "Portugal"
+#~ msgstr "البرتغال"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "بورتو ريكو"
+
+#~ msgid "Qatar"
+#~ msgstr "قطر"
+
+#~ msgid "Romania"
+#~ msgstr "رومانيا"
+
+#~ msgid "Russia"
+#~ msgstr "روسيا"
+
+#~ msgid "Rwanda"
+#~ msgstr "رواندا"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "سانت كيتس ونيفيس"
+
+#~ msgid "St. Lucia"
+#~ msgstr "سانت لوسيا"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "سانت فانسينت وغريناداينز"
+
+#~ msgid "San Marino"
+#~ msgstr "سان مارينو"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "ساو توم وبرينسايب"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "السعودية"
+
+#~ msgid "Senegal"
+#~ msgstr "السنغال"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "صربيا و الجبل الأسود"
+
+#~ msgid "Seychelles"
+#~ msgstr "سايتشيلي"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "سيراليون"
+
+#~ msgid "Singapore"
+#~ msgstr "سنغافورا"
+
+#~ msgid "Slovakia"
+#~ msgstr "سلوفاكيا"
+
+#~ msgid "Slovenia"
+#~ msgstr "سلوفينيا"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "جزر سليمان"
+
+#~ msgid "Somalia"
+#~ msgstr "الصومال"
+
+#~ msgid "South Africa"
+#~ msgstr "جنوب أفريقيا"
+
+#~ msgid "South Korea"
+#~ msgstr "كوريا الجنوبية"
+
+#~ msgid "Spain"
+#~ msgstr "إسبانيا"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "سريلانكا"
+
+#~ msgid "Sudan"
+#~ msgstr "السودان"
+
+#~ msgid "Suriname"
+#~ msgstr "سورينام"
+
+#~ msgid "Swaziland"
+#~ msgstr "سوازيلاند"
+
+#~ msgid "Sweden"
+#~ msgstr "السويد"
+
+#~ msgid "Switzerland"
+#~ msgstr "سويسرا"
+
+#~ msgid "Syria"
+#~ msgstr "سوريا"
+
+#~ msgid "Taiwan"
+#~ msgstr "تايوان"
+
+#~ msgid "Tajikistan"
+#~ msgstr "طاجكستان"
+
+#~ msgid "Tanzania"
+#~ msgstr "تنزانيا"
+
+#~ msgid "Thailand"
+#~ msgstr "تايلاند"
+
+#~ msgid "Tibet"
+#~ msgstr "هضبة التبت"
+
+#~ msgid "Togo"
+#~ msgstr "توغو"
+
+#~ msgid "Tonga"
+#~ msgstr "تونغا"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "ترينيداد وتاباغو"
+
+#~ msgid "Tunisia"
+#~ msgstr "تونس"
+
+#~ msgid "Turkey"
+#~ msgstr "تركيا"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "تركمانستان"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "جزر الترك والكايكوس"
+
+#~ msgid "Tuvalu"
+#~ msgstr "توفالو"
+
+#, fuzzy
+#~ msgid "Uganda"
+#~ msgstr "أوغندا"
+
+#~ msgid "Ukraine"
+#~ msgstr "أوكرانيا"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "الإمارات"
+
+#~ msgid "United Kingdom"
+#~ msgstr "المملكة المتحدة"
+
+#~ msgid "United States"
+#~ msgstr "الولايات المتحدة"
+
+#~ msgid "Uruguay"
+#~ msgstr "أورغوي"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "أوزباكستان"
+
+#~ msgid "Vanuatu"
+#~ msgstr "فانواتو"
+
+#~ msgid "Vatican City"
+#~ msgstr "مدينة الفاتيكان"
+
+#~ msgid "Venezuela"
+#~ msgstr "فينزويلا"
+
+#~ msgid "Vietnam"
+#~ msgstr "فيتنام"
+
+#~ msgid "Western Samoa"
+#~ msgstr "ساموا الغربية"
+
+#~ msgid "Yemen"
+#~ msgstr "اليمن"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "يوغوسلافيا"
+
+#~ msgid "Zaire"
+#~ msgstr "زائير"
+
+#~ msgid "Zambia"
+#~ msgstr "زامبيا"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "زمبابوي"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "بلا"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "العنوان:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "البريد الإلكتروني"
+
+#, fuzzy
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "العنوان"
+
+#~ msgid "Address:"
+#~ msgstr "العنوان:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "جديد..."
+
+#~ msgid "&General"
+#~ msgstr "معلوما&ت عامة"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "النصّ"
+
+#, fuzzy
+#~ msgid ""
+#~ "A distribution list with the the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "A حقل مع الاسم موجود اختيار."
+
+#, fuzzy
+#~ msgid "Get From Blog"
+#~ msgstr "احصل من المدوّنة"
+
+#, fuzzy
+#~ msgid "Unable to retrieve blog feed from '%1': %2"
+#~ msgstr "عاجز إلى مدونة تلقيم من 2"
+
+#, fuzzy
+#~ msgid "Blog feed at '%1' does not contain an image."
+#~ msgstr "المدوّنة تلقيم عند ليس تحوي على صورة."
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "محرر قائمة التوزيع"
+
+#, fuzzy
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "New List..."
+#~ msgstr "قائمة جديدة..."
+
+#~ msgid "Rename List..."
+#~ msgstr "أعد تسمية قائمة..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "حذف عنوان مراسلة"
+
+#~ msgid "Please enter name:"
+#~ msgstr "الرجاء أدخل الاسم:"
+
+#~ msgid "The name already exists"
+#~ msgstr "الاسم أصلا موجود"
+
+#, fuzzy
+#~ msgid "Rename Distribution List"
+#~ msgstr "إعادة تسمية توزيعة قائمة"
+
+#, fuzzy
+#~ msgid "The name already exists."
+#~ msgstr "الـ الاسم موجود."
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>هل تريد حذف قائمة التوزيع <b>%1</b>؟</qt>"
+
+#, fuzzy
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "العدد مراسَل واحد"
+#~ msgstr[1] "العدد مراسَل واحد"
+#~ msgstr[2] ""
+#~ msgstr[3] ""
+#~ msgstr[4] ""
+#~ msgstr[5] ""
+
+#~ msgid "Select Email Address"
+#~ msgstr "اختر عنوان البريد الإلكتروني"
+
+#~ msgid "Email Addresses"
+#~ msgstr "عناوين البريد الإلكتروني"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "أظهر عمود الإمتداد"
+
+#, fuzzy
+#~ msgid "Using codec '%1'"
+#~ msgstr "الإستعمال مرماز"
+
+#, fuzzy
+#~ msgid "Encoding"
+#~ msgstr "الترميز"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "ال&بحث عن العناوين في دليل LDAP..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "شريط أدوات عنوان المراسلة"

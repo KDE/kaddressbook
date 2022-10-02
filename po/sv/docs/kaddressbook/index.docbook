@@ -1,0 +1,4354 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+  [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE">
+  <!ENTITY docbook-reference SYSTEM "docbook-reference.docbook">
+  ]>
+
+<book id="kaddressbook" lang="&language;">
+
+<bookinfo>
+
+<title
+>Handbok Adressbok</title>
+    
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-07-20</date>
+<releaseinfo
+>5.10.3 (Program 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>Adressboken är en del av &kde;:s svit av personliga informationshanteringsprogram (<glossterm linkend="gloss-pim"
+>&PIM;</glossterm
+>). Adressboken är först och främst en e-postadresshanterare, men kan också hjälpa dig att hålla reda på dina vänners och kollegors telefonnummer, webbplatser, sociala medieanslutningar, postadresser, med mera. Det är den enda kontaktpunkten du behöver för att hålla reda på alla du känner. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>Adressbok</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-post</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+  <para
+>Adressboken är en del av &kde;:s svit av personliga informationshanteringsprogram (&PIM;). Adressboken är först och främst en e-postadresshanterare, men kan också hjälpa dig att hålla reda på dina vänners och kollegors telefonnummer, webbplatser, sociala medieanslutningar, postadresser, med mera. Det är den enda kontaktpunkten du behöver för att hålla reda på alla du känner! </para>
+  
+  <screenshot id="screenshot-primary">
+  <screeninfo
+>En skärmbild av adressbokens primära grafiska användargränssnitt</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook00.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens primära grafiska användargränssnitt</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens primära skärm. Menyraden finns längst upp, verktygsraden därefter, och det finns tre rutor för data i textområdet längst ner.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Adressboken har integrerats i strukturen i <glossterm linkend="gloss-kmail"
+>&kmail;</glossterm
+>, &kde;:s e-postprogram. Så när du väl har lagt till en kontakts namn i adressboken kan e-post adresseras till den personen genom att bara skriva in en del av namnet. Eller om du tar emot e-post från någon ny, kan namnet läggas till i din adressbok med bara några få musklick. </para>
+  
+  <para
+>Adressboken tillåter också att du håller flera separata kontaktlistor med ett stort antal populära adresslisteformat, antingen på din lokala hårddisk eller via en resurs som finns i molnet. Den stöder också import och export av kontaktinformation med lagringsformaten <glossterm linkend="gloss-csv"
+><filename class="extension"
+>.csv</filename
+></glossterm
+> (värden separerade av kommatecken), <glossterm linkend="gloss-ldif"
+><filename class="extension"
+>.ldif</filename
+></glossterm
+> (<glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> datautbytesformat), och <glossterm linkend="gloss-vcf"
+><filename class="extension"
+>.vcf</filename
+></glossterm
+> (virtuellt visitkortsformat). </para>
+
+<!--TODO Insert additional information about problem reporting here -->
+</chapter>
+
+<chapter id="getting-started">
+<title
+>Komma igång</title>
+
+  <para
+>Här är en bild av adressbokens primära användargränssnitt innan någon adressinformation har matats in. Det första du kanske vill göra är att skapa en adressbok. Observera att adressboken <quote
+>Personliga kontakter</quote
+> normalt redan finns. </para>
+ 
+  <screenshot id="screenshot-blank">
+      <screeninfo
+>En skärmbild av adressbokens <quote
+>tomma</quote
+> grafiska användargränssnitt</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook10.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens <quote
+>tomma</quote
+> grafiska användargränssnitt</phrase>
+    </textobject>
+    <caption>
+        <para
+>Adressbokens <quote
+>tomma</quote
+> grafiska användargränssnitt, innan några extra adressböcker har skapats. Adressboken <quote
+>Personliga kontakter</quote
+> finns redan när adressboken först installeras.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect1 id="how-to-add-a-new-address-book">
+  <title
+>Hur man lägger till en ny adressbok</title>
+  
+  <procedure id="procedure-add-a-new-addressbook">
+    
+  <step id="new-addressbook-dialog-step"
+><para
+>Öppna adressbokens dialogruta Lägg till adressbok med alternativet <menuchoice
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+>Ny&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till adressbok...</guimenuitem
+></menuchoice
+>. En dialogruta dyker upp. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-an-address-book">
+  <screeninfo
+>En skärmbild av adressbokens dialogruta Lägg till adressbok</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook20.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens dialogruta Lägg till adressbok</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta Lägg till adressbok. Fem molntjänster stöds, samt tre lokala lagringsalternativ.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+  
+  <step id="select-a-format-step"
+><para
+>Välj ett av alternativen som visas i dialogrutan. Flera av alternativen länkar till datasamlingar som finns i molnet: <glossterm linkend="gloss-dav"
+><acronym
+>DAV</acronym
+></glossterm
+> grupprogramvara (Distributed Authoring and Versioning, RFC4918), Google kontakter (ditt gmail.com konto), <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> &nbsp;grupprogramserver (samarbete via <glossterm linkend="gloss-imap"
+>&IMAP;</glossterm
+>), &Microsoft; Exchange Server <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;(Exchange Web Services, på servrar som kör MS programvara), och <glossterm linkend="gloss-group"
+>Open-Xchange &nbsp;grupprogramserver</glossterm
+> &nbsp;&nbsp;(an open-source alternative to MS EWS). Om du redan kan komma åt en eller flera av dessa molnbaserade resurser kan du integrera deras data i adressboken genom att helt enkelt välja alternativet och därefter mata in dina inloggningsuppgifter.</para>
+  
+  <para
+>Återstående alternativ i dialogrutan (Personliga kontakter, vCard-katalog och vCard-fil) skapar alla datamängder som sparas på en lokal lagringsenhet. Vart och ett av dessa alternativ använder samma dataformat (<filename class="extension"
+>.vcf</filename
+>, eller Virtual Card Format), där den enda skillnaden är i vilken särskild katalog som data sparas. Alternativen <quote
+>Personliga kontakter</quote
+> och <quote
+>vCard-katalog</quote
+> skapar en separat fil för varje namngiven kontakt som sparas, medan alternativet <quote
+>vCard-fil</quote
+> lägger all data i en fil. Det är troligen enklast att starta med den fördefinierade adressboken <quote
+>Personliga kontakter</quote
+>. Du behöver inte fler adressböcker om du inte har omfattande kontaktlistor och vill hålla dem åtskilda. </para
+></step>
+  
+  <step id="add-a-cloud-based-service-step"
+><para
+>När du väl har gjort ditt val, klicka på Ok. Om du har valt en <glossterm linkend="gloss-cloud"
+>molnbaserad tjänst</glossterm
+> dyker en kortfattad dialogruta upp för att etablera kommunikation mellan <glossterm linkend="gloss-akonadi"
+>&akonadi;</glossterm
+> (den personliga informationshanteringens lagringstjänst mellan skrivbord) och den valda molnservern. Här visas hur dialogrutan ser ut för ett Google-konto (gmail.com). De andra molnbaserad tjänsterna är något annorlunda, men liknande. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service">
+  <screeninfo
+>En skärmbild av adressbokens dialogruta Länk till gmail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook30.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens dialogruta Länk till gmail</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens länk-till-gmail dialogruta. Börja med att klicka <quote
+>Lägg till</quote
+>. En ny dialogruta dyker upp. När din inloggningsinformation väl har accepterats, visas skärmen igen, och du kan klicka på &nbsp;<guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+>. Om du vill att adressboken ska uppdatera den lokalt lagrade kopian av kontaktlistan automatiskt, gör det här innan du klickar på &nbsp;<guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step2">
+  <screeninfo
+>En andra skärmbild av adressbokens dialogruta Länk till gmail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook31.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En andra skärmbild av adressbokens dialogruta Länk till gmail</phrase>
+    </textobject>
+    <caption>
+      <para
+>En annan bild av adressbokens dialogruta länk-till-gmail. Skriv in din gmail.com adress och klicka på <guibutton
+>&nbsp;Nästa&nbsp;</guibutton
+>. Du blir tillfrågad om att skriva in ditt gmail lösenord.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step3">
+  <screeninfo
+>En tredje skärmbild av adressbokens dialogruta Länk till gmail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook32.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En tredje skärmbild av adressbokens dialogruta Länk till gmail</phrase>
+    </textobject>
+    <caption>
+      <para
+>Ytterligare en bild av adressbokens dialogruta länk-till-gmail. Ditt kontonamn och lösenord har accepterats av Googles server. Läs integritetsmeddelandet och klicka på <guibutton
+>&nbsp;Tillåt&nbsp;</guibutton
+>, och därefter på <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+> i dialogrutan <quote
+>&nbsp;Lägg till&nbsp;</quote
+> som du började med.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Mata in dina inloggningsreferenser som illustreras ovan och säg ok. Voilà! Din molnbaserade kontaktlista är nu integrerad i adressboken. </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-completed">
+  <screeninfo
+>Adressbokens fönster efter ett gmail.com konto har lagts till.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook33.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens fönster efter ett gmail.com konto har lagts till.</phrase>
+    </textobject>
+    <caption>
+      <para
+>En annan bild av &nbsp;adressbokens fönster, efter ett gmail.com konto har lagts till. Du kan nu hantera dina gmail kontakter via adressboken om du vill.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Som föregående skärmbild anger, när du väl har registrerat adressboken som en pålitlig resurs, kan du visa och redigera dina gmail kontakter genom att använda adressboken. Du kan naturligtvis också fortsätta att underhålla dina kontakter genom att använda en webbläsare om du vill. </para
+> 
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  </step>
+   
+  <step id="add-a-local-addressbook-step"
+><para
+>Om du valde en av de lokala adressboksalternativen i <link linkend="select-a-format-step"
+>steg 2</link
+> ovan, dyker en annan dialogruta upp. </para>
+      
+  <para>
+  <screenshot id="screenshot-add-a-personal-addressbook">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Personliga kontakter</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook34.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Personliga kontakter</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Personliga kontakter</quote
+>. Du kan ange vilken katalog som innehåller data, och om du har skrivåtkomst till resursen eller inte. För de flesta fungerar förvalda inställningar (som visas ovan) bra.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Gör eventuella ändringar som du anser nödvändiga i dialogrutan <quote
+>Personliga kontakter</quote
+>, och klicka därefter på <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+>. En ny adressbok visas i adressbokens huvudgränssnittsfönster, som visas nedan. </para>
+  
+  <para>
+  <screenshot id="screenshot-personal-addressbook-has-been-added">
+      <screeninfo
+>En skärmbild av adressbokens huvudfönster med en tom <quote
+>Personliga kontakter</quote
+> adressbok.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook35.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens huvudfönster med en tom <quote
+>Personliga kontakter</quote
+> adressbok.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens huvudfönster efter adressboken <quote
+>Personliga kontakter</quote
+> har skapats om.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step
+>    
+  
+  </procedure>
+  </sect1>
+  
+  <sect1 id="how-to-add-a-new-contact">
+  <title
+>Hur man lägger till en ny kontakt</title
+>    
+  
+  <procedure id="procedure-add-a-new-contact">
+    
+  <step id="new-contact-dialog-step-1"
+><para
+>Öppna adressbokens dialogruta Ny kontakt genom att klicka på knappen <guibutton
+>&nbsp;&plus;&nbsp;Ny kontakt&nbsp;</guibutton
+> på verktygsraden. En dialogruta dyker upp.</para>
+      
+  <para>
+  <screenshot id="screenshot-new-contact-dialog">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Ny kontakt</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Ny kontakt</quote
+>.</phrase>
+    </textobject>
+    <caption>
+    <para
+>Adressbokens dialogruta <quote
+>Ny kontakt</quote
+> efter att ha klickat på knappen <guibutton
+>&nbsp;&plus;&nbsp;Ny kontakt&nbsp;</guibutton
+> på verktygsraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  </step>
+  
+  <step id="procedure-new-contact-data-items"
+><para
+>Som du kan se från föregående skärmbild, tillåter dialogrutan <quote
+>Ny kontakt</quote
+> att flera olika datavärden. Ytterligare data kan matas in via underdialogrutorna <quote
+>Plats</quote
+>, <quote
+>Företag</quote
+>, <quote
+>Personligt</quote
+>, <quote
+>Anteckningar</quote
+>, <quote
+>Egna fält</quote
+> och <quote
+>Kryptoinställningar</quote
+>, som förklaras fullständigare i <link linkend="editing-contact-data"
+>kapitel 4</link
+> nedan. Låt oss för närvarande koncentrera oss på att lägga till datavärdena <quote
+>Kontakt</quote
+> som syns på föregående illustration.</para>
+  </step
+>    
+  
+  <step id="procedure-entering-basic-new-contact-data"
+><para
+>Om du har skapat mer än en adressbok, använd kombinationslistan benämnd <quote
+>Lägg till:</quote
+> för att välja datauppsättning där den nya kontakten ska läggas till. Skriv därefter in den nya kontaktens namn i inmatningsfältet betecknat <quote
+>Namn</quote
+> och kontaktens e-postadress i inmatningsfältet betecknat &nbsp;<quote
+>E-post</quote
+>. Om du vill ange särskilda formateringsalternativ för kontaktens namninformation, klicka på knappen <guibutton
+>&nbsp;...&nbsp;</guibutton
+> till höger om inmatningsfältet <quote
+>Namn</quote
+> och följ anvisningarna. Om du vill lägga till fler e-postadresser för personen, klicka på knappen  <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> till höger om inmatningsfältet <quote
+>E-post</quote
+> så skapas ytterligare ett e-postfält. Klicka på den tillhörande knappen <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> för att ta bort en e-postadress. </para
+></step
+>    
+  
+  <step id="procedure-additional-new-contact-data"
+><para
+>Du kan också koppla ett smeknamn, ett eller flera telefonnummer, flera direktmeddelandetjänster, och flera webbtjänster till varje kontakt i en adressbok, som förklaras i <link linkend="editing-contact-data"
+>kapitel 4</link
+>. Du kan också använda alternativen <quote
+>Visa brev...</quote
+> och <quote
+>Tillåt fjärrinnehåll...</quote
+> för att finjustera sättet som &kmail; hanterar e-post som du tar emot från varje kontakt. Se <link linkend="integration-with-other-kde-programs"
+>kapitel 3</link
+> för en fullständigare förklaring. </para
+></step>
+
+  <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
+  
+  </procedure>
+  </sect1>
+  
+</chapter>
+
+<chapter id="integration-with-other-kde-programs">
+<title
+>Integrering med andra &kde;-program</title>
+  
+  <sect1 id="integration-overview">
+  <title
+>Översikt av integrering: &kmail;</title>
+  
+  <para
+>Eftersom adressboken (en väsentlig del av &kde;:s svit av personliga informationshanteringsprogram) är det centrala arkivet för information om alla dina kontakter, är den integrerad i &nbsp;&kmail; och även i &korganizer;. Här är en snabbtitt på gränssnittet mellan adressboken och dessa två program. </para
+>    
+
+  <sect2 id="starting-kaddressbook-from-kmail-tools">
+  <title
+>Starta adressboken från verktygsmenyn i &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-kmail-tools-menu">
+      <screeninfo
+>En skärmbild av &kmail;s alternativ <menuchoice
+><guimenu
+>Verktyg</guimenu
+><guimenuitem
+>Adressbok</guimenuitem
+></menuchoice
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook50.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av &kmail;s alternativ <menuchoice
+><guimenu
+>Verktyg</guimenu
+><guimenuitem
+>Adressbok</guimenuitem
+></menuchoice
+>.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Starta adressboken från &kmail;s menyalternativ <menuchoice
+><guimenu
+>Verktyg</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbok</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Gränssnittet är enkelhet personifierad. Behöver du rådfråga eller uppdatera posten för en av dina kontakter medan du läser eller skriver ett brev med &kmail;? Vänsterklicka på <menuchoice
+><guimenu
+>Verktyg</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbok</guimenuitem
+> </menuchoice
+>, så startas adressboksprogrammet automatiskt och ger snabb åtkomst till kontaktinformation som du vill visa eller ändra.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="autocompletion-feature-on-new-email">
+  <title
+>Anropa adressboken från &kmail;s brevinmatningsfönster</title>
+  
+  <para>
+  <screenshot id="screenshot-autocompletion-feature">
+      <screeninfo
+>En skärmbild av automatisk komplettering inne i &kmail;s brevinmatningsfönster.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook51.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av automatisk komplettering inne i &kmail;s brevinmatningsfönster.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Användning av adressbokens automatiska kompletteringsfunktion inne i &kmail;s brevinmatningsfönster.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>När du skriver ett nytt brev, hjälper &kmail; dig att hitta mottagarens fullständiga e-postadress genom att presentera en lista med troliga träffar tagna från adressbokens innehåll och dina e-postarkiv, som illustreras ovan. Vänsterklicka bara på ett alternativ i listan för att använda den e-postadressen.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2  id="recipient-selection-dialog">
+  <title
+>Dialogrutan för att välja mottagare i &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-recipient-selection">
+      <screeninfo
+>En skärmbild av dialogrutan för att välja mottagare inne i &kmail;s brevinmatningsfönster.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook52.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av dialogrutan för att välja mottagare inne i &kmail;s brevinmatningsfönster.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Välja flera adressater med dialogrutan för att välja mottagre inne i &kmail;s brevinmatningsfönster.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>När du adresserar ett nytt brev till flera mottagare, tillhandahåller &kmail; en bekväm metod att välja flera adressater från kontakterna som du har sparat med adressboken. Vänsterklicka helt enkelt på knappen <guibutton
+>&nbsp;Välj...&nbsp;</guibutton
+> för att visa en kombinationsruta som listar alla kontakterna i de valda adressböckerna. Rulla därefter igenom listan (eller använd den praktiska rutan <quote
+>Sök:</quote
+>), välj mottagaren du vill ha, och vänsterklicka på &nbsp;<guibutton
+>&nbsp;Lägg till som Till&nbsp;</guibutton
+>, <guibutton
+>&nbsp;Lägg till som Kopia&nbsp;</guibutton
+> eller <guibutton
+>&nbsp;Lägg till som Dold kopia&nbsp;</guibutton
+> för att lägga till personen i listan med e-postmottagare för det nya brevet. Välj <guibutton
+>&nbsp;Lägg till som Svara till&nbsp;</guibutton
+> för att infoga adressen i brevet som en <quote
+>Svara till</quote
+> etikett.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="new-contact-creation-interface">
+  <title
+>Gränssnittet för att skapa ny kontakt i &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation">
+      <screeninfo
+>En skärmbild av gränssnittet för att skapa ny kontakt inne i &kmail;s brevvisningsfönster.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook53.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av gränssnittet för att skapa ny kontakt inne i &kmail;s brevvisningsfönster.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Starta dialogrutan för att skapa ny kontakt från &kmail;s brevvisningsfönster.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>När du tar emot e-post från någon som inte ännu finns i din adressbok, gör &kmail; det mycket enkelt att skapa en ny kontakt. Peka helt enkelt markören på e-postadressen som du vill spara, och klicka därefter med höger musknapp så visas en sammanhangsberoende meny (se ovan). Välj <guimenuitem
+>&nbsp;&plus; Lägg till i adressboken&nbsp;</guimenuitem
+> för att lägga till den valda e-postadressen i en av dina adressböcker. Om du känner igen personen som någon som redan finns i din adressbok, och han använder en ny e-postadress, kan du istället klicka på <guimenuitem
+>&nbsp;&plus; Lägg till i befintlig kontakt&nbsp;</guimenuitem
+>: det går till en dialogruta som leder &nbsp;adressboken till stället där du vill infoga den nya e-postadressen.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step2">
+      <screeninfo
+>En skärmbild av den följande dialogrutan för att skapa ny kontakt.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook54.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av den följande dialogrutan för att skapa ny kontakt.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Välja adressboken där den nya kontakten kommer att skapas.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>&kmail; ber dig att välja adressboken som den nya kontakten ska läggas till i.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step3">
+      <screeninfo
+>En annan skärmbild av den följande dialogrutan för att skapa ny kontakt.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook55.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En annan skärmbild av den följande dialogrutan för att skapa ny kontakt.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Bestäm om du vill redigera den nyskapade kontakten nu, eller senare.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>&kmail; frågar också om du önskar <link linkend="editing-contact-data"
+>redigera den nya kontakten </link
+> &nbsp;som just har lagts till. Välj <guibutton
+>&nbsp;✔&nbsp;Ja&nbsp;</guibutton
+> om du direkt vill lägga till mer data i den nya posten.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+    
+  </sect1>
+  
+  <sect1 id="korganizer-overview">
+  <title
+>Adressbokens gränssnitt med &korganizer;</title>
+  
+  <para
+>&korganizer;, &kde;:s schemaläggnings- och kalenderhanteringsprogram, låter dig skicka e-post till personer som du vill bjuda in till ett möte, och erbjuder två gränssnitt med adressboken för detta syfte.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb --> 
+  
+  <para>
+  <screenshot id="screenshot-inviting-one-attendee">
+      <screeninfo
+>En skärmbild av &korganizer;s deltagarflik.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook60.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av &korganizer;s deltagarflik.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Tillägg av en enda deltagare i ett schemalagt möte med &nbsp;&korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Det första gränssnittet är precis som <link linkend="autocompletion-feature-on-new-email"
+>funktionen för automatisk komplettering</link
+> som &kmail; tillhandahåller: börja bara skriva namnet på personen som du vill bjuda in, så presenteras en lista med troliga träffar för dig, som illustreras ovan.</para
+>  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-inviting-multiple-attendees">
+      <screeninfo
+>En skärmbild av &korganizer;s deltagarflik.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook61.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&korganizer;s deltagarflik.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Lägga till flera deltagare i ett schemalagt möte i &korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Det andra gränssnittet är precis som <link linkend="recipient-selection-dialog"
+>dialogrutan för val av mottagare</link
+> &nbsp;som &kmail; tillhandahåller: när du vänsterklickar på knappen <guibutton
+>&nbsp;Välj deltagare...&nbsp;</guibutton
+>, visas en sökbar lista över kontakterna i alla dina adressböcker, som föregående skärmbild visar.</para>
+  
+  </sect1>
+  
+</chapter>
+
+<chapter id="editing-contact-data">
+<title
+>Lägga till eller redigera kontaktinformation</title>
+
+  <sect1 id="edit-basic-info">
+  <title
+>Grunderna</title>
+  
+  <para
+>När du först klicka på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till kontakt&nbsp;&nbsp;</guibutton
+> på adressbokens verktygsrad, visas den här skärmen. (Om du klickar på <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Redigera kontakt&nbsp;&nbsp;</guibutton
+> visas en liknande skärm, där den enda skillnaden är att kombinationsrutan betecknad <quote
+>Lägg till:</quote
+> inte visas som en del av dialogrutan <quote
+>Redigera</quote
+>. Det är därför båda funktionerna täcks av det här kapitlet: De är praktiskt taget identiska.)</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog-2">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Ny kontakt</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Ny kontakt</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Lägg till kontakt</quote
+> efter att ha klickat på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Lägg till kontakt&nbsp;&nbsp;</guibutton
+> på verktygsraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect2 id="edit-contact-tab">
+  <title
+>Fliken Kontakt</title>
+  
+  <para
+>Vi har redan sett (i <link linkend="how-to-add-a-new-contact"
+>Hur man lägger till en ny kontakt</link
+>&nbsp;) hur grunddata som Namn och E-post matas in när en ny kontaktpost skapas. Här är en beskrivning av de många sätt att använda resten av datafälten tillgängliga från fliken <quote
+>Kontakt</quote
+> i dialogrutan <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Lägg till kontakt&nbsp;&nbsp;</guibutton
+>.</para>
+  
+  <variablelist>
+      
+    <varlistentry
+><term
+>Telefon</term
+><listitem
+><para
+>Du kan associera ett eller flera telefonnummer med personen. Använd knapparna <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> och <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> för att lägga till eller ta bort telefonnummerfält. Kombinationsrutan <guibutton
+>&nbsp;Hem<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> låter dig identifiera femton kategorier av telefonnummer (Hem, Arbete, Mobil, Bil,<glossterm linkend="gloss-isdn"
+> <acronym
+>ISDN</acronym
+></glossterm
+>, <glossterm linkend="gloss-pcs"
+><acronym
+>PCS</acronym
+></glossterm
+>, etc.)</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Direktmeddelanden</term
+><listitem
+><para
+>Du kan associera en eller flera identiteter på direktmeddelandetjänster med personen. Använd knapparna <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> och <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> för att lägga till eller ta bort meddelandetjänstfält. Kombinationsrutan <guibutton
+>&nbsp;Välj...<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> låter dig identifiera tretton kategorier av direktmeddelandetjänster: <glossterm linkend="gloss-aim"
+>AIM,</glossterm
+> Facebook, <glossterm linkend="gloss-gadu-gadu"
+>Gadu-Gadu</glossterm
+>, Google Talk, <glossterm linkend="gloss-gpws"
+>GroupWise</glossterm
+>, <glossterm linkend="gloss-icq"
+><acronym
+>ICQ</acronym
+></glossterm
+>, <glossterm linkend="gloss-irc"
+><acronym
+>&irc;</acronym
+></glossterm
+>, <glossterm linkend="gloss-jabber"
+>Jabber</glossterm
+>, <glossterm linkend="gloss-mnwhl"
+>Meanwhile</glossterm
+>, <glossterm linkend="gloss-sms"
+><acronym
+>SMS</acronym
+></glossterm
+>, Skype, Twitter, and Yahoo. (MSN Messenger finns fortfarande i listan av direktmeddelandetjänster i version 5.10.3. Den har varit borttagen sedan 2014.)</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Webb</term
+><listitem
+><para
+>Du kan associera en eller flera webbadresser med personen. Använd knapparna <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> och <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> för att lägga till webbadressfält. Kombinationsrutan <guibutton
+>&nbsp;Välj...<inlinemediaobject
+><imageobject
+> <imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> låter dig identifiera olika sorters webbadresser: Hem, Arbete och Annan.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Etiketter</term
+><listitem
+><para
+>Du kan associera en eller flera etiketter av egen utformning med personen. Använd knappen <guibutton
+>&nbsp;...&nbsp;</guibutton
+> för att gå till dialogrutan för att skapa och anpassa etiketter nedan.</para
+></listitem>
+    </varlistentry>
+      
+  </variablelist
+> 
+  
+  <para>
+  <screenshot id="screenshot-add-tags-dialog">
+      <screeninfo
+>Adressbokens dialogruta <quote
+>Etiketter</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook71.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens dialogruta <quote
+>Etiketter</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Hantera etiketter</quote
+> efter att ha klickat på knappen <guibutton
+>&nbsp;...&nbsp;</guibutton
+> intill <quote
+>Etiketter</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+    <varlistentry
+><term
+>Etiketter (fortsättning)</term
+><listitem
+><para
+>Använd knappen <guibutton
+>&nbsp;Skapa ny etikett&nbsp;</guibutton
+> och datainmatningsfältet till vänster för att bygga din anpassade lista med etiketter. Välj etiketterna kopplade till personen från listan som visas i inställningsfönstret. Klicka på knappen <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> för att lägga till de markerade etiketterna till kontakten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Bloggkanal</term
+><listitem
+><para
+>Använd fältet för att lagra webbadressen som hör ihop med kontaktens webblogg, eller blogg.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Visa brev...</term
+><listitem
+><para
+>Använd kombinationsrutan för att överskrida motsvarande alternativ för brevvisning i &kmail;s inställningsmeny <guibutton
+>&nbsp;Integritet och säkerhet&nbsp;</guibutton
+>. Välj <quote
+>Förval</quote
+> för att lämna det åt &kmail;. Välj <quote
+>Vanlig text</quote
+> eller <quote
+>HTML</quote
+> om du vill överskrida &kmail;s normala beteende när du tar emot ett brev från den här personen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Tillåt fjärrinnehåll...</term
+><listitem
+><para
+>Använd alternativet om du vill överskrida motsvarande alternativ för brevvisning i &kmail;s inställningsmeny <guibutton
+>&nbsp;Integritet och säkerhet&nbsp;</guibutton
+> när du tar emot ett brev från den här personen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+></term
+><listitem
+><para
+>Välj alternativet för att spara ändringarna som du har gjort. Knappen utför samma funktion på alla sju flikar som visas i dialogrutan <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till kontakt&nbsp;&nbsp;</guibutton
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;⦸&nbsp;Avbryt&nbsp;</guibutton
+></term
+><listitem
+><para
+>Välj alternativet för att lämna dialogrutan <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Lägg till kontakt&nbsp;&nbsp;</guibutton
+> utan att spara dina ändringar. Knappen utför samma funktion på alla sju flikar som visas i dialogrutan <quote
+>Lägg till kontakt</quote
+>.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-location-tab">
+  <title
+>Platsfliken</title>
+  
+  <para
+>Använd datainmatningsfälten under fliken <quote
+>Plats</quote
+> som visas nedan kopplar en eller flera postadresser med personen.</para>
+      
+  <para>
+  <screenshot id="screenshot-location-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Plats</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook72.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Plats</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Plats</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  <variablelist>
+    <varlistentry
+><term
+>Kombinationsruta (utan beteckning)</term
+><listitem
+><para
+>Använd kategorilistan för att beskriva varje e-postadress för kontakten. Tillgängliga alternativ omfattar &nbsp;<quote
+>Hem</quote
+>, <quote
+>Arbete</quote
+>, <quote
+>Brevlåda</quote
+>, etc.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Gata, Postbox, Postnummer, Plats, Område</term
+><listitem
+><para
+>Använd de här fritt formaterade datafälten för att mata in postadressinformation: Gatuadress, postbox, postnummer, stad för adresser i Sverige.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Land</term
+><listitem
+><para
+>Använd kombinationsrutan för att välja ett land, från Afghanistan till Zimbabwe.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Det här är adressen som föredras</term
+><listitem
+><para
+>Markera rutan för att ange den föredragna, eller standardpostadressen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;Lägg till adress&nbsp;</guibutton
+></term
+><listitem
+><para
+>När du är klar med att mata in adressinformation, vänsterklicka på knappen för att lägga till en ny adress till de sparade adresserna som syns i det stora visningsfönstret till höger.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Ikonen <inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> i det stora visningsfönstret</term>
+    <listitem
+><para
+>Vänsterklicka på ikonen för att redigera motsvarande adressinformation.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Ikonen <inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+> i det stora visningsfönstret</term>
+    <listitem
+><para
+>Vänsterklicka på ikonen för att ta bort motsvarande adressinformation.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  </sect2>
+  
+  <sect2 id="edit-business-tab">
+  <title
+>Flikarna Företag, Personligt och Anteckningar</title>
+  
+  <para
+>De följande tre flikarna i dialogrutan <quote
+>Lägg till kontakt</quote
+> är ännu enklare än fliken <quote
+>Plats</quote
+>. De låter dig spara en del information om personens respektive företags- och professionella tillhörighet, viss personlig information, och diverse fritt formaterade anteckningar.</para>
+  
+  <para>
+  <screenshot id="screenshot-business-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Företag</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook73.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Företag</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Företag</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Fliken <quote
+>Företag</quote
+>, som visas ovan, låter dig spara en del ytterligare information om personens professionella och företagsförbindelser. Alla inmatningsfält är fritt formaterade, du kan mata in vilken textinformation som helst i alla fält. Den lilla knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> visar en filsökdialogruta, vilket gör det enkelt att koppla ett filnamn till personens <quote
+>Upptagen-ledig</quote
+> schema, om du vill.</para>
+  
+  <para
+>Observera att du bör mata in  affärskontaktens telefon som ett telefonnummer under fliken <quote
+><link linkend="edit-contact-tab"
+>Kontakt</link
+></quote
+>. På liknade sätt matas kontorsadressen in via fliken <quote
+>Plats</quote
+>, som beskrivs i <link linkend="edit-location-tab"
+>föregående avsnitt</link
+>.</para
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-personal-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Personligt</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook74.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Personligt</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Personligt</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Använd fliken för att lagra en del personlig information: personens födelsedag, årsdag, och partnerns eller sambons namn. Klicka på någon av knapparna (t.ex. <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="view-calendar-birthday.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>&nbsp;) för att skriva in födelsedatum eller årsdag. </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-notes-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Anteckningar</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook75.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Anteckningar</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Anteckningar</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Fliken <quote
+>Anteckninar</quote
+> tillhandahåller ett helt fritt inmatningsområde, där du kan skriva in vilken information som helst som du vill koppla till personen.</para>
+      
+  </sect2
+>    
+
+  </sect1
+>  
+
+  <sect1 id="edit-advanced-info">
+  <title
+>De knepiga sakerna</title>
+  
+  <para
+>Adressboken tillhandahåller ett antal mer komplicerade datalagringsfunktioner, förutom de enkla funktionerna, beskrivna i föregående avsnitt.</para>
+
+  <sect2 id="edit-custom-tab">
+  <title
+>Fliken Egna fält</title>
+
+  <para
+>Inte nöjd med den stora mängden dataobjekt som adressboken redan har förprogrammerade åt dig? Inga problem. Någon gång, kanske snart, kan du utnyttja dialogrutan <quote
+>Egna fält</quote
+> som visas nedan för att definiera och fylla i så många ytterligare datafält som du någonsin kan använda.</para>
+  
+  <para>
+  <screenshot id="screenshot-custom-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Egna fält</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook76.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Egna fält</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Egna fält</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Det är en experimentell funktion som ännu inte gör någonting värt att tala om. Så jag säger ingenting mer om den.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-crypto-tab">
+  <title
+>Fliken Kryptoinställningar</title>
+  
+  <para
+>Behöver du skicka konfidentiell e-post som inte ska kunna läsas av nyfikna ögon? Adressboken tillhandahåller ett enkelt sätt för dig att koppla kryptografiska nycklar med varje person i din adresslista.</para>
+  
+  <para>
+  <screenshot id="screenshot-crypto-tab">
+      <screeninfo
+>Adressbokens flik <quote
+>Kryptoinställningar</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook77.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Adressbokens flik <quote
+>Kryptoinställningar</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressboken flik <quote
+>Kryptoinställningar</quote
+>, en del av dialogrutan <quote
+>Ny kontakt</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+<variablelist>
+    <varlistentry
+><term
+>Tillåtna protokoll</term
+><listitem
+><para
+>Välj vilken krypteringsmetod som du vill använda när du skickar ett brev till personen: <glossterm linkend="gloss-inline-pgp"
+>OpenPGP på plats</glossterm
+>, <glossterm linkend="gloss-open-pgp"
+>OpenPGP/&MIME;</glossterm
+>, <glossterm linkend="gloss-mime"
+><acronym
+>S/MIME</acronym
+> </glossterm
+> eller <glossterm linkend="gloss-opaque"
+><acronym
+>S/MIME</acronym
+> ogenomskinligt</glossterm
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Föredragen OpenPGP-krypteringsnyckel:</term
+><listitem
+><para
+>Använd knappen <guibutton
+>&nbsp;Ändra...&nbsp;</guibutton
+> för att välja från en lista med tillgängliga Open<glossterm linkend="gloss-pgp"
+>PGP</glossterm
+>-nycklar, om du har valt OpenPGP-kryptering. Använd knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+> för att ta bort en tidigare vald nyckel.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Föredraget <acronym
+>S/MIME</acronym
+>-krypteringscertifikat:</term>
+    <listitem
+><para
+>Använd knappen <guibutton
+>&nbsp;Ändra..&nbsp;</guibutton
+> för att välja från en lista med tillgängliga certifikat, om du använder en verifierad nyckel. Använd knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> för att ta bort en tidigare vald nyckel.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Meddelandeinställning, Signera:</term
+><listitem
+><para
+>Använd kombinationsrutan för att ange när brev adresserade till personen ska innehålla din kryptografiska signatur: Aldrig, Alltid, Om möjligt, Fråga.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Meddelandeinställning, Kryptera:</term
+><listitem
+><para
+>Använd kombinationsrutan för att ange när brev adresserade till personen ska krypteras genom att använda det valda protokollet och nyckeln: Aldrig, Alltid, Om möjligt, Fråga.</para
+></listitem>
+    </varlistentry>
+    
+</variablelist
+>  
+  
+  </sect2>
+
+  </sect1>
+  
+</chapter>
+
+<chapter id="commands">
+<title
+>Kommandoreferens</title>
+    
+  <sect1 id="menu-bar-items">
+  <title
+>Menyraden</title>
+  
+  <para
+>Här är en kort sammanfattning av de sju menyerna som visas i adressbokens menyrad.</para>
+  
+
+  <sect2 id="the-file-menu">
+  <title
+>Menyn Arkiv</title>
+  
+  <para>
+  <screenshot id="screenshot-file-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Arkiv</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook80.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Arkiv</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Arkiv</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Arkiv</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Menyn <menuchoice
+><guimenu
+>Arkiv</guimenu
+></menuchoice
+> låter dig komma åt sex huvudfunktioner, där tre har flera alternativ.</para
+> 
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+>Ny&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ny kontakt</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Det har exakt samma effekt som att klicka på knappen <guibutton
+>&nbsp; &plus;&nbsp;Ny kontakt&nbsp;</guibutton
+> på verktygsraden. Se <link linkend="how-to-add-a-new-contact"
+>kapitel 2 ovan</link
+> för fullständig information.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+>Ny&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ny grupp</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Visar en dialogruta där du kan definiera en ny grupp, eller e-postlista. Se&nbsp;<link linkend="file-new-group"
+>appendix</link
+> för en detaljerad förklaring av funktionen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Ny&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till adressbok</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Visar dialogrutan <quote
+>Lägg till adressbok</quote
+>, som är fullständigt dokumenterad i &nbsp;<link linkend="how-to-add-a-new-address-book"
+>kapitel 2 ovan</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera från LDAP-server...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig importera data från en <acronym
+>LDAP</acronym
+>-server. Servern måste vara inställd innan funktionen kan användas. Se <link linkend="configure-ldap-server"
+>appendix</link
+> för fullständig information.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera CSV-fil...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig importera kontaktinformation från en <acronym
+>csv</acronym
+>-fil med värden åtskilda av kommatecken. En dialogruta dyker upp, där du kan koppla varje fält i indatafilen med ett namngivet fält i adressbokens interna lagringspost. Se <link linkend="import-csv-data"
+>appendix</link
+> för en mer detaljerad förklaring.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera vCard...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen underlättar import av <acronym
+>vcf</acronym
+>-data, eller vCard-data. Alla tre versioner av vCard stöds. Du kan ta reda på mer om vCard-formaten <ulink url="https://sv.wikipedia.org/wiki/V-card"
+>på den här webbsidan</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Exportera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera CSV-fil...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig exportera utvald kontaktinformation som värden åtskilda av kommatecken (<acronym
+>csv</acronym
+>-fil). Det finns 47 fält i utdataposterna. Se <link linkend="export-csv-data"
+>appendix</link
+> för en lista över datafälten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Exportera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera vCard 4.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig exportera utvald kontaktinformation som en fil med formatet <acronym
+>vCard 4.0</acronym
+>. Se <ulink url="https://sv.wikipedia.org/wiki/V-card"
+>den här artikeln i WIkipedia</ulink
+> för mer information.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Exportera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera vCard 3.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig exportera utvald kontaktinformation som en fil med formatet <acronym
+>vCard 3.0</acronym
+>. Formatet liknar <acronym
+>vCard 4.0</acronym
+>.</para
+></listitem>
+    </varlistentry
+>    
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Exportera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera vCard 2.1...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktionen låter dig exportera utvald kontaktinformation som en fil med formatet <acronym
+>vCard 2.1</acronym
+>. Formatet liknar <acronym
+>vCard 3.0</acronym
+>.</para
+></listitem>
+    </varlistentry>
+ 
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Skriv ut</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Visa en dialogruta för utskriftsval. Använd dialogrutan <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Förhandsgranskning av utskrift</guisubmenu
+></menuchoice
+> nedan för att ställa in namnintervallet och utskriftsformatet innan du använder den här funktionen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Förhandsgranskning av utskrift</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Visar en dialogruta för förhandsgranskning av utskrift, som också låter dig formatera rapporten, välja vilka objekt som ska ingå, och ange en sorteringsordning, etc. Se &nbsp;<link linkend="file-print-preview"
+>appendix</link
+> för ytterligare detaljinformation.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-exit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Avsluta</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Stänger adressboksprogrammet.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2
+>  
+
+  <sect2 id="the-edit-menu">
+  <title
+>Menyn Redigera</title>
+  
+  <para>
+  <screenshot id="screenshot-edit-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Redigera</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook81.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Redigera</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Redigera</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Redigera</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Menyn <menuchoice
+><guimenu
+>Redigera</guimenu
+></menuchoice
+> låter dig komma åt åtta huvudfunktioner, där två har flera alternativ.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Redigera kontakt...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Har nästan samma effekt som att klicka på <guibutton
+>&nbsp;&plus;&nbsp;Ny kontakt&nbsp;</guibutton
+> på verktygsraden. Skillnaden är att menyalternativet låter dig redigera en kontaktpost som redan finns istället för att skapa en helt ny. Se <link linkend="how-to-add-a-new-contact"
+>kapitel 2 ovan</link
+> för fullständig information.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+></shortcut
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-cut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Klipp ut kontakt...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Utför åtgärden <quote
+>Klipp ut</quote
+> för den markerade kontakten. En kopia av kontakten med formatet <glossterm linkend="gloss-vcf"
+><acronym
+>vCard 3.0</acronym
+></glossterm
+> placeras på klippbordet. <quote
+>Klipp ut</quote
+> slutförs när du <quote
+>klistrar in</quote
+> kontakten någonstans.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kopiera kontakt...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Placerar en kopia av kontakten på klippbordet så att du kan klistra in den någon annanstans.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-paste.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Klistra in</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><quote
+>Klistrar in</quote
+> den urklippta eller kopierade kontakten på aktuell plats. Det kan vara i samma adressbok som <quote
+>Klipp ut</quote
+> eller <quote
+>Kopiera</quote
+> gjordes, eller i en annan adressbok. Eftersom föregående åtgärder placerade kontaktinformationen på systemets klippbord, kan du också klistra in det någon annanstans förutom i adressboken (t.ex. i en texteditor, eller som en <acronym
+>vCard 3.0</acronym
+>-fil i din hemkatalog).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Kopiera kontakt till &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(en variabel lista)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Kombinerar åtgärderna <quote
+>Kopiera</quote
+> och <quote
+>Klistra in</quote
+> till ett enda klick med vänster musknapp. Listan med mål som visas beror på hur många adressböcker du har skapat.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Flytta kontakt till &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(en variabel lista)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Fungerar precis som åtgärden <quote
+>Kopiera kontakt tlll</quote
+>, som beskrivs ovan, förutom att den kombinerar <quote
+>Klipp ut</quote
+> och <quote
+>Klistra in</quote
+> till ett enda klick med vänster musknapp.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>Delete</keycap
+></keycombo
+></shortcut
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ta bort kontakt</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Tar bort de markerade kontakterna från den nuvarande adressboken.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Redigera</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ta bort adressbok</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Ta bort den aktuella adressboken. Var försiktig med det här kommandot: Du kan förlora en del data! I teorin tar funktionen helt enkelt bort den symboliska länken mellan adressboken och den tillhörande <acronym
+>vCard</acronym
+>-filen eller katalogen (eller hyperlänken till en <glossterm linkend="gloss-cloud"
+>molnbaserad tjänst</glossterm
+>), och verklig data ändras inte. Det är ändå lämpligt att skapa en säkerhetskopia av adressboken någonstans innan du tar bort den.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-view-menu"
+> 
+  <title
+>Menyn Visa</title>
+  
+  <para>
+  <screenshot id="screenshot-view-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Visa</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Visa</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Visa</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Visa</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Menyn <menuchoice
+><guimenu
+>Visa</guimenu
+></menuchoice
+> låter dig komma åt fyra huvudfunktioner, och en experimentell funktion som egentligen inte gör någonting ännu.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Visa</guimenu
+><guisubmenu
+>Teman &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Menyalternativet gör egentligen ingenting. Det visar dialogrutan <quote
+>Teman</quote
+>, men den dialogrutan är sönder i utgåva 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>1</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visa</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Enkel (en kolumn)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Ändrar den vanliga layouten med tre paneler till en enda kolumn. För mer detaljerad information, se <link linkend="view-change-columns"
+>appendix</link
+>.</para
+></listitem>
+    </varlistentry>
+        
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>2</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visa</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Två kolumner</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Ändrar den vanliga layouten med tre paneler till två paneler. För mer detaljerad information, se <link linkend="view-change-columns"
+>appendix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>3</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visa</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Tre kolumner</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Byter tillbaka till den normala layouten med tre paneler.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Visa</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Visa QR-koder</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Markera rutan för att visa kontaktinformation som en QR-kod. Avmarkera den för att dölja QR-koder.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-action-menu"
+> 
+  <title
+>Menyn Åtgärd</title>
+  
+  <para>
+  <screenshot id="screenshot-action-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Åtgärd</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook83.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Åtgärd</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Åtgärd</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Åtgärd</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Menyn <menuchoice
+><guimenu
+>Åtgärd</guimenu
+></menuchoice
+> låter dig komma åt två dataöverföringsfunktioner.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Åtgärd</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Skicka visitkort...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet liknar <quote
+>Skicka e-post...</quote
+> nedan, utom att efter att du har markerat några kontakter med &Ctrl; och musen, visas brevinmatningsfönstret med en tom adressatlista, och med tillagda filer (de markerade kontakterna, med vCard 3.0 format). Det gör det enkelt att dela markerad information i adressboken med vänner och affärskontakter.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Åtgärd</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Skicka e-post...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet tillhandahåller ett alternativt sätt att ange mottagarlistan för ett nytt  brev. Tryck på &Ctrl; (eller &Shift;) och markera personerna som du vill skicka det nya brevet till genom att använda vänster musknapp. Klicka därefter på <quote
+>Skicka e-post...</quote
+>: Det öppnar ett nytt brevinmatningsfönster i &kmail;. Alla markerade kontakter listas som adressater efter <quote
+>Till</quote
+>.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-tools-menu"
+> 
+  <title
+>Menyn Verktyg</title>
+  
+  <para>
+  <screenshot id="screenshot-tools-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Verktyg</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook84.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Verktyg</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Verktyg</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Verktyg</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Menyn <menuchoice
+><guimenu
+>Verktyg</guimenu
+></menuchoice
+> låter dig komma åt två datahanteringsfunktioner.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+><guisubmenu
+>Sammanfoga kontakter...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Verktyget låter dig sammanfoga innehållet i två eller flera adressboksposter. För att aktivera det måste du först markera två eller flera kontakter (håll nere &Ctrl; eller &Shift; och vänsterklicka på kontakter för att markera). En dialogruta visas, som ber dig bekräfta vilka kontakter du vill kombinera, och var den sammanfogade posten ska sparas. Klicka på <quote
+>sammanfoga</quote
+> för att slutföra åtgärden.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+><guisubmenu
+>Sök efter duplicerade kontakter...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Verktyget söker igenom en eller flera adressböcker för duplicerade poster, och erbjuder alternativet att sammanfoga eventuella duplicerade poster som det hittar.</para
+></listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-settings-menu"
+> 
+  <title
+>Menyn Inställningar</title>
+  
+  <para>
+  <screenshot id="screenshot-settings-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Inställningar</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook85.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Inställningar</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Inställningar</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Inställningar</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+    
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  <para
+>Menyn <menuchoice
+><guimenu
+>Inställningar</guimenu
+></menuchoice
+> erbjuder fem alternativ för att finjustera sättet som adressboken fungerar.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+><inlinemediaobject
+><imageobject
+><imagedata fileref="show-menu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Visa menyrad</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Alternativet låter dig visa eller dölja menyraden.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Visa verktygsrad</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet låter dig visa eller dölja verktygsraden.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Anpassa genvägar...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet låter dig anpassa snabbtangenterna tillgängliga i adressboken. Se <link linkend="settings-configure-shortcuts"
+>appendix</link
+> för mer detaljerad information.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Anpassa verktygsrader...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet låter dig anpassa innehållet på adressbokens verktygsrad. Se <link linkend="settings-configure-toolbars"
+>appendix</link
+> för mer detaljerad information.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Anpassa Adressbok...</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>,</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Alternativet låter dig anpassa flera avancerade alternativ i adressboken. Se <link linkend="settings-configure-kaddressbook"
+>appendix</link
+> för mer detaljerad information.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-help-menu"
+> 
+  <title
+>Menyn Hjälp</title>
+  
+  <para>
+  <screenshot id="screenshot-help-menu">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Hjälp</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook86.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Hjälp</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Hjälp</quote
+> efter att ha klickat på knappen <menuchoice
+><guimenu
+>Hjälp</guimenu
+></menuchoice
+> i menyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Menyn <menuchoice
+><guimenu
+>Hjälp</guimenu
+></menuchoice
+> erbjuder sju alternativ.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="system-help.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Handbok Adressbok</guisubmenu
+></menuchoice
+> <keycombo action="press"
+><keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Alternativet visar en kopia av <quote
+>Handbok Addressbok</quote
+> via programverktyget Hjälpcentral.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="help-about.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Vad är det här?</guisubmenu
+></menuchoice
+><keycombo action="simul"
+>&Shift; <keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Det här är adressbokens inbyggda hjälpverktyg. Vänsterklicka på alternativet, och flytta därefter markören och klicka på vilket som helst av de fyra första objekten i verktygsraden. En kortfattad beskrivning av det verktygets funktion visas.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="tools-report-bug.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Rapportera fel</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet visar en dialogruta som hjälper dig skicka in en felrapport till <ulink url="https://bugs.kde.org/"
+>bugs.kde.org</ulink
+>, &kde;:s huvudsakliga felspårningssida.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-x-ms-shortcut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ge bidrag</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det visar en <ulink url="https://kde.org/community/donations/?app=kaddressbook"
+>webbsida</ulink
+> i din webbläsare, där du kan bidra med pengar för att stödja &kde;. Vi acceptera euro, dollar, rubel, pund, yen, yuan, peso, etc.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-language.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ändra programmets språk</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet låter dig ändra språk som används för att beteckna de olika menyalternativen och inbyggda hjälpskärmarna. Du måsta avsluta adressboken och starta om den innan det nya språket får effekt.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="kaddressbook.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Om Adressbok</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Klicka objektet för att ta reda på vilken utgåva av adressboken som du kör, vilka bibliotek som användes för att kompilera och bygga den körbara koden, och vem som är &kde;:s huvudprogrammerare.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="KDE_logo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Om &kde;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Alternativet visar information om &kde;. Lev fri!</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  </sect2>
+  
+  </sect1>
+  
+  <sect1 id="tool-bar-items">
+  <title
+>Verktygsraden</title>
+  
+  <para
+>Det finns fem separata verktyg tillgängliga på adressbokens verktygsrad: <quote
+>Ny kontakt</quote
+>, <quote
+>Ny grupp</quote
+>, <quote
+>Redigera kontakt</quote
+>, <quote
+>Sök...</quote
+>, och ett kategorifilter. Här är en bild. (Observera att jag har dokumenterat standardversionen av adressbokens verktygsrad. Du kan ändra verktygsradens layout genom att använda menyn <link linkend="the-settings-menu"
+> <quote
+>Inställningar</quote
+></link
+>, om du vill.)</para>
+  
+  <para>
+  <screenshot id="screenshot-tool-bar">
+      <screeninfo
+>En närbild av adressbokens verktygsrad.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook87.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En närbild av adressbokens verktygsrad.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens standardverktygsrad, närgånget och personligt.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Ny kontakt</guibutton
+></term>
+    <listitem
+><para
+>Den här verktygsradsknappen visar dialogrutan <quote
+>Lägg till ny kontakt</quote
+>, dokumenterad i <link linkend="edit-basic-info"
+>kapitel 4</link
+> ovan.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Ny grupp</guibutton
+></term>
+    <listitem
+><para
+>Den här verktygsradsknappen visar dialogrutan <quote
+>Lägg till ny grupp</quote
+>, dokumenterad i <link linkend="file-new-group"
+>appendix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Redigera kontakt</guibutton
+></term>
+    <listitem
+><para
+>Den här verktygsradsknappen visar dialogrutan <quote
+>Redigera kontakt</quote
+>, dokumenterad i <link linkend="edit-basic-info"
+>kapitel 4</link
+> ovan.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+>[ Sök...&nbsp;<keycombo action="simul"
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ]</term>
+    <listitem
+><para
+>Verktyget söker igenom alla kontakter i markerade adressböcker medan du skriver. Att trycka på <keycombo
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> placerar helt enkelt markören inne i rutan <quote
+>Sök...</quote
+>. Var medveten om att funktionen söker igenom hela innehållet i varje kontaktpost: En sökning efter <quote
+>and</quote
+> kan inte bara returnera Anders Svensson och Andreas Johansson, utan också Sven Karlsson (som råkar arbeta på företaget Anderssons Bygg).</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-search">
+      <screeninfo
+>En skärmbild av adressbokens <quote
+>sökfunktion</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook91.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens <quote
+>sökfunktion</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens <quote
+>sökfunktion</quote
+> i arbete.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+>[ (alla)&nbsp;<inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+>]</term>
+    <listitem
+><para
+>Verktyget utför en filtreringsfunktion baserad på kategorier. De två standardkategorierna är <quote
+>Utan etikett</quote
+> och <quote
+>Grupper</quote
+>. Du kan skapa nya kategorier genom att associera <quote
+>etiketter</quote
+> som du själv utformar med vissa kontaktposter (se <link linkend="edit-basic-info"
+>Lägg till ny kontakt</link
+> i kapitel 4 ovan). Klicka antingen på knappen <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> för att ställa in vald kategori till <quote
+>Inga</quote
+>, eller knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> för att återställa urvalskriteriet till <quote
+>Alla</quote
+>.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para>
+  <screenshot id="toolbar-filter">
+      <screeninfo
+>En skärmbild av adressbokens <quote
+>filterfunktion</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook92.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens <quote
+>filterfunktion</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens <quote
+>filterfunktion</quote
+> i arbete.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+     
+  </sect1>
+  
+  <sect1 id="context-menus">
+  <title
+>De sammanhangsberoende menyerna</title>
+  
+  <para
+>När du klicka med höger musknapp var som helst inne i texthuvudområdet, visas en sammanhangsberoende meny, som illustreras nedan. Den speciella meny som visas beror både på panelen där högerklicket gjordes och det speciella dataobjektet som var markerat, om något var det.</para>
+  
+  <sect2 id="the-addressbook-panel">
+  <title
+>Adressbokens sammanhangsberoende meny</title>
+  
+  <para>
+  <screenshot id="addressbook-context-menu">
+      <screeninfo
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Adressbok</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook93.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Adressbok</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens sammanhangsberoende meny <quote
+>Adressbok</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till adressbokskatalog...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det här sammanhangsberoende menyalternativet utför inte någon användbar funktion i utgåva 5.10.3.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Ta bort adressbokskatalog</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det här sammanhangsberoende menyalternativet utför inte någon användbar funktion i utgåva 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Lägg till adressbok...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det här alternativet i den sammanhangsberoende menyn visar dialogrutan <quote
+>Lägg till adressbok</quote
+> som är dokumenterad i <link linkend="how-to-add-a-new-address-book"
+>kapitel 2</link
+> ovan.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Ta bort adressbok</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Att välja det här alternativet i den sammanhangsberoende menyn tar bort den markerade adressboken. Var försiktig!</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>F5</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Uppdatera adressbokskatalog</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Den här sammanhangsberoende menyalternativet tvingar adressboken att läsa in kontaktinformation igen som hör ihop med den valda adressboken.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Katalogegenskaper...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Den här sammanhangsberoende menyalternativet visar sammanfattande information om den valda adressboken.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressboksegenskaper...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Den här sammanhangsberoende menyalternativet visar sammanfattande information om den valda adressboken.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Prenumeration på serversidan...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det här sammanhangsberoende menyalternativet kanske utför en användbar funktion i utgåva 5.10.3 eller inte. Så vitt jag kan avgöra, är den permanent inaktiverad. Om du förstår vad den gör, tala gärna om det för mig (davidbryant SNABELA gvtc.com).</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-contactslist-panel">
+  <title
+>Den sammanhangsberoende menyn Kontaktlista</title>
+  
+  <para>
+  <screenshot id="contactlist-context-menu">
+      <screeninfo
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Kontaktlista</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook94.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Kontaktlista</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens sammanhangsberoende meny <quote
+>Kontaktlista</quote
+></para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+  
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Ny kontakt</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Användning av det här sammanhangsberoende menyalternativet har exakt samma effekt som att klicka på knappen <guibutton
+>&nbsp; &plus;&nbsp;Ny kontakt&nbsp;</guibutton
+> på verktygsraden. Se <link linkend="how-to-add-a-new-contact"
+>kapitel 2 ovan</link
+> för fullständig information.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Ny grupp</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Att välja det här sammanhangsberoende menyalternativet visar en dialogruta där du kan definiera en ny grupp, eller e-postlista. Se &nbsp;<link linkend="file-new-group"
+>appendix</link
+> för en detaljerad förklaring.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Redigera kontakt...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Användning av det här sammanhangsberoende menyalternativet har exakt samma effekt som att klicka på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Redigera kontakt...</guibutton
+> på verktygsraden. Se <link linkend="how-to-add-a-new-contact"
+>kapitel 2 ovan</link
+> för fullständig information.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Exportera&nbsp;&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Den här sammanhangsberoende menyfunktionen låter dig exportera markerad kontaktinformation antingen med formatet <acronym
+>vCard</acronym
+> eller <acronym
+>csv</acronym
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kopiera kontakt till &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det här sammanhangsberoende menyalternativet låter dig kopiera de markerade kontakterna till en variabel plats. Listan över platser som visas när alternativet väljes beror på hur många adressböcker som du har skapat.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Flytta kontakt till &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Fungerar precis som åtgärden <quote
+>Kopiera kontakt till</quote
+> beskriven ovan, utom att den tar bort källinformationen istället för att skapa en extra kopia av den.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Skriv ut</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Användning av det här sammanhangsberoende menyalternativet visar en dialogruta för utskriftsval. Använd dialogrutan <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Förhandsgranskning av utskrift</guisubmenu
+></menuchoice
+> nedan för att ställa in namnintervallet och utskriftsformatet innan du använder den här funktionen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Förhandsgranskning av utskrift</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Det är sammanhangsberoende menyalternativet visar en dialogruta för förhandsgranskning av utskrift, som också låter dig formatera rapporten, välja vilka objekt som ska ingå, och ange en sorteringsordning, etc. Se &nbsp;<link linkend="file-print-preview"
+>appendix</link
+> för ytterligare detaljinformation.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>Delete</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ta bort kontakt</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Tar bort de markerade kontakterna från den nuvarande adressboken.</para
+></listitem>
+    </varlistentry>
+        
+  </variablelist
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-individualcontact-panel">
+  <title
+>Den sammanhangsberoende individuella kontaktmenyn</title>
+  
+  <para>
+  <screenshot id="individualcontact-context-menu">
+      <screeninfo
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Individuella kontakter</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook95.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens sammanhangsberoende meny <quote
+>Individuella kontakter</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens sammanhangsberoende meny <quote
+>Individuella kontakter</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Beroende på vilket dataobjekt du markerar, kan rubriken för den här sammanhangsberoende menyn variera. Men i alla fall är funktionen densamma: markerat dataobjekt kopieras till klippbordet.</para>
+      
+  </sect2>
+  
+  </sect1>
+  
+</chapter>
+
+<glossary>
+   
+<!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
+    
+  <glossentry id="gloss-aim">
+  <glossterm
+><acronym
+>AIM</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>AIM</acronym
+> betyder America Online Instant Messaging. AIM var en tidig ledare i den konkurrensutsatta marknaden för direktmeddelandetjänster, men föll i onåd när själva AOL blev mindre populär. Den ursprungliga tjänsten upphörde 2017, men entusiaster har hållit igång den <ulink url="http://iwarg.ddns.net/aim/"
+>på denna webbplats</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-akonadi">
+  <glossterm
+>&akonadi;</glossterm>
+  <glossdef
+><para
+>En utökningsbar lagringstjänst för olika skrivbord för personlig informationshanteringsdata och metadata som tillhandahåller samtidig läsnings-, skrivnings- och frågeåtkomst. &nbsp;&nbsp;&nbsp;&akonadi; kan hanteras med kommandot akonadictl: skriv in <quote
+>akonadictl --help</quote
+> i ett terminalfönster för att ta reda på mer.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-cloud">
+  <glossterm
+>Molnbaserad tjänst</glossterm>
+  <glossdef
+><para
+>Vilken leverantör av datalagrings- och databehandlingsresurser som finns i något <quote
+>moln</quote
+> av servrar som man kan komma åt via Internet.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-csv">
+  <glossterm
+>.csv</glossterm>
+  <glossdef
+><para
+>En fil med värden åtskilda av kommatecken (eller <filename class="extension"
+>.csv</filename
+>) är ett vanligt textdokument där varje rad, eller post; är uppdelad i fält med ett särskilt skiljetecken, oftast ett kommatecken. Formatet <filename class="extension"
+>.csv</filename
+> går tillbaka till datoriseringens första tid. Det används fortfarande i stor utsträckning, framförallt eftersom det är så begreppsmässigt enkelt.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-dav">
+  <glossterm
+><acronym
+>DAV</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DAV</acronym
+> betyder Distributed Authoring and Versioning, vilket finns i flera <quote
+>varianter</quote
+>, såsom WebDAV (för att skapa sidor på Internet), GroupDAV (för grupprogramvara med öppen källkod framställd av en samarbetsgrupp), och CalDAV (kalenderhantering för grupper), som vart och ett hjälper till att förbinda klienter och servrar med öppen källkod.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-digest">
+  <glossterm
+><acronym
+>DIGEST-MD5</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DIGEST-MD5</acronym
+> är en behörighetskontrollteknik använd för att skapa säker kommunikation mellan en klient och en Internettjänst. Den får sitt namn från MD5-kondensatfunktionen som används för att koda klientens behörighetsinformation. Se <ulink url="https://en.wikipedia.org/wiki/Digest_access_authentication"
+>den här Wikipedia artikeln</ulink
+> för att ta reda på mer om den.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ews">
+  <glossterm
+><acronym
+>EWS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>EWS</acronym
+> betyder Exchange Web Services, &nbsp;&Microsoft;s uppsättning kommersiella protokoll för att utbyta personlig information mellan Internetservrar och slutanvändare, eller klienter. &nbsp;&nbsp;<glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> tillhandahåller liknande funktionalitet.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gadu-gadu">
+  <glossterm
+>Gadu-Gadu</glossterm>
+  <glossdef
+><para
+>Gadu-Gadu (också känt som GG) är den populäraste direktmeddelandeprogrammet i Polen.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gmx">
+  <glossterm
+><acronym
+>GMX</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GMX</acronym
+> betyder Global Mail eXchange (eller, i Tyskland,Global Message eXchange), en fri reklamstödd e-posttjänst. Besök antingen <ulink url="https://www.gmx.net/"
+>den här</ulink
+> eller <ulink url="https://www.gmx.com/"
+>den här webbplatsen</ulink
+> för att ta reda på mer om den.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gravatar">
+  <glossterm
+>Gravatar</glossterm>
+  <glossdef
+><para
+>En Gravatar, eller Globally Recognized Avatar, är en grafisk symbol associerad med e-postadresser för användare av WordPress. Den visas oftast som en 80 x 80 bildpunkter grafisk symbol. Eftersom många bloggare använder programvara från WordPress, är Gravatar allmänt tillgänglig.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gpws">
+  <glossterm
+>GroupWise</glossterm>
+  <glossdef
+><para
+>GroupWise Messenger är en direktmeddelandetjänst sponsrad av Micro Focus International plc, ett programvaruföretag som ligger i Newbury, Berkshire, England. Du kan få en kopia av meddelandeprogramvaran från <ulink url="https://mail.dcbe.org:8300/"
+>den här webbplatsen</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gssapi">
+  <glossterm
+><acronym
+>GSSAPI</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GSSAPI</acronym
+> betyder Generic Security Service Application Program Interface, en sorts <quote
+>katalog</quote
+> över de många säkerhetsprotokoll som används på Internet. Den består av ett programbibliotek och en uppsättning standardiserade subrutinanrop som låter en Internetklient avgöra vilket specifikt säkerhetsprotokoll en Internettjänst använder, och därefter koda eller avkoda användarens behörighetsinformation på lämpligt sätt.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-icq">
+  <glossterm
+><acronym
+>ICQ</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ICQ</acronym
+> är egentligen inte en akronym: det är en vits som är menad att låta som <quote
+>I Seek You</quote
+> (jag söker dig) på engelska. Det är en av de ursprungliga plattformarna för direktmeddelanden, som först kom till nätet 1996. Programvaran är tillgänglig för nerladdning <ulink url="https://icq.com/linux/en"
+>här</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-imap">
+  <glossterm
+>&IMAP;</glossterm>
+  <glossdef
+><para
+>&IMAP; betyder Internet Message Access Protocol, en allmänt tillgänglig metod för att hantera e-post. &IMAP; hanterar och synkroniserar lokala och fjärrkopior av en brevuppsättning. Med andra ord, är den lokalt lagrade informationen för ett &IMAP;-konto en spegling av breven på servern.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-inline-pgp">
+  <glossterm
+>OpenPGP på plats</glossterm>
+  <glossdef
+><para
+>OpenPGP på plats är ett krypteringsprotokoll där PGP-signaturer är direkt inbäddade i brevtexten för e-post. Användning av protokollet avråds från, på grund av tekniska svårigheter orsakade av obegränsad användning av annat än ASCII-tecken i brev med vanlig text.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-irc">
+  <glossterm
+>&irc;</glossterm>
+  <glossdef
+><para
+>&irc; betyder Internet Relay Chat, en direktmeddelandetjänst som har sina rötter i en finsk föregångare till World Wide Web benämnd OuluBox (1988). &irc; har stadigt förlorat användare under många år medan sociala medieplattformar såsom Facebook har blivit populärare. Det större kvarvarande nätverk är Libera Chat: det kan kommas åt via <ulink url="https://web.libera.chat/"
+>den här webbplatsen</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-isdn">
+  <glossterm
+><acronym
+>ISDN</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ISDN</acronym
+> betyder  Integrated Services Data Network, den allra första uppsättningen telekommunikationsstandarder som gjorde det möjligt att samtidigt skicka analoga röstsignaler och digitala datasignaler via ett kopplat nätverk av koppartrådar (dvs. den gamla stilen av telefonsystem). <acronym
+>ISDN</acronym
+> var oundvikligt de tidiga dagarna av Internet, men som har nyligen ersatts av mer robusta tekniker som tillåter okopplade anslutningar via nätverk som utnyttjar fiberoptiska kablar, satelliter samt mycket högfrekventa mikrovågssändare och mottagare. Det används fortfarande allmänt i ett fåtal industriella tillämpningar där en direkt punkt till punkt anslutning är nödvändig, men är på väg bort från den bredare kommersiella marknaden.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-jabber">
+  <glossterm
+>Jabber</glossterm>
+  <glossdef
+><para
+>Jabber är en direktmeddelandetjänst som förlitar sig på protokollet <glossterm linkend="gloss-xmpp"
+><acronym
+>XMPP</acronym
+> </glossterm
+>. Den ursprungliga webbplatsen för <quote
+>Jabber</quote
+> accepterar inte längre nyregistreringar, men protokollet <acronym
+>XMPP</acronym
+> används allmänt. Se <ulink url="https://xmpp.org/about/"
+>den här webbplatsen</ulink
+> för mer information.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-kmail">
+  <glossterm
+>&kmail;</glossterm>
+  <glossdef
+><para
+>&kde;:s e-posthanteringsprogram. Tillhandahåller en helt integrerad miljö för att skicka och ta emot e-post från ett (eller flera) e-postkonton, upprätthåller som många e-postidentiteter som du vill använda, organiserar och arkiverar dina gamla brev, och hanterar dina personliga e-postkrypteringsnycklar.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-kolab">
+  <glossterm
+>Kolab</glossterm>
+  <glossdef
+><para
+>Kolab Systems AG är ett bolag med huvudkontor i Zürich, Schweiz, som både tillhandahåller verktyg med kommersiell programvara och programvara med öppen källkod för att underlätta samarbete bland grupper som delar information, meddelanden och kalender- eller schemaläggningsresurser via Internet. &nbsp;<glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;tillhandahåller liknande, dock enbart kommersiella, programvarupaket.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ldap">
+  <glossterm
+><acronym
+>LDAP</acronym
+></glossterm>
+  <glossdef
+><para
+>Lightweight Directory Access Protocol (eller &nbsp;<acronym
+>ldap</acronym
+>) är ett standardprotokoll, eller metod, för att dela vissa särskilda informationsklasser bland de många serverdatorer som utgör Internet.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-ldif">
+  <glossterm
+>.ldif</glossterm>
+  <glossdef
+><para
+>En fil för <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> Data Interchange Format (eller <filename class="extension"
+>.ldif</filename
+>) är en typ av vanlig textfil konstruerad för att utbyta kataloginformation bland de olika servrarna i ett distribuerat nätverk.</para
+></glossdef>
+  </glossentry
+> 
+
+  <glossentry id="gloss-mnwhl">
+  <glossterm
+>Meanwhile</glossterm>
+  <glossdef
+><para
+><quote
+>Meanwhile</quote
+> är programvara med öppen källkod konstruerad för att kommunicera med IBM:s programvara för  direktmeddelanden, <ulink url="https://en.wikipedia.org/wiki/IBM_Sametime"
+><quote
+>Sametime</quote
+></ulink
+>. Se <ulink url="https://github.com/obriencj/meanwhile"
+>den här webbplatsen</ulink
+> om du vill ta reda på mer om den.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-acro-mime">
+  <glossterm
+>&MIME;</glossterm>
+  <glossdef
+><para
+>&MIME; betyder Multipurpose Internet Mail Extensions, en uppsättning kodningskonventioner konstruerade för att göra e-post flexiblare genom att aktivera funktioner som utökade teckenuppsättningar, inbäddade bilder, kodning med <quote
+>rich text</quote
+>, etc. Den ursprungliga kodningskonventionen för e-post stödde ingenting förutom brev vanliga text (eller krypterad text) skrivna med 7-bitars ASCII-kod. Nästan all nutida e-post är kodad med &MIME;.</para
+></glossdef>
+  </glossentry>
+   
+  <glossentry id="gloss-open-pgp">
+  <glossterm
+>OpenPGP/&MIME;</glossterm>
+  <glossdef
+><para
+>OpenPGP/&MIME; anger en krypteringskonvention för <glossterm linkend="gloss-acro-mime"
+>&MIME;</glossterm
+>-kodad e-post. En speciell uppsättning &MIME;-huvuden omger PGP-signaturen, vilket gör det möjligt för ett e-postprogram att dölja signaturen när brevet visas.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-group">
+  <glossterm
+>Open-xchange grupprogramserver</glossterm>
+  <glossdef
+><para
+>Open-Xchange AG är ett bolag med huvudkontor i Köln, Tyskland, som både tillhandahåller verktyg med kommersiell programvara och programvara med öppen källkod för att underlätta samarbete bland grupper som delar information, meddelanden och kalender- eller schemaläggningsresurser via Internet. &nbsp;<glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;och &nbsp;<glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> tillhandahåller liknande programvarupaket.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-pcs">
+  <glossterm
+><acronym
+>PCS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PCS</acronym
+> betyder Personal Communication Service, som egentligen är en mobiltelefon med vissa extra inbyggda funktioner. <acronym
+>PCS</acronym
+>-telefoner använder ett högre frekvensband än traditionella mobiltelefoner, vilket betyder att de kan tillhandahålla större bandbredd än äldre mobiltelefoner.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pgp">
+  <glossterm
+><acronym
+>PGP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PGP</acronym
+> betyder Pretty Good Privacy, ett program för datakryptering som gavs ut av Philip Zimmerman in 1991. Idag utnyttjar de flesta programvaror för e-postkryptering någon form av PGP för att kryptera, avkoda och signera brev kryptografiskt.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pim">
+  <glossterm
+>&PIM;</glossterm>
+  <glossdef
+><para
+>&kde;:s system för personlig informationshantering, en programsvit för att hjälpa till att hantera dina kontakter och schema. &PIM; inkluderar &kontact;, &nbsp;&kmail;, &nbsp;&kaddressbook;, &nbsp;&korganizer;, &nbsp;&akregator; och &nbsp;&akonadi;. Används också mer allmänt för att beskriva alla system för att hantera personlig information, såsom namn, adresser, telefonnummer, etc.</para
+></glossdef>
+  </glossentry
+>  
+  
+  <glossentry id="gloss-qrcode">
+  <glossterm
+>QR-kod</glossterm>
+  <glossdef
+><para
+>QR-kod betyder Quick Response-kod, en tvådimensionell streckkod använd för att representera digital information. Den uppfanns i Japan 1994 för användning av biltillverkare, men har spridit sig vitt och brett, så att den finns överallt idag.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sasl">
+  <glossterm
+><acronym
+>SASL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SASL</acronym
+> betyder Simple Authentication and Security Layer, ett ramverk för behörighetskontroll av klienter (lösenord och användarnamn) och datasäkerhet (krypterade anslutningar). Det stöder över ett dussin olika protokoll.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-mime">
+  <glossterm
+><acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>S/MIME</acronym
+> betyder Secure / Multipurpose Internet Mail Extensions, en kryptografisk standardmetod för signering, kryptering och avkryptering av e-post. I motsats till <glossterm linkend="gloss-pgp"
+><acronym
+>PGP</acronym
+></glossterm
+>, som använder privata nycklar, använder <acronym
+>S/MIME</acronym
+> öppet publicerade krypteringsnycklar, certifierade av en certifikatutfärdare, såsom <ulink url="https://www.verisign.com/"
+>Verisign</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-opaque">
+  <glossterm
+>Ogenomskinlig <acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+>Ogenomskinlig <acronym
+>S/MIME</acronym
+> betyder den <quote
+>ogenomskinliga</quote
+> versionen av Secure / Multipurpose Internet Mail Extensions. Den liknar formatet <quote
+>S/MIME</quote
+> definerat ovan, men hela brevets innehåll är upprullat i ett enda &MIME;-objekt. (De flesta &MIME;-kodade brev består av två eller flera separata &MIME;-objekt.)</para
+></glossdef>
+  </glossentry>
+ 
+  <glossentry id="gloss-sms">
+  <glossterm
+><acronym
+>SMS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SMS</acronym
+> betyder Short Message Service, en textmeddelandetjänst inbyggd i de flesta telefoner, Internet och kommunikationsnätverk för mobilenheter. Det hanterar utbyte av textmeddelanden som är mindre än 161 byte långa.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ssl">
+  <glossterm
+><acronym
+>SSL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SSL</acronym
+> står för Secure Socket Layer, ett avskrivet kryptografiskt protokoll, som till stor del har ersatts av <acronym
+>TLS</acronym
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-tls">
+  <glossterm
+><acronym
+>TLS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>TLS</acronym
+> betyder Transport Layer Security, ett kryptografiskt protokoll som används allmänt för att säkra Internetkommunikation. Dess huvudfunktion är att låta en klient och server säkert utbyta tillräckligt med information för att kunna etablera ett par av krypterings- och avkrypteringsnycklar för användning under återstoden av Internetsessionen. <acronym
+>TLS</acronym
+> är den svagaste länken i kedjan som ansluter ett klientprogram till en säker (krypterad) Internettjänst. Det har utsatts för flera dataintrång, och har reviderats flera gånger som svar på dessa attacker.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-vcf">
+  <glossterm
+>.vcf</glossterm>
+  <glossdef
+><para
+>Virtual (business) Card Format (eller <filename class="extension"
+>.vcf</filename
+>) är ett nyckelordsbaserat datautbytesformat som har genomgått flera iterationer (2.0, 2.1, 3.0, &nbsp;etc.) sedan det introducerades &nbsp;<emphasis
+>ca.</emphasis
+> 1990. Den senaste versionen är vCard 4.0.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-xmpp">
+  <glossterm
+><acronym
+>XMPP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>XMPP</acronym
+> betyder Extensible Messaging and Presence Protocol, det grundläggande tekniska underlaget för direktmeddelandetjänsten <quote
+>Jabber</quote
+>.</para
+></glossdef>
+  </glossentry>
+  
+  </glossary>
+
+&docbook-reference;
+
+</book>

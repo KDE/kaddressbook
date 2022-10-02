@@ -1,0 +1,1389 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+&Freek.de.Kruijf; 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-08-26</date>
+<releaseinfo
+>5.10.3 (Applications 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; is een erg compliceerd programma met veel ingebouwde functies. Sommige van de meer geavanceerde functies van &kaddressbook; zijn gedocumenteerd in deze appendix, primair om het hoofddocument niet te groot en langdradig te laten worden. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-mail</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>&kaddressbook; Sectie geavanceerde functie referentie </title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>De dialoog Nieuwe groep</title>
+    
+  <para
+>Wanneer u de functie <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Nieuwe groep</guibutton
+> oproept, zal een dialoog starten, zoals onderstaand getoond.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>Een schermafdruk van de dialoog van &kaddressbook; <quote
+>Nieuwe groep</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog van &kaddressbook; <quote
+>Nieuwe groep</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog van &kaddressbook; <quote
+>Nieuwe groep</quote
+> na kiezen van de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Nieuw&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Nieuwe groep</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Gebruik het afrolvak <quote
+>Toevoegen aan:</quote
+> om het adresboek te kiezen waarin de nieuwe groep toegevoegd zou moeten worden. Gebruik het veld <quote
+>Naam</quote
+> om de nieuwe groep een naam te geven. Voer e-mailadressen in of delen van e-mailadressen, in het blauwe <quote
+>&plus;</quote
+> gebied. Een lijst met potentiële overeenkomsten zal verschijnen. Selecteer een item in de lijst die verschint en een nieuwe naam zal worden toegevoegd aan de lijst. Ga door met toevoegen van individuele contactpersonen aan de lijst totdat deze compleet is, klik daarna op de knop <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> om deze groep aan uw adresboek. Als u een naam uit de lijst wilt verwijderen, klik het pictogram <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> rechts van die specifieke naam. Als het nodig is om later wijzigingen in de groep wilt maken, selecteer de groep en gebruik het menu <quote
+>Bewerken</quote
+> of de knop <quote
+>Contactpersoon bewerken</quote
+> in de werkbalk, om een substantieel gelijkende dialoog die u de gewenste wijzigingen laat maken.</para>
+
+  <para
+>Het programma &kmail; biedt een alternatieve methode van het maken van een nieuwe groep in &kaddressbook;. Nadat u een e-mailbericht aan verschillende personen hebt gemaakt, wordt u de optie gegeven om een nieuwe groep aan uw adresboek toe te voegen, zoals onderstand getoond.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>Een schermafdruk van de dialoog van &kmail; <quote
+>Nieuwe groep</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog van &kmail; <quote
+>Nieuwe groep</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog van &kmail; functie <quote
+>Nieuwe groep</quote
+> na kiezen van de <guibutton
+>&nbsp;Lijst opslaan... &nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Na het adresseren van een bericht aan een groep mensen en klikken op de knop <guibutton
+>&nbsp;Lijst opslaan...&nbsp;</guibutton
+> rechts van het adresinvoergebied zal het geïllustreerde dialoogvak laten verschijnen. Geef de lijst een naam en klik links op de knop <guibutton
+>&nbsp;Lijst opslaan&nbsp;</guibutton
+>. Een ander dialoogvak zal verschijnen die u vraagt om een adresboek te selecteren. Maak uw selectie en een nieuwe groep zal voor u worden aangemaakt.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>De dialoog Afdrukvoorbeeld</title>
+    
+  <para
+>de functie <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook; biedt u het afregelen van een hard-copy van uw adresboekgegevens op precies door u gewenste manier.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>De dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;. U kunt een of meer gehele adresboeken selecteren of gewoon een uitsnede van individuele contactpersonen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>De eerste stap is om de mee te nemen contactpersonen in de afdruk te selecteren. Als u slechts een klein beetje van de individuele contactpersonen wilt afdrukken, dan moet u de af te drukken contactpersonen selecteren voor het aanroepen van de dialoog <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Voorbeeld afdruk</guisubmenu
+></menuchoice
+>. Als u al uw contactpersonen wilt selecteren of alle contactpersonen in een specifiek adresboek, dan kunt u dat hier doen. Klik op <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Volgende</guibutton
+> wanneer u uw selectie hebt gemaakt. Er zal een nieuw scherm verschijnen.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>Een tweede schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Een tweede schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;. U kunt een sorteerveld kiezen en sorteerrichting (omhoog of omlaag). U kunt ook kiezen uit verschillende indelingen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Hier kunt u een sorteerveld kiezen (een van de 47 genoemde velden in het record met contactpersonen), de richting van het sorteren en een van de zeven verschillende rapportageformaten. Wanneer u op <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Volgende</guibutton
+> klikt, krijgt u de kans om het te gebruiken kleurenschema aan te passen.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>Een derde schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een derde schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Een derde schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;. U kunt hier een kleurenschema selecteren.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Hier is een plaatje van het complete rapport. Het is nu gereed voor afdrukken.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>Afdrukvoorbeeld</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Afdrukvoorbeeld</quote
+> nadat het rapport is gegenereerd en gereed is om te printen. U kunt alternatieve afdrukoriëntaties (landschap of portret) selecteren en de afdruktaak starten vanuit dit venster.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>De dialoog LDAP configureren</title>
+    
+  <para
+>Hier is een plaatje van het eerste configuratiescherm dat verschijnt wanneer u ofwel de knop <guibutton
+>LDAP-servers configureren...</guibutton
+> in de dialoog <menuchoice
+><guimenu
+>File</guimenu
+> <guisubmenu
+>Import&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Uit LDAP-server importeren...</guimenuitem
+> </menuchoice
+> of het menu-item <menuchoice
+><guimenu
+>Instellingen</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>&kaddressbook; configureren...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>LDAP-server configureren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>LDAP-server configureren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>De dialoog <quote
+>LDAP-server configureren</quote
+> &kaddressbook; na kiezen van de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Importeren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importeren uit LDAP-server...</guimenuitem
+></menuchoice
+> en links klikken op de knop <guibutton
+>LDAP-servers...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Als u al een of meer <acronym
+>LDAP</acronym
+>-servers hebt geconfigureerd, gebruik dan dit scherm om de servers te selecteren die afgevraagd moeten worden wanneer u naar een naam of e-mailadres zoekt. Gebruik de knop <guibutton
+>Host toevoegen...</guibutton
+> om een nieuwe server aan de lijst met beschikbare <acronym
+>LDAP</acronym
+>-hosts toe te voegen. Gebruik de knop <guibutton
+>Host bewerken...</guibutton
+> om een server die al in de lijst staat opnieuw te configureren en de knop <guibutton
+>Host verwijderen</guibutton
+> om een item te verwijderen die u niet meer nodig hebt. De knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Reset</guibutton
+> kan gebruikt worden om de laatste uitgevoerde actie <quote
+>Toevoegen</quote
+> of <quote
+>Verwijderen</quote
+> ongedaan te maken. De knop <quote
+>Standaarden</quote
+> is niet werkzaam in uitgave 5.10.3. De rest van de knoppen (OK, Toepassen, Annuleren) hebben, respectievelijk, hun gewone functies: wijzigingen toepassen en beëindigen, wijzigingen toepassen en hier blijven en de dialoog beëindigen zonder enige wijziging uit te voeren.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Wanneer u ofwel de knop <guibutton
+>Host toevoegen...</guibutton
+> of de knop <guibutton
+>Host bewerken...</guibutton
+> indrukt, zal de volgende dialoog verschijnen.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>Een tweede schermafdruk van de dialoog <quote
+>LDAP-server configureren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een tweede schermafdruk van de dialoog <quote
+>LDAP-server configureren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>LDAP-server configuren</quote
+> &kaddressbook; na links klikken op ofwel de knop <guibutton
+>Host toevoegen...</guibutton
+> of de knop <guibutton
+>Host bewerken...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>De eerste vier velden (<quote
+>Gebruiker:</quote
+>, <quote
+>Gebonden DN:</quote
+>, <quote
+>Realm:</quote
+> en <quote
+>Wachtwoord:</quote
+>) zullen allen grijs zijn tenzij authenticatie is vereist. Verkrijg deze credentials van de beheerder van de LDAP-server. Voer de toepasselijke &URI; in in het veld <quote
+>Host:</quote
+>. De standaard waarden voor <quote
+>Poort:</quote
+>, <quote
+>Limiet grootte:</quote
+>, &etc; zullen OK zijn voor de meeste gebruikers. U kunt de knop <guibutton
+>Server afvragen</guibutton
+> gebruiken om het veld <quote
+>DN:</quote
+> in te stellen. I heb geen idee waar het veld <quote
+>Filter:</quote
+> voor is. Als u dat uitgevogeld hebt, laat het me weten (davidbryant AT gvtc.com).</para>
+
+  <para
+>Gebruik de sectie <quote
+>Beveiliging</quote
+> om de te gebruiken versleutelingsmethode te specificeren: <quote
+>Geen</quote
+> voor een niet versleutelde verbinding, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> voor Transport Layer Security of <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> voor Secure Socket Layer. Gebruik de opties <quote
+>Authenticatie</quote
+> om het niveau van authenticatie die de server vereist te gebruiken: <quote
+>Anoniem</quote
+> voor helemaal geen naam of wachtwoord, <quote
+>Eenvoudig</quote
+> als <quote
+>Gebonden DN</quote
+> en <quote
+>Wachtwoord</quote
+> gegeven moeten worden en <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (Simple Authentication and Security Layer) voor het gehele zaakje (vier gegevensitems). Als <quote
+>SASL</quote
+> is gekozen, gebruik dan de knop <guibutton
+>Server afvragen</guibutton
+> om de geavanceerde opties voor deze host in te stellen.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>De functie CSV-bestand importeren</title>
+    
+  <para
+>Wanneer u de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Importeren&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>CSV-bestand importeren...</guimenuitem
+></menuchoice
+> kiest, krijgt u een dialoog gepresenteerd. Nadat u klikt op de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> en het te importeren bestand kiest, zal het scherm er uit zien zoals dit.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>Een schermafdruk van <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook; na kiezen van de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Importeren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-bestand importeren...</guimenuitem
+></menuchoice
+> en het te importeren bestand selecteren.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Gebruik de sectie <quote
+>Scheidingsteken</quote
+> van deze dialoog om te specificeren welk scheidingsteken het eind van een veld in het gekozen invoerbestand definieert. Als quotes worden gebruikt om velden met ingebedde scheidingstekens te onderscheiden, dan kunt u de gebruikte stijl (enkel of dubbel quote) specificeren via het afrolvak <quote
+>Tekstquote:</quote
+>. Als het invoerbestand datums bevat, gebruik dan het veld <quote
+>Datumformaat:</quote
+> om de manier te definiëren waarop datums zijn gecodeerd. De standaard is yyyy-mm-dd. Als dat het verkeerde formaat is, laat uw cursor dan zweven boven het vakje <quote
+>Datumformaat:</quote
+> en een handige set van formatteringsinstructies zal getoond worden. Als het invoerbestand niet UTF-8 gecodeerd is, gebruik dan het afrolvak <quote
+>Tekstcodec:</quote
+> om het te gebruiken binaire coderingsschema te specificeren. Als de eerste rij van het bestand kolomkoppen bevat, activeer dan het vakje <quote
+>Eerste rij van bestand overslaan</quote
+> om het importeren van de kolomkoppen als gegevens te vermijden. Gebruik de vakjes <quote
+>Ongedefinieerd</quote
+> bovenaan elke kolom om te specificeren welke gegevensvelden geïmporteerd moeten worden en waar ze opgeslagen zouden moeten worden, zoals onderstaand getoond.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>Een tweede schermafdruk van de dialoog <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een tweede schermafdruk van de dialoog <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>CSV-bestand importeren</quote
+> van &kaddressbook; na kiezen van de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Importeren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-bestand importeren...</guimenuitem
+></menuchoice
+> en het te importeren bestand selecteren en het beginnen van het definiëren van de te importeren velden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Als u de inhoud van de huidige kolom wilt importeren, kies een bestemming uit de lijst veldnamen die verschijnen onder het blauwe vakje <quote
+>Ongedefinieerd</quote
+>. Zie <link linkend="export-csv-data"
+>de volgende sectie</link
+> voor een lijst met de voorgedefinieerde velden. Gebruik de horizontale schuifbalk onderaan de dialoog om alle kolommen in het invoerbestand te bekijken. Wanneer uw selecties zijn voltooid, klik op de knop <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Als u meerdere adresboeken hebt gedefinieerd zal u gevraagd worden om te specificeren welk adresboek gebruikt moet worden. &kaddressbook; zal dan de geselecteerde gegevens als nieuwe contactpersonen importeren.</para>
+
+  <para
+>Als u van plan bent om additionele gegevenssets in hetzelfde formaat ergens in de toekomst te importeren, dan zou u op de knop <guibutton
+>Sjabloon opslaan...</guibutton
+> kunnen klikken (zie de eerste illustratie in deze sectie) om de selecties die u hebt gemaakt op te slaan. U zult gevraagd worden om een naam van het slabloon op te geven. Later, wanneer u een ander bestand met dezelfde indeling importerrt, kunt u tijd besparen door te klikken op de knop <guibutton
+>Sjabloon toepassen...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>De functie CSV-bestand exporteren</title>
+    
+  <para
+>Wanneer u de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+> Exporteren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-bestand exporteren ...</guimenuitem
+></menuchoice
+> aanroept zal er een dialoogvak verschijnen.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>Een schermafdruk van <quote
+>CSV-bestand exporteren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van <quote
+>CSV-bestand exporteren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>CSV-bestand exporteren</quote
+> van &kaddressbook; na kiezen van de functie <menuchoice
+><guimenu
+>Bestand</guimenu
+><guisubmenu
+>Exporteren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-bestand exporteren...</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>U kunt al uw contactgegevens selecteren of slechts een gedeelte ervan. Wanneer u op de knop <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> drukt zult u de naam van het te genereren bestand kunnen kiezen en de map waarin deze zal worden geschreven. Het uitvoerbestand zal de volgende zevenenveertig (47) uitvoervelden bevatten, in deze volgorde, links naar rechts. Deze lijst met veldnamen is ingevoegd als het eerste record in het bestand.</para>
+
+  <para
+>Geformatteerde naam | Titels (voorvoegsels) | Voornaam | Extra namen | Achternaam | Titels (achtervoegsels | Schermnaam | Geboortedag | Huwelijksdag | E-mailadres (voorkeur) | E-mailadres (2) | E-mailadres (3) | E-mailadres (4) | Huisadres straat | Huisadres Postbus | Huisadres Plaats | Huisadres Staat | Huisadres Postcode | Huisadres Land | Huisadreslabel | Zakelijk adres Straat | Zakelijk adres Postbus | Zakelijk adres Plaats | Zakelijk adres Staat | Zakelijk adres Postcode | Zakelijk adres Land | Zakelijk adreslabel | Telefoonnummer thuis | Zakelijk telefoonnummer | Mobiele telefoonnummer | Fax thuis | Zakelijke Fax | Autotelefoon | ISDN | Pager | E-mailclient | Titel | Rol | Organisatie | Notitie | Homepagina | Blog Feed | Beroep | Kantoor | Manager | Assistent | Echtgeno(o)t(e)</para>
+
+  <para
+>Alle velden zijn geformatteerd als gegevens in de tekenklasse. Datums (verjaardag en trouwdag, indien aanwezig) zijn gecodeerd als yyyy-mm-dd (Jaar, Maand, Dag).</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>De functie Aantal kolommen wijzigen</title>
+    
+  <para
+>Wanneer u het menu <menuchoice
+><guimenu
+>Beeld</guimenu
+></menuchoice
+> opent zal het volgende scherm verschijnen.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>Een schermafdruk van het menu <quote
+>Beeld</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van het menu <quote
+>Beeld</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Menu <quote
+>Beeld</quote
+> van &kaddressbook; na het kiezen van het menu <menuchoice
+><guimenu
+>Beeld</guimenu
+></menuchoice
+> in de hoofdmenubalk.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Niet gelukkig met de indeling in drie kolommen die bovenstaand verschijnt? Maak het een beetje mooier met deze minimalistische benadering.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>Een schermafdruk van de enkele paneelindeling van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de enkele paneelindeling van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Eenvoudige (één kolom)</quote
+> indeling van &kaddressbook;. Alleen de basis contactgegevens zijn zichtbaar.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Merk op dat de informatie over welke adresboeken bestaan en in gebruik zijn niet zichtbaar is wanneer deze <quote
+>Eenvoudig</quote
+> indeling wordt gebruikt. Alleen de contactpersonen uit de adresboeken die zijn geselecteerd voor het kiezen van deze weergave worden getoond.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Als de indeling <quote
+>Eenvoudig</quote
+> u niet bevalt, kunt u de stijl <quote
+>Twee kolommen</quote
+> proberen.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>Een schermafdruk van de dubbele paneelindeling van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dubbele paneelindeling van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Indeling <quote
+>Twee kolommen</quote
+> van &kaddressbook;. De lijst met adresboeken is bovenop de gealfabetiseerde list met contactpersonen geplaatst.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Bij &kde; is ons motto "Wees vrij!" Ons doel is u maximale flexibiliteit te geven bij het afregelen en configureren van onze software om het aan uw smaak aan te passen. We speelden met het idee nog meer weergaven te bieden van &kaddressbook; (Vier kolommen! Vijf!), maar uiteindelijk concludeerden we dat genoeg is genoeg.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>De pptie Sneltoetsen configureren</title>
+    
+  <para
+>Wanneer u eerst de optie <menuchoice
+><guimenu
+>Instellingen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Sneltoetsen configureren...</guisubmenu
+> </menuchoice
+> kiest, dan is dit wat u zult zien.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>Sneltoetsen configureren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>Sneltoetsen configureren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>Sneltoetsen configureren</quote
+> van &kaddressbook;. Gebruik het veld <quote
+>Zoeken</quote
+> of de verticale schuifbalk, om de actie te bepalen waarvoor een nieuwe sneltoets gedefinieerd moet worden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>De acties van &kaddressbook; waarvoor al sneltoetsen zijn gedefinieerd zijn helder gemarkeerd in de kolom <quote
+>Sneltoetsen</quote
+>. U kunt ofwel extra sneltoetsen toekennen via de kolommen <quote
+>Alternatief</quote
+>, <quote
+>Globaal</quote
+> en <quote
+>Globaal alternatief</quote
+> in deze tabel of een nieuwe sneltoets aan een actie waarvoor nog geen sneltoets is gedefinieerd. Selecteer de te configureren actie door te klikken op zijn naam, zoals bovenstaand geïllustreerd. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Wanneer u links klikt op de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Geen</guibutton
+> zal zijn naam wijzigen in <quote
+>Invoer...</quote
+>; waarna u de combinatie van toetsaanslagen kunt opslaan die u wilt toekennen aan de geselecteerde actie. (Zweef met de cursor over de knop <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Geen</guibutton
+> om een handige hint over deze procedure te krijgen.) Het programma zal noteren welke toetsen u hebt ingedrukt en de nieuwe sneltoets opnemen, zoals onderstaand geïllustreerd. Als u een combinatie koos die in conflicts is met een bestaande toegekende sneltoets, dan zult u een foutmelding zien en u zult gevraagd worden om een andere selectie te maken. U kunt de knop <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> gebruiken om uw selectie te wissen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>Een tweede schermafdruk van de dialoog <quote
+>Sneltoetsen configureren</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een tweede schermafdruk van de dialoog <quote
+>Sneltoetsen configureren</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog van &kaddressbook; <quote
+>Sneltoetsen configureren</quote
+> nadat een nieuwe sneltoets is ingevoerd, maar voordat de nieuwe configuratie is opgeslagen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Klik op de knop <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> om uw wijzigingen op te slaan. Klik op <guibutton
+>&nbsp;⦸&nbsp;Annuleren&nbsp;</guibutton
+> om te eindigen zonder uw wijzigingen op te slaan. Klik op <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Standaarden</guibutton
+> om de standaarden van &kaddressbook; te herstellen naar de set van sneltoetsen. Kies <guibutton
+>&nbsp;Schema's beheren&nbsp;&gt;&gt;&nbsp;</guibutton
+> om uw aangepaste toekenningen in een groter schema van toekenningen van sneltoetsen te integreren; zie het hoofdstuk <ulink url="help:/fundamentals/config.html"
+>&kde; software aanpassen</ulink
+> in het handbook Fundamentals voor meer details.</para>
+
+  <para
+>U kunt de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afdrukken</guibutton
+> selecteren om een afgedrukte versie op papier van de toegekende sneltoetsen produceren. Hier is een voorbeeld van de afgedrukte tabel.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>Een schermafdruk van de uitvoer van <quote
+>Afdrukken</quote
+> van &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de uitvoer van <quote
+>Afdrukken</quote
+> van &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Een uittreksel uit de afgedrukte lijst van sneltoetsen van &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>De optie Werkbalken configureren</title>
+    
+  <para
+>Hier is een plaatje van het scherm dat verschint wanneer u op het menu-item <menuchoice
+><guimenu
+>Settings</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Werkbalken configureren...</guisubmenu
+></menuchoice
+> klikt.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>Werkbalken configureren</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>Werkbalken configureren</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog van &kaddressbook; <quote
+>Werkbalken configureren</quote
+>. Acties die al worden getoond in de werkbalk verschijnen in het grote venster rechts. Acties in het linker venster kunnen toegevoegd worden aan de werkbalk, zoals onderstaand uitgelegd.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Gebruik ofwel een van de velden <quote
+>Filter</quote
+> om de reeks van getoonde keuzes in het overeenkomstige venster te beperken. Selecteer een actie in het linker venster (zoals bovenstaand getoond) Als u het aan de werkbalk wilt toevoegen. Klik links op de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+> om het item aan de lijst in het rechter venster toe te voegen (en dus aan de werkbalk van &kaddressbook;). Als u een item uit de werkbalk wilt verwijderen keer dan de procedure om: accentueer het te verwijderen item in het rechter venster en klik op de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. Het geselecteerde item zal verwijderd worden uit de werkbalk.</para>
+  
+  <para
+>U kunt de volgorde waarin geselecteerde items op de werkbalk verschijnen aanpassen door slepen en loslaten te gebruiken binnen het rechter venster. De volgorde van items op de werkbalk, links naar rechts, komt overeen met de volgorde in het venster, van boven naar beneden. U kunt aanvullende wijzigingen aanbrengen aand het uiterlijk van de werkbalk door de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Pictogram wijzigen...</guibutton
+> om het pictogram behorend bij een specifieke actie te veranderen. Op dezelfde manier kunt u de beschrijving van elk item op de werkbalk wijzigen door te klikken op de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Tekst wijzigen...</guibutton
+>.</para>
+  
+  <para
+>Gebruik de knop <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Standaarden</guibutton
+> om de standaard instellingen van de werkbalk te herstellen. Kies <quote
+>OK</quote
+> om uw wijzigingen op te slaan en de dialoog te beëindigen, <quote
+>Toepassen</quote
+> om uw wijzigingen op te slaan terwijl de dialoog open blijkt of <quote
+>Annuleren</quote
+> om de dialoog te beëindigen zonder uw wijzigingen op te slaan. (Zie het hoofdstuk <ulink url="help:/fundamentals/config.html"
+>Customizing &kde; Software</ulink
+> in het handbook Fundamentals voor een meer gedetailleerde uitleg van deze procedure).</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>De optie &kaddressbook; configureren</title>
+    
+  <para
+>Wanneer de optie <menuchoice
+><guimenu
+>Instellingen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>&kaddressbook; configureren...</guisubmenu
+></menuchoice
+> wordt geselecteerd zal dit scherm verschijnen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>Een schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog van &kaddressbook; <quote
+>Acties met contactpersoon configureren</quote
+>. Deze functies zijn nog steeds experimenteel en nog niet geheel operationeel.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>De eerste dialoog die verschijnt ondersteunt experimentele functies die nu nog niet helemaal zijn geïmplementeerd. U kunt verschillende opties selecteren onder de kopjes <quote
+>Adres tonen</quote
+>, <quote
+>Telefoonnummer</quote
+> of <quote
+>SMS verzenden</quote
+>, maar er is nu nog geen software om iets te doen met de opties die u kiest.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>De volgende optie, <quote
+>Instellingen LDAP-server</quote
+>, is dezelfde dialoog die is gedocumenteerd in de voorgaande sectie getiteld <link linkend="configure-ldap-server"
+><quote
+>De dialoog LDAP configureren</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>Een tweede schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een tweede schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>De dialoog <quote
+>Instellingen LDAP-server</quote
+> van &kaddressbook;. Deze dialoog en zijn afgeleide, zijn gedocumenteerd in <link linkend="configure-ldap-server"
+>een voorgaande sectie</link
+> van deze appendix.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>De uiteindelijke set opties voor configureren van &kaddressbook; verschijnen wanneer u <quote
+>Plug-ins</quote
+> selecteert.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>Een derde schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Een derde schermafdruk van de dialoog <quote
+>&kaddressbook; configureren</quote
+> van &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dialoog <quote
+>Plug-ins</quote
+> van &kaddressbook;. Er zijn al met al tien plug-ins. Zeven ervan zijn standaard geactiveerd, zoals bovenstaand getoond.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>De acties ondersteunt door de zeven standaard <quote
+>Plug-ins</quote
+> zijn gedocumenteerd in voorgaande secties van deze handleiding. De acties <quote
+>Importeren Exporteren <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> en <quote
+>Importeren/Exporteren <glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+> zullen als onderdeel van het menu <menuchoice
+><guimenu
+>Bestand</guimenu
+></menuchoice
+> verschijnen indien geactiveerd. Het item <quote
+>Controleren <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> zal verschijnen in het menu <menuchoice
+><guimenu
+>Tools</guimenu
+> </menuchoice
+> wanneer het is geactiveerd. Merk op dat &kaddressbook; gestopt en opnieuw gestart moet worden alvorens alle wijzigingen aan de <quote
+>Plug-ins</quote
+> effect zullen hebben. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Dankbetuigingen en licentie</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Copyright &copy; 2007–2019 Auteurs van KAddressBook <email
+>montel@kde.org</email
+> </para>
+  
+  <para
+>Documentatie Copyright &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  &meld.fouten;&vertaling.freek; &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Klik hier om naar de Inhoudsopgave van deze Appendix terug te keren.</link
+></para>
+
+</sect1>
+
+</appendix>

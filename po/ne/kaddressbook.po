@@ -1,0 +1,5501 @@
+# translation of kaddressbook.po to Nepali
+# Nabin Gautam <nabin@mpp.org.np>, 2006, 2007.
+# Mahesh Subedi <submanesh@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2007-09-07 10:35+0545\n"
+"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n !=1\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nabin Gautam"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nabin@mpp.org.np"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "ठेगाना पुस्तिका"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contains"
+msgid "Contact"
+msgstr "समावेश गर्दछ"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "इमेल"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "सङ्गठन"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "जन्म मिति"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "द्रष्टव्य:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "शीर्षक"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "इमेल"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, fuzzy, kde-format
+#| msgid "Blog feed:"
+msgid "Blog Feed"
+msgstr "ब्लग फिड:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "केडीई ठेगाना पुस्तिका"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "नयाँ सम्पर्क..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "तपाईँ समक्ष अनुप्रयोग अनुरुपको सर्टकट कन्फिगर गर्न सकिने संवाद प्रस्तुत हुन्छ ।"
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "New Contact"
+#| msgid_plural "New %1 Contacts"
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "नयाँ सम्पर्क"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "तपाईँ समक्ष अनुप्रयोग अनुरुपको सर्टकट कन्फिगर गर्न सकिने संवाद प्रस्तुत हुन्छ ।"
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "केडीई ठेगाना पुस्तक"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "हालको मर्मतकर्ता"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Tobias Koenig"
+msgid "Tobias König"
+msgstr "टोबिआस कोइङ"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "हालको मर्मतकर्ता"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Steffen Hansen"
+msgid "Stefan Taferner"
+msgstr "स्टेफन हान्सेन"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "मौलिक लेखक"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "अन्तिम सक्रिय फिल्टर प्रयोग गर्नुहोस्"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "अन्तिम सक्रिय फिल्टर प्रयोग गर्नुहोस्"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "कुनै पनि होइन"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "थप्नुहोस्..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "इमेल:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "फोन"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Text"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "पाठ"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+"भिकार्ड ढाँचाको प्रणाली क्लिपबोर्डमा हालै चयन गरिएका सम्पर्क(हरू) प्रतिलिपि गर्नुहोस् ।"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgctxt "<nickname> on <server>"
+#| msgid "%1 on %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%2 मा %1"
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "अपरिभाषित"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "वार्षिकोत्सव"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "रुचाइएको प्रयोग गर्नुहोस्"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "इमेल"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "इमेल"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "इमेल"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "पेशा"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "कार्यालय"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "म्यानमार"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "सहायकको नाम"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "सबै सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "%1 is not a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "सबै सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "सबै सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "%1 is not a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgid "Fetch Contacts"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "निजी फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "ब्यवसायिक फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "अन्य फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "गुप्तिकरण कुञ्जी"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "तस्वीर"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "आयात गरिने फाइल:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "निजी फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "ब्यवसायिक फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "अन्य फिल्ड"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "गुप्तिकरण कुञ्जी"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "तस्वीर"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "एउटा फाइलमा निर्यात गर्नुहोस्"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "ठेगाना पुस्तिका"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "सबै चयन गरिएका सम्पर्कका लागि कोटि सेट गर्नुहोस् ।"
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "सम्पर्क आयात गर्दैछ"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "सम्पर्क आयात गर्दैछ"
+msgstr[1] "सम्पर्क आयात गर्दैछ"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "दिएको vCard आयात गर्नुहोस्"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "केडीई २ ठेगाना पुस्तिका आयात गर्नुहोस्..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "फाइल"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "नयाँ..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "सम्पादन"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "दृश्य"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Latin1"
+msgid "&Action"
+msgstr "ल्याटिन१"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "उपकरण"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "सेटिङ"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "निर्यात"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "मुख्य उपकरणपट्टी"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "आयात"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "निर्यात"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "खोजी:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "सबै चयन गरिएका सम्पर्कका लागि कोटि सेट गर्नुहोस् ।"
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "दोहोर्यायर खोजी गर्नुहोस्"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category &members"
+msgid "Category filter"
+msgstr "सदस्यता कोटि"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "सबै चयन गर्नुहोस्"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "हालको दृश्यबाट सबै देखिने सम्पर्क चयन गर्दछ ।"
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr "तपाईँ समक्ष अनुप्रयोग अनुरुपको सर्टकट कन्फिगर गर्न सकिने संवाद प्रस्तुत हुन्छ ।"
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "फड्कने पट्टी लुकाउनुहोस्"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "पूरा नाम"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "परिवार नाम:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "दिएको नाम:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "गृह ठेगाना"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "Business Address"
+msgstr "ब्यवसायिक फिल्ड"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+#| msgid "Phone numbers"
+msgid "Phone Numbers"
+msgstr "फोन नम्बर"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "रुचाइएका ठेगाना"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "Email"
+msgid "All EMails"
+msgstr "इमेल"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "कम्पनी"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "फन्ट र रङ सेट गर्दछ"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "मुद्रण गर्दैछ"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "पूरा भयो"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "मुद्रण शैली रोज्नुहोस्"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "देखावट"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "फिल्ड"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "गृह ठेगाना"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "with business address"
+msgstr "ब्यवसायिक फिल्ड"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+#| msgid "Birthday"
+msgid "with birthday"
+msgstr "जन्म मिति"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "इमेल सम्पादन गर्नुहोस्"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "पृष्ठभूमि रङ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "मूख्य पङ्क्ति पृष्ठभूमि रङ:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "पृष्ठभूमि परिवर्तन"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "सङ्गठन"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "इमेल ठेगाना:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "इमेल ठेगाना:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "टेलिफोन:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "टेलिफोन:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "वेब पृष्ठ:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "राष्ट्रिय ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "अन्तराष्ट्रिय ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "हुलाकी ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "पार्सल ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "कार्य ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "रुचाइएका ठेगाना"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "द्रष्टव्य:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "विस्तृत वर्णन गरिएको मुद्रण शैली - मोहडा"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "फन्ट र रङ सेट गर्दछ"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "विस्तृत विवरण शैली"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "मोहडा पृष्ठ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "हेडरमा सम्पर्क गर्नुहोस्"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "मूख्य पङ्क्ति पृष्ठभूमि रङ:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "मूख्य पङ्क्ति पृष्ठभूमि रङ:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "मूख्य पङ्क्ति पाठ रङ:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "मूख्य पङ्क्ति पाठ रङ:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "माइकको मुद्रण शैली"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "तपाईँ कुन सम्पर्क मुद्रण गर्न चाहनुहुन्छ ?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "मुद्रण गरिने सम्पर्क रोज्नुहोस्"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "मुद्रण शैली रोज्नुहोस्"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "मुद्रण प्रगति"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "मुद्रण: प्रगति"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "प्रगति"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "सम्पर्कको सूचना मुद्रण गर्नुहोस्"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+#| msgid "Phone numbers"
+msgid "Print contact phone numbers"
+msgstr "फोन नम्बर"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "फोन नम्बर"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "हुलाकी ठेगाना"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "इमेल ठेगाना"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+#| msgid "Street addresses"
+msgid "Print contact street addresses"
+msgstr "गल्ली ठेगान"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "हुलाकी ठेगाना"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Print Contact's Information"
+msgid "Print contact organizations"
+msgstr "सम्पर्कको सूचना मुद्रण गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "द्रष्टव्य:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "रिङ बाइन्डर मुद्रण शैली - मोहडा"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "फन्ट र रङ सेट गर्दछ"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "रिङ बाइन्डरका लागि मुद्रण गर्नुहोस्"
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "बढ्दोक्रम"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "घट्दोक्रम"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(पूर्वावलोकन उपलब्ध छैन ।)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "मुद्रण शैली रोज्नुहोस्"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"मुद्रण कस्तो देखिनु पर्छ ?\n"
+"केडीई ठेगाना पुस्तकमा, विभिन्न उद्देश्यका लागि डिजाइन गरिएका धेरै मुद्रण शैली छन् ।\n"
+"तपाईँको आवश्यकतासँग मिल्ने तलका शैली रोज्नुहोस् ।"
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "क्रमबद्ध"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "दायरा:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select incremental search field"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "बढोत्तरित खोजी फिल्ड चयन गर्नुहोस्"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "क्रम:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "मुद्रण शैली"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "कुञ्जी प्रकार चयन गर्नुहोस्:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "आयात"
+
+#~ msgid "Import vCard..."
+#~ msgstr "भी कार्ड आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "सम्पर्क आयात गर्नुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "CSV सूची आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "LDIF ठेगाना पुस्तिका आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "सम्पर्क आयात गर्नुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Import From Mobile Phone..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "मोबाइल फोनबाट आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "सम्पर्क आयात गर्नुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "सबै आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "%1 is not a GMX address book file."
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "भी कार्ड ३.० निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "भी कार्ड ३.० निर्यात गर्नुहोस्..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "भी कार्ड ३.० निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "भी कार्ड ३.० निर्यात गर्नुहोस्..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "भी कार्ड २.१ निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "भी कार्ड २.१ निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "CSV सूची निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "LDIF ठेगाना पुस्तिका निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "LDIF ठेगाना पुस्तिका निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Export GMX Address Book..."
+#~ msgid "Export GMX file..."
+#~ msgstr "GMX ठेगाना पुस्तक निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "%1 is not a GMX address book file."
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>फाइल <b>%1</b> खोल्न अक्षम</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>फाइल <b>%1</b> खोल्न अक्षम ।</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV आयात संवाद"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "सम्पर्क आयात गर्दैछ"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "आयात गरिने फाइल:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "आयात गर्नका लागि भी कार्ड चयन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "डेलिमिटर"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "अल्पविराम"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "तपाईँले हटाउन चाहेको फिल्ड चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "अर्धविराम"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "तपाईँले हटाउन चाहेको फिल्ड चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "टेबुलेटर"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "खाली स्थान"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "अन्य"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Textquote:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "कुञ्जी प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "कुनै पनि होइन"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "मिति ढाँचा:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<ul><li>y: २ अङ्कको वर्ष</li><li>Y: ४ अङ्कको वर्ष</li><li>m: १ वा २ अङ्कको "
+#~ "महिना</li><li>M: २ अङ्कको महिना</li><li>d: १ वा २ अङ्कको दिन</li><li>D: २ "
+#~ "अङ्कको दिन</li></ul>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<ul><li>y: २ अङ्कको वर्ष</li><li>Y: ४ अङ्कको वर्ष</li><li>m: १ वा २ अङ्कको "
+#~ "महिना</li><li>M: २ अङ्कको महिना</li><li>d: १ वा २ अङ्कको दिन</li><li>D: २ "
+#~ "अङ्कको दिन</li></ul>"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Textquote:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "कुञ्जी प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "टेम्प्लेट लागू गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "टेम्प्लेट बचत गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "स्थानीय (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "ल्याटिन१"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "युनिकोड"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "माइक्रोसफ्ट युनिकोड"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "तपाईँले कम्तिमा एउटा स्तम्भ मानाङ्कन गर्नुपर्छ ।"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(पूर्वावलोकन उपलब्ध छैन ।)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(पूर्वावलोकन उपलब्ध छैन ।)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "टेम्प्लेट नाम"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "कृपया टेम्प्लेटका लागि नाम प्रविष्ट गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "आगत फाइल खोल्न सकिँदैन ।"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>तपाईँ वास्तवमै ठेगाना पुस्तक <b>%1</b> हटाउन चाहनुहुन्छ ?</qt>"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "टेम्प्लेट चयन"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "कृपया CSV फाइलसँग मिल्ने, टेम्प्लेट फाइल चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "GMX addressbook file (*.gmxa)"
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "GMX ठेगाना पुस्तिका फाइल (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>पढ्नका लागि <b>%1</b> खोल्न असमर्थ ।</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "तपाईँले सम्पर्कका सूची चयन गर्नुभएको छ, के तीनिहरू विभिन्न फाइलमा निर्यात हुन्छन् ?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "एउटा फाइलमा निर्यात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "विभिन्न फाइलमा निर्यात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "आयात गर्नका लागि भी कार्ड चयन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "भी कार्ड आयात गर्न असफल"
+
+#, fuzzy
+#~| msgid "<qt>Unable to access vCard: %1</qt>"
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>भी कार्डमा पहुँच गर्न असमर्थ: %1</qt>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "भी कार्डमा त्रुटिका कारणले, सम्पर्क आयात गरिएका थिएनन् ।"
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "भी कार्डले कुनै पनि सम्पर्क समावेश गर्दैन ।"
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "भी कार्ड आयात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact in your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "तपाईँ यो सम्पर्क तपाईँको ठेगाना पुस्तिकामा आयात गर्न चाहनुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "सबै आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "तपाईँ कुन सम्पर्क निर्यात गर्न चाहनुहुन्छ ?"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr ""
+#~ "भिकार्ड ढाँचाको प्रणाली क्लिपबोर्डमा हालै चयन गरिएका सम्पर्क(हरू) प्रतिलिपि गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "Ungroup Letter"
+#~ msgid "Ungrouped"
+#~ msgstr "चिठ्ठी समूह छुट्याउनुहोस्"
+
+#, fuzzy
+#~| msgid "Letter Groups"
+#~ msgid "Group"
+#~ msgstr "चिठ्ठी समूह"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "इमेल ठेगाना:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "टेम्प्लेट बचत गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "टेम्प्लेट बचत गर्नुहोस्..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Protocol"
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "प्रोटोकल"
+
+#, fuzzy
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "खोजी गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "सबै चयन गरिएका सम्पर्कमा पत्र पठाउनुहोस् ।"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "A contact group was selected."
+#~ msgstr "सबै सम्पर्क"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "सम्पर्क पठाउनुहोस्..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts."
+#~ msgstr ""
+#~ "भिकार्ड ढाँचाको प्रणाली क्लिपबोर्डमा हालै चयन गरिएका सम्पर्क(हरू) प्रतिलिपि गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "सबै चयन गरिएका सम्पर्कमा पत्र पठाउनुहोस् ।"
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "भी कार्ड आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "सम्पर्क गाभ्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "गाभ्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "ठेगाना पुस्तिका"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "गाभ्नुहोस्"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "तपाईँले कम्तिमा एउटा स्तम्भ मानाङ्कन गर्नुपर्छ ।"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "No contacts selected."
+#~ msgstr "सबै सम्पर्क"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "ग्राहक"
+
+#, fuzzy
+#~| msgid "Print Contact's Information"
+#~ msgid "Missing Selected Information"
+#~ msgstr "सम्पर्कको सूचना मुद्रण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "अपरिभाषित"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>When trying to read the vCard, there was an error opening the file "
+#~| "'%1': %2</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr "<qt>भी कार्ड पढ्ने प्रयास गर्दा, फाइल '%1': %2 खोल्दा त्रुटि भएको थियो</qt>"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "सम्पर्क गाभ्नुहोस्"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "सम्पर्क आयात गर्दैछ"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "सम्पर्क गाभ्नुहोस्"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "भी कार्ड फिल्ड चयन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "चयन गरिएका सम्पर्क"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "चयन गरिएका थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "सम्पर्क पिनिङ हुदैछ"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "मुद्रण शैली रोज्नुहोस्"
+
+#~ msgid "Department"
+#~ msgstr "विभाग"
+
+#~ msgid "Manager's Name"
+#~ msgstr "प्रबन्धकको नाम"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "सहायकको नाम:"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "साझेदारको नाम"
+
+#~ msgid "IM Address"
+#~ msgstr "IM ठेगाना"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "प्रकार"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "<qt>तपाईँ वास्तवमै ठेगाना पुस्तक <b>%1</b> हटाउन चाहनुहुन्छ ?</qt>"
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "भी कार्डमा निर्यात हुने फिल्ड चयन गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "ठेगाना पुस्तक"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "विस्तृत विवरण पट्टी देखिने वा नदेखिनेमा टगल गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "New Contact"
+#~| msgid_plural "New %1 Contacts"
+#~ msgid "Show Contacts View"
+#~ msgstr "नयाँ सम्पर्क"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "विस्तृत विवरण पट्टी देखिने वा नदेखिनेमा टगल गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "सम्पर्क नाम सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "विस्तृत विवरण देखाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "विस्तृत विवरण पट्टी देखिने वा नदेखिनेमा टगल गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "विस्तृत विवरण लुकाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "ठेगाना पुस्तक थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+#~ msgstr[1] "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+#~ msgstr[1] "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Cut Contact"
+#~| msgid_plural "Cut %1 Contacts"
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "सम्पर्क काट्नुहोस्"
+#~ msgstr[1] "%1 सम्पर्क काट्नुहोस्"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "सम्पर्क मेट्नुहोस्"
+#~ msgstr[1] "%1 सम्पर्क मेट्नुहोस्"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "कृपया नयाँ ठेगाना पुस्तकको प्रकार चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Cut Contact"
+#~| msgid_plural "Cut %1 Contacts"
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "सम्पर्क काट्नुहोस्"
+#~ msgstr[1] "%1 सम्पर्क काट्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "सम्पर्क सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Letter Groups"
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "चिठ्ठी समूह"
+#~ msgstr[1] "चिठ्ठी समूह"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "सम्पादन गर्नुहोस्..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "ठेगाना पुस्तक थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "ठेगाना पुस्तक थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "ठेगाना पुस्तक थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>तपाईँ वास्तवमै ठेगाना पुस्तक <b>%1</b> हटाउन चाहनुहुन्छ ?</qt>"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "ठेगाना पुस्तिका"
+
+#, fuzzy
+#~| msgid ""
+#~| "Create a new contact<p>You will be presented with a dialog where you can "
+#~| "add all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "नयाँ सम्पर्क सिर्जना गर्नुहोस्<p>तपाईँ समक्ष व्यक्तिका बारेका सबै डेटा थप्न सक्ने, साथसाथै "
+#~ "ठेगाना र फोन नम्बर समावेश हुने संवाद प्रस्तुत हुन्छ ।"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "नयाँ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "सम्पर्क फिल्टर सम्पादन गर्नुहोस्<p>तपाईँ समक्ष फिल्टर थप्न, हटाउन र सम्पादन गर्न सकिने "
+#~ "संवाद प्रस्तुत हुन्छ ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit a contact<p>You will be presented with a dialog where you can "
+#~| "change all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "सम्पर्क सम्पादन गर्नुहोस्<p> तपाईँ समक्ष व्यक्तिका बारेमा ठेगाना र फोन नम्बर समावेश हुने "
+#~ "सबै डेटा परिवर्तन गर्न सक्ने संवाद प्रस्तुत हुन्छ ।"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "ठेगाना पुस्तक थप्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "Store a contact in a different Addressbook<p>You will be presented with "
+#~| "a dialog where you can select a new storage place for this contact."
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "विभिन्न ठेगाना पुस्तकमा सम्पर्क भण्डारण गर्नुहोस्<p>तपाईँ समक्ष यो सम्पर्कका लागि नयाँ "
+#~ "भण्डारण स्थान चयन गर्न सकिने संवाद प्रस्तुत हुन्छ ।"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "ठेगाना पुस्तिका"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "ठेगाना पुस्तक ब्राउजर"
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "सम्पर्क थप्नुहोस्"
+
+#~ msgid "Home Number"
+#~ msgstr "गृह नम्बर"
+
+#~ msgid "Work Number"
+#~ msgstr "कार्यस्थान नम्बर"
+
+#~ msgid "Mobile Number"
+#~ msgstr "मोबाइल नम्बर"
+
+#~ msgid "Fax Number"
+#~ msgstr "फयाक्स नम्बर"
+
+#~ msgid "Pager"
+#~ msgstr "पेजर"
+
+#~ msgid "Street"
+#~ msgstr "गल्ली"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "राज्य"
+
+#~ msgid "Country"
+#~ msgstr "देश"
+
+#~ msgid "City"
+#~ msgstr "शहर"
+
+#~ msgid "Zip Code"
+#~ msgstr "जीप कोड"
+
+#~ msgid "Description"
+#~ msgstr "वर्णन"
+
+#~ msgid "User ID"
+#~ msgstr "प्रयोगकर्ता आईडी"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "राज्य"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "शीर्षक"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "सम्पर्क आयात गर्नुहुन्छ ?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "डाइरेक्टरीमा ठेगाना खोजी गर्नुहोस्"
+
+#~ msgid "Search for:"
+#~ msgstr "यसको खोजी गर्नुहोस्:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "भित्र"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "गृह नम्बर"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "कार्यस्थान नम्बर"
+
+#~ msgid "Stop"
+#~ msgstr "रोक्नुहोस्"
+
+#~ msgid "Recursive search"
+#~ msgstr "दोहोर्यायर खोजी गर्नुहोस्"
+
+#~ msgid "Contains"
+#~ msgstr "समावेश गर्दछ"
+
+#~ msgid "Starts With"
+#~ msgstr "यससँग सुरु हुन्छ"
+
+#~ msgid "Unselect All"
+#~ msgstr "सबै चयनबाट हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "ठेगाना पुस्तक कन्फिगर गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "सबै चयन गरिएका सम्पर्कमा पत्र पठाउनुहोस् ।"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "ठेगाना पुस्तक कन्फिगर गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Tobias Koenig"
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "टोबिआस कोइङ"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "थप्नुहोस्..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "सूची हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) १९९७-२००५, केडीई PIM समूह"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "ठेगाना पुस्तक"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Phone numbers"
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "फोन नम्बर"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "रुचाइएका ठेगाना"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "इमेल"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "सबै सम्पर्क"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "प्रबन्धकको नाम"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "आइसल्यान्ड"
+
+#, fuzzy
+#~| msgid "Miscellaneous"
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "विविध"
+
+#~ msgid ""
+#~ "This is the minimum number of empty fields that have to be printed in "
+#~ "addition to real entries; if this number is not reached on the first "
+#~ "page, more pages with empty fields only may be appended."
+#~ msgstr ""
+#~ "यो तपाईँले वास्तवीक प्रविष्टिमा थपेका मुद्रण हुने खाली फिल्डको न्यूनतम सङ्ख्या हो; यदि "
+#~ "यो नम्बर पहिलो पृष्ठमा पुगेको छैन भने, खाली फिल्ड भएका अरू पृष्ठ मात्र थपिन्छन् ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "If you often add contacts to your printout manually before entering them "
+#~| "into the KDE addressbook, you should set this option to a value greater "
+#~| "than 0: it determines how many empty address fields must be printed; if "
+#~| "this many do not fit onto the page, another page with empty fields only "
+#~| "will be printed."
+#~ msgid ""
+#~ "If you often add contacts to your printout manually before entering them "
+#~ "into the KDE address book, you should set this option to a value greater "
+#~ "than 0: it determines how many empty address fields are to be printed; if "
+#~ "this many do not fit onto the page, another page with only empty fields "
+#~ "will be printed."
+#~ msgstr ""
+#~ "यदि तपाईँले धेरैजसो केडीई ठेगाना पुस्तिका सम्पर्कमा प्रविष्टि गर्नुभन्दा पहिला म्यानुअली "
+#~ "मुद्रण गर्नुहोसमा सम्पपर्क थपेमा, यस विकल्पलाई 0 भन्दा माथिको मानमा सेट गर्नुपर्दछ: "
+#~ "यसले कति ठेगाना फिल्ड मुद्रण हुनुपर्दछ निर्धारण गर्दछ; यदि यो धेरै पृष्ठमा नमिलेमा, खाली "
+#~ "फिल्ड भएको अर्को पृष्ठ मात्र मुद्रण हुन्छ ।"
+
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "खाली फिल्डको न्यूनतम सङ्ख्या:"
+
+#~ msgid ""
+#~ "If this option is turned on, behind the contacts on a page the remaining "
+#~ "space will be filled with empty fields so you can add contacts manually "
+#~ "later"
+#~ msgstr ""
+#~ "यदि यो विकल्प खोलिएमा, पृषठमा सम्पर्क पछाडिका बाँकी स्थान खाली स्थानद्वारा भरिन्छ "
+#~ "जसले गर्दा तपाईँले पछि सम्पर्क म्यानुअली थप्न सक्नुहुन्छ"
+
+#~ msgid "Fill pages with empty address fields"
+#~ msgstr "खाली ठेगाना फिल्ड भएका पृष्ठ भर्नुहोस्"
+
+#~ msgid "Letter Groups"
+#~ msgstr "चिठ्ठी समूह"
+
+#~ msgid ""
+#~ "Here you can group letters together as they are grouped in your time "
+#~ "planner. Press 'group letter' to combine the selected letter with the "
+#~ "letter group above it, press 'ungroup letter' to remove the last letter "
+#~ "from a selected group."
+#~ msgstr ""
+#~ "यहाँ तपाईँले आफ्नो समय योजनाकर्तामा समूहकृत गरिए अनुरूप चिठ्ठीलाई समूह बनाउन सक्नुहुन्छ "
+#~ "। यस माथिका चिठ्ठी समूहसँग चयन गरिएका चिठ्ठी संयोजन गर्न 'चिठ्ठी समूह बनाउनुहोस्' "
+#~ "बटन थिच्नुहोस्, चयन गरिएको समूहबाट पछिल्लो चिठ्ठी हटाउन 'चिठ्ठी समूह छुट्याउनुहोस्' "
+#~ "बटन थिच्नुहोस् ।"
+
+#~ msgid "Group Letter"
+#~ msgstr "चिठ्ठी एकीकृत गर्नुहोस्"
+
+#~ msgid "Font Settings"
+#~ msgstr "फन्ट सेटिङ"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "मानक केडीई फन्ट प्रयोग गर्नुहोस्"
+
+#~ msgid "Details font:"
+#~ msgstr "विवरण फन्ट:"
+
+#~ msgid "Size:"
+#~ msgstr "साइज:"
+
+#~ msgid "Body font:"
+#~ msgstr "मुख्य फन्ट:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "स्थिर फन्ट:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "हेडर फन्टमा सम्पर्क गर्नुहोस्:"
+
+#~ msgid "Headlines:"
+#~ msgstr "मुख्य लाइन:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "रङ्गिएको सम्पर्क हेडर प्रयोग गर्नुहोस्"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(यसलाई हस्तान्तरण गर्नुहोस्:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "सिमान्त र खाली स्थान सेट गर्दछ"
+
+#~ msgid "Preparing"
+#~ msgstr "तयारी गर्दैछ"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "केडीई ठेगाना पुस्तकद्वारा %1 मा मुद्रण गरियो (http://www.kde.org)"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "सम्पर्कको विशेष नम्बर मुद्रण गर्नुहोस् ।"
+
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "यदि यो बाकस जाँच गरिएमा, यो चिठ्ठी समूहका लागि प्रविष्टि अवस्थित नभएता पनि, "
+#~ "प्रत्येक चिठ्ठी समूहका लागि कम्तिमा एक पृष्ठ मुद्रण गरिन्छ । सामान्यतया यो 'खाली "
+#~ "ठेगाना फिल्ड भएका पृष्ठ भर्नुहोस्' विकल्प भएका संयोजनमा उपयोगि हुन्छ ।"
+
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "सबै ट्याबका लागि सधैँ पृष्ठहरू मुद्रण गर्नुहोस्"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "कुन सम्पर्क मुद्रण गर्ने रोज्नुहोस्"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "पूरै ठेगाना पुस्तक मुद्रण गर्नुहोस्"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "केडीई ठेगाना पुस्तकमा चयन गरिएका सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "सम्पर्क चयन नगरिएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "सम्पर्क मिल्ने फिल्टर"
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "चयन गरिएका फिल्टरमा मिल्ने सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "तपाईँले कुनै पनि फिल्टर परिभाषित गरेको नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "सूचीको बायाँतिर जाँच गरिएका कोटिका सदस्य सम्पर्कको मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "तपाईँसँग कोटि नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "कुन सम्पर्क मुद्रण गर्ने निर्णय गर्न फिल्टर चयन गर्नुहोस् ।"
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "तपाईँले मुद्रण गर्न चाहेका सदस्यका कोटि चयन गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "तपाईँको ठेगाना पुस्तकमा एउटा सम्पर्क आयात गर्नुहुन्छ ?"
+#~ msgstr[1] "तपाईँको ठेगाना पुस्तकमा %1 सम्पर्क आयात गर्नुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Select the address book"
+#~ msgstr "%1 ठेगाना पुस्तक"
+
+#, fuzzy
+#~| msgid "New Contact"
+#~| msgid_plural "New %1 Contacts"
+#~ msgid "New Contact"
+#~ msgstr "नयाँ सम्पर्क"
+
+#~ msgid "Edit Contact"
+#~ msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Add"
+#~ msgid "Add to:"
+#~ msgstr "थप्नुहोस्"
+
+#, fuzzy
+#~| msgid "This contact's image cannot be found."
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "यो सम्पर्कको छवी फेला पार्न सकिँदैन ।"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(पूर्वावलोकन उपलब्ध छैन ।)"
+
+#~ msgid "Play"
+#~ msgstr "प्ले गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "परिवर्तन प्रकार..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "नयाँ..."
+
+#~ msgid "Remove"
+#~ msgstr "हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "अन्य..."
+
+#~ msgid "Add"
+#~ msgstr "थप्नुहोस्"
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "फोन नम्बर सम्पादन गर्नुहोस्"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "यो रुचाइएको फोन नम्बर हो"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "इमेल ठेगाना सम्पादन गर्नुहोस्"
+
+#~ msgid "Edit..."
+#~ msgstr "सम्पादन गर्नुहोस्..."
+
+#~ msgid "Set Standard"
+#~ msgstr "मानक सेट गर्नुहोस्"
+
+#~ msgid "Add Email"
+#~ msgstr "इमेल थप्नुहोस्"
+
+#~ msgid "New Email:"
+#~ msgstr "नयाँ इमेल:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "इमेल:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>तपाईँ इमेल ठेगाना <b>%1</b> हटाउने चाहानामा निश्चित हुनुहुन्छ ?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "हटाउन यकीन गर्नुहोस्"
+
+#~ msgid "&Delete"
+#~ msgstr "मेट्नुहोस्"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "यो सम्पर्कको छवी फेला पार्न सकिँदैन ।"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "परिवर्तन प्रकार..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "टेम्प्लेट बचत गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "सूची हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "इमेल परिवर्तन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "टेम्प्लेट बचत गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Remove"
+#~ msgid "Remove logo"
+#~ msgstr "हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "नयाँ..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "मेट्नुहोस्"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Do you really want to delete the selected address?"
+#~| msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "तपाईँ चयन गरिएका ठेगाना वास्तवमै मेट्न चाहनुहुन्छ ?"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "ठेगाना सम्पादन गर्नुहोस्"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "सम्पादन स्तर..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "यो रुचाइएको ठेगाना हो"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "ठेगाना प्रकार सम्पादन गर्नुहोस्"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "ठेगाना प्रकार"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "सामान्य नाम"
+
+#, fuzzy
+#~| msgid "Reverse Name with Comma"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "अल्पविरामसँग नाम उल्टो पार्नुहोस्"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "नाम उल्टो पार्नुहोस्"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "सङ्गठन"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "अनुकूल"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#~ msgid "Nickname:"
+#~ msgstr "उपनाम:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "सङ्गठन"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "वेब पृष्ठ:"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Blog:"
+#~ msgstr "ब्लग"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "सिमान्त:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "ठेगाना:"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Coordinates"
+#~ msgstr "समावेश गर्दछ"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "व्यवसाय"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "साधारण"
+
+#~ msgid "Profession:"
+#~ msgstr "पेशा:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "शीर्षक:"
+
+#~ msgid "Department:"
+#~ msgstr "विभाग:"
+
+#~ msgid "Office:"
+#~ msgstr "कार्यालय:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "प्रबन्धकको नाम:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "मिति"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "परिवार"
+
+#~ msgid "Birthdate:"
+#~ msgstr "जन्म मिति:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "वार्षिकोत्सव:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partner's name:"
+#~ msgstr "साझेदारको नाम:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "सम्पर्क सम्पादन गर्नुहोस्"
+
+#~ msgid "Custom Fields"
+#~ msgstr "अनुकूल फिल्ड"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "दिएको इमेल ठेगानामा सम्पर्क सम्पादक देखाउदछ"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "दिएको यूआईडी मा सम्पर्क सम्पादक देखाउदछ"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "एउटा मोडमा सम्पादक सुरुआत गर्दछ"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "नयाँ सम्पर्कका लागि सम्पादक सुरुआत गर्दछ"
+
+#~ msgid "Work on given file"
+#~ msgstr "दिएको फाइलमा कार्य गर्नुहोस्"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "ठेगाना सम्पादन गर्नुहोस्..."
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "'%1' सम्पर्क सम्पादन गर्नुहोस्"
+
+#~ msgid "Contact Editor"
+#~ msgstr "सम्पर्क सम्पादक"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "विस्तृत विवरण"
+
+#~ msgid "Misc"
+#~ msgstr "विविध"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "तपाईँले वैध मिति निर्दिष्ट गर्नुपर्छ"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "तपाईँले वैध जन्ममिति प्रविष्ट गर्नुपर्छ ।"
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "तपाईँले वैध वार्षिकोत्सव प्रविष्ट गर्नुपर्छ ।"
+
+#~ msgid "Add View"
+#~ msgstr "दृश्य थप्नुहोस्"
+
+#~ msgid "View name:"
+#~ msgstr "नाम हेर्नुहोस्:"
+
+#~ msgid "View Type"
+#~ msgstr "दृश्य प्रकार"
+
+#~ msgid "Add Field"
+#~ msgstr "फिल्ड थप्नुहोस्"
+
+#~ msgid "Type:"
+#~ msgstr "प्रकार:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "यो सबै सम्पर्कका लागि उपलब्ध छ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "सङ्ख्यात्मक मान"
+
+#~ msgid "Boolean"
+#~ msgstr "बुलिएन"
+
+#~ msgid "Time"
+#~ msgstr "समय"
+
+#~ msgid "Date & Time"
+#~ msgstr "मिति र समय"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr "उस्तै नामको फिल्ड पहिले नै अवस्थित छ, कृपया अर्को नाम रोज्नुहोस् ।"
+
+#~ msgid "Remove Field"
+#~ msgstr "फिल्ड हटाउनुहोस्"
+
+#~ msgid "Add Field..."
+#~ msgstr "फिल्ड थप्नुहोस्..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "फिल्ड हटाउनुहोस्..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "वितरण सूची सम्पादक"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr "उस्तै नामको फिल्ड पहिले नै अवस्थित छ, कृपया अर्को नाम रोज्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "ठेगाना पुस्तिका"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "वितरण सूची पुन: नामकरण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "उस्तै नामको फिल्ड पहिले नै अवस्थित छ, कृपया अर्को नाम रोज्नुहोस् ।"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "इमेल ठेगाना सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "चयन गरिएका कोटिसँग मिल्ने सम्पर्क मात्र देखाउनुहोस्"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr "चयन गरिएका कोटिसँग मिल्ने बाहेकका सम्पर्क मात्र देखाउनुहोस्"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#~ msgid "&Remove"
+#~ msgstr "हटाउनुहोस्"
+
+#~ msgid "Filter:"
+#~ msgstr "फिल्टर:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "स्वतन्त्र/व्यस्त जानकारीको स्थान:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "जिओ डेटा प्रयोग गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "अक्षांश:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "देशान्तर:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "जिओ डेटा सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "जिओ डेटा आगत"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "सेक्साजेसिमल"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "अक्षांश:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "उत्तर"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "दक्षीण"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "देशान्तर:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "पूर्व"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "पश्चिम"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "अपरिभाषित"
+
+#~ msgid "Reset"
+#~ msgstr "रिसेट गर्नुहोस्"
+
+#~ msgid "IM address:"
+#~ msgstr "IM ठेगाना:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "IM ठेगाना सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "बढोत्तरित खोजी<p>यहाँ केही पाठ प्रविष्ट गर्दा, खोजी बाँन्कीसँग मिल्ने उत्तम सम्पर्कको "
+#~ "खोजी गर्न सुरु गर्छ । मिलाउनका लागि प्रयोग गरिने, सम्पर्कको भाग, फिल्ड चयनमा "
+#~ "आधारित हुन्छ ।"
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "यसभित्र:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "यहाँ तपाईँले बढोत्तरित खोजी गर्नका लागि प्रयोग गरिने, फिल्ड रोज्न सक्नुहुन्छ ।"
+
+#~ msgid "Visible Fields"
+#~ msgstr "दृश्यात्मक फिल्ड"
+
+#~ msgid "All Fields"
+#~ msgstr "सबै फिल्ड"
+
+#~ msgid "Don Sanders"
+#~ msgstr "डन स्यान्डर्स"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "कोर्नेलिअस सुमाकर"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "सहायक सम्भारकर्ता, लिबक्याब्क पोर्ट, सीएसभी आयात/निर्यात"
+
+#~ msgid "Mike Pilone"
+#~ msgstr "मिक पिलोने"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "जीयूआई र ढाँचाकार्य पुन: डिजाइन"
+
+#~ msgid "Greg Stern"
+#~ msgstr "ग्रेग स्टर्न"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DCOP इन्टरफेस"
+
+#~ msgid "Mark Westcott"
+#~ msgstr "वेस्टकोट चिन्ह लगाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Mischel Boyer de la Giroday"
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "माइकल बोयर डे ला गिरोडे"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP खोजी"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this contact?"
+#~| msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "तपाईँ साँच्चिकै यो सम्पर्क मेट्न चाहनुहुन्छ ?"
+#~ msgstr[1] "तपाईँ साँच्चिक्कै यी %1 सम्पर्क मेट्न चाहनुहुन्छ ?"
+
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "तपाईँ साँच्चिकै यो सम्पर्क मेट्न चाहनुहुन्छ ?"
+#~ msgstr[1] "तपाईँ साँच्चिक्कै यी %1 सम्पर्क मेट्न चाहनुहुन्छ ?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "कृपया एक मात्र सम्पर्क चयन गर्नुहोस् ।"
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>तपाईँ साँच्चिक्कै <b>%1</b> लाई तपाईँको नयाँ व्यक्तिगत सम्पर्कको रूपमा प्रयोग गर्न "
+#~ "चाहनुहुन्छ ?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "प्रयोग गर्नुहोस्"
+
+#~ msgid "Do Not Use"
+#~ msgstr "प्रयोग नगर्नुहोस्"
+
+#~ msgid "New Distribution List"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "नयाँ वितरण सूची"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ठेगाना पुस्तक <b>%1</b> बचत गर्न असमर्थ ।</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ठेगाना पुस्तक <b>%1</b> बचत गर्नका लागि पहुँच प्राप्त गर्न असमर्थ ।</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "तपाईँको केडीई स्थापनामा LDAP समर्थन छुटेको छ, कृपया बढी जानकारीका लागि प्रशासकलाई "
+#~ "वा वितरकलाई सोध्नुहोस् ।"
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "LDAP IO स्लेभ उपलब्ध छैन"
+
+#~ msgid "Print Addresses"
+#~ msgstr "ठेगाना मुद्रण गर्नुहोस्"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "सम्पर्क गर्न इमेल पठाउनुहोस्..."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "भण्डारण ब्याइन्डमा ठेगाना पुस्तिकाका सबै परिवर्तन बचत गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "नयाँ..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "नयाँ वितरण सूची"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "चयन गरिएको सम्पर्कमा सङ्लग्न गरेर पत्र पठाउनुहोस् ।"
+
+#~ msgid "Chat &With..."
+#~ msgstr "यससँग कुराकानी गर्नुहोस्..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "चयन गरिएको सम्पर्कमा कुराकानी सुरुआत गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "&Edit"
+#~ msgid "Edit"
+#~ msgstr "सम्पादन"
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr "भिकार्ड ढाँचाको प्रणाली क्लिपबोर्डमा हालै चयन गरिएका सम्पर्क(हरू) हटाउछ ।"
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "क्लिपबोर्डबाट पहिला काटिएका र प्रतिलिपि गरिएका सम्पर्क टाँस्दछ ।"
+
+#~ msgid "&Delete Contact"
+#~ msgstr "सम्पर्क मेट्नुहोस्"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "चयन गरिएका सबै सम्पर्क मेट्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "C&opy Contact To..."
+#~ msgstr "यसभित्र सम्पर्क भण्डारण गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "&Move Contact To..."
+#~ msgstr "यसभित्र सम्पर्क भण्डारण गर्नुहोस्..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "फड्कने पट्टी देखाउनुहोस्"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "फड्कने बटनपट्टी देखिने वा नदेखिनेमा टगल गर्नुहोस् ।"
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "तपाईँ समक्ष संवाद प्रस्तुत हुनेछ, त्यसले तपाईँलाई केडीई ठेगाना पुस्तकमा कन्फिगर गर्ने सबै "
+#~ "सम्भावना प्रस्तुत गर्छ ।"
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "LDAP खोजी"
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "LDAP सर्भरमा सम्पर्क खोजी गर्नुहोस्<p>तपाईँ समक्ष संवाद प्रस्तुत हुनेछ, जहाँ तपाईँले "
+#~ "सम्पर्कका लागि खोजी गर्न र स्थानीय ठेगाना पुस्तकमा थप्न चाहेको एक सम्पर्क थप्न सक्नुहुन्छ "
+#~ "।"
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "व्यक्तिगत सम्पर्क डेटाका रूपमा सेट गर्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "Set the personal contact<p>The data of this contact will be used in many "
+#~| "other KDE applications, so you do not have to input your personal data "
+#~| "several times."
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "व्यक्तिगत सम्पर्क सेट गर्नुहोस्<p>यो सम्पर्कको डेटा अन्य धेरै केडीई अनुप्रयोगमा प्रयोग हुनेछ, "
+#~ "त्यसैले तपाईँले आफ्ना व्यक्तिगत डेटा धेरै पटक आगत गर्नु हुदैन ।"
+
+#~ msgid "Select Categories..."
+#~ msgstr "कोटि चयन गर्नुहोस्..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "खोजी पट्टी खाली गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Clear Search Bar<p>Clears the content of the quick search bar."
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr "खोजी पट्टी खाली गर्नुहोस्<p>छिटो खोजी पट्टीको सामाग्री खाली गर्दछ ।"
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "अवस्थित कोटिमा गाभ्नुहुन्छ ?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "नगाभ्नुहोस्"
+
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "%1 सम्पर्क मिल्छ"
+#~ msgstr[1] "%1 सम्पर्क मिल्दैछ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "नयाँ वितरण सूची"
+
+#~ msgid "Keys:"
+#~ msgstr "कुञ्जी:"
+
+#~ msgid "Export..."
+#~ msgstr "निर्यात..."
+
+#~ msgid "Key Type"
+#~ msgstr "कुञ्जी प्रकार"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>तपाईँ वास्तवमै कुञ्जी <b>%1</b> हटाउन चाहनुहुन्छ ?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "नयाँ वितरण सूची"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "तपाईँले खोजी गर्नुभन्दा पहिले LDAP सर्भर खोजी गर्नुपर्छ ।\n"
+#~ "तपाईँले यो कार्य केडीई ठेगाना पुस्तक सेटिङ/कन्फिगर मेनुबाट गर्न सक्नुहुन्छ ।"
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "आदरार्थी उपसर्ग:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr "पूर्व परिभाषित आदरार्थी उपसर्ग सेटीङ संवादमा विस्तार गर्न सकिन्छ ।"
+
+#~ msgid "Additional names:"
+#~ msgstr "थप नाम:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "आदरार्थी प्रत्यय:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr "पूर्व परिभाषित आदरार्थी प्रत्यय सेटिङ संवादमा विस्तार गर्न सकिन्छ ।"
+
+#~ msgid "Formatted name:"
+#~ msgstr "ढाँचाबद्ध गरिएको नाम:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "स्वत: नाम पद वर्णन गर्दछ"
+
+#~ msgid "Dr."
+#~ msgstr "डाक्टर"
+
+#~ msgid "Miss"
+#~ msgstr "सूश्री"
+
+#~ msgid "Mr."
+#~ msgstr "श्रीमान"
+
+#~ msgid "Mrs."
+#~ msgstr "श्रीमती"
+
+#~ msgid "Ms."
+#~ msgstr "सूश्री/श्रीमती"
+
+#~ msgid "Prof."
+#~ msgstr "प्राध्यापक"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "जुनियर"
+
+#~ msgid "Sr."
+#~ msgstr "सिनियर"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "पूरा नाम"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "सङ्गठन"
+
+#, fuzzy
+#~| msgid "Birthday"
+#~ msgid "Birthday:"
+#~ msgstr "जन्म मिति"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partners name:"
+#~ msgstr "साझेदारको नाम:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "सम्पर्क नाम सम्पादन गर्नुहोस्"
+
+#~ msgid "Edit Name..."
+#~ msgstr "नाम सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Role:"
+#~ msgstr "हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "सङ्गठन"
+
+#~ msgid "Tools"
+#~ msgstr "उपकरण"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "ठेगाना सम्पादन गर्नुहोस्"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "प्रोटोकल:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "ठेगाना:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "सञ्जाल:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "IM ठेगाना"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr "मानकको रूपमा सेट गरेको IM ठेगाना मुख्य सम्पादक सञ्झ्यालमा देखिने ठेगाना हो ।"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid ""
+#~| "<qt>Only one IM Address can be set as the standard IM Address.<br>The "
+#~| "standard IM Address is shown in the main editor window, and other "
+#~| "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt>केवल IM ठेगाना मात्र मानक IM ठेगानाको रूपमा सेट गर्न सकिन्छ ।<br>मानक IM "
+#~ "ठेगाना मुख्य सम्पादक सञ्झ्यालमा देखिन्छ, र अन्य कार्यक्रमले कुन IM ठेगाना देखाउने भनि "
+#~ "निर्णय गर्नका लागि सङ्केतको रूपमा यसको प्रयोग गर्न सक्दछ ।</qt>"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "मानक सेट गर्नुहोस्"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "हटाउनुहोस्"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "सम्पादन..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "थप्नुहोस्..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "ठेगाना"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid ""
+#~| "<em>Note:</em> Please read the help page before adding or editing "
+#~| "Instant Messenging Addresses here."
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em>द्रष्टव्य:</em>कृपया यहाँ तत्काल सन्देश ठेगाना थप्न वा सम्पादन गर्नु पूर्व मद्दत पृष्ठ "
+#~ "पढ्नुहोस् ।"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "नयाँ ठेगानाका लागि स्वचालित नाम पद वर्णन"
+
+#~ msgid "Fax"
+#~ msgstr "फ्याक्स"
+
+#~ msgid "SMS"
+#~ msgstr "एसएमएस"
+
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr "मोबाइल फोनमा GSM SMS पाठ सन्देश पठाउनका लागि प्रयोग गरिने स्क्रिप्ट"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "केडीई एकल क्लिक निर्दिष्ट गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "इमेल:"
+
+#~ msgid "Store as URL"
+#~ msgstr "यूआरएल का रूपमा भण्डारण गर्नुहोस्"
+
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr ""
+#~ "यो फिल्डले उच्चारण स्पष्ट गर्न सम्पर्कको नाम समावेश गर्ने ध्वनि फाइल भण्डारण गर्दछ ।"
+
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr "ध्वनि फाइलमा पूरै वस्तु नभई, यूआरएल मात्र बचत गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "नयाँ वितरण सूची"
+#~ msgstr[1] "नयाँ वितरण सूची"
+
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "सम्पर्क टाँस्नुहोस्"
+#~ msgstr[1] "%1 सम्पर्क टाँस्नुहोस्"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "प्रदर्शन गर्नलाई फिल्ड चयन गर्नुहोस्"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "चयन गरिएका फिल्डहरू:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "यो दृश्य प्रदर्शित भएको बेलामा पूर्वनिर्धारित फिल्टर सक्रिय भएको हुनेछ । यो विशेषताले "
+#~ "तपाईँलाई फिल्टरमा आधारित सूचनाका निश्चित प्रकारसँग मात्र अन्तरक्रिया गर्ने दृश्य "
+#~ "कन्फिगर गर्न अनुमति दिन्छ । एक पटक दृश्य सक्रिय पारेपछि, फिल्टर कुनैपनि समयमा "
+#~ "परिवर्तन गर्न सकिन्छ ।"
+
+#~ msgid "No default filter"
+#~ msgstr "पूर्वनिर्धारित फिल्टर होइन"
+
+#~ msgid "Use filter:"
+#~ msgstr "फिल्टर प्रयोग गर्नुहोस्:"
+
+#~ msgid "Default Filter"
+#~ msgstr "पूर्वनिर्धारित फिल्टर"
+
+#~ msgid "Modify View: "
+#~ msgstr "दृश्य परिमार्जन गर्नुहोस्: "
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "दृश्य मेट्नुहोस्"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>तपाईँ दृश्य <b>%1</b> मेट्ने चाहानामा निश्चित हुनुहुन्छ ?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "मेट्न यकीन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "तपाईँको ठेगाना पुस्तकमा एउटा सम्पर्क आयात गर्नुहुन्छ ?"
+#~ msgstr[1] "तपाईँको ठेगाना पुस्तकमा %1 सम्पर्क आयात गर्नुहुन्छ ?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "आयात नगर्नुहोस्"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "कुनै पनि होइन"
+
+#, fuzzy
+#~| msgid "Unfiled"
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "फाइल नगिरएको"
+
+#~ msgid "Select View"
+#~ msgstr "दृश्य चयन गर्नुहोस्"
+
+#~ msgid "Modify View..."
+#~ msgstr "दृश्य परिमार्जन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "यो बटनको थिच्दा एउटा संवाद खुल्छ जसले तपाईँलाई ठेगाना पुस्तकको दृश्य परिमार्जन गर्न "
+#~ "अनुमति दिन्छ । त्यहाँ तपाईँले ठेगाना पुस्तकमा देखाउन वा लुकाउन चाहेका फिल्ड उदाहरणका "
+#~ "लागि नाम थप्न वा हटाउन सक्नुहुन्छ ।"
+
+#~ msgid "Add View..."
+#~ msgstr "दृश्य थप्नुहोस्..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "तपाईँले बटन थिचे पछि देखापर्ने संवादबाट एउटा नयाँ दृश्य रोजेर थप्न सक्नुहुन्छ । तपाईँले दृश्य "
+#~ "नाम दिनुपर्छ, त्यसैले तपाईँले विभिन्न दृश्य बीचमा फरक छुट्याउन सक्नुहुन्छ ।"
+
+#~ msgid "Delete View"
+#~ msgstr "दृश्य मेट्नुहोस्"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr "यो बटन थिचेर तपाईँले पहिला थपेको वास्तविक दृश्य मेट्न सक्नुहुन्छ ।"
+
+#~ msgid "Refresh View"
+#~ msgstr "दृश्य ताजा पार्नुहोस्"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "यो बटनको थिचेर दृश्य ताजा पारिन्छ ।"
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "फिल्टर सम्पादन गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "सम्पर्क फिल्टर सम्पादन गर्नुहोस्<p>तपाईँ समक्ष फिल्टर थप्न, हटाउन र सम्पादन गर्न सकिने "
+#~ "संवाद प्रस्तुत हुन्छ ।"
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt> <b>%1</b> का लागि आयात प्लगइन उपलब्ध छैन ।</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt> <b>%1</b> का लागि निर्यात प्लगइन उपलब्ध छैन ।</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "सम्पर्क निर्यात गर्न असमर्थ ।"
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "निर्यात गर्नुपर्ने सम्पर्क रोज्नुहोस्"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "बढ्दोक्रम"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "घट्दोक्रम"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "चयन"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "पूरै ठेगाना पुस्तक निर्यात गर्नुहोस्"
+
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "चयन गरिएका सम्पर्क"
+#~ msgstr[1] "चयन गरिएका सम्पर्क (%1 चयन गरिएका)"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "केडीई ठेगाना पुस्तकमा चयन गरिएका सम्पर्क मात्र निर्यात गर्दछ ।\n"
+#~ "कुनै सम्पर्क चयन नगरेमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "चयन गरिएका फिल्टरमा मिल्ने सम्पर्क मात्र निर्यात गर्दछ ।\n"
+#~ "तपाईँले कुनै पनि फिल्टर परिभाषित गरेको नभएमा यो विकल्प अक्षम पारिएको हुन्छ"
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "सूचीको बायाँतिर जाँच गरिएका कोटि सदस्यको मात्र सम्पर्क निर्यात गर्छ ।\n"
+#~ "तपाईँसँग कोटि नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "कुन सम्पर्क निर्यात गर्ने निर्णय गर्न एउटा फिल्टर चयन गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "विद्यालय"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "साथी"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "मानचित्र खोज्नका लागि सेवा प्रदायक उपलब्ध छैन !\n"
+#~ "कृपया कन्फिगरेसन संवादमा एउटा थप्नुहोस् ।"
+
+#~ msgid "Crypto Settings"
+#~ msgstr "गोप्य सेटिङ"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "स्वीकृत प्रोटोकल"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "रुचाइएका OpenPGP गुप्तिकरण कुञ्जी:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "रुचाइएका S/MIME गुप्तिकरण प्रमाणपत्र:"
+
+#~ msgid "Message Preference"
+#~ msgstr "सन्देश प्राथमिकता"
+
+#~ msgid "Sign:"
+#~ msgstr "चिन्ह:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "गुप्त:"
+
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "तत्काल सन्देश ठेगाना सम्पादन गर्नुहोस्"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "ठेगाना थप्नुहोस्"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "वितरण सूची सम्पादक"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "नयाँ वितरण सूची"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Remove distribution list"
+#~ msgstr "वितरण सूची पुन: नामकरण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "नयाँ वितरण सूची"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt> <b>%1</b> प्रकारको ठेगाना पुस्तक सिर्जना गर्न असमर्थ ।</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1 ठेगाना पुस्तक"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "ठेगाना पुस्तक फिल्टर सम्पादन गर्नुहोस्"
+
+#~ msgid "Look & Feel"
+#~ msgstr "हर्नुहोस् र अनुभव गर्नुहोस्"
+
+#~ msgid "Text Color"
+#~ msgstr "पाठ रङ"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "हेडर, किनारा र विभाजक रङ"
+
+#~ msgid "Header Text Color"
+#~ msgstr "हेडर पाठ रङ"
+
+#~ msgid "Highlight Color"
+#~ msgstr "हाइलाइट रङ"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "हाइलाइट गरिएको पाठ रङ"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "साधारण"
+
+#~ msgid "Draw &separators"
+#~ msgstr "विभाजक कोर्नुहोस्"
+
+#~ msgid "Separator &width:"
+#~ msgstr "विभाजक चौडाइ:"
+
+#~ msgid "&Padding:"
+#~ msgstr "प्याडिङ:"
+
+#~ msgid "Cards"
+#~ msgstr "कार्ड"
+
+#~ msgid "Draw &borders"
+#~ msgstr "किनारा कोर्नुहोस्"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "वस्तु सीमान्त वस्तु किनारा र वस्तु डेटा बीचको दुरी (पिक्सेलमा) हो । विशेष रूपमा याद "
+#~ "गर्नुहोस्, वस्तु सिमान्तको बढ्दो क्रमले केन्द्रित आयात र वस्तु डेटा बीचको खाली स्थान "
+#~ "बढाउनेछ ।"
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "वस्तु खाली स्थानले वस्तु र अन्य कुनै वस्तु बीचको दुरी (पिक्सेलमा) निर्धारण गर्दछ: दृश्य "
+#~ "किनारा, अन्य वस्तु वा स्तम्भ विभाजक ।"
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "स्तम्भ विभाजकको चौडाइ सेट गर्दछ"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "सजावट"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "अनुकूल रङ सक्षम पार्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "रङ"
+
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "अनुकूल रङ सक्षम पारिएमा, तपाईँले तलको दृश्यका लागि रङ रोज्न सक्नुहुन्छ । अन्यथा तपाईँको "
+#~ "हालको केडीई रङ योजनाको रङ प्रयोग गरिन्छ ।"
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "दृश्यको सम्बन्धित स्ट्रिङका लागि रङ चयन गर्न वस्तुमा डबल क्लिक वा RETURN बटन "
+#~ "थिच्नुहोस् ।"
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "अनुकूल फन्ट सक्षम पार्नुहोस्"
+
+#~ msgid "&Text font:"
+#~ msgstr "पाठ फन्ट:"
+
+#~ msgid "Choose..."
+#~ msgstr "रोज्नुहोस्..."
+
+#~ msgid "&Header font:"
+#~ msgstr "हेडर फन्ट:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "अनुकूल फन्ट सक्षम पारिएमा, तपाईँले तलको दृश्यका लागि प्रयोग हुने फन्ट रोज्न सक्नुहुन्छ । "
+#~ "अन्यथा, हेडरका लागि बाक्लो र डेटाका लागि सामान्य पूर्वनिर्धारित केडीई फन्ट शैली "
+#~ "प्रयोग गरिन्छ ।"
+
+#, fuzzy
+#~| msgid "&Fonts"
+#~ msgid "Fonts"
+#~ msgstr "फन्ट"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "खाली फिल्ड देखाउनुहोस्"
+
+#~ msgid "Show field &labels"
+#~ msgstr "फिल्ड लेबुल देखाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "व्यवहार"
+
+#~ msgid "Row Separator"
+#~ msgstr "पङ्क्ति विभाजक"
+
+#~ msgid "Single line"
+#~ msgstr "एकल रेखा"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "कुनै पनि होइन"
+
+#~ msgid "Enable background image:"
+#~ msgstr "पृष्ठभूमि छवि सक्षम पार्नुहोस्:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "सम्पर्क टुलटिप सक्षम पार्नुहोस्"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "तत्काल सन्देश ढाँचा देखाउनुहोस्"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "कार्ड"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "रोलोडेक्स शैली कार्डले सम्पर्क प्रतिनिधित्व गर्छ ।"
+
+#~ msgid "Icon"
+#~ msgstr "प्रतिमा"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "प्रतिमाले सम्पर्कको प्रतिनिधित्व गर्दछ । सामान्य दृश्य ।"
+
+#~ msgid "Table"
+#~ msgstr "तालिका"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr "तालिकामा सम्पर्कका सुची । तालिकाको प्रत्येक कक्षले सम्पर्कको फिल्ड राख्दछ ।"
+
+#~ msgid "Presence"
+#~ msgstr "उपस्थिति"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "पुस्तकचिनो मेनु निर्यात गर्नुहोस्..."
+
+#~ msgid "AddressBook"
+#~ msgstr "ठेगाना पुस्तक"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "१"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "लाइनमा सुरु गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "नक्कली डेलिमिटर उपेक्षा गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[guess]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "सम्पर्क सफलतापूर्वक निर्यात गरिएका छन् ।"
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "यूडोरा ठेगाना पुस्तक आयात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "यूडोरा हल्का ठेगाना पुस्तक (*.txt)"
+
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "GMX ठेगाना पुस्तिका आयात गर्नुहोस्..."
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "मोबाइल फोनमा निर्यात गर्नुहोस्..."
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "ग्नोकी लाइब्रेरी सुरुआत गर्न असफल ।"
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "ग्नोकी अहिलेसम्म कन्फिगर गरिएको छैन ।"
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "ग्नोकीले 'स्थानीय फाइल त्रुटि' प्रतिवेदन गर्दछ ।\n"
+#~ "कृपया ग्नोकीका चलिरहेका अन्य दृष्टान्त बन्द गर्नुहोस्, तपाईँलाई /var/lock डाइरेक्टरीमा "
+#~ "लेख्ने अनुमति भएको जाँच गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Mobile Phone interface initialization failed.<br><br>The "
+#~| "returned error message was:<br><b>%1</b><br><br>You might try to run "
+#~| "\"gnokii --identify\" on the command line to check any cable/transport "
+#~| "issues and to verify if your gnokii configuration is correct.</center></"
+#~| "qt>"
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center>मोबाइल फोन इन्टरफेस सुरुआत गर्न असफल ।<br><br>प्रदर्शित त्रुटि सन्देश:"
+#~ "<br><b>%1</b> हो<br><br>तपाईँले कुनै पनि केबल/पारवाहन निस्कासन जाँच गर्न आदेश "
+#~ "लाइनको \"ग्नोकी --पहिचान\" मा चलाउन र आफ्नो ग्नोकी कन्फगिरेसन ठीक भएको रूजु गर्ने "
+#~ "प्रयास गर्न सक्नुहुन्छ ।</center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "अज्ञात"
+
+#~ msgid "Mobile Phone information:"
+#~ msgstr "मोबाइल फोन सूचना:"
+
+#~ msgid "Manufacturer"
+#~ msgstr "निर्माता"
+
+#~ msgid "Phone model"
+#~ msgstr "फोन नमूना"
+
+#~ msgid "Revision"
+#~ msgstr "संशोधन"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "फोन पुस्तक स्थिति"
+
+#, fuzzy
+#~| msgid "%1 out of %2 contacts used"
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "%2 बाहेकको %1 सम्पर्क प्रयोग गरियो"
+#~ msgstr[1] "%2 बाहेकको %1 सम्पर्क प्रयोग गरियो"
+
+#~ msgid "internal memory"
+#~ msgstr "आन्तरिक स्मृति"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM कार्ड स्मृति"
+
+#~ msgid "unknown memory"
+#~ msgstr "अज्ञात स्मृति"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>सम्पर्क <b>%1</b> मोबाइल फोनको <b>%2</b> बाट आयात गर्दैछ ।<br><br>%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>सम्पर्क <b>%1</b> मोबाइल फोनको <b>%2</b> बाट आयात गर्दैछ ।<br><br>%3</qt>"
+
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "ग्नोकी इन्टरफेस उपलब्ध छैन ।\n"
+#~ "कृपया कम्पाइल गर्ने समयमा ग्नोकी थप्न तपाईँको वितरकलाई सोध्नुहोस् ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start importing the personal contacts.<br><br>Please "
+#~| "note that if your Mobile Phone is not properly connected the following "
+#~| "detection phase might take up to two minutes, during which KAddressbook "
+#~| "will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>कृपया तपाईँको मोबाइल फोन कम्प्युटरमा जडान गर्नुहोस् र व्यक्तिगत सम्पर्क आयात सुरुआत "
+#~ "गर्न <b>जारी राख्नुहोस</b> बटनमा क्लिक गर्नुहोस् ।<br><br>कृपया याद गर्नुहोस् तपाईँको "
+#~ "मोबाइल फोन उचित तरिकाले जडान नभएको भएमा निम्न पत्ता लगाउने कार्यका लागि दुइ "
+#~ "मिनेट सम्म समय लिन सक्छ, यसो गर्दा केडीई ठेगाना पुस्तकले अउत्तरदायी तरिकाले व्यवहार "
+#~ "गर्नसक्छ ।</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "मोबाइल फोन आयात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Establishing connection to the Mobile Phone.<br><br>Please "
+#~| "wait...</center></qt>"
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>मोबाइल फोनमा जडान स्थापना गर्दैछ ।<br><br>कृपया प्रतिक्षा गर्नुहोस्..."
+#~ "</center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "आयात रोक्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start exporting the selected personal contacts."
+#~| "<br><br>Please note that if your Mobile Phone is not properly connected "
+#~| "the following detection phase might take up to two minutes, during which "
+#~| "KAddressbook will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>कृपया तपाईँको कम्प्युटरमा मोबाइल फोन जडान गर्नुहोस् र चयन गरिएका व्यक्तिगत "
+#~ "सम्पर्क निर्यातका लागि सुरु गर्न <b>जारी राख्नुहोस्</b> बटन क्लिक गर्नुहोस् ।"
+#~ "<br><br>कृपया याद गर्नुहोस् यदि तपाईँको मोबाइल फोन उचित तरिकाले जडान गरिएको "
+#~ "नभएमा तलको पत्ता लगाउने चरणमा दुई मिनेटसम्म लिन सक्छ, त्यतिबेला केडीई ठेगाना "
+#~ "पुस्तिकाले अउत्तरदायी रूपमा व्यवहार गर्नेछ ।</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "मोबाइल फोन निर्यात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~| "current mobile phonebook or should they <b>replace</b> all currently "
+#~| "existing phonebook entries ?<br><br>Please note, that in case you choose "
+#~| "to replace the phonebook entries, every contact in your phone will be "
+#~| "deleted and only the newly exported contacts will be available from "
+#~| "inside your phone.</qt>"
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt> तपाईँ चयन गरिएका सम्पर्क हालको मोबाइल फोन पुस्तकमा <b>थप्न</b> चाहुनुहुन्छ वा "
+#~ "हालको सबै अवस्थिति फोन पुस्तक प्रविष्टि <b>बदल्न</b> चाहनुहुन्छ ?<br><br>कृपया याद "
+#~ "गर्नुहोस्, तपाईँले फोन पुस्तक प्रविष्टि बदल्न रोज्न सक्नुहुन्छ, तपाईँका फोनका सबै सम्पर्क "
+#~ "मेटिन्छन् र फोन भित्र नयाँ निर्यात गरिएका सम्पर्क मात्र उपलब्ध हुन्छन् ।</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "मोबाइल फोनमा निर्यात गर्नुहोस्"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "हालको फोन पुस्तकमा थप्नुहोस्"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "हालको फोन पुस्तक नयाँ सम्पर्कसँग बदल्नुहोस्"
+
+#~ msgid "&Stop Export"
+#~ msgstr "निर्यात रोक्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>सम्पर्क <b>%1</b> लाई मोबाइल फोनको <b>%2</b> मा निर्यात गर्दैछ ।<br><br>"
+#~ "%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>सम्पर्क <b>%1</b> लाई मोबाइल फोनको <b>%2</b> मा निर्यात गर्दैछ ।<br><br>"
+#~ "%3</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>All selected contacts have been successfully copied to the "
+#~| "Mobile Phone.<br><br>Please wait until all remaining orphaned contacts "
+#~| "from the Mobile Phone have been deleted.</center></qt>"
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>सबै चयन गरिएका सम्पर्क मोबाइल फोनमा सफलतापूर्वक प्रतिलिपि गरिएका छन् "
+#~ "।<br><br>कृपया मोबाइल फोनमा रहेका सबै बेवारिसि रूपमा रहेका सम्पर्क नमेटिए सम्म "
+#~ "प्रतिक्षा गर्नुहोस् ।</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "मेट्न रोक्नुहोस्"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "फोनमा निर्यात कार्य समाप्त ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~| "Possible Reasons for this problem could be:<br><ul><li>The contacts "
+#~| "contain more information per entry than the phone can store.</"
+#~| "li><li>Your phone does not allow to store multiple addresses, emails, "
+#~| "homepages, ...</li><li>other storage size related problems.</li></ul>To "
+#~| "avoid those kind of problems in the future please reduce the amount of "
+#~| "different fields in the above contacts.</qt>"
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt>निम्न सम्पर्क मोबाइल फोनमा निर्यात गर्न सकिने छैन । यस समस्याका सम्भवित कारण "
+#~ "यी हुन सक्छन्:<br><ul><li>सम्पर्कले प्रत्येक प्रविष्टिमा फोनले भण्डारण गर्न सक्नेभन्दा बढी "
+#~ "जानकारी समावेश गरेको हुन्छ ।</li><li>तपाईँको फोनले बहुविध ठेगाना, इमेल, गृहपृष्ठ, ..."
+#~ "</li><li>अन्य भण्डारण साइजसँग सम्बन्धित समस्या भण्डारण गर्ने अनुमति दिदैन ।</li></"
+#~ "ul>भविश्यमा त्यस्ता प्रकारका समस्या हटाउन कृपया माथिका सम्पर्कका विभिन्न फिल्डका "
+#~ "मात्रा घटाउनुहोस् ।</qt>"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>केडीई २ ठेगाना पुस्तिका <b>%1</b> फेला पार्न सकेन ।</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "पहिला आयात गरिएका प्रविष्टि अधिरोहण गर्नुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "केडीई २ ठेगाना पुस्तिका आयात गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "ओपेरा ठेगाना पुस्तिका आयात गर्नुहोस्..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "एमएस एक्सचेन्ज व्यक्तिगत ठेगाना पुस्तक (.PAB) आयात गर्नुहोस्"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "पढ्नका लागि %1 खोल्न सकिँदैन"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "%1 मा मैले पहिचान गरेको PAB आईडी छैन, यसलाई रूपान्तरण गर्न सकिँदैन"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "एमएस एक्सचेन्ज व्यक्तिगत ठेगाना पुस्तक फाइल (*.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr "<qt>एमएस एक्सचेन्ज व्यक्तिगत ठेगाना पुस्तक <b>%1</b> फेला पार्न सकेन ।</qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "अफगानिस्तान"
+
+#~ msgid "Albania"
+#~ msgstr "अल्बानिया"
+
+#~ msgid "Algeria"
+#~ msgstr "अल्जेरिया"
+
+#~ msgid "American Samoa"
+#~ msgstr "अमेरिकी सामोआ"
+
+#~ msgid "Andorra"
+#~ msgstr "एन्डोरा"
+
+#~ msgid "Angola"
+#~ msgstr "एङ्गोला"
+
+#~ msgid "Anguilla"
+#~ msgstr "एङ्गिला"
+
+#~ msgid "Antarctica"
+#~ msgstr "अन्टार्टिका"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "एन्टिगुवा र बार्बुडा"
+
+#~ msgid "Argentina"
+#~ msgstr "अर्जेन्टिना"
+
+#~ msgid "Armenia"
+#~ msgstr "आर्मेनिया"
+
+#~ msgid "Aruba"
+#~ msgstr "अरुबा"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "यासमोर र कार्टिएर द्वीप"
+
+#~ msgid "Australia"
+#~ msgstr "अष्ट्रेलिया"
+
+#~ msgid "Austria"
+#~ msgstr "अष्ट्रिया"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "अजरबैजान"
+
+#~ msgid "Bahamas"
+#~ msgstr "बहामास"
+
+#~ msgid "Bahrain"
+#~ msgstr "बहराइन"
+
+#~ msgid "Bangladesh"
+#~ msgstr "बङ्गलादेश"
+
+#~ msgid "Barbados"
+#~ msgstr "बार्बडस"
+
+#~ msgid "Belarus"
+#~ msgstr "बेलारुस"
+
+#~ msgid "Belgium"
+#~ msgstr "बेल्जियम"
+
+#~ msgid "Belize"
+#~ msgstr "बेलिज"
+
+#~ msgid "Benin"
+#~ msgstr "बेनिन"
+
+#~ msgid "Bermuda"
+#~ msgstr "बर्मुडा"
+
+#~ msgid "Bhutan"
+#~ msgstr "भुटान"
+
+#~ msgid "Bolivia"
+#~ msgstr "बोलिभिया"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "बोस्निया एन्ड हर्जगोभिना"
+
+#~ msgid "Botswana"
+#~ msgstr "बोट्सवाना"
+
+#~ msgid "Brazil"
+#~ msgstr "ब्राजिल"
+
+#~ msgid "Brunei"
+#~ msgstr "ब्रुनई"
+
+#~ msgid "Bulgaria"
+#~ msgstr "बुल्गेरिया"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "बुर्किना फासो"
+
+#~ msgid "Burundi"
+#~ msgstr "बुरुन्डी"
+
+#~ msgid "Cambodia"
+#~ msgstr "कम्बोडिया"
+
+#~ msgid "Cameroon"
+#~ msgstr "क्यामरुन"
+
+#~ msgid "Canada"
+#~ msgstr "क्यानडा"
+
+#~ msgid "Cape Verde"
+#~ msgstr "केप भर्दे"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "सैम्यान द्विप"
+
+#~ msgid "Central African Republic"
+#~ msgstr "केन्द्रीय अफ्रिकी गणराज्य"
+
+#~ msgid "Chad"
+#~ msgstr "चड"
+
+#~ msgid "Chile"
+#~ msgstr "चिली"
+
+#~ msgid "China"
+#~ msgstr "चीन"
+
+#~ msgid "Colombia"
+#~ msgstr "कोलम्बिया"
+
+#~ msgid "Comoros"
+#~ msgstr "कमोरस"
+
+#~ msgid "Congo"
+#~ msgstr "कङ्गो"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "प्रजातान्त्रिक गणराज्य कङ्गो"
+
+#~ msgid "Costa Rica"
+#~ msgstr "कोस्टारिका"
+
+#~ msgid "Croatia"
+#~ msgstr "क्रोएसिया"
+
+#~ msgid "Cuba"
+#~ msgstr "क्यूवा"
+
+#~ msgid "Cyprus"
+#~ msgstr "साइप्रस"
+
+#~ msgid "Czech Republic"
+#~ msgstr "चेक गणतन्त्र"
+
+#~ msgid "Denmark"
+#~ msgstr "डेनमार्क"
+
+#~ msgid "Djibouti"
+#~ msgstr "डिजिबुटी"
+
+#~ msgid "Dominica"
+#~ msgstr "डोमिनिक"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "डोमिनिकन गणराज्य"
+
+#~ msgid "Ecuador"
+#~ msgstr "इक्वेडर"
+
+#~ msgid "Egypt"
+#~ msgstr "इजिप्ट"
+
+#~ msgid "El Salvador"
+#~ msgstr "एल साल्भाडोर"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "इक्वेटोरिअल गिनेआ"
+
+#~ msgid "Eritrea"
+#~ msgstr "इरिट्रेआ"
+
+#~ msgid "Estonia"
+#~ msgstr "इस्टोनिया"
+
+#~ msgid "England"
+#~ msgstr "इङ्ल्यान्ड"
+
+#~ msgid "Ethiopia"
+#~ msgstr "इथिओपिया"
+
+#~ msgid "European Union"
+#~ msgstr "यूरोपेली संघ"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "फारोई द्वीप"
+
+#~ msgid "Fiji"
+#~ msgstr "फिजी"
+
+#~ msgid "Finland"
+#~ msgstr "फिनल्यान्ड"
+
+#~ msgid "France"
+#~ msgstr "फ्रान्स"
+
+#~ msgid "French Polynesia"
+#~ msgstr "फ्रेन्च पोलीनेसिया"
+
+#~ msgid "Gabon"
+#~ msgstr "गाबोन"
+
+#~ msgid "Gambia"
+#~ msgstr "जाम्बिया"
+
+#~ msgid "Georgia"
+#~ msgstr "जर्जीया"
+
+#~ msgid "Germany"
+#~ msgstr "जर्मनी"
+
+#~ msgid "Ghana"
+#~ msgstr "घाना"
+
+#~ msgid "Greece"
+#~ msgstr "ग्रिक"
+
+#~ msgid "Greenland"
+#~ msgstr "ग्रिनल्यान्ड"
+
+#~ msgid "Grenada"
+#~ msgstr "ग्रेनाडा"
+
+#~ msgid "Guam"
+#~ msgstr "ग्वाम"
+
+#~ msgid "Guatemala"
+#~ msgstr "ग्वाटेमाला"
+
+#~ msgid "Guinea"
+#~ msgstr "गिनेआ"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "गिनेआ-विसाउ"
+
+#~ msgid "Guyana"
+#~ msgstr "गुयाना"
+
+#~ msgid "Haiti"
+#~ msgstr "हाइटी"
+
+#~ msgid "Honduras"
+#~ msgstr "होन्डुरस"
+
+#~ msgid "Hong Kong"
+#~ msgstr "हङकङ"
+
+#~ msgid "Hungary"
+#~ msgstr "हङ्गेरी"
+
+#~ msgid "India"
+#~ msgstr "भारत"
+
+#~ msgid "Indonesia"
+#~ msgstr "इन्डोनेसिया"
+
+#~ msgid "Iran"
+#~ msgstr "इरान"
+
+#~ msgid "Iraq"
+#~ msgstr "इराक"
+
+#~ msgid "Ireland"
+#~ msgstr "आएरल्यान्ड"
+
+#~ msgid "Israel"
+#~ msgstr "इजरायल"
+
+#~ msgid "Italy"
+#~ msgstr "इटली"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "आइभरीकोष्ट"
+
+#~ msgid "Jamaica"
+#~ msgstr "जमैका"
+
+#~ msgid "Japan"
+#~ msgstr "जापान"
+
+#~ msgid "Jordan"
+#~ msgstr "जोर्डन"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "कजाकस्तान"
+
+#~ msgid "Kenya"
+#~ msgstr "केन्या"
+
+#~ msgid "Kiribati"
+#~ msgstr "क्रिबती"
+
+#~ msgid "Korea, North"
+#~ msgstr "उत्तर कोरिया"
+
+#~ msgid "Korea, South"
+#~ msgstr "दक्षीण कोरिया"
+
+#~ msgid "Kuwait"
+#~ msgstr "कुवेत"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "किर्गिस्तान"
+
+#~ msgid "Laos"
+#~ msgstr "लाओस"
+
+#~ msgid "Latvia"
+#~ msgstr "लाट्भिया"
+
+#~ msgid "Lebanon"
+#~ msgstr "लेबनन"
+
+#~ msgid "Lesotho"
+#~ msgstr "लेसोथो"
+
+#~ msgid "Liberia"
+#~ msgstr "लाइबेरिया"
+
+#~ msgid "Libya"
+#~ msgstr "लिबिया"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "लिचटेन्सटिन"
+
+#~ msgid "Lithuania"
+#~ msgstr "लिथुआनिया"
+
+#~ msgid "Luxembourg"
+#~ msgstr "लक्जेम्बर्ग"
+
+#~ msgid "Macau"
+#~ msgstr "मकाउ"
+
+#~ msgid "Madagascar"
+#~ msgstr "माडगास्कर"
+
+#~ msgid "Malawi"
+#~ msgstr "मालावी"
+
+#~ msgid "Malaysia"
+#~ msgstr "मलेशिया"
+
+#~ msgid "Maldives"
+#~ msgstr "माल्दिभ्स"
+
+#~ msgid "Mali"
+#~ msgstr "माली"
+
+#~ msgid "Malta"
+#~ msgstr "माल्टा"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "मार्शल द्वीप"
+
+#~ msgid "Martinique"
+#~ msgstr "मार्टिनिक्यु"
+
+#~ msgid "Mauritania"
+#~ msgstr "मउरिसानिया"
+
+#~ msgid "Mauritius"
+#~ msgstr "मरिसस"
+
+#~ msgid "Mexico"
+#~ msgstr "मेक्सिको"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "स्वतन्त्र राज्य माइक्रोनेसिया"
+
+#~ msgid "Moldova"
+#~ msgstr "मोल्डोभा"
+
+#~ msgid "Monaco"
+#~ msgstr "मोनाको"
+
+#~ msgid "Mongolia"
+#~ msgstr "मङ्गोलिया"
+
+#~ msgid "Montserrat"
+#~ msgstr "मन्टसेराट"
+
+#~ msgid "Morocco"
+#~ msgstr "मोरक्को"
+
+#~ msgid "Mozambique"
+#~ msgstr "मोजाम्बिक"
+
+#~ msgid "Namibia"
+#~ msgstr "नामिबिया"
+
+#~ msgid "Nauru"
+#~ msgstr "नाउरू"
+
+#~ msgid "Nepal"
+#~ msgstr "नेपाल"
+
+#~ msgid "Netherlands"
+#~ msgstr "नेदरल्यान्ड"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "नेदरल्यान्ड एन्टिल्स"
+
+#~ msgid "New Caledonia"
+#~ msgstr "न्यू क्यालेडोनिया"
+
+#~ msgid "New Zealand"
+#~ msgstr "न्युजल्यान्ड"
+
+#~ msgid "Nicaragua"
+#~ msgstr "निकारागुआ"
+
+#~ msgid "Niger"
+#~ msgstr "नाइजर"
+
+#~ msgid "Nigeria"
+#~ msgstr "नाइजेरिया"
+
+#~ msgid "Niue"
+#~ msgstr "निउ"
+
+#~ msgid "North Korea"
+#~ msgstr "उत्तर कोरिया"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "उत्तरी आएरल्यान्ड"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "उत्तरी मारिआना द्वीप"
+
+#~ msgid "Norway"
+#~ msgstr "नर्वे"
+
+#~ msgid "Oman"
+#~ msgstr "ओमान"
+
+#~ msgid "Pakistan"
+#~ msgstr "पाकिस्तान"
+
+#~ msgid "Palau"
+#~ msgstr "पालाउ"
+
+#~ msgid "Palestinian"
+#~ msgstr "प्यालेस्टिनियन"
+
+#~ msgid "Panama"
+#~ msgstr "पानामा"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "पपुआ न्यु गिनि"
+
+#~ msgid "Paraguay"
+#~ msgstr "पाराग्वे"
+
+#~ msgid "Peru"
+#~ msgstr "पेरु"
+
+#~ msgid "Philippines"
+#~ msgstr "फिलिपिन्स"
+
+#~ msgid "Poland"
+#~ msgstr "पोल्यान्ड"
+
+#~ msgid "Portugal"
+#~ msgstr "पोर्चुगल"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "पेर्टो रिको"
+
+#~ msgid "Qatar"
+#~ msgstr "कतार"
+
+#~ msgid "Romania"
+#~ msgstr "रोमानिया"
+
+#~ msgid "Russia"
+#~ msgstr "रसिया"
+
+#~ msgid "Rwanda"
+#~ msgstr "रुवान्डा"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "सेन्ट किट्टस तथा नेभिस"
+
+#~ msgid "St. Lucia"
+#~ msgstr "लुसिआ राज्य"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "सेन्ट विन्सेन्ट र ग्रेनाडिन्स"
+
+#~ msgid "San Marino"
+#~ msgstr "सान मारिनो"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "साओ टोम र प्रिन्सिप"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "साउदी अरेबिया"
+
+#~ msgid "Senegal"
+#~ msgstr "सेनेगल"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "सर्बिया र मोन्टेनेग्रो"
+
+#~ msgid "Seychelles"
+#~ msgstr "सेचिलिस"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "सियरालिओन"
+
+#~ msgid "Singapore"
+#~ msgstr "सिङ्गापुर"
+
+#~ msgid "Slovakia"
+#~ msgstr "स्लोभाकिया"
+
+#~ msgid "Slovenia"
+#~ msgstr "स्लोभेनिया"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "सोलोमन द्वीप"
+
+#~ msgid "Somalia"
+#~ msgstr "सोमालिया"
+
+#~ msgid "South Africa"
+#~ msgstr "दक्षीण अफ्रिका"
+
+#~ msgid "South Korea"
+#~ msgstr "दक्षीण कोरिया"
+
+#~ msgid "Spain"
+#~ msgstr "स्पेन"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "श्रीलङ्का"
+
+#~ msgid "Sudan"
+#~ msgstr "सुडान"
+
+#~ msgid "Suriname"
+#~ msgstr "सुरिनाम"
+
+#~ msgid "Swaziland"
+#~ msgstr "स्वाजिल्यान्ड"
+
+#~ msgid "Sweden"
+#~ msgstr "स्विडेन"
+
+#~ msgid "Switzerland"
+#~ msgstr "स्विजरल्यान्ड"
+
+#~ msgid "Syria"
+#~ msgstr "सिरिया"
+
+#~ msgid "Taiwan"
+#~ msgstr "ताइवान"
+
+#~ msgid "Tajikistan"
+#~ msgstr "ताजकिस्तान"
+
+#~ msgid "Tanzania"
+#~ msgstr "तान्जेनिया"
+
+#~ msgid "Thailand"
+#~ msgstr "थाइल्यान्ड"
+
+#~ msgid "Tibet"
+#~ msgstr "तिब्बत"
+
+#~ msgid "Togo"
+#~ msgstr "टोगो"
+
+#~ msgid "Tonga"
+#~ msgstr "टोङ्गा"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "ट्रिनिडाड एन्ड टोबागो"
+
+#~ msgid "Tunisia"
+#~ msgstr "ट्युनिसिया"
+
+#~ msgid "Turkey"
+#~ msgstr "टर्की"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "तुर्कमेनिस्तान"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "तुर्क र कैकोस द्वीप"
+
+#~ msgid "Tuvalu"
+#~ msgstr "टुवालु"
+
+#~ msgid "Uganda"
+#~ msgstr "युगान्डा"
+
+#~ msgid "Ukraine"
+#~ msgstr "युक्रेन"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "संयुक्त अरव इमिरेट्स"
+
+#~ msgid "United Kingdom"
+#~ msgstr "संयुक्त अधिराज्य"
+
+#~ msgid "United States"
+#~ msgstr "संयुक्त राज्य"
+
+#~ msgid "Uruguay"
+#~ msgstr "उरुग्वे"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "उज्वेकिस्तान"
+
+#~ msgid "Vanuatu"
+#~ msgstr "भ्यान्युतु"
+
+#~ msgid "Vatican City"
+#~ msgstr "भ्याटिकन सिटि"
+
+#~ msgid "Venezuela"
+#~ msgstr "भेनेजुयला"
+
+#~ msgid "Vietnam"
+#~ msgstr "भियतनाम"
+
+#~ msgid "Western Samoa"
+#~ msgstr "पश्चिमी सामोआ"
+
+#~ msgid "Yemen"
+#~ msgstr "यमन"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "युगोस्लाभिया"
+
+#~ msgid "Zaire"
+#~ msgstr "जइर"
+
+#~ msgid "Zambia"
+#~ msgstr "जाम्बिया"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "जिम्बावे"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "कुनै पनि होइन"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "शीर्षक:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "इमेल"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Address"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "ठेगाना"
+
+#~ msgid "Address:"
+#~ msgstr "ठेगाना:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "नयाँ..."
+
+#~ msgid "&General"
+#~ msgstr "साधारण"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "पाठ"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "उस्तै नामको फिल्ड पहिले नै अवस्थित छ, कृपया अर्को नाम रोज्नुहोस् ।"
+
+#~ msgid "Get From Blog"
+#~ msgstr "ब्लगबाट प्राप्त"
+
+#~ msgid "Unable to retrieve blog feed from '%1': %2"
+#~ msgstr " '%1': %2 बाट ब्लग पुन: प्राप्त गर्नुहोस्"
+
+#~ msgid "Blog feed at '%1' does not contain an image."
+#~ msgstr " '%1' को ब्लग फिडले छवि छवि समाविष्ट गर्दैन ।"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "वितरण सूची सम्पादक"
+
+#~ msgid "Yes"
+#~ msgstr "हो"
+
+#~ msgid "No"
+#~ msgstr "होइन"
+
+#~ msgid "New List..."
+#~ msgstr "नयाँ सूची..."
+
+#~ msgid "Rename List..."
+#~ msgstr "सूची पुन: नामकरण गर्नुहोस्..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "सम्पर्क हटाउनुहोस्"
+
+#~ msgid "Please enter name:"
+#~ msgstr "कृपया नाम प्रविष्ट गर्नुहोस्:"
+
+#~ msgid "The name already exists"
+#~ msgstr "यो नाम पहिलेनै अवस्थित छ"
+
+#~ msgid "Rename Distribution List"
+#~ msgstr "वितरण सूची पुन: नामकरण गर्नुहोस्"
+
+#~ msgid "The name already exists."
+#~ msgstr "यो नाम पहिलेनै अवस्थित छ ।"
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>वितरण सूची <b>%1</b> मेट्नुहुन्छ ?</qt>"
+
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "गणना गर्नुहोस्: %1 सम्पर्क"
+#~ msgstr[1] "गणना गर्नुहोस्: %1 सम्पर्क"
+
+#~ msgid "Select Email Address"
+#~ msgstr "इमेल ठेगाना चयन गर्नुहोस्"
+
+#~ msgid "Email Addresses"
+#~ msgstr "इमेल ठेगाना"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "विस्तारपट्टी देखाउनुहोस्"
+
+#~ msgid "Using codec '%1'"
+#~ msgstr "codec '%1' प्रयोग गर्दैछ"
+
+#~ msgid "Encoding"
+#~ msgstr "सङ्केतन"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "LDAP डाइरेक्टरीमा ठेगाना खोज्नुहोस्..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "सम्पर्क उपकरणपट्टी"
+
+#~ msgid "Check the categories whose members you want to export."
+#~ msgstr "तपाईँले निर्यात गर्न चाहेको सदस्यको कोटि जाँच गर्नुहोस् ।"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "ठेगाना पुस्तक पुस्तकचिनो"

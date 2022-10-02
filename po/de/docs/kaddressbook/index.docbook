@@ -1,0 +1,4329 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+  [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+  <!ENTITY docbook-reference SYSTEM "docbook-reference.docbook">
+  ]>
+
+<book id="kaddressbook" lang="&language;">
+
+<bookinfo>
+
+<title
+>Das Handbuch zu &kaddressbook;</title>
+    
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>Deutsches</firstname
+><surname
+>KDE-Übersetzerteam</surname
+><affiliation
+><address
+><email
+>kde-i18n-de@kde.org</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-07-20</date>
+<releaseinfo
+>5.10.3 (Anwendungen 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; ist Teil der Persönlichen Informationsverwaltung (Personal Information Management) von &kde;(<glossterm linkend="gloss-pim"
+>&PIM;</glossterm
+>). &kaddressbook; ist in erster Linie eine E-Mail-Adressverwaltung, aber es kann Ihnen auch helfen, die Telefonnummern Ihrer Freunde und Bekannten, Webseiten, Social-Media-Verbindungen, Postadressen und vieles mehr zu verwalten. Es ist Ihr zentraler Anlaufpunkt, um den Überblick über alle Personen zu behalten, die Sie kennen. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-Mail</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einführung</title>
+
+  <para
+>&kaddressbook; ist Teil der Persönlichen Informationsverwaltung (Personal Information Management) von &kde;(&PIM;). &kaddressbook; ist in erster Linie eine E-Mail-Adressverwaltung, aber es kann Ihnen auch helfen, die Telefonnummern Ihrer Freunde und Bekannten, Webseiten, Social-Media-Verbindungen, Postadressen und vieles mehr zu verwalten. Es ist Ihr zentraler Anlaufpunkt, um den Überblick über alle Personen zu behalten, die Sie kennen. </para>
+  
+  <screenshot id="screenshot-primary">
+  <screeninfo
+>Bildschirmfoto der Benutzeroberfläche von &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook00.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto der Benutzeroberfläche von &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Hauptfenster von &kaddressbook;. Die Menüleiste befindet sich oben, die Werkzeugleiste darunter und unten befinden sich drei Felder als Textbereich für Daten.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>&kaddressbook; ist in <glossterm linkend="gloss-kmail"
+>&kmail;</glossterm
+>, dem E-Mail-Programm von &kde; integriert. Sobald Sie also den den Namen eines Kontakts zu &kaddressbook; hinzugefügt haben, können Sie eine E-Mail an diese Person adressieren, indem Sie einfach einen Teil seines Namens eintippen. Oder wenn Sie eine E-Mail von einer neuen Person erhalten, können Sie die Adresse ein paar Mausklicks zu Ihrem Adressbuch hinzufügen. </para>
+  
+  <para
+>&kaddressbook; erlaubt Ihnen auch, mehrere getrennte Kontaktlisten in einer Vielzahl gängiger Adresslistenformate  zu führen, entweder auf Ihrer lokalen Festplatte oder über eine in der Cloud befindliche Ressource. Es unterstützt auch das Importieren und Exportieren von Kontaktdaten in den Formaten <glossterm linkend="gloss-csv"
+><filename class="extension"
+>.csv</filename
+></glossterm
+> (Comma Separated Values), <glossterm linkend="gloss-ldif"
+><filename class="extension"
+>.ldif</filename
+></glossterm
+> (<glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> Data Interchange Format) und <glossterm linkend="gloss-vcf"
+><filename class="extension"
+>.vcf</filename
+></glossterm
+> (Virtual Business Card Format). </para>
+
+<!--TODO Insert additional information about problem reporting here -->
+</chapter>
+
+<chapter id="getting-started">
+<title
+>Erste Schritte</title>
+
+  <para
+>Hier ist ein das Hauptfenster von &kaddressbook;, bevor irgendwelche Adressdaten eingegeben wurden. Als erstes möchten Sie vielleicht ein ein Adressbuch erstellen. Beachten Sie, dass das Adressbuch <quote
+>Persönliche Kontakte</quote
+> standardmäßig vorhanden ist. </para>
+ 
+  <screenshot id="screenshot-blank">
+      <screeninfo
+>Bildschirmfoto der <quote
+>leeren</quote
+> Benutzeroberfläche von &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook10.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto der <quote
+>leeren</quote
+> Benutzeroberfläche von &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Die  <quote
+>leere</quote
+> Benutzeroberfläche von &kaddressbook;, bevor irgendwelche zusätzlichen Adressbücher erstellt worden sind. Das Adressbuch <quote
+>Persönliche Kontakte</quote
+> ist bereits vorhanden, wenn &kaddressbook; zum ersten Mal installiert wird.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect1 id="how-to-add-a-new-address-book">
+  <title
+>Ein neues Adressbuch hinzufügen</title>
+  
+  <procedure id="procedure-add-a-new-addressbook">
+    
+  <step id="new-addressbook-dialog-step"
+><para
+>Öffnen Sie den Dialog <guilabel
+>Adressbuch hinzufügen </guilabel
+> von &kaddressbook; mit dem <menuchoice
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Neu&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="ordner-neu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch hinzufügen ...</guimenuitem
+></menuchoice
+> aus dem Menü. Ein Dialog wird angezeigt. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-an-address-book">
+  <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Adressbuch hinzufügen</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook20.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto des Dialogs <quote
+>Adressbuch hinzufügen</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <guilabel
+>Adressbuch hinzufügen </guilabel
+> von &kaddressbook;. Es werden fünf Cloud-Dienste unterstützt und zusätzlich drei lokale Speicheroptionen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+  
+  <step id="select-a-format-step"
+><para
+>Wählen Sie eine der Einstellungen aus dem Dialog. Mehrere dieser Einstellungen beziehen sich auf Daten in einer Cloud: <glossterm linkend="gloss-dav"
+><acronym
+>DAV</acronym
+></glossterm
+> Groupware (Distributed Authoring and Versioning, RFC4918), Google-Kontakte (Ihr Gmail-Konto), <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> &nbsp;Groupware-Server (<glossterm linkend="gloss-imap"
+>&IMAP;</glossterm
+>), &Microsoft; Exchange-Server <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;(Exchange Web Services, auf Servern mit MS-Software), und <glossterm linkend="gloss-group"
+>Open-Xchange-Groupware-Server</glossterm
+> &nbsp;&nbsp;(eine Open-Source-Alternative zu MS EWS). Wenn Sie bereits ein Konto bei einem oder mehreren dieser Cloud-basierten Ressourcen haben, können Sie diese Daten in &nbsp;&kaddressbook; integrieren, indem Sie einfach die Einstellung auswählen und dann Ihre Anmeldedaten eingeben.</para>
+  
+  <para
+>Die übrigen Einstellungen in diesem Dialog (Persönliche Kontakte, vCard-Ordner und vCard-Datei) erstellen alle Datensätze, die auf einem lokalen Speichermedium gespeichert werden. Jede dieser Einstellungen verwendet das gleiche Datenformat (<filename class="extension"
+>.vcf</filename
+> oder Virtual Card Format), unterschiedlich ist nur der Ordner, in dem die Daten gespeichert werden. Die Einstellungen <quote
+>Persönliche Kontakte</quote
+> und <quote
+>vCard-Ordner</quote
+> erzeugen eine erzeugen für jeden Kontakt, den Sie speichern, eine eigene Datei;. Die Einstellung <quote
+>vCard-Datei</quote
+> legt alle Daten in einer Datei ab. Es ist wahrscheinlich am einfachsten, mit dem vordefinierten Adressbuch <quote
+>Persönliche Kontakte</quote
+> zu beginnen. Sie werden keine weitere Adressbücher benötigen, es sei denn, Sie haben umfangreiche Kontaktlisten, die Sie getrennt halten möchten. </para
+></step>
+  
+  <step id="add-a-cloud-based-service-step"
+><para
+>Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf OK. Wenn Sie einen <glossterm linkend="gloss-cloud"
+>Cloud-Dienst</glossterm
+> ausgewählt haben, wird ein kurzer Dialog für die Kommunikation zwischen <glossterm linkend="gloss-akonadi"
+>&akonadi;</glossterm
+>, dem &PIM;-Speicherdienst und dem ausgewählten Cloud-Server angezeigt. Im folgenden der Dialog für ein Google-Konto (gmail.com), bei anderen Cloud-Diensten ist es ähnlich. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service">
+  <screeninfo
+>Ein Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook30.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog Google-Kontakte von &kaddressbook;. Beginnen Sie mit einem Klick auf <quote
+>Hinzufügen</quote
+>. Es erscheint ein neuer Dialog. Sobald Ihre Anmeldeinformationen akzeptiert wurden, erscheint dieser Dialog erneut und Sie klicken auf &nbsp;<guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Wenn Sie &kaddressbook; die lokal zwischengespeicherte Kopie Ihrer Kontaktliste automatisch aktualisieren soll, wählen Sie <guibutton
+>Aktualisierungsintervall einschalten</guibutton
+>,  bevor Sie auf Sie auf &nbsp;<guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> klicken.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step2">
+  <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook31.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein zweites Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Ein weiteres Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;. Geben Sie Ihre „gmail.com“-Adresse ein und klicken Sie auf <guibutton
+>&nbsp;Weiter&nbsp;</guibutton
+>. Sie werden dann aufgefordert, Ihr Passwort für Gmail einzugeben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step3">
+  <screeninfo
+>Ein drittes Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook32.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein drittes Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Noch ein Bildschirmfoto des Dialogs Google-Kontakte von &kaddressbook;. Name und Passwort für Ihr Konto wurde vom Google-Server akzeptiert. Lesen Sie den Datenschutzhinweis und drücken Sie <guibutton
+>&nbsp;Zulassen&nbsp;</guibutton
+>, dann <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> in dem Dialog, mit dem Sie begonnen haben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Geben Sie Ihre Anmeldedaten wie oben dargestellt ein. Ihre Cloud-basierte Kontaktliste ist nun in &kaddressbook; integriert. </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-completed">
+  <screeninfo
+>Das &kaddressbook;-Fenster, nachdem ein Gmail-Konto hinzugefügt wurde.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook33.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Das &kaddressbook;-Fenster, nachdem ein Gmail-Konto hinzugefügt wurde.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Noch ein Bildschirmfoto des Hauptfensters von &kaddressbook;, nachdem die Google-Kontakte hinzugefügt wurden. Sie können nun Ihre Gmail-Kontakte in &kaddressbook; bearbeiten,</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Wie das vorherige Bildschirmfoto zeigt, können Sie nach der Registrierung von &kaddressbook; als vertrauenswürdige Ressource Ihre Gmail-Kontakte mit &kaddressbook; anzeigen und bearbeiten. Natürlich können Sie Ihre Kontakte auch weiterhin über einen Webbrowser verwalten. </para
+> 
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  </step>
+   
+  <step id="add-a-local-addressbook-step"
+><para
+>Wenn Sie in <link linkend="select-a-format-step"
+>Schritt 2</link
+> oben eine lokale Adressbuchoption gewählt haben, folgt ein anderer Dialog. </para>
+      
+  <para>
+  <screenshot id="screenshot-add-a-personal-addressbook">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Persönliche Kontakte</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook34.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto des Dialogs <quote
+>Persönliche Kontakte</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Persönliche Kontakte</quote
+> von &kaddressbook;. Sie können angeben welcher Ordner Ihre Daten enthalten soll und ob Sie Schreibrechte auf diese Ressource haben. Für die meisten Benutzer sind die oben gezeigten Standardeinstellungen ausreichend.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Ändern Sie im Dialog <quote
+>Persönliche Kontakte</quote
+> die Einstellungen und klicken Sie dann auf <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Es wird neues Adressbuch wird im Hauptfenster von &kaddressbook; angezeigt. </para>
+  
+  <para>
+  <screenshot id="screenshot-personal-addressbook-has-been-added">
+      <screeninfo
+>Bildschirmfoto des Hauptfensters von &kaddressbook; mit einem leeren Adressbuch <quote
+>Persönliche Kontakte</quote
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook35.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto des Hauptfensters von &kaddressbook; mit einem leeren Adressbuch <quote
+>Persönliche Kontakte</quote
+></phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Hauptfenster von &kaddressbook;, nachdem das Adressbuch <quote
+>Persönliche Kontakte</quote
+> neu erstellt wurde.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step
+>    
+  
+  </procedure>
+  </sect1>
+  
+  <sect1 id="how-to-add-a-new-contact">
+  <title
+>Neuen Kontakt hinzufügen</title
+>    
+  
+  <procedure id="procedure-add-a-new-contact">
+    
+  <step id="new-contact-dialog-step-1"
+><para
+>Öffnen Sie den Dialog <quote
+>Neuer Kontakt</quote
+> von &kaddressbook;, indem Sie auf <guibutton
+>&nbsp;&plus;&nbsp;Neuer Kontakt&nbsp;</guibutton
+> in der Werkzeugleiste klicken.</para>
+      
+  <para>
+  <screenshot id="screenshot-new-contact-dialog">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Neuer Kontakt</quote
+> &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto des Dialogs <quote
+>Neuer Kontakt</quote
+> &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+    <para
+>Der Dialog <quote
+>Neuer Kontakt</quote
+> von &kaddressbook;, nach dem Sie auf <guibutton
+>&nbsp;&plus;&nbsp;Neuer Kontakt&nbsp;</guibutton
+> in der Werkzeugleiste geklickt haben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  </step>
+  
+  <step id="procedure-new-contact-data-items"
+><para
+>Wie Sie aus dem vorherigen Bildschirmfoto ersehen können,gibt es im Dialog <quote
+>Neuer Kontakt</quote
+> die Möglichkeit, mehrere verschiedene Daten einzugeben. Zusätzliche Daten können auf den Karteikarten <quote
+>Ort</quote
+>, <quote
+>Geschäft</quote
+>, <quote
+>Persönliches</quote
+>, <quote
+>Notizen</quote
+>, <quote
+>Eigenen Felder</quote
+>, und <quote
+>Verschlüsselungseinstellungen</quote
+> eingegeben werden, wie in <link linkend="editing-contact-data"
+>Kapitel 4</link
+> erklärt werden. Beginnen Sie mit der Eingabe der Daten auf der Karteikarte <quote
+>Kontakt</quote
+>.</para>
+  </step
+>    
+  
+  <step id="procedure-entering-basic-new-contact-data"
+><para
+>Wenn Sie mehr als ein Adressbuch angelegt haben, verwenden Sie das Auswahlfeld <quote
+>Hinzufügen zu:</quote
+>, um das Adressbuch auszuwählen, zu dem der neue Kontakt hinzugefügt werden soll. Geben Sie dann den Namen des neuen Kontakts in das Eingabefeld <quote
+>Name</quote
+> und seine E-Mail-Adresse in das Eingabefeld <quote
+>E-Mail</quote
+> ein. Wenn Sie besondere Namensdaten dieses Kontakts festlegen möchten, klicken Sie auf <guibutton
+>&nbsp;...&nbsp;</guibutton
+> rechts neben dem Eingabefeld <quote
+>Name</quote
+>. Wenn Sie weitere E-Mail-Adressen für diese Person hinzufügen möchten, klicken Sie auf <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> rechts neben dem Eingabefeld <quote
+>E-Mail</quote
+> und ein weiteres E-Mail-Eingabefeld wird angezeigt. Um eine E-Mail-Adresse zu löschen, klicken Sie auf <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>.- </para
+></step
+>    
+  
+  <step id="procedure-additional-new-contact-data"
+><para
+>Sie können auch einen Spitznamen, eine oder mehrere Telefonnummern, mehrere Instant-Messaging-Dienste und mehrere Webseiten jedem Kontakt in einem Adressbuch zuordnen, wie im <link linkend="editing-contact-data"
+>Kapitel 4</link
+> erläutert. Sie können einstellen, wie &kmail; E-Mails Ihrer Kontakte darstellt. Im <link linkend="integration-with-other-kde-programs"
+>Kapitel 3</link
+> finden Sie eine ausführlichere Erklärung. </para
+></step>
+
+  <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
+  
+  </procedure>
+  </sect1>
+  
+</chapter>
+
+<chapter id="integration-with-other-kde-programs">
+<title
+>Integration mit anderen &kde;-Programmen</title>
+  
+  <sect1 id="integration-overview">
+  <title
+>Integrationsübersicht - &kmail;</title>
+  
+  <para
+>Weil &kaddressbook;  ein wesentlicher Bestandteil von &PIM;, ist, wurde es in &nbsp;&kmail; und auch in &korganizer; integriert. Hier ist ein kurzer Blick auf die Schnittstelle zwischen &kaddressbook; und diesen beiden Programmen. </para
+>    
+
+  <sect2 id="starting-kaddressbook-from-kmail-tools">
+  <title
+>Aufruf von &kaddressbook; aus dem Menü Extras in &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-kmail-tools-menu">
+      <screeninfo
+>Ein Bildschirmfoto vom Menü <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>Adressbuch</guimenuitem
+></menuchoice
+> in &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook50.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto vom Menü <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>Adressbuch</guimenuitem
+></menuchoice
+> in &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Aufruf von &kaddressbook;  aus dem Menü <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch</guimenuitem
+></menuchoice
+> in &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Wenn Sie den Eintrag für einen Ihrer Kontakte einsehen oder aktualisieren möchten, während Sie eine E-Mail-Nachricht mit &kmail; lesen oder verfassen, dann klicken Sie mit der &LMBn; auf <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch</guimenuitem
+> </menuchoice
+>. Dann wird &kaddressbook; gestartet und ermöglicht einen schnellen Zugriff auf die Kontaktdaten, die Sie anzeigen oder ändern möchten.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="autocompletion-feature-on-new-email">
+  <title
+>Kontaktdaten aus &kaddressbook; im Editorfenster von &kmail; auswählen</title>
+  
+  <para>
+  <screenshot id="screenshot-autocompletion-feature">
+      <screeninfo
+>Ein Bildschirmfoto der automatischen Vervollständigung im Editorfenster von &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook51.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto der automatischen Vervollständigung im Editorfenster von &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Automatische Vervollständigung von &kaddressbook; im Editorfenster von &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Wenn Sie eine neue E-Mail-Nachricht verfassen, hilft Ihnen &kmail; bei der Suche nach der vollständige E-Mail-Adresse des Empfängers, indem es eine Liste mit Übereinstimmungen präsentiert, die aus dem Inhalt von &kaddressbook; und aus Ihren E-Mail-Archiven stammen. Klicken Sie einfach mit der &LMBn; auf einen Eintrag in der Liste, um diese E-Mail-Adresse zu verwenden.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2  id="recipient-selection-dialog">
+  <title
+>Der Dialog Empfänger auswählen in &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-recipient-selection">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs Empfänger auswählen im Editorfenster von &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook52.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto des Dialogs Empfänger auswählen im Editorfenster von &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Auswahl von mehreren Adressen im Dialog Empfänger auswählen im Editorfenster von &kmail;</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Wenn Sie eine neue E-Mail-Nachricht an mehrere Empfänger adressieren, bietet &kmail; eine bequeme Methode zur Auswahl mehrerer Adressaten aus den Kontakten, die Sie mit &kaddressbook; gespeichert haben. Klicken Sie einfach mit der linken Maustaste auf  <guibutton
+>&nbsp;Auswählen ...&nbsp;</guibutton
+>, um eine Auswahlfeld zu öffnen, das alle Kontakte in den ausgewählten Adressbüchern auflistet. Blättern Sie dann durch die Liste oder verwenden Sie das Feld <quote
+>Suchen:</quote
+>,  wählen den gewünschten Empfänger aus und klicken Sie mit der linken Maustaste auf &nbsp;<guibutton
+>&nbsp;Hinzufügen als&nbsp;</guibutton
+>, <guibutton
+>&nbsp;Als „CC“ hinzufügen&nbsp;</guibutton
+>, oder <guibutton
+>&nbsp;Als „BCC“ hinzufügen&nbsp;</guibutton
+>, um diese Person in die Liste der E-Mail-Empfänger für Ihre neue Nachricht hinzuzufügen. Wählen Sie <guibutton
+>&nbsp;Als „Antwort an“ hinzufügen&nbsp;</guibutton
+>, um diese Adresse in Ihre Nachricht als <quote
+>Antwortadresse</quote
+> einzufügen.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="new-contact-creation-interface">
+  <title
+>Kontextmenü Neuer Kontakt in &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation">
+      <screeninfo
+>Ein Bildschirmfoto des Kontextmenüs Neuer Kontakt in der Nachrichtenliste von &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook53.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto des Kontextmenüs Neuer Kontakt in der Nachrichtenliste von &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Aufruf des Kontextmenüs Neuer Kontakt in der Nachrichtenliste von &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Wenn Sie eine E-Mail-Nachricht von jemandem erhalten, dessen Kontaktdaten sich noch nicht in Ihrem Adressbuch befinden, können Sie mit &kmail; ganz einfach einen neuen Kontakt erstellen. Klicken Sie mit der &RMB;  auf eine und ein Kontextmenü wird angezeigt. Wählen Sie <guimenuitem
+>&nbsp;&plus; Zum Adressbuch hinzufügen&nbsp;</guimenuitem
+>, um die ausgewählte E-Mail-Adresse zu einem Ihrer Adressbücher hinzuzufügen. Wenn die Kontaktdaten dieser Person sich bereits in Ihrem Adressbuch befinden, aber hier eine neue E-Mail-Adresse verwendet wird,  klicken Sie auf <guimenuitem
+>&nbsp;&plus; Zu vorhandenem Kontakt hinzufügen&nbsp;</guimenuitem
+>, dann können Sie in &kaddressbook; den Kontakt auswählen, für den die neue E-Mail-Adresse hinzugefügt werden soll.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step2">
+      <screeninfo
+>Ein Bildschirmfoto des daraufhin erscheinenden Dialogs zum Anlegen eines neuen Kontakts.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook54.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto des daraufhin erscheinenden Dialogs zum Anlegen eines neuen Kontakts.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Auswahl des Adressbuchs, in dem der neue Kontakt erstellt wird.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Sie wählen dann das Adressbuch, zu dem der neue Kontakt hinzugefügt werden soll.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step3">
+      <screeninfo
+>Ein weiteres Bildschirmfoto des daraufhin erscheinenden Dialogs zum Anlegen eines neuen Kontakts.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook55.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein weiteres Bildschirmfoto des daraufhin erscheinenden Dialogs zum Anlegen eines neuen Kontakts.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Entscheiden Sie, ob Sie den neu erstellten Kontakt jetzt oder später bearbeiten möchten.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Jetzt können Sie auch den neu hinzugefügten <link linkend="editing-contact-data"
+>Kontakt bearbeiten</link
+> &nbsp;möchten. Klicken Sie auf <guibutton
+>&nbsp;✔&nbsp;Ja&nbsp;</guibutton
+>, wenn Sie weitere Daten dem neuen Kontakt sofort hinzufügen möchten.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+    
+  </sect1>
+  
+  <sect1 id="korganizer-overview">
+  <title
+>Integration von &kaddressbook; in &korganizer;</title>
+  
+  <para
+>In &korganizer;, dem Terminplanungs- und Kalenderverwaltungsprogramm von &kde; , können Sie E-Mail-Nachrichten an Personen senden, die Sie zu einer Besprechung einladen möchten. Dazu gibt es zwei Schnittstellen zu &kaddressbook;.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb --> 
+  
+  <para>
+  <screenshot id="screenshot-inviting-one-attendee">
+      <screeninfo
+>Ein Bildschirmfoto der Karteikarte Teilnehmer in &korganizer;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook60.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Ein Bildschirmfoto der Karteikarte Teilnehmer in &korganizer;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Einen einzelnen Teilnehmer zu einer Besprechung in &korganizer; hinzufügen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Die erste Schnittstelle ist genau wie die <link linkend="autocompletion-feature-on-new-email"
+>Automatische Vervollständigung</link
+> von &kmail;. Geben Sie einfach den Namen der Person ein, die Sie einladen möchten, und eine Liste mit möglichen Übereinstimmungen, wie oben abgebildet.</para
+>  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-inviting-multiple-attendees">
+      <screeninfo
+>Ein Bildschirmfoto der Karteikarte Teilnehmer in &korganizer;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook61.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte Teilnehmer in &korganizer;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Mehrere Teilnehmer zu einer Besprechung in &korganizer; hinzufügen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Die zweite Schnittstelle ist genau wie der <link linkend="recipient-selection-dialog"
+>Empfängerauswahldialog</link
+> von &kmail;. Wenn Sie mit der linken Maustaste auf <guibutton
+>&nbsp;Teilnehmer auswählen ...&nbsp;</guibutton
+> klicken, wird eine durchsuchbare Liste der Kontakte in allen Ihren Adressbüchern angezeigt, wie das vorherige Bildschirmfoto zeigt.</para>
+  
+  </sect1>
+  
+</chapter>
+
+<chapter id="editing-contact-data">
+<title
+>Kontaktdaten bearbeiten oder hinzufügen</title>
+
+  <sect1 id="edit-basic-info">
+  <title
+>Grundlagen</title>
+  
+  <para
+>Wenn Sie auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt hinzufügen&nbsp;&nbsp;</guibutton
+> in der Werkzeugleiste von &kaddressbook; klicken, wird der folgende Dialog angezeigt. Wenn Sie auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt bearbeiten&nbsp;&nbsp;</guibutton
+> klicken, erscheint ein ähnlicher Dialog. Der einzige Unterschied besteht darin, dass das Auswahlfeld <quote
+>Hinzufügen zu:</quote
+> nicht als Teil des Dialogs <quote
+>Bearbeiten</quote
+> angezeigt wird. Deshalb werden beide Funktionen in diesem Kapitel behandelt: Sie sind praktisch identisch.</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog-2">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Neuer Kontakt</quote
+> &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Bildschirmfoto des Dialogs <quote
+>Neuer Kontakt</quote
+> &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Kontakt hinzufügen</quote
+> von &kaddressbook;, nach dem Sie auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Kontakt hinzufügen&nbsp;&nbsp;</guibutton
+> in der Werkzeugleiste geklickt haben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect2 id="edit-contact-tab">
+  <title
+>Die Karteikarte Kontakt</title>
+  
+  <para
+>Im Kapitel <link linkend="how-to-add-a-new-contact"
+>Neuen Kontakt hinzufügen</link
+>wurde beschrieben, wie die wichtigsten Daten wie Name und E-Mail für einen neuen Kontaktdatensatz eingegeben werden. Hier folgt eine Beschreibung der anderen Datenfelder auf der Karteikarte <quote
+>Kontakt</quote
+> im Dialog<guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Kontakt hinzufügen&nbsp;&nbsp;</guibutton
+>.</para>
+  
+  <variablelist>
+      
+    <varlistentry
+><term
+>Telefon</term
+><listitem
+><para
+>Sie können eine oder mehrere Telefonnummern für jeden Kontakt eingeben. Verwenden Sie <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> und <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> Felder für Telefonnummern hinzufügen oder löschen. Im Auswahlfeld  neben den Telefonnummern können Sie fünfzehn Kategorien festlegen, Privat, Dienstlich, Mobil, Autotelefon, <glossterm linkend="gloss-isdn"
+> <acronym
+>ISDN</acronym
+></glossterm
+>, <glossterm linkend="gloss-pcs"
+><acronym
+>PCS</acronym
+></glossterm
+>, &etc;</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Messaging</term
+><listitem
+><para
+>Hier können für jeden Kontakt einen oder mehrere des Instant-Messaging-Dienstes eintragen. Verwenden Sie <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> und <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>, um Felder hinzuzufügen oder zu löschen. Im Auswahlfeld neben den Benutzerkennungen können Sie aus dreizehn Kategorien von IM-Diensten wählen: <glossterm linkend="gloss-aim"
+>AIM</glossterm
+>, Facebook, <glossterm linkend="gloss-gadu-gadu"
+>Gadu-Gadu</glossterm
+>, Google Talk, <glossterm linkend="gloss-gpws"
+>GroupWise</glossterm
+>, <glossterm linkend="gloss-icq"
+><acronym
+>ICQ</acronym
+></glossterm
+>, <glossterm linkend="gloss-irc"
+>&irc;</glossterm
+>, <glossterm linkend="gloss-jabber"
+>Jabber</glossterm
+>, <glossterm linkend="gloss-mnwhl"
+>Meanwhile</glossterm
+>, <glossterm linkend="gloss-sms"
+><acronym
+>SMS</acronym
+></glossterm
+>, Skype, Twitter und Yahoo. MSN Messenger ist noch in der Liste der IM-Dienste enthalten, funktioniert aber seit 2014 nicht mehr.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Web</term
+><listitem
+><para
+>Sie können eine oder mehrere &URL;s von Webseiten für einen Kontakt eintragen. Verwenden Sie <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> und <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> , um Felder hinzufügen oder zu löschen. Im Auswahlfeld neben den Webseiten können Sie jedem Eintrag verschiedene Arten von Webadressen zuweisen: Privat, Dienstlich, Profil und Sonstige.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Stichwörter</term
+><listitem
+><para
+>Sie können dem Kontakt ein oder mehrere beliebige Stichwörter zuordnen. Verwenden Sie <guibutton
+>&nbsp;...&nbsp;</guibutton
+>, um den unten abgebildeten Dialog zur Erstellung und Einrichtung von Stichwörtern aufzurufen.</para
+></listitem>
+    </varlistentry>
+      
+  </variablelist
+> 
+  
+  <para>
+  <screenshot id="screenshot-add-tags-dialog">
+      <screeninfo
+>Dialog <quote
+>Stichwörter</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook71.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Dialog <quote
+>Stichwörter</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Stichwörter verwalten</quote
+> von &kaddressbook;, nach dem Sie auf <guibutton
+>&nbsp;..&nbsp;</guibutton
+> neben <quote
+>Stichwörter</quote
+> geklickt haben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+    <varlistentry
+><term
+>Stichwörter </term
+><listitem
+><para
+>Verwenden Sie den Knopf <guibutton
+>&nbsp;Neues Stichwort erstellen&nbsp;</guibutton
+> und das Dateneingabefeld auf der linken Seite, um Ihre individuelle Liste von Stichwörtern zu erstellen. Wählen Sie Sie die Stichwörter für diesen Kontakt aus der Liste im Dialog. Drücken Sie <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>, um die ausgewählten Stichwörter zu diesem Kontakt hinzuzufügen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Blog-Quelle</term
+><listitem
+><para
+>Tragen Sie in dieses Feld die &URL; des Blog für diesen Kontakt ein.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Nachrichten von diesem Kontakt anzeigen als</term
+><listitem
+><para
+>Überschreiben Sie mit diesem Auswahlfeld die Einstellungen zur Anzeige von Nachrichten aus dem Einrichtungsdialog <guibutton
+>&nbsp;Datenschutz &amp; Sicherheit&nbsp;</guibutton
+> von &kmail;. Wählen Sie <quote
+>Standard</quote
+>, dann wird die Einstellung aus &kmail; verwendet. Wählen Sie <quote
+>Einfacher Text</quote
+> oder <quote
+>HTML</quote
+>, wenn Sie das Standardverhalten von &kmail; für eine Nachricht von diesem Kontakt überschreiben möchten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Inhalte von entfernten Servern zulassen ...</term
+><listitem
+><para
+>Überschreiben Sie mit dieser Auswahl die Einstellungen zur Anzeige von Nachrichten aus dem Einrichtungsdialog <guibutton
+>&nbsp;Datenschutz &amp; Sicherheit&nbsp;</guibutton
+> von &kmail; für eine Nachricht von diesem Kontakt erhalten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+></term
+><listitem
+><para
+>Mit diesem Knopf werden die Änderungen gespeichert. Dieser Knopf hat auf allen sieben Karteikarten im Dialog <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt hinzufügen&nbsp;&nbsp;</guibutton
+> die gleiche Funktion.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;⦸&nbsp;Abbrechen&nbsp;</guibutton
+></term
+><listitem
+><para
+>Hiermit wird der Dialog <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Kontakt hinzufügen&nbsp;&nbsp;</guibutton
+> geschlossen, ohne die Änderungen zu speichern. Dieser Knopf hat auf allen sieben Karteikarten im Dialog <quote
+>Kontakt hinzufügen</quote
+> die gleiche Funktion.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-location-tab">
+  <title
+>Die Karteikarte Ort</title>
+  
+  <para
+>Auf dieser Karteikarte können Sie eine oder mehrere Postanschriften für einen Kontakt eingeben.</para>
+      
+  <para>
+  <screenshot id="screenshot-location-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Ort</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook72.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Ort</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Ort</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  <variablelist>
+    <varlistentry
+><term
+>Auswahlfeld</term
+><listitem
+><para
+>Wählen Sie aus dieser Liste eine Kategorie (<quote
+>Privat</quote
+>, <quote
+>Dienstlich</quote
+>, <quote
+>Paketanschrift</quote
+> &etc;) für jede Postanschrift für diesen Kontakt aus.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Straße / Postfach / Postleitzahl / Ort / Region</term
+><listitem
+><para
+>Nutzen Sie diese Felder für Adressdaten wie Straße, Postfach, Postleitzahl, Ort und Region.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Land</term
+><listitem
+><para
+>In diesem Auswahlfeld können Sie ein Land von Afghanistan bis Zimbabwe auswählen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Dies ist die bevorzugte Adresse</term
+><listitem
+><para
+>Aktivieren Sie dieses Ankreuzfeld, um die bevorzugte oder standardmäßige Postanschrift anzugeben.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;Adresse hinzufügen&nbsp;</guibutton
+></term
+><listitem
+><para
+>Wenn Sie die Eingabe der Adressdaten beendet haben, klicken auf diesen Knopf, um eine neue Adresse zu den im Fenster rechts angezeigten Adressen hinzuzufügen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Das Symbol <inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> im rechten Fenster</term>
+    <listitem
+><para
+>Klicken Sie mit der &LMBn; auf dieses Symbol, um die zugehörigen Adressdaten zu bearbeiten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Das Symbol <inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+> im rechten Fenster</term>
+    <listitem
+><para
+>Klicken Sie mit der &LMBn; auf dieses Symbol, um die zugehörigen Adressdaten zu löschen.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  </sect2>
+  
+  <sect2 id="edit-business-tab">
+  <title
+>Die Karteikarten Geschäftlich, Persönliches und Notizen</title>
+  
+  <para
+>Die nächsten drei Karteikarten im Dialog <quote
+>Kontakt hinzufügen</quote
+> sind noch einfacher als die  Karteikarte <quote
+>Ort</quote
+>. Hier können Sie geschäftliche und berufliche Informationen zu dieser Person, ein paar persönliche Angaben und verschiedene frei formulierte Notizen eintragen.</para>
+  
+  <para>
+  <screenshot id="screenshot-business-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Geschäftlich</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook73.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Geschäftlich</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Geschäftlich</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Auf der oben angezeigten Karteikarte <quote
+>Geschäftlich</quote
+>, können Sie einige zusätzliche Details über die beruflichen und geschäftlichen Verbindungen dieser Person eintragen. In alle Felder können Sie beliebige Texte eintragen. Klicken auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="dokument-öffnen.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> öffnet einen Dateiauswahldialog, um eine Datei mit den <quote
+>Frei/Belegt</quote
+>-Daten für diesen Kontakt zu öffnen.</para>
+  
+  <para
+>Beachten Sie, dass Sie die Telefonnummer Ihres Geschäftspartners auf der Karteikarte <quote
+><link linkend="edit-contact-tab"
+>Kontakt</link
+></quote
+> eintragen sollten. Analog dazu wird seine Büroadresse auf der Karteikarte <quote
+>Ort</quote
+> eingetragen, wie in diesem <link linkend="edit-location-tab"
+>Abschnitt</link
+> beschrieben.</para
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-personal-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Persönliches</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook74.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Persönliches</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Persönliches</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Auf dieser Karteikarte können Sie einige persönliche Daten eingeben: den Geburtstag dieser Person, ihren Hochzeitstag und den Namen des Partners oder der Lebensgefährtin. Klicken Sie auf eine der Knöpfe, &eg;, <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="view-calendar-birthday.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>&nbsp;, um das Geburtsdatum oder den Hochzeitstag einzugeben. </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-notes-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Notizen</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook75.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Notizen</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Notizen</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+></para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Auf der Karteikarte <quote
+>Notizen</quote
+> können Sie beliebige Daten zu einem Kontakt eingeben.</para>
+      
+  </sect2
+>    
+
+  </sect1
+>  
+
+  <sect1 id="edit-advanced-info">
+  <title
+>Die schwierigen Aufgaben</title>
+  
+  <para
+>&kaddressbook; bietet neben den einfachen Funktionen, die im vorigen Abschnitt beschrieben wurden, einige komplexere Funktionen zur Datenspeicherung.</para>
+
+  <sect2 id="edit-custom-tab">
+  <title
+>Die Karteikarte Eigene Felder</title>
+
+  <para
+>Wenn Ihnen die in &kaddressbook; benutzen Felder nicht ausreichen, dann können Sie können Sie die Karteikarte <quote
+>Eigene Felder</quote
+> verwenden, um beliebige Datenfelder zu definieren.</para>
+  
+  <para>
+  <screenshot id="screenshot-custom-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Eigene Felder</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook76.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Eigene Felder</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Eigene Felder</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Auf dieser Karteikarte können Sie beliebige eigene Felder für Kontakte definieren.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-crypto-tab">
+  <title
+>Die Karteikarte Verschlüsselungseinstellungen</title>
+  
+  <para
+>Möchten Sie eine vertrauliche E-Mail-Nachricht senden? &kaddressbook; bietet Ihnen eine einfache Möglichkeit, kryptografische Schlüssel für Nachrichten mit einem Kontakt zu erstellen.</para>
+  
+  <para>
+  <screenshot id="screenshot-crypto-tab">
+      <screeninfo
+>Die Karteikarte <quote
+>Verschlüsselungseinstellungen</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook77.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Die Karteikarte <quote
+>Verschlüsselungseinstellungen</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Karteikarte <quote
+>Verschlüsselungseinstellungen</quote
+> in &kaddressbook;, eine Seite des Dialogs <quote
+>Kontakt hinzufügen</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+<variablelist>
+    <varlistentry
+><term
+>Erlaubte Protokolle</term
+><listitem
+><para
+>Wählen Sie aus, welchen Verschlüsselungsmodus Sie verwenden für Nachrichten an diesen Kontakt verwenden möchten: <glossterm linkend="gloss-inline-pgp"
+>Inline OpenPGP</glossterm
+>, <glossterm linkend="gloss-open-pgp"
+>OpenPGP/&MIME;</glossterm
+>, <glossterm linkend="gloss-mime"
+><acronym
+>S/MIME</acronym
+> </glossterm
+> oder <glossterm linkend="gloss-opaque"
+><acronym
+>S/MIME</acronym
+> Opaque</glossterm
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Bevorzugter OpenPGP-Verschlüsselungsschlüssel:</term
+><listitem
+><para
+>Verwenden Sie <guibutton
+>&nbsp;Ändern..&nbsp;</guibutton
+>, um aus einer Liste der verfügbaren <glossterm linkend="gloss-pgp"
+>PGP</glossterm
+>-Schlüssel auszuwählen, wenn Sie OpenPGP benutzen000. Mit <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> können Sie einen zuvor ausgewählten Schlüssel löschen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Bevorzugtes <acronym
+>S/MIME</acronym
+>-Verschlüsselungszertifikat:</term>
+    <listitem
+><para
+>Verwenden Sie <guibutton
+>&nbsp;Ändern...&nbsp;</guibutton
+>, um aus einer Liste der verfügbaren Zertifikate auszuwählen. Mit <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> können Sie einen zuvor ausgewählten Schlüssel löschen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Einstellungen für Nachrichten - Signieren:</term
+><listitem
+><para
+>In diesem Auswahlfeld können Sie die Signatur-Methode für Nachrichten an diesen Kontakt festlegen: Nie signieren / Immer signieren / Signieren, wenn möglich / Nachfragen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Einstellungen für Nachrichten - Verschlüsseln:</term
+><listitem
+><para
+>In diesem Auswahlfeld können Sie die Verschlüsselungs-Methode für Nachrichten an diesen Kontakt festlegen: Nie verschlüsseln / Immer verschlüsseln / Verschlüsseln, wenn möglich / Nachfragen.</para
+></listitem>
+    </varlistentry>
+    
+</variablelist
+>  
+  
+  </sect2>
+
+  </sect1>
+  
+</chapter>
+
+<chapter id="commands">
+<title
+>Befehlsreferenz</title>
+    
+  <sect1 id="menu-bar-items">
+  <title
+>Die Menüleiste</title>
+  
+  <para
+>Hier finden Sie eine Übersicht über die sieben Menüs in der Menüleiste von &kaddressbook;.</para>
+  
+
+  <sect2 id="the-file-menu">
+  <title
+>Das Menü Datei</title>
+  
+  <para>
+  <screenshot id="screenshot-file-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Datei</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook80.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Datei</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Datei</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Datei</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Datei</guimenu
+></menuchoice
+> finden Sie sieben Einträge, davon drei mit mehreren Aktionen.</para
+> 
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Neu&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Neuer Kontakt</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Dies hat genau die gleiche Wirkung wie das Klicken auf <guibutton
+>&nbsp;&plus;&nbsp;Neuer Kontakt&nbsp;</guibutton
+> in der Werkzeugleiste. Im <link linkend="how-to-add-a-new-contact"
+>Kapitel 2</link
+> finden Sie dazu weitere Informationen.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Neu&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Neue Gruppe</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet einen Dialog, in dem Sie eine neue Gruppe oder Mailingliste definieren können. Im <link linkend="file-new-group"
+>Anhang</link
+> finden Sie dazu weitere Informationen. </para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch hinzufügen</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag öffnen Sie den Dialog <quote
+>Adressbuch hinzufügen</quote
+>, der im <link linkend="how-to-add-a-new-address-book"
+>Kapitel 2</link
+> dokumentiert ist.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Von LDAP-Server importieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit dieser Aktion können Sie Daten von einem <acronym
+>LDAP</acronym
+>-Server importieren. Dazu muss ein Server eingerichtet werden. Weiter Informationen dazu finden Sie im <link linkend="configure-ldap-server"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei importieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit dieser Aktion können Sie Kontaktdaten aus einer Datei mit durch Komma getrennten Werten (<acronym
+>csv</acronym
+>) importieren. Es wird ein Dialog angezeigt, in dem Sie jedes Feld in der Eingabedatei einem benannten Feld in &kaddressbook; zuordnen können. Im <link linkend="import-csv-data"
+>Anhang</link
+> finden Sie eine genauere Erklärung.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>vCard importieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Diese Aktion ermöglicht den Import von <acronym
+>vcf</acronym
+>- oder vCard-Daten. Es werden alle drei Versionen von vCard unterstützt. Mehr über die vCard-Formate erfahren Sie auf dieser <ulink url="https://de.wikipedia.org/wiki/VCard"
+>Webseite</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei exportieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie ausgewählte Kontaktdaten als durch Komma getrennte Werte („ Comma Separated Values“) im Dateiformat <acronym
+>csv</acronym
+>) exportieren. Es gibt 47 Felder in der Ausgabe. Im <link linkend="export-csv-data"
+>Anhang</link
+> finden Sie eine Liste dieser Datenfelder.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>vCard 4.0 exportieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit dieser Aktion können Sie ausgewählte Kontaktdaten als Dateien im Format <acronym
+>vCard 4.0</acronym
+> speichern. Weitere Informationen zu dem Format finden Sie in diesem <ulink url="https://den.wikipedia.org/wiki/VCard"
+>Wikipedia-Artikel</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>vCard 3.0 exportieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit dieser Aktion können Sie ausgewählte Kontaktdaten als Dateien im Format <acronym
+>vCard 3.0</acronym
+> speichern.</para
+></listitem>
+    </varlistentry
+>    
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>vCard 2.1 exportieren ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit dieser Aktion können Sie ausgewählte Kontaktdaten als Dateien im Format <acronym
+>vCard 2.1</acronym
+> speichern.</para
+></listitem>
+    </varlistentry>
+ 
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Drucken</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet einen Dialog zur Druckerauswahl. Verwenden Sie den Dialog <menuchoice
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Druckvorschau</guisubmenu
+> </menuchoice
+>, um den Druckbereich und das Druckformat vor dem Drucken einzurichten.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Druckvorschau</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet einen Druckvorschau-Dialog, in dem Sie das Format, die zu druckenden Kontakte und eine Sortierreihenfolge festlegen können.Im <link linkend="file-print-preview"
+>Anhang</link
+> finden Sie weitere Details.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-exit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Beenden</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Beendet &kaddressbook;.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2
+>  
+
+  <sect2 id="the-edit-menu">
+  <title
+>Das Menü Bearbeiten</title>
+  
+  <para>
+  <screenshot id="screenshot-edit-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Bearbeiten</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook81.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Bearbeiten</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Bearbeiten</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Bearbeiten</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Bearbeiten</guimenu
+></menuchoice
+> finden Sie acht Einträge, davon zwei mit mehreren Aktionen.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt bearbeiten ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Dies hat fast die gleiche Wirkung wie das Klicken auf die <guibutton
+>&nbsp;&plus;&nbsp;Neuer Kontakt&nbsp;</guibutton
+> in der Werkzeugleiste. Mit diesem Menüeintrag können Sie auch bereits vorhanden Kontaktdaten bearbeiten, anstatt einen Neuen anzulegen. 
+Weitere Informationen finden Sie im <link linkend="how-to-add-a-new-contact"
+>Kapitel 2</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+></shortcut
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-cut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt ausschneiden ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><quote
+>Schneidet</quote
+> für den ausgewählten Kontakt aus. Eine Kopie  dieses Kontakts wird im Format im <glossterm linkend="gloss-vcf"
+><acronym
+>vCard 3.0</acronym
+></glossterm
+> in der Zwischenablage abgelegt. Das <quote
+>Ausschneiden</quote
+> wird abgeschlossen, wenn Sie diesen Kontakt <quote
+>einfügen</quote
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt kopieren ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Kopiert die Daten dieses Kontakts in die Zwischenablage, so dass Sie sie an anderer Stelle einfügen können.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-paste.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Einfügen</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><quote
+>Fügt</quote
+> den ausgeschnittenen oder kopierten Kontakt an der aktuellen Position ein. Dies kann in demselben Adressbuch sein, aus dem Sie den <quote
+>Ausschneiden</quote
+> oder <quote
+>Kopieren</quote
+> durchgeführt haben, oder in einem anderen Adressbuch. Da die diese Operationen die Kontaktinformationen auch in die Zwischenablage des Systems kopiert, können Sie sie auch an anderer Stelle als in &kaddressbook; einfügen, &eg; in einem Texteditor oder als <acronym
+>vCard 3.0</acronym
+>-Datei in Ihrem Persönlichen Ordner.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Kontakt kopieren nach&nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Kombiniert die Aktionen <quote
+>Kopieren</quote
+> und <quote
+>Einfügen</quote
+> mit einem einzigen Klick der &LMBn;. Die Liste der angezeigten Ziele hängt davon ab, wie viele viele Adressbücher Sie angelegt haben.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Kontakt verschieben nach &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktioniert genau wie die oben beschriebene Aktion <quote
+>Kontakt kopieren nach</quote
+>. nur dass das <quote
+>Ausschneiden</quote
+> und <quote
+>Einfügen</quote
+> mit einem einzigen Klick der &LMBn; erfolgt.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt löschen</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Löscht die ausgewählten Kontakte aus dem aktuellen Adressbuch.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch löschen</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Löscht das aktuelle Adressbuch. Seien Sie vorsichtig mit diesem Befehl - Sie könnten einige Daten verlieren. Theoretisch entfernt diese Funktion nur die symbolische Verknüpfung zwischen &kaddressbook; und der zugehörigen <acronym
+>vCard</acronym
+>-Datei oder dem -Ordner oder die Verknüpfung zu einem <glossterm linkend="gloss-cloud"
+>Cloud</glossterm
+>)-Dienst, die eigentlichen Daten bleiben unverändert. Trotzdem sollten Sie eine Sicherungskopie dieses Adressbuchs anlegen, bevor Sie es löschen.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-view-menu"
+> 
+  <title
+>Das Menü Ansicht</title>
+  
+  <para>
+  <screenshot id="screenshot-view-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Ansicht</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Ansicht</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Ansicht</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Ansicht</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Ansicht</guimenu
+></menuchoice
+> finden Sie Einstellungen zum Ansicht und zum Erscheinungsbild.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+><guisubmenu
+>Design &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie zwischen vorhandenen Designs wechseln oder neue Designs herunterladen.-</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>1</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Einfach (eine Spalte)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Wechsel von der Standardansicht mit drei Spalten zur Ansicht mit einer Spalte. Weitere Informationen finden Sie im <link linkend="view-change-columns"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+        
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>2</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Zwei Spalten</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Wechsel von der Standardansicht mit drei Spalten zur Ansicht mit zwei Spalten. Weitere Informationen finden Sie im <link linkend="view-change-columns"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>3</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Drei Spalten</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Wechselt zu Standardansicht mit drei Spalten.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>QR-Codes anzeigen</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Benutzen Sie diesen Eintrag, um Informationen zu Kontakten als QR-Code anzuzeigen oder auszublenden.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-action-menu"
+> 
+  <title
+>Das Menü Aktion</title>
+  
+  <para>
+  <screenshot id="screenshot-action-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Aktion</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook83.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Aktion</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Aktion</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Aktion</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Aktion</guimenu
+></menuchoice
+> finden Sie zwei Einträge zum Senden von Daten.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Aktion</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>vCard versenden ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie einige Kontakte mit &Ctrl; und der Maustaste auswählen, dann wird ein Editorfenster von &kmail; mit einer leeren Empfängerliste und mit den ausgewählten Kontakten im vCard 3.0-Format als Anhänge geöffnet. Dies macht es einfach, die Informationen mit Freunden und Geschäftspartnern auszutauschen. </para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Aktion</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Eine E-Mail senden ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Dieser Menüeintrag bietet eine alternative Methode zum Festlegen der Empfängerliste für eine neue E-Mail. Drücken Sie &Shift; oder &Ctrl; und wählen mit &LMBn; die Personen aus, an die Sie die neue Nachricht senden möchten. Klicken Sie dann auf <quote
+>E-Mail senden an ...</quote
+>; dies öffnet ein Editorfenster von &kmail;. Alle ausgewählten Kontakte werden als <quote
+>An</quote
+>-Adressaten aufgelistet.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-tools-menu"
+> 
+  <title
+>Das Menü Extras</title>
+  
+  <para>
+  <screenshot id="screenshot-tools-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Extras</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook84.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Extras</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Extras</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Extras</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Extras</guimenu
+></menuchoice
+> finden Sie zwei Einträge zur Verwaltung der Daten.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Extras</guimenu
+><guisubmenu
+>Kontakte zusammenführen ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Führt den Inhalt von zwei oder mehr Kontakten in &kaddressbook; zusammen. Um dies zu aktivieren, müssen Sie zunächst zwei oder mehr Kontakte auswählen, halten Sie &Ctrl; oder &Shift; gedrückt und klicken Sie mit der linken Maustaste auf die Kontakte. Ein Dialog wird angezeigt, in dem Sie überprüfen müssen, welche Kontakte Sie zusammenführen möchten, und wo der zusammengeführte Datensatz gespeichert werden soll. Klicken Sie auf <quote
+>Zusammenführen</quote
+>, um den Vorgang abzuschließen.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Extras</guimenu
+><guisubmenu
+>Doppelte Kontakte suchen ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag wird in einem oder mehreren Adressbüchern nach doppelten Einträgen gesucht. Dann können Sie jeden doppelten Eintrag zusammenführen.</para
+></listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-settings-menu"
+> 
+  <title
+>Das Menü Einstellungen</title>
+  
+  <para>
+  <screenshot id="screenshot-settings-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Einstellungen</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook85.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Einstellungen</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Einstellungen</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Einstellungen</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+    
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Einstellungen</guimenu
+></menuchoice
+> gibt es fünf Einträge für &kaddressbook;.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+><inlinemediaobject
+><imageobject
+><imagedata fileref="show-menu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Menüleiste anzeigen</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie die Menüleiste ein- oder ausblenden. Ist die Menüleiste ausgeblendet, benutzen Sie den Kurzbefehl <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+>, um sie wieder anzuzeigen.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Werkzeugleiste anzeigen</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie die Werkzeugleiste ein- oder ausblenden.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kurzbefehle festlegen ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet einen Dialog zum Anpassen der Kurzbefehle für &kaddressbook;.  Weitere Informationen dazu finden Sie im <link linkend="settings-configure-shortcuts"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Werkzeugleisten einrichten ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet einen Dialog zum Anpassen der Werkzeugleisten von &kaddressbook;. Weitere Informationen dazu finden Sie im <link linkend="settings-configure-toolbars"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>&kaddressbook; einrichten ...</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>,</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Öffnet den Einrichtungsdialog von &kaddressbook;.Weitere Informationen dazu finden Sie im <link linkend="settings-configure-kaddressbook"
+>Anhang</link
+>.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-help-menu"
+> 
+  <title
+>Das Menü Hilfe</title>
+  
+  <para>
+  <screenshot id="screenshot-help-menu">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Hilfe</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook86.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Hilfe</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Hilfe</quote
+> in &kaddressbook; nach dem Klicken auf <menuchoice
+><guimenu
+>Hilfe</guimenu
+></menuchoice
+> in der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Im Menü <menuchoice
+><guimenu
+>Help</guimenu
+></menuchoice
+> finden Sie folgende Einträge:</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="system-help.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Handbuch zu &kaddressbook;</guisubmenu
+></menuchoice
+> <keycombo action="press"
+><keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Zeigt das Handbuch zu &kaddressbook; in &khelpcenter; an.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="help-about.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Was ist das?</guisubmenu
+></menuchoice
+><keycombo action="simul"
+>&Shift; <keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+><action
+>Ändert den Mauscursor zu einer Kombination von Zeiger und Fragezeichen</action
+>. Das Klicken auf ein Element innerhalb des Programms öffnet ein Hilfefenster, das die Funktion des Elementes beschreibt (sofern es Hilfe für das bestimmte Element gibt).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="tools-report-bug.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Probleme oder Wünsche berichten</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Hiermit öffnen Sie einen Dialog, um einen Fehlerbericht an <ulink url="https://bugs.kde.org/"
+>bugs.kde.org</ulink
+> zu senden.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-x-ms-shortcut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Spenden</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Öffnet eine <ulink url="https://kde.org/community/donations/?app=kaddressbook"
+>Webseite </ulink
+> in Ihrem Browser, auf der Sie als Unterstützung für &kde; spenden können.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-language.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Sprache der Anwendung umschalten</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Hiermit können Sie die Sprache für &kaddressbook; ändern. Die Anwendung muss neu gestartet werden, damit diese Änderung wirksam wird.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="kaddressbook.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Über &kaddressbook;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Zeigt Versions- und Autoreninformationen des laufenden Programms an.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="KDE_logo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Über &kde;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>mit dieser Aktion werden Informationen über &kde; angezeigt.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  </sect2>
+  
+  </sect1>
+  
+  <sect1 id="tool-bar-items">
+  <title
+>Die Werkzeugleiste</title>
+  
+  <para
+>In der Werkzeugleiste von &kaddressbook; finden Sie fünf verschiedene Einträge: <quote
+>Neuer Kontakt</quote
+>, <quote
+>Neue Gruppe</quote
+>, <quote
+>Kontakt bearbeiten</quote
+>, <quote
+>Suchen...</quote
+> und ein Kategoriefilter wie auf dem folgenden Bildschirmfoto.</para>
+  
+  <para>
+  <screenshot id="screenshot-tool-bar">
+      <screeninfo
+>Ein Bildschirmfoto der Werkzeugleiste von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook87.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der Werkzeugleiste von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Standard-Werkzeugleiste von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Neuer Kontakt</guibutton
+></term>
+    <listitem
+><para
+>Diese Aktion öffnet den Dialog <quote
+>Neuen Kontakt hinzufügen</quote
+>, der im <link linkend="edit-basic-info"
+>Kapitel 4</link
+> dokumentiert ist.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Neue Gruppe</guibutton
+></term>
+    <listitem
+><para
+>Diese Aktion öffnet den Dialog <quote
+>Neue Gruppe hinzufügen</quote
+>, der im <link linkend="file-new-group"
+>Anhang</link
+> dokumentiert ist</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt bearbeiten</guibutton
+></term>
+    <listitem
+><para
+>Diese Aktion öffnet den Dialog <quote
+>Kontakt bearbeiten</quote
+>, der im <link linkend="edit-basic-info"
+>Kapitel 4</link
+> dokumentiert ist.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+>[ Suchen ...&nbsp;<keycombo action="simul"
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ]</term>
+    <listitem
+><para
+>Durchsucht alle Kontakte in ausgewählten Adressbüchern beim Tippen. Durch Drücken von <keycombo
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> wechseln Sie in das Feld<quote
+>Suchen...</quote
+>. Beachten Sie, dass diese Funktion die jedes Kontaktdatensatz insgesamt durchsucht; eine Suche nach <quote
+>und</quote
+> kann nicht nur Andy Brown und Andrew Jones zurückgeben, sondern auch Bill Smith,der zufällig für die Brown and Root Construction Company arbeitet.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-search">
+      <screeninfo
+>Ein Bildschirmfoto der Funktion <quote
+>Suchen</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook91.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der Funktion <quote
+>Suchen</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Funktion <quote
+>Suchen</quote
+> von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+>[ (Alle)&nbsp;<inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+>]</term>
+    <listitem
+><para
+>Hiermit können Sie nach Kategorien foltern. Die beiden Standardkategorien sind <quote
+>Ohne Stichwort</quote
+> und <quote
+>Gruppen</quote
+>. Sie können neue Kategorien erstellen, indem Sie eigene <quote
+>Stichwörter</quote
+> mit bestimmten Kontaktdaten verknüpfen, siehe <link linkend="edit-basic-info"
+>Neuen Kontakt hinzufügen</link
+> in Kapitel 4. Durch Klicken auf <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> wird als Filter <quote
+>Keine</quote
+> eingestellt, mit <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> wird der Filter auf <quote
+>Alle</quote
+> zurückgesetzt.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para>
+  <screenshot id="toolbar-filter">
+      <screeninfo
+>Ein Bildschirmfoto der Funktion <quote
+>Filtern</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook92.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der Funktion <quote
+>Filtern</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Funktion <quote
+>Filtern</quote
+> von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+     
+  </sect1>
+  
+  <sect1 id="context-menus">
+  <title
+>Die Kontextmenüs</title>
+  
+  <para
+>Wenn Sie auf das &RMB; an einer beliebigen Stelle im Haupttextbereich klicken, wird ein Kontextmenü wie unten dargestellt angezeigt. Welches Menü angezeigt wird, hängt sowohl von dem Bereich ab, in dem Sie mit der rechten Maustaste geklickt haben, als auch von dem ausgewählten Element ab.</para>
+  
+  <sect2 id="the-addressbook-panel">
+  <title
+>Das Kontextmenü Adressbuch</title>
+  
+  <para>
+  <screenshot id="addressbook-context-menu">
+      <screeninfo
+>Bildschirmfoto des Kontextmenüs <quote
+>Adressbuch hinzufügen</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook93.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Kontextmenüs <quote
+>Adressbuch hinzufügen</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Kontextmenü <quote
+>Adressbuch hinzufügen</quote
+> von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuchordner hinzufügen ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag öffnen Sie den Dialog <guilabel
+>Neuen Adressbuchordner erstellen</guilabel
+>.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuchordner löschen</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag öffnen Sie den Dialog <guilabel
+>Neuen Adressbuchordner erstellen</guilabel
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch hinzufügen ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag öffnen Sie den Dialog <quote
+>Adressbuch hinzufügen</quote
+>, der im <link linkend="how-to-add-a-new-address-book"
+>Kapitel 2</link
+> dokumentiert ist.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuch löschen</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag wird das ausgewählte Adressbuch gelöscht.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>F5</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbuchordner aktualisieren</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag werden die Kontaktdaten des ausgewählten Adressbuch neu geladen.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Ordner-Eigenschaften ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag wird eine Zusammenfassung der Informationen über das ausgewählte Adressbuch angezeigt.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Adressbucheigenschaften ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag wird eine Zusammenfassung der Informationen über das ausgewählte Adressbuch angezeigt.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Serverseitiges Abonnement ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Menüeintrag können Sie ein serverseitiges Abonnement bearbeiten.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-contactslist-panel">
+  <title
+>Das Kontextmenü Kontaktliste</title>
+  
+  <para>
+  <screenshot id="contactlist-context-menu">
+      <screeninfo
+>Bildschirmfoto des Kontextmenüs <quote
+>Kontaktliste</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook94.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Kontextmenüs <quote
+>Kontaktliste</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Kontextmenü <quote
+>Kontaktliste</quote
+> von &kaddressbook;..</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+  
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Neuer Kontakt</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Die Auswahl dieses Kontextmenüeintrags hat genau die gleiche Wirkung wie das Klicken auf <guibutton
+>&nbsp;&plus;&nbsp;Neuer Kontakt&nbsp;</guibutton
+> in der Werkzeugleiste. Im <link linkend="how-to-add-a-new-contact"
+>Kapitel 2</link
+> finden Sie dazu weitere Informationen.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Neue Gruppe</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag können Sie eine neue Gruppe oder Mailingliste definieren. Im <link linkend="file-new-group"
+>Anhang</link
+> finden Sie dazu weitere Informationen. </para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Kontakt bearbeiten  ...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Die Auswahl dieses Kontextmenüeintrags hat genau die gleiche Wirkung wie das Klicken auf <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Kontakt bearbeiten ...</guibutton
+> in der Werkzeugleiste. Im <link linkend="how-to-add-a-new-contact"
+>Kapitel 2</link
+> finden Sie dazu weitere Informationen.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Exportieren&nbsp;&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag können Sie ausgewählten Kontaktdaten in die Formate <acronym
+>vCard</acronym
+> oder <acronym
+>csv</acronym
+> exportieren.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt kopieren nach&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Mit diesem Kontextmenüeintrag können Sie ausgewählten Kontakte an verschiedene Ziele kopieren.Die angezeigten Ziele hängen davon ab, wie viele Adressbücher Sie angelegt haben.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt verschieben nach&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Funktioniert genauso wie die oben beschriebene Aktion <quote
+>Kontakt kopieren nach</quote
+>. mit dem Unterschied, dass die Quelldaten gelöscht werden, anstatt eine zusätzliche Kopie davon zu erstellen. </para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Drucken</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Durch Auswahl dieses Kontextmenüeintrags wird ein Dialog zur Druckerauswahl geöffnet. Verwenden Sie den Dialog <menuchoice
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Druckvorschau</guisubmenu
+> </menuchoice
+> unten, um den Druckbereich und das Druckformat vor dem Drucken einzurichten.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Druckvorschau</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Dieser Kontextmenüeintrag öffnet einen Druckvorschau-Dialog, in dem Sie das Format, die zu druckenden Kontakte und eine Sortierreihenfolge festlegen können.Im <link linkend="file-print-preview"
+>Anhang</link
+> finden Sie weitere Details.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Kontakt löschen</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Löscht die ausgewählten Kontakte aus dem aktuellen Adressbuch.</para
+></listitem>
+    </varlistentry>
+        
+  </variablelist
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-individualcontact-panel">
+  <title
+>Dass Kontextmenü <quote
+>Einzelner Kontakt</quote
+></title>
+  
+  <para>
+  <screenshot id="individualcontact-context-menu">
+      <screeninfo
+>Bildschirmfoto des Kontextmenüs <quote
+>Einzelner Kontakt</quote
+> von &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook95.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Kontextmenüs <quote
+>Einzelner Kontakt</quote
+> von &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Dass Kontextmenüs <quote
+>Einzelner Kontakt</quote
+> von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Abhängig vom ausgewählten Eintrag kann die Beschriftung in diesem Kontextmenü variieren. Die Funktion ist aber in jedem Fall dieselbe: Der ausgewählte Daten werden in die Zwischenablage kopiert.</para>
+      
+  </sect2>
+  
+  </sect1>
+  
+</chapter>
+
+<glossary>
+   
+<!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
+    
+  <glossentry id="gloss-aim">
+  <glossterm
+><acronym
+>AIM</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>AIM</acronym
+> steht für „America Online Instant Messaging“. AIM war früher Marktführer auf dem IM-Markt, geriet aber in Vergessenheit, als AOL selbst weniger populär wurde. Der ursprüngliche Dienst wurde 2017 eingestellt, aber Fans haben ihn <ulink url="http://iwarg.ddns.net/aim/"
+>auf dieser Webseite</ulink
+> am Laufen gehalten.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-akonadi">
+  <glossterm
+>&akonadi;</glossterm>
+  <glossdef
+><para
+>Ein erweiterbarer, desktopübergreifender Speicherdienst für &PIM;-Daten und Metadaten, der gleichzeitigen Lese-, Schreib- und Abfragezugriff bietet. &nbsp;&nbsp;&nbsp;&akonadi; kann mit dem Befehl akonadictl manipuliert werden: Geben Sie <quote
+>akonadictl --help</quote
+> in ein Konsolenfenster ein, um mehr zu erfahren.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-cloud">
+  <glossterm
+>Cloud-Dienste</glossterm>
+  <glossdef
+><para
+>Jeder Anbieter von Datenspeicher- und Datenverarbeitungsressourcen, die sich in einer <quote
+>Cloud</quote
+> von Servern befinden, auf die man über das Internet zugreifen kann.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-csv">
+  <glossterm
+>.csv</glossterm>
+  <glossdef
+><para
+>Eine Datei mit durch Komma getrennten Werten „Comma Separated Values“ (Dateierweiterung <filename class="extension"
+>.csv</filename
+>) ist ein einfaches Textdokument, in dem jede Zeile bzw. jeder Datensatz durch ein ein bestimmtes Trennzeichen, normalerweise ein Komma, in Felder unterteilt ist. Das <filename class="extension"
+>.csv</filename
+>-Format stammt aus den frühen Tagen der Computertechnik. Es ist immer noch weit verbreitet, hauptsächlich weil es konzeptionell so einfach ist.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-dav">
+  <glossterm
+><acronym
+>DAV</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DAV</acronym
+> bedeutet „Distributed Authoring and Versioning“, das in mehreren <quote
+>Varianten</quote
+> existiert, wie WebDAV für die Erstellung von Seiten im Internet, GroupDAV für Groupware, Open-Source-Software, die von einer Gruppe gemeinsam genutzt wird und CalDAV mit Kalenderverwaltung für Gruppen. Jeder Dieser Dienste verbindet Open-Source-Clients mit Open-Source-Servern.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-digest">
+  <glossterm
+><acronym
+>DIGEST-MD5</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DIGEST-MD5</acronym
+> ist eine Authentifizierungstechnik, um eine sichere Kommunikation zwischen einem Client und einem Internetdienst aufzubauen. Der Name leitet sich von der MD5-Hash-Funktion ab, die zur Verschlüsselung der Anmeldeinformationen des Clients verwendet wird. Weitere Informationen finden Sie in diesem <ulink url="https://de.wikipedia.org/wiki/Message-Digest_Algorithm_5"
+>Wikipedia-Artikel</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ews">
+  <glossterm
+><acronym
+>EWS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>EWS</acronym
+> steht für „Exchange Web Services“, &nbsp;&Microsoft;'s Satz von proprietären Protokollen für den Austausch von persönlichen Daten zwischen Internet Servern und Endbenutzern. &nbsp;&nbsp;<glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> bietet eine ähnliche Funktionalität.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gadu-gadu">
+  <glossterm
+>Gadu-Gadu</glossterm>
+  <glossdef
+><para
+>Gadu-Gadu (GG) ist die beliebteste Instant-Messaging-App in Polen.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gmx">
+  <glossterm
+><acronym
+>GMX</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GMX</acronym
+> steht für „Global Mail eXchange“ oder in Deutschland „Global Message eXchange“ ein kostenloser, werbegestützter E-Mail-Dienst. Auf dieser <ulink url="https://www.gmx.net/"
+>Webseite</ulink
+> oder <ulink url="https://www.gmx.com/"
+>hier</ulink
+> erfahren Sie mehr darüber.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gravatar">
+  <glossterm
+>Gravatar</glossterm>
+  <glossdef
+><para
+>Ein Gravatar oder „Global Recognized Avatar“ ist ein grafisches Bild, verbunden mit der E-Mail-Adresse eines WordPress-Benutzers. Es wird normalerweise als 80x80 Pixel großes Grafikbild angezeigt. Da viele Blogger die Software WordPress verwenden, ist der Gravatar weit verbreitet.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gpws">
+  <glossterm
+>GroupWise</glossterm>
+  <glossdef
+><para
+>GroupWise Messenger ist ein Instant-Messaging-Dienst vom Micro Focus International plc, einem Softwareunternehmen mit Sitz in Newbury, Berkshire, England. Sie können eine Kopie der Messenger-Software auf dieser <ulink url="https://mail.dcbe.org:8300/"
+>Webseite</ulink
+> erhalten.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gssapi">
+  <glossterm
+><acronym
+>GSSAPI</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GSSAPI</acronym
+> steht für „Generic Security Service Application Program Interface“, eine Art <quote
+>Wörterbuch</quote
+> für die vielen Sicherheitsprotokolle, die im Internet verwendet werden. Es besteht aus einer Programmbibliothek und einer Reihe von Standard-Unterprogrammaufrufen, mit denen ein Internet-Client feststellen kann, welches Sicherheitsprotokoll ein Internetdienst verwendet, um damit dann die Anmeldeinformationen des Benutzers entsprechend zu kodieren/dekodieren.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-icq">
+  <glossterm
+><acronym
+>ICQ</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ICQ</acronym
+> ist nicht wirklich ein Akronym. Es ist ein Wortspiel, das so wie <quote
+>I Seek You</quote
+> klingen soll. Es ist eine der ursprünglichen IM-Plattformen, die 1996 erstmals online ging. Die Software ist zum Download <ulink url="https://icq.com/linux/en"
+>hier</ulink
+> verfügbar.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-imap">
+  <glossterm
+>&IMAP;</glossterm>
+  <glossdef
+><para
+>&IMAP; steht für „Internet Message Access Protocol“, eine weit verbreitetes Methode zur Verwaltung von E-Mail-Nachrichten. &IMAP; verwaltet und synchronisiert lokale und entfernte Kopien von Nachrichten - mit anderen Worten, die lokal gespeicherten Daten für ein &IMAP; Konto sind ein Spiegelbild der Nachrichten auf dem Server.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-inline-pgp">
+  <glossterm
+>Inline-OpenPGP</glossterm>
+  <glossdef
+><para
+>Inline OpenPGP ist ein Verschlüsselungsprotokoll, bei dem die PGP-Signaturen direkt in den Textkörper der E-Mail eingebettet werden. Dieses Protokoll ist veraltet, da technische Schwierigkeiten durch die wahllose Verwendung von Nicht-ASCII-Zeichen in Klartext-E-Mail-Nachrichten verursacht werden.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-irc">
+  <glossterm
+>&irc;</glossterm>
+  <glossdef
+><para
+>&irc; steht für „Internet Relay Chat“, einen IM-Dienst, der seine Wurzeln in einem finnischen Vorläufer des World Wide Web namens OuluBox (1988) hat. &irc; verliert seit vielen Jahren stetig an Nutzern, da Social-Media-Plattformen wie Facebook populärer geworden sind. Ein großes verbleibendes Netzwerk ist bekannt als Libera Chat es ist über diese <ulink url="https://web.libera.chat/"
+>Webseite</ulink
+> erreichbar.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-isdn">
+  <glossterm
+><acronym
+>ISDN</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ISDN</acronym
+> steht für „Integrated Services Data Network“, einen der ersten Telekommunikationsstandards für die gleichzeitige Übertragung von analogen Sprachsignalen und digitalen Datensignalen über ein Wählnetz aus Kupferdrähten, &ie; das altmodische Telefonsystem. <acronym
+>ISDN</acronym
+> war in den Anfängen des Internet unverzichtbar, wurde aber in letzter Zeit durch robustere Technologien verdrängt, die die Verbindungen über Netzwerke mit Glasfaserkabel,Satelliten und hochfrequente Mikrowellensender und -empfänger benutzen. Es ist in einigen wenigen industriellen Anwendungen, in denen eine direkte Punkt-zu-Punkt-Verbindung erforderlich ist, noch weit verbreitet.Auf dem Verbrauchermarkt hat es seine Bedeutung verloren.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-jabber">
+  <glossterm
+>Jabber</glossterm>
+  <glossdef
+><para
+>Jabber ist ein Instant-Messaging-Dienst, der auf dem <glossterm linkend="gloss-xmpp"
+><acronym
+>XMPP</acronym
+> </glossterm
+> Protokoll basiert. Die ursprüngliche <quote
+>Jabber</quote
+>-Webseite nimmt keine neuen Registrierungen mehr an, aber das <acronym
+>XMPP</acronym
+>-Protokoll ist weit verbreitet. Auf dieser <ulink url="https://xmpp.org/about/"
+>Webseite</ulink
+> finden Sie weitere Informationen.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-kmail">
+  <glossterm
+>&kmail;</glossterm>
+  <glossdef
+><para
+>E-Mail-Programm von &kde;. Bietet eine vollständig integrierte Umgebung zum Senden und Empfangen von E-Mails von einem oder mehreren E-Mail-Konten, die Verwaltung beliebig vieler E-Mail-Identitäten, die Organisation und Archivierung Ihrer alten E-Mails und die Verwaltung Ihrer persönlichen E-Mail-Verschlüsselung.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-kolab">
+  <glossterm
+>Kolab</glossterm>
+  <glossdef
+><para
+>Kolab Systems AG ist ein Unternehmen mit Hauptsitz in Zürich, Schweiz, das sowohl proprietäre als auch Open-Source-Programme für die Zusammenarbeit zwischen Gruppen von Menschen anbietet, die Daten, Nachrichten und Kalenderressourcen über das Internet austauschen. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;bietet ähnliche, wenn auch rein proprietäre Softwarepakete.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ldap">
+  <glossterm
+><acronym
+>LDAP</acronym
+></glossterm>
+  <glossdef
+><para
+>Das „Lightweight Directory Access Protocol“ (oder &nbsp;<acronym
+>LDAP</acronym
+>) ist ein Standardprotokoll oder -methode zur gemeinsamen Nutzung bestimmter Klassen von Informationen unter den vielen Server-Rechnern, aus denen das Internet besteht.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-ldif">
+  <glossterm
+>.ldif</glossterm>
+  <glossdef
+><para
+>Eine <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+>-Datei („Data Interchange Format“ mit der Dateierweiterung <filename class="extension"
+>.ldif</filename
+>) ist ein Typ eine einfache Textdatei für den Austausch von Ordner-Informationen zwischen den verschiedenen Servern in einem verteilten Netzwerk.</para
+></glossdef>
+  </glossentry
+> 
+
+  <glossentry id="gloss-mnwhl">
+  <glossterm
+>Meanwhile</glossterm>
+  <glossdef
+><para
+><quote
+>Meanwhile</quote
+> ist eine Open-Source-Software für die Kommunikation mit IBMs Instant-Messaging-Software <ulink url="https://de.wikipedia.org/wiki/IBM_Sametime"
+><quote
+>Sametime</quote
+></ulink
+>. Weitere Informationen finden Sie auf dieser <ulink url="https://github.com/obriencj/meanwhile"
+>Webseite</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-acro-mime">
+  <glossterm
+>&MIME;</glossterm>
+  <glossdef
+><para
+>&MIME; steht für „Multipurpose Internet Mail Extensions“, eine Reihe von Kodierungskonventionen, die entwickelt wurden, um E-Mail-Nachrichten flexibler zu machen, indem Funktionen wie erweiterte Zeichensätze, eingebettete Bilder, <quote
+>Richtext</quote
+> Kodierung, &etc; ermöglicht wurden. Die ursprünglichen E-Mail-Kodierungskonventionen unterstützten nichts nichts anderes als einfache oder verschlüsselte Textnachrichten, die mit 7-Bit-ASCII-Code geschrieben wurden. Fast alle heutigen E-Mail-Nachrichten sind &MIME; kodiert.</para
+></glossdef>
+  </glossentry>
+   
+  <glossentry id="gloss-open-pgp">
+  <glossterm
+>OpenPGP/&MIME;</glossterm>
+  <glossdef
+><para
+>OpenPGP/&MIME; bezieht sich auf eine Verschlüsselungskonvention für <glossterm linkend="gloss-acro-mime"
+>&MIME;</glossterm
+> verschlüsselte E-Mail-Nachrichten. Die PGP-Signatur wird in spezielle &MIME;-Header verpackt, so dass ein E-Mail-Programm die Signatur bei der Anzeige der Nachricht ausblenden kann.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-group">
+  <glossterm
+>Open-Xchange-Groupware-Server</glossterm>
+  <glossdef
+><para
+>Die Open-Xchange AG ist ein Unternehmen mit Hauptsitz in Köln, Deutschland, das sowohl proprietäre als auch Open-Source-Software anbietet, um die Zusammenarbeit zwischen Gruppen von Menschen ermöglichen, die Daten, Nachrichten und Daten, Nachrichten und Terminkalender über das Internet austauschen. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> &nbsp;und &nbsp;<glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> bieten ähnliche Softwarepakete an.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-pcs">
+  <glossterm
+><acronym
+>PCS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PCS</acronym
+> steht für „Personal Communication Service“, das ist im Grunde ein Mobiltelefon mit einigen zusätzlichen Funktionen. <acronym
+>PCS</acronym
+>-Telefone arbeiten auf einem höheren Frequenzband als herkömmliche Mobiltelefone. so dass sie mehr Bandbreite zur Verfügung stellen können.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pgp">
+  <glossterm
+><acronym
+>PGP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PGP</acronym
+> steht für „Pretty Good Privacy“, ein Datenverschlüsselungsprogramm, das 1991 von Philip Zimmerman veröffentlicht wurde. Die meisten E-Mail-Anwendungen verwenden heute zur Verschlüsselung eine Variante von PGP, um Nachrichten zu verschlüsseln, zu entschlüsseln und Nachrichten kryptografisch zu signieren.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pim">
+  <glossterm
+>&PIM;</glossterm>
+  <glossdef
+><para
+>Persönliche Informationsverwaltung (Personal Information Management) von &kde; ist eine Gruppe von Anwendungen, die Ihnen bei der Verwaltung Ihrer Kontakte und Ihres Terminkalenders helfen. &PIM; besteht aus &kontact;, &nbsp;&kmail;, &nbsp;&kaddressbook;, &nbsp;&korganizer;, &nbsp;&akregator; und &nbsp;&akonadi;. Dieser Begriff wird auch allgemein zur Beschreibung von System zur Verwaltung persönlicher Informationen wie Namen, Adressen, Telefonnummern &etc; verwendet.</para
+></glossdef>
+  </glossentry
+>  
+  
+  <glossentry id="gloss-qrcode">
+  <glossterm
+>QR-Code</glossterm>
+  <glossdef
+><para
+>QR-Code steht für „Quick Response Code“, ein zweidimensionaler Barcode, der zur zur Darstellung digitaler Daten benutzt wird. Er wurde 1994 in Japan für den Einsatz bei Automobilherstellern erfunden, hat sich aber weit verbreitet, so dass er heute allgegenwärtig ist. </para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sasl">
+  <glossterm
+><acronym
+>SASL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SASL</acronym
+> steht für „Simple Authentication and Security Layer“, ein Verfahren zur Client-Authentifizierung (Passwörter und Benutzernamen) und Datensicherheit (verschlüsselte Verbindungen). Es unterstützt mehr als ein Dutzend verschiedene Protokolle.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-mime">
+  <glossterm
+><acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>S/MIME</acronym
+> steht für „Secure / Multipurpose Internet Mail Extensions“, ein kryptographisches Standardverfahren zum Signieren, Verschlüsseln und Entschlüsseln von E-Mails. Im Gegensatz zu <glossterm linkend="gloss-pgp"
+><acronym
+>PGP</acronym
+></glossterm
+>, das private Schlüssel verwendet, benutzt <acronym
+>S/MIME</acronym
+> öffentliche Schlüssel, die von einer Zertifizierungsstelle, wie z.B. <ulink url="https://www.verisign.com/"
+>Verisign</ulink
+> zertifiziert sind.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-opaque">
+  <glossterm
+><acronym
+>S/MIME</acronym
+> Opaque</glossterm>
+  <glossdef
+><para
+><acronym
+>S/MIME</acronym
+> Opaque steht für die <quote
+>opaque</quote
+> Version der „Secure / Multipurpose Internet Mail Extensions“. Sie ist vergleichbar mit dem oben definierten <quote
+>S/MIME</quote
+>-Format, aber der gesamte Inhalt der der Nachricht wird in ein einziges &MIME; -Objekt zusammengefasst. Die meisten &MIME;-kodierten E-Mail-Nachrichten bestehen aus zwei oder mehr getrennten &MIME;-Objekten.</para
+></glossdef>
+  </glossentry>
+ 
+  <glossentry id="gloss-sms">
+  <glossterm
+><acronym
+>SMS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SMS</acronym
+> steht für „Short Message Service“, einen Textnachrichtendienst, der in den meisten Telefon-, Internet- und Mobilgeräten zur Kommunikation über Netzwerke verwendet wird. Er ermöglicht den Austausch von Textnachrichten mit einer Länge von weniger als 161 Byte sind.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ssl">
+  <glossterm
+><acronym
+>SSL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SSL</acronym
+> steht für „Secure Socket Layer“, ein veraltetes kryptographisches Protokoll, das weitgehend durch <acronym
+>TLS</acronym
+> ersetzt wurde.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-tls">
+  <glossterm
+><acronym
+>TLS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>TLS</acronym
+> steht für Transportschichtsicherheit (Transport Layer Security), ein weit verbreitetes kryptografisches Protokoll, um die Internetkommunikation zu sichern. Seine primäre Funktion für einen Client und Server ist es,  genügend Informationen sicher auszutauschen, so dass sie ein Schlüsselpaar für die Verschlüsselung und Entschlüsselung für den Rest der Sitzung verwenden können. <acronym
+>TLS</acronym
+> ist das schwächste Glied in der Kette, die ein Client-Programm mit einem sicheren (verschlüsselten) Internetdienst verbindet. Es war das Ziel von mehreren Angriffen und wurde als Reaktion auf diese Angriffe mehrfach überarbeitet.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-vcf">
+  <glossterm
+>.vcf</glossterm>
+  <glossdef
+><para
+>Das „Virtual Card Format“ (Dateierweiterung <filename class="extension"
+>.vcf</filename
+>) ist ein schlüsselwortorientiertes Datenaustauschformat, das mehrere Erweiterungen (2.0, 2.1, 3.0, &nbsp;&etc;) seit seiner Einführung &nbsp;<emphasis
+>ca.</emphasis
+> 1990 erfahren hat. Die aktuellste Version ist vCard 4.0.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-xmpp">
+  <glossterm
+><acronym
+>XMPP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>XMPP</acronym
+> steht für erweiterbares Nachrichten- und Anwesenheitsprotokoll (Extensible Messaging and Presence Protocol), die technologische Grundlage für den <quote
+>Jabber</quote
+> Instant-Messaging-Dienst.</para
+></glossdef>
+  </glossentry>
+  
+  </glossary>
+
+&docbook-reference;
+
+</book>

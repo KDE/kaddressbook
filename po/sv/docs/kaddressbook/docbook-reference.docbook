@@ -1,0 +1,1407 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-08-26</date>
+<releaseinfo
+>5.10.3 (Program 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>Addressboken är ett mycket komplicerat program med många inbyggda funktioner. Några av de mer avancerade funktionerna i adressboken är dokumenterad i detta appendix, först och främst för att undvika att huvuddokumentet blir för stort och ohanterligt. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>Adressbok</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-post</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>Referenssektion för adressbokens avancerade funktioner</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>Dialogrutan Ny grupp</title>
+    
+  <para
+>När funktionen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Ny grupp</guibutton
+> används, öppnas en dialogruta, som visas nedan.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Ny grupp</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Ny grupp</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Ny Grupp</quote
+> efter att ha valt funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Ny&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Ny grupp</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Använd kombinationsrutan <quote
+>Lägg till:</quote
+> för att välja adressboken där den nya gruppen ska läggas till. Använd fältet <quote
+>Namn</quote
+> för att ge den nya gruppen ett namn. Mata in e-postadresser, eller delar av e-postadresser, i det blåa området med <quote
+>&plus;</quote
+>. En lista med potentiella träffar dyker upp. Välj ett objekt i listan som dyker upp, så läggs ett nytt namn till i listan. Fortsätt lägga till individuella kontakter i listan tills den är fullständig, och klicka sedan på knappen <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+> för att lägga till gruppen i adressboken. Om du vill ta bort ett namn från listan, klicka på ikonen <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> till höger om det specifika namnet. Om du senare behöver göra ändringar av gruppen, markera helt enkelt gruppen och använd menyn <quote
+>Redigera</quote
+> eller knappen <quote
+>Redigera kontakt</quote
+> i verktygsraden, för att visa en i huvudsak likadan dialogruta som låter dig göra önskade ändringar.</para>
+
+  <para
+>Programmet &kmail; tillhandahåller en alternativ metod för att skapa en ny grupp i adressboken. Efter du har adresserat ett brev till flera personer, får du alternativet att lägga till en ny grupp i din adressbok, som visas nedan.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>En skärmbild av &kmail;s dialogruta <quote
+>Ny grupp</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av &kmail;s dialogruta <quote
+>Ny grupp</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kmail;s dialogruta <quote
+>Ny Grupp</quote
+> efter att ha valt funktionen <guibutton
+> &nbsp;Spara lista... &nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Efter att ha adresserat ett brev till en grupp av personer, visas den illustrerade dialogrutan genom att klicka på knappen <guibutton
+>&nbsp;Spara lista...&nbsp;</guibutton
+> till höger om adressinmatningsområdet. Ge listan ett namn och vänsterklicka på knappen <guibutton
+>&nbsp;Spara lista&nbsp;</guibutton
+>. En annan dialogruta dyker upp, som ber dig att välja en adressbok. Gör ditt val, så skapas en ny grupp åt dig.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>Dialogrutan Förhandsgranskning av utskrift</title>
+    
+  <para
+>Adressbokens funktion <quote
+>Förhandsgranskning av utskrift</quote
+> låter dig skräddarsy en papperskopia av adressbokens information på i stort sett vilket sätt som helst.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Addressbokens dialogruta <quote
+>Förhandsgranskning av utskrift</quote
+>. Du kan välja en eller flera hela adressböcker, eller bara ett urval individuella kontakter.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Det första steget är att markera kontakterna som ska ingå i utskriften. Om du bara vill skriva ut ett fåtal individuella kontakter, måste du välja kontakterna som ska skrivas ut innan dialogrutan <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Förhandsgranskning av utskrift</guisubmenu
+></menuchoice
+>. Om du vill markera alla kontakter, eller alla kontakter i en viss adressbok, kan du göra det här. Klicka på <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Nästa</guibutton
+> när du har gjort ditt val. En ny skärm visas.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>En andra skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av utskrift</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Den andra skärmen av adressbokens dialogruta <quote
+>Förhandsgranskning av utskrift</quote
+>. Du kan välja ett sorteringsfält och en sorteringsriktning (uppåt eller neråt). Du kan också välja mellan sju olika utskriftslayouter.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Här kan du välja ett sorteringsfält (vilket som helst av de 47 namngivna fälten i kontaktposten), sorteringsriktningen, och vilket som helst av sju olika rapportformat. När du klickar på <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Nästa</guibutton
+>, får du en chans att skräddarsy färgschemat som ska användas.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>En tredje skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En tredje skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Den tredje skärmen av adressbokens dialogruta <quote
+>Förhandsgranskning av utskrift</quote
+>. Här kan du välja ett färgschema.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Här är en bild av den färdiga rapporten. Den är nu klar för utskrift.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Förhandsgranskning av  utskrift</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens <quote
+>Förhandsgranskning av utskrift</quote
+> efter rapporten har genererats och är redo att skrivas ut. Du kan välja alternativa utskriftsorienteringar (liggande eller stående) och starta utskriftsaktiviteten från det här fönstret.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>Dialogrutan Anpassa LDAP</title>
+    
+  <para
+>Här är en bild av den första inställningsskärmen som dyker upp när du antingen väljer knappen <guibutton
+>Anpassa LDAP-servrar...</guibutton
+> i dialogrutan <menuchoice
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+>Importera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera från LDAP-server...</guimenuitem
+> </menuchoice
+> eller menyalternativet <menuchoice
+><guimenu
+>Settings</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Anpassa adressbok...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+> efter att ha valt funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera från LDAP-server...</guimenuitem
+></menuchoice
+> och vänsterklickat på knappen <guibutton
+>Anpassa LDAP-servrar...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Om du redan har ställt in en eller flera <acronym
+>LDAP</acronym
+>-servrar, använd skärmen för att välja servrarna som ska frågas när du söker efter ett namn eller e-postadress. Använd knappen <guibutton
+>Lägg till värddator...</guibutton
+> för att lägga till en ny server till listan av tillgängliga <acronym
+>LDAP</acronym
+>-servrar. Använd knappen <guibutton
+>Redigera värddator...</guibutton
+> för att konfigurera om en server som redan finns på listan, och knappen <guibutton
+>Ta bort värddator</guibutton
+> för att ta bort en post som du inte längre behöver. Knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Återställ</guibutton
+> kan användas för att ångra det senaste åtgärden <quote
+>Lägg till</quote
+> eller <quote
+>Ta bort</quote
+> som utfördes. Knappen <quote
+>Förval</quote
+> fungerar inte i utgåva 5.10.3. Återstående knappar (Ok, Verkställ, Avbryt) har sina vanliga funktioner: antingen verkställ ändringarna och avsluta, verkställ ändringarna och bli kvar, eller avsluta dialogrutan utan att göra några ändringar.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>När du antingen använder knappen <guibutton
+>Lägg till värddator...</guibutton
+> eller <guibutton
+>Redigera värddator...</guibutton
+>, visas följande dialogruta.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Anpassa LDAP-server</quote
+> efter vänsterklick på antingen knappen <guibutton
+>Lägg till värddator...</guibutton
+> eller <guibutton
+>Redigera värddator...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>De första fyra fälten (<quote
+>Användare:</quote
+>, <quote
+>Särskiljande bindningsnamn:</quote
+>, <quote
+>Rike:</quote
+> och <quote
+>Lösenord:</quote
+>) är gråa om behörighetskontroll inte behövs. Erhåll behörighetsinformationen från LDAP-serverns administratör. Ange lämplig webbadress i fältet <quote
+>Värddator:</quote
+>. Standardvärdena för <quote
+>Port:</quote
+>, <quote
+>Storleksgräns:</quote
+>, etc. fungerar bra för de flesta användare. Du kan använda knappen <guibutton
+>Fråga server</guibutton
+> för att ställa in fältet <quote
+>Särskiljande namn:</quote
+>. Jag har ingen aning om vad fältet <quote
+>Filter:</quote
+> är till för. Om du räknar ut det, tala gärna om det för mig (davidbryant SNABELA gvtc.com).</para>
+
+  <para
+>Använd rutan <quote
+>Säkerhet</quote
+> för att ange krypteringsmetod att använda: <quote
+>Nej</quote
+> för en okrypterad anslutning, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> för Transport Layer Security, eller <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> för Secure Socket Layer. Använd alternativen under <quote
+>Behörighetskontroll</quote
+> för att ange vilken nivå av behörighetskontroll som servern kräver: <quote
+>Anonym</quote
+> för inget namn eller lösenord alls, <quote
+>Enkel</quote
+> om <quote
+>Särskiljande bindningsnamn</quote
+> och <quote
+>Lösenord</quote
+> måste anges, och <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (Simple Authentication and Security Layer) för hela bunten (fyra datavärden). Om <quote
+>SASL</quote
+> väljes, använda knappen <guibutton
+>Fråga server</guibutton
+> för att ställa in värddatorns avancerade alternativ.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>Funktionen Importera CSV-fil</title>
+    
+  <para
+>När du väljer funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera CSV-fil...</guimenuitem
+></menuchoice
+>, visas en dialogruta. Efter du har klickat på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> och valt filen att importera, ser skärmen ut så här.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+> efter att ha valt funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera CSV-fil...</guimenuitem
+></menuchoice
+> och valt filen som ska importeras.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Använd rutan <quote
+>Avgränsare</quote
+> i dialogrutan för att ange vilket avgränsningstecken som definierar slutet på ett fält i den valda indatafilen. Om citationstecken används för att avgränsa fält med inbäddade avgränsningstecken kan du ange stilen  som används (enkla eller dubbla citationstecken) via kombinationsrutan <quote
+>Textcitationstecken:</quote
+>. Om indatafilen innehåller datum, använd fältet <quote
+>Datumformat</quote
+> för att definiera sättet som datum har kodats. Förvalt värde är åååå-mm-dd. Om det är fel format, håll markören över rutan <quote
+>Datumformat</quote
+> så visas en praktisk mängd formateringsinstruktioner. Om indatafilen inte är kodad med UTF-8, använd kombinationsrutan <quote
+>Textkodare:</quote
+> för att ange den binära kodningsmetoden att använda. Om den första raden i filen innehåller kolumnrubriker, markera rutan <quote
+>Hoppa över första raden i filen</quote
+> för att undvika att kolumnrubriker importeras som data. Använd rutorna <quote
+>Odefinierad</quote
+> längst upp i varje kolumn för att ange vilka datafält som ska importeras, och var de ska lagras, som visas nedan.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>En andra skärmbild av adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En andra skärmbild av adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Importera CSV-fil</quote
+> efter att ha valt funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Importera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importera CSV-fil...</guimenuitem
+></menuchoice
+>, valt filen som ska importeras, och börjat definiera fälten som ska importeras.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Om du önskar importera innehållet i aktuell kolumn, välj ett mål i listan med fältnamn som dyker upp under den blåa rutan <quote
+>Odefinierad</quote
+>. Se <link linkend="export-csv-data"
+>nästa avsnitt</link
+> för en lista med fördefinierade fält. Använd den horisontella rullningslisten nära dialogrutans underkant för att se alla kolumner i indatafilen. När din markering är färdig, klicka på knappen <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+>. Om du har definierat flera adressböcker blir du tillfrågad om att ange vilken adressbok som ska användas. Adressboken importerar därefter markerad data som nya kontakter.</para>
+
+  <para
+>Om du har för avsikt att importera ytterligare datamängder senare med samma format någon gång i framtiden, kan du klicka på knappen <guibutton
+>Spara mall...</guibutton
+> (se vidare den första illustrationen i den här avsnitt) för att spara valen du har gjort. Du blir tillfrågad om att ge mallen en namn. Senare, om du importerar en fil med samma layout, kan du spara tid genom att klicka på knappen <guibutton
+>Använd mall...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>Funktionen Exportera CSV-fil</title>
+    
+  <para
+>När funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+> <guisubmenu
+>Exportera&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera CSV-fil...</guimenuitem
+></menuchoice
+> används, dyker en dialogruta upp.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Exportera CSV-fil</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Exportera CSV-fil</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Exportera CSV-fil</quote
+> efter att ha valt funktionen <menuchoice
+><guimenu
+>Arkiv</guimenu
+><guisubmenu
+>Exportera&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exportera CSV-fil...</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Du kan välja all kontaktinformation, eller bara en del av den. När du klickar på knappen <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+>, får du möjlighet att välja namn på den genererade filen och katalogen där den skrivs. Utdatafilen innehåller följande fyrtiosju (47) utdatafält, från vänster till höger. Listan med fältnamn inkluderas som första posten i filen.</para>
+
+  <para
+>"Formaterat namn","Inledande titlar","Tilltalsnamn","Andra namn","Efternamn","Efterföljande titlar","Smeknamn","Födelsedag","Årsdag","E-post (föredragen)","E-post (2)","E-post (3)","E-post (4)","Gatuadress hem","Postboxadress hem","Stadsadress hem","Stat hem","Postnummer hem","Landsadress hem","Adressetikett hem","Gatuadress arbete","Postboxadress arbete","Stadsadress arbete","Stat arbete","Postnummer arbete","Landsadress arbete","Adressetikett arbete","Hemtelefon","Telefon arbete","Mobiltelefon","Hemtelefax","Arbetsfax","Biltelefon","ISDN","Personsökare","E-postklient","Titel","Roll","Organisation","Anteckning","Hemsida","Bloggkanal","Yrke","Kontor","Chef","Sekreterare","Make/maka"</para>
+
+  <para
+>Alla fält är formaterade som teckenklassdata. Datum (födelsedag och årsdag, om det finns) är kodade som åååå-mm-dd (år, månad, dag).</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>Funktionen Ändra antal kolumner</title>
+    
+  <para
+>När du öppnar menyn <menuchoice
+><guimenu
+>Visa</guimenu
+></menuchoice
+> dyker följande skärm upp.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>En skärmbild av adressbokens meny <quote
+>Visa</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens meny <quote
+>Visa</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens meny <quote
+>Visa</quote
+> efter att ha valt menyn <menuchoice
+><guimenu
+>Visa</guimenu
+></menuchoice
+> i huvudmenyraden.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Är du inte nöjd med den alldagliga trekolumnerslayouten som visas ovan? Snygga till den lite grand med den här minimalistiska tillvägagångssättet.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>En skärmbild av adressbokens enkelpanellayout.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens enkelpanellayout.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens layout <quote
+>Enkel (en kolumn)</quote
+>. Bara grundläggande kontaktinformation är synlig.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Observera att informationen om vilka adressböcker som finns och används inte är synlig när layouten <quote
+>Enkel</quote
+> är aktiv. Bara kontakterna från adressböckerna som var markerade innan vyn valdes visas.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Om layouten <quote
+>Enkel</quote
+> inte tilltalar dig, kanske du vill prova stilen <quote
+>Två kolumner</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>En skärmbild av adressbokens dubbelpanellayout.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dubbelpanellayout.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens layout <quote
+>Två kolumner</quote
+>. Listan över adressböcker lagras ovanpå den alfabetiska kontaktlistan.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Hos &kde; är vårt motto "Lev fri!". Vi har som mål att ge dig maximal flexibilitet när det gäller att skräddarsy och anpassa vår programvara för att passa din smak. Vi lekte med idén att lägga till ännu fler vyer i adressboken (fyra kolumner, fem), men drog till sist slutsatsen att det är nog som det är.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>Alternativet Anpassa genvägar</title>
+    
+  <para
+>När du först väljer alternativet <menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+> <inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configure Shortcuts...</guisubmenu
+> </menuchoice
+> är det är vad du ser.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa genvägar</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa genvägar</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Addressbokens dialogruta <quote
+>Anpassa genvägar</quote
+>. Använd fältet <quote
+>Sök</quote
+> eller den vertikala rullningslisten för att lokalisera åtgärden som en ny snabbtangent ska definieras för.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Adressbokens åtgärder där snabbtangenter redan har definierats är klart markerade i kolumnen <quote
+>Genväg</quote
+>. Du kan antingen tilldela ytterligare genvägar via kolumnerna <quote
+>Alternativ</quote
+>, <quote
+>Global</quote
+> och <quote
+>Global alternativ</quote
+> i tabellen, eller tilldela en ny genväg för en åtgärd där ingen snabbtangent ännu har definierats. Välj åtgärden som ska anpassas genom att klicka på dess namn, som illustreras nedan. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>När du vänsterklickar på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Ingen</guibutton
+> ändras dess namn till <quote
+>Inmatning...</quote
+>. Därefter kan du spela in kombinationen av tangentnedtryckningar som du vill tilldela till den valda åtgärden. (Håll markören över knappen <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ingen</guibutton
+> för att visa ett praktiskt tips om proceduren.) Programmet noterar vilka tangenter som du har tryckt på, och spelar in den nya snabbtangenten, som illustreras nedan. Om du väljer en kombination som är i konflikt med en befintlig genvägstilldelning, visas ett delmeddelande, och du blir tillfrågad om att göra ett annat val. Du kan använda knappen <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> för att radera ditt val.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa genvägar</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa genvägar</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Anpassa genvägar</quote
+> efter att en ny snabbtangent har matats in, men innan den nya inställningen har sparats.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Klicka på knappen <guibutton
+>&nbsp;✔&nbsp;Ok&nbsp;</guibutton
+> för att spara ändringarna. Klicka på <guibutton
+>&nbsp;⦸&nbsp;Avbryt&nbsp;</guibutton
+> för att avsluta utan att spara ändringarna. Klicka på <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Förval</guibutton
+> för att återställa adressbokens förvalda uppsättning snabbtangenter. Välj <guibutton
+>&nbsp;Hantera system&nbsp;&gt;&gt;&nbsp;</guibutton
+> för att integrera dina egna tilldelningar i ett större system av genväg tilldelningar. Se kapitlet <ulink url="help:/fundamentals/config.html"
+>Anpassa &kde;:s programvara</ulink
+> i handboken &kde;:s grunder.</para>
+
+  <para
+>Du kan använda knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Skriv ut</guibutton
+> för att skapa en papperskopia med tilldelningarna av snabbtangenter. Här är ett exempel från den utskrivna tabellen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>En skärmbild av adressbokens utmatning från <quote
+>Skriv ut</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens utmatning från <quote
+>Skriv ut</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Ett utdrag från adressbokens utskrivna lista över snabbtangenter.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>Alternativet Anpassa verktygsrader</title>
+    
+  <para
+>Här är en bild av skärmen som visas när du klickar på menyalternativet <menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Anpassa verktygsrader...</guisubmenu
+></menuchoice
+>.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa verktygsrader</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa verktygsrader</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Anpassa verktygsrader</quote
+>. Åtgärderna som redan visas på verktygsraden visas i det stora fönstret till höger. Åtgärder i fönstret till vänster kan läggas till på verktygsraden, som förklaras nedan.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Använd endera av fälten <quote
+>Filter</quote
+> för att begränsa antal val som visas i motsvarande fönster. Markera en åtgärd i fönstret till vänster (som visas ovan) om du vill lägga till det i verktygsraden. Vänsterklicka på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+> för att lägga till objektet i listan i fönstret till höger (och därmed på adressbokens verktygsrad). Om du vill ta bort ett objekt från verktygsraden, vänd helt enkelt på proceduren: markera objektet att ta bort i fönstret till höger och klicka på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. Det markerade objektet tas bort från verktygsraden.</para>
+  
+  <para
+>Du kan skräddarsy ordningen som markerade objekt visas på verktygsraden genom att använda drag och släpp i fönstret till höger. Ordningen av objekt på verktygsraden, vänster till höger, motsvarar ordningen i fönstret, uppifrån och ner. Du kan göra ytterligare ändringar av verktygsradens utseende genom att använda knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ändra ikon...</guibutton
+> för att ändra ikonen som hör ihop med en viss åtgärd. På liknande sätt kan du ändra beskrivningen av varje objekt på verktygsraden genom att klicka på knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ändra text...</guibutton
+>.</para>
+  
+  <para
+>Använd knappen <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Förval</guibutton
+> för att återställa förvalda verktygsradsinställningar. Välj <quote
+>Ok</quote
+> för att spara dina ändringar och avsluta dialogrutan, <quote
+>Verkställ</quote
+> för att verkställa dina ändringar medan dialogrutan förblir öppen eller <quote
+>Avbryt</quote
+> för att avsluta dialogrutan utan att spara dina ändringar. (Se kapitlet <ulink url="help:/fundamentals/config.html"
+>Anpassa &kde;:s programvara</ulink
+> i handboken &kde;:s grunder för en mer detaljerad förklaring av proceduren.)</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>Alternativet Anpassa Adressbok</title>
+    
+  <para
+>När alternativet <menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Anpassa Adressbok...</guisubmenu
+></menuchoice
+> väljes, visas den här skärmen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Anpassa kontaktåtgärder</quote
+>. Funktionerna är fortfarande experimentell, och ännu inte fullständigt användbara.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Den första dialogrutan som visas stöder experimentella funktioner som ännu inte har implementerats fullständigt. Du kan välja bland flera olika alternativ under rubrikerna <quote
+>Visa adress</quote
+>, <quote
+>Ring telefonnummer</quote
+> eller <quote
+>Skicka SMS</quote
+>, men det finns ännu inte någon programvara för att göra någonting med alternativen du väljer.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Nästa alternativ, <quote
+>LDAP-serverinställningar</quote
+>, är samma dialogruta som är dokumenterad i föregående avsnitt vid namn <link linkend="configure-ldap-server"
+><quote
+>Dialogrutan Anpassa LDAP</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En andra skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>LDAP-serverinställningar</quote
+>. Dialogrutan, och dess underliggande ruta, dokumenteras i <link linkend="configure-ldap-server"
+>ett tidigare avsnitt</link
+> i appendix.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Den sista uppsättningen alternativ för att anpassa adressboken visas när du väljer <quote
+>Insticksprogram</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>En tredje skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>En tredje skärmbild av adressbokens dialogruta <quote
+>Anpassa Adressbok</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Adressbokens dialogruta <quote
+>Insticksprogram</quote
+>. Totalt finns det tio insticksprogram. Sju av dem är normalt aktiverade, som visas ovan.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Åtgärderna som stöds av de sju förvalda <quote
+>insticksprogrammen</quote
+> är dokumenterade i tidigare avsnitt av handboken. Åtgärderna <quote
+>Import Export <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> och <quote
+>Import Export <glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+> visas som en del av menyn <menuchoice
+><guimenu
+>Arkiv</guimenu
+></menuchoice
+> när de aktiveras. Alternativet <quote
+>Kontrollera <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> visas i menyn <menuchoice
+><guimenu
+>Verktyg</guimenu
+></menuchoice
+> när det aktiveras. Observera att adressboken måste avslutas och startas om innan eventuella ändringar av <quote
+>insticksprogram</quote
+> får effekt. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Tack till och licenser</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Copyright &copy; 2007–2019 Adressbokens upphovsmän <email
+>montel@kde.org</email
+> </para>
+  
+  <para
+>Dokumentation Copyright &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  <para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Klicka här för att återgå till appendixets innehållsförteckning.</link
+></para>
+
+</sect1>
+
+</appendix>

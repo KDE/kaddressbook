@@ -1,0 +1,5148 @@
+# translation of kaddressbook.po to Finnish
+# translation of kaddressbook.po to
+# KDE Finnish translation sprint participants:
+# Author: Artnay
+# Author: Lliehu
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 2003, 2006.
+# Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2005.
+# Tapio Mattila <tapio.mattila@mbnet.fi>, 2003.
+# Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
+# Tapio Kautto <eleknader@phnet.fi>, 2004.
+# Ilpo Kantonen <ilpo@iki.fi>, 2004, 2005, 2006.
+# Mikko Piippo <piippo@cc.helsinki.fi>, 2007, 2008.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2021.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2013, 2014, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2021-09-23 16:17+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:24:54+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Tommi Nieminen,Tapio Kautto,Teemu Rytilahti,Tapio Mattila, Ilpo Kantonen, "
+"Mikko Piippo"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"translator@legisign.org,eleknader@phnet.fi,teemu.rytilahti@kde-fi.org,tapio."
+"mattila@mbnet.fi, ilpo@iki.fi,mikko.piippo@helsinki.fi"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Osoitekirja"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "Yhteystieto"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "Sähköpostit"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organisaatio"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "Sivusto"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Syntymäpäivä"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Huomautus"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "Otsikko"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(Vuoden vanha)"
+msgstr[1] "(%1 vuotta vanha)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "Sähköposti"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "Blogin syöte"
+
+# pmap: =/gen=KAddressBookin/
+# pmap: =/elat=KAddressBookista/
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Uusi yhteystieto…"
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "Saat näkyviin ikkunan, jossa voit luoda uuden yhteystiedon."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Uusi yhteystietoryhmä…"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "Saat näkyviin ikkunan, jossa voit luoda uuden yhteystietoryhmän."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "KDE:n osoitekirjasovellus"
+
+#: src/aboutdata.cpp:21
+#, fuzzy, kde-format
+#| msgid "Copyright © 2007–2021 KAddressBook authors"
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "Tekijänoikeudet © 2007–2021 KAddressBookin tekijät"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Nykyinen ylläpitäjä"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Edellinen ylläpitäjä"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "Alkuperäinen tekijä (1998)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "Ohjeistus (2019)"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Nollaa luokkasuodatin"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Tyhjennä luokkasuodatin"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(Tunnisteettomat)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(Ryhmät)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(Kaikki)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(Ei mitkään)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ", "
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>Luokkasuodatin: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "Liitännäisten asetukset"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "© 2016–2021 Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "Käyttäjäpalautteen asetukset"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "© 2020–2021 Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "Työkaluliitännäiset"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "Tuonti- ja vientiliitännäiset"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "…"
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "Ladataan yhteystietoja…"
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "Sähköposti: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "Puhelin: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "%1%2 %3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "%1 %2 %3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Seuraava"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Edellinen"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "Siirry luettelon edelliseen yhteystietoon"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "Siirry luettelon edelliseen yhteystietoon painamalla tätä painiketta."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Siirry luettelon seuraavaan yhteystietoon"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "Siirry luettelon seuraavaan yhteystietoon painamalla tätä painiketta."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1/%2"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Määrittämätön"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Vuosipäivä"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Sähköposti (ensisijainen)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Sähköposti (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Sähköposti (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Sähköposti (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Ammatti"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Toimisto"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "Johtaja"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "Avustaja"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "Puoliso"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Valitse yhteystiedot"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Kaikki yhteystiedot"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Kaikki yhteystiedot kaikista osoitekirjoistasi"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr ""
+"Valitse tämä asetus, jos haluat valita kaikki yhteystiedot kaikista "
+"osoitekirjoistasi."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Valitut yhteystiedot"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Vain nyt valitut yhteystiedot"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"Valitse tämä asetus, jos haluat vain nyt käyttöliittymässä valittuina olevat "
+"ytheystiedot."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Kaikki yhteystiedot kohteesta:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Kaikki yhteystiedot valitusta osoitekirjasta"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"Valitse tämä asetus, jos haluat valita kaikki yhteystiedot vain yhdestä "
+"osoitekirjastasi. Kun asetus on valittu, tulee näkyviin "
+"pudotusvalintakenttä, josta voit valita haluamasi osoitekirjan."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Myös alikansiot"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "Valitse kaikki alikansiot sekä ylimmän tason kansio"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"Valitse tämä valintaruutu, jos haluat valita kaikki tämän kansion ja "
+"kaikkien alikansioiden yhteystiedot. Jos haluat yhteystiedot vain ylimmän "
+"tason kansiosta, jätä ruutu valitsematta."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Kokoa yhteystiedot"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "Nouda yhteystietoja"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Omat kentät"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Työkentät"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Muut kentät"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Salausavaimet"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Kuvat"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Näytä koko nimi"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Vietävät kentät"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Vie omat kentät"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+"Valitse tämä ruutu, jos haluat yhteystiedoissa olevat omat kentät vietävät "
+"vCard-tulostiedostoon."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Vie työkentät"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"Valitse tämä ruutu, jos haluat yhteystiedoissa olevat työkentät vietävän "
+"vCard-tulostiedostoon."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Vie muut kentät"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+"Valitse tämä ruutu, jos haluat yhteystietojen muut kentät vietävät vCard-"
+"tulostiedostoon."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Vie salausavaimet"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"Valitse tämä ruutu, jos haluat yhteystietojen salausavaimet vietävän vCard-"
+"tulostiedostoon."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Vie kuvat"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+"Valitse tämä ruutu, jos haluat yhteystietojen valokuvat vietävän vCard-"
+"tulostiedostoon."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Vientiasetukset"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Vie näyttönimi koko nimenä"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Valitse tämä ruutu, jos haluat viedä yhteystietojen näyttönimet vCardin koko "
+"nimi -kenttiin. Tämä voi olla tarpeen, jotta nimet näkyvät oikein GMailissä "
+"tai Androidissa."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Valitse osoitekirja"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Valitse osoitekirja, johon tuotavat yhteystiedot tallennetaan:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Tuo yhteystietoja"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Tuodaan yksi yhteystieto kohteeseen %2"
+msgstr[1] "Tuodaan %1 yhteystietoa kohteeseen %2"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "Tuo annettu tiedosto"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "Avaa ”Uusi yhteystieto” -ikkuna"
+
+# *** TARKISTA: Yksi tulkinta siitä, mitä id tarkoittaa :)
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "Näytä verkko-osoitteena annettu yhteystieto"
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr "Tiedostot tai URLit. Käyttäjää pyydetään vahvistamaan tuonti"
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "Luettele käyttäjäpalautteelle käytettävissä olevat valinnat"
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "&KAddressBookin asetukset…"
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Tiedosto"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Uusi"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Muokkaa"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "&Näytä"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "T&oiminto"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "T&yökalut"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "Asetukset"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Vie"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Päätyökalurivi"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "Tuo"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "Vie"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Etsi… <%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "&Teemat"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Tulosta koko osoitekirja tai valitut yhteystiedot."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Pikahaku"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "Luokkasuodatin"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Valitse kaikki"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Valitsee kaikki nykyisen näkymän yhteystiedot."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "Näytä QR-koodit"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "Näytä yhteystietojen QR-koodit."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "Pelkistetty (yksi sarake)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Näyttää yksinkertaisen muunnelman osoitekirjanäkymästä."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "Kaksi saraketta"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "Kolme saraketta"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "Kohdista pikahakuun"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "Palvelinpuolen tilaus…"
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Tulosta yhteystietoja"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Saat näkyviin kyselyikkunan, jossa voit määrittää sovelluksenlaajuiset "
+"pikanäppäimet."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>Tämä piilottaa valikkorivin kokonaan. Saat sen uudelleen näkyviin "
+"painamalla %1.</qt>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "Piilota valikkorivi"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Osoitekirjakansion %1 ominaisuudet"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Koko nimi"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "Sukunimi"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "Etunimi"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Kotiosoite"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Työosoite"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Puhelinnumerot"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Ensisijainen sähköposti"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "Kaikki sähköpostit"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "Tiivis tyyli"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Alustaa tiedostoa"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Tulostetaan"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Valmis"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "Tiivis tulostustyyli"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Kentät"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr "Tulosta kotiosoite sekä koti- ja matkapuhelinnumerot"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "myös kotiosoite"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "tulosta työosoite ja työpuhelinnumero"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "myös työosoite"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "Tulosta syntymäpäivä"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "myös syntymäpäivä"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "Tulosta ensi- ja toissijaiset sähköpostikentät"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "myös sähköposti"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "ensimmäinen väri, jos värien vuorottelu on valittu"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "ensimmäinen väri"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "toinen väri, jos värien vuorottelu on valittu"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "toinen väri"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "Vaihda joka rivin taustaväriä"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "Vuorottele taustaväriä"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "Organisaatio:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Sähköpostiosoite:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "Sähköpostiosoitteet:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Puhelin:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Puhelimet:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Verkkosivu:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Kotimainen osoite:"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Kansainvälinen osoite:"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Postiosoite"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Pakettien toimitusosoite"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Työosoite"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Ensisijainen osoite"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Merkinnät:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Yksityiskohtainen tulostustyyli – Ulkoasu"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Alustaa värejä"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Yksityiskohtainen tyyli"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Ulkoasusivu"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Yhteystietojen otsikot"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "Valitse otsaketekstin taustaväri"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+"Käynnistä tästä painikkeesta värivalitsin, jolla voit asettaa otsakkeiden "
+"taustavärin."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Otsakkeen taustaväri:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Otsakkeen tekstiväri:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "Valitse otsakkeen tekstiväri"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+"Käynnistä tästä painikkeesta värivalitsin, jolla voit asettaa otsakkeiden "
+"tekstivärin."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Miken tulostustyyli"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Mitkä yhteystiedot haluat tulostaa?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Valitse tulostettavat yhteystiedot"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Valitse tulostustyyli"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Tulostus käynnissä"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Tulostus: käynnissä"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Eteneminen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Tulosta henkilön tiedot"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "Tulosta puhelinnumerot"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+"Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista puhelinnumerot."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Puhelinnumerot"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "Tulosta sähköpostiosoitteet"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+"Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista sähköpostiosoitteet."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "Sähköpostiosoitteet"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "Tulosta postiosoitteet"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+"Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista postiosoitteet."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Postiosoitteet"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "Tulosta organisaatiot"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista organisaatiot."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "Tulosta syntymäpäivät"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista syntymäpäivät."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "Tulosta huomautukset"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "Valitse tämä ruutu, jos haluat tulostaa yhteystiedoista huomautukset."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "Huomautus: "
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Yksityiskohtainen tulostuksen tyyli – Ulkoasu"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "Alustaa kenttiä"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Tulosta kansioita varten"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Nouseva"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Laskeva"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Esikatselua ei saatavissa.)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Valitse tulostustyyli"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Miltä tulosteen tulisi näyttää?\n"
+"KAddressBookissa on useita eri tarkoitukseen suunniteltuja tulostustyylejä.\n"
+"Valitse tarpeisiisi sopiva alta."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Lajittelu"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Ehto:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Valitse ensisijainen lajittelukenttä"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"Tästä luettelosta voit valitut kentän, jonka mukaan yhteystietosi "
+"lajitellaan tulosteessa. Lajittelujärjestysvalinnalla voit vaihtaa "
+"järjestyksen nousevaksi tai laskevaksi."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Järjestys:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "Valitse lajittelujärjestys"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"Valitse, haluatko lajitella yhteystiedot nousevasti vai laskevasti. "
+"Lajitteluehto määrittää, minkä kentän perusteella yhteystiedot lajitellaan."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Tulostustyyli"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Valitse tulostustyyli"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+"Valitse haluamasi tulostustyyli. Esikatselukuva auttaa sinua päättämään."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Etsi yhteystietoja luettelosta"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"Ala kirjoittaa hakujonoa tähän ruutuun, jolloin hakuun sopivat yhteystiedot "
+"näytetään. Tämä on nopea tapa etsiä yhteystietoja."
+
+#~ msgid "Select Contacts"
+#~ msgstr "Valitut yhteystiedot"
+
+#~ msgid "&Import"
+#~ msgstr "Tu&o"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Tuo vCard…"
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Tuo yhteystietoja vCard-tiedostosta."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "Tuo CSV-tiedosto…"
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "Tuo yhteystietoja pilkuin erotetusta tekstitiedostosta."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "Tuo LDIF-tiedosto…"
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Tuo yhteystietoja LDIF-tiedostosta."
+
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Tuo LDAP-palvelimelta…"
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Tuo yhteystietoja LDAP-palvelimelta."
+
+#, fuzzy
+#~ msgid "Import GMX file..."
+#~ msgstr "Tuo GMX-tiedosto…"
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Tuo yhteystietoja GMX-osoitekirjatiedostosta."
+
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Vie vCard 4.0…"
+
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Vie yhteystietoja vCard 4.0 -tiedostoon."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Vie vCard 3.0…"
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Vie yhteystietoja vCard 3.0 -tiedostoon."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Vie vCard 2.1…"
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Vie yhteystietoja vCard 2.1 -tiedostoon."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "Vie CSV-tiedosto…"
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "Vie yhteystietoja pilkuin erotettuun tekstitiedostoon."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "Vie LDIF-tiedosto…"
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Vie yhteystietoja LDIF-tiedostoon."
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "Vie GMX-tiedosto…"
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Vie yhteystietoja GMX-osoitekirjatiedostoon."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Ei voitu avata tiedostoa <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ei voitu avata tiedostoa <b>%1</b>.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV:n tuonti-ikkuna"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Yhteystietojen tuonti"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Tuotava tiedosto:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Valitse tuotava csv-tiedosto"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Click this button to start a file chooser that will allow you to select a "
+#~ "csv file to import."
+#~ msgstr ""
+#~ "Käynnistä tästä painikkeesta tiedostonvalintaikkuna, josta voit valita "
+#~ "tuotavan CSV-tiedoston."
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Erotin"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Pilkku"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Aseta kenttäerottimeksi pilkku"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the comma as a field separator."
+#~ msgstr ""
+#~ "Valitse tämä asetus, jos CSV-tiedostosi käyttää kenttäerottimena pilkkua."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Puolipiste"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Aseta kenttäerottimeksi puolipiste"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the semicolon as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Valitse tämä asetus, jos CSV-tiedostosi käyttää kenttäerottimena "
+#~ "puolipistettä."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Sarkain"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a tab character"
+#~ msgstr "Aseta kenttäerottimeksi sarkainmerkki"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the tab character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Valitse tämä asetus, jos CSV-tiedostosi käyttää kenttäerottimena "
+#~ "sarkainmerkkiä."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Välilyönti"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a space character"
+#~ msgstr "Aseta kenttäerottimeksi välilyöntimerkki"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the space character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Valitse tämä asetus, jos CSV-tiedostosi käyttää kenttäerottimena "
+#~ "välilyöntiä."
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Muu"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a custom character"
+#~ msgstr "Aseta kenttäerottimeksi jokin muu merkki"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if to use some other character as the field delimiter "
+#~ "for the data in your csv file."
+#~ msgstr ""
+#~ "Valitse tämä asetus, jos CSV-tiedostosi käyttää kenttäerottimena jotakin "
+#~ "muuta merkkiä."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the custom delimiter character"
+#~ msgstr "Aseta oma erotinmerkki"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Enter a custom character to use as the delimiter character. If you enter "
+#~ "more than 1 character, only the first will be used and the remaining "
+#~ "characters will be ignored."
+#~ msgstr ""
+#~ "Anna erotinmerkkinä käytettävä merkki. Jos annat useamman kuin yhden "
+#~ "merkin, vain ensimmäistä merkkiä käytetään ja loput jätetään huomiotta."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Tekstilainaus:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Valitse lainausmerkki"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Choose the character that your csv data uses to \"quote\" the field "
+#~ "delimiter if that character happens to occur within the data.  For "
+#~ "example, if the comma is the field delimiter, then any comma occurring "
+#~ "with the data will be \"quoted\" by the character specified here."
+#~ msgstr ""
+#~ "Valitse merkki, jolla CSV-tiedoissasi ”lainataan” kenttäerotinmerkki, jos "
+#~ "se löytyy myös datana. Jos esimerkiksi pilkku on kenttäerotin, kaikki "
+#~ "datassa esiintyvät pilkut ”lainataan” (piilotetaan) tässä määritetyllä "
+#~ "merkillä."
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Päiväysmuoto:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>y: kaksinumeroinen vuosi</item><item>Y: nelinumeroinen "
+#~ "vuosi</item><item>m: yksi- tai kaksinumeroinen kuukausi</item><item>M: "
+#~ "kaksinumeroinen kuukausi</item><item>d: yksi- tai kaksinumeroinen päivä </"
+#~ "item><item>D: kaksinumeroinen päivä</item><item>H: kaksinumeroinen tunti "
+#~ "</item><item>I: kaksinumeroinen minuutit</item><item>S: kaksinumeroinen "
+#~ "sekunnit</item></list></para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para>Kirjoita CSV-datassa olevien päiväysten muoto. Käytä siihen "
+#~ "seuraavia erikoismerkkejä:</para><para><list><item>y: kaksinumeroinen "
+#~ "vuosi</item><item>Y: nelinumeroinen vuosi</item><item>m: yksi- tai "
+#~ "kaksinumeroinen kuukausi</item><item>M: kaksinumeroinen kuukausi</"
+#~ "item><item>d: yksi- tai kaksinumeroinen päivä</item><item>D: "
+#~ "kaksinumeroinen päivä</item><item>H: kaksinumeroinen tunti</item><item>I: "
+#~ "kaksinumeroinen minuutit</item><item>S: kaksinumeroinen sekunnit</item></"
+#~ "list></para><para>Esimerkki: ”Y-M-D” vastaa päiväystä kuten ”2012-01-04”</"
+#~ "para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Tekstin koodaus:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Valitse tekstin merkistökoodaus"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose the character encoding of the data in your csv file."
+#~ msgstr "Valitse CSV-tiedostosi tietojen merkistökoodaus."
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "Ohita tiedoston ensimmäinen rivi"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "Ohita CSV-tiedoston ensimmäinen rivi tuotaessa"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this box if you want the import to skip over the first row of the "
+#~ "csv data. In many cases, the first line of a csv file will be a comment "
+#~ "line describing the order of the data fields included in the file."
+#~ msgstr ""
+#~ "Valitse tämä ruutu, jos haluat tuonnin ohittavan CSV-tietojen ensimmäisen "
+#~ "rivin. CSV-tiedoston ensirivi sisältää usein kommentin, jossa vain "
+#~ "kuvataan tietokenttien järjestys tiedostosa."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Käytä mallia…"
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Tallenna malli…"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Paikallinen (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin-1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Vähintään yksi sarake on valittava."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "Malleja ei ole vielä saatavilla."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "Malleja ei saatavilla"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Mallin nimi"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Syötä mallille nimi:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Lähdetiedostoa ei saa avatuksi."
+
+# Ovatko laitteet suomeksi ”auki”?
+#~ msgid "Device is not open"
+#~ msgstr "Laite ei auki"
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "Haluatko varmasti poistaa mallin ”%1”?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Mallin valinta"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Valitse CSV-tiedostoon sopiva malli:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "GMZ-osoitekirjatiedosto (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Ei voitu avata tiedostoa <b>%1</b> lukemiseen.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 ei ole GMX-osoitekirja"
+
+#~ msgid "LDif Files (*.ldif)"
+#~ msgstr "LDif-tiedostot (*.ldif)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Olet valinnut useampia yhteystietoja. Viedäänkö ne useisiin tiedostoihin?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Vie yhteen tiedostoon"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Vie useampaan tiedostoon"
+
+#~ msgid ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|all files (*)"
+#~ msgstr ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|kaikki tiedostot (*)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Valitse tuotava vCard"
+
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "vCardin tuonti epäonnistui"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>Ei päästy käsiksi vCardiin:</para><para>%1</para>"
+
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "Yhtään yhteystietoa ei tuotu vCardeissa olleiden virheiden takia."
+
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "vCard ei sisällä yhtään yhteystietoa."
+
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Tuo vCard"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Haluatko tuoda tämän yhteystiedon osoitekirjaasi?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Tuo kaikki…"
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Mitkä yhteystiedot haluat viedä?"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Et ole valinnut vietäviä yhteystietoja."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Synkronoi yhteystiedot"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose this option to synchronize your groupware contacts."
+#~ msgstr "Valitse tämä synkronoidaksesi ryhmätyöohjelmiston yhteystietosi."
+
+#~ msgid "Ungrouped"
+#~ msgstr "Ryhmittämätön"
+
+#~ msgid "Group"
+#~ msgstr "Ryhmä"
+
+#~ msgid "Gravatarupdatedialog_Gui"
+#~ msgstr "Gravatarupdatedialog_Gui"
+
+#~ msgid "Test for Gravatar update dialog"
+#~ msgstr "Testi Gravatar-päivitysikkunalle"
+
+#~ msgid "Email address"
+#~ msgstr "Sähköpostiosoite"
+
+#~ msgid "Check and update Gravatar"
+#~ msgstr "Tarkista ja päivitä Gravatar"
+
+#~ msgid "Save Image"
+#~ msgstr "Tallenna kuva"
+
+#~ msgid "Save Image URL"
+#~ msgstr "Tallenna kuvan osoite"
+
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Käytä HTTPS-yhteyskäytäntöä"
+
+#~ msgid "Use Libravatar"
+#~ msgstr "Käytä Libravataria"
+
+#~ msgid "Fallback to Gravatar"
+#~ msgstr "Käytä Gravataria varalla"
+
+#~ msgid "Search"
+#~ msgstr "Etsi"
+
+#~ msgid "Search is impossible."
+#~ msgstr "Etsiminen on mahdotonta."
+
+#~ msgid "No Gravatar Found."
+#~ msgstr "Gravataria ei löydy."
+
+#~ msgid "Check Gravatar..."
+#~ msgstr "Tarkista Gravatar…"
+
+#~ msgid "No email found for this contact."
+#~ msgstr "Yhteystiedolta ei löytynyt yhtään sähköpostia."
+
+#~ msgid "A contact group was selected."
+#~ msgstr "Yhteystietoryhmä valittu."
+
+#~ msgid "Send an email..."
+#~ msgstr "Lähetä sähköposti…"
+
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Et ole valinnut yhtään yhteystietoa."
+
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Valituista yhteystiedoista ei löytynyt sähköpostiosoitteita."
+
+#~ msgid "Send vCards..."
+#~ msgstr "Lähetä vCardeja…"
+
+#~ msgid "No vCard created."
+#~ msgstr "vCardia ei luotu."
+
+#~ msgid "Temporary file '%1' cannot be created"
+#~ msgstr "Väliaikaistiedostoa ”%1” ei voida luoda"
+
+#~ msgid "Merge Contacts..."
+#~ msgstr "Yhdistä yhteystiedot…"
+
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Etsi monisteisia yhteystietoja…"
+
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Valitse yhdistettävät yhteystiedot"
+
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Valitse yhdistettävät yhteystiedot:"
+
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr "Valitse osoitekirja, jonne yhdistetyt yhteystiedot tallennetaan:"
+
+#~ msgid "merge"
+#~ msgstr "yhdistä"
+
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Monisteinen yhteystieto %1"
+
+#~ msgid "Select AddressBook:"
+#~ msgstr "Valitse osoitekirja:"
+
+#~ msgid "Merge"
+#~ msgstr "Yhdistä"
+
+#~ msgid "You must select at least two elements."
+#~ msgstr "Vähintään kaksi yhteystietoa on valittava."
+
+#~ msgid "No duplicated contact found."
+#~ msgstr "Monisteisia yhteystietoja ei löytynyt."
+
+#~ msgid "No contacts selected."
+#~ msgstr "Ei valittuja yhteystietoja."
+
+#~ msgid ""
+#~ "Some information can be lost. Do you want to continue, or customize what "
+#~ "you want to merge?"
+#~ msgstr ""
+#~ "Joitain tietoja saattaa hävitä. Haluatko jatkaa vai muokata yhdistettäviä "
+#~ "tietoja?"
+
+#~ msgid "Customize"
+#~ msgstr "Muokkaa"
+
+#~ msgid "Automatic Merging"
+#~ msgstr "Automaattinen yhdistäminen"
+
+#~ msgid ""
+#~ "Some information was not selected. You can lose this information. Do you "
+#~ "want to continue merging?"
+#~ msgstr ""
+#~ "Joitain tietoja ei valittu. Voit menettää nämä tiedot. Haluatko jatkaa "
+#~ "yhdistämistä?"
+
+#~ msgid "Missing Selected Information"
+#~ msgstr "Valitut tiedot puutteelliset"
+
+#~ msgid "(Undefined)"
+#~ msgstr "(määrittämätön)"
+
+#~ msgid "LDIF file (%1)"
+#~ msgstr "LDIF-tiedosto (%1)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>Yritettäessä lukea vCardia ei saatu avatuksi tiedostoa <filename>"
+#~ "%1</filename>:</para> <para>%2</para>"
+
+#~ msgid "Select Which Information to Use for new Contact"
+#~ msgstr "Valitse uudelle yhteystiedolle käytettävät tiedot"
+
+#~ msgid "Merged Contact"
+#~ msgstr "Yhdistä yhteystieto"
+
+#~ msgid "You selected %1 and some item has not the same name"
+#~ msgstr "Valitsit %1, ja jollain yhteystiedolla ei ole sama nimi"
+
+#~ msgid "Error while merging contacts."
+#~ msgstr "Yhteystietojen yhdistäminen epäonnistui."
+
+#~ msgid "Merge contact"
+#~ msgstr "Yhdistä yhteystieto"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Valitse vCardin kentät"
+
+#~ msgid "Search potential duplicate contacts"
+#~ msgstr "Etsi mahdollisia monisteisia yhteystietoja"
+
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Mahdollisesti monisteiset yhteystiedot"
+
+#~ msgid "You selected %1"
+#~ msgstr "Valitsit %1"
+
+#~ msgid "Debug Nepomuk..."
+#~ msgstr "Jäljitä Nepomukin vikoja…"
+
+#~ msgid "Nepomuk Debug"
+#~ msgstr "Nepomuk-ikkuna"
+
+#~ msgid "Search info with nepomukshow..."
+#~ msgstr "Etsi tietoja nepomukshow’lla..."
+
+#~ msgid "Error on fetching item"
+#~ msgstr "Virhe haettaessa kohdetta"
+
+#~ msgid "Search with nepomukshow"
+#~ msgstr "Etsi nepomukshow’lla"
+
+#~ msgid "Nepomuk id:"
+#~ msgstr "Nepomuk-tunniste:"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Kontact-integrointi"
+
+#, fuzzy
+#~| msgid "Compact Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Tiivis tulostustyyli"
+
+#~ msgid "Department"
+#~ msgstr "Osasto"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Johtajan nimi"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Avustajan nimi"
+
+# Ei ole business partner vaan sama kuin spouse
+#~ msgid "Partner's Name"
+#~ msgstr "Puolison nimi"
+
+#~ msgid "IM Address"
+#~ msgstr "Pikaviestiosoite"
+
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "kyllä"
+
+#~ msgctxt "Boolean value"
+#~ msgid "no"
+#~ msgstr "ei"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Haluatko korvata tiedoston ”%1”"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Haluatko korvata tiedoston ”%1”"
+
+#~ msgid "Show Simple View"
+#~ msgstr "Näytä yksinkertainen näkymä"
+
+#~ msgid "Click on the color button to change the header's text color."
+#~ msgstr "Muuta otsikon tekstiväriä napsauttamalla väripainiketta."
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Valitse vCardiin vietävät kentät."
+
+#~ msgid "Show Address Books View"
+#~ msgstr "Näytä osoitekirjanäkymä"
+
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Näyttää tai piilottaa osoitekirjanäkymän."
+
+#~ msgid "Hide Address Books View"
+#~ msgstr "Piilota osoitekirjanäkymä"
+
+#~ msgid "Show Contacts View"
+#~ msgstr "Näytä yhteystietonäkymä"
+
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Näyttää tai piilottaa yhteystietonäkymän."
+
+#~ msgid "Hide Contacts View"
+#~ msgstr "Piilota yhteystietonäkymä"
+
+#~ msgid "Show Details View"
+#~ msgstr "Näytä yksityiskohtanäkymä"
+
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Näyttää tai piilottaa yksityiskohtanäkymän."
+
+#~ msgid "Hide Details View"
+#~ msgstr "Piilota yksityiskohtanäkymä"
+
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Lisää osoitekirjakansio..."
+
+#~ msgid ""
+#~ "Add a new address book folder to the currently selected address book "
+#~ "folder."
+#~ msgstr "Lisää nykyisen osoitekirjakansioon uuden alikansion."
+
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Kopioi osoitekirjakansio"
+#~ msgstr[1] "Kopioi %1 osoitekirjakansiota"
+
+#~ msgid "Copy the selected address book folders to the clipboard."
+#~ msgstr "Kopioi valitut osoitekirjakansiot leikepöydälle."
+
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Poistaa valitun osoitekirjakansion osoitekirjasta."
+
+#, fuzzy
+#~| msgid "Cut Address Book Folder"
+#~| msgid_plural "Cut %1 Address Book Folders"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Leikkaa osoitekirjakansio"
+
+#, fuzzy
+#~| msgid ""
+#~| "Open a dialog to edit the properties of the selected address book folder."
+#~ msgid "Update the content of the address book folder"
+#~ msgstr ""
+#~ "Avaa ikkunan, jossa valitun osoitekirjakansion ominaisuuksia voi muokata."
+
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Leikkaa osoitekirjakansio"
+#~ msgstr[1] "Leikkaa %1 osoitekirjakansiota"
+
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Leikkaa osoitekirjakansion osoitekirjasta."
+
+#~ msgid "Folder Properties..."
+#~ msgstr "Kansion ominaisuudet..."
+
+#~ msgid ""
+#~ "Open a dialog to edit the properties of the selected address book folder."
+#~ msgstr ""
+#~ "Avaa ikkunan, jossa valitun osoitekirjakansion ominaisuuksia voi muokata."
+
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Kopioi yhteystieto"
+#~ msgstr[1] "Kopioi %1 yhteystietoa"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Poista yhteystieto"
+#~ msgstr[1] "Tuhoa %1 kontaktia"
+
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Poistaa valitut yhteystiedot osoitekirjasta."
+
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Leikkaa yhteystieto"
+#~ msgstr[1] "Leikkaa %1 yhteystietoa"
+
+#~ msgid "Edit Contact..."
+#~ msgstr "Muokkaa yhteystietoa..."
+
+#~ msgid "Copy Group"
+#~ msgid_plural "Copy %1 Groups"
+#~ msgstr[0] "Kopioi ryhmä"
+#~ msgstr[1] "Kopioi %1 ryhmää"
+
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Poista ryhmä"
+#~ msgstr[1] "Poista %1 ryhmää"
+
+#~ msgid "Cut Group"
+#~ msgid_plural "Cut %1 Groups"
+#~ msgstr[0] "Leikkaa ryhmä"
+#~ msgstr[1] "Leikkaa %1 ryhmää"
+
+#~ msgid "Edit Group..."
+#~ msgstr "Muokkaa ryhmää..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Lisää osoitekirja"
+
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Osoitekirjaa ei voitu lisätä: %1"
+
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Osoitekirjan lisääminen epäonnistui"
+
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "Haluatko varmasti poistaa osoitekirjan ”%1”?"
+
+#~ msgid "Delete Address Book?"
+#~ msgstr "Poistetaanko osoitekirja?"
+
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Luo uusi yhteystieto<p>Tämä avaa ikkunan, jossa voit antaa henkilön "
+#~ "tiedot kuten osoitteet ja puhelinnumerot.</p>"
+
+#~ msgid "New &Group..."
+#~ msgstr "Uusi &ryhmä..."
+
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Luo uusi ryhmä<p>Tämä avaa kyselyikkunan, missä voit lisätä uuden "
+#~ "yhteystietoryhmän.</p>"
+
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Muokkaa valittua yhteystietoa<p>Tämä avaa kyselyikkunan, jossa voit "
+#~ "muokata kaikkia yhteystiedon yksityiskohtia kuten osoitteita ja "
+#~ "puhelinnumeroita.</p>"
+
+#~ msgid "Add &Address Book..."
+#~ msgstr "Lisää &osoitekirja..."
+
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Lisää uusi osoitekirja<p>Tämä avaa kyselyikkunan, josta voit valita "
+#~ "luotavan osoitekirjan tyypin.</p>"
+
+#~ msgid "&Delete Address Book"
+#~ msgstr "&Poista osoitekirja"
+
+#~ msgid ""
+#~ "Delete the selected address book<p>The currently selected address book "
+#~ "will be deleted, along with all the contacts and contact groups it "
+#~ "contains.</p>"
+#~ msgstr ""
+#~ "Poista valittu osoitekirja<p>Tällä hetkellä valittu osoitekirja "
+#~ "poistetaan kaikkine sen sisältämine yhteystietoineen ja "
+#~ "yhteystietoryhmineen.</p>"
+
+#~ msgid "Address Book Properties..."
+#~ msgstr "Osoitekirjan ominaisuudet..."
+
+#~ msgid "Open a dialog to edit properties of the selected address book."
+#~ msgstr ""
+#~ "Avaa kyselyikkunan, jossa valitun osoitekirjan ominaisuuksia voi muokata."
+
+#~ msgid "Add Host"
+#~ msgstr "Lisää palvelin"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgid "Home Number"
+#~ msgstr "Kotinumero"
+
+#~ msgid "Work Number"
+#~ msgstr "Työnumero"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Matkapuhelinnumero"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faksinumero"
+
+#~ msgid "Pager"
+#~ msgstr "Hakulaite"
+
+#~ msgid "Street"
+#~ msgstr "Katuosoite"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Osavaltio"
+
+#~ msgid "Country"
+#~ msgstr "Maa"
+
+#~ msgid "City"
+#~ msgstr "Kaupunki"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postinumero"
+
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#~ msgid "User ID"
+#~ msgstr "Käyttäjän tunniste"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Osavaltio"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Tuo yhteystiedot LDAPista"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Etsi osoitteita hakemistosta"
+
+#~ msgid "Search for:"
+#~ msgstr "Etsi:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "kohteessa"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Kotinumero"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Työnumero"
+
+#~ msgid "Stop"
+#~ msgstr "Pysäytä"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Etsi"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursiivinen haku"
+
+#~ msgid "Contains"
+#~ msgstr "Sisältää"
+
+#~ msgid "Starts With"
+#~ msgstr "Alkaa"
+
+#~ msgid "Unselect All"
+#~ msgstr "Poista valinnat"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP-palvelinten asetukset..."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#~ msgid "You must select a LDAP server before searching."
+#~ msgstr "LDAP-palvelin on valittava ennen hakua."
+
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Valitse jakeluluettelo, johon valitut yhteystiedot lisätään"
+
+#~ msgid "Select Distribution List"
+#~ msgstr "Valitse jakeluluettelo"
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Tuotu %2 LDAP-kansiosta %1."
+
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Määritä osoitekirjan LDAP-asetukset"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-palvelimen asetukset"
+
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "(c) 2009 Tobias Koenig"
+
+#~ msgid "Edit Host"
+#~ msgstr "Muokkaa palvelinta"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-palvelimet"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Valitse kaikki käytettävät palvelimet:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Lisää palvelin..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Muokkaa palvelinta..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Poista palvelin"
+
+#~| msgid "(c) 1997-2008, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 2007–2009 The KDE PIM Team"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Osoitekirjat"
+
+#, fuzzy
+#~| msgctxt "@item:inlistbox Name of the contact"
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#, fuzzy
+#~| msgid "Home Fax"
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Kotifaksi"
+
+#, fuzzy
+#~| msgid "Phone numbers"
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Puhelinnumerot"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Ensisijainen osoite"
+
+#, fuzzy
+#~| msgctxt "@item LDAP search key"
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Sähköposti"
+
+#, fuzzy
+#~| msgid "All Contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Kaikki yhteystiedot"
+
+#, fuzzy
+#~| msgid "Formatted Name"
+#~ msgid "Short Name"
+#~ msgstr "Muotoiltu nimi"
+
+#, fuzzy
+#~| msgctxt "@item LDAP search key"
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "EMails"
+#~ msgstr "Sähköposti"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "Iceland"
+
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "Sekalaista"
+
+#~ msgid ""
+#~ "This is the minimum number of empty fields that have to be printed in "
+#~ "addition to real entries; if this number is not reached on the first "
+#~ "page, more pages with empty fields only may be appended."
+#~ msgstr ""
+#~ "Vähimmäismäärä tyhjille kentille, jotka tulostetaan todellisten tietojen "
+#~ "lisäksi. Jos määrä ei täyty ensimmäisellä sivulla, voidaan tulostaa lisää "
+#~ "sivuja, jotka koostuvat ainoastaan tyhjistä kentistä."
+
+#, fuzzy
+#~| msgid ""
+#~| "If you often add contacts to your printout manually before entering them "
+#~| "into the KDE addressbook, you should set this option to a value greater "
+#~| "than 0: it determines how many empty address fields must be printed; if "
+#~| "this many do not fit onto the page, another page with empty fields only "
+#~| "will be printed."
+#~ msgid ""
+#~ "If you often add contacts to your printout manually before entering them "
+#~ "into the KDE address book, you should set this option to a value greater "
+#~ "than 0: it determines how many empty address fields are to be printed; if "
+#~ "this many do not fit onto the page, another page with only empty fields "
+#~ "will be printed."
+#~ msgstr ""
+#~ "Jos lisäät usein yhteystietoja tulosteeseen käsin ennen niiden "
+#~ "syöttämistä KDE:n osoitekirjaan, kannattaa arvo asettaa nollaa "
+#~ "suuremmaksi: arvo määrittää, kuinka monta tyhjää osoitekenttää "
+#~ "tulostetaan. Jos kentät eivät mahdu sivulle, tulostetaan ylimääräinen "
+#~ "sivu."
+
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Tyhjiä kenttiä vähintään:"
+
+#~ msgid ""
+#~ "If this option is turned on, behind the contacts on a page the remaining "
+#~ "space will be filled with empty fields so you can add contacts manually "
+#~ "later"
+#~ msgstr ""
+#~ "Jos valittu, täytetään tyhjä tila tyhjillä kentillä myöhempää käsin "
+#~ "täyttämistä varten."
+
+#~ msgid "Fill pages with empty address fields"
+#~ msgstr "Täytä sivut tyhjillä osoitekentillä"
+
+#~ msgid "Letter Groups"
+#~ msgstr "Kirjainryhmät"
+
+#~ msgid ""
+#~ "Here you can group letters together as they are grouped in your time "
+#~ "planner. Press 'group letter' to combine the selected letter with the "
+#~ "letter group above it, press 'ungroup letter' to remove the last letter "
+#~ "from a selected group."
+#~ msgstr ""
+#~ "Tässä voit ryhmittää kirjaimia samoin kuin ne ryhmitetään "
+#~ "paperimuistiossa. Napsauta ”Lisää ryhmään” lisätäksesi kirjaimen "
+#~ "kirjainryhmään, ”Poista ryhmästä” poistaaksesi viimeisen kirjaimen "
+#~ "valitusta ryhmästä."
+
+#~ msgid "Group Letter"
+#~ msgstr "Lisää ryhmään"
+
+#~ msgid "Font Settings"
+#~ msgstr "Kirjasinten asetukset"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Käytä KDE:n vakiokirjasimia"
+
+#~ msgid "Details font:"
+#~ msgstr "Kirjasinten yksityiskohdat:"
+
+#~ msgid "Size:"
+#~ msgstr "Koko:"
+
+#~ msgid "Body font:"
+#~ msgstr "Leipätekstikirjasin:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Tasalevyinen kirjasin:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Yhteystiedon otsikon kirjasin:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Otsikot:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Käytä värillisiä yhteystietojen otsikoita"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Toimitus osoitteeseen:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Reunusten ja välistyksen määritykset"
+
+#~ msgid "Preparing"
+#~ msgstr "Valmistelee"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Tulostettu %1 KAddressBookilla (http://www.sot.com)"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Tulosta haluttu määrä yhteystietoja."
+
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "Jos valittu, tulostetaan ainakin yksi sivu kutakin alkukirjainryhmää "
+#~ "kohden, vaikka ryhmässä ei olisi lainkaan tietoja. Tämä on yleensä "
+#~ "käytännöllistä ainoastaan yhdistettynä valintaan \"Täytä sivut tyhjillä "
+#~ "osoitekentillä\"."
+
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "Tulosta aina sivut kaikista välilehdistä."
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Valitse tulostettavat henkilöt"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Tulosta koko osoitekirja"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Tulosta vain valitut yhteystiedot osoitekirjasta.\n"
+#~ "Tämä ei toimi, jos yhtään yhteystietoa ei ole valittuna."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "&Suotimeen sopivat yhteystiedot"
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Tulosta vain suodatetut yhteystiedot.\n"
+#~ "Tämä valinta ei ole käytössä, jos et ole määritellyt suodatinta."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Tulosta vain ne yhteystiedot, jotka kuuluvat vasemman listan valittuun "
+#~ "kategoriaan.\n"
+#~ "Tämä ominaisuus ei ole käytössä, jos yhtään kategoriaa ei ole."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Valitse suodin valitaksesi mitkä yhteystiedot tulostetaan."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Valise lajit, joiden jäsenet haluat tulostaa."
+
+#~ msgid "Custom Fields"
+#~ msgstr "Omat kentät"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Näyttää annetun sähköpostiosoitteen yhteystietomuokkaimessa"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Näyttää annetun käyttäjätunnisteen yhteystietomuokkaimessa"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Käynnistyy vain muokkaimen tilassa"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Avaa yhteystietojen muokkaimen"
+
+#~ msgid "Work on given file"
+#~ msgstr "Muokkaa annettua tiedostoa"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "&Muokkaa osoitteita..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Muokkaa osoitetta"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Muokkaa nimeä..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Tämä on ensisijainen osoite"
+
+#~ msgid "Remove"
+#~ msgstr "Poista"
+
+#~ msgid "Change Type..."
+#~ msgstr "Muuta tyyppiä..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Muuta osoitteen tyyppiä"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Osoitetyypit"
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Muokkaa henkilön ”%1” tietoja"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Yhteystietojen muokkaus"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "@title:tab General information about a contact"
+#~ msgid "General"
+#~ msgstr "Yleistä"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's name:"
+#~ msgstr "Puolison nimi:"
+
+#~ msgid "Details"
+#~ msgstr "Yksityiskohdat"
+
+#~ msgid "Misc"
+#~ msgstr "Sekalaista"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Syötä kelvollinen päivämäärä"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Syötä kelvollinen syntymäaika."
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "Syötä kelvollinen vuosipäivä."
+
+#~ msgid "Add View"
+#~ msgstr "Lisää näkymä"
+
+#~ msgid "View name:"
+#~ msgstr "Näkymän nimi:"
+
+#~ msgid "View Type"
+#~ msgstr "Näkymän tyyppi"
+
+#~ msgid "Add Field"
+#~ msgstr "Lisää kenttä"
+
+#~ msgctxt "@label:textbox Name of a custom field"
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgid "Type:"
+#~ msgstr "Tyyppi:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Lähetä sähköpostia valituille yhteystiedoille."
+
+#~ msgid "Numeric Value"
+#~ msgstr "Numeerinen arvo"
+
+#~ msgid "Boolean"
+#~ msgstr "Totuusarvo"
+
+#~ msgid "Date"
+#~ msgstr "Päiväys"
+
+#~ msgid "Time"
+#~ msgstr "Aika"
+
+#~ msgid "Date & Time"
+#~ msgstr "Päiväys ja aika"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr "Samalla nimellä löytyy jo kenttä. Valitse toinen nimi."
+
+#~ msgid "Remove Field"
+#~ msgstr "Poista kenttä"
+
+#~ msgid "Add Field..."
+#~ msgstr "Lisää kenttä..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Poista kenttä..."
+
+#~ msgid "Edit Distribution List"
+#~ msgstr "Muokkaa jakeluluetteloa"
+
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgid "Distribution list members:"
+#~ msgstr "Jakeluluettelon jäsenet:"
+
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr ""
+#~ "On jo olemassa jakeluluettelo, jonka nimi on %1. Valitse toinen nimi."
+
+#~ msgid "Name in Use"
+#~ msgstr "Nimi käytössä"
+
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "<b>Jakeluluettelo:</b>"
+
+#~ msgid "<b>Email address to use in this list:</b>"
+#~ msgstr "<b>Luettelossa käytettävä sähköpostiosoite:</b>"
+
+#~ msgctxt "Formatted name, role, organization"
+#~ msgid "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+#~ msgstr "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "<b>Osoitekirja:</b> %1"
+
+#~ msgid "Add New Distribution List"
+#~ msgstr "Lisää uusi jakeluluettelo"
+
+#~ msgid "Enter Name"
+#~ msgstr "Anna nimi"
+
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Anna uuden jakeluluettelon nimi:"
+
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "On jo olemassa jakeluluettelo, jonka nimi on %1. Valitse toinen nimi."
+
+#~ msgid "Name Exists"
+#~ msgstr "Nimi on olemassa"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Muokkaa sähköpostiosoitteita..."
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Muokkaa sähköpostiosoitteita"
+
+#~ msgid "Set Standard"
+#~ msgstr "Aseta oletukseksi"
+
+#~ msgid "Add Email"
+#~ msgstr "Lisää sähköpostiosoite"
+
+#~ msgid "New Email:"
+#~ msgstr "Uusi sähköpostiosoite:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>Haluatko varmasti poistaa sähköpostiosoitteen <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Vahvista poisto"
+
+#~ msgid "&Delete"
+#~ msgstr "Poista"
+
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "Näytä ainoastaan valittuihin luokkiin kuuluvat henkilöt"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Näytä kaikki henkilöt lukuun ottamatta niitä, jotka kuuluvat valittuihin "
+#~ "luokkiin"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Muokkaa osoitekirjan suotimia"
+
+#~ msgid "&Remove"
+#~ msgstr "&Poista"
+
+#~ msgid "Filter:"
+#~ msgstr "Suodin:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "Varaustiedon sijainti:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Käytä sijaintitietoa"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Leveysaste:"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Pituusaste:"
+
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Muokkaa sijaintitietoa..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Sijaintitiedon syöttö"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Pituus- ja leveysasteet"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Leveysaste:"
+
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "pohjoista"
+
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "eteläistä"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Pituusaste:"
+
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "itäistä"
+
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "läntistä"
+
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Määrittelemätön"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "Tämän henkilön kuvaa ei löydy."
+
+#~ msgid "Reset"
+#~ msgstr "Palauta alkuarvot"
+
+#~ msgid "IM address:"
+#~ msgstr "Pikaviestinosoite:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Muokkaa pikaviestinosoitteita..."
+
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Tarkentuva haku <p> Anna tähän tekstiä, jonka avulla yhteystietoja "
+#~ "voidaan hakea. Voit valita yhteystietojen osan, joista tietoja haetaan.</"
+#~ "p>"
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "Mi&ssä:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr ""
+#~ "Tässä kohdassa voit määritellä kentän, jota käytetään tarkentuvassa "
+#~ "haussa."
+
+#~ msgid "Visible Fields"
+#~ msgstr "Näkyvät kentät"
+
+#~ msgid "All Fields"
+#~ msgstr "Kaikki kentät"
+
+#~ msgid "Blog"
+#~ msgstr "Blogi"
+
+#~ msgid "Don Sanders"
+#~ msgstr "Don Sanders"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Yhteistyöylläpitäjä, libkabc-sovitus, CVS-tuonti/vienti"
+
+#~ msgid "Mike Pilone"
+#~ msgstr "Mike Pilone"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "GUI:n ja rungon uudelleensuunnittelu"
+
+#~ msgid "Greg Stern"
+#~ msgstr "Greg Stern"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DCOP-rajapinta"
+
+#~ msgid "Mark Westcott"
+#~ msgstr "Mark Westcott"
+
+#, fuzzy
+#~| msgid "Mischel Boyer de la Giroday"
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "Mischel Boyer de la Giroday"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP-haku"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this distribution list?"
+#~| msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "Haluatko varmasti poistaa tämän jakeluluettelon?"
+#~ msgstr[1] "Haluatko varmasti poistaa nämä %n jakeluluetteloa?"
+
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "Haluatko varmasti poistaa tämän henkilön?"
+#~ msgstr[1] "Haluatko varmasti poistaa nämä %1 yhteystietoa?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Valitse vain yksi henkilö."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>Haluatko tallentaa henkilön <b>%1</b> tiedot omiksi yhteystiedoiksesi?"
+#~ "</qt>"
+
+#~ msgid "Use"
+#~ msgstr "Käytä"
+
+#~ msgid "Do Not Use"
+#~ msgstr "Älä käytä"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Uusi jakeluluettelo"
+
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Uusi jakeluluettelo (%1)"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ei voitu tallettaa osoitekirjaa <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ei ole oikeuksia tallettaa osoitekirjaa <b>%1</b>.</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Järjestelmäsi KDE-ympäristössä ei ole LDAP-tukea. Kysy lisätietoja "
+#~ "järjestelmän ylläpitäjältä tai ohjelmistotoimittajalta."
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "LDAPin IO-asiakas ei ole käytettävissä"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Tulosta osoitteet"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "&Lähetä sähköpostia..."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Tallenna kaikki osoitekirjan muutokset tallennusjärjestelmään."
+
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Uusi"
+
+#~ msgid "&New Distribution List..."
+#~ msgstr "&Uusi jakeluluettelo"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Lähetä valittu yhteystieto sähköpostin liitteenä."
+
+#~ msgid "Chat &With..."
+#~ msgstr "Avaa &keskustelu..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Aloita pikaviestinkeskustelu valitun henkilön kanssa"
+
+#~ msgid "Edit"
+#~ msgstr "Muokkaa"
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr ""
+#~ "Leikkaa valitun henkilön tai henkilöiden yhteystiedot leikepöydälle vCard-"
+#~ "muodossa."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Liittää leikepöydälle leikatut tai kopioidut yhteystiedot."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "P&oista yhteystieto"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Poistaa kaikki valitut yhteystiedot."
+
+#~ msgid "C&opy Contact To..."
+#~ msgstr "K&opioi yhteystieto ..."
+
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Siirrä yhteystieto..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "Näytä linkkien työkalurivi"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Näyttää tai piilottaa linkkien työkalurivi."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "Tämä kohta avaa ikkunan, jossa voit muokata kaikkia KAddressBookin "
+#~ "asetuksia."
+
+#~ msgid "LDAP &Lookup"
+#~ msgstr "LDAP-haku"
+
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Etsi yhteystietoja LDAP-hakemistosta <p>Tämä kohta avaa ikkunan, jossa "
+#~ "voit etsiä yhteystietoja ja valita haluamasi paikalliseen osoitekirjaan "
+#~ "lisättävät tiedot.</p>"
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "Määrittele omiksi tiedoiksesi"
+
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Määrittele omiksi tiedoiksi<p>Tämän henkilön tietoja käytetään monissa "
+#~ "KDE-sovelluksissa, joten omia tietoja ei tarvitse määritellä moneen "
+#~ "kertaan.</p>"
+
+#~ msgid "Select Categories..."
+#~ msgstr "Valitse luokat..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "Tyhjennä hakurivi"
+
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr ""
+#~ "Tyhjennä etsintävälilehti<br /><br />Tyhjentää pikahaun hakusanakentän ja "
+#~ "sisällön."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Yhdistä olemassa oleviin luokkiin?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "Älä yhdistä"
+
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "%1 osuva yhteystieto"
+#~ msgstr[1] "%1 osuvaa yhteystietoa"
+
+#~ msgid "Distribution List: %1"
+#~ msgstr "Jakeluluettelo: %1"
+
+#~ msgid "Keys:"
+#~ msgstr "Avaimet:"
+
+#~ msgid "Export..."
+#~ msgstr "Vie..."
+
+#~ msgid "Key Type"
+#~ msgstr "Avaimen tyyppi"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Haluatko varmasti poistaa avaimen <b>%1</b>?</qt>"
+
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Lisää jakeluluetteloon"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Sinun täytyy määrittää LDAP-palvelin ennen hakua.\n"
+#~ "Voit tehdä tämän valitsemalla valikosta Asetukset/Määrittele KAddressBook."
+
+#, fuzzy
+#~| msgid "The following contact was imported into your address book:"
+#~| msgid_plural ""
+#~| "The following %1 contacts were imported into your address book:"
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Seuraavat yhteystiedot tuotiin osoitekirjaasi:"
+#~ msgstr[1] "Seuraaat %n yhteystietoa tuotiin osoitekirjaan:"
+
+#~ msgid "Please select the contacts you want to add to the distribution list."
+#~ msgstr "Valitse yhteystiedot, jotka haluat lisätä jakeluluetteloon."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Kunnioittavat etuliitteet:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "Voit lisätä asetusdialogissa erilaisia kunnioitusta ilmaisevia ilmaisuja."
+
+#~ msgid "Given name:"
+#~ msgstr "Etunimi:"
+
+#~ msgid "Additional names:"
+#~ msgstr "Muut nimet:"
+
+#~ msgid "Family names:"
+#~ msgstr "Sukunimi:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Kunnioittavat jälkiliitteet:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "Voit lisätä asetusdialogissa erilaisia kunnioitusta ilmaisevia ilmaisuja."
+
+#~ msgid "Formatted name:"
+#~ msgstr "Muotoiltu nimi:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Hae nimi automaattisesti"
+
+#~ msgid "Dr."
+#~ msgstr "Tri"
+
+#~ msgid "Miss"
+#~ msgstr "Neiti"
+
+#~ msgid "Mr."
+#~ msgstr "Herra"
+
+#~ msgid "Mrs."
+#~ msgstr "Rouva"
+
+#~ msgid "Ms."
+#~ msgstr "Neiti"
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "nuor."
+
+#~ msgid "Sr."
+#~ msgstr "vanh."
+
+#~ msgctxt "@item:inlistbox Custom name format"
+#~ msgid "Custom"
+#~ msgstr "Oma"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Simple Name"
+#~ msgstr "Yksinkertainen nimi"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Koko nimi"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Käänteinen nimi pilkulla"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name"
+#~ msgstr "Käänteinen nimi"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Organisaatio"
+
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Muu..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Muokkaa puhelinnumeroa"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Tämä on ensisijainen puhelinnumero"
+
+#~ msgid "Department:"
+#~ msgstr "Osasto:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Esimiehen nimi:"
+
+#~ msgid "Office:"
+#~ msgstr "Toimisto:"
+
+#~ msgid "Profession:"
+#~ msgstr "Ammatti:"
+
+#~ msgctxt "@label:textbox Job title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Otsikko:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Lempinimi:"
+
+#~ msgid "Birthday:"
+#~ msgstr "Syntymäpäivä"
+
+#~ msgid "Partners name:"
+#~ msgstr "Puolison nimi:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Vuosipäivä:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Muokkaa henkilön nimeä"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Muokkaa nimeä..."
+
+#~ msgid "&Role:"
+#~ msgstr "T&yönkuva:"
+
+#~ msgid "&Organization"
+#~ msgstr "Or&ganisaatio"
+
+#~ msgid "Home&page:"
+#~ msgstr "Koti&sivu:"
+
+#~ msgid "Tools"
+#~ msgstr "Työkalut"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Muokkaa pikaviestinosoitteita"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "&Protokolla:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "&Osoite:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "&Verkko:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "Pikaviestinosoitteet"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr "Vakioksi asetettu IM-osoite näytetään päämuokkaimen ikkunassa."
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt>Vain yksi pikaviestinosoite voidaan asettaa vakio-osoitteeksi."
+#~ "<br>Vakio-osoite näytetään päämuokkainikkunassa, ja toiset ohjelmat "
+#~ "voivat käyttää tätä vihjeenä päätettäessä, mikä osoite näytetään.</qt>"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "A&seta vakioksi"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "&Poista"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "&Muokkaa..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "&Lisää..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "Osoite"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em>Huom:</em> Lue ohjesivu ennen pikaviestintävälineiden osoitteiden "
+#~ "lisäämistä tai muuttamista."
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Uusien vastaanottajanimien automaattinen jäsennys"
+
+#~ msgid "Fax"
+#~ msgstr "Faksinumero"
+
+#~ msgid "SMS"
+#~ msgstr "Tekstiviesti"
+
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr "GSM-tekstiviestien lähettämiseen käytettävä skripti"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Tottele KDE:n yhtä napsautusta"
+
+#~ msgid ""
+#~ "If true, the contact list will be placed above the extensions on the left "
+#~ "(distribution list editor etc.) instead of in the middle of the main "
+#~ "window"
+#~ msgstr ""
+#~ "Jos valittu, yhteystietoluettelo sijoitetaan laajennusten "
+#~ "(jakelulistamuokkain jne.) yläpuolelle vasemmalla, sen sijaan että se "
+#~ "olisi pääikkunassa keskellä"
+
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "Sähköposti:"
+
+#~ msgid "Play"
+#~ msgstr "Soita"
+
+#~ msgid "Store as URL"
+#~ msgstr "Tallenna osoitteeksi"
+
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr ""
+#~ "Tähän kenttään talletetaan äänitiedosto, joka esittää nimen oikean "
+#~ "ääntämisasun"
+
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr "Talleta vain äänitiedoston osoite, ei itse tiedostoa."
+
+#, fuzzy
+#~| msgid "Delete Distribution List"
+#~| msgid_plural "Delete %1 Distribution Lists"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Poista jakeluluettelo"
+#~ msgstr[1] "Valitse jakeluluettelo"
+
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Liitä yhteystieto"
+#~ msgstr[1] "Liitä %1 kontaktia"
+
+#~ msgid "New Contact"
+#~ msgid_plural "New %1 Contacts"
+#~ msgstr[0] "Uusi yhteystieto"
+#~ msgstr[1] "%1 uutta kontaktia"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Valitse näytettävät kentät"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "&Valitut kentät:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Oletussuodinta käytetään tässä näkymässä aina. Tämän toiminnon avulla "
+#~ "voit asettaa suodatettuja näkymiä, jotka toimivat vain tietyn tyyppisten "
+#~ "tietojen osalta. Suodinta voidaan vaihtaa näkymän käyttöön ottamisen "
+#~ "jälkeen."
+
+#~ msgid "No default filter"
+#~ msgstr "Ei oletussuodinta"
+
+#~ msgid "Use filter:"
+#~ msgstr "Käytä suodinta:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Oletussuodin"
+
+#~ msgid "Modify View: "
+#~ msgstr "Muokkaa näkymää:"
+
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Taulukon oletusnäkymä"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Oletko varma, että haluat poistaa näkymän <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Vahvista poisto"
+
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Tuodaanko yhteystieto osoitekirjaasi?"
+#~ msgstr[1] "Tuo %1 yhteystietoa osoitekirjaan?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "Älä tuo"
+
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Määrittämätön"
+
+#~ msgid "Select View"
+#~ msgstr "Valitse näkymä"
+
+#~ msgid "Modify View..."
+#~ msgstr "Muokkaa näkymää..."
+
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Napsauttamalla tätä painiketta saat näkyviin kyselyikkunan, jossa voit "
+#~ "muokata osoitekirjan näkymää. Voit esim. lisätä tai poistaa näytettäviä "
+#~ "kenttiä."
+
+#~ msgid "Add View..."
+#~ msgstr "Lisää näkymä..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Voit lisätä uuden näkymän valitsemalla avautuvasta keskusteluikkunasta "
+#~ "yhden sellaisen. Sinun tulee antaa näytölle nimi, jotta voit erottaa sen "
+#~ "muista näytöistä."
+
+#~ msgid "Delete View"
+#~ msgstr "Poista näkymä"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Tällä painikeella voit poistaa nykyisen näytön, jonka lisäsit aiemmin."
+
+#~ msgid "Refresh View"
+#~ msgstr "Päivitä näyttö"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Näkymä päivittyy painamalla tätä painiketta."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "Muokkaa &suotimia..."
+
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Muokkaa yhteystietojen suotimia <p>Jos valitset tämän, sinulle näytetään "
+#~ "ikkuna jossa voit lisätä, poistaa tai muokata suotimia.</p>"
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Tuontiliitännäistä ei ole saatavilla kohteelle <b>%1</b>.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Vientiliitännäistä ei ole saatavilla kohteelle <b>%1</b>.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Yhteystietoja ei voitu viedä."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Valitse vietävät yhteystiedot"
+
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Nouseva"
+
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Laskeva"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "Vie koko osoitekirja"
+
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "&Valittu yhteystieto"
+#~ msgstr[1] "&Valitut yhteystiedot (%1 valittua)"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Vie osoitekirjasta vain valitut yhteystiedot.\n"
+#~ "Tämä valinta ei ole käytettävissä, jos yhtään yhteystietoa ei ole "
+#~ "valittuna."
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Vie vain suodatetut yhteystiedot.\n"
+#~ "Tämä valinta ei ole käytössä, jos et ole määritellyt suodatinta."
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Vie vain yhteystiedot valitusta kategoriasta, joka on vasemmalla olevassa "
+#~ "listassa.\n"
+#~ "Tämä on estetty, jos yhtään kategoriaa ei ole määritelty."
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "Valitse suodin, joka rajaa siirrettävät yhteystiedot."
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Business"
+#~ msgstr "Yritys"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Family"
+#~ msgstr "Perhe"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Koulu"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Ystävä"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "Karttahakujen palveluntarjoajaa ei löytynyt.\n"
+#~ "Määritä palveluntarjoaja asetusikkunassa."
+
+#~ msgid "Crypto Settings"
+#~ msgstr "Salausasetukset"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "Sallitut protokollat"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "Ensisijainen OpenPGP-salausavain:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "Ensisijainen S/MIME-salausvarmenne:"
+
+#~ msgid "Message Preference"
+#~ msgstr "Viestien turvallisuussuositukset"
+
+#~ msgid "Sign:"
+#~ msgstr "Allekirjoita:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "Salaa:"
+
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Muokkaa pikaviestinosoitteita"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "Lisää osoite"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Do you really want to delete the selected address?"
+#~ msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgstr[0] "Haluatko varmasti poistaa valitun osoitteen?"
+#~ msgstr[1] "Haluatko varmasti poistaa %1 valittua osoitetta?"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Jakeluluettelon muokkain"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Jakeluluettelot"
+
+#~ msgid "Add distribution list"
+#~ msgstr "Lisää uusi jakeluluettelo"
+
+#~ msgid "Edit distribution list"
+#~ msgstr "Muokkaa jakeluluetteloa"
+
+#~ msgid "Remove distribution list"
+#~ msgstr "Muuta jakeluluettelon nimeä"
+
+#~ msgid "New Distribution List..."
+#~ msgstr "Uusi jakeluluettelo..."
+
+#~ msgid "Delete"
+#~ msgstr "Poista"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ei voitu luoda osoitekirjaa tyypille <b>%1</b>.</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1 osoitekirja"
+
+#~ msgid "Edit address book settings"
+#~ msgstr "Muokkaa osoitekirjan asetuksia"
+
+#~ msgid "Remove address book"
+#~ msgstr "Poista osoitekirja"
+
+#~ msgid "Look & Feel"
+#~ msgstr "Tuntuma"
+
+#~ msgid "Text Color"
+#~ msgstr "Tekstin väri"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Otsikon, kehyksen ja erottimen väri"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Ylätunnisteen tekstin väri"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Korostuksen väri"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Korostetun tekstin väri"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Piirrä &rivierottimet"
+
+#~ msgid "Separator &width:"
+#~ msgstr "Rivierottimen &leveys:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Täyte:"
+
+#~ msgid "Cards"
+#~ msgstr "Kortit"
+
+#~ msgid "&Margin:"
+#~ msgstr "&Marginaalit:"
+
+#~ msgid "Draw &borders"
+#~ msgstr "Piirrä &reunat"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Marginaali on välimatka (pikseleissä) tiedon ja reunan välillä. "
+#~ "Varteenotettavin lisättäessä tilaa huomioruudun ja tiedon välille."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Spacing määrittelee etäisyyden (pikseleissä) kappaleiden ja minkä tahansa "
+#~ "muun välille (näytön kehykset, toiset kappaleet tai sarakkeiden "
+#~ "erottimet)."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Asettaa sarake-erottimien leveyden"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&Asettelu"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "&Salli omat värit"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Värit"
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Kaksoisnapsauta tai paina Enter yhteystiedon päällä valitaksesi värin "
+#~ "näytön teksteille."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "Käytä omia &kirjasimia"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Tekstikirjasin:"
+
+#~ msgid "Choose..."
+#~ msgstr "Valitse..."
+
+#~ msgid "&Header font:"
+#~ msgstr "Yhteystiedon otsikon kirjasin:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Jos omat kirjasimet ovat sallittuna, voit valita kirjasimen alla tälle "
+#~ "näytölle. Muussa tapauksessa käytetään KDE:n oletuskirjasinta lihavoituna "
+#~ "otsikkoihin ja normaalina tietoihin."
+
+#, fuzzy
+#~| msgid "&Fonts"
+#~ msgid "Fonts"
+#~ msgstr "&Kirjasimet"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "Näytä &tyhjät kentät"
+
+#~ msgid "Show field &labels"
+#~ msgstr "Näytä kenttien &nimet"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "&Käyttäytyminen"
+
+#~ msgid "Row Separator"
+#~ msgstr "Rivierotin"
+
+#~ msgid "Single line"
+#~ msgstr "Yksi rivi"
+
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Käytä taustakuvaa:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Käytä yhteystietojen työkaluvihjeitä"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "Näytä pikaviestinosoitteiden olemassaolo"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "Korttinäkymä"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Yhteystiedot näytetään kortteina."
+
+#~ msgid "Icon"
+#~ msgstr "Kuvakenäkymä"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Yhteystiedot näkyvät kuvakkeina."
+
+#~ msgid "Table"
+#~ msgstr "Taulukkonäkymä"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr "Yhteystietojen luettelo näytetään taulukkona."
+
+#~ msgid "Presence"
+#~ msgstr "Olemassaolo"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Vie kirjanmerkit-valikko..."
+
+#~ msgid "AddressBook"
+#~ msgstr "Osoitekirja"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Aloita riviltä:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ohita toistuvat erottimet"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[arvaus]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Yhteystiedot on viety."
+
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Tuo Eudoran osoitekirja..."
+
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Eudora Light -osoitekirja (*.txt)"
+
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Tuo GMX-osoitekirja..."
+
+#~ msgid "Import From Mobile Phone..."
+#~ msgstr "Tuo matkapuhelimesta..."
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Vie matkapuhelimeen..."
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "Gnokii-kirjastoa ei voitu alustaa."
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Gnokiin asetuksia ei ole vielä asetettu."
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Lukitustiedostovirhe.\n"
+#~ " Sulje kaikki käynnissäolevat gnokii-prosessit ja yritä uudelleen."
+
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Kännykän käyttöliittymän alustus epäonnistui.<br /><br /"
+#~ ">Virheilmoitus oli:<br /><b>%1</b><br /><br />Kokeile käynnistää \"gnokii "
+#~ "--identify\" komentorivillä tarkistaaksesi kaapelin / siirtojen "
+#~ "onnistumiset tai onko gnokiin asetukset oikeat.</center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Mobile Phone information:"
+#~ msgstr "Matkapuhelimen tiedot:"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Valmistaja"
+
+#~ msgid "Phone model"
+#~ msgstr "Puhelimen malli"
+
+#~ msgid "Revision"
+#~ msgstr "Tarkistus"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "Puhelinluettelon tila"
+
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "%2 / %1 yhteystietoa käytössä"
+#~ msgstr[1] "Käytetty %1 / %2 yhteystietoa."
+
+#~ msgid "internal memory"
+#~ msgstr "sisäinen muisti"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM-kortin muisti"
+
+#~ msgid "unknown memory"
+#~ msgstr "tuntematon muisti"
+
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Tuodaan <b>1</b> yhteystieto matkapuhelimen muistista: <b>%2</b>.<br /"
+#~ "> <br />%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Tuodaan matkapuohelimen <b>%1</b> yhteystiedot <b>%2</b>:sta.<br /"
+#~ "><br />%3</qt>"
+
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Gnokii-käyttöliittymä ei ole käytössä.\n"
+#~ "Pyydä ylläpitäjääsi lisäämään gnokii järjestelmän käännösvaiheessa."
+
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Liitä matkapuhelin tietokoneeseen ja valitse <b>Jatka</b> "
+#~ "aloittaaksesi yhteystietojen siirron.<br /><br />Huomaa, että jollei "
+#~ "matkapuhelinta ole yhdistetty oikein, tunnistusvaihe voi kestää jopa "
+#~ "kaksi minuuttia, minä aikana KAddressbook vastaa heikosti.</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Matkapuhelimesta tuonti"
+
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Oteaan yhteys matkapuhelimeen.<br /><br />Odota...</center></"
+#~ "qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "&Keskeytä tuonti"
+
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Liitä matkapuhelin tietokoneeseen ja paina <b>Jatka</b> aloittaaksesi "
+#~ "valittujen yhteystietojen siirron. <br /><br />Huomaa, että jollei "
+#~ "matkapuhelinta ole kytketty oikein, tunnistusvaihe voi kestää jopa kaksi "
+#~ "minuuttia, minä aikana KAddressbook vastaa heikosti.</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "Matkapuhelimeen vienti"
+
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt>Haluatko lisätä valitut yhteystiedot matkapuhelimen puhelinluetteloon "
+#~ "muiden tietojen perään (<b>Lisää</b>) vai korvaavatko ne (<b>Korvaa</b>) "
+#~ "kaikki nykyiset yhteystiedot? <br /><br />Huomaa, että korvaustoiminnossa "
+#~ "kaikki nykyiset yhteystiedot kännykässäsi poistetaan ja vain uudet tuodut "
+#~ "yhteystiedot ovat käytettävissä kännykässäsi.</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Vie matkapuhelimeen"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "&Lisää nykyiseen puhelinluetteloon"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "&Korvaa nykyinen puhelinluettelo uusilla tiedoilla"
+
+#~ msgid "&Stop Export"
+#~ msgstr "&Keskeytä vienti"
+
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Viedään <b>1</b> yhteystieto matkapuhelimen muistiin: <b>%2</b>. <br /"
+#~ "><br />%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Vie matkapuhelimen <b>%1</b> yhteystietoja <b>%2</b>.<br /><br />%3</"
+#~ "qt>"
+
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Kaikki valitut yhteystiedot on viety onnistuneesti "
+#~ "matkapuhelimeen.<br /><br />Odota kunnes orpoutuneet yhteystiedot "
+#~ "matkapuhelimesta on poistettu.</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "&Keskeytä poisto"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "Siirto puhelimeen suoritettu."
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>KDE2-osoitekirjaa <b>%1</b> ei löytynyt.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Ylikirjoita aikaisemmin tuodut tietueet?"
+
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Tuo KDE 2 -osoitekirja"
+
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Tuo Operan osoitekirja..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Tuo MS Exchange -henkilökohtainen osoitekirja (.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "Tiedostoa %1 ei voi avata luettavaksi"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr ""
+#~ "Tiedostolla %1 ei ole tunnistettua PAB-tunnusta, sitä ei voi muuntaa"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "MS Exchange -henkilökohtaiset osoitekirjatiedostot (*.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>MS Exchange -henkilökohtaista osoitekirjaa <b>%1</b> ei löydy.</qt>"
+
+#~ msgid "Use geo data"
+#~ msgstr "Käytä sijaintitietoa"
+
+#~ msgid "Latitude:"
+#~ msgstr "Leveysaste:"
+
+#~ msgid "Longitude:"
+#~ msgstr "Pituusaste:"
+
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Muokkaa sijaintitietoa..."
+
+#~ msgid "Unfiled"
+#~ msgstr "Määrittämätön"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afghanistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albania"
+
+#~ msgid "Algeria"
+#~ msgstr "Algeria"
+
+#~ msgid "American Samoa"
+#~ msgstr "American Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua ja Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenia"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmore and Cartier Islands"
+
+#~ msgid "Australia"
+#~ msgstr "Australia"
+
+#~ msgid "Austria"
+#~ msgstr "Austria"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaijan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladesh"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Belarus"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgium"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermuda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bhutan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivia"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnia and Herzegovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazil"
+
+#~ msgid "Brunei"
+#~ msgstr "Brunei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgaria"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Cambodia"
+
+#~ msgid "Cameroon"
+#~ msgstr "Cameroon"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Cape Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Cayman Islands"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Central African Republic"
+
+#~ msgid "Chad"
+#~ msgstr "Chad"
+
+#~ msgid "Chile"
+#~ msgstr "Chile"
+
+#~ msgid "China"
+#~ msgstr "China"
+
+#~ msgid "Colombia"
+#~ msgstr "Colombia"
+
+#~ msgid "Comoros"
+#~ msgstr "Comoros"
+
+#~ msgid "Congo"
+#~ msgstr "Congo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Congo, Dem. Rep."
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Croatia"
+
+#~ msgid "Cuba"
+#~ msgstr "Cuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Cyprus"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Czech Republic"
+
+#~ msgid "Denmark"
+#~ msgstr "Denmark"
+
+#~ msgid "Djibouti"
+#~ msgstr "Djibouti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominican Republic"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ecuador"
+
+#~ msgid "Egypt"
+#~ msgstr "Egypt"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Equatorial Guinea"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonia"
+
+#~ msgid "England"
+#~ msgstr "England"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Ethiopia"
+
+#~ msgid "European Union"
+#~ msgstr "Euroopan unioni"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Faroe Islands"
+
+#~ msgid "Fiji"
+#~ msgstr "Fiji"
+
+#~ msgid "Finland"
+#~ msgstr "Suomi"
+
+#~ msgid "France"
+#~ msgstr "France"
+
+#~ msgid "French Polynesia"
+#~ msgstr "French Polynesia"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Georgia"
+
+#~ msgid "Germany"
+#~ msgstr "Germany"
+
+#~ msgid "Ghana"
+#~ msgstr "Ghana"
+
+#~ msgid "Greece"
+#~ msgstr "Greece"
+
+#~ msgid "Greenland"
+#~ msgstr "Greenland"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Guinea"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinea-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Hungary"
+#~ msgstr "Hungary"
+
+#~ msgid "India"
+#~ msgstr "India"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Iraq"
+
+#~ msgid "Ireland"
+#~ msgstr "Ireland"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Italy"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Ivory Coast"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaica"
+
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordan"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazakhstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenya"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Korea, North"
+
+#~ msgid "Korea, South"
+#~ msgstr "Korea, South"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuwait"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kyrgyzstan"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Latvia"
+
+#~ msgid "Lebanon"
+#~ msgstr "Lebanon"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#~ msgid "Libya"
+#~ msgstr "Libya"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lithuania"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luxembourg"
+
+#~ msgid "Macau"
+#~ msgstr "Macau"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagascar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malaysia"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldives"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Marshall Islands"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinique"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritania"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauritius"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexico"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Micronesia, Federated States Of"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldova"
+
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolia"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Morocco"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambique"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Netherlands"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Netherlands Antilles"
+
+#~ msgid "New Caledonia"
+#~ msgstr "New Caledonia"
+
+#~ msgid "New Zealand"
+#~ msgstr "New Zealand"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragua"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "North Korea"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Northern Ireland"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Northern Mariana Islands"
+
+#~ msgid "Norway"
+#~ msgstr "Norway"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palestinian"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua New Guinea"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Philippines"
+
+#~ msgid "Poland"
+#~ msgstr "Poland"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Qatar"
+
+#~ msgid "Romania"
+#~ msgstr "Romania"
+
+#~ msgid "Russia"
+#~ msgstr "Russia"
+
+#~ msgid "Rwanda"
+#~ msgstr "Rwanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "St. Kitts and Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "St. Lucia"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "St. Vincent and the Grenadines"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome and Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saudi Arabia"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Serbia & Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "Seychelles"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapore"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovakia"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovenia"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Solomon Islands"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#~ msgid "South Africa"
+#~ msgstr "South Africa"
+
+#~ msgid "South Korea"
+#~ msgstr "South Korea"
+
+#~ msgid "Spain"
+#~ msgstr "Spain"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#~ msgid "Suriname"
+#~ msgstr "Suriname"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swaziland"
+
+#~ msgid "Sweden"
+#~ msgstr "Sweden"
+
+#~ msgid "Switzerland"
+#~ msgstr "Switzerland"
+
+#~ msgid "Syria"
+#~ msgstr "Syria"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tajikistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzania"
+
+#~ msgid "Thailand"
+#~ msgstr "Thailand"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad and Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunisia"
+
+#~ msgid "Turkey"
+#~ msgstr "Turkey"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turks and Caicos Islands"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukraine"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "United Arab Emirates"
+
+#~ msgid "United Kingdom"
+#~ msgstr "United Kingdom"
+
+#~ msgid "United States"
+#~ msgstr "United States"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Vatican City"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venezuela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Vietnam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Western Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Yemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Yugoslavia"
+
+#~ msgid "Zaire"
+#~ msgstr "Zaire"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabwe"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Otsikko:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Sähköposti"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Address"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Osoite"
+
+#~ msgid "Address:"
+#~ msgstr "Osoite:"
+
+#~ msgid "Addresses:"
+#~ msgstr "Osoitteet:"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Uusi"
+
+#~ msgid "&General"
+#~ msgstr "&Yleiset"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "Teksti"
+
+#~ msgid ""
+#~ "A distribution list with the the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "On jo olemassa jakeluluettelo, jonka nimi on %1. Valitse toinen nimi."
+
+#~ msgid "Birthdate:"
+#~ msgstr "Syntymäaika:"
+
+#~ msgid "Get From Blog"
+#~ msgstr "Hae blogista"
+
+#~ msgid "Unable to retrieve blog feed from '%1': %2"
+#~ msgstr "Blogin syötettä ('%1': %2) ei saatu "
+
+#~ msgid "Blog feed at '%1' does not contain an image."
+#~ msgstr "Blogin syöte %1 ei sisällä kuvaa."
+
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "Jakeluluettelon muokkain"
+
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#~ msgid "New List..."
+#~ msgstr "Uusi luettelo..."
+
+#~ msgid "Rename List..."
+#~ msgstr "Nimeä luettelo uudelleen..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "Poista henkilö"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Kirjoita nimi:"
+
+#~ msgid "The name already exists"
+#~ msgstr "Nimi on jo olemassa"
+
+#~ msgid "Rename Distribution List"
+#~ msgstr "Nimeä jakeluluettelo uudelleen"
+
+#~ msgid "The name already exists."
+#~ msgstr "Nimi on jo olemassa."
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>Poista jakeluluettelo <b>%1</b>?</qt>"
+
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "Yhteensä: %1 yhteystieto"
+#~ msgstr[1] "Yhteensä: %1 yhteystietoa"
+
+#~ msgid "Select Email Address"
+#~ msgstr "Valitse sähköpostiosoite"
+
+#~ msgid "Email Addresses"
+#~ msgstr "Sähköpostiosoitteet"
+
+#~ msgid "Additional Names"
+#~ msgstr "Lisänimet"
+
+#~ msgid "Honorific Prefixes"
+#~ msgstr "Kunnioittavat etuliitteet"
+
+#~ msgid "Honorific Suffixes"
+#~ msgstr "Kunnioittavat jälkiliitteet"
+
+#~ msgid "Nick Name"
+#~ msgstr "Kutsumanimi"
+
+#~ msgid "Home Address Street"
+#~ msgstr "Katuosoite (koti)"
+
+#~ msgid "Home Address City"
+#~ msgstr "Kaupunki (koti)"
+
+#~ msgid "Home Address State"
+#~ msgstr "Osavaltio (koti)"
+
+#~ msgid "Home Address Zip Code"
+#~ msgstr "Postinumero (koti)"
+
+#~ msgid "Home Address Country"
+#~ msgstr "Maa (koti)"
+
+#~ msgid "Business Address Street"
+#~ msgstr "Katuosoite (työ)"
+
+#~ msgid "Business Address State"
+#~ msgstr "Osavaltio (työ)"
+
+#~ msgid "Business Address Zip Code"
+#~ msgstr "Postinumero (työ)"
+
+#~ msgid "Business Address Country"
+#~ msgstr "Maa (työ)"
+
+#~ msgid "Home Phone"
+#~ msgstr "Kotipuhelin"
+
+#~ msgid "Business Phone"
+#~ msgstr "Työpuhelin"
+
+#~ msgid "Mobile Phone"
+#~ msgstr "Matkapuhelin"
+
+#~ msgid "Business Fax"
+#~ msgstr "Työfaksi"
+
+#~ msgid "Car Phone"
+#~ msgstr "Autopuhelin"
+
+#~ msgid "Role"
+#~ msgstr "Työnkuva"
+
+#
+# osoitteen muokkaus -dialogi
+#
+#~ msgid "Post Office Box"
+#~ msgstr "Postilaatikko"
+
+#~ msgid "Locality"
+#~ msgstr "Kaupunki"
+
+#~ msgid "Region"
+#~ msgstr "Alue"
+
+#~ msgid "Postal Code"
+#~ msgstr "Postinumero"
+
+#
+#
+#
+#~ msgid "Photo"
+#~ msgstr "Valokuva"

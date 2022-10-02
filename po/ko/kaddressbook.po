@@ -1,0 +1,2014 @@
+# Korean messages for kaddressbook
+# Copyright (C) 2001, 2007 Free Software Foundation, Inc.
+# KIM HyoungSuk <mire@mizi.com>, 2001.
+# Shinjo Park <kde@peremen.name>, 2007, 2009, 2011, 2019, 2020, 2021, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2022-02-20 21:54+0100\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "주소록"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "연락처"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "이메일 주소"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "조직"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "웹사이트"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "생일"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "메모"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "직위"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(만 %1세)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "이메일"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "블로그 피드"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "새 연락처..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "새 연락처를 만들 수 있는 대화 상자가 표시됩니다."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "새 연락처 그룹..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "새 연락처 그룹을 만들 수 있는 대화 상자가 표시됩니다."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "KDE 주소록 프로그램"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "Copyright © 2007–%1 KAddressBook authors"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "현재 관리자"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "이전 관리자"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "원 작성자(1998년)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "문서화(2019년)"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "분류 필터 초기화"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "분류 필터 삭제"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(태그 없음)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(그룹)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(모두)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(없음)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ", "
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>분류 필터: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "플러그인 설정"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "(c), 2016-2021 Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "사용자 피드백 설정"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "(c), 2020-2021 Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "도구 플러그인"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "가져오기/내보내기 플러그인"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "연락처 정보 불러오는 중..."
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "이메일: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "전화: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "%1%2 %3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "%1 %2 %3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "다음"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "이전"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "목록의 이전 연락처로 이동"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "이 단추를 누르면 목록의 이전 연락처로 이동합니다."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "목록의 다음 연락처로 이동"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "이 단추를 누르면 목록의 다음 연락처로 이동합니다."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%2 중 %1"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "기념일"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "이메일(선호)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "이메일(2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "이메일(3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "이메일(4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "직업"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "직장"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "관리자"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "비서"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "배우자"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "연락처 선택"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "모든 연락처"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "모든 주소록의 모든 연락처"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "이 옵션을 선택하면 모든 주소록의 모든 연락처를 선택합니다."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "선택한 연락처"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "현재 선택한 연락처만"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"이 옵션을 선택하면 그래픽 인터페이스에서 이미 선택한 연락처만 포함합니다."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "다음의 모든 연락처:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "선택한 주소록의 모든 연락처"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"이 옵션을 선택하면 하나의 주소록에 있는 모든 연락처를 선택합니다. 이 옵션을 "
+"선택하면 드롭다운 상자에서 주소록을 선택할 수 있습니다."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "하위 폴더 포함"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "최상위 폴더를 포함한 모든 하위 폴더 선택"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"이 옵션을 선택하면 선택한 폴더와 모든 하위 폴더에 있는 연락처를 선택합니다. "
+"최상위 폴더에 있는 연락처만 선택하려면 이 옵션을 선택하지 마십시오."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "연락처 수집"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "연락처 가져오기"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "개인 필드"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "직장 필드"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "기타 필드"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "암호화 키"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "그림"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "전체 이름으로 표시 이름 지정"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "내보낼 필드"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "개인 필드 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 개인 필드를 내보냅니다."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "직장 필드 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 직장 필드를 내보냅니다."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "기타 필드 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 기타 필드를 내보냅니다."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "암호화 키 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처의 암호화 키를 내보냅니다."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "그림 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 그림을 내보냅니다."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "내보내기 옵션"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "표시 이름을 연락처 전체 이름으로 내보내기"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"이 옵션을 선택하면 vCard의 전체 이름 필드로 연락처의 표시 이름을 내보냅니다. "
+"GMail이나 Android 등에서 이름을 올바르게 표시하려면 선택해야 할 수도 있습니"
+"다."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "주소록 선택"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "가져온 연락처를 저장할 주소록을 선택하십시오:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "연락처 가져오기"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "연락처 %1명을 %2(으)로 가져오는 중"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "지정한 파일 가져오기"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "'새 연락처' 대화 상자 열기"
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "URL로 지정한 연락처 표시"
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr "파일이나 URL입니다. 사용자에게 가져올지 여부를 물어봅니다."
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "사용자 피드백 옵션을 표시합니다"
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "KAddressBook 설정(&C)..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "파일(&F)"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "새로 만들기(&N)"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "편집(&E)"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "보기(&V)"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "작업(&A)"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "도구(&T)"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "설정(&S)"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "내보내기(&E)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "주 도구 모음"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "가져오기"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "내보내기"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "찾기... <%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "테마(&T)"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "전체 주소록을 인쇄하거나 일부만 인쇄할 수 있습니다."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "빠른 찾기"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "분류 필터"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "모두 선택"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "현재 주소록 보기의 모든 연락처를 선택합니다."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "QR 코드 표시"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "연락처의 QR 코드를 표시합니다."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "간단히(1열)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "주소록 보기의 간단한 모드를 사용합니다."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "2열"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "3열"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "빠른 검색에 초점 맞추기"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "서버 측 구독..."
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "연락처 인쇄"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr "프로그램별 단축키를 설정할 수 있는 대화 상자가 열립니다."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>메뉴 표시줄을 완전히 숨깁니다. %1 키를 눌러서 다시 볼 수 있습니다.</qt>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "메뉴 표시줄 숨기기"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "주소록 폴더 %1 속성"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "전체 이름"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "성"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "이름"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "집 주소"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "회사 주소"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "전화 번호"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "선호하는 이메일 주소"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "모든 이메일 주소"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "간략한 스타일"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "문서 설정"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "인쇄 중"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "완료"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "간단한 인쇄 스타일"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "모양"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "영역"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr "집 주소, 집 전화, 휴대폰 번호 인쇄"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "집 주소 포함"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "회사 주소, 회사 전화 번호 인쇄"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "회사 주소 포함"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "생일 인쇄"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "생일 포함"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "주 이메일과 보조 이메일 빌드 인쇄"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "이메일 포함"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "색을 교대로 사용할 때 첫 번째 색"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "첫 번째 색"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "색을 교대로 사용할 때 두 번째 색"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "두 번째 색"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "매 줄마다 배경색 변경"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "매 줄마다 배경색 변경"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "조직:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "이메일 주소:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "이메일 주소:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "전화 번호:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "전화 번호:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "홈페이지:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "국내 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "국제 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "우편 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "소포 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "회사 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "선호하는 주소"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "메모:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "자세한 인쇄 스타일 - 모양"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "색 설정"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "자세한 스타일"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "모양 페이지"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "연락처 머리글"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "머리글 배경색 선택"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr "이 단추를 클릭하면 머리글 배경색을 변경할 수 있는 색 선택기를 엽니다."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "머리글 배경색:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "머리글 글자색:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "머리글 글자색 선택"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr "이 단추를 클릭하면 머리글 글자색을 변경할 수 있는 색 선택기를 엽니다."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Mike의 인쇄 스타일"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "어떤 연락처를 인쇄하시겠습니까?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "인쇄할 연락처 선택"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "인쇄 스타일 선택"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "인쇄 진행"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "인쇄: 진행 중"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "진행"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "연락처 정보 인쇄"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "연락처 전화 번호 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr "연락처 전화 번호를 인쇄하려면 선택하십시오."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "전화 번호"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "연락처 이메일 주소 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr "연락처 이메일 주소를 인쇄하려면 선택하십시오."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "이메일 주소"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "연락처 주소 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr "연락처 주소를 인쇄하려면 선택하십시오."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "우편 주소"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "연락처 조직 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "연락처 조직 정보를 인쇄하려면 선택하십시오."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "연락처 생일 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "연락처 생일을 인쇄하려면 선택하십시오."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "연락처 메모 인쇄"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "연락처 메모를 인쇄하려면 선택하십시오."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "메모:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "링 바인더 인쇄 스타일 - 모양"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "필드 설정"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "링 바인더용으로 인쇄"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "오름차순"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "내림차순"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(미리 볼 수 없습니다.)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "인쇄 스타일 선택"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"어떤 스타일로 인쇄하시겠습니까?\n"
+"KAddressBook에는 여러 다른 목적으로 사용할 수 있는 스타일이 준비되어 있습니"
+"다.\n"
+"필요한 스타일을 선택하십시오."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "정렬"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "기준:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "주 정렬 필드 선택"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"인쇄물에서 연락처를 정렬할 필드를 이 목록에서 선택하십시오. 정렬 순서 옵션을 "
+"사용하여 오름차순 및 내림차순 정렬을 결정할 수 있습니다."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "순서:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "정렬 순서 선택"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"연락처를 오름차순 및 내림차순으로 정렬할 것인지 선택하십시오. 정렬 기준 옵션"
+"을 사용하여 정렬할 때 사용할 필드를 지정하십시오."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "인쇄 스타일"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "인쇄 스타일 선택"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr "인쇄 스타일을 선택하십시오. 미리 보기 그림을 참조할 수 있습니다."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "목록에서 연락처 찾기"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"이 상자에 입력하여 목록에서 연락처를 찾을 수 있습니다. 필요한 연락처를 빠르"
+"게 검색하십시오."
+
+#~ msgid "Select Contacts"
+#~ msgstr "연락처 선택"
+
+#~ msgid "Import vCard..."
+#~ msgstr "vCard 가져오기..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "vCard 파일에서 연락처를 가져옵니다."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "CSV 파일 가져오기..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "CSV 형식 파일에서 주소록을 가져옵니다."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "LDIF 파일 가져오기..."
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "LDIF 파일에서 연락처를 가져옵니다."
+
+#, fuzzy
+#~| msgid "Import from LDAP server..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "LDAP 서버에서 가져오기..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "LDAP 서버에서 연락처를 가져옵니다."
+
+#~ msgid "Import GMX file..."
+#~ msgstr "GMX 파일 가져오기..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "GMX 주소록 파일에서 연락처를 가져옵니다."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "vCard 3.0 내보내기..."
+
+#, fuzzy
+#~| msgid "Export contacts to a vCard 3.0 file."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "연락처를 vCard 3.0 파일로 내보냅니다."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "vCard 3.0 내보내기..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "연락처를 vCard 3.0 파일로 내보냅니다."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "vCard 2.1 내보내기..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "연락처를 vCard 2.1 파일로 내보냅니다."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "CSV 파일 내보내기..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "연락처를 CSV 파일로 내보냅니다."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "LDIF 파일 내보내기..."
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "연락처를 LDIF 파일로 내보냅니다."
+
+#~ msgid "Export GMX file..."
+#~ msgstr "GMX 파일 내보내기..."
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "연락처를 GMX 주소록 파일로 내보냅니다."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>파일 <b>%1</b>을(를) 열 수 없습니다</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>파일 <b>%1</b>을(를) 열 수 없습니다.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV 가져오기 대화상자"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "연락처 가져오기"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "가져올 파일:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "가져올 vCard 선택"
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "구분자"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "쉼표"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "삭제하려는 필드를 선택하십시오:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "쌍반점"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "삭제하려는 필드를 선택하십시오:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "탭 문자"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "공백"
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "기타"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "인용 부호:"
+
+#, fuzzy
+#~| msgid "Selected contacts"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "선택한 연락처"
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "없음"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "날짜 형식:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>y: 2자리 연도</item><item>Y: 4자리 연도</item> <item>m: "
+#~ "1자리나 2자리 달</item><item>M: 2자리 달</item> <item>d: 1자리나 2자리 날"
+#~ "</item><item>D: 2자리 날</item> <item>H: 2자리 시간</item><item>I: 2자리 "
+#~ "분</item> <item>S: 2자리 초</item></list></para>"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid ""
+#~| "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~| "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~| "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~| "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~| "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para><list><item>y: 2자리 연도</item><item>Y: 4자리 연도</item> <item>m: "
+#~ "1자리나 2자리 달</item><item>M: 2자리 달</item> <item>d: 1자리나 2자리 날"
+#~ "</item><item>D: 2자리 날</item> <item>H: 2자리 시간</item><item>I: 2자리 "
+#~ "분</item> <item>S: 2자리 초</item></list></para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "텍스트 인코딩:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "K주소록"
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "파일의 첫 줄 건너뛰기"
+
+#, fuzzy
+#~| msgctxt "@option:check"
+#~| msgid "Skip first row of file"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "파일의 첫 줄 건너뛰기"
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "템플릿 적용..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "템플릿 저장..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "지역 (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "유니코드"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "마이크로소프트 유니코드"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "최소한 하나의 열을 할당해야 합니다."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "사용할 수 있는 템플릿이 없습니다."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "템플릿이 없습니다"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "템플릿 이름"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "템플릿 이름을 입력하십시오:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "입력 파일을 열 수 없습니다."
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "템플릿 '%1'을(를) 삭제하시겠습니까?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "템플릿 선택"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "CSV 파일과 일치하는 템플릿을 선택하십시오:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "GMX 주소록 파일 (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>파일 <b>%1</b>을(를) 읽기 위해 열 수 없습니다.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1은(는) GMX 주소록 파일이 아닙니다."
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr "한 명 이상의 연락처를 선택하셨습니다. 여러 파일로 내보내시겠습니까?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "한 파일로 내보내기"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "여러 파일로 내보내기"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "가져올 vCard 선택"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "vCard 가져오기 실패"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>vCard에 접근할 수 없음:</para><para>%1</para>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "vCard에 오류가 발생해서 어떠한 연락처도 가져오지 않았습니다."
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "이 vCard에는 연락처 정보가 없습니다."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "vCard 가져오기"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact into your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "이 연락처를 주소록으로 가져오시겠습니까?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "모두 가져오기..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "어떤 연락처를 내보내시겠습니까?"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "내보낼 연락처를 선택하지 않았습니다."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "이메일 주소:"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "템플릿 저장..."
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "템플릿 저장..."
+
+#, fuzzy
+#~| msgctxt "Search contacts in list"
+#~| msgid "Search"
+#~ msgid "Search"
+#~ msgstr "찾기"
+
+#, fuzzy
+#~| msgid "You have not selected any contacts to export."
+#~ msgid "No email found for this contact."
+#~ msgstr "내보낼 연락처를 선택하지 않았습니다."
+
+#, fuzzy
+#~ msgid "A contact group was selected."
+#~ msgstr "새로운 연결(&N)"
+
+#, fuzzy
+#~| msgid "You have not selected any contacts to export."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "내보낼 연락처를 선택하지 않았습니다."
+
+#, fuzzy
+#~| msgid "You have not selected any contacts to export."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "내보낼 연락처를 선택하지 않았습니다."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "vCard 가져오기..."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Print the complete address book or a selected number of contacts."
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr "전체 주소록을 인쇄하거나 일부만 인쇄할 수 있습니다."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "주소록 선택(&S)"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "최소한 하나의 열을 할당해야 합니다."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~ msgid "No contacts selected."
+#~ msgstr "새로운 연결(&N)"
+
+#, fuzzy
+#~| msgid "Print Contact's Information"
+#~ msgid "Missing Selected Information"
+#~ msgstr "연락처 정보 인쇄"
+
+#, fuzzy
+#~| msgctxt "@item Undefined import field type"
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "정의되지 않음"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>vCard를 읽는 중 파일 <filename>%1</filename>을(를) 열 때 오류 발생:"
+#~ "</para><para>%2</para>"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgctxt "@label"
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "연락처 가져오기"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "연락처 선택"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "vCard 필드 선택"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "연락처 선택"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Kontact 통합"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "인쇄 스타일 선택"
+
+#~ msgid "Department"
+#~ msgstr "부서"
+
+#~ msgid "Manager's Name"
+#~ msgstr "관리자 이름"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "비서 이름:"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "배우자 이름"
+
+#~ msgid "IM Address"
+#~ msgstr "메신저 주소"
+
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "예"
+
+#~ msgctxt "Boolean value"
+#~ msgid "no"
+#~ msgstr "아니오"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "파일 \"%1\"을(를) 덮어쓰시겠습니까"
+
+#, fuzzy
+#~| msgid "Do you want to overwrite file \"%1\""
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "파일 \"%1\"을(를) 덮어쓰시겠습니까"

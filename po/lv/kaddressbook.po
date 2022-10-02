@@ -1,0 +1,4909 @@
+# translation of kaddressbook.po to Lavtian
+# Copyright (C) 2008 Free Software Foundation, Inc.
+#
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008, 2010.
+# Viesturs Zariņš <viesturs.zarins@algorego.com>, 2008.
+# Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2010-01-12 09:37+0200\n"
+"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andris Maziks, Viesturs Zariņš"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andris.m@delfi.lv, viesturs.zarins@mi.lu.lv"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Adrešu grāmata"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contacts"
+msgid "Contact"
+msgstr "Kontakti"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Email"
+msgid "Emails"
+msgstr "E-pasts"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organizācija"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Dzimšanas diena"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Piezīme"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Title"
+msgid "Title"
+msgstr "Tituls"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgctxt "@title:column Column containing email addresses"
+#| msgid "Email"
+msgid "Email"
+msgstr "E-pasts"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, fuzzy, kde-format
+#| msgid "&Blog feed:"
+msgid "Blog Feed"
+msgstr "Dienasgrāmatas &barotne:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "New &Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Jauns &kontakts..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
+"īsceļus."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "New &Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Jauns &kontakts..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
+"īsceļus."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "KDE adrešu grāmatas lietotne"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Pašreizējais uzturētājs"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Tobias Koenig"
+msgid "Tobias König"
+msgstr "Tobias Koenig"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Pašreizējais uzturētājs"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Steffen Hansen"
+msgid "Stefan Taferner"
+msgstr "Steffen Hansen"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Sākotnējais autors"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Lietot pēdējo aktīvo filtru"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Lietot pēdējo aktīvo filtru"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Quote character option"
+#| msgid "None"
+msgid "(None)"
+msgstr "Nav"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Pievienot..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgctxt "@label:textbox Inputfield for an email address"
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "E-pasts:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "Telefons"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Next"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Nākamais"
+
+#: src/contactswitcher.cpp:19
+#, fuzzy, kde-format
+#| msgid "Previous"
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Iepriekšējais"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid "Copy the selected contacts to the clipboard."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Kopēt izvēlētos kontaktus starpliktuvē."
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgid "%1 out of %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1. no %2"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Nedefinēts"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Gadadiena"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "EMail (preferred)"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "E-pasts (vēlamais)"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "EMail (2)"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "E-pasts (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "EMail (3)"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "E-pasts (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "EMail (4)"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "E-pasts (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Profesija"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Birojs"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Maijanmara"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Palīga vārds"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Izvēlētos kontaktus"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Visus kontaktus"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "Import contacts from a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Imoprtēt kontaktus no GMX adrešu grāmatas faila."
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Cut the selected contacts from the address book."
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Izgriezt izvēlietos kontaktus no adrešu gramatas."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Izvēlētos kontaktus"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "All contacts from:"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Visus kontaktus no:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "Import contacts from a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Imoprtēt kontaktus no GMX adrešu grāmatas faila."
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, fuzzy, kde-format
+#| msgid "Include Subfolders"
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Iekļaujot apakšmapes"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Izvēlētos kontaktus"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgid "Fetch Contacts"
+msgstr "Izvēlētos kontaktus"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Privāti lauki"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Darba lauki"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Citi lauki"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Šifrēšanas atslēgtas"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Importējamais fails:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Privāti lauki"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Darba lauki"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Citi lauki"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Šifrēšanas atslēgtas"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Eksportēt vienā failā"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Eksportēt vienā failā"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Select Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Izvēlēties adrešu grāmatu"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Izvēlieties adrešu grāmatu, kurā saglabāt importētos kontaktus:"
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Importē kontaktus"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Importē kontaktus"
+msgstr[1] "Importē kontaktus"
+msgstr[2] "Importē kontaktus"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "Importēt doto vKarti..."
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Address Book..."
+msgid "&Configure KAddressBook..."
+msgstr "Importēt KDE 2 adrešu grāmatu..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Fails"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Jauns"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "R&ediģēt"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "S&kats"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgctxt "@title:group Selection of contacts that must be exported"
+#| msgid "Selection"
+msgid "&Action"
+msgstr "Izvēlētos"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "&Rīki"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "Ie&statījumi"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Eksportēt"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Galvenā rīkjosla "
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "Importēt"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Eksportēt"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Meklēt"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Print the complete address book or a selected number of contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Izdrukāt visu adrešu gramatu vai izvēlētos kontaktus."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Ātrā meklēšana"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category &members"
+msgid "Category filter"
+msgstr "Ietil&pst kategorijā"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Izvēlēties visus"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Izvēlas visus aktīvās adrešu grāmatas kontaktus."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Rāda adrešu gramatu vienkāršajā režīmā."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Drukāt kontaktus"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
+"īsceļus."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "Slēpt lekšanas joslu"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Delete Address Book Folder"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Dzēst adrešu grāmatas mapi"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Pilns vārds"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "Uzvārdi:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "Vārds:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Mājas adrese"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Darba adreses"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Tālruņu numuri"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Vēlamais e-pasts"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "Visi e-pasti"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Firma"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Sagatavo dokumentu"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Drukā"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Pabeigts"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "Izvēlieties krukāšanas stilu"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Izskats"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Lauki"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Mājas adrese"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business Address"
+msgid "with business address"
+msgstr "Darba adreses"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print the birthday"
+msgstr "Drukāt kontaktus"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+#| msgid "Birthday"
+msgid "with birthday"
+msgstr "Dzimšanas diena"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "Rediģēt e-pastu"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "Fona krāsa"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Virsrakstu fona krāsa:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "Pamīšus mainīgs fons"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "Organizācija"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "E-pasta adrese:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "E-pasta adreses:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefons:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Telefoni:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Tīmekļa lapa:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Mājas adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Starptautiska adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Pasta adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Paku adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Darba adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Vēlamā adrese"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Piezīmes:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Noklusētais drukāšanas stils - izskats"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Krāsu iestatījumi"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Detalizēts stils"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Izskata lapa"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Kontaktu galvenes"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Virsrakstu fona krāsa:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, fuzzy, kde-format
+#| msgid "Click on the color button to change the header's background color."
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr "Nospiediet uz krāsas pogas, lai izmainītu galvenes fona krāsu."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Virsrakstu fona krāsa:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Virsrakstu teksta krāsa:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Virsrakstu teksta krāsa:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Maika drukāšanas stils"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Kurus kontaktus vēlaties drukāt?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Izvēlieties drukājamos kontaktus"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Izvēlieties krukāšanas stilu"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Drukāšanas progress"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Drukā: Progress"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Progress"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Drukāt kontakta informāciju"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+#| msgid "Phone numbers"
+msgid "Print contact phone numbers"
+msgstr "Telefona numuri"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Telefona numuri"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal addresses"
+msgid "Print contact email addresses"
+msgstr "Pasta adreses"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "E-pasta adreses"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+#| msgid "Street addresses"
+msgid "Print contact street addresses"
+msgstr "Pasta adreses"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Pasta adreses"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Print Contact's Information"
+msgid "Print contact organizations"
+msgstr "Drukāt kontakta informāciju"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print contact birthdays"
+msgstr "Drukāt kontaktus"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print contact notes"
+msgstr "Drukāt kontaktus"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Notes:"
+msgid "Note: "
+msgstr "Piezīmes:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Ātrušuvēju drukšanas stils - izskats"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "Sagatavo laukus"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Izdrukāt iesiešanai ar ātršuvējiem"
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Augoši"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Dilstoši"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Priekšskatījums nav pieejams.)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Izvēlieties krukāšanas stilu"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Kā izskatīsies izdruka?\n"
+"KAddressBook ir pieejami vairādi drukāšanas stili, paredzēti dažādiem "
+"mērķiem.\n"
+"Izvēlieties jūsu vajadzībām atbilstošu stilu."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Kārtošana"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Kritērijs:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select incremental search field"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Norādiet inkrementālās meklēšanas lauku"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Kārtība:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Drukāšanas stils"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Izvēlieties atslēgas tipu:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Izvēlētos kontaktus"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Importēt"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Importēt vCard..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Imoprtēt kontaktus no vCard faila."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "Importēt CSV failu..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "Imoprtēt kontaktus no faila, komatiem atdalītā vērtību formātā."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "Importēt LDIF failu..."
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Imoprtēt kontaktus no LDIF faila."
+
+#, fuzzy
+#~| msgid "Import from LDAP server..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Importēt no LDAP servera..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Imoprtēt kontaktus no LDAP servera."
+
+#~ msgid "Import GMX file..."
+#~ msgstr "Importēt GMX failu..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Imoprtēt kontaktus no GMX adrešu grāmatas faila."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Eksportēt vCard 3.0..."
+
+#, fuzzy
+#~| msgid "Export contacts to a vCard 3.0 file."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Eksportēt kontaktus uz vCard 3.0 failu."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Eksportēt vCard 3.0..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Eksportēt kontaktus uz vCard 3.0 failu."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Eksportēt vCard 2.1..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Eksportēt kontaktus uz vCard 2.1 failu."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "Eksportēt CSV failu..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "Eksportēt kontaktus uz failu ar komatiem atdalītā vērtību formātā."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "Eksportēt LDIF failu..."
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Eksportēt kontaktus uz LDIF failu."
+
+#~ msgid "Export GMX file..."
+#~ msgstr "Eksportēt GMX failu..."
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Eksportēt kontaktus uz GMX adrešu grāmatas failu."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Neizdevās atvērt failu <b>%1</b></qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Neizdevās atvērt failu <b>%1</b>.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV importēšanas logs"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Importē kontaktus"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Importējamais fails:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Izvēlieties importējamo vKarti"
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Atdalītājs"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Komats"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Izvēlieties lauku, ko noņemt:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Semikols"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Izvēlieties lauku, ko noņemt:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulators"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Atstarpe"
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Cits"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Pēdiņas:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Izvēlieties atslēgas tipu:"
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Datuma formāts:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>y: gads ar 2 cipariem</item><item>Y: gads ar 4 "
+#~ "cipariem</item><item>m: mēnesis ar 1 vai 2 cipariem</item><item>M: "
+#~ "mēnesis ar 2 cipariem</item><item>d: diena ar 1 vai 2 cipariem</"
+#~ "item><item>D: diena ar 2 cipariem</item></list></para>"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid ""
+#~| "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~| "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~| "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~| "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~| "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para><list><item>y: gads ar 2 cipariem</item><item>Y: gads ar 4 "
+#~ "cipariem</item><item>m: mēnesis ar 1 vai 2 cipariem</item><item>M: "
+#~ "mēnesis ar 2 cipariem</item><item>d: diena ar 1 vai 2 cipariem</"
+#~ "item><item>D: diena ar 2 cipariem</item></list></para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Teksta kodējums:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Izvēlieties atslēgas tipu:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "Izlaist pirmo faila rindu:"
+
+#, fuzzy
+#~| msgctxt "@option:check"
+#~| msgid "Skip first row of file"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "Izlaist pirmo faila rindu:"
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Pielietot sagatavi..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Saglabāt sagatavi..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Lokālais (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unikods"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unikods"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Jums jāpiešķir vismaz viena kolona."
+
+#, fuzzy
+#~| msgid "There are no templates available yet."
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "Vēl nav pieejama neviena sagatave."
+
+#, fuzzy
+#~| msgid "No templates available"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "Nav pieejamas sagataves"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Sagataves nosaukums"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Lūdzu ievadiet sagataves nosaukumu:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Nevar atvērt ievada failu."
+
+#, fuzzy
+#~| msgid "Do you really want to delete template '%1'?"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "Vai tiešām vēlaties dzēst šo sagatavi '%1'?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Sagataves izvēle"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Lūdzu izvēlieties sagatavi, kas atbilst CSV failam:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "GMX adrešu grāmatas fails (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Neizdevās atvērt lasīšanai <b>%1</b>.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 nav GMX adrešu grāmatas fails."
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Jūs izvēlējāties vairākus kontaktus, vai tos eksportēt vairākos failos?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Eksportēt vienā failā"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Eksportēt vairākos failos"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Izvēlieties importējamo vKarti"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "vKartes imports neizdevās"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>Neizdevās piekļūt vKartei:</para><para>%1</para>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "Netika importēti kontakti, jo vKartēs bija kļūdas."
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "Šī vKarte nesatur nevienu kontaktu."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Importēt vKarti"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact into your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Vai vēlaties importēt šo kontaktu jūsu adrešu grāmatā?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Importēt visu..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Kuru kontaktu vēlaties eksportēt?"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Jūs neesat izvēlējies nevienu kontaktu eksportēšanai."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Ungroup Letter"
+#~ msgid "Ungrouped"
+#~ msgstr "Atgrupēt burtu"
+
+#, fuzzy
+#~| msgid "Cut Group"
+#~| msgid_plural "Cut %1 Groups"
+#~ msgid "Group"
+#~ msgstr "Izgriezt %1 grupu"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "E-pasta adrese:"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Saglabāt sagatavi..."
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Saglabāt sagatavi..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Protocol"
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Protokols"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Meklēt"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "Nosūtīt e-pastu visiem izvēlētajiem konktaktiem."
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "Sūtīt &kontaktu..."
+
+#, fuzzy
+#~| msgid "You have not selected any contacts to export."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Jūs neesat izvēlējies nevienu kontaktu eksportēšanai."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Nosūtīt e-pastu visiem izvēlētajiem konktaktiem."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "Importēt vCard..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "A&pvienot kontaktus"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Print the complete address book or a selected number of contacts."
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr "Izdrukāt visu adrešu gramatu vai izvēlētos kontaktus."
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "Apvienot"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "Izvēlēties adrešu grāmatu"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "Apvienot"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Jums jāpiešķir vismaz viena kolona."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgctxt "@item Contact category"
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "Klients"
+
+#, fuzzy
+#~| msgid "Print Contact's Information"
+#~ msgid "Missing Selected Information"
+#~ msgstr "Drukāt kontakta informāciju"
+
+#, fuzzy
+#~| msgctxt "@item Undefined import field type"
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Nedefinēts"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>Mēģinot lasīt vKarti, gadījās kļūda atverot failu <filename>%1</"
+#~ "filename>:</para><para>%2</para>"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "A&pvienot kontaktus"
+
+#, fuzzy
+#~| msgctxt "@label"
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Importē kontaktus"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "A&pvienot kontaktus"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Izvēlieties vKartes laukus"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Izvēlētos kontaktus"
+
+#, fuzzy
+#~| msgid "Import Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Importēt izvēlētos"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Integrācija ar Kontact"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Izvēlieties krukāšanas stilu"
+
+#~ msgid "Department"
+#~ msgstr "Nodaļa"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Menedžera vārds"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Palīga vārds:"
+
+#, fuzzy
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "Partnera vārds"
+
+#~ msgid "IM Address"
+#~ msgstr "IM adrese"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Tipi"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Vai vēlaties pārrakstīt failu \"%1\""
+
+#, fuzzy
+#~| msgid "Do you want to overwrite file \"%1\""
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Vai vēlaties pārrakstīt failu \"%1\""
+
+#~ msgid "Show Simple View"
+#~ msgstr "Rādīt vienkāršu skatu"
+
+#~ msgid "Click on the color button to change the header's text color."
+#~ msgstr "Nospiediet uz krāsas pogas, lai izmainītu galvenes teksta krāsu."
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Izvēlieties laukus, ko eksportēt vKartē."
+
+#~ msgid "Show Address Books View"
+#~ msgstr "Rādīt adrešu grāmatu skatu"
+
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Pārslēdz vai adrešu grāmatas ir redzamas."
+
+#~ msgid "Hide Address Books View"
+#~ msgstr "Slēpt adrešu grāmatu skatu"
+
+#~ msgid "Show Contacts View"
+#~ msgstr "Rādīt kontaktu skatu"
+
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Pārslēdz vai ir redzams kontaktu skats."
+
+#~ msgid "Hide Contacts View"
+#~ msgstr "Slēpt kontaktu skatu"
+
+#~ msgid "Show Details View"
+#~ msgstr "Rādīt detaļu skatu"
+
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Pārslēdz vai ir redzamas detaļas."
+
+#~ msgid "Hide Details View"
+#~ msgstr "Slēpt detaļu skatu"
+
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Pievienot adrešu grāmatas mapi..."
+
+#~ msgid ""
+#~ "Add a new address book folder to the currently selected address book "
+#~ "folder."
+#~ msgstr "Pievieno jaunu adrešu grāmatas mapi šobrīd izvēlētajai mapei."
+
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Kopēt %1 adrešu grāmatas mapi"
+#~ msgstr[1] "Kopēt %1 adrešu grāmatas mapes"
+#~ msgstr[2] "Kopēt %1 adrešu grāmatas mapes"
+
+#~ msgid "Copy the selected address book folders to the clipboard."
+#~ msgstr "Kopē izvēlētās adrešu grāmatas mapes uz starpliktuvi."
+
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Dzēst izvēlētās adrešu grāmatas mapes no adrešu grāmatas."
+
+#, fuzzy
+#~| msgid "Cut Address Book Folder"
+#~| msgid_plural "Cut %1 Address Book Folders"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Izgriezt %1 adrešu grāmatas mapi"
+
+#, fuzzy
+#~| msgid ""
+#~| "Open a dialog to edit the properties of the selected address book folder."
+#~ msgid "Update the content of the address book folder"
+#~ msgstr ""
+#~ "Atver logu, kurā var redigēt izvēlētās adrešu grāmatas mapes īpašības."
+
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Izgriezt %1 adrešu grāmatas mapi"
+#~ msgstr[1] "Izgriezt %1 adrešu grāmatas mapes"
+#~ msgstr[2] "Izgriezt %1 adrešu grāmatas mapes"
+
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Izgriezt izvēlētās adrešu grāmatas mapes no adrešu grāmatas."
+
+#~ msgid "Folder Properties..."
+#~ msgstr "Mapes īpašības..."
+
+#~ msgid ""
+#~ "Open a dialog to edit the properties of the selected address book folder."
+#~ msgstr ""
+#~ "Atver logu, kurā var redigēt izvēlētās adrešu grāmatas mapes īpašības."
+
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Kopēt %1 kontaktu"
+#~ msgstr[1] "Kopēt %1 kontaktus"
+#~ msgstr[2] "Kopēt %1 kontaktus"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Dzēst %1 kontaktu"
+#~ msgstr[1] "Dzēst %1 kontaktus"
+#~ msgstr[2] "Dzēst %1 kontaktu"
+
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Dzēst izvēlētos kontaktus no adrešu grāmatas."
+
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Izgriezt %1 kontaktu"
+#~ msgstr[1] "Izgriezt %1 kontaktus"
+#~ msgstr[2] "Izgriezt %1 kontaktu"
+
+#~ msgid "Edit Contact..."
+#~ msgstr "Rediģēt kontaktu..."
+
+#~ msgid "Copy Group"
+#~ msgid_plural "Copy %1 Groups"
+#~ msgstr[0] "Kopēt %1 grupu"
+#~ msgstr[1] "Kopēt %1 grupas"
+#~ msgstr[2] "Kopēt %1 grupu"
+
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Dzēst %1 grupu"
+#~ msgstr[1] "Dzēst %1 grupas"
+#~ msgstr[2] "Dzēst %1 grupu"
+
+#~ msgid "Edit Group..."
+#~ msgstr "Rediģēt grupu..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Pievienot adrešu grāmatu"
+
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Neizdevās pievienot adrešu grāmatu: %1"
+
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Adrešu grāmatas pievienošana neveiksmīga"
+
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "Vai tiešām vēlaties dzēst adrešu grāmatu '%1'?"
+
+#~ msgid "Delete Address Book?"
+#~ msgstr "Dzēst no adrešu grāmatu?"
+
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Izveidot jaunu konktaktu<p>Jums tiks parādīts logs, kurā var ievadīt "
+#~ "personas datus, adresi, telefona numurus un citu informāciju.</p>"
+
+#~ msgid "New &Group..."
+#~ msgstr "Jauna &grupa..."
+
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Izveidot jaunu grupu<p>Jums tiks parādīts logs, kurā varēsiet izveidot "
+#~ "jaunu kontaktu grupu.</p>"
+
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Rediģēt izvēlēto konktaktu<p>Jums tiks parādīts logs, kurā var mainīt "
+#~ "personas datus, adresi, telefona numurus un citu informāciju.</p>"
+
+#~ msgid "Add &Address Book..."
+#~ msgstr "Pievienot &adrešu grāmatu..."
+
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Pievienot jaunu adrešu grāmatu<p>Jusm tiks parādīts logs, kurā varēsiet "
+#~ "izvelēties pievienojamās adrešu grāmatas veidu.</p>"
+
+#~ msgid "&Delete Address Book"
+#~ msgstr "&Dzēst adrešu grāmatu"
+
+#~ msgid ""
+#~ "Delete the selected address book<p>The currently selected address book "
+#~ "will be deleted, along with all the contacts and contact groups it "
+#~ "contains.</p>"
+#~ msgstr ""
+#~ "Dzēst izvēlēto adrešu grāmatu<p>Šobrīd izvēlētā adrešu grāmata tiks "
+#~ "izdzēsta, kopā ar visiem tajā esošajiem kontaktiem un kontaktu grupām.</p>"
+
+#~ msgid "Address Book Properties..."
+#~ msgstr "Adrešu grāmatas īpašības..."
+
+#~ msgid "Open a dialog to edit properties of the selected address book."
+#~ msgstr "Atver logu izvēlētās adrešu grāmatas īpašību redigēšanai."
+
+#~ msgid "Add Host"
+#~ msgstr "Pievienot serveri"
+
+#~ msgid "Home Number"
+#~ msgstr "Mājas telefons"
+
+#~ msgid "Work Number"
+#~ msgstr "Darba telefons"
+
+#~ msgid "Mobile Number"
+#~ msgstr "mobīlais telefons"
+
+#~ msgid "Fax Number"
+#~ msgstr "Fakss"
+
+#~ msgid "Pager"
+#~ msgstr "Peidžers"
+
+#~ msgid "Street"
+#~ msgstr "Iela"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Štats"
+
+#~ msgid "Country"
+#~ msgstr "Valsts"
+
+#~ msgid "City"
+#~ msgstr "Pilsēta"
+
+#~ msgid "Zip Code"
+#~ msgstr "ZIP/Pasta indekss"
+
+#~ msgid "Description"
+#~ msgstr "Apraksts"
+
+#~ msgid "User ID"
+#~ msgstr "Lietotāja ID"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Štats"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Tituls"
+
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Importēt kontaktus no LDAP?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Meklēt adreses direktorijā"
+
+#~ msgid "Search for:"
+#~ msgstr "Meklēt:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "iekš"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Mājas telefons"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Darba telefons"
+
+#~ msgid "Stop"
+#~ msgstr "Apturēt"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursīva meklēšana"
+
+#~ msgid "Contains"
+#~ msgstr "Satur"
+
+#~ msgid "Starts With"
+#~ msgstr "Sākar ar"
+
+#~ msgid "Unselect All"
+#~ msgstr "Noņemt izvēli"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Konfigurēt LDAP serverus..."
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pasts"
+
+#~ msgid "You must select a LDAP server before searching."
+#~ msgstr "Jums jāizvēlas LDAP serveris, lai varētu meklēt."
+
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Norādiet adresātu sarakstu, kam pievienot izvēlētos kontaktus."
+
+#~ msgid "Select Distribution List"
+#~ msgstr "Norādiet adresātu sarakstu"
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importēts no LDAP direktorija %1, %2"
+
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Konfigurēt adrešu grāmatas LDAP iestatījumus"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP serveru iestatījumi"
+
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "(c) 2009 Tobias Koenig"
+
+#~ msgid "Edit Host"
+#~ msgstr "Rediģēt serveri"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP serveri"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Atzīmējiet visus izmantojamos serverus:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "&Pievienot serveri..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Rediģēt serveri..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "&Izņemt serveri"
+
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2009, KDE PIM komanda"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adrešu grāmatas"
+
+#, fuzzy
+#~| msgctxt "@item:inlistbox Name of the contact"
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#, fuzzy
+#~| msgid "Phone numbers"
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefona numuri"
+
+#, fuzzy
+#~| msgid "Preferred Address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Vēlamā adrese"
+
+#, fuzzy
+#~| msgid "All Fields"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Visi lauki"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Pielāgoti lauki"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Rāda kontaktu redaktoru ar doto e-pasta adresi"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Rāda kontaktu redaktoru ar doto uid"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Palaižas redaktora režīmā"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Palaižas jauna kotnakta rediģēšanas režīmā"
+
+#~ msgid "Work on given file"
+#~ msgstr "Strādāt ar doto failu"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "&Redigēt adreses..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Rediģēt adreses"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Rediģēt etiķeti..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Šī ir vēlamā adrese"
+
+#~ msgid "Remove"
+#~ msgstr "Noņemt"
+
+#~ msgid "Change Type..."
+#~ msgstr "Mainīt tipu..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Rediģēt adreses tipu"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Adrešu tipi"
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Rediģēt kontaktu '%1'"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Kontaktu redaktors"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "@title:tab General information about a contact"
+#~ msgid "General"
+#~ msgstr "Pamata"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's name:"
+#~ msgstr "Partnera vārds:"
+
+#~ msgid "Details"
+#~ msgstr "Detaļas"
+
+#~ msgid "Misc"
+#~ msgstr "Dažādi"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Jums jānorāda derīgs datums"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Jums jānorāda derīgs dzimšanas datums."
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "Jums jānorāda derīga gadatiena."
+
+#~ msgid "Add View"
+#~ msgstr "Pievienot skatu"
+
+#~ msgid "View name:"
+#~ msgstr "Skata nosaukums:"
+
+#~ msgid "View Type"
+#~ msgstr "Skata tips"
+
+#~ msgid "Add Field"
+#~ msgstr "Pievienot lauku"
+
+#~ msgctxt "@label:textbox Name of a custom field"
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Type:"
+#~ msgstr "Tips:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Pieejams visiem kontaktiem"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Skaitliska vērtība"
+
+#~ msgid "Boolean"
+#~ msgstr "Ir/Nav"
+
+#~ msgid "Date"
+#~ msgstr "Datums"
+
+#~ msgid "Time"
+#~ msgstr "Laiks"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datums un laiks"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr ""
+#~ "Jau pastāv lauks ar šādu nosaukumu, lūdzu izvēlieties citu nosaukumu."
+
+#~ msgid "Remove Field"
+#~ msgstr "Noņemt lauku"
+
+#~ msgid "Add Field..."
+#~ msgstr "Pievienot lauku..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Noņemt lauku..."
+
+#~ msgid "Edit Distribution List"
+#~ msgstr "Rediģēt adresātu sarakstu"
+
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Distribution list members:"
+#~ msgstr "Sarakstā ietilpst:"
+
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr ""
+#~ "Adresātu saraksts ar nosaukumu %1 jau pastāv. Lūdzu ievdiet citu "
+#~ "nosaukumu."
+
+#~ msgid "Name in Use"
+#~ msgstr "Nosukum tiek izmantots"
+
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "<b>Adresātu saraksts:</b>"
+
+#~ msgid "<b>Email address to use in this list:</b>"
+#~ msgstr "<b>E-pasta adreses, ko saglabāt šajā sarakstā:</b>"
+
+#~ msgctxt "Formatted name, role, organization"
+#~ msgid "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+#~ msgstr "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "<b>Adrešu grāmata:</b> %1"
+
+#~ msgid "Add New Distribution List"
+#~ msgstr "Pievienot jaunu adresātu sarakstu"
+
+#~ msgid "Enter Name"
+#~ msgstr "Ievadiet nosaukumu"
+
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Ievadiet jaunā adresātu saraksta nosaukumu:"
+
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "Adresātu saraksts ar nosaukumu %1 jau pastāv. Lūdzu ievdiet citu nosaukumu"
+
+#~ msgid "Name Exists"
+#~ msgstr "Nosaukums pastāv"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Rediģēt e-pasta adreses..."
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Rediģēt e-pasta adreses"
+
+#~ msgid "Set Standard"
+#~ msgstr "Iesattīt par standarta"
+
+#~ msgid "Add Email"
+#~ msgstr "Pievienot e-pastu"
+
+#~ msgid "New Email:"
+#~ msgstr "Jauns e-pasts:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr ""
+#~ "<qt>Vai esat pārliecināts ka vēlaties izņemt e-pasta adresi <b>%1</b>?</"
+#~ "qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Apstiprināt izņemšanu"
+
+#~ msgid "&Delete"
+#~ msgstr "&Dzēst"
+
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "Rādīt kontaktus, kas atbilst izvēlētajām kategorijām"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Rādīt visus kontaktus, izņemot tos, kas atbilst izvēlētajām kategorijām"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Rediģēt adrešu grāmatas filtrus"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtrs:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "Brīvs/Aizņemts informācijas atrašanās vieta:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Lietot ģeo datus"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Platums:"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Garums:"
+
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Rediģēt ģeo datus..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Ģeo datu ievads"
+
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Grādi"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Platums:"
+
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Ziemeļi"
+
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Dienvidi"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Garums:"
+
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Austrumi"
+
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Rietumi"
+
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Nedefinēts"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "Neizdevās atrast kontakta attēlu."
+
+#~ msgid "Reset"
+#~ msgstr "Nomest"
+
+#~ msgid "IM address:"
+#~ msgstr "IM adrese:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Rediģēt IM adresi..."
+
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Inkrementāla meklēšana<p>Ievadiet šeit tekstu un automātiski tiks veikta "
+#~ "meklēšana, atgriežot vislabāt atbilstošos rezultātus. Kontaktu meklēšana "
+#~ "notiek pēc izvēlētajiem laukiem.</p>"
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "&iekš:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "Šeit varat norādīt lauku, kuru lietot inkrementālai meklēšanai."
+
+#~ msgid "Visible Fields"
+#~ msgstr "Redzamie lauki"
+
+#~ msgid "Blog"
+#~ msgstr "Emuārs"
+
+#~ msgid "Don Sanders"
+#~ msgstr "Don Sanders"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Līdzautors, libkabc ports, CSV imports/exports"
+
+#~ msgid "Mike Pilone"
+#~ msgstr "Mike Pilone"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Saskarne un karkasa dizains"
+
+#~ msgid "Greg Stern"
+#~ msgstr "Greg Stern"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DCOP saskarne"
+
+#~ msgid "Mark Westcott"
+#~ msgstr "Mark Westcott"
+
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "Michel Boyer de la Giroday"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP meklēšana"
+
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "Vai tiešām vēlaties dzēst šo %1 adresātu sarakstu?"
+#~ msgstr[1] "Vai tiešām vēlaties dzēst šos %1 adresātu sarakstus?"
+#~ msgstr[2] "Vai tiešām vēlaties dzēst šos %1 adresātu sarakstu?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Lūdzu izvēlieties tikai vienu kontaktu."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>Vai tiešām vēlaties lietot <b>%1</b> kā jūsu personīgo kontaktu?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "Lietot"
+
+#~ msgid "Do Not Use"
+#~ msgstr "Nelietot"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Jauns adresātu saraksts"
+
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Jauns adresātu saraksts (%1)"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Neizdevās saglabāt adrešu grāmatu <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Neizdevās iegūt piekļuvi adrešu grāmatas saglabāšanai <b>%1</b>.</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Jūsu KDE isntalācijā nav LDAP atbalsta, lūdzu konsultējieties ar savu "
+#~ "administratoru."
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Nav pieejams LDAP apkalpotājs"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Drukāt adresi"
+
+#~ msgid "Add"
+#~ msgstr "Pievienot"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "No&sūtīt kontaktam e-pastu..."
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Drukāt konkrētu kontaktu skaitu."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Saglabāt visas adrešu grāmatas izmaiņas glabāšanas aizmugurē."
+
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Jauns"
+
+#~ msgid "&New Distribution List..."
+#~ msgstr "&Jauns adresātu saraksts..."
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Nosūtīt e-pastu ar izvēlēto konktaktu pielikumā."
+
+#~ msgid "Chat &With..."
+#~ msgstr "&Tērzēt ar..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Sākt tērzēšanu ar izvēlēto kontaktu."
+
+#~ msgid "Edit"
+#~ msgstr "Rediģēt"
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr ""
+#~ "Izgriezt izvēlēto(s) kontaktu(s) uz sistēmas starpliktuvi vCard formātā."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Ielīmēt no starpliktuves iepriekš kopētus vai izgrieztus kontaktus."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "&Dzēst kontaktu"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Dzēst visus izvēlētos kontaktus."
+
+#~ msgid "C&opy Contact To..."
+#~ msgstr "K&opēt kontaktu uz..."
+
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Pārvietot kontaktu uz..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "Radīt lekšanas joslu"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Pārslēgt vai redzama lekšanas josla."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "Jums tiks parādīts logs, kas satur visas KAddresBook konfigurēšanas "
+#~ "iespējas."
+
+#~ msgid "LDAP &Lookup"
+#~ msgstr "&LDAP meklēšana"
+
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Meklē kontaktus LDAP serverī<p>Jums tiks parādīts logs, kurā varēsiet "
+#~ "meklēt kontaktus un izvēlēties, kurus pievienot lokālajai adrešu grāmatai."
+#~ "</p>"
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "Uzstādīt par personīgo kontaktu"
+
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Uzstādīt par personīgo kontaktu<p>Šī kontakta dati tiks izmantoti citās "
+#~ "KDE lietotnēs, lai jums nav atkārtoti jāievada savi personīgie dati.</p>"
+
+#~ msgid "Select Categories..."
+#~ msgstr "Izvēlieties kategorijas..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "Tīrīt meklēšanas joslu"
+
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr ""
+#~ "Tīrīt meklēšanas joslu<br /><br />Iztīra ātrās meklēšanas joslas saturu."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Apvienot ar eksistējošām kategorijām?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "Neapvienot"
+
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "%1 kontakts atbilst"
+#~ msgstr[1] "%1 kontakti atbilst"
+#~ msgstr[2] "%1 kontaktu atbilst"
+
+#~ msgid "Distribution List: %1"
+#~ msgstr "Adresātu saraksts: %1"
+
+#~ msgid "Keys:"
+#~ msgstr "Atslēgtas:"
+
+#~ msgid "Export..."
+#~ msgstr "Eksportēt..."
+
+#~ msgid "Key Type"
+#~ msgstr "Atslētas tips"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Vai tiešām vēlaties izņemt atslēgu  <b>%1</b>?</qt>"
+
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Pievienot adresātu sarakstam..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Pirms meklēt nepieciešams izvēlēties LDAP serveri.\n"
+#~ "To var izdarīt izvēlnē Iestatījumi/Konfigurēt KAddressBook."
+
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Šis %1 kontakts tika importēts jūsu adrešu grāmatā:"
+#~ msgstr[1] "Šie %1 kontakti tika importēti jūsu adrešu grāmatā:"
+#~ msgstr[2] "Šie %1 kontaktu tika importēti jūsu adrešu grāmatā:"
+
+#~ msgid "Please select the contacts you want to add to the distribution list."
+#~ msgstr ""
+#~ "Lūdzu izvēlieties kurus kontaktus vēlaties pievienot adresātu sarakstam."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Goda nosaukumi:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr "Definētos goda nosaukumus var papildināt iestatījumu logā."
+
+#~ msgid "Additional names:"
+#~ msgstr "Papildus vārdi:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Goda nosaukumi:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr "Definētos goda nosaukumus var papildināt iestatījumu logā."
+
+#~ msgid "Formatted name:"
+#~ msgstr "Formatēts nosaukums:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Automātiski analizēt vārdu"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Miss"
+
+#~ msgid "Mr."
+#~ msgstr "Mr."
+
+#~ msgid "Mrs."
+#~ msgstr "Mrs."
+
+#~ msgid "Ms."
+#~ msgstr "Ms."
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Jr."
+
+#~ msgid "Sr."
+#~ msgstr "Sr."
+
+#~ msgctxt "@item:inlistbox Custom name format"
+#~ msgid "Custom"
+#~ msgstr "Pielāgots"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Simple Name"
+#~ msgstr "Vienkāršs vārds"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Pilns vārds"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Apgriezts vārds ar komatu"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name"
+#~ msgstr "Apgriezts vārds"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Organizācija"
+
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Cits..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Rediģēt telefona numuru"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Šis ir vēlamais telefona numurs"
+
+#~ msgid "Department:"
+#~ msgstr "Nodaļa:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Menedžera vārds:"
+
+#~ msgid "Office:"
+#~ msgstr "Ofiss:"
+
+#~ msgid "Profession:"
+#~ msgstr "Profesija:"
+
+#~ msgctxt "@label:textbox Job title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Amats:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Iesauka:"
+
+#~ msgid "Birthday:"
+#~ msgstr "Dzimšanas diena:"
+
+#~ msgid "2008-07-31"
+#~ msgstr "2008-07-31"
+
+#~ msgid "Partners name:"
+#~ msgstr "Partnera vārds:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Gadadiena:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Rediģēt kontakta vārdu"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Rediģēt vārdu..."
+
+#~ msgid "&Role:"
+#~ msgstr "&Loma:"
+
+#~ msgid "&Organization"
+#~ msgstr "&Organizācija:"
+
+#~ msgid "Home&page:"
+#~ msgstr "Tīmekļa la&pa:"
+
+#~ msgid "Tools"
+#~ msgstr "Rīki"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Rediģēt adresi"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "&Protokols:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "&Adrese:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "&Tīkls:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "IM adreses"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr "Standarta IM adrese ir tā, kas tiek rādīta galvenā redaktora logā."
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt>Tikai viena IM adrese var būt standarta IM adrese.<br/>Standarta IM "
+#~ "adrese tiek rādīta galvenajā redaktora logā un citas programmas var to "
+#~ "izmantot par norādi, kuru IM adresi rādīt.</qt>"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "&Uzlikt kā standarta"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "&Noņemt"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "R&ediģēt..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "&Pievienot..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "Adrese"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em>Piezīme:</em> Pirms pievienot vai redigēt tūlītējās ziņampmaiņas "
+#~ "adreses, lūdzu izlasiet palīdzību."
+
+#~ msgid "Font Settings"
+#~ msgstr "Fontu iestatījumi"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Lietot standarta KDE fontus"
+
+#~ msgid "Details font:"
+#~ msgstr "Detaļu fonts:"
+
+#~ msgid "Size:"
+#~ msgstr "Izmērs:"
+
+#~ msgid "Body font:"
+#~ msgstr "Ķermeņa fonts:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Fiksēts fonts:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Kontakta galvenes fonts:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Virsraksti:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Krāsotas kontaktu galvenes"
+
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "Dažādi"
+
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "Ja šis ir ieslēgts, kata burta grupai tiks izdrukāta vismaz viena pilna "
+#~ "lapa, neatkarīgi no tā vai tajā eksistē kāds ieraksts. Tas parasti ir "
+#~ "noderīgi tikai kopā ar iespēju 'aizpildīt lapas ar tukšiem adrešu "
+#~ "laukiem'."
+
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "Vienmēr drukāt lapas visām cilnēm"
+
+#~ msgid ""
+#~ "This is the minimum number of empty fields that have to be printed in "
+#~ "addition to real entries; if this number is not reached on the first "
+#~ "page, more pages with empty fields only may be appended."
+#~ msgstr ""
+#~ "Šis ir minimālais tukšo lauku skaits, ko pievienot pēc īstajiem "
+#~ "ierakstiem; ja šis skaits netiek sasniegts pirmajā lapā, tiks pievienotas "
+#~ "papildus lapas ar tukšiem laukiem."
+
+#~ msgid ""
+#~ "If you often add contacts to your printout manually before entering them "
+#~ "into the KDE address book, you should set this option to a value greater "
+#~ "than 0: it determines how many empty address fields are to be printed; if "
+#~ "this many do not fit onto the page, another page with only empty fields "
+#~ "will be printed."
+#~ msgstr ""
+#~ "Ja bieži ar roku papildiniet izdrukātos kontaktus, pirms ievadiet tos KDE "
+#~ "adrešu grāmatā, uzstādiet šo vērtību lielāku par 0. Tā nosaka cik daudz "
+#~ "tukšu adrešu lauku izdrukāt. Ja tie nesatilpst vienā lāpā, tiks izdrukāda "
+#~ "papildus lapa ar tukšiem laukiem."
+
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Min. tukšo lauku skaits:"
+
+#~ msgid ""
+#~ "If this option is turned on, behind the contacts on a page the remaining "
+#~ "space will be filled with empty fields so you can add contacts manually "
+#~ "later"
+#~ msgstr ""
+#~ "Ja šis ir ieslēgts, pēc kontaktiem atlikusī vieta tiks aizpildīta ar "
+#~ "tukšiem laukiem, kuros varēsiet ar roku ierakstīt jaunus kontaktus"
+
+#~ msgid "Fill pages with empty address fields"
+#~ msgstr "Aizpildīt lapas ar tukšiem adrešu laukiem"
+
+#~ msgid ""
+#~ "Here you can group letters together as they are grouped in your time "
+#~ "planner. Press 'group letter' to combine the selected letter with the "
+#~ "letter group above it, press 'ungroup letter' to remove the last letter "
+#~ "from a selected group."
+#~ msgstr ""
+#~ "Šeit varat sagrupēt burtus kopā, kā tiek tiek grupēti laika plānotājos. "
+#~ "Nospiediet 'grupēt burtu', lai apvienotu izvēlēto burtu ar virs tā esošo "
+#~ "burtu grupu, nospiediet 'atgupēt burtu', lai izņemtu pēdējo burtu no "
+#~ "izvēlētās grupas."
+
+#~ msgid "Group Letter"
+#~ msgstr "Grupēt burtu"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Automātiska jaunu adrešu parsēšana"
+
+#~ msgid "Fax"
+#~ msgstr "Fakss"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr "Skripts, ko izmantot GSM SMS ziņu nosūtīšanai uz mobīlo telefonu"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Ievērot KDE viena klikšķa iestatījumu"
+
+#~ msgid ""
+#~ "If true, the contact list will be placed above the extensions on the left "
+#~ "(distribution list editor etc.) instead of in the middle of the main "
+#~ "window"
+#~ msgstr ""
+#~ "Ja ieslēgts, kontaktu saraksts tiks novietots virs paplašinājumiem pa "
+#~ "kreisi (adresātu sarakstu redaktors, utt.) nevis galvenā loga vidū"
+
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "E-pasts:"
+
+#~ msgid "Play"
+#~ msgstr "Atskaņot"
+
+#~ msgid "Store as URL"
+#~ msgstr "Saglabāt kā URL"
+
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr ""
+#~ "Šis lauks satur skaņas failu, kas satur kontakta vārda pareizu izrunu."
+
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr "Saglabāt tikai skaņas faila URL, nevis pašu failu."
+
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Dzēst %1 adresātu sarakstu"
+#~ msgstr[1] "Dzēst %1 adresātu sarakstus"
+#~ msgstr[2] "Dzēst %1 adresātu sarakstu"
+
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Ielīmēt %1 kontaktu"
+#~ msgstr[1] "Ielīmēt %1 kontaktus"
+#~ msgstr[2] "Ielīmēt %1 kontaktu"
+
+#~ msgid "New Contact"
+#~ msgid_plural "New %1 Contacts"
+#~ msgstr[0] "Jauns %1 kontakts"
+#~ msgstr[1] "Jauni %1 kontakti"
+#~ msgstr[2] "Jauni %1 kontaktu"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Izvēlieties parādāmos laukus"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "&Izvēlētie lauki:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Tiks atktivizēts noklusētais filtrs katru reizi, kad tiks rādīts šis "
+#~ "skats. Šī iespēja ļauj veidot skatus, kas rāda tikai ar konkrētu "
+#~ "informāciju. Aktivizējot skatu, filtru vairs nevar mainīt."
+
+#~ msgid "No default filter"
+#~ msgstr "Bez noklusētā filtra"
+
+#~ msgid "Use filter:"
+#~ msgstr "Lietot filtru:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Noklusētais filtrs"
+
+#~ msgid "Modify View: "
+#~ msgstr "Mainīt skatu: "
+
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Noklusētais tabulas skats"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Vai tiešām vēlaties dzēst skatu <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Apstiprināt dzēšanu"
+
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Vai importēt %1 kontaktu jūsu adrešu grāmatā?"
+#~ msgstr[1] "Vai importēt %1 kontaktus jūsu adrešu grāmatā?"
+#~ msgstr[2] "Vai importēt %1 kontaktu jūsu adrešu grāmatā?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "Neimportēt"
+
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Nekategorizēts"
+
+#~ msgid "Select View"
+#~ msgstr "Izvēlieties skatu"
+
+#~ msgid "Modify View..."
+#~ msgstr "Rediģēt skatu..."
+
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Nospiežot šo pogu tiek atvērts logs, kas ļauj rediģēt adrešu grāmatas "
+#~ "skatu. Tur var pievienot vai noņemt rādītos laukus, piemēram, vārdu."
+
+#~ msgid "Add View..."
+#~ msgstr "Pievienot skatu..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Nospiežot šo pogu tiek atvērts logs, kas veidot jaunu adrešu grāmatas "
+#~ "skatu. Jums vajadzēs ievadīt skata nosaukumu, lai to varētu atšķirt no "
+#~ "citiem skatiem."
+
+#~ msgid "Delete View"
+#~ msgstr "Dzēst skatu"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Nospiežot šo pogu, var izdzēst šo skatu, ko iepriekš esat pievienojis."
+
+#~ msgid "Refresh View"
+#~ msgstr "Atjaunināt skatu"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Nospiežot šo pogu, skats tiks atjaunināts."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "Rediģēt &filtrus..."
+
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Rediģēt kontaktu filtrus<p>Jums tiks parādīts logs, kurā varat pievienot, "
+#~ "noņemt un rediģēt filtrus.</p>"
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Nav pieejams <b>%1</b> importēšanas spraudnis.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Nav pieejams <b>%1</b> eksportēšanas spraudnis.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Nevar eksportēt kontaktus."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Izvēlieties eksportējamos kontaktus"
+
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Augoši"
+
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Dilstoši"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "Eksportēt visu adrešu grāmatu"
+
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "&Izvēlētos kontaktus (%1 izvēlēts)"
+#~ msgstr[1] "&Izvēlētos kontaktus (%1 izvēlēti)"
+#~ msgstr[2] "&Izvēlētos kontaktus (%1 izvēlētu)"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Eksportēt tikai izvēlētos kontaktus.\n"
+#~ "Šis ir atslēgts, ja nav izvēlēts neviens kontakts."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Kontakti, kas atbilst &filtam"
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Eksportēt kontaktus, kas atbilst izvēlētajam filtram.\n"
+#~ "Šis ir atslēgts, ja jums anv definēts neviens filtrs"
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Eksportēt tikai kontaktus, kas ietilpst pa sarakstā kreisi atzīmētajā "
+#~ "kategorijā.\n"
+#~ "Šī iespēja ir atslēgta, ja jums nav kategoriju."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Atzīmējiet kategorijas, kuru kontaktus vēlaties drukāt."
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Business"
+#~ msgstr "Bizness"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Family"
+#~ msgstr "Ģimene"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Skola"
+
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Draugs"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "Nav pieejams pakalpokumu piegādātājs meklēšanai kartē!\n"
+#~ "Lūdzu pievienojiet tādu konfigurācijas logā."
+
+#~ msgid "Crypto Settings"
+#~ msgstr "Kriptogrāfijas iestatījumi"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "Atļautie protokoli"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "Vēlamā OpenPGP šifrēšanas atslēga:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "Vēlamais S/MIME šifrēšanas sertifikāts:"
+
+#~ msgid "Message Preference"
+#~ msgstr "Vēstuļu iestatījumi"
+
+#~ msgid "Sign:"
+#~ msgstr "Parakstīt:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "Šifrēt:"
+
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Rediģēt tūlītējās ziņapmaiņas adresi"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "Pievienot adresi"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Do you really want to delete the selected address?"
+#~ msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgstr[0] "Vai tiešām vēlaties dzēst %1 izvēlēto adresi?"
+#~ msgstr[1] "Vai tiešām vēlaties dzēst %1 izvēlētās adreses?"
+#~ msgstr[2] "Vai tiešām vēlaties dzēst %1 izvēlēto adresešu?"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Adresātu saraksta redaktors"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "Adresātu saraksti"
+
+#~ msgid "Add distribution list"
+#~ msgstr "Pievienot adresātu sarakstu"
+
+#~ msgid "Edit distribution list"
+#~ msgstr "Rediģēt adresātu sarakstu"
+
+#~ msgid "Remove distribution list"
+#~ msgstr "Dzēst adresātu sarakstu"
+
+#~ msgid "New Distribution List..."
+#~ msgstr "Jauns adresātu saraksts..."
+
+#~ msgid "Delete"
+#~ msgstr "Dzēst"
+
+#~ msgid "All Contacts"
+#~ msgstr "Visi kontakti"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Neizdevās izveidot adrešu grāmatu ar tipu <b>%1</b>.</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1 adrešu grāmata"
+
+#~ msgid "Edit address book settings"
+#~ msgstr "Rediģēt adrešu grāmatas iestatījumus"
+
+#~ msgid "Remove address book"
+#~ msgstr "Noņemt adrešu grāmatu"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Apmaļu un atstatumu iestatījumi"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Nosūtīt uz:)"
+
+#~ msgid "Preparing"
+#~ msgstr "Sagatavo"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Izdrukāts %1, drukāts ar KAddressBook (http://www.kde.org)"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Izvēlieties drukājamos kontaktus"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Izdrukāt visu adrešu grāmatu"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Drukāt tikai izvēlētos kontaktus.\n"
+#~ "Šī iespēja ir atslēgta, ja nav izvēlēts neviens kontakts."
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Drukāt filtram atbilstošus kontaktus.\n"
+#~ "Šī iespēja ir atslēgta, ja nav definēts neviens kontakts."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Drukāt tikai kontaktus, kas pieder kreisās puses sarakstā atzīmētajām "
+#~ "kategorijām.\n"
+#~ " Šī iespēja ir atslēgta, ja jums nav nevienas kategorijas."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Izvēlieties filtru, kas noteiks drukājamos kontaktus."
+
+#~ msgid "Look & Feel"
+#~ msgstr "Izskats un sajūtas"
+
+#~ msgid "Text Color"
+#~ msgstr "Teksta krāsa"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Galvenes, robežas un atdalītāja krāsa"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Galvenes teksta krāsa"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Izcelšanas krāsa"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Izcelta teksta krāsa"
+
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Pamata"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Zīmēt &atdalītājus"
+
+#~ msgid "Separator &width:"
+#~ msgstr "Atdalītāja &platums:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Papildināšana:"
+
+#~ msgid "Cards"
+#~ msgstr "Kartītes"
+
+#~ msgid "&Margin:"
+#~ msgstr "&Apmale:"
+
+#~ msgid "Draw &borders"
+#~ msgstr "Zīmēt ro&bežas"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Elementa apmale ir attālums (pikseļos) starp elementa malu un tā datiem. "
+#~ "Palielinot apmali vispamanāmāk palielinās attālums starp fokusa "
+#~ "taisnstūri un elementa datiem."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Elementu atstarpi nosaka attālums (pikseļos) starp tiem un viss kas cits: "
+#~ "skata robežoas, citi elementi vai kolonnu atdalītāju."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Norāda kolonnu atdalītāju platumu"
+
+#~ msgid "Layout"
+#~ msgstr "Izkārtojums"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "&Lietot pielāgotas krāsas"
+
+#~ msgid "Colors"
+#~ msgstr "Krāsas"
+
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "Ja ir ieslēgtas pielāgotas krāsas, zemāk varat izvēlēties krāsas.Citādi "
+#~ "tiks izmantota aktīva KDE krāsu shēma."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Dubultklikšķis uz ieraksta vai nospiediet RETURN, lai izvēlētos "
+#~ "atbilstošā teksta krāsu."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "Li&etot pielāgotus fontus"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Teksta fonts:"
+
+#~ msgid "Choose..."
+#~ msgstr "Izvēlēties..."
+
+#~ msgid "&Header font:"
+#~ msgstr "&Galvenes fonts:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Ja ir ieslēgti pielāgoti fonti, zemāk varat izvēlēties kādus fontus "
+#~ "izmantot šajā skatā. Citādi tiks lietoti noklusētais KDE fonts, galveni "
+#~ "rādot treknrakstā un datus normālā stilā."
+
+#~ msgid "Fonts"
+#~ msgstr "Fonti"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "Rādīt &tukšus laukus"
+
+#~ msgid "Show field &labels"
+#~ msgstr "Rādīt &lauku etiķetes"
+
+#~ msgid "Behavior"
+#~ msgstr "Izturēšanās"
+
+#~ msgid "Row Separator"
+#~ msgstr "Rindas atdalītājs"
+
+#~ msgid "Single line"
+#~ msgstr "Viena rinda"
+
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Lietot fona attēlu:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Rādīt kontaktu paskaidres"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "Rādīt tūlītējās ziņapmaiņas klātbūtni"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "Kartiņa"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Rolodex stila kartiņas, kas apraksta kontaktus."
+
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Ikonas apzīmē konktaktus. Ļoti vienkāršs skats."
+
+#~ msgid "Table"
+#~ msgstr "Tabula"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "Kontaktu saraksts tabulā. Katra tabulas šūna satur vienu kontakta lauku."
+
+#~ msgid "Presence"
+#~ msgstr "Klātbūtne"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Grāmatzīmju eksportēšanas izvēlne..."
+
+#~ msgid "AddressBook"
+#~ msgstr "Adrešu grāmata"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Sākt no rindas:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignorēt dubultos atdalītājus"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[uzminēt]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Kontakti ir veiksmīgi eksportēti."
+
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Importēt Eudora adrešu grāmatu..."
+
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Eudora Light adrešu grāmata (*.txt)"
+
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Importēt GMX adrešu grāmatu..."
+
+#~ msgid "Import From Mobile Phone..."
+#~ msgstr "Importēt no mobīlā telefona"
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Eskportēt uz mobīlo telefonu..."
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "Neizdevās inicializēt gnokii bibliotēku."
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Gnokii vēl nav konfigurēts."
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Gnokii ziņo par 'Slēgšanas faila kļūdu'.\n"
+#~ " Lūdzu aizveriet visas citas strādājošās gnokii kopijas, pārbaudiet vai "
+#~ "jums ir rakstīšanas atļaujas mapē /var/lock un mēģiniet vēlreiz."
+
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Neizdevās inicializēt mobīlo telefonu.<br /><br />Kļūdas "
+#~ "ziņojums bija:<br /><b>%1</b><br /><br />Varbūt mēģiniet palaist "
+#~ "komandrindā\"gnokii --identify\", lai pārbaudītu vada/transporta "
+#~ "problēmas un pārbaudītu ka gnokii konfigurācija ir pareiza.</center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Mobile Phone information:"
+#~ msgstr "Informācija par mobīlo telefonu:"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Ražotājs"
+
+#~ msgid "Phone model"
+#~ msgstr "Telefona modelis"
+
+#~ msgid "Revision"
+#~ msgstr "Revīzija"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "Telefona grāmatas statuss"
+
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "Izmantots %2 no %1 kontakta"
+#~ msgstr[1] "Izmantots %2 no %1 kontaktiem"
+#~ msgstr[2] "Izmantots %2 no %1 kontaktiem"
+
+#~ msgid "internal memory"
+#~ msgstr "iekšējā atmiņā"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM-kartes atmiņa"
+
+#~ msgid "unknown memory"
+#~ msgstr "nezināma atmiņa"
+
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Importē <b>%1</b> kontaktu no mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Importē <b>%1</b> kontaktus no mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+#~ msgstr[2] ""
+#~ "<qt>Importē <b>%1</b> kontaktus no mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Nav pieejama gnokii saskarne.\n"
+#~ "Lūdziet izplatītājam kompilēšanas brīdī pievienot gnokii."
+
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Lūdzu pieslēdziet datoram mobīlo telefonu un nospiediet <b>Turpināt</"
+#~ "b>, lai sāktu kontaktu importēšanu.<br /><br />Ņemiet vērā ka ja jūsu "
+#~ "telefons nav korekti pieslēgts, sekojošā noteikšanas fāze var aizņemt "
+#~ "līdz pat divām minūtēm, kuru laikā KAddressBook nereaģēs uz jūsu darbībām."
+#~ "</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Importēt no mobīla telefona"
+
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Veido savienojumu ar mobīlo telefonu.<br /><br />Lūdzu "
+#~ "uzgaidiet...</center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "Ap&turēt importēšanu"
+
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Lūdzu pieslēdziet datoram mobīlo telefonu un nospiediet <b>Turpināt</"
+#~ "b>, lai sāktu kontaktu eksportēšanu.<br /><br />Ņemiet vērā ka ja jūsu "
+#~ "telefons nav korekti pieslēgts, sekojošā noteikšanas fāze var aizņemt "
+#~ "līdz pat divām minūtēm, kuru laikā KAddressBook nereaģēs uz jūsu darbībām."
+#~ "</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "Eksportēt uz mobīlo telefonu"
+
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt>Vai vēkatues lai izvēlētos kontkatus <b>pievieno</b> telefona "
+#~ "grāmatiņai  vai lai tie <b>aizvieto</b> visus telefonā šobrīd esošos "
+#~ "grāmatiņas ierakstus?<br /><br />Ņemiet vērā ka, ja izvēlaties aizvietot "
+#~ "ierakstus, tiks dzēsti visi mobīlajā telefonā esošie ieraksti un tajā būs "
+#~ "pieejami tikai no jauna eksportētie kontakti.</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Eskportēt uz mobīlo telefonu"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "Pievienot esoš&ajai adrešu grāmatai"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "Aiz&vietot esošo adrešu grāmatu ar jaunajiem kontaktiem"
+
+#~ msgid "&Stop Export"
+#~ msgstr "Ap&turēt eksportēšanu"
+
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Eksportē <b>%1</b> kontkatu uz mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Eksportē <b>%1</b> kontkatus uz mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+#~ msgstr[2] ""
+#~ "<qt>Eksportē <b>%1</b> kontkatus uz mobīlā telefona <b>%2</b>.<br /><br />"
+#~ "%3</qt>"
+
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Visi izvēlētie kontakti ir veiksmīgi pārkopēti uz mobīlo "
+#~ "telefonun.<br /><br />Lūdzu pagaidiet līdz tiks izdzēsti palikušie "
+#~ "pamestie mobīlā telefona kontakti.</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "Ap&turēt dzēšanu"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "Pabeigta eksportēšana uz telefonu."
+
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt>Šos kontaktus nevar eksportēt uz mobīlo telefonu. Iespējamie iemesli:"
+#~ "<br /><ul><li>Kontakti laukos satur vairāk informācijas nekā telefons "
+#~ "spēj saglabāt.</li><li>Jūsu telefons nespēj saglabāt varākas adreses, e-"
+#~ "pastus, mājas lapas,...</li><li>citas ar glabāšanas izmēru saistītas "
+#~ "problēmas.</li></ul>Lai nākotnē izvairītos no šādām problēmām, lūdzu "
+#~ "samaziniet dažādo lauku skaitu šajos kontaktos.</qt>"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Neizdevās atrast KDE 2 adrešu grāmatu <b>%1</b>.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Pārrakstīt iepriekš importētos ierakstus?"
+
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Importēt KDE 2 adrešu grāmatu"
+
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Importēt Opera adrešu grāmatu..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Importēt MS Exchange personīgo adrešu grāmatu (.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "Nevar atvērt %1 lasīšanai"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "%1 nav pazīstams PAB id, nevar to pārveidot"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "MS Exchange personīgās adrešu grāmatas faili (.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Neizdevās atrast MS Exchange personīgo adrešu grāmatu <b>%1</b>.</qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afganistāna"
+
+#~ msgid "Albania"
+#~ msgstr "Albānija"
+
+#~ msgid "Algeria"
+#~ msgstr "Alžīra"
+
+#~ msgid "American Samoa"
+#~ msgstr "Amērikas Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andora"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Angilja"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarktika"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigva un Barbudas"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentīna"
+
+#~ msgid "Armenia"
+#~ msgstr "Armēnija"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmoras un Kartjē Salas"
+
+#~ msgid "Australia"
+#~ msgstr "Austrālija"
+
+#~ msgid "Austria"
+#~ msgstr "Austrija"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaidžāna"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahreina"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladeša"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbadosa"
+
+#~ msgid "Belarus"
+#~ msgstr "Baltkrievija"
+
+#~ msgid "Belgium"
+#~ msgstr "Beļģija"
+
+#~ msgid "Belize"
+#~ msgstr "Beliza"
+
+#~ msgid "Benin"
+#~ msgstr "Benina"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermudas"
+
+#~ msgid "Bhutan"
+#~ msgstr "Butāna"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolīvija"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnija un Hercogovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botsvāna"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazīlija"
+
+#~ msgid "Brunei"
+#~ msgstr "Bruneja"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgārija"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Kambodža"
+
+#~ msgid "Cameroon"
+#~ msgstr "Kamerūna"
+
+#~ msgid "Canada"
+#~ msgstr "Kanāda"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Kape Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Kaimānu Salas"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Centrāl Āfrikas Republika"
+
+#~ msgid "Chad"
+#~ msgstr "Čada"
+
+#~ msgid "Chile"
+#~ msgstr "Čīle"
+
+#~ msgid "China"
+#~ msgstr "Ķīna"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolumbija"
+
+#~ msgid "Comoros"
+#~ msgstr "Komori"
+
+#~ msgid "Congo"
+#~ msgstr "Kongo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Kongo, Dem. Rep."
+
+#~ msgid "Costa Rica"
+#~ msgstr "Kosta Rika"
+
+#~ msgid "Croatia"
+#~ msgstr "Horvātija"
+
+#~ msgid "Cuba"
+#~ msgstr "Kuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Kipra"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Čehu Republika"
+
+#~ msgid "Denmark"
+#~ msgstr "Dānija"
+
+#~ msgid "Djibouti"
+#~ msgstr "Džibuti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominika"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominikāņu Republika"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ekvadora"
+
+#~ msgid "Egypt"
+#~ msgstr "Ēģipte"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvadora"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Ekvatoriālā Gvineja"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritreja"
+
+#~ msgid "Estonia"
+#~ msgstr "Igaunija"
+
+#~ msgid "England"
+#~ msgstr "Anglija"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Etiopija"
+
+#~ msgid "European Union"
+#~ msgstr "Eiropas Savienība"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Fareru Salas"
+
+#~ msgid "Fiji"
+#~ msgstr "Fidžī"
+
+#~ msgid "Finland"
+#~ msgstr "Somija"
+
+#~ msgid "France"
+#~ msgstr "Francija"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Franču Polinēzija"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabona"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambija"
+
+#~ msgid "Georgia"
+#~ msgstr "Gruzija"
+
+#~ msgid "Germany"
+#~ msgstr "Vācija"
+
+#~ msgid "Ghana"
+#~ msgstr "Gana"
+
+#~ msgid "Greece"
+#~ msgstr "Grieķija"
+
+#~ msgid "Greenland"
+#~ msgstr "Grenlande"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenāda"
+
+#~ msgid "Guam"
+#~ msgstr "Guāma"
+
+#~ msgid "Guatemala"
+#~ msgstr "Gvatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Gvineja"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Gvineja-Bisau"
+
+#~ msgid "Guyana"
+#~ msgstr "Gajana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Hondurasa"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Honk Konga"
+
+#~ msgid "Hungary"
+#~ msgstr "Ungārija"
+
+#~ msgid "Iceland"
+#~ msgstr "Islande"
+
+#~ msgid "India"
+#~ msgstr "Indija"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonēzija"
+
+#~ msgid "Iran"
+#~ msgstr "Irāna"
+
+#~ msgid "Iraq"
+#~ msgstr "Irāka"
+
+#~ msgid "Ireland"
+#~ msgstr "Īrija"
+
+#~ msgid "Israel"
+#~ msgstr "Izraēla"
+
+#~ msgid "Italy"
+#~ msgstr "Itālija"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Ziloņkaula Krasts"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaika"
+
+#~ msgid "Japan"
+#~ msgstr "Japāna"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordāna"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazahija"
+
+#~ msgid "Kenya"
+#~ msgstr "Kēnija"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Ziemeļ Koreja"
+
+#~ msgid "Korea, South"
+#~ msgstr "Dienvid Koreja"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuveita"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kirgīzija"
+
+#~ msgid "Laos"
+#~ msgstr "Laosa"
+
+#~ msgid "Latvia"
+#~ msgstr "Latvija"
+
+#~ msgid "Lebanon"
+#~ msgstr "Libāna"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesoto"
+
+#~ msgid "Liberia"
+#~ msgstr "Libērija"
+
+#~ msgid "Libya"
+#~ msgstr "Lībija"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Lihtenšteina"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lietuva"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luksemburga"
+
+#~ msgid "Macau"
+#~ msgstr "Makau"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagaskara"
+
+#~ msgid "Malawi"
+#~ msgstr "Malavi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malaizija"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldvīnes"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Maršalu Salas"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinika"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritānija"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauritānija"
+
+#~ msgid "Mexico"
+#~ msgstr "Meksika"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Mikronēzijas Federālie Štati"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldāvija"
+
+#~ msgid "Monaco"
+#~ msgstr "Monako"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolija"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserata"
+
+#~ msgid "Morocco"
+#~ msgstr "Maroka"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambika"
+
+#~ msgid "Namibia"
+#~ msgstr "Namībija"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepāla"
+
+#~ msgid "Netherlands"
+#~ msgstr "Nīderlande"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Nīderlandes Antiļi"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Jaun Kaledonija"
+
+#~ msgid "New Zealand"
+#~ msgstr "JaunZēlande"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nikaragva"
+
+#~ msgid "Niger"
+#~ msgstr "Nigēra"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigērija"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "Ziemeļ Koreja"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Ziemeļ Īrija"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Ziemeļ Mariānas Salas"
+
+#~ msgid "Norway"
+#~ msgstr "Norvēģija"
+
+#~ msgid "Oman"
+#~ msgstr "Omāna"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistāna"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palestīna"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua Jaunā Gvineja"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paragvaja"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Filipīnas"
+
+#~ msgid "Poland"
+#~ msgstr "Polija"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugāle"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Riko"
+
+#~ msgid "Qatar"
+#~ msgstr "Kvatāra"
+
+#~ msgid "Romania"
+#~ msgstr "Rumānija"
+
+#~ msgid "Russia"
+#~ msgstr "Krievija"
+
+#~ msgid "Rwanda"
+#~ msgstr "Ruanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "St. Kitts and Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Sv. Lūcija"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Sv. Vincenta un Grenadīnes"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome and Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Sauda Arābija"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegāla"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Serbija & Melnkalne"
+
+#~ msgid "Seychelles"
+#~ msgstr "Šeišeļi"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sjerra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapūra"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovākija"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovēnija"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Solomonu Salas"
+
+#~ msgid "Somalia"
+#~ msgstr "Somālija"
+
+#~ msgid "South Africa"
+#~ msgstr "DienvidĀfrika"
+
+#~ msgid "South Korea"
+#~ msgstr "Dienvid Koreja"
+
+#~ msgid "Spain"
+#~ msgstr "Spānija"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "ŠriLanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudāna"
+
+#~ msgid "Suriname"
+#~ msgstr "Surinama"
+
+#~ msgid "Swaziland"
+#~ msgstr "Svazilenda"
+
+#~ msgid "Sweden"
+#~ msgstr "Zviedrija"
+
+#~ msgid "Switzerland"
+#~ msgstr "Šveice"
+
+#~ msgid "Syria"
+#~ msgstr "Sīrija"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taivāna"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tadžikija"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzānija"
+
+#~ msgid "Thailand"
+#~ msgstr "Taizeme"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibeta"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidadas un Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunisija"
+
+#~ msgid "Turkey"
+#~ msgstr "Turcija"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmēnija"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turku un Kaikosu Salas"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tivalī"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukraina"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Apvienotie Arābu Emirāti"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Apvietotās Karalistes"
+
+#~ msgid "United States"
+#~ msgstr "Savienotās Valstis"
+
+#~ msgid "Uruguay"
+#~ msgstr "Urugvaja"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekija"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Vatikāns"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venecuēla"
+
+#~ msgid "Vietnam"
+#~ msgstr "Vjetnama"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Rietum Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Jemena"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Dienvidslāvija"
+
+#~ msgid "Zaire"
+#~ msgstr "Zaira"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambija"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabve"
+
+#~ msgid "Address:"
+#~ msgstr "Adrese:"
+
+#~ msgid "Addresses:"
+#~ msgstr "Adreses:"
+
+#~ msgid "Address"
+#~ msgstr "Adrese"
+
+#~ msgid "INet"
+#~ msgstr "INet"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "&General"
+#~ msgstr "Pamata"

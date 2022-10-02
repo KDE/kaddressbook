@@ -1,0 +1,3619 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Jannick Kuhr <opensource@kuhr.org>, 2009.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+# Markus Slopianka <kamikazow@fishmouth.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2012, 2013, 2015, 2016, 2018, 2020, 2022.
+# Torbjörn Klatt <opensource@torbjoern-klatt.de>, 2011.
+# Jürgen Jäckle <divmails1@gmx.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2022-03-06 16:49+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-doc@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Jannick Kuhr, Markus Slopianka"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "opensource@kuhr.org, markus.s@kdemail.net"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Adressbuch"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "Kontakt"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "E-Mails"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organisation"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "Webseite"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Notiz"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "Titel"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(Ein Jahr alt)"
+msgstr[1] "(%1 Jahre alt)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "E-Mail"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "Blog-Quelle"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Neuer Kontakt ..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Es wird Ihnen ein Dialog angezeigt, in dem Sie einen neuen Kontakt erstellen "
+"können."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Neue Kontaktgruppe ..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Es wird Ihnen ein Dialog angezeigt, in dem Sie eine neue Kontaktgruppe "
+"erstellen können."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "Die Adressbuch-Verwaltung von KDE"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "Copyright © 2007–%1 KAddressBook-Autoren"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Aktueller Betreuer"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Vorheriger Betreuer"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "Ursrünglicher Autor (1998)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "Dokumentation (2019)"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Kategoriefilter zurücksetzen"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Kategoriefilter leeren"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(Ohne Stichwort)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(Gruppen)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(Alle)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(Keine)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ", "
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>Kategoriefilter: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "Module einrichten"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "Copyright © 2016-2021 Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "Benutzer-Feedback einrichten"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "Copyright © 2020-2021 Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "Extras-Module"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "Module für Import/Export"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "Kontaktdetails werden geladen ..."
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "E-Mail: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "Telefon: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "%1%2 %3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "%1 %2 %3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Nächster"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Vorheriger"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "Zum vorherigen Kontakt in der Liste springen"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+"Drücken Sie diesen Knopf, um zum vorherigen Kontakt in der Liste zu gehen."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Zum nächsten Kontakt in der Liste springen"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+"Drücken Sie diesen Knopf, um zum nächsten Kontakt in der Liste zu gehen."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 von %2"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Undefiniert"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Jahrestag"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "E-Mail (bevorzugt)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "E-Mail (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "E-Mail (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "E-Mail (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Beruf"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Büro"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "Verwaltung"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "Assistent"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "Ehepartner"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Kontakte auswählen"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Alle Kontakte"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Alle Kontakte aus allen Adressbüchern"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn Sie alle Kontakte aus allen Adressbüchern "
+"auswählen möchten."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Ausgewählte Kontakte"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Nur die zurzeit ausgewählten Kontakte"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn Sie nur die Kontakte möchten, die Sie "
+"bereits in der grafischen Benutzeroberfläche gewählt haben."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Alle Kontakte aus:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Alle Kontakte aus dem ausgewählten Adressbuch importieren"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn Sie alle Kontakte nur aus einem Ihrer "
+"Adressbücher möchten. Haben Sie auf diese Einstellung gedrückt, wird ein "
+"Auswahlfeld mit einer Liste all dieser Adressbücher bereitgestellt und "
+"ermöglicht die Wahl des gewünschten Adressbuchs."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Unterordner einbeziehen"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "Alle Unterordner inklusive des obersten auswählen"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"Kreuzen Sie dieses Feld an, wenn Sie alle Kontakte aus diesem Ordner "
+"einschließlich aller Unterordner auswählen möchten. Sollen nur die Kontakte "
+"des obersten Ordners ausgewählt werden, deaktivieren Sie diese Einstellung."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Kontakte zusammenstellen"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "Kontakte holen"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Private Felder"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Geschäftliche Felder"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Andere Felder"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Verschlüsselungsschlüssel"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Bilder"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Namen als vollständigen Name anzeigen"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Zu exportierende Felder"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Private Felder exportieren"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+"Wählen Sie diese Einstellung, um private Felder des Kontakts in die vCard-"
+"Ausgabedatei zu exportieren."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Geschäftliche Felder exportieren"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"Wählen Sie diese Einstellung, um geschäftliche Felder des Kontakts in die "
+"vCard-Ausgabedatei zu exportieren."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Andere Felder exportieren"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+"Wählen Sie diese Einstellung, um andere Felder des Kontakts in die vCard-"
+"Ausgabedatei zu exportieren."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Verschlüsselungsschlüssel exportieren"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"Wählen Sie diese Einstellung, um die Verschlüsselungsschlüssel des Kontakts "
+"in die vCard-Ausgabedatei zu exportieren."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Bilder exportieren"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+"Wählen Sie diese Einstellung, um das Kontaktbild in die vCard-Ausgabedatei "
+"zu exportieren."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Export-Einstellungen"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Exportiert den Namen als vollständigen Namen"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Kreuzen Sie dieses Feld an, wenn Sie den Anzeigenamen des Kontakts in der "
+"vCard als vollständigen Namen exportieren möchten. Dies kann nötig sein, um "
+"den Namen richtig in GMail oder Android zu zeigen."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Adressbuch auswählen"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr ""
+"Wählen Sie das Adressbuch, in dem importierte Kontakte gespeichert werden "
+"sollen:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Kontakte importieren"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Ein Kontakt wird nach %2 importiert"
+msgstr[1] "%1 Kontakte werden nach %2 importiert"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "Importiert die angegebene Datei"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "Öffnet den Dialog „Neuer Kontakt“"
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "Zeigt durch URL angegebene Kontakte an"
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+"Dateien oder URLs. Der Benutzer wird gefragt, ob die Dateien importiert "
+"werden sollen"
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "Zeigt die verfügbaren Einstellungen zum Benutzer-Feedback an"
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "KAddressBook &einrichten ..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Datei"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Neu"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Bearbeiten"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "&Ansicht"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "&Aktion"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "E&xtras"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "&Einstellungen"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Exportieren"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Haupt-Werkzeugleiste"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "Importieren"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "Exportieren"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Suchen ...<%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "&Design"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Das ganze Adressbuch oder nur die ausgewählten Kontakte drucken."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Schnellsuche"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "Kategoriefilter"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Alle auswählen"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Wählen Sie alle Kontakte in der derzeitigen Adressbuch-Ansicht."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "QR-Codes anzeigen"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "QR-Codes in der Kontaktansicht anzeigen."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "Einfach (eine Spalte)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Eine einfache Ansicht des Adressbuchs anzeigen."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "Zwei Spalten"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "Drei Spalten"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "Fokus auf die Schnellsuche einstellen"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "Serverseitiges Abonnement ..."
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Kontakte drucken"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Es wird ein Dialogfenster angezeigt, in dem alle Kurzbefehle der Anwendung "
+"eingestellt werden können."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>Hiermit wird die Menüleiste vollständig ausgeblendet. Drücken Sie %1 , "
+"um sie wieder anzuzeigen.</qt>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "Menüleiste ausblenden"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Eigenschaften des Adressbuchordners %1"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "Familienname"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "Vorname"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Privatanschrift"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Geschäftsanschrift"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Telefonnummern"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Bevorzugte E-Mail-Adresse"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "Alle E-Mail-Adressen"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "Kompakter Stil"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Einstellen des Dokuments"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Drucken"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Abgeschlossen"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "Kompakter Druckstil"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Felder"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+"Druckt die Privatanschrift mit der privaten Telefonnummer und der Mobilnummer"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "mit Privatanschrift"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "Druckt die Geschäftsanschrift mit der geschäftlichen Telefonnummer"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "mit Geschäftsanschrift"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "Geburtstage drucken"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "mit Geburtstag"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "Druckt die bevorzugten und sekundären E-Mail-Felder"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "mit E-Mail-Adresse"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "Die erste Farbe, wenn die alternative Farbe gewählt ist"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "erste Farbe"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "Die zweite Farbe, wenn die alternative Farbe gewählt ist"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "zweite Farbe"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "Hintergrundfarbe für jede Zeile ändern"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "Hintergrundfarbe abwechseln"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "Organisation:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "E-Mail-Adresse:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "E-Mail-Adressen:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefon:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Telefone:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Webseite:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Privatanschrift"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Internationale Adresse"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Postanschrift"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Paketanschrift"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Geschäftsanschrift"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Bevorzugte Adresse"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Notizen:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Detaillierter Druckstil – Erscheinungsbild"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Einstellen von Farben"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Detaillierter Ausdruck"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Erscheinungsbild"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Kontaktüberschriften"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "Die Hintergrundfarbe für Überschriften auswählen"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+"Klicken Sie auf diesen Knopf, um in einem Farbauswahldialog die Schriftfarbe "
+"für Hintergrundfarbe für Überschriften auszuwählen."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Hintergrundfarbe für Überschriften:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Schriftfarbe für Überschriften:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "Die Schriftfarbe für Überschriften auswählen"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+"Klicken Sie auf diesen Knopf, um in einem Farbauswahldialog die Schriftfarbe "
+"für Überschriften auszuwählen."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Mikes Druckstil"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Welche Kontakte sollen gedruckt werden?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Zu druckende Kontakte auswählen"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Druckstil wählen"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Druckfortschritt"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Drucken: Fortschritt"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Fortschritt"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Kontakt-Informationen drucken"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "Telefonnummern der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die Telefonnummern der Kontakte zu "
+"drucken."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Telefonnummern"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "E-Mail-Adressen der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die E-Mail-Adressen der Kontakte zu "
+"drucken."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "E-Mail-Adressen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "Postanschriften der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die Postanschriften der Kontakte zu "
+"drucken."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Postanschriften"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "Organisationen der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die Organisationen der Kontakte zu "
+"drucken."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "Geburtstage der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die Geburtstage der Kontakte zu drucken."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "Notizen der Kontakte drucken"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+"Markieren Sie diese Einstellung, um die Notizen der Kontakte zu drucken."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "Notiz: "
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Ringbuchbindungs-Druckstil – Erscheinungsbild"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "Einstellen von Feldern"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Ausdruck für Ringbuchbindung"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Absteigend"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Keine Vorschau verfügbar)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Druckstil wählen"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Wie soll der Ausdruck aussehen?\n"
+"Das Adressbuch bietet mehrere Druckstile für verschiedene Zwecke an.\n"
+"Wählen Sie unten den passenden Stil aus."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Sortierung"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Kriterium:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Wählen Sie das primäre Sortierfeld"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"In dieser Liste können Sie die Felder auswählen, nach denen Ihre Kontakte in "
+"der Druckausgabe sortiert werden. Mit der Einstellung der Sortierreihenfolge "
+"könne Sie festlegen, ob in auf- oder absteigender Folge sortiert wird."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Reihenfolge:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "Wählen Sie die Sortierreihenfolge"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"Geben Sie an, ob Sie Ihre Kontakte in auf- oder absteigender Reihenfolge "
+"sortieren möchten. Verwenden Sie die Einstellung des Sortierkriteriums, um "
+"das Kontaktfeld für das Sortieren anzugeben."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Druckstil"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Wählen Sie den Druckstil"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+"Wählen Sie den gewünschten Druckstil. Die Vorschau hilft Ihnen bei der "
+"Entscheidung."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Kontakte in der Liste suchen"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"Beginnen Sie mit der Eingabe des Suchtexts in diesem Feld und die zu diesem "
+"Text passenden Kontakte werden angezeigt. Dies ist ein schneller Weg, die "
+"interessanten Kontakte zu suchen."
+
+#~ msgid "Select Contacts"
+#~ msgstr "Kontakte auswählen"
+
+#~ msgid "Import vCard..."
+#~ msgstr "vCard importieren ..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Kontakte aus einer vCard-Datei importieren."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "CSV-Datei importieren ..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "Kontakte aus einer CSV-Datei importieren."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "LDIF-Datei importieren ..."
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Kontakte aus einer LDIF-Datei importieren"
+
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Von LDAP-Server importieren ..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Kontakte von einem LDAP-Server importieren."
+
+#~ msgid "Import GMX file..."
+#~ msgstr "GMX-Datei importieren ..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Kontakte aus einem &GMX-Adressbuch importieren."
+
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "vCard 4.0 exportieren ..."
+
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Exportiert Kontakte in eine vCard-Datei 4.0."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "vCard 3.0 exportieren ..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Exportiert Kontakte in eine vCard-Datei 4.0."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "vCard 2.1 exportieren ..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Exportiert Kontakte in eine vCard-Datei 2.1."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "CSV-Datei exportieren ..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "Kontakte in eine CSV-Datei exportieren."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "LDIF-Datei exportieren ..."
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Kontakte in eine LDIF-Datei exportieren."
+
+#~ msgid "Export GMX file..."
+#~ msgstr "GMX-Datei exportieren ..."
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Kontakte in eine &GMX-Adressbuch-Datei exportieren."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Die Datei <b>%1</b> kann nicht geöffnet werden.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Die Datei <b>%1</b> kann nicht geöffnet werden.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV-Import-Dialog"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Kontakte werden importiert"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Zu importierende Datei:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Wählen Sie eine CSV-Datei für den Import aus"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Click this button to start a file chooser that will allow you to select a "
+#~ "csv file to import."
+#~ msgstr ""
+#~ "Klicken Sie auf diesen Knopf, um einen Dateiauswahldialog zu öffnen, in "
+#~ "dem Sie eine CSV-Datei zum Import auswählen können."
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Trennzeichen"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Komma"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Ein Komma als Feldtrennzeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the comma as a field separator."
+#~ msgstr ""
+#~ "Wählen Sie diese Einstellung, wenn Ihre CSV-Datei ein Komma als "
+#~ "Feldtrennzeichen verwendet."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Semikolon"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Ein Semikolon als Feldtrennzeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the semicolon as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Wählen Sie diese Einstellung, wenn Ihre CSV-Datei ein Semikolon als "
+#~ "Feldtrennzeichen verwendet."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a tab character"
+#~ msgstr "Einen Tabulator als Feldtrennzeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the tab character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Wählen Sie diese Einstellung, wenn Ihre CSV-Datei einen Tabulator als "
+#~ "Feldtrennzeichen verwendet."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Leerzeichen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a space character"
+#~ msgstr "Ein Leerzeichen als Feldtrennzeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the space character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Wählen Sie diese Einstellung, wenn Ihre CSV-Datei ein Leerzeichen als "
+#~ "Feldtrennzeichen verwendet."
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Weitere"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a custom character"
+#~ msgstr "Ein eigenes Zeichen als Feldtrennzeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if to use some other character as the field delimiter "
+#~ "for the data in your csv file."
+#~ msgstr ""
+#~ "Wählen Sie diese Einstellung, um ein anderes Zeichen als Feldtrennzeichen "
+#~ "in Ihrer CSV-Datei zu verwenden."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the custom delimiter character"
+#~ msgstr "Eigenes Begrenzungszeichen einstellen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Enter a custom character to use as the delimiter character. If you enter "
+#~ "more than 1 character, only the first will be used and the remaining "
+#~ "characters will be ignored."
+#~ msgstr ""
+#~ "Geben Sie ein benutzerdefiniertes Zeichen ein, dass als Trennzeichen "
+#~ "verwendet wird. Geben Sie mehr als ein Zeichen ein, dann wird nur das "
+#~ "erste verwendet und die nachfolgenden Zeichen werden ignoriert."
+
+# TODO: Übersetzung prüfen
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Texterkennungszeichen:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Das Texterkennungszeichen auswählen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Choose the character that your csv data uses to \"quote\" the field "
+#~ "delimiter if that character happens to occur within the data.  For "
+#~ "example, if the comma is the field delimiter, then any comma occurring "
+#~ "with the data will be \"quoted\" by the character specified here."
+#~ msgstr ""
+#~ "Wählen Sie das Zeichen, mit dem das Feldtrennzeichen in Ihren CSV-Daten "
+#~ "maskiert ist, wenn das in den Daten vorkommt. Ist zum Beispiel das Komma "
+#~ "das Feldtrennzeichen, dann wird jedes andere Komma in den Daten durch das "
+#~ "hier angegebene Zeichen maskiert."
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Keines"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Datumsformat:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>y: Jahr mit 2 Ziffern</item><item>Y: Jahr mit 4 "
+#~ "Ziffern</item><item>m: Monat mit 1 oder 2 Ziffern</item><item>M: Monat "
+#~ "mit 2 Ziffern</item><item>d: Tag mit 1 oder 2 Ziffern</item><item>D: Tag "
+#~ "mit 2 Ziffern</item><item>H: Stunden mit 2 Ziffern</item><item>I: Minuten "
+#~ "mit 2 Ziffern</item><item>S: Sekunden mit 2 Ziffern</item></list></para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para>Geben Sie ein Format an, das für Daten in der CSV-Datei verwendet "
+#~ "wird. Die folgenden Zeichen helfen beim festlegen des Formats:</"
+#~ "para><para><list><item>y: Jahr mit 2 Ziffern</item><item>Y: Jahr mit 4 "
+#~ "Ziffern</item><item>m: Monat mit 1 oder 2 Ziffern</item><item>M: Monat "
+#~ "mit 2 Ziffern</item><item>d: Tag mit 1 oder 2 Ziffern</item><item>D: Tag "
+#~ "mit 2 Ziffern</item><item>H: Stunden mit 2 Ziffern</item><item>I: Minuten "
+#~ "mit 2 Ziffern</item><item>S: Sekunden mit 2 Ziffern</item></list></para> "
+#~ "<para>Beispiel: \"D.M.Y\" entspricht einem Datum wie \"26.02.1012\".</"
+#~ "para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Textkodierung:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Die Textkodierung auswählen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose the character encoding of the data in your csv file."
+#~ msgstr "Wählen Sie die Zeichenkodierung der Daten in Ihrer CSV-Datei."
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "Erste Zeile der Datei überspringen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "Erste Zeile der CSV-Datei beim Import überspringen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this box if you want the import to skip over the first row of the "
+#~ "csv data. In many cases, the first line of a csv file will be a comment "
+#~ "line describing the order of the data fields included in the file."
+#~ msgstr ""
+#~ "Kreuzen Sie dieses Feld an, wenn Sie beim Import die erste Zeile in den "
+#~ "CSV-Daten überspringen möchten. In den meisten Fällen enthält die erste "
+#~ "Zeile einer CSV-Datei eine Kommentarzeile, in der die Reihenfolge und "
+#~ "Bedeutung der Datenfelder in der Datei gekennzeichnet werden."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Vorlage anwenden ..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Vorlage speichern ..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Lokal (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Es muss mindestens eine Spalte zugewiesen werden."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "Es sind noch keine Vorlagen verfügbar."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "Keine Vorlagen verfügbar"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Vorlagenname"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Bitte geben Sie einen Namen für die Vorlage ein:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Die Eingabedatei kann nicht geöffnet werden."
+
+#~ msgid "Device is not open"
+#~ msgstr "Das Gerät ist nicht geöffnet"
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "Möchten Sie die Vorlage „%1“ wirklich löschen?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Vorlagenauswahl"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Bitte wählen Sie eine Vorlage, die zu der CSV-Datei passt:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "GMX-Adressbuch-Datei (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Die Datei <b>%1</b> kann nicht zum Lesen geöffnet werden.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 ist keine GMX-Adressbuchdatei."
+
+#~ msgid "LDif Files (*.ldif)"
+#~ msgstr "LDif-Dateien (*.ldif)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Eine Liste von Kontakten ist ausgewählt. Sollen diese in mehrere Dateien "
+#~ "exportiert werden?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "In eine Datei exportieren"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "In mehrere Dateien exportieren"
+
+#~ msgid ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|all files (*)"
+#~ msgstr ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|Alle Dateien (*)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "vCard für den Import auswählen"
+
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "vCard-Import fehlgeschlagen"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr ""
+#~ "<para>Auf vCard kann nicht zugegriffen werden:</para><para>%1</para>"
+
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr ""
+#~ "Es wurden keine Kontakte importiert, da Fehler bei der Verarbeitung der "
+#~ "vCards aufgetreten sind."
+
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "Die vCard enthält keine Kontakte."
+
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "vCard importieren"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Möchten Sie diesen Kontakt in Ihr Adressbuch importieren?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Alle importieren ..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Welchen Kontakt möchten Sie exportieren?"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Sie haben keine Kontakte zum Exportieren ausgewählt."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Kontakte abgleichen"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose this option to synchronize your groupware contacts."
+#~ msgstr "Wählen Sie diese Option, um Ihre Groupware-Kontakte abzugleichen."
+
+#~ msgid "Ungrouped"
+#~ msgstr "Nicht gruppiert"
+
+#~ msgid "Group"
+#~ msgstr "Gruppe"
+
+#~ msgid "eric"
+#~ msgstr "Erik"
+
+#~ msgid "Gravatarupdatedialog_Gui"
+#~ msgstr "Gravatarupdatedialog_Gui"
+
+#~ msgid "Test for Gravatar update dialog"
+#~ msgstr "Test für den Gravatar-Umbennungsdialog"
+
+#~ msgid "Email address"
+#~ msgstr "E-Mail-Adresse"
+
+#~ msgid "Check and update Gravatar"
+#~ msgstr "Gravatar überprüfen und aktualisieren"
+
+#~ msgid "Save Image"
+#~ msgstr "Bild speichern"
+
+#~ msgid "Save Image URL"
+#~ msgstr "Bildadresse (URL) speichern"
+
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "HTTPS-Protokoll verwenden"
+
+#~ msgid "Use Libravatar"
+#~ msgstr "Libravatar verwenden"
+
+#~ msgid "Fallback to Gravatar"
+#~ msgstr "Ausweichen auf Gravatar"
+
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#~ msgid "Search is impossible."
+#~ msgstr "Die Suche ist nicht möglich."
+
+#~ msgid "No Gravatar Found."
+#~ msgstr "Es wurde kein Gravatar gefunden."
+
+#~ msgid "Check Gravatar..."
+#~ msgstr "Gravatar überprüfen ..."
+
+#~ msgid "No email found for this contact."
+#~ msgstr "Es wurden keine E-Mail für diesen Kontakt gefunden."
+
+#~ msgid "A contact group was selected."
+#~ msgstr "Es wurden eine Kontaktgruppe ausgewählt."
+
+#~ msgid "Send an email..."
+#~ msgstr "Eine E-Mail senden ..."
+
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Sie haben keine Kontakte ausgewählt."
+
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Es wurden keine E-Mails in den ausgewählten Kontakten gefunden."
+
+#~ msgid "Send vCards..."
+#~ msgstr "vCard senden ..."
+
+#~ msgid "No vCard created."
+#~ msgstr "Es wurde keine vCard erstellt."
+
+#~ msgid "Temporary file '%1' cannot be created"
+#~ msgstr "Die temporäre Datei '%1 kann nicht erstellt werden"
+
+#~ msgid "Merge Contacts..."
+#~ msgstr "Kontakte zusammenführen ..."
+
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Doppelte Kontakte suchen ..."
+
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Kontakte zum Zusammenführen auswählen"
+
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Kontakte auswählen, die Sie wirklich zusammenführen möchten:"
+
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr ""
+#~ "Wählen Sie das Adressbuch, indem die ausgewählten Kontakte gespeichert "
+#~ "werden:"
+
+#~ msgid "merge"
+#~ msgstr "Zusammenführen"
+
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Doppelter Kontakt %1"
+
+#~ msgid "Select AddressBook:"
+#~ msgstr "Adressbuch auswählen"
+
+#~ msgid "Merge"
+#~ msgstr "Zusammenführen"
+
+#~ msgid "You must select at least two elements."
+#~ msgstr "Sie müssen mindestens zwei Elemente auswählen."
+
+#~ msgid "No duplicated contact found."
+#~ msgstr "Es wurden keine doppelten Kontakte gefunden."
+
+#~ msgid "No contacts selected."
+#~ msgstr "Es wurden keine Kontakte ausgewählt."
+
+#~ msgid ""
+#~ "Some information can be lost. Do you want to continue, or customize what "
+#~ "you want to merge?"
+#~ msgstr ""
+#~ "Einige Informationen können verloren gehen. Möchten Sie fortfahren oder "
+#~ "das Zusammenführen anpassen?"
+
+#~ msgid "Customize"
+#~ msgstr "Anpassen"
+
+#~ msgid "Automatic Merging"
+#~ msgstr "Automatisches zusammenführen"
+
+#~ msgid ""
+#~ "Some information was not selected. You can lose this information. Do you "
+#~ "want to continue merging?"
+#~ msgstr ""
+#~ "Einige Informationen sind nicht ausgewählt, sie können verloren gehen. "
+#~ "Möchten Sie mit dem Zusammenführen fortfahren?"
+
+#~ msgid "Missing Selected Information"
+#~ msgstr "Ausgewählte Informationen fehlen"
+
+#~ msgid "(Undefined)"
+#~ msgstr "(Undefiniert)"
+
+#~ msgid "LDIF file (%1)"
+#~ msgstr "LDIF-Datei (%1)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>Beim Lesen der vCard aus der Datei <filename>%1</filename> ist ein "
+#~ "Fehler aufgetreten:</para><para>%2</para>"
+
+#~ msgid "Select Which Information to Use for new Contact"
+#~ msgstr ""
+#~ "Wählen Sie, welche Informationen für den neuen Kontakt verwendet werden "
+#~ "sollen"
+
+#~ msgid "Merged Contact"
+#~ msgstr "Kontakt wurde zusammengeführt"
+
+#~ msgid "You selected %1 and some item has not the same name"
+#~ msgstr ""
+#~ "Sie haben %1 ausgewählt und einige Einträge haben nicht den gleichen Namen"
+
+#~ msgid "Error while merging contacts."
+#~ msgstr "Fehler beim Zusammenführen der Kontakte."
+
+#~ msgid "Merge contact"
+#~ msgstr "Kontakt zusammenführen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "vCard-Felder auswählen"
+
+#~ msgid "Search potential duplicate contacts"
+#~ msgstr "Suche nach eventuell doppelten Kontakten"
+
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Eventuell doppelte Kontakten"
+
+#~ msgid "You selected %1"
+#~ msgstr "Sie haben %1 ausgewählt"
+
+#~ msgid "Debug Nepomuk..."
+#~ msgstr "Nepomuk-Fehlersuche:"
+
+#~ msgid "Nepomuk Debug"
+#~ msgstr "Nepomuk-Fehlersuche"
+
+#~ msgid "Search info with nepomukshow..."
+#~ msgstr "Informationen mit „nepomukshow“ suchen ..."
+
+#~ msgid "Error on fetching item"
+#~ msgstr "Fehler beim Abholen des Eintrags"
+
+#~ msgid "Search with nepomukshow"
+#~ msgstr "Suchen mit „nepomukshow“"
+
+#~ msgid "Nepomuk id:"
+#~ msgstr "Nepomuk-Kennung:"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Kontact-Integration"
+
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Grantlee-Druckstil"
+
+#~ msgid "Department"
+#~ msgstr "Abteilung"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Name des Managers"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Name des Assistenten"
+
+#~ msgid "Partner's Name"
+#~ msgstr "Name des Partners"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-Adresse"
+
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "Boolean value"
+#~ msgid "no"
+#~ msgstr "Nein"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Möchten Sie die Datei „%1“ überschreiben"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Möchten Sie die Datei „%1“ überschreiben?"
+
+#~ msgid "Show Simple View"
+#~ msgstr "Einfache Ansicht anzeigen"
+
+#~ msgid "Click on the color button to change the header's text color."
+#~ msgstr ""
+#~ "Klicken Sie auf den Farbauswahl-Knopf, um die Textfarbe des Vorspanns zu "
+#~ "ändern."
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Wählen Sie die Felder, die in die vCard exportiert werden sollen."
+
+#~ msgid "Show Address Books View"
+#~ msgstr "Adressbücher-Ansicht anzeigen"
+
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Legt fest, ob die Liste der Adressbücher sichtbar sein soll."
+
+#~ msgid "Hide Address Books View"
+#~ msgstr "Adressbücher-Ansicht ausblenden"
+
+#~ msgid "Show Contacts View"
+#~ msgstr "Kontakte-Ansicht anzeigen"
+
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Legt fest, ob die Liste der Kontakte sichtbar sein soll."
+
+#~ msgid "Hide Contacts View"
+#~ msgstr "Kontakte-Ansicht ausblenden"
+
+#~ msgid "Show Details View"
+#~ msgstr "Detail-Ansicht anzeigen"
+
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Legt fest, ob die Detail-Ansicht sichtbar sein soll."
+
+#~ msgid "Hide Details View"
+#~ msgstr "Detail-Ansicht ausblenden"
+
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Adressbuch-Ordner hinzufügen"
+
+#~ msgid ""
+#~ "Add a new address book folder to the currently selected address book "
+#~ "folder."
+#~ msgstr ""
+#~ "Einen neuen Adressbuch-Ordner zum aktuellen Adressbuch-Ordner hinzufügen."
+
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Adressbuch-Ordner kopieren"
+#~ msgstr[1] "%1 Adressbuch-Ordner kopieren"
+
+#~ msgid "Copy the selected address book folders to the clipboard."
+#~ msgstr "Die ausgewählten Adressbuch-Ordner in die Zwischenablage kopieren."
+
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Die ausgewählten Adressbuch-Ordner aus dem Adressbuch löschen."
+
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Adressbuch-Ordner aktualisieren"
+
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Den Inhalt des Adressbuch-Ordners aktualisieren"
+
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Adressbuch-Ordner ausschneiden"
+#~ msgstr[1] "%1 Adressbuch-Ordner ausschneiden"
+
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Die ausgewählten Adressbuch-Ordner aus dem Adressbuch ausschneiden."
+
+#~ msgid "Folder Properties..."
+#~ msgstr "Ordner-Eigenschaften ..."
+
+#~ msgid ""
+#~ "Open a dialog to edit the properties of the selected address book folder."
+#~ msgstr ""
+#~ "Öffnet einen Dialog zum Ändern der Eigenschaften des ausgewählten "
+#~ "Adressbuch-Ordners."
+
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Kontakt kopieren"
+#~ msgstr[1] "%1 Kontakte kopieren"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Kontakt löschen"
+#~ msgstr[1] "%1 Kontakte löschen"
+
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Ausgewählte Kontakte aus dem Adressbuch löschen."
+
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Kontakt ausschneiden"
+#~ msgstr[1] "%1 Kontakte ausschneiden"
+
+#~ msgid "Edit Contact..."
+#~ msgstr "Kontakt bearbeiten ..."
+
+#~ msgid "Copy Group"
+#~ msgid_plural "Copy %1 Groups"
+#~ msgstr[0] "Gruppe kopieren"
+#~ msgstr[1] "%1Gruppen kopieren"
+
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Gruppe löschen"
+#~ msgstr[1] "%1 Gruppen löschen"
+
+#~ msgid "Cut Group"
+#~ msgid_plural "Cut %1 Groups"
+#~ msgstr[0] "Gruppe ausschneiden"
+#~ msgstr[1] "%1 Gruppen ausschneiden"
+
+#~ msgid "Edit Group..."
+#~ msgstr "Gruppe bearbeiten ..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Adressbuch hinzufügen"
+
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Adressbuch kann nicht hinzugefügt werden: %1"
+
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Adressbuch hinzufügen fehlgeschlagen"
+
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "Möchten Sie das Adressbuch „%1“ wirklich löschen?"
+
+#~ msgid "Delete Address Book?"
+#~ msgstr "Adressbuch löschen?"
+
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Einen neuen Kontakt anlegen<p>Es wird ein Dialog angezeigt, in dem Daten "
+#~ "zu einer Person erfasst werden können, insbesondere Adressen und "
+#~ "Telefonnummern.</p>"
+
+#~ msgid "New &Group..."
+#~ msgstr "Neue &Gruppe ..."
+
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Eine neue Gruppe anlegen<p>Es wird ein Dialog angezeigt, in dem Sie eine "
+#~ "neue Gruppe von Kontakten hinzufügen können.</p>"
+
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Einen Kontakt ändern<p>Es wird ein Dialog angezeigt, in dem die "
+#~ "gespeicherten Daten zu einer Person geändert werden können, insbesondere "
+#~ "Adressen und Telefonnummern.</p>"
+
+#~ msgid "Add &Address Book..."
+#~ msgstr "Adressbuch &hinzufügen ..."
+
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Ein neues Adressbuch hinzufügen<p>Es wird ein Dialog angezeigt, in dem "
+#~ "Sie den Typ des Adressbuchs wählen können, das hinzugefügt werden soll.</"
+#~ "p>"
+
+#~ msgid "&Delete Address Book"
+#~ msgstr "Adressbuch &löschen"
+
+#~ msgid ""
+#~ "Delete the selected address book<p>The currently selected address book "
+#~ "will be deleted, along with all the contacts and contact groups it "
+#~ "contains.</p>"
+#~ msgstr ""
+#~ "Ausgewähltes Adressbuch löschen<p>Das ausgewählte Adressbuch wird mit "
+#~ "samt den darin enthaltenen Kontakten und Gruppen gelöscht.</p>"
+
+#~ msgid "Address Book Properties..."
+#~ msgstr "Adressbuch-Eigenschaften ..."
+
+#~ msgid "Open a dialog to edit properties of the selected address book."
+#~ msgstr ""
+#~ "Öffnet einen Dialog, in dem Sie die Eigenschaften des Adressbuchs ändern "
+#~ "können."
+
+#~ msgid "Add Host"
+#~ msgstr "Rechner hinzufügen"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefonnummer (privat)"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefonnummer (dienstlich)"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Telefonnummer (mobil)"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Straße"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "Stadt"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postleitzahl"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "User ID"
+#~ msgstr "Benutzerkennung"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel "
+
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Kontakte aus LDAP importieren"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Nach Adressen im Verzeichnis suchen"
+
+#~ msgid "Search for:"
+#~ msgstr "Suchen nach:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-Mail"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefonnummer (privat)"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefonnummer (dienstlich)"
+
+#~ msgid "Stop"
+#~ msgstr "Anhalten"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Suchen"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursive Suche"
+
+#~ msgid "Contains"
+#~ msgstr "Enthält"
+
+#~ msgid "Starts With"
+#~ msgstr "beginnt mit"
+
+#~ msgid "Unselect All"
+#~ msgstr "Auswahl aufheben"
+
+#~ msgid "Import Selected"
+#~ msgstr "Auswahl importieren"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-Mail"
+
+#~ msgid "You must select a LDAP server before searching."
+#~ msgstr "Sie müssen vor der Suche einen LDAP-Server auswählen."
+
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr ""
+#~ "Wählen Sie eine Verteilerliste, zu der die ausgewählten Kontakte "
+#~ "hinzugefügt werden sollen."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importiert aus LDAP-Verzeichnis %1 am %2"
+
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Adressbuch-Modul für LDAP-Einstellungen"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-Server-Einstellungen"
+
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "Copyright © 2009 Tobias König"
+
+#~ msgid "Edit Host"
+#~ msgstr "Rechner bearbeiten"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-Server"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Alle Rechner auswählen, die in die Suche einbezogen werden sollen:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Rechner &hinzufügen ..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Rechner bearbeiten ..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Rechner &entfernen"
+
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "Copyright © 2007–2009, das KDE-PIM-Team"
+
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Adressbücher"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#, fuzzy
+#~| msgid "Homepage:"
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Homepage:"
+
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefonnummern"
+
+#, fuzzy
+#~| msgid "Preferred Address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Bevorzugte Adresse"
+
+#, fuzzy
+#~| msgid "EMails"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "E-Mails"
+
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Alle Kontakte"
+
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "EMails"
+#~ msgstr "E-Mails"
+
+#~ msgid "Reload"
+#~ msgstr "Neu laden"
+
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "Verschiedenes"
+
+#~ msgid ""
+#~ "This is the minimum number of empty fields that have to be printed in "
+#~ "addition to real entries; if this number is not reached on the first "
+#~ "page, more pages with empty fields only may be appended."
+#~ msgstr ""
+#~ "Dies ist die Mindestanzahl leerer Adressfelder, die zusätzlich gedruckt "
+#~ "werden sollen. Wenn auf der ersten Seite ungenügend Platz für die "
+#~ "Mindestanzahl vorhanden ist, werden weitere Seiten mit leeren "
+#~ "Adressfeldern angelegt."
+
+#~ msgid ""
+#~ "If you often add contacts to your printout manually before entering them "
+#~ "into the KDE address book, you should set this option to a value greater "
+#~ "than 0: it determines how many empty address fields are to be printed; if "
+#~ "this many do not fit onto the page, another page with only empty fields "
+#~ "will be printed."
+#~ msgstr ""
+#~ "Wenn Sie des Öfteren handschriftlich Einträge hinzufügen, bevor Sie sie "
+#~ "im KDE-Adressbuch aufnehmen, sollten Sie hier einen Wert größer 0 "
+#~ "festlegen. Hierdurch wird eingestellt, wieviele leere Adressbucheinträge "
+#~ "mindestens ausgedruckt werden sollen. Wenn dazu eine Seite nicht "
+#~ "ausreicht, werden zusätzliche Seiten mit leeren Adressfeldern ausgedruckt."
+
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Mindestanzahl leerer Adressfelder:"
+
+#~ msgid ""
+#~ "If this option is turned on, behind the contacts on a page the remaining "
+#~ "space will be filled with empty fields so you can add contacts manually "
+#~ "later"
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiviert ist, werden auf den ausgedruckten Seiten "
+#~ "nach den Kontakten noch weitere, leere Adressfelder gedruckt, in die Sie "
+#~ "später von Hand Adressen hineinschreiben können."
+
+#~ msgid "Fill pages with empty address fields"
+#~ msgstr "Seiten mit leeren Adressfeldern auffüllen"
+
+#~ msgid "Letter Groups"
+#~ msgstr "Buchstabengruppen"
+
+#~ msgid ""
+#~ "Here you can group letters together as they are grouped in your time "
+#~ "planner. Press 'group letter' to combine the selected letter with the "
+#~ "letter group above it, press 'ungroup letter' to remove the last letter "
+#~ "from a selected group."
+#~ msgstr ""
+#~ "Hier können Sie Buchstabengruppen anlegen, so wie Sie auch in Ihrem "
+#~ "Notizbuch/Adressbuch vorhanden sind. Drücken Sie „Buchstaben gruppieren“, "
+#~ "um den ausgewählten Buchstaben mit dem darüberliegenden zu gruppieren, "
+#~ "oder drücken Sie „Gruppierung aufheben“, um den jeweils letzten "
+#~ "Buchstaben wieder aus der Grupper herauszunehmen."
+
+#~ msgid "Group Letter"
+#~ msgstr "Buchstaben gruppieren"
+
+#~ msgid "Font Settings"
+#~ msgstr "Schrifteinstellungen"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Voreingestellte KDE-Schriften benutzen"
+
+#~ msgid "Details font:"
+#~ msgstr "Schrift für detaillierten Ausdruck:"
+
+#~ msgid "Size:"
+#~ msgstr "Größe:"
+
+#~ msgid "Body font:"
+#~ msgstr "Schriftart für Feldinhalte:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Schrift mit fester Breite:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Schrift für Kopfzeile:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Überschriften:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Farbige Kontaktüberschriften benutzen"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(zu Händen:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Einstellen von Rändern und Abständen"
+
+#~ msgid "Preparing"
+#~ msgstr "Vorbereiten"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Gedruckt auf %1 vom KDE-Adressbuch (http://www.kde.org)"
+
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiviert ist, wird wenigstens eine Seite je "
+#~ "Buchstabengruppe ausgedruckt, egal wie viele Einträge für diese Gruppe "
+#~ "vorhanden sind. Dies ist normalerweise nur zusammen mit der Einstellung "
+#~ "„Seiten mit leeren Adressfeldern auffüllen“ sinnvoll."
+
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "Seiten für alle Reiter drucken"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Zu druckende Kontakte wählen"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Nur im Adressbuch ausgewählte Kontakte drucken.\n"
+#~ "Diese Einstellung ist nur verfügbar, wenn Kontakte ausgewählt sind."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Kontakte, auf die der &Filter passt"
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Nur Kontakte drucken, die dem gewählten Filter entsprechen.\n"
+#~ "Diese Einstellung ist nur verfügbar, wenn ein Filter definiert ist."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Nur Kontakte drucken, die zur ausgewählten Kategorie gehören.\n"
+#~ "Diese Einstellung ist nur verfügbar, wenn Kategorien existieren."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Wählen Sie einen Filter für die Auswahl der zu druckenden Kontakte."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr ""
+#~ "Markieren Sie die Kategorien, deren zugehörige Kontakte ausgedruckt "
+#~ "werden sollen. "
+
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Der folgende Kontakt wurde in Ihr Adressbuch importiert:"
+#~ msgstr[1] "Die folgenden %1 Kontakte wurden in Ihr Adressbuch importiert:"
+
+#~ msgid "Take over changes"
+#~ msgstr "Änderungen übernehmen"
+
+#~ msgid "Ignore and Overwrite changes"
+#~ msgstr "Änderungen ignorieren und überschreiben"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Kontakt bearbeiten"
+
+#~ msgid "Add to:"
+#~ msgstr "Hinzufügen zu:"
+
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "Der Klang zu diesem Kontakt wurde nicht gefunden."
+
+#~ msgid "Click to play pronunciation"
+#~ msgstr "Klicken Sie, um die Aussprache abzuspielen"
+
+#~ msgid "No pronunciation available"
+#~ msgstr "Keine Aussprache verfügbar"
+
+#~ msgid "Play"
+#~ msgstr "Abspielen"
+
+#~ msgid "Change..."
+#~ msgstr "Ändern ..."
+
+#~ msgid "Save..."
+#~ msgstr "Speichern ..."
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Andere ..."
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Telefonnummer bearbeiten"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Dies ist die bevorzugte Telefonnummer"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "E-Mail-Adressen bearbeiten"
+
+#~ msgid "Edit..."
+#~ msgstr "Bearbeiten ..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Als Standard festlegen"
+
+#~ msgid "Add Email"
+#~ msgstr "E-Mail hinzufügen"
+
+#~ msgid "New Email:"
+#~ msgstr "Neue E-Mail:"
+
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "E-Mail:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr ""
+#~ "<qt>Sind Sie sicher, dass Sie die E-Mail-Adresse <b>%1</b> löschen "
+#~ "möchten?</qt> "
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Löschen bestätigen"
+
+#~ msgid "&Delete"
+#~ msgstr "&Entfernen"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "Das Bild zu diesem Kontakt wurde nicht gefunden."
+
+#~ msgid "Change photo..."
+#~ msgstr "Foto ändern ..."
+
+#~ msgid "Save photo..."
+#~ msgstr "Foto speichern ..."
+
+#~ msgid "Remove photo"
+#~ msgstr "Foto entfernen"
+
+#~ msgid "Change logo..."
+#~ msgstr "Logo ändern ..."
+
+#~ msgid "Save logo..."
+#~ msgstr "Logo speichern ..."
+
+#~ msgid "Remove logo"
+#~ msgstr "Logo entfernen"
+
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Neu ..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Bearbeiten ..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Entfernen"
+
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "Möchten Sie diese Adresse wirklich löschen?"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Adresse bearbeiten"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Adressaufkleber bearbeiten ..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Dies ist die bevorzugte Adresse"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Adresstyp bearbeiten"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Adresstypen"
+
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Umgekehrter Name mit Komma"
+
+#~ msgid "Reverse Name"
+#~ msgstr "Umgekehrter Name"
+
+#~ msgid "Organization Name"
+#~ msgstr "Name der Organisation"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid "Display:"
+#~ msgstr "Anzeigename:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Spitzname:"
+
+#~ msgid "Pronunciation:"
+#~ msgstr "Aussprache:"
+
+#~ msgid "Homepage:"
+#~ msgstr "Homepage:"
+
+#~ msgid "Blog:"
+#~ msgstr "Blog:"
+
+#~ msgid "Messaging:"
+#~ msgstr "Instant Messaging:"
+
+#~ msgid "Coordinates"
+#~ msgstr "Koordinaten"
+
+#~ msgid "Business"
+#~ msgstr "Geschäftlich"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Groupware"
+#~ msgstr "Arbeitsgruppen"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Department:"
+#~ msgstr "Abteilung:"
+
+#~ msgid "Free/Busy:"
+#~ msgstr "Frei/Belegt:"
+
+#~ msgid "Personal"
+#~ msgstr "Persönliches"
+
+#~ msgid "Dates"
+#~ msgstr "Daten"
+
+#~ msgid "Birthdate:"
+#~ msgstr "Geburtstag:"
+
+#~ msgid "Edit Contact Group"
+#~ msgstr "Kontaktgruppe bearbeiten"
+
+#~ msgid "KContactManager"
+#~ msgstr "Kontaktverwaltung"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Adressen drucken"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afghanistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albanien"
+
+#~ msgid "Algeria"
+#~ msgstr "Algerien"
+
+#~ msgid "American Samoa"
+#~ msgstr "Amerikanisch-Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarktis"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua und Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentinien"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenien"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmore und Cartier Inseln"
+
+#~ msgid "Australia"
+#~ msgstr "Australien"
+
+#~ msgid "Austria"
+#~ msgstr "Österreich"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Aserbaidschan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladesch"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Weißrussland"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgien"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermudas"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bhutan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivien"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnien und Herzegowina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botsuana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brasilien"
+
+#~ msgid "Brunei"
+#~ msgstr "Brunei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgarien"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Kambodscha"
+
+#~ msgid "Cameroon"
+#~ msgstr "Kamerun"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Kap Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Kaimaninseln"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Zentralafrikanische Republik"
+
+#~ msgid "Chad"
+#~ msgstr "Tschad"
+
+#~ msgid "Chile"
+#~ msgstr "Chile"
+
+#~ msgid "China"
+#~ msgstr "China"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolumbien"
+
+#~ msgid "Comoros"
+#~ msgstr "Komoren"
+
+#~ msgid "Congo"
+#~ msgstr "Kongo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Kongo, Demokr. Rep."
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Kroatien"
+
+#~ msgid "Cuba"
+#~ msgstr "Kuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Zypern"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Tschechische Republik"
+
+#~ msgid "Denmark"
+#~ msgstr "Dänemark"
+
+#~ msgid "Djibouti"
+#~ msgstr "Dschibuti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominikanische Republik"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ecuador"
+
+#~ msgid "Egypt"
+#~ msgstr "Ägypten"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Äquatorialguinea"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estland"
+
+#~ msgid "England"
+#~ msgstr "England"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Äthiopien"
+
+#~ msgid "European Union"
+#~ msgstr "Europäische Union"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Färöer-Inseln"
+
+#~ msgid "Fiji"
+#~ msgstr "Fidschi"
+
+#~ msgid "Finland"
+#~ msgstr "Finnland"
+
+#~ msgid "France"
+#~ msgstr "Frankreich"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Französisch-Polynesien"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabun"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Georgien"
+
+#~ msgid "Germany"
+#~ msgstr "Deutschland"
+
+#~ msgid "Ghana"
+#~ msgstr "Ghana"
+
+#~ msgid "Greece"
+#~ msgstr "Griechenland"
+
+#~ msgid "Greenland"
+#~ msgstr "Grönland"
+
+#~ msgid "Grenada"
+#~ msgstr "Granada"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Guinea"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinea-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hongkong"
+
+#~ msgid "Hungary"
+#~ msgstr "Ungarn"
+
+#~ msgid "Iceland"
+#~ msgstr "Island"
+
+#~ msgid "India"
+#~ msgstr "Indien"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonesien"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Irak"
+
+#~ msgid "Ireland"
+#~ msgstr "Irland"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Italien"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Elfenbeinküste"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaika"
+
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordanien"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kasachstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenia"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Korea, Nord"
+
+#~ msgid "Korea, South"
+#~ msgstr "Korea, Süd"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuwait"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kirgisistan"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Lettland"
+
+#~ msgid "Lebanon"
+#~ msgstr "Libanon"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#~ msgid "Libya"
+#~ msgstr "Libyen"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Litauen"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luxemburg"
+
+#~ msgid "Macau"
+#~ msgstr "Macao"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagaskar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malaysia"
+
+#~ msgid "Maldives"
+#~ msgstr "Malediven"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Marshallinseln"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinique"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauretanien"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauritius"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexiko"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Mikronesien, Staatenbund von"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldawien"
+
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolei"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Marokko"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mosambik"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Niederlande"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Niederländische Antillen"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Neukaledonien"
+
+#~ msgid "New Zealand"
+#~ msgstr "Neuseeland"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragua"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "Nordkorea"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Nordirland"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Nördliche Marianen-Inseln"
+
+#~ msgid "Norway"
+#~ msgstr "Norwegen"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palästina"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua-Neuguinea"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Philippinen"
+
+#~ msgid "Poland"
+#~ msgstr "Polen"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Katar"
+
+#~ msgid "Romania"
+#~ msgstr "Rumänien"
+
+#~ msgid "Russia"
+#~ msgstr "Russland"
+
+#~ msgid "Rwanda"
+#~ msgstr "Ruanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "St. Kitts und Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "St. Lucia"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "St. Vincent und Grenadinen"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "São Tomé und Príncipe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saudi-Arabien"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Serbien und Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "Seychellen"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapur"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slowakei"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slowenien"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Salomonen"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#~ msgid "South Africa"
+#~ msgstr "Südafrika"
+
+#~ msgid "South Korea"
+#~ msgstr "Südkorea"
+
+#~ msgid "Spain"
+#~ msgstr "Spanien"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#~ msgid "Suriname"
+#~ msgstr "Suriname"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swasiland"
+
+#~ msgid "Sweden"
+#~ msgstr "Schweden"
+
+#~ msgid "Switzerland"
+#~ msgstr "Schweiz"
+
+#~ msgid "Syria"
+#~ msgstr "Syrien"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tadschikistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tansania"
+
+#~ msgid "Thailand"
+#~ msgstr "Thailand"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad und Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunesien"
+
+#~ msgid "Turkey"
+#~ msgstr "Türkei"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turks- und Caicos-Inseln"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukraine"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Vereinigte Arabische Emirate"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Vereinigtes Königreich"
+
+#~ msgid "United States"
+#~ msgstr "Vereinigte Staaten"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Usbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Vatikanstadt"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venezuela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Vietnam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "West-Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Jemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Jugoslawien"
+
+#~ msgid "Zaire"
+#~ msgstr "Zaire"
+
+#~ msgid "Zambia"
+#~ msgstr "Sambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Simbabwe"

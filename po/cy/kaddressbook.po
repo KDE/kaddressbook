@@ -1,0 +1,4933 @@
+# translation of kaddressbook.po to Cymraeg
+# Bwrdd Gwaith yn Gymraeg.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk<kyfieithu@dotmon.com>, www.gyfieithu.co.uk<kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2004.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2004-01-07 21:14+0000\n"
+"Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
+"Language-Team: Cymraeg <cy@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.2\n"
+"\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KGyfieithu - Meddalwedd Gymraeg"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kyfieithu@dotmon.com"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Llyfr Cyfeiriadau"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contains"
+msgid "Contact"
+msgstr "Cynhwysa"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "Ebost"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Sefydliad"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, fuzzy, kde-format
+msgid "Birthday"
+msgstr "Penblwydd:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "Nodyn:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "Teitl"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "Ebost"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr ""
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook/LlyfrKyfeiriadau"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "&Cyswllt Newydd..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Cyflwynir ymgom i chi  a fydd yn eich galluogi i ffurfweddu byrlwybrau eang "
+"y rhaglen."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Canfuwyd un cyswllt:"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Cyflwynir ymgom i chi  a fydd yn eich galluogi i ffurfweddu byrlwybrau eang "
+"y rhaglen."
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "Llyfr Cyfeiriadau KDE"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Cynhaliwr Cyfredol"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr ""
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Cynhaliwr Cyfredol"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr ""
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Awdur gwreiddiol"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Defnyddiwch yr hidlen weithredol ddiwethaf "
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Defnyddiwch yr hidlen weithredol ddiwethaf "
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "Dim un"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Ychwanegu..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "Ebost:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "Ffôn"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Text"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Testun"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+"Copïo y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr ""
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Anniffiniedig"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Dathliad"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Defnyddio'r Dewisol"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Ebost"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Ebost"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Ebost"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Galwedigaeth"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Swyddfa"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Mianmar"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Enw'r Cynorthwy-ydd"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Cysylltau &dewisiedig"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "&Pob cyswllt"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "LlyfrCyfeiriadau"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Cysylltau &dewisiedig"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "&Pob cyswllt"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "&Pob cyswllt"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "LlyfrCyfeiriadau"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Cysylltau &dewisiedig"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgid "Fetch Contacts"
+msgstr "Cysylltau &dewisiedig"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Rhagddodiadau"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Busnes"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Meysydd &dewisiedig:"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Allweddau cêl-ysgrifo"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Llun"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Ffeil i'w mewnforio:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Rhagddodiadau"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Busnes"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Meysydd &dewisiedig:"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Allweddau cêl-ysgrifo"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Llun"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Allforio i ffôn symudol"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Llyfr Cyfeiriadau"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Gosod categorïau ar gyfer pob cyswllt a ddewiswyd."
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Mewnforio cysylltau"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Mewnforio cysylltau"
+msgstr[1] "Mewnforio cysylltau"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "Mewnforio y vCerdyn penodol"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "Mewnforio Llyfr Cyfeiriadau KDE 2..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, fuzzy, kde-format
+msgid "&File"
+msgstr "Hidlen:"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "Newydd..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, fuzzy, kde-format
+msgid "&Edit"
+msgstr "&Golygu..."
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, fuzzy, kde-format
+msgid "&View"
+msgstr "Ychwanegu Golwg"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Latin1"
+msgid "&Action"
+msgstr "Lladin1"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, fuzzy, kde-format
+msgid "&Tools"
+msgstr "Offer"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, fuzzy, kde-format
+msgid "&Settings"
+msgstr "Gosodiadau Wynebfath"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Allforio"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, fuzzy, kde-format
+msgid "Main Toolbar"
+msgstr "Bar Offer Cysylltiadau"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+msgid "Import"
+msgstr "&Mewnforio"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Allforio"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Chwiliad:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Gosod categorïau ar gyfer pob cyswllt a ddewiswyd."
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "Chwiliad ymgylchol"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "Categori"
+
+#: src/mainwidget.cpp:656
+#, fuzzy, kde-format
+msgid "Select All"
+msgstr "Datddewis Popeth"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "Dewis pob cyswllt gweladwy o'r golwg cyfredol "
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Golygu Cyswllt"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Cyflwynir ymgom i chi  a fydd yn eich galluogi i ffurfweddu byrlwybrau eang "
+"y rhaglen."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+msgid "Hide menu bar"
+msgstr "Dangos y Bar Neidio"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Enw Llawn"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "Enwau teulu:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "Enw:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Cyfeiriad Cartref"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+msgid "Business Address"
+msgstr "Busnes"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+msgid "Phone Numbers"
+msgstr "Golygu Rhif Ffôn"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "Cyfeiriad Dewisiedig"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "Email"
+msgid "All EMails"
+msgstr "Ebost"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Cwmni"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "Gosod wynebfathau a lliwiau"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Argraffu"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Wedi Gorffen"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "Dewiswch Arddull Argraffu"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, fuzzy, kde-format
+msgid "Appearance"
+msgstr "Tudalen Olwg"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Meysydd"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Cyfeiriad Cartref"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+msgid "with business address"
+msgstr "Busnes"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "Golygu Cyswllt"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+msgid "with birthday"
+msgstr "Penblwydd:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+msgid "with e-mail"
+msgstr "Ebost"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "Lliw Cefndir"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Lliw cefndir y pennawd"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "Cefndiroedd eiledol"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "Sefydliad"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Cyfeiriad Ebost:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "Cyfeiriadau ebost:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Ffôn:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Ffônau:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Tudalen wê:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Cyfeiriad Cartrefol"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Cyfeiriad Rhyngwladol"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Cyfeiriad Post"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Cyfeiriad Parsel"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Cyfeiriad Gwaith"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Cyfeiriad Dewisedig"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "Nodyn:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Arddull Manwl Argraffu - Ymddanosiad"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "Gosod wynebfathau a lliwiau"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Arddull Manwl"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Tudalen Olwg"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Penawdau Cyswllt"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Lliw cefndir y pennawd"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Lliw cefndir y pennawd"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Lliw testun y pennawd"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Lliw testun y pennawd"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Arddull Argraffu Meic"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Pa cysylltiadau rydych eisiau argraffu?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Dewiswch Cysylltiadau i Argraffu"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Dewiswch Arddull Argraffu"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Cynnydd Argraffu"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Argraffu: Cynnydd"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Cynnydd"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+msgid "Print contact phone numbers"
+msgstr "Golygu Rhif Ffôn"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, fuzzy, kde-format
+msgid "Phone numbers"
+msgstr "Golygu Rhif Ffôn"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "Cyfeiriad Post"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, fuzzy, kde-format
+msgid "Email addresses"
+msgstr "Cyfeiriadau ebost:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+msgid "Print contact street addresses"
+msgstr "Argraffu Cyfeiriadau"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "Cyfeiriad Post"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact organizations"
+msgstr "Golygu Cyswllt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "Golygu Cyswllt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "Golygu Cyswllt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "Nodyn:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, fuzzy, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Arddull Manwl Argraffu - Ymddanosiad"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "Gosod wynebfathau a lliwiau"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Esgynnol"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Disgynnol"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Dim rhagolwg ar gael.)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Dewiswch Arddull Argraffu"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Sut ddylai'r argraff edrych?\n"
+" Mae gan KLlyfrCyfeiriadau sawl arddull argraffu, wedi'u dylunio ar gyfer "
+"bwriadau gwahanol.\n"
+" Dewiswch yr arddull sy'n addas at eich anghenion isod."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Yn Didoli"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Maen prawf:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select incremental search field"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Dewiswch maes i'r chwiliad cynyddol"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Trefn:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Arddull Argraffu"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Dewiswch y math o allwedd:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Cysylltau &dewisiedig"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Mewnforio"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Mewnforio vCerdyn..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Mewnforio Cysylltau?"
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "Mewnforio rhestr CSV..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau LDIF..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Mewnforio Cysylltau?"
+
+#, fuzzy
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Mewnforio o Ffôn Symudol Nokia..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Mewnforio Cysylltau?"
+
+#, fuzzy
+#~ msgid "Import GMX file..."
+#~ msgstr "Mewnforio vCerdyn..."
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Allforio vCerdyn 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Allforio vCerdyn 3.0..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Allforio vCerdyn 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Allforio vCerdyn 3.0..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Allforio vCerdyn 2.1..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Allforio vCerdyn 2.1..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "Allforio rhestr CSV..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "Allforio Llyfr Cyfeiriadau LDIF..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Allforio Llyfr Cyfeiriadau LDIF..."
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "Allforio Llyfr Cyfeiriadau LDIF..."
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Methu agor y ffeil <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Methu agor y ffeil <b>%1</b>.</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "Ymgom Mewnforio CSV"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Mewnforio cysylltau"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Ffeil i'w mewnforio:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Dewiswch vGerdyn i'w Fewnforio"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Amffinydd"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Atalnod"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Dewiswch y math o allwedd:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Gwahannod"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Dewiswch y math o allwedd:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tablwr"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Gofod"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Arall"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Dyfyniad testun:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Dewiswch y math o allwedd:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Dim un"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Fformat y dyddiad:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<ul><li>y: blwyddyn efo 2 digid</li><li>Y: blwyddyn efo 4 digid</"
+#~ "li><li>m: mis efo 1 or 2 digid</li><li>M: mis efo 2 digid</li><li>d: dydd "
+#~ "efo 1 neu 2 digid</li><li>D: dydd efo 2 digid</li></ul>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<ul><li>y: blwyddyn efo 2 digid</li><li>Y: blwyddyn efo 4 digid</"
+#~ "li><li>m: mis efo 1 or 2 digid</li><li>M: mis efo 2 digid</li><li>d: dydd "
+#~ "efo 1 neu 2 digid</li><li>D: dydd efo 2 digid</li></ul>"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Dyfyniad testun:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Dewiswch y math o allwedd:"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Gweithredu'r Patrymlun"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Cadw Patrymlun ..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Lleol (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Lladin1"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Ungôd"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Rhaid i chi neilltuo o leiaf un golofn."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(Dim rhagolwg ar gael.)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(Dim rhagolwg ar gael.)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Enw Patrymlun"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Rhowch enw i'r patrymlun:"
+
+#, fuzzy
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Methu agor y ffeil fewnbwn!"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Dewis Patrymlun"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Dewiswch batrymlun sy'n cydweddu â'r ffeil CSV, os gwelwch yn dda:"
+
+#, fuzzy
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Methu agor <b>%1</b> i'w darllen.</qt>"
+
+#, fuzzy
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Rydych wedi dewis rhestr o gysylltau.  Ydych am eu hallforio i sawl ffeil?"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Allforio i ffôn symudol"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Allforio i ffôn symudol"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Dewiswch vGerdyn i'w Fewnforio"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Mewnforio vCerdyn wedi Methu"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Mewnforio vCard"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact in your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Ydych eisiau mewnforio'r cyswllt yma i'ch llyfr cyfeiriad?"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Mewnforio vCerdyn..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Pa gysylltau ydych am eu hallforio?"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr ""
+#~ "Copïo y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "Dileu Golwg"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "Cyfeiriad Ebost:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Cadw Patrymlun ..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Cadw Patrymlun ..."
+
+#, fuzzy
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr " &Chwilio"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "Gyrru ebost at yr holl gysylltiadau a ddewiswyd."
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "A contact group was selected."
+#~ msgstr "&Pob cyswllt"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "&Anfon Cyswllt..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts."
+#~ msgstr ""
+#~ "Copïo y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Gyrru ebost at yr holl gysylltiadau a ddewiswyd."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "Mewnforio vCerdyn..."
+
+#, fuzzy
+#~ msgid "Merge Contacts..."
+#~ msgstr "Golygydd Cyfuno Cysylltau"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "Cyfuno"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "Cyfuno"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Rhaid i chi neilltuo o leiaf un golofn."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "No contacts selected."
+#~ msgstr "&Pob cyswllt"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "Cwsmer"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Anniffiniedig"
+
+#, fuzzy
+#~ msgid "Merged Contact"
+#~ msgstr "Golygydd Cyfuno Cysylltau"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Mewnforio cysylltau"
+
+#, fuzzy
+#~ msgid "Merge contact"
+#~ msgstr "Golygydd Cyfuno Cysylltau"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Meysydd &dewisiedig:"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Cysylltau &dewisiedig"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Ychwanegu'r Dewisiedig"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "Pinio cyswllt"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Dewiswch Arddull Argraffu"
+
+#~ msgid "Department"
+#~ msgstr "Adran"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Enw'r Rheolwr"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Enw'r Cynorthwy-ydd"
+
+#, fuzzy
+#~ msgid "Partner's Name"
+#~ msgstr "Enw'r Rheolwr"
+
+#~ msgid "IM Address"
+#~ msgstr "Cyfeiriad NU (IM)"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Mathau"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
+
+#, fuzzy
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr ""
+#~ "Yma cewch ddewis y maes a gaiff ei ddefnyddio yn y chwiliad cynyddol."
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "Llyfrau Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Newid a ddylid dangos y dudalen fanylion ai peidio."
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "Show Contacts View"
+#~ msgstr "Canfuwyd un cyswllt:"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Newid a ddylid dangos y dudalen fanylion ai peidio."
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "Golygu Enw'r Cyswllt"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Dangos Manylion"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Newid a ddylid dangos y dudalen fanylion ai peidio."
+
+#, fuzzy
+#~ msgid "Hide Details View"
+#~ msgstr "&Manylion"
+
+#, fuzzy
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Golygu Hidlen y Llyfr Cyfeiriadau"
+#~ msgstr[1] "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Golygu Hidlen y Llyfr Cyfeiriadau"
+#~ msgstr[1] "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#, fuzzy
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "&Golygu Cyswllt..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Dileu Golwg"
+#~ msgstr[1] "Dileu Golwg"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "Golygu..."
+
+#, fuzzy
+#~ msgid "Add Address Book"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid "Could not add address book: %1"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid "Adding Address Book failed"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Creu cyswllt newydd<p>Cyflwynir ymgom i chi lle y gallwch ychwanegu holl "
+#~ "ddata ar gyfer person, yn cynnwys cyfeiriadau a rhifau ffôn."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Newydd..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Golygu'r hidlennu cysylltau<p>Ymddengys ymgom, lle gallwch ychwanegu, "
+#~ "waredu, a golygu hidlenni."
+
+#, fuzzy
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Golygu cyswllt<p>Cyflwynir ymgom i chi lle y gallwch newid data ar gyfer "
+#~ "person, yn cynnwys cyfeiriadau a rhifau ffôn."
+
+#, fuzzy
+#~ msgid "Add &Address Book..."
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Golygu'r hidlennu cysylltau<p>Ymddengys ymgom, lle gallwch ychwanegu, "
+#~ "waredu, a golygu hidlenni."
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Porydd Llyfrau Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "Ychwanegu Cyswllt"
+
+#~ msgid "Home Number"
+#~ msgstr "Rhif Ffôn Cartref"
+
+#~ msgid "Work Number"
+#~ msgstr "Rhif Ffôn Gwaith"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Rhif Ffôn Symudol"
+
+#~ msgid "Fax Number"
+#~ msgstr "Rhif Ffacs"
+
+#~ msgid "Pager"
+#~ msgstr "Swnyn"
+
+#~ msgid "Street"
+#~ msgstr "Stryd"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Talaith"
+
+#~ msgid "Country"
+#~ msgstr "Gwlad"
+
+#~ msgid "City"
+#~ msgstr "Dinas"
+
+#~ msgid "Description"
+#~ msgstr "Disgrifiad"
+
+#~ msgid "User ID"
+#~ msgstr "Dynodiad Defnyddiwr"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Talaith"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Teitl"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Mewnforio Cysylltau?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Chwilio am Gyfeiriadau yn y Cyfeiriadur"
+
+#~ msgid "Search for:"
+#~ msgstr "Chwilio am:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "in"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Enw"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Rhif Ffôn Cartref"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Rhif Ffôn Gwaith"
+
+#~ msgid "Recursive search"
+#~ msgstr "Chwiliad ymgylchol"
+
+#~ msgid "Contains"
+#~ msgstr "Cynhwysa"
+
+#~ msgid "Unselect All"
+#~ msgstr "Datddewis Popeth"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "&Ffurfweddu KLlyfrCyfeiriadau..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Enw"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Gyrru ebost at yr holl gysylltiadau a ddewiswyd."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "&Ffurfweddu KLlyfrCyfeiriadau..."
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "Golygu Cyswllt"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Ychwanegu..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&Golygu..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(h)(c) 1997-2003, Tîm PIM KDE"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Llyfrau Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Enw"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Golygu Rhif Ffôn"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Cyfeiriad Dewisiedig"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "&Pob cyswllt"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "Enw'r Rheolwr"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "Gwlad yr Iâ"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Dangos meysydd &gwag"
+
+#~ msgid "Font Settings"
+#~ msgstr "Gosodiadau Wynebfath"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Defnyddio wynebfathau arferol KDE"
+
+#~ msgid "Details font:"
+#~ msgstr "Wynebfath manylion:"
+
+#~ msgid "Size:"
+#~ msgstr "Maint:"
+
+#~ msgid "Body font:"
+#~ msgstr "Wynebfath corff:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Wynebfath gosodedig:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Wynebfath pennawd cyswllt:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Penawdau"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Defnyddio penawdau cyswllt lliw"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Gyrru at:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Gosod ymylon a bylchu"
+
+#~ msgid "Preparing"
+#~ msgstr "Paratoi"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Argraffwyd ar %1 gan KLlyfrCyfeiriadau (http://www.kde.org)"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Argraffu nifer arbennig o gysylltiadau."
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Dewiswch pa Cysylltiadau i Argraffu"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Argraffu cysylltiadau sydd wedi'w dewis yn KLlyfrCyfeiriadau yn unig.\n"
+#~ " Analluogir y dewisiad yma os nid yw cyswlltiad weid'i ddewis."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Cysylltau sy'n cydweddu â &hidlen"
+
+#, fuzzy
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Argraffu cysylltiadau sy'n cydweddu â'r hidlen ddewisiedig yn unig.\n"
+#~ " Analluogir y dewisiad yma os nad ydych wedi diffinio hidlen."
+
+#~ msgid "Category &members"
+#~ msgstr "&Aelodau categori"
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Argraffu cysylltau sy'n aelodau o gategori wedi'i fritho yn y restr ar y "
+#~ "chwith.\n"
+#~ " Mae'r dewisiad yma'n analluog os nad oes gennych gategorïau."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Dewiswch hidlen i ddewis ba gysylltau i'w hargraffu."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Brithwch y categorïau yr hoffech argraffu eu haelodau."
+
+#, fuzzy
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Mewnforio un cyswllt i'ch llyfr cyfeiriad?"
+#~ msgstr[1] " Mewnforio %1 o gysylltau i'ch llyfr cyfeiriad?"
+
+#, fuzzy
+#~ msgid "Select the address book"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~ msgid "New Contact"
+#~ msgstr "Canfuwyd un cyswllt:"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Golygu Cyswllt"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "Ychwanegu..."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(Dim rhagolwg ar gael.)"
+
+#~ msgid "Play"
+#~ msgstr "Chwarae"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "Newid Math..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "Newydd..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Eraill..."
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "Ychwanegu..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Golygu Rhif Ffôn"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Hwn yw'r hoff rif ffôn "
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Golygu Cyfeiriadau Ebost"
+
+#~ msgid "Edit..."
+#~ msgstr "Golygu..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Gosod Safon"
+
+#, fuzzy
+#~ msgid "Add Email"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~ msgid "New Email:"
+#~ msgstr "Ebost:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "Ebost:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr ""
+#~ "<qt>Ydych chi'n siŵr eich bod eisiau gwaredu'r cyfeiriad ebost <b>%1</b>?"
+#~ "</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Cadarnhau Gwaredu"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Cadarnhau Dileu"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "Newid Math..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "Cadw Patrymlun ..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "Newid Ebost..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "Cadw Patrymlun ..."
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Newydd..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Golygu..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Dileu Golwg"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%2</b>?</qt>"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Cyfeiriad Post"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1 :"
+
+#, fuzzy
+#~ msgid "Edit Label..."
+#~ msgstr "Golygu Enw..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Hwn yw'r hoff gyfeiriad"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Golygu Math y Cyfeiriad"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Cyfeiriadau stryd"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "Enw Syml"
+
+#, fuzzy
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Enw Gwrthdroëdig"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "Enw Gwrthdroëdig"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "Sefydliad"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "Addasiedig"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "Enw"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Ffugenw:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "Sefydliad"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "Tudalen wê:"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "&Ymyl:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "Cyfeiriadau:"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Coordinates"
+#~ msgstr "Cynhwysa"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "Busnes"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
+
+#~ msgid "Profession:"
+#~ msgstr "Galwedigaeth:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "Teitl:"
+
+#~ msgid "Department:"
+#~ msgstr "Adran:"
+
+#~ msgid "Office:"
+#~ msgstr "Swyddfa:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Enw'r Rheolwr:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "Teulu"
+
+#, fuzzy
+#~ msgid "Birthdate:"
+#~ msgstr "Penblwydd:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Dathliad:"
+
+#, fuzzy
+#~ msgid "Partner's name:"
+#~ msgstr "Enw'r Rheolwr:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "Golygu Cyswllt"
+
+#, fuzzy
+#~ msgid "Custom Fields"
+#~ msgstr "Cwsmer"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Dangos golygydd cysylltiadau efo'r cyfeiriad ebost penodol"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Dangos golygydd cysylltiadau efo'r uid penodol"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Cychwyn mewn modd golygydd yn unig"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Cychwyn golygydd ar gyfer y cyswllt newydd"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "&Golygu Cyfeiriadau..."
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Golygu Cyswllt '%1'"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Golygydd Cysylltiadau"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr " %1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr " %1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr " %1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "&Manylion"
+
+#~ msgid "Misc"
+#~ msgstr "Amrywiol"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Rhaid i chi benodi dyddiad dilys"
+
+#, fuzzy
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Rhaid i chi benodi dyddiad dilys"
+
+#~ msgid "Add View"
+#~ msgstr "Ychwanegu Golwg"
+
+#~ msgid "View name:"
+#~ msgstr "Enw'r golwg:"
+
+#~ msgid "View Type"
+#~ msgstr "Math yr Olwg"
+
+#, fuzzy
+#~ msgid "Add Field"
+#~ msgstr "Pob Maes"
+
+#~ msgid "Type:"
+#~ msgstr "Math:"
+
+#, fuzzy
+#~ msgid "Is available for all contacts"
+#~ msgstr "Gyrru ebost at yr holl gysylltiadau a ddewiswyd."
+
+#~ msgid "Boolean"
+#~ msgstr "Boolaidd"
+
+#~ msgid "Time"
+#~ msgstr "Amser"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dyddiad ac Amser"
+
+#, fuzzy
+#~ msgid "Remove Field"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~ msgid "Add Field..."
+#~ msgstr "Ychwanegu Golwg..."
+
+#, fuzzy
+#~ msgid "Remove Field..."
+#~ msgstr "Ailenwi Rhestr..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "Golygydd Rhestri Dosbarthu"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Golygu Cyfeiriadau Ebost..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr ""
+#~ "Dangos y cysylltiadau sy'n cydweddu â'r categorïau a ddewiswyd yn unig"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Dangos y cysylltiadau sydd ddim yn cydweddu â'r categorïau a ddewiswyd"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Golygu Hidlenni y Llyfrau Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "Gwaredu Rhestr"
+
+#~ msgid "Filter:"
+#~ msgstr "Hidlen:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Defnyddio data daear"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Lledred:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Hydred:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Golygu Data Daear..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Mewnbwn Data Daear"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Trigeiniol"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Lledred:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Gogledd"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "De"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Hydred:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Dwyrain"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Gorllewin"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Anniffiniedig"
+
+#~ msgid "Reset"
+#~ msgstr "Ailosod"
+
+#~ msgid "IM address:"
+#~ msgstr "Cyfeiriad NU (IM):"
+
+#, fuzzy
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "&Golygu Cyfeiriadau..."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Y chwiliad cynyddol<p>Rhowch destun yma i ddechrau'r chwiliad am y "
+#~ "cyswllt sy'n cydweddu orau â'r patrwm chwiliad. Mae pa ran o'r cyswllt a "
+#~ "ddefnyddir i gydweddu, yn ddibynnol ar y dewisiad meysydd."
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr ""
+#~ "Yma cewch ddewis y maes a gaiff ei ddefnyddio yn y chwiliad cynyddol."
+
+#, fuzzy
+#~ msgid "Visible Fields"
+#~ msgstr "Pob Maes"
+
+#~ msgid "All Fields"
+#~ msgstr "Pob Maes"
+
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "Penawdau Cyswllt"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Cyd-gynhaliwr, porthiad libkabc, mewnforio/allforio CSV"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Ailgynllunio GUI a fframwaith"
+
+#~ msgid "DCOP interface"
+#~ msgstr "Rhyngwyneb DCOP"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "Chwiliad LDAP"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "<qt>Ydych chi wir am waredu'r allwedd <b>%2</b>?</qt>"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "<qt>Ydych chi wir am waredu'r allwedd <b>%2</b>?</qt>"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Dewiswch un cyswllt yn unig os gwelwch yn dda."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>A ydych wir eisiau defnyddio <b>%1</b> fel eich cyswllt personol "
+#~ "newydd?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "Defnydd"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Mae eich gosodiad KDE yn colli cynhaliaeth LDAP - gofynnwch i'ch "
+#~ "gweinyddwr neu ddosbarthwr am fwy o wybodaeth!"
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Dim gwas IO LDAP ar gael"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Argraffu Cyfeiriadau"
+
+#, fuzzy
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "&Dileu y Cyswllt"
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Cadw'r holl newidiadau i'r llyfr cyfeiriadau yn yr ôl-storfa"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Newydd..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Gyrru ebost efo'r cyswllt a ddewiswyd fel atodiad."
+
+#, fuzzy
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Gyrru ebost efo'r cyswllt a ddewiswyd fel atodiad."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&Golygu..."
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr ""
+#~ "Torri y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Gludo y cysylltiadau a gopïwyd neu dorrwyd o'r clipfwrdd."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "&Dileu y Cyswllt"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Dileu'r holl gysylltiadau a ddewiswyd."
+
+#, fuzzy
+#~ msgid "C&opy Contact To..."
+#~ msgstr "&Cyswllt Newydd..."
+
+#, fuzzy
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Cyswllt Newydd..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "Dangos y Bar Neidio"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Newid a ddylid dangos y bar neidio ai peidio."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "Cyflwynir ymgom i chi a fydd yn eich galluogi i ffurfweddu "
+#~ "KLlyfrCyfeiriadau yn yr holl ffyrdd posib."
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "Chwiliad LDAP"
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Chwilio am gysylltiadau ar weinydd LDAP<p>Cyflwynir ymgom i ch lle "
+#~ "gallwch chwilio am gysylltau a dewis y rhai yr ydych eisiau eu hychwanegu "
+#~ "i'ch llyfr cyfeiriadau lleol."
+
+#, fuzzy
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Gosod y cyswllt personol<p>Bydd data y cyswllt yn cael ei ddefnyddio mewn "
+#~ "amryw o raglenni KDE, fel nad oes rhaid mewnosod eich manylion personol "
+#~ "fwy nag unwaith."
+
+#~ msgid "Select Categories..."
+#~ msgstr "Gosod Categorïau..."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Cyfuno â chategorïau cyfredol?"
+
+#, fuzzy
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#~ msgid "Keys:"
+#~ msgstr "Allweddi:"
+
+#~ msgid "Export..."
+#~ msgstr "Allforio..."
+
+#~ msgid "Key Type"
+#~ msgstr "Math Allwedd"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Rhaid i chi ddewis gweinydd LDAP cyn chwilio.\n"
+#~ " Gallwch wneud hyn o'r ddewislen Gosodiadau/Ffurfweddu KLlyfrCyfeiriadau."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Cyn-deitlau:"
+
+#~ msgid "Additional names:"
+#~ msgstr "Enwau ychwanegol:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Ôl-deitlau parch:"
+
+#~ msgid "Formatted name:"
+#~ msgstr "Enw wedi ei fformadu:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Dosrannu'r enw yn ymosgogol"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Miss"
+
+#~ msgid "Mr."
+#~ msgstr "Mr."
+
+#~ msgid "Mrs."
+#~ msgstr "Mrs."
+
+#~ msgid "Ms."
+#~ msgstr "Ms."
+
+#~ msgid "Prof."
+#~ msgstr "Yr Athro"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Jr."
+
+#~ msgid "Sr."
+#~ msgstr "Sr."
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Enw Llawn"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Sefydliad"
+
+#, fuzzy
+#~ msgid "Birthday:"
+#~ msgstr "Penblwydd:"
+
+#, fuzzy
+#~ msgid "Partners name:"
+#~ msgstr "Enw'r Rheolwr:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Golygu enw'r cyswllt"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Golygu Enw..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "Gwaredu Rhestr"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "Sefydliad"
+
+#~ msgid "Tools"
+#~ msgstr "Offer"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Dyrannu enwau ymysgogol ar gyfer cyferiadwyr newydd"
+
+#~ msgid "Fax"
+#~ msgstr "Ffacs"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Parchu clic unigol KDE"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "Ebost:"
+
+#~ msgid "Store as URL"
+#~ msgstr "Cadw fel URL"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Rhestr Ddosbarthu Newydd"
+#~ msgstr[1] "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Dewiswch Meysydd i Ddangos"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "Meysydd &dewisiedig:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Gweithredolir yr hidlen ragosod pryd bynnag y dengys yr olwg hon. "
+#~ "Galluoga'r nodwedd hon i chi ffrufweddu golygon sy'n rhyngweithio â "
+#~ "mathau penodol o wybodaeth ar sail yr hidlen yn unig. Unwaith bo'r olwg "
+#~ "yn weithredol, gellir newid yr hidlen ar unrhyw adeg."
+
+#~ msgid "No default filter"
+#~ msgstr "Dim hidlen rhagosod"
+
+#~ msgid "Use filter:"
+#~ msgstr "Defnyddiwch hidlen:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Hidlen rhagosod"
+
+#~ msgid "Modify View: "
+#~ msgstr "Addasu Golwg:"
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Dileu Golwg"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>A ydych yn sicr eich bod am ddileu'r olwg<b>%1</b>?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Cadarnhau Dileu"
+
+#, fuzzy
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Mewnforio un cyswllt i'ch llyfr cyfeiriad?"
+#~ msgstr[1] " Mewnforio %1 o gysylltau i'ch llyfr cyfeiriad?"
+
+#, fuzzy
+#~ msgid "Do Not Import"
+#~ msgstr "&Mewnforio"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Dim un"
+
+#, fuzzy
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Anniffiniedig"
+
+#~ msgid "Select View"
+#~ msgstr "Dewis Golwg"
+
+#~ msgid "Modify View..."
+#~ msgstr "Addasu Golwg..."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Gan wasgu'r botwm yma, agora ymgom sy'n eich galluogi i addasu'r olwg o'r "
+#~ "llyfr cyfeiriadau. Yno gallwch ychwanegu neu waredu meysydd yr ydych am "
+#~ "eu dangos neu'u cuddio yn y llyfr cyfeiriadau, er enghraifft yr enw."
+
+#~ msgid "Add View..."
+#~ msgstr "Ychwanegu Golwg..."
+
+#, fuzzy
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Gallwch ychwanegu golwg newydd drwy ddewis un o'r ymgomau sy'n ymddanges "
+#~ "wedi gwasgu'r botwm. Rhaid i chi enwi'r olwg, fel y gallwch wahaniaethu "
+#~ "rhwng y gwahanol olygon."
+
+#~ msgid "Delete View"
+#~ msgstr "Dileu Golwg"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Drwy wasgu'r botwm yma gallwch ddileu'r olwg ei hun, yr ychwanegoch o'r "
+#~ "blaen."
+
+#~ msgid "Refresh View"
+#~ msgstr "Ailfywio'r Olwg"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Ailfywir yr olwg drwy wasgu'r botwm yma."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "Golygu &Hidlenni..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Golygu'r hidlennu cysylltau<p>Ymddengys ymgom, lle gallwch ychwanegu, "
+#~ "waredu, a golygu hidlenni."
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Dim ategyn mewnforio ar gael ar gyfer <b>%1</b>.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Di ategyn allforio ar gael ar gyfer <b>%1</b>.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Methu allforio cysylltau."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Dewiswch Pa Gysylltau i'w Hallforio"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Esgynnol"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Disgynnol"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "Dewisiad"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "Allforio'r llyfr cyfeiriadau cyfan"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Allforio'r cysylltau sy'n ddewisiedig yn KLlyfrCyfeiriadau'n unig.\n"
+#~ " Mae'r dewisiad yma'n analluog os nad oes cysylltau wedi'u dewis."
+
+#, fuzzy
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Allforio cysylltau sy'n cydweddu â'r hidlen ddewisiedig yn unig.\n"
+#~ " Mae'r dewisiad yma'n analluog os nad ydych wedi diffinio unrhyw hidlenni."
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Allforio cysylltau sy'n aeolod o gategori sydd wedi'i fritho yn y restr "
+#~ "ar y chwith.\n"
+#~ " Mae'r dewisiad yma'n analluog os nad oes gennych gategorïau."
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "Dewiswch hidlen i ddewis ba gysylltau i'w hallforio."
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Ysgol"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Cyfaill"
+
+#, fuzzy
+#~ msgid "Crypto Settings"
+#~ msgstr "Gosodiadau Wynebfath"
+
+#, fuzzy
+#~ msgid "Message Preference"
+#~ msgstr "Defnyddio'r Dewisol"
+
+#~ msgid "Sign:"
+#~ msgstr "Llofnodi :"
+
+#~ msgid "Encrypt:"
+#~ msgstr "Cêl-ysgrifo :"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Golygu Cyfeiriadau Ebost"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Golygydd Rhestri Dosbarthu"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "Remove distribution list"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#, fuzzy
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgid "%1 address book"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "Golygu Hidlenni y Llyfrau Cyfeiriadau"
+
+#~ msgid "Look & Feel"
+#~ msgstr "Golwg a Theimlad"
+
+#~ msgid "Text Color"
+#~ msgstr "Lliw Testun"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Pennawd, Ymyl, a Lliw Gwahanydd"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Lliw Testun Pennawd"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Lliw Amlygedig"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Lliw Testun Amlygedig"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Darlunio &gwahanyddion"
+
+#~ msgid "Separator &width:"
+#~ msgstr "&Lled gwahanyddion:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Padio:"
+
+#~ msgid "Cards"
+#~ msgstr "Cardiau"
+
+#~ msgid "Draw &borders"
+#~ msgstr "Darlunio &ymylon"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Ymyl yr eitem yw'r pellter (mewn picseli) rhwng ochr allanol yr eitem a "
+#~ "data'r eitem. Yn fwyaf amlwg, bydd ehangu ymyl yr eitem yn ychwanegu "
+#~ "gofod rhwng y petryal canolbwynt â data'r eitem."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Mae gofodu'r eitem yn penderfynnnu'r pellter (mewn picseli) rhwng yr "
+#~ "eitemau ac unrhywbeth arall: ymylon yr olwg, eitemau eraill, neu "
+#~ "wahanyddion colofn."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Gosoda led gwahanyddion colofn"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&Cynllun"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "&Galluogi lliwiau addasiedig"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Lliwiau"
+
+#, fuzzy
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "Os yw lliwiau addasiedig yn alluog, gallwch ddewis lliwiau'r olwg isod. "
+#~ "Fel arall defnyddir lliwiau o'ch cynllun lliwiau KDE cyfredol."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Cliciwch yn ddwbl, neu gwasgwch y DYCHWELYD ar eitem i ddewis lliw ar "
+#~ "gyfer y llinynnau perthnasol yn yr olwg."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "&Galluogi wynebfathau addasiedig"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Wynebfath Destun:"
+
+#~ msgid "Choose..."
+#~ msgstr "Dewis..."
+
+#~ msgid "&Header font:"
+#~ msgstr "Wynebfath &bennawd:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Os yw wynebfathau addasiedig yn alluog, gallwch ddewis pa wynebfathau i'w "
+#~ "defnyddio ar gyfer yr olwg hon isod. Fel arall defnyddir yr wynebfath KDE "
+#~ "ragosod, mewn arddull bras ar gyfer y pennawd, ac arddull arferol ar "
+#~ "gyfer y data."
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Fonts"
+#~ msgstr "Cynhwysa"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "Dangos meysydd &gwag"
+
+#~ msgid "Show field &labels"
+#~ msgstr "Dangos &labeli meysydd"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "&Ymddygiad"
+
+#~ msgid "Row Separator"
+#~ msgstr "Gwahanydd Rhesi"
+
+#~ msgid "Single line"
+#~ msgstr "Llinell unigol"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Dim un"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Galluogi delwedd gefndir:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Galluogi cynghorion offer cysylltau"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr " %1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr " %1:\n"
+
+#~ msgid "Card"
+#~ msgstr "Cerdyn"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Cardiau arddull Rolodex yn cynrychioli cysylltau"
+
+#~ msgid "Icon"
+#~ msgstr "Eicon"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Eiconau'n cynrychioli cysylltau. Golwg syml iawn."
+
+#~ msgid "Table"
+#~ msgstr "Tabl"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "Rhestr cysylltau mewn tabl. Pob cell yn y tabl yn dal maes o'r cyswllt."
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "Gwlad Groeg"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Allforio Nôdau Tudalen..."
+
+#~ msgid "AddressBook"
+#~ msgstr "LlyfrCyfeiriadau"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Dechrau ar linell:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Anwybyddu amffinyddion dyblyg"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Allforiwyd y cysylltau yn llwyddiannus."
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau Eudora..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Llyfr Cyfeiriadau Eudora Light (*.txt)"
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau LDIF..."
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Allforio i ffôn symudol"
+
+#, fuzzy
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Nid yw GNOKII wedi'i ffurfweddu eto."
+
+#, fuzzy
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Gwall ffeil glo.\n"
+#~ " Ceuwch pob enghraifft arall o gnokii sy'n rhedeg, a cheisiwch eto."
+
+#~ msgid "Unknown"
+#~ msgstr "Anhysbys"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Gwneuthurwr"
+
+#, fuzzy
+#~ msgid "Phone model"
+#~ msgstr "Rhifau ffôn"
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "Rhanbarth:"
+
+#, fuzzy
+#~ msgid "IMEI"
+#~ msgstr "II"
+
+#, fuzzy
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "Canfuwyd un cyswllt:"
+#~ msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#, fuzzy
+#~ msgid "unknown memory"
+#~ msgstr "anhysbys"
+
+#, fuzzy
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Nid yw'r rhyngwyneb gnokii ar gael.\n"
+#~ " Gofynwch i'ch dosbarthydd i ychwanegu gnokii yn ystod amser crynhoi."
+
+#, fuzzy
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Ffeil i'w mewnforio:"
+
+#, fuzzy
+#~ msgid "&Stop Import"
+#~ msgstr "&Mewnforio"
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Allforio i ffôn symudol"
+
+#, fuzzy
+#~ msgid "&Stop Export"
+#~ msgstr "&Allforio"
+
+#, fuzzy
+#~ msgid "&Stop Delete"
+#~ msgstr "Cadarnhau Dileu"
+
+#, fuzzy
+#~ msgid "Export to phone finished."
+#~ msgstr "Allforio i ffôn symudol"
+
+#, fuzzy
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Methu canfod llyfr cyfeiriadau KDE 2 <b>%1</b>.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Cymeryd blaenoriaeth dros gofnodion a fewnforwyd eisioes?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau KDE 2"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau Opera..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Mewnforio Llyfr Cyfeiriadau Personol MS Exchange (.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "Methu agor %1 ar gyfer darllen"
+
+#, fuzzy
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "Nid oes gan %1 ddynodiad PAB y gwn amdano. Methaf drawsnewid hwn."
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "Ffeiliau Llyfr Cyfeiriadau Personol MS Exchange (*.pab)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Methu canfod Llyfr Cyfeiriadau Personol MS Exchange <b>%1</b>.</qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Affganistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albania"
+
+#~ msgid "Algeria"
+#~ msgstr "Algeria"
+
+#~ msgid "American Samoa"
+#~ msgstr "Samoa Americanaidd"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Angwila"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigwa a Barbwda"
+
+#~ msgid "Argentina"
+#~ msgstr "Ariannin"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenia"
+
+#~ msgid "Aruba"
+#~ msgstr "Arwba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ynysoedd Ashmore a Chartier"
+
+#~ msgid "Australia"
+#~ msgstr "Awstralia"
+
+#~ msgid "Austria"
+#~ msgstr "Awstria"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Aserbaijan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Ynysoedd Bahama"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladesh"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Belarws"
+
+#~ msgid "Belgium"
+#~ msgstr "Gwlad Belg"
+
+#~ msgid "Belize"
+#~ msgstr "Belîs"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermwda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bhwtan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolifia"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnia a Hertsegofina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brasil"
+
+#~ msgid "Brunei"
+#~ msgstr "Brwnei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bwlgaria"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Bwrcina Ffaso"
+
+#~ msgid "Burundi"
+#~ msgstr "Bwrwndi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Cambodia"
+
+#~ msgid "Cameroon"
+#~ msgstr "Camerŵn"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Cape Ferde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Ynysoedd Cayman"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Gweriniaeth Canolig Affrica"
+
+#~ msgid "Chad"
+#~ msgstr "Tsiad"
+
+#~ msgid "Chile"
+#~ msgstr "Tsile"
+
+#~ msgid "China"
+#~ msgstr "Tseina"
+
+#~ msgid "Colombia"
+#~ msgstr "Colombia"
+
+#~ msgid "Comoros"
+#~ msgstr "Comoros"
+
+#~ msgid "Congo"
+#~ msgstr "Congo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Congo, Gwer. Ddem."
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Croatia"
+
+#~ msgid "Cuba"
+#~ msgstr "Ciwba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Cyprus"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Gweriniaeth Tsiec"
+
+#~ msgid "Denmark"
+#~ msgstr "Denmarc"
+
+#~ msgid "Djibouti"
+#~ msgstr "Djibŵti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Gweriniaeth Dominica"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ecwador"
+
+#~ msgid "Egypt"
+#~ msgstr "Yr Aifft"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Gini'r Cyhydedd"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonia"
+
+#~ msgid "England"
+#~ msgstr "Lloegr"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Ethiopia"
+
+#~ msgid "European Union"
+#~ msgstr "Yr Undeb Ewropëaidd"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Ynysoedd Ffaröe"
+
+#~ msgid "Fiji"
+#~ msgstr "Ffiji"
+
+#~ msgid "Finland"
+#~ msgstr "Y Ffindir"
+
+#~ msgid "France"
+#~ msgstr "Ffrainc"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Polynesia Ffrengig"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Georgia"
+
+#~ msgid "Germany"
+#~ msgstr "Yr Almaen"
+
+#~ msgid "Ghana"
+#~ msgstr "Ghana"
+
+#~ msgid "Greece"
+#~ msgstr "Gwlad Groeg"
+
+#~ msgid "Greenland"
+#~ msgstr "Y Lasynys"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guam"
+#~ msgstr "Gwâm"
+
+#~ msgid "Guatemala"
+#~ msgstr "Gwatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Gini"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Gini-Bisaw"
+
+#~ msgid "Guyana"
+#~ msgstr "Gaiana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Hondwras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Cong"
+
+#~ msgid "Hungary"
+#~ msgstr "Hwngari"
+
+#~ msgid "India"
+#~ msgstr "India"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Irac"
+
+#~ msgid "Ireland"
+#~ msgstr "Iwerddon"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Yr Eidal"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Yr Arfordir Ifori"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaica"
+
+#~ msgid "Japan"
+#~ msgstr "Siapan"
+
+#~ msgid "Jordan"
+#~ msgstr "Gwlad Iorddonen"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Casachstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Cenia"
+
+#~ msgid "Kiribati"
+#~ msgstr "Ciribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Corea, Gogledd"
+
+#~ msgid "Korea, South"
+#~ msgstr "Corea, De"
+
+#~ msgid "Kuwait"
+#~ msgstr "Cuwaït"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Cyrgystan"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Latfia"
+
+#~ msgid "Lebanon"
+#~ msgstr "Libanus"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#~ msgid "Libya"
+#~ msgstr "Libia"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lithwania"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Lwcsembwrg"
+
+#~ msgid "Macau"
+#~ msgstr "Macaw"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagascar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Maleisia"
+
+#~ msgid "Maldives"
+#~ msgstr "Ynysoedd y Maldîf"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Ynysoed Marshall"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinîc"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mawritania"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mawrisiws"
+
+#~ msgid "Mexico"
+#~ msgstr "Mecsico"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Micronesia, Talaethau Cyfunol"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldofa"
+
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolia"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Moroco"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mosambîc"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#~ msgid "Nauru"
+#~ msgstr "Nawrw"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Yr Iseldiroedd"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Ynysoedd Caribî yr Iseldiroedd"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Caledonia Newydd"
+
+#~ msgid "New Zealand"
+#~ msgstr "Seland Newydd"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragwa"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#~ msgid "Niue"
+#~ msgstr "Niwe"
+
+#~ msgid "North Korea"
+#~ msgstr "Gogledd Corea"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Gogledd Iwerddon"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Ynysoedd Gogledd Mariana"
+
+#~ msgid "Norway"
+#~ msgstr "Norwy"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pacistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palaw"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palesteinaidd"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papwa Gini Newydd"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paragwai"
+
+#~ msgid "Peru"
+#~ msgstr "Periw"
+
+#~ msgid "Philippines"
+#~ msgstr "Y Philipinau"
+
+#~ msgid "Poland"
+#~ msgstr "Gwlad Pwyl"
+
+#~ msgid "Portugal"
+#~ msgstr "Portiwgal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Pwerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Catar"
+
+#~ msgid "Romania"
+#~ msgstr "Romania"
+
+#~ msgid "Russia"
+#~ msgstr "Rwsia"
+
+#~ msgid "Rwanda"
+#~ msgstr "Rwanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "St. Kitts a Nefis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "St. Lucia"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "St. Vincent a'r Grenadinau"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome a Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Sawdi Arabia"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Serbia a Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "Ynysoedd y Seychelles"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapôr"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slofacia"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slofenia"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Ynysoedd Solomon"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#~ msgid "South Africa"
+#~ msgstr "De Affrica"
+
+#~ msgid "South Korea"
+#~ msgstr "De Corea"
+
+#~ msgid "Spain"
+#~ msgstr "Sbaen"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanca"
+
+#~ msgid "Sudan"
+#~ msgstr "Swdan"
+
+#~ msgid "Suriname"
+#~ msgstr "Swrinam"
+
+#~ msgid "Swaziland"
+#~ msgstr "Gwlad y Swasi"
+
+#~ msgid "Sweden"
+#~ msgstr "Sweden"
+
+#~ msgid "Switzerland"
+#~ msgstr "Y Swisdir"
+
+#~ msgid "Syria"
+#~ msgstr "Syria"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tajicistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzania"
+
+#~ msgid "Thailand"
+#~ msgstr "Gwlad Tai"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad a Thobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tiwnisia"
+
+#~ msgid "Turkey"
+#~ msgstr "Twrci"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Twrcmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Ynysoedd Twrcs a Chaicos"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Twfalw"
+
+#~ msgid "Uganda"
+#~ msgstr "Wganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Wcráin"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Emiraethau Unedig Arabaidd"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Y Deyrnas Gyfunol"
+
+#~ msgid "United States"
+#~ msgstr "Yr Unol Daleithiau"
+
+#~ msgid "Uruguay"
+#~ msgstr "Wrwgwai"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Wsbecistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Fanwatw"
+
+#~ msgid "Vatican City"
+#~ msgstr "Dinas Y Fatican"
+
+#~ msgid "Venezuela"
+#~ msgstr "Feneswela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Fiet-nam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Gorllewin Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Iemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Iwgoslafia"
+
+#~ msgid "Zaire"
+#~ msgstr "Saïr"
+
+#~ msgid "Zambia"
+#~ msgstr "Sambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Simbabwe"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Dim un"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Teitl:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Enw"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~| msgid "Address:"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Cyfeiriad:"
+
+#~ msgid "Address:"
+#~ msgstr "Cyfeiriad:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Newydd..."
+
+#~ msgid "&General"
+#~ msgstr "&Cyffredinol"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "Testun"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "Golygydd Rhestri Dosbarthu"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Dim un"
+
+#~ msgid "New List..."
+#~ msgstr "Rhestr Newydd..."
+
+#~ msgid "Rename List..."
+#~ msgstr "Ailenwi Rhestr..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "Gwaredu Cyswllt"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Rhowch enw:"
+
+#~ msgid "The name already exists"
+#~ msgstr "Mae'r enw mewn bod yn barod"
+
+#, fuzzy
+#~ msgid "Rename Distribution List"
+#~ msgstr "Rhestr Ddosbarthu Newydd"
+
+#~ msgid "The name already exists."
+#~ msgstr "Mae'r enw mewn bod yn barod."
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>Dileu rhestr ddosbarthu<b>%1</b>?</qt>"
+
+#~ msgid "Select Email Address"
+#~ msgstr "Dewiswch Gyfeiriad Ebost"
+
+#~ msgid "Email Addresses"
+#~ msgstr "Cyfeiriadau Ebost"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "Dangos y Bar Estyniadau"
+
+#~ msgid "Encoding"
+#~ msgstr "Amgodiad"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "&Chwilio am Gyfeiriad yn y Cyfeiriadur LDAP..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "Bar Offer Cysylltiadau"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "Nôdau tudalen y llyfr cyfeiriadau"
+
+#~ msgid "Check the categories whose members you want to export."
+#~ msgstr "Gwiriwch y categorïau yr ydych am allforio eu haelodau."
+
+#, fuzzy
+#~ msgid "Unable to load '%1'."
+#~ msgstr "Methu Cadw"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.%2.</qt>"
+#~ msgstr "<qt>Methu agor ffeil<b>%1</b>.%2.</qt>"

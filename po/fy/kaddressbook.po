@@ -1,0 +1,5327 @@
+# translation of kaddressbook.po to Frysk
+# Niels Reedijk <n.reedijk@planet.nl>, 2000.
+# Rinse de Vries <rinse@kde.nl>, 2003, 2004.
+# Dirk Scheffer <d.scheffer@home.nl>, 2003.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2003, 2004.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2004, 2005, 2006.
+# Tom Albers <toma@omat.nl>, 2004.
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2007.
+# KTranslator Generated File
+# Nederlandse vertaling van abbrowser
+# Copyright (C) 2000-2002 KDE e.v.
+# Rinse de Vries <risne@kde.nl> 2000-2002
+# Proefgelezen door Chris Hooijer <cr.hooijer@hccnet.nl> op 24-02-2002
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2007-04-17 00:46+0200\n"
+"Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
+"Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
+"Language: fy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Douwe"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr " "
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Adresboek"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contains"
+msgid "Contact"
+msgstr "Befettet"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "E-mail"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organisaasje"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, fuzzy, kde-format
+#| msgid "Birthdate:"
+msgid "Birthday"
+msgstr "Bertedatum:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "Notysjes:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "Titel"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "E-mail"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, fuzzy, kde-format
+#| msgid "Blog feed:"
+msgid "Blog Feed"
+msgstr "Blogfeed:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "&Nije kontaktpersoan..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Der wurdt in finster iepene wêryn't jo de fluchtoetsen foar dizze tapassing "
+"ynstelle kinne."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "&Nije kontaktpersoan..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Der wurdt in finster iepene wêryn't jo de fluchtoetsen foar dizze tapassing "
+"ynstelle kinne."
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "It KDE Adresboek"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Underhâlder fan no"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr ""
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Underhâlder fan no"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr ""
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Oarspronklike auteur"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Lêst aktive filter brûke"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Lêst aktive filter brûke"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "Gjin"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Tafoegje..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "E-mail:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "Telefoan"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Text"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Tekst"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+"Kopiearje de no selektearre kontaktpersoanen yn vCard-formaat nei it "
+"klamboerd."
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgctxt "<nickname> on <server>"
+#| msgid "%1 on %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 op %2"
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Net definiearre"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Jubileum"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Foarkar brûke"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Foarkar brûke"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Foarkar brûke"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Foarkar brûke"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Berop"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Kantoar"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Myanmar"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Namme fan de assistint"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Se&lektearre kontaktpersoanen"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "&Alle kontaktpersoanen"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "%1 address book"
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "%1-adresboek"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Selektearje it type fan it nije adresboek:"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Se&lektearre kontaktpersoanen"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "&Alle kontaktpersoanen"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "%1 address book"
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "%1-adresboek"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Se&lektearre kontaktpersoanen"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgid "Fetch Contacts"
+msgstr "Se&lektearre kontaktpersoanen"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Private fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Saaklike fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Oare fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Koade-kaaien"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Ofbylding"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Triem om te ymportearjen:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Private fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Saaklike fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Oare fjilden"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Koade-kaaien"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Ofbylding"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Eksportearje nei ien triem"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Adresboek"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Kategoryën ynstelle foar alle selektearre kontaktpersoanen."
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Kontaktpersoanen ymportearje"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Kontaktpersoanen ymportearje"
+msgstr[1] "Kontaktpersoanen ymportearje"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "Opjûne vCard ymportearje"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "KDE 2-adresboek ymportearje..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgid "&File"
+msgstr "Filter:"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "Nij..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, fuzzy, kde-format
+#| msgid "&Edit..."
+msgid "&Edit"
+msgstr "B&ewurkje..."
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, fuzzy, kde-format
+#| msgid "Add View"
+msgid "&View"
+msgstr "Yngong tafoegje"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Selection"
+msgid "&Action"
+msgstr "Seleksje"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, fuzzy, kde-format
+#| msgid "Tools"
+msgid "&Tools"
+msgstr "Helpmiddels"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, fuzzy, kde-format
+#| msgid "Font Settings"
+msgid "&Settings"
+msgstr "Ynstellings foar lettertype"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Eksportearje"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, fuzzy, kde-format
+#| msgid "Contact Toolbar"
+msgid "Main Toolbar"
+msgstr "Kontakten-wurkbalke"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+#| msgid "&Import"
+msgid "Import"
+msgstr "&Ymportearje"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Eksportearje"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Sykje:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Kategoryën ynstelle foar alle selektearre kontaktpersoanen."
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "Rekursive sykaksje"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "Kategory"
+
+#: src/mainwidget.cpp:656
+#, fuzzy, kde-format
+#| msgid "Unselect All"
+msgid "Select All"
+msgstr "Alles deselektearje"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "Selektearret alle sichtbere kontaktpersoanen yn de besteande werjefte."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "Selektearje it type fan it nije adresboek:"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Kontaktpersoan bewurkje"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Der wurdt in finster iepene wêryn't jo de fluchtoetsen foar dizze tapassing "
+"ynstelle kinne."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+# jump bar=?
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "Ferbergje Fluchkieslist."
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Adresboekfilter bewurkje"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Folsleine namme"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "Efternammen:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "Foarnamme:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Adres thús"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "Business Address"
+msgstr "Saaklike fjilden"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+#| msgid "Edit Phone Number"
+msgid "Phone Numbers"
+msgstr "Telefoannûmer wizigje"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "Foarkaradres"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "All Fields"
+msgid "All EMails"
+msgstr "Alle fjilden"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Bedriuw"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "Lettertypen en kleuren ynstelle"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Utprintsje"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Klear"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "Printstyl kieze"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, fuzzy, kde-format
+#| msgid "Appearance Page"
+msgid "Appearance"
+msgstr "Uterlik side"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Fjilden"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Adres thús"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "with business address"
+msgstr "Saaklike fjilden"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "Kontaktpersoan bewurkje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+#| msgid "Birthdate:"
+msgid "with birthday"
+msgstr "Bertedatum:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "E-mailadres bewurkje"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "Eftergrûnkleur"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Eftergrûnkleur foar kopteksten:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "Feroarjende eftergrûnen"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "Organisaasje"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "E-mailadres:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "E-mailadressen:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefoannûmer:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Telefoannûmers:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Webstee:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Adres thús"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Ynternasjonaal adres"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Postadres"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Perseeladres"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Adres wurk"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Foarkar-adres"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "Notysjes:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Detaillearre útprintstyl - uterlik"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "Lettertypen en kleuren ynstelle"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Detaillearre styl"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Uterlik side"
+
+# Streekje dertusken foar de lêsberheid
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Kontakt-kopteksten"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Eftergrûnkleur foar kopteksten:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Eftergrûnkleur foar kopteksten:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Tekstkleur foar kopteksten:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Tekstkleur foar kopteksten:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Mike syn printstyl"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Hokker kontaktpersoanen wolle jo útprintsje?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Kontaktpersoanen kieze om út te printsjen"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Printstyl kieze"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Avensearjen fan it printsjen"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Printsjen: avensaasje"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Avensaasje"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+#| msgid "Edit Phone Number"
+msgid "Print contact phone numbers"
+msgstr "Telefoannûmer wizigje"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, fuzzy, kde-format
+#| msgid "Edit Phone Number"
+msgid "Phone numbers"
+msgstr "Telefoannûmer wizigje"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "Postadres"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, fuzzy, kde-format
+#| msgid "Email addresses:"
+msgid "Email addresses"
+msgstr "E-mailadressen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+#| msgid "Print Addresses"
+msgid "Print contact street addresses"
+msgstr "Adressen útprintsje"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "Postadres"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact organizations"
+msgstr "Kontaktpersoan bewurkje"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "Kontaktpersoan bewurkje"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "Kontaktpersoan bewurkje"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "Notysjes:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, fuzzy, kde-format
+#| msgid "Detailed Print Style - Appearance"
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Detaillearre útprintstyl - uterlik"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "Lettertypen en kleuren ynstelle"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Oprinnend"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Ofrinnend"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Gjin foarbyld beskikber)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Printstyl kieze"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Hoe sil de print der út sjen?\n"
+"KAddressBook hat ferskate printstilen, ûntwurpen foar ferskate doeleinen.\n"
+"Kies hjirûnder de styl dy't oan jo winsken foldocht."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Sortearje "
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Kritearium:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select incremental search field"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Sykfjild selektearje"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Folchoarder:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Printstyl"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Selektearje it type toets:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Se&lektearre kontaktpersoanen"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Ymportearje"
+
+#~ msgid "Import vCard..."
+#~ msgstr "vCard ymportearje..."
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "CSV-list ymportearje..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "LDIF Adresbook ymportearje..."
+
+#, fuzzy
+#~| msgid "Import From Mobile Phone..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Ymportearje fan mobile telefoan..."
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "Alles ymportearje..."
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "%1-adresboek"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "vCard 3.0 eksportearje..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "vCard 3.0 eksportearje..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "vCard 3.0 eksportearje..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "vCard 3.0 eksportearje..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "vCard 2.1 eksportearje..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "vCard 2.1 eksportearje..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "CSV-list eksportearje..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "LDIF Addressbook eksportearje..."
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Eksportearje nei ien triem"
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export GMX file..."
+#~ msgstr "LDIF Addressbook eksportearje..."
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "%1-adresboek"
+
+#, fuzzy
+#~| msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>e triem <b>%1</b> koe net iepene wurde.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>e triem <b>%1</b> koe net iepene wurde.</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV-ymportdialooch"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Kontaktpersoanen ymportearje"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Triem om te ymportearjen:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "vCard om te ymportearjen selektearje"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Begrinzer"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Komma"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Selektearje it fjild dat jo wiskje wolle:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Puntkomma"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Selektearje it fjild dat jo wiskje wolle:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Spaasje"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Oar"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Tekstoanhelling:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Selektearje it type toets:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Datumopmak:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<ul> <li>y: jaar met 2 cijfers</li> <li>Y: jaar met 4 cijfers</li> <li>m: "
+#~ "maand met 1 of 2 cijfers</li> <li>M: maand met 2 cijfers</li> <li>d: dag "
+#~ "met 1 of 2 cijfers</li> <li>D: dag met 2 cijfers</li> </ul>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<ul> <li>y: jaar met 2 cijfers</li> <li>Y: jaar met 4 cijfers</li> <li>m: "
+#~ "maand met 1 of 2 cijfers</li> <li>M: maand met 2 cijfers</li> <li>d: dag "
+#~ "met 1 of 2 cijfers</li> <li>D: dag met 2 cijfers</li> </ul>"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Tekstoanhelling:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Selektearje it type toets:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Sjabloan tapasse..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Sjabloan opslaan..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Lokaal (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latyn1"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Wiis teminsten ien kolom ta."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(Gjin foarbyld beskikber)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(Gjin foarbyld beskikber)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Sjabloannamme"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Fier in namme yn foar it sjabloan:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "De ynfier-triem kin net iepene wurde."
+
+#, fuzzy
+#~| msgid "Do you really want to delete this contact?"
+#~| msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "Wolle jo dizze kontaktpersoan werklik wiskje?"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Sjabloanseleksje"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Selektearje in sjabloan dat oerienkomt mei de CSV-triem:"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "%1-adresboek"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>De triem <b>%1</b> koe net iepene wurde.</qt>"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1-adresboek"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Jo hawwe in list mei kontaktpersoanen selektearre. Wolle jo se "
+#~ "eksportearje nei ferskate triemmen?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Eksportearje nei ien triem"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Eksportearje nei ferskate triemmen"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "vCard om te ymportearjen selektearje"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Ymportearjen fan vCard mislearre"
+
+#, fuzzy
+#~| msgid "<qt>Unable to access vCard: %1</qt>"
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>Gjin tagong ta vCard: %1</qt>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr ""
+#~ "Der binne gjin kontaktpersoanen ymportearre omdat der fouten yn de vCards "
+#~ "sieten."
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "Op de vCard steane gjin kontaktpersoanen."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "vCard ymportearje"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact in your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Wolle jo dizze kontaktpersoan yn jo adresboek sette?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Alles ymportearje..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Hokker kontaktpersoanen wolle jo eksportearje?"
+
+#, fuzzy
+#~| msgid "Select a filter to decide which contacts to export."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr ""
+#~ "Selektearje in filter om te bepalen hokker kontaktpersoanen eksportearre "
+#~ "wurde sille."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "E-mailadres:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Sjabloan opslaan..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Sjabloan opslaan..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Protocol"
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Protokol"
+
+#, fuzzy
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Sykje"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "Stjoer in e-mail nei alle selektearre kontaktpersoanen."
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Send an email..."
+#~ msgstr "E-mail wizigje..."
+
+#, fuzzy
+#~| msgid "Select a filter to decide which contacts to export."
+#~ msgid "You have not selected any contacts."
+#~ msgstr ""
+#~ "Selektearje in filter om te bepalen hokker kontaktpersoanen eksportearre "
+#~ "wurde sille."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Stjoer in e-mail nei alle selektearre kontaktpersoanen."
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send vCards..."
+#~ msgstr "Nei &kontaktpersoan ferstjoere..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "Kontaktpersoanen &gearfoegje"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "Gearfoegje"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "Gearfoegje"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Wiis teminsten ien kolom ta."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "Klant"
+
+#, fuzzy
+#~| msgid "Mobile Phone information:"
+#~ msgid "Missing Selected Information"
+#~ msgstr "Ynformaasje mobile telefoan:"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Net definiearre"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>When trying to read the vCard, there was an error opening the file "
+#~| "'%1': %2</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr "<qt>Koe de triem '%1' net lêze by it lêzen fan de vCard: %2</qt>"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "Kontaktpersoanen &gearfoegje"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Kontaktpersoanen ymportearje"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "Kontaktpersoanen &gearfoegje"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "vCard-fjilden selektearje"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Se&lektearre kontaktpersoanen"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Seleksje tafoege"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "Kontaktpersoan fêstspjeldzje"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Printstyl kieze"
+
+#~ msgid "Department"
+#~ msgstr "Ofdieling"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Namme fa de manager"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Namme fan de assistint:"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "Namme fan de partner"
+
+#~ msgid "IM Address"
+#~ msgstr "IM-adres"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Types"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this contact?"
+#~| msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Wolle jo dizze kontaktpersoan werklik wiskje?"
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr ""
+#~ "Selektearje de fjilden dy't eksportearre wurde sille nei it vCard-formaat."
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "Adresboeken"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Set de detailspagina oan of út."
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "Adresboekfilter bewurkje"
+
+#, fuzzy
+#~| msgid "New Contact"
+#~| msgid_plural "New %1 Contacts"
+#~ msgid "Show Contacts View"
+#~ msgstr "Nije kontaktpersoan"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Set de detailspagina oan of út."
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "Namme fan kontaktpersoan bewurkje"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Toan details"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Set de detailspagina oan of út."
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "Details ferbergje"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Adresboek tafoegje"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Adresboekfilter bewurkje"
+#~ msgstr[1] "Adresboekfilter bewurkje"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Selektearje it type fan it nije adresboek:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Adresboekfilter bewurkje"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Selektearje it type fan it nije adresboek:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Adresboekfilter bewurkje"
+#~ msgstr[1] "Adresboekfilter bewurkje"
+
+#, fuzzy
+#~| msgid "Cut Contact"
+#~| msgid_plural "Cut %1 Contacts"
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Kontaktpersoan knippe"
+#~ msgstr[1] "%1 kontaktpersoanen knippe"
+
+#, fuzzy
+#~| msgid "Delete Contact"
+#~| msgid_plural "Delete %1 Contacts"
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Kontaktpersoan wiskje"
+#~ msgstr[1] "%1 kontaktpersoanen wiskje"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Selektearje it type fan it nije adresboek:"
+
+#, fuzzy
+#~| msgid "Cut Contact"
+#~| msgid_plural "Cut %1 Contacts"
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Kontaktpersoan knippe"
+#~ msgstr[1] "%1 kontaktpersoanen knippe"
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "Kontaktpersoan bew&urkje..."
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Werjefte wiskje"
+#~ msgstr[1] "Werjefte wiskje"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "Bewurkje..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Adresboek tafoegje"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Adresboek tafoegje"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Adresboek tafoegje"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>Wolle jo werklik it adresboek <b>%1</b> wiskje?</qt>"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid ""
+#~| "Create a new contact<p>You will be presented with a dialog where you can "
+#~| "add all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Meitsje in nije kontaktpersoan oan<p>Der wurdt in finster iepene wêr't jo "
+#~ "alle gegevens fan in persoan ynfiere kinne, lykas adressen en "
+#~ "telefoannûmers."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Nij..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Kontaktpersoanfilters bewurkje <p>Der wurdt in finster iepene wêryn't jo "
+#~ "filters tafoegje kinne, bewurkje of wiskje."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit a contact<p>You will be presented with a dialog where you can "
+#~| "change all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Bewurket in kontaktpersoan <p> Der wurdt in finster iepene dêr't jo alle "
+#~ "gegevens fan in persoan wizigje kinne, lykas adressen en telefoannûmers."
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "Adresboek tafoegje"
+
+#, fuzzy
+#~| msgid ""
+#~| "Store a contact in a different Addressbook<p>You will be presented with "
+#~| "a dialog where you can select a new storage place for this contact."
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Set in kontaktpersoan yn in oar adresboek. <p>Jo krije in dialoochfinster "
+#~ "te sjen wêr't jo it nije plak bepale kinne foar dizze kontaktpersoan."
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "Kontaktpersoan tafoegje"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefoan thús"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefoan wurk"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobile telefoan"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faks"
+
+#~ msgid "Pager"
+#~ msgstr "Semafoan"
+
+#~ msgid "Street"
+#~ msgstr "Strjitte"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Steat"
+
+#~ msgid "Country"
+#~ msgstr "Lân"
+
+#~ msgid "City"
+#~ msgstr "Stêd"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postkoade"
+
+#~ msgid "Description"
+#~ msgstr "Beskriuwing"
+
+#~ msgid "User ID"
+#~ msgstr "Brûkers-id"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Steat"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Kontaktpersoanen ymportearje?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Sykje nei adressen yn LDAP-triemtafel"
+
+#~ msgid "Search for:"
+#~ msgstr "Sykje nei:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "yn"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefoan thús"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefoan wurk"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursive sykaksje"
+
+#~ msgid "Contains"
+#~ msgstr "Befettet"
+
+#~ msgid "Starts With"
+#~ msgstr "Begjint mei"
+
+#~ msgid "Unselect All"
+#~ msgstr "Alles deselektearje"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Adres&boek ynstelle..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Stjoer in e-mail nei alle selektearre kontaktpersoanen."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Adres&boek ynstelle..."
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "Kontaktpersoan bewurkje"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Tafoegje..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "B&ewurkje..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "List wiskje"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2005, it KDE PIM Team"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Oanpaste fjilden"
+
+# editor wol/net oersette yn bewurker?
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Toant de kontaktenbewurker mei it opjûne e-mailadres"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Toant de kontaktenbewurker mei it opopjûne UID"
+
+# editor oersette yn bewurker?
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Start op yn de modus \"allinnich editor\""
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Iepenet de editor foar de nije kontaktpersoan"
+
+#~ msgid "Work on given file"
+#~ msgstr "Opjûne triem brûke"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "Adressen b&ewurkje..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Adres bewurkje"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Label bewurkje..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Dit is it winske adres"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "&Remove"
+#~ msgid "Remove"
+#~ msgstr "Wi&skje"
+
+#~ msgid "Change Type..."
+#~ msgstr "Type wizigje..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Adrestype bewurkje"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Adrestypes"
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Kontaktpersoan '%1' bewurkje"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Kontaktenbewurker"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:tab General information about a contact"
+#~ msgid "General"
+#~ msgstr "Algemien"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's name:"
+#~ msgstr "Namme fan partner:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "&Details"
+
+#~ msgid "Misc"
+#~ msgstr "Oar"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Jou in jildige datum op"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Jo moatte in jildige bertedatum ynfolje."
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "Jo moatte in jildige jubileumdatum ynfolje."
+
+#~ msgid "Add View"
+#~ msgstr "Yngong tafoegje"
+
+#~ msgid "View name:"
+#~ msgstr "Skermnamme:"
+
+#~ msgid "View Type"
+#~ msgstr "Type yngong"
+
+#~ msgid "Add Field"
+#~ msgstr "Fjild tafoegje"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of a custom field"
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#~ msgid "Type:"
+#~ msgstr "Type:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Is beskikber foar alle kontakten"
+
+# Yn it wurdboek stiet numeryk Nûmeryk liket my dúdliker
+#~ msgid "Numeric Value"
+#~ msgstr "Nûmerike wearde"
+
+# Boleaansk stean litten
+#~ msgid "Boolean"
+#~ msgstr "Booleaansk"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Time"
+#~ msgstr "Tiid"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum en tiid"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr ""
+#~ "Der bestiet al in fjild mei deselde namme, graach in oare namme kieze"
+
+#~ msgid "Remove Field"
+#~ msgstr "Fjild wiskje"
+
+#~ msgid "Add Field..."
+#~ msgstr "Fjild tafoegje..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Fjild wiskje..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "Distribúsjelist Editor"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr ""
+#~ "Der bestiet al in fjild mei deselde namme, graach in oare namme kieze"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Enter Name"
+#~ msgstr "Namme fa de manager"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Distribúsjelist omneame"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "Der bestiet al in fjild mei deselde namme, graach in oare namme kieze"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "E-mailadressen bewurkje..."
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "E-mailadressen bewurkje"
+
+#~ msgid "Set Standard"
+#~ msgstr "Standaard ynstelle"
+
+#~ msgid "Add Email"
+#~ msgstr "E-mailadres tafoegje"
+
+#~ msgid "New Email:"
+#~ msgstr "Nij e-mailadres:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>Wolle jo werklik it e-mailadres <b>%1</b> wiskje?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Wiskjen befêstigje"
+
+#, fuzzy
+#~| msgid "&Stop Delete"
+#~ msgid "&Delete"
+#~ msgstr "Wiskje &stopje"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr ""
+#~ "Allinnich kontaktpersoanen toane dy't oerienkomme  mei de selektearre "
+#~ "kategoryën"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Alle kontaktpersoanen toane behalve kontaktpersoanen dy't oerienkomme mei "
+#~ "de selektearre kategoryën"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Adresboekfilters bewurkje"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "&Remove"
+#~ msgid "&Remove"
+#~ msgstr "Wi&skje"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "Lokaasje fan Frij/beset-ynformaasje:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Geografyske gegevens brûke"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Breedtegraad:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Lingtegraad:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Geografyske gegevens bewurkje..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Ynfier fan geografyske gegevens"
+
+# Wat moatte wy oan mei dit wurd: Seksagemal of stean litte?
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Seksagesimaal"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Breedtegraad:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Noard"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Súd"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Lingtegraad:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "East"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "West"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Net definiearre"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "De ôfbylding fan dizze kontaktpersoan koe net fûn wurde."
+
+#~ msgid "Reset"
+#~ msgstr "Weromsette"
+
+#~ msgid "IM address:"
+#~ msgstr "IM-adres:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "IM-adressen bewurkje..."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Saneamde \"incrementele\" sykaksje<p>Troch hjir tekst yn te fieren starte "
+#~ "jo it sykjen nei in kontaktpersoan dy't it meast oerienkomt mei de "
+#~ "sykterm. It diel fan de kontaktpersoan dat brûkt wurde sil foar de "
+#~ "sykoerienkomst hinget ôf fan de fjildseleksje."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "&yn:"
+
+# ynkrementeel moat sawat oanwaaksjend of útwreidzjend of sa betsjutte??
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "Hjir kinne jo it fjild kieze dat brûkt wurde sil by it sykjen."
+
+#~ msgid "Visible Fields"
+#~ msgstr "Sichtbere fjilden"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+# Streekje dertusken foar de lêsberheid
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "Kontakt-kopteksten"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Mei-ûnderhâlder, oerdracht fan libkabc, csv ymport/eksport"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Opnij ûntwerpen fan GUI en freemwurk"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DOCP-interface"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP-sykopdracht"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this contact?"
+#~| msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "Wolle jo dizze kontaktpersoan werklik wiskje?"
+#~ msgstr[1] "Wolle jo dizze %1 kontaktpersoanen werklik wiskje?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Selektearje net mear as ien kontaktpersoan."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>Wolle jo %1 werklik brûke as jo nije persoanlike kontaktpersoan?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "Brûke"
+
+#~ msgid "Do Not Use"
+#~ msgstr "Net brûke"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Nije distribúsjelist"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Koe it adresboek <b>%1</b> net opslaan.</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Gjin tagong om it adresboek <b>%1</b> op te slaan.</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Jo KDE-ynstallaasje hat gjin stipe foar LDAP. Freegje jo systeembehearder "
+#~ "of distributeur om mear ynformaasje."
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Gjin LDAP IO-slave beskikber"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Adressen útprintsje"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "Add"
+#~ msgstr "Tafoegje..."
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "E-mail nei kontaktper&soan ferstjoere..."
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Printsje in spesjaal oantal kontaktpersoanen út."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Alle feroarings yn it adresboek opslaan."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Nij..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "Nije distribúsjelist"
+
+# Nuver boadskip...
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Stjoer in e-mail mei de selektearre kontaktpersoan as taheaksel."
+
+#~ msgid "Chat &With..."
+#~ msgstr "Chatte &mei..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "In petear mei de selektearre kontaktpersoan starte."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "Edit"
+#~ msgstr "B&ewurkje..."
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr ""
+#~ "Ferpleatst de no selektearre kontaktpersoanen yn vCard-formaat nei it "
+#~ "klamboerd."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Plak de sakrekt kopiearre of knipte kontaktpersoan."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "Kontaktpersoan wis&kje"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Alle selektearre kontaktpersoanen wiskje."
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "C&opy Contact To..."
+#~ msgstr "Kontaktpersoan &opslaan yn..."
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "&Move Contact To..."
+#~ msgstr "Kontaktpersoan &opslaan yn..."
+
+# Koartkieslist / Gaukieslist of Fluchkieslist?
+#~ msgid "Show Jump Bar"
+#~ msgstr "Fluchkieslist toane"
+
+# jump button = ...?
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Set de fluchkieslijst oan of út."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr "Der wurdt in finster iepene wêryn't jo KAddressBook ynstelle kinne."
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "LDAP-sykopdracht"
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Sykje nei kontaktpersoanen op in LDAP-server<p>Der wurdt in finster "
+#~ "iepene wêryn't jo sykje kinne nei kontaktpersoanen. Dizze kinne jo dêrnei "
+#~ "selektearje foar opname yn jo lokale adresboek."
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "As persoanlike kontaktgegevens ynstelle"
+
+#, fuzzy
+#~| msgid ""
+#~| "Set the personal contact<p>The data of this contact will be used in many "
+#~| "other KDE applications, so you do not have to input your personal data "
+#~| "several times."
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Persoanlike kontaktpersoan ynstelle<p>Hjirmei jouwe jo oan wa't jo sels "
+#~ "binne. De gegevens fan dizze kontaktpersoan sille brûkt wurde yn in soad "
+#~ "oare KDE-tapassings, sadat jo net hieltiten jo persoanlike gegevens opnij "
+#~ "yn hoege te foljen."
+
+#~ msgid "Select Categories..."
+#~ msgstr "Kategoryën selektearje..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "Sykbalke wiskje"
+
+# quick-search bar stiet net yn myn listen...
+#, fuzzy
+#~| msgid "Clear Search Bar<p>Clears the content of the quick search bar."
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr "Sykbalke wiskje<p>Wisket de ynhâld fan de fluchsykbalke."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Gearfoegje mei besteande kategoryën?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "Net gearfoegje"
+
+#, fuzzy
+#~| msgid "%1 contact matches"
+#~| msgid_plural "%1 contacts matching"
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "1 kontaktpersoan kaam oerien"
+#~ msgstr[1] "%1 kontaktpersoanen kamen oerien"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "Nije distribúsjelist"
+
+#~ msgid "Keys:"
+#~ msgstr "Toetsen:"
+
+#~ msgid "Export..."
+#~ msgstr "Eksportearje..."
+
+#~ msgid "Key Type"
+#~ msgstr "Toetstype"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Wolle jo werklik de toets <b>%1</b> wiskje?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Nije distribúsjelist"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Selektearje foardat jo begjinne te sykjen earst in LDAP-server.\n"
+#~ "Jo kinne dit dwaan troch de menu-opsje \"Ynstellings->KAddressBook "
+#~ "ynstelle\"."
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Wolle jo in kontaktpersoan yn jo adresboek ymportearje?"
+#~ msgstr[1] "Wolle jo %1 kontaktpersoanen yn jo adresboek ymportearje?"
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Titel:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "De list mei tefoaren ynstelde foarheaksels kin yn dit dialoochfinster "
+#~ "útwreide wurde."
+
+#~ msgid "Additional names:"
+#~ msgstr "Bertenammen:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Titel efter de namme:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "De list mei tefoaren ynstelde efterheaksels kin yn dit dialoochfinster "
+#~ "útwreide wurde."
+
+#~ msgid "Formatted name:"
+#~ msgstr "Werjeftenamme:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Namme automatysk ûntlede"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Mej."
+
+#~ msgid "Mr."
+#~ msgstr "Dhr."
+
+#~ msgid "Mrs."
+#~ msgstr "Frou"
+
+#~ msgid "Ms."
+#~ msgstr "Juffer"
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Jr."
+
+#~ msgid "Sr."
+#~ msgstr "Sr."
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "@item:inlistbox Custom name format"
+#~ msgid "Custom"
+#~ msgstr "Oanpast"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Simple Name"
+#~ msgstr "Ienfâldige namme"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Folsleine namme"
+
+#, fuzzy
+#~| msgid "Reverse Name with Comma"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Omkearde namme mei komma"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Reverse Name"
+#~ msgstr "Omkearde namme"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Organisaasje"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Oar..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Telefoannûmer wizigje"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Dit is it foarkar telefoannûmer"
+
+#~ msgid "Department:"
+#~ msgstr "Ofdieling:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Namme fan de manager:"
+
+#~ msgid "Office:"
+#~ msgstr "Kantoar:"
+
+#~ msgid "Profession:"
+#~ msgstr "Berop:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Job title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Bynamme:"
+
+#, fuzzy
+#~| msgid "Birthdate:"
+#~ msgid "Birthday:"
+#~ msgstr "Bertedatum:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partners name:"
+#~ msgstr "Namme fan partner:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Jubileum:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Namme fan kontaktpersoan bewurkje"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Namme bewurkje..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "&Remove"
+#~ msgid "&Role:"
+#~ msgstr "Wi&skje"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "Organisaasje"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Home&page:"
+#~ msgstr "Webstee:"
+
+#~ msgid "Tools"
+#~ msgstr "Helpmiddels"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Adres bewurkje"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "&Protokol:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "&Adres:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "&Netwurk:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "IM-adressen"
+
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr ""
+#~ "It IM-adres dat as standert ynsteld is wurdt toand yn it haadfinster."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid ""
+#~| "<qt>Only one IM Address can be set as the standard IM Address.<br>The "
+#~| "standard IM Address is shown in the main editor window, and other "
+#~| "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt>Jo kinne mar ien adres as standert IM-adres ynstelle. <br>It standert "
+#~ "IM-adres wurdt toand yn it haadfinster. Dêrnjonken is dit in yndikaasje "
+#~ "foar eksterne programma's om te bepalen hokker IM-adres toand wurde sil.</"
+#~ "qt>"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "Standert yn&stelle"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "Wi&skje"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "B&ewurkje..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "&Tafoegje"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid ""
+#~| "<em>Note:</em> Please read the help page before adding or editing "
+#~| "Instant Messenging Addresses here."
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em>Opmerking:</em> Lês earst de dokumentaasje foardat jo instant-"
+#~ "messenger-adressen tafoegje of bewurkje."
+
+#~ msgid "Font Settings"
+#~ msgstr "Ynstellings foar lettertype"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Standertlettertypen fan KDE brûke"
+
+#~ msgid "Details font:"
+#~ msgstr "Lettertype foar details:"
+
+#~ msgid "Size:"
+#~ msgstr "Grutte:"
+
+#~ msgid "Body font:"
+#~ msgstr "Lettertype foar fjildynhâld:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Fêst lettertype:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Lettertype foar kontakten-koptekst:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Kopteksten:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Kleure kontakt-kopteksten brûke"
+
+#, fuzzy
+#~| msgid "Show &empty fields"
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "L&ege fjilden toane"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Automatysk namme ûntlede foar nije adressen"
+
+#~ msgid "Fax"
+#~ msgstr "Faks"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr ""
+#~ "It skript dat brûkt wurdt om in GSM SMS-berjocht nei in mobile telefoan "
+#~ "te stjoeren"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Inkele mûsknop fan KDE hanthavenje"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Play"
+#~ msgstr "Ofspylje"
+
+#~ msgid "Store as URL"
+#~ msgstr "Allinnich keppeling opslaan"
+
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr ""
+#~ "Dit fjild slaat in lûdstriem op sadat jo hearre kinne hoe't de namme "
+#~ "útsprutsen wurdt."
+
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr ""
+#~ "Allinnich it URL-adres nei de lûdstriem opslaan, net it hiele objekt sels."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Nije distribúsjelist"
+#~ msgstr[1] "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "Paste Contact"
+#~| msgid_plural "Paste %1 Contacts"
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Kontaktpersoan plakke"
+#~ msgstr[1] "%1 kontaktpersoanen plakke"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Te toanen fjilden selektearje"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "Se&lektearre fjilden:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "It standertfilter wurdt hieltiten ynskeakele at de byhearrende werjefte "
+#~ "toand wurdt. Mei dizze funksje kinne jo de werjeften sa ynstelle dat se "
+#~ "allinnich de ynformaasje sjen lit dy't troch it filter hinne giet. At de "
+#~ "werjefte aktyf is kinne jo it filter op elk winske momint wizigje."
+
+#~ msgid "No default filter"
+#~ msgstr "Gjin standertfilter"
+
+#~ msgid "Use filter:"
+#~ msgstr "Filter brûke:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Standertfilter"
+
+#~ msgid "Modify View: "
+#~ msgstr "Yngong wizigje: "
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Werjefte wiskje"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Wolle jo werklik de werjefte <b>\"%1\"</b> wiskje?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Wiskjen befêstigje"
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Wolle jo in kontaktpersoan yn jo adresboek ymportearje?"
+#~ msgstr[1] "Wolle jo %1 kontaktpersoanen yn jo adresboek ymportearje?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "Net ymportearje"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Unfiled"
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Net definearre"
+
+#~ msgid "Select View"
+#~ msgstr "Werjefte selektearje"
+
+#~ msgid "Modify View..."
+#~ msgstr "Werjefte wizigje.."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Druk op dizze knop om in finster te iepenjen wêryn't jo de werjefte fan "
+#~ "it adresboek wizigje kinne. Hjir kinne jo fjilden dy't jo werjaan wolle "
+#~ "of ferbergje litte resp. tafoegje of wiskje."
+
+#~ msgid "Add View..."
+#~ msgstr "Werjefte tafoegje..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Jo kinne in nije werjefte tafoegje troch ien fan de dialogen te kiezen "
+#~ "dy't ferskynt neidat jo op dizze knop drukt hawwe. Jou dizze werjefte in "
+#~ "namme, sadat jo him ûnderskiede kinne fan de oare werjeftes."
+
+#~ msgid "Delete View"
+#~ msgstr "Werjefte wiskje"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Druk op dizze knop om de besteande werjefte, dy't jo earder tafoege "
+#~ "hawwe, te wiskjen."
+
+#~ msgid "Refresh View"
+#~ msgstr "Werjefte fernije"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Druk op dizze knop om de werjefte te ferfarskjen"
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "&Filters bewurkje..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Kontaktpersoanfilters bewurkje <p>Der wurdt in finster iepene wêryn't jo "
+#~ "filters tafoegje kinne, bewurkje of wiskje."
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Gjin ymport plugin beskikber foar <b>%1</b>.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Gjin eksport plugin beskikber foar <b>%1</b>.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Kontaktpersoanen koenen net eksportearre wurde."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Kies de kontaktpersoanen dy't jo eksportearje wolle"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Oprinnend"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Ofrinnend"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "It hiele adresboek eksportearje"
+
+#, fuzzy
+#~| msgid "&Selected contact"
+#~| msgid_plural "&Selected contacts (%1 selected)"
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "Se&lektearre kontaktpersoan"
+#~ msgstr[1] "Se&lektearre kontaktpersoanen (%1 selektearre)"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Allinnich deselektearre kontaktpersoanen eksportearje.\n"
+#~ "Dizze opsje is net aktyf at der gjin kontaktpersoanen selektearre binne."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Kontaktpersoanen dy't oerienkomme mei it &filter"
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Exportearje allinnich kontaktpersoanen dy't oerienkomme mei it "
+#~ "selektearre filter.\n"
+#~ "Dizze opsje is útskeakele at jo gjinien filter opjûn hawwe."
+
+#~ msgid "Category &members"
+#~ msgstr "Kategory lede&n"
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Exportearje allinnich kontaktpersoanen dy't lid binne fan in kategory "
+#~ "dy't lofts selektearre is.\n"
+#~ "Dizze opsje is net aktyf at jo gjin kategoryën hawwe. "
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Selektearje de kategoryën dêr't de leden fan útprinte wurde moatte."
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgctxt "@item Contact category"
+#~ msgid "Business"
+#~ msgstr "Saaklik"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgctxt "@item Contact category"
+#~ msgid "Family"
+#~ msgstr "Famylje"
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Skoalle"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Freon"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "Gjin provider beskikber foar mapopfraach.\n"
+#~ "Jou der ien op yn it  ynstellingsfinster."
+
+#~ msgid "Crypto Settings"
+#~ msgstr "Ynstellings foar koade-omsetting"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "Tastiene protokollen"
+
+# De wurden sleutelje en kaai bite inoar hjir. Haw hjir koade en kaai brûkt
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "Foarkarkaai foar OpenPGP:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "Foarkarsertifikaat foar S/MIME-koade:"
+
+#~ msgid "Message Preference"
+#~ msgstr "Berjochtfoarkar"
+
+#~ msgid "Sign:"
+#~ msgstr "Undertekenje:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "yn koade omsette:"
+
+#, fuzzy
+#~| msgid "Edit Instant Messenging Address"
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Instant Messenging Adres bewurkje"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "Adres tafoegje"
+
+#, fuzzy
+#~| msgid "Do you really want to delete the selected address?"
+#~| msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgctxt "Instant messaging"
+#~ msgid "Do you really want to delete the selected address?"
+#~ msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgstr[0] "Wolle jo it selektearre adres werklik wiskje?"
+#~ msgstr[1] "Wolle jo de %1 selektearre adressen werklik wiskje?"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Distribúsjelist Editor"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Remove distribution list"
+#~ msgstr "Distribúsjelist omneame"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "Nije distribúsjelist"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "All Contacts"
+#~ msgstr "&Alle kontaktpersoanen"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Kin gjin adresboek fan it type <b>%1</b> oanmeitsje.</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1-adresboek"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "Adresboekfilters bewurkje"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Remove address book"
+#~ msgstr "%1-adresboek"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Marzjes en spaasjes ynstelle"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Besoargje by:)"
+
+#~ msgid "Preparing"
+#~ msgstr "Tariede"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Utprinte op %1 troch KAddressBook (http://www.kde.org)"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Kies hokker kontaktpersoanen jo útprintsje wolle"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Printsje it hiele adresboek út"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Printsje allinnich de selektearre kontaktpersoanen út.\n"
+#~ "Dizze opsje is net aktyf at der gjin kontaktpersoanen selektearre binne."
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Printsje allinnich kontaktpersoanen út dy 't oerienkomme mei it "
+#~ "selektearre filter.\n"
+#~ "Dizze opsje is is útskeakele at jo gjin filters opjûn hawwe."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Printsje allinnich kontaktpersoanen út dy't lid binne fan in kategory "
+#~ "dy't jo lofts selektearre hawwe.\n"
+#~ "Dizze opsje is net aktyf at jo gjin kategoryën hawwe."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr ""
+#~ "Selektearje in filter om te bepalen hokker kontaktpersoanen útprinte "
+#~ "wurde sille."
+
+#~ msgid "Look & Feel"
+#~ msgstr "Uterlik & gedrach"
+
+#~ msgid "Text Color"
+#~ msgstr "Tekstkleur"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Kop-, râne- en skiedingkleur"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Tekstkleur foar kop"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Kleur om op te fallen"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Tekstkleur foar opfallende tekst"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Algemien"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Skieding&stekens toane"
+
+#~ msgid "Separator &width:"
+#~ msgstr "Skiedingsteken&breedte:"
+
+#~ msgid "&Padding:"
+#~ msgstr "Ofst&ân:"
+
+#~ msgid "Cards"
+#~ msgstr "Kaarten"
+
+#~ msgid "&Margin:"
+#~ msgstr "&Marzje:"
+
+#~ msgid "Draw &borders"
+#~ msgstr "&Rânen tekenje"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "De itemmarzje is de ôfstân (yn piksels) tusken de itemrâne en de tekst. "
+#~ "It ferbreedzjen fan de marzje foeget romte yn tusken de fokusrjochthoeke "
+#~ "en de tekst."
+
+# twa kear ôfstân jout betizing
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "De wytrûmte bepaalt de ôfstân (yn pixels) tusken de items en de rest, "
+#~ "lykas de werjefte-rânen, oare items of kolomskiedings."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Stelt de breedte yn fan de kolomskiedings"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "Op&mak"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "Oanpaste kleuren brû&ke"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Kleuren"
+
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "At oanpaste kleuren brûkt wurde, dan kinne jo kieze út ûndersteande "
+#~ "kleuren foar de werjefte. Oars wurde de  besteande FDE-kleuren brûkt."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Dûbelklik of druk op de toets Enter om in kleur te kiezen foar de tekst "
+#~ "yn de werjefte."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "Oanpaste kleuren brû&ke"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Tekstlettertype:"
+
+#~ msgid "Choose..."
+#~ msgstr "Kieze..."
+
+#~ msgid "&Header font:"
+#~ msgstr "&Koplettertype:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "At oanpaste lettertypen brûkt wurde kinne jo hjirûnder bepale hokker "
+#~ "lettertypen jo brûke wolle. Oars wurdt it standertlettertype fan KDE "
+#~ "brûkt, fet foar de kop en normaal foar de gegevens."
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Fonts"
+#~ msgstr "Befettet"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "L&ege fjilden toane"
+
+#~ msgid "Show field &labels"
+#~ msgstr "Fjild&labels toane"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "Gedra&ch"
+
+#~ msgid "Row Separator"
+#~ msgstr "Rige-skiedingsteken"
+
+#~ msgid "Single line"
+#~ msgstr "Inkele line"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Eftergrûn-ôfbylding ynskeakelje:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Tekstballonnen foar kontakten ynskeakelje"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "Oanwêzigens op instant messenger toane"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "Kaart"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Rolodex-kaarten tsjutte kontaktpersoanen oan."
+
+#~ msgid "Icon"
+#~ msgstr "Byldkaike"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Byldkaikes tsjutte  kontaktpersoanen oan. Tige ienfâldige werjefte."
+
+#~ msgid "Table"
+#~ msgstr "Tabel"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "In list mei kontaktpersoanen yn in tabel. Elke sel fan de tabel hat in "
+#~ "fjild fan de kontaktpersoan."
+
+#~ msgid "Presence"
+#~ msgstr "Oanwêzigens"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Menu \"Blêdwizers eksportearje\"..."
+
+#~ msgid "AddressBook"
+#~ msgstr "Adresboek"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Begjin by rigel:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Dûbele begrinzers negeare"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[gok]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "De kontaktpersoanen binne mei súkses eksportearre."
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Eudora Addressbook ymportearje..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Eudora Light Addressbook (*.txt)"
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "LDIF Adresbook ymportearje..."
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Eksportearje nei mobile telefoan..."
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "Koe de Gnokii-bibleteek net inisjalisearje."
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Gnokii is noch net ynsteld."
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Gnokii joech 'Lock file error' werom.\n"
+#~ " Slút alle oare draaiende eksemplaren fan gnokii ôf, kontrolearje oft jo "
+#~ "skriuwrjochten hawwe foar de map /var/lock en besykje it fannijs."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Mobile Phone interface initialization failed.<br><br>The "
+#~| "returned error message was:<br><b>%1</b><br><br>You might try to run "
+#~| "\"gnokii --identify\" on the command line to check any cable/transport "
+#~| "issues and to verify if your gnokii configuration is correct.</center></"
+#~| "qt>"
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt> <center>Inisjalisaasje fan de interface foar mobile telefoans is "
+#~ "mislearre. <br> <br>De werom jûne wearde wie: <br><b>%1</b><br> <br>Jo "
+#~ "kinne besykje \"gnokii --identify\" út te fieren om de kabel/transmisje "
+#~ "te testen en om nei te gean oft jo gnokii-ynstellings goed binne.</"
+#~ "center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekend"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Fabrikant"
+
+#~ msgid "Phone model"
+#~ msgstr "Model"
+
+#~ msgid "Revision"
+#~ msgstr "Ferzje"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "Status telefoanboek"
+
+#, fuzzy
+#~| msgid "%1 out of %2 contacts used"
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "%1 fan de %2 kontakten wurde brûkt"
+#~ msgstr[1] "%1 fan de %2 kontakten wurde brûkt"
+
+#~ msgid "internal memory"
+#~ msgstr "Yntern ûnthâld"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM-kaartûnthâld"
+
+#~ msgid "unknown memory"
+#~ msgstr "ûnbekend ûnthâld"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Dwaande mei <b>%1</b> fan de <b>%2</b> kontaktpersoanen te "
+#~ "ymportearjen fan de mobile telefoan.<br><br>%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Dwaande mei <b>%1</b> fan de <b>%2</b> kontaktpersoanen te "
+#~ "ymportearjen fan de mobile telefoan.<br><br>%3</qt>"
+
+# compileren oerset yn kompilearjen. Dit moat Frysker kinne
+# ferfange troch oersette?
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Gnokii-interface is net beskikber.\n"
+#~ "Freegje jo distributeur om gnokii yn te sluten."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start importing the personal contacts.<br><br>Please "
+#~| "note that if your Mobile Phone is not properly connected the following "
+#~| "detection phase might take up to two minutes, during which KAddressbook "
+#~| "will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Ferbyn jo mobile telefoan mei jo kompjûter en druk op <b>Fierder</b> "
+#~ "om it ymportearjen fan jo persoanlike kontaktpersoanen te starten. <br> "
+#~ "<br>At jo mobile telefoan net goed ferbûn is kin de kommende deteksje "
+#~ "sa'n 2 minuten duorje. Yn dy tiid sil KAddressbook net goed reageare op "
+#~ "jo hannelingen.</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Ymportearjen mobile telefoan"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Establishing connection to the Mobile Phone.<br><br>Please "
+#~| "wait...</center></qt>"
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt> <center>Ferbining mei mobile telefoan wurdt opboud. <br><br>In "
+#~ "amerijke geduld graach</center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "Ymporteren &stopje"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start exporting the selected personal contacts."
+#~| "<br><br>Please note that if your Mobile Phone is not properly connected "
+#~| "the following detection phase might take up to two minutes, during which "
+#~| "KAddressbook will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Ferbyn jo mobile telefoan mei de kompjûter en druk op <b>Fierder</b> "
+#~ "om it eksportearjen fan de selektearre kontaktpersoanen te starten. <br> "
+#~ "<br>At jo mobile telefoan net goed ferbûn is kin de kommende deteksje "
+#~ "sa'n 2 minuten duorje. Yn dy tijd sil KAddressbook net reageare op jo "
+#~ "hannelingen.</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "Eksportearjen mobile telefoan"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~| "current mobile phonebook or should they <b>replace</b> all currently "
+#~| "existing phonebook entries ?<br><br>Please note, that in case you choose "
+#~| "to replace the phonebook entries, every contact in your phone will be "
+#~| "deleted and only the newly exported contacts will be available from "
+#~| "inside your phone.</qt>"
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt>Wolle jo dat de selektearre kontaktpersoanen <b>taheakke</b> wurde "
+#~ "oan it besteande telefoanboek of wolle jo alle besteande "
+#~ "telefoanboekyngongen <b>ferfange</b>? <br> <br>At jo kieze foar ferfange "
+#~ "sille alle besteande yngongen yn jo telefoanboek wiske wurde en sille "
+#~ "allinnich de eksportearre kontaktpersoanen beskikber wêze.</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Eksportearje nei mobile telefoan"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "Tafoegje &oan besteande telefoanboek"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "Besteande telefoanboek fe&rfange mei nije kontaktpersoanen"
+
+#~ msgid "&Stop Export"
+#~ msgstr "Eksportearje &stopje"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt><b>%1</b> fan de <b>%2</b> kontaktpersoanen wurden eksportearre nei "
+#~ "de mobile telefoan.<br><br>%3</qt>"
+#~ msgstr[1] ""
+#~ "<qt><b>%1</b> fan de <b>%2</b> kontaktpersoanen wurden eksportearre nei "
+#~ "de mobile telefoan.<br><br>%3</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>All selected contacts have been sucessfully copied to the "
+#~| "Mobile Phone.<br><br>Please wait until all remaining orphaned contacts "
+#~| "from the Mobile Phone have been deleted.</center></qt>"
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt> <center>Alle selektearre kontaktpersoanen waarden súksesfol nei de "
+#~ "mobile telefoan kopiearre. <br> <br>Wachtsje oant alle oerbleaune "
+#~ "kontaktpersoanen fan de mobile telefoan wiske binne.</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "Wiskje &stopje"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "Eksportearjen nei mobile telefoan is klear."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~| "Possible Reasons for this problem could be:<br><ul><li>The contacts "
+#~| "contain more information per entry than the phone can store.</"
+#~| "li><li>Your phone does not allow to store multiple addresses, emails, "
+#~| "homepages, ...</li><li>other storage size related problems.</li></ul>To "
+#~| "avoid those kind of problems in the future please reduce the amount of "
+#~| "different fields in the above contacts.</qt>"
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt>De kommende kontaktpersoanen koenen net eksportearre wurde nei de "
+#~ "mobile telefoan. Mooglike redenen kinne wêze: <br> <ul> <li>De "
+#~ "kontaktpersoanen befetsje mear ynformaasje as de telefoan opslaan kin.</"
+#~ "li> <li>Jo telefoan stiet net ta om meardere adressen, e-mails, "
+#~ "homepages, ensfh. op te slaan</li> <li>Oare problemen besibbe oan de "
+#~ "opslachgrutte.</li></ul> Om dit soarte problemen yn de takomst foar te "
+#~ "kommen moatte jo it tal ferskillende fjilden ferminderje yn de "
+#~ "boppesteande kontaktpersoanen.</qt>"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>It adresboek fan KDE 2 is net fûn <b>%1</b>.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Eardere ymportearre yngongen oerskriuwe?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "KDE 2-adresboek ymportearje"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Opera Addressbook ymportearje..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "MS Exchange Personal Addressbook (.PAB) ymportearje"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "%1 kin net iepene wurde"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr ""
+#~ "%1 hat gjin PAB-identiteit dy't by dit programma bekend is. De omsetting "
+#~ "is mislaarre."
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "MS Exchange Personal Address Book-triemmen (*.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Der is gjin MS Exchange persoanlik adresboek fûn (<b>%1</b>).</qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afganistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albaanje"
+
+#~ msgid "Algeria"
+#~ msgstr "Algerije"
+
+#~ msgid "American Samoa"
+#~ msgstr "Amerikaansk Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Angola"
+#~ msgstr "Angoala"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarktika"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua en Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentynje"
+
+#~ msgid "Armenia"
+#~ msgstr "Armeenje"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmore en Cartier Eilannen"
+
+#~ msgid "Australia"
+#~ msgstr "Austraalje"
+
+#~ msgid "Austria"
+#~ msgstr "Eastenryk"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbeidzjan"
+
+#~ msgid "Bahamas"
+#~ msgstr "de Bahama's"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrein"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Banglades"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Wyt-Ruslân"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgje"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benyn"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermuda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bhutan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivia"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnje en Herzegovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazylje"
+
+#~ msgid "Brunei"
+#~ msgstr "Brûnei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgarije"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Boerkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Boerûndy"
+
+#~ msgid "Cambodia"
+#~ msgstr "Kambodja"
+
+#~ msgid "Cameroon"
+#~ msgstr "Kameroen"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Kaapverdyske eilannen"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Kaaiman eilannen"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Sintraal-Afrikaanske Republyk"
+
+#~ msgid "Chad"
+#~ msgstr "Tsjaad"
+
+#~ msgid "Chile"
+#~ msgstr "Sily"
+
+#~ msgid "China"
+#~ msgstr "Sina"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolombia"
+
+#~ msgid "Comoros"
+#~ msgstr "Komoros"
+
+#~ msgid "Congo"
+#~ msgstr "Kongo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Kongo, Dem.Rep."
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Kroaasje"
+
+#~ msgid "Cuba"
+#~ msgstr "Kuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Syprus"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Tsjechje"
+
+#~ msgid "Denmark"
+#~ msgstr "Denemarken"
+
+#~ msgid "Djibouti"
+#~ msgstr "Dzjibûty"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominika"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominikaanske Republyk"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ekwador"
+
+#~ msgid "Egypt"
+#~ msgstr "Egypte"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Ekwatoriaal Guinee"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estlân"
+
+#~ msgid "England"
+#~ msgstr "Ingelân"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Etioopje"
+
+#~ msgid "European Union"
+#~ msgstr "Jeropeeske Uny"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Faro Eilannen"
+
+#~ msgid "Fiji"
+#~ msgstr "Fydzjy"
+
+#~ msgid "Finland"
+#~ msgstr "Finlân"
+
+#~ msgid "France"
+#~ msgstr "Frankryk"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Frânsk Polyneezje"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Geörgje"
+
+#~ msgid "Germany"
+#~ msgstr "Dútslân"
+
+#~ msgid "Ghana"
+#~ msgstr "Gana"
+
+#~ msgid "Greece"
+#~ msgstr "Grikelân"
+
+#~ msgid "Greenland"
+#~ msgstr "Grienlân"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Gûatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Guinee"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinee-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haïti"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Hungary"
+#~ msgstr "Hongarije"
+
+#~ msgid "Iceland"
+#~ msgstr "Iisland"
+
+#~ msgid "India"
+#~ msgstr "Yndia"
+
+#~ msgid "Indonesia"
+#~ msgstr "Yndoneezje"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Irak"
+
+#~ msgid "Ireland"
+#~ msgstr "Ierlân"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Itaalje"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Ivoarkust"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaika"
+
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordaanje"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazachstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenya"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribaty"
+
+#~ msgid "Korea, North"
+#~ msgstr "Korea, Noard"
+
+#~ msgid "Korea, South"
+#~ msgstr "Korea, Súd"
+
+#~ msgid "Kuwait"
+#~ msgstr "Koeweit"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kyrgyzje"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Letlân"
+
+#~ msgid "Lebanon"
+#~ msgstr "Libanon"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesoto"
+
+#~ msgid "Liberia"
+#~ msgstr "Libearia"
+
+#~ msgid "Libya"
+#~ msgstr "Lybje"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Lychtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Litouwen"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Lúksemboarch"
+
+#~ msgid "Macau"
+#~ msgstr "Makau"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagaskar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawy"
+
+#~ msgid "Malaysia"
+#~ msgstr "Maleisië"
+
+#~ msgid "Maldives"
+#~ msgstr "de Maldiven"
+
+#~ msgid "Mali"
+#~ msgstr "Maly"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "de Marshalleilannen"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinyk"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritaanje"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauritsius"
+
+#~ msgid "Mexico"
+#~ msgstr "Meksiko"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Mikroneezje"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldaavje"
+
+#~ msgid "Monaco"
+#~ msgstr "Monako"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongoalje"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Marokko"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambyk"
+
+#~ msgid "Namibia"
+#~ msgstr "Namybje"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Nederlân"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Nederlânske Antillen"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Nij Kaledoanje"
+
+#~ msgid "New Zealand"
+#~ msgstr "Nij-Seelân"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nikaragua"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigearia"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "Noard-Korea"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Noard-Ierlân"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Noardlike Marianen"
+
+#~ msgid "Norway"
+#~ msgstr "Noarwegen"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palestina"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua Nij Guinea"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "de Filipinen"
+
+#~ msgid "Poland"
+#~ msgstr "Poalen"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Katar"
+
+#~ msgid "Romania"
+#~ msgstr "Roemeenje"
+
+#~ msgid "Russia"
+#~ msgstr "Ruslân"
+
+#~ msgid "Rwanda"
+#~ msgstr "Rwanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "Sint Kitts en Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Sint Lusia"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Sint Finsint en de Grenadinen"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tomee en Prinsyp"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saûdy Araabje"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Servje en Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "de Seysjellen"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leöane"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapore"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slowakije"
+
+#~ msgid "Slovenia"
+#~ msgstr "Sloveenje"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Salomoneilannen"
+
+#~ msgid "Somalia"
+#~ msgstr "Somaalje"
+
+#~ msgid "South Africa"
+#~ msgstr "Súd-Afrika"
+
+#~ msgid "South Korea"
+#~ msgstr "Súd-Korea"
+
+#~ msgid "Spain"
+#~ msgstr "Spanje"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sry Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Soedan"
+
+#~ msgid "Suriname"
+#~ msgstr "Suriname"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swazilân"
+
+#~ msgid "Sweden"
+#~ msgstr "Sweden"
+
+#~ msgid "Switzerland"
+#~ msgstr "Switserlân"
+
+#~ msgid "Syria"
+#~ msgstr "Syrje"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tadzjikistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzania"
+
+#~ msgid "Thailand"
+#~ msgstr "Tailân"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad en Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tuneezje"
+
+#~ msgid "Turkey"
+#~ msgstr "Turkije"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turksk- en Kaikoseilannen"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda "
+
+#~ msgid "Ukraine"
+#~ msgstr "de Oekraïne"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Feriene Arabyske Emiraten"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Feriene Keninkryk"
+
+#~ msgid "United States"
+#~ msgstr "Feriene Steaten"
+
+#~ msgid "Uruguay"
+#~ msgstr "Urûguay"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Oezbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Fanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Fatikaanstêd"
+
+#~ msgid "Venezuela"
+#~ msgstr "Fenezuela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Fietnam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "West-Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Jemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Joegoslaavje"
+
+#~ msgid "Zaire"
+#~ msgstr "Saïre"
+
+#~ msgid "Zambia"
+#~ msgstr "Sambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Simbabwe"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Namme"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Address"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Address:"
+#~ msgstr "Adres:"
+
+#~ msgid "Addresses:"
+#~ msgstr "Adressen:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Nij..."
+
+#~ msgid "&General"
+#~ msgstr "Al&gemien"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "Der bestiet al in fjild mei deselde namme, graach in oare namme kieze"
+
+#~ msgid "Birthdate:"
+#~ msgstr "Bertedatum:"
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgid "Blog feed at '%1' does not contain an image."
+#~ msgstr "Op de vCard steane gjin kontaktpersoanen."
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "Distribúsjelist Editor"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "No"
+#~ msgstr "Gjin"
+
+#~ msgid "New List..."
+#~ msgstr "Nije list..."
+
+#~ msgid "Rename List..."
+#~ msgstr "List omneame..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "Kontaktpersoan wiskje"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Namme ynfiere:"
+
+#~ msgid "The name already exists"
+#~ msgstr "De namme bestiet al"
+
+#~ msgid "Rename Distribution List"
+#~ msgstr "Distribúsjelist omneame"
+
+#~ msgid "The name already exists."
+#~ msgstr "De namme bestiet al."
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>Distribúsjelist <b>%1</b> wiskje?</qt>"
+
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "Telling: %1 kontakt"
+#~ msgstr[1] "Telling: %1 kontaktpersoanen"
+
+#~ msgid "Select Email Address"
+#~ msgstr "E-mailadressen selektearje"
+
+#~ msgid "Email Addresses"
+#~ msgstr "E-mailadressen"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "Pluginbalke toane"
+
+#~ msgid "Using codec '%1'"
+#~ msgstr "Brûk codec '%1'"
+
+#~ msgid "Encoding"
+#~ msgstr "Tekenset"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "Adressen opsykje yn &LDAP-directory..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "Kontakten-wurkbalke"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "Adresboek Blêdwizers"
+
+#~ msgid "Check the categories whose members you want to export."
+#~ msgstr "Selektearje de kategoryën fan wêrút jo leden eksportearje wolle"
+
+#~ msgid "Unable to load '%1'."
+#~ msgstr "Kin '%1' niet lade."
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.%2.</qt>"
+#~ msgstr "<qt>De triem <b>%1</b> koe net iepene wurde. %2</qt>"

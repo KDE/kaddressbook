@@ -1,0 +1,4322 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+  [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE">
+  <!ENTITY docbook-reference SYSTEM "docbook-reference.docbook">
+  ]>
+
+<book id="kaddressbook" lang="&language;">
+
+<bookinfo>
+
+<title
+>El manual del &kaddressbook;</title>
+    
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+&traductor.Antoni.Bella; 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>20 de juliol de 2019</date>
+<releaseinfo
+>5.10.3 (Aplicacions 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>El &kaddressbook; forma part del conjunt de programes per a la gestió de la informació personal (<glossterm linkend="gloss-pim"
+>&PIM;</glossterm
+>) del &kde;. El &kaddressbook; és principalment un gestor d'adreces de correu electrònic, però també pot ajudar-vos a realitzar un seguiment dels números de telèfon, llocs web, connexions a les xarxes socials, adreces de correu postal i molt més dels vostres amics i associats. És el vostre servei únic per fer un seguiment de totes les persones que coneixeu. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>Correu electrònic</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introducció</title>
+
+  <para
+>El &kaddressbook; forma part del conjunt de programes per a la gestió de la informació personal (&PIM;) del &kde;. El &kaddressbook; és principalment un gestor d'adreces de correu electrònic, però també pot ajudar-vos a realitzar un seguiment dels números de telèfon, llocs web, connexions a les xarxes socials, adreces de correu postal i molt més dels vostres amics i associats. És el vostre servei únic per fer un seguiment de totes les persones que coneixeu! </para>
+  
+  <screenshot id="screenshot-primary">
+  <screeninfo
+>Una captura de pantalla de la &IGU; principal del &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook00.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla de la &IGU; principal del &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pantalla principal del &kaddressbook;. La barra de menús es troba a la part superior, la barra d'eines és la següent i hi ha tres plafons per a les dades en l'àrea de text a la part inferior.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El &kaddressbook; s'ha integrat en l'estructura del <glossterm linkend="gloss-kmail"
+>&kmail;</glossterm
+>, el client de correu electrònic del &kde;. Llavors, una vegada afegiu el nom d'un contacte al &kaddressbook;, podreu enviar un missatge de correu electrònic a aquesta persona simplement escrivint una part del seu nom. O si rebeu un missatge de correu electrònic d'algú nou, podreu afegir-lo a la vostra llibreta d'adreces amb només uns pocs clics del ratolí. </para>
+  
+  <para
+>El &kaddressbook; també permet mantenir múltiples llistes de contactes separades en una àmplia varietat dels més populars formats per a llistes d'adreces, sigui en el disc dur local o mitjançant un recurs que resideixi en el núvol. També admet la importació i exportació de les dades de contacte en els formats de registre <glossterm linkend="gloss-csv"
+><filename class="extension"
+>.csv</filename
+></glossterm
+> (valors separats per comes), <glossterm linkend="gloss-ldif"
+><filename class="extension"
+>.ldif</filename
+></glossterm
+> (<glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> format per a l'intercanvi de dades -Data Interchange Format-) i <glossterm linkend="gloss-vcf"
+><filename class="extension"
+>.vcf</filename
+></glossterm
+> (format de targeta de visita virtual -Virtual business Card Format-). </para>
+
+<!--TODO Insert additional information about problem reporting here -->
+</chapter>
+
+<chapter id="getting-started">
+<title
+>Com començar</title>
+
+  <para
+>Aquí hi ha una imatge de la interfície d'usuari principal del &kaddressbook; abans d'introduir les dades de l'adreça. El primer que podreu fer és crear una llibreta d'adreces. Recordeu que la llibreta d'adreces <quote
+>Contactes personals</quote
+> ja està present de manera predeterminada. </para>
+ 
+  <screenshot id="screenshot-blank">
+      <screeninfo
+>Una captura de pantalla de la &IGU; principal buida del &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook10.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla de la &IGU; principal buida del &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+        <para
+>La &IGU; <quote
+>buida</quote
+> del &kaddressbook;, abans que s'hagi creat cap llibreta d'adreces addicional. La llibreta d'adreces <quote
+>Contactes personals</quote
+> ja està present quan s'instal·la per primera vegada el &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect1 id="how-to-add-a-new-address-book">
+  <title
+>Com afegir una llibreta d'adreces nova</title>
+  
+  <procedure id="procedure-add-a-new-addressbook">
+    
+  <step id="new-addressbook-dialog-step"
+><para
+>Obriu el diàleg Afegeix una llibreta d'adreces del &kaddressbook; amb l'opció <menuchoice
+><guimenu
+>Fitxer</guimenu
+> <guisubmenu
+>Nova&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix una llibreta d'adreces...</guimenuitem
+></menuchoice
+>. Apareixerà un diàleg. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-an-address-book">
+  <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg Afegeix una llibreta d'adreces</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook20.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg Afegeix una llibreta d'adreces</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg Afegeix una llibreta d'adreces del &kaddressbook;. S'admeten cinc serveis en el núvol, més tres opcions d'emmagatzematge local.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+  
+  <step id="select-a-format-step"
+><para
+>Trieu una de les opcions que apareixen en el diàleg. Diverses d'aquestes opcions es vinculen amb col·leccions de dades que resideixen en el núvol: treball en grup <glossterm linkend="gloss-dav"
+><acronym
+>DAV</acronym
+></glossterm
+> (autoria i versions distribuïdes, RFC4918), Contactes de Google (el vostre compte de GMail), servidor de treball en grup <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> (col·laboració a través d'<glossterm linkend="gloss-imap"
+>&IMAP;</glossterm
+>), &Microsoft; Exchange Server <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> (serveis web d'Exchange, en els servidors que executen programari de MS) i servidor de treball en grup Open-Xchange (una alternativa de codi obert per a EWS de MS). Si ja teniu accés a un o més d'aquests recursos basats en el núvol, podreu integrar aquestes dades en el &kaddressbook; simplement seleccionant l'opció i després introduint les vostres credencials per iniciar la sessió.</para>
+  
+  <para
+>Les opcions restants en el diàleg (Contactes personals, Directori vCard i Fitxer vCard) tots creen conjunts de dades que es desen en un dispositiu d'emmagatzematge local. Cadascuna d'aquestes opcions utilitza el mateix format per a les dades (<filename class="extension"
+>.vcf</filename
+> o format de targeta de visita virtual), l'única diferència és en quin directori en particular es desen les dades. Les opcions <quote
+>Contactes personals</quote
+> i <quote
+>Directori vCard</quote
+> creen un fitxer separat per a cada contacte amb el nom que deseu. L'opció <quote
+>Fitxer vCard</quote
+> posa totes les dades en un sol fitxer. Probablement serà més fàcil començar amb la llibreta d'adreces predeterminada <quote
+>Contactes personals</quote
+>. No necessitareu més llibretes d'adreces a menys que tingueu llistes de contactes extenses que us agradaria mantenir separades. </para
+></step>
+  
+  <step id="add-a-cloud-based-service-step"
+><para
+>Un cop hàgiu fet la vostra selecció, feu clic a D'acord. Si heu seleccionat un <glossterm linkend="gloss-cloud"
+>servei basat en el núvol</glossterm
+>, apareixerà un breu diàleg per establir comunicacions entre l'<glossterm linkend="gloss-akonadi"
+>&akonadi;</glossterm
+> (el servei d'emmagatzematge d'escriptori creuat &PIM;) i el servidor en el núvol seleccionat. Així és com es veu el diàleg per a un compte de Google (gmail.com). Els altres serveis basats en el núvol són lleugerament diferents, però similars. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service">
+  <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook30.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg Vincula amb el GMail del &kaddressbook;. Comenceu fent clic a <quote
+>Afegeix</quote
+>. Apareixerà un diàleg nou. Una vegada que s'hagin acceptat les vostres credencials, tornarà a aparèixer aquesta pantalla i fareu clic a <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+>. Si voleu que el &kaddressbook; actualitzi automàticament la còpia en la memòria cau local de la vostra llista de contactes, feu-ho aquí, abans de fer clic a <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step2">
+  <screeninfo
+>Una segona captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook31.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una segona captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</phrase>
+    </textobject>
+    <caption>
+      <para
+>Una altra imatge del diàleg Vincula amb el GMail del &kaddressbook;. Introduïu la vostra adreça de GMail i feu clic a <guibutton
+>&nbsp;Següent&nbsp;</guibutton
+>. Us demanarà que intruïu la contrasenya de GMail.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step3">
+  <screeninfo
+>Una tercera captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook32.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una tercera captura de pantalla del &kaddressbook; amb el diàleg Vincula amb el GMail</phrase>
+    </textobject>
+    <caption>
+      <para
+>Una altra imatge més del diàleg Vincula amb el GMail del &kaddressbook;. El nom i contrasenya del vostre compte han estat acceptades pel servidor de Google. Llegiu l'avís de privacitat i premeu <guibutton
+>&nbsp;Permetre&nbsp;</guibutton
+>, després <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+> en el diàleg <quote
+>&nbsp;Afegeix&nbsp;</quote
+> amb el qual heu començat.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Introduïu les vostres credencials per iniciar la sessió com s'il·lustra dalt i digueu D'acord. Heus aquí! La vostra llista de contactes basada en el núvol ara estarà integrada en el &kaddressbook;. </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-completed">
+  <screeninfo
+>La finestra del &kaddressbook; després d'afegir un compte del GMail.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook33.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La finestra del &kaddressbook; després d'afegir un compte del GMail.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Una altra imatge de la finestra del &kaddressbook;, després d'afegir un compte de GMail. Ara podreu manipular els vostres contactes de GMail mitjançant el &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Com indica la captura de pantalla anterior, una vegada hàgiu registrat el &kaddressbook; com un recurs de confiança, podreu veure i editar els contactes de GMail emprant el &kaddressbook;. Per descomptat, també podreu continuar mantenint els vostres contactes utilitzant un navegador web. </para
+> 
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  </step>
+   
+  <step id="add-a-local-addressbook-step"
+><para
+>Si heu seleccionat una de les opcions de la llibreta d'adreces local en el <link linkend="select-a-format-step"
+>pas 2</link
+> anterior, apareixerà un diàleg diferent. </para>
+      
+  <para>
+  <screenshot id="screenshot-add-a-personal-addressbook">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contactes personals</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook34.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contactes personals</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Contactes personals</quote
+> del &kaddressbook;. Podreu especificar quin directori contindrà les vostres dades i si tindreu accés d'escriptura a aquest recurs. Per a la majoria de les persones, les seleccions predeterminades (com es mostra a sobre) funcionen bé.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Feu les modificacions que considereu necessàries en el diàleg <quote
+>Contactes personals</quote
+>, després feu clic a <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+>. Apareixerà una nova llibreta d'adreces a la finestra principal del &kaddressbook;, com es mostra a continuació. </para>
+  
+  <para>
+  <screenshot id="screenshot-personal-addressbook-has-been-added">
+      <screeninfo
+>Una captura de pantalla de la finestra principal del &kaddressbook; amb una llibreta d'adreces buida anomenada <quote
+>Contactes personals</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook35.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla de la finestra principal del &kaddressbook; amb una llibreta d'adreces buida anomenada <quote
+>Contactes personals</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La finestra principal del &kaddressbook; després de tornar a crear la llibreta d'adreces <quote
+>Contactes personals</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step
+>    
+  
+  </procedure>
+  </sect1>
+  
+  <sect1 id="how-to-add-a-new-contact">
+  <title
+>Com afegir un contacte nou</title
+>    
+  
+  <procedure id="procedure-add-a-new-contact">
+    
+  <step id="new-contact-dialog-step-1"
+><para
+>Obriu el diàleg Contacte nou del &kaddressbook; fent clic al botó <guibutton
+>&nbsp;&plus;&nbsp;Contacte nou&nbsp;</guibutton
+> a la barra d'eines. Apareixerà un diàleg.</para>
+      
+  <para>
+  <screenshot id="screenshot-new-contact-dialog">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contacte nou</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contacte nou</quote
+>.</phrase>
+    </textobject>
+    <caption>
+    <para
+>El diàleg <quote
+>Contacte nou</quote
+> després de fer clic al botó <guibutton
+>&nbsp;&plus;&nbsp;Contacte nou&nbsp;</guibutton
+> a la barra d'eines.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  </step>
+  
+  <step id="procedure-new-contact-data-items"
+><para
+>Com es veu a l'anterior captura de pantalla, el diàleg <quote
+>Contacte nou</quote
+> permet introduir diversos elements de dades diferents. Es poden introduir dades addicionals a través dels subdiàlegs <quote
+>Ubicació</quote
+>, <quote
+>Negocis</quote
+>, <quote
+>Personal</quote
+>, <quote
+>Notes</quote
+>, <quote
+>Camps personalitzats</quote
+> i <quote
+>Arranjament de la criptografia</quote
+>, com s'explica en més detalla en el <link linkend="editing-contact-data"
+>capítol 4</link
+> a continuació. Per ara, concentrem-nos en afegir els elements de dades del <quote
+>Contacte</quote
+> que apareixen en la il·lustració anterior.</para>
+  </step
+>    
+  
+  <step id="procedure-entering-basic-new-contact-data"
+><para
+>Si heu creat més d'una llibreta d'adreces, utilitzeu la llista desplegable etiquetada <quote
+>Afegeix a:</quote
+> per a seleccionar el conjunt de dades al qual s'afegirà el contacte nou. Després introduïu el nom del contacte nou al camp d'entrada anomenat <quote
+>Nom</quote
+>, i introduïu l'adreça de correu electrònic en el camp d'entrada anomenat <quote
+>Correu electrònic</quote
+>. Per especificar opcions de format especials per a les dades del nom d'aquest contacte, feu clic al botó <guibutton
+>&nbsp;...&nbsp;</guibutton
+> a la dreta del camp d'entrada <quote
+>Nom</quote
+> i seguiu les indicacions. Si voleu afegir més adreces de correu electrònic per a aquesta persona, feu clic al botó <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> que hi ha a la dreta del camp d'entrada <quote
+>Correu electrònic</quote
+> i es generarà un altre camp d'entrada per a correu electrònic. Per a suprimir una adreça de correu electrònic, feu clic al botó <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> associat. </para
+></step
+>    
+  
+  <step id="procedure-additional-new-contact-data"
+><para
+>Amb cada contacte en una llibreta d'adreces també podreu associar-hi un sobrenom, un o més números de telèfon, múltiples serveis de missatgeria instantània i diversos llocs web, com s'explica en el <link linkend="editing-contact-data"
+>capítol 4</link
+>. També podreu utilitzar <quote
+>Mostra els missatges...</quote
+> i <quote
+>Permet el contingut remot...</quote
+> per ajustar la forma en què el &kmail; manejarà el correu electrònic que rebi de cada contacte. Vegeu el <link linkend="integration-with-other-kde-programs"
+>capítol 3</link
+> per a una explicació més completa. </para
+></step>
+
+  <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
+  
+  </procedure>
+  </sect1>
+  
+</chapter>
+
+<chapter id="integration-with-other-kde-programs">
+<title
+>Integració amb els altres programes &kde;</title>
+  
+  <sect1 id="integration-overview">
+  <title
+>Resum de la integració: el &kmail;</title>
+  
+  <para
+>A causa que el &kaddressbook; -una peça essencial de la &PIM;, el conjunt de programes per a la gestió de la informació personal del &kde;-, és el repositori central per a la informació sobre tots els vostres contactes, s'ha integrat en el &kmail; i també en el &korganizer;. Aquí hi ha una vista ràpida a la interfície entre el &kaddressbook; i aquests dos programes. </para
+>    
+
+  <sect2 id="starting-kaddressbook-from-kmail-tools">
+  <title
+>Iniciar el &kaddressbook; des del menú Eines del &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-kmail-tools-menu">
+      <screeninfo
+>Una captura de pantalla amb l'opció <menuchoice
+><guimenu
+>Eines</guimenu
+><guimenuitem
+>Llibreta d'adreces</guimenuitem
+></menuchoice
+> del &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook50.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla amb l'opció <menuchoice
+><guimenu
+>Eines</guimenu
+><guimenuitem
+>Llibreta d'adreces</guimenuitem
+></menuchoice
+> del &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Llançant el &kaddressbook; des de l'opció de menú <menuchoice
+><guimenu
+>Eines</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Llibreta d'adreces</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Aquesta interfície és l'epítom de la simplicitat. Necessiteu consultar o actualitzar l'entrada d'un dels vostres contactes mentre llegiu o redacteu un missatge de correu electrònic amb el &kmail;? Feu clic esquerre en <menuchoice
+><guimenu
+>Eines</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Llibreta d'adreces</guimenuitem
+> </menuchoice
+>, i s'iniciarà automàticament l'aplicació &kaddressbook;, la qual permet un accés ràpid a les dades del contacte que voleu veure o modificar.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="autocompletion-feature-on-new-email">
+  <title
+>Consultar el &kaddressbook; des de la finestra d'edició de missatges del &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-autocompletion-feature">
+      <screeninfo
+>Una captura de pantalla de la compleció automàtica des de la finestra d'edició de missatges del &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook51.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla de la compleció automàtica des de la finestra d'edició de missatges del &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Ús de la característica de compleció automàtica del &kaddressbook; des de la finestra d'edició de missatges del &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Quan redacteu un missatge nou de correu electrònic, el &kmail; ajudarà a trobar l'adreça completa de correu electrònic del destinatari presentant una llista de coincidències probables extretes del contingut al &kaddressbook; i dels vostres arxius de correu electrònic, com s'il·lustra a dalt. Simplement feu clic esquerre en un element de la llista per utilitzar aquesta adreça de correu electrònic.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2  id="recipient-selection-dialog">
+  <title
+>Diàleg de selecció de destinataris del &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-recipient-selection">
+      <screeninfo
+>Una captura de pantalla del diàleg de selecció de destinataris dins de la finestra d'edició de missatges del &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook52.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del diàleg de selecció de destinataris dins de la finestra d'edició de missatges del &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Seleccionar múltiples destinataris amb el diàleg de selecció de destinataris dins de la finestra d'edició de missatges del &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Quan dirigiu un missatge nou de correu electrònic a múltiples destinataris, el &kmail; proporcionarà un mètode convenient per a triar els múltiples destinataris des dels contactes que heu desat amb el &kaddressbook;. Simplement feu clic esquerre al botó <guibutton
+>&nbsp;Selecciona...&nbsp;</guibutton
+> per obrir una llista desplegable que llistarà tots els contactes en les llibretes d'adreces seleccionades. Després, desplaceu-vos per la llista (o utilitzeu el pràctic quadre <quote
+>Cerca:</quote
+>), seleccioneu el destinatari que voleu i feu clic esquerre a <guibutton
+>&nbsp;Afegeix com A&nbsp;</guibutton
+>, <guibutton
+>&nbsp;Afegeix com CC&nbsp;</guibutton
+> o <guibutton
+>&nbsp;Afegeix com BCC&nbsp;</guibutton
+> per afegir a aquesta persona a llista de destinataris del correu electrònic per al vostre nou missatge. Trieu <guibutton
+>&nbsp;Afegeix com Respondre a&nbsp;</guibutton
+> per a inserir aquesta adreça en el missatge com a una etiqueta <quote
+>Respondre a</quote
+>.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="new-contact-creation-interface">
+  <title
+>Interfície del &kmail; de creació de contactes nous</title>
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation">
+      <screeninfo
+>Una captura de pantalla de la interfície de creació de contactes nous dins de la finestra de visualització de missatges del &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook53.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla de la interfície de creació de contactes nous dins de la finestra de visualització de missatges del &kmail;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Invocar el diàleg de creació de contactes nous des de la finestra de visualització de missatges del &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Quan rebeu un missatge de correu electrònic d'algú que encara no es troba a la vostra llibreta d'adreces, el &kmail; farà que sigui molt fàcil crear un contacte nou. Simplement apunteu el cursor a l'adreça de correu electrònic que voleu desar, després feu-hi clic amb el &BDR; i apareixerà un menú contextual (vegeu a dalt). Seleccioneu <guimenuitem
+>&nbsp;&plus; Afegeix a la llibreta d'adreces&nbsp;</guimenuitem
+> per afegir l'adreça de correu electrònic seleccionada a una de les vostres llibretes d'adreces. Si reconeixeu a aquesta persona com algú que ja es troba a la llibreta d'adreces i està utilitzant una adreça de correu electrònic nova, en el seu lloc podreu fer clic a <guimenuitem
+>&nbsp;&plus; Afegeix a un contacte existent&nbsp;</guimenuitem
+> -això introduirà a un diàleg que dirigirà el &kaddressbook; al lloc on voleu inseriu la nova adreça de correu electrònic-.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step2">
+      <screeninfo
+>Una captura de pantalla del diàleg que segueix a la creació d'un contacte nou.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook54.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del diàleg que segueix a la creació d'un contacte nou.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Triant la llibreta d'adreces en la qual es crearà el contacte nou.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>El &kmail; demanarà que seleccioneu la llibreta d'adreces a la qual s'ha d'afegir el contacte nou.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step3">
+      <screeninfo
+>Una altra captura de pantalla del diàleg que segueix a la creació d'un contacte nou.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook55.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una altra captura de pantalla del diàleg que segueix a la creació d'un contacte nou.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Decidir si voleu editar ara o més tard el contacte recentment creat.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>El &kmail; també demanarà si voleu <link linkend="editing-contact-data"
+>editar el contacte nou</link
+> que acabeu d'afegir. Responeu <guibutton
+>&nbsp;✔&nbsp;Sí&nbsp;</guibutton
+> si voleu afegir més dades de seguida a la nova entrada.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+    
+  </sect1>
+  
+  <sect1 id="korganizer-overview">
+  <title
+>Interfície del &kaddressbook; amb el &korganizer;</title>
+  
+  <para
+>El &korganizer; -el programa per a la planificació i gestió de calendaris del &kde;-, permet enviar missatges de correu electrònic a les persones que voleu convidar a una reunió, i en aquesta connexió proporciona dues interfícies amb el &kaddressbook;.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb --> 
+  
+  <para>
+  <screenshot id="screenshot-inviting-one-attendee">
+      <screeninfo
+>Una captura de pantalla de la pestanya Assistents del &korganizer;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook60.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla de la pestanya Assistents del &korganizer;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Afegir un sol assistent a una reunió programada en el &korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>La primera interfície és com la <link linkend="autocompletion-feature-on-new-email"
+>característica de compleció automàtica</link
+> proporcionada pel &kmail;: simplement comenceu a escriure el nom de la persona que voleu convidar, i se us proporcionarà una llista de coincidències probables, com s'il·lustra a dalt.</para
+>  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-inviting-multiple-attendees">
+      <screeninfo
+>Una captura de pantalla de la pestanya Assistents del &korganizer;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook61.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya Assistents del &korganizer;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Afegir múltiples assistents a una reunió programada en el &korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>La segona interfície és com el <link linkend="recipient-selection-dialog"
+>diàleg per a la selecció del destinatari</link
+> proporcionat pel &kmail;: quan feu clic esquerre al botó <guibutton
+>&nbsp;Selecciona els assistents...&nbsp;</guibutton
+>, apareixerà una llista de cerca dels contactes en totes les vostres llibretes d'adreces, com mostra la captura de pantalla anterior.</para>
+  
+  </sect1>
+  
+</chapter>
+
+<chapter id="editing-contact-data">
+<title
+>Afegir o editar les dades de contacte</title>
+
+  <sect1 id="edit-basic-info">
+  <title
+>El bàsic</title>
+  
+  <para
+>Quan feu clic per primera vegada en el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix un contacte&nbsp;&nbsp;</guibutton
+> a la barra d'eines del &kaddressbook;, apareixerà aquesta pantalla. (Si feu clic a <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Edita el contacte&nbsp;&nbsp;</guibutton
+>, apareixerà una pantalla semblant, l'única diferència és que la llista desplegable anomenada <quote
+>Afegeix a:</quote
+> no apareixerà com a part del diàleg <quote
+>Edita</quote
+>. És per això que ambdues característiques estan cobertes en aquest capítol: són pràcticament idèntiques).</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog-2">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contacte nou</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Contacte nou</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Afegeix un contacte</quote
+> del &kaddressbook; després de fer clic al botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Afegeix un contacte&nbsp;&nbsp;</guibutton
+> de la barra d'eines.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect2 id="edit-contact-tab">
+  <title
+>La pestanya Contactes</title>
+  
+  <para
+>Ja hem vist (a <link linkend="how-to-add-a-new-contact"
+>Com afegir un contacte nou</link
+>) com s'introdueixen les dades bàsiques com Nom i Correu electrònic quan es crea un nou registre de contacte. Aquí hi ha una descripció de les moltes maneres d'utilitzar la resta dels camps de dades accessibles des de la pestanya <quote
+>Contacte</quote
+> en el diàleg <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Afegeix un contacte&nbsp;&nbsp;</guibutton
+>.</para>
+  
+  <variablelist>
+      
+    <varlistentry
+><term
+>Telèfon</term
+><listitem
+><para
+>Podreu associar un o més números de telèfon amb aquesta persona. Utilitzeu els botons <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> i <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> per afegir o suprimir camps de número de telèfon. La llista desplegable <guibutton
+>&nbsp;Casa<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> permet identificar quinze categories de números de telèfon (Casa, Feina, Mòbil, Cotxe, <glossterm linkend="gloss-isdn"
+><acronym
+>XDSI</acronym
+></glossterm
+>, <glossterm linkend="gloss-pcs"
+><acronym
+>PCS</acronym
+></glossterm
+>, &etc;)</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Missatgeria</term
+><listitem
+><para
+>Podreu associar una o més identitats del servei de missatgeria instantània amb aquesta persona. Utilitzeu els botons <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> i <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> per afegir o suprimir camps del servei de missatgeria. La llista desplegable <guibutton
+>&nbsp;Selecciona...<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> permet identificar tretze categories de serveis de missatgeria instantània: <glossterm linkend="gloss-aim"
+>AIM,</glossterm
+> Facebook, <glossterm linkend="gloss-gadu-gadu"
+>Gadu-Gadu</glossterm
+>, Google Talk, <glossterm linkend="gloss-gpws"
+>GroupWise</glossterm
+>, <glossterm linkend="gloss-icq"
+><acronym
+>ICQ</acronym
+></glossterm
+>, <glossterm linkend="gloss-irc"
+>&irc;</glossterm
+>, <glossterm linkend="gloss-jabber"
+>Jabber</glossterm
+>, <glossterm linkend="gloss-mnwhl"
+>Meanwhile</glossterm
+>, <glossterm linkend="gloss-sms"
+><acronym
+>SMS</acronym
+></glossterm
+>, Skype, Twitter i Yahoo. (El MSN Messenger encara es troba a la llista de serveis de missatgeria instantània a la versió 5.10.3 -ha desaparegut des de 2014-).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Web</term
+><listitem
+><para
+>Podreu associar un o més &URL; de llocs web amb aquesta persona. Utilitzeu els botons <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> i <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> per afegir o suprimir camps d'adreces web. La llista desplegable <guibutton
+>&nbsp;Selecciona...<inlinemediaobject
+><imageobject
+> <imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> permet identificar tres tipus diferents d'adreces web: Pàgina personal, Feina i Altres.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Etiquetes</term
+><listitem
+><para
+>Podreu associar una o més Etiquetes del vostre propi disseny amb aquesta persona. Utilitzeu el botó <guibutton
+>&nbsp;...&nbsp;</guibutton
+> per a entrar al diàleg per a la creació i configuració d'etiquetes que s'il·lustra a continuació.</para
+></listitem>
+    </varlistentry>
+      
+  </variablelist
+> 
+  
+  <para>
+  <screenshot id="screenshot-add-tags-dialog">
+      <screeninfo
+>El diàleg <quote
+>Etiquetes</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook71.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>El diàleg <quote
+>Etiquetes</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Gestió de les etiquetes</quote
+> del &kaddressbook; després de fer clic al botó <guibutton
+>&nbsp;...&nbsp;</guibutton
+> que hi ha al costat de les <quote
+>Etiquetes</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+    <varlistentry
+><term
+>Etiquetes (continuació)</term
+><listitem
+><para
+>Utilitzeu el botó<guibutton
+>&nbsp;Crea una etiqueta nova&nbsp;</guibutton
+> i el camp d'entrada de dades que hi ha a l'esquerra per a crear la vostra llista personalitzada d'etiquetes. Seleccioneu les etiquetes associades amb aquesta persona des de la llista que apareix a la finestra de configuració. Premeu el botó <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+> per afegir les etiquetes seleccionades a aquest contacte.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Enllaç al blog</term
+><listitem
+><para
+>Utilitzeu aquest camp per registrar l'&URL; associat amb el registre web o blog d'aquest contacte.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Mostra els missatges «...»</term
+><listitem
+><para
+>Utilitzeu aquesta llista desplegable per anul·lar l'opció de visualització del missatge corresponent al menú de configuració de <guibutton
+>&nbsp;Privadesa i seguretat&nbsp;</guibutton
+> del &kmail;. Trieu <quote
+>Predeterminada</quote
+> per a deixar-ho al &kmail;. Trieu <quote
+>Text net</quote
+> o <quote
+>HTML</quote
+> si voleu anul·lar el comportament predeterminat del &kmail; quan es rep un missatge d'aquesta persona.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Permet contingut remot «...»</term
+><listitem
+><para
+>Seleccioneu aquesta opció si voleu anul·lar l'opció de visualització de missatges corresponent al menú de configuració <guibutton
+>&nbsp;Privadesa i seguretat&nbsp;</guibutton
+> del &kmail; quan es rep un missatge d'aquesta persona.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+></term
+><listitem
+><para
+>Seleccioneu aquesta opció per a desar els canvis que heu realitzat. Aquest botó realitza la mateixa funció en les set pestanyes que apareixen en el diàleg <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix un contacte&nbsp;&nbsp;</guibutton
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;⦸&nbsp;Cancel·la&nbsp;</guibutton
+></term
+><listitem
+><para
+>Seleccioneu aquesta opció per a sortir del diàleg <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix un contacte&nbsp;&nbsp;</guibutton
+> sense desar els canvis. Aquest botó realitza la mateixa funció en les set pestanyes que apareixen en el diàleg <quote
+>Afegeix un contacte</quote
+>.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-location-tab">
+  <title
+>La pestanya Ubicació</title>
+  
+  <para
+>Utilitzeu els camps d'entrada de dades que hi ha a la pestanya <quote
+>Ubicació</quote
+> que es mostren a continuació per associar una o més adreces de correu postal amb aquesta persona.</para>
+      
+  <para>
+  <screenshot id="screenshot-location-tab">
+      <screeninfo
+>La pestanya <quote
+>Ubicació</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook72.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Ubicació</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Ubicació</quote
+> del &kaddressbook;, la qual forma part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  <variablelist>
+    <varlistentry
+><term
+>(Sense etiqueta) Llista desplegable</term
+><listitem
+><para
+>Utilitzeu aquesta llista de categories per a descriure cada adreça de correu per a aquest contacte. Les opcions disponibles inclouen <quote
+>Casa</quote
+>, <quote
+>Feina</quote
+>, <quote
+>Postal</quote
+>, &etc;</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Carrer / Apartat de correus / Codi postal / Localitat / Regió</term
+><listitem
+><para
+>Utilitzeu aquests camps de dades de forma lliure per introduir les dades de l'adreça postal: Adreça, Apartat postal, Codi postal, Ciutat i Estat, respectivament, per a les adreces dels E.U.A.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>País</term
+><listitem
+><para
+>Utilitzeu aquesta llista desplegable per a seleccionar un país, des de l'Afganistan fins a Zimbàbue.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Aquesta és l'adreça preferida</term
+><listitem
+><para
+>Marqueu aquesta casella per a designar l'adreça de correu preferida o predeterminada.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;Afegeix una adreça&nbsp;</guibutton
+></term
+><listitem
+><para
+>En acabar d'introduir les dades de l'adreça, feu clic esquerre en aquest botó per afegir una adreça nova al conjunt d'adreces desades que apareixen a la gran finestra de visualització que hi ha a la dreta.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Icona <inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> a la finestra de visualització gran</term>
+    <listitem
+><para
+>Feu clic esquerre en aquesta icona per a editar les dades associades amb l'adreça.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Icona <inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+> a la finestra de visualització gran</term>
+    <listitem
+><para
+>Feu clic esquerre en aquesta icona per a suprimir les dades associades amb l'adreça.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  </sect2>
+  
+  <sect2 id="edit-business-tab">
+  <title
+>Les pestanyes Negocis, Personal i Notes</title>
+  
+  <para
+>Les següents tres pestanyes al diàleg <quote
+>Afegeix un contacte</quote
+> són fins i tot més simples que a la pestanya <quote
+>Ubicació</quote
+>. Permeten desar informació sobre les afiliacions comercials i professionals d'aquesta persona, alguns detalls personals i notes vàries de forma lliure, respectivament.</para>
+  
+  <para>
+  <screenshot id="screenshot-business-tab">
+      <screeninfo
+>La pestanya <quote
+>Negocis</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook73.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Negocis</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Negocis</quote
+> del &kaddressbook;, forma part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>La pestanya <quote
+>Negocis</quote
+>, que es mostra a sobre, permet desar alguns detalls addicionals sobre les associacions professionals i comercials d'aquesta persona. Tots els camps d'entrada són de forma lliure. Podeu introduir qualsevol classe de dades de text en cada camp. El petit botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> obrirà un diàleg per a la cerca de fitxers, el qual facilitarà l'associació d'un nom de fitxer amb l'horari <quote
+>Lliure/Ocupat</quote
+> d'aquesta persona.</para>
+  
+  <para
+>Recordeu que haureu d'introduir el telèfon del vostre soci comercial com a un número de telèfon a la pestanya <quote
+><link linkend="edit-contact-tab"
+>Contacte</link
+></quote
+>. De la mateixa manera, l'adreça de la seva oficina s'introdueix a través de la pestanya <quote
+>Ubicació</quote
+>, com es descriu a <link linkend="edit-location-tab"
+>la secció anterior</link
+>.</para
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-personal-tab">
+      <screeninfo
+>La pestanya <quote
+>Personal</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook74.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Personal</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Personal</quote
+> del &kaddressbook;, part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Utilitzeu aquesta pestanya per emmagatzemar alguns detalls personals: l'aniversari d'aquesta persona, l'aniversari de les seves noces i el nom de la seva parella o una altra persona important. Feu clic en un dels botons (&pex;, <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="view-calendar-birthday.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>) per a introduir la seva data de naixement o l'aniversari de les seves noces. </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-notes-tab">
+      <screeninfo
+>La pestanya <quote
+>Notes</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook75.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Notes</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Notes</quote
+> del &kaddressbook;, part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>La pestanya <quote
+>Notes</quote
+> proporciona una àrea d'entrada de forma totalment lliure en la qual podreu introduir qualsevol dada que vulgueu associar amb aquesta persona.</para>
+      
+  </sect2
+>    
+
+  </sect1
+>  
+
+  <sect1 id="edit-advanced-info">
+  <title
+>Les coses difícils</title>
+  
+  <para
+>El &kaddressbook; proporciona un parell de característiques per a l'emmagatzematge de dades més complexes, a més de les funcions senzilles descrites a la secció anterior.</para>
+
+  <sect2 id="edit-custom-tab">
+  <title
+>La pestanya Camps personalitzats</title>
+
+  <para
+>No esteu satisfet amb l'àmplia gamma d'elements de dades que el &kaddressbook; ja ha programat prèviament? Bé, esteu de sort. Algun dia, potser aviat, podreu utilitzar el diàleg <quote
+>Camps personalitzats</quote
+> que es mostra a continuació per a definir i completar tants camps de dades addicionals com sigui possible.</para>
+  
+  <para>
+  <screenshot id="screenshot-custom-tab">
+      <screeninfo
+>La pestanya <quote
+>Camps personalitzats</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook76.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Camps personalitzats</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Camps personalitzats</quote
+> del &kaddressbook;, part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Aquesta és una característica experimental, la qual encara no fa res del que valgui la pena parlar. Així que no direm res més referent a això.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-crypto-tab">
+  <title
+>La pestanya Arranjament de la criptografia</title>
+  
+  <para
+>Necessiteu enviar un missatge de correu electrònic confidencial que no hauria de ser llegit per mirades indiscretes? El &kaddressbook; proporciona una manera senzilla d'associar claus criptogràfiques amb cada persona a la vostra llista de correu.</para>
+  
+  <para>
+  <screenshot id="screenshot-crypto-tab">
+      <screeninfo
+>La pestanya <quote
+>Arranjament de la criptografia</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook77.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>La pestanya <quote
+>Arranjament de la criptografia</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La pestanya <quote
+>Arranjament de la criptografia</quote
+> del &kaddressbook;, part del diàleg <quote
+>Afegeix un contacte</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+<variablelist>
+    <varlistentry
+><term
+>Protocols permesos</term
+><listitem
+><para
+>Trieu el mode d'encriptatge que voleu utilitzar en enviar un missatge a aquesta persona: <glossterm linkend="gloss-inline-pgp"
+>OpenPGP inclòs</glossterm
+>, <glossterm linkend="gloss-open-pgp"
+>OpenPGP/&MIME;</glossterm
+>, <glossterm linkend="gloss-mime"
+><acronym
+>S/MIME</acronym
+> </glossterm
+> o <glossterm linkend="gloss-opaque"
+><acronym
+>S/MIME</acronym
+> opac</glossterm
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Clau d'encriptatge OpenPGP preferida:</term
+><listitem
+><para
+>Utilitzeu el botó <guibutton
+>&nbsp;Canvia...&nbsp;</guibutton
+> per a seleccionar des d'una llista de claus Open<glossterm linkend="gloss-pgp"
+>PGP</glossterm
+> disponibles, si heu triat l'encriptatge OpenPGP. Utilitzeu el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+> per a esborrar una clau seleccionada prèviament.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Certificat d'encriptatge <acronym
+>S/MIME</acronym
+> preferit:</term>
+    <listitem
+><para
+>Utilitzeu el botó <guibutton
+>&nbsp;Canvia...&nbsp;</guibutton
+> per a seleccionar des d'una llista de certificats disponibles, si utilitzeu una clau verificada. Utilitzeu el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> per a esborrar una clau seleccionada prèviament.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Preferència del missatge / Signa:</term
+><listitem
+><para
+>Utilitzeu aquesta llista desplegable per especificar quan els missatges dirigits a aquesta persona hauran de portar la vostra signatura criptogràfica: Mai / Sempre / Si és possible / Pregunta.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Preferència del missatge / Encriptatge:</term
+><listitem
+><para
+>Utilitzeu aquesta llista desplegable per especificar quan s'hauran d'encriptar els missatges dirigits a aquesta persona emprant el protocol i la clau seleccionada: Mai / Sempre / Si és possible / Pregunta.</para
+></listitem>
+    </varlistentry>
+    
+</variablelist
+>  
+  
+  </sect2>
+
+  </sect1>
+  
+</chapter>
+
+<chapter id="commands">
+<title
+>Referència d'ordres</title>
+    
+  <sect1 id="menu-bar-items">
+  <title
+>La barra de menús</title>
+  
+  <para
+>Aquí hi ha un resum dels set menús que apareixen a la barra de menús del &kaddressbook;.</para>
+  
+
+  <sect2 id="the-file-menu">
+  <title
+>El menú Fitxer</title>
+  
+  <para>
+  <screenshot id="screenshot-file-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Fitxer</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook80.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Fitxer</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Fitxer</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Fitxer</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>El menú <menuchoice
+><guimenu
+>Fitxer</guimenu
+></menuchoice
+> permet accedir a sis funcions principals, tres de les quals tenen diverses opcions.</para
+> 
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+><guimenu
+>Fitxer</guimenu
+> <guisubmenu
+>Nou&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Contacte nou</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Té exactament el mateix efecte que fer clic al botó<guibutton
+>&nbsp; &plus;&nbsp;Contacte nou&nbsp;</guibutton
+> que hi ha a la barra d'eines. Per obtenir tots els detalls, vegeu el <link linkend="how-to-add-a-new-contact"
+>capítol 2</link
+> anterior.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Fitxer</guimenu
+> <guisubmenu
+>Nou&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Grup nou</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Obre un diàleg en el qual podreu definir un grup o llista de correu nous. Vegeu <link linkend="file-new-group"
+>l'apèndix</link
+> per obtenir una explicació detallada d'aquesta funció.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Nou&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix una llibreta d'adreces...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Obre el diàleg <quote
+>Afegeix una llibreta d'adreces</quote
+>, el qual està completament documentat en el <link linkend="how-to-add-a-new-address-book"
+>capítol 2 anterior</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa des d'un servidor LDAP...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet importar dades des d'un servidor <acronym
+>LDAP</acronym
+>. El servidor haurà d'estar configurat abans que pugueu utilitzar aquesta funció. Vegeu <link linkend="configure-ldap-server"
+>l'apèndix</link
+> per a tots els detalls.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa un fitxer CSV...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet importar dades de contacte des d'un fitxer amb els valors separats per comes (<acronym
+>csv</acronym
+>). S'obrirà un diàleg en el qual podreu associar cada camp al fitxer d'entrada amb un camp amb nom en el registre d'emmagatzematge intern del &kaddressbook;. Per obtenir una explicació més detallada, vegeu <link linkend="import-csv-data"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa una vCard...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció facilita la importació de les dades <acronym
+>vcf</acronym
+> o vCard. S'admeten les tres versions de vCard. Podeu aprendre més sobre els formats vCard en <ulink url="https://en.wikipedia.org/wiki/VCard"
+>aquest lloc web</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Exporta&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta a un fitxer CSV...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet exportar les dades de contacte seleccionades com a un fitxer amb els valors separats per comes (<acronym
+>csv</acronym
+>). Hi ha 47 camps en el registre de sortida. Consulteu <link linkend="export-csv-data"
+>l'apèndix</link
+> per obtenir una llista d'aquests camps de dades.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Exporta&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta a vCard 4.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet exportar les dades de contacte seleccionades com a un fitxer en format <acronym
+>vCard 4.0</acronym
+>. Per a més informació, vegeu <ulink url="https://en.wikipedia.org/wiki/VCard"
+>aquest article de la Wikipedia</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Exporta&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta a vCard 3.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet exportar les dades de contacte seleccionades com a un fitxer en format <acronym
+>vCard 3.0</acronym
+>. Aquest format és similar al format <acronym
+>vCard 4.0</acronym
+>.</para
+></listitem>
+    </varlistentry
+>    
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Exporta&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta a vCard 2.1...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta funció permet exportar les dades de contacte seleccionades com a un fitxer en format <acronym
+>vCard 2.1</acronym
+>. Aquest format és similar al format <acronym
+>vCard 3.0</acronym
+>.</para
+></listitem>
+    </varlistentry>
+ 
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fitxer</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Imprimeix</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Obre un diàleg per a la selecció de la impressora. Utilitzeu el diàleg <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Vista prèvia d'impressió</guisubmenu
+></menuchoice
+> que hi ha a continuació per a configurar l'interval de noms i el format de la impressió abans de seleccionar aquesta funció.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Vista prèvia d'impressió</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Obre un diàleg de vista prèvia de la impressió, el qual també permet donar format a l'informe, seleccionar quins elements incloure i especificar un criteri d'ordenació, &etc; Per a més detalls, vegeu <link linkend="file-print-preview"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+><guimenu
+>Fitxer</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-exit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Surt</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Tanca l'aplicació &kaddressbook;.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2
+>  
+
+  <sect2 id="the-edit-menu">
+  <title
+>El menú Edita</title>
+  
+  <para>
+  <screenshot id="screenshot-edit-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Edita</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook81.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Edita</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Edita</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Edita</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El menú <menuchoice
+><guimenu
+>Edita</guimenu
+></menuchoice
+> permet accedir a vuit funcions principals, dues de les quals tenen múltiples opcions.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Edita el contacte...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Té gairebé el mateix efecte que fer clic al botó <guibutton
+>&nbsp;&plus;&nbsp;Contacte nou&nbsp;</guibutton
+> que hi ha a la barra d'eines. La diferència és que aquest element del menú permet editar un registre de contacte que ja existeix, en lloc de crear-ne un de nou. Per obtenir tots els detalls, vegeu el <link linkend="how-to-add-a-new-contact"
+>capítol 2</link
+> anterior.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+></shortcut
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-cut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Retalla el contacte</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Realitza una operació de <quote
+>Retall</quote
+> en el contacte seleccionat. Es col·loca al porta-retalls una còpia d'aquest contacte, en el format <glossterm linkend="gloss-vcf"
+><acronym
+>vCard 3.0</acronym
+></glossterm
+>. El <quote
+>Retall</quote
+> es completarà quan feu <quote
+>Enganxa</quote
+> d'aquest contacte en algun lloc.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Copia el contacte...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Col·loca una còpia d'aquest contacte al porta-retalls, de manera que pugueu enganxar-lo en un altre lloc.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-paste.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Enganxa</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><quote
+>Enganxa</quote
+> el contacte retallat o copiat a la ubicació actual. Aquest pot estar en la mateixa llibreta d'adreces de la qual vau fer el <quote
+>Retalla</quote
+> o <quote
+>Copia</quote
+>, o en una altra llibreta d'adreces. Com que les operacions anteriors van col·locar la informació del contacte al porta-retalls del sistema, també podreu enganxar-la en un altre lloc més que el &kaddressbook; (&pex;, en un editor de text o com un fitxer <acronym
+>vCard 3.0</acronym
+> a la vostra carpeta d'inici).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Copia el contacte a &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(una llista de variables)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Combina les operacions <quote
+>Copia</quote
+> i <quote
+>Enganxa</quote
+> en un sol clic del &BER;. La llista de les destinacions mostrades dependrà de quantes llibretes d'adreces hàgiu creat.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Mou el contacte a &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(una llista de variables)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Funciona igual que l'operació <quote
+>Copia el contacte a</quote
+> descrita anteriorment, excepte que combina <quote
+>Retalla</quote
+> i <quote
+>Enganxa</quote
+> en un sol clic del &BER;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Elimina el contacte</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Suprimeix el contacte seleccionat de la llibreta d'adreces actual.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Edita</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Suprimeix la llibreta d'adreces</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Suprimeix la llibreta d'adreces actual. Aneu amb compte amb aquesta ordre: es podrien perdre algunes dades! En teoria, aquesta funció simplement elimina l'enllaç simbòlic entre el &kaddressbook; i el fitxer o directori <acronym
+>vCard</acronym
+> associat (o l'hipervincle amb un <glossterm linkend="gloss-cloud"
+>servei basat en el núvol</glossterm
+>), i les dades reals no s'alteraran. Tot i això, probablement serà millor fer una còpia de seguretat d'aquesta llibreta d'adreces en algun lloc abans de suprimir-la.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-view-menu"
+> 
+  <title
+>El menú Visualitza</title>
+  
+  <para>
+  <screenshot id="screenshot-view-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Visualitza</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Visualitza</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Visualitza</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Visualitza</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El menú <menuchoice
+><guimenu
+>Visualitza</guimenu
+></menuchoice
+> permet accedir a quatre funcions principals i a una característica experimental que encara no fa res.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+><guisubmenu
+>Temes &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquest element del menú realment no fa res. S'obrirà un diàleg <quote
+>Temes</quote
+>, però aquest diàleg està trencat en la versió 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>1</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visualitza</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Senzill (una columna)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Canvia la disposició predeterminada de tres plafons a una sola columna. Per a més detalls, vegeu <link linkend="view-change-columns"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+        
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>2</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visualitza</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Dues columnes</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Canvia la disposició predeterminada de tres plafons a dues columnes. Per a més detalls, vegeu <link linkend="view-change-columns"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>3</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Visualitza</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Tres columnes</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Torna a la disposició predeterminada de tres plafons.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Mostra els codis QR</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Marqueu aquest quadre per a mostrar la informació de contacte com un codi QR. Desmarqueu-lo per a suprimir els codis QR.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-action-menu"
+> 
+  <title
+>El menú Acció</title>
+  
+  <para>
+  <screenshot id="screenshot-action-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Acció</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook83.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Acció</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Acció</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Acció</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El menú <menuchoice
+><guimenu
+>Acció</guimenu
+></menuchoice
+> permet accedir a dues funcions de transferència de dades.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Acció</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Envia unes quantes vCard...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció és similar a <quote
+>Envia un correu electrònic...</quote
+>, a continuació, excepte que després de seleccionar alguns contactes amb la tecla &Ctrl; i el ratolí, s'obrirà la finestra d'edició del missatge amb una llista en blanc de destinataris i amb fitxers adjunts (els contactes seleccionats, en el format vCard 3.0). Això facilitarà compartir la informació seleccionada del &kaddressbook; amb els vostres amics i socis comercials.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Acció</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Envia un correu electrònic...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció proporciona un mètode alternatiu per a configurar la llista de destinataris d'un missatge nou de correu electrònic. Premeu la tecla &Ctrl; (o &Maj;) i seleccioneu les persones a les quals voleu enviar el missatge nou, utilitzant el &BER;. Després feu clic a <quote
+>Envia un correu electrònic...</quote
+>. Això obrirà una finestra d'edició del &kmail;. Tots els contactes seleccionats seran llistats com a destinataris <quote
+>A</quote
+>.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-tools-menu"
+> 
+  <title
+>El menú Eines</title>
+  
+  <para>
+  <screenshot id="screenshot-tools-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Eines</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook84.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Eines</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Eines</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Eines</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El menú <menuchoice
+><guimenu
+>Eines</guimenu
+></menuchoice
+> permet accedir a dues funcions per a la gestió de les dades.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Eines</guimenu
+><guisubmenu
+>Fusiona els contactes...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta eina permet fusionar el contingut de dos o més registres del &kaddressbook;. Per activar-la, primer haureu de seleccionar dos o més contactes (prement la tecla &Ctrl; o &Maj; i feu clic esquerre per fer la vostra selecció). Apareixerà un diàleg demanant que verifiqueu quins contactes voleu fusionar i on s'haurà de desar el registre fusionat. Feu clic a <quote
+>fusiona</quote
+> per a completar l'operació.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Eines</guimenu
+><guisubmenu
+>Cerca els contactes duplicats...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta eina cercarà les entrades duplicades en una o més llibretes d'adreces i oferirà l'opció de fusionar qualsevol registre duplicat que trobi.</para
+></listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-settings-menu"
+> 
+  <title
+>El menú Arranjament</title>
+  
+  <para>
+  <screenshot id="screenshot-settings-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Arranjament</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook85.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Arranjament</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Arranjament</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Arranjament</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+    
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  <para
+>El menú <menuchoice
+><guimenu
+>Arranjament</guimenu
+></menuchoice
+> ofereix cinc opcions per ajustar la forma en què opera el &kaddressbook;.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+><inlinemediaobject
+><imageobject
+><imagedata fileref="show-menu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Mostra la barra de menús</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Aquesta opció permet ocultar o mostrar la barra de menús.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Mostra les barra d'eines</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció permet ocultar o mostrar la barra d'eines.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura les dreceres...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció permet personalitzar les dreceres de teclat disponibles al &kaddressbook;. Per a més detalls, vegeu <link linkend="settings-configure-shortcuts"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura les barres d'eines...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquest paràmetre permet personalitzar el contingut de la barra d'eines del &kaddressbook;. Per a més detalls, vegeu <link linkend="settings-configure-toolbars"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura el &kaddressbook;...</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>,</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Aquesta opció permet configurar diverses opcions avançades del &kaddressbook;. Per a més detalls, vegeu <link linkend="settings-configure-kaddressbook"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-help-menu"
+> 
+  <title
+>El menú Ajuda</title>
+  
+  <para>
+  <screenshot id="screenshot-help-menu">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Ajuda</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook86.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Ajuda</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Ajuda</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Ajuda</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El menú <menuchoice
+><guimenu
+>Ajuda</guimenu
+></menuchoice
+> ofereix set opcions.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="system-help.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Manual del &kaddressbook;</guisubmenu
+></menuchoice
+> <keycombo action="press"
+><keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Aquesta opció mostra una còpia del <quote
+>Manual del &kaddressbook;</quote
+> a través del programa d'utilitat &khelpcenter;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="help-about.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Què és això?</guisubmenu
+></menuchoice
+><keycombo action="simul"
+>&Maj; <keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Aquesta és l'eina d'ajuda integrada del &kaddressbook;. Feu clic esquerre en aquesta opció, després moveu el cursor i feu clic en qualsevol dels primers quatre elements que hi ha a la barra d'eines. Es mostrarà una breu descripció de la funció d'aquesta eina.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="tools-report-bug.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Informa d'un error...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció obre un diàleg que ajuda a presentar un informe d'error a <ulink url="https://bugs.kde.org/"
+>bugs.kde.org</ulink
+>, la pàgina principal del seguidor d'errors del &kde;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-x-ms-shortcut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Donació</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Obre una <ulink url="https://kde.org/community/donations/?app=kaddressbook"
+>pàgina web</ulink
+> en el vostre navegador, on podreu donar diners per donar suport al &kde;. S'accepten euros, dòlars, rubles, lliures esterlines, iens, iuans, pesos, &etc;</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-language.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Canvia l'idioma de l'aplicació...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció permet canviar l'idioma que s'utilitza per etiquetar els diversos elements del menú i les pantalles d'ajuda integrades. Haureu de sortir del &kaddressbook; i tornar a iniciar abans que el nou idioma tingui efecte.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="kaddressbook.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Quant al &kaddressbook;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Feu clic en aquest element per a saber quina versió del &kaddressbook; esteu executant, quines biblioteques s'han emprat per a compilar / construir el codi executable i qui és el programador principal del &kde;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="KDE_logo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Quant al &kde;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció mostra informació sobre el &kde;. Sou lliure!</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  </sect2>
+  
+  </sect1>
+  
+  <sect1 id="tool-bar-items">
+  <title
+>La barra d'eines</title>
+  
+  <para
+>Hi ha disponibles cinc eines separades a la barra d'eines del &kaddressbook;: <quote
+>Contacte nou</quote
+>, <quote
+>Grup nou</quote
+>, <quote
+>Edita el contacte</quote
+>, <quote
+>Cerca...</quote
+> i un filtre de categoria. Aquí hi ha una imatge. (Recordeu que només he documentat la versió predeterminada de la barra d'eines del &kaddressbook;. Podreu modificar la disposició de la barra d'eines utilitzant el <link linkend="the-settings-menu"
+>menú <quote
+>Arranjament</quote
+></link
+>).</para>
+  
+  <para>
+  <screenshot id="screenshot-tool-bar">
+      <screeninfo
+>Un primer pla de la barra d'eines del &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook87.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Un primer pla de la barra d'eines del &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Barra d'eines estàndard del &kaddressbook;, de prop i personal.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Contacte nou</guibutton
+></term>
+    <listitem
+><para
+>Aquest botó de la barra d'eines obre el diàleg <quote
+>Afegeix un contacte nou</quote
+> documentat en el <link linkend="edit-basic-info"
+>capítol 4</link
+> anterior.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Grup nou</guibutton
+></term>
+    <listitem
+><para
+>Aquest botó de la barra d'eines obre el diàleg <quote
+>Afegeix un grup nou</quote
+> documentat en <link linkend="file-new-group"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Edita el contacte</guibutton
+></term>
+    <listitem
+><para
+>Aquest botó de la barra d'eines obre el diàleg <quote
+>Edita el contacte</quote
+> documentat en el <link linkend="edit-basic-info"
+>capítol 4</link
+> anterior.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+>[ Cerca...&nbsp;<keycombo action="simul"
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ]</term>
+    <listitem
+><para
+>Aquesta eina cerca mentre escriviu a través de tots els contactes a les llibretes d'adreces seleccionades. Prement la drecera <keycombo
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> simplement col·locareu el cursor dins del quadre <quote
+>Cerca...</quote
+>. Recordeu que aquesta funció cerca la totalitat en cada registre de contacte. Una cerca de «and» podrà retornar no només Andy Brown i Andrew Jones, sinó també Bill Smith (que treballa per a Brown and Root Construction Company).</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-search">
+      <screeninfo
+>Una captura de pantalla de la funció <quote
+>Cerca</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook91.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla de la funció <quote
+>Cerca</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La funció <quote
+>Cerca</quote
+> del &kaddressbook; en acció.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+>[ (Tot)&nbsp;<inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+>]</term>
+    <listitem
+><para
+>Aquesta eina realitza una funció de filtratge, basada en categories. Les dues categories predeterminades són <quote
+>Sense etiqueta</quote
+> i <quote
+>Grups</quote
+>. Podreu crear categories noves associant les <quote
+>Etiquetes</quote
+> de la vostra pròpia disposició amb registres de contactes particulars (vegeu <link linkend="edit-basic-info"
+>Afegir un contacte nou</link
+> en el capítol 4, a dalt). En fer clic a qualsevol dels botons <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> s'establiran les categories seleccionades a <quote
+>Cap</quote
+>. El botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> restablirà els criteris de selecció a <quote
+>Tots</quote
+>.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para>
+  <screenshot id="toolbar-filter">
+      <screeninfo
+>Una captura de pantalla de la funció <quote
+>Filtre</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook92.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla de la funció <quote
+>Filtre</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La funció <quote
+>Filtre</quote
+> del &kaddressbook; en acció.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+     
+  </sect1>
+  
+  <sect1 id="context-menus">
+  <title
+>Els menús contextuals</title>
+  
+  <para
+>Quan feu clic amb el &BDR; a qualsevol lloc dins de l'Àrea de text principal, apareixerà un menú contextual, com s'il·lustra a continuació. El menú particular que apareix dependrà tant del plafó on es va produir el clic dret com de l'element de dades particular que s'ha seleccionat, si n'hi ha cap.</para>
+  
+  <sect2 id="the-addressbook-panel">
+  <title
+>El menú contextual de la llibreta d'adreces</title>
+  
+  <para>
+  <screenshot id="addressbook-context-menu">
+      <screeninfo
+>Una captura de pantalla del menú contextual a la llibreta d'adreces del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook93.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú contextual a la llibreta d'adreces del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú contextual a la <quote
+>Llibreta d'adreces</quote
+> del &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix una carpeta de la llibreta d'adreces...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual no realitza una funció útil en la versió 5.10.3.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Elimina la carpeta de la llibreta d'adreces</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual no realitza una funció útil en la versió 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Afegeix una llibreta d'adreces...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual llançarà el diàleg <quote
+>Afegeix una llibreta d'adreces</quote
+>, el qual està documentat en el <link linkend="how-to-add-a-new-address-book"
+>capítol 2</link
+> anterior.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Suprimeix la llibreta d'adreces</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>En triar aquesta opció del menú contextual, se suprimirà la llibreta d'adreces seleccionada. Aneu amb compte!</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>F5</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Actualitza la carpeta de la llibreta d'adreces</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual força al &kaddressbook; a tornar a carregar les dades de contacte associades amb la llibreta d'adreces seleccionada.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Propietats de la carpeta...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual mostra la informació resumida sobre la llibreta d'adreces seleccionada.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Propietats de la llibreta d'adreces...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual mostra la informació resumida sobre la llibreta d'adreces seleccionada.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Subscripció de la banda del servidor...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual pot o no realitzar una funció útil en la versió 5.10.3. Què jo pugui veure, està permanentment en gris. Si enteneu què fa, aviseu-me (davidbryant AT gvtc.com).</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-contactslist-panel">
+  <title
+>El menú contextual de la Llista de contactes</title>
+  
+  <para>
+  <screenshot id="contactlist-context-menu">
+      <screeninfo
+>Una captura de pantalla del menú contextual a la <quote
+>Llista de contactes</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook94.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú contextual a la <quote
+>Llista de contactes</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú contextual a la <quote
+>Llista de contactes</quote
+> del &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+  
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Contacte nou</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Triar aquesta opció del menú contextual té exactament el mateix efecte que fer clic al botó<guibutton
+>&nbsp; &plus;&nbsp;Contacte nou&nbsp;</guibutton
+> que hi ha a la barra d'eines. Per obtenir tots els detalls, vegeu el <link linkend="how-to-add-a-new-contact"
+>capítol 2</link
+> anterior.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Grup nou</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>En triar aquesta opció del menú contextual s'obrirà un diàleg en el qual podreu definir un grup o llista de correu nous. Per obtenir una explicació detallada, vegeu <link linkend="file-new-group"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Edita el contacte...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Triar aquesta opció del menú contextual té exactament el mateix efecte que fer clic al botó <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Edita el contacte...</guibutton
+> que hi ha a la barra d'eines. Per obtenir tots els detalls, vegeu el <link linkend="how-to-add-a-new-contact"
+>capítol 2</link
+> anterior.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Exporta&nbsp;&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual permet exportar les dades de contacte seleccionades al format <acronym
+>vCard</acronym
+> o <acronym
+>csv</acronym
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Copia el contacte a &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual permet copiar el/s contacte/s seleccionat/s a una destinació variable. La llista de les destinacions mostrades quan es tria aquesta opció dependrà de quantes llibretes d'adreces hàgiu creat.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Mou el contacte a &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Funciona igual que l'operació <quote
+>Copia el contacte a</quote
+> descrita anteriorment, excepte que suprimeix les dades d'origen, en lloc de crear una còpia addicional.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Imprimeix</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual obre un diàleg per a la selecció de la impressora. Utilitzeu el diàleg <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Vista prèvia d'impressió</guisubmenu
+></menuchoice
+> que hi ha a continuació per a configurar l'interval de noms i el format de la impressió abans de seleccionar aquesta funció.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Vista prèvia d'impressió</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Aquesta opció del menú contextual obre un diàleg per a la vista prèvia de la impressió, el qual també permet donar format a l'informe, seleccionar quins elements incloure i especificar un criteri d'ordenació, &etc; Per a més detalls, vegeu <link linkend="file-print-preview"
+>l'apèndix</link
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Suprimeix el contacte</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Suprimeix el/s contacte/s seleccionat/s de la llibreta d'adreces actual.</para
+></listitem>
+    </varlistentry>
+        
+  </variablelist
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-individualcontact-panel">
+  <title
+>El menú contextual del Contacte individual</title>
+  
+  <para>
+  <screenshot id="individualcontact-context-menu">
+      <screeninfo
+>Una captura de pantalla del menú contextual a <quote
+>Contacte individual</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook95.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú contextual a <quote
+>Contacte individual</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú contextual a <quote
+>Contacte individual</quote
+> del &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Segons l'element de dades que seleccioneu, la llegenda en aquest menú contextual pot variar. Però en tots els casos, la funció és la mateixa: l'element de dades seleccionat serà copiat al porta-retalls.</para>
+      
+  </sect2>
+  
+  </sect1>
+  
+</chapter>
+
+<glossary>
+   
+<!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
+    
+  <glossentry id="gloss-aim">
+  <glossterm
+><acronym
+>AIM</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>AIM</acronym
+> vol dir «America Online Instant Messaging». AIM va ser un dels primers líders en el competitiu mercat de missatgeria instantània, però va caure en desgràcia ja que AOL es va fer menys popular. El servei original es va suspendre el 2017, però els fanàtics l'han mantingut en funcionament <ulink url="http://iwarg.ddns.net/aim/"
+>en aquest lloc web</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-akonadi">
+  <glossterm
+>&akonadi;</glossterm>
+  <glossdef
+><para
+>Un extensible servei d'emmagatzematge d'escriptori creuat per a dades &PIM; i metadades que proporciona accés simultani de lectura, escriptura i consulta. L'&akonadi; es pot manipular amb l'ordre akonadictl: per aprendre més introduïu <quote
+>akonadictl --help</quote
+> en una finestra de consola.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-cloud">
+  <glossterm
+>Servei basat en el núvol</glossterm>
+  <glossdef
+><para
+>Qualsevol proveïdor d'emmagatzematge de dades i recursos de processament de dades que resideixen en algun <quote
+>núvol</quote
+> de servidors als quals es pot accedir a través d'Internet.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-csv">
+  <glossterm
+>.csv</glossterm>
+  <glossdef
+><para
+>Un fitxer amb els valors separats per comes (o <filename class="extension"
+>.csv</filename
+>) és un document de text net on cada línia o registre es divideix en camps per un caràcter separador específic, generalment una coma. El format <filename class="extension"
+>.csv</filename
+> es remunta als primers dies de la informàtica. Encara s'utilitza àmpliament, principalment perquè és conceptualment molt senzill.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-dav">
+  <glossterm
+><acronym
+>DAV</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DAV</acronym
+> vol dir Distributed Authoring and Versioning, el qual existeix en diversos <quote
+>sabors</quote
+>, com WebDAV (per a crear pàgines a Internet), GroupDav (per a treball en grup, programari de codi obert creat per un grup de col·laboradors) i CalDAV (gestió del calendari per a grups), cadascun dels quals ajuda a connectar clients de codi obert amb servidors de codi obert.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-digest">
+  <glossterm
+><acronym
+>DIGEST-MD5</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DIGEST-MD5</acronym
+> és una tècnica d'autenticació utilitzada per a configurar comunicacions segures entre un client i un servei d'Internet. Obté el seu nom de la funció de suma MD5 emprada per a codificar les credencials del client. Per obtenir més informació referent a això, vegeu <ulink url="https://en.wikipedia.org/wiki/Digest_access_authentication"
+>aquest article de la Wikipedia</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ews">
+  <glossterm
+><acronym
+>EWS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>EWS</acronym
+> vol dir Exchange Web Services, el conjunt de protocols propietaris de &Microsoft; per a l'intercanvi de dades personals entre els servidors d'Internet i els usuaris finals o clients. El <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> proporciona una funcionalitat similar.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gadu-gadu">
+  <glossterm
+>Gadu-Gadu</glossterm>
+  <glossdef
+><para
+>Gadu-Gadu (també conegut com a GG) és l'aplicació de missatgeria instantània més popular a Polònia.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gmx">
+  <glossterm
+><acronym
+>GMX</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GMX</acronym
+> vol dir Global Mail eXchange (o, a Alemanya, Global Message eXchange), un servei de correu electrònic gratuït amb publicitat. Per obtenir més informació referent a això, visiteu <ulink url="https://www.gmx.net/"
+>aquest lloc web</ulink
+> o <ulink url="https://www.gmx.com/"
+>aquest altre</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gravatar">
+  <glossterm
+>Gravatar</glossterm>
+  <glossdef
+><para
+>Un Gravatar, o Globally Recognized Avatar, és una imatge gràfica associada amb l'adreça de correu electrònic d'un usuari de WordPress. En general, es mostra com a una imatge gràfica de 80px X 80px. Atès que molts bloguers fan servir el programari WordPress, el Gravatar està àmpliament disponible.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gpws">
+  <glossterm
+>GroupWise</glossterm>
+  <glossdef
+><para
+>El GroupWise Messenger és un servei de missatgeria instantània patrocinat per Micro Focus International plc, una companyia de programari situada a Newbury, Berkshire, Anglaterra. Podeu obtenir una còpia del programari Messenger en <ulink url="https://mail.dcbe.org:8300/"
+>aquest lloc web</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gssapi">
+  <glossterm
+><acronym
+>GSSAPI</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>GSSAPI</acronym
+> vol dir Generic Security Service Application Program Interface, una mena de <quote
+>diccionari</quote
+> per als nombrosos protocols de seguretat que s'utilitzen a Internet. Consisteix en una biblioteca de programes i un conjunt de crides de subrutina estàndard que permeten a un client d'Internet determinar quin protocol de seguretat en particular està utilitzant un servei d'Internet i després codificar/descodificar les credencials de l'usuari de manera adequada.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-icq">
+  <glossterm
+><acronym
+>ICQ</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ICQ</acronym
+> no és precisament un acrònim: és un joc de paraules que sona com <quote
+>I Seek You</quote
+>. És una de les plataformes de missatgeria instantània originals, la qual va entrar en línia per primera vegada el 1996. El programari està disponible per a baixar <ulink url="https://icq.com/linux/en"
+>aquí</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-imap">
+  <glossterm
+>&IMAP;</glossterm>
+  <glossdef
+><para
+>&IMAP; vol dir Internet Message Access Protocol, un mètode àmpliament disponible per a gestionar els missatges de correu electrònic. &IMAP; manté i sincronitza les còpies locals i remotes d'un conjunt de missatges. En altres paraules, les dades emmagatzemades localment per un compte &IMAP; són una imatge reflectida dels missatges que hi ha al servidor.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-inline-pgp">
+  <glossterm
+>OpenPGP inclòs</glossterm>
+  <glossdef
+><para
+>OpenPGP inclòs és un protocol d'encriptatge en el qual les signatures PGP s'incrusten directament en el cos del missatge de correu electrònic. Aquest protocol està en desús a causa de les dificultats tècniques causades per l'ús indiscriminat de caràcters no ASCII en els missatges de correu electrònic de text net.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-irc">
+  <glossterm
+>&irc;</glossterm>
+  <glossdef
+><para
+>&irc; vol dir Internet Relay Chat, un servei de missatgeria instantània que té les seves arrels en un predecessor finlandès de la World Wide Web anomenat OuluBox (1988). &irc; ha estat perdent usuaris constantment durant molts anys a mesura que les plataformes de xarxes socials com Facebook s'han tornat més populars. Una xarxa restant més gran és Libera Chat. S'hi pot accedir <ulink url="https://web.libera.chat/"
+>a través d'aquest lloc web</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-isdn">
+  <glossterm
+><acronym
+>XDSI</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>XDSI</acronym
+> vol dir xarxa digital de serveis integrats (ISDN -Integrated Services Data Network-), el primer conjunt d'estàndards per a les telecomunicacions que van permetre la transmissió simultània de senyals analògiques de veu i senyals digitals de dades a través d'una xarxa commutada de cables de coure (&ead;, el sistema telefònic antic). <acronym
+>XDSI</acronym
+> era inevitable en els primers dies d'Internet, però últimament ha estat suplantat per tecnologies més robustes que permeten connexions no commutades a través de xarxes que utilitzen cables de fibra òptica, satèl·lits i transmissors/receptors de microones de molt alta freqüència. Encara s'utilitza àmpliament en algunes aplicacions industrials on cal una connexió directa punt a punt, però està en camí en el mercat de consum més ampli.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-jabber">
+  <glossterm
+>Jabber</glossterm>
+  <glossdef
+><para
+>Jabber és un servei de missatgeria instantània que es basa en el protocol <glossterm linkend="gloss-xmpp"
+><acronym
+>XMPP</acronym
+></glossterm
+>. El lloc web original de <quote
+>Jabber</quote
+> ja no accepta registres nous, però el protocol <acronym
+>XMPP</acronym
+> està en ús generalitzat. Per a més informació, vegeu <ulink url="https://xmpp.org/about/"
+>aquest lloc web</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-kmail">
+  <glossterm
+>&kmail;</glossterm>
+  <glossdef
+><para
+>Programa per a la gestió de correu electrònic del &kde;. Proporciona un entorn totalment integrat per enviar i rebre missatges de correu electrònic des d'un (o més) compte/s de correu electrònic, mantenint tantes identitats de correu electrònic com vulgueu, organitzant i arxivant els vostres missatges de correu electrònic antics i gestionant les vostres claus personals per a l'encriptatge de correu electrònic.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-kolab">
+  <glossterm
+>Kolab</glossterm>
+  <glossdef
+><para
+>Kolab Systems AG és una corporació amb seu a Zuric, Suïssa, que proporciona eines de programari propietàries i de codi obert per a facilitar la col·laboració entre grups de persones que comparteixen dades, missatges i recursos de calendari / programació a través d'Internet. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> proporciona paquets de programari similars, encara que totalment propietaris.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ldap">
+  <glossterm
+><acronym
+>LDAP</acronym
+></glossterm>
+  <glossdef
+><para
+>El Lightweight Directory Access Protocol (o <acronym
+>ldap</acronym
+>) és un protocol o mètode estàndard per a compartir algunes classes particulars d'informació entre els molts ordinadors de servidor que comprenen la Internet.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-ldif">
+  <glossterm
+>.ldif</glossterm>
+  <glossdef
+><para
+>Un <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> Data Interchange Format (o <filename class="extension"
+>.ldif</filename
+>) és un tipus de fitxer de text net dissenyat per a intercanviar informació de directori entre els diferents servidors en una xarxa distribuïda.</para
+></glossdef>
+  </glossentry
+> 
+
+  <glossentry id="gloss-mnwhl">
+  <glossterm
+>Meanwhile</glossterm>
+  <glossdef
+><para
+><quote
+>Meanwhile</quote
+> és un programari de codi obert dissenyat per a comunicar-se amb el programari de missatgeria instantània <ulink url="https://en.wikipedia.org/wiki/IBM_Sametime"
+><quote
+>Sametime</quote
+> d'IBM</ulink
+>. Per obtenir més informació referent a això, vegeu <ulink url="https://github.com/obriencj/meanwhile"
+>aquest lloc web</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-acro-mime">
+  <glossterm
+>&MIME;</glossterm>
+  <glossdef
+><para
+>&MIME; vol dir Multipurpose Internet Mail Extensions, un conjunt de convencions per a la codificació dissenyades per a fer que els missatges de correu electrònic siguin més flexibles en habilitar característiques com els jocs de caràcters estesos, imatges incrustades, codificació de <quote
+>text enriquit</quote
+>, &etc; (o encriptats) missatges escrits amb el codi ASCII de 7 bits. Gairebé tots els missatges de correu electrònic contemporanis estan codificats en &MIME;.</para
+></glossdef>
+  </glossentry>
+   
+  <glossentry id="gloss-open-pgp">
+  <glossterm
+>OpenPGP/&MIME;</glossterm>
+  <glossdef
+><para
+>OpenPGP/&MIME; es refereix a una convenció d'encriptatge per a missatges de correu electrònic codificats amb <glossterm linkend="gloss-acro-mime"
+>&MIME;</glossterm
+>. Un conjunt especial de capçaleres &MIME; s'embolcalla al voltant de la signatura PGP, el qual permet que un programa de client de correu electrònic oculti la signatura quan es mostra el missatge.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-group">
+  <glossterm
+>Servidor de treball en grup Open-Xchange</glossterm>
+  <glossdef
+><para
+>Open-Xchange AG és una corporació amb seu a Colònia, Alemanya, la qual proporciona eines de programari propietari i de codi obert per a facilitar la col·laboració entre grups de persones que comparteixen dades, missatges i recursos de calendari / programació a través d'Internet. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> i <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> proporcionen paquets de programari similars.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-pcs">
+  <glossterm
+><acronym
+>PCS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PCS</acronym
+> vol dir Personal Communication Service, el qual bàsicament és un telèfon mòbil amb alguna funcionalitat addicional incorporada. Els telèfons <acronym
+>PCS</acronym
+> funcionen en una banda de freqüència més alta que els telèfons mòbils tradicionals, el qual implica que poden proporcionar més amplada de banda que els telèfons mòbils més antics.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pgp">
+  <glossterm
+><acronym
+>PGP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>PGP</acronym
+> vol dir Pretty Good Privacy, un programa d'encriptació de dades que va ser llançat per Philip Zimmerman el 1991. La majoria del programari per a l'encriptació de correu electrònic actualment en ús dona feina a alguna variant de PGP per a encriptar, desencriptar i signar criptogràficament els missatges.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pim">
+  <glossterm
+>&PIM;</glossterm>
+  <glossdef
+><para
+>El sistema per a la gestió de la informació personal del &kde;, un conjunt de programes per ajudar-vos a gestionar els vostres contactes i la vostra agenda. &PIM; inclou el &kontact;, &kmail;, &kaddressbook;, &korganizer;, &akregator;, i l'&akonadi;. També es fa servir de manera més general per a descriure qualsevol sistema per a gestionar la informació personal com noms, adreces, números de telèfon, &etc;</para
+></glossdef>
+  </glossentry
+>  
+  
+  <glossentry id="gloss-qrcode">
+  <glossterm
+>Codi QR</glossterm>
+  <glossdef
+><para
+>El Codi QR vol dir codi de resposta ràpida (Quick Response Code), un codi de barres bidimensional utilitzat per a representar dades digitals. Va ser inventat al Japó el 1994 per al seu ús pels fabricants d'automòbils, però s'ha estès per tot arreu, pel que en l'actualitat és omnipresent.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sasl">
+  <glossterm
+><acronym
+>SASL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SASL</acronym
+> vol dir Simple Authentication and Security Layer, un marc de treball per a l'autenticació del client (contrasenyes i noms d'usuari) i la seguretat de les dades (connexions encriptades). És compatible amb més d'una dotzena de protocols diferents.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-mime">
+  <glossterm
+><acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>S/MIME</acronym
+> són les sigles de Secure / Multipurpose Internet Mail Extensions, un mètode criptogràfic estàndard per a signar, encriptar i desencriptar els missatges de correu electrònic. A diferència de <glossterm linkend="gloss-pgp"
+><acronym
+>PGP</acronym
+></glossterm
+>, el qual utilitza claus privades, <acronym
+>S/MIME</acronym
+> utilitza claus d'encriptatge públiques, publicades i certificades per una autoritat de certificació, com <ulink url="https://www.verisign.com/"
+>Verisign</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-opaque">
+  <glossterm
+><acronym
+>S/MIME</acronym
+> opac</glossterm>
+  <glossdef
+><para
+><acronym
+>S/MIME</acronym
+> opac vol dir la versió <quote
+>opaca</quote
+> per a les Secure / Multipurpose Internet Mail Extensions. És similar al format <quote
+>S/MIME</quote
+> definit anteriorment, però tot el contingut del missatge s'acumula en un sol objecte &MIME;. (La majoria dels missatges de correu electrònic codificats amb &MIME; consisteixen en dos o més objectes &MIME; separats).</para
+></glossdef>
+  </glossentry>
+ 
+  <glossentry id="gloss-sms">
+  <glossterm
+><acronym
+>SMS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SMS</acronym
+> vol dir servei de missatges curts (Short Message Service), un servei de missatgeria de text integrat en la majoria de les xarxes de comunicació de telèfons, internet i dispositius mòbils. Facilita l'intercanvi de missatges de text que tenen menys que 161 bytes de longitud.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ssl">
+  <glossterm
+><acronym
+>SSL</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>SSL</acronym
+> vol dir Secure Socket Layer, un protocol criptogràfic en desús que <acronym
+>TLS</acronym
+> ha suplantat en gran mesura.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-tls">
+  <glossterm
+><acronym
+>TLS</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>TLS</acronym
+> vol dir Transport Layer Security, un protocol criptogràfic que s'utilitza àmpliament per a protegir les comunicacions d'Internet. La seva funció principal és permetre que un client i un servidor intercanviïn suficient informació de manera segura perquè puguin configurar un parell de claus d'encriptatge/desencriptatge per al seu ús durant la resta de la sessió d'Internet. <acronym
+>TLS</acronym
+> és la baula més feble de la cadena que connecta un programa client amb un servei d'Internet segur (encriptat). Ha estat l'objectiu de diversos «exploits» de pirateria, i s'ha revisat diverses vegades en resposta a aquests atacs.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-vcf">
+  <glossterm
+>.vcf</glossterm>
+  <glossdef
+><para
+>El format de targeta virtual (comercial) (o <filename class="extension"
+>.vcf</filename
+>) és un format d'intercanvi de dades orientat a paraules clau que ha passat per diverses iteracions (2.0, 2.1, 3.0, &etc;) des de la seva introducció <emphasis
+>ca.</emphasis
+> 1990. La versió més recent és la vCard 4.0.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-xmpp">
+  <glossterm
+><acronym
+>XMPP</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>XMPP</acronym
+> són les sigles d'Extensible Messaging and Presence Protocol, la base tecnològica bàsica per al servei de missatgeria instantània <quote
+>Jabber</quote
+>.</para
+></glossdef>
+  </glossentry>
+  
+  </glossary>
+
+&docbook-reference;
+
+</book>

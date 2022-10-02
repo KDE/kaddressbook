@@ -1,0 +1,1400 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>Deutsches</firstname
+><surname
+>KDE-Übersetzerteam</surname
+><affiliation
+><address
+><email
+>kde-i18n-de@kde.org</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-08-26</date>
+<releaseinfo
+>5.10.3 (Anwendungen 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; ist ein sehr komplexes Programm mit vielen eingebauten Funktionen. Einige der weitergehenden Funktionen von &kaddressbook; sind in diesem Anhang dokumentiert, vor allem um zu verhindern, dass das Hauptdokument zu groß und unhandlich wird.  </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-Mail</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>Weitergehende Funktionen von &kaddressbook;</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>Der Dialog „Neue Gruppe“</title>
+    
+  <para
+>Wenn Sie die Funktion <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Neue Gruppe</guibutton
+> aufrufen, wird folgender Dialog angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Neue Gruppe</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Dialogs <quote
+>Neue Gruppe</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Neue Gruppe</quote
+> in &kaddressbook; nach der Auswahl der Funktion <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Neue Gruppe</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Verwenden Sie das Aufklappfeld <quote
+>Hinzufügen zu:</quote
+>, um das Adressbuch zu wählen dem die neue Gruppe hinzugefügt werden soll. Verwenden Sie das Feld <quote
+>Name</quote
+>, um der neuen Gruppe einen Namen. zu geben. Geben Sie E-Mail-Adressen oder Teile von E-Mail-Adressen in den blauen <quote
+>&plus;</quote
+>-Bereich ein. Eine Liste mit potenziellen Übereinstimmungen wird angezeigt. Wählen Sie einen Eintrag in der angezeigten Liste aus und dann wird wird der neue Name der Liste hinzugefügt. Fahren Sie mit dem Hinzufügen einzelner Kontakte zur Liste fort. bis die Liste vollständig ist und klicken Sie dann auf den Knopf <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>, um diese Gruppe zu Ihrem Adressbuch hinzuzufügen. Wenn Sie einen Namen aus der Liste löschen möchten, klicken Sie auf den Knopf <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> rechts neben dem jeweiligen Namen. Wenn Sie später Änderungen an der Gruppe vornehmen müssen, wählen Sie die Gruppe aus und verwenden Sie das Menü <quote
+>Bearbeiten</quote
+> oder den Knopf <quote
+>Kontakt bearbeiten</quote
+> in der Werkzeugleiste, um einen sehr ähnlichen Dialog zu öffnen. Dialog, in dem Sie die gewünschten Änderungen vornehmen können.</para>
+
+  <para
+>Das Programm &kmail; bietet eine alternative Methode zum Erstellen einer neuen Gruppe in &kaddressbook;. Nachdem Sie eine E-Mail-Nachricht an mehrere Personen adressiert haben, können Sie eine neue Gruppe zu Ihrem Adressbuch wie unten gezeigt hinzuzufügen.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Neue Gruppe</quote
+> in &kmail;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Dialogs <quote
+>Neue Gruppe</quote
+> in &kmail;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Neue Gruppe</quote
+> in &kmail; nach der Auswahl der Funktion <guibutton
+>&nbsp;Liste speichern ... &nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Nachdem Sie eine Nachricht an eine Gruppe von Personen adressiert haben, klicken Sie auf den Knopf <guibutton
+>&nbsp;Liste speichern...&nbsp;</guibutton
+> rechts neben dem Eingabebereich, dann wird das abgebildete Dialogfenster eingeblendet. Geben Sie der Liste einen Namen und klicken Sie mit der linken Maustaste auf den Knopf <guibutton
+>&nbsp;Liste speichern&nbsp;</guibutton
+>. Es erscheint ein weiterer Dialog, in dem Sie ein Adressbuch auswählen. Treffen Sie Ihre Auswahl, und eine neue Gruppe wird für Sie angelegt.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>Der Dialog „Druckvorschau“</title>
+    
+  <para
+>Mit der Funktion <quote
+>Druckvorschau</quote
+> von &kaddressbook; können Sie einen Ausdruck Ihrer Adressbuchdaten ganz nach Ihren Wünschen gestalten.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Druckvorschau</quote
+> von &kaddressbook;. Sie können ein oder mehrere ganze Adressbücher oder auch nur einzelne Kontakte auswählen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Als erstes müssen Sie die Kontakte auswählen, die gedruckt werden sollen. Wenn Sie nur einzelne Kontakte ausdrucken möchten, müssen Sie diese auswählen, bevor Sie den Dialog <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Druckvorschau</guisubmenu
+></menuchoice
+> öffnen. Hier können Sie alle Ihre Kontakte oder alle Kontakte in einem bestimmten Adressbuch auswählen. Klicken Sie auf . <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Weiter</guibutton
+>, wenn Sie Ihre Auswahl getroffen haben. Ein neuer Dialog wird angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der zweite Dialog <quote
+>Druckvorschau</quote
+> von &kaddressbook;. Sie können ein Sortierfeld und eine Sortierrichtung (aufsteigend oder absteigend) und außerdem können Sie zwischen sieben verschiedenen Druckstilen wählen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Hier können Sie ein Sortierfeld (eines der 47 benannten Felder im Kontaktdatensatz), die Richtung der Sortierung und eines von sieben verschiedenen Berichtsformaten auswählen. Wenn Sie auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Weiter</guibutton
+> klicken, können Sie das zu verwendende Farbschema anzupassen.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>Ein drittes Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein drittes Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der dritte Dialog <quote
+>Druckvorschau</quote
+> von &kaddressbook;. Hier können Sie ein Farbschema auswählen.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Hier ist ein Bild des fertigen Berichts. Er ist nun bereit für den Druck.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Bildschirmfoto des Dialogs <quote
+>Druckvorschau</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Druckvorschau</quote
+> in &kaddressbook;, nachdem der Bericht generiert wurde und zum Drucken bereit ist. Sie können Hoch- oder Querformat wählen und den Druck starten. </para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>Der Dialog „LDAP einrichten“</title>
+    
+  <para
+>Hier ist ein Bild des ersten Einrichtungsdialogs, der erscheint, wenn Sie entweder im Dialog <menuchoice
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Importieren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Von LDAP-Server importieren ...</guimenuitem
+> </menuchoice
+> <guibutton
+>LDAP-Server einrichten ...</guibutton
+> oder im Menü <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>&kaddressbook; einrichten ...</guisubmenu
+></menuchoice
+> wählen.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>LDAP-Server einrichten</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>LDAP-Server einrichten</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog<quote
+>LDAP-Server einrichten</quote
+> nach Auswahl von <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Von LDAP-Server importieren ...</guimenuitem
+></menuchoice
+> und klicken mit der linken Maustaste auf <guibutton
+>LDAP-Server einrichten ...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Wenn Sie bereits einen oder mehrere <acronym
+>LDAP</acronym
+>-Server eingerichtet haben, können Sie hier die Server auswählen, die die bei der Suche nach einem Namen oder einer E-Mail-Adresse abgefragt werden sollen. Verwenden Sie die <guibutton
+>Rechner hinzufügen ...</guibutton
+>, um einen neuen Server zur Liste der vorhandenen <acronym
+>LDAP</acronym
+>-Rechner hinzuzufügen. Verwenden Sie den Knopf <guibutton
+>Rechner bearbeiten ...</guibutton
+>, um einen Server neu einzurichten, der bereits in der Liste enthalten ist und den Knopf Schaltfläche <guibutton
+>Rechner entfernen</guibutton
+>, um einen nicht mehr benötigten Eintrag zu löschen. Der Knopf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Zurücksetzen</guibutton
+> kann verwendet werden, um die zuletzt durchgeführte Aktionen wie <quote
+>Hinzufügen</quote
+> oder <quote
+>Entfernen</quote
+> rückgängig zu machen. Die übrigen Schaltflächen (OK, Anwenden, Abbrechen) haben ihre normalen Funktionen: Änderungen übernehmen und beenden, Änderungen übernehmen und hier bleiben und Verlassen des Dialogs, ohne Änderungen vorzunehmen.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Wenn Sie entweder <guibutton
+>Rechner hinzufügen...</guibutton
+> oder <guibutton
+>Rechner bearbeiten...</guibutton
+> wählen, wird der folgende Dialog angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>LDAP-Server einrichten</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>LDAP-Server einrichten</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>LDAP-Server-Einstellung</quote
+>, nachdem Sie entweder auf <guibutton
+>Rechner hinzufügen ...</guibutton
+> oder <guibutton
+>Rechner bearbeiten ...</guibutton
+> geklickt haben.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Die ersten vier Felder (<quote
+>Benutzer:</quote
+>, <quote
+>Bind DN:</quote
+>, <quote
+>Bereich:</quote
+> und <quote
+>Passwort:</quote
+>) sind nicht aktiviert,wenn keine Authentifizierung erforderlich ist. Erfragen Sie diese Anmeldeinformationen beim Administrator des LDAP-Servers. Geben Sie die entsprechende &URI; in das Feld <quote
+>Rechner:</quote
+> ein. Die Standardwerte für <quote
+>Port:</quote
+>, <quote
+>Max. Größe:</quote
+>, &etc; werden für die meisten Benutzer gut funktionieren. Sie können die <guibutton
+>Server abfragen</guibutton
+> verwenden, um das Feld <quote
+>DN:</quote
+> einzurichten </para>
+
+  <para
+>Im Abschnitt <quote
+>Sicherheit</quote
+> können Sie zu verwendende Verschlüsselungsmethode angeben:  <quote
+>Keine</quote
+> für eine unverschlüsselte Verbindung, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> für Transport Layer Security oder <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> für Secure Socket Layer. Verwenden Sie die <quote
+>Authentifizierung</quote
+>, um die Authentifizierungsstufe für den Server auszuwählen: <quote
+>Anonym</quote
+> ohne Name oder Passwort, <quote
+>Einfach</quote
+>, wenn <quote
+>Bind-DN</quote
+> und <quote
+>Passwort</quote
+> angegeben werden müssen, und <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (Simple Authentication and Security Layer) für alle vier Dateneinträge.  Wenn <quote
+>SASL</quote
+> ausgewählt wird, verwenden Sie die <guibutton
+>Server abfragen</guibutton
+>, um die erweiterten Einstellungen für diesen Rechner einzurichten.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>Die Funktion „CSV-Datei importieren“</title>
+    
+  <para
+>Mit <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>CSV-Datei importieren ...</guimenuitem
+></menuchoice
+>, öffnen Sie einen Dialog. Nachdem Sie auf den Knopf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> geklickt und die zu importierende Datei ausgewählt haben, wird folgender Dialog angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>CSV-Datei importieren</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>CSV-Datei importieren</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>CSV-Datei importieren</quote
+> nach der Auswahl des Menüeintrags <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei importieren...</guimenuitem
+></menuchoice
+> und der zu importierenden Datei.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Verwenden Sie den Abschnitt <quote
+>Trennzeichen</quote
+> in diesem Dialog, umfdas Trennzeichen das Ende eines Feldes in der gewählten Eingabedatei zu definieren. Wenn Anführungszeichen zur Abgrenzung von Feldern mit eingebetteten Trennzeichen verwendet werden, können Sie den verwendeten Stil (einfaches oder doppeltes Anführungszeichen) im Auswahlfeld <quote
+>Texterkennungszeichen:</quote
+> festlegen. Wenn die Eingabedatei Datumsangaben enthält, verwenden Sie das <quote
+>Datumsformat:</quote
+>, um die Art der Kodierung festzulegen. Die Vorgabe ist „Y-M-D“. Bewegen Sie den Mauszeiger über das Feld <quote
+>Datumsformat:</quote
+> und es werden Formatierungsanweisungen angezeigt. Wenn die Eingabedatei nicht UTF-8-kodiert ist, verwenden Sie das Auswahlfeld <quote
+>Textkodierung:</quote
+>, um das zu verwendende Kodierungsschema anzugeben. Wenn die erste Zeile der Datei Spaltenüberschriften enthält, aktivieren Sie <quote
+>Erste Zeile der Datei überspringen</quote
+>, um zu verhindern, dass die Spaltenüberschriften als Daten importiert werden. Verwenden Sie die Felder <quote
+>Undefiniert</quote
+> oben in jeder Spalte, um anzugeben, welche Datenfelder importiert und wo sie gespeichert werden sollen.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>CSV-Datei importieren</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>CSV-Datei importieren</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>CSV-Datei importieren</quote
+> nach der Auswahl des Menüeintrags <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Importieren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei importieren...</guimenuitem
+></menuchoice
+> und der zu importierenden Datei. Die Felder, die importiert werden sollen, werden jetzt festgelegt.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Wenn der Inhalt der aktuellen Spalte importiert werden soll, wählen Sie ein Ziel aus der Liste der Feldnamen aus, die unter dem blauen Feld <quote
+>Undefiniert</quote
+> erscheint. Im <link linkend="export-csv-data"
+> nächsten Abschnitt</link
+> finden Sie eine Liste der vordefinierten Felder. Verwenden Sie die horizontale Bildlaufleiste am unteren Rand des Dialogfelds, um alle Spalten in der Eingabedatei anzuzeigen. Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf die <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Wenn Sie mehrere Adressbücher definiert haben, werden Sie gefragt, welches Adressbuch verwendet werden soll. &kaddressbook; importiert dann die ausgewählten Daten als neue Kontakte.</para>
+
+  <para
+>Wenn Sie in Zukunft weitere Datensätze im gleichen Format importieren möchten, können Sie auf <guibutton
+>Vorlage speichern ...</guibutton
+> (vgl. die erste Abbildung in diesem Abschnitt) klicken, um die getroffene Auswahl zu speichern. Sie werden dann aufgefordert, der Vorlage einen Namen zu geben. Wenn Sie später eine andere Datei mit demselben Layout importieren, können Sie Zeit sparen, indem Sie auf <guibutton
+>Vorlage anwenden ...</guibutton
+> klicken.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>Die Funktion „CSV-Datei exportieren“</title>
+    
+  <para
+>Mit der Funktion <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei exportieren ...</guimenuitem
+></menuchoice
+> wird ein Dialog geöffnet.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>CSV-Date exportieren</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>CSV-Date exportieren</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>CSV-Datei exportieren</quote
+> in &kaddressbook; nach der Auswahl der Funktion <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Exportieren&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>CSV-Datei exportieren</guimenuitem
+></menuchoice
+> </para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Sie können alle Ihre Kontaktdaten oder nur einen Teil davon auswählen. Wenn Sie auf <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> drücken, können Sie den Namen der erzeugten Datei und den Ordner, in den sie geschrieben wird, auswählen. Die Ausgabedatei enthält die folgenden Ausgabefelder, in dieser Reihenfolge von links nach rechts. Diese Liste der Feldnamen wird als erster Datensatz in die Datei aufgenommen.</para>
+
+  <para
+>Formatierter Name | Titel-Abk. (vor Name) | Vorname | Zusätzliche Namen | Nachname | Titel-Abk. (nach Name) | Spitzname| Geburtstag | Jahrestag | E-Mail (bevorzugt)  | E-Mail (2) | E-Mail (3) | E-Mail (4) | Straße (privat) | Postfach (privat) | Stadt (privat) | Staat/Bundesland (privat) | Postleitzahl (privat) | Land (privat) | Aufkleber (Privatadresse) | Straße (geschäftlich) | Postfach (geschäftlich) | Stadt (geschäftlich) | Staat/Bundesland (geschäftlich) | Postleitzahl (geschäftlich) | Land (geschäftlich) | Aufkleber (Geschäftsadresse) | Telefon (privat) | Telefon (geschäftlich) | Mobiltelefon| Fax (privat) | Fax (geschäftlich) | Autotelefon | ISDN | Pager | Mail-Programm | Titel | Rolle | Organisation | Notiz | Internetseite | Blog-Quelle | Beruf | Büro | Verwaltung | Assistent | Ehepartner</para>
+
+  <para
+>Alle Felder sind als Zeichenklassendaten formatiert. Daten wie Geburtstag und Jahrestag, falls vorhanden),sind im Format „jjjj-mm-tt“ (Jahr, Monat, Tag) kodiert.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>Änderung der Spaltenanzahl in der Ansicht</title>
+    
+  <para
+>Wenn Sie das Menü <menuchoice
+><guimenu
+>Ansicht</guimenu
+></menuchoice
+> öffnen, werden folgende Menüeinträge angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>Ein Bildschirmfoto des Menüs <quote
+>Ansicht</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Menüs <quote
+>Ansicht</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Das Menü <quote
+>Ansicht</quote
+> von &kaddressbook; nach der Auswahl von <menuchoice
+><guimenu
+>Ansicht</guimenu
+></menuchoice
+> aus der Menüleiste.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Sie sind nicht zufrieden mit dem drögen dreispaltigen Layout, das oben erscheint? Peppen Sie die Dinge mit diesem minimalistischen Ansatz ein wenig auf.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>Ein Bildschirmfoto der einfachen Ansicht in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der einfachen Ansicht in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Einfache Ansicht mit einer Spalte</quote
+> in &kaddressbook;, es werden nur die wichtigsten Kontaktdaten angezeigt.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Wenn diese <quote
+>einfache</quote
+> Ansicht verwenden, werden die vorhandenen und aktivierten Adressbücher nicht angezeigt. Nur die Kontakte aus den Adressbüchern, die vor der Auswahl dieser Ansicht ausgewählt waren ausgewählt wurden, werden angezeigt.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Wenn Ihnen die <quote
+>einfache</quote
+> Ansicht nicht zusagt, können Sie eine Ansicht mit <quote
+>zwei Spalten</quote
+> auswählen.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>Ein Bildschirmfoto der Ansicht mit zwei Spalten in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der Ansicht mit zwei Spalten in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Die Ansicht mit <quote
+>zwei Spalten</quote
+> in &kaddressbook;. Die Liste der Adressbücher wird über der alphabetisch sortierten Kontaktliste angezeigt.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+   
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>Einrichtung der Tastaturkurzbefehle</title>
+    
+  <para
+>Wenn Sie im Menü <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Tastaturkurzbefehle festlegen ...</guisubmenu
+> </menuchoice
+> wählen, wird folgender Dialog angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>Kurzbefehle festlegen</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>Kurzbefehle festlegen</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog<quote
+>Tastaturkurzbefehle festlegen</quote
+> von &kaddressbook;. Benutzen Sie das Suchfeld oder die vertikale Bildlaufleisten, um die Aktion zu finden, für die eine neuer Kurzbefehl eingegeben werden soll.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Die &kaddressbook;-Aktionen, für die bereits Tastaturkürzel definiert wurden, sind in der Spalte <quote
+>Kurzbefehl</quote
+> gekennzeichnet. Sie können entweder weitere Tastenkombinationen über die Spalte <quote
+>Alternativ</quote
+>, <quote
+>Global</quote
+> und <quote
+>Global Alternativ</quote
+> in dieser Tabelle oder einer Aktion, für die noch kein Tastaturkürzel definiert ist, eine neue Tastenkombination zuweisen. Wählen Sie die Aktion aus, indem Sie wie oben dargestellt auf ihren Namen klicken.. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Wenn Sie mit der &LMBn; auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Keiner</guibutton
+> klicken, ändert sich der Name in <quote
+>Eingabe ...</quote
+>. Sie können dann die Tastenkombinationen eingeben, die Sie der ausgewählten Aktion zuweisen möchten. Bewegen Sie den Mauszeiger über den Knopf <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Keiner</guibutton
+>, dann wird ein Hilfetext zu diesem Vorgang angezeigt. Wenn Sie eine Kombination wählen, die mit einer bestehenden Tastenkombination in Konflikt steht, wird eine Fehlermeldung angezeigt und Sie werden aufgefordert, eine andere Kombination auszuwählen. Sie können <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> verwenden, um Ihre Auswahl wieder zu löschen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>Kurzbefehle festlegen</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>Kurzbefehle festlegen</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog<quote
+>Tastaturkurzbefehle festlegen</quote
+> von &kaddressbook;, nachdem ein neues Tastaturkürzel eingegeben wurde, aber vor der Speicherung.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Klicken Sie auf <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>, um Ihre Änderungen zu speichern oder auf <guibutton
+>&nbsp;⦸&nbsp;Abbrechen&nbsp;</guibutton
+>, um den Dialog ohne Speichern der Änderungen zu beenden. Klicken Sie auf . <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Voreinstellungen</guibutton
+>, um die Standard-Tastenkombinationen von &kaddressbook; wiederherzustellen. Wählen Sie <guibutton
+>&nbsp;Schemata verwalten&nbsp;&nbsp;</guibutton
+>, um Ihre benutzerdefinierten Zuweisungen in ein größeres Schema von Tastenkombinationen zu integrieren, siehe das Kapitel <ulink url="help:/fundamentals/config.html"
+>&kde;-Software anpassen</ulink
+> im Handbuch zu den &kde;-Grundlagen.</para>
+
+  <para
+>Sie können den Knopf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Drucken</guibutton
+> klicken, um einen Ausdruck der Tastenkombinationen zu erstellen. Hier ist ein Beispiel aus der gedruckten Tabelle.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>Ein Bildschirmfoto der <quote
+>Druckausgabe</quote
+> in &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto der <quote
+>Druckausgabe</quote
+> in &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Ein Auszug aus der gedruckten Liste der Tastaturkurzbefehle von &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>Einrichtung der Werkzeugleiste</title>
+    
+  <para
+>Der folgende Dialog erscheint, wenn Sie auf im Menü <menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Werkzeugleisten einrichten ...</guisubmenu
+></menuchoice
+> auswählen.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>Werkzeugleisten einrichten</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>Werkzeugleisten</quote
+> einrichten in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Werkzeugleisten einrichten</quote
+>. Aktionen, die bereits in der Werkzeugleiste angezeigt werden, erscheinen im großen Fenster auf der rechten Seite. Aktionen im linken Fenster können der Werkzeugleiste hinzugefügt werden, wie im Folgenden erläutert wird.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Verwenden Sie eines der <quote
+>Filter</quote
+>-Felder, um die Auswahl einzugrenzen. Wählen Sie eine Aktion im linkenFenster eine Aktion aus, wenn Sie diese zur Symbolleiste hinzufügen möchten. Klicken Sie links auf das Symbol <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+>, um den Eintrag zur Liste im rechten Fenster hinzuzufügen. Wenn Sie einen Eintrag aus der Symbolleiste entfernen möchten, kehren Sie den Vorgang einfach um: Markieren Sie den zu löschenden Eintrag im rechten Fenster und klicken Sie auf das Symbol <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. Der ausgewählte Eintrag wird dann aus der Symbolleiste entfernt.</para>
+  
+  <para
+>Sie können die Reihenfolge der Einträge in der Werkzeugleiste durch Ziehen und Ablegen im rechten Fenster anpassen. Die Reihenfolge der Einträge in der Werkzeugleiste von links nach rechts entspricht der Reihenfolge im Fenster von oben nach unten. Sie können zusätzliche Änderungen am Aussehen der Werkzeugleiste vornehmen, indem Sie mit <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Symbol ändern ...</guibutton
+> das Symbol zu einer bestimmten Aktion anpassen. Auf ähnliche Weise können Sie die Beschreibung jedes Eintrags in der Werkzeugleiste ändern, indem Sie auf <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Text ändern...</guibutton
+> klicken.</para>
+  
+  <para
+>Verwenden Sie <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Voreinstellungen</guibutton
+>, um die Standardeinstellungen der Werkzeugleiste wiederherzustellen. Wählen Sie <quote
+>OK</quote
+>, um Ihre Änderungen zu speichern und den Dialog zu verlassen, <quote
+>Übernehmen</quote
+>, um Ihre Änderungen zu übernehmen, während das Dialogfeld geöffnet bleibt, oder <quote
+>Abbrechen</quote
+>, um das Dialogfeld zu verlassen, ohne Ihre Änderungen zu speichern. Im Kapitel <ulink url="help:/fundamentals/config.html"
+>&kde;-Software anpassen</ulink
+> im Handbuch zu den &kde;-Grundlagen. finden Sie eine ausführlichere Erläuterung dieses Vorgangs.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>Der Einrichtungsdialog von &kaddressbook;</title>
+    
+  <para
+>Wenn Sie  <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>&kaddressbook; einrichten ...</guisubmenu
+></menuchoice
+> auswählen, wird folgender Dialog angezeigt.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>Ein Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>Kontakt-Aktionen einrichten</quote
+> von &kaddressbook;. Diese Funktionen sind noch experimentell und noch nicht vollständig einsatzbereit.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Der erste Dialog unterstützt experimentelle Funktionen, die noch nicht vollständig implementiert sind. Sie können aus mehreren verschiedenen Einstellungen in den Abschnitten <quote
+>Adresse anzeigen</quote
+>, <quote
+>Telefonnummer anrufen</quote
+> oder <quote
+>SMS senden</quote
+> wählen.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Die nächste Seite <quote
+>LDAP-Server-Einstellungen</quote
+> ist der gleiche Dialog der im vorangegangenen Abschnitt mit dem Titel <link linkend="configure-ldap-server"
+><quote
+>Der Dialog „LDAP einrichten“</quote
+></link
+> dokumentiert ist.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein zweites Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Der Dialog <quote
+>LDAP-Server-Einstellungen</quote
+> und die zugehörigen Seiten sind in <link linkend="configure-ldap-server"
+>einem vorangehenden Abschnitt</link
+> dieses Anhangs dokumentiert.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Die letzte Seite zum Einrichten von &kaddressbook; erscheint, wenn Sie <quote
+>Module</quote
+> wählen.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>Ein drittes Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Ein drittes Bildschirmfoto des Dialogs <quote
+>&kaddressbook; einrichten</quote
+> in &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Im Dialog<quote
+>Module</quote
+> von &kaddressbook; gibt es insgesamt zehn Module. Sieben davon sind, wie oben gezeigt, standardmäßig aktiviert.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Die von den sieben Standard-<quote
+>Modulen</quote
+> unterstützten Aktionen wurden in den vorangegangenen Abschnitten dieses Handbuchs dokumentiert. Die Aktionen<quote
+><glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+> importieren/exportieren</quote
+> und <quote
+><glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+> importieren/exportieren</quote
+> finden Sie im Menü <menuchoice
+><guimenu
+>Datei</guimenu
+></menuchoice
+>, wenn sie aktiviert sind. Die Aktion <quote
+><glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+> überprüfen</quote
+> erscheint im Menü <menuchoice
+><guimenu
+>Extras</guimenu
+> </menuchoice
+>, wenn es aktiviert ist. Beachten Sie, dass &kaddressbook; beendet und neu gestartet werden muss, bevor Änderungen an den <quote
+>Modulen</quote
+> wirksam werden. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Danksagungen und Lizenz</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Copyright &copy; 2007–2019 KAddressBook-Autoren <email
+>montel@kde.org</email
+> </para>
+  
+  <para
+>Dokumentation Copyright &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  <para
+>Übersetzung Deutsches KDE-Übersetzerteam<email
+>kde-i18n-de@kde.org</email
+></para
+> &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Klicken Sie hier, um zum Inhaltsverzeichnis diese Anhangs zu gehen.</link
+></para>
+
+</sect1>
+
+</appendix>

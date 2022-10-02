@@ -1,0 +1,1120 @@
+# Translation of kaddressbook.po into Serbian.
+# Slobodan Simic <slsimic@gmail.com>, 2009.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-06-11 02:14+0200\n"
+"PO-Revision-Date: 2018-01-06 09:21+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Слободан Симић"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "slsimic@gmail.com"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:724 src/mainwidget.cpp:749
+#, kde-format
+msgid "Address Book"
+msgstr "Адресар"
+
+# >> @title:window
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Print Contacts"
+msgid "Contact"
+msgstr "Штампање контаката"
+
+# >> @option:check
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "All EMails"
+msgid "Emails"
+msgstr "све е‑поште"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Организација"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Рођендан"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Белешке"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr ""
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr ""
+
+#: src/viewertemplates/contact_embedded.html:75
+msgid "Blog Feed"
+msgstr ""
+
+#: kontactplugin/kaddressbook_plugin.cpp:43 src/aboutdata.cpp:29
+#: src/kaddressbookpart.cpp:40
+#, kde-format
+msgid "KAddressBook"
+msgstr "К‑адресар"
+
+#: kontactplugin/kaddressbook_plugin.cpp:47
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Нови контакт..."
+
+#: kontactplugin/kaddressbook_plugin.cpp:55
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "Појавиће се дијалог у коме можете да направите нови контакт."
+
+#: kontactplugin/kaddressbook_plugin.cpp:60
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Нова група контаката..."
+
+#: kontactplugin/kaddressbook_plugin.cpp:68
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "Појавиће се дијалог у коме можете да направите нову групу контаката."
+
+#: src/aboutdata.cpp:31
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "Програм КДЕ‑овог адресара"
+
+#: src/aboutdata.cpp:33
+#, fuzzy, kde-format
+#| msgid "Copyright © 2007–2018 KAddressBook authors"
+msgid "Copyright © 2007–2020 KAddressBook authors"
+msgstr "© 2007–2018, аутори К‑адресара"
+
+#: src/aboutdata.cpp:35 src/configuration/kaddressbook_config_plugins.cpp:45
+#: src/configuration/kaddressbook_config_userfeedback.cpp:46
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Лорен Монтел"
+
+#: src/aboutdata.cpp:35
+#, kde-format
+msgid "Current maintainer"
+msgstr "Тренутни одржавалац"
+
+#: src/aboutdata.cpp:36
+#, kde-format
+msgid "Tobias Koenig"
+msgstr "Тобијас Кениг"
+
+#: src/aboutdata.cpp:36
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Претходни одржавалац"
+
+#: src/categoryselectwidget.cpp:114
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Ресетуј филтер категорија"
+
+#: src/categoryselectwidget.cpp:121
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Очисти филтер категорија"
+
+#: src/categoryselectwidget.cpp:125
+#, kde-format
+msgid "(Untagged)"
+msgstr "(неозначено)"
+
+#: src/categoryselectwidget.cpp:130
+#, kde-format
+msgid "(Groups)"
+msgstr "(групе)"
+
+#: src/categoryselectwidget.cpp:136 src/categoryselectwidget.cpp:243
+#, kde-format
+msgid "(All)"
+msgstr "(све)"
+
+#: src/categoryselectwidget.cpp:246
+#, kde-format
+msgid "(None)"
+msgstr "(ништа)"
+
+#: src/categoryselectwidget.cpp:251
+#, kde-format
+msgid ", "
+msgstr ", "
+
+#: src/categoryselectwidget.cpp:251
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>Филтер категорија: %1</qt>"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:41
+#, kde-format
+msgid "Configure Plugins"
+msgstr "Подешавање прикључака"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:43
+#, fuzzy, kde-format
+#| msgid "(c), 2016-2018 Laurent Montel"
+msgid "(c), 2016-2020 Laurent Montel"
+msgstr "© 2016–2018, Лорен Монтел"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:42
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:44
+#, fuzzy, kde-format
+#| msgid "(c), 2016-2018 Laurent Montel"
+msgid "(c), 2020 Laurent Montel"
+msgstr "© 2016–2018, Лорен Монтел"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:78
+#, kde-format
+msgid "Tools Plugins"
+msgstr "Алатни прикључци"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:85
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "Прикључци за извоз/увоз"
+
+#: src/contactswitcher.cpp:35
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Претходни"
+
+#: src/contactswitcher.cpp:37
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "Пређите на претходни контакт на списку."
+
+#: src/contactswitcher.cpp:40
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "Кликните на ово дугме да пређете на претходни контакт на списку."
+
+#: src/contactswitcher.cpp:42
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Следећи"
+
+#: src/contactswitcher.cpp:44
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Пређите на следећи контакт на списку."
+
+#: src/contactswitcher.cpp:47
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "Кликните на ово дугме да пређете на следећи контакт на списку."
+
+#: src/contactswitcher.cpp:132
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 од %2"
+
+#: src/kaddressbook_options.h:32
+#, kde-format
+msgid "Import the given file"
+msgstr "Увези дати фајл"
+
+#: src/kaddressbook_options.h:37
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:42
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:46
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr "Фајлови или УРЛ‑ови. Корисник се пита да ли да се увезе."
+
+#: src/kaddressbook_options.h:50
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:65
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "&Подеси К‑адресар..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Фајл"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Ново"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Уређивање"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41
+#, kde-format
+msgid "&View"
+msgstr "При&каз"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:51
+#, kde-format
+msgid "&Action"
+msgstr "&Радња"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:55
+#, kde-format
+msgid "&Tools"
+msgstr "&Алатке"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:59
+#, kde-format
+msgid "&Settings"
+msgstr "&Подешавање"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:87
+#, kde-format
+msgid "&Export"
+msgstr "&Извоз"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:111
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Главна трака"
+
+#: src/mainwidget.cpp:357
+#, kde-format
+msgid "Import"
+msgstr "Увези"
+
+#: src/mainwidget.cpp:364
+#, kde-format
+msgid "Export"
+msgstr "Извези"
+
+#: src/mainwidget.cpp:413
+#, fuzzy, kde-format
+#| msgctxt "@label Search contacts in list"
+#| msgid "Search...<%1>"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Тражи... <%1>"
+
+#: src/mainwidget.cpp:639
+#, kde-format
+msgid "&Themes"
+msgstr "&Теме"
+
+#: src/mainwidget.cpp:650
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Одштампајте цео адресар или само изабране контакте."
+
+#: src/mainwidget.cpp:655
+#, kde-format
+msgid "Quick search"
+msgstr "Брза претрага"
+
+#: src/mainwidget.cpp:660
+#, kde-format
+msgid "Category filter"
+msgstr "Филтер категорија"
+
+#: src/mainwidget.cpp:665
+#, kde-format
+msgid "Select All"
+msgstr "Изабери све"
+
+#: src/mainwidget.cpp:667
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Изаберите све контакте у текућем приказу адресара."
+
+#: src/mainwidget.cpp:671
+#, kde-format
+msgid "Show QR Codes"
+msgstr "Прикажи КуР кодове"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "Приказ КуР кодова у контакту."
+
+#: src/mainwidget.cpp:677
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "Једноставно (једна колона)"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Једноставан режим приказа адресара."
+
+#: src/mainwidget.cpp:684
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "Две колоне"
+
+#: src/mainwidget.cpp:690
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "Три колоне"
+
+#: src/mainwidget.cpp:703
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "Фокус на брзу претрагу"
+
+#: src/mainwidget.cpp:716
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "Претплата на страни сервера..."
+
+# >> @title:window
+#: src/mainwidget.cpp:755 src/printing/printingwizard.cpp:59
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Штампање контаката"
+
+#: src/mainwindow.cpp:85
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Појавиће се дијалог у коме можете да подесите пречице у оквиру програма."
+
+#: src/mainwindow.cpp:130
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>Ово ће потпуно сакрити траку менија. Можете је касније вратити притиском "
+"%1.</qt>"
+
+# >> @title:window
+#: src/mainwindow.cpp:132
+#, kde-format
+msgid "Hide menu bar"
+msgstr "Сакривање траке менија"
+
+#: src/manageshowcollectionproperties.cpp:105
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Својства фасцикле адресара %1"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:81
+#, kde-format
+msgid "Full Name"
+msgstr "име и презиме"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:87
+#, kde-format
+msgid "Family Name"
+msgstr "презиме"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:92
+#, kde-format
+msgid "Given Name"
+msgstr "име"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:102 src/printing/detailled/detailledstyle.cpp:151
+#, kde-format
+msgid "Home Address"
+msgstr "кућна адреса"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:107
+#, kde-format
+msgid "Business Address"
+msgstr "пословна адреса"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:112
+#, kde-format
+msgid "Phone Numbers"
+msgstr "бројеви телефона"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:117
+#, kde-format
+msgid "Preferred EMail"
+msgstr "пожељна е‑пошта"
+
+# >> @option:check
+#: src/modelcolumnmanager.cpp:122
+#, kde-format
+msgid "All EMails"
+msgstr "све е‑поште"
+
+#: src/printing/compact/compactstyle.cpp:133
+#, kde-format
+msgid "Compact Style"
+msgstr "Сажето"
+
+# >> @info:progress
+#: src/printing/compact/compactstyle.cpp:189
+#: src/printing/detailled/detailledstyle.cpp:299
+#: src/printing/grantlee/grantleeprintstyle.cpp:57
+#: src/printing/mike/mikesstyle.cpp:128
+#: src/printing/ringbinder/ringbinderstyle.cpp:180
+#, kde-format
+msgid "Setting up document"
+msgstr "Постављам документ..."
+
+# >> @info:progress
+#: src/printing/compact/compactstyle.cpp:196
+#: src/printing/detailled/detailledstyle.cpp:306
+#: src/printing/grantlee/grantleeprintstyle.cpp:66
+#: src/printing/mike/mikesstyle.cpp:135
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printing"
+msgstr "Штампам..."
+
+# >> @info:progress
+#: src/printing/compact/compactstyle.cpp:200
+#: src/printing/detailled/detailledstyle.cpp:310
+#: src/printing/grantlee/grantleeprintstyle.cpp:70
+#: src/printing/mike/mikesstyle.cpp:139
+#: src/printing/ringbinder/ringbinderstyle.cpp:217
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Готово."
+
+#: src/printing/compact/compactstyle.cpp:223
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "Сажети стил штампања"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Изглед"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Поља"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr "Штампа кућну адресу, са кућним и мобилним бројем телефона."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "Са кућном адресом"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "Штампа пословну адресу, са пословним бројем телефона."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "Са пословном адресом"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "Штампа рођендан."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "Са рођенданом"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the e-mail and e-mail2 fields"
+msgstr "Штампа поља е‑поште и е‑поште 2."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "Са е‑поштом"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "Прва боја, када је укључена наизменична боја."
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "Прва боја"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "Друга боја, када је укључена наизменична боја."
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "Друга боја"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "Мења боју позадине на свакој наредној врсти."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "Наизменична боја позадине"
+
+#: src/printing/detailled/detailledstyle.cpp:91
+#, kde-format
+msgid "Organization:"
+msgstr "Организација:"
+
+#: src/printing/detailled/detailledstyle.cpp:100
+#, kde-format
+msgid "Email address:"
+msgstr "Адреса е‑поште:"
+
+#: src/printing/detailled/detailledstyle.cpp:101
+#, kde-format
+msgid "Email addresses:"
+msgstr "Адресе е‑поште:"
+
+#: src/printing/detailled/detailledstyle.cpp:112
+#, kde-format
+msgid "Telephone:"
+msgstr "Телефон:"
+
+#: src/printing/detailled/detailledstyle.cpp:113
+#, kde-format
+msgid "Telephones:"
+msgstr "Телефони:"
+
+#: src/printing/detailled/detailledstyle.cpp:125
+#, kde-format
+msgid "Web page:"
+msgstr "Веб страница:"
+
+#: src/printing/detailled/detailledstyle.cpp:139
+#, kde-format
+msgid "Domestic Address"
+msgstr "Домаћа адреса"
+
+#: src/printing/detailled/detailledstyle.cpp:142
+#, kde-format
+msgid "International Address"
+msgstr "Међународна адреса"
+
+#: src/printing/detailled/detailledstyle.cpp:145
+#, kde-format
+msgid "Postal Address"
+msgstr "Поштанске адресе"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Parcel Address"
+msgstr "Адреса за испоруке"
+
+#: src/printing/detailled/detailledstyle.cpp:154
+#, kde-format
+msgid "Work Address"
+msgstr "Адреса на послу"
+
+#: src/printing/detailled/detailledstyle.cpp:158
+#, kde-format
+msgid "Preferred Address"
+msgstr "Пожељна адреса"
+
+#: src/printing/detailled/detailledstyle.cpp:173
+#, kde-format
+msgid "Notes:"
+msgstr "Белешке:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:265
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Детаљан стил штампања — изглед"
+
+# >> @info:progress
+#: src/printing/detailled/detailledstyle.cpp:282
+#, kde-format
+msgid "Setting up colors"
+msgstr "Постављам боје..."
+
+#: src/printing/detailled/detailledstyle.cpp:325
+#, kde-format
+msgid "Detailed Style"
+msgstr "Детаљан стил"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Страница изгледа"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Заглавља контаката"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "Изаберите боју позадине насловног текста."
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+"Кликом на ово дугме позивате бирач боја у којем можете поставити боју "
+"позадине за наслове."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Боја позадине наслова:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Боја текста наслова:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "Изаберите боју насловног текста."
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+"Кликом на ово дугме позивате бирач боја у којем можете поставити боју текста "
+"у насловима."
+
+#: src/printing/mike/mikesstyle.cpp:154
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Мајков стил штампања"
+
+#: src/printing/printingwizard.cpp:62
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Које контакте желите да одштампате?"
+
+# >> @title:window
+#: src/printing/printingwizard.cpp:65
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Избор контаката за штампање"
+
+# >> @title:window
+#: src/printing/printingwizard.cpp:71
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Избор стила штампања"
+
+# >> @title:window
+#: src/printing/printingwizard.cpp:220
+#, kde-format
+msgid "Print Progress"
+msgstr "Напредак штампања"
+
+# >> @title:window
+#: src/printing/printprogress.cpp:38
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Напредак штампања"
+
+#: src/printing/printprogress.cpp:60
+#, kde-format
+msgid "Progress"
+msgstr "Напредак"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Подаци о контакту који се штампају"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "Штампај бројеве телефона контаката"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr "Попуните ову кућицу да би се штампали бројеви телефона контаката."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Бројеви телефона"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "Штампај адресе е‑поште контаката"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr "Попуните ову кућицу да би се штампале адресе е‑поште контаката."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "Адресе е‑поште"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "Штампај адресе"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr "Попуните ову кућицу да би се штампале адресе контаката."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Адресе"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "Штампај организације контаката"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "Попуните ову кућицу да би се штампале организације контаката."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "Штампај рођендане контаката"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "Попуните ову кућицу да би се штампали рођендани контаката."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "Штампај белешке контаката"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "Попуните ову кућицу да би се штампале белешке контакта."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:94
+#, kde-format
+msgid "Note: "
+msgstr "Белешка:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:146
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Регистраторски стил штампања — изглед"
+
+# >> @info:progress
+#: src/printing/ringbinder/ringbinderstyle.cpp:164
+#, kde-format
+msgid "Setting up fields"
+msgstr "Постављам поља..."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:232
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Отисак за регистраторе"
+
+#: src/printing/stylepage.cpp:51
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "растуће"
+
+#: src/printing/stylepage.cpp:52
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "опадајуће"
+
+#: src/printing/stylepage.cpp:64
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Преглед није доступан.)"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Избор стила штампања"
+
+#: src/printing/stylepage.cpp:133
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Како би отисак требало да изгледа?\n"
+"К‑адресар пружа неколико стилова штампања, за различите намене.\n"
+"Изаберите испод стил који вам одговара."
+
+#: src/printing/stylepage.cpp:138
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Ређање"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Критеријум:"
+
+#: src/printing/stylepage.cpp:148
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Изаберите главно поље за ређање."
+
+#: src/printing/stylepage.cpp:151
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"Кроз овај списак можете изабрати поље по којем ће контакти бити поређани при "
+"штампању. Редослед ређања, растући или опадајући, задајете опцијом Редослед:."
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Редослед:"
+
+#: src/printing/stylepage.cpp:161
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "Изаберите редослед ређања."
+
+#: src/printing/stylepage.cpp:164
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"Овом опцијом бирате да ли контакте ређати растућим или опадајућим "
+"редоследом. Поље контакта по којем се ређа задајете опцијом Критеријум:."
+
+#: src/printing/stylepage.cpp:171
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Стил штампања"
+
+#: src/printing/stylepage.cpp:177
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Изаберите стил штампања."
+
+#: src/printing/stylepage.cpp:180
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+"Изаберите жељени стил штампања. Слика прегледа ће вам помоћи да одлучите."
+
+#: src/widgets/quicksearchwidget.cpp:41
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Потражите контакте на списку."
+
+#: src/widgets/quicksearchwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"Почните да куцате у овом пољу ниску за тражење, и добићете списак контаката "
+"који се поклапају. Ово је брз начин за налажење жељених контаката."

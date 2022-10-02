@@ -1,0 +1,4625 @@
+# Translation of kaddressbook to Croatian
+#
+# Translators: Anđelko Iharoš <>,Hrvoje Spoljar <spole@x.pbf.hr>,Igor Jagec <igorm5@yahoo.com>,Robert Vuković <robi@surfer.hr>,Vjekoslav Matausic <vjekoslav.matausic@zg.htnet.hr>,Vladimir Žderić <vz@piksel.hr>,
+# ivan <admin@linuxzasve.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook 0\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2009-06-22 16:49+0200\n"
+"Last-Translator: ivan <admin@linuxzasve.com>\n"
+"Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.0\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Anđelko Iharoš, Hrvoje Spoljar, Igor Jagec, Robert Vuković, Vjekoslav "
+"Matausic, Vladimir Žderić"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"lokalizacija@linux.hr, lokalizacija@linux.hr, lokalizacija@linux.hr, "
+"lokalizacija@linux.hr, lokalizacija@linux.hr, lokalizacija@linux.hr"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, fuzzy, kde-format
+msgid "Address Book"
+msgstr "KAdresar"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+msgid "Contact"
+msgstr "Sadrži..."
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "E-pošta"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organizacija"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "Bilješka:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "Naslov"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "E-pošta"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr ""
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "&Novi kontakt..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "pronađen je %1 kontakt:"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "KDE adresar"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Trenutni održavatelj"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr ""
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Trenutni održavatelj"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr ""
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Izvorni tvorac"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Koristi posljednji aktivan filter"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Koristi posljednji aktivan filter"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "Nijedan"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Dodaj …"
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "E-pošta:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+msgid "Phone: %1"
+msgstr "Telefon:"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Text"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Tekst"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+"Kopira trenutno odabrane kontakte u sustavski klipbord u vCard formatu."
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr ""
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Neodređeno"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Godišnjica"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Koristi preporučljivo"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "E-pošta"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "E-pošta"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "E-pošta"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Profesija"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Ured"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "Mianmar"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "Ime asistenta"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "&Odabrani kontakti"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Odabrana polja"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "KAdresar"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Odispiši cijeli adresar"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "&Odabrani kontakti"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Odabrana polja"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Odabrana polja"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "KAdresar"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "&Odabrani kontakti"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+msgid "Fetch Contacts"
+msgstr "&Odabrani kontakti"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Prefiksi"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Posao"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Broj korisnika"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Egipat"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Slika"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Datoteka za uvoz:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Prefiksi"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Posao"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Broj korisnika"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Egipat"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Slika"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Izvezi u mobilni telefon"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "KAdresar"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Postavi kategorije za sve odabrane kontakte."
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Uvoženje kontakata"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Uvoženje kontakata"
+msgstr[1] "Uvoženje kontakata"
+msgstr[2] "Uvoženje kontakata"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+msgid "Import the given file"
+msgstr "Uvezi datu vCard"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "Uvezi KDE 2 adresar..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, fuzzy, kde-format
+msgid "&File"
+msgstr "Filtar:"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "Novi..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, fuzzy, kde-format
+msgid "&Edit"
+msgstr "&Uredi..."
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, fuzzy, kde-format
+msgid "&View"
+msgstr "Dodaj pogled"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+msgid "&Action"
+msgstr "Latvija"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, fuzzy, kde-format
+msgid "&Tools"
+msgstr "Alati"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, fuzzy, kde-format
+msgid "&Settings"
+msgstr "Postavke pisma"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Izvoz"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, fuzzy, kde-format
+msgid "Main Toolbar"
+msgstr "Kontakt alatna traka"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+msgid "Import"
+msgstr "&Uvoz"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Izvoz"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Traži:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Postavi kategorije za sve odabrane kontakte."
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "Rekurzivno traženje"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "Kategorija"
+
+#: src/mainwidget.cpp:656
+#, fuzzy, kde-format
+msgid "Select All"
+msgstr "Poništi Odabir za Sve"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Izabira sve vidljive kontakte iz trenutnog pogleda."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Odispiši cijeli adresar"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Uredi kontakt"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+msgid "Hide menu bar"
+msgstr "Pokaži skok-traku"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Uredi filter adresara"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Puno ime"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+msgid "Family Name"
+msgstr "Prezimena:"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+msgid "Given Name"
+msgstr "Ime:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Adresa (dom)"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "Business Address"
+msgstr "Posao"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+msgid "Phone Numbers"
+msgstr "Uredi broj telefona"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred Address"
+msgid "Preferred EMail"
+msgstr "Preporučljiva adresa"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "Email"
+msgid "All EMails"
+msgstr "E-pošta"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Tvrtka"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+msgid "Setting up document"
+msgstr "Postavljam pisma i boje"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Ispisivanje"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Gotovo"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "Odaberite stil ispisa"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, fuzzy, kde-format
+msgid "Appearance"
+msgstr "Stranica izgleda"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Polja"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Adresa (dom)"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgid "with business address"
+msgstr "Posao"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+msgid "with e-mail"
+msgstr "E-pošta"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "Boja pozadine"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Boja pozadine naslova:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "Naizmjenične pozadine"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "Organizacija"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Poštanska adresa"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, fuzzy, kde-format
+msgid "Email addresses:"
+msgstr "E-adrese:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefon :"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, fuzzy, kde-format
+msgid "Telephones:"
+msgstr "Telefoni:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "I&nternet stranica:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, fuzzy, kde-format
+msgid "Domestic Address"
+msgstr "Domaća adresa"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, fuzzy, kde-format
+msgid "International Address"
+msgstr "Međunarodna adresa"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Poštanska adresa"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, fuzzy, kde-format
+msgid "Parcel Address"
+msgstr "Adresa za isporuku paketa"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Adresa na poslu"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Preporučljiva adresa"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "Bilješka:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Detaljni stil ispisa – izgled"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+msgid "Setting up colors"
+msgstr "Postavljam pisma i boje"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Detaljni stil"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Stranica izgleda"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, fuzzy, kde-format
+msgid "Contact Headers"
+msgstr "Zaglavlja kontakata"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Boja pozadine naslova:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Boja pozadine naslova:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Boja teksta naslova"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Boja teksta naslova"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Mike-ov stil ispisa"
+
+#: src/printing/printingwizard.cpp:47
+#, fuzzy, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Koje kontakte želite da odispiste?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Odaberite kontakte za ispis"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Odaberite stil ispisa"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Napredovanje ispisa"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Ispis: napredovanje"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Napredak"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+msgid "Print contact phone numbers"
+msgstr "Uredi broj telefona"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, fuzzy, kde-format
+msgid "Phone numbers"
+msgstr "Uredi broj telefona"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "Poštanska adresa"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, fuzzy, kde-format
+msgid "Email addresses"
+msgstr "E-adrese:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+msgid "Print contact street addresses"
+msgstr "Štampaj adrese"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "Poštanska adresa"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+msgid "Print contact organizations"
+msgstr "Uredi kontakt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+msgid "Print contact birthdays"
+msgstr "Uredi kontakt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+msgid "Print contact notes"
+msgstr "Uredi kontakt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "Bilješka:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, fuzzy, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Detaljni stil ispisa - izgled"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+msgid "Setting up fields"
+msgstr "Postavljam pisma i boje"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Rastuće"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Silazno"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "( Pregled nije dostupan.)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Odaberite stil ispisa"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Kako bi otisak trebalo da izgleda?\n"
+"KAddressBook ima nekoliko stilova ispisa, napravljenih za različite "
+"namjene.\n"
+"Odaberite dole stil koji odgovara vašim potrebama."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Razvrstavanje"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Kriterij:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Odaberite polje za inkrementalnu pretragu"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Redoslijed:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Stil ispisa"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Odaberite vrstu ključa:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "&Odabrani kontakti"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Uvoz"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Uvezi vCard …"
+
+#, fuzzy
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Da li da uvezem kontakte?"
+
+#, fuzzy
+#~ msgid "Import CSV file..."
+#~ msgstr "Uvezi CSV popis..."
+
+#, fuzzy
+#~ msgid "Import LDIF file..."
+#~ msgstr "Uvezi LDIF adresar..."
+
+#, fuzzy
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Da li da uvezem kontakte?"
+
+#, fuzzy
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Uvezi iz Nokia-jinog mobilnog telefona..."
+
+#, fuzzy
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Da li da uvezem kontakte?"
+
+#, fuzzy
+#~ msgid "Import GMX file..."
+#~ msgstr "&Uvezi popis..."
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Izvezi vCard 3.0..."
+
+#, fuzzy
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Izvezi vCard 3.0..."
+
+#, fuzzy
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Izvezi vCard 3.0..."
+
+#, fuzzy
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Izvezi vCard 3.0..."
+
+#, fuzzy
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Izvezi vCard 2.1..."
+
+#, fuzzy
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Izvezi vCard 2.1..."
+
+#, fuzzy
+#~ msgid "Export CSV file..."
+#~ msgstr "Izvezi CSV popis..."
+
+#, fuzzy
+#~ msgid "Export LDIF file..."
+#~ msgstr "Izvezi LDIF adresar..."
+
+#, fuzzy
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Izvezi LDIF adresar..."
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "Izvezi LDIF adresar..."
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Ne mogu otvoriti datoteku <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ne mogu otvoriti datoteku <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "Dijalog za uvoz CSV datotekaova"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Uvoženje kontakata"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Datoteka za uvoz:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Odaberite vCard za uvoz:"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Razdjelnik"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Zarez"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Točka-zarez"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Razmak"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Ostalo"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Odaberite vrstu ključa:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Oblik datuma:"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Odaberite vrstu ključa:"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Priizbornik šablon"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Spremi predložak"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latvija"
+
+#, fuzzy
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Morate da pridružite bar jednu kolonu."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "( Pregled nije dostupan.)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "( Pregled nije dostupan.)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Naziv predloška"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Ne mogu otvoriti ulaznu datoteku!"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>Želite li zaista da uklonite ključ <b>%1</b>?</qt>"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Odabir predložak"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Odaberite šablon koji odgovara CSV datoteku:"
+
+#, fuzzy
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Ne mogu otvoriti <b>%1</b> za čitanje.</qt>"
+
+#, fuzzy
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Odabrali ste popis kontakata, treba li ih izvesti u više datotekaova?"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Izvezi u mobilni telefon"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Izvezi u mobilni telefon"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Odaberite vCard za uvoz:"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Uvoz vCard-a nije uspio"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>Ne mogu da pristupim <b>%1</b>."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Uvezi vCard"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Da li da uvezem ovaj kontakt u vaš adresar?"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "&Uvezi popis..."
+
+#, fuzzy
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Koje kontakte želite da izvezete?"
+
+#, fuzzy
+#~| msgid "Select a filter to decide which contacts to export."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Odaberite filter da označite koje kontakte želite izvesti."
+
+#, fuzzy
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "&Odabrani kontakti"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "Obriši pogled"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "Poštanska adresa"
+
+#, fuzzy
+#~ msgid "Save Image"
+#~ msgstr "Spremi predložak"
+
+#, fuzzy
+#~ msgid "Save Image URL"
+#~ msgstr "Spremi predložak"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "&Traži"
+
+#, fuzzy
+#~ msgid "No email found for this contact."
+#~ msgstr "Pošalji pismo svim odabranim kontaktima."
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "A contact group was selected."
+#~ msgstr "Odabrana polja"
+
+#, fuzzy
+#~ msgid "Send an email..."
+#~ msgstr "&Pošalji kontakt..."
+
+#, fuzzy
+#~| msgid "Select a filter to decide which contacts to export."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Odaberite filter da označite koje kontakte želite izvesti."
+
+#, fuzzy
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Pošalji pismo svim odabranim kontaktima."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "Uvezi vCard …"
+
+#, fuzzy
+#~ msgid "Merge Contacts..."
+#~ msgstr "Sva polja"
+
+#, fuzzy
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "&Odabrani kontakti"
+
+#, fuzzy
+#~ msgid "Select Contacts to merge"
+#~ msgstr "&Odabrani kontakti"
+
+#, fuzzy
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Koje kontakte želite da odispiste?"
+
+#, fuzzy
+#~ msgid "Duplicate contact %1"
+#~ msgstr "&Odabrani kontakti"
+
+#, fuzzy
+#~ msgid "Select AddressBook:"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "No duplicated contact found."
+#~ msgstr "&Odabrani kontakti"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "No contacts selected."
+#~ msgstr "Odabrana polja"
+
+#, fuzzy
+#~ msgid "Customize"
+#~ msgstr "Mušterija"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Neodređeno"
+
+#, fuzzy
+#~ msgid "Merged Contact"
+#~ msgstr "Sva polja"
+
+#, fuzzy
+#~ msgid "Error while merging contacts."
+#~ msgstr "Uvoženje kontakata"
+
+#, fuzzy
+#~ msgid "Merge contact"
+#~ msgstr "Sva polja"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Odabrana polja"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "Pribadanje kontakta"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Tipovi"
+
+#, fuzzy
+#~ msgid "Show Address Books View"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Birate da li će stranica sa detaljima biti vidljiva."
+
+#, fuzzy
+#~ msgid "Hide Address Books View"
+#~ msgstr "Uredi filter adresara"
+
+#, fuzzy
+#~ msgid "Show Contacts View"
+#~ msgstr "pronađen je %1 kontakt:"
+
+#, fuzzy
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Birate da li će stranica sa detaljima biti vidljiva."
+
+#, fuzzy
+#~ msgid "Hide Contacts View"
+#~ msgstr "Uredi ime kontakta"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Prikaži detalje"
+
+#, fuzzy
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Birate da li će stranica sa detaljima biti vidljiva."
+
+#, fuzzy
+#~ msgid "Hide Details View"
+#~ msgstr "&Detalji"
+
+#, fuzzy
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Uredi filter adresara"
+#~ msgstr[1] "Uredi filter adresara"
+#~ msgstr[2] "Uredi filter adresara"
+
+#, fuzzy
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Odispiši cijeli adresar"
+
+#, fuzzy
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Uredi filter adresara"
+
+#, fuzzy
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Odispiši cijeli adresar"
+
+#, fuzzy
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Uredi filter adresara"
+#~ msgstr[1] "Uredi filter adresara"
+#~ msgstr[2] "Uredi filter adresara"
+
+#, fuzzy
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Odispiši cijeli adresar"
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#, fuzzy
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Odispiši cijeli adresar"
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#, fuzzy
+#~ msgid "Edit Contact..."
+#~ msgstr "&Uredi kontakt..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Obriši pogled"
+#~ msgstr[1] "Obriši pogled"
+#~ msgstr[2] "Obriši pogled"
+
+#, fuzzy
+#~ msgid "Edit Group..."
+#~ msgstr "&Uredi..."
+
+#, fuzzy
+#~ msgid "Add Address Book"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Could not add address book: %1"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Adding Address Book failed"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>Želite li zaista da uklonite ključ <b>%1</b>?</qt>"
+
+#, fuzzy
+#~ msgid "Delete Address Book?"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Novi..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#, fuzzy
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#, fuzzy
+#~ msgid "Add &Address Book..."
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#, fuzzy
+#~ msgid "&Delete Address Book"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Preglednik adresara"
+
+#, fuzzy
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "&Izvezi popis..."
+
+#, fuzzy
+#~ msgid "Home Number"
+#~ msgstr "Kućni broj"
+
+#, fuzzy
+#~ msgid "Work Number"
+#~ msgstr "Broj na poslu"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mobilni broj"
+
+#~ msgid "Fax Number"
+#~ msgstr "Broj faksa"
+
+#~ msgid "Pager"
+#~ msgstr "Dojavljivač"
+
+#~ msgid "Street"
+#~ msgstr "Ulica"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Država"
+
+#~ msgid "Country"
+#~ msgstr "Zemlja"
+
+#~ msgid "City"
+#~ msgstr "Grad"
+
+#~ msgid "Department"
+#~ msgstr "Odjel"
+
+#~ msgid "Zip Code"
+#~ msgstr "Poštanski broj"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "User ID"
+#~ msgstr "Broj korisnika"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Država"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Naslov"
+
+#, fuzzy
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Da li da uvezem kontakte?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Traži adrese u adresaru"
+
+#~ msgid "Search for:"
+#~ msgstr "Traži:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Kućni broj"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Broj na poslu"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekurzivno traženje"
+
+#, fuzzy
+#~ msgid "Contains"
+#~ msgstr "Sadrži..."
+
+#~ msgid "Unselect All"
+#~ msgstr "Poništi Odabir za Sve"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "Import Selected"
+#~ msgstr "Dodaj označeno"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "&Podesi KAddressBook..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Pošalji pismo svim odabranim kontaktima."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "&Podesi KAddressBook..."
+
+#, fuzzy
+#~ msgid "Edit Host"
+#~ msgstr "Uredi kontakt"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Dodaj..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&Uredi..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "Obriši popis"
+
+#, fuzzy
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2002, KDE PIM Tim"
+
+#, fuzzy
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Uredi broj telefona"
+
+#, fuzzy
+#~| msgid "Preferred Address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Preporučljiva adresa"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Odabrana polja"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Odispiši poseban broj kontakata."
+
+#, fuzzy
+#~ msgid "New Contact"
+#~ msgstr "pronađen je %1 kontakt:"
+
+#, fuzzy
+#~ msgid "Edit Contact"
+#~ msgstr "Uredi kontakt"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "Dodaj..."
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "Island"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "Promijeni tip..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "Novi..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Obriši popis"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Ostalo"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "Dodaj..."
+
+#, fuzzy
+#~ msgid "Edit Phone Number"
+#~ msgstr "Uredi broj telefona"
+
+#, fuzzy
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Ovo je poželjni broj telefona"
+
+#, fuzzy
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Uredi e-adrese"
+
+#, fuzzy
+#~ msgid "Edit..."
+#~ msgstr "&Uredi..."
+
+#, fuzzy
+#~ msgid "Set Standard"
+#~ msgstr "Postavi standard"
+
+#, fuzzy
+#~ msgid "Add Email"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~ msgid "New Email:"
+#~ msgstr "E-pošta:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "E-pošta:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>Želite li zaista ukloniti email adresu <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Potvrdi uklanjanje"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Potvrda brisanja"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "Promijeni tip..."
+
+#, fuzzy
+#~ msgid "Save photo..."
+#~ msgstr "Spremi predložak"
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "Obriši popis"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "Promjeni e-mail..."
+
+#, fuzzy
+#~ msgid "Save logo..."
+#~ msgstr "Spremi predložak"
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "Obriši popis"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Novi..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "&Uredi..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Obriši pogled"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "&Distribucijski popis..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Poštanska adresa"
+
+#, fuzzy
+#~ msgid "Edit Label..."
+#~ msgstr "Uredi ime..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Ovo je poželjna adresa"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Uredi vrstu adrese"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Ulice i brojevi"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "Organizacija"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "Prilagođeno"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "Ime:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Nadimak:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "Organizacija"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "I&nternet stranica:"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "&Rub:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "Adrese:"
+
+#, fuzzy
+#~ msgid "Coordinates"
+#~ msgstr "Sadrži..."
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "Posao"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "Općenito"
+
+#~ msgid "Profession:"
+#~ msgstr "Zanimanje:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "Naslov:"
+
+#~ msgid "Department:"
+#~ msgstr "Odj&el:"
+
+#~ msgid "Office:"
+#~ msgstr "Ured:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Ime rukovoditelja:"
+
+#~ msgid "Assistant's name:"
+#~ msgstr "Ime pomoćnika:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "Obitelj"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Godišnjica:"
+
+#, fuzzy
+#~ msgid "Partner's name:"
+#~ msgstr "Ime rukovoditelja:"
+
+#, fuzzy
+#~ msgid "Edit Contact Group"
+#~ msgstr "Uredi kontakt"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "&Pokaži prazna polja"
+
+#~ msgid "Font Settings"
+#~ msgstr "Postavke pisma"
+
+#, fuzzy
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Koristi standardne KDE pisma"
+
+#, fuzzy
+#~ msgid "Details font:"
+#~ msgstr "Pismo detalja:"
+
+#~ msgid "Size:"
+#~ msgstr "Veličina:"
+
+#~ msgid "Body font:"
+#~ msgstr "Pismo tijela:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Fiksno pismo:"
+
+#, fuzzy
+#~ msgid "Contact header font:"
+#~ msgstr "Pismo zaglavlja kontakta:"
+
+#, fuzzy
+#~ msgid "Headlines:"
+#~ msgstr "Naslovi:"
+
+#, fuzzy
+#~ msgid "Use colored contact headers"
+#~ msgstr "Koristi zaglavlja u boji"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "( dostavi :)"
+
+#, fuzzy
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Odaberite kontakte za ispis"
+
+#, fuzzy
+#~ msgid "Print the entire address book"
+#~ msgstr "Odispiši cijeli adresar"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Ispisati samo kontakte koji su označeni u KAddressBook-u.\n"
+#~ "Ova opcija je onemogućena ako kontakti nisu označeni."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "Kontakti koji zadovoljavaju &filter"
+
+#, fuzzy
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Ispisati samo kontakte koji su označeni u KAddressBook-u.\n"
+#~ "Ova opcija je onemogućena ako kontakti nisu označeni."
+
+#~ msgid "Category &members"
+#~ msgstr "Kategorije &članovi"
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Ispisati samo kontakte koji su članovi kategorije odabrane na listi s "
+#~ "lijeve strane.\n"
+#~ "Ova opcija je onemogućena ako nemate kategorije."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Odaberite filter da označite koje kontakte želite ispisati."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Označi kategorije čije članove želite ispisati."
+
+#, fuzzy
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Postavljam margine i razmake"
+
+#~ msgid "Preparing"
+#~ msgstr "Priprema"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr "Ispisano %1 sa KAddressBook (http://www.kde.org)"
+
+#, fuzzy
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Da li da uvezem %1 kontakt u vaš adresar?"
+#~ msgstr[1] "Da li da uvezem %1 kontakta u vaš adresar?"
+#~ msgstr[2] "Da li da uvezem %1 kontakata u vaš adresar?"
+
+#, fuzzy
+#~ msgid "Select the address book"
+#~ msgstr "KAdresar"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Pokazuje urednik kontaka sa danim email adresama"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Pokazuje urednik kontaka sa brojevima"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Pokreće kao urednika"
+
+#, fuzzy
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Pokreće se uređivač radi novog kontakta"
+
+#, fuzzy
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "Ur&edi adrese..."
+
+#, fuzzy
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Uredi kontakt"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Sva polja"
+
+#, fuzzy
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "Organizacija:"
+
+#, fuzzy
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1: \n"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "&Detalji"
+
+#, fuzzy
+#~ msgid "Misc"
+#~ msgstr "&Razno"
+
+#, fuzzy
+#~ msgid "You must specify a valid date"
+#~ msgstr "Morate navesti ispravan datum"
+
+#, fuzzy
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Morate navesti ispravan datum"
+
+#~ msgid "Add View"
+#~ msgstr "Dodaj pogled"
+
+#, fuzzy
+#~ msgid "View name:"
+#~ msgstr "Ime pogleda:"
+
+#~ msgid "View Type"
+#~ msgstr "Vrsta pogleda"
+
+#~ msgid "Add Field"
+#~ msgstr "Dodaj polje"
+
+#~ msgid "Type:"
+#~ msgstr "Tip:"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Time"
+#~ msgstr "Vrijeme"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum i Vrijeme"
+
+#~ msgid "Remove Field"
+#~ msgstr "Ukloni polje"
+
+#~ msgid "Add Field..."
+#~ msgstr "Dodaj polje..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Ukloni polje..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Ime:"
+
+#, fuzzy
+#~ msgid "Distribution list members:"
+#~ msgstr "Uređivač distribucione liste"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Uredi e-adrese..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Ime:"
+
+#, fuzzy
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "Pokaži samo kontakte koji odgovaraju odabranim kategorijama"
+
+#, fuzzy
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr ""
+#~ "Pokaži sve kontakte osim onih koji odgovaraju odabranim kategorijama"
+
+#, fuzzy
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Uredi filtere adresara"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "Obriši popis"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtar:"
+
+#, fuzzy
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Koristi geopodatke"
+
+#, fuzzy
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Geografska širina:"
+
+#, fuzzy
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Geografska dužina:"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Uredi geopodatke..."
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Unos geopodataka"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Seksagesimalno"
+
+#, fuzzy
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Geografska širina:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Sjever"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Jug"
+
+#, fuzzy
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Geografska dužina:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Istok"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Zap."
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Neodređeno"
+
+#~ msgid "Reset"
+#~ msgstr "Vrati izvorno"
+
+#, fuzzy
+#~ msgid "IM address:"
+#~ msgstr "IM adre&sa:"
+
+#, fuzzy
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Ur&edi adrese..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "Ovdje birate polje koje će se koristiti u inkrementalnoj pretrazi."
+
+#, fuzzy
+#~ msgid "Visible Fields"
+#~ msgstr "Sva polja"
+
+#~ msgid "All Fields"
+#~ msgstr "Sva polja"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~ msgctxt "Wife/Husband/..."
+#~ msgid "Partner's Name"
+#~ msgstr "Ime rukovodioca"
+
+#, fuzzy
+#~ msgid "IM Address"
+#~ msgstr "IM adresa"
+
+#, fuzzy
+#~ msgid "Don Sanders"
+#~ msgstr "Zaglavlja kontakata"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "libkabc port, csv import/export"
+
+#, fuzzy
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Redizajniranje GUI-ja i framework-a"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DCOP sučelje"
+
+#, fuzzy
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP pretraga"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "&Distribucijski popis..."
+
+#, fuzzy
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "&Distribucijski popis..."
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Odaberite samo jedan kontakt."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>Želite li zaista da koristite <b>%1</b> kao vaš novi osobni kontakt?</"
+#~ "qt>"
+
+#, fuzzy
+#~ msgid "Use"
+#~ msgstr "Broj korisnika"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ne mogu da pristupim <b>%1</b>."
+
+#, fuzzy
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ne mogu da pristupim <b>%1</b>."
+
+#, fuzzy
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Nijedan LDAP IO slave nije dostupan"
+
+#, fuzzy
+#~ msgid "Print Addresses"
+#~ msgstr "Štampaj adrese"
+
+#, fuzzy
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "&Uredi kontakt..."
+
+#, fuzzy
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Snimi sve izmjene adresara u pozadinski sustav za skladištenje."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Novi..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "Pošalji poruku sa odabranim kontaktom u prilogu."
+
+#, fuzzy
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Pošalji poruku sa odabranim kontaktom u prilogu."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&Uredi..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr ""
+#~ "Iseca trenutno odabrane kontakte u sustavski klipbord u vCard formatu."
+
+#, fuzzy
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Prenosi prethodno isečene ili kopirane kontakte iz klipborda."
+
+#, fuzzy
+#~ msgid "&Delete Contact"
+#~ msgstr "&Obriši kontakt"
+
+#, fuzzy
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Brišu se svi odabrani kontakti."
+
+#, fuzzy
+#~ msgid "C&opy Contact To..."
+#~ msgstr "&Novi kontakt..."
+
+#, fuzzy
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Novi kontakt..."
+
+#, fuzzy
+#~ msgid "Show Jump Bar"
+#~ msgstr "Pokaži skok-traku"
+
+#, fuzzy
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Birate da li će traka sa skok-gumbiima biti vidljiva."
+
+#, fuzzy
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "Pojaviće se dijalog koji će vam ponuditi sve mogućnosti za podešavanje "
+#~ "KAddressBook-a."
+
+#, fuzzy
+#~ msgid "LDAP &Lookup"
+#~ msgstr "LDAP pretraga"
+
+#~ msgid "Select Categories..."
+#~ msgstr "Izabrane kategorije..."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Spojiti s postojećim kategorijama?"
+
+#, fuzzy
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "Novi popis za slanje"
+
+#~ msgid "Keys:"
+#~ msgstr "Tipke:"
+
+#~ msgid "Export..."
+#~ msgstr "Izvezi..."
+
+#, fuzzy
+#~ msgid "Key Type"
+#~ msgstr "Vrsta ključa"
+
+#, fuzzy
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Želite li zaista da uklonite ključ <b>%1</b>?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "Morate odabrati LDAP poslužitelj prije pretrage.\n"
+#~ "Ovo možete uraditi iz izbornika Postavke/Podesi KAddressBook."
+
+#, fuzzy
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Počasni prefiksi:"
+
+#~ msgid "Additional names:"
+#~ msgstr "Dodatna imena:"
+
+#, fuzzy
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Počasni sufiksi:"
+
+#~ msgid "Formatted name:"
+#~ msgstr "Formatirano ime:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Analiziraj ime automatski"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Gđica"
+
+#~ msgid "Mr."
+#~ msgstr "Gdin."
+
+#~ msgid "Mrs."
+#~ msgstr "Gđa."
+
+#~ msgid "Ms."
+#~ msgstr "Gđa."
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Mlađi"
+
+#~ msgid "Sr."
+#~ msgstr "St."
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Puno ime"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Organizacija"
+
+#, fuzzy
+#~ msgid "Partners name:"
+#~ msgstr "Ime rukovoditelja:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Ažuriraj ime kontakta"
+
+#, fuzzy
+#~ msgid "Edit Name..."
+#~ msgstr "Uredi ime..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "Obriši popis"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "Organizacija"
+
+#~ msgid "Tools"
+#~ msgstr "Alati"
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Automatsko prepoznavanje imena za nove primaoce"
+
+#, fuzzy
+#~ msgid "Fax"
+#~ msgstr "Faks:"
+
+#, fuzzy
+#~ msgid "Honor KDE single click"
+#~ msgstr "Poštuj KDE-ov jednostruki klik"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Ime:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "E-pošta:"
+
+#, fuzzy
+#~ msgid "Store as URL"
+#~ msgstr "Spremi kao URL"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Novi popis za slanje"
+#~ msgstr[1] "Novi popis za slanje"
+#~ msgstr[2] "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Odaberite polja za prikaz"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "&Odabrana polja:"
+
+#, fuzzy
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Uobičajeni filter biti će aktiviran kad god se prikaže ovaj pogled. Ova "
+#~ "mogućnost vam dozvoljava da podesite poglede koji samo interaguju sa "
+#~ "određenim vrstama informacija bazirano na filteru. Jednom kada je pogled "
+#~ "aktiviran, filter može da se promijeni bilo kada."
+
+#~ msgid "No default filter"
+#~ msgstr "Nema predefiniranog filtera"
+
+#, fuzzy
+#~ msgid "Use filter:"
+#~ msgstr "Koristi filter:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Uobičajeni filtar"
+
+#, fuzzy
+#~ msgid "Modify View: "
+#~ msgstr "Promijeni pogled:"
+
+#, fuzzy
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Obriši pogled"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Dali ste sigurni da želite pobrisati pogledano<b>%1</b>?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Potvrda brisanja"
+
+#, fuzzy
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "Da li da uvezem %1 kontakt u vaš adresar?"
+#~ msgstr[1] "Da li da uvezem %1 kontakta u vaš adresar?"
+#~ msgstr[2] "Da li da uvezem %1 kontakata u vaš adresar?"
+
+#, fuzzy
+#~ msgid "Do Not Import"
+#~ msgstr "Datoteka za uvoz:"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#, fuzzy
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Neodređeno"
+
+#, fuzzy
+#~ msgid "Select View"
+#~ msgstr "Odaberi pogled"
+
+#, fuzzy
+#~ msgid "Modify View..."
+#~ msgstr "Promijeni pogled..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Pritiskom na ovo gumb otvara se dijalog u kome možete da promijenite "
+#~ "pogled na adresar. Možete dodati ili ukloniti polja koja želite da budu "
+#~ "prikazana ili skrivena u pogledu na adresar."
+
+#~ msgid "Add View..."
+#~ msgstr "Dodaj pogled..."
+
+#, fuzzy
+#~ msgid "Delete View"
+#~ msgstr "Obriši pogled"
+
+#, fuzzy
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Pritiskom na ovo gumb možete obrisati trenutni pogled, koji ste ranije "
+#~ "dodali."
+
+#~ msgid "Refresh View"
+#~ msgstr "Osvježi pogled"
+
+#, fuzzy
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Pritiskom na ovo gumb pogled će se osviježiti."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "&Kategorije..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
+
+#, fuzzy
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Nema raspoloživog dodatka za uvoz za <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt>Nema raspoloživog dodatka za izvoz za <b>%1</b>.</qt>"
+
+#, fuzzy
+#~ msgid "Unable to export contacts."
+#~ msgstr "Ne mogu da izvezem kontakte."
+
+#, fuzzy
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Odaberite kontakte za izvoz"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Rastuće"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Silazno"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "Odabir"
+
+#, fuzzy
+#~ msgid "Export the entire address book"
+#~ msgstr "Izvezi cijeli adresar"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "Izvezi samo odabrane kontakte u KAdrressBook-u.\n"
+#~ "Ova opcij&a je onemogućena ako niti jedan kontakt nije odabran."
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Izvezi samo kontakte koji su članovi kategorije označene u listi s lijeve "
+#~ "strane.\n"
+#~ "Ova opcija je onemogućena ako nemate kategorije."
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Škola"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Finska"
+
+#, fuzzy
+#~ msgid "Crypto Settings"
+#~ msgstr "Postavke pisma"
+
+#, fuzzy
+#~ msgid "Allowed Protocols"
+#~ msgstr "Puerto Rico"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Uredi e-adrese"
+
+#, fuzzy
+#~ msgid "Distribution List Editor"
+#~ msgstr "Uređivač distribucione liste"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "Remove distribution list"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ne mogu da pristupim <b>%1</b>."
+
+#, fuzzy
+#~ msgid "%1 address book"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~ msgid "Edit address book settings"
+#~ msgstr "Uredi filtere adresara"
+
+#~ msgid "Look & Feel"
+#~ msgstr "Izgled i Osjećaj"
+
+#~ msgid "Text Color"
+#~ msgstr "Boja teksta"
+
+#, fuzzy
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Boja zaglavlja, rub i razdvajača"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Boja teksta zaglavlja"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Boja osvjetljavanja"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Boja označenog teksta"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Općenito"
+
+#, fuzzy
+#~ msgid "Draw &separators"
+#~ msgstr "Crtaj &razdvajače"
+
+#, fuzzy
+#~ msgid "Separator &width:"
+#~ msgstr "Š&irina razdvajača:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Podstava:"
+
+#~ msgid "Cards"
+#~ msgstr "Kartice"
+
+#~ msgid "Draw &borders"
+#~ msgstr "&Iscrtaj rubove"
+
+#, fuzzy
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Margina nekog predmeta je rastojanje (u pikselima) između ruba tog "
+#~ "predmeta i podataka unutar predmeta. Najprimetljivije, povećanjem margine "
+#~ "dodaće se prostor između fokusnog pravokutnika i podataka unutar predmeta."
+
+#, fuzzy
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Rastojanje predmeta predstavlja rastojanje (u pikselima) između predmeta "
+#~ "i bilo čega drugog: rub pogleda, drugih predmeta ili razdvajača stupaca."
+
+#, fuzzy
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Postavlja se širina razdvajača stupaca"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&Izgled"
+
+#, fuzzy
+#~ msgid "&Enable custom colors"
+#~ msgstr "Koristi &posebne boje"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Boje"
+
+#, fuzzy
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "Ako su korisničke boje omogućene, možete odabrati boje za donji pogled. "
+#~ "Inače, bit će korištene boje iz tekuće KDE scheme."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Dvostruko kliknite ili pritisnite RETURN na stavku za izbor boje "
+#~ "zapovezane riječi u pogledu."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "&Dopusti prilagođavanje pisma"
+
+#, fuzzy
+#~ msgid "&Text font:"
+#~ msgstr "Pismo &teksta:"
+
+#~ msgid "Choose..."
+#~ msgstr "Odaberi..."
+
+#, fuzzy
+#~ msgid "&Header font:"
+#~ msgstr "Pismo &zaglavlja:"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Ako su korisnički fontovi omogućeni, možete odabrati koji font "
+#~ "želitekoristiti za ovaj pogled. Inače će biti korišten predefinirani KDE "
+#~ "font,podebljani za zaglavlje i normalni stil za podatke."
+
+#, fuzzy
+#~ msgid "Fonts"
+#~ msgstr "Sadrži..."
+
+#~ msgid "Show &empty fields"
+#~ msgstr "&Pokaži prazna polja"
+
+#, fuzzy
+#~ msgid "Show field &labels"
+#~ msgstr "Pokaži &oznake polja"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "Ka&rakteristika"
+
+#, fuzzy
+#~ msgid "Row Separator"
+#~ msgstr "Razdvajač vrsta"
+
+#~ msgid "Single line"
+#~ msgstr "Jedan red"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Omogući pozadinsku sliku:"
+
+#, fuzzy
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Uključi oblačiće za kontakte"
+
+#, fuzzy
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#, fuzzy
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "Kartica"
+
+#, fuzzy
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Kartice u stilu Rolodex-a predstavljaju kontakte."
+
+#~ msgid "Icon"
+#~ msgstr "Sličica"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Ikone predstavljaju kontakte. Vrlo jednostavan pogled."
+
+#~ msgid "Table"
+#~ msgstr "Tablica"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "Kontakt lista u tabeli. Svaki element tabele sadrži polje kontakta. "
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "Grčka"
+
+#, fuzzy
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Izvezi izbornik markera..."
+
+#~ msgid "AddressBook"
+#~ msgstr "KAdresar"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Počni od linije:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignoriraj dvostruke razdvojnike"
+
+#, fuzzy
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Kontakti su uspješno izvezeni."
+
+#, fuzzy
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Izvezi Eudora-in adresar..."
+
+#, fuzzy
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Adresar Eudora-e Light (*.txt)"
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Uvezi LDIF adresar..."
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Izvezi u mobilni telefon"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "nepoznato"
+
+#, fuzzy
+#~ msgid "Manufacturer"
+#~ msgstr "Vanuatu"
+
+#, fuzzy
+#~ msgid "Phone model"
+#~ msgstr "Telefonski brojevi"
+
+#, fuzzy
+#~ msgid "IMEI"
+#~ msgstr "II"
+
+#, fuzzy
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "pronađen je %1 kontakt:"
+#~ msgstr[1] "pronađena su %1 kontakta:"
+#~ msgstr[2] "pronađeno je %1 kontakata:"
+
+#, fuzzy
+#~ msgid "unknown memory"
+#~ msgstr "nepoznato"
+
+#, fuzzy
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Gnokii sučelje nije dostupno.\n"
+#~ "Zamolite svog distributera da uključi gnokii tijekom kompilacije."
+
+#, fuzzy
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Datoteka za uvoz:"
+
+#, fuzzy
+#~ msgid "&Stop Import"
+#~ msgstr "Datoteka za uvoz:"
+
+#, fuzzy
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Izvezi u mobilni telefon"
+
+#, fuzzy
+#~ msgid "&Stop Export"
+#~ msgstr "&Izvoz"
+
+#, fuzzy
+#~ msgid "&Stop Delete"
+#~ msgstr "Potvrda brisanja"
+
+#, fuzzy
+#~ msgid "Export to phone finished."
+#~ msgstr "Izvezi u mobilni telefon"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Pisati preko prethodno uvezenih unosa?"
+
+#, fuzzy
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Uvezi KDE 2 adresar"
+
+#, fuzzy
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Uvezi Opera-in adresar..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Uvezi MS Exchange Personal Address Book (.PAB)"
+
+#, fuzzy
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "Datoteke MS Exchange-ovog osobnog adresara (*.pab)"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afghanistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albanija"
+
+#~ msgid "Algeria"
+#~ msgstr "Alžir"
+
+#~ msgid "American Samoa"
+#~ msgstr "American Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andora"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua and Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenija"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmore & Cartier Islands"
+
+#~ msgid "Australia"
+#~ msgstr "Australija"
+
+#~ msgid "Austria"
+#~ msgstr "Austrija"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbedžan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahami"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladeš"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Bjelorusija"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgija"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermuda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Butan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivija"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosna i Hercegovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Bocvana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazil"
+
+#~ msgid "Brunei"
+#~ msgstr "Brunei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bugarska"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Kambodža"
+
+#~ msgid "Cameroon"
+#~ msgstr "Kamerun"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "CapeVer"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Kajmansko otočje"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Centralna Afrička republika"
+
+#~ msgid "Chad"
+#~ msgstr "Čad"
+
+#~ msgid "Chile"
+#~ msgstr "Čile"
+
+#~ msgid "China"
+#~ msgstr "Kina"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolumbija"
+
+#~ msgid "Comoros"
+#~ msgstr "Komori"
+
+#~ msgid "Congo"
+#~ msgstr "Kongo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Dem. rep. Kongo"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Hrvatska"
+
+#~ msgid "Cuba"
+#~ msgstr "Kuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Cipar"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Češka republika"
+
+#~ msgid "Denmark"
+#~ msgstr "Danska"
+
+#~ msgid "Djibouti"
+#~ msgstr "Đibuti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominikanska republika"
+
+#~ msgid "Ecuador"
+#~ msgstr "Evkador"
+
+#~ msgid "Egypt"
+#~ msgstr "Egipat"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Ekvatorijalna Gineja"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritreja"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonija"
+
+#~ msgid "England"
+#~ msgstr "Engleska"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Etiopija"
+
+#~ msgid "European Union"
+#~ msgstr "Europska zajednica"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Faroe otočje"
+
+#~ msgid "Fiji"
+#~ msgstr "Fiđi"
+
+#~ msgid "Finland"
+#~ msgstr "Finska"
+
+#~ msgid "France"
+#~ msgstr "Francuska"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Francuska polinezija"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambija"
+
+#~ msgid "Georgia"
+#~ msgstr "Gruzija"
+
+#~ msgid "Germany"
+#~ msgstr "Njemačka"
+
+#~ msgid "Ghana"
+#~ msgstr "Gana"
+
+#~ msgid "Greece"
+#~ msgstr "Grčka"
+
+#~ msgid "Greenland"
+#~ msgstr "Greenland"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Gvatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Gvineja"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinea-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Gvajana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Hungary"
+#~ msgstr "Mađarska"
+
+#~ msgid "India"
+#~ msgstr "Indija"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonezija"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Irak"
+
+#~ msgid "Ireland"
+#~ msgstr "Irska"
+
+#~ msgid "Israel"
+#~ msgstr "Izrael"
+
+#~ msgid "Italy"
+#~ msgstr "Italija"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Obala bjelokosti"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamajka"
+
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordan"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazakstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenija"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Koreja, sjeverna"
+
+#~ msgid "Korea, South"
+#~ msgstr "Koreja, južna"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuvajt"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kyrgyzstan"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Latvija"
+
+#~ msgid "Lebanon"
+#~ msgstr "Libanon"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesoto"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberija"
+
+#~ msgid "Libya"
+#~ msgstr "Libija"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Lihtenštajn"
+
+#~ msgid "Lithuania"
+#~ msgstr "Litva"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luxembourg"
+
+#~ msgid "Macau"
+#~ msgstr "Makau"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagaskar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malezija"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldivi"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Marshallovo otočje"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinique"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritanija"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauricijus"
+
+#~ msgid "Mexico"
+#~ msgstr "Meksiko"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Federativna republika Micronesia"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldavija"
+
+#~ msgid "Monaco"
+#~ msgstr "Monako"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolija"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Maroko"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambik"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibija"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Nizozemska"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Nizozemski antili"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Nova kaledonija"
+
+#~ msgid "New Zealand"
+#~ msgstr "Novi zeland"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nikaragva"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigerija"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "Sjeverna koreja"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Sjeverna Irska"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Sjeverno Marijansko otočje"
+
+#~ msgid "Norway"
+#~ msgstr "Norveška"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palestina"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua Nova Gvineja"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paragvaj"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Filipini"
+
+#~ msgid "Poland"
+#~ msgstr "Poljska"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Kvatar"
+
+#~ msgid "Romania"
+#~ msgstr "Rumunjska"
+
+#~ msgid "Russia"
+#~ msgstr "Rusija"
+
+#~ msgid "Rwanda"
+#~ msgstr "Ruanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "Sv. Kittis i Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Sv. Lucija"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Sv. Vincent i Grenadini"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome and Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saudi Arabia"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Srbija i Crna Gora"
+
+#~ msgid "Seychelles"
+#~ msgstr "Sejšeli"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapur"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovačka"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovenija"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Solomonsko otočje"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalija"
+
+#~ msgid "South Africa"
+#~ msgstr "Južna Afrika"
+
+#~ msgid "South Korea"
+#~ msgstr "Južna koreja"
+
+#~ msgid "Spain"
+#~ msgstr "Španjolska"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Šri Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#~ msgid "Suriname"
+#~ msgstr "Surinam"
+
+#~ msgid "Swaziland"
+#~ msgstr "Svazilend"
+
+#~ msgid "Sweden"
+#~ msgstr "Švedska"
+
+#~ msgid "Switzerland"
+#~ msgstr "Švicarska"
+
+#~ msgid "Syria"
+#~ msgstr "Sirija"
+
+#~ msgid "Taiwan"
+#~ msgstr "Tajvan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tadžikistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzanija"
+
+#~ msgid "Thailand"
+#~ msgstr "Tajland"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad i Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunis"
+
+#~ msgid "Turkey"
+#~ msgstr "Turska"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turks i Caicos otočje"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukrajina"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Ujedinjeni arapski emirati"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Ujedinjeno kraljevstvo"
+
+#~ msgid "United States"
+#~ msgstr "Sjedninjene američke države"
+
+#~ msgid "Uruguay"
+#~ msgstr "Urugvaj"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Vatikan"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venecuela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Vijetnam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Zapadna Samoa"
+
+#~ msgid "Yemen"
+#~ msgstr "Jemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Jugoslavija (više ne postoji)"
+
+#~ msgid "Zaire"
+#~ msgstr "Zair"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambija"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabve"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Naslov:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-pošta"
+
+#, fuzzy
+#~| msgid "Address:"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Adresa:"
+
+#~ msgid "Address:"
+#~ msgstr "Adresa:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Novi..."
+
+#~ msgid "&General"
+#~ msgstr "&Općenito"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "Uređivač distribucione liste"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Nijedan"
+
+#~ msgid "New List..."
+#~ msgstr "Novi popis..."
+
+#~ msgid "Rename List..."
+#~ msgstr "Preimenuj popis"
+
+#, fuzzy
+#~ msgid "Remove Contact"
+#~ msgstr "Ukloni kontakt"
+
+#~ msgid "Please enter name:"
+#~ msgstr "Molim upišite ime:"
+
+#~ msgid "The name already exists"
+#~ msgstr "Naziv već postoji"
+
+#, fuzzy
+#~ msgid "Rename Distribution List"
+#~ msgstr "Novi popis za slanje"
+
+#, fuzzy
+#~ msgid "The name already exists."
+#~ msgstr "Naziv već postoji"
+
+#, fuzzy
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>Da li da obrišem distribucionu popis <b>%1</b>?</qt>"
+
+#~ msgid "Select Email Address"
+#~ msgstr "Odaberite adresu e-pošte"
+
+#~ msgid "Email Addresses"
+#~ msgstr "Adrese e-pošte"
+
+#, fuzzy
+#~ msgid "Show Extension"
+#~ msgstr "Pokaži dopunsku traku"
+
+#, fuzzy
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "Potraži &adrese u LDAP direktoriju..."
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "Kontakt alatna traka"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "Preglednik adresara"
+
+#~ msgid "Check the categories whose members you want to export."
+#~ msgstr "Označi kategorije čije članove želite izvesti."
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b>.%2.</qt>"
+#~ msgstr "<qt>Ne mogu otvoriti datoteka <b>%1</b>.%2.</qt>"

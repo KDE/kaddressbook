@@ -1,0 +1,4271 @@
+# translation of kaddressbook.po to Romanian
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Claudiu Costin <claudiuc@kde.org>, 2004.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2013.
+# Cristian Oneț <onet.cristian@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2013-10-13 13:07+0300\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sergiu Bivol,Claudiu Costin"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sergiu@cip.md,"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Carte de adrese"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact"
+msgstr "Contacte"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Email"
+msgid "Emails"
+msgstr "Email"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Organizație"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Data nașterii:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Notă:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Title"
+msgid "Title"
+msgstr "Titlu"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgctxt "@title:column Column containing email addresses"
+#| msgid "Email"
+msgid "Email"
+msgstr "Email"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "Blog &RSS:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "Cartea de adrese"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "New &Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Contact &nou..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Veţi primi un dialog în care puteţi configura comenzile rapide ale "
+"aplicaţiilor la nivel global."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "New Contact Group"
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Contact &nou..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Veţi primi un dialog în care puteţi configura comenzile rapide ale "
+"aplicaţiilor la nivel global."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "Cartea de adrese KDE"
+
+#: src/aboutdata.cpp:21
+#, fuzzy, kde-format
+#| msgid "Copyright © 2007–2010 KAddressBook authors"
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "Drepturi de Autor © 2007–2010 Autorii KAddressBook "
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Responsabil actual"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Tobias Koenig"
+msgid "Tobias König"
+msgstr "Tobias Koenig"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "Responsabil actual"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Steffen Hansen"
+msgid "Stefan Taferner"
+msgstr "Steffen Hansen"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "Autor original"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Quote character option"
+#| msgid "None"
+msgid "(None)"
+msgstr "Nimic"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "Adăugare..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "Email:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phones"
+msgid "Phone: %1"
+msgstr "Telefon"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgctxt "Next contact"
+#| msgid "Next"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Urmatorul"
+
+#: src/contactswitcher.cpp:19
+#, fuzzy, kde-format
+#| msgctxt "Previous contact"
+#| msgid "Previous"
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Precedent"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgid "%1 out of %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 din %2"
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Nedefinit"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Aniversare"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Email (preferat)"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Email (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Email (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Email (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, fuzzy, kde-format
+msgid "Profession"
+msgstr "Profesia"
+
+#: src/importexport/contactfields.cpp:109
+#, fuzzy, kde-format
+msgid "Office"
+msgstr "Birou"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+msgid "Manager"
+msgstr "Manager"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+msgid "Assistant"
+msgstr "Asistent"
+
+#: src/importexport/contactfields.cpp:115
+#, fuzzy, kde-format
+msgid "Spouse"
+msgstr "Soț"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Selectează &contact"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Toate &contactele"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "Import contacts from a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Date de contact importate dintr-un fişier GMX."
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Importare carte de adrese KDE 2"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Contacte &selectate"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "Any contact selected"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Niciun contact ales"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "All contacts from:"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Toate &contactele din:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "Import contacts from a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Date de contact importate dintr-un fişier GMX."
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, fuzzy, kde-format
+#| msgid "Include Subfolders"
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Include subfoldere"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Selectează &contact"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgid "Fetch Contacts"
+msgstr "Selectează &contact"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Câmpuri private"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Câmpuri de afaceri"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Alte câmpuri"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Chei de criptare"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Fotografii"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Nume afișat ca nume deplin"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Câmpuri de exportat"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Exportă câmpurile private"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+"Bifați aici dacă doriți să exportați câmpurile private ale contactului în "
+"fișierul vCard de ieșire."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Exportă câmpuri de afaceri"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"Bifați aici dacă doriți să exportați câmpurile de afaceri ale contactului în "
+"fișierul vCard de ieșire."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Exportă alte câmpuri"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+"Bifați aici dacă doriți să exportați alte câmpuri ale contactului în "
+"fișierul vCard de ieșire."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Exportă cheile de criptare"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"Bifați aici dacă doriți să exportați cheile de criptare ale contactului în "
+"fișierul vCard de ieșire."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Exportă fotografii"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+"Bifați aici dacă doriți să exportați poza contactului în fișierul vCard de "
+"ieșire."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Opțiuni de export"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Exportă numele afișat ca nume deplin"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Bifați aici dacă doriți să exportați numele afișat al contactului în câmpul "
+"de nume complet din vCard. Acest lucru poate fi necesar pentru a avea numele "
+"arătat corect în GMail sau Android."
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Alegeți cartea de adrese"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Alegeți cartea de adrese în care să fie salvate contactele importate:"
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Importă contacte"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Se importă un contact în %2"
+msgstr[1] "Se importă %1 contacte în %2"
+msgstr[2] "Se importă %1 de contacte în %2"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "Importă vCard-ul dat"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "Importare carte de adrese KDE 2"
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Fișier"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "Nou"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Editare"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "&Vizualizare"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+msgid "&Action"
+msgstr "Latvia"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "&Unelte"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "&Configurări"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Export"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Bara de unelte principală"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+msgid "Import"
+msgstr "&Importă lista..."
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&Export"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgctxt "Search contacts in list"
+#| msgid "Search"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Cautare"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Print the complete address book or a selected number of contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Tipăreşte cartea de adrese complet sau un număr selectat de contacte."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Căutare rapidă"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+msgid "Category filter"
+msgstr "Categorii"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Selectează tot"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Selectează toate persoanele de contact din vizualizarea curentă."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "Afişare Coduri QR"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "Afişare Coduri QR în contact."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Arată un mod simplu de vedere a agendei."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Imprima contacte"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog where you can configure the "
+#| "application-wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Veţi primi un dialog în care puteţi configura comenzile rapide ale "
+"aplicaţiilor la nivel global."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr ""
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Navigator carte de adrese"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Numele întreg"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "Nume"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "Prenume"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Adresa de acasă"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Adresa afacerii"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Numere de telefon"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Email preferat"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "Toate email-urile"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "Firmă"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Configurarea documentului"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Tipărire"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Gata"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Aspect"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Câmpuri"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "Adresa de acasă"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business Address"
+msgid "with business address"
+msgstr "Adresa afacerii"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print the birthday"
+msgstr "Imprima contacte"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+#| msgid "Birthday"
+msgid "with birthday"
+msgstr "Data nașterii:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "Editează adresa poștală"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+msgid "second color"
+msgstr "Data de naștere"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "Culoarea de fundal:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Alternating the background color"
+msgstr "Culoarea de fundal:"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "Organizație"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Adresa Email:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "Adrese Email:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefon:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Telefoane:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "&Pagina de web:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Adresa de acasă"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Adresă internationala"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Adresa poștală"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Adresa strazii"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Adresa de la munca"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Adresă preferata"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Notă:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Stil de imprimare detaliata - Aspect"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Configurări &de culoare"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Stil Detaliat"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Aspect pagină"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Contact Antet"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "Culoarea de fundal:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, fuzzy, kde-format
+#| msgid "Click on the color button to change the header's background color."
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+"Apasa pe butonul de culoare pentru a schimba culoarea de fundal a antetului."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Culoarea de fundal:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Culoare text:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "Culoare text:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Stilul de imprimare al lui Mark"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Ce contacte doriti sa imprimați?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Selectați contactele pentru imprimare"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Alege-ți stilul de imprimare"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Progresul imprimari"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Progresul imprimarii"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Progres"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Informatii despre imprimarii de contact"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+#| msgid "Phone numbers"
+msgid "Print contact phone numbers"
+msgstr "Numar de telefon"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Numar de telefon"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal addresses"
+msgid "Print contact email addresses"
+msgstr "Adresă poștală"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "Adresa de email"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+msgid "Print contact street addresses"
+msgstr "Adresa"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Adresă poștală"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Print Contact's Information"
+msgid "Print contact organizations"
+msgstr "Informatii despre imprimarii de contact"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print contact birthdays"
+msgstr "Imprima contacte"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Print Contacts"
+msgid "Print contact notes"
+msgstr "Imprima contacte"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Notes:"
+msgid "Note: "
+msgstr "Notă:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Stilul de indosariere cu inele - Aspect"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "&Configurări de câmp"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Printat cu inele de indosariere"
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgctxt "Ascending sort order"
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Ascendent"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgctxt "Descending sort order"
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Descendent"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Nici o previzualizare disponibila.)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Alege-ți stilul de imprimare"
+
+#: src/printing/stylepage.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "What should the print look like?\n"
+#| "KAddressBook has several printing styles, designed for different "
+#| "purposes.\n"
+#| "Choose the style that suits your needs below."
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Cum ar trebui sa arate imprimarea?\n"
+"KAddressBook are mai multe stiluri de imprimare, concepute pentru diferite "
+"scopuri.\n"
+"Alege stilul care se potriveşte nevoilor tale de mai jos.."
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Sortare"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Numărul ID organizațional"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Căutare &incrementală:"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Ordin:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Stilul de imprimare"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Alege tipul cheii:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Contacte &selectate"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&Import"
+
+#~ msgid "Import vCard..."
+#~ msgstr "&Importă  lista..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Importa contacte din o lista"
+
+#~ msgid "Import CSV file..."
+#~ msgstr "&Importă fișier CSV..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr ""
+#~ "Date de contact importate dintr-un fişier în format separat prin virgula."
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "Importă fișier &LDIF"
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Importă contacte dintr-un fișier LDIF"
+
+#, fuzzy
+#~| msgid "Import from LDAP server..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Importa-ți de pe serverul LDAP ..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Importa contacte dintr-un fisier LDAP"
+
+#~ msgid "Import GMX file..."
+#~ msgstr "&Importă fisier GMX..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Date de contact importate dintr-un fişier GMX."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "&Exporteaza lista 3.0..."
+
+#, fuzzy
+#~| msgid "Export contacts to a vCard 3.0 file."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "&Exportă contacte la o lista 3.0..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "&Exporteaza lista 3.0..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "&Exportă contacte la o lista 3.0..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "&Exporta lista 2.1..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "&Exportă contacte intr-o lista 2.1..."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "&Exportă fișier CSV..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr ""
+#~ "Export date de contact într-un fişier în formate separate prin virgulă."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "Exportă fișier &LDIF"
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Exportă contacte la un fișier &LDIF"
+
+#~ msgid "Export GMX file..."
+#~ msgstr "Exportă &fișier GMX"
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Exportă date de contact într-un fişier GMX."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Fișerul s-a putut deschide <b>%1</b></qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Imposibil de deschis fișierul <b>%1</b>.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "Importă fișier CSV"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Importa contacte"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Fișier de importat:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Selectați lista de importat:"
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "&Delimitator..."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Firmâ"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Alegeți câmpul de eliminat:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Punct și virgulă"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Alegeți câmpul de eliminat:"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Spațiu"
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Altul"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "&Textul citat:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Alege tipul cheii:"
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Nimic"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Format dată:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>y: an cu 2 cifre</item><item>Y: an cu 4 cifre</"
+#~ "item><item>m: luni cu 1 sau 2 cifre</item><item>M: luni cu 2 cifre</"
+#~ "item><item>d: zi cu 1 sau 2 cifre</item><item>D: zi cu 2 cifre</"
+#~ "item><item>H: ore cu 2 cifre</item><item>I: minute cu 2 cifre</"
+#~ "item><item>S: secunde cu 2 cifre</item></list></para>"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid ""
+#~| "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~| "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~| "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~| "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~| "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para><list><item>y: an cu 2 cifre</item><item>Y: an cu 4 cifre</"
+#~ "item><item>m: luni cu 1 sau 2 cifre</item><item>M: luni cu 2 cifre</"
+#~ "item><item>d: zi cu 1 sau 2 cifre</item><item>D: zi cu 2 cifre</"
+#~ "item><item>H: ore cu 2 cifre</item><item>I: minute cu 2 cifre</"
+#~ "item><item>S: secunde cu 2 cifre</item></list></para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "&Text codec:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Alege tipul cheii:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "Treci peste primul râand din fișier"
+
+#, fuzzy
+#~| msgctxt "@option:check"
+#~| msgid "Skip first row of file"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "Treci peste primul râand din fișier"
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Aplica tipul..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Salvează tipul..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Local (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Trebuie să alocaţi cel puţin o coloană."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "Nu există şabloane disponibile încă."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "Nici un șablon disponibil"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Numele șablonului"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Vă rugăm să introduceţi un nume pentru şablon:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Nu poate fii deschis fisierul de intrare."
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "&Sigur doriţi să ştergeţi şablonul '%1'?..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Format de selecţie"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Vă rugăm să selectaţi un şablon, care se potriveşte fişier CSV:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr " Fişier GMX de adrese (*. gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Imposibil de deschis <b>%1</b> pentru a citi.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 nu este un fişier GMX din cartea de adrese."
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Aţi selectat o listă de contacte, doriți sa fie exportate în mai multe "
+#~ "fişiere?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Exporteaza intr-un fisier"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Exporteaza in mai multe fisiere"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Selectați lista de importat:"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Importare eșuata"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>Lista nu a lost accesata:</para><para>%1</para>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "Niciun contact nu a fost importat, din cauza unor erori cu lista."
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "Lista nu contine nici o persoană de contact."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "&Importă listă..."
+
+#, fuzzy
+#~| msgid "Do you want to import this contact into your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Doriţi să importaţi acest contact in agenda?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Importă &tot..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Care contacte doriți sa exportați?"
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Nu ați selectat nici un contact la export."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "Adresa Email:"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Salvează tipul..."
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Salvează tipul..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Protocol"
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Protocol"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Căutare"
+
+#, fuzzy
+#~ msgid "No email found for this contact."
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~| msgid "Any contact selected"
+#~ msgid "A contact group was selected."
+#~ msgstr "Niciun contact ales"
+
+#, fuzzy
+#~ msgid "Send an email..."
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~| msgid "You have not selected any contacts to export."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Nu ați selectat nici un contact la export."
+
+#, fuzzy
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "&Importă  lista..."
+
+#, fuzzy
+#~ msgid "Merge Contacts..."
+#~ msgstr "Toate câmpurile de contact"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Print the complete address book or a selected number of contacts."
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr ""
+#~ "Tipăreşte cartea de adrese complet sau un număr selectat de contacte."
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "Unește"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Select Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "Selectați cartea de adrese"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "Unește"
+
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Trebuie să alocaţi cel puţin o coloană."
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Any contact selected"
+#~ msgid "No contacts selected."
+#~ msgstr "Niciun contact ales"
+
+#, fuzzy
+#~ msgid "Customize"
+#~ msgstr "Identificator client"
+
+#, fuzzy
+#~| msgid "Print Contact's Information"
+#~ msgid "Missing Selected Information"
+#~ msgstr "Informatii despre imprimarii de contact"
+
+#, fuzzy
+#~| msgctxt "@item Undefined import field type"
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Nedefinit"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para> La incercarea de citire a listei, a existat o eroare la "
+#~ "deschiderea fişierului <filename>%1</filename>: </para> <para>%2 </para>"
+
+#, fuzzy
+#~ msgid "Merged Contact"
+#~ msgstr "Toate câmpurile de contact"
+
+#, fuzzy
+#~| msgctxt "@label"
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Importa contacte"
+
+#, fuzzy
+#~ msgid "Merge contact"
+#~ msgstr "Toate câmpurile de contact"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Selectați Câmpurile"
+
+#, fuzzy
+#~| msgid "Select Contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Selectează &contact"
+
+#, fuzzy
+#~| msgid "Import Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Niciun contact ales"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Integrarea cu Kontact"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Alege-ți stilul de imprimare"
+
+#~ msgid "Department"
+#~ msgstr "Departament"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Nume manager"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Nume secretară:"
+
+#, fuzzy
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "Nume partener"
+
+#~ msgid "IM Address"
+#~ msgstr "Adresă MI"
+
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Da"
+
+#~ msgctxt "Boolean value"
+#~ msgid "no"
+#~ msgstr "nu"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Doriţi să suprascrieţi fişierul  \"%1 \""
+
+#, fuzzy
+#~| msgid "Do you want to overwrite file \"%1\""
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Doriţi să suprascrieţi fişierul  \"%1 \""
+
+#~ msgid "Show Simple View"
+#~ msgstr "Afişare vizualizarea simplă"
+
+#~ msgid "Click on the color button to change the header's text color."
+#~ msgstr ""
+#~ "Apasa pe butonul de culoare pentru a schimba culoarea textului din antet."
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Selectaţi câmpurile care vor fi exportate în lista."
+
+#, fuzzy
+#~ msgid "Show Address Books View"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Hide Address Books View"
+#~ msgstr "Navigator carte de adrese"
+
+#~| msgid "No Contacts Selected"
+#~ msgid "Show Contacts View"
+#~ msgstr "Niciun contact ales"
+
+#, fuzzy
+#~ msgid "Hide Contacts View"
+#~ msgstr "&Exportă lista..."
+
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Arată detalii"
+
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "Ascunde detalii"
+
+#, fuzzy
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Navigator carte de adrese"
+#~ msgstr[1] "Navigator carte de adrese"
+#~ msgstr[2] "Navigator carte de adrese"
+
+#, fuzzy
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Navigator carte de adrese"
+
+#, fuzzy
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Navigator carte de adrese"
+#~ msgstr[1] "Navigator carte de adrese"
+#~ msgstr[2] "Navigator carte de adrese"
+
+#, fuzzy
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Contact &nou"
+#~ msgstr[1] "Contact &nou"
+#~ msgstr[2] "Contact &nou"
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Contact &nou"
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+
+#, fuzzy
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Contact &nou"
+#~ msgstr[1] "Contact &nou"
+#~ msgstr[2] "Contact &nou"
+
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "&Editare contact..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "&Adresa..."
+#~ msgstr[1] "&Adresa..."
+#~ msgstr[2] "&Adresa..."
+
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "Editare..."
+
+#, fuzzy
+#~ msgid "Add Address Book"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "&Listă de distribuție..."
+
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "Carte de adrese"
+
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Nou..."
+
+#, fuzzy
+#~ msgid "Add &Address Book..."
+#~ msgstr "Cartea de adrese"
+
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "Carte de adrese"
+
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Navigator carte de adrese"
+
+#, fuzzy
+#~ msgid "Add Host"
+#~ msgstr "&Exportă lista..."
+
+#~ msgid "Home Number"
+#~ msgstr "Telefon acasă"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefon la serviciu"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Telefon mobil"
+
+#~ msgid "Fax Number"
+#~ msgstr "Număr de fax"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Strada"
+
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~ msgid "Country"
+#~ msgstr "Țară"
+
+#~ msgid "City"
+#~ msgstr "Oraș"
+
+#~ msgid "Zip Code"
+#~ msgstr "Cod ZIP"
+
+#~ msgid "Description"
+#~ msgstr "Descriere"
+
+#~ msgid "User ID"
+#~ msgstr "ID utilizator"
+
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Stat"
+
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titlu"
+
+#, fuzzy
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Toate câmpurile de contact"
+
+#~ msgid "Search for:"
+#~ msgstr "Caută după:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "în"
+
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefon acasă"
+
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefon la serviciu"
+
+#~ msgid "Stop"
+#~ msgstr "Oprește"
+
+#~ msgid "Recursive search"
+#~ msgstr "Căutare recursivă"
+
+#~ msgid "Contains"
+#~ msgstr "Conține"
+
+#~ msgid "Starts With"
+#~ msgstr "Începe cu"
+
+#~ msgid "Unselect All"
+#~ msgstr "Deselectează tot"
+
+#, fuzzy
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~ msgid "Select Distribution List"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#~| msgid "Tobias Koenig"
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "Editează contact"
+
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Adăugare..."
+
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&Editare..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "&Importă lista..."
+
+#~| msgid "(c) 1997-2008, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2008, Echipa KDE PIM"
+
+#, fuzzy
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Cartea de adrese"
+
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefon acasă"
+
+#, fuzzy
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Stradă adresă"
+
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Contact &nou"
+
+#~| msgid "Enter Name"
+#~ msgid "Short Name"
+#~ msgstr "Introduceți denumirea"
+
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "Islanda"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "&Detalii"
+
+#~ msgid "Font Settings"
+#~ msgstr "Configurări font"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Utilizează fonturile KDE standard"
+
+#~ msgid "Details font:"
+#~ msgstr "Font detalii:"
+
+#~ msgid "Size:"
+#~ msgstr "Dimensiune:"
+
+#~ msgid "Body font:"
+#~ msgstr "Font corp:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Font fix:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Utilizează antete de contact colorate"
+
+#, fuzzy
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "&Exportă lista..."
+
+#, fuzzy
+#~ msgid "Category &members"
+#~ msgstr "Categorii"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Editează contact"
+
+#~| msgid "Add"
+#~ msgid "Add to:"
+#~ msgstr "Adaugă"
+
+#, fuzzy
+#~ msgid "Play"
+#~ msgstr "&Nou..."
+
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "Modificare tip..."
+
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "Nou..."
+
+#~ msgid "Remove"
+#~ msgstr "Elimină"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Altul"
+
+#~ msgid "Add"
+#~ msgstr "Adaugă"
+
+#, fuzzy
+#~ msgid "Edit Phone Number"
+#~ msgstr "Telefon acasă"
+
+#, fuzzy
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Stradă adresă"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Editează adresele de poștă electronică"
+
+#~ msgid "Edit..."
+#~ msgstr "Editare..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Stabilește standard"
+
+#~ msgid "Add Email"
+#~ msgstr "Adaugă email"
+
+#~ msgid "New Email:"
+#~ msgstr "Email nou:"
+
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Confirmare eliminare"
+
+#~ msgid "&Delete"
+#~ msgstr "Ș&terge"
+
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "Modificare tip..."
+
+#, fuzzy
+#~ msgid "Save photo..."
+#~ msgstr "Modifică tipul..."
+
+#, fuzzy
+#~ msgid "Remove photo"
+#~ msgstr "&Importă lista..."
+
+#~| msgid "Change Type..."
+#~ msgid "Change logo..."
+#~ msgstr "Modificare tip..."
+
+#, fuzzy
+#~ msgid "Save logo..."
+#~ msgstr "Modifică tipul..."
+
+#~| msgid "Remove"
+#~ msgid "Remove logo"
+#~ msgstr "Elimină"
+
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Nou..."
+
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Editare..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "&Listă de distribuție..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Editează adresele"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Editare etichetă..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Aceasta este adresa preferată"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Editează tipul adresei"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Tipuri de adrese"
+
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "Nume simplu"
+
+#~| msgid "Reverse Name with Comma"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Inversare nume cu virgulă"
+
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "Inversare nume"
+
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "Organizație"
+
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "Personalizat"
+
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "Denumire:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Poreclă:"
+
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "Organizație"
+
+#~| msgid "Home&page:"
+#~ msgid "Homepage:"
+#~ msgstr "&Pagină WEB:"
+
+#~| msgid "Blog"
+#~ msgid "Blog:"
+#~ msgstr "Blog"
+
+#, fuzzy
+#~ msgid "Addresses"
+#~ msgstr "Adresa"
+
+#~| msgid "Contacts"
+#~ msgid "Coordinates"
+#~ msgstr "Contacte"
+
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "Afaceri"
+
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Profession:"
+#~ msgstr "Profesie:"
+
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "Titlu:"
+
+#~ msgid "Department:"
+#~ msgstr "Departament:"
+
+#~ msgid "Office:"
+#~ msgstr "Birou:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Nume manager:"
+
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "Dată"
+
+#, fuzzy
+#~ msgid "Family"
+#~ msgstr "Câmp nume"
+
+#, fuzzy
+#~ msgid "Birthdate:"
+#~ msgstr "Data nașterii:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Aniversare:"
+
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's name:"
+#~ msgid "Partner's name:"
+#~ msgstr "Numele partenerului"
+
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "Editează contact"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Câmpuri personalizate"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Afișează editorul de contacte cu adresa de email dată"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Afișează editorul de contacte cu UID-ul dat"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Pornește în regim de editare"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Lansează editorul pentru noul contact"
+
+#~ msgid "Work on given file"
+#~ msgstr "Lucrează asupra dișierului dat"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "&Editare adrese..."
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Editează contactul „%1”"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Editor contacte"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Details"
+#~ msgstr "Detalii"
+
+#~ msgid "Misc"
+#~ msgstr "Diverse"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Trebuie să specificați o dată validă"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Trebuie să introduceți o zi de naștere validă."
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "Trebuie să introduceți o aniversare validă."
+
+#~ msgid "Add View"
+#~ msgstr "Adaugă vizualizare"
+
+#~ msgid "View name:"
+#~ msgstr "Denumire vizualizare:"
+
+#~ msgid "View Type"
+#~ msgstr "Tip vizualizare"
+
+#~ msgid "Add Field"
+#~ msgstr "Adaugă câmp"
+
+#~ msgid "Type:"
+#~ msgstr "Tip:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Este disponibil pentru toate contactele"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Valoare numerică"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Time"
+#~ msgstr "Oră"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dată și oră"
+
+#~ msgid "Remove Field"
+#~ msgstr "Elimină câmpul"
+
+#~ msgid "Add Field..."
+#~ msgstr "Adăugare câmp..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Eliminare câmp..."
+
+#~ msgid "Edit Distribution List"
+#~ msgstr "Editează lista de distribuție"
+
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Denumire:"
+
+#~ msgid "Distribution list members:"
+#~ msgstr "Membri listă de distribuție:"
+
+#~ msgid "Name in Use"
+#~ msgstr "Denumire în uz"
+
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "<b>Listă de distribuție:</b>"
+
+#~ msgctxt "Formatted name, role, organization"
+#~ msgid "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+#~ msgstr "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "<b>Carte de adrese:</b> %1"
+
+#~ msgid "Add New Distribution List"
+#~ msgstr "Adaugă listă de distribuție nouă"
+
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Introduceți o denumire pentru lista de distribuție:"
+
+#~ msgid "Name Exists"
+#~ msgstr "Denumirea există"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Editare adrese email..."
+
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Denumire:"
+
+#, fuzzy
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Navigator carte de adrese"
+
+#~ msgid "&Remove"
+#~ msgstr "Elimi&nă"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtru:"
+
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Latitudine:"
+
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Longitudine:"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "&Exportă lista..."
+
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Sexagesimal"
+
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Latitudine:"
+
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Nord"
+
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Sud"
+
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Longitudine:"
+
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Est"
+
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Vest"
+
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Nedefinit"
+
+#~ msgid "Reset"
+#~ msgstr "Resetează"
+
+#~ msgid "IM address:"
+#~ msgstr "Adresă MI:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Editare adresă MI..."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "î&n:"
+
+#~ msgid "Visible Fields"
+#~ msgstr "Câmpuri vizibile"
+
+#~ msgid "All Fields"
+#~ msgstr "Toate câmpurile"
+
+#~ msgid "Don Sanders"
+#~ msgstr "Don Sanders"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Co-responsabil, portare la libkabc, import/export CSV"
+
+#~ msgid "Mike Pilone"
+#~ msgstr "Mike Pilone"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "Reproiectare interfață și platformă"
+
+#~ msgid "Greg Stern"
+#~ msgstr "Greg Stern"
+
+#~ msgid "DCOP interface"
+#~ msgstr "interfață DCOP"
+
+#~ msgid "Mark Westcott"
+#~ msgstr "Mark Westcott"
+
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "Michel Boyer de la Giroday"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "Căutare LDAP"
+
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "Sigur ștergeți această listă de distribuție?"
+#~ msgstr[1] "Sigur ștergeți aceste %1 liste de distribuție?"
+#~ msgstr[2] "Sigur ștergeți aceste %1 de liste de distribuție?"
+
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "Sigur ștergeți acest contact?"
+#~ msgstr[1] "Sigur ștergeți aceste %1 contacte?"
+#~ msgstr[2] "Sigur ștergeți aceste %1 de contacte?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Alegeți un singur contact."
+
+#~ msgid "Use"
+#~ msgstr "Utilizează"
+
+#~ msgid "Do Not Use"
+#~ msgstr "Nu utiliza"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Listă de distribuție nouă"
+
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Listă de distribuție nouă (%1)"
+
+#, fuzzy
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "Nu am găsit o carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "Nu am găsit o carte de adrese KDE 2"
+
+#~ msgid "Print Addresses"
+#~ msgstr "Tipărește adresele"
+
+#, fuzzy
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "Contact &nou"
+
+#~| msgid "New"
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Nou"
+
+#~ msgid "&New Distribution List..."
+#~ msgstr "Listă de distribuție &nouă..."
+
+#~ msgid "Chat &With..."
+#~ msgstr "Di&scută cu..."
+
+#, fuzzy
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Contact &nou"
+
+#~ msgid "Edit"
+#~ msgstr "Editează"
+
+#~ msgid "&Delete Contact"
+#~ msgstr "Ș&terge contact"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Șterge toate contactele alese."
+
+#, fuzzy
+#~ msgid "&Move Contact To..."
+#~ msgstr "Contact &nou"
+
+#~ msgid "LDAP &Lookup"
+#~ msgstr "Căutare &LDAP"
+
+#~ msgid "Select Categories..."
+#~ msgstr "Alege categorii..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "Curăță bara de căutare"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "Nu uni"
+
+#~ msgid "Distribution List: %1"
+#~ msgstr "Listă de distribuție: %1"
+
+#~ msgid "Keys:"
+#~ msgstr "Chei:"
+
+#~ msgid "Export..."
+#~ msgstr "Export..."
+
+#~ msgid "Key Type"
+#~ msgstr "Tip cheie"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Sigur eliminați cheia <b>%1</b>?</qt>"
+
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Adăugare la lista de distribuție..."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Prefixe onorifice:"
+
+#~ msgid "Additional names:"
+#~ msgstr "Nume suplimentare:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Sufixe onorifice:"
+
+#~ msgid "Formatted name:"
+#~ msgstr "Nume formatat:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Parcurge numele automat"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Domnișoara"
+
+#~ msgid "Mr."
+#~ msgstr "Dl."
+
+#~ msgid "Mrs."
+#~ msgstr "D-na."
+
+#~ msgid "Ms."
+#~ msgstr "D-șoara."
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Jr."
+
+#~ msgid "Sr."
+#~ msgstr "Sr."
+
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Numele întreg"
+
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Organizație"
+
+#~ msgid "Birthday:"
+#~ msgstr "Zi de naștere:"
+
+#~ msgid "2008-07-31"
+#~ msgstr "2008-07-31"
+
+#~ msgid "Partners name:"
+#~ msgstr "Numele partenerulu:"
+
+#, fuzzy
+#~ msgid "Edit the contact's name"
+#~ msgstr "&Exportă lista..."
+
+#~ msgid "Edit Name..."
+#~ msgstr "Editează numele..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "&Importă lista..."
+
+#~ msgid "&Organization"
+#~ msgstr "&Organizație"
+
+#~ msgid "Tools"
+#~ msgstr "Unelte"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Editează adresele"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "&Protocol:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "&Adresă:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "&Rețea:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "&Stabilește standard"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "&Elimină"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "&Editare..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "&Adăugare..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "Adresă"
+
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Denumire:"
+
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#, fuzzy
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "&Listă de distribuție..."
+#~ msgstr[1] "&Listă de distribuție..."
+#~ msgstr[2] "&Listă de distribuție..."
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Selectați câmpurile de afișat"
+
+#, fuzzy
+#~ msgid "&Selected fields:"
+#~ msgstr "Câmpurile selectate"
+
+#, fuzzy
+#~ msgid "Use filter:"
+#~ msgstr "În&dosariat ca:"
+
+#, fuzzy
+#~ msgid "Modify View: "
+#~ msgstr "Modificat"
+
+#, fuzzy
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~ msgid "Do Not Import"
+#~ msgstr "Fișier de importat:"
+
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Nimic"
+
+#, fuzzy
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Nedefinit"
+
+#, fuzzy
+#~ msgid "Select View"
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~ msgid "Modify View..."
+#~ msgstr "Modificat"
+
+#, fuzzy
+#~ msgid "Add View..."
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~ msgid "Delete View"
+#~ msgstr "&Adresa..."
+
+#, fuzzy
+#~ msgid "Edit &Filters..."
+#~ msgstr "Categorii"
+
+#, fuzzy
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "Țintuire contact"
+
+#, fuzzy
+#~ msgid "Export the entire address book"
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Finlandia"
+
+#, fuzzy
+#~ msgid "Crypto Settings"
+#~ msgstr "Țintuire contact"
+
+#, fuzzy
+#~ msgid "Message Preference"
+#~ msgstr "Stradă adresă"
+
+#, fuzzy
+#~ msgid "Sign:"
+#~ msgstr "Mărime"
+
+#, fuzzy
+#~ msgid "Encrypt:"
+#~ msgstr "Egipt"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Adresa poștală"
+
+#, fuzzy
+#~ msgid "Distribution List Editor"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Distribution Lists"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Add distribution list"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Edit distribution list"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Remove distribution list"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "New Distribution List..."
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "Nu am găsit o carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "%1 address book"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Edit address book settings"
+#~ msgstr "Navigator carte de adrese"
+
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "General"
+
+#, fuzzy
+#~ msgid "Draw &separators"
+#~ msgstr "Separator"
+
+#, fuzzy
+#~ msgid "Separator &width:"
+#~ msgstr "Separator"
+
+#, fuzzy
+#~ msgid "Cards"
+#~ msgstr "Ciad"
+
+#~| msgid "Laos"
+#~ msgid "Layout"
+#~ msgstr "Laos"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Comoros"
+
+#, fuzzy
+#~ msgid "&Text font:"
+#~ msgstr "&Detalii"
+
+#, fuzzy
+#~ msgid "Choose..."
+#~ msgstr "&Selectează câmpuri..."
+
+#, fuzzy
+#~ msgid "&Header font:"
+#~ msgstr "Țintuire contact"
+
+#, fuzzy
+#~ msgid "Fonts"
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~ msgid "Show &empty fields"
+#~ msgstr "&Detalii"
+
+#, fuzzy
+#~ msgid "Show field &labels"
+#~ msgstr "&Detalii"
+
+#, fuzzy
+#~ msgid "Row Separator"
+#~ msgstr "Separator"
+
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Nimic"
+
+#, fuzzy
+#~ msgid "Card"
+#~ msgstr "Ciad"
+
+#~ msgid "Icon"
+#~ msgstr "Pictogramă"
+
+#, fuzzy
+#~ msgid "Table"
+#~ msgstr "Tab"
+
+#, fuzzy
+#~ msgid "Presence"
+#~ msgstr "Grecia"
+
+#, fuzzy
+#~ msgid "AddressBook"
+#~ msgstr "Cartea de adrese"
+
+#, fuzzy
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#, fuzzy
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Navigator carte de adrese"
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#, fuzzy
+#~ msgid "Manufacturer"
+#~ msgstr "Vanuatu"
+
+#, fuzzy
+#~ msgid "Phone model"
+#~ msgstr "Telefon acasă"
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "Regiunea:"
+
+#, fuzzy
+#~ msgid "IMEI"
+#~ msgstr "II"
+
+#, fuzzy
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Fișier de importat:"
+
+#, fuzzy
+#~ msgid "&Stop Import"
+#~ msgstr "Fișier de importat:"
+
+#, fuzzy
+#~ msgid "&Stop Export"
+#~ msgstr "&Exportă lista..."
+
+#, fuzzy
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "Nu am găsit o carte de adrese KDE 2"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Suprascriu înregistrările importare mai înainte?"
+
+#, fuzzy
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Importare carte de adrese KDE 2"
+
+#, fuzzy
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#, fuzzy
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Importă carte de adrese &KDE 2"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr "Nu am găsit o carte de adrese KDE 2"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Afganistan"
+
+#~ msgid "Albania"
+#~ msgstr "Albania"
+
+#~ msgid "Algeria"
+#~ msgstr "Algeria"
+
+#~ msgid "American Samoa"
+#~ msgstr "Samoa americană"
+
+#~ msgid "Andorra"
+#~ msgstr "Andora"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anghila"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua și Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenia"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ashmore și Insulele Cartier"
+
+#~ msgid "Australia"
+#~ msgstr "Australia"
+
+#~ msgid "Austria"
+#~ msgstr "Austria"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaidjan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladeș"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Belarus"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgia"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermude"
+
+#~ msgid "Bhutan"
+#~ msgstr "Butan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivia"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnia și Herțegovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazilia"
+
+#~ msgid "Brunei"
+#~ msgstr "Brunei"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgaria"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Cambodgia"
+
+#~ msgid "Cameroon"
+#~ msgstr "Camerun"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Capul Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Insulele Cayman"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Republica Centrafricană"
+
+#~ msgid "Chad"
+#~ msgstr "Ciad"
+
+#~ msgid "Chile"
+#~ msgstr "Chile"
+
+#~ msgid "China"
+#~ msgstr "China"
+
+#~ msgid "Colombia"
+#~ msgstr "Columbia"
+
+#~ msgid "Comoros"
+#~ msgstr "Comoros"
+
+#~ msgid "Congo"
+#~ msgstr "Congo"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Congo, Republica Democrată"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Croatia"
+#~ msgstr "Croația"
+
+#~ msgid "Cuba"
+#~ msgstr "Cuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Cipru"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Cehia"
+
+#~ msgid "Denmark"
+#~ msgstr "Danemarca"
+
+#~ msgid "Djibouti"
+#~ msgstr "Djibuti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Republica Dominicană"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ecuador"
+
+#~ msgid "Egypt"
+#~ msgstr "Egipt"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Guinea Ecuatorială"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonia"
+
+#~ msgid "England"
+#~ msgstr "Anglia"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Etiopia"
+
+#~ msgid "European Union"
+#~ msgstr "Uniunea Europeană"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Insulele Faroe"
+
+#~ msgid "Fiji"
+#~ msgstr "Fiji"
+
+#~ msgid "Finland"
+#~ msgstr "Finlanda"
+
+#~ msgid "France"
+#~ msgstr "Franța"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Polinezia Franceză"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Georgia"
+
+#~ msgid "Germany"
+#~ msgstr "Germania"
+
+#~ msgid "Ghana"
+#~ msgstr "Gana"
+
+#~ msgid "Greece"
+#~ msgstr "Grecia"
+
+#~ msgid "Greenland"
+#~ msgstr "Groenlanda"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Guineea"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guineea-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Hungary"
+#~ msgstr "Ungaria"
+
+#~ msgid "India"
+#~ msgstr "India"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonezia"
+
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#~ msgid "Iraq"
+#~ msgstr "Irak"
+
+#~ msgid "Ireland"
+#~ msgstr "Irlanda"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Italia"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Coasta de Fildeș"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaica"
+
+#~ msgid "Japan"
+#~ msgstr "Japonia"
+
+#~ msgid "Jordan"
+#~ msgstr "Iordania"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazahstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenia"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, North"
+#~ msgstr "Coreea, de Nord"
+
+#~ msgid "Korea, South"
+#~ msgstr "Coreea, de Sud"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuweit"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kârgâzstan"
+
+#~ msgid "Laos"
+#~ msgstr "Laos"
+
+#~ msgid "Latvia"
+#~ msgstr "Letonia"
+
+#~ msgid "Lebanon"
+#~ msgstr "Liban"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#~ msgid "Libya"
+#~ msgstr "Libia"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lituania"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luxemburg"
+
+#~ msgid "Macau"
+#~ msgstr "Macao"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagascar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malaezia"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldive"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Insulele Marshall"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinica"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritania"
+
+#~ msgid "Mauritius"
+#~ msgstr "Maurițius"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexic"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Micronezia, Statele Federative"
+
+#~ msgid "Moldova"
+#~ msgstr "Moldova"
+
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolia"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Maroc"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambic"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Olanda"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Antilele Olandeze"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Noua Caledonie"
+
+#~ msgid "New Zealand"
+#~ msgstr "Noua Zeelandă"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragua"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "North Korea"
+#~ msgstr "Coreea de Nord"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Irlanda de Nord"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Insulele Mariane de Nord"
+
+#~ msgid "Norway"
+#~ msgstr "Norvegia"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian"
+#~ msgstr "Palestina"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua Noua Guinee"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Philippines"
+#~ msgstr "Filipine"
+
+#~ msgid "Poland"
+#~ msgstr "Polonia"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugalia"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Qatar"
+
+#~ msgid "Romania"
+#~ msgstr "România"
+
+#~ msgid "Russia"
+#~ msgstr "Rusia"
+
+#~ msgid "Rwanda"
+#~ msgstr "Ruanda"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "Sfântul Kitts și Nevis"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Sfânta Lucia"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Sfântul Vincent și Grenadierii"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome și Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Arabia Saudită"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Serbia și Muntenegru"
+
+#~ msgid "Seychelles"
+#~ msgstr "Seychelles"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapore"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovacia"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovenia"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Insulele Solomon"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#~ msgid "South Africa"
+#~ msgstr "Africa de Sud"
+
+#~ msgid "South Korea"
+#~ msgstr "Coreea de Sud"
+
+#~ msgid "Spain"
+#~ msgstr "Spania"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#~ msgid "Suriname"
+#~ msgstr "Surinam"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swaziland"
+
+#~ msgid "Sweden"
+#~ msgstr "Suedia"
+
+#~ msgid "Switzerland"
+#~ msgstr "Elveția"
+
+#~ msgid "Syria"
+#~ msgstr "Siria"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tadjikistan"
+
+#~ msgid "Tanzania"
+#~ msgstr "Tanzania"
+
+#~ msgid "Thailand"
+#~ msgstr "Tailanda"
+
+#~ msgid "Tibet"
+#~ msgstr "Tibet"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad și Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunisia"
+
+#~ msgid "Turkey"
+#~ msgstr "Turcia"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Insulele Turks și Caicos"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ucraina"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Emiratele Arabe Unite"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Marea Britanie"
+
+#~ msgid "United States"
+#~ msgstr "Statele Unite"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguai"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Vatican City"
+#~ msgstr "Orașul Vatican"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venezuela"
+
+#~ msgid "Vietnam"
+#~ msgstr "Vietnam"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Samoa de Vest"
+
+#~ msgid "Yemen"
+#~ msgstr "Yemen"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Iugoslavia"
+
+#~ msgid "Zaire"
+#~ msgstr "Zair"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbave"
+
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "Nimic"
+
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "Titlu:"
+
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "Nume"
+
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~| msgid "Address"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "Adresă"
+
+#, fuzzy
+#~ msgid "Address:"
+#~ msgstr "Adresa"
+
+#~| msgid "New"
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "Nou"
+
+#~ msgid "&General"
+#~ msgstr "&General"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "Tibet"
+
+#, fuzzy
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Nimic"
+
+#, fuzzy
+#~ msgid "New List..."
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~ msgid "Rename List..."
+#~ msgstr "&Importă lista..."
+
+#, fuzzy
+#~ msgid "Remove Contact"
+#~ msgstr "Contact &nou"
+
+#, fuzzy
+#~ msgid "Please enter name:"
+#~ msgstr "Afișează editorul de contacte cu adresa de email dată"
+
+#, fuzzy
+#~ msgid "Rename Distribution List"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "&Listă de distribuție..."
+
+#, fuzzy
+#~ msgid "Select Email Address"
+#~ msgstr "Adresa poștală"
+
+#, fuzzy
+#~ msgid "Email Addresses"
+#~ msgstr "Adresa poștală"
+
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "Afișează bara de extensie"
+
+#, fuzzy
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "Navigator carte de adrese"

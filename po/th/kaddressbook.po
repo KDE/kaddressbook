@@ -1,0 +1,4830 @@
+# translation of kaddressbook.po to Thai
+# Copyright (C) 2005 Free Software Foundation, Inc.
+#
+# ถนอมทรัพย์ นพบูรณ์ <donga_n@yahoo.com>, 2005.
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2010-03-25 14:22+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "สมุดที่อยู่"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contacts"
+msgid "Contact"
+msgstr "ที่อยู่ติดต่อ"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Email"
+msgid "Emails"
+msgstr "อีเมล"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "องค์กร"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "วันเกิด"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "บันทึกย่อ"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "Title"
+msgid "Title"
+msgstr "ตำแหน่ง"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgctxt "@title:column Column containing email addresses"
+#| msgid "Email"
+msgid "Email"
+msgstr "อีเมล"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, fuzzy, kde-format
+#| msgid "Blog feed:"
+msgid "Blog Feed"
+msgstr "แหล่งป้อนบล็อก:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "สมุดที่อยู่-K"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "New &Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "ที่อยู่&ติดต่อใหม่..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "คุณจะพบกล่องโต้ตอบ ที่จะให้คุณได้ทำการปรับแต่งค่าแป้นพิมพ์ลัดของโปรแกรม"
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "New Contact"
+#| msgid_plural "New %1 Contacts"
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "ที่อยู่ติดต่อใหม่ %1 รายการ"
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "คุณจะพบกล่องโต้ตอบ ที่จะให้คุณได้ทำการปรับแต่งค่าแป้นพิมพ์ลัดของโปรแกรม"
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "โปรแกรมสมุดที่อยู่สำหรับ KDE"
+
+#: src/aboutdata.cpp:21
+#, fuzzy, kde-format
+#| msgid "Copyright © 2007–2010 KAddressBook authors"
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "สงวนลิขสิทธิ์ © 2007–2010 กลุ่มผู้เขียน KAddressBook"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "ผู้ดูแลปัจจุบัน"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Tobias Koenig"
+msgid "Tobias König"
+msgstr "Tobias Koenig"
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "ผู้ดูแลปัจจุบัน"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Steffen Hansen"
+msgid "Stefan Taferner"
+msgstr "Steffen Hansen"
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "ผู้เขียนแรกเริ่ม"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "ใช้ตัวกรองล่าสุดที่ใช้มา"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "ใช้ตัวกรองล่าสุดที่ใช้มา"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "ไม่มี"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "เพิ่ม..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "อีเมล:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "โทรศัพท์"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, fuzzy, kde-format
+#| msgid "Next"
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "ถัดไป"
+
+#: src/contactswitcher.cpp:19
+#, fuzzy, kde-format
+#| msgid "Previous"
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "ก่อนหน้า"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, fuzzy, kde-format
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "คัดลอกที่อยู่ติดต่อที่เลือกไว้ในปัจจุบันไปยังคลิปบอร์ดของระบบในรูปแบบของนามบัตรเสมือน"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgctxt "<nickname> on <server>"
+#| msgid "%1 on %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 บน %2"
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "ยังไม่ระบุ"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "วันครบรอบ"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "EMail (preferred)"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "อีเมล (ที่ควรใช้)"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "EMail (2)"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "อีเมล (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "EMail (3)"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "อีเมล (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "EMail (4)"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "อีเมล (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "อาชีพ"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "สำนักงาน"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "พม่า"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "ชื่อที่ปรึกษา"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "All contacts"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "ที่อยู่ติดต่อทั้งหมด"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+#| msgid "%1 is not a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "แฟ้ม %1 ไม่ใช่แฟ้มสมุดที่อยู่แบบ GMX"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, fuzzy, kde-format
+#| msgid "No Contacts Selected"
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "ยังไม่มีที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "&All contacts"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "ที่อยู่ติดต่อทั้งหมด"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "%1 is not a GMX address book file."
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "แฟ้ม %1 ไม่ใช่แฟ้มสมุดที่อยู่แบบ GMX"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgid "Fetch Contacts"
+msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "ช่องข้อมูลส่วนตัว"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "ช่องข้อมูลธุรกิจ"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "ช่องข้อมูลอื่น ๆ"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "กุญแจสำหรับใช้เข้ารหัส"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Pictures"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "รูปภาพต่าง ๆ"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "แฟ้มที่จะนำเข้า:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Private fields"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "ช่องข้อมูลส่วนตัว"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Business fields"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "ช่องข้อมูลธุรกิจ"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Other fields"
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "ช่องข้อมูลอื่น ๆ"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Encryption keys"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "กุญแจสำหรับใช้เข้ารหัส"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Pictures"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "รูปภาพต่าง ๆ"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "ส่งออกเป็นแฟ้มเดียว"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "สมุดที่อยู่"
+
+#: src/importexport/importexportengine.cpp:59
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "ตั้งหมวดหมู่ให้ที่อยู่ติดต่อที่เลือกไว้ทั้งหมด"
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "กำลังนำเข้าที่อยู่ติดต่อ"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Importing contacts"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "กำลังนำเข้าที่อยู่ติดต่อ"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "นำเข้าจากนามบัตรเสมือนที่ให้"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "นำเข้าจากสมุดที่อยู่ของ KDE 2..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "แ&ฟ้ม"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "สร้างใ&หม่"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "แ&ก้ไข"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "มุมมอง"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Latin1"
+msgid "&Action"
+msgstr "ละติน1"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "เครื่องมือ"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "&ตั้งค่า"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&ส่งออก"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "แถบเครื่องมือหลัก"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "นำเข้า"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&ส่งออก"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "ค้นหา"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "Set the categories for all selected contacts."
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "ตั้งหมวดหมู่ให้ที่อยู่ติดต่อที่เลือกไว้ทั้งหมด"
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "ค้นหาในรายการย่อยด้วย"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "หมวดหมู่"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "เลือกทั้งหมด"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "เลือกที่อยู่ติดต่อทั้งหมดที่ปรากฏอยู่ในมุมมองปัจจุบัน"
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#: src/mainwindow.cpp:69
+#, fuzzy, kde-format
+#| msgid ""
+#| "You will be presented with a dialog, where you can configure the "
+#| "application wide shortcuts."
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr "คุณจะพบกล่องโต้ตอบ ที่จะให้คุณได้ทำการปรับแต่งค่าแป้นพิมพ์ลัดของโปรแกรม"
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "ซ่อนแถบกระโดด"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "แก้ไขตัวกรองสมุดที่อยู่"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "ชื่อเต็ม"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "นามสกุล"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "ชื่อจริง"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "ที่อยู่ที่บ้าน"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "ที่อยู่ภาคธุรกิจ"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "หมายเลขโทรศัพท์"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "อีเมลที่ควรใช้"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "อีเมลทั้งหมด"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "บริษัท"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "กำลังตั้งค่าแบบอักษรและชุดสี"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "การพิมพ์"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "เรียบร้อยแล้ว"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "เลือกรูปลักษณะการพิมพ์"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "รูปลักษณ์"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "ช่องข้อมูล"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "ที่อยู่ที่บ้าน"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business Address"
+msgid "with business address"
+msgstr "ที่อยู่ภาคธุรกิจ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+#| msgid "Birthday"
+msgid "with birthday"
+msgstr "วันเกิด"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "แก้ไขอีเมล"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "สีพื้นหลัง"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "สีพื้นหลังบรรทัดส่วนหัว:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Alternating backgrounds"
+msgid "Alternating the background color"
+msgstr "พื้นหลังแบบอื่น"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "องค์กร"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "ที่อยู่อีเมล:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "ที่อยู่อีเมล:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "โทรศัพท์:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "โทรศัพท์:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "หน้าเว็บ:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "ที่อยู่ในประเทศ"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "ที่อยู่ต่างประเทศ"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "ที่อยู่ทางไปรษณีย์"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "ที่อยู่จัดส่ง"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "ที่อยู่ที่ทำงาน"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "ที่อยู่ที่กำหนด"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "บันทึกย่อ:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr ""
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "กำลังตั้งค่าแบบอักษรและชุดสี"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "ลักษณะรายละเอียด"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "หน้ารูปลักษณ์"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "หัวที่อยู่ติดต่อ"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "สีพื้นหลังบรรทัดส่วนหัว:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "สีพื้นหลังบรรทัดส่วนหัว:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "สีข้อความบรรทัดส่วนหัว:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "สีข้อความบรรทัดส่วนหัว:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr ""
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr ""
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "เลือกที่อยู่ติดต่อที่จะพิมพ์ก"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "เลือกรูปลักษณะการพิมพ์"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "ความคืบหน้าการพิมพ์"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "การพิมพ์: กำลังดำเนินการ"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "ความคืบหน้า"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "พิมพ์ข้อมูลของที่อยู่ติดต่อด้วย"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+#| msgid "Phone numbers"
+msgid "Print contact phone numbers"
+msgstr "หมายเลขโทรศัพท์"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "หมายเลขโทรศัพท์"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal addresses"
+msgid "Print contact email addresses"
+msgstr "ที่อยู่ทางไปรษณีย์"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "ที่อยู่อีเมล"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+#| msgid "Street addresses"
+msgid "Print contact street addresses"
+msgstr "ที่อยู่"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "ที่อยู่ทางไปรษณีย์"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Print Contact's Information"
+msgid "Print contact organizations"
+msgstr "พิมพ์ข้อมูลของที่อยู่ติดต่อด้วย"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "บันทึกย่อ:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "กำลังตั้งค่าแบบอักษรและชุดสี"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, fuzzy, kde-format
+#| msgid "Ascending"
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "จากน้อยไปมาก"
+
+#: src/printing/stylepage.cpp:37
+#, fuzzy, kde-format
+#| msgid "Descending"
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "จากมากไปน้อย"
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(ไม่มีส่วนแสดงตัวอย่าง)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "เลือกรูปลักษณะการพิมพ์"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "การเรียงลำดับ"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Criterion:"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "เกณฑ์:"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "เลือกชนิดของปุ่มพิมพ์:"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "ลำดับ:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "รูปแบบการพิมพ์"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "เลือกชนิดของปุ่มพิมพ์:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Selected contacts"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&นำเข้า"
+
+#~ msgid "Import vCard..."
+#~ msgstr "นำเข้าจากนามบัตรเสมือน..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "นำเข้าที่อยู่ติดต่อหรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "นำเข้ารายการจากแฟ้ม CSV..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "นำเข้าจากสมุดที่อยู่ LDIF..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "นำเข้าที่อยู่ติดต่อหรือไม่ ?"
+
+#, fuzzy
+#~| msgctxt "arguments are host name, datetime"
+#~| msgid "Imported from LDAP directory %1 on %2"
+#~ msgid "Import From LDAP server..."
+#~ msgstr "นำเข้าข้อมูลจากไดเร็กทอรี LDAP %1 เมื่อ %2"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "นำเข้าที่อยู่ติดต่อหรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "นำเข้าจากทั้งหมด..."
+
+#, fuzzy
+#~| msgid "%1 is not a GMX address book file."
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "แฟ้ม %1 ไม่ใช่แฟ้มสมุดที่อยู่แบบ GMX"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 3.0..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 3.0..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 2.1..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "ส่งออกเป็นนามบัตรเสมือน 2.1..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "ส่งออกเป็นรายการไปยังแฟ้ม CSV..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "ส่งออกเป็นสมุดที่อยู่ LDIF..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "ส่งออกเป็นสมุดที่อยู่ LDIF..."
+
+#, fuzzy
+#~| msgid "Export GMX Address Book..."
+#~ msgid "Export GMX file..."
+#~ msgstr "ส่งออกเป็นสมุดที่อยู่แบบ GMX..."
+
+#, fuzzy
+#~| msgid "%1 is not a GMX address book file."
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "แฟ้ม %1 ไม่ใช่แฟ้มสมุดที่อยู่แบบ GMX"
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>ไม่สามารถเปิดแฟ้ม <b>%1</b> ได้</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่สามารถเปิดแฟ้ม <b>%1</b> ได้</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "กล่องนำเข้าแฟ้ม CSV"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "กำลังนำเข้าที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "แฟ้มที่จะนำเข้า:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "เลือกนามบัตรเสมือนที่จะนำเข้า"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "ตัวแบ่งแยก"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "อักขระจุลภาค"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "เลือกช่องข้อมูลที่คุณต้องการลบ:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "อักขระเซมิโคลอน"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "เลือกช่องข้อมูลที่คุณต้องการลบ:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "อักขระแท็บ"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "อักขระช่องว่าง"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "อักขระอื่น ๆ"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "ข้อความอ้างถึง:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "เลือกชนิดของปุ่มพิมพ์:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "ไม่มี"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "รูปแบบวันที่:"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "ข้อความอ้างถึง:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "เลือกชนิดของปุ่มพิมพ์:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "ปรับใช้แม่แบบ..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "จัดเก็บแม่แบบ..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "ภายในระบบ (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "ละติน1"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "ยูนิโค้ด"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "ยูนิโค้ดของ Microsoft"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(ไม่มีส่วนแสดงตัวอย่าง)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(ไม่มีส่วนแสดงตัวอย่าง)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "ชื่อแม่แบบ"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "โปรดป้อนชื่อสำหรับแม่แบบ:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "ไม่สามารถเปิดแฟ้มนำเข้าได้"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>คุณต้องการจะลบสมุดที่อยู่ <b>%1</b> จริงหรือไม่ ?</qt>"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "การเลือกแม่แบบ"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "โปรดเลือกแม่แบบ ซึ่งควรจะเป็นรูปแบบเดียวกันกับแฟ้มแบบ CSV:"
+
+#, fuzzy
+#~| msgid "GMX addressbook file (*.gmxa)"
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "แฟ้มสมุดที่อยู่แบบ GMX (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>ไม่สามารถเปิด <b>%1</b> เพื่อทำการอ่านข้อมูลได้</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "แฟ้ม %1 ไม่ใช่แฟ้มสมุดที่อยู่แบบ GMX"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr "คุณได้ทำการเลือกรายการของที่อยู่ติดต่อ จะให้ทำการส่งออกมันเป็นหลายแฟ้มหรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "ส่งออกเป็นแฟ้มเดียว"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "ส่งออกเป็นหลายแฟ้ม"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "เลือกนามบัตรเสมือนที่จะนำเข้า"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "การนำเข้านามบัตรเสมือนล้มเหลว"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>ไม่สามารถเรียกใช้นามบัตรเสมือน:</para><para>%1</para>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "ไม่มีที่อยู่ติดต่อใด ๆ ที่ถูกนำเข้า เนื่องจากเกิดข้อผิดพลาดกับนามบัตรเสมือน"
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "นามบัตรเสมือนไม่มีส่วนของที่อยู่ติดต่อใด ๆ"
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "นำเข้าจากนามบัตรเสมือน"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact into your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "คุณต้องการจะนำเข้าที่อยู่ติดต่อนี้ไปไว้ในสมุดที่อยู่ของคุณหรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "นำเข้าจากทั้งหมด..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "คุณต้องการจะส่งออกที่อยู่ติดต่อรายการใด ?"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "คัดลอกที่อยู่ติดต่อที่เลือกไว้ในปัจจุบันไปยังคลิปบอร์ดของระบบในรูปแบบของนามบัตรเสมือน"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Ungroup Letter"
+#~ msgid "Ungrouped"
+#~ msgstr "ไม่รวมกลุ่มจดหมาย"
+
+#, fuzzy
+#~| msgid "Cut Group"
+#~| msgid_plural "Cut %1 Groups"
+#~ msgid "Group"
+#~ msgstr "ตัด %1 กลุ่ม"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "ที่อยู่อีเมล:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "จัดเก็บแม่แบบ..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "จัดเก็บแม่แบบ..."
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Protocol"
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "โพรโทคอล"
+
+#, fuzzy
+#~| msgctxt "@action:button Start searching"
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&ค้นหา"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "ส่งอีเมลไปยังที่อยู่ติดต่อทั้งหมด..."
+
+#, fuzzy
+#~| msgid "No Contacts Selected"
+#~ msgid "A contact group was selected."
+#~ msgstr "ยังไม่มีที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "ส่งที่อยู่ติดต่อ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "คัดลอกที่อยู่ติดต่อที่เลือกไว้ในปัจจุบันไปยังคลิปบอร์ดของระบบในรูปแบบของนามบัตรเสมือน"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "ส่งอีเมลไปยังที่อยู่ติดต่อทั้งหมด..."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "นำเข้าจากนามบัตรเสมือน..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "ผนวกรวมที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "ผนวกรวม"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "สมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "ผนวกรวม"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "No Contacts Selected"
+#~ msgid "No contacts selected."
+#~ msgstr "ยังไม่มีที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "ลูกค้า"
+
+#, fuzzy
+#~| msgid "Print Contact's Information"
+#~ msgid "Missing Selected Information"
+#~ msgstr "พิมพ์ข้อมูลของที่อยู่ติดต่อด้วย"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "ยังไม่ระบุ"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>เกิดข้อผิดพลาดขึ้น เมื่อพยายามทำการอ่านนามบัตรเสมือน โดยการเปิดแฟ้ม<filename>"
+#~ "%1</filename>:</para><para>%2</para>"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "ผนวกรวมที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "กำลังนำเข้าที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "ผนวกรวมที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "เลือกช่องข้อมูลของนามบัตรเสมือน"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "ที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Import Selected"
+#~ msgid "You selected %1"
+#~ msgstr "นำเข้ารายการที่เลือกไว้"
+
+#~ msgid "Kontact integration"
+#~ msgstr "การผนวกรวม Kontact"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "เลือกรูปลักษณะการพิมพ์"
+
+#~ msgid "Department"
+#~ msgstr "แผนก"
+
+#~ msgid "Manager's Name"
+#~ msgstr "ชื่อผู้จัดการ"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "ชื่อที่ปรึกษา:"
+
+#, fuzzy
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "ชื่อหุ้นส่วน"
+
+#~ msgid "IM Address"
+#~ msgstr "ที่อยู่ข้อความด่วนทันใจ"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "ประเภท"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "คุณต้องการจะเขียนทับแฟ้ม \"%1\" หรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Do you want to overwrite file \"%1\""
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "คุณต้องการจะเขียนทับแฟ้ม \"%1\" หรือไม่ ?"
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "เลือกช่องข้อมูลที่ต้องการจะส่งออกใน vCard"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "สมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "สลับการแสดงหรือซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "แก้ไขตัวกรองสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "No Contacts Selected"
+#~ msgid "Show Contacts View"
+#~ msgstr "ยังไม่มีที่อยู่ติดต่อที่เลือกไว้"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "สลับการแสดงหรือซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "แก้ไขชื่อของที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "แสดงรายละเอียด"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "สลับการแสดงหรือซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "ซ่อนรายละเอียด"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "เพิ่มสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "แก้ไขตัวกรองสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "แก้ไขตัวกรองสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "แก้ไขตัวกรองสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#~ msgid "Folder Properties..."
+#~ msgstr "คุณสมบัติของโฟลเดอร์..."
+
+#, fuzzy
+#~| msgid "Cut Contact"
+#~| msgid_plural "Cut %1 Contacts"
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "ตัดที่อยู่ติดต่อ %1 รายการ"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "ลบที่อยู่ติดต่อ %1 รายการ"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
+
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "ตัดที่อยู่ติดต่อ %1 รายการ"
+
+#~ msgid "Edit Contact..."
+#~ msgstr "แก้ไขที่อยู่ติดต่อ..."
+
+#~ msgid "Copy Group"
+#~ msgid_plural "Copy %1 Groups"
+#~ msgstr[0] "คัดลอก %1 กลุ่ม"
+
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "ลบ %1 กลุ่ม"
+
+#~ msgid "Edit Group..."
+#~ msgstr "แก้ไขกลุ่ม..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "เพิ่มสมุดที่อยู่"
+
+#~ msgid "Could not add address book: %1"
+#~ msgstr "ไม่สามารถเพิ่มเพิ่มสมุดที่อยู่ได้: %1"
+
+#~ msgid "Adding Address Book failed"
+#~ msgstr "การเพิ่มสมุดที่อยู่ล้มเหลว"
+
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "คุณต้องการจะลบสมุดที่อยู่ '%1' จริงหรือไม่ ?"
+
+#~ msgid "Delete Address Book?"
+#~ msgstr "ลบสมุดที่อยู่หรือไม่ ?"
+
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "สร้างที่อยู่ติดต่อใหม่<p>คุณจะพบกล่องโต้ตอบที่จะให้คุณได้ทำการเพิ่มข้อมูลทั้งหมดเกี่ยวกับตัวบุคคล "
+#~ "รวมถึงที่อยู่ต่าง ๆ และหมายเลขโทรศัพท์ด้วย</p>"
+
+#~ msgid "New &Group..."
+#~ msgstr "สร้าง&กลุ่มใหม่..."
+
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr "สร้างกลุ่มใหม่<p>คุณจะพบกล่องโต้ตอบที่จะให้คุณทำการสร้างกลุ่มของที่อยู่ติดต่อกลุ่มใหม่</p>"
+
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "แก้ไขที่อยู่ติดต่อที่เลือกไว้<p>คุณจะพบกล่องโต้ตอบที่จะให้คุณได้ทำการเปลี่ยนแปลงข้อมูลทั้งหมดเกี่ยวกับตัวบุคคล "
+#~ "รวมถึงที่อยู่ต่าง ๆ และหมายเลขโทรศัพท์ด้วย</p>"
+
+#~ msgid "Add &Address Book..."
+#~ msgstr "เพิ่ม&สมุดที่อยู่..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Store a contact in a different Addressbook<p>You will be presented with "
+#~| "a dialog where you can select a new storage place for this contact.</p>"
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "จัดเก็บที่อยู่ติดต่อในสมุดที่อยู่ที่แตกต่างออกไป<p>คุณจะพบกล่องที่จะให้คุณได้ทำการเลือก "
+#~ "แหล่งจัดเก็บข้อมูลใหม่สำหรับจัดเก็บรายชื่อติดต่อนี้</p>"
+
+#~ msgid "&Delete Address Book"
+#~ msgstr "&ลบสมุดที่อยู่"
+
+#~ msgid "Address Book Properties..."
+#~ msgstr "คุณสมบัติของสมุดที่อยู่..."
+
+#~| msgid "Add Contact"
+#~ msgid "Add Host"
+#~ msgstr "เพิ่มเครื่อง"
+
+#~ msgid "Home Number"
+#~ msgstr "โทรศัพท์บ้าน"
+
+#~ msgid "Work Number"
+#~ msgstr "โทรศัพท์ที่ทำงาน"
+
+#~ msgid "Mobile Number"
+#~ msgstr "โทรศัพท์เคลื่อนที่"
+
+#~ msgid "Fax Number"
+#~ msgstr "โทรสาร"
+
+#~ msgid "Pager"
+#~ msgstr "เพจเจอร์"
+
+#~ msgid "Street"
+#~ msgstr "ถนน"
+
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "รัฐ"
+
+#~ msgid "Country"
+#~ msgstr "ประเทศ"
+
+#~ msgid "City"
+#~ msgstr "เมือง"
+
+#~ msgid "Zip Code"
+#~ msgstr "รหัสไปรษณีย์"
+
+#~ msgid "Description"
+#~ msgstr "คำอธิบาย"
+
+#~ msgid "User ID"
+#~ msgstr "หมายเลขผู้ใช้"
+
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "รัฐ"
+
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "ตำแหน่ง"
+
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "นำเข้าที่อยู่ติดต่อจากบริการ LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "ค้นหาที่อยู่ในไดเรกทอรี"
+
+#~ msgid "Search for:"
+#~ msgstr "ค้นหา:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "ใน"
+
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "โทรศัพท์บ้าน"
+
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "โทรศัพท์ที่ทำงาน"
+
+#~ msgid "Stop"
+#~ msgstr "หยุด"
+
+#~ msgid "Recursive search"
+#~ msgstr "ค้นหาในรายการย่อยด้วย"
+
+#~ msgid "Contains"
+#~ msgstr "มีคำว่า"
+
+#~ msgid "Starts With"
+#~ msgstr "เริ่มด้วย"
+
+#~ msgid "Unselect All"
+#~ msgstr "ยกเลิกที่เลือกไว้ทั้งหมด"
+
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "ปรับแต่งแม่ข่ายบริการ LDAP..."
+
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "เลือกรายการแจกจ่ายที่จะใช้เพิ่มที่อยู่ติดต่อที่เลือกไว้"
+
+#~ msgid "Select Distribution List"
+#~ msgstr "เลือกรายการแจกจ่าย"
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "นำเข้าข้อมูลจากไดเร็กทอรี LDAP %1 เมื่อ %2"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "ปรับแต่งสมุดที่อยู่..."
+
+#~| msgid "Tobias Koenig"
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "สงวนลิขสิทธิ์ (c), 2009 Tobias Koenig"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "แม่ข่ายบริการ LDAP"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "เพิ่ม..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "แก้ไข..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "ลบรายการ"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "สงวนลิขสิทธิ์ (c) 1997-2005, กลุ่มผู้พัฒนา KDE PIM"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "สมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Phone numbers"
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "หมายเลขโทรศัพท์"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "ที่อยู่ที่กำหนด"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "อีเมล"
+
+#, fuzzy
+#~| msgid "All Contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "ที่อยู่ติดต่อทั้งหมด"
+
+#, fuzzy
+#~| msgid "Enter Name"
+#~ msgid "Short Name"
+#~ msgstr "ป้อนชื่อ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "EMails"
+#~ msgstr "อีเมล"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "ไอซ์แลนด์"
+
+#, fuzzy
+#~| msgid "Miscellaneous"
+#~ msgctxt "@title:group Print settings"
+#~ msgid "Miscellaneous"
+#~ msgstr "เบ็ดเตล็ด"
+
+#~ msgid "Letter Groups"
+#~ msgstr "กลุ่มจดหมาย"
+
+#~ msgid "Group Letter"
+#~ msgstr "รวมกลุ่มจดหมาย"
+
+#~ msgid "Font Settings"
+#~ msgstr "ตั้งค่าแบบอักษร"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "ใช้แบบอักษรมาตรฐานของ KDE"
+
+#~ msgid "Details font:"
+#~ msgstr "แบบอักษรส่วนรายละเอียด:"
+
+#~ msgid "Size:"
+#~ msgstr "ขนาด:"
+
+#~ msgid "Body font:"
+#~ msgstr "แบบอักษรส่วนตัวข้อความ:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "แบบอักษรความกว้างคงที่:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "แบบอักษรหัวที่อยู่ติดต่อ:"
+
+#~ msgid "Headlines:"
+#~ msgstr "บรรทัดส่วนหัว:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "ใช้หัวที่อยู่ติดต่อแบบมีสี"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(ส่งไปยัง:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "กำลังตั้งค่าระยะขอบและระยะห่าง"
+
+#~ msgid "Preparing"
+#~ msgstr "กำลังตระตรียม"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "พิมพ์หมายเลขพิเศษของที่อยู่ติดต่อ"
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "ที่อยู่ติดต่อที่ตรงกับตัวกรอง"
+
+#~ msgid "Category &members"
+#~ msgstr "สมาชิกของหมวดหมู่"
+
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "ที่อยู่ติดต่อ %1 รายการต่อไปนี้ จะถูกนำเข้าไปไว้ในสมุดที่อยู่ของคุณ:"
+
+#, fuzzy
+#~| msgid "Remove addressbook"
+#~ msgid "Select the address book"
+#~ msgstr "ลบสมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "New Contact"
+#~| msgid_plural "New %1 Contacts"
+#~ msgid "New Contact"
+#~ msgstr "ที่อยู่ติดต่อใหม่ %1 รายการ"
+
+#~ msgid "Edit Contact"
+#~ msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "Add"
+#~ msgid "Add to:"
+#~ msgstr "เพิ่ม"
+
+#, fuzzy
+#~| msgid "This contact's image cannot be found."
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "ไม่พบภาพของที่อยู่ติดต่อนี้"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(ไม่มีส่วนแสดงตัวอย่าง)"
+
+#~ msgid "Play"
+#~ msgstr "เล่น"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "เปลี่ยนประเภท..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "สร้างใหม่..."
+
+#~ msgid "Remove"
+#~ msgstr "ลบรายการ"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "อื่น ๆ ..."
+
+#~ msgid "Add"
+#~ msgstr "เพิ่ม"
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "แก้ไขหมายเลขโทรศัพท์"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "นี่เป็นหมายเลขโทรศัพท์ที่ควรใช้"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "แก้ไขที่อยู่อีเมล"
+
+#~ msgid "Edit..."
+#~ msgstr "แก้ไข..."
+
+#~ msgid "Set Standard"
+#~ msgstr "ตั้งเป็นมาตรฐาน"
+
+#~ msgid "Add Email"
+#~ msgstr "เพิ่มอีเมล"
+
+#~ msgid "New Email:"
+#~ msgstr "อีเมลใหม่:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "อีเมล:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>คุณแน่ใจหรือว่าต้องการจะลบที่อยู่อีเมล <b>%1</b> นี้ ?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "ยืนยันการลบ"
+
+#~ msgid "&Delete"
+#~ msgstr "ลบ"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "ไม่พบภาพของที่อยู่ติดต่อนี้"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "เปลี่ยนประเภท..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "จัดเก็บแม่แบบ..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "ลบรายการ"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "เปลี่ยนอีเมล..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "จัดเก็บแม่แบบ..."
+
+#, fuzzy
+#~| msgid "Remove"
+#~ msgid "Remove logo"
+#~ msgstr "ลบรายการ"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "สร้างใหม่..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "แก้ไข..."
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "ลบ"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Do you really want to delete the selected address?"
+#~| msgid_plural "Do you really want to delete the %1 selected addresses?"
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "คุณต้องการจะลบที่อยู่ %1 รายการที่เลือกไว้ จริงหรือไม่ ?"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "แก้ไขที่อยู่"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "แก้ไขแถบข้อความ..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "นี่เป็นที่อยู่ที่ควรใช้"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "แก้ไขประเภทของที่อยู่"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "ประเภทของที่อยู่"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "ชื่อธรรมดา"
+
+#, fuzzy
+#~| msgid "Reverse Name with Comma"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "กลับชื่อด้วยจุลภาค"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "กลับชื่อ"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "องค์กร"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "กำหนดเอง"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "ชื่อ:"
+
+#~ msgid "Nickname:"
+#~ msgstr "ชื่อเล่น:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "องค์กร"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "หน้าเว็บ:"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Blog:"
+#~ msgstr "บล็อก"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "ระยะขอบ:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "ที่อยู่:"
+
+#, fuzzy
+#~| msgid "Contacts"
+#~ msgid "Coordinates"
+#~ msgstr "ที่อยู่ติดต่อ"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "ธุรกิจ"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "ทั่วไป"
+
+#~ msgid "Profession:"
+#~ msgstr "อาชีพ:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "เรื่อง:"
+
+#~ msgid "Department:"
+#~ msgstr "แผนก:"
+
+#~ msgid "Office:"
+#~ msgstr "สำนักงาน:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "ชื่อผู้จัดการ:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "วันที่"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "ครอบครัว"
+
+#~ msgid "Birthdate:"
+#~ msgstr "วันเกิด:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "วันครบรอบ:"
+
+#, fuzzy
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's name:"
+#~ msgid "Partner's name:"
+#~ msgstr "ชื่อหุ้นส่วน:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "แก้ไขที่อยู่ติดต่อ"
+
+#~ msgid "Custom Fields"
+#~ msgstr "ช่องข้อมูลกำหนดเอง"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "แสดงตัวแก้ไขที่ติดต่อพร้อมด้วยที่อยู่อีเมลที่ให้"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "แสดงตัวแก้ไขที่ติดต่อพร้อมด้วยหมายเลขผู้ใช้ที่ให้"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "โหมดเรียกในตัวแก้ไขเท่านั้น"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "เรียกตัวแก้ไขสำหรับที่อยู่ติดต่อใหม่"
+
+#~ msgid "Work on given file"
+#~ msgstr "ทำงานกับแฟ้มที่ให้"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "แก้ไขที่อยู่..."
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "แก้ไขที่อยู่ติดต่อ '%1'"
+
+#~ msgid "Contact Editor"
+#~ msgstr "การแก้ไขที่อยู่ติดต่อ"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "รายละเอียด"
+
+#~ msgid "Misc"
+#~ msgstr "เบ็ดเตล็ด"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "คุณต้องระบุวันที่ที่ใช้ได้"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "คุณได้ป้อนวันเกิดที่ใช้งานได้"
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "คุณได้ป้อนวันครบรอบที่ใช้งานได้"
+
+#~ msgid "Add View"
+#~ msgstr "เพิ่มมุมมอง"
+
+#~ msgid "View name:"
+#~ msgstr "ชื่อมุมมอง:"
+
+#~ msgid "View Type"
+#~ msgstr "ประเภทมุมมอง"
+
+#~ msgid "Add Field"
+#~ msgstr "เพิ่มช่องข้อมูล"
+
+#~ msgid "Type:"
+#~ msgstr "ประเภท:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "ใช้ได้สำหรับทุกที่อยู่ติดต่อ"
+
+#~ msgid "Numeric Value"
+#~ msgstr "ค่าตัวเลข"
+
+#~ msgid "Boolean"
+#~ msgstr "ค่าตรรกะ"
+
+#~ msgid "Time"
+#~ msgstr "เวลา"
+
+#~ msgid "Date & Time"
+#~ msgstr "วันที่และเวลา"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr "มีช่องข้อมูลที่มีชื่อเดียวกันอยู่แล้ว โปรดตั้งเป็นชื่ออื่น"
+
+#~ msgid "Remove Field"
+#~ msgstr "ลบช่องข้อมูล"
+
+#~ msgid "Add Field..."
+#~ msgstr "เพิ่มช่องข้อมูล..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "ลบช่องข้อมูล..."
+
+#~ msgid "Edit Distribution List"
+#~ msgstr "แก้ไขรายการแจกจ่าย"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "ชื่อ:"
+
+#~ msgid "Distribution list members:"
+#~ msgstr "สมาชิกของรายการแจกจ่าย:"
+
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "<b>รายการแจกจ่าย:</b>"
+
+#~ msgid "<b>Email address to use in this list:</b>"
+#~ msgstr "<b>ที่อยู่อีเมลสำหรับใช้กับรายการนี้:</b>"
+
+#~ msgctxt "Formatted name, role, organization"
+#~ msgid "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+#~ msgstr "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "<b>สมุดที่อยู่:</b> %1"
+
+#~ msgid "Add New Distribution List"
+#~ msgstr "เพิ่มรายการแจกจ่ายใหม่"
+
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "ป้อนชื่อสำหรับรายการแจกจ่ายตัวใหม่:"
+
+#, fuzzy
+#~| msgid ""
+#~| "A distribution list with the the name %1 already exists. Please choose "
+#~| "another name"
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr "มีรายแจกจ่ายที่มีชื่อ %1 อยู่แล้ว โปรดตั้งเป็นชื่ออื่น"
+
+#~ msgid "Name Exists"
+#~ msgstr "มีชื่อนี้อยู่แล้ว"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "แก้ไขที่อยู่อีเมล..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "ชื่อ:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "แสดงเฉพาะที่อยู่ติดต่อที่เข้าคู่กับหมวดหมู่ที่เลือกเท่านั้น"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr "แสดงที่อยู่ติดต่อทั้งหมด ยกเว้นตัวที่เข้าคู่กับหมวดหมู่ที่เลือกไว้"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "แก้ไขตัวกรองสมุดที่อยู่"
+
+#~ msgid "&Remove"
+#~ msgstr "เอาออก"
+
+#~ msgid "Filter:"
+#~ msgstr "ตัวกรอง:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "สถานที่ของข้อมูลสถานะ ว่าง/ไม่ว่าง:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "ใช้ข้อมูลระบุตำแหน่ง"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "เส้นรุ้ง:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "เส้นแวง:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "แก้ไขข้อมูลระบุตำแหน่ง..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "เข้าข้อมูลระบุตำแหน่ง"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "เส้นรุ้ง:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "เหนือ"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "ใต้"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "เส้นแวง:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "ตะวันออก"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "ตะวันตก"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "ยังไม่ระบุ"
+
+#~ msgid "Reset"
+#~ msgstr "ตั้งค่าใหม่"
+
+#~ msgid "IM address:"
+#~ msgstr "ที่อยู่ข้อความด่วนทันใจ:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "แก้ไขที่อยู่ข้อความด่วนทันใจ..."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "ใน:"
+
+#~ msgid "Visible Fields"
+#~ msgstr "ช่องข้อมูลที่ปรากฏ"
+
+#~ msgid "All Fields"
+#~ msgstr "ช่องข้อมูลทั้งหมด"
+
+#~ msgid "Don Sanders"
+#~ msgstr "Don Sanders"
+
+#~ msgid "Cornelius Schumacher"
+#~ msgstr "Cornelius Schumacher"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "ผู้ดูแลร่วม, พอร์ต libabc, นำเข้า/ส่งออกไปยัง CVS"
+
+#~ msgid "Mike Pilone"
+#~ msgstr "Mike Pilone"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "ออกแบบเฟรมเวิร์กและส่วนติดต่อผู้ใช้ใหม่"
+
+#~ msgid "Greg Stern"
+#~ msgstr "Greg Stern"
+
+#~ msgid "DCOP interface"
+#~ msgstr "ส่วนติดต่อกับระบบ DCOP"
+
+#~ msgid "Mark Westcott"
+#~ msgstr "Mark Westcott"
+
+#~ msgid "Michel Boyer de la Giroday"
+#~ msgstr "Michel Boyer de la Giroday"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "ค้นหาใน LDAP"
+
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] "คุณต้องการจะลบรายการแจกจ่าย %1 นี้ จริงหรือไม่ ?"
+
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] "คุณต้องการจะลบที่อยู่ติดต่อ %1 รายการนี้ จริงหรือไม่ ?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "โปรดเลือกที่อยู่ติดต่อเพียงรายการเดียว"
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt>คุณต้องการจะใช้ <b>%1</b> เป็นที่อยู่ติดต่อส่วนบุคคลตัวใหม่ของคุณ จริงหรือไม่ ?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "ใช้"
+
+#~ msgid "Do Not Use"
+#~ msgstr "ไม่ใช้"
+
+#~ msgid "New Distribution List"
+#~ msgstr "รายการแจกจ่ายใหม่"
+
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "รายการแจกจ่ายใหม่ (%1)"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่สามารถจัดเก็บสมุดที่อยู่ <b>%1</b> ได้</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่สามารถเข้าถึงเพื่อจัดเก็บสมุดที่อยู่ <b>%1</b> ได้</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "การติดตั้งระบบ KDE ของคุณขาดส่วนรองรับ LDAP "
+#~ "โปรดสอบถามรายละเอียดเพิ่มเติมจากผู้ดูแลระบบหรือดิสทริบิวชันของคุณ"
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "ไม่มีส่วน LDAP IO Slave"
+
+#~ msgid "Print Addresses"
+#~ msgstr "พิมพ์ที่อยู่"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "ส่งอีเมลไปยังที่อยู่ติดต่อ..."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "จัดเก็บการเปลี่ยนแปลงทั้งหมดของสมุดที่อยู่ไปยังแบ็คเอนด์จัดเก็บข้อมูล"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "สร้างใหม่"
+
+#~ msgid "&New Distribution List..."
+#~ msgstr "รายการแจกจ่ายใหม่..."
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "ส่งอีเมลพร้อมกับที่อยู่ติดต่อที่เลือกไว้เป็นสิ่งที่แนบมาด้วย"
+
+#~ msgid "Chat &With..."
+#~ msgstr "พูดคุยกับ..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "เริ่มการพูดคุยกับที่อยู่ติดต่อที่เลือกไว้"
+
+#~ msgid "Edit"
+#~ msgstr "แก้ไข"
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr "ตัดที่อยู่ติดต่อที่เลือกไว้ในปัจจุบันไปยังคลิปบอร์ดของระบบในรูปแบบของนามบัตรเสมือน"
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "วางที่อยู่ติดต่อที่ได้ทำการตัดหรือคัดลอกไว้ก่อนหน้านี้จากคลิปบอร์ด"
+
+#~ msgid "&Delete Contact"
+#~ msgstr "ลบที่อยู่ติดต่อ"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "ลบรายชื่อติดต่อทั้งหมดที่เลือกไว้"
+
+#~ msgid "C&opy Contact To..."
+#~ msgstr "คัดลอกที่อยู่ติดต่อไปยัง..."
+
+#~ msgid "&Move Contact To..."
+#~ msgstr "ย้ายที่อยู่ติดต่อไปยัง..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "แสดงแถบกระโดด"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "สลับการแสดงหรือซ่อนแถบของปุ่มกระโดด"
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr "คุณจะพบกับกล่องโต้ตอบที่จะให้คุณได้ทำการปรับแต่งค่าต่าง ๆ ของโปรแกรม สมุดที่อยู่ K"
+
+#~ msgid "LDAP &Lookup"
+#~ msgstr "ค้นหาใน LDAP"
+
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "ค้นหาที่อยู่ติดต่อจากเซิร์ฟเวอร์ LDAP <p>คุณจะพบกล่องโต้ตอบ ที่จะให้คุณได้ทำการค้นหาที่อยู่ติดต่อ "
+#~ "และเลือกตัวที่คุณต้องการจะเพิ่มไปยังสมุดที่อยู่ภายในระบบของคุณ</p>"
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "ตั้งเป็นข้อมูลที่อยู่ติดต่อส่วนบุคคล"
+
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "ตั้งเป็นข้อมูลที่อยู่ติดต่อส่วนบุคคล<p>ข้อมูลที่อยู่ในที่อยู่ติดต่อรายการนี้ จะถูกใช้กับโปรแกรมของ KDE "
+#~ "ตัวอื่น ๆ ด้วย ดังนั้นคุณจึงไม่ต้องเสียเวลาป้อนข้อมูลส่วนบุคคลหลายรอบ</p>"
+
+#~ msgid "Select Categories..."
+#~ msgstr "เลือกหมวดหมู่..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "ล้างแถบค้นหา"
+
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr "ล้างแถบค้นหา<br /><br />ล้างเนื้อหาของแถบค้นหาด่วน"
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "ผนวกรวมหมวดหมู่ที่มีอยู่แล้วหรือไม่ ?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "ไม่ต้องผนวกรวม"
+
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "%1 รายการที่เข้าคู่"
+
+#~ msgid "Distribution List: %1"
+#~ msgstr "รายการแจกจ่าย: %1"
+
+#~ msgid "Keys:"
+#~ msgstr "ปุ่มพิมพ์:"
+
+#~ msgid "Export..."
+#~ msgstr "ส่งออก..."
+
+#~ msgid "Key Type"
+#~ msgstr "ชนิดของปุ่มพิมพ์"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>คุณต้องการจะลบกุญแจ <b>%1</b> นี้ จริงหรือไม่ ?</qt>"
+
+#~ msgid "Add to Distribution List..."
+#~ msgstr "เพิ่มไปยังรายการแจกจ่าย..."
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "คุณต้องเลือกเซิร์ฟเวอร์ LDAP ก่อนทำการค้นหา\n"
+#~ "โดยคุณสามารถเลือกมันได้ผ่านทางเมนู ตั้งค่า/ปรับแต่ง สมุดที่อยู่ K"
+
+#~ msgid "Please select the contacts you want to add to the distribution list."
+#~ msgstr "โปรดเลือกที่อยู่ติดต่อที่คุณต้องการจะเพิ่มไปยังรายการแจกจ่าย"
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "คำนำหน้าชื่อ:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr "คุณสามารถแก้ไขคำนำหน้าชื่อที่กำหนดไว้ล่วงหน้าแล้วได้ ในกล่องการตั้งค่า"
+
+#~ msgid "Additional names:"
+#~ msgstr "ชื่อกลาง:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "ส่วนต่อท้ายชื่อ:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr "คุณสามารถแก้ไขส่วนต่อท้ายชื่อที่กำหนดไว้ล่วงหน้าแล้วได้ ในกล่องการตั้งค่า"
+
+#~ msgid "Formatted name:"
+#~ msgstr "ชื่อตามรูปแบบ:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "ทำการวิเคราะห์ชื่อโดยอัตโนมัติ"
+
+#~ msgid "Dr."
+#~ msgstr "ดร."
+
+#~ msgid "Miss"
+#~ msgstr "นางสาว"
+
+#~ msgid "Mr."
+#~ msgstr "นาย"
+
+#~ msgid "Mrs."
+#~ msgstr "นาง"
+
+#~ msgid "Ms."
+#~ msgstr "น.ส."
+
+#~ msgid "Prof."
+#~ msgstr "ศจ."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "ด.ช."
+
+#~ msgid "Sr."
+#~ msgstr "ด.ช."
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "ชื่อเต็ม"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "องค์กร"
+
+#, fuzzy
+#~| msgid "Birthday"
+#~ msgid "Birthday:"
+#~ msgstr "วันเกิด"
+
+#, fuzzy
+#~| msgctxt "Wife/Husband/..."
+#~| msgid "Partner's name:"
+#~ msgid "Partners name:"
+#~ msgstr "ชื่อหุ้นส่วน:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "แก้ไขชื่อของที่อยู่ติดต่อ"
+
+#~ msgid "Edit Name..."
+#~ msgstr "แก้ไขชื่อ..."
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Role:"
+#~ msgstr "เอาออก"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "องค์กร"
+
+#~ msgid "Tools"
+#~ msgstr "เครื่องมือ"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "แก้ไขที่อยู่"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "โพรโทคอล:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "ที่อยู่:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Network:"
+#~ msgstr "เครือข่าย:"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "ที่อยู่ข้อความด่วนทันใจ"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Set Standard"
+#~ msgstr "ตั้งเป็นมาตรฐาน"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "เอาออก"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Edit..."
+#~ msgstr "แก้ไข..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "เพิ่ม..."
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Address"
+#~ msgstr "ที่อยู่"
+
+#~ msgid "Fax"
+#~ msgstr "โทรสาร"
+
+#~ msgid "SMS"
+#~ msgstr "ข้อความ SMS"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "ชื่อ:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "อีเมล:"
+
+#~ msgid "Store as URL"
+#~ msgstr "จัดเก็บเป็นที่อยู่ URL"
+
+#, fuzzy
+#~| msgid "Select Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "เลือกรายการแจกจ่าย"
+
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "วางที่อยู่ติดต่อ %1 รายการ"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "เลือกช่องข้อมูลที่จะแสดง"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "เลือกช่องข้อมูล:"
+
+#~ msgid "No default filter"
+#~ msgstr "ไม่มีตัวกรองปริยาย"
+
+#~ msgid "Use filter:"
+#~ msgstr "ใช้ตัวกรอง:"
+
+#~ msgid "Default Filter"
+#~ msgstr "ตัวกรองปริยาย"
+
+#~ msgid "Modify View: "
+#~ msgstr "แก้ไขมุมมอง: "
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "ลบมุมมอง"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>คุณต้องการจะลบมุมมอง <b>%1</b> จริงหรือไม่ ?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "ยืนยันการลบ"
+
+#, fuzzy
+#~| msgid "Import one contact into your addressbook?"
+#~| msgid_plural "Import %1 contacts into your addressbook?"
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] "นำเข้าที่อยู่ติดต่อ %1 รายการ ไปยังสมุดที่อยู่ของคุณหรือไม่ ?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "ไม่ให้นำเข้า"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "ไม่มี"
+
+#, fuzzy
+#~| msgid "Unfiled"
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "ยังไม่จัดประเภท"
+
+#~ msgid "Select View"
+#~ msgstr "เลือกมุมมอง"
+
+#~ msgid "Modify View..."
+#~ msgstr "แก้ไขมุมมอง..."
+
+#~ msgid "Add View..."
+#~ msgstr "เพิ่มมุมมอง..."
+
+#~ msgid "Delete View"
+#~ msgstr "ลบมุมมอง"
+
+#~ msgid "Refresh View"
+#~ msgstr "เรียกปรับปรุงมุมมองใหม่"
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "แก้ไขตัวกรอง..."
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "ไม่สามารถส่งออกที่อยู่ติดต่อได้"
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "เลือกที่อยู่ติดต่อที่จะส่งออก"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "จากน้อยไปมาก"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "จากมากไปน้อย"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "การเลือก"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "ส่งออกรายการทั้งหมดของสมุดที่อยู่"
+
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] "ที่อยู่ติดต่อที่เลือกไว้ (เลือกไว้ %1 รายการ)"
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "โรงเรียน"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "เพื่อน"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "ไม่พบผู้ให้บริการที่มีอยู่สำหรับใช้การค้นหาบนแผนที่!\n"
+#~ "โปรดเพิ่มผู้ให้บริการในกล่องการปรับแต่งค่า"
+
+#~ msgid "Crypto Settings"
+#~ msgstr "ตั้งค่าการเข้ารหัส"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "โพรโทคอลที่อนุญาต"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "กุญแจแบบ OpenPGP สำหรับเข้ารหัส ที่ควรใช้:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "ใบรับรองแบบ S/MIME สำหรับเข้ารหัส ที่ควรใช้:"
+
+#~ msgid "Message Preference"
+#~ msgstr "ปรับแต่งจดหมาย"
+
+#~ msgid "Sign:"
+#~ msgstr "เซ็น:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "เข้ารหัส:"
+
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "แก้ไขที่อยู่การส่งข้อความด่วนทันใจ"
+
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "เพิ่มที่อยู่"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "แก้ไขรายการแจกจ่าย"
+
+#~ msgid "Distribution Lists"
+#~ msgstr "รายการแจกจ่าย"
+
+#~ msgid "Add distribution list"
+#~ msgstr "เพิ่มรายการแจกจ่าย"
+
+#~ msgid "Edit distribution list"
+#~ msgstr "แก้ไขรายการแจกจ่าย"
+
+#~ msgid "Remove distribution list"
+#~ msgstr "ลบรายการแจกจ่าย..."
+
+#~ msgid "New Distribution List..."
+#~ msgstr "รายการแจกจ่ายใหม่..."
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่สามารถสร้างสมุดที่อยู่ประเภท <b>%1</b> ได้</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "สมุดที่อยู่ %1"
+
+#, fuzzy
+#~| msgid "Edit addressbook settings"
+#~ msgid "Edit address book settings"
+#~ msgstr "แก้ไขการตั้งค่าของสมุดที่อยู่"
+
+#~ msgid "Look & Feel"
+#~ msgstr "รูปลักษณ์และความรู้สึก"
+
+#~ msgid "Text Color"
+#~ msgstr "สีข้อความ"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "สีส่วนหัว, กรอบ และเส้นแบ่ง"
+
+#~ msgid "Header Text Color"
+#~ msgstr "สีข้อความส่วนหัว"
+
+#~ msgid "Highlight Color"
+#~ msgstr "สีตัวเน้น"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "สีข้อความที่เน้น"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "ทั่วไป"
+
+#~ msgid "Draw &separators"
+#~ msgstr "วาดเส้นแบ่ง"
+
+#~ msgid "Separator &width:"
+#~ msgstr "ความกว้างเส้นแบ่ง:"
+
+#~ msgid "Draw &borders"
+#~ msgstr "วาดกรอบ"
+
+#, fuzzy
+#~| msgid "Laos"
+#~ msgid "Layout"
+#~ msgstr "ลาว"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "เปิดใช้สีกำหนดเอง"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "สี"
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "เปิดใช้แบบอักษรกำหนดเอง"
+
+#~ msgid "&Text font:"
+#~ msgstr "แบบอักษรส่วนข้อความ:"
+
+#~ msgid "Choose..."
+#~ msgstr "เลือก..."
+
+#~ msgid "&Header font:"
+#~ msgstr "แบบอักษรส่วนหัว:"
+
+#, fuzzy
+#~| msgid "&Fonts"
+#~ msgid "Fonts"
+#~ msgstr "แบบอักษร"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "แสดงช่องข้อมูลว่าง"
+
+#~ msgid "Show field &labels"
+#~ msgstr "แสดงแถบป้ายช่องข้อมูล"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "พฤติกรรม"
+
+#~ msgid "Row Separator"
+#~ msgstr "ตัวแบ่งแถวข้อมูล"
+
+#~ msgid "Single line"
+#~ msgstr "เส้นเดี่ยว"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "ไม่มี"
+
+#~ msgid "Enable background image:"
+#~ msgstr "เปิดใช้รูปภาพพื้นหลัง:"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "เปิดใช้กล่องผุดรายละเอียดย่อของที่อยู่ติดต่อ"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "แสดงสถานะปัจจุบันของการใช้ข้อความด่วนทันใจ"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr ""
+#~ "%1: \n"
+#~ "<li>%1</li>\n"
+
+#~ msgid "Icon"
+#~ msgstr "ไอคอน"
+
+#~ msgid "Table"
+#~ msgstr "ตาราง"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "ส่งออกเป็นเมนูที่คั่นหน้า..."
+
+#~ msgid "AddressBook"
+#~ msgstr "สมุดที่อยู่"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "เริ่มบรรทัด:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "ไม่สนใจตัวแบ่งที่ซ้ำ ๆ กัน"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[คาดเดา]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "ทำการส่งออกที่อยู่ติดต่อเรียบร้อยแล้ว"
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "นำเข้าจากสมุดที่อยู่แบบ Eudora..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "แฟ้มสมุดที่อยู่แบบ Eudora Light (*.txt)"
+
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "นำเข้าจากสมุดที่อยู่แบบ GMX..."
+
+#~ msgid "Import From Mobile Phone..."
+#~ msgstr "นำเข้าจากเครื่องโทรศัพท์เคลื่อนที่..."
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "ส่งออกไปยังเครื่องโทรศัพท์เคลื่อนที่..."
+
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Mobile Phone information:"
+#~ msgstr "ข้อมูลเกี่ยวกับโทรศัพท์เคลื่อนที่:"
+
+#~ msgid "Manufacturer"
+#~ msgstr "ผู้ผลิต"
+
+#~ msgid "Phone model"
+#~ msgstr "รุ่นของโทรศัพท์"
+
+#~ msgid "Revision"
+#~ msgstr "เลขรุ่น"
+
+#~ msgid "IMEI"
+#~ msgstr "เลขอีมี่ (IMEI)"
+
+#~ msgid "Phonebook status"
+#~ msgstr "สถานะสมุดโทรศัพท์"
+
+#, fuzzy
+#~| msgid "%1 out of %2 contacts used"
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "ใช้รายการที่อยู่ไป %1 รายการจากทั้งหมด %2 รายการ"
+
+#~ msgid "internal memory"
+#~ msgstr "หน่วยความจำในตัวเครื่อง"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "หน่วยความจำแบบ SIM"
+
+#~ msgid "unknown memory"
+#~ msgstr "หน่วยความจำที่ไม่รู้จัก"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~| "><br />%3</qt>"
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>กำลังนำเข้าที่อยู่ติดต่อ <b>%1</b> รายการ จาก <b>%2</b> "
+#~ "ของเครื่องโทรศัพท์เคลื่อนที่<br /><br />%3</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "นำเข้าจากโทรศัพท์เคลื่อนที่"
+
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>กำลังเรื่องการเชื่อมต่อกับเครื่องโทรศัพท์เคลื่อนที่<br /><br />โปรดรอ...</"
+#~ "center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "หยุดการนำเข้า"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "ส่งออกให้โทรศัพท์เคลื่อนที่"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "ส่งออกไปยังโทรศัพท์เคลื่อนที่"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "เพิ่มต่อท้ายไปยังสมุดโทรศัพท์ปัจจุบัน"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "แทนที่สมุดโทรศัพท์ปัจจุบันด้วยที่อยู่ติดต่อใหม่"
+
+#~ msgid "&Stop Export"
+#~ msgstr "หยุดการส่งออก"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~| "<br /><br />%3</qt>"
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt>กำลังส่งออกที่อยู่ติดต่อ <b>%1</b> รายการ ไปยัง <b>%2</b> "
+#~ "ของเครื่องโทรศัพท์เคลื่อนที่<br /><br />%3</qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "หยุดการลบ"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "ส่งออกไปยังโทรศัพท์สำเร็จแล้ว"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่พบสมุดที่อยู่ของ KDE 2 <b>%1</b></qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "ต้องการใช้แทนรายการที่นำเข้ามาก่อนหน้านี้หรือไม่ ?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "นำเข้าจากสมุดที่อยู่ของ KDE 2"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "นำเข้าจากสมุดที่อยู่ของโอเปร่า..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "นำเข้าจากสมุดที่อยู่ส่วนบุคคลของ MS Exchange (.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "ไม่สามารถทำการเปิด %1 เพื่ออ่านข้อมูลได้"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "%1 ไม่มีหมายเลขกำกับ PAB ที่ฉันรู้จัก ทำให้ไม่สามารถแปลงข้อมูลมันได้"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "แฟ้มสมุดที่อยู่ส่วนบุคคลของ MS Exchange (*.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ไม่พบสมุดที่อยู่ส่วนบุคคลของ MS Exchange <b>%1</b></qt>"
+
+#~ msgid "Afghanistan"
+#~ msgstr "อาฟกานิสถาน"
+
+#~ msgid "Albania"
+#~ msgstr "อัลเเบเนีย"
+
+#~ msgid "Algeria"
+#~ msgstr "อัลจีเรีย"
+
+#~ msgid "American Samoa"
+#~ msgstr "อเมริกัน ซามัว"
+
+#~ msgid "Andorra"
+#~ msgstr "แอนโดรา"
+
+#~ msgid "Angola"
+#~ msgstr "แองโกลา"
+
+#~ msgid "Anguilla"
+#~ msgstr "แองกีลา"
+
+#~ msgid "Antarctica"
+#~ msgstr "แอนตาร์กติกา"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "อันทิกัว และ บาร์บูดา"
+
+#~ msgid "Argentina"
+#~ msgstr "อาร์เจนตินา"
+
+#~ msgid "Armenia"
+#~ msgstr "อาร์เมเนีย"
+
+#~ msgid "Aruba"
+#~ msgstr "อรูบา"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "เกาะแอชมอร์และเกาะคาร์เทียร์"
+
+#~ msgid "Australia"
+#~ msgstr "ออสเตรเลีย"
+
+#~ msgid "Austria"
+#~ msgstr "ออสเตรีย"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "อาร์เซอร์ไบจัน"
+
+#~ msgid "Bahamas"
+#~ msgstr "บาฮามา"
+
+#~ msgid "Bahrain"
+#~ msgstr "บาห์เรน"
+
+#~ msgid "Bangladesh"
+#~ msgstr "บังคลาเทศ"
+
+#~ msgid "Barbados"
+#~ msgstr "บาร์บาดอส"
+
+#~ msgid "Belarus"
+#~ msgstr "เบลารุส"
+
+#~ msgid "Belgium"
+#~ msgstr "เบลเยียม"
+
+#~ msgid "Belize"
+#~ msgstr "เบลไลซ์"
+
+#~ msgid "Benin"
+#~ msgstr "เบนิน"
+
+#~ msgid "Bermuda"
+#~ msgstr "เบอร์มิวดา"
+
+#~ msgid "Bhutan"
+#~ msgstr "ภูฏาน"
+
+#~ msgid "Bolivia"
+#~ msgstr "โบลิเวีย"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "บอสเนียและเฮอร์เซโกวินา"
+
+#~ msgid "Botswana"
+#~ msgstr "บอทสวานา"
+
+#~ msgid "Brazil"
+#~ msgstr "บราซิล"
+
+#~ msgid "Brunei"
+#~ msgstr "บรูไน"
+
+#~ msgid "Bulgaria"
+#~ msgstr "บัลแกเรีย"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "เบอร์กินาฟาโซ"
+
+#~ msgid "Burundi"
+#~ msgstr "บูรันดิ"
+
+#~ msgid "Cambodia"
+#~ msgstr "กัมพูชา"
+
+#~ msgid "Cameroon"
+#~ msgstr "คาเมรูน"
+
+#~ msgid "Canada"
+#~ msgstr "แคนาดา"
+
+#~ msgid "Cape Verde"
+#~ msgstr "แหลมเวอร์ดี"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "หมู่เกาะเคย์แมน"
+
+#~ msgid "Central African Republic"
+#~ msgstr "สาธารณรัฐแอฟริกากลาง"
+
+#~ msgid "Chad"
+#~ msgstr "ชาด"
+
+#~ msgid "Chile"
+#~ msgstr "ชิลี"
+
+#~ msgid "China"
+#~ msgstr "จีน"
+
+#~ msgid "Colombia"
+#~ msgstr "โคลัมเบีย"
+
+#~ msgid "Comoros"
+#~ msgstr "โคโมรอส"
+
+#~ msgid "Congo"
+#~ msgstr "คองโก"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "สาธารณรัฐประชาธิปไตยคองโก"
+
+#~ msgid "Costa Rica"
+#~ msgstr "คอสตาริกา"
+
+#~ msgid "Croatia"
+#~ msgstr "โครเอเชีย"
+
+#~ msgid "Cuba"
+#~ msgstr "คิวบา"
+
+#~ msgid "Cyprus"
+#~ msgstr "ไซปรัส"
+
+#~ msgid "Czech Republic"
+#~ msgstr "สาธารณรัฐเช็กค"
+
+#~ msgid "Denmark"
+#~ msgstr "เดนมาร์ก"
+
+#~ msgid "Djibouti"
+#~ msgstr "จิบูติ"
+
+#~ msgid "Dominica"
+#~ msgstr "โดมินิกา"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "สาธารณรัฐโดมินิกัน"
+
+#~ msgid "Ecuador"
+#~ msgstr "เอกวาดอร์"
+
+#~ msgid "Egypt"
+#~ msgstr "อียิปต์"
+
+#~ msgid "El Salvador"
+#~ msgstr "เอลซัลวาดอร์"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "อิเควทอเรียลกินี"
+
+#~ msgid "Eritrea"
+#~ msgstr "เอริเทรีย"
+
+#~ msgid "Estonia"
+#~ msgstr "เอสโตเนีย"
+
+#~ msgid "England"
+#~ msgstr "อังกฤษ"
+
+#~ msgid "Ethiopia"
+#~ msgstr "เอธิโอเปีย"
+
+#~ msgid "European Union"
+#~ msgstr "สหภาพยุโรป"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "หมู่เกาะแฟาโร"
+
+#~ msgid "Fiji"
+#~ msgstr "ฟิจิ"
+
+#~ msgid "Finland"
+#~ msgstr "ฟินแลนด์"
+
+#~ msgid "France"
+#~ msgstr "ฝรั่งเศส"
+
+#~ msgid "French Polynesia"
+#~ msgstr "เฟรนช์โปลินีเซีย"
+
+#~ msgid "Gabon"
+#~ msgstr "กาบอน"
+
+#~ msgid "Gambia"
+#~ msgstr "แกมเบีย"
+
+#~ msgid "Georgia"
+#~ msgstr "จอร์เจีย"
+
+#~ msgid "Germany"
+#~ msgstr "เยอรมันนี"
+
+#~ msgid "Ghana"
+#~ msgstr "กานา"
+
+#~ msgid "Greece"
+#~ msgstr "กรีซ"
+
+#~ msgid "Greenland"
+#~ msgstr "กรีนแลนด์"
+
+#~ msgid "Grenada"
+#~ msgstr "เกรนาดา"
+
+#~ msgid "Guam"
+#~ msgstr "กวม"
+
+#~ msgid "Guatemala"
+#~ msgstr "กัวเตมาลา"
+
+#~ msgid "Guinea"
+#~ msgstr "กินี"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "กินี - บิสซอ"
+
+#~ msgid "Guyana"
+#~ msgstr "กายอานาา"
+
+#~ msgid "Haiti"
+#~ msgstr "ไฮติ"
+
+#~ msgid "Honduras"
+#~ msgstr "ฮอนดูรัส"
+
+#~ msgid "Hong Kong"
+#~ msgstr "ฮ่องกง"
+
+#~ msgid "Hungary"
+#~ msgstr "ฮังการี"
+
+#~ msgid "India"
+#~ msgstr "อินเดีย"
+
+#~ msgid "Indonesia"
+#~ msgstr "อินโดนีเซีย"
+
+#~ msgid "Iran"
+#~ msgstr "อิหร่าน"
+
+#~ msgid "Iraq"
+#~ msgstr "อิรัก"
+
+#~ msgid "Ireland"
+#~ msgstr "ไอร์แลนด์"
+
+#~ msgid "Israel"
+#~ msgstr "อิสราเอล"
+
+#~ msgid "Italy"
+#~ msgstr "อิตาลี"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "ไอวอรี่โคสต์"
+
+#~ msgid "Jamaica"
+#~ msgstr "จาไมก้า"
+
+#~ msgid "Japan"
+#~ msgstr "ญี่ปุ่น"
+
+#~ msgid "Jordan"
+#~ msgstr "จอร์แดน"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "คาซัคคสถาน"
+
+#~ msgid "Kenya"
+#~ msgstr "เคนยา"
+
+#~ msgid "Kiribati"
+#~ msgstr "คิริบาติ"
+
+#~ msgid "Korea, North"
+#~ msgstr "เกาหลีเหนือ"
+
+#~ msgid "Korea, South"
+#~ msgstr "เกาหลีใต้"
+
+#~ msgid "Kuwait"
+#~ msgstr "คูเวต"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "คีจิสถาน"
+
+#~ msgid "Laos"
+#~ msgstr "ลาว"
+
+#~ msgid "Latvia"
+#~ msgstr "ลัตเวีย"
+
+#~ msgid "Lebanon"
+#~ msgstr "เลบานอน"
+
+#~ msgid "Lesotho"
+#~ msgstr "เลโซโท"
+
+#~ msgid "Liberia"
+#~ msgstr "ไลบีเรีย"
+
+#~ msgid "Libya"
+#~ msgstr "ลิเบีย"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "ลิกเตนสไตน์"
+
+#~ msgid "Lithuania"
+#~ msgstr "ลิทััวเนีย"
+
+#~ msgid "Luxembourg"
+#~ msgstr "ลักเซมเบิร์ก"
+
+#~ msgid "Macau"
+#~ msgstr "มาเก๊า"
+
+#~ msgid "Madagascar"
+#~ msgstr "มาดากัสกา"
+
+#~ msgid "Malawi"
+#~ msgstr "มาลาวี"
+
+#~ msgid "Malaysia"
+#~ msgstr "มาเลเซีย"
+
+#~ msgid "Maldives"
+#~ msgstr "มัลดิฟ"
+
+#~ msgid "Mali"
+#~ msgstr "มาลี"
+
+#~ msgid "Malta"
+#~ msgstr "มอลตา"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "หมู่เกาะมาแชล"
+
+#~ msgid "Martinique"
+#~ msgstr "มาทินิค"
+
+#~ msgid "Mauritania"
+#~ msgstr "มอริทาเนีย"
+
+#~ msgid "Mauritius"
+#~ msgstr "มอริเชียส"
+
+#~ msgid "Mexico"
+#~ msgstr "เม็กซิโก"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "สหพันธรัฐมิโครนีเซีย"
+
+#~ msgid "Moldova"
+#~ msgstr "มอลโดวา"
+
+#~ msgid "Monaco"
+#~ msgstr "โมนาโกค"
+
+#~ msgid "Mongolia"
+#~ msgstr "มองโกเลีย"
+
+#~ msgid "Montserrat"
+#~ msgstr "มอนต์เซอร์รัต"
+
+#~ msgid "Morocco"
+#~ msgstr "โมร็อกคกค"
+
+#~ msgid "Mozambique"
+#~ msgstr "โมแซมบิก"
+
+#~ msgid "Namibia"
+#~ msgstr "นามิเบีย"
+
+#~ msgid "Nauru"
+#~ msgstr "นาอุรู"
+
+#~ msgid "Nepal"
+#~ msgstr "เนปาล"
+
+#~ msgid "Netherlands"
+#~ msgstr "เนเธอร์แลนด์"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "เนเธอร์แลนด์ แอนทิลีส"
+
+#~ msgid "New Caledonia"
+#~ msgstr "นิวคาเลโดเนีย"
+
+#~ msgid "New Zealand"
+#~ msgstr "นิวซีแลนด์"
+
+#~ msgid "Nicaragua"
+#~ msgstr "นิคารากัว"
+
+#~ msgid "Niger"
+#~ msgstr "ไนเจอร์"
+
+#~ msgid "Nigeria"
+#~ msgstr "ไนจีเรีย"
+
+#~ msgid "Niue"
+#~ msgstr "นิอุเอ"
+
+#~ msgid "North Korea"
+#~ msgstr "เกาหลีเหนือ"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "ไอร์แลนด์เหนือ"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "หมู่เกาะมาเรียนเหนือ"
+
+#~ msgid "Norway"
+#~ msgstr "นอร์เวย์"
+
+#~ msgid "Oman"
+#~ msgstr "โอมาน"
+
+#~ msgid "Pakistan"
+#~ msgstr "ปากีสถาน"
+
+#~ msgid "Palau"
+#~ msgstr "เกาะพาเลา"
+
+#~ msgid "Palestinian"
+#~ msgstr "เขตปกครองปาเลสไตน์"
+
+#~ msgid "Panama"
+#~ msgstr "ปานามา"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "ปาปัวนิวกินี"
+
+#~ msgid "Paraguay"
+#~ msgstr "ปารากวัย"
+
+#~ msgid "Peru"
+#~ msgstr "เปรู"
+
+#~ msgid "Philippines"
+#~ msgstr "ฟิลิปปินส์"
+
+#~ msgid "Poland"
+#~ msgstr "โปแลนด์"
+
+#~ msgid "Portugal"
+#~ msgstr "โปรตุเกส"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "เปอร์โตริโก"
+
+#~ msgid "Qatar"
+#~ msgstr "กาต้าร์"
+
+#~ msgid "Romania"
+#~ msgstr "โรมาเนีย"
+
+#~ msgid "Russia"
+#~ msgstr "รัสเซีย"
+
+#~ msgid "Rwanda"
+#~ msgstr "รวันด้า"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "เซนต์กิตส์และเนวิส"
+
+#~ msgid "St. Lucia"
+#~ msgstr "เซนต์ลูเซีย"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "เกาะเซนต์วินเซนต์และเกรนาดีนส์"
+
+#~ msgid "San Marino"
+#~ msgstr "ซานมาริโน"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "ซาวโทเม และ พรินซิป"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "ซาอุดิอาระเบีย"
+
+#~ msgid "Senegal"
+#~ msgstr "เซนีกัล"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "เซอร์เบีย และมอนติเนโกร"
+
+#~ msgid "Seychelles"
+#~ msgstr "เซย์เชลล์"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "เซียร์ราลีโอน"
+
+#~ msgid "Singapore"
+#~ msgstr "สิงคโปร์"
+
+#~ msgid "Slovakia"
+#~ msgstr "สโลวัก"
+
+#~ msgid "Slovenia"
+#~ msgstr "สโลวีเนีย"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "หมู่เกาะโซโลมอน"
+
+#~ msgid "Somalia"
+#~ msgstr "โซมาเลีย"
+
+#~ msgid "South Africa"
+#~ msgstr "แอฟฟริกาใต้"
+
+#~ msgid "South Korea"
+#~ msgstr "เกาหลีใต้"
+
+#~ msgid "Spain"
+#~ msgstr "สเปน"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "ศรีลังกา"
+
+#~ msgid "Sudan"
+#~ msgstr "ซูดาน"
+
+#~ msgid "Suriname"
+#~ msgstr "ซูรีนามิ"
+
+#~ msgid "Swaziland"
+#~ msgstr "สวาซิแลนด์"
+
+#~ msgid "Sweden"
+#~ msgstr "สวีเดน"
+
+#~ msgid "Switzerland"
+#~ msgstr "สวิตเซอร์แลนด์"
+
+#~ msgid "Syria"
+#~ msgstr "ซีเรีย"
+
+#~ msgid "Taiwan"
+#~ msgstr "ไต้หวัน"
+
+#~ msgid "Tajikistan"
+#~ msgstr "ทาจีกิสถาน"
+
+#~ msgid "Tanzania"
+#~ msgstr "แทนซาเนีย"
+
+#~ msgid "Thailand"
+#~ msgstr "ราชอาณาจักรไทย"
+
+#~ msgid "Tibet"
+#~ msgstr "ธิเบต"
+
+#~ msgid "Togo"
+#~ msgstr "โตโก"
+
+#~ msgid "Tonga"
+#~ msgstr "ตองก้า"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "ตรีนิแดดและโทบาโก"
+
+#~ msgid "Tunisia"
+#~ msgstr "ตูนีเซีย"
+
+#~ msgid "Turkey"
+#~ msgstr "ตุรกี"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "เตอร์กเมนิสถาน"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "เกาะเติร์กและเคคอส"
+
+#~ msgid "Tuvalu"
+#~ msgstr "ตูวาลู"
+
+#~ msgid "Uganda"
+#~ msgstr "ยูกันดา"
+
+#~ msgid "Ukraine"
+#~ msgstr "ยูเครน"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "สหรัฐอาหรับเอีมิเรตส์"
+
+#~ msgid "United Kingdom"
+#~ msgstr "สหราชอาณาจักร"
+
+#~ msgid "United States"
+#~ msgstr "สหรัฐอเมริกา"
+
+#~ msgid "Uruguay"
+#~ msgstr "อุรุกวัย"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "อุซเบกิสถาน"
+
+#~ msgid "Vanuatu"
+#~ msgstr "แวนัวตู"
+
+#~ msgid "Vatican City"
+#~ msgstr "นครรัฐวาติกัน"
+
+#~ msgid "Venezuela"
+#~ msgstr "เวเนซุเอลา"
+
+#~ msgid "Vietnam"
+#~ msgstr "เวียดนาม"
+
+#~ msgid "Western Samoa"
+#~ msgstr "ซามัวตะวันตก"
+
+#~ msgid "Yemen"
+#~ msgstr "เยเมน"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "ยูโกสลาเวีย"
+
+#~ msgid "Zaire"
+#~ msgstr "ซาเอียร์"
+
+#~ msgid "Zambia"
+#~ msgstr "แซมเบีย"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "ซิมบับเว"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "ไม่มี"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "เรื่อง:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "อีเมล"
+
+#, fuzzy
+#~| msgctxt "Instant messaging"
+#~| msgid "Address"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "ที่อยู่"
+
+#~ msgid "Address:"
+#~ msgstr "ที่อยู่:"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "สร้างใหม่"
+
+#~ msgid "&General"
+#~ msgstr "ทั่วไป"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "TextLabel"
+#~ msgstr "ข้อความ"
+
+#~ msgid "Get From Blog"
+#~ msgstr "หาจากบล็อก"
+
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "แก้ไขรายการผู้แจกจ่าย (รุ่นใหม่)"
+
+#~ msgid "Yes"
+#~ msgstr "ใช่"
+
+#~ msgid "No"
+#~ msgstr "ไม่ใช่"
+
+#~ msgid "New List..."
+#~ msgstr "รายการใหม่..."
+
+#~ msgid "Rename List..."
+#~ msgstr "เปลี่ยนชื่อรายการ..."
+
+#~ msgid "Remove Contact"
+#~ msgstr "ลบที่อยู่ติดต่อ"
+
+#~ msgid "Please enter name:"
+#~ msgstr "โปรดเติมชื่อ:"
+
+#~ msgid "The name already exists"
+#~ msgstr "มีชื่อนี้อยู่แล้ว"
+
+#~ msgid "Rename Distribution List"
+#~ msgstr "เปลี่ยนชื่อรายการผู้แจกจ่าย"
+
+#~ msgid "The name already exists."
+#~ msgstr "มีชื่อนี้อยู่แล้ว"
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>ลบรายการผู้แจกจ่าย <b>%1</b>?</qt>"
+
+#~ msgid "Count: %1 contact"
+#~ msgid_plural "Count: %1 contacts"
+#~ msgstr[0] "จำนวน: %1 ที่อยู่"
+
+#~ msgid "Select Email Address"
+#~ msgstr "เลือกที่อยู่อีเมล"
+
+#~ msgid "Email Addresses"
+#~ msgstr "ที่อยู่อีเมล"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "แสดงแถบเครื่องมือเพิ่มเติม"
+
+#~ msgid "&Lookup Addresses in LDAP Directory..."
+#~ msgstr "ค้นหาที่อยู่ในสารบบของ LDAP..."

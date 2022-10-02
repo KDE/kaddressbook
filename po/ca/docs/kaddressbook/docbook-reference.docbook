@@ -1,0 +1,1391 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+&traductor.Antoni.Bella; 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>26 d'agost de 2019</date>
+<releaseinfo
+>5.10.3 (Aplicacions 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>El &kaddressbook; és un programa molt complicat amb moltes característiques integrades. Algunes de les característiques més avançades del &kaddressbook; es documenten en aquest apèndix, principalment per evitar que el document principal sigui massa gran i difícil de manejar. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>Correu electrònic</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>Secció de referència de les característiques avançades del &kaddressbook;</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>El diàleg Grup nou</title>
+    
+  <para
+>Quan invoqueu la funció <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Grup nou</guibutton
+>, s'iniciarà un diàleg, com es mostra a continuació.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Grup nou</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Grup nou</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Grup nou</quote
+> del &kaddressbook; després de triar la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Nou&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Grup nou</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Utilitzeu la llista desplegable <quote
+>Afegeix a:</quote
+> per a triar la llibreta d'adreces a la qual s'haurà d'afegir el grup nou. Utilitzeu el camp <quote
+>Nom</quote
+> per a donar un nom al grup nou. Introduïu les adreces de correu electrònic, o porcions de les adreces de correu electrònic, a l'àrea <quote
+>&plus;</quote
+> blava. Apareixerà una llista de les possibles coincidències. Seleccioneu un element a la llista que apareix i s'afegirà un nom nou a la llista. Continueu afegint contactes individuals a la llista fins que estigui completa, després feu clic al botó <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+> per afegir aquest grup a la vostra llibreta d'adreces. Si voleu suprimir un nom de la llista, feu clic a la icona <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> que hi ha a la dreta d'aquest nom en particular. Si necessiteu realitzar canvis en el grup més tard, simplement seleccioneu el grup i utilitzeu el menú <quote
+>Edita</quote
+>, o el botó <quote
+>Edita el contacte</quote
+> que hi ha a la barra d'eines, per obrir un diàleg substancialment similar que us permetrà realitzar els canvis desitjats.</para>
+
+  <para
+>El programa &kmail; proporciona un mètode alternatiu per a crear un grup nou al &kaddressbook;. Després d'enviar un missatge de correu electrònic a diverses persones, tindreu l'opció d'afegir un grup nou a la vostra llibreta d'adreces, com es mostra a continuació.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>Una captura de pantalla del &kmail; amb el diàleg <quote
+>Grup nou</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kmail; amb el diàleg <quote
+>Grup nou</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Grup nou</quote
+> del &kmail; després de triar la funció <guibutton
+>Desa la llista...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Després de dirigir un missatge a un grup de persones, en fer clic al botó <guibutton
+>Desa la llista...</guibutton
+> que hi ha a la dreta de l'àrea d'entrada per a l'adreça, apareixerà un diàleg il·lustrat. Assigneu un nom a la llista i feu clic esquerre al botó <guibutton
+>Desa la llista</guibutton
+>. Apareixerà un altre diàleg que us demanarà que seleccioneu una llibreta d'adreces. Feu la vostra selecció i es crearà un grup nou.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>El diàleg «Vista prèvia de la impressió»</title>
+    
+  <para
+>La funció <quote
+>Vista prèvia d'impressió</quote
+> del &kaddressbook; permet personalitzar una còpia impresa de les dades a la vostra llibreta d'adreces de la manera que vulgueu.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Vista prèvia d'impressió</quote
+> del &kaddressbook;. Podreu seleccionar una o més llibretes d'adreces senceres, o només un grapat de contactes individuals.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>El primer pas és seleccionar els contactes que s'inclouran a la impressió. Si només voleu imprimir un grapat de contactes individuals, haureu de triar els contactes que s'imprimiran abans d'invocar el diàleg <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Vista prèvia d'impressió</guisubmenu
+></menuchoice
+>. Si voleu seleccionar tots els vostres contactes, o tots els contactes en una llibreta d'adreces en particular, podreu fer-ho aquí. Quan hàgiu fet la selecció, feu clic a <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Següent</guibutton
+> i apareixerà una pantalla nova.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>Una segona captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La segona pantalla en el diàleg <quote
+>Vista prèvia d'impressió</quote
+> de &kaddressbook;. Podreu triar un camp d'ordenació i un criteri d'ordenació (amunt o avall). També podreu triar entre set disposicions diferents d'impressió.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Aquí podreu triar un camp d'ordenació (qualsevol dels 47 camps amb nom en el registre del contacte), la direcció de l'ordenació i qualsevol dels set formats diferents per a l'informe. Quan feu clic a <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Següent</guibutton
+>, us donarà l'oportunitat de personalitzar l'esquema de color que s'utilitzarà.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>Una tercera captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una tercera captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Una tercera captura de pantalla del diàleg <quote
+>Vista prèvia de la impressió</quote
+> del &kaddressbook;. Aquí podreu seleccionar un esquema de color.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Aquí hi ha una captura de pantalla de tot l'informe. Ara està llest per a imprimir.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Vista prèvia de la impressió</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La <quote
+>Vista prèvia d'impressió</quote
+> del &kaddressbook; una vegada s'ha generat l'informe i està llest per a imprimir. Podreu seleccionar orientacions alternatives de la impressió (horitzontal o vertical) i llançar la tasca d'impressió des d'aquesta finestra.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>El diàleg Configura el LDAP</title>
+    
+  <para
+>Aquí hi ha una captura de pantalla de la primera pantalla de configuració que apareix quan trieu el botó <guibutton
+>Configura els servidors LDAP...</guibutton
+> al diàleg <menuchoice
+><guimenu
+>Fitxer</guimenu
+> <guisubmenu
+>Importa&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa des d'un servidor LDAP...</guimenuitem
+> </menuchoice
+> o l'element de menú <menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura el &kaddressbook;...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Configura els servidors LDAP</quote
+> amb el &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Configura els servidors LDAP</quote
+> amb el &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura els servidors LDAP</quote
+> del &kaddressbook; després de triar la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa des d'un servidor LDAP...</guimenuitem
+></menuchoice
+> i després feu clic esquerre al botó <guibutton
+>Configura els servidors LDAP...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Si ja heu configurat un o més servidors <acronym
+>LDAP</acronym
+>, utilitzeu aquesta pantalla per a seleccionar els servidors que s'hauran de consultar quan cerqueu un nom o una adreça de correu electrònic. Utilitzeu el botó <guibutton
+>Afegeix una màquina...</guibutton
+> per afegir un servidor nou a la llista de màquines <acronym
+>LDAP</acronym
+> disponibles. Utilitzeu el botó <guibutton
+>Edita la màquina</guibutton
+> per a tornar a configurar un servidor que ja es troba a la llista, i el botó <guibutton
+>Elimina la màquina</guibutton
+> per a suprimir una entrada que ja no necessiteu. El botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Inicialitza</guibutton
+> es pot utilitzar per a desfer la darrera acció <quote
+>Afegeix</quote
+> o <quote
+>Elimina</quote
+> realitzada. El botó <quote
+>Omissió</quote
+> no funciona en la versió 5.10.3. La resta dels botons (D'acord, Aplica, Cancel·la) tenen les seves funcions normals: aplicar els canvis i sortir, aplicar els canvis i romandre aquí, i sortir del diàleg sense fer cap canvi, respectivament.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Quan trieu el botó <guibutton
+>Afegeix una màquina</guibutton
+> o el botó <guibutton
+>Edita la màquina...</guibutton
+>, apareixerà el següent diàleg.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>Una segona captura de pantalla del diàleg <quote
+>Configura els servidors LDAP</quote
+> amb el &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una segona captura de pantalla del diàleg <quote
+>Configura els servidors LDAP</quote
+> amb el &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura els servidors LDAP</quote
+> del &kaddressbook; després de fer clic als botons <guibutton
+>Afegeix una màquina...</guibutton
+> o <guibutton
+>Edita la màquina...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Els primers quatre camps (<quote
+>Usuari:</quote
+>, <quote
+>DN d'enllaç:</quote
+>, <quote
+>Domini:</quote
+> i <quote
+>Contrasenya:</quote
+>) estaran en gris llevat que es requereixi autenticació. Obteniu aquestes credencials des de l'administrador del servidor LDAP. Introduïu l'&URI; apropiat en el camp <quote
+>Màquina:</quote
+>. Els valors predeterminats per a <quote
+>Port:</quote
+>, <quote
+>Límit d'ocupació:</quote
+>, &etc; funcionaran bé per a la majoria dels usuaris. Podeu utilitzar el botó <guibutton
+>Servidor de consultes</guibutton
+> per a configurar el camp <quote
+>DN:</quote
+>. No tinc idea de per a què serveix el camp <quote
+>Filtre:</quote
+>. Si ho resoleu, feu-m'ho saber a (davidbryant AT gvtc.com).</para>
+
+  <para
+>Utilitzeu la secció <quote
+>Seguretat</quote
+> per especificar el mètode d'encriptació que s'emprarà: <quote
+>No</quote
+> per a una connexió sense encriptar, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> per a la seguretat de la capa de transport o <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> per a la capa de sòcols segurs. Utilitzeu les opcions d'<quote
+>Autenticació</quote
+> per especificar quin nivell d'autenticació requereix el servidor: <quote
+>Anònim</quote
+> per cap nom o contrasenya, <quote
+>Senzilla</quote
+> si s'han de donar el <quote
+>DN d'enllaç</quote
+> i la <quote
+>Contrasenya</quote
+>, i <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (autenticació senzilla i capa de seguretat) per a tota la configuració del mateix (quatre elements de dades). Si es tria <quote
+>SASL</quote
+>, utilitzeu el botó <guibutton
+>Servidor de consultes</guibutton
+> per a configurar les opcions avançades per a aquesta màquina.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>La funció Importa un fitxer CSV</title>
+    
+  <para
+>Quan trieu la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>Importa un fitxer CSV...</guimenuitem
+></menuchoice
+>, es presentarà un diàleg. Després feu clic al botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> i trieu el fitxer a importar, la pantalla es veurà així.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook; després de triar la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa un fitxer CSV...</guimenuitem
+></menuchoice
+> i seleccionar el fitxer a importar.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Utilitzeu la secció <quote
+>Delimitador</quote
+> d'aquest diàleg per especificar quin caràcter separador defineix el final d'un camp al fitxer d'entrada triat. Si s'utilitzen cometes per a delimitar els camps amb caràcters separadors incrustats, podreu especificar l'estil (cometes simples o dobles) que s'utilitza a través de la llista desplegable <quote
+>Cita de text:</quote
+>. Si el fitxer d'entrada conté dates, utilitzeu el camp <quote
+>Format de la data:</quote
+> per a definir la forma en què s'han codificat les dates. De manera predeterminada és aaaa-mm-dd. Si aquest és el format incorrecte, desplaceu el cursor sobre el quadre <quote
+>Format de la data:</quote
+> i es mostrarà un pràctic conjunt d'instruccions per al format. Si el fitxer d'entrada no està codificat en UTF-8, utilitzeu la llista desplegable <quote
+>Codificació del text:</quote
+> per a especificar l'esquema de codificació binària que s'utilitzarà. Si la primera fila del fitxer conté capçaleres de columna, marqueu la casella <quote
+>Omet la primera fila del fitxer</quote
+> per evitar importar les capçaleres de columna com a dades. Utilitza els quadres <quote
+>Sense definir</quote
+> que hi ha a la part superior de cada columna per especificar quins camps de dades s'hauran d'importar i on s'hauran d'emmagatzemar, com es mostra a continuació.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>Una segona captura de pantalla del diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una segona captura de pantalla del diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Importa un fitxer CSV</quote
+> del &kaddressbook; després de triar la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Importa&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Importa un fitxer CSV...</guimenuitem
+></menuchoice
+>, seleccionar el fitxer a importar i començar a definir els camps a importar.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Si voleu que s'importi el contingut de la columna actual, trieu una destinació des de la llista de noms de camp que apareix a sota del quadre blau <quote
+>Sense definir</quote
+>. Per obtenir una llista dels camps predefinits, vegeu <link linkend="export-csv-data"
+>la següent secció</link
+>. Utilitzeu la barra de desplaçament horitzontal a prop de la part inferior del diàleg per a veure totes les columnes al fitxer d'entrada. Quan hàgiu completat les vostres seleccions, feu clic al botó <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+>. Si heu definit múltiples llibretes d'adreces, se us demanarà que especifiqueu quina llibreta d'adreces s'utilitzarà. El &kaddressbook; importarà les dades seleccionades com a contactes nous.</para>
+
+  <para
+>Si teniu la intenció d'importar conjunts de dades addicionals en el mateix format en algun moment en el futur, podreu fer clic al botó <guibutton
+>Desa la plantilla...</guibutton
+> (vegeu la primera il·lustració d'aquesta secció) per a desar les seleccions que heu realitzat. Se us demanarà que assigneu un nom a la plantilla. Més tard, quan importeu un altre fitxer amb la mateixa disposició, estalviareu temps fent clic al botó <guibutton
+>Aplica la plantilla...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>La funció Exporta un fitxer CSV</title>
+    
+  <para
+>Quan invoqueu la funció <menuchoice
+><guimenu
+>Fitxer</guimenu
+><guisubmenu
+>Exporta&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta a un fitxer CSV...</guimenuitem
+></menuchoice
+>, apareixerà un diàleg.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Exporta un fitxer CSV</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Exporta un fitxer CSV</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Exporta un fitxer CSV</quote
+> del &kaddressbook; després de triar la funció <menuchoice
+><guimenu
+>Fitxer </guimenu
+><guisubmenu
+>Exporta&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Exporta un fitxer CSV...</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Podreu seleccionar totes les vostres dades de contacte, o només una part. Quan premeu el botó <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+>, se us permetrà triar el nom del fitxer generat i el directori en el qual s'escriurà. El fitxer de sortida contindrà els següents quaranta-set (47) camps de sortida, en aquest ordre, d'esquerra a dreta. Aquesta llista de noms de camp s'inclou com el primer registre al fitxer.</para>
+
+  <para
+>Nom amb format | Prefixos honorífics | Nom de pila | Noms Addicionals | Nom de família | Sufixos honorífics | Sobrenom | Data de naixement | Aniversari | Correu electrònic (preferit) | Correu electrònic (2) | Correu electrònic (3) | Correu electrònic (4) | Carrer del domicili | Apartat de correus del domicili | Ciutat del domicili | Estat del domicili | Codi postal de l'adreça | País del domicili | Etiqueta de l'adreça del domicili | Adreça del carrer del negoci | Apartat de correus del negoci | Ciutat de l'adreça del negoci | Estat de l'adreça del negoci | Codi postal de l'adreça del negoci | País de l'adreça del negoci | Etiqueta de l'adreça del negoci | Telèfon de casa | Telèfon comercial | Telèfon mòbil | Fax de casa | Fax comercial | Telèfon del cotxe | XDSI | Buscapersones | Client de correu | Títol | Rol | Organització | Nota | Pàgina d'inici | Font del blog | Professió | Oficina | Gerent | Assistent | Muller</para>
+
+  <para
+>Tots els camps tenen format com a dades de classe de caràcters. Les dates (Data de naixement | Aniversari, si hi són presents) es codifiquen com a aaaa-mm-dd (any, mes, dia).</para>
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>La funció de canvi del Nombre de columnes</title>
+    
+  <para
+>Quan obriu el menú <menuchoice
+><guimenu
+>Visualitza</guimenu
+></menuchoice
+>, apareixerà la següent pantalla.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>Una captura de pantalla del menú <quote
+>Visualitza</quote
+> del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del menú <quote
+>Visualitza</quote
+> del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El menú <quote
+>Visualitza</quote
+> del &kaddressbook; després de fer clic al botó <menuchoice
+><guimenu
+>Visualitza</guimenu
+></menuchoice
+> que hi ha a la barra de menús.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>No esteu content amb la disposició de tres columnes que apareix a dalt? Ajusteu una mica les coses amb aquest apropament minimalista.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>Una captura de pantalla de la disposició de plafó únic del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla de la disposició de plafó únic del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La disposició <quote
+>Senzilla (una columna)</quote
+> del &kaddressbook;. Només seran visibles les dades de contacte bàsiques.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Tingueu en compte que la informació sobre quines llibretes d'adreces existeixen i estan en ús no serà visible quan tingui efecte aquesta disposició <quote
+>Senzilla</quote
+>. Només es mostraran els contactes de les llibretes d'adreces que es van seleccionar abans de triar aquesta vista.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Si la disposició <quote
+>Senzilla</quote
+> no us resulta atractiva, podreu provar l'estil de <quote
+>Dues columnes</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>Una captura de pantalla de la disposició de doble plafó del &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla de la disposició de doble plafó del &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>La disposició <quote
+>Dues columnes</quote
+> del &kaddressbook;. La llista de llibretes d'adreces s'apila a la part superior de la llista de contactes alfabètica.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>En el &kde;, el nostre lema és «Sigueu lliure!» El nostre objectiu és brindar-vos la màxima flexibilitat a l'hora d'adaptar i configurar el nostre programari per a satisfer els vostres gustos. Juguem amb la idea d'afegir encara més vistes al &kaddressbook; (Quatre columnes! Cinc!), Però al final vam concloure que ja n'hi havia prou.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>L'opció Configura les dreceres</title>
+    
+  <para
+>Quan seleccioneu per primera vegada l'opció <menuchoice
+><guimenu
+>Configuració</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura les dreceres...</guisubmenu
+> </menuchoice
+>, això és el que veureu.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Configura les dreceres</quote
+> amb el &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Configura les dreceres</quote
+> amb el &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura les dreceres</quote
+> del &kaddressbook;. Utilitzeu el camp <quote
+>Cerca</quote
+>, o la barra de desplaçament vertical, per a trobar l'acció per a la qual definireu una drecera nova de teclat.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Les accions del &kaddressbook; per a les quals les dreceres de teclat ja han estat definides estan clarament marcades a la columna <quote
+>Drecera</quote
+>. En aquesta taula podreu assignar tecles addicionals a través de les columnes <quote
+>Alternativa</quote
+>, <quote
+>Global</quote
+> i <quote
+>Alternativa global</quote
+>, o assignar una drecera de teclat nova a una acció per a la qual encara no se n'ha definit cap. Seleccioneu l'acció a configurar fent clic al seu nom, com s'il·lustra a dalt. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Quan feu clic esquerre al botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Cap</guibutton
+>, el seu nom canviarà a <quote
+>Entrada...</quote
+>. Després podreu gravar el lligam de tecles que voleu assignar a l'acció seleccionada. (Passeu el cursor sobre el botó <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Cap</guibutton
+> per a veure un consell pràctic sobre aquest procediment). El programa prendrà nota de les tecles que heu premut i gravarà la nova drecera de teclat, com s'il·lustra a continuació. Si trieu una combinació que entri en conflicte amb una assignació de drecera existent, veureu un missatge d'error i se us demanarà que feu una selecció diferent. Podreu utilitzar el botó <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> per a esborrar la vostra selecció.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>Una segona captura de pantalla del diàleg <quote
+>Configura les dreceres</quote
+> amb el &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una segona captura de pantalla del diàleg <quote
+>Configura les dreceres</quote
+> amb el &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura les dreceres</quote
+> del &kaddressbook; després d'introduir una drecera de teclat, però abans de desar la nova configuració.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Feu clic al botó <guibutton
+>&nbsp;✔&nbsp;D'acord&nbsp;</guibutton
+> per a desar els vostres canvis. Feu clic a <guibutton
+>&nbsp;⦸&nbsp;Cancel·la&nbsp;</guibutton
+> per a sortir sense desar els vostres canvis. Feu clic a <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Omissió</guibutton
+> per a restaurar el conjunt predeterminat de dreceres de teclat del &kaddressbook;. Trieu <guibutton
+>&nbsp;Gestiona els esquemes&nbsp;&gt;&gt;&nbsp;</guibutton
+> per a integrar les vostres assignacions personalitzades en un esquema més gran d'assignacions de drecera. Per a més detalls, vegeu el capítol <ulink url="help:/fundamentals/config.html"
+>Personalització del programari &kde;</ulink
+> en el manual Fonaments del &kde;.</para>
+
+  <para
+>Podreu seleccionar el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Imprimeix</guibutton
+> per a produir una versió impresa de les assignacions de dreceres de teclat. Aquí hi ha una mostra de la taula impresa.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Impressió</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del &kaddressbook; amb el diàleg <quote
+>Impressió</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Un extracte de la llista impresa de dreceres de teclat del &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>L'opció Configura les barres d'eines</title>
+    
+  <para
+>Aquí hi ha la captura de pantalla que apareix quan feu clic a l'element de menú <menuchoice
+><guimenu
+>Arranjament</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Configura les barres d'eines...</guisubmenu
+></menuchoice
+>.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Configura les barres d'eines</quote
+> amb el &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Configura les barres d'eines</quote
+> amb el &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura les barres d'eines</quote
+> del &kaddressbook;. Les accions que ja es mostren a la barra d'eines apareixen a la finestra gran que hi ha a la dreta. Les accions a la finestra de l'esquerra es podran afegir a la barra d'eines, com s'explica a continuació.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Utilitzeu qualsevol dels camps <quote
+>Filtre</quote
+> per a restringir l'interval d'opcions que es mostren a la finestra corresponent. Seleccioneu una acció a la finestra de l'esquerra (com es mostra a sobre) si voleu afegir-la a la barra d'eines. Feu clic esquerre en el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+> per afegir l'element a la llista a la finestra de la dreta (i des d'allí a la barra d'eines del &kaddressbook;). Si voleu suprimir un element de la barra d'eines, simplement invertiu el procediment: ressalteu l'element a la finestra de la dreta i feu clic al botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. L'element seleccionat s'eliminarà de la barra d'eines.</para>
+  
+  <para
+>Podreu adaptar l'ordre en el qual apareixen els elements seleccionats a la barra d'eines mitjançant la funció arrossega i deixa anar dins de la finestra de la dreta. L'ordre dels elements a la barra d'eines, d'esquerra a dreta, es correspon amb l'ordre en la finestra, de dalt a baix. Podreu fer més canvis en l'aparença de la barra d'eines utilitzant el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Canvia la icona...</guibutton
+> per alterar la icona associada amb una acció particular. De la mateixa manera, podreu canviar la descripció de cada element a la barra d'eines fent clic al botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Canvia el text...</guibutton
+>.</para>
+  
+  <para
+>Empreu el botó <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Omissió</guibutton
+> per a restaurar la configuració predeterminada de la barra d'eines. Trieu <quote
+>D'acord</quote
+> per a desar els canvis i sortir del diàleg, <quote
+>Aplicar</quote
+> per a aplicar els canvis mentre manteniu obert el diàleg o <quote
+>Cancel·la</quote
+> per a sortir del diàleg sense desar els canvis. (Per a obtenir una explicació més detallada d'aquest procediment, vegeu el capítol <ulink url="help:/fundamentals/config.html"
+>Personalització del programari &kde;</ulink
+> en el manual Fonaments del &kde;).</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>L'opció Configura el &kaddressbook;</title>
+    
+  <para
+>Quan se selecciona l'opció <menuchoice
+><guimenu
+>Arranjament</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Configura el &kaddressbook;...</guisubmenu
+></menuchoice
+>, apareixerà la pantalla.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>Una captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Configura les accions del contacte</quote
+> del &kaddressbook;. Aquestes característiques encara són experimentals i no estan completament operatives.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El primer diàleg que apareix admet característiques experimentals que encara no s'han implementat completament. Podreu seleccionar entre diverses opcions diferents sota les capçaleres <quote
+>Mostra l'adreça</quote
+>, <quote
+>Marca el número de telèfon</quote
+> o <quote
+>Envia un SMS</quote
+>, però encara no hi ha cap programari que faci res amb les opcions que trieu.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>La següent opció, <quote
+>Arranjament del servidor LDAP</quote
+>, és el mateix diàleg que es documenta a la secció anterior titulada <link linkend="configure-ldap-server"
+><quote
+>El diàleg Configura LDAP</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>Una segona captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una segona captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Arranjament del servidor LDAP</quote
+> del &kaddressbook;. Aquest diàleg i el seu element secundari es documenten en <link linkend="configure-ldap-server"
+>una secció anterior</link
+> d'aquest apèndix.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>El conjunt final d'opcions per a configurar el &kaddressbook; apareixerà quan seleccioneu <quote
+>Connectors</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>Una tercera captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Una tercera captura de pantalla del diàleg <quote
+>Configura el &kaddressbook;</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>El diàleg <quote
+>Connectors</quote
+> del &kaddressbook;. Hi ha deu connectors tots junts. Set d'ells estan activats de manera predeterminada, com es mostra a dalt.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Les accions admeses pels set <quote
+>Connectors</quote
+> predeterminats es documenten en les seccions anteriors d'aquest manual. Les accions <quote
+>Importa/Exporta <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> i <quote
+>Importa/Exporta <glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+> apareixeran com a part del menú <menuchoice
+><guimenu
+>Fitxer</guimenu
+></menuchoice
+> quan s'activin. L'element <quote
+>Comprova el <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> apareixerà en el menú <menuchoice
+><guimenu
+>Eines</guimenu
+></menuchoice
+> quan s'activi. Recordeu que el &kaddressbook; s'haurà d'aturar i tornar a iniciar abans que tinguin efecte els canvis en els <quote
+>Connectors</quote
+>. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Crèdits i llicències</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Copyright &copy; 2007–2019 Els autors del KAddressBook <email
+>montel@kde.org</email
+> </para>
+  
+  <para
+>Copyright de la documentació &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  <para
+>Traductor de la documentació: &credits.Antoni.Bella;</para
+> &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Feu clic aquí per tornar a la Taula de contingut d'aquest apèndix.</link
+></para>
+
+</sect1>
+
+</appendix>

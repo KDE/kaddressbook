@@ -1,0 +1,4509 @@
+# Translation for kaddressbook.po to Euskara/Basque (eu).
+# Copyright (C) 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2022, This file is copyright:
+# This filei is distributed under the same license as the kaddressbook package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Marcos  <marcos@euskalgnu.org>, 2003, 2004, 2005.
+# Ion Gaztañaga <ion_g_m@hotmail.com>, 2005.
+# Ion Gaztañaga <igaztanaga@gmail.com>, 2005.
+# marcos <marcos@euskalgnu.org>, 2006.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2022-02-21 20:28+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@ni.eus"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Helbide-liburua"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "Kontaktua"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "E-postak"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Erakundea"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "Webgunea"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Jaioteguna"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Oharra"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "Izenburua"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(urtebete)"
+msgstr[1] "(%1 urte)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "E-posta"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "Blog-jarioa"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Kontaktu berria..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+"Elkarrizketa-koadro bat azalduko zaizu, non kontaktu berri bat sor dezakezun."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Kontaktu-talde berria..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+"Elkarrizketa-koadro bat azalduko da, non kontaktu-talde berri bat sor "
+"dezakezun."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "KDE Helbide-liburu aplikazioa"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "Copyright © 2007–%1 KAddressBook-en egileak"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Egungo mantenatzailea"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Aurreko mantenatzailea"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "Jatorrizko egilea (1998)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "Dokumentazioa (2019)"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Berrezarri kategoria-iragazkia"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Garbitu kategoria-iragazkia"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(etiketatu gabea)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(Taldeak)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(Guztia)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(Bat ere ez)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ", "
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>Kategoria iragazkia: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "Konfiguratu pluginak"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "(c), 2016-2021 Laurent Montel"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "Konfiguratu Erabiltzaileen erreakzioa"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "(c), 2020-2021 Laurent Montel"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "Tresnen pluginak"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "Inportatzek/esportatzeko pluginak"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "Kontaktuen zehaztasunak zamatzen..."
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "E-posta: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "Telefonoa: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "%1%2 %3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "%1 %2 %3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Aurrekoa"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "Joan zerrendan aurreko kontaktura"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "Sakatu botoi hau zerrendan aurreko kontaktura joateko."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Joan zerrendan hurrengo kontaktura"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "Sakatu botoi hau zerrendan hurrengo kontaktura joateko."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%2(e)tik %1"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Definitu gabe"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Urteurrena"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "E-posta (hobetsia)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "E-posta (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "E-posta (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "E-posta (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Lanbidea"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Bulegoa"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "Kudeatzailea"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "Laguntzailea"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "Ezkontidea"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Hautatutako kontaktuak"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Kontaktu guztiak"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Kontaktu guztiak, zure helbide-liburu guztietakoak"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr ""
+"Hautatu aukera hau, zure helbide-liburu guztietako kontaktu guztiak hautatu "
+"nahi badituzu."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Hautatutako kontaktuak"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Soilik unean hautatuta dauden Kontaktuak"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"Hautatu aukera hau, interfaze grafikoan dagoeneko hautatu dituzun kontaktuak "
+"besterik nahi ez badituzu."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Kontaktu guztiak, hemengoak:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Kontaktu guztiak, hautatutako helbide-liburu batekoak"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"Hautatu aukera hau baldin eta kontaktu guztiak zure helbide-liburuetako "
+"batetik bakarrik hautatu nahi badituzu. Aukera hau klikatutakoan, helbide-"
+"liburu guztiak zerrendatzen dituen goitibeherako lauki bat agertuko zaizu, "
+"zuk nahi duzuna hautatzeko."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Azpikarpetak barne"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "Hautatu azpikarpeta guztiak, goiko mailako karpeta barne"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"Markatu lauki hau karpeta honetako kontaktu guztiak, azpikarpetak barne, "
+"hautatu nahi badituzu. Soilik goi mailako karpetako kontaktuak nahi "
+"badituzu, orduan, utzi lauki hau markatu gabe."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Bildu kontaktuak"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "Ekarri kontaktuak"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Eremu pribatuak"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Laneko eremuak"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Beste eremu batzuk"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Zifratzeko gakoak"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Irudiak"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Azaldu izena izen-oso gisa"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Esportatu beharreko eremuak:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Esportatu eremu pribatuak"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+"Markatu lauki hau kontaktuaren eremu pribatuak vCard irteerako fitxategira "
+"esportatu daitezen nahi baduzu."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Esportatu laneko eremuak"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"Markatu lauki hau kontaktuaren laneko eremuak vCard irteerako fitxategira "
+"esportatu daitezen nahi baduzu."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Esportatu beste eremu batzuk"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+"Markatu lauki hau kontaktuaren beste eremu batzuk vCard irteerako "
+"fitxategira esportatu daitezen nahi baduzu."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Esportatu zifratzeko gakoak"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"Markatu lauki hau kontaktuaren zifratzeko gakoak vCard irteerako fitxategira "
+"esportatu daitezen nahi baduzu."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Esportatu irudiak"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+"Markatu lauki hau kontaktuaren irudia vCard irteerako fitxategira esportatu "
+"dadin nahi baduzu."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Esportatzeko aukerak"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Esportatu azaldutako izena izen-oso gisa"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Markatu lauki hau kontaktua azaltzeko izena vCard-aren «izen-osoa» eremura "
+"esportatu nahi baduzu. Beharrezkoa izan daiteke GMail-en edo Android-en "
+"izena ondo erakuts dadin."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Hautatu helbide-liburua"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr ""
+"Hautatu inportatutako kontaktua(k) gorde behar direneko helbide-liburua:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Inportatu kontaktuak"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "%2(e)ra kontaktu bat inportatzea"
+msgstr[1] "%2(e)ra %1 kontaktu inportatzea"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "Inportatu emandako fitxategia"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "Ireki «Kontaktu berria» elkarrizketa-koadroa"
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "Azaldu zehaztutako kontaktua (URL bidez)"
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+"Fitxategiak edo URLak. Erabiltzaileari inportatu edo ez galdetuko zaio."
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "Erabiltzaileen erreakziorako aukera erabilgarriak zerrendatzen ditu"
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "&Konfiguratu helbide-liburua..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Fitxategia"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Berria"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Editatu"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "&Ikuspegia"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "Ekintz&a"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "&Tresnak"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "E&zarpenak"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Esportatu"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Tresna-barra nagusia"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "Inportatu"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "Esportatu"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Bilatu... <%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "&Gaiak"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Inprimatu helbide-liburu osoa edo hautatutako kontaktu multzo bat."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Bilaketa bizkorra"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "Kategoria iragazkia"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Hautatu guztia"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Hautatu helbide-liburuko uneko ikuspegiko kontaktu guztiak."
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "Erakutsi QR kodeak"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "Erakutsi QR kodeak kontaktuan."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "Sinplea (zutabe bat)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Erakutsi helbide-liburuko ikuspegiaren modu sinple bat."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "Bi zutabe"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "Hiru zutabe"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "Eman fokua bilaketa bizkorrari"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "Zerbitzari-aldeko harpidetza..."
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Inprimatu kontaktua"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"Elkarrizketa-koadro bat azalduko da, non aplikazio osoko lasterbideak "
+"konfiguratu ditzakezun."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>Honek menu-barra erabat ezkutatuko du. %1 tekleatuz berriz erakutsi "
+"dezakezu.</qt>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "Ezkutatu menu-barra"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Helbide-liburuko %1 karpetaren propietateak"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Izen-abizenak"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "Abizena"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "Izena"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Etxeko helbidea"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Laneko helbidea"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Telefono zenbakiak"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Hobetsitako e-posta"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "E-posta guztiak"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "Estilo trinkoa"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Dokumentua ezartzea"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Inprimatzea"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Eginda"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "Inprimatzeko estilo trinkoa"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Itxura"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Eremuak"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+"Inprimatu etxeko helbidea, etxeko telefono zenbakiarekin eta mugikorreko "
+"zenbakiarekin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "etxeko helbidearekin"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "inprimatu laneko helbidea, laneko telefono zenbakiarekin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "laneko helbidearekin"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "Inprimatu jaioteguna"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "jaiotegunarekin"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "Inprimatu hobetsitako eta bigarren mailako e-posta eremuak"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "e-postarekin"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "lehenengo kolorea, txandakako koloreak markatuta badago"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "lehenengo kolorea"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "bigarren kolorea, txandakako kolorea markatuta badago"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "bigarren kolorea"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "Aldatu errenkada guztietako atzeko planoko kolorea"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "Atzeko planoko koloreak txandakatzea"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "Erakundea:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "E-posta helbidea:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "E-posta helbideak:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Telefonoa:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Telefonoak:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Web orria:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Etxeko helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Nazioarteko helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Posta helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Pakete helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Laneko helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Hobetsitako helbidea"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Oharrak:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Inprimaketa estilo xehea - Itxura"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Koloreak ezartzea"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Estilo xehea"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Itxura orrialdea"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Kontaktuen goiburuak"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "Hautatu lerroburuko testuaren atzeko planoko kolorea"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+"Egin klik botoi honi, lerroburuaren atzeko planoko kolorea aldatzeko kolore "
+"hautatzaile bat abiatzeko."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Titularraren atzeko planoaren kolorea:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Titularraren testuaren kolorea:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "Hautatu lerroburuko testuaren kolorea"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+"Egin klik botoi honi, lerroburuaren testuaren kolorea aldatzeko kolore "
+"hautatzaile bat abiatzeko."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Mike-en imprimaketa estiloa"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Zein kontaktu imprimatu nahi dituzu?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Hautatu imprimatuko diren kontaktuak"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Hautatu imprimaketa estiloa"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Imprimaketa aurrerapena"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Inprimatzea: Aurrerapena"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Aurrerapena"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Inprimatu kontaktuei buruzko informazioa"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "Inprimatu kontaktuen telefono zenbakiak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr "Markatu lauki hau kontaktuen telefono zenbakiak inprimatu daitezen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Telefono zenbakiak"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "Inprimatu kontaktuen e-posta helbideak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr "Markatu lauki hau kontaktuen e-posta helbideak inprimatu daitezen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "E-posta helbideak"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "Inprimatu kontaktuen kaleko helbideak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr "Markatu lauki hau kontaktuen kaleko helbideak inprimatu daitezen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Posta helbideak"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "Inprimatu kontaktuen erakundeak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "Markatu lauki hau kontaktuen erakundeak inprimatu daitezen."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "Inprimatu kontaktuen jaiotegunak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "Markatu lauki hau kontaktuen jaiotegunak inprimatu daitezen."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "Inprimatu kontaktuen oharrak"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "Markatu lauki hau kontaktuen oharrak inprimatu daitezen."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "Oharra:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Uztai-artxibategirako inprimatzeko estilo - Itxura"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "Eremuak ezartzea"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Uztai-artxibategirako inprimaketa"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "Goranzkoa"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "Beheranzkoa"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(Ez dago aurreikuspegi erabilgarririk)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Hautatu inprimatzeko estiloa"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"Zer nolako itxura izan behar du inprimatutakoak?\n"
+"KAddressBook-ek helburu ezberdinetarako diseinatutako hainbat inprimaketa "
+"estilo ditu.\n"
+"Hautatu ezazu ondoen datorkizuna."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Sailkatzea"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Irizpidea:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Aukeratu sailkatzeko eremu nagusia"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"Zerrenda honetatik, zure kontaktuak inprimatze-irteerakoan zein eremuren "
+"arabera sailkatuko diren hauta dezakezu. Erabili sailkapen-ordena aukera, "
+"sailkapena goranzko edo beheranzko ordenan egingo den zehazteko."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Ordena:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "Hautatu sailkatzeko ordena"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"Hautatu zure kontaktuak goranzko edo beheranzko ordenan sailkatunahi "
+"dituzun. Erabili sailkatzeko irizpidea, sailkapena kontaktuko zein "
+"eremurekin egingo den zehazteko."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Inprimatzeko estiloa"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Hautatu inprimatzeko estiloa"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+"Hautatu gustuko duzun inprimatzeko estiloa. Ikusi aurreikuspegi-irudia, "
+"erabakia errazteko."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Zerrendako kontaktuak bilatu"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"Hasi koadro honetan bilaketa-kate bat tekleatzen, eta kate horrekin bat "
+"datozen kontaktuen zerrenda azalduko da. Intereseko kontaktuak bilatzeko "
+"modu bizkorra da."
+
+#~ msgid "&Import"
+#~ msgstr "&Inportatu"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Inportatu vCard..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Kontaktuak inportatu?"
+
+#, fuzzy
+#~| msgid "Import CSV List..."
+#~ msgid "Import CSV file..."
+#~ msgstr "Inportatu CSV zerrenda..."
+
+#, fuzzy
+#~| msgid "Import LDIF Addressbook..."
+#~ msgid "Import LDIF file..."
+#~ msgstr "Inportatu LDIF helbide-liburua"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Kontaktuak inportatu?"
+
+#, fuzzy
+#~| msgid "Import From Mobile Phone..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Inportatu telefono mugikorretik..."
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Kontaktuak inportatu?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "Inportatu dena..."
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "%1 helbide-liburua"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Esportatu vCard 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Esportatu vCard 3.0..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Esportatu vCard 3.0..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Esportatu vCard 3.0..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Esportatu vCard 2.1..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Esportatu vCard 2.1..."
+
+#, fuzzy
+#~| msgid "Export CSV List..."
+#~ msgid "Export CSV file..."
+#~ msgstr "Esportatu CSV zerrenda..."
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export LDIF file..."
+#~ msgstr "Esportatu LDIF helbide-liburua"
+
+#, fuzzy
+#~| msgid "Export LDIF Addressbook..."
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Esportatu LDIF helbide-liburua"
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "Esportatu LDIF helbide-liburua"
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "%1 helbide-liburua"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Ezin da <b>%1</b> fitxategia ireki.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ezin da <b>%1</b> fitxategia ireki.</qt>"
+
+#, fuzzy
+#~| msgid "CSV Import Dialog"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "CSV inportazio elkarrizketa-koadroa"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Kontaktuak inportatzen"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Hautatu inportatzeko artxiboa:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Hautatu vCard-a inportatzeko"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Mugatzailea"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "Koma"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "Hautatu kendu nahi duzun eremua:"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "Puntu eta koma"
+
+#, fuzzy
+#~| msgid "Select the field you want to remove:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "Hautatu kendu nahi duzun eremua:"
+
+#, fuzzy
+#~| msgid "Tabulator"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "Tabulatzailea"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Espazioa"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "Beste"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Zita:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Hautatu gako mota:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Bat ere ez"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Dataren formatua:"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<ul><li>y: urtea bi digiturekin</li><li>Y: urtea 4 digiturekin</li><li>m: "
+#~ "hilabetea 1 edo 2 digiturekin</li><li>M: hilabetea 2 digiturekin</"
+#~ "li><li>d: eguna 1 edo 2 digiturekin</li> <li>D: eguna 2 digiturekin</li> "
+#~ "</ul>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<ul><li>y: year with 2 digits</li><li>Y: year with 4 digits</li><li>m: "
+#~| "month with 1 or 2 digits</li><li>M: month with 2 digits</li><li>d: day "
+#~| "with 1 or 2 digits</li><li>D: day with 2 digits</li></ul>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<ul><li>y: urtea bi digiturekin</li><li>Y: urtea 4 digiturekin</li><li>m: "
+#~ "hilabetea 1 edo 2 digiturekin</li><li>M: hilabetea 2 digiturekin</"
+#~ "li><li>d: eguna 1 edo 2 digiturekin</li> <li>D: eguna 2 digiturekin</li> "
+#~ "</ul>"
+
+#, fuzzy
+#~| msgid "Textquote:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Zita:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Hautatu gako mota:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Aplikatu plantilla..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Gorde plantilla..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Lokala (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Gutxienez zutabe bat esleitu behar duzu."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(Ez dago aurrebistarik)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(Ez dago aurrebistarik)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Plantillaren izena"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Sartu ezazu izen bat plantillarentzat:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Ezin da sarrerako fitxategia ireki."
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "<qt>Ziur zaude <b>%1</b> helbide-liburua kendu nahi duzula?</qt>"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Plantillaren hautaketa"
+
+#, fuzzy
+#~| msgid "Please select a template, that matches the CSV file:"
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Hautatu plantilla bat, CSV artxiboarekin bat datorrena:"
+
+#, fuzzy
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "%1 helbide-liburua"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Ezin izan da <b>%1</b> irakurketarako ireki.</qt>"
+
+#, fuzzy
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 helbide-liburua"
+
+#, fuzzy
+#~| msgid ""
+#~| "You have selected a list of contacts, shall they be exported to several "
+#~| "files?"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr ""
+#~ "Kontaktu zerrenda bat hautatu duzu, fitxategi batzuetara esportatu nahi "
+#~ "al dituzu?"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Esportazioa fitxategi batera"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Esportatu hainbat fitxategitara"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Hautatu vCard-a inportatzeko"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Errorea vCard inportatzen"
+
+#, fuzzy
+#~| msgid "<qt>Unable to access vCard: %1</qt>"
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<qt>Ezin dago <b>%1</b> vCard-era sarbiderik.</qt>"
+
+#, fuzzy
+#~| msgid "No contacts were imported, due to errors with the vCards."
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr "Ez da kontakturik inportatu, vCard-ekin erroreak gertatu direlako."
+
+#, fuzzy
+#~| msgid "The vCard does not contain any contacts."
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "vCard-ak ez du kontakturik."
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Inportatu vCard"
+
+#, fuzzy
+#~| msgid "Do you want to import this contact in your address book?"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Kontaktu hau zure helbide-liburura inportatu nahi duzu?"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Inportatu dena..."
+
+#, fuzzy
+#~| msgid "Which contacts do you want to export?"
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Zein kontaktu esportatu nahi dituzu?"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr ""
+#~ "Kopiatu hautatutako kontaktuak sistemaren arbeleara vCard formatuan."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "Ezabatu ikuspegia"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "Helbide elektronikoa:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "Gorde plantilla..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "Gorde plantilla..."
+
+#, fuzzy
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&Bilatu"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "Bidali posta elektronikoa aukeratutako kontaktu guztiei."
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "A contact group was selected."
+#~ msgstr "Kontaktu &guztiak"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "Bidali &Kontaktua"
+
+#, fuzzy
+#~| msgid ""
+#~| "Copy the currently selected contact(s) to system clipboard in vCard "
+#~| "format."
+#~ msgid "You have not selected any contacts."
+#~ msgstr ""
+#~ "Kopiatu hautatutako kontaktuak sistemaren arbeleara vCard formatuan."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "Bidali posta elektronikoa aukeratutako kontaktu guztiei."
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "Inportatu vCard..."
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge Contacts..."
+#~ msgstr "&Fusionatu kontaktuak"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "merge"
+#~ msgstr "Bateratu"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "Helbide-liburua"
+
+#, fuzzy
+#~| msgid "Merge"
+#~ msgid "Merge"
+#~ msgstr "Bateratu"
+
+#, fuzzy
+#~| msgid "You have to assign at least one column."
+#~ msgid "You must select at least two elements."
+#~ msgstr "Gutxienez zutabe bat esleitu behar duzu."
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "No duplicated contact found."
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgid "No contacts selected."
+#~ msgstr "Kontaktu &guztiak"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "Bezeroa"
+
+#, fuzzy
+#~| msgid "Mobile Phone information:"
+#~ msgid "Missing Selected Information"
+#~ msgstr "Telefono mugikorraren informazioa:"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "Definitu gabe"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>When trying to read the vCard, there was an error opening the file "
+#~| "'%1': %2</qt>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<qt> vCard-a irakurtzean, errorea bat gertatu da '%1' fitxategia "
+#~ "irakurtzean: %2</qt>"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merged Contact"
+#~ msgstr "&Fusionatu kontaktuak"
+
+#, fuzzy
+#~| msgid "Importing contacts"
+#~ msgid "Error while merging contacts."
+#~ msgstr "Kontaktuak inportatzen"
+
+#, fuzzy
+#~| msgid "&Merge Contacts"
+#~ msgid "Merge contact"
+#~ msgstr "&Fusionatu kontaktuak"
+
+#, fuzzy
+#~| msgid "Select vCard Fields"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Hautatu vCard eremuak"
+
+#, fuzzy
+#~| msgid "&Selected contacts"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "&Hautatutako kontaktuak"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "Gehitu hautatutakoak"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "Kontaktuen pinning-a"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Hautatu imprimaketa estiloa"
+
+#~ msgid "Department"
+#~ msgstr "Saila"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Zuzendariaren izena"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "Laguntzailearen izena:"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "Kidearen izena"
+
+#~ msgid "IM Address"
+#~ msgstr "IM Helbidea"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "Motak"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "<qt>Ziur zaude <b>%1</b> helbide-liburua kendu nahi duzula?</qt>"
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Hautatu vCard-ean esportatuko diren  eremuak."
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "Helbide-liburuak"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Aldatu xehetasun orrialdea ikusgai den edo ez."
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "Editatu helbide-liburu iragazkia"
+
+#, fuzzy
+#~ msgid "Show Contacts View"
+#~ msgstr "Kontaktu berria"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Aldatu xehetasun orrialdea ikusgai den edo ez."
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "Editatu kontaktuaren izena"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "Erakutsi xehetasunak"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Aldatu xehetasun orrialdea ikusgai den edo ez."
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "Ezkutatu xehetasunak"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Gehitu helbide liburua"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Editatu helbide-liburu iragazkia"
+#~ msgstr[1] "Editatu helbide-liburu iragazkia"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Hautatu helbide-liburu berriaren mota:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Editatu helbide-liburu iragazkia"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Hautatu helbide-liburu berriaren mota:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Editatu helbide-liburu iragazkia"
+#~ msgstr[1] "Editatu helbide-liburu iragazkia"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Hautatu helbide-liburu berriaren mota:"
+
+#, fuzzy
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Moztu kontaktua"
+#~ msgstr[1] "Moztu %1 kontaktu"
+
+#, fuzzy
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Ezabatu kontaktua"
+#~ msgstr[1] "Ezabatu %1 kontaktu"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Hautatu helbide-liburu berriaren mota:"
+
+#, fuzzy
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Moztu kontaktua"
+#~ msgstr[1] "Moztu %1 kontaktu"
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "&Editatu kontaktua..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Ezabatu ikuspegia"
+#~ msgstr[1] "Ezabatu ikuspegia"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "Editatu..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Gehitu helbide liburua"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Gehitu helbide liburua"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Gehitu helbide liburua"
+
+#, fuzzy
+#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "<qt>Ziur zaude <b>%1</b> helbide-liburua kendu nahi duzula?</qt>"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "Helbide-liburua"
+
+#, fuzzy
+#~| msgid ""
+#~| "Create a new contact<p>You will be presented with a dialog where you can "
+#~| "add all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Kontaktu berria sortu<p>Azalduko den elkarrizketa-koadroan pertsona bati "
+#~ "buruzko data guztia gehitu ahal izango duzu, helbideak eta telefono "
+#~ "zenbakiak barne."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "Berria..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Editatu kontaktuen iragazkiak<p>Elkarrizketa-koadro bat agertuko da. "
+#~ "Bertan iragazkiak gehitu, kendu eta editatu ditzakezu."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit a contact<p>You will be presented with a dialog where you can "
+#~| "change all data about a person, including addresses and phone numbers."
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Editatu kontaktua <p> Azalduko den elkarrizketa-koadroan pertsona bati "
+#~ "buruzko data guztia aldatu ahal izango duzu, helbideak eta telefono "
+#~ "zenbakiak barne. "
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "Gehitu helbide liburua"
+
+#, fuzzy
+#~| msgid ""
+#~| "Store a contact in a different Addressbook<p>You will be presented with "
+#~| "a dialog where you can select a new storage place for this contact."
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Editatu kontaktua helbide-liburu ezberdin batean <p>Elkarrizketa-koadro "
+#~ "bat agertuko da. Bertan kontaktu honentzat biltegi berri bat hauta "
+#~ "dezakezu."
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "Helbide-liburua"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "Helbide-liburu arakatzailea"
+
+#~ msgid "Home Number"
+#~ msgstr "Etxeko zbkia"
+
+#~ msgid "Work Number"
+#~ msgstr "Laneko zbkia"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Mugikorraren zbkia"
+
+#~ msgid "Fax Number"
+#~ msgstr "Fax zbkia"
+
+#~ msgid "Street"
+#~ msgstr "Kalea"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Estatua"
+
+#~ msgid "Country"
+#~ msgstr "Herrialdea"
+
+#~ msgid "City"
+#~ msgstr "Hiria"
+
+#~ msgid "Zip Code"
+#~ msgstr "Posta kodea"
+
+#~ msgid "Description"
+#~ msgstr "Azalpena"
+
+#~ msgid "User ID"
+#~ msgstr "Erabiltzaile ID-a"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Estatua"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Izenburua"
+
+#, fuzzy
+#~| msgid "Import Contacts?"
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Kontaktuak inportatu?"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Bilatu helbideak direktorioan"
+
+#~ msgid "Search for:"
+#~ msgstr "Bilatu hau:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "honetan"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Helb. el."
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Etxeko zbkia"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Laneko zbkia"
+
+#~ msgid "Recursive search"
+#~ msgstr "Bilaketa errekurtsiboa"
+
+#~ msgid "Contains"
+#~ msgstr "Hau dauka"
+
+#~ msgid "Starts With"
+#~ msgstr "Honela hasten da"
+
+#~ msgid "Unselect All"
+#~ msgstr "Desautatu guztiak"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "&Konfiguratu helbide-liburua..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Helb. el."
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "Bidali posta elektronikoa aukeratutako kontaktu guztiei."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "&Konfiguratu helbide-liburua..."
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "Editatu kontaktua"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "&Gehitu..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&Editatu..."
+
+#, fuzzy
+#~ msgid "&Remove Host"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) 1997-2005, KDE PIM taldea"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Helbide-liburuak"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Editatu telefono zenbakia"
+
+#, fuzzy
+#~| msgid "Preferred Address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Hobetsitako helbidea"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Helb. el."
+
+#, fuzzy
+#~| msgid "&All contacts"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Kontaktu &guztiak"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "Zuzendariaren izena"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "Erakutsi eremu &hutsak."
+
+#~ msgid "Font Settings"
+#~ msgstr "Letra tipo ezarpenak"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "Erabili KDE letra-tipo estandarrak"
+
+#~ msgid "Details font:"
+#~ msgstr "Xehetasunen letra tipoa:"
+
+#~ msgid "Size:"
+#~ msgstr "Tamaina:"
+
+#~ msgid "Body font:"
+#~ msgstr "Gorputzaren letra-tipoa:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "Letra-tipo finkoa:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "Kontaktuaren goiburuaren letra-tipoa:"
+
+#~ msgid "Headlines:"
+#~ msgstr "Titularrak:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "Erabili koloreak kontaktuen goiburuetan"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(Honi bidali:)"
+
+#~ msgid "Setting up margins and spacing"
+#~ msgstr "Marjinak eta tartea ezartzen"
+
+#~ msgid "Preparing"
+#~ msgstr "Prestatzen"
+
+#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
+#~ msgstr ""
+#~ "KAddressBook (http://www.kde.org) programarekin imprimatuta. Lekua: %1"
+
+#~ msgid "Print a special number of contacts."
+#~ msgstr "Inprimatu kontaktu kopuru berezia."
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "Hautatu imprimatu nahi dituzun kontaktuak"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "Imprimatu helbide-liburu osoa"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "KAddressBook-en hautatutako kontaktuak bakarrik imprimatu.\n"
+#~ "Aukera hau ezgaituta egongo da kontakturik hautatu ez bada."
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "&Iragazkia betetzen duten kontaktuak"
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "Hautatutako iragazkiarekin bat datozen kontaktuak bakarrik imprimatu\n"
+#~ "Aukera hau desgaituta dago iragazkirik definitu ez baduzu."
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Ezkerreko zerrendan hautatutako kategoria kideak diren kontaktuak "
+#~ "bakarrik imprimatu.\n"
+#~ "Aukera hau ezgaituta dago kategoriarik ez baduzu."
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "Hautatu iragazki bat zein kontaktu imprimatzen diren definitzeko."
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "Hautatu itzazu imprimatu nahi dituzun kideen kategoriak."
+
+#, fuzzy
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] " Zure helbide-liburura kontaktu bat inportatu nahi duzu?"
+#~ msgstr[1] "Zure helbide-liburura %1 kontaktu inportatu nahi dituzu?"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Select the address book"
+#~ msgstr "%1 helbide-liburua"
+
+#, fuzzy
+#~ msgid "New Contact"
+#~ msgstr "Kontaktu berria"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Editatu kontaktua"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "Gehitu..."
+
+#, fuzzy
+#~| msgid "This contact's image cannot be found."
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "Kontaktu honen irudia ezin da aurkitu."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(Ez dago aurrebistarik)"
+
+#~ msgid "Play"
+#~ msgstr "Erreproduzitu"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "Aldatu mota..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "Berria..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Beste..."
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "Gehitu..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Editatu telefono zenbakia"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Hau da nahien duzun telefono zenbakia"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Editatu helbide elektronikoak"
+
+#~ msgid "Edit..."
+#~ msgstr "Editatu..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Ezarri estandarra"
+
+#~ msgid "Add Email"
+#~ msgstr "Gehitu e-posta"
+
+#~ msgid "New Email:"
+#~ msgstr "E-posta berria:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "Helb. el."
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr ""
+#~ "<qt>Ziur zaude <b>%1</b> helbide elektronikoa kendu nahi duzula?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Berretsi kentzea"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "&Gelditu kentze prozesua"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "Kontaktu honen irudia ezin da aurkitu."
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "Aldatu mota..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "Gorde plantilla..."
+
+#, fuzzy
+#~ msgid "Remove photo"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change logo..."
+#~ msgstr "Aldatu mota..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "Gorde plantilla..."
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Berria..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Editatu..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Ezabatu ikuspegia"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr " Ziur zaude hautatutako helbidea ezabatu nahi duzula?"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Posta helbidea"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Editatu etiketa..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Hau da helbide hobetsia"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Editatu helbide mota"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Helbide motak"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "Izen arrunta"
+
+#, fuzzy
+#~| msgid "Reverse Name with Comma"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Alderantzizko izena komarekin"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "Alderantzizko izena"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "Erakundea"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "Pertsonalizatua"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "Izena:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Goitizena:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "Erakundea"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "Web orria:"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Blog:"
+#~ msgstr "Blog"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "&Marjina"
+
+#, fuzzy
+#~ msgid "Addresses"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Coordinates"
+#~ msgstr "Hau dauka"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "Lanekoa"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "Orokorra"
+
+#~ msgid "Profession:"
+#~ msgstr "Lanbidea:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "Izenburua:"
+
+#~ msgid "Department:"
+#~ msgstr "Saila:"
+
+#~ msgid "Office:"
+#~ msgstr "Bulegoa:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "Zuzendariaren izena:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "Data"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "Familia"
+
+#, fuzzy
+#~ msgid "Birthdate:"
+#~ msgstr "Jaioteguna:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "Urteurrena:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partner's name:"
+#~ msgstr "Kidearen izena:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "Editatu kontaktua"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Eremu pertsonalizatua"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "Emandako helbide elektronikodun kontaktu editorea erakusten du."
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "Emandako uid-dun kontaktu editorea erakusten du."
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "Abiarazi editore moduan soilik."
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "Abiarazi editorea kontaktu berriarentzat"
+
+#~ msgid "Work on given file"
+#~ msgstr "Lan egin emandako fitxategian"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "&Editatu helbideak..."
+
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "Editatu '%1' kontaktua"
+
+#~ msgid "Contact Editor"
+#~ msgstr "Kontaktu editorea"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "&Xehetasunak"
+
+#~ msgid "Misc"
+#~ msgstr "Hainbat"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "Data baliogarria zehaztu behar duzu"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "Jaiotze-data baliogarria zehaztu behar duzu"
+
+#~ msgid "You have to enter a valid anniversary."
+#~ msgstr "Urteurren-data baliogarria zehaztu behar duzu"
+
+#~ msgid "Add View"
+#~ msgstr "Gehitu ikuspegia"
+
+#~ msgid "View name:"
+#~ msgstr "Ikuspegi izena:"
+
+#~ msgid "View Type"
+#~ msgstr "Ikuspegi mota:"
+
+#~ msgid "Add Field"
+#~ msgstr "Gehitu eremua"
+
+#~ msgid "Type:"
+#~ msgstr "Mota:"
+
+#~ msgid "Is available for all contacts"
+#~ msgstr "Erabilgarria kontaktu guztientzat"
+
+#~ msgid "Numeric Value"
+#~ msgstr "Balio numerikoa"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolearra"
+
+#~ msgid "Time"
+#~ msgstr "Ordua"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data eta ordua"
+
+#~ msgid ""
+#~ "A field with the same name already exists, please choose another one."
+#~ msgstr ""
+#~ "Izen bereko beste eremu bat badago lehendik, aukera ezazu beste izen bat."
+
+#~ msgid "Remove Field"
+#~ msgstr "Kendu eremua"
+
+#~ msgid "Add Field..."
+#~ msgstr "Gehitu eremua..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "Kendu eremua..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "Izena:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "Banaketa zerrendaren editorea"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name."
+#~ msgstr ""
+#~ "Izen bereko beste eremu bat badago lehendik, aukera ezazu beste izen bat."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "Helbide-liburua"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "Berrizendatu banaketa-zerrenda"
+
+#, fuzzy
+#~| msgid ""
+#~| "A field with the same name already exists, please choose another one."
+#~ msgid ""
+#~ "A distribution list with the name %1 already exists. Please choose "
+#~ "another name"
+#~ msgstr ""
+#~ "Izen bereko beste eremu bat badago lehendik, aukera ezazu beste izen bat."
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "Editatu helbide elektronikoak..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "Izena:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "Erakutsi aukeratutako kategoriekin bat datozen kontaktuak"
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr "Erakutsi hautatutako kategoriekin bat ez datozen kontaktuak"
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "Editatu helbide-liburu iragazkiak"
+
+#~ msgid "Filter:"
+#~ msgstr "Iragazkia:"
+
+#~ msgid "Location of Free/Busy information:"
+#~ msgstr "Libre-okupatuta informazioaren kokalekua:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "Erabili geo datuak"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "Latitudea:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "Longitudea:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "Editatu geo datuak..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "Geo datuen sarrera"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "Sexagesimala"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "Latitudea:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "Ipar"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "Hego"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "Longitudea:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "Ekialde"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "Mendebalde"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "Definitu gabe"
+
+#~ msgid "Reset"
+#~ msgstr "Berrezarri"
+
+#~ msgid "IM address:"
+#~ msgstr "BM helbidea:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "Editatu BM helbideak..."
+
+#, fuzzy
+#~| msgid ""
+#~| "The incremental search<p>Enter some text here will start the search for "
+#~| "the contact, which matches the search pattern best. The part of the "
+#~| "contact, which will be used for matching, depends on the field selection."
+#~ msgid ""
+#~ "The incremental search<p>Enter some text here will start the search for "
+#~ "the contact, which matches the search pattern best. The part of the "
+#~ "contact, which will be used for matching, depends on the field selection."
+#~ "</p>"
+#~ msgstr ""
+#~ "Bilaketa inkrementala<p>Testua sartzerakoan kontaktuaren bilaketa hasiko "
+#~ "da, bilaketa ereduarekin bat datorrenaren bila. Kontaktuaren partea, bat-"
+#~ "etortzean erabiliko dena, eremu aukeraketaren araberakoa da."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "&hemen:"
+
+#~ msgid ""
+#~ "Here you can choose the field, which shall be used for incremental search."
+#~ msgstr "Hemen bilaketa inkrementalean erabiliko den eremua aukera dezakezu."
+
+#~ msgid "Visible Fields"
+#~ msgstr "Ikusgai diren eremuak"
+
+#~ msgid "All Fields"
+#~ msgstr "Eremu guztiak"
+
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "Kontaktuen goiburuak"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "Mantenatzailea, libkabc egunaretzea, CSV inportazio/esportazioa "
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "GUI eta euskarriaren beste diseinua"
+
+#~ msgid "DCOP interface"
+#~ msgstr "DCOP interfazea"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "LDAP bilaketa"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this distribution list?"
+#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
+#~ msgstr[0] " Ziur zaude kontaktu hau ezabatu nahi duzula?"
+#~ msgstr[1] "Ziur zaude %1 kontaktu hauek ezabatu nahi dituzula?"
+
+#, fuzzy
+#~ msgid "Do you really want to delete this contact?"
+#~ msgid_plural "Do you really want to delete these %1 contacts?"
+#~ msgstr[0] " Ziur zaude kontaktu hau ezabatu nahi duzula?"
+#~ msgstr[1] "Ziur zaude %1 kontaktu hauek ezabatu nahi dituzula?"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "Kontaktu bakar bat aukeratu behar da."
+
+#~ msgid ""
+#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> zure kontaktu pertsonal berri bat bezala erabili nahi al "
+#~ "duzu?</qt>"
+
+#~ msgid "Use"
+#~ msgstr "Erabili"
+
+#~ msgid "Do Not Use"
+#~ msgstr "Ez erabili"
+
+#~ msgid "New Distribution List"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ezin izan da <b>%1</b> helbide-liburua gorde.</qt>"
+
+#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Ezin izan da <b>%1</b> helbide-liburua gordetzeko sarbiderik eskuratu."
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "Zure KDE instalazioak ez du LDAP euskarririk, eskatu zure "
+#~ "administratzaile edo banatzaileei informazio gehiago."
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "Ez dago LDAP sarrera/irteera mendekorik eskuragarri."
+
+#~ msgid "Print Addresses"
+#~ msgstr "Inprimatu helbideak"
+
+#~ msgid "&Send Email to Contact..."
+#~ msgstr "&Bidali posta elektronikoa kontaktuari..."
+
+#~ msgid "Save all changes of the address book to the storage backend."
+#~ msgstr "Gorde helbide-liburuko aldaketa guztiak biltegira."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "Berria..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr ""
+#~ "Bidali posta elektroniko bat aukeratutako kontaktua eranskin moduan duela."
+
+#~ msgid "Chat &With..."
+#~ msgstr "&Berriketetan egin..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "Berriketa bat hasi aukeratutako kontaktuarekin."
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&Editatu..."
+
+#~ msgid ""
+#~ "Cuts the currently selected contact(s) to system clipboard in vCard "
+#~ "format."
+#~ msgstr "Ebaki hautatutako kontaktuak sistemaren arbelera vCard formatuan."
+
+#~ msgid "Paste the previously cut or copied contacts from clipboard."
+#~ msgstr "Itsatsi aurretik ebaki edo kopiatutako kontaktuak arbeletik."
+
+#~ msgid "&Delete Contact"
+#~ msgstr "&Ezabatu kontaktua"
+
+#~ msgid "Delete all selected contacts."
+#~ msgstr "Ezabatu hautatutako kontaktu guztiak."
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "C&opy Contact To..."
+#~ msgstr "&Gorde kontaktua hemen..."
+
+#, fuzzy
+#~| msgid "St&ore Contact In..."
+#~ msgid "&Move Contact To..."
+#~ msgstr "&Gorde kontaktua hemen..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "Erakutsi salto barra"
+
+#~ msgid "Toggle whether the jump button bar shall be visible."
+#~ msgstr "Aldatu salto botoia ikusgai den edo ez."
+
+#~ msgid ""
+#~ "You will be presented with a dialog, that offers you all possibilities to "
+#~ "configure KAddressBook."
+#~ msgstr ""
+#~ "KAddressBook konfiguratzeko aukera guztiak eskeintzen dituen elkarrizketa "
+#~ "koadro bat azalduko da."
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "LDAP bilaketa"
+
+#, fuzzy
+#~| msgid ""
+#~| "Search for contacts on a LDAP server<p>You will be presented with a "
+#~| "dialog, where you can search for contacts and select the ones you want "
+#~| "to add to your local address book."
+#~ msgid ""
+#~ "Search for contacts on a LDAP server<p>You will be presented with a "
+#~ "dialog, where you can search for contacts and select the ones you want to "
+#~ "add to your local address book.</p>"
+#~ msgstr ""
+#~ "Bilatu kontaktuak LDAP zerbitzari batean <p>Elkarrizketa koadro bat "
+#~ "agertuko da. Koadro honetan kontaktuak bilatu ditzakezu eta zure helbide-"
+#~ "liburu lokalera gehitu nahi dituzunak aukera ditzakezu."
+
+#~ msgid "Set as Personal Contact Data"
+#~ msgstr "Ezarri kontaktu pertsonal datu bezala"
+
+#, fuzzy
+#~| msgid ""
+#~| "Set the personal contact<p>The data of this contact will be used in many "
+#~| "other KDE applications, so you do not have to input your personal data "
+#~| "several times."
+#~ msgid ""
+#~ "Set the personal contact<p>The data of this contact will be used in many "
+#~ "other KDE applications, so you do not have to input your personal data "
+#~ "several times.</p>"
+#~ msgstr ""
+#~ "Ezarri kontaktu pertsonala <p>Kontaktu honen datuak beste hainbat KDE "
+#~ "aplikazioetan erabiliko da. Horrela, ez dituzu datuak behin eta berriro "
+#~ "sartu beharko."
+
+#~ msgid "Select Categories..."
+#~ msgstr "Hautatu kategoriak..."
+
+#~ msgid "Clear Search Bar"
+#~ msgstr "Garbitu bilaketa barra"
+
+#, fuzzy
+#~| msgid "Clear Search Bar<p>Clears the content of the quick search bar."
+#~ msgid ""
+#~ "Clear Search Bar<br /><br />Clears the content of the quick search bar."
+#~ msgstr ""
+#~ "Garbitu bilaketa barra<p>Bilaketa bizkorraren barraren edukina ezabatzen "
+#~ "du."
+
+#~ msgid "Merge with existing categories?"
+#~ msgstr "Fusionatu lehendik dauden kategoriekin?"
+
+#~ msgid "Do Not Merge"
+#~ msgstr "Ez bateratu"
+
+#~ msgid "%1 contact matches"
+#~ msgid_plural "%1 contacts matching"
+#~ msgstr[0] "Konktatuen bat-egite %1 "
+#~ msgstr[1] "Konktaturen %1  bat-egite"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid "Keys:"
+#~ msgstr "Gakoak:"
+
+#~ msgid "Export..."
+#~ msgstr "Esportatu..."
+
+#~ msgid "Key Type"
+#~ msgstr "Gako mota"
+
+#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
+#~ msgstr "<qt>Ziur zaude <b>%1</b> gakoa kendu nahi duzula?</qt>"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid ""
+#~ "You must select a LDAP server before searching.\n"
+#~ "You can do this from the menu Settings/Configure KAddressBook."
+#~ msgstr ""
+#~ "LDAP zerbitzari bat hautatu behar duzu bilatu aurretik.\n"
+#~ "Hau Ezarpenak/Konfiguratu KAddressBook menutik egin dezakezu."
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "Aurrizki honorifikoak:"
+
+#~ msgid ""
+#~ "The predefined honorific prefixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "Aurre-definitutako ohorezko aurrizkiak ezarpenen elkarrizketa-koadroan "
+#~ "hedatu daitezke."
+
+#~ msgid "Additional names:"
+#~ msgstr "Bigarren izenak:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "Atzizki honorifikoak:"
+
+#~ msgid ""
+#~ "The predefined honorific suffixes can be extended in the settings dialog."
+#~ msgstr ""
+#~ "Aurre-definitutako ohorezko atzizkiak ezarpenen elkarrizketa-koadroan "
+#~ "hedatu daitezke"
+
+#~ msgid "Formatted name:"
+#~ msgstr "Izen formateatua:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "Analizatu izena automatikoki"
+
+#~ msgid "Dr."
+#~ msgstr "Dr."
+
+#~ msgid "Miss"
+#~ msgstr "Miss"
+
+#~ msgid "Mr."
+#~ msgstr "Mr."
+
+#~ msgid "Mrs."
+#~ msgstr "Mrs."
+
+#~ msgid "Ms."
+#~ msgstr "Ms."
+
+#~ msgid "Prof."
+#~ msgstr "Prof."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "II"
+#~ msgstr "II"
+
+#~ msgid "III"
+#~ msgstr "III"
+
+#~ msgid "Jr."
+#~ msgstr "Jr."
+
+#~ msgid "Sr."
+#~ msgstr "Sr."
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "Izen-abizenak"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "Erakundea"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partners name:"
+#~ msgstr "Kidearen izena:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "Editatu kontaktuaren izena"
+
+#~ msgid "Edit Name..."
+#~ msgstr "Editatu izena..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "Erakundea"
+
+#~ msgid "Tools"
+#~ msgstr "Tresnak"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Edit Address"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Protocol:"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Address:"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "IM Addresses"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "The IM Address that is set as the standard is the address that is shown "
+#~ "in main editor window."
+#~ msgstr ""
+#~ "Estandar bezala ezarri den BM helbidea editore lehio nagusian erakutsiko "
+#~ "dena da."
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<qt>Only one IM Address can be set as the standard IM Address.<br />The "
+#~ "standard IM Address is shown in the main editor window, and other "
+#~ "programs may use this as hint for deciding which IM Address to show.</qt>"
+#~ msgstr ""
+#~ "<qt>BM helbide bakar bat ezarri daiteke BM helbide estandar bezala.<br>BM "
+#~ "helbide estandarra editore lehio nagusian erakutsiko da, eta beste "
+#~ "programek hau argibide bezala erabil dezakete BM helbide bat bistaratzeko "
+#~ "garaian.</qt>"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Remove"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "&Add..."
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid ""
+#~ "<em>Note:</em> Please read the help page before adding or editing Instant "
+#~ "Messaging Addresses here."
+#~ msgstr ""
+#~ "<em>Oharra:</em> Irakurri laguntza orria hemen Berehalako Mezularitza "
+#~ "helbideak gehitu edo editatu aurretik."
+
+#~ msgid "Automatic name parsing for new addressees"
+#~ msgstr "Izen analisi automatikoa helbide berrientzat"
+
+#~ msgid "Fax"
+#~ msgstr "Fax-a"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "The script used to send a GSM SMS text message to the mobile phone"
+#~ msgstr "Mugikorrera GSM SMS testu mezuak bidaltzeko script-a"
+
+#~ msgid "Honor KDE single click"
+#~ msgstr "Errespetatu KDE-ren klik bakarra"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "Izena:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "Helb. el."
+
+#~ msgid "Store as URL"
+#~ msgstr "Gorde URL bezala"
+
+#~ msgid ""
+#~ "This field stores a sound file which contains the name of the contact to "
+#~ "clarify the pronunciation."
+#~ msgstr ""
+#~ "Eremu honek, ahoskera argitzeko, kontaktuaren izena duen soinu fitxategi "
+#~ "baten URL-a gordeko du."
+
+#~ msgid "Save only the URL to the sound file, not the whole object."
+#~ msgstr "Gorde soinu fitxategiaren URL-a bakarrik, ea ez objektu osoa."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "Banaketa zerrenda berria"
+#~ msgstr[1] "Banaketa zerrenda berria"
+
+#, fuzzy
+#~ msgid "Paste Contact"
+#~ msgid_plural "Paste %1 Contacts"
+#~ msgstr[0] "Itsatsi kontaktua"
+#~ msgstr[1] "Itsatsi %1 kontaktu"
+
+#~ msgid "Select Fields to Display"
+#~ msgstr "Hautatu ikusiko diren eremuak"
+
+#~ msgid "&Selected fields:"
+#~ msgstr "&Hautatutako eremuak:"
+
+#~ msgid ""
+#~ "The default filter will be activated whenever this view is displayed. "
+#~ "This feature allows you to configure views that only interact with "
+#~ "certain types of information based on the filter. Once the view is "
+#~ "activated, the filter can be changed at anytime."
+#~ msgstr ""
+#~ "Lehenetsitako iragazkia aktibatuko da ikuspegi hau erakusten denean. "
+#~ "Ezaugarri honek iragazkian oinarrituriko informazio mota batzuekin "
+#~ "erlazioa duten ikuspegiak konfiguratzeko aukera ematen du. Ikuspegia "
+#~ "aktibatu eta ondoren, iragazkia edozein momentutan alda daiteke."
+
+#~ msgid "No default filter"
+#~ msgstr "Lehenetsitako iragazkirik ez"
+
+#~ msgid "Use filter:"
+#~ msgstr "Erabili iragazkia:"
+
+#~ msgid "Default Filter"
+#~ msgstr "Lehenetsitako iragazkia"
+
+#~ msgid "Modify View: "
+#~ msgstr "Aldatu ikuspegia: "
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "Ezabatu ikuspegia"
+
+#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
+#~ msgstr "<qt>Ziur zaude <b>%1</b> ikuspegia ezabatu nahi duzula?</qt>"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "Ezabatzea berretsi"
+
+#, fuzzy
+#~ msgid "Import one contact into your address book?"
+#~ msgid_plural "Import %1 contacts into your address book?"
+#~ msgstr[0] " Zure helbide-liburura kontaktu bat inportatu nahi duzu?"
+#~ msgstr[1] "Zure helbide-liburura %1 kontaktu inportatu nahi dituzu?"
+
+#~ msgid "Do Not Import"
+#~ msgstr "Ez inportatu"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "Bat ere ez"
+
+#, fuzzy
+#~| msgid "Unfiled"
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "Definitu gabea"
+
+#~ msgid "Select View"
+#~ msgstr "Hautatu ikuspegia"
+
+#~ msgid "Modify View..."
+#~ msgstr "Aldatu ikuspegia..."
+
+#, fuzzy
+#~| msgid ""
+#~| "By pressing this button a dialog opens that allows you to modify the "
+#~| "view of the addressbook. There you can add or remove fields that you "
+#~| "want to be shown or hidden in the addressbook like the name for example."
+#~ msgid ""
+#~ "Pressing this button opens a dialog that allows you to modify the view of "
+#~ "the address book. From there you can add or remove fields that you want "
+#~ "to be shown or hidden in the address book, like the name for example."
+#~ msgstr ""
+#~ "Botoia sakatzean elkarrizketa-koadro bat azalduko da eta bertan helbide-"
+#~ "liburuaren ikuspegia aldatu dezakezu. Honetaz gain, helbide-liburuan "
+#~ "agerian edo ezkutuan egongo diren eremuak gehitu edo kendu ditzakezu "
+#~ "(adibidez: izena)."
+
+#~ msgid "Add View..."
+#~ msgstr "Gehitu ikuspegia..."
+
+#~ msgid ""
+#~ "You can add a new view by choosing one from the dialog that appears after "
+#~ "pressing the button. You have to give the view a name, so that you can "
+#~ "distinguish between the different views."
+#~ msgstr ""
+#~ "Ikuspegi berri bat gehitzeko, sakatu ezazu botoia eta aukera ezazu bat "
+#~ "elkarrizketa-koadrotik. Ikuspegiari izen bat eman behar diozu, beste "
+#~ "ikuspegietatik ezberdintzeko."
+
+#~ msgid "Delete View"
+#~ msgstr "Ezabatu ikuspegia"
+
+#~ msgid ""
+#~ "By pressing this button you can delete the actual view, which you have "
+#~ "added before."
+#~ msgstr ""
+#~ "Botoi hau sakatuz lehen gehitu duzun uneko ikuspegia ezabatu dezakezu."
+
+#~ msgid "Refresh View"
+#~ msgstr "Freskatu ikuspegia"
+
+#~ msgid "The view will be refreshed by pressing this button."
+#~ msgstr "Ikuspegi hau botoi hau sakatuz freskatuko da."
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "Editatu iragazkiak..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Edit the contact filters<p>You will be presented with a dialog, where "
+#~| "you can add, remove and edit filters."
+#~ msgid ""
+#~ "Edit the contact filters<p>You will be presented with a dialog, where you "
+#~ "can add, remove and edit filters.</p>"
+#~ msgstr ""
+#~ "Editatu kontaktuen iragazkiak<p>Elkarrizketa-koadro bat agertuko da. "
+#~ "Bertan iragazkiak gehitu, kendu eta editatu ditzakezu."
+
+#~ msgid "<qt>No import plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt><b>%1</b>: Ez dago inportazio plugin erabilgarririk.</qt>"
+
+#~ msgid "<qt>No export plugin available for <b>%1</b>.</qt>"
+#~ msgstr "<qt><b>%1</b>: Ez dago esportazio plugin erabilgarririk.</qt>"
+
+#~ msgid "Unable to export contacts."
+#~ msgstr "Ezin izan da kontakturik esportatu."
+
+#~ msgid "Choose Which Contacts to Export"
+#~ msgstr "Aukeratu esportatu nahi dituzun kontaktuak"
+
+#, fuzzy
+#~| msgid "Ascending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Ascending"
+#~ msgstr "Gorantz"
+
+#, fuzzy
+#~| msgid "Descending"
+#~ msgctxt "@item:inlistbox Sort order"
+#~ msgid "Descending"
+#~ msgstr "Beherantz"
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "Hautapena"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "Esportatu helbide-liburu osoa"
+
+#, fuzzy
+#~ msgid "&Selected contact"
+#~ msgid_plural "&Selected contacts (%1 selected)"
+#~ msgstr[0] " &Hautatutako kontaktua"
+#~ msgstr[1] "&Hautatutako kontaktuak (%1 hautatuta)"
+
+#~ msgid ""
+#~ "Only export contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "KAddressBook-en hautatutako kontaktuak bakarrik esportatu.\n"
+#~ "Aukera hau desgaituta dago kontakturik hautatu ez bada."
+
+#~ msgid ""
+#~ "Only export contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters"
+#~ msgstr ""
+#~ "Hautatutako iragazkiarekin bat datozen kontaktuak bakarrik esportatu.\n"
+#~ "Aukera hau desgaituta dago iragazkirik definitu ez bada."
+
+#~ msgid ""
+#~ "Only export contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "Ezkerreko zerrendan hautatutako kategoria kideak diren kontaktuak "
+#~ "bakarrik esportatu.\n"
+#~ "Aukera hau ezgaituta dago kategoriarik ez baduzu."
+
+#~ msgid "Select a filter to decide which contacts to export."
+#~ msgstr "Hautatu iragazki bat zein kontaktu esportatuko diren definitzeko."
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "Eskola"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "Laguna"
+
+#~ msgid ""
+#~ "No service provider available for map lookup!\n"
+#~ "Please add one in the configuration dialog."
+#~ msgstr ""
+#~ "Ez dago zerbitzu-hornitzailerik mapa bilaketarako.\n"
+#~ "Gehitu ezazu bat konfigurazio elkarrizketa-koadroan."
+
+#~ msgid "Crypto Settings"
+#~ msgstr "Kriptografia ezarpenak"
+
+#~ msgid "Allowed Protocols"
+#~ msgstr "Baimendutako protokoloak"
+
+#~ msgid "Preferred OpenPGP encryption key:"
+#~ msgstr "Hobetsitako OpenPGP enkriptazio giltza:"
+
+#~ msgid "Preferred S/MIME encryption certificate:"
+#~ msgstr "Hobetsitako S/MIME enkriptazio ziurtagiria:"
+
+#~ msgid "Message Preference"
+#~ msgstr "Mezu hobespenak"
+
+#~ msgid "Sign:"
+#~ msgstr "Sinatu:"
+
+#~ msgid "Encrypt:"
+#~ msgstr "Enkriptatu:"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#, fuzzy
+#~ msgctxt "Instant messaging"
+#~ msgid "Add Address"
+#~ msgstr "Editatu berehalako mezularitzaren helbidea"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "Banaketa zerrendaren editorea"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "Banaketa zerrenda berria"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Remove distribution list"
+#~ msgstr "Berrizendatu banaketa-zerrenda"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "Banaketa zerrenda berria"
+
+#~ msgid "<qt>Unable to create an address book of type <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ezin izan da <b>%1</b> motako helbide-liburu bat sortu.</qt>"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1 helbide-liburua"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "Editatu helbide-liburu iragazkiak"
+
+#~ msgid "Look & Feel"
+#~ msgstr "Itxura eta izaera"
+
+#~ msgid "Text Color"
+#~ msgstr "Testuaren kolorea"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "Goiburu, ertz eta bereizleen kolorea"
+
+#~ msgid "Header Text Color"
+#~ msgstr "Goiburuaren testuaren kolorea"
+
+#~ msgid "Highlight Color"
+#~ msgstr "Nabarmentzeko kolorea"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "Nabarmendutako testuaren kolorea"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "Orokorra"
+
+#~ msgid "Draw &separators"
+#~ msgstr "Marraztu &bereizleak"
+
+#~ msgid "Separator &width:"
+#~ msgstr "Bereizlearen &zabalera:"
+
+#~ msgid "&Padding:"
+#~ msgstr "&Betegarria:"
+
+#~ msgid "Cards"
+#~ msgstr "Txartelak"
+
+#~ msgid "Draw &borders"
+#~ msgstr "Marraztu &ertzak"
+
+#~ msgid ""
+#~ "The item margin is the distance (in pixels) between the item edge and the "
+#~ "item data. Most noticeably, incrementing the item margin will add space "
+#~ "between the focus rectangle and the item data."
+#~ msgstr ""
+#~ "Elementuaren marjina elementuaren ertzetik elementuaren datuetara dagoen "
+#~ "distantzia da (pixeletan). Elementuaren marjina handitzean, fokuaren "
+#~ "laukiaren eta elementuaren datuen arteko tartea handituko da."
+
+#~ msgid ""
+#~ "The item spacing decides the distance (in pixels) between the items and "
+#~ "anything else: the view borders, other items or column separators."
+#~ msgstr ""
+#~ "Elementuen arteko tartea elementu baten eta beste edozeren (elementu, "
+#~ "ikuspegi ertz, zutabe) arteko distanzia da (pixeletan)."
+
+#~ msgid "Sets the width of column separators"
+#~ msgstr "Ezarri zutabe bereizleen zabalera"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "&Diseinua"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "&Gaitu kolore pertsonalizatuak"
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&Koloreak"
+
+#~ msgid ""
+#~ "If custom colors is enabled, you may choose the colors for the view "
+#~ "below. Otherwise colors from your current KDE color scheme are used."
+#~ msgstr ""
+#~ "Kolore pertsonalizatuak gaituta badaude, beheko bistatik koloreak aukera "
+#~ "ditzakezu. Bestela, koloreak zure uneko KDE kolore eskematik hartuko dira."
+
+#~ msgid ""
+#~ "Double click or press RETURN on a item to select a color for the related "
+#~ "strings in the view."
+#~ msgstr ""
+#~ "Klik bikoitza egin edo sakatu RETURN elementu batean loturiko ikuspegiko "
+#~ "kateen kolorea hautatzeko."
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "&Gaitu kolore pertsonalizatua"
+
+#~ msgid "&Text font:"
+#~ msgstr "&Testuaren letra-tipoa"
+
+#~ msgid "Choose..."
+#~ msgstr "Hautatu..."
+
+#~ msgid "&Header font:"
+#~ msgstr "&Goiburuaren letra-tipoa"
+
+#~ msgid ""
+#~ "If custom fonts are enabled, you may choose which fonts to use for this "
+#~ "view below. Otherwise the default KDE font will be used, in bold style "
+#~ "for the header and normal style for the data."
+#~ msgstr ""
+#~ "Letra tipo pertsonalizatuak gaituta badaude, beheko ikuspegiko letra-"
+#~ "tipoak aukeratu ahal izango dituzu. Bestela, KDE-ko letra-tipo lehenetsia "
+#~ "erabiliko da, estilo lodia goiburuarentzat eta estilo normala datuentzat."
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Fonts"
+#~ msgstr "Hau dauka"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "Erakutsi eremu &hutsak."
+
+#~ msgid "Show field &labels"
+#~ msgstr "Erakutsi eremuen &etiketak"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "&Portaera"
+
+#~ msgid "Row Separator"
+#~ msgstr "Lerroen bereizlea"
+
+#~ msgid "Single line"
+#~ msgstr "Lerro bakarra"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "Bat ere ez"
+
+#~ msgid "Enable background image:"
+#~ msgstr "Gaitu atzeko planoaren irudia"
+
+#~ msgid "Enable contact tooltips"
+#~ msgstr "Gaitu kontaktuen argibideak"
+
+#~ msgid "Show instant messaging presence"
+#~ msgstr "Erakutsi berehalako mezularitzaren presentzia"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1:\n"
+
+#~ msgid "Card"
+#~ msgstr "Txartela"
+
+#~ msgid "Rolodex style cards represent contacts."
+#~ msgstr "Rolodex estiloko txartelek kontaktuak adierazten dituzte."
+
+#~ msgid "Icon"
+#~ msgstr "Elementua"
+
+#~ msgid "Icons represent contacts. Very simple view."
+#~ msgstr "Elementuek kontaktuak adierazten dituzte. Oso ikuspegi simplea."
+
+#~ msgid "Table"
+#~ msgstr "Taula"
+
+#~ msgid ""
+#~ "A listing of contacts in a table. Each cell of the table holds a field of "
+#~ "the contact."
+#~ msgstr ""
+#~ "Kontaktuen zerrenda taula batean. Taularen gelaxka bakoitzak kontaktuaren "
+#~ "eremu bat adierazten du."
+
+#~ msgid "Presence"
+#~ msgstr "Presentzia"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "Esportatu laster-marken menua..."
+
+#~ msgid "AddressBook"
+#~ msgstr "Helbide liburua"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "Hasi honako lerroan:"
+
+#, fuzzy
+#~| msgid "Ignore duplicate delimiters"
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Baztertu mugatzaile bikoiztuak"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[asmatu]"
+
+#~ msgid "The contacts have been exported successfully."
+#~ msgstr "Kontaktuak ongi esportatu dira."
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "Inportatu Eudora helbide-liburua..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "Eudora Light helbide-liburua (*.txt)"
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "Inportatu LDIF helbide-liburua"
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "Esportatu telefono mugikorrera..."
+
+#~ msgid "Failed to initialize the gnokii library."
+#~ msgstr "Errorea gnokii liburutegia hasieratzen."
+
+#~ msgid "Gnokii is not yet configured."
+#~ msgstr "Gnokii ez dago konfiguratuta oraindik."
+
+#~ msgid ""
+#~ "Gnokii reports a 'Lock File Error'.\n"
+#~ " Please exit all other running instances of gnokii, check if you have "
+#~ "write permissions in the /var/lock directory and try again."
+#~ msgstr ""
+#~ "Gnokii-k fitxategi blokeoaren errorea adierazi du.\n"
+#~ "Gnokii-ren  beste instantziak itxi itzazu, egiazta ezazu ez idazteko "
+#~ "baimenik duzun /var/lock direktorioan eta saia zaitez berriro."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Mobile Phone interface initialization failed.<br><br>The "
+#~| "returned error message was:<br><b>%1</b><br><br>You might try to run "
+#~| "\"gnokii --identify\" on the command line to check any cable/transport "
+#~| "issues and to verify if your gnokii configuration is correct.</center></"
+#~| "qt>"
+#~ msgid ""
+#~ "<qt><center>Mobile Phone interface initialization failed.<br /><br />The "
+#~ "returned error message was:<br /><b>%1</b><br /><br />You might try to "
+#~ "run \"gnokii --identify\" on the command line to check any cable/"
+#~ "transport issues and to verify if your gnokii configuration is correct.</"
+#~ "center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Telefono mugikorraren interfazearen hasieraketak huts egin du."
+#~ "<br><br>Bueltatutako errore mezua:<br><b>%1</b><br><br>Kable edo garraio "
+#~ "arazoak dauden ikusteko eta gnokii-ren konfigurazioa zuzena den ikusteko "
+#~ "saia zaitez \"gnokii --identify\" komandoa komando-lerroan exekutatzen.</"
+#~ "center></qt>"
+
+#~ msgid "Unknown"
+#~ msgstr "Ezezaguna"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Fabrikatzailea"
+
+#~ msgid "Phone model"
+#~ msgstr "Telefonoren modeloa"
+
+#~ msgid "Revision"
+#~ msgstr "Errebisioa"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "Phonebook status"
+#~ msgstr "Helbide-liburuaren egoera"
+
+#, fuzzy
+#~| msgid "%1 out of %2 contacts used"
+#~ msgid "%2 out of 1 contact used"
+#~ msgid_plural "%2 out of %1 contacts used"
+#~ msgstr[0] "Kontaktuen erabilera: %1/%2"
+#~ msgstr[1] "Kontaktuen erabilera: %1/%2"
+
+#~ msgid "internal memory"
+#~ msgstr "barneko memoria"
+
+#~ msgid "SIM-card memory"
+#~ msgstr "SIM-txartelaren memoria"
+
+#~ msgid "unknown memory"
+#~ msgstr "memoria ezezaguna"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Importing <b>1</b> contact from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Importing <b>%1</b> contacts from <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br/>%3</qt>"
+#~ msgstr[0] ""
+#~ "Telefono mugikorreko <b>%2</b> kontaktuetatik <b>%1</b> inportatzen."
+#~ "<br><br>%3</qt>"
+#~ msgstr[1] ""
+#~ "Telefono mugikorreko <b>%2</b> kontaktuetatik <b>%1</b> inportatzen."
+#~ "<br><br>%3</qt>"
+
+#~ msgid ""
+#~ "Gnokii interface is not available.\n"
+#~ "Please ask your distributor to add gnokii at compile time."
+#~ msgstr ""
+#~ "Gnokii interfazea ez dago erabilgarri.\n"
+#~ "Eskatu iezaiozu zure banatzaileari gnokii gehitu dezala banaketan."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start importing the personal contacts.<br><br>Please "
+#~| "note that if your Mobile Phone is not properly connected the following "
+#~| "detection phase might take up to two minutes, during which KAddressbook "
+#~| "will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start importing the personal contacts.<br /><br /"
+#~ ">Please note that if your Mobile Phone is not properly connected the "
+#~ "following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Konekta ezazu zure telefono mugikorra zure konputagailura eta sakatu "
+#~ "ezazu <b>Jarraitu</b> kontaktu pertsonalen inportazioa hasteko."
+#~ "<br><br>Kontuan izan zure telefono mugikorra ongi konektatua ez badago "
+#~ "detekzio faseak bi minutu iraun ditzakeela. Denbora horretan KAddressBook-"
+#~ "ek ez du erantzungo.</qt>"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "Inportatu telefono mugikorra"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><center>Establishing connection to the Mobile Phone.<br><br>Please "
+#~| "wait...</center></qt>"
+#~ msgid ""
+#~ "<qt><center>Establishing connection to the Mobile Phone.<br /><br /"
+#~ ">Please wait...</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Telefono mugikorrera konexioa ezartzen.<br><br>Itxaron...</"
+#~ "center></qt>"
+
+#~ msgid "&Stop Import"
+#~ msgstr "&Gelditu inportazioa"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Please connect your Mobile Phone to your computer and press "
+#~| "<b>Continue</b> to start exporting the selected personal contacts."
+#~| "<br><br>Please note that if your Mobile Phone is not properly connected "
+#~| "the following detection phase might take up to two minutes, during which "
+#~| "KAddressbook will behave unresponsively.</qt>"
+#~ msgid ""
+#~ "<qt>Please connect your Mobile Phone to your computer and press "
+#~ "<b>Continue</b> to start exporting the selected personal contacts.<br /"
+#~ "><br />Please note that if your Mobile Phone is not properly connected "
+#~ "the following detection phase might take up to two minutes, during which "
+#~ "KAddressBook will be unresponsive.</qt>"
+#~ msgstr ""
+#~ "<qt>Konekta ezazu zure telefono mugikorra zure konputagailuan eta sakatu "
+#~ "ezazu <b>Jarraitu</b> kontaktu pertsonalen esportazioa hasteko."
+#~ "<br><br>Kontuan izan zure telefono mugikorra ongi konektatua ez badago "
+#~ "detekzio faseak bi minutu iraun ditzakeela. Denbora horretan KAddressBook-"
+#~ "ek ez du erantzungo.</qt>"
+
+#~ msgid "Mobile Phone Export"
+#~ msgstr "Telefono mugikorra esportatu"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~| "current mobile phonebook or should they <b>replace</b> all currently "
+#~| "existing phonebook entries ?<br><br>Please note, that in case you choose "
+#~| "to replace the phonebook entries, every contact in your phone will be "
+#~| "deleted and only the newly exported contacts will be available from "
+#~| "inside your phone.</qt>"
+#~ msgid ""
+#~ "<qt>Do you want the selected contacts to be <b>appended</b> to the "
+#~ "current mobile phonebook or should they <b>replace</b> all currently "
+#~ "existing phonebook entries ?<br /><br />Please note, that in case you "
+#~ "choose to replace the phonebook entries, every contact in your phone will "
+#~ "be deleted and only the newly exported contacts will be available from "
+#~ "inside your phone.</qt>"
+#~ msgstr ""
+#~ "<qt>Hautatutako kontaktuak uneko mugikorraren helbide-liburuari "
+#~ "<b>erantsi</b> nahi al dizkiozu edo uneko helbide-liburuko sarrera "
+#~ "guztiak <b>ordeztu</b> nahi dituzu?<br><br>Kontuan hartu, sarrerak "
+#~ "ordeztea aukeratzen baduzu, zure mugikorreko kontaktu guztiak kenduko "
+#~ "direla eta esportatu berriak bakarrik geldituko dira telefonoaren barnean."
+#~ "</qt>"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "Esportatu telefono mugikorrera"
+
+#~ msgid "&Append to Current Phonebook"
+#~ msgstr "&Erantsi uneko helbide-liburuari"
+
+#~ msgid "&Replace Current Phonebook with New Contacts"
+#~ msgstr "&Ordeztu uneko helbide-liburua kontaktu berriekin"
+
+#~ msgid "&Stop Export"
+#~ msgstr "&Gelditu esportazioa"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~| "<br><br>%3</qt>"
+#~ msgid ""
+#~ "<qt>Exporting <b>1</b> contact to the <b>%2</b> of the Mobile Phone.<br /"
+#~ "><br />%3</qt>"
+#~ msgid_plural ""
+#~ "<qt>Exporting <b>%1</b> contacts to the <b>%2</b> of the Mobile Phone."
+#~ "<br /><br />%3</qt>"
+#~ msgstr[0] ""
+#~ "<qt><b>%1</b> kontaktu esportatzen mugikorraren <b>%2</b> -ra.<br><br>%3</"
+#~ "qt>"
+#~ msgstr[1] ""
+#~ "<qt><b>%1</b> kontaktu esportatzen mugikorraren <b>%2</b> -ra.<br><br>%3</"
+#~ "qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><center>All selected contacts have been successfully copied to the "
+#~ "Mobile Phone.<br /><br />Please wait until all remaining orphaned "
+#~ "contacts from the Mobile Phone have been deleted.</center></qt>"
+#~ msgstr ""
+#~ "<qt><center>Hautatutako kontaktuak ongi kopiatu dira telefono mugikorrera."
+#~ "<br><br>Itxaron erlaziorik gabe gelditu diren kontaktu guztiak kentzen "
+#~ "diren arte.</center></qt>"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "&Gelditu kentze prozesua"
+
+#~ msgid "Export to phone finished."
+#~ msgstr "Esportazioa amaitu da."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~| "Possible Reasons for this problem could be:<br><ul><li>The contacts "
+#~| "contain more information per entry than the phone can store.</"
+#~| "li><li>Your phone does not allow to store multiple addresses, emails, "
+#~| "homepages, ...</li><li>other storage size related problems.</li></ul>To "
+#~| "avoid those kind of problems in the future please reduce the amount of "
+#~| "different fields in the above contacts.</qt>"
+#~ msgid ""
+#~ "<qt>The following contacts could not be exported to the Mobile Phone. "
+#~ "Possible Reasons for this problem could be:<br /><ul><li>The contacts "
+#~ "contain more information per entry than the phone can store.</li><li>Your "
+#~ "phone does not allow to store multiple addresses, emails, homepages, ...</"
+#~ "li><li>other storage size related problems.</li></ul>To avoid those kind "
+#~ "of problems in the future please reduce the amount of different fields in "
+#~ "the above contacts.</qt>"
+#~ msgstr ""
+#~ "<qt>Ondoko kontaktuak ezin izan dira esportatu telefono mugikorrera. "
+#~ "Hauek izan daitezke arrazoiak:<br><ul><li>Kontaktuen sarrerek telefonoak "
+#~ "jasan dezakeen baina informazio gehiago dute.</li><li>Zure mugikorrak ez "
+#~ "du helbide, helbide elektroniko, web orri... bat baina gehiago jasaten.</"
+#~ "li><li>Biltegiarekin erlazionatutako beste arazoren bat.</li></ul> Arazo "
+#~ "hauek ekiditeko, murriztu ezazu eremuen kopurua kontaktuetan.</qt>"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>Ezin izan da <b>%1</b> KDE 2 helbide-liburua aurkitu.</qt>"
+
+#~ msgid "Override previously imported entries?"
+#~ msgstr "Gainidatzi aurrez inportatutako sarrerak?"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "Inportatu KDE 2 helbide-liburua"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "Inportatu Opera helbide-liburuak..."
+
+#~ msgid "Import MS Exchange Personal Address Book (.PAB)"
+#~ msgstr "Inportatu MS Exchange Personal helbide-liburuak (.PAB)"
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "Ezin da %1 ireki irakurketarako"
+
+#~ msgid "%1 has no PAB id that I know of, cannot convert this"
+#~ msgstr "%1-k ez du nik dakidan PAB id-rik, ezin dut bihurtu"
+
+#~ msgid "MS Exchange Personal Address Book Files (*.pab)"
+#~ msgstr "MS Exchange Personal helbide-liburuak fitxategiak (.pab)"
+
+#~ msgid ""
+#~ "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
+#~ msgstr ""
+#~ "<qt>Ezin izan da <b>%1</b> MS Exchange Personal helbide-liburua aurkitu.</"
+#~ "qt>"

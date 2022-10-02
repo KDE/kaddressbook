@@ -1,0 +1,3970 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+  [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE">
+  <!ENTITY docbook-reference SYSTEM "docbook-reference.docbook">
+  ]>
+
+<book id="kaddressbook" lang="&language;">
+
+<bookinfo>
+
+<title
+>Руководство пользователя &kaddressbook;</title>
+    
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>Мария</firstname
+><surname
+>Шикунова</surname
+><affiliation
+><address
+><email
+>translation-team@basealt.ru</email
+></address
+></affiliation
+><contrib
+>Перевод на русский язык</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Олеся</firstname
+><surname
+>Герасименко</surname
+><affiliation
+><address
+><email
+>translation-team@basealt.ru</email
+></address
+></affiliation
+><contrib
+>Редактирование перевода на русский язык</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-07-20</date>
+<releaseinfo
+>5.10.3 (Приложения KDE 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; — это часть пакета программ управления личной информацией (<glossterm linkend="gloss-pim"
+>&PIM;</glossterm
+>) &kde;. &kaddressbook; — это в первую очередь диспетчер адресов электронной почты, однако это приложение также позволяет хранить данные о телефонных номерах и веб-сайтах друзей и знакомых, ссылки на их социальные сети и многое другое. Это универсальное приложение, в котором доступны для просмотра все способы связи с друзьями и знакомыми. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>Электронная почта</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Введение</title>
+
+  <para
+>&kaddressbook; — это часть пакета программ управления личной информацией (&PIM;) &kde;. &kaddressbook; — это в первую очередь диспетчер адресов электронной почты, однако это приложение также позволяет хранить данные о телефонных номерах и веб-сайтах друзей и знакомых, ссылки на их социальные сети и многое другое. Это универсальное приложение, в котором доступны для просмотра все способы связи с друзьями и знакомыми. </para>
+  
+  <screenshot id="screenshot-primary">
+  <screeninfo
+>Основное окно интерфейса пользователя &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook00.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Основное окно интерфейса пользователя &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Основное окно &kaddressbook;. В верхней части окна находится панель меню, ниже — панель инструментов, а под этими панелями расположены три области с данными о контактах и адресных книгах.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>&kaddressbook; интегрирован в структуру <glossterm linkend="gloss-kmail"
+>&kmail;</glossterm
+> (почтовый клиент &kde;). Если контакт был добавлен в &kaddressbook;, будет возможно адресовать ему письмо по электронной почте, просто набрав часть его имени в строке адреса. Либо, если было получено письмо от нового человека, возможно сразу же добавить соответствующий контакт в адресную книгу всего за несколько щелчков мышью. </para>
+  
+  <para
+>&kaddressbook; также предоставляет возможность хранить (на жёстком диске или на облачном ресурсе) несколько отдельных списков контактов в самых разных популярных форматах списков адресов. Приложение также поддерживает импорт и экспорт контактов в форматах <glossterm linkend="gloss-csv"
+><filename class="extension"
+>.csv</filename
+></glossterm
+> (формат Comma Separated Values), <glossterm linkend="gloss-ldif"
+><filename class="extension"
+>.ldif</filename
+></glossterm
+> (формат обмена данными <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+>) и <glossterm linkend="gloss-vcf"
+><filename class="extension"
+>.vcf</filename
+></glossterm
+> (формат Virtual Business Card). </para>
+
+<!--TODO Insert additional information about problem reporting here -->
+</chapter>
+
+<chapter id="getting-started">
+<title
+>Начало работы</title>
+
+  <para
+>Ниже представлено изображение основного окна &kaddressbook; без контактных данных. Рекомендуется начать с создания адресной книги. Обратите внимание, что адресная книга «Личные контакты» создаётся автоматически по умолчанию. </para>
+ 
+  <screenshot id="screenshot-blank">
+      <screeninfo
+>«Пустое» окно &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook10.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>«Пустое» окно &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+        <para
+>«Пустое» окно &kaddressbook; до создания дополнительных адресных книг. Адресная книга «Личные контакты» автоматически создаётся при первом запуске &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect1 id="how-to-add-a-new-address-book">
+  <title
+>Добавление адресной книги</title>
+  
+  <procedure id="procedure-add-a-new-addressbook">
+    
+  <step id="new-addressbook-dialog-step"
+><para
+>Чтобы добавить новую адресную книгу, воспользуйтесь пунктом меню <menuchoice
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+>Создать&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Добавить адресную книгу...</guimenuitem
+></menuchoice
+>. Откроется диалог. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-an-address-book">
+  <screeninfo
+>Диалог добавления новой адресной книги в &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook20.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог добавления новой адресной книги в &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Диалог добавления адресной книги в &kaddressbook;. Поддерживаются пять облачных сервисов и три способа локального хранения.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+  
+  <step id="select-a-format-step"
+><para
+>Выберите один из доступных вариантов. Некоторые из них связаны с коллекциями данных, хранящимися в облаке: источник данных совместной работы <glossterm linkend="gloss-dav"
+><acronym
+>DAV</acronym
+></glossterm
+> (Distributed Authoring and Versioning, RFC4918), контакты Google (учётная запись gmail.com), сервер совместной работы <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> (на базе <glossterm linkend="gloss-imap"
+>&IMAP;</glossterm
+>), сервер &Microsoft; Exchange <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> (веб-службы Exchange на серверах с программным обеспечением MS) и <glossterm linkend="gloss-group"
+>Open-Xchange&nbsp;Groupware&nbsp;Server</glossterm
+> (альтернатива MS EWS с открытым исходным кодом). Если один или несколько облачных сервисов из этого списка уже используются, их данные возможно интегрировать в &kaddressbook; посредством выбора нужного облачного сервиса и ввода своих учётных данных.</para>
+  
+  <para
+>Остальные варианты, представленные в диалоге («Личные контакты», «Каталог с файлами vCard» и «Файл vCard») создают наборы данных, которые сохраняются на локальном запоминающем устройстве. В каждом из этих вариантов используется один и тот же формат данных (<filename class="extension"
+>.vcf</filename
+>, формат Virtual Card), разница лишь в том, в каком именно каталоге будут храниться данные. При выборе варианта «Личные контакты» или «Каталог с файлами vCard» для каждого сохранённого контакта будет создаваться отдельный файл; при выборе варианта «Файл vCard» все данные будут сохранены в один файл. Проще всего начать с доступной по умолчанию адресной книги «Личные контакты». Другие адресные книги могут и не понадобиться, пока не потребуется сохранить конкретные контакты отдельным списком. </para
+></step>
+  
+  <step id="add-a-cloud-based-service-step"
+><para
+>Сделав выбор, нажмите кнопку «ОК». Если был выбран один из вариантов <glossterm linkend="gloss-cloud"
+>облачного сервиса</glossterm
+>, появится небольшой диалог для установки связи между <glossterm linkend="gloss-akonadi"
+>&akonadi;</glossterm
+> (служба хранения данных &PIM; для настольных компьютеров) и выбранным облачным сервером. На снимке экрана в качестве примера представлен диалог для учётной записи Google (gmail.com). Для других облачных сервисов диалоги будут немного другие, но похожие. </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service">
+  <screeninfo
+>Диалог привязки gmail к &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook30.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог привязки gmail к &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Диалог привязки gmail к &kaddressbook;. Чтобы начать настройку, нажмите кнопку «Добавить» (появится ещё один диалог). После проверки введённых данных этот диалог откроется снова. При необходимости возможно включить периодическое обновление локальной кэшированной копии списка контактов, установив соответствующий флажок. Для завершения нажмите кнопку &nbsp;<guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step2">
+  <screeninfo
+>Диалог привязки gmail к &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook31.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог привязки gmail к &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Второй снимок диалога привязки gmail к &kaddressbook;. Введите адрес своей учётной записи gmail.com и нажмите кнопку <guibutton
+>&nbsp;Далее&nbsp;</guibutton
+>. Будет предложено ввести пароль от этой учётной записи.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step3">
+  <screeninfo
+>Диалог привязки gmail к &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook32.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог привязки gmail к &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Третий снимок диалога привязки gmail к &kaddressbook;. Данные учётной записи приняты сервером Google. Прочитайте уведомление о конфиденциальности, нажмите кнопку <guibutton
+>&nbsp;Разрешить&nbsp;</guibutton
+>, а затем кнопку <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> в диалоге привязки учётной записи gmail к &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Введите учётные данные для входа, как показано выше, и нажмите кнопку «ОК». Теперь облачный список контактов интегрирован в &kaddressbook;. </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-completed">
+  <screeninfo
+>Окно &kaddressbook; после добавления учётной записи gmail.com.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook33.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Окно &kaddressbook; после добавления учётной записи gmail.com.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Окно &kaddressbook; после добавления учётной записи gmail.com. Теперь возможно управлять списком gmail-контактов с помощью &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>После указания &kaddressbook; в качестве надёжного ресурса с его помощью будет возможно просматривать и редактировать контакты из учётной записи gmail. Также останется возможность делать это и в веб-браузере. </para
+> 
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  </step>
+   
+  <step id="add-a-local-addressbook-step"
+><para
+>Если на <link linkend="select-a-format-step"
+>втором шаге </link
+> добавления адресной книги был выбран один из вариантов локальной адресной книги, появится другой диалог. </para>
+      
+  <para>
+  <screenshot id="screenshot-add-a-personal-addressbook">
+      <screeninfo
+>Диалог добавления адресной книги из «Личных контактов» в &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook34.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог добавления адресной книги из «Личных контактов» в &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Диалог добавления адресной книги из «Личных контактов» в &kaddressbook;. Здесь возможно указать каталог, в котором будут храниться данные, а также включить или отключить режим «только для чтения». В большинстве случаев подходят установленные по умолчанию параметры (как на вышеприведённом снимке).</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Внесите все требуемые изменения в диалоге добавления адресной книги из «Личных контактов» и нажмите кнопку <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Новая адресная книга появится в главном окне &kaddressbook;. </para>
+  
+  <para>
+  <screenshot id="screenshot-personal-addressbook-has-been-added">
+      <screeninfo
+>Главное окно &kaddressbook; с пустой адресной книгой «Личные контакты».</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook35.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Главное окно &kaddressbook; с пустой адресной книгой «Личные контакты»</phrase>
+    </textobject>
+    <caption>
+      <para
+>Главное окно &kaddressbook; после повторного создания адресной книги «Личные контакты».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step
+>    
+  
+  </procedure>
+  </sect1>
+  
+  <sect1 id="how-to-add-a-new-contact">
+  <title
+>Добавление контакта</title
+>    
+  
+  <procedure id="procedure-add-a-new-contact">
+    
+  <step id="new-contact-dialog-step-1"
+><para
+>Чтобы открыть диалог добавления нового контакта, нажмите кнопку <guibutton
+>&nbsp;&plus;&nbsp;Создать контакт...&nbsp;</guibutton
+> на панели инструментов.</para>
+      
+  <para>
+  <screenshot id="screenshot-new-contact-dialog">
+      <screeninfo
+>Диалог «Создание контакта» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог «Создание контакта» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+    <para
+>Диалог «Создание контакта» &kaddressbook; после нажатия кнопки <guibutton
+>&nbsp;&plus;&nbsp;Создать контакт...&nbsp;</guibutton
+> на панели инструментов.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  </step>
+  
+  <step id="procedure-new-contact-data-items"
+><para
+>Диалог «Создание контакта» позволяет добавить различные типы данных. Дополнительные данные возможно ввести на вкладках «Адреса», «Работа», «Личное», «Примечания», «Нестандартные поля» и «Параметры шифрования». Более подробные сведения о них доступны в <link linkend="editing-contact-data"
+>четвёртой главе</link
+> данного руководства пользователя. Сейчас же рассмотрим подробнее элементы вкладки «Контакт».</para>
+  </step
+>    
+  
+  <step id="procedure-entering-basic-new-contact-data"
+><para
+>Если создано более одной адресной книги, воспользуйтесь раскрывающимся списком под названием «Добавить в», чтобы выбрать набор данных, в который следует добавить новый контакт. Затем введите имя контакта в поле ввода «Имя» и адрес электронной почты в поле ввода «Адреса электронной почты». Если нужно указать специальные параметры форматирования для данных имени этого контакта, нажмите кнопку <guibutton
+>&nbsp;...&nbsp;</guibutton
+>, расположенную справа от поля ввода «Имя», и заполните необходимые поля. Чтобы добавить несколько адресов электронной почты для одного контакта, нажмите кнопку <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+>, расположенную справа от поля ввода «Адреса электронной почты»: будет добавлено ещё одно поле ввода электронной почты. Чтобы удалить адрес электронной почты, нажмите соответствующую кнопку (<guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>). </para
+></step
+>    
+  
+  <step id="procedure-additional-new-contact-data"
+><para
+>Для каждого контакта из адресной книги возможно добавить ник, один или несколько телефонных номеров, различные службы мгновенных сообщений и несколько веб-сайтов, как описано в <link linkend="editing-contact-data"
+>четвёртой главе</link
+> данного руководства пользователя. Также доступны опции «Показывать письма от этого контакта в формате» и «Разрешить ссылки на содержимое в сети в письмах HTML», позволяющие настроить способ обработки получаемых в &kmail; писем от контакта. Более подробные сведения доступны в <link linkend="integration-with-other-kde-programs"
+>третьей главе</link
+> данного руководства пользователя. </para
+></step>
+
+  <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
+  
+  </procedure>
+  </sect1>
+  
+</chapter>
+
+<chapter id="integration-with-other-kde-programs">
+<title
+>Интеграция с другими приложениями &kde;</title>
+  
+  <sect1 id="integration-overview">
+  <title
+>Интеграция с &kmail;</title>
+  
+  <para
+>Так как &kaddressbook; — неотъемлемая часть пакета программ управления личной информацией (&PIM;) &kde; — представляет собой главное хранилище данных о контактах, он был интегрирован в &kmail; и &korganizer;. Далее представлен краткий обзор интерфейса между &kaddressbook; и этими двумя приложениями. </para
+>    
+
+  <sect2 id="starting-kaddressbook-from-kmail-tools">
+  <title
+>Запуск &kaddressbook; с помощью меню &kmail; «Сервис»</title>
+  
+  <para>
+  <screenshot id="screenshot-kmail-tools-menu">
+      <screeninfo
+>Пункт меню &kmail; <menuchoice
+><guimenu
+>Сервис</guimenu
+><guimenuitem
+>Адресная книга</guimenuitem
+></menuchoice
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook50.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Пункт меню &kmail; <menuchoice
+><guimenu
+>Сервис</guimenu
+><guimenuitem
+>Адресная книга</guimenuitem
+></menuchoice
+>.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Запуск &kaddressbook; с помощью пункта меню &kmail; <menuchoice
+><guimenu
+>Сервис</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Адресная книга</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Этот интерфейс — воплощение простоты. Чтобы просмотреть запись контакта или обновить её во время чтения или создания сообщений электронной почты в &kmail;, воспользуйтесь пунктом меню <menuchoice
+><guimenu
+>Сервис</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Адресная книга</guimenuitem
+> </menuchoice
+>: приложение &kaddressbook; запустится автоматически. Это позволит получить быстрый доступ к контактным данным, которые требуется просмотреть или отредактировать.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="autocompletion-feature-on-new-email">
+  <title
+>Вызов &kaddressbook; из окна создания письма &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-autocompletion-feature">
+      <screeninfo
+>Диалог автодополнения имени контакта в окне создания письма &kmail;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook51.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог автодополнения имени контакта в окне создания письма &kmail;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Использование функции &kaddressbook; «автодополнение контактов» в окне создания письма &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>При создании нового сообщения электронной почты &kmail; помогает найти полный адрес адресата путём отображения списка возможных совпадений, составленного на основе данных из &kaddressbook; и архивов сообщений электронной почты. Чтобы добавить нужный адрес, просто выберите соответствующий вариант в списке.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2  id="recipient-selection-dialog">
+  <title
+>Диалог выбора получателей &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-recipient-selection">
+      <screeninfo
+>Диалог выбора получателей в окне создания письма &kmail;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook52.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог выбора получателей в окне создания письма &kmail;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Выбор нескольких адресов в диалоге выбора получателей в окне создания письма&nbsp;&kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>При добавлении нескольких получателей в &kmail; доступен удобный способ выбора нескольких адресов, сохранённых в &kaddressbook;. Достаточно просто нажать кнопку <guibutton
+>&nbsp;Выбрать...&nbsp;</guibutton
+>, чтобы появился раскрывающийся список со всеми контактами из выбранной адресной книги. Прокрутите список (или воспользуйтесь удобным полем «Искать»), выберите нужного получателя и нажмите кнопку «Добавить получателя», «Добавить копию» или «Добавить скрытую копию», чтобы добавить контакт в список получателей нового письма. Нажмите кнопку «Добавить адрес для ответа», чтобы присвоить этому адресу в письме метку «Адрес для ответа».</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="new-contact-creation-interface">
+  <title
+>Интерфейс добавления нового контакта &kmail;</title>
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation">
+      <screeninfo
+>Интерфейс добавления нового контакта в окне просмотра сообщения &kmail;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook53.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Интерфейс добавления нового контакта в окне просмотра сообщения &kmail;</phrase>
+    </textobject>
+    <caption>
+        <para
+>Вызов диалога добавления нового контакта в окне просмотра сообщения &kmail;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>При получении письма с незнакомого адреса электронной почты добавить соответствующий контакт в адресную книгу с помощью &kmail; не составляет труда. Просто щёлкните правой кнопкой мыши по этому адресу и в открывшемся контекстном меню выберите пункт <guimenuitem
+>&nbsp;&plus; Добавить в адресную книгу&nbsp;</guimenuitem
+>. Если этот адрес принадлежит человеку, уже занесённому в адресную книгу, чтобы добавить к его данным новый адрес, выберите пункт <guimenuitem
+>&nbsp;&plus; Добавить в существующий контакт&nbsp;</guimenuitem
+>. Это действие откроет диалог, который направит &kaddressbook; в область, где следует ввести новый адрес электронной почты.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step2">
+      <screeninfo
+>Диалог создания нового контакта</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook54.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог создания нового контакта</phrase>
+    </textobject>
+    <caption>
+        <para
+>Выбор адресной книги, в которой следует сохранить новый контакт.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Будет предложено указать, в какую адресную книгу следует добавить новый контакт.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step3">
+      <screeninfo
+>Диалог создания нового контакта</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook55.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог создания нового контакта</phrase>
+    </textobject>
+    <caption>
+        <para
+>Диалог, в котором предлагается открыть для редактирования только что сохранённый контакт.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Пользователю также будет предложено <link linkend="editing-contact-data"
+>отредактировать только что созданный контакт</link
+>. Чтобы сразу же добавить больше данных в созданную запись, нажмите кнопку <guibutton
+>&nbsp;✔&nbsp;Да&nbsp;</guibutton
+>.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  </sect2>
+    
+  </sect1>
+  
+  <sect1 id="korganizer-overview">
+  <title
+>Взаимодействие &kaddressbook; с &korganizer;</title>
+  
+  <para
+>&korganizer;, программа &kde; для планирования и управления календарём, позволяет приглашать людей на собрания по электронной почте и предоставляет для этого два интерфейса, связанных с &kaddressbook;.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb --> 
+  
+  <para>
+  <screenshot id="screenshot-inviting-one-attendee">
+      <screeninfo
+>Вкладка &korganizer; «Участники»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook60.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка &korganizer; «Участники»</phrase>
+    </textobject>
+    <caption>
+        <para
+>Добавление одного участника к запланированному событию в&nbsp;&korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Первое окно аналогично окну функции <link linkend="autocompletion-feature-on-new-email"
+>«автодополнение контактов»</link
+> в &kmail;: просто начните вводить имя человека, которого требуется пригласить, и в окне отобразится список возможных совпадений.</para
+>  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+  
+  <para>
+  <screenshot id="screenshot-inviting-multiple-attendees">
+      <screeninfo
+>Вкладка &korganizer; «Участники»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook61.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка участников &korganizer;.</phrase>
+    </textobject>
+    <caption>
+        <para
+>Добавление нескольких участников к запланированному событию в&nbsp;&korganizer;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para
+>   
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>Второе окно аналогично диалогу <link linkend="recipient-selection-dialog"
+>выбора получателя</link
+> в &kmail;: при нажатии кнопки <guibutton
+>&nbsp;Выбрать участников...&nbsp;</guibutton
+> появится доступный для поиска список контактов из всех адресных книг.</para>
+  
+  </sect1>
+  
+</chapter>
+
+<chapter id="editing-contact-data">
+<title
+>Добавление или редактирование контактных данных</title>
+
+  <sect1 id="edit-basic-info">
+  <title
+>Основы</title>
+  
+  <para
+>При первом нажатии кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Создать контакт...&nbsp;&nbsp;</guibutton
+> на панели инструментов &kaddressbook; появится изображённое ниже окно (при нажатии кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Изменить контакт...&nbsp;&nbsp;</guibutton
+> появится аналогичное окно, отличающееся только отсутствием поля с раскрывающимся списком «Добавить в» в верхней части окна).</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog-2">
+      <screeninfo
+>Диалог «Создание контакта» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог «Создание контакта» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Диалог «Создание контакта» &kaddressbook; после нажатия кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Создать контакт&nbsp;&nbsp;</guibutton
+> на панели инструментов.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <sect2 id="edit-contact-tab">
+  <title
+>Вкладка «Контакт»</title>
+  
+  <para
+>Ранее (в разделе <link linkend="how-to-add-a-new-contact"
+>«Добавление контакта»</link
+>) уже было рассмотрено, как основные данные, такие как имя и адрес электронной почты, вводятся при создании нового контакта. Ниже представлено описание множества способов использования остальных полей для ввода данных на вкладке «Контакт» в диалоге <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Создать контакт...&nbsp;&nbsp;</guibutton
+>.</para>
+  
+  <variablelist>
+      
+    <varlistentry
+><term
+>Телефонные номера</term
+><listitem
+><para
+>Для контакта возможно указать один или несколько телефонных номеров. Чтобы добавить или удалить дополнительные поля ввода, воспользуйтесь кнопками <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> или <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>. С помощью раскрывающегося списка <guibutton
+>&nbsp;Домашний телефон<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> возможно указать тип номера телефона (например, «Домашний телефон», «Служебный телефон», «Мобильный телефон»,<glossterm linkend="gloss-isdn"
+> «<acronym
+>ISDN</acronym
+>»</glossterm
+>, <glossterm linkend="gloss-pcs"
+>«<acronym
+>PCS</acronym
+>»</glossterm
+> и так далее).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Мгновенные сообщения</term
+><listitem
+><para
+>Для контакта возможно указать один или несколько профилей служб мгновенных сообщений. Чтобы добавить или удалить поля ввода соответствующих данных, воспользуйтесь кнопками <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> и <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>. С помощью раскрывающегося списка <guibutton
+>&nbsp;Выбрать...<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> возможно указать тип службы мгновенных сообщений: <glossterm linkend="gloss-aim"
+>AIM,</glossterm
+> Facebook, <glossterm linkend="gloss-gadu-gadu"
+>Gadu-Gadu</glossterm
+>, Google Talk, <glossterm linkend="gloss-gpws"
+>GroupWise</glossterm
+>, <glossterm linkend="gloss-icq"
+><acronym
+>ICQ</acronym
+></glossterm
+>, <glossterm linkend="gloss-irc"
+>&irc;</glossterm
+>, <glossterm linkend="gloss-jabber"
+>Jabber</glossterm
+>, <glossterm linkend="gloss-mnwhl"
+>Meanwhile</glossterm
+>, <glossterm linkend="gloss-sms"
+><acronym
+>SMS</acronym
+></glossterm
+>, Skype, Twitter и Yahoo (MSN Messenger по-прежнему находится в списке служб мгновенных сообщений, однако он не поддерживается с 2014 года).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Веб-сайты</term
+><listitem
+><para
+>Для контакта возможно указать один или несколько адресов веб-сайтов. Чтобы добавить или удалить дополнительные поля ввода, воспользуйтесь кнопками <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> или <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+>. Раскрывающийся список <guibutton
+>&nbsp;Выбрать... ...<inlinemediaobject
+><imageobject
+> <imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> позволяет установить один из трёх видов веб-адресов: «Домашний», «Служебный» и «Другой».</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Метки</term
+><listitem
+><para
+>Для контакта возможно указать одну или несколько собственных меток. Чтобы создать и настроить метку, нажмите кнопку <guibutton
+>&nbsp;...&nbsp;</guibutton
+>, расположенную рядом с полем ввода меток.</para
+></listitem>
+    </varlistentry>
+      
+  </variablelist
+> 
+  
+  <para>
+  <screenshot id="screenshot-add-tags-dialog">
+      <screeninfo
+>Диалог «Редактор меток» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook71.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалог «Редактор меток» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Диалог «Редактор меток» &kaddressbook; после нажатия кнопки <guibutton
+>&nbsp;...&nbsp;</guibutton
+>, расположенной рядом с полем ввода меток.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+    <varlistentry
+><term
+>Метки (продолжение)</term
+><listitem
+><para
+>Поле ввода данных и расположенная слева от него кнопка <guibutton
+>&nbsp;Создать метку&nbsp;</guibutton
+> позволяют создать пользовательский список меток. Выберите метки, связанные с контактом, из списка, отображающегося в диалоге конфигурации. Чтобы присвоить контакту выбранные метки, нажмите кнопку <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Блог</term
+><listitem
+><para
+>В этом поле ввода возможно указать &URL;-адрес личного веб-журнала или блога этого контакта.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Показывать письма от этого контакта в формате</term
+><listitem
+><para
+>Этот раскрывающийся список позволяет переопределить значение соответствующего параметра отображения сообщений в меню настройки &kmail; <guibutton
+>&nbsp;Безопасность&nbsp;</guibutton
+>. Чтобы оставить значение, установленное в &kmail;, выберите вариант «По умолчанию». Чтобы изменить поведение &kmail;, установленное по умолчанию, при получении письма от этого контакта, выберите вариант «Простой текст» или «HTML».</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Разрешить ссылки на содержимое в сети в письмах в HTML</term
+><listitem
+><para
+>Эта опция позволяет не учитывать значение соответствующего параметра отображения сообщений, установленного в меню настройки &kmail; <guibutton
+>&nbsp;Безопасность&nbsp;</guibutton
+>, при получении письма от этого контакта.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+></term
+><listitem
+><para
+>Нажмите эту кнопку, чтобы сохранить сделанные изменения. Эта кнопка работает одинаково на всех семи вкладках диалога <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Создать контакт...&nbsp;&nbsp;</guibutton
+></para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;⦸&nbsp;Отмена&nbsp;</guibutton
+></term
+><listitem
+><para
+>Нажмите эту кнопку, чтобы выйти из диалога <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Создать контакт...&nbsp;&nbsp;</guibutton
+> без применения изменений. Эта кнопка работает одинаково на всех семи вкладках диалога создания контакта.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-location-tab">
+  <title
+>Вкладка «Адреса»</title>
+  
+  <para
+>Чтобы указать для контакта один или несколько адресов обычной почты, используйте поля ввода данных на вкладке «Адреса».</para>
+      
+  <para>
+  <screenshot id="screenshot-location-tab">
+      <screeninfo
+>Вкладка «Адреса» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook72.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Адреса» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Адреса» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+ 
+  <variablelist>
+    <varlistentry
+><term
+>Раскрывающийся список</term
+><listitem
+><para
+>Этот список категорий позволяет определить тип каждого почтового адреса создаваемого или редактируемого контакта. Доступные варианты: «Домашний адрес», «Служебный адрес», «Международный адрес» и так далее.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Улица / Абонентский ящик / Почтовый индекс / Населённый пункт / Область</term
+><listitem
+><para
+>Эти поля позволяют в свободной форме указать данные почтового адреса: улицу, абонентский ящик, почтовый индекс, населённый пункт и область.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Страна</term
+><listitem
+><para
+>Этот раскрывающийся список позволяет указать страну.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Это основной адрес</term
+><listitem
+><para
+>Установите этот флажок, чтобы указать, что адрес является основным и будет использоваться по умолчанию.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+><guibutton
+>&nbsp;Добавить адрес&nbsp;</guibutton
+></term
+><listitem
+><para
+>Закончив ввод данных, нажмите эту кнопку, чтобы добавить новый адрес к списку сохранённых адресов, отображаемых в большой области в правой части диалога.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Значок <inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> в области отображения адресов</term>
+    <listitem
+><para
+>Этот значок позволяет отредактировать адрес.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry
+><term
+>Значок <inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+> в области отображения адресов</term>
+    <listitem
+><para
+>Этот значок позволяет удалить адрес.</para
+></listitem>
+    </varlistentry>
+  
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  </sect2>
+  
+  <sect2 id="edit-business-tab">
+  <title
+>Вкладки «Работа», «Личное» и «Примечания»</title>
+  
+  <para
+>Следующие три вкладки диалога «Создание контакта» заполнить ещё проще, чем вкладку «Адреса». Эти вкладки позволяют сохранить, соответственно, некоторую информацию о деловых и профессиональных связях этого человека, некоторые личные данные и различные заметки в произвольной форме.</para>
+  
+  <para>
+  <screenshot id="screenshot-business-tab">
+      <screeninfo
+>Вкладка «Работа» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook73.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Работа» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Работа» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Вкладка «Работа» позволяет добавлять дополнительную информацию о профессиональных и деловых связях человека. Все поля ввода допускают указание данных в свободной форме; в каждом из них возможно вводить любые текстовые данные. Маленькая кнопка <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> откроет диалог поиска файла, позволяющего указать занятое время человека.</para>
+  
+  <para
+>Обратите внимание, что рабочий телефон своего делового партнёра следует вводить на вкладке «<link linkend="edit-contact-tab"
+>Контакт</link
+>», а служебный адрес — на вкладке «Адреса», как было описано <link linkend="edit-location-tab"
+>ранее</link
+>.</para
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-personal-tab">
+      <screeninfo
+>Вкладка «Личное» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook74.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Личное» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Личное» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>На этой вкладке возможно записать некоторые личные сведения: например, дату рождения человека, годовщину свадьбы или имя супруга (супруги). Чтобы добавить эти данные, нажмите соответствующую кнопку (например, <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="view-calendar-birthday.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>). </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-notes-tab">
+      <screeninfo
+>Вкладка «Примечания» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook75.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Примечания» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Примечания» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Вкладка «Примечания» представляет собой область ввода текста в произвольной форме, позволяющую ввести любые дополнительные данные контакта.</para>
+      
+  </sect2
+>    
+
+  </sect1
+>  
+
+  <sect1 id="edit-advanced-info">
+  <title
+>Дополнительные параметры</title>
+  
+  <para
+>&kaddressbook; предоставляет несколько более сложных функций хранения данных в дополнение к описанным в предыдущем разделе стандартным функциям.</para>
+
+  <sect2 id="edit-custom-tab">
+  <title
+>Вкладка «Нестандартные поля»</title>
+
+  <para
+>Если широкого спектра элементов данных, использующихся в &kaddressbook; по умолчанию, недостаточно, воспользуйтесь диалогом «Нестандартные поля» для создания и заполнения необходимого количества дополнительных полей данных.</para>
+  
+  <para>
+  <screenshot id="screenshot-custom-tab">
+      <screeninfo
+>Вкладка «Нестандартные поля» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook76.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Нестандартные поля» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Нестандартные поля» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Это экспериментальная функция, которая ещё не реализована, поэтому она не рассматривается в данном руководстве.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="edit-crypto-tab">
+  <title
+>Вкладка «Параметры шифрования»</title>
+  
+  <para
+>&kaddressbook; также предоставляет возможность связать криптографические ключи с каждым человеком в списке рассылки, чтобы обеспечить конфиденциальность отправляемых данных.</para>
+  
+  <para>
+  <screenshot id="screenshot-crypto-tab">
+      <screeninfo
+>Вкладка «Параметры шифрования» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook77.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вкладка «Параметры шифрования» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Вкладка «Параметры шифрования» &kaddressbook;, часть диалога «Создание контакта».</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+      
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+<variablelist>
+    <varlistentry
+><term
+>Разрешённые протоколы</term
+><listitem
+><para
+>Позволяет выбрать, какой режим шифрования следует использовать при отправке сообщения этому контакту: <glossterm linkend="gloss-inline-pgp"
+>Встроенный OpenPGP (устаревший)</glossterm
+>, <glossterm linkend="gloss-open-pgp"
+>OpenPGP/&MIME;</glossterm
+>, <glossterm linkend="gloss-mime"
+><acronym
+>S/MIME</acronym
+></glossterm
+> или <glossterm linkend="gloss-opaque"
+>Непрозрачный <acronym
+>S/MIME</acronym
+></glossterm
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Предпочтительный ключ шифрования OpenPGP</term
+><listitem
+><para
+>Если было выбрано шифрование с помощью OpenPGP, воспользуйтесь кнопкой <guibutton
+>&nbsp;Изменить...&nbsp;</guibutton
+>, чтобы выбрать предпочтительный ключ шифрования Open <glossterm linkend="gloss-pgp"
+>PGP</glossterm
+>. Чтобы удалить выбранный ранее ключ, нажмите кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Предпочтительный сертификат <acronym
+>S/MIME</acronym
+></term>
+    <listitem
+><para
+>Воспользуйтесь кнопкой <guibutton
+>&nbsp;Изменить...&nbsp;</guibutton
+>, чтобы выбрать предпочтительный сертификат, если используется проверенный ключ. Чтобы удалить выбранный ранее ключ, нажмите кнопку <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Параметры письма / Подпись</term
+><listitem
+><para
+>Этот раскрывающийся список позволяет указать, следует ли добавлять к сообщениям для этого контакта криптографическую подпись: Никогда не подписывать / Подписывать всегда / Подписывать, если возможно / Спрашивать.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>Параметры письма / Шифрование</term
+><listitem
+><para
+>Этот раскрывающийся список позволяет указать, следует ли шифровать сообщения для этого контакта выбранным протоколом и ключом: Не шифровать / Шифровать всегда / Шифровать, если возможно / Спрашивать.</para
+></listitem>
+    </varlistentry>
+    
+</variablelist
+>  
+  
+  </sect2>
+
+  </sect1>
+  
+</chapter>
+
+<chapter id="commands">
+<title
+>Список команд</title>
+    
+  <sect1 id="menu-bar-items">
+  <title
+>Панель меню</title>
+  
+  <para
+>Ниже приведено краткое описание семи меню, расположенных на панели меню &kaddressbook;.</para>
+  
+
+  <sect2 id="the-file-menu">
+  <title
+>Меню «Файл»</title>
+  
+  <para>
+  <screenshot id="screenshot-file-menu">
+      <screeninfo
+>Меню «Файл» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook80.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Файл» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Файл» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Файл</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Меню <menuchoice
+><guimenu
+>Файл</guimenu
+></menuchoice
+> предоставляет доступ к шести основным функциям, три из которых имеют дополнительные параметры.</para
+> 
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+>Создать&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Создать контакт...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню дублирует кнопку <guibutton
+>&nbsp; &plus;&nbsp;Создать контакт...&nbsp;</guibutton
+> на панели меню. Более подробные сведения доступны во <link linkend="how-to-add-a-new-contact"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+>Создать&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Создать группу контактов...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает диалог для создания новой группы контактов или списка рассылки. Более подробные сведения доступны в <link linkend="file-new-group"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Создать&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Добавить адресную книгу...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает диалог для добавления адресной книги, который подробно описан во <link linkend="how-to-add-a-new-address-book"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Импорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Импорт с LDAP-сервера...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет импортировать данные с <acronym
+>LDAP</acronym
+>-сервера. Перед использованием этот сервер необходимо настроить. Более подробные сведения доступны в <link linkend="configure-ldap-server"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Импорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Импорт CSV-файла...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет импортировать данные о контактах в файле формата <acronym
+>csv</acronym
+>. Вызывает диалог, в котором возможно связать каждое поле во входном файле с именованным полем записи из внутреннего хранилища &kaddressbook;. Более подробные сведения доступны в <link linkend="import-csv-data"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Импорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Импорт vCard...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню упрощает импорт данных в формате <acronym
+>vcf</acronym
+> (vCard). Поддерживаются все три версии vCard. Более подробные сведения о форматах vCard доступны на <ulink url="https://ru.wikipedia.org/wiki/VCard"
+>этом веб-сайте</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Экспорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Экспорт в CSV-файл...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет экспортировать выбранные контактные данные в файл формата <acronym
+>csv</acronym
+>. В выходной записи имеется 47 полей. Список полей представлен в <link linkend="export-csv-data"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Экспорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Экспорт в файл vCard 4.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет экспортировать выбранные контактные данные в файл <acronym
+>vCard 4.0</acronym
+>. Более подробные сведения о vCard доступны в <ulink url="https://ru.wikipedia.org/wiki/VCard"
+>этой статье википедии</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Экспорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Экспорт в файл vCard 3.0...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет экспортировать выбранные контактные данные в файл <acronym
+>vCard 3.0</acronym
+>. Этот формат аналогичен формату <acronym
+>vCard 4.0</acronym
+>.</para
+></listitem>
+    </varlistentry
+>    
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Экспорт&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Экспорт в файл vCard 2.1...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет экспортировать выбранные контактные данные в файл <acronym
+>vCard 2.1</acronym
+>. Этот формат аналогичен формату <acronym
+>vCard 3.0</acronym
+>.</para
+></listitem>
+    </varlistentry>
+ 
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Печать...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает диалог выбора принтера. Чтобы настроить список имён и формат печати, воспользуйтесь пунктом меню <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Предварительный просмотр</guisubmenu
+></menuchoice
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Предварительный просмотр</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает диалог предварительного просмотра, который позволяет выбрать контакты для печати, указать формат печати и установить внешний вид напечатанных данных. Более подробные сведения доступны в <link linkend="file-print-preview"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+><guimenu
+>Файл</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-exit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Выход</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Закрывает приложение &kaddressbook;.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2
+>  
+
+  <sect2 id="the-edit-menu">
+  <title
+>Меню «Правка»</title>
+  
+  <para>
+  <screenshot id="screenshot-edit-menu">
+      <screeninfo
+>Меню «Правка» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook81.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Правка» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Правка» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Правка</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Меню <menuchoice
+><guimenu
+>Правка</guimenu
+></menuchoice
+> предоставляет доступ к восьми основным функциям, две из которых имеют дополнительные параметры.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Изменить контакт...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню практически дублирует кнопку <guibutton
+>&nbsp;&plus;&nbsp;Создать контакт...&nbsp;</guibutton
+> на панели инструментов; различие в том, что этот пункт меню позволяет отредактировать существующий контакт вместо создания нового. Более подробные сведения доступны во <link linkend="how-to-add-a-new-contact"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+></shortcut
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-cut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Вырезать контакт</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>«Вырезает» выбранный контакт. Копия этого контакта в формате <glossterm linkend="gloss-vcf"
+><acronym
+>vCard 3.0</acronym
+></glossterm
+> помещается в буфер обмена. Операция «Вырезать» будет завершена после вставки контакта из буфера обмена в другое место.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Копировать контакт</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Помещает копию контакта в буфер обмена, позволяя вставить контакт в другое место.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-paste.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Вставить</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>«Вставляет» вырезанный или скопированный контакт в указанное место. Контакт может находиться в той же адресной книге, из которой выполнялись операции «Вырезать» или «Копировать», или в другой адресной книге. Так как вырезанные или скопированные данные помещаются в системный буфер обмена, эти данные возможно вставить не только в пределах &kaddressbook; (например, в текстовый редактор или как файл <acronym
+>vCard 3.0</acronym
+> в домашнюю папку).</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Копировать контакт в &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(варианты)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Позволяет выполнить операции копирования и вставки одним щелчком левой кнопкой мыши. Список отображаемых расположений зависит от того, сколько адресных книг было создано.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Переместить контакт в &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(варианты)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Аналогично пункту меню «Копировать контакт в» за исключением того, что это действие не позволяет выполнить операции копирования и вставки одним щелчком левой кнопкой мыши.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Удалить контакт</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Удаляет выбранный контакт из текущей адресной книги.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Правка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Удалить адресную книгу</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Удаляет текущую адресную книгу. Пользуйтесь этой командой с осторожностью, потому что есть риск потерять некоторые данные. Теоретически этот пункт меню просто удаляет символическую ссылку между &kaddressbook; и соответствующим файлом <acronym
+>vCard</acronym
+> или каталогом (или гиперссылку на <glossterm linkend="gloss-cloud"
+>облачный сервис</glossterm
+>), а сами данные остаются без изменений. Однако всё же рекомендуется сделать резервную копию адресной книги перед её удалением.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-view-menu"
+> 
+  <title
+>Меню «Вид»</title>
+  
+  <para>
+  <screenshot id="screenshot-view-menu">
+      <screeninfo
+>Меню «Вид» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Вид» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Вид» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Вид</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Меню <menuchoice
+><guimenu
+>Вид</guimenu
+></menuchoice
+> предоставляет доступ к четырём основным функциям и одной экспериментальной, которая пока не работает.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Вид</guimenu
+><guisubmenu
+>Оформления &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню должен открывать диалог «Оформления», но он не работает надлежащим образом с версии 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>1</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Вид</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Простой (одна колонка)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Переключает с режима трёх колонок, установленного по умолчанию, на режим с одной колонкой. Более подробные сведения доступны в <link linkend="view-change-columns"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+        
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>2</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Вид</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Две колонки</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Переключает с режима трёх колонок, установленного по умолчанию, на режим с двумя колонками. Более подробные сведения доступны в <link linkend="view-change-columns"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>3</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Вид</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Три колонки</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Возвращает в режим трёх колонок, установленный по умолчанию.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Вид</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Показать QR-коды</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Установите этот флажок для отображения контактной информации в виде QR-кода. Чтобы скрыть QR-коды, снимите флажок.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-action-menu"
+> 
+  <title
+>Меню «Действия»</title>
+  
+  <para>
+  <screenshot id="screenshot-action-menu">
+      <screeninfo
+>Меню «Действия» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook83.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Действия» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Действия» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Действия</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Меню <menuchoice
+><guimenu
+>Действия</guimenu
+></menuchoice
+> предоставляет доступ к двум функциям передачи данных.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Действия</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Отправить в формате электронных визиток...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню аналогичен следующему за ним пункту «Написать письмо...» за исключением того, что после выбора нескольких контактов (выбирайте контакты левой кнопкой мыши, удерживая нажатой клавишу &Ctrl;), откроется окно создания сообщения с пустым списком адресатов и прикреплёнными файлами (выбранные контакты в формате vCard 3.0). Это упрощает обмен выбранной информацией из адресной книги с друзьями и деловыми партнёрами.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Действия</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Написать письмо...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню предоставляет альтернативный способ создания нового списка получателей. Удерживая нажатой клавишу &Ctrl; (или &Shift;), с помощью левой кнопки мыши выберите контакты, которые следует включить в список получателей. Затем выберите пункт меню «Написать письмо...»; откроется окно &kmail; для создания письма. Все выбранные контакты будут указаны как адресаты в поле «Кому».</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-tools-menu"
+> 
+  <title
+>Меню «Сервис»</title>
+  
+  <para>
+  <screenshot id="screenshot-tools-menu">
+      <screeninfo
+>Меню «Сервис» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook84.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Сервис» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Сервис» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Сервис</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Меню <menuchoice
+><guimenu
+>Сервис</guimenu
+></menuchoice
+> предоставляет доступ к двум функциям управления данными.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Сервис</guimenu
+><guisubmenu
+>Объединить контакты...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот инструмент позволяет объединить содержимое двух или более записей &kaddressbook;. Чтобы воспользоваться этой функцией, сначала выделите как минимум два контакта (удерживайте нажатой клавишу &Ctrl; или &Shift; и выберите нужные контакты левой кнопкой мыши). Появится диалоговое окно, в котором следует выбрать контакты для объединения и расположение, в котором они будут сохранены. Чтобы завершить операцию, нажмите кнопку «Объединить».</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Сервис</guimenu
+><guisubmenu
+>Найти повторные записи контактов...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот инструмент позволяет найти дубликаты записей в одной или нескольких адресных книгах и (если требуется) объединить их в одну запись.</para
+></listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-settings-menu"
+> 
+  <title
+>Меню «Настройка»</title>
+  
+  <para>
+  <screenshot id="screenshot-settings-menu">
+      <screeninfo
+>Меню «Настройка» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook85.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Настройка» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Настройка» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Настройка</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+    
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  <para
+>Меню <menuchoice
+><guimenu
+>Настройка</guimenu
+></menuchoice
+> предоставляет доступ к пяти параметрам для настройки работы &kaddressbook;.</para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb --> 
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+><inlinemediaobject
+><imageobject
+><imagedata fileref="show-menu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Показать меню</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет показать или скрыть панель меню.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Показать панель инструментов</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет показать или скрыть панель инструментов.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Комбинации клавиш...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет настроить комбинации клавиш, доступные в &kaddressbook;. Более подробные сведения доступны в <link linkend="settings-configure-shortcuts"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Панели инструментов...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет настроить содержимое панели инструментов &kaddressbook;. Более подробные сведения доступны в <link linkend="settings-configure-toolbars"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Настроить &kaddressbook;...</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>,</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет настроить несколько дополнительных параметров &kaddressbook;. Более подробные сведения доступны в <link linkend="settings-configure-kaddressbook"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+ 
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+  
+  <sect2 id="the-help-menu"
+> 
+  <title
+>Меню «Справка»</title>
+  
+  <para>
+  <screenshot id="screenshot-help-menu">
+      <screeninfo
+>Меню «Справка» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook86.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Меню «Справка» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Меню «Справка» &kaddressbook; после нажатия кнопки <menuchoice
+><guimenu
+>Справка</guimenu
+></menuchoice
+> на панели меню.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Меню <menuchoice
+><guimenu
+>Справка</guimenu
+></menuchoice
+> предоставляет доступ к семи пунктам со справочной информацией.</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="system-help.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Руководство пользователя &kaddressbook;</guisubmenu
+></menuchoice
+> <keycombo action="press"
+><keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Этот пункт меню отображает «Руководство пользователя &kaddressbook;» с помощью вспомогательной программы &khelpcenter;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="help-about.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Что это?</guisubmenu
+></menuchoice
+><keycombo action="simul"
+>&Shift; <keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>Это встроенный справочный инструмент &kaddressbook;. Выберите этот пункт меню, а затем — один из четырёх первых элементов на панели инструментов. Отобразится краткое описание функции этого элемента.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="tools-report-bug.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Сообщить об ошибке...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню открывает диалог, позволяющий сообщить об ошибке с помощью главной страницы отслеживания ошибок &kde;, <ulink url="https://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-x-ms-shortcut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Сделать пожертвование</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает в браузере <ulink url="https://kde.org/community/donations/?app=kaddressbook"
+>веб-страницу</ulink
+>, на которой возможно пожертвовать деньги в поддержку &kde;. Принимаются евро, доллары, рубли, фунты стерлингов, иены, юани, песо и так далее.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-language.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Сменить язык интерфейса приложения...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню позволяет сменить язык, используемый для обозначения различных пунктов меню и встроенных справочных экранов. Чтобы изменения вступили в силу, необходимо перезапустить &kaddressbook;.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="kaddressbook.png" format="PNG"/></imageobject
+></inlinemediaobject
+>О программе &kaddressbook;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню предоставляет информацию о текущей версии &kaddressbook;, библиотеках, использованных для сборки, и об авторах программы.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Справка</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="KDE_logo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>О &kde;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню показывает информацию о &kde;.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  </sect2>
+  
+  </sect1>
+  
+  <sect1 id="tool-bar-items">
+  <title
+>Панель инструментов</title>
+  
+  <para
+>На панели инструментов &kaddressbook; доступны пять функций: «Создать контакт...», «Создать группу контактов...», «Изменить контакт...», «Поиск...» и фильтр по категориям. Ниже представлен снимок экрана, на котором показано расположение этих функций. (Так выглядит панель инструментов &kaddressbook;, установленная по умолчанию. Панель возможно настроить на свой вкус с помощью меню <link linkend="the-settings-menu"
+>«Настройка»</link
+>.)</para>
+  
+  <para>
+  <screenshot id="screenshot-tool-bar">
+      <screeninfo
+>Панель инструментов &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook87.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Панель инструментов &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Стандартная панель инструментов &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Создать контакт...</guibutton
+></term>
+    <listitem
+><para
+>Эта кнопка вызывает диалог «Создание контакта», описанный ранее в <link linkend="edit-basic-info"
+>четвёртой главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Создать группу контактов...</guibutton
+></term>
+    <listitem
+><para
+>Эта кнопка вызывает диалог «Создание группы контактов», описанный в <link linkend="file-new-group"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Изменить контакт...</guibutton
+></term>
+    <listitem
+><para
+>Эта кнопка вызывает диалог «Изменение контакта», описанный ранее в <link linkend="edit-basic-info"
+>четвёртой главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+>[ Поиск...&nbsp;<keycombo action="simul"
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ]</term>
+    <listitem
+><para
+>Этот инструмент производит поиск по всем контактам в выбранных адресных книгах по мере набора текста в поле. Нажатие комбинации клавиш <keycombo
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> поместит курсор в поле «Поиск...». Обратите внимание, что этот инструмент производит поиск по всем типам данных, введённых в поле; поисковой запрос «21» отобразит контакты, где цифра 21 используется, например, в адресе электронной почты, почтовом индексе, номере телефона или дате рождения.</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-search">
+      <screeninfo
+>Функция «Поиск» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook91.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Функция «Поиск» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Использование функции «Поиск» &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+>[ (выбраны все)&nbsp;<inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+>]</term>
+    <listitem
+><para
+>Этот инструмент предоставляет возможность отфильтровать контакты на основе категорий. Две основные категории — это «записи без меток» и «группы». Больше категорий появится после создания и присваивания контактам собственных меток (более подробные сведения доступны в разделе <link linkend="edit-basic-info"
+>«Создание контакта»</link
+> четвёртой главы данного руководства пользователя). Нажатие кнопки <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> переключит фильтр в режим «ничего не выбрано»; нажатие кнопки <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> переключит фильтр в режим «выбраны все».</para
+></listitem>
+    </varlistentry>
+    
+  </variablelist
+>  
+  
+  <para>
+  <screenshot id="toolbar-filter">
+      <screeninfo
+>Функция «Фильтр» &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook92.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Функция «Фильтр» &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Использование функции «Фильтр» &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+     
+  </sect1>
+  
+  <sect1 id="context-menus">
+  <title
+>Контекстные меню</title>
+  
+  <para
+>Чтобы появилось контекстное меню, щёлкните правой кнопкой мыши в любом месте внутри основной области текста. Конкретное отображаемое меню зависит как от панели, на которой производился щелчок правой кнопкой мыши, так и от конкретного выбранного элемента данных, если таковой имеется.</para>
+  
+  <sect2 id="the-addressbook-panel">
+  <title
+>Контекстное меню адресной книги</title>
+  
+  <para>
+  <screenshot id="addressbook-context-menu">
+      <screeninfo
+>Контекстное меню адресной книги &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook93.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Контекстное меню адресной книги &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Контекстное меню адресной книги &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Добавить папку в адресную книгу...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню не работает должным образом с версии 5.10.3.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Удалить папку адресной книги</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню не работает должным образом с версии 5.10.3.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Добавить адресную книгу...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню вызывает диалог «Добавление адресной книги», описанный ранее во <link linkend="how-to-add-a-new-address-book"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Удалить адресную книгу</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню удаляет выбранную адресную книгу. Будьте внимательны!</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>F5</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Обновить папку адресной книги</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню обновляет контактные данные, связанные с выбранной адресной книгой.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Свойства папки...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню отображает сводную информацию о выбранной адресной книге.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Свойства адресной книги...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню отображает сводную информацию о выбранной адресной книге.</para
+></listitem>
+    </varlistentry>
+      
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" 
+    format="PNG"/></imageobject
+></inlinemediaobject
+>Подписка на сервере...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Назначение данного пункта контекстного меню неизвестно, этот пункт постоянно неактивен.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-contactslist-panel">
+  <title
+>Контекстное меню списка контактов</title>
+  
+  <para>
+  <screenshot id="contactlist-context-menu">
+      <screeninfo
+>Контекстное меню списка контактов &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook94.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Контекстное меню списка контактов &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Контекстное меню списка контактов &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <variablelist>
+  
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Создать контакт...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню дублирует кнопку <guibutton
+>&nbsp;&plus;&nbsp;Создать контакт...&nbsp;</guibutton
+> на панели меню. Более подробные сведения доступны во <link linkend="how-to-add-a-new-contact"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry
+> 
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Создать группу контактов...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Выбор этого пункта контекстного меню открывает диалог, позволяющий создать новую группу или список рассылки. Более подробные сведения доступны в &nbsp;<link linkend="file-new-group"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Изменить контакт...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт меню дублирует кнопку <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Изменить контакт...</guibutton
+> на панели меню. Более подробные сведения доступны во <link linkend="how-to-add-a-new-contact"
+>второй главе</link
+> данного руководства пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Экспорт&nbsp;&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню позволяет экспортировать выбранные контактные данные в файл формата <acronym
+>vCard</acronym
+> или <acronym
+>csv</acronym
+>.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Копировать контакт в&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню позволяет скопировать выбранный контакт (или несколько) в указанное расположение. Список доступных расположений зависит от количества созданных адресных книг.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Переместить контакт в&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Функция, аналогичная описанному выше пункту меню «Копировать контакт в» за исключением того, что это действие удаляет исходные данные, а не создаёт их копию.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Печать...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Этот пункт контекстного меню открывает диалог выбора принтера. Чтобы задать список имён и формат печати, воспользуйтесь пунктом меню <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Предварительный просмотр</guisubmenu
+></menuchoice
+> (его описание приводится далее).</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+>    
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>Предварительный просмотр</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Открывает диалог предварительного просмотра, который позволяет выбрать контакты для печати, указать формат печати и настроить внешний вид напечатанных данных. Более подробные сведения доступны в <link linkend="file-print-preview"
+>приложении</link
+> к данному руководству пользователя.</para
+></listitem>
+    </varlistentry>
+    
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Удалить контакт</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>Удаляет выбранный контакт (или несколько) из текущей адресной книги.</para
+></listitem>
+    </varlistentry>
+        
+  </variablelist
+>    
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+  
+  </sect2>
+  
+  <sect2 id="the-individualcontact-panel">
+  <title
+>Контекстное меню отдельного контакта</title>
+  
+  <para>
+  <screenshot id="individualcontact-context-menu">
+      <screeninfo
+>Контекстное меню отдельного контакта &kaddressbook;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook95.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Контекстное меню отдельного контакта &kaddressbook;</phrase>
+    </textobject>
+    <caption>
+      <para
+>Контекстное меню отдельного контакта &kaddressbook;.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Заголовок в контекстном меню зависит от выбранного элемента. В любом случае, функция одна и та же: выбранный элемент данных копируется в буфер обмена.</para>
+      
+  </sect2>
+  
+  </sect1>
+  
+</chapter>
+
+<glossary>
+   
+<!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
+    
+  <glossentry id="gloss-aim">
+  <glossterm
+><acronym
+>AIM</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от America Online Instant Messaging — программа мгновенного обмена сообщениями от компании AOL (America Online). Ранее AIM занимала лидирующие позиции на конкурентном рынке обмена мгновенными сообщениями, но позже потеряла свои позиции, поскольку сама компания AOL стала менее популярной. Официальный сервис был закрыт в 2017 году, но поклонники продолжают поддерживать работу AIM на <ulink url="http://iwarg.ddns.net/aim/"
+>этом веб-сайте</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-akonadi">
+  <glossterm
+>&akonadi;</glossterm>
+  <glossdef
+><para
+>Расширяемая служба хранения данных и метаданных &PIM; для настольных компьютеров, обеспечивающая одновременный доступ для чтения, записи и запросов. &akonadi; возможно управлять с помощью команды akonadictl: чтобы получить более подробную информацию, введите «akonadictl --help» в окне терминала.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-cloud">
+  <glossterm
+>Облачный сервис</glossterm>
+  <glossdef
+><para
+>Любой поставщик ресурсов хранения и обработки данных, находящийся в некотором «облаке» серверов, доступ к которому осуществляется через Интернет.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-csv">
+  <glossterm
+>.csv</glossterm>
+  <glossdef
+><para
+>Аббревиатура от Comma Separated Values (значения, разделённые запятыми) — текстовый документ, в котором каждая строка или запись разделена на поля определённым символом-разделителем, обычно запятой. Формат <filename class="extension"
+>.csv</filename
+> был создан на заре развития компьютеров. Он до сих пор широко используется, главным образом потому, что концептуально очень прост.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-dav">
+  <glossterm
+><acronym
+>DAV</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Distributed Authoring and Versioning — протокол управления версиями; существует несколько «типов», таких как WebDAV (для создания страниц в Интернете), GroupDAV (для группового программного обеспечения, программного обеспечения с открытым исходным кодом, создаваемого группой разработчиков) и CalDAV (управление календарём для групп), каждый из которых помогает клиентам с открытым исходным кодом подключаться к серверам с открытым исходным кодом.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-digest">
+  <glossterm
+><acronym
+>DIGEST-MD5</acronym
+></glossterm>
+  <glossdef
+><para
+>Способ аутентификации, используемый для обеспечения безопасного обмена данными между клиентом и интернет-службой. Он получил своё название от функции хеширования MD5, используемой для кодирования учётных данных клиента. Более подробные сведения доступны в <ulink url="https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82-%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F"
+>этой статье википедии</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ews">
+  <glossterm
+><acronym
+>EWS</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Exchange Web Services (веб-службы Exchange) — набор проприетарных протоколов обмена личными данными между интернет-серверами и конечными пользователями или клиентами, принадлежащий компании &Microsoft;. <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> предоставляет похожий функционал.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gadu-gadu">
+  <glossterm
+>Gadu-Gadu</glossterm>
+  <glossdef
+><para
+>Приложение для обмена мгновенными сообщениями, разработанное и ранее широко использовавшееся в Польше.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gmx">
+  <glossterm
+><acronym
+>GMX</acronym
+></glossterm>
+  <glossdef
+><para
+>Global Mail eXchange (в Германии известен как Global Message eXchange) — бесплатный почтовый сервис, поддерживаемый за счёт рекламы. Более подробные сведения (на немецком и английском языках) доступны на <ulink url="https://www.gmx.net/"
+>этом</ulink
+> и <ulink url="https://www.gmx.com/"
+>этом</ulink
+> веб-сайте.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gravatar">
+  <glossterm
+>Gravatar</glossterm>
+  <glossdef
+><para
+>Сокращение от Globally Recognized Avatar («глобально распознаваемый аватар») — графическое изображение, привязанное к электронному адресу пользователя WordPress. Обычно отображается как изображение размером 80х80. Так как многие люди пользуются программным обеспечением WordPress, Gravatar доступен на большом количестве ресурсов.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-gpws">
+  <glossterm
+>GroupWise</glossterm>
+  <glossdef
+><para
+>Служба обмена мгновенными сообщениями, разработанная Micro Focus International plc, компанией-разработчиком программного обеспечения, расположенной в Ньюбери, Беркшир, Англия. Чтобы получить копию этой программы, перейдите на <ulink url="https://mail.dcbe.org:8300/"
+>этот веб-сайт</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gssapi">
+  <glossterm
+><acronym
+>GSSAPI</acronym
+></glossterm>
+  <glossdef
+><para
+>Generic Security Service Application Program Interface («общий программный интерфейс сервисов безопасности») — своего рода «словарь» для большинства используемых в Интернете сервисов безопасности. Он состоит из библиотеки программ и набора стандартных вызовов подпрограмм, которые позволяют интернет-клиенту определять, какой именно протокол безопасности использует интернет-сервис, а затем соответствующим образом кодировать и расшифровать учётные данные пользователя.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-icq">
+  <glossterm
+><acronym
+>ICQ</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>ICQ</acronym
+> — это не совсем аббревиатура: это набор букв, который на английском языке произносится как «I Seek You», то есть «Я ищу тебя». Это одна из оригинальных платформ обмена мгновенными сообщениями, впервые появившаяся в сети в 1996 году. Программа доступна для загрузки <ulink url="https://icq.com/desktop/ru?#linux"
+>здесь</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-imap">
+  <glossterm
+>&IMAP;</glossterm>
+  <glossdef
+><para
+>Internet Message Access Protocol — широко распространённый способ управления сообщениями электронной почты. &IMAP; обслуживает и синхронизирует локальные и удалённые экземпляры набора сообщений электронной почты. Другими словами, локально сохранённые данные для учётной записи &IMAP; являются зеркалом писем на сервере.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-inline-pgp">
+  <glossterm
+>Inline OpenPGP</glossterm>
+  <glossdef
+><para
+>Протокол шифрования, в котором подписи PGP встраиваются непосредственно в тело сообщения электронной почты. Этот протокол не рекомендуется использовать из-за технических трудностей, вызванных неизбирательным использованием символов, отличных от ASCII, в сообщениях электронной почты с обычным текстом.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-irc">
+  <glossterm
+>&irc;</glossterm>
+  <glossdef
+><para
+>Аббревиатура от Internet Relay Chat — служба обмена мгновенными сообщениями, восходящая к финскому предшественнику Всемирной паутины под названием OuluBox (1988). &irc; стабильно теряла пользователей в течение нескольких лет из-за возросшей популярности Facebook. Одна из крупных оставшихся сетей называется Libera Chat и доступна <ulink url="https://web.libera.chat/"
+>на этом веб-сайте</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-isdn">
+  <glossterm
+><acronym
+>ISDN</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Integrated Services Data Network («цифровая сеть с интегрированными услугами») — самый первый набор телекоммуникационных стандартов, который позволил одновременную передачу голосовых и цифровых сигналов по коммутируемой сети из медного провода (то есть телефонной системе старого образца). В ранние годы существования Интернета без <acronym
+>ISDN</acronym
+> было невозможно обойтись, однако в последнее время он был вытеснен более надёжными технологиями, которые разрешают некоммутируемые соединения по сетям, использующим оптоволоконные кабели, спутники и сверхвысокочастотные микроволновые передатчики и приёмники. Он по-прежнему широко используется в нескольких промышленных приложениях, где необходимо прямое двухточечное соединение, но постепенно исчезает на более широком потребительском рынке.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-jabber">
+  <glossterm
+>Jabber</glossterm>
+  <glossdef
+><para
+>Служба обмена мгновенными сообщениями, которая использует протокол <glossterm linkend="gloss-xmpp"
+><acronym
+>XMPP</acronym
+></glossterm
+>. На оригинальном веб-сайте Jabber больше нельзя зарегистрироваться, но протокол <acronym
+>XMPP</acronym
+> всё ещё широко используется. Более подробные сведения доступны на <ulink url="https://xmpp.org/about/"
+>этом веб-сайте</ulink
+>.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-kmail">
+  <glossterm
+>&kmail;</glossterm>
+  <glossdef
+><para
+>Программа &kde; для управления электронной почтой. Предоставляет полностью интегрированную среду для отправки и получения сообщений из одной или нескольких учётных записей, поддержки любого количества учётных записей электронной почты, организации и архивирования старых сообщений электронной почты и управления личными ключами шифрования электронной почты.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-kolab">
+  <glossterm
+>Kolab</glossterm>
+  <glossdef
+><para
+>Kolab Systems AG — это корпорация, расположенная в городе Цюрих, Швейцария, которая предоставляет как проприетарные, так и открытые программные инструменты для облегчения сотрудничества между группами людей, которые обмениваются данными, сообщениями, календарями и расписанием через Интернет. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> предоставляет аналогичные, но полностью проприетарные программные пакеты.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-ldap">
+  <glossterm
+><acronym
+>LDAP</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Lightweight Directory Access Protocol («легковесный протокол доступа к каталогам») — стандартный протокол или метод для совместного использования некоторых определённых классов информации множеством серверных компьютеров, которые и составляют Интернет.</para
+></glossdef>
+  </glossentry
+> 
+  
+  <glossentry id="gloss-ldif">
+  <glossterm
+>.ldif</glossterm>
+  <glossdef
+><para
+>Файл формата обмена данными <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> представляет собой простой текстовый файл, предназначенный для обмена информацией каталога между различными серверами в распределённой сети.</para
+></glossdef>
+  </glossentry
+> 
+
+  <glossentry id="gloss-mnwhl">
+  <glossterm
+>Meanwhile</glossterm>
+  <glossdef
+><para
+>Программное обеспечение с открытым исходным кодом, предназначенное для связи с программным обеспечением для обмена мгновенными сообщениями <ulink url="https://en.wikipedia.org/wiki/IBM_Sametime"
+>«Sametime»</ulink
+> от IBM. Более подробные сведения об этом программном обеспечении доступны на <ulink url="https://github.com/obriencj/meanwhile"
+>этом веб-сайте</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-acro-mime">
+  <glossterm
+>&MIME;</glossterm>
+  <glossdef
+><para
+>Аббревиатура от Multipurpose Internet Mail Extensions («многоцелевые расширения интернет-почты») — набор соглашений о кодировании, призванный сделать оформление сообщений электронной почты более гибким за счёт использования таких функций, как расширенные наборы символов, встроенные изображения, текст с форматированием и так далее. Первоначальные соглашения о кодировании сообщений электронной почты не поддерживали ничего, кроме обычных текстовых (или зашифрованных) сообщений, написанных с помощью 7-битного кода ASCII. Почти все современные сообщений электронной почты закодированы в формате &MIME;.</para
+></glossdef>
+  </glossentry>
+   
+  <glossentry id="gloss-open-pgp">
+  <glossterm
+>OpenPGP/&MIME;</glossterm>
+  <glossdef
+><para
+>OpenPGP/&MIME; относится к соглашению о шифровании сообщений электронной почты, закодированных в <glossterm linkend="gloss-acro-mime"
+>&MIME;</glossterm
+>. PGP-подпись оборачивается специальным набором заголовков &MIME;, который позволяет программе почтового клиента скрыть подпись при отображении сообщения.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-group">
+  <glossterm
+>Сервер совместной работы Open-Xchange</glossterm>
+  <glossdef
+><para
+>Open-Xchange AG — это корпорация, расположенная в городе Кёльн, Германия, которая предоставляет как проприетарные, так и открытые программные инструменты для облегчения сотрудничества между группами людей, которые обмениваются данными, сообщениями, календарями и расписанием через Интернет. <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> и <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> предоставляют аналогичные программные пакеты.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-pcs">
+  <glossterm
+><acronym
+>PCS</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Personal Communication Service — служба личной связи, которая по сути представляет собой сотовый телефон с некоторыми дополнительными встроенными функциями. Телефоны на базе <acronym
+>PCS</acronym
+> работают в более высокой полосе частот, чем традиционные сотовые телефоны, что означает, что они могут обеспечить большую пропускную способность.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pgp">
+  <glossterm
+><acronym
+>PGP</acronym
+></glossterm>
+  <glossdef
+><para
+>Созданная в 1991 году программа шифрования данных, автором которой является Philip Zimmerman. В большинстве используемых сегодня программ для шифрования электронной почты используется тот или иной вариант PGP для шифрования, расшифровки и криптографической подписи сообщений.</para
+></glossdef>
+  </glossentry>
+    
+  <glossentry id="gloss-pim">
+  <glossterm
+>&PIM;</glossterm>
+  <glossdef
+><para
+>Система управления персональной информацией пользователя &kde;, набор программ для управления контактами и расписанием. &PIM; включает в себя такие программы как &kontact;, &kmail;, &kaddressbook;, &korganizer;, &akregator; и &akonadi;. Этот термин также используется в более общем смысле для описания любой системы управления личной информацией, такой как имена, адреса, номера телефонов и так далее.</para
+></glossdef>
+  </glossentry
+>  
+  
+  <glossentry id="gloss-qrcode">
+  <glossterm
+>QR-код</glossterm>
+  <glossdef
+><para
+>Сокращение от Quick Response Code («код быстрого реагирования») — двумерный штрихкод, используемый для отображения цифровых данных. Был создан в Японии в 1994 году для использования в производстве автомобилей, но получил широкое распространение во всём мире.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sasl">
+  <glossterm
+><acronym
+>SASL</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Simple Authentication and Security Layer («простой уровень аутентификации и безопасности») — структура для аутентификации клиентов (пароли и имена пользователей) и безопасности данных (зашифрованные соединения). Она поддерживает более десятка различных протоколов.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-mime">
+  <glossterm
+><acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Secure / Multipurpose Internet Mail Extensions — стандартный криптографический метод для подписи, шифрования и расшифровки сообщений электронной почты. В отличие от <glossterm linkend="gloss-pgp"
+><acronym
+>PGP</acronym
+></glossterm
+>, в котором используются закрытые ключи, <acronym
+>S/MIME</acronym
+> использует открыто опубликованные ключи шифрования, сертифицированные центром сертификации, например <ulink url="https://www.verisign.com/"
+>Verisign</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-opaque">
+  <glossterm
+>Прозрачный <acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+>Прозрачный <acronym
+>S/MIME</acronym
+> — это «прозрачная» версия Secure / Multipurpose Internet Mail Extensions. Аналогично описанному выше «S/MIME», однако всё содержимое электронного письма записывается в один объект &MIME; (большинство сообщений электронной почты, закодированных в &MIME;, состоят из двух или более отдельных объектов &MIME;).</para
+></glossdef>
+  </glossentry>
+ 
+  <glossentry id="gloss-sms">
+  <glossterm
+><acronym
+>SMS</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Short Message Service («служба коротких сообщений») — служба обмена текстовыми сообщениями, встроенная в большинство сетей связи телефона, Интернета и мобильных устройств. Она обеспечивает обмен текстовыми сообщениями длиной менее 161 байта.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ssl">
+  <glossterm
+><acronym
+>SSL</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Secure Socket Layer («слой защищённых сокетов») — устаревший криптографический протокол, который был в значительной степени вытеснен <acronym
+>TLS</acronym
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-tls">
+  <glossterm
+><acronym
+>TLS</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Transport Layer Security («протокол защиты транспортного уровня») — криптографический протокол, который широко используется для обеспечения безопасности взаимодействия в Интернете. Его основная функция — позволить клиенту и серверу безопасно обменяться достаточным количеством информации, чтобы они смогли настроить пару ключей шифрования/расшифровки для использования в течение остальной части интернет-сеанса. <acronym
+>TLS</acronym
+> является самым слабым звеном в цепочке, соединяющей клиентскую программу с безопасным (зашифрованным) интернет-сервисом. Он стал целью нескольких хакерских атак и несколько раз пересматривался в ответ на эти атаки.</para
+></glossdef>
+  </glossentry>
+  
+  <glossentry id="gloss-vcf">
+  <glossterm
+>.vcf</glossterm>
+  <glossdef
+><para
+>Формат виртуальной визитки vCard, ориентированный на ключевые слова, который получил несколько версий (2.0, 2.1, 3.0, и так далее) с момента его представления приблизительно в 1990 году. Самая последняя версия — это vCard 4.0.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-xmpp">
+  <glossterm
+><acronym
+>XMPP</acronym
+></glossterm>
+  <glossdef
+><para
+>Аббревиатура от Extensible Messaging and Presence Protocol («расширяемый протокол обмена сообщениями и информацией о присутствии») — базовая технологическая основа службы обмена мгновенными сообщениями «Jabber».</para
+></glossdef>
+  </glossentry>
+  
+  </glossary>
+
+&docbook-reference;
+
+</book>

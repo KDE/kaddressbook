@@ -1,0 +1,3413 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Николай Ерёмин <doktorkster@gmail.com>, 2009.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2009.
+# Nick Shaforostoff <shafff@ukr.net>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2014, 2015, 2016, 2017, 2019.
+# Artem Sereda <overmind88@gmail.com>, 2010.
+# Julia Dronova <juliette.tux@gmail.com>, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2019, 2020, 2021.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontactmanager\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2022-01-28 10:44+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.08.3\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Андрей Черепанов,Григорий Мохин,Николай Ерёмин,Алексей Серебряков,Николай "
+"Шафоростов,Светлана Коляда,Олеся Герасименко"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"skull@kde.ru,mok@kde.ru,doktorkster@gmail.com,overlapped@gmail.com,"
+"shafff@ukr.net,kolyadas89@gmail.com,gammaray@basealt.ru"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "Адресная книга"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+msgid "Contact"
+msgstr "Контакт"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+msgid "Emails"
+msgstr "Адреса электронной почты"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "Организация"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr "Веб-сайт"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, kde-format
+msgid "Birthday"
+msgstr "Дата рождения"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, kde-format
+msgid "Note"
+msgstr "Заметка"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+msgid "Title"
+msgstr "Должность"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(%1 год)"
+msgstr[1] "(%1 года)"
+msgstr[2] "(%1 лет)"
+msgstr[3] " (один год)"
+
+#: src/viewertemplates/contact_embedded.html:47
+msgid "Email"
+msgstr "Адрес"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, kde-format
+msgid "Blog Feed"
+msgstr "Блог"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "Создать контакт..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr "Открыть диалоговое окно для создания нового контакта."
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "Создать группу контактов..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr "Открыть диалоговое окно для создания новой группы контактов."
+
+#: src/aboutdata.cpp:19
+#, kde-format
+msgid "The KDE Address Book Application"
+msgstr "Адресная книга KDE"
+
+#: src/aboutdata.cpp:21
+#, fuzzy, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr "© Авторы KAddressBook, 2007–2021"
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "Сопровождающий"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Previous maintainer"
+msgstr "Предыдущий сопровождающий"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr "Stefan Taferner"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Original Author (1998)"
+msgstr "Первоначальный автор (1998)"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr "David Bryant"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr "Документация (2019)"
+
+#: src/categoryselectwidget.cpp:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "Сбросить фильтр категорий"
+
+#: src/categoryselectwidget.cpp:101
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "Очистить список показываемых категорий"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr "(записи без меток)"
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr "(группы)"
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr "(выбраны все)"
+
+#: src/categoryselectwidget.cpp:224
+#, kde-format
+msgid "(None)"
+msgstr "(не выбрано ничего)"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ", "
+
+# BUGME: Better add "</qt>" to this string. It works as is, but it is not a clean solution. --aspotashev
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr "<qt>Фильтр категорий: %1"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr "Настройка модулей"
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr "© Laurent Montel, 2016–2021"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr "Настройка параметров обратной связи"
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr "© Laurent Montel, 2021"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr "Модули инструментов"
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr "Модули импорта и экспорта"
+
+#: src/contactinfoproxymodel.cpp:67
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr "Получение подробных сведений..."
+
+#: src/contactinfoproxymodel.cpp:122
+#, kde-format
+msgid "Email: %1"
+msgstr "Адрес эл. почты: %1"
+
+#: src/contactinfoproxymodel.cpp:130
+#, kde-format
+msgid "Phone: %1"
+msgstr "Телефон: %1"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr "%1%2 %3"
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr "%1 %2 %3"
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr "Следующий"
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr "Перейти к предыдущему контакту из списка"
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr "Нажмите эту кнопку, чтобы перейти к предыдущему контакту из списка."
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr "Перейти к следующему контакту из списка"
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr "Нажмите эту кнопку, чтобы перейти к следующему контакту из списка."
+
+#: src/contactswitcher.cpp:106
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%1 из %2"
+
+#: src/importexport/contactfields.cpp:20
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Не определено"
+
+#: src/importexport/contactfields.cpp:39
+#, kde-format
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Годовщина свадьбы"
+
+#: src/importexport/contactfields.cpp:85
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Эл. почта (основной адрес)"
+
+#: src/importexport/contactfields.cpp:87
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Эл. почта (2)"
+
+#: src/importexport/contactfields.cpp:89
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Эл. почта (3)"
+
+#: src/importexport/contactfields.cpp:91
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Эл. почта (4)"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "Профессия"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "Место работы"
+
+#: src/importexport/contactfields.cpp:111
+#, kde-format
+msgid "Manager"
+msgstr "Менеджер"
+
+#: src/importexport/contactfields.cpp:113
+#, kde-format
+msgid "Assistant"
+msgstr "Секретарь"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr "Супруг(а)"
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Выбор контактов"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Все контакты"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Все контакты из всех адресных книг."
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "Выбрать все контакты из всех адресных книг."
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Выбранные контакты"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Только текущие выделенные контакты"
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr "Выбрать контакты, которые выделены в графическом интерфейсе."
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Все контакты из:"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Все контакты из выбранной адресной книги"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"Выбрать все контакты из одной из адресных книг. Выбрать нужную книгу можно в "
+"списке адресных книг, который появится после выбора опции."
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Включая вложенные папки"
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "Выбрать все вложенные папки, включая папку верхнего уровня"
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"Выбрать все контакты, находящиеся в этой папке, включая вложенные в неё "
+"папки. Не выбирайте этот параметр, если нужно выбрать контакты, находящиеся "
+"только в папке верхнего уровня."
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, kde-format
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Сбор контактов"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, kde-format
+msgid "Fetch Contacts"
+msgstr "Получение контактов"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Приватные поля"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Информация о работе"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Другие поля"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Ключи шифрования"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Рисунки"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Отображаемое имя в виде полного имени"
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Экспортируемые поля"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Экспорт приватных полей"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr "Экспортировать приватные поля контакта в файл vCard."
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Экспорт информации о работе"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr "Экспортировать поля с информацией о работе контакта в файл vCard."
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Экспорт других полей"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr "Экспортировать другие поля в файл vCard."
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Экспорт ключей шифрования"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr "Экспортировать ключи шифрования контакта в файл vCard."
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Экспорт рисунков"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr "Экспортировать рисунок контакта в файл vCard."
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Опции экспорта"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Экспортировать отображаемое имя в полное имя"
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Экспортировать отображаемое имя контакта в поле полного имени в визитной "
+"карточке vCard. Эта опция может понадобиться для корректного отображения "
+"имени в GMail или Android."
+
+#: src/importexport/importexportengine.cpp:58
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Выбор адресной книги"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Выберите адресную книгу, в которую следует сохранить контакты:"
+
+#: src/importexport/importexportengine.cpp:74
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Импорт контактов"
+
+#: src/importexport/importexportengine.cpp:75
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "Импорт %1 контакта в %2"
+msgstr[1] "Импорт %1 контактов в %2"
+msgstr[2] "Импорт %1 контактов в %2"
+msgstr[3] "Импорт одного контакта в %2"
+
+#: src/kaddressbook_options.h:15
+#, kde-format
+msgid "Import the given file"
+msgstr "Импортировать указанный файл."
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr "Открыть диалог «Создание контакта»."
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr "Показать указанный контакт (используется URL)."
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+"Файлы или адреса URL. Пользователю будет показан диалог с вопросом — нужно "
+"ли выполнить импорт."
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "Показать список данных обратной связи."
+
+#: src/kaddressbookpart.cpp:56
+#, kde-format
+msgid "&Configure KAddressBook..."
+msgstr "Нас&троить KAddressBook..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, kde-format
+msgid "&File"
+msgstr "&Файл"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, kde-format
+msgid "&New"
+msgstr "&Создать"
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, kde-format
+msgid "&Edit"
+msgstr "&Правка"
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, kde-format
+msgid "&View"
+msgstr "&Вид"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, kde-format
+msgid "&Action"
+msgstr "&Действия"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, kde-format
+msgid "&Tools"
+msgstr "С&ервис"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, kde-format
+msgid "&Settings"
+msgstr "&Настройка"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&Экспорт"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Основная панель инструментов"
+
+#: src/mainwidget.cpp:353
+#, kde-format
+msgid "Import"
+msgstr "Импорт"
+
+#: src/mainwidget.cpp:360
+#, kde-format
+msgid "Export"
+msgstr "Экспорт"
+
+#: src/mainwidget.cpp:407
+#, kde-format
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "Поиск... <%1>"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr "&Оформления"
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr "Печать всей адресной книги или выбранных контактов."
+
+#: src/mainwidget.cpp:646
+#, kde-format
+msgid "Quick search"
+msgstr "Быстрый поиск"
+
+#: src/mainwidget.cpp:651
+#, kde-format
+msgid "Category filter"
+msgstr "Фильтр категорий"
+
+#: src/mainwidget.cpp:656
+#, kde-format
+msgid "Select All"
+msgstr "Выбрать всё"
+
+#: src/mainwidget.cpp:658
+#, kde-format
+msgid "Select all contacts in the current address book view."
+msgstr "Выбрать все показываемые контакты"
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr "Показать QR-коды"
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr "Показать QR-коды в контакте."
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr "Простой (одна колонка)"
+
+#: src/mainwidget.cpp:672
+#, kde-format
+msgid "Show a simple mode of the address book view."
+msgstr "Режим простого просмотра адресной книги."
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr "Две колонки"
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr "Три колонки"
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr "Перевести фокус на поле быстрого поиска"
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr "Подписка на сервере..."
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "Печать контактов"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+"В открывшемся диалоговом окне можно настроить комбинации клавиш для всего "
+"приложения."
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+"<qt>Это действие полностью скроет меню. Чтобы снова вывести его, нажмите %1."
+"</qt>"
+
+#: src/mainwindow.cpp:173
+#, kde-format
+msgid "Hide menu bar"
+msgstr "Скрыть строку меню"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Свойства папки адресной книги %1"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: src/modelcolumnmanager.cpp:74
+#, kde-format
+msgid "Family Name"
+msgstr "Фамилия"
+
+#: src/modelcolumnmanager.cpp:78
+#, kde-format
+msgid "Given Name"
+msgstr "Имя"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "Домашний адрес"
+
+#: src/modelcolumnmanager.cpp:90
+#, kde-format
+msgid "Business Address"
+msgstr "Рабочий адрес"
+
+#: src/modelcolumnmanager.cpp:94
+#, kde-format
+msgid "Phone Numbers"
+msgstr "Телефонные номера"
+
+#: src/modelcolumnmanager.cpp:98
+#, kde-format
+msgid "Preferred EMail"
+msgstr "Основной адрес эл. почты"
+
+#: src/modelcolumnmanager.cpp:102
+#, kde-format
+msgid "All EMails"
+msgstr "Все адреса эл. почты"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, kde-format
+msgid "Compact Style"
+msgstr "Компактный"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, kde-format
+msgid "Setting up document"
+msgstr "Построение документа"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "Печать"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, kde-format
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "Готово"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, kde-format
+msgid "Compact Printing Style"
+msgstr "Компактный формат печати"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, kde-format
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, kde-format
+msgid "Fields"
+msgstr "Поля"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr "Печать домашнего адреса, домашнего и мобильного номеров телефонов"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, kde-format
+msgid "with home address"
+msgstr "с домашним адресом"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr "печать рабочего адреса с рабочим номером телефона"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, kde-format
+msgid "with business address"
+msgstr "с рабочим адресом"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, kde-format
+msgid "Print the birthday"
+msgstr "Печать дня рождения"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, kde-format
+msgid "with birthday"
+msgstr "с днём рождения"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr "Печать полей основного эл. адреса и эл. адреса 2"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, kde-format
+msgid "with e-mail"
+msgstr "с эл. адресом"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr "первый цвет, используемый для чередующегося цвета фона"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr "первый цвет"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr "второй цвет, используемый для чередующегося цвета фона"
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, kde-format
+msgid "second color"
+msgstr "второй цвет"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, kde-format
+msgid "Change the background color of every row"
+msgstr "Изменять цвет фона для каждой строки"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, kde-format
+msgid "Alternating the background color"
+msgstr "Чередующийся цвет фона"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, kde-format
+msgid "Organization:"
+msgstr "Организация:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "Адрес эл. почты:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "Адреса эл. почты:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "Телефон:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "Телефоны:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "Веб-страница:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "Адрес внутри страны"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "Международный адрес"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "Почтовый адрес"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "Адрес для посылок"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "Адрес работы"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "Основной адрес"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, kde-format
+msgid "Notes:"
+msgstr "Заметки:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr "Формат: внешний вид"
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, kde-format
+msgid "Setting up colors"
+msgstr "Настройка цвета"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "Сводка"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "Внешний вид"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "Заголовки контактов"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, kde-format
+msgid "Select the headline text background color"
+msgstr "Выберите цвет фона текста заголовков"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr "Выбрать цвет для фона заголовка."
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "Цвет фона заголовков:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "Цвет текста заголовков:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, kde-format
+msgid "Select the headline text color"
+msgstr "Выберите цвет текста заголовков"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr "Выбрать цвет для текста заголовков."
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr "Все данные"
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr "Какие контакты следует напечатать?"
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr "Выберите контакты для печати"
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "Формат"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "Ход выполнения"
+
+#: src/printing/printprogress.cpp:24
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "Печать"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "Ход выполнения"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr "Печатать поля"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, kde-format
+msgid "Print contact phone numbers"
+msgstr "Печать телефонных номеров"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr "Печать телефонных номеров контактов."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, kde-format
+msgid "Phone numbers"
+msgstr "Номера телефонов"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, kde-format
+msgid "Print contact email addresses"
+msgstr "Печать адресов электронной почты"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr "Печать адресов электронной почты контактов."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, kde-format
+msgid "Email addresses"
+msgstr "Адреса электронной почты"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, kde-format
+msgid "Print contact street addresses"
+msgstr "Печать почтовых адресов"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr "Печать почтовых адресов контактов."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, kde-format
+msgid "Postal addresses"
+msgstr "Почтовые адреса"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, kde-format
+msgid "Print contact organizations"
+msgstr "Печать организаций"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr "Печать названий организаций контактов."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, kde-format
+msgid "Print contact birthdays"
+msgstr "Печать дней рождения"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr "Печать дней рождения контактов."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, kde-format
+msgid "Print contact notes"
+msgstr "Печать заметок"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr "Печать заметок о контактах."
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, kde-format
+msgid "Note: "
+msgstr "Заметка: "
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr "Список"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, kde-format
+msgid "Setting up fields"
+msgstr "Построение полей документа"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr "Список"
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr "По возрастанию"
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr "По убыванию"
+
+#: src/printing/stylepage.cpp:47
+#, kde-format
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(предварительный просмотр не доступен)"
+
+#: src/printing/stylepage.cpp:109
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "Формат"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+"В какой форме печатать контакты?\n"
+"В адресной книге имеются несколько форматов, предназначенных для различных "
+"целей.\n"
+"Выбрать наиболее подходящий формат можно ниже."
+
+#: src/printing/stylepage.cpp:121
+#, kde-format
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "Сортировка"
+
+#: src/printing/stylepage.cpp:126
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "Сортировать по полю:"
+
+#: src/printing/stylepage.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "Выберите первичное поле сортировки"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+"Из этого списка можно выбрать поле, по которому будут отсортированы "
+"контакты, а также задать порядок сортировки: по возрастанию или по убыванию."
+
+#: src/printing/stylepage.cpp:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "Порядок:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr "Выберите порядок сортировки"
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+"Отсортировать список контактов по указанному полю по возрастанию или "
+"убыванию."
+
+#: src/printing/stylepage.cpp:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Формат"
+
+#: src/printing/stylepage.cpp:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "Выберите формат печати"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+"Выберите понравившийся формат печати. Картинка предварительного просмотра "
+"поможет сделать выбор."
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "Выбранные контакты"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+"Для быстрого поиска интересующего контакта можно начать набирать строку "
+"поиска в этом окне, при этом появится список контактов, подходящих под эту "
+"строку."
+
+#~ msgid "Select Contacts"
+#~ msgstr "Выбрать контакты"
+
+#~ msgid "Import vCard..."
+#~ msgstr "Импорт vCard..."
+
+#~ msgid "Import contacts from a vCard file."
+#~ msgstr "Импорт контактов из файла vCard."
+
+#~ msgid "Import CSV file..."
+#~ msgstr "Импорт CSV-файла..."
+
+#~ msgid "Import contacts from a file in comma separated value format."
+#~ msgstr "Импорт контактов из текстового файла с разделителями (CSV)"
+
+#~ msgid "Import LDIF file..."
+#~ msgstr "Импорт из файла LDIF..."
+
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "Импорт контактов из файла каталога LDAP (LDIF)."
+
+#~ msgid "Import From LDAP server..."
+#~ msgstr "Импорт с LDAP-сервера..."
+
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "Импорт контактов с LDAP-сервера."
+
+#~ msgid "Import GMX file..."
+#~ msgstr "Импорт файла GMX..."
+
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "Импорт контактов из файла GMX."
+
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "Экспорт в файл vCard 4.0..."
+
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "Экспорт контактов в файл формата vCard 4.0."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "Экспорт в файл vCard 3.0..."
+
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "Экспорт контактов в файл формата vCard 3.0."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "Экспорт в файл vCard 2.1..."
+
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "Экспорт контактов в файл формата vCard 2.1."
+
+#~ msgid "Export CSV file..."
+#~ msgstr "Экспорт в CSV-файл..."
+
+#~ msgid "Export contacts to a file in comma separated value format."
+#~ msgstr "Экспорт контактов в текстовый файл с разделителями (CSV)."
+
+#~ msgid "Export LDIF file..."
+#~ msgstr "Экспорт в файл LDIF..."
+
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "Экспорт контактов в файл формата каталога LDAP (LDIF)."
+
+#~ msgid "Export GMX file..."
+#~ msgstr "Экспорт в GMX-файл..."
+
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "Экспорт контактов в файл формата GMX."
+
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>Невозможно открыть файл <b>%1</b>.</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>Невозможно открыть файл <b>%1</b>.</qt>"
+
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "Импорт из CSV"
+
+#~ msgctxt "@label"
+#~ msgid "Importing contacts"
+#~ msgstr "Импорт контактов"
+
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "Импортировать из файла:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "Выберите файл в формате csv для импорта"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Click this button to start a file chooser that will allow you to select a "
+#~ "csv file to import."
+#~ msgstr ""
+#~ "Открыть диалог выбора файлов и указать файл (в формате csv), который "
+#~ "нужно импортировать."
+
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "Разделитель"
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "запятая"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a comma"
+#~ msgstr "В качестве разделителя полей используется запятая"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the comma as a field separator."
+#~ msgstr ""
+#~ "Выберите эту опцию, если файл в формате csv использует запятую в качестве "
+#~ "разделителя полей."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "точка с запятой"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a semicolon"
+#~ msgstr "В качестве разделителя полей используется точка с запятой"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the semicolon as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Выберите эту опцию, если файл в формате csv использует точку с запятой в "
+#~ "качестве разделителя полей."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Tabulator"
+#~ msgstr "табуляция"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a tab character"
+#~ msgstr "В качестве разделителя полей используется знак табуляции"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the tab character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Выберите эту опцию, если файл в формате csv использует знак табуляции в "
+#~ "качестве разделителя полей."
+
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "пробел"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a space character"
+#~ msgstr "В качестве разделителя полей используется пробел"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if your csv file uses the space character as a field "
+#~ "separator."
+#~ msgstr ""
+#~ "Выберите эту опцию, если файл в формате csv использует пробел в качестве "
+#~ "разделителя полей."
+
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "другой"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the field separator to a custom character"
+#~ msgstr "В качестве разделителя полей используется пользовательский символ"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select this option if to use some other character as the field delimiter "
+#~ "for the data in your csv file."
+#~ msgstr ""
+#~ "Выберите эту опцию, если файл в формате csv использует символ, "
+#~ "определённый пользователем, в качестве разделителя полей."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the custom delimiter character"
+#~ msgstr "Укажите пользовательский символ"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Enter a custom character to use as the delimiter character. If you enter "
+#~ "more than 1 character, only the first will be used and the remaining "
+#~ "characters will be ignored."
+#~ msgstr ""
+#~ "Введите символ, который будет использоваться в качестве разделителя. Если "
+#~ "введено более одного символа, то будет использован только первый из них, "
+#~ "остальные символы будут проигнорированы."
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "Экранирующий символ:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "Выберите экранирующий символ"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Choose the character that your csv data uses to \"quote\" the field "
+#~ "delimiter if that character happens to occur within the data.  For "
+#~ "example, if the comma is the field delimiter, then any comma occurring "
+#~ "with the data will be \"quoted\" by the character specified here."
+#~ msgstr ""
+#~ "Символ, который будет использоваться в файле csv для экранирования "
+#~ "символа разделителя поля, если он появится внутри данных. Например, если "
+#~ "запятая является разделителем поля, то любая запятая, встретившаяся в "
+#~ "данных, будет экранирована с помощью указанного здесь символа."
+
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "Формат даты:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
+#~ msgstr ""
+#~ "<para><list><item>г: год 2 цифрами</item><item>Г: год 4 цифрами</item> "
+#~ "<item>м: месяц 1 или 2 цифрами</item><item>М: месяц 2 цифрами</item> "
+#~ "<item>д: день 1 или 2 цифрами</item><item>Д: день 2 цифрами</item> "
+#~ "<item>ч: час 2 цифрами</item><item>I: минуты 2 цифрами</item> <item>С: "
+#~ "секунды 2 цифрами</item></list></para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Specify a format to use for dates included in your csv data. Use "
+#~ "the following sequences to help you define the format:</"
+#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
+#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+#~ "digits</item><item>S: seconds with 2 digits</item></list></"
+#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+#~ "para>"
+#~ msgstr ""
+#~ "<para>Доступные форматы записи даты и времени в файл csv:</"
+#~ "para><para><list><item>г: год 2 цифрами</item><item>Г: год 4 цифрами</"
+#~ "item> <item>м: месяц 1 или 2 цифрами</item><item>М: месяц 2 цифрами</"
+#~ "item> <item>д: день 1 или 2 цифрами</item><item>Д: день 2 цифрами</item> "
+#~ "<item>ч: час 2 цифрами</item><item>I: минуты 2 цифрами</item> <item>С: "
+#~ "секунды 2 цифрами</item></list></para><para>Например, «Г-М-Д» "
+#~ "соответствует дате в виде «2012-01-04»</para>"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "Кодировка текста:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "Кодировка текста"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose the character encoding of the data in your csv file."
+#~ msgstr "Укажите кодировку данных для файла в формате csv."
+
+#~ msgctxt "@option:check"
+#~ msgid "Skip first row of file"
+#~ msgstr "Пропустить первую строку файла"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Skip first row of csv file when importing"
+#~ msgstr "Пропустить первую строку файла в формате csv при импорте"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this box if you want the import to skip over the first row of the "
+#~ "csv data. In many cases, the first line of a csv file will be a comment "
+#~ "line describing the order of the data fields included in the file."
+#~ msgstr ""
+#~ "Как правило, первая строка в файле в формате csv является комментарием, "
+#~ "описывающим порядок полей данных. Выбор этого параметра позволит "
+#~ "пропустить первую строку файла при импорте."
+
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "Применить шаблон..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "Сохранить как шаблон..."
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "Системная (%1)"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "Юникод"
+
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "Microsoft Unicode"
+
+#~ msgctxt "@info:status"
+#~ msgid "You must assign at least one column."
+#~ msgstr "Необходимо определить хотя бы один столбец."
+
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "Пока что нет ни одного шаблона."
+
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "Шаблонов нет"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "Название шаблона"
+
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "Введите название шаблона:"
+
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "Невозможно открыть импортируемый файл."
+
+#~ msgid "Device is not open"
+#~ msgstr "Устройство не открыто"
+
+#~ msgctxt "@label"
+#~ msgid "Do you really want to delete template '%1'?"
+#~ msgstr "Удалить шаблон «%1»?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "Выбор шаблона"
+
+#~ msgctxt "@info"
+#~ msgid "Please select a template, that matches the CSV file:"
+#~ msgstr "Выберите шаблон, который соответствует этому файлу CSV:"
+
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "Адресная книга GMX (*.gmxa)"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>Невозможно открыть файл <b>%1</b> для чтения.</qt>"
+
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "Файл %1 не является адресной книгой GMX."
+
+# BUGME: please capitalize LDif -> LDIF --aspotashev
+#~ msgid "LDif Files (*.ldif)"
+#~ msgstr "Файлы LDIF (*.ldif)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You have selected a list of contacts, shall they be exported to several "
+#~ "files?"
+#~ msgstr "Выделен список контактов. Экспортировать его в несколько файлов?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "Экспорт в один файл"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "Экспорт в несколько файлов"
+
+#~ msgid ""
+#~ "*.vcf|vCard (*.vcf)\n"
+#~ "*|all files (*)"
+#~ msgstr ""
+#~ "*.vcf|Электронные визитные карточки vCard (*.vcf)\n"
+#~ "*|Все файлы (*)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "Выберите vCard для импорта"
+
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "Ошибка импорта vCard"
+
+#~ msgctxt "@info"
+#~ msgid "<para>Unable to access vCard:</para><para>%1</para>"
+#~ msgstr "<para>Невозможно получить доступ к vCard:</para><para>%1</para>"
+
+#~ msgctxt "@info"
+#~ msgid "No contacts were imported, due to errors with the vCards."
+#~ msgstr ""
+#~ "Из-за ошибки в чтении визитных карточек не импортирован ни один контакт."
+
+#~ msgctxt "@info"
+#~ msgid "The vCard does not contain any contacts."
+#~ msgstr "Визитка vCard не содержит ни одного контакта."
+
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "Импорт vCard"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "Импортировать этот контакт в адресную книгу?"
+
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "Импортировать все..."
+
+#~ msgid "Which contact do you want to export?"
+#~ msgstr "Выберите контакты для экспорта."
+
+#~ msgid "You have not selected any contacts to export."
+#~ msgstr "Не выбраны контакты для экспорта."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "Синхронизировать контакты"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Choose this option to synchronize your groupware contacts."
+#~ msgstr "Синхронизировать совместные контакты."
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "(группы)"
+
+#~ msgid "Gravatarupdatedialog_Gui"
+#~ msgstr "Gravatarupdatedialog_Gui"
+
+#~ msgid "Test for Gravatar update dialog"
+#~ msgstr "Тест диалога обновления Gravatar"
+
+#~ msgid "Email address"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "Check and update Gravatar"
+#~ msgstr "Просмотр и обновление Gravatar"
+
+#~ msgid "Save Image"
+#~ msgstr "Сохранить изображение"
+
+#~ msgid "Save Image URL"
+#~ msgstr "Сохранить адрес изображения"
+
+#~ msgid "Use HTTPS Protocol"
+#~ msgstr "Использовать протокол HTTPS"
+
+#~ msgid "Use Libravatar"
+#~ msgstr "Использовать Libravatar"
+
+#~ msgid "Fallback to Gravatar"
+#~ msgstr "Использовать Gravatar в случае неудачи"
+
+#~ msgid "Search"
+#~ msgstr "Найти"
+
+#~ msgid "Search is impossible."
+#~ msgstr "Поиск невозможен."
+
+#~ msgid "No Gravatar Found."
+#~ msgstr "Не найдено изображений на Gravatar."
+
+#~ msgid "Merge Contacts..."
+#~ msgstr "Объединить контакты..."
+
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "Найти повторные записи контактов..."
+
+#~ msgid "Send an email..."
+#~ msgstr "Написать письмо..."
+
+#~ msgid "Send vCards..."
+#~ msgstr "Отправить в формате электронных визиток..."
+
+#~ msgid "Check Gravatar..."
+#~ msgstr "Показать Gravatar..."
+
+#~ msgid "You have not selected any contacts."
+#~ msgstr "Не выбраны получатели для написания письма."
+
+#, fuzzy
+#~ msgid "No email found for this contact."
+#~ msgstr ""
+#~ "Ни у одного из выбранных контактов не указаны адреса электронной почты."
+
+#, fuzzy
+#~ msgid "A contact group was selected."
+#~ msgstr "Контакты не выбраны."
+
+#~ msgid "Select Contacts to merge"
+#~ msgstr "Выбор контактов для слияния"
+
+#, fuzzy
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "Выбрать контакты"
+
+#, fuzzy
+#~ msgid "Select the addressbook in which to store merged contacts:"
+#~ msgstr "Печать всей адресной книги или выбранных контактов."
+
+#, fuzzy
+#~ msgid "Duplicate contact %1"
+#~ msgstr "Найти повторные записи контактов..."
+
+#, fuzzy
+#~ msgid "Select AddressBook:"
+#~ msgstr "Выбор адресной книги"
+
+#~ msgid "You must select at least two elements."
+#~ msgstr "Необходимо выбрать хотя бы два элемента."
+
+#~ msgid "No duplicated contact found."
+#~ msgstr "Дубликаты контактов не найдены."
+
+#~ msgid "No contacts selected."
+#~ msgstr "Контакты не выбраны."
+
+#, fuzzy
+#~ msgid "Customize"
+#~ msgstr "Другое имя"
+
+#, fuzzy
+#~ msgid "Missing Selected Information"
+#~ msgstr "Печатать поля"
+
+#, fuzzy
+#~ msgid "(Undefined)"
+#~ msgstr "Не определено"
+
+#~ msgid "No emails found in selected contacts."
+#~ msgstr ""
+#~ "Ни у одного из выбранных контактов не указаны адреса электронной почты."
+
+#~ msgid "No vCard created."
+#~ msgstr "Не удалось создать ни одной электронной визитки в формате vCard."
+
+#~ msgid "Temporary file '%1' cannot be created"
+#~ msgstr "Не удалось создать временный файл «%1»."
+
+#~ msgid "LDIF file (%1)"
+#~ msgstr "Файлы LDIF (%1)"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>When trying to read the vCard, there was an error opening the file "
+#~ "<filename>%1</filename>:</para><para>%2</para>"
+#~ msgstr ""
+#~ "<para>Невозможно открыть файл визитки <filename>%1</filename> в формате "
+#~ "vCard:</para><para>%2</para>"
+
+#, fuzzy
+#~ msgid "Merged Contact"
+#~ msgstr "Добавить контакт..."
+
+# BUGME: please change to "Failed to merge contacts" --aspotashev
+#~ msgid "Error during merge contacts."
+#~ msgstr "Не удалось объединить контакты."
+
+#~ msgid "Merge contact"
+#~ msgstr "Объединение контактов"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Выбор полей vCard"
+
+#, fuzzy
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "Выбрать контакты"
+
+#, fuzzy
+#~ msgid "You selected %1"
+#~ msgstr "Импорт выбранных"
+
+#~ msgid "Kontact integration"
+#~ msgstr "Интеграция с Kontact"
+
+#, fuzzy
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "Компактный формат печати"
+
+#~ msgid "Department"
+#~ msgstr "Отдел"
+
+#~ msgid "Manager's Name"
+#~ msgstr "Руководитель:"
+
+#~ msgid "Assistant's Name"
+#~ msgstr "Секретарь"
+
+#~ msgid "Partner's Name"
+#~ msgstr "Супруг(а)"
+
+#~ msgid "IM Address"
+#~ msgstr "Контакт для мгновенных сообщений"
+
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "да"
+
+#~ msgctxt "Boolean value"
+#~ msgid "no"
+#~ msgstr "нет"
+
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Заменить файл «%1»"
+
+#~ msgctxt "@info"
+#~ msgid "Do you want to overwrite file \"%1\""
+#~ msgstr "Заменить файл «%1»"
+
+#~ msgid "Show Simple View"
+#~ msgstr "Простой вид"
+
+#~ msgid "Click on the color button to change the header's text color."
+#~ msgstr "Выберите цвет для текста заголовка."
+
+#~ msgid "Select the fields which shall be exported in the vCard."
+#~ msgstr "Выберите поля, которые следует экспортировать в vCard."
+
+#~ msgid "Show Address Books View"
+#~ msgstr "Показать адресную книгу"
+
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "Скрыть/Показать адресную книгу."
+
+#~ msgid "Hide Address Books View"
+#~ msgstr "Скрыть адресную книгу"
+
+#~ msgid "Show Contacts View"
+#~ msgstr "Показать контакты"
+
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "Скрыть/Показать контакты."
+
+#~ msgid "Hide Contacts View"
+#~ msgstr "Скрыть контакты"
+
+#~ msgid "Show Details View"
+#~ msgstr "Показать подробности"
+
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "Скрыть/Показать подробности."
+
+#~ msgid "Hide Details View"
+#~ msgstr "Скрыть подробности"
+
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "Добавить папку в адресную книгу..."
+
+#~ msgid ""
+#~ "Add a new address book folder to the currently selected address book "
+#~ "folder."
+#~ msgstr "Добавить в выбранную папку адресной книги вложенную ."
+
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "Копировать %1 папку адресной книги"
+#~ msgstr[1] "Копировать %1 папки адресной книги"
+#~ msgstr[2] "Копировать %1 папок адресной книги"
+#~ msgstr[3] "Копировать %1 папку адресной книги"
+
+#~ msgid "Copy the selected address book folders to the clipboard."
+#~ msgstr "Копировать выбранные папки в буфер обмена."
+
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "Удалить выбранные папки из адресной книги."
+
+#, fuzzy
+#~ msgid "Update Address Book Folder"
+#~ msgstr "Вырезать %1 папку адресной книги"
+
+#, fuzzy
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "Открыть окно со свойствами папки адресной книги."
+
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "Вырезать %1 папку адресной книги"
+#~ msgstr[1] "Вырезать %1 папки адресные книги"
+#~ msgstr[2] "Вырезать %1 попок адресных книг"
+#~ msgstr[3] "Вырезать %1 папку адресной книги"
+
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "Вырезать выбранные папки из адресной книги."
+
+#~ msgid "Folder Properties..."
+#~ msgstr "Свойства папки..."
+
+#~ msgid ""
+#~ "Open a dialog to edit the properties of the selected address book folder."
+#~ msgstr "Открыть окно со свойствами папки адресной книги."
+
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "Копировать %1 контакт"
+#~ msgstr[1] "Копировать %1 контакта"
+#~ msgstr[2] "Копировать %1 контактов"
+#~ msgstr[3] "Копировать %1 контакт"
+
+#~ msgid "Delete Contact"
+#~ msgid_plural "Delete %1 Contacts"
+#~ msgstr[0] "Удалить %1 контакт"
+#~ msgstr[1] "Удалить %1 контакта"
+#~ msgstr[2] "Удалить %1 контактов"
+#~ msgstr[3] "Удалить %1 контакт"
+
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "Удалить выбранные контакты из адресной книги."
+
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "Вырезать %1 контакт"
+#~ msgstr[1] "Вырезать %1 контакта"
+#~ msgstr[2] "Копировать %1 контактов"
+#~ msgstr[3] "Вырезать %1 контакт"
+
+#~ msgid "Edit Contact..."
+#~ msgstr "Изменить контакт..."
+
+#~ msgid "Copy Group"
+#~ msgid_plural "Copy %1 Groups"
+#~ msgstr[0] "Копировать %1 группу"
+#~ msgstr[1] "Копировать %1 группы"
+#~ msgstr[2] "Копировать %1 групп"
+#~ msgstr[3] "Копировать %1 группу"
+
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "Удалить %1 группу"
+#~ msgstr[1] "Удалить %1 группы"
+#~ msgstr[2] "Удалить %1 групп"
+#~ msgstr[3] "Удалить %1 группу"
+
+#~ msgid "Cut Group"
+#~ msgid_plural "Cut %1 Groups"
+#~ msgstr[0] "Вырезать %1 группу"
+#~ msgstr[1] "Вырезать %1 группы"
+#~ msgstr[2] "Вырезать %1 групп"
+#~ msgstr[3] "Вырезать %1 группу"
+
+#~ msgid "Edit Group..."
+#~ msgstr "Изменить группы..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "Добавить адресную книгу"
+
+#~ msgid "Could not add address book: %1"
+#~ msgstr "Не удалось добавить адресную книгу: %1"
+
+#~ msgid "Adding Address Book failed"
+#~ msgstr "Не удалось добавить адресную книгу"
+
+#~ msgid "Do you really want to delete address book '%1'?"
+#~ msgstr "Удалить адресную книгу «%1»?"
+
+#~ msgid "Delete Address Book?"
+#~ msgstr "Удалить адресную книгу?"
+
+#~ msgid ""
+#~ "Create a new contact<p>You will be presented with a dialog where you can "
+#~ "add data about a person, including addresses and phone numbers.</p>"
+#~ msgstr ""
+#~ "Создать новый контакт <p>Будет открыто диалоговое окно для заполнения "
+#~ "информации о контакте, включая адреса и номера телефонов.</p>"
+
+#~ msgid "New &Group..."
+#~ msgstr "Новая группа..."
+
+#~ msgid ""
+#~ "Create a new group<p>You will be presented with a dialog where you can "
+#~ "add a new group of contacts.</p>"
+#~ msgstr ""
+#~ "Создать новую группу<p>Будет открыт диалог создания новой группы "
+#~ "контактов.</p>"
+
+#~ msgid ""
+#~ "Edit the selected contact<p>You will be presented with a dialog where you "
+#~ "can edit the data stored about a person, including addresses and phone "
+#~ "numbers.</p>"
+#~ msgstr ""
+#~ "Изменить выделенный контакт<p>Будет открыто диалоговое окно для "
+#~ "редактирования информации о контакте, включая адреса и номера телефонов.</"
+#~ "p>"
+
+#~ msgid "Add &Address Book..."
+#~ msgstr "Добавить адресную книгу..."
+
+#~ msgid ""
+#~ "Add a new address book<p>You will be presented with a dialog where you "
+#~ "can select the type of the address book that shall be added.</p>"
+#~ msgstr ""
+#~ "Добавить новую адресную книгу<p>В открывшемся диалоговом окне выберите "
+#~ "тип адресной книги.</p>"
+
+#~ msgid "&Delete Address Book"
+#~ msgstr "Удалить адресную книгу"
+
+#~ msgid ""
+#~ "Delete the selected address book<p>The currently selected address book "
+#~ "will be deleted, along with all the contacts and contact groups it "
+#~ "contains.</p>"
+#~ msgstr ""
+#~ "Удалить адресную книгу<p>Адресная книга будет удалена вместе со всеми "
+#~ "контактами и группами контактов в ней.</p>"
+
+#~ msgid "Address Book Properties..."
+#~ msgstr "Свойства адресной книги..."
+
+#~ msgid "Open a dialog to edit properties of the selected address book."
+#~ msgstr "Открыть окно для изменения свойств выбранной адресной книги."
+
+#~ msgid "Add Host"
+#~ msgstr "Добавление хоста"
+
+#~ msgid "Home Number"
+#~ msgstr "Домашний номер"
+
+#~ msgid "Work Number"
+#~ msgstr "Рабочий номер"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Мобильный"
+
+#~ msgid "Fax Number"
+#~ msgstr "Факс"
+
+#~ msgid "Pager"
+#~ msgstr "Пейджер"
+
+#~ msgid "Street"
+#~ msgstr "Улица"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Штат/область"
+
+#~ msgid "Country"
+#~ msgstr "Страна"
+
+#~ msgid "City"
+#~ msgstr "Город"
+
+#~ msgid "Zip Code"
+#~ msgstr "Индекс"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "User ID"
+#~ msgstr "Идентификатор пользователя"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Штат/область"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Обращение"
+
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Импорт контактов из каталога LDAP"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Поиск адресов в каталоге"
+
+#~ msgid "Search for:"
+#~ msgstr "Искать:"
+
+#~ msgctxt "In LDAP attribute"
+#~ msgid "in"
+#~ msgstr "в"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "Электронная почта"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Домашний"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Рабочий"
+
+#~ msgid "Stop"
+#~ msgstr "Остановить"
+
+#~ msgid "Recursive search"
+#~ msgstr "Рекурсивный поиск"
+
+#~ msgid "Contains"
+#~ msgstr "содержит"
+
+#~ msgid "Starts With"
+#~ msgstr "начинается с"
+
+#~ msgid "Unselect All"
+#~ msgstr "Снять выбор"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "Электронная почта"
+
+#~ msgid "You must select a LDAP server before searching."
+#~ msgstr "Перед поиском необходимо выбрать LDAP-сервер."
+
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr ""
+#~ "Укажите список рассылки, в который следует добавить выбранный контакт."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Импортировано %2 из каталога LDAP %1"
+
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "Параметры адресной книги LDAP"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "Параметры связи с LDAP-сервером"
+
+#~ msgid "(c) 2009 Tobias Koenig"
+#~ msgstr "© Tobias Koenig, 2009"
+
+#~ msgid "Edit Host"
+#~ msgstr "Изменение параметров хоста"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP серверы"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Проверить все доступные серверы:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Добавить хост..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "Изменить параметры хоста..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Удалить хост"
+
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "© Команда разработки KDE PIM, 2007-2009"
+
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "Адресные книги"
+
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Home"
+#~ msgstr "Домашний"
+
+#~ msgctxt "@title:column, home address of a person"
+#~ msgid "Work"
+#~ msgstr "Рабочий"
+
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "Телефонные номера"
+
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "Основной адрес эл. почты"
+
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "Все адреса эл. почты"
+
+#, fuzzy
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "Контакт"
+
+#, fuzzy
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "EMails"
+#~ msgstr "Электронная почта:"
+
+#~ msgid "Reload"
+#~ msgstr "Обновить"
+
+#, fuzzy
+#~ msgid "Letter Groups"
+#~ msgstr "Новая группа контактов"
+
+#, fuzzy
+#~ msgid "Font Settings"
+#~ msgstr "&Настройка"
+
+#, fuzzy
+#~ msgid "Contacts matching &filter"
+#~ msgstr "KContactManager"
+
+#, fuzzy
+#~ msgid "The following contact was imported into your address book:"
+#~ msgid_plural ""
+#~ "The following %1 contacts were imported into your address book:"
+#~ msgstr[0] "Импортировать этот контакт в адресную книгу?"
+#~ msgstr[1] "Импортировать этот контакт в адресную книгу?"
+#~ msgstr[2] "Импортировать этот контакт в адресную книгу?"
+#~ msgstr[3] "Импортировать этот контакт в адресную книгу?"
+
+#~ msgid "Take over changes"
+#~ msgstr "Изменения"
+
+#~ msgid "Ignore and Overwrite changes"
+#~ msgstr "Игнорировать и перезаписать изменения"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Изменить контакт"
+
+#~ msgid "Add to:"
+#~ msgstr "Добавить в:"
+
+#~ msgid "This contact's sound cannot be found."
+#~ msgstr "Не найден звуковой файл для этого контакта."
+
+#~ msgid "Click to play pronunciation"
+#~ msgstr "Нажмите для воспроизведения произношения"
+
+#~ msgid "No pronunciation available"
+#~ msgstr "Данные о произношении не найдены"
+
+#~ msgid "Play"
+#~ msgstr "Воспроизвести"
+
+#~ msgid "Change..."
+#~ msgstr "Изменить..."
+
+#~ msgid "Save..."
+#~ msgstr "Сохранить..."
+
+#~ msgid "Remove"
+#~ msgstr "Удалить"
+
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "Другая..."
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "Изменить номер телефона"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "Основной номер телефона"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "Адреса E-Mail"
+
+#~ msgid "Edit..."
+#~ msgstr "Изменить..."
+
+#~ msgid "Set Standard"
+#~ msgstr "Сделать основным"
+
+#~ msgid "Add Email"
+#~ msgstr "Добавить E-Mail"
+
+#~ msgid "New Email:"
+#~ msgstr "Новый E-Mail:"
+
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "Электронная почта:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr "<qt>Удалить адрес электронной почты <b>%1</b>?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "Подтверждение удаления"
+
+#~ msgid "&Delete"
+#~ msgstr "&Удалить"
+
+#~ msgid "This contact's image cannot be found."
+#~ msgstr "Отсутствует изображение для контакта."
+
+#~ msgid "Change photo..."
+#~ msgstr "Изменить фотографию..."
+
+#~ msgid "Save photo..."
+#~ msgstr "Сохранить фотографию"
+
+#~ msgid "Remove photo"
+#~ msgstr "Удалить фотографию"
+
+#~ msgid "Change logo..."
+#~ msgstr "Изменить логотип..."
+
+#~ msgid "Save logo..."
+#~ msgstr "Сохранить логотип..."
+
+#~ msgid "Remove logo"
+#~ msgstr "Удалить логотип"
+
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "Создать..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Изменить..."
+
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Do you really want to delete this address?"
+#~ msgstr "Удалить адрес?"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "Изменить адрес"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "Наклейка на конверт..."
+
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "Предпочитаемый почтовый адрес"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "Изменить тип адреса"
+
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "Типы адресов"
+
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "Фамилия, Имя"
+
+#~ msgid "Reverse Name"
+#~ msgstr "Фамилия Имя"
+
+#~ msgid "Organization Name"
+#~ msgstr "Название организации"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Internet"
+#~ msgstr "Интернет"
+
+#~ msgid "Name:"
+#~ msgstr "Имя:"
+
+#~ msgid "Display:"
+#~ msgstr "Показывать как:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Псевдоним:"
+
+#~ msgid "Pronunciation:"
+#~ msgstr "Произношение:"
+
+#~ msgid "Homepage:"
+#~ msgstr "Веб-сайт:"
+
+#~ msgid "Blog:"
+#~ msgstr "Блог:"
+
+#~ msgid "Messaging:"
+#~ msgstr "Интернет-пейджер:"
+
+#~ msgid "Coordinates"
+#~ msgstr "Координаты"
+
+#~ msgid "Business"
+#~ msgstr "Работа"
+
+#~ msgid "General"
+#~ msgstr "Основные данные"
+
+#~ msgid "Groupware"
+#~ msgstr "Совместная работа"
+
+#~ msgid "Title:"
+#~ msgstr "Должность:"
+
+#~ msgid "Department:"
+#~ msgstr "Отдел:"
+
+#~ msgid "Free/Busy:"
+#~ msgstr "Занятое время:"
+
+#~ msgid "Personal"
+#~ msgstr "Личные данные"
+
+#~ msgid "Dates"
+#~ msgstr "Даты"
+
+#~ msgid "Birthdate:"
+#~ msgstr "День рождения:"
+
+#~ msgid "Edit Contact Group"
+#~ msgstr "Изменить группу контактов"
+
+#~ msgid "KContactManager"
+#~ msgstr "KContactManager"
+
+#, fuzzy
+#~ msgid "Print Addresses"
+#~ msgstr "Адреса"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Афганистан"
+
+#~ msgid "Albania"
+#~ msgstr "Албания"
+
+#~ msgid "Algeria"
+#~ msgstr "Алжир"
+
+#~ msgid "American Samoa"
+#~ msgstr "Американское Самоа"
+
+#~ msgid "Andorra"
+#~ msgstr "Андорра"
+
+#~ msgid "Angola"
+#~ msgstr "Ангола"
+
+#~ msgid "Anguilla"
+#~ msgstr "Ангилья"
+
+#~ msgid "Antarctica"
+#~ msgstr "Антарктика"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Антигуа и Барбуда"
+
+#~ msgid "Argentina"
+#~ msgstr "Аргентина"
+
+#~ msgid "Armenia"
+#~ msgstr "Армения"
+
+#~ msgid "Aruba"
+#~ msgstr "Аруба"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "Ашмор и Картьерские острова"
+
+#~ msgid "Australia"
+#~ msgstr "Австралия"
+
+#~ msgid "Austria"
+#~ msgstr "Австрия"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Азербайджан"
+
+#~ msgid "Bahamas"
+#~ msgstr "Багамские острова"
+
+#~ msgid "Bahrain"
+#~ msgstr "Бахрейн"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Бангладеш"
+
+#~ msgid "Barbados"
+#~ msgstr "Барбадос"
+
+#~ msgid "Belarus"
+#~ msgstr "Белоруссия"
+
+#~ msgid "Belgium"
+#~ msgstr "Бельгия"
+
+#~ msgid "Belize"
+#~ msgstr "Белиз"
+
+#~ msgid "Benin"
+#~ msgstr "Бенин"
+
+#~ msgid "Bermuda"
+#~ msgstr "Бермудские острова"
+
+#~ msgid "Bhutan"
+#~ msgstr "Бутан"
+
+#~ msgid "Bolivia"
+#~ msgstr "Боливия"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Босния и Герцеговина"
+
+#~ msgid "Botswana"
+#~ msgstr "Ботсвана"
+
+#~ msgid "Brazil"
+#~ msgstr "Бразилия"
+
+#~ msgid "Brunei"
+#~ msgstr "Бруней"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Болгария"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Буркина-Фасо"
+
+#~ msgid "Burundi"
+#~ msgstr "Бурунди"
+
+#~ msgid "Cambodia"
+#~ msgstr "Камбоджа"
+
+#~ msgid "Cameroon"
+#~ msgstr "Камерун"
+
+#~ msgid "Canada"
+#~ msgstr "Канада"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Кабо-Верде"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Каймановы острова"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Центрально-африканская республика"
+
+#~ msgid "Chad"
+#~ msgstr "Чад"
+
+#~ msgid "Chile"
+#~ msgstr "Чили"
+
+#~ msgid "China"
+#~ msgstr "Китай"
+
+#~ msgid "Colombia"
+#~ msgstr "Колумбия"
+
+#~ msgid "Comoros"
+#~ msgstr "Коморские острова"
+
+#~ msgid "Congo"
+#~ msgstr "Конго (Браззавиль)"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "Конго (Демократическая республика Конго)"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Коста-Рика"
+
+#~ msgid "Croatia"
+#~ msgstr "Хорватия"
+
+#~ msgid "Cuba"
+#~ msgstr "Куба"
+
+#~ msgid "Cyprus"
+#~ msgstr "Кипр"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Чехия"
+
+#~ msgid "Denmark"
+#~ msgstr "Дания"
+
+#~ msgid "Djibouti"
+#~ msgstr "Джибути"
+
+#~ msgid "Dominica"
+#~ msgstr "Доминика"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Доминиканская республика"
+
+#~ msgid "Ecuador"
+#~ msgstr "Эквадор"
+
+#~ msgid "Egypt"
+#~ msgstr "Египет"
+
+#~ msgid "El Salvador"
+#~ msgstr "Сальвадор"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Экваториальная Гвинея"
+
+#~ msgid "Eritrea"
+#~ msgstr "Эритрея"
+
+#~ msgid "Estonia"
+#~ msgstr "Эстония"
+
+#~ msgid "England"
+#~ msgstr "Англия"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Эфиопия"
+
+#~ msgid "European Union"
+#~ msgstr "Европейский союз"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Фарерские острова"
+
+#~ msgid "Fiji"
+#~ msgstr "Фиджи"
+
+#~ msgid "Finland"
+#~ msgstr "Финляндия"
+
+#~ msgid "France"
+#~ msgstr "Франция"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Французская Полинезия"
+
+#~ msgid "Gabon"
+#~ msgstr "Габон"
+
+#~ msgid "Gambia"
+#~ msgstr "Гамбия"
+
+#~ msgid "Georgia"
+#~ msgstr "Грузия"
+
+#~ msgid "Germany"
+#~ msgstr "Германия"
+
+#~ msgid "Ghana"
+#~ msgstr "Гана"
+
+#~ msgid "Greece"
+#~ msgstr "Греция"
+
+#~ msgid "Greenland"
+#~ msgstr "Гренландия"
+
+#~ msgid "Grenada"
+#~ msgstr "Гренада"
+
+#~ msgid "Guam"
+#~ msgstr "Гуам"
+
+#~ msgid "Guatemala"
+#~ msgstr "Гватемала"
+
+#~ msgid "Guinea"
+#~ msgstr "Гвинея"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Гвинея-Бисау"
+
+#~ msgid "Guyana"
+#~ msgstr "Гайана"
+
+#~ msgid "Haiti"
+#~ msgstr "Гаити"
+
+#~ msgid "Honduras"
+#~ msgstr "Гондурас"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Гонконг"
+
+#~ msgid "Hungary"
+#~ msgstr "Венгрия"
+
+#~ msgid "Iceland"
+#~ msgstr "Исландия"
+
+#~ msgid "India"
+#~ msgstr "Индия"
+
+#~ msgid "Indonesia"
+#~ msgstr "Индонезия"
+
+#~ msgid "Iran"
+#~ msgstr "Иран"
+
+#~ msgid "Iraq"
+#~ msgstr "Ирак"
+
+#~ msgid "Ireland"
+#~ msgstr "Ирландия"
+
+#~ msgid "Israel"
+#~ msgstr "Израиль"
+
+#~ msgid "Italy"
+#~ msgstr "Италия"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "Берег Слоновой Кости"
+
+#~ msgid "Jamaica"
+#~ msgstr "Ямайка"
+
+#~ msgid "Japan"
+#~ msgstr "Япония"
+
+#~ msgid "Jordan"
+#~ msgstr "Иордания"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Казахстан"
+
+#~ msgid "Kenya"
+#~ msgstr "Кения"
+
+#~ msgid "Kiribati"
+#~ msgstr "Кирибати"
+
+#~ msgid "Korea, North"
+#~ msgstr "Северная Корея"
+
+#~ msgid "Korea, South"
+#~ msgstr "Южная Корея"
+
+#~ msgid "Kuwait"
+#~ msgstr "Кувейт"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Киргизия"
+
+#~ msgid "Laos"
+#~ msgstr "Лаос"
+
+#~ msgid "Latvia"
+#~ msgstr "Латвия"
+
+#~ msgid "Lebanon"
+#~ msgstr "Ливан"
+
+#~ msgid "Lesotho"
+#~ msgstr "Лесото"
+
+#~ msgid "Liberia"
+#~ msgstr "Либерия"
+
+#~ msgid "Libya"
+#~ msgstr "Ливия"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Лихтенштейн"
+
+#~ msgid "Lithuania"
+#~ msgstr "Литва"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Люксембург"
+
+#~ msgid "Macau"
+#~ msgstr "Макао"
+
+#~ msgid "Madagascar"
+#~ msgstr "Мадагаскар"
+
+#~ msgid "Malawi"
+#~ msgstr "Малави"
+
+#~ msgid "Malaysia"
+#~ msgstr "Малайзия"
+
+#~ msgid "Maldives"
+#~ msgstr "Мальдивские острова"
+
+#~ msgid "Mali"
+#~ msgstr "Мали"
+
+#~ msgid "Malta"
+#~ msgstr "Мальта"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Маршалловы острова"
+
+#~ msgid "Martinique"
+#~ msgstr "Мартиника"
+
+#~ msgid "Mauritania"
+#~ msgstr "Мавритания"
+
+#~ msgid "Mauritius"
+#~ msgstr "Маврикий"
+
+#~ msgid "Mexico"
+#~ msgstr "Мексика"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "Микронезия"
+
+#~ msgid "Moldova"
+#~ msgstr "Молдавия"
+
+#~ msgid "Monaco"
+#~ msgstr "Монако"
+
+#~ msgid "Mongolia"
+#~ msgstr "Монголия"
+
+#~ msgid "Montserrat"
+#~ msgstr "Монтсеррат"
+
+#~ msgid "Morocco"
+#~ msgstr "Марокко"
+
+#~ msgid "Mozambique"
+#~ msgstr "Мозамбик"
+
+#~ msgid "Namibia"
+#~ msgstr "Намибия"
+
+#~ msgid "Nauru"
+#~ msgstr "Науру"
+
+#~ msgid "Nepal"
+#~ msgstr "Непал"
+
+#~ msgid "Netherlands"
+#~ msgstr "Нидерланды"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Нидерландские Антильские острова"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Новая Каледония"
+
+#~ msgid "New Zealand"
+#~ msgstr "Новая Зеландия"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Никарагуа"
+
+#~ msgid "Niger"
+#~ msgstr "Нигер"
+
+#~ msgid "Nigeria"
+#~ msgstr "Нигерия"
+
+#~ msgid "Niue"
+#~ msgstr "Ниуе"
+
+#~ msgid "North Korea"
+#~ msgstr "Северная Корея"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "Северная Ирландия"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Северные Марианские острова"
+
+#~ msgid "Norway"
+#~ msgstr "Норвегия"
+
+#~ msgid "Oman"
+#~ msgstr "Оман"
+
+#~ msgid "Pakistan"
+#~ msgstr "Пакистан"
+
+#~ msgid "Palau"
+#~ msgstr "Палау"
+
+#~ msgid "Palestinian"
+#~ msgstr "Палестина"
+
+#~ msgid "Panama"
+#~ msgstr "Панама"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Папуа-Новая Гвинея"
+
+#~ msgid "Paraguay"
+#~ msgstr "Парагвай"
+
+#~ msgid "Peru"
+#~ msgstr "Перу"
+
+#~ msgid "Philippines"
+#~ msgstr "Филиппины"
+
+#~ msgid "Poland"
+#~ msgstr "Польша"
+
+#~ msgid "Portugal"
+#~ msgstr "Португалия"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Пуэрто-Рико"
+
+#~ msgid "Qatar"
+#~ msgstr "Катар"
+
+#~ msgid "Romania"
+#~ msgstr "Румыния"
+
+#~ msgid "Russia"
+#~ msgstr "Россия"
+
+#~ msgid "Rwanda"
+#~ msgstr "Руанда"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "Сент-Китс и Невис"
+
+#~ msgid "St. Lucia"
+#~ msgstr "Сент-Люсия"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "Сент-Винсент и Гренадины"
+
+#~ msgid "San Marino"
+#~ msgstr "Сан-Марино"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Сан-Томе и Принсипи"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Саудовская Аравия"
+
+#~ msgid "Senegal"
+#~ msgstr "Сенегал"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "Сербия и Черногория"
+
+#~ msgid "Seychelles"
+#~ msgstr "Сейшельские острова"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Сьерра-Леоне"
+
+#~ msgid "Singapore"
+#~ msgstr "Сингапур"
+
+#~ msgid "Slovakia"
+#~ msgstr "Словакия"
+
+#~ msgid "Slovenia"
+#~ msgstr "Словения"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Соломоновы острова"
+
+#~ msgid "Somalia"
+#~ msgstr "Сомали"
+
+#~ msgid "South Africa"
+#~ msgstr "ЮАР"
+
+#~ msgid "South Korea"
+#~ msgstr "Южная Корея"
+
+#~ msgid "Spain"
+#~ msgstr "Испания"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Шри-Ланка"
+
+#~ msgid "Sudan"
+#~ msgstr "Судан"
+
+#~ msgid "Suriname"
+#~ msgstr "Суринам"
+
+#~ msgid "Swaziland"
+#~ msgstr "Свазиленд"
+
+#~ msgid "Sweden"
+#~ msgstr "Швеция"
+
+#~ msgid "Switzerland"
+#~ msgstr "Швейцария"
+
+#~ msgid "Syria"
+#~ msgstr "Сирия"
+
+#~ msgid "Taiwan"
+#~ msgstr "Тайвань"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Таджикистан"
+
+#~ msgid "Tanzania"
+#~ msgstr "Танзания"
+
+#~ msgid "Thailand"
+#~ msgstr "Таиланд"
+
+#~ msgid "Tibet"
+#~ msgstr "Тибет"
+
+#~ msgid "Togo"
+#~ msgstr "Того"
+
+#~ msgid "Tonga"
+#~ msgstr "Тонга"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Тринидад и Тобаго"
+
+#~ msgid "Tunisia"
+#~ msgstr "Тунис"
+
+#~ msgid "Turkey"
+#~ msgstr "Турция"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Туркменистан"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Теркс и Кайкос"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Тувалу"
+
+#~ msgid "Uganda"
+#~ msgstr "Уганда"
+
+#~ msgid "Ukraine"
+#~ msgstr "Украина"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Объединённые Арабские Эмираты"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Великобритания"
+
+#~ msgid "United States"
+#~ msgstr "США"
+
+#~ msgid "Uruguay"
+#~ msgstr "Уругвай"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Узбекистан"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Вануату"
+
+#~ msgid "Vatican City"
+#~ msgstr "Ватикан"
+
+#~ msgid "Venezuela"
+#~ msgstr "Венесуэла"
+
+#~ msgid "Vietnam"
+#~ msgstr "Вьетнам"
+
+#~ msgid "Western Samoa"
+#~ msgstr "Западное Самоа"
+
+#~ msgid "Yemen"
+#~ msgstr "Йемен"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "Югославия"
+
+#~ msgid "Zaire"
+#~ msgstr "Заир"
+
+#~ msgid "Zambia"
+#~ msgstr "Замбия"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Зимбабве"

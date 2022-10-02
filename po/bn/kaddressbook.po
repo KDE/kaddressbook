@@ -1,0 +1,4234 @@
+# translation of kaddressbook.po to Bengali
+# Deepayan Sarkar <deepayan@bengalinux.org>, 2004, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kaddressbook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:50+0000\n"
+"PO-Revision-Date: 2006-01-23 01:24-0600\n"
+"Last-Translator: Deepayan Sarkar <deepayan@bengalinux.org>\n"
+"Language-Team: Bengali <kde-translation@bengalinux.org>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "দীপায়ন সরকার"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "deepayan@bengalinux.org"
+
+#: src/printing/grantlee/themes/big-theme-example/theme.html:3
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#, kde-format
+msgid "Address Book"
+msgstr "ঠিকানা তালিকা"
+
+#: src/printing/grantlee/themes/default/theme.html:35
+#, fuzzy
+#| msgid "Contains"
+msgid "Contact"
+msgstr "-তে আছে"
+
+#: src/printing/grantlee/themes/default/theme.html:42
+#: src/printing/grantlee/themes/full/theme.html:42
+#, fuzzy
+#| msgid "Email"
+msgid "Emails"
+msgstr "ই-মেইল"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
+#: src/printing/grantlee/themes/default/theme.html:52
+#: src/printing/grantlee/themes/full/theme.html:52
+#: src/printing/ringbinder/rbs_appearance.ui:95
+#, kde-format
+msgid "Organization"
+msgstr "সংস্থা"
+
+#: src/printing/grantlee/themes/default/theme.html:58
+#: src/printing/grantlee/themes/full/theme.html:58
+#: src/viewertemplates/contact_embedded.html:62
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: src/printing/grantlee/themes/default/theme.html:64
+#: src/printing/grantlee/themes/full/theme.html:64
+#: src/viewertemplates/contact_embedded.html:26
+#: src/printing/ringbinder/rbs_appearance.ui:108
+#, fuzzy, kde-format
+msgid "Birthday"
+msgstr "জন্মদিন:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: src/printing/grantlee/themes/default/theme.html:70
+#: src/printing/grantlee/themes/full/theme.html:70
+#: src/printing/ringbinder/rbs_appearance.ui:121
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note"
+msgstr "নোট:"
+
+#: src/printing/grantlee/themes/full/theme.html:76
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "পদবী"
+
+#: src/viewertemplates/contact_embedded.html:28
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/viewertemplates/contact_embedded.html:47
+#, fuzzy
+#| msgid "Email"
+msgid "Email"
+msgstr "ই-মেইল"
+
+#: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:105
+#, fuzzy, kde-format
+#| msgid "Blog feed:"
+msgid "Blog Feed"
+msgstr "ব্লগ ফীড:"
+
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
+#: src/kaddressbookpart.cpp:29
+#, kde-format
+msgid "KAddressBook"
+msgstr "কে-অ্যাড্রেসবুক"
+
+#: kontactplugin/kaddressbook_plugin.cpp:33
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact..."
+msgstr "&নতুন পরিচয়..."
+
+#. i18nc( "@info:status", "Create a new contact" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:39
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can create a new contact."
+msgstr ""
+
+#: kontactplugin/kaddressbook_plugin.cpp:42
+#, fuzzy, kde-format
+#| msgid "&New Contact..."
+msgctxt "@action:inmenu"
+msgid "New Contact Group..."
+msgstr "&নতুন পরিচয়..."
+
+#. i18nc( "@info:status", "Create a new contact group" ) );
+#: kontactplugin/kaddressbook_plugin.cpp:48
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new contact group."
+msgstr ""
+
+#: src/aboutdata.cpp:19
+#, fuzzy, kde-format
+#| msgid "The KDE Address Book"
+msgid "The KDE Address Book Application"
+msgstr "কে.ডি.ই. ঠিকানা তালিকা"
+
+#: src/aboutdata.cpp:21
+#, kde-format
+msgid "Copyright © 2007–%1 KAddressBook authors"
+msgstr ""
+
+#: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
+#: src/configuration/kaddressbook_config_userfeedback.cpp:35
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/aboutdata.cpp:23
+#, kde-format
+msgid "Current maintainer"
+msgstr "বর্তমান রক্ষণাবেক্ষণকারী"
+
+#: src/aboutdata.cpp:24
+#, kde-format
+msgid "Tobias König"
+msgstr ""
+
+#: src/aboutdata.cpp:24
+#, fuzzy, kde-format
+#| msgid "Current maintainer"
+msgid "Previous maintainer"
+msgstr "বর্তমান রক্ষণাবেক্ষণকারী"
+
+#: src/aboutdata.cpp:25
+#, kde-format
+msgid "Stefan Taferner"
+msgstr ""
+
+#: src/aboutdata.cpp:25
+#, fuzzy, kde-format
+#| msgid "Original author"
+msgid "Original Author (1998)"
+msgstr "মূল লেখক"
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "David Bryant"
+msgstr ""
+
+#: src/aboutdata.cpp:26
+#, kde-format
+msgid "Documentation (2019)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Reset category filter"
+msgstr "শেষ সক্রিয় ফিল্টার ব্যবহার করো"
+
+#: src/categoryselectwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid "Use last active filter"
+msgctxt "@action:button"
+msgid "Clear category filter"
+msgstr "শেষ সক্রিয় ফিল্টার ব্যবহার করো"
+
+#: src/categoryselectwidget.cpp:105
+#, kde-format
+msgid "(Untagged)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:110
+#, kde-format
+msgid "(Groups)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#, kde-format
+msgid "(All)"
+msgstr ""
+
+#: src/categoryselectwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "(None)"
+msgstr "কিছু না"
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid ", "
+msgstr ""
+
+#: src/categoryselectwidget.cpp:229
+#, kde-format
+msgid "<qt>Category filter: %1"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:28
+#, kde-format
+msgid "Configure Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_plugins.cpp:32
+#, kde-format
+msgid "(c), 2016-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:29
+#, kde-format
+msgid "Configure User FeedBack"
+msgstr ""
+
+#: src/configuration/kaddressbook_config_userfeedback.cpp:33
+#, kde-format
+msgid "(c), 2020-2021 Laurent Montel"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#, kde-format
+msgid "Tools Plugins"
+msgstr ""
+
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#, kde-format
+msgid "Import/Export Plugins"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:67
+#, fuzzy, kde-format
+#| msgid "Add..."
+msgid "..."
+msgstr "যোগ করো..."
+
+#: src/contactinfoproxymodel.cpp:69
+#, kde-format
+msgid "Loading contacts details ..."
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:122
+#, fuzzy, kde-format
+#| msgid "Email:"
+msgid "Email: %1"
+msgstr "ই-মেইল:"
+
+#: src/contactinfoproxymodel.cpp:130
+#, fuzzy, kde-format
+#| msgid "Phone"
+msgid "Phone: %1"
+msgstr "ফোন"
+
+#: src/contactinfoproxymodel.cpp:136
+#, kde-format
+msgid "%1%2 %3"
+msgstr ""
+
+#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#, kde-format
+msgid "%1 %2 %3"
+msgstr ""
+
+#: src/contactswitcher.cpp:18
+#, kde-format
+msgctxt "@action:button Next contact"
+msgid "Next"
+msgstr ""
+
+#: src/contactswitcher.cpp:19
+#, kde-format
+msgctxt "@action:button Previous contact"
+msgid "Previous"
+msgstr ""
+
+#: src/contactswitcher.cpp:24
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the previous contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:25
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the previous contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:27
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Move to the next contact in the list"
+msgstr ""
+
+#: src/contactswitcher.cpp:28
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Press this button to move to the next contact in the list."
+msgstr ""
+
+#: src/contactswitcher.cpp:106
+#, fuzzy, kde-format
+#| msgctxt "<nickname> on <server>"
+#| msgid "%1 on %2"
+msgctxt "@info:status"
+msgid "%1 out of %2"
+msgstr "%2-এ %1"
+
+#: src/importexport/contactfields.cpp:20
+#, fuzzy, kde-format
+#| msgid "Undefined"
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "অজ্ঞাত"
+
+#: src/importexport/contactfields.cpp:39
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "বর্ষপূর্তি"
+
+#: src/importexport/contactfields.cpp:85
+#, fuzzy, kde-format
+#| msgid "Use Preferred"
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "পছন্দের অ্যাড্রেস ব্যবহার করো"
+
+#: src/importexport/contactfields.cpp:87
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "ই-মেইল"
+
+#: src/importexport/contactfields.cpp:89
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "ই-মেইল"
+
+#: src/importexport/contactfields.cpp:91
+#, fuzzy, kde-format
+#| msgid "Email"
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "ই-মেইল"
+
+#: src/importexport/contactfields.cpp:107
+#, kde-format
+msgid "Profession"
+msgstr "পেশা"
+
+#: src/importexport/contactfields.cpp:109
+#, kde-format
+msgid "Office"
+msgstr "অফিস"
+
+#: src/importexport/contactfields.cpp:111
+#, fuzzy, kde-format
+#| msgid "Myanmar"
+msgid "Manager"
+msgstr "মায়ানমার"
+
+#: src/importexport/contactfields.cpp:113
+#, fuzzy, kde-format
+#| msgid "Assistant's Name"
+msgid "Assistant"
+msgstr "সহকারীর নাম"
+
+#: src/importexport/contactfields.cpp:115
+#, kde-format
+msgid "Spouse"
+msgstr ""
+
+#: src/importexport/contactselectiondialog.cpp:22
+#, fuzzy, kde-format
+#| msgid "&Delete Contact"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "পরিচ&য় মুছে ফেলো"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "পরিচয় সম্পাদন করো"
+
+#: src/importexport/contactselectionwidget.cpp:116
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "%1 ঠিকানা তালিকা"
+
+#: src/importexport/contactselectionwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#: src/importexport/contactselectionwidget.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Delete Contact"
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "পরিচ&য় মুছে ফেলো"
+
+#: src/importexport/contactselectionwidget.cpp:122
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:124
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "পরিচয় সম্পাদন করো"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "%1 ঠিকানা তালিকা"
+
+#: src/importexport/contactselectionwidget.cpp:130
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:139
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:140
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+
+#: src/importexport/contactselectionwidget.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Delete Contact"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "পরিচ&য় মুছে ফেলো"
+
+#: src/importexport/contactselectionwidget.cpp:173
+#, fuzzy, kde-format
+#| msgid "&Delete Contact"
+msgid "Fetch Contacts"
+msgstr "পরিচ&য় মুছে ফেলো"
+
+#: src/importexport/exportselectionwidget.cpp:21
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#: src/importexport/exportselectionwidget.cpp:22
+#, fuzzy, kde-format
+#| msgid "Business"
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "ব্যবসায়িক"
+
+#: src/importexport/exportselectionwidget.cpp:23
+#, fuzzy, kde-format
+#| msgid "Netherlands"
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "নেদারল্যাণ্ড"
+
+#: src/importexport/exportselectionwidget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Encrypt:"
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "এনক্রিপ্ট:"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "ছবি"
+
+#: src/importexport/exportselectionwidget.cpp:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:30
+#, fuzzy, kde-format
+#| msgid "File to import:"
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "যে ফাইল আমদানি করা হবে:"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#: src/importexport/exportselectionwidget.cpp:38
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#: src/importexport/exportselectionwidget.cpp:44
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:48
+#, fuzzy, kde-format
+#| msgid "Export to phone finished."
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "মোবাইল ফোনে রপ্তানি করা সম্পন্ন।"
+
+#: src/importexport/exportselectionwidget.cpp:50
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#: src/importexport/exportselectionwidget.cpp:56
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, fuzzy, kde-format
+#| msgid "Picture"
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "ছবি"
+
+#: src/importexport/exportselectionwidget.cpp:62
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "Export to One File"
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr ""
+
+#: src/importexport/exportselectionwidget.cpp:74
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:58
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "ঠিকানা তালিকা"
+
+#: src/importexport/importexportengine.cpp:59
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr ""
+
+#: src/importexport/importexportengine.cpp:74
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "পরিচয় সম্পাদন করো"
+
+#: src/importexport/importexportengine.cpp:75
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "পরিচয় সম্পাদন করো"
+msgstr[1] "পরিচয় সম্পাদন করো"
+
+#: src/kaddressbook_options.h:15
+#, fuzzy, kde-format
+#| msgid "Import the given vCard"
+msgid "Import the given file"
+msgstr "প্রদত্ত ভি-কার্ডটি আমদানি করো"
+
+#: src/kaddressbook_options.h:17
+#, kde-format
+msgid "Open the 'New Contact' dialog"
+msgstr ""
+
+#: src/kaddressbook_options.h:19
+#, kde-format
+msgid "Display the specified contact (by URL)"
+msgstr ""
+
+#: src/kaddressbook_options.h:21
+#, kde-format
+msgid "Files or URLs. The user will be asked whether to import."
+msgstr ""
+
+#: src/kaddressbook_options.h:24
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+
+#: src/kaddressbookpart.cpp:56
+#, fuzzy, kde-format
+#| msgid "Import KDE 2 Addressbook..."
+msgid "&Configure KAddressBook..."
+msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#. i18n: ectx: Menu (file)
+#: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
+#, fuzzy, kde-format
+msgid "&File"
+msgstr "ফিল্টার:"
+
+#. i18n: ectx: Menu (file_new)
+#: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "&New"
+msgstr "নতুন..."
+
+#. i18n: ectx: Menu (edit)
+#: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
+#, fuzzy, kde-format
+msgid "&Edit"
+msgstr "&সম্পাদনা..."
+
+#. i18n: ectx: Menu (view)
+#: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
+#, fuzzy, kde-format
+msgid "&View"
+msgstr "ভিউ যোগ করো"
+
+#. i18n: ectx: Menu (action)
+#: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
+#, fuzzy, kde-format
+#| msgid "Latin1"
+msgid "&Action"
+msgstr "লাতিন-১"
+
+#. i18n: ectx: Menu (tools)
+#: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
+#, fuzzy, kde-format
+msgid "&Tools"
+msgstr "টুলস"
+
+#. i18n: ectx: Menu (settings)
+#: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
+#, fuzzy, kde-format
+msgid "&Settings"
+msgstr "ফন্ট সেটিংস"
+
+#. i18n: ectx: Menu (file_export)
+#: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
+#, kde-format
+msgid "&Export"
+msgstr "&রপ্তানি"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, fuzzy, kde-format
+msgid "Main Toolbar"
+msgstr "পরিচয় টুলবার"
+
+#: src/mainwidget.cpp:353
+#, fuzzy, kde-format
+msgid "Import"
+msgstr "&আমদানি"
+
+#: src/mainwidget.cpp:360
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export"
+msgstr "&রপ্তানি"
+
+#: src/mainwidget.cpp:407
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "@label Search contacts in list"
+msgid "Search... <%1>"
+msgstr "সন্ধান:"
+
+#: src/mainwidget.cpp:632
+#, kde-format
+msgid "&Themes"
+msgstr ""
+
+#: src/mainwidget.cpp:641
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Print the complete address book or a selected number of contacts."
+msgstr ""
+
+#: src/mainwidget.cpp:646
+#, fuzzy, kde-format
+#| msgid "Recursive search"
+msgid "Quick search"
+msgstr "রিকার্সিভ সন্ধান"
+
+#: src/mainwidget.cpp:651
+#, fuzzy, kde-format
+#| msgid "Category"
+msgid "Category filter"
+msgstr "শ্রেণী"
+
+#: src/mainwidget.cpp:656
+#, fuzzy, kde-format
+msgid "Select All"
+msgstr "সব নির্বাচন বাতিল করো"
+
+#: src/mainwidget.cpp:658
+#, fuzzy, kde-format
+#| msgid "Selects all visible contacts from current view."
+msgid "Select all contacts in the current address book view."
+msgstr "বর্তমান ভিউ থেকে সবকটি পরিচয় নির্বাচন করে।"
+
+#: src/mainwidget.cpp:662
+#, kde-format
+msgid "Show QR Codes"
+msgstr ""
+
+#: src/mainwidget.cpp:663
+#, kde-format
+msgid "Show QR Codes in the contact."
+msgstr ""
+
+#: src/mainwidget.cpp:668
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Simple (one column)"
+msgstr ""
+
+#: src/mainwidget.cpp:672
+#, fuzzy, kde-format
+#| msgid "Please select type of the new address book:"
+msgid "Show a simple mode of the address book view."
+msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#: src/mainwidget.cpp:675
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Two Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:681
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Three Columns"
+msgstr ""
+
+#: src/mainwidget.cpp:694
+#, kde-format
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: src/mainwidget.cpp:707
+#, kde-format
+msgid "Serverside Subscription..."
+msgstr ""
+
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgctxt "@title:window"
+msgid "Print Contacts"
+msgstr "পরিচয় সম্পাদন করো"
+
+#: src/mainwindow.cpp:69
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can configure the application-"
+"wide shortcuts."
+msgstr ""
+
+#: src/mainwindow.cpp:170
+#, kde-format
+msgid ""
+"<qt>This will hide the menu bar completely. You can show it again by typing "
+"%1.</qt>"
+msgstr ""
+
+#: src/mainwindow.cpp:173
+#, fuzzy, kde-format
+#| msgid "Hide Jump Bar"
+msgid "Hide menu bar"
+msgstr "জাম্প বার লুকোও"
+
+#: src/manageshowcollectionproperties.cpp:83
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#: src/modelcolumnmanager.cpp:69
+#, kde-format
+msgid "Full Name"
+msgstr "পুরো নাম"
+
+#: src/modelcolumnmanager.cpp:74
+#, fuzzy, kde-format
+#| msgid "Family names:"
+msgid "Family Name"
+msgstr "পারিবারিক নাম (পদবী):"
+
+#: src/modelcolumnmanager.cpp:78
+#, fuzzy, kde-format
+#| msgid "Given name:"
+msgid "Given Name"
+msgstr "প্রদত্ত নাম:"
+
+#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#, kde-format
+msgid "Home Address"
+msgstr "বাড়ির ঠিকানা"
+
+#: src/modelcolumnmanager.cpp:90
+#, fuzzy, kde-format
+#| msgid "Business"
+msgid "Business Address"
+msgstr "ব্যবসায়িক"
+
+#: src/modelcolumnmanager.cpp:94
+#, fuzzy, kde-format
+msgid "Phone Numbers"
+msgstr "ফোন নম্বর সম্পাদন করো"
+
+#: src/modelcolumnmanager.cpp:98
+#, fuzzy, kde-format
+#| msgid "Preferred address"
+msgid "Preferred EMail"
+msgstr "পছন্দের ঠিকানা"
+
+#: src/modelcolumnmanager.cpp:102
+#, fuzzy, kde-format
+#| msgid "Email"
+msgid "All EMails"
+msgstr "ই-মেইল"
+
+#: src/printing/compact/compactstyle.cpp:112
+#, fuzzy, kde-format
+#| msgid "Company"
+msgid "Compact Style"
+msgstr "কোম্পানী"
+
+#: src/printing/compact/compactstyle.cpp:166
+#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/grantlee/grantleeprintstyle.cpp:41
+#: src/printing/mike/mikesstyle.cpp:116
+#: src/printing/ringbinder/ringbinderstyle.cpp:161
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up document"
+msgstr "ফন্ট এবং রং সেট-আপ চলছে"
+
+#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/grantlee/grantleeprintstyle.cpp:50
+#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/ringbinder/ringbinderstyle.cpp:194
+#, kde-format
+msgid "Printing"
+msgstr "মুদ্রণ চলছে"
+
+#: src/printing/compact/compactstyle.cpp:177
+#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/grantlee/grantleeprintstyle.cpp:54
+#: src/printing/mike/mikesstyle.cpp:127
+#: src/printing/ringbinder/ringbinderstyle.cpp:198
+#, fuzzy, kde-format
+#| msgid "Done"
+msgctxt "Finished printing"
+msgid "Done"
+msgstr "হয়ে গেছে"
+
+#: src/printing/compact/compactstyle.cpp:200
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgid "Compact Printing Style"
+msgstr "মুদ্রণশৈলী বেছে নিন"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
+#. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
+#: src/printing/compact/compactstyle.ui:14
+#: src/printing/ringbinder/rbs_appearance.ui:14
+#, fuzzy, kde-format
+msgid "Appearance"
+msgstr "চেহারা পাতা"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbFields)
+#: src/printing/compact/compactstyle.ui:35
+#, fuzzy, kde-format
+#| msgid "All Fields"
+msgid "Fields"
+msgstr "সবকটি ক্ষেত্র"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithHomeAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:43
+#: src/printing/compact/compactstyle.ui:46
+#, kde-format
+msgid "Print the home address, with home phone number and mobile phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
+#: src/printing/compact/compactstyle.ui:49
+#, fuzzy, kde-format
+#| msgid "Home Address"
+msgid "with home address"
+msgstr "বাড়ির ঠিকানা"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:56
+#: src/printing/compact/compactstyle.ui:59
+#, kde-format
+msgid "print the business address, with business phone number"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
+#: src/printing/compact/compactstyle.ui:62
+#, fuzzy, kde-format
+#| msgid "Business"
+msgid "with business address"
+msgstr "ব্যবসায়িক"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:69
+#: src/printing/compact/compactstyle.ui:72
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print the birthday"
+msgstr "পরিচয় সম্পাদন করো"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
+#: src/printing/compact/compactstyle.ui:75
+#, fuzzy, kde-format
+msgid "with birthday"
+msgstr "জন্মদিন:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:82
+#: src/printing/compact/compactstyle.ui:85
+#, kde-format
+msgid "Print the preferred and the secondary e-mail fields"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
+#: src/printing/compact/compactstyle.ui:88
+#, fuzzy, kde-format
+#| msgid "Edit Email"
+msgid "with e-mail"
+msgstr "ই-মেইল পরিবর্তন করো"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:112
+#: src/printing/compact/compactstyle.ui:115
+#, kde-format
+msgid "the first color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
+#: src/printing/compact/compactstyle.ui:118
+#, kde-format
+msgid "first color"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:125
+#: src/printing/compact/compactstyle.ui:128
+#, kde-format
+msgid "the second color, if alternating color is checked"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
+#: src/printing/compact/compactstyle.ui:131
+#, fuzzy, kde-format
+#| msgid "Background Color"
+msgid "second color"
+msgstr "পটভূমির রং"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:138
+#: src/printing/compact/compactstyle.ui:141
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Change the background color of every row"
+msgstr "শিরোনাম পটভূমির রং:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
+#: src/printing/compact/compactstyle.ui:144
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Alternating the background color"
+msgstr "শিরোনাম পটভূমির রং:"
+
+#: src/printing/detailled/detailledstyle.cpp:74
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgid "Organization:"
+msgstr "সংস্থা"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email address:"
+msgstr "ই-মেইল ঠিকানা:"
+
+#: src/printing/detailled/detailledstyle.cpp:82
+#, kde-format
+msgid "Email addresses:"
+msgstr "ই-মেইল ঠিকানা:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephone:"
+msgstr "টেলিফোন:"
+
+#: src/printing/detailled/detailledstyle.cpp:92
+#, kde-format
+msgid "Telephones:"
+msgstr "টেলিফোন:"
+
+#: src/printing/detailled/detailledstyle.cpp:104
+#, kde-format
+msgid "Web page:"
+msgstr "ওয়েব পেজ:"
+
+#: src/printing/detailled/detailledstyle.cpp:118
+#, kde-format
+msgid "Domestic Address"
+msgstr "আন্তর্দেশীয় ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:121
+#, kde-format
+msgid "International Address"
+msgstr "আন্তর্জাতিক ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:124
+#, kde-format
+msgid "Postal Address"
+msgstr "ডাক ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:127
+#, kde-format
+msgid "Parcel Address"
+msgstr "পার্সেল ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:133
+#, kde-format
+msgid "Work Address"
+msgstr "কর্মক্ষেত্রের ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:137
+#, kde-format
+msgid "Preferred Address"
+msgstr "পছন্দের ঠিকানা"
+
+#: src/printing/detailled/detailledstyle.cpp:148
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Notes:"
+msgstr "নোট:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHeader)
+#: src/printing/detailled/detailledstyle.cpp:232
+#: src/printing/detailled/ds_appearance.ui:58
+#, kde-format
+msgid "Detailed Print Style - Appearance"
+msgstr ""
+
+#: src/printing/detailled/detailledstyle.cpp:245
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up colors"
+msgstr "ফন্ট এবং রং সেট-আপ চলছে"
+
+#: src/printing/detailled/detailledstyle.cpp:288
+#, kde-format
+msgid "Detailed Style"
+msgstr "বিস্তারিত স্টাইল"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
+#: src/printing/detailled/ds_appearance.ui:14
+#, kde-format
+msgid "Appearance Page"
+msgstr "চেহারা পাতা"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
+#: src/printing/detailled/ds_appearance.ui:77
+#, kde-format
+msgid "Contact Headers"
+msgstr "পরিচয় হেডার"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:119
+#, fuzzy, kde-format
+#| msgid "Headline background color:"
+msgid "Select the headline text background color"
+msgstr "শিরোনাম পটভূমির রং:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
+#: src/printing/detailled/ds_appearance.ui:122
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline background color."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
+#: src/printing/detailled/ds_appearance.ui:139
+#, kde-format
+msgid "Headline background color:"
+msgstr "শিরোনাম পটভূমির রং:"
+
+#. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
+#: src/printing/detailled/ds_appearance.ui:149
+#, kde-format
+msgid "Headline text color:"
+msgstr "শিরোনাম লেখার রং:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:162
+#, fuzzy, kde-format
+#| msgid "Headline text color:"
+msgid "Select the headline text color"
+msgstr "শিরোনাম লেখার রং:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
+#: src/printing/detailled/ds_appearance.ui:165
+#, kde-format
+msgid ""
+"Click this button to start a color chooser that will allow you set to the "
+"color for the headline text."
+msgstr ""
+
+#: src/printing/mike/mikesstyle.cpp:142
+#, kde-format
+msgid "Mike's Printing Style"
+msgstr ""
+
+#: src/printing/printingwizard.cpp:47
+#, kde-format
+msgid "Which contacts do you want to print?"
+msgstr ""
+
+#: src/printing/printingwizard.cpp:49
+#, kde-format
+msgid "Choose Contacts to Print"
+msgstr ""
+
+#: src/printing/printingwizard.cpp:55
+#, kde-format
+msgid "Choose Printing Style"
+msgstr "মুদ্রণশৈলী বেছে নিন"
+
+#: src/printing/printingwizard.cpp:202
+#, kde-format
+msgid "Print Progress"
+msgstr "মুদ্রণ অগ্রগতি"
+
+#: src/printing/printprogress.cpp:24
+#, fuzzy, kde-format
+#| msgid "Printing: Progress"
+msgctxt "@title:window"
+msgid "Printing: Progress"
+msgstr "মুদ্রণ: অগ্রগতি"
+
+#: src/printing/printprogress.cpp:42
+#, kde-format
+msgid "Progress"
+msgstr "অগ্রগতি"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
+#: src/printing/ringbinder/rbs_appearance.ui:35
+#, kde-format
+msgid "Print Contact's Information"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:41
+#, fuzzy, kde-format
+msgid "Print contact phone numbers"
+msgstr "ফোন নম্বর সম্পাদন করো"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:44
+#, kde-format
+msgid "Check this box if you want contact phone numbers to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
+#: src/printing/ringbinder/rbs_appearance.ui:47
+#, fuzzy, kde-format
+msgid "Phone numbers"
+msgstr "ফোন নম্বর সম্পাদন করো"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:57
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Print contact email addresses"
+msgstr "ডাক ঠিকানা"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:60
+#, kde-format
+msgid "Check this box if you want contact email addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
+#: src/printing/ringbinder/rbs_appearance.ui:63
+#, fuzzy, kde-format
+msgid "Email addresses"
+msgstr "ই-মেইল ঠিকানা:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:73
+#, fuzzy, kde-format
+msgid "Print contact street addresses"
+msgstr "ঠিকানা ছাপাও"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:76
+#, kde-format
+msgid "Check this box if you want contact street addresses to be printed."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
+#: src/printing/ringbinder/rbs_appearance.ui:79
+#, fuzzy, kde-format
+#| msgid "Postal Address"
+msgid "Postal addresses"
+msgstr "ডাক ঠিকানা"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:89
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact organizations"
+msgstr "পরিচয় সম্পাদন করো"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
+#: src/printing/ringbinder/rbs_appearance.ui:92
+#, kde-format
+msgid "Check this box if you want contact organizations to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:102
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact birthdays"
+msgstr "পরিচয় সম্পাদন করো"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
+#: src/printing/ringbinder/rbs_appearance.ui:105
+#, kde-format
+msgid "Check this box if you want contact birthdays to be printed."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:115
+#, fuzzy, kde-format
+#| msgid "Edit Contact"
+msgid "Print contact notes"
+msgstr "পরিচয় সম্পাদন করো"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
+#: src/printing/ringbinder/rbs_appearance.ui:118
+#, kde-format
+msgid "Check this box if you want contact notes to be printed."
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:73
+#, fuzzy, kde-format
+#| msgid "Note:"
+msgid "Note: "
+msgstr "নোট:"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:129
+#, kde-format
+msgid "Ring Binder Printing Style - Appearance"
+msgstr ""
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:145
+#, fuzzy, kde-format
+#| msgid "Setting up fonts and colors"
+msgid "Setting up fields"
+msgstr "ফন্ট এবং রং সেট-আপ চলছে"
+
+#: src/printing/ringbinder/ringbinderstyle.cpp:213
+#, kde-format
+msgid "Printout for Ring Binders"
+msgstr ""
+
+#: src/printing/stylepage.cpp:36
+#, kde-format
+msgctxt "@item:inlistbox Ascending sort order"
+msgid "Ascending"
+msgstr ""
+
+#: src/printing/stylepage.cpp:37
+#, kde-format
+msgctxt "@item:inlistbox Descending sort order"
+msgid "Descending"
+msgstr ""
+
+#: src/printing/stylepage.cpp:47
+#, fuzzy, kde-format
+#| msgid "(No preview available.)"
+msgctxt "@label"
+msgid "(No preview available.)"
+msgstr "(কোন প্রাকদর্শন পাওয়া যাচ্ছে না)"
+
+#: src/printing/stylepage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Choose Printing Style"
+msgctxt "@title:window"
+msgid "Choose Printing Style"
+msgstr "মুদ্রণশৈলী বেছে নিন"
+
+#: src/printing/stylepage.cpp:114
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"What should the print look like?\n"
+"KAddressBook has several printing styles, designed for different purposes.\n"
+"Choose the style that suits your needs below."
+msgstr ""
+
+#: src/printing/stylepage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Sorting"
+msgctxt "@title:group"
+msgid "Sorting"
+msgstr "ক্রমবিন্যাস"
+
+#: src/printing/stylepage.cpp:126
+#, fuzzy, kde-format
+#| msgid "Organization"
+msgctxt "@label:listbox"
+msgid "Criterion:"
+msgstr "সংস্থা"
+
+#: src/printing/stylepage.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the primary sort field"
+msgstr "কী (Key) ধরন নির্বাচন করুন:"
+
+#: src/printing/stylepage.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"From this list you can select the field on which your contacts are sorted in "
+"the print output.  Use the sorting order option to determine if the sort "
+"will be in ascending or descending order."
+msgstr ""
+
+#: src/printing/stylepage.cpp:137
+#, fuzzy, kde-format
+#| msgid "Order:"
+msgctxt "@label:listbox"
+msgid "Order:"
+msgstr "ধারা:"
+
+#: src/printing/stylepage.cpp:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the sorting order"
+msgstr ""
+
+#: src/printing/stylepage.cpp:143
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want to sort your contacts in ascending or descending order. "
+"Use the sorting criterion option to specify on which contact field the "
+"sorting will be performed."
+msgstr ""
+
+#: src/printing/stylepage.cpp:150
+#, fuzzy, kde-format
+#| msgid "Print Style"
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "মুদ্রণশৈলী"
+
+#: src/printing/stylepage.cpp:155
+#, fuzzy, kde-format
+#| msgid "Select the key type:"
+msgctxt "@info:tooltip"
+msgid "Select the print style"
+msgstr "কী (Key) ধরন নির্বাচন করুন:"
+
+#: src/printing/stylepage.cpp:156
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/widgets/quicksearchwidget.cpp:31
+#, fuzzy, kde-format
+#| msgid "&Delete Contact"
+msgctxt "@info:tooltip"
+msgid "Search contacts in list"
+msgstr "পরিচ&য় মুছে ফেলো"
+
+#: src/widgets/quicksearchwidget.cpp:33
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Start typing a search string in this box and the list of contacts matching "
+"that string will be displayed.  This is a quick way of searching for "
+"contacts of interest."
+msgstr ""
+
+#~ msgid "&Import"
+#~ msgstr "&আমদানি"
+
+#~ msgid "Import vCard..."
+#~ msgstr "ভি-কার্ড আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Import CSV file..."
+#~ msgstr "রপ্তানি তালিকা."
+
+#, fuzzy
+#~ msgid "Import LDIF file..."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Import contacts from an LDIF file."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~| msgid "Import From Mobile Phone..."
+#~ msgid "Import From LDAP server..."
+#~ msgstr "মোবাইল ফোন থেকে আমদানি করো..."
+
+#, fuzzy
+#~| msgid "Import From Mobile Phone..."
+#~ msgid "Import contacts from an LDAP server."
+#~ msgstr "মোবাইল ফোন থেকে আমদানি করো..."
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgid "Import GMX file..."
+#~ msgstr "সব আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Import contacts from a GMX address book file."
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export vCard 4.0..."
+#~ msgstr "ভি-কার্ড ৩.০ রপ্তানি করো..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 4.0 file."
+#~ msgstr "ভি-কার্ড ৩.০ রপ্তানি করো..."
+
+#~ msgid "Export vCard 3.0..."
+#~ msgstr "ভি-কার্ড ৩.০ রপ্তানি করো..."
+
+#, fuzzy
+#~| msgid "Export vCard 3.0..."
+#~ msgid "Export contacts to a vCard 3.0 file."
+#~ msgstr "ভি-কার্ড ৩.০ রপ্তানি করো..."
+
+#~ msgid "Export vCard 2.1..."
+#~ msgstr "ভি-কার্ড ২.১ রপ্তানি করো..."
+
+#, fuzzy
+#~| msgid "Export vCard 2.1..."
+#~ msgid "Export contacts to a vCard 2.1 file."
+#~ msgstr "ভি-কার্ড ২.১ রপ্তানি করো..."
+
+#, fuzzy
+#~ msgid "Export CSV file..."
+#~ msgstr "রপ্তানি তালিকা."
+
+#, fuzzy
+#~ msgid "Export LDIF file..."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Export contacts to an LDIF file."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Export GMX file..."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~ msgid "Export contacts to a GMX address book file."
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#, fuzzy
+#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
+#~ msgstr "<qt>ফাইল <b>%1</b> খোলা যায়নি।</qt>"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+#~ msgstr "<qt>ফাইল <b>%1</b> খোলা যায়নি।</qt>"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "CSV Import Dialog"
+#~ msgstr "ভি-কার্ড আমদানি ব্যর্থ"
+
+#, fuzzy
+#~| msgid "File to import:"
+#~ msgctxt "@label"
+#~ msgid "File to import:"
+#~ msgstr "যে ফাইল আমদানি করা হবে:"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select a csv file to import"
+#~ msgstr "আমদানি করার জন্য ভি-কার্ড বেছে নিন"
+
+#, fuzzy
+#~ msgctxt "@title:group"
+#~ msgid "Delimiter"
+#~ msgstr "প্রদর্শন মুছে ফেল"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Comma"
+#~ msgstr "কমা"
+
+#, fuzzy
+#~| msgid "Semicolon"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Semicolon"
+#~ msgstr "সেমিকোলন"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgctxt "@option:radio Field separator"
+#~ msgid "Space"
+#~ msgstr "Space"
+
+#, fuzzy
+#~| msgid "Other"
+#~ msgctxt "@option:radio Custum field separator"
+#~ msgid "Other"
+#~ msgstr "অন্যান্য"
+
+#, fuzzy
+#~| msgid "&Text font:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text quote:"
+#~ msgstr "লেখার জন্য &ফন্ট:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the quote character"
+#~ msgstr "কী (Key) ধরন নির্বাচন করুন:"
+
+#, fuzzy
+#~| msgid "\""
+#~ msgctxt "@item:inlistbox Qoute character option"
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~| msgid "'"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@item:inlistbox Quote character option"
+#~ msgid "None"
+#~ msgstr "কিছু না"
+
+#, fuzzy
+#~| msgid "Date format:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Date format:"
+#~ msgstr "তারিখ ফর্ম্যাট:"
+
+#, fuzzy
+#~| msgid "&Text font:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Text codec:"
+#~ msgstr "লেখার জন্য &ফন্ট:"
+
+#, fuzzy
+#~| msgid "Select the key type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select the text codec"
+#~ msgstr "কী (Key) ধরন নির্বাচন করুন:"
+
+#, fuzzy
+#~| msgid "Apply Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Apply Template..."
+#~ msgstr "টেমপ্লেট প্রয়োগ করো..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgctxt "@action:button"
+#~ msgid "Save Template..."
+#~ msgstr "টেমপ্লেট সংরক্ষণ করো..."
+
+#, fuzzy
+#~| msgid "Local (%1)"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Local (%1)"
+#~ msgstr "স্থানীয় (%1)"
+
+#, fuzzy
+#~| msgid "Latin1"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Latin1"
+#~ msgstr "লাতিন-১"
+
+#, fuzzy
+#~| msgid "Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Unicode"
+#~ msgstr "ইউনিকোড"
+
+#, fuzzy
+#~| msgid "Microsoft Unicode"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "Microsoft Unicode"
+#~ msgstr "মাইক্রোসফট ইউনিকোড"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@label"
+#~ msgid "There are no templates available yet."
+#~ msgstr "(কোন প্রাকদর্শন পাওয়া যাচ্ছে না)"
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgctxt "@title:window"
+#~ msgid "No templates available"
+#~ msgstr "(কোন প্রাকদর্শন পাওয়া যাচ্ছে না)"
+
+#, fuzzy
+#~| msgid "Template Name"
+#~ msgctxt "@title:window"
+#~ msgid "Template Name"
+#~ msgstr "টেমপ্লেট-এর নাম"
+
+#, fuzzy
+#~| msgid "Please enter a name for the template:"
+#~ msgctxt "@info"
+#~ msgid "Please enter a name for the template:"
+#~ msgstr "অনুগ্রহ করে টেমপ্লেট-এর জন্য একটি নাম লিখুন:"
+
+#, fuzzy
+#~| msgid "Cannot open input file."
+#~ msgctxt "@info:status"
+#~ msgid "Cannot open input file."
+#~ msgstr "ইনপুট ফাইল খোলা যায়নি।"
+
+#, fuzzy
+#~| msgid "Template Selection"
+#~ msgctxt "@title:window"
+#~ msgid "Template Selection"
+#~ msgstr "টেমপ্লেট নির্বাচন"
+
+#, fuzzy
+#~ msgid "GMX address book file (*.gmxa)"
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+#~ msgstr "<qt>পড়ার জন্য <b>%1</b> খোলা যায়নি।</qt>"
+
+#, fuzzy
+#~ msgid "%1 is not a GMX address book file."
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Export to One File"
+#~ msgctxt "@action:button"
+#~ msgid "Export to One File"
+#~ msgstr "একটি ফাইল-এ রপ্তানি করো"
+
+#, fuzzy
+#~| msgid "Export to Several Files"
+#~ msgctxt "@action:button"
+#~ msgid "Export to Several Files"
+#~ msgstr "একাধিক ফাইল-এ রপ্তানি করো"
+
+#, fuzzy
+#~| msgid "Select vCard to Import"
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard to Import"
+#~ msgstr "আমদানি করার জন্য ভি-কার্ড বেছে নিন"
+
+#, fuzzy
+#~| msgid "vCard Import Failed"
+#~ msgctxt "@title:window"
+#~ msgid "vCard Import Failed"
+#~ msgstr "ভি-কার্ড আমদানি ব্যর্থ"
+
+#, fuzzy
+#~| msgid "Import vCard"
+#~ msgctxt "@title:window"
+#~ msgid "Import vCard"
+#~ msgstr "ভি-কার্ড আমদানি করো"
+
+#, fuzzy
+#~| msgid "Export the entire address book"
+#~ msgctxt "@info"
+#~ msgid "Do you want to import this contact into your address book?"
+#~ msgstr "সমগ্র ঠিকানা তালিকা রপ্তানি করো"
+
+#, fuzzy
+#~| msgid "Import All..."
+#~ msgctxt "@action:button"
+#~ msgid "Import All..."
+#~ msgstr "সব আমদানি করো..."
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Sync Contacts"
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "প্রদর্শন মুছে ফেল"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Email address"
+#~ msgstr "ই-মেইল ঠিকানা:"
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image"
+#~ msgstr "টেমপ্লেট সংরক্ষণ করো..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save Image URL"
+#~ msgstr "টেমপ্লেট সংরক্ষণ করো..."
+
+#, fuzzy
+#~| msgid "&Search"
+#~ msgid "Search"
+#~ msgstr "&সন্ধান"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No email found for this contact."
+#~ msgstr "সব নির্বাচিত পরিচয়কে একটি মেইল পাঠাও।"
+
+#, fuzzy
+#~| msgid "Send &Contact..."
+#~ msgid "Send an email..."
+#~ msgstr "&পরিচয় পাঠাও..."
+
+#, fuzzy
+#~| msgid "Delete all selected contacts."
+#~ msgid "You have not selected any contacts."
+#~ msgstr "সব নির্বাচিত পরিচয় মুছে ফেলো।"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "No emails found in selected contacts."
+#~ msgstr "সব নির্বাচিত পরিচয়কে একটি মেইল পাঠাও।"
+
+#, fuzzy
+#~| msgid "Import vCard..."
+#~ msgid "Send vCards..."
+#~ msgstr "ভি-কার্ড আমদানি করো..."
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "Merge Contacts..."
+#~ msgstr "&নতুন পরিচয়..."
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "Search Duplicate Contacts..."
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "Select Contacts to merge"
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "Select contacts that you really want to merge:"
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "Duplicate contact %1"
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Select AddressBook:"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "No duplicated contact found."
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Customer"
+#~ msgid "Customize"
+#~ msgstr "ক্রেতা"
+
+#, fuzzy
+#~| msgid "Mobile Phone information:"
+#~ msgid "Missing Selected Information"
+#~ msgstr "মোবাইল ফোন তথ্য:"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgid "(Undefined)"
+#~ msgstr "অজ্ঞাত"
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "Merged Contact"
+#~ msgstr "&নতুন পরিচয়..."
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "Merge contact"
+#~ msgstr "&নতুন পরিচয়..."
+
+#, fuzzy
+#~| msgid "Select Categories..."
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "শ্রেণী নির্বাচন করো..."
+
+#, fuzzy
+#~| msgid "&Delete Contact"
+#~ msgid "Potential Duplicate Contacts"
+#~ msgstr "পরিচ&য় মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Add Selected"
+#~ msgid "You selected %1"
+#~ msgstr "নির্বাচিত যোগ করো"
+
+#, fuzzy
+#~| msgid "Contact pinning"
+#~ msgid "Kontact integration"
+#~ msgstr "পরিচয় পিনিং"
+
+#, fuzzy
+#~| msgid "Choose Printing Style"
+#~ msgid "Grantlee Printing Style"
+#~ msgstr "মুদ্রণশৈলী বেছে নিন"
+
+#~ msgid "Department"
+#~ msgstr "বিভাগ"
+
+#~ msgid "Manager's Name"
+#~ msgstr "ম্যানেজারের নাম"
+
+#, fuzzy
+#~| msgid "Assistant's name:"
+#~ msgid "Assistant's Name"
+#~ msgstr "সহকারীর নাম:"
+
+#, fuzzy
+#~| msgid "Partner's Name"
+#~ msgid "Partner's Name"
+#~ msgstr "সঙ্গীর নাম"
+
+#~ msgid "IM Address"
+#~ msgstr "আই-এম ঠিকানা"
+
+#, fuzzy
+#~| msgid "Types"
+#~ msgctxt "Boolean value"
+#~ msgid "yes"
+#~ msgstr "ধরন"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgid "Show Address Books View"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the address books view shall be visible."
+#~ msgstr "বিস্তারিত বিবরণ প্রদর্শিত হবে কিনা অদলবদল করো।"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Hide Address Books View"
+#~ msgstr "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Show Contacts View"
+#~ msgstr "-তে আছে"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the contacts view shall be visible."
+#~ msgstr "বিস্তারিত বিবরণ প্রদর্শিত হবে কিনা অদলবদল করো।"
+
+#, fuzzy
+#~| msgid "Edit Contact Name"
+#~ msgid "Hide Contacts View"
+#~ msgstr "পরিচয়ের নাম সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Show Details"
+#~ msgid "Show Details View"
+#~ msgstr "বিস্তারিত বিবরণ দেখাও"
+
+#, fuzzy
+#~| msgid "Toggle whether the details page shall be visible."
+#~ msgid "Toggle whether the details view shall be visible."
+#~ msgstr "বিস্তারিত বিবরণ প্রদর্শিত হবে কিনা অদলবদল করো।"
+
+#, fuzzy
+#~| msgid "Hide Details"
+#~ msgid "Hide Details View"
+#~ msgstr "বিস্তারিত বর্ণনা লুকোও"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add Address Book Folder..."
+#~ msgstr "ঠিকানা তালিকা যোগ করো"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Copy Address Book Folder"
+#~ msgid_plural "Copy %1 Address Book Folders"
+#~ msgstr[0] "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+#~ msgstr[1] "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected address book folders from the address book."
+#~ msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Update Address Book Folder"
+#~ msgstr "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Update the content of the address book folder"
+#~ msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filter"
+#~ msgid "Cut Address Book Folder"
+#~ msgid_plural "Cut %1 Address Book Folders"
+#~ msgstr[0] "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+#~ msgstr[1] "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Cut the selected address book folders from the address book."
+#~ msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "Copy Contact"
+#~ msgid_plural "Copy %1 Contacts"
+#~ msgstr[0] "&নতুন পরিচয়..."
+#~ msgstr[1] "&নতুন পরিচয়..."
+
+#, fuzzy
+#~| msgid "Please select type of the new address book:"
+#~ msgid "Delete the selected contacts from the address book."
+#~ msgstr "নতুন ঠিকানা তালিকার ধরন বেছে নিন:"
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "Cut Contact"
+#~ msgid_plural "Cut %1 Contacts"
+#~ msgstr[0] "&নতুন পরিচয়..."
+#~ msgstr[1] "&নতুন পরিচয়..."
+
+#, fuzzy
+#~| msgid "&Edit Contact..."
+#~ msgid "Edit Contact..."
+#~ msgstr "পরিচয় &সম্পাদন করো..."
+
+#, fuzzy
+#~ msgid "Delete Group"
+#~ msgid_plural "Delete %1 Groups"
+#~ msgstr[0] "প্রদর্শন মুছে ফেল"
+#~ msgstr[1] "প্রদর্শন মুছে ফেল"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "Edit Group..."
+#~ msgstr "পরিবর্তন করো..."
+
+#~ msgid "Add Address Book"
+#~ msgstr "ঠিকানা তালিকা যোগ করো"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Could not add address book: %1"
+#~ msgstr "ঠিকানা তালিকা যোগ করো"
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Adding Address Book failed"
+#~ msgstr "ঠিকানা তালিকা যোগ করো"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "Delete Address Book?"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "New &Group..."
+#~ msgstr "নতুন..."
+
+#, fuzzy
+#~| msgid "Add Address Book"
+#~ msgid "Add &Address Book..."
+#~ msgstr "ঠিকানা তালিকা যোগ করো"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "&Delete Address Book"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Address Book Browser"
+#~ msgid "Address Book Properties..."
+#~ msgstr "ঠিকানা তালিকা ব্রাউজার"
+
+#~ msgid "Home Number"
+#~ msgstr "বাড়ির নম্বর"
+
+#~ msgid "Work Number"
+#~ msgstr "কর্মক্ষেত্রে নম্বর"
+
+#~ msgid "Mobile Number"
+#~ msgstr "মোবাইল নম্বর"
+
+#~ msgid "Fax Number"
+#~ msgstr "ফ্যাক্স নম্বর"
+
+#~ msgid "Pager"
+#~ msgstr "পেজার"
+
+#~ msgid "Street"
+#~ msgstr "রাস্তা"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "রাজ্য"
+
+#~ msgid "Country"
+#~ msgstr "দেশ"
+
+#~ msgid "City"
+#~ msgstr "শহর"
+
+#~ msgid "Zip Code"
+#~ msgstr "পিন কোড"
+
+#~ msgid "Description"
+#~ msgstr "বর্ণনা"
+
+#~ msgid "User ID"
+#~ msgstr "ব্যবহারকারী আই-ডি"
+
+#, fuzzy
+#~| msgid "State"
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "রাজ্য"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "পদবী"
+
+#~ msgid "Search for:"
+#~ msgstr "সন্ধান করো:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "ই-মেইল"
+
+#, fuzzy
+#~| msgid "Home Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "বাড়ির নম্বর"
+
+#, fuzzy
+#~| msgid "Work Number"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "কর্মক্ষেত্রে নম্বর"
+
+#~ msgid "Recursive search"
+#~ msgstr "রিকার্সিভ সন্ধান"
+
+#~ msgid "Contains"
+#~ msgstr "-তে আছে"
+
+#~ msgid "Unselect All"
+#~ msgstr "সব নির্বাচন বাতিল করো"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "ঠিকানা তালিকা &কনফিগার করো..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "ই-মেইল"
+
+#, fuzzy
+#~| msgid "Send a mail to all selected contacts."
+#~ msgid "Select a distribution list to add the selected contacts to."
+#~ msgstr "সব নির্বাচিত পরিচয়কে একটি মেইল পাঠাও।"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Select Distribution List"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "&Configure Address Book..."
+#~ msgid "Configure the Address Book LDAP Settings"
+#~ msgstr "ঠিকানা তালিকা &কনফিগার করো..."
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Host"
+#~ msgstr "পরিচয় সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "&Add..."
+#~ msgid "&Add Host..."
+#~ msgstr "যো&গ করো..."
+
+#, fuzzy
+#~| msgid "&Edit..."
+#~ msgid "&Edit Host..."
+#~ msgstr "&সম্পাদনা..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "&Remove Host"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "(c) 1997-2005, The KDE PIM Team"
+#~ msgid "(c) 2007-2009 The KDE PIM Team"
+#~ msgstr "(c) ১৯৯৭-২০০৫, কে.ডি.ই. পি-আই-এম টীম"
+
+#, fuzzy
+#~| msgid "Address Books"
+#~ msgctxt "@title:column, address books overview"
+#~ msgid "Address Books"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#, fuzzy
+#~ msgctxt "@title:column, phone numbers of a person"
+#~ msgid "Phone Numbers"
+#~ msgstr "ফোন নম্বর সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Preferred address"
+#~ msgctxt "@title:column, the preferred email addresses of a person"
+#~ msgid "Preferred EMail"
+#~ msgstr "পছন্দের ঠিকানা"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@title:column, all email addresses of a person"
+#~ msgid "All EMails"
+#~ msgstr "ই-মেইল"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgctxt "Name of toplevel contact collection"
+#~ msgid "All Contacts"
+#~ msgstr "পরিচয় সম্পাদন করো"
+
+#, fuzzy
+#~| msgid "Manager's Name"
+#~ msgid "Short Name"
+#~ msgstr "ম্যানেজারের নাম"
+
+#, fuzzy
+#~| msgid "Iceland"
+#~ msgid "Reload"
+#~ msgstr "আইসল্যান্ড"
+
+#, fuzzy
+#~ msgid "Min. number of empty fields:"
+#~ msgstr "ফাঁকা ক্ষেত্র দেখা&ও"
+
+#~ msgid "Font Settings"
+#~ msgstr "ফন্ট সেটিংস"
+
+#~ msgid "Use standard KDE fonts"
+#~ msgstr "স্ট্যাণ্ডার্ড কে.ডি.ই. ফন্ট ব্যবহার করো"
+
+#~ msgid "Details font:"
+#~ msgstr "বিস্তারিত বিবরণীর ফন্ট:"
+
+#~ msgid "Size:"
+#~ msgstr "মাপ:"
+
+#~ msgid "Body font:"
+#~ msgstr "প্রধান অংশের ফন্ট:"
+
+#~ msgid "Fixed font:"
+#~ msgstr "ফিক্সড ফন্ট:"
+
+#~ msgid "Contact header font:"
+#~ msgstr "পরিচয় হেডার ফন্ট:"
+
+#~ msgid "Headlines:"
+#~ msgstr "শিরোনাম:"
+
+#~ msgid "Use colored contact headers"
+#~ msgstr "রঙীন পরিচয় হেডার ব্যবহার করো"
+
+#~ msgid "(Deliver to:)"
+#~ msgstr "(এখানে পাঠাও:)"
+
+#~ msgid "Preparing"
+#~ msgstr "প্রস্তুত করা হচ্ছে"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "সমগ্র ঠিকানা তালিকা ছাপাও"
+
+#, fuzzy
+#~| msgid "%1 address book"
+#~ msgid "Select the address book"
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#~ msgid "Edit Contact"
+#~ msgstr "পরিচয় সম্পাদন করো"
+
+#, fuzzy
+#~ msgid "Add to:"
+#~ msgstr "যোগ করো..."
+
+#, fuzzy
+#~| msgid "(No preview available.)"
+#~ msgid "No pronunciation available"
+#~ msgstr "(কোন প্রাকদর্শন পাওয়া যাচ্ছে না)"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change..."
+#~ msgstr "টাইপ পরিবর্তন করো..."
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgid "Save..."
+#~ msgstr "নতুন..."
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Other..."
+#~ msgctxt "@item:inlistbox Category of contact info field"
+#~ msgid "Other..."
+#~ msgstr "অন্যান্য..."
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "যোগ করো..."
+
+#~ msgid "Edit Phone Number"
+#~ msgstr "ফোন নম্বর সম্পাদন করো"
+
+#~ msgid "This is the preferred phone number"
+#~ msgstr "এটি পছন্দের ফোন নম্বর"
+
+#~ msgid "Edit Email Addresses"
+#~ msgstr "ই-মেইল ঠিকানা সম্পাদন করো"
+
+#~ msgid "Edit..."
+#~ msgstr "পরিবর্তন করো..."
+
+#~ msgid "Add Email"
+#~ msgstr "ই-মেইল যোগ করো"
+
+#~ msgid "New Email:"
+#~ msgstr "নতুন ই-মেইল:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Inputfield for an email address"
+#~ msgid "Email:"
+#~ msgstr "ই-মেইল:"
+
+#~ msgid ""
+#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+#~ msgstr ""
+#~ "<qt>আপনি কি <b>%1</b> ই-মেইল ঠিকানাটি সরিয়ে ফেলার ব্যাপারে নিশ্চিত?</qt>"
+
+#~ msgid "Confirm Remove"
+#~ msgstr "সরিয়ে ফেলা অনুমোদন করুন"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "মোছা থামা&ও"
+
+#, fuzzy
+#~| msgid "Change Type..."
+#~ msgid "Change photo..."
+#~ msgstr "টাইপ পরিবর্তন করো..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save photo..."
+#~ msgstr "টেমপ্লেট সংরক্ষণ করো..."
+
+#, fuzzy
+#~| msgid "Remove List"
+#~ msgid "Remove photo"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Change Email..."
+#~ msgid "Change logo..."
+#~ msgstr "ই-মেইল বদলাও..."
+
+#, fuzzy
+#~| msgid "Save Template..."
+#~ msgid "Save logo..."
+#~ msgstr "টেমপ্লেট সংরক্ষণ করো..."
+
+#, fuzzy
+#~ msgid "Remove logo"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "street/postal"
+#~ msgid "New..."
+#~ msgstr "নতুন..."
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "পরিবর্তন করো..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Delete"
+#~ msgstr "প্রদর্শন মুছে ফেল"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address"
+#~ msgstr "ডাক ঠিকানা"
+
+#~ msgctxt "<streetLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postOfficeBoxLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<localityLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<regionLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<postalCodeLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<countryLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Edit Label..."
+#~ msgstr "লেবেল সম্পাদন করো..."
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "This is the preferred address"
+#~ msgstr "এটি পছন্দের ঠিকানা"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Edit Address Type"
+#~ msgstr "ঠিকানার ধরন সম্পাদন করো"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "Address Types"
+#~ msgstr "ঠিকানার ধরন"
+
+#, fuzzy
+#~| msgid "Simple Name"
+#~ msgid "Simple Name"
+#~ msgstr "সরল নাম"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name with Comma"
+#~ msgstr "বিপরীত নাম"
+
+#, fuzzy
+#~| msgid "Reverse Name"
+#~ msgid "Reverse Name"
+#~ msgstr "বিপরীত নাম"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Organization Name"
+#~ msgstr "সংস্থা"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom"
+#~ msgstr "স্বনির্বাচিত"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name:"
+#~ msgstr "নাম:"
+
+#~ msgid "Nickname:"
+#~ msgstr "ডাকনাম:"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "Pronunciation:"
+#~ msgstr "সংস্থা"
+
+#, fuzzy
+#~| msgid "Web page:"
+#~ msgid "Homepage:"
+#~ msgstr "ওয়েব পেজ:"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Blog:"
+#~ msgstr "ব্লগ"
+
+#, fuzzy
+#~| msgid "&Margin:"
+#~ msgid "Messaging:"
+#~ msgstr "মার্জি&ন:"
+
+#, fuzzy
+#~| msgid "Addresses:"
+#~ msgid "Addresses"
+#~ msgstr "ঠিকানা:"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Coordinates"
+#~ msgstr "-তে আছে"
+
+#, fuzzy
+#~| msgid "Business"
+#~ msgid "Business"
+#~ msgstr "ব্যবসায়িক"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "সাধারণ"
+
+#~ msgid "Profession:"
+#~ msgstr "পেশা:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title:"
+#~ msgstr "পদবী:"
+
+#~ msgid "Department:"
+#~ msgstr "বিভাগ:"
+
+#~ msgid "Office:"
+#~ msgstr "অফিস:"
+
+#~ msgid "Manager's name:"
+#~ msgstr "ম্যানেজারের নাম:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Dates"
+#~ msgstr "তারিখ"
+
+#, fuzzy
+#~| msgid "Family"
+#~ msgid "Family"
+#~ msgstr "পারিবারিক"
+
+#~ msgid "Birthdate:"
+#~ msgstr "জন্মদিন:"
+
+#~ msgid "Anniversary:"
+#~ msgstr "বর্ষপূর্তি:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partner's name:"
+#~ msgstr "সঙ্গীর নাম:"
+
+#, fuzzy
+#~| msgid "Edit Contact"
+#~ msgid "Edit Contact Group"
+#~ msgstr "পরিচয় সম্পাদন করো"
+
+#~ msgid "Custom Fields"
+#~ msgstr "স্বনির্বাচিত ক্ষেত্র"
+
+#~ msgid "Shows contact editor with given email address"
+#~ msgstr "প্রদত্ত ই-মেইল ঠিকানা সহ পরিচয় সম্পাদক প্রদর্শন করে"
+
+#~ msgid "Shows contact editor with given uid"
+#~ msgstr "প্রদত্ত uid সহ পরিচয় সম্পাদক প্রদর্শন করে"
+
+#~ msgid "Launches in editor only mode"
+#~ msgstr "'কেবল সম্পাদক' মোড-এ চালু করে"
+
+#~ msgid "Launches editor for the new contact"
+#~ msgstr "নতুন পরিচয়ের জন্য সম্পাদক চালু করে"
+
+#~ msgctxt "label (number)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#, fuzzy
+#~ msgctxt "street/postal"
+#~ msgid "&Edit Addresses..."
+#~ msgstr "ঠিকানা &সম্পাদন করো..."
+
+#, fuzzy
+#~ msgid "Edit Contact '%1'"
+#~ msgstr "পরিচয় সম্পাদন করো"
+
+#~ msgid "Contact Editor"
+#~ msgstr "পরিচয় সম্পাদক"
+
+#~ msgctxt "<roleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<organizationLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<urlLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgctxt "<titleLabel>:"
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgid "&Details"
+#~ msgid "Details"
+#~ msgstr "বিস্তারি&ত বর্ণনা"
+
+#~ msgid "Misc"
+#~ msgstr "বিবিধ"
+
+#~ msgid "You must specify a valid date"
+#~ msgstr "আপনাকে একটি বৈধ তারিখ উল্লেখ করতে হবে"
+
+#~ msgid "You have to enter a valid birthdate."
+#~ msgstr "এখানে একটি বৈধ তারিখ উল্লেখ করতে হবে।"
+
+#~ msgid "Add View"
+#~ msgstr "ভিউ যোগ করো"
+
+#~ msgid "View name:"
+#~ msgstr "ভিউ-এর নাম:"
+
+#~ msgid "View Type"
+#~ msgstr "ভিউ-এর ধরন"
+
+#~ msgid "Add Field"
+#~ msgstr "ক্ষেত্র যোগ করো"
+
+#~ msgid "Type:"
+#~ msgstr "ধরন:"
+
+#~ msgid "Time"
+#~ msgstr "সময়"
+
+#~ msgid "Date & Time"
+#~ msgstr "তারিখ ও সময়"
+
+#~ msgid "Remove Field"
+#~ msgstr "ক্ষেত্র সরিয়ে ফেলো"
+
+#~ msgid "Add Field..."
+#~ msgstr "ক্ষেত্র যোগ করো..."
+
+#~ msgid "Remove Field..."
+#~ msgstr "ক্ষেত্র সরিয়ে ফেলো..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit Distribution List"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the distribution list"
+#~ msgid "Name:"
+#~ msgstr "নাম:"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution list members:"
+#~ msgstr "বিতরণ তালিকা সম্পাদক"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "<b>Distribution list:</b>"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "Address Book"
+#~ msgid "<b>Address book:</b> %1"
+#~ msgstr "ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add New Distribution List"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Enter a name for the new distribution list:"
+#~ msgstr "বিতরণ তালিকার নাম বদলাও"
+
+#~ msgid "Edit Email Addresses..."
+#~ msgstr "ই-মেইল ঠিকানা সম্পাদন করো..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the filter"
+#~ msgid "Name:"
+#~ msgstr "নাম:"
+
+#~ msgid "Show only contacts matching the selected categories"
+#~ msgstr "শুধুমাত্র নির্বাচিত শ্রেণীর পরিচয়গুলি দেখাও "
+
+#~ msgid "Show all contacts except those matching the selected categories"
+#~ msgstr "নির্বাচিত শ্রেণী ছাড়া বাকি সব পরিচয় দেখাও "
+
+#~ msgid "Edit Address Book Filters"
+#~ msgstr "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#~ msgid "Filter:"
+#~ msgstr "ফিল্টার:"
+
+#, fuzzy
+#~| msgid "Use geo data"
+#~ msgctxt "@option:check"
+#~ msgid "Use geo data"
+#~ msgstr "ভৌগলিক তথ্য ব্যবহার করো"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Latitude:"
+#~ msgstr "ল্যাটিচিউড:"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:textbox"
+#~ msgid "Longitude:"
+#~ msgstr "লঙ্গিচিউড:"
+
+#, fuzzy
+#~| msgid "Edit Geo Data..."
+#~ msgctxt "@action:button"
+#~ msgid "Edit Geo Data..."
+#~ msgstr "ভৌগলিক তথ্য সম্পাদন করো..."
+
+#, fuzzy
+#~| msgid "Geo Data Input"
+#~ msgctxt "@title:window"
+#~ msgid "Geo Data Input"
+#~ msgstr "ভৌগলিক তথ্য ইনপুট"
+
+#, fuzzy
+#~| msgid "Sexagesimal"
+#~ msgctxt "@title:group"
+#~ msgid "Sexagesimal"
+#~ msgstr "সেক্সাজেসিমাল"
+
+#, fuzzy
+#~| msgid "Latitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Latitude:"
+#~ msgstr "ল্যাটিচিউড:"
+
+#, fuzzy
+#~| msgid "North"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "North"
+#~ msgstr "উত্তর"
+
+#, fuzzy
+#~| msgid "South"
+#~ msgctxt "@item:inlistbox Latitude direction"
+#~ msgid "South"
+#~ msgstr "দক্ষিণ"
+
+#, fuzzy
+#~| msgid "Longitude:"
+#~ msgctxt "@label:spinbox"
+#~ msgid "Longitude:"
+#~ msgstr "লঙ্গিচিউড:"
+
+#, fuzzy
+#~| msgid "East"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "East"
+#~ msgstr "পূর্ব"
+
+#, fuzzy
+#~| msgid "West"
+#~ msgctxt "@item:inlistbox Longtitude direction"
+#~ msgid "West"
+#~ msgstr "পশ্চিম"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "@item:inlistbox Undefined location"
+#~ msgid "Undefined"
+#~ msgstr "অজ্ঞাত"
+
+#~ msgid "IM address:"
+#~ msgstr "আই-এম ঠিকানা:"
+
+#~ msgid "Edit IM Addresses..."
+#~ msgstr "আই-এম ঠিকানা সম্পাদন করো..."
+
+#~ msgctxt "as in 'Search in:'"
+#~ msgid "&in:"
+#~ msgstr "&মধ্যে"
+
+#~ msgid "Visible Fields"
+#~ msgstr "প্রদর্শিত ক্ষেত্রসমূহ"
+
+#, fuzzy
+#~| msgid "Contact Headers"
+#~ msgid "Don Sanders"
+#~ msgstr "পরিচয় হেডার"
+
+#~ msgid "Co-maintainer, libkabc port, CSV import/export"
+#~ msgstr "অন্যতম রক্ষণাবেক্ষণকারী, libkabc পোর্ট, CSV আমদানি/রপ্তানি"
+
+#~ msgid "GUI and framework redesign"
+#~ msgstr "গুই এবং ফ্রেমওয়ার্ক পুনর্পরিকল্পনা"
+
+#~ msgid "DCOP interface"
+#~ msgstr "ডিকপ ইন্টারফেস"
+
+#~ msgid "LDAP Lookup"
+#~ msgstr "এল-ডি-এ-পি লুক-আপ"
+
+#~ msgid "Please select only one contact."
+#~ msgstr "অনুগ্রহ করে একটিমাত্র পরিচয় নির্বাচন করুন।"
+
+#~ msgid "Use"
+#~ msgstr "ব্যবহার করো"
+
+#~ msgid "Do Not Use"
+#~ msgstr "ব্যবহার কোর না"
+
+#~ msgid "New Distribution List"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List (%1)"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>ঠিকানা তালিকা <b>%1</b> সংরক্ষণ করা যায়নি।</qt>"
+
+#~ msgid ""
+#~ "Your KDE installation is missing LDAP support, please ask your "
+#~ "administrator or distributor for more information."
+#~ msgstr ""
+#~ "আপনার কে.ডি.ই. ইনস্টলেশন এল-ডি-এ-পি (LDAP) সমর্থন করে না। এ ব্যাপারে আরো "
+#~ "জানতেঅনুগ্রহ করে আপনার অ্যাডমিনস্ট্রেটর-এর সঙ্গে যোগাযোগ করুন।"
+
+#~ msgid "No LDAP IO Slave Available"
+#~ msgstr "কোন এল-ডি-এ-পি (LDAP) আই/ও-স্লেভ পাওয়া যায়নি"
+
+#~ msgid "Print Addresses"
+#~ msgstr "ঠিকানা ছাপাও"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create new contact"
+#~ msgid "New"
+#~ msgstr "নতুন..."
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "&New Distribution List..."
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "Send a mail with the selected contact as attachment."
+#~ msgstr "নির্বাচিত পরিচয়টি সংযুক্ত করে একটি মেইল পাঠাও।"
+
+#~ msgid "Chat &With..."
+#~ msgstr "&আড্ডা শুরু করো..."
+
+#~ msgid "Start a chat with the selected contact."
+#~ msgstr "নির্বাচিত পরিচয়ের সঙ্গে আড্ডা (chat) শুরু করো।"
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "&সম্পাদনা..."
+
+#, fuzzy
+#~| msgid "&New Contact..."
+#~ msgid "&Move Contact To..."
+#~ msgstr "&নতুন পরিচয়..."
+
+#~ msgid "Show Jump Bar"
+#~ msgstr "জাম্প বার দেখাও"
+
+#, fuzzy
+#~| msgid "LDAP Lookup"
+#~ msgid "LDAP &Lookup"
+#~ msgstr "এল-ডি-এ-পি লুক-আপ"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution List: %1"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "Export..."
+#~ msgstr "রপ্তানি..."
+
+#~ msgid "Key Type"
+#~ msgstr "কী (Key) ধরন"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add to Distribution List..."
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "Honorific prefixes:"
+#~ msgstr "সম্মানসূচক উপপদ:"
+
+#~ msgid "Additional names:"
+#~ msgstr "অতিরিক্ত নাম:"
+
+#~ msgid "Honorific suffixes:"
+#~ msgstr "সম্মানসূচক উপাধি:"
+
+#~ msgid "Formatted name:"
+#~ msgstr "ফর্ম্যাট করা নাম:"
+
+#~ msgid "Parse name automatically"
+#~ msgstr "স্বয়ংক্রীয়ভাবে নাম পার্স করো"
+
+#~ msgid "Dr."
+#~ msgstr "ডঃ"
+
+#~ msgid "Miss"
+#~ msgstr "কুমারী"
+
+#~ msgid "Mr."
+#~ msgstr "শ্রী"
+
+#~ msgid "Mrs."
+#~ msgstr "শ্রীমতী"
+
+#~ msgid "Ms."
+#~ msgstr "Ms."
+
+#~ msgid "Prof."
+#~ msgstr "প্রঃ"
+
+#~ msgid "I"
+#~ msgstr "প্রথম"
+
+#~ msgid "II"
+#~ msgstr "দ্বিতীয়"
+
+#~ msgid "III"
+#~ msgstr "তৃতীয়"
+
+#~ msgid "Jr."
+#~ msgstr "জুনিয়র"
+
+#~ msgid "Sr."
+#~ msgstr "সিনিয়র"
+
+#, fuzzy
+#~| msgid "Full Name"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Full Name"
+#~ msgstr "পুরো নাম"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Organization"
+#~ msgstr "সংস্থা"
+
+#, fuzzy
+#~ msgid "Birthday:"
+#~ msgstr "জন্মদিন:"
+
+#, fuzzy
+#~| msgid "Partner's name:"
+#~ msgid "Partners name:"
+#~ msgstr "সঙ্গীর নাম:"
+
+#~ msgid "Edit the contact's name"
+#~ msgstr "পরিচয়ের নাম সম্পাদন করো"
+
+#~ msgid "Edit Name..."
+#~ msgstr "নাম সম্পাদন করো..."
+
+#, fuzzy
+#~ msgid "&Role:"
+#~ msgstr "তালিকা মুছে ফেলো"
+
+#, fuzzy
+#~| msgid "Organization"
+#~ msgid "&Organization"
+#~ msgstr "সংস্থা"
+
+#~ msgid "Tools"
+#~ msgstr "টুলস"
+
+#~ msgid "Fax"
+#~ msgstr "ফ্যাক্স"
+
+#~ msgid "SMS"
+#~ msgstr "এস-এম-এস"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "@label:textbox Name of the contact"
+#~ msgid "Name:"
+#~ msgstr "নাম:"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgctxt "@label:textbox Email address of the contact"
+#~ msgid "Email:"
+#~ msgstr "ই-মেইল:"
+
+#~ msgid "Store as URL"
+#~ msgstr "ইউ-আর-এল হিসাবে সংরক্ষণ করো"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Delete Distribution List"
+#~ msgid_plural "Delete %1 Distribution Lists"
+#~ msgstr[0] "নতুন ডিস্ট্রিবিউশন তালিকা"
+#~ msgstr[1] "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "No default filter"
+#~ msgstr "কোন ডিফল্ট ফিল্টার নেই"
+
+#~ msgid "Use filter:"
+#~ msgstr "ফিল্টার ব্যবহার করো:"
+
+#~ msgid "Default Filter"
+#~ msgstr "ডিফল্ট ফিল্টার"
+
+#~ msgid "Modify View: "
+#~ msgstr "প্রদর্শন বদলাও:"
+
+#, fuzzy
+#~| msgid "Delete View"
+#~ msgctxt "KAddressbook default view name"
+#~ msgid "Default Table View"
+#~ msgstr "প্রদর্শন মুছে ফেল"
+
+#~ msgid "Confirm Delete"
+#~ msgstr "মোছা অনুমোদন করুন"
+
+#~ msgid "Do Not Import"
+#~ msgstr "আমদানি কোর না"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Category to filter on"
+#~ msgid "None"
+#~ msgstr "কিছু না"
+
+#, fuzzy
+#~| msgid "Undefined"
+#~ msgctxt "Category to filter on"
+#~ msgid "Unfiled"
+#~ msgstr "অজ্ঞাত"
+
+#~ msgid "Select View"
+#~ msgstr "প্রদর্শন নির্বাচন করো"
+
+#~ msgid "Modify View..."
+#~ msgstr "প্রদর্শন বদলাও..."
+
+#~ msgid "Add View..."
+#~ msgstr "প্রদর্শন যোগ করো..."
+
+#~ msgid "Delete View"
+#~ msgstr "প্রদর্শন মুছে ফেল"
+
+#~ msgid "Refresh View"
+#~ msgstr "নতুন করে দেখাও"
+
+#~ msgid "Edit &Filters..."
+#~ msgstr "ফিল্টা&র সম্পাদন করো..."
+
+#, fuzzy
+#~| msgid "Selection"
+#~ msgctxt "@title:group Selection of contacts that must be exported"
+#~ msgid "Selection"
+#~ msgstr "নির্বাচন"
+
+#~ msgid "Export the entire address book"
+#~ msgstr "সমগ্র ঠিকানা তালিকা রপ্তানি করো"
+
+#, fuzzy
+#~| msgid "School"
+#~ msgctxt "@item Contact category"
+#~ msgid "School"
+#~ msgstr "স্কুল"
+
+#, fuzzy
+#~| msgid "Friend"
+#~ msgctxt "@item Contact category"
+#~ msgid "Friend"
+#~ msgstr "বন্ধু"
+
+#~ msgid "Crypto Settings"
+#~ msgstr "ক্রিপ্টো সেটিংস"
+
+#~ msgid "Sign:"
+#~ msgstr "স্বাক্ষর:"
+
+#, fuzzy
+#~ msgid "Edit Instant Messaging Address"
+#~ msgstr "ই-মেইল ঠিকানা সম্পাদন করো"
+
+#~ msgid "Distribution List Editor"
+#~ msgstr "বিতরণ তালিকা সম্পাদক"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Distribution Lists"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Add distribution list"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "Edit distribution list"
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#, fuzzy
+#~| msgid "Rename Distribution List"
+#~ msgid "Remove distribution list"
+#~ msgstr "বিতরণ তালিকার নাম বদলাও"
+
+#, fuzzy
+#~| msgid "New Distribution List"
+#~ msgid "New Distribution List..."
+#~ msgstr "নতুন ডিস্ট্রিবিউশন তালিকা"
+
+#~ msgid "%1 address book"
+#~ msgstr "%1 ঠিকানা তালিকা"
+
+#, fuzzy
+#~| msgid "Edit Address Book Filters"
+#~ msgid "Edit address book settings"
+#~ msgstr "ঠিকানা তালিকা ফিল্টার সম্পাদন করো"
+
+#~ msgid "Text Color"
+#~ msgstr "লেখার রং"
+
+#~ msgid "Header, Border & Separator Color"
+#~ msgstr "হেডার, প্রান্ত এবং বিভাজকের রং"
+
+#~ msgid "Header Text Color"
+#~ msgstr "হেডার লেখার রং"
+
+#~ msgid "Highlight Color"
+#~ msgstr "হাইলাইট রং"
+
+#~ msgid "Highlighted Text Color"
+#~ msgstr "হাইলাইট করা লেখার রং"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "@title:group General layout settings"
+#~ msgid "General"
+#~ msgstr "সাধারণ"
+
+#~ msgid "Draw &separators"
+#~ msgstr "বিভা&জক আঁকো"
+
+#~ msgid "Separator &width:"
+#~ msgstr "বিভাজকের মা&প:"
+
+#, fuzzy
+#~ msgid "Cards"
+#~ msgstr "তাস"
+
+#~ msgid "Draw &borders"
+#~ msgstr "সীমারেখা &অঙ্কন করো"
+
+#, fuzzy
+#~| msgid "&Layout"
+#~ msgid "Layout"
+#~ msgstr "বিন্যা&স"
+
+#~ msgid "&Enable custom colors"
+#~ msgstr "স্বনির্বাচিত রং &সক্রিয় করো "
+
+#, fuzzy
+#~| msgid "&Colors"
+#~ msgid "Colors"
+#~ msgstr "&রঙ"
+
+#~ msgid "&Enable custom fonts"
+#~ msgstr "স্বনির্বাচিত ফন্ট &সক্রিয় করো"
+
+#~ msgid "&Text font:"
+#~ msgstr "লেখার জন্য &ফন্ট:"
+
+#~ msgid "Choose..."
+#~ msgstr "বেছে নিন..."
+
+#~ msgid "&Header font:"
+#~ msgstr "হেডা&র ফন্ট:"
+
+#, fuzzy
+#~| msgid "Contains"
+#~ msgid "Fonts"
+#~ msgstr "-তে আছে"
+
+#~ msgid "Show &empty fields"
+#~ msgstr "ফাঁকা ক্ষেত্র দেখা&ও"
+
+#~ msgid "Show field &labels"
+#~ msgstr "ক্ষেত্রের লেবে&ল দেখাও"
+
+#, fuzzy
+#~| msgid "Be&havior"
+#~ msgid "Behavior"
+#~ msgstr "আ&চরণ"
+
+#~ msgid "Row Separator"
+#~ msgstr "সারি বিভাজক"
+
+#~ msgid "Single line"
+#~ msgstr "একটিমাত্র লাইন"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row separator option."
+#~ msgid "None"
+#~ msgstr "কিছু না"
+
+#~ msgid "Enable background image:"
+#~ msgstr "পটভূমি-চিত্র সক্রিয় করো:"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "label: value"
+#~ msgid "%1: \n"
+#~ msgstr "%1: \n"
+
+#~ msgid "Card"
+#~ msgstr "কার্ড"
+
+#~ msgid "Icon"
+#~ msgstr "আইকন"
+
+#~ msgid "Presence"
+#~ msgstr "উপস্থিতি"
+
+#~ msgid "Export Bookmarks Menu..."
+#~ msgstr "বুকমার্ক মেনু রপ্তানি করো..."
+
+#~ msgid "AddressBook"
+#~ msgstr "ঠিকানা-তালিকা"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "1"
+#~ msgstr "১"
+
+#, fuzzy
+#~| msgid "Start at line:"
+#~ msgctxt "@label:listbox"
+#~ msgid "Start at line:"
+#~ msgstr "এই লাইনে শুরু করো:"
+
+#, fuzzy
+#~ msgctxt "@option:check"
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "অগ্রাহ্য করা"
+
+#, fuzzy
+#~| msgid "[guess]"
+#~ msgctxt "@item:inlistbox Codec setting"
+#~ msgid "[guess]"
+#~ msgstr "[অনুমান]"
+
+#, fuzzy
+#~| msgid "Import Eudora Addressbook..."
+#~ msgid "Import Eudora Address Book..."
+#~ msgstr "ইউডোরা ঠিকানা-তালিকা আমদানি করো..."
+
+#, fuzzy
+#~| msgid "Eudora Light Addressbook (*.txt)"
+#~ msgid "Eudora Light Address Book (*.txt)"
+#~ msgstr "ইউডোরা লাইট ঠিকানা-তালিকা (*.txt)"
+
+#, fuzzy
+#~ msgid "Import GMX Address Book..."
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো..."
+
+#~ msgid "Export to Mobile Phone..."
+#~ msgstr "মোবাইল ফোনে রপ্তানি করো..."
+
+#~ msgid "Unknown"
+#~ msgstr "অজানা"
+
+#~ msgid "Manufacturer"
+#~ msgstr "প্রস্তুতকারক"
+
+#~ msgid "Phone model"
+#~ msgstr "ফোন মডেল"
+
+#~ msgid "Revision"
+#~ msgstr "সংস্করণ"
+
+#~ msgid "IMEI"
+#~ msgstr "IMEI"
+
+#~ msgid "unknown memory"
+#~ msgstr "অজানা মেমরি"
+
+#~ msgid "Mobile Phone Import"
+#~ msgstr "মোবাইল ফোন আমদানি"
+
+#~ msgid "&Stop Import"
+#~ msgstr "আমদানি থামা&ও"
+
+#~ msgid "Export to Mobile Phone"
+#~ msgstr "মোবাইল ফোনে রপ্তানি করো"
+
+#~ msgid "&Stop Export"
+#~ msgstr "রপ্তানি থামা&ও"
+
+#~ msgid "&Stop Delete"
+#~ msgstr "মোছা থামা&ও"
+
+#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
+#~ msgstr "<qt>কে.ডি.ই. ২ ঠিকানা তালিকা <b>%1</b> পাওয়া যায়নি।</qt>"
+
+#, fuzzy
+#~| msgid "Import KDE 2 Addressbook"
+#~ msgid "Import KDE 2 Address Book"
+#~ msgstr "কে.ডি.ই. ২ ঠিকানা-তালিকা আমদানি করো"
+
+#, fuzzy
+#~| msgid "Import Opera Addressbook..."
+#~ msgid "Import Opera Address Book..."
+#~ msgstr "অপেরা ঠিকানা-তালিকা আমদানি করো..."
+
+#~ msgid "Cannot open %1 for reading"
+#~ msgstr "%1 পড়ার জন্য খোলা যায়নি"
+
+#~ msgid "Afghanistan"
+#~ msgstr "আফগানিস্তান"
+
+#~ msgid "Albania"
+#~ msgstr "আলবেনিয়া"
+
+#~ msgid "Algeria"
+#~ msgstr "অ্যালজেরিয়া"
+
+#~ msgid "American Samoa"
+#~ msgstr "মার্কিন সামোয়া"
+
+#~ msgid "Andorra"
+#~ msgstr "অ্যান্ডোরা"
+
+#~ msgid "Angola"
+#~ msgstr "অ্যাঙ্গোলা"
+
+#~ msgid "Anguilla"
+#~ msgstr "অ্যাঙ্গিলা"
+
+#~ msgid "Antarctica"
+#~ msgstr "অ্যান্টার্কটিকা"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "অ্যান্টিগা এবং বার্বুডা"
+
+#~ msgid "Argentina"
+#~ msgstr "আর্জেন্তিনা"
+
+#~ msgid "Armenia"
+#~ msgstr "আর্মেনিয়া"
+
+#~ msgid "Aruba"
+#~ msgstr "আরুবা"
+
+#~ msgid "Ashmore and Cartier Islands"
+#~ msgstr "অ্যাশমোর এবং কার্টিয়ের আইল্যাণ্ড"
+
+#~ msgid "Australia"
+#~ msgstr "অস্ট্রেলিয়া"
+
+#~ msgid "Austria"
+#~ msgstr "অস্ট্রিয়া"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "আজেরবাইজান"
+
+#~ msgid "Bahamas"
+#~ msgstr "বাহামা"
+
+#~ msgid "Bahrain"
+#~ msgstr "বাহরীন"
+
+#~ msgid "Bangladesh"
+#~ msgstr "বাংলাদেশ"
+
+#~ msgid "Barbados"
+#~ msgstr "বারবাডোস"
+
+#~ msgid "Belarus"
+#~ msgstr "বেলারুস"
+
+#~ msgid "Belgium"
+#~ msgstr "বেলজিয়াম"
+
+#~ msgid "Belize"
+#~ msgstr "বেলিজে"
+
+#~ msgid "Benin"
+#~ msgstr "বেনিন"
+
+#~ msgid "Bermuda"
+#~ msgstr "বার্মুডা"
+
+#~ msgid "Bhutan"
+#~ msgstr "ভূটান"
+
+#~ msgid "Bolivia"
+#~ msgstr "বলিভিয়া"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "বসনিয়া এবং হারজিগোভিনা"
+
+#~ msgid "Botswana"
+#~ msgstr "বটসোয়ানা"
+
+#~ msgid "Brazil"
+#~ msgstr "ব্রাজিল"
+
+#~ msgid "Brunei"
+#~ msgstr "ব্রুনেই"
+
+#~ msgid "Bulgaria"
+#~ msgstr "বুলগেরিয়া"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "বার্কিনা ফাসো"
+
+#~ msgid "Burundi"
+#~ msgstr "বুরুন্ডি"
+
+#~ msgid "Cambodia"
+#~ msgstr "ক্যাম্বোডিয়া"
+
+#~ msgid "Cameroon"
+#~ msgstr "ক্যামেরুন"
+
+#~ msgid "Canada"
+#~ msgstr "কানাডা"
+
+#~ msgid "Cape Verde"
+#~ msgstr "কেপ ভার্ডি"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "কেমেন আইল্যাণ্ড"
+
+#~ msgid "Central African Republic"
+#~ msgstr "কেন্দ্রীয় আফ্রিকান রিপাবলিক"
+
+#~ msgid "Chad"
+#~ msgstr "চ্যাড"
+
+#~ msgid "Chile"
+#~ msgstr "চিলি"
+
+#~ msgid "China"
+#~ msgstr "চীন"
+
+#~ msgid "Colombia"
+#~ msgstr "কলোম্বিয়া"
+
+#~ msgid "Comoros"
+#~ msgstr "কমোরোস"
+
+#~ msgid "Congo"
+#~ msgstr "কঙ্গো"
+
+#~ msgid "Congo, Dem. Rep."
+#~ msgstr "কঙ্গো ডেমোক্রেটিক রিপাবলিক"
+
+#~ msgid "Costa Rica"
+#~ msgstr "কোস্টা রিকা"
+
+#~ msgid "Croatia"
+#~ msgstr "ক্রোয়েশিয়া"
+
+#~ msgid "Cuba"
+#~ msgstr "কিউবা"
+
+#~ msgid "Cyprus"
+#~ msgstr "সাইপ্রাস"
+
+#~ msgid "Czech Republic"
+#~ msgstr "চেক রিপাবলিক"
+
+#~ msgid "Denmark"
+#~ msgstr "ডেনমার্ক"
+
+#~ msgid "Djibouti"
+#~ msgstr "জিবুতি"
+
+#~ msgid "Dominica"
+#~ msgstr "ডোমিনিকা"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "ডমিনিকান রিপাবলিক"
+
+#~ msgid "Ecuador"
+#~ msgstr "ইকুয়েডর"
+
+#~ msgid "Egypt"
+#~ msgstr "মিশর"
+
+#~ msgid "El Salvador"
+#~ msgstr "এল সালভাডোর"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "ইকুয়েটোরিয়াল গিনি"
+
+#~ msgid "Eritrea"
+#~ msgstr "এরিট্রিয়া"
+
+#~ msgid "Estonia"
+#~ msgstr "এস্টোনিয়া"
+
+#~ msgid "England"
+#~ msgstr "ইংল্যাণ্ড"
+
+#~ msgid "Ethiopia"
+#~ msgstr "ইথিওপিয়া"
+
+#~ msgid "European Union"
+#~ msgstr "ইউরোপিয়ান ইউনিয়ন"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "ফারো দ্বীপপুঞ্জ"
+
+#~ msgid "Fiji"
+#~ msgstr "ফিজি"
+
+#~ msgid "Finland"
+#~ msgstr "ফিনল্যাণ্ড"
+
+#~ msgid "France"
+#~ msgstr "ফ্রান্স"
+
+#~ msgid "French Polynesia"
+#~ msgstr "ফরাসী পলিনেসিয়া"
+
+#~ msgid "Gabon"
+#~ msgstr "গ্যাবন"
+
+#~ msgid "Gambia"
+#~ msgstr "গ্যামবিয়া"
+
+#~ msgid "Georgia"
+#~ msgstr "জর্জিয়া"
+
+#~ msgid "Germany"
+#~ msgstr "জার্মানী"
+
+#~ msgid "Ghana"
+#~ msgstr "ঘানা"
+
+#~ msgid "Greece"
+#~ msgstr "গ্রীস"
+
+#~ msgid "Greenland"
+#~ msgstr "গ্রীনল্যাণ্ড"
+
+#~ msgid "Grenada"
+#~ msgstr "গ্রেনাডা"
+
+#~ msgid "Guam"
+#~ msgstr "গুয়াম"
+
+#~ msgid "Guatemala"
+#~ msgstr "গুয়াতেমালা"
+
+#~ msgid "Guinea"
+#~ msgstr "গিনি"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "গিনি-বিসাউ"
+
+#~ msgid "Guyana"
+#~ msgstr "গায়ানা"
+
+#~ msgid "Haiti"
+#~ msgstr "হাইতি"
+
+#~ msgid "Honduras"
+#~ msgstr "হন্ডুরাস"
+
+#~ msgid "Hong Kong"
+#~ msgstr "হং কং"
+
+#~ msgid "Hungary"
+#~ msgstr "হাঙ্গেরী"
+
+#~ msgid "India"
+#~ msgstr "ভারত"
+
+#~ msgid "Indonesia"
+#~ msgstr "ইন্দোনেশিয়া"
+
+#~ msgid "Iran"
+#~ msgstr "ইরান"
+
+#~ msgid "Iraq"
+#~ msgstr "ইরাক"
+
+#~ msgid "Ireland"
+#~ msgstr "আয়ারল্যাণ্ড"
+
+#~ msgid "Israel"
+#~ msgstr "ইজরায়েল"
+
+#~ msgid "Italy"
+#~ msgstr "ইতালী"
+
+#~ msgid "Ivory Coast"
+#~ msgstr "আইভরি কোস্ট"
+
+#~ msgid "Jamaica"
+#~ msgstr "জামাইকা"
+
+#~ msgid "Japan"
+#~ msgstr "জাপান"
+
+#~ msgid "Jordan"
+#~ msgstr "জর্ডান"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "কাজাখস্তান"
+
+#~ msgid "Kenya"
+#~ msgstr "কেনিয়া"
+
+#~ msgid "Kiribati"
+#~ msgstr "কিরিবাটি"
+
+#~ msgid "Korea, North"
+#~ msgstr "কোরিয়া, উত্তর"
+
+#~ msgid "Korea, South"
+#~ msgstr "কোরিয়া, দক্ষিণ"
+
+#~ msgid "Kuwait"
+#~ msgstr "কুয়েত"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "কিরগিজস্তান"
+
+#~ msgid "Laos"
+#~ msgstr "লাওস"
+
+#~ msgid "Latvia"
+#~ msgstr "লাতভিয়া"
+
+#~ msgid "Lebanon"
+#~ msgstr "লেবানন"
+
+#~ msgid "Lesotho"
+#~ msgstr "লেসোথো"
+
+#~ msgid "Liberia"
+#~ msgstr "লাইবেরিয়া"
+
+#~ msgid "Libya"
+#~ msgstr "লিবিয়া"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "লিখটেনস্টাইন"
+
+#~ msgid "Lithuania"
+#~ msgstr "লিথুয়েনেয়া"
+
+#~ msgid "Luxembourg"
+#~ msgstr "লুক্সেমবুর্গ"
+
+#~ msgid "Macau"
+#~ msgstr "মাকাও"
+
+#~ msgid "Madagascar"
+#~ msgstr "মাদাগাস্কার"
+
+#~ msgid "Malawi"
+#~ msgstr "মালাওয়ি"
+
+#~ msgid "Malaysia"
+#~ msgstr "মালয়েশিয়া"
+
+#~ msgid "Maldives"
+#~ msgstr "মালদ্বীপ"
+
+#~ msgid "Mali"
+#~ msgstr "মালি"
+
+#~ msgid "Malta"
+#~ msgstr "মল্টা"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "মার্শাল দ্বীপপুঞ্জ"
+
+#~ msgid "Martinique"
+#~ msgstr "মার্টিনিক"
+
+#~ msgid "Mauritania"
+#~ msgstr "মরিশেনিয়া"
+
+#~ msgid "Mauritius"
+#~ msgstr "মরিশাস"
+
+#~ msgid "Mexico"
+#~ msgstr "মেক্সিকো"
+
+#~ msgid "Micronesia, Federated States Of"
+#~ msgstr "মাইক্রোনেশিয়া, ফেডারেটেড স্টেটস অব"
+
+#~ msgid "Moldova"
+#~ msgstr "মলডোভা"
+
+#~ msgid "Monaco"
+#~ msgstr "মোনাকো"
+
+#~ msgid "Mongolia"
+#~ msgstr "মঙ্গোলিয়া"
+
+#~ msgid "Montserrat"
+#~ msgstr "মন্‌সেরাত"
+
+#~ msgid "Morocco"
+#~ msgstr "মরক্কো"
+
+#~ msgid "Mozambique"
+#~ msgstr "মোজাম্বিক"
+
+#~ msgid "Namibia"
+#~ msgstr "নামিবিয়া"
+
+#~ msgid "Nauru"
+#~ msgstr "নাউরু"
+
+#~ msgid "Nepal"
+#~ msgstr "নেপাল"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "নেদারল্যাণ্ড অ্যানটিল"
+
+#~ msgid "New Caledonia"
+#~ msgstr "নিউ ক্যালিডোনিয়া"
+
+#~ msgid "New Zealand"
+#~ msgstr "নিউজিল্যাণ্ড"
+
+#~ msgid "Nicaragua"
+#~ msgstr "নিকারাগুয়া"
+
+#~ msgid "Niger"
+#~ msgstr "নাইজের"
+
+#~ msgid "Nigeria"
+#~ msgstr "নাইজেরিয়া"
+
+#~ msgid "Niue"
+#~ msgstr "নিউই"
+
+#~ msgid "North Korea"
+#~ msgstr "উত্তর কোরিয়া"
+
+#~ msgid "Northern Ireland"
+#~ msgstr "উত্তর আয়ারল্যাণ্ড"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "উত্তরবর্তী মারিয়ানা দ্বীপপুঞ্জ"
+
+#~ msgid "Norway"
+#~ msgstr "নরওয়ে"
+
+#~ msgid "Oman"
+#~ msgstr "ওমান"
+
+#~ msgid "Pakistan"
+#~ msgstr "পাকিস্তান"
+
+#~ msgid "Palau"
+#~ msgstr "পালাউ"
+
+#~ msgid "Palestinian"
+#~ msgstr "প্যালেস্তিনীয়"
+
+#~ msgid "Panama"
+#~ msgstr "পানামা"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "পাপুয়া নিউ গিনি"
+
+#~ msgid "Paraguay"
+#~ msgstr "প্যারাগুয়ে"
+
+#~ msgid "Peru"
+#~ msgstr "পেরু"
+
+#~ msgid "Philippines"
+#~ msgstr "ফিলিপিনস"
+
+#~ msgid "Poland"
+#~ msgstr "পোল্যাণ্ড"
+
+#~ msgid "Portugal"
+#~ msgstr "পোর্তুগাল"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "পুয়ের্তো রিকো"
+
+#~ msgid "Qatar"
+#~ msgstr "কাতার"
+
+#~ msgid "Romania"
+#~ msgstr "রোমানিয়া"
+
+#~ msgid "Russia"
+#~ msgstr "রাশিয়া"
+
+#~ msgid "Rwanda"
+#~ msgstr "রোয়ান্ডা"
+
+#~ msgid "St. Kitts and Nevis"
+#~ msgstr "সেন্ট কিটস এবং নেভিস"
+
+#~ msgid "St. Lucia"
+#~ msgstr "সেন্ট লুসিয়া"
+
+#~ msgid "St. Vincent and the Grenadines"
+#~ msgstr "সেন্ট ভিনসেন্ট এবং গ্রেনাডিনস"
+
+#~ msgid "San Marino"
+#~ msgstr "সান মারিনো"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "সাও টোমে এবং প্রিন্সিপে"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "সৌদি আরবিয়া"
+
+#~ msgid "Senegal"
+#~ msgstr "সেনেগল"
+
+#~ msgid "Serbia & Montenegro"
+#~ msgstr "সার্বিয়া ও মন্টিনিগ্রো"
+
+#~ msgid "Seychelles"
+#~ msgstr "সেচেলিস"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "সিয়েরা লিয়োন"
+
+#~ msgid "Singapore"
+#~ msgstr "সিঙ্গাপুর"
+
+#~ msgid "Slovakia"
+#~ msgstr "স্লোভাকিয়া"
+
+#~ msgid "Slovenia"
+#~ msgstr "স্লোভেনিয়া"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "সলেমন দ্বীপপুঞ্জ"
+
+#~ msgid "Somalia"
+#~ msgstr "সোমালিয়া"
+
+#~ msgid "South Africa"
+#~ msgstr "দক্ষিণ আফ্রিকা"
+
+#~ msgid "South Korea"
+#~ msgstr "দক্ষিণ কোরিয়া"
+
+#~ msgid "Spain"
+#~ msgstr "স্পেন"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "শ্রী লঙ্কা"
+
+#~ msgid "Sudan"
+#~ msgstr "সুদান"
+
+#~ msgid "Suriname"
+#~ msgstr "সুরিনাম"
+
+#~ msgid "Swaziland"
+#~ msgstr "সোয়াজিল্যাণ্ড"
+
+#~ msgid "Sweden"
+#~ msgstr "সুইডেন"
+
+#~ msgid "Switzerland"
+#~ msgstr "সুইজারল্যাণ্ড"
+
+#~ msgid "Syria"
+#~ msgstr "সিরিয়া"
+
+#~ msgid "Taiwan"
+#~ msgstr "তাইওয়ান"
+
+#~ msgid "Tajikistan"
+#~ msgstr "তাজিকিস্তান"
+
+#~ msgid "Tanzania"
+#~ msgstr "তানজানিয়া"
+
+#~ msgid "Thailand"
+#~ msgstr "থাইল্যাণ্ড"
+
+#~ msgid "Tibet"
+#~ msgstr "তিব্বত"
+
+#~ msgid "Togo"
+#~ msgstr "টোগো"
+
+#~ msgid "Tonga"
+#~ msgstr "টোঙ্গা"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "ত্রিনিদাদ ও টোবাগো"
+
+#~ msgid "Tunisia"
+#~ msgstr "টিউনিসিয়া"
+
+#~ msgid "Turkey"
+#~ msgstr "তুরস্ক"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "তুর্কমেনিস্তান"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "টার্কস এবং কাইকোস দ্বীপপুঞ্জ"
+
+#~ msgid "Tuvalu"
+#~ msgstr "টুভালু"
+
+#~ msgid "Uganda"
+#~ msgstr "ইউগাণ্ডা"
+
+#~ msgid "Ukraine"
+#~ msgstr "ইউক্রেন"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "সংযুক্ত আরব আমিরশাহি"
+
+#~ msgid "United Kingdom"
+#~ msgstr "ইউনাইটেড কিংডম"
+
+#~ msgid "United States"
+#~ msgstr "যুক্তরাষ্ট্র"
+
+#~ msgid "Uruguay"
+#~ msgstr "উরুগুয়ে"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "উজবেকিস্তান"
+
+#~ msgid "Vanuatu"
+#~ msgstr "ভানুয়াতু"
+
+#~ msgid "Vatican City"
+#~ msgstr "ভ্যাটিকেন সিটি"
+
+#~ msgid "Venezuela"
+#~ msgstr "ভেনেজুয়েলা"
+
+#~ msgid "Vietnam"
+#~ msgstr "ভিয়েতনাম"
+
+#~ msgid "Western Samoa"
+#~ msgstr "পশ্চিম সামোয়া"
+
+#~ msgid "Yemen"
+#~ msgstr "ইয়েমেন"
+
+#~ msgid "Yugoslavia"
+#~ msgstr "যুগোস্লাভিয়া"
+
+#~ msgid "Zaire"
+#~ msgstr "জাইরে"
+
+#~ msgid "Zambia"
+#~ msgstr "জামবিয়া"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "জিমবাবুয়ে"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "@option:radio Row seperator option."
+#~ msgid "None"
+#~ msgstr "কিছু না"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "@label:textbox Title of the contact"
+#~ msgid "Title:"
+#~ msgstr "পদবী:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgctxt "@label:textbox primary email address of the contact"
+#~ msgid "Email"
+#~ msgstr "ই-মেইল"
+
+#, fuzzy
+#~| msgid "Address:"
+#~ msgctxt "@label Displays an image"
+#~ msgid "Address"
+#~ msgstr "ঠিকানা:"
+
+#~ msgid "Address:"
+#~ msgstr "ঠিকানা:"
+
+#, fuzzy
+#~| msgid "New..."
+#~ msgctxt "@action:intoolbar Create ne contact"
+#~ msgid "New"
+#~ msgstr "নতুন..."
+
+#~ msgid "&General"
+#~ msgstr "সাধা&রণ"
+
+#, fuzzy
+#~| msgid "Distribution List Editor"
+#~ msgid "Distribution List Editor NG"
+#~ msgstr "বিতরণ তালিকা সম্পাদক"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "কিছু না"
+
+#~ msgid "New List..."
+#~ msgstr "নতুন তালিকা..."
+
+#~ msgid "Rename List..."
+#~ msgstr "তালিকার নাম বদলাও..."
+
+#~ msgid "Please enter name:"
+#~ msgstr "অনুগ্রহ করে নাম লিখুন:"
+
+#~ msgid "The name already exists"
+#~ msgstr "এই নামটি আগে থেকেই আছে"
+
+#~ msgid "Rename Distribution List"
+#~ msgstr "বিতরণ তালিকার নাম বদলাও"
+
+#~ msgid "The name already exists."
+#~ msgstr "এই নামটি আগে থেকেই আছে।"
+
+#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
+#~ msgstr "<qt>বিতরণ তালিকা <b>%1</b> মুছে ফেলা হবে?</qt>"
+
+#~ msgid "Select Email Address"
+#~ msgstr "ই-মেইল ঠিকানা বেছে নিন"
+
+#~ msgid "Email Addresses"
+#~ msgstr "ই-মেইল ঠিকানা"
+
+#, fuzzy
+#~| msgid "Show Extension Bar"
+#~ msgid "Show Extension"
+#~ msgstr "এক্সটেনশন বার দেখাও"
+
+#~ msgid "Using codec '%1'"
+#~ msgstr "কোডেক '%1' ব্যবহার করা হচ্ছে"
+
+#~ msgid "Encoding"
+#~ msgstr "এনকোডিং"
+
+#~ msgid "Contact Toolbar"
+#~ msgstr "পরিচয় টুলবার"
+
+#~ msgid "Addressbook Bookmarks"
+#~ msgstr "ঠিকানা-তালিকা বুকমার্ক"
+
+#~ msgid "Unable to load '%1'."
+#~ msgstr "%1 লোড করতে অক্ষম।"
+
+#~ msgid "<qt>Unable to open file <b>%1</b>.%2.</qt>"
+#~ msgstr "<qt>ফাইল <b>%1</b> খোলা যায়নি। %2।</qt>"
