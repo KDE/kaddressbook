@@ -52,6 +52,7 @@
         "Name[pl]": "Kontakty",
         "Name[pt]": "Contactos",
         "Name[pt_BR]": "Contatos",
+        "Name[ru]": "Контакты",
         "Name[sk]": "Kontakty",
         "Name[sl]": "Contacts",
         "Name[sv]": "Kontakter",
