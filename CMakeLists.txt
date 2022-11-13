@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.21.70")
+set(PIM_VERSION "5.21.90")
 project(kaddressbook VERSION ${PIM_VERSION})
-set(RELEASE_SERVICE_VERSION "22.11.70")
+set(RELEASE_SERVICE_VERSION "22.11.90")
 set(KF5_MIN_VERSION "5.99.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
