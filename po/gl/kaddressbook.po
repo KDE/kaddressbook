@@ -336,7 +336,7 @@ msgstr "%1 de %2"
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
-msgstr "Sen definir"
+msgstr "Non definido"
 
 #: src/importexport/contactfields.cpp:39
 #, kde-format
@@ -381,7 +381,7 @@ msgstr "Oficina"
 #: src/importexport/contactfields.cpp:111
 #, kde-format
 msgid "Manager"
-msgstr "Xefe/a"
+msgstr "Xestor"
 
 #: src/importexport/contactfields.cpp:113
 #, kde-format
@@ -454,7 +454,7 @@ msgstr "Todos os contactos de:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "Todos os contactos dun caderno de contactos escollido"
+msgstr "Todos os contactos dun caderno de enderezos escollido"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -474,7 +474,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr "Incluír os sub-cartafoles"
+msgstr "Incluír os subcartafoles"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
@@ -490,9 +490,9 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
-"Escolla esta opción se desexa seleccionar todos os contactos deste cartafol, "
-"incluídos todos os subcartafoles. Se só desexa os contactos do cartafol de "
-"nivel superior, non escolla esta opción."
+"Marque esta caixa se quere seleccionar todos os contactos deste cartafol, "
+"incluídos todos os subcartafoles. Se só quere os contactos do cartafol de "
+"nivel superior, deixe esta caixa sen marcar."
 
 #: src/importexport/contactselectionwidget.cpp:170
 #, fuzzy, kde-format
@@ -507,55 +507,75 @@ msgid "Fetch Contacts"
 msgstr "Obter contactos"
 
 #: src/importexport/exportselectionwidget.cpp:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Private fields"
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Campos privados"
 
 #: src/importexport/exportselectionwidget.cpp:22
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Business fields"
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Campos de negocios"
 
 #: src/importexport/exportselectionwidget.cpp:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Other fields"
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Outros campos"
 
 #: src/importexport/exportselectionwidget.cpp:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Encryption keys"
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Chaves de cifrado"
 
 #: src/importexport/exportselectionwidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Pictures"
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Imaxes"
 
 #: src/importexport/exportselectionwidget.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Display name as full name"
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "Alcume como nome completo"
 
 #: src/importexport/exportselectionwidget.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Fields to be exported"
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Campos para exportar"
 
 #: src/importexport/exportselectionwidget.cpp:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export private fields"
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Exportar campos privados"
 
 #: src/importexport/exportselectionwidget.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's private fields to the "
+#| "vCard output file."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
@@ -565,13 +585,19 @@ msgstr ""
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export business fields"
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Exportar os campos de negocios"
 
 #: src/importexport/exportselectionwidget.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's business fields to the "
+#| "vCard output file."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
@@ -581,13 +607,19 @@ msgstr ""
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:48
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export other fields"
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Exportar os outros campos"
 
 #: src/importexport/exportselectionwidget.cpp:50
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's other fields to the "
+#| "vCard output file."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
@@ -597,13 +629,19 @@ msgstr ""
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export encryption keys"
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Exportar as chaves de cifrado"
 
 #: src/importexport/exportselectionwidget.cpp:56
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's encryption keys to the "
+#| "vCard output file."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
@@ -613,13 +651,19 @@ msgstr ""
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:60
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export pictures"
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Exportar as imaxes"
 
 #: src/importexport/exportselectionwidget.cpp:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's picture to the vCard "
+#| "output file."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
@@ -629,19 +673,28 @@ msgstr ""
 "saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Export options"
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Opcións da exportación"
 
 #: src/importexport/exportselectionwidget.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Export display name as full name"
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "Exportar o alcume como nome completo"
 
 #: src/importexport/exportselectionwidget.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check this box if you want to export the contact's display name in the "
+#| "vCard's full name field.  This may be required to get the name shown "
+#| "correctly in GMail or Android."
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
@@ -660,7 +713,8 @@ msgid "Select Address Book"
 msgstr "Escolla o caderno de enderezos"
 
 #: src/importexport/importexportengine.cpp:59
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select the address book the imported contact(s) shall be saved in:"
 msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr ""
 "Seleccione o caderno de enderezos no que quere gardar o(s) contacto(s) "
@@ -674,7 +728,9 @@ msgid "Import Contacts"
 msgstr "Importar contactos"
 
 #: src/importexport/importexportengine.cpp:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Importing one contact to %2"
+#| msgid_plural "Importing %1 contacts to %2"
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "Estase a importar un contacto a %2"
