@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-28 00:50+0000\n"
-"PO-Revision-Date: 2022-09-12 20:34+0200\n"
+"PO-Revision-Date: 2023-01-07 08:29+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -183,13 +183,13 @@ msgstr "დოკუმენტაცია (2019)"
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
-msgstr ""
+msgstr "კატეგორიის ფილტრის განულება"
 
 #: src/categoryselectwidget.cpp:101
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
-msgstr ""
+msgstr "კატეგორიის ფილტრის გასუფთავება"
 
 #: src/categoryselectwidget.cpp:105
 #, kde-format
@@ -244,7 +244,7 @@ msgstr "(c), 2020-2021 Laurent Montel"
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
 msgid "Tools Plugins"
-msgstr ""
+msgstr "ხელსაწყოს დამატებები"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
 #, kde-format
@@ -518,13 +518,13 @@ msgstr "სურათები"
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "სახელის სრულ სახელად ჩვენება"
 
 #: src/importexport/exportselectionwidget.cpp:30
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr ""
+msgstr "გასატანი ველები"
 
 #: src/importexport/exportselectionwidget.cpp:36
 #, kde-format
@@ -644,7 +644,7 @@ msgstr[1] ""
 #: src/kaddressbook_options.h:15
 #, kde-format
 msgid "Import the given file"
-msgstr ""
+msgstr "მითითებული ფაილის შემოტანა"
 
 #: src/kaddressbook_options.h:17
 #, kde-format
@@ -739,7 +739,7 @@ msgstr "გატანa"
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
-msgstr ""
+msgstr "ძებნა... <%1>"
 
 #: src/mainwidget.cpp:632
 #, kde-format
@@ -797,18 +797,18 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
-msgstr ""
+msgstr "ორი სვეტი"
 
 #: src/mainwidget.cpp:681
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
-msgstr ""
+msgstr "სამი სვეტი"
 
 #: src/mainwidget.cpp:694
 #, kde-format
 msgid "Set Focus to Quick Search"
-msgstr ""
+msgstr "ფოკუსის სწრაფ ძებნაზე დაყენება"
 
 #: src/mainwidget.cpp:707
 #, kde-format
@@ -835,6 +835,8 @@ msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
+"<qt>მენიუს ზოლი მთლიანად დაიმალება. მისი თავიდან საჩვენებლად დააწექით: %1.</"
+"qt>"
 
 #: src/mainwindow.cpp:173
 #, kde-format
@@ -870,7 +872,7 @@ msgstr "სახლის მისამართი"
 #: src/modelcolumnmanager.cpp:90
 #, kde-format
 msgid "Business Address"
-msgstr ""
+msgstr "ბიზნეს-მისამართი"
 
 #: src/modelcolumnmanager.cpp:94
 #, kde-format
@@ -890,7 +892,7 @@ msgstr "ყველა ელფოსტა"
 #: src/printing/compact/compactstyle.cpp:112
 #, kde-format
 msgid "Compact Style"
-msgstr ""
+msgstr "კომპაქტური სტილი"
 
 #: src/printing/compact/compactstyle.cpp:166
 #: src/printing/detailled/detailledstyle.cpp:262
@@ -899,7 +901,7 @@ msgstr ""
 #: src/printing/ringbinder/ringbinderstyle.cpp:161
 #, kde-format
 msgid "Setting up document"
-msgstr ""
+msgstr "დოკუმენტის მორგება"
 
 #: src/printing/compact/compactstyle.cpp:173
 #: src/printing/detailled/detailledstyle.cpp:269
@@ -923,7 +925,7 @@ msgstr "დასრულებული"
 #: src/printing/compact/compactstyle.cpp:200
 #, kde-format
 msgid "Compact Printing Style"
-msgstr ""
+msgstr "კომპაქტური დაბეჭდვის სტილი"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
@@ -951,7 +953,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:49
 #, kde-format
 msgid "with home address"
-msgstr ""
+msgstr "სახლის მისამართით"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
@@ -965,7 +967,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:62
 #, kde-format
 msgid "with business address"
-msgstr ""
+msgstr "ბიზნეს-მისამართით"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
@@ -973,13 +975,13 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:72
 #, kde-format
 msgid "Print the birthday"
-msgstr ""
+msgstr "დაბადების დღის დაბეჭდვა"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:75
 #, kde-format
 msgid "with birthday"
-msgstr ""
+msgstr "დაბადების დღით"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
@@ -993,7 +995,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:88
 #, kde-format
 msgid "with e-mail"
-msgstr ""
+msgstr "ელფოსტით"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
@@ -1007,7 +1009,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:118
 #, kde-format
 msgid "first color"
-msgstr ""
+msgstr "პირველი ფერი"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
@@ -1021,7 +1023,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:131
 #, kde-format
 msgid "second color"
-msgstr ""
+msgstr "მეორე ფერი"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
@@ -1112,24 +1114,24 @@ msgstr ""
 #: src/printing/detailled/detailledstyle.cpp:245
 #, kde-format
 msgid "Setting up colors"
-msgstr ""
+msgstr "ფერების მორგება"
 
 #: src/printing/detailled/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
-msgstr ""
+msgstr "დეტალური სტილი"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
 #: src/printing/detailled/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
-msgstr ""
+msgstr "გარეგნობის გვერდი"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
 #: src/printing/detailled/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
-msgstr ""
+msgstr "კონტაქტის თავსართები"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:119
@@ -1194,13 +1196,13 @@ msgstr ""
 #: src/printing/printingwizard.cpp:202
 #, kde-format
 msgid "Print Progress"
-msgstr ""
+msgstr "ბეჭდვის მიმდინარეობა"
 
 #: src/printing/printprogress.cpp:24
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr ""
+msgstr "ბეჭდვა: მიმდინარეობს"
 
 #: src/printing/printprogress.cpp:42
 #, kde-format
@@ -1408,7 +1410,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr ""
+msgstr "ბეჭდვის სტილი"
 
 #: src/printing/stylepage.cpp:155
 #, kde-format
