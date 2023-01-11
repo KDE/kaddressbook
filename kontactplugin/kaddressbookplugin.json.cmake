@@ -25,7 +25,7 @@
         "Description[sk]": "Kontact KAddressBook Plugin",
         "Description[sl]": "Vtičnik Kontact adresar",
         "Description[sv]": "Kontact-insticksprogram för adressbok",
-        "Description[tr]": "Kontact K Adres Defteri Eklentisi",
+        "Description[tr]": "Kontak K Adres Defteri Eklentisi",
         "Description[uk]": "Додаток адресної книги Kontact",
         "Description[x-test]": "xxKontact KAddressBook Pluginxx",
         "EnabledByDefault": true,
