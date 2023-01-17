@@ -34,7 +34,7 @@ include(ECMGeneratePriFile)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION)
+set(KDEPIM_DEV_VERSION alpha)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
