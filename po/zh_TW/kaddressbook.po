@@ -5,20 +5,21 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015.
 # pan93412 <pan93412@gmail.com>, 2018, 2019.
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2009, 2010.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-28 00:50+0000\n"
-"PO-Revision-Date: 2019-01-19 19:50+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-01-22 00:24+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 18.12.1\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37,17 +38,13 @@ msgid "Address Book"
 msgstr "通訊錄"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Print Contacts"
 msgid "Contact"
-msgstr "列印聯絡人"
+msgstr "聯絡人"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgid "All EMails"
 msgid "Emails"
-msgstr "所有的電子郵件"
+msgstr "電子郵件"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -61,7 +58,7 @@ msgstr "組織"
 #: src/printing/grantlee/themes/full/theme.html:58
 #: src/viewertemplates/contact_embedded.html:62
 msgid "Website"
-msgstr ""
+msgstr "網站"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
@@ -82,23 +79,23 @@ msgstr "備註"
 
 #: src/printing/grantlee/themes/full/theme.html:76
 msgid "Title"
-msgstr ""
+msgstr "標題"
 
 #: src/viewertemplates/contact_embedded.html:28
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
+msgstr[0] "（%1 歲）"
 
 #: src/viewertemplates/contact_embedded.html:47
 msgid "Email"
-msgstr ""
+msgstr "電子郵件"
 
 #: src/viewertemplates/contact_embedded.html:75
 #: src/importexport/contactfields.cpp:105
 #, kde-format
 msgid "Blog Feed"
-msgstr ""
+msgstr "部落格 feed"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
 #: src/kaddressbookpart.cpp:29
@@ -139,10 +136,9 @@ msgid "The KDE Address Book Application"
 msgstr "KDE 通訊錄應用程式"
 
 #: src/aboutdata.cpp:21
-#, fuzzy, kde-format
-#| msgid "Copyright © 2007–2019 KAddressBook authors"
+#, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr "Copyright © 2007–2019 KAddressBook 作者群"
+msgstr "Copyright © 2007–%1 KAddressBook 作者群"
 
 #: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
 #: src/configuration/kaddressbook_config_userfeedback.cpp:35
@@ -156,10 +152,9 @@ msgid "Current maintainer"
 msgstr "目前維護者"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgid "Tobias König"
-msgstr "Tobias Koenig"
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:24
 #, kde-format
@@ -169,22 +164,22 @@ msgstr "前任維護者"
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Original Author (1998)"
-msgstr ""
+msgstr "原始作者 (1998)"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "說明文件 (2019)"
 
 #: src/categoryselectwidget.cpp:94
 #, kde-format
@@ -234,21 +229,19 @@ msgid "Configure Plugins"
 msgstr "配置附加元件"
 
 #: src/configuration/kaddressbook_config_plugins.cpp:32
-#, fuzzy, kde-format
-#| msgid "(c), 2016-2019 Laurent Montel"
+#, kde-format
 msgid "(c), 2016-2021 Laurent Montel"
-msgstr "(c), 2016-2019 Laurent Montel"
+msgstr "(c), 2016-2021 Laurent Montel"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:29
 #, kde-format
 msgid "Configure User FeedBack"
-msgstr ""
+msgstr "設定使用者意見回應"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:33
-#, fuzzy, kde-format
-#| msgid "(c), 2016-2019 Laurent Montel"
+#, kde-format
 msgid "(c), 2020-2021 Laurent Montel"
-msgstr "(c), 2016-2019 Laurent Montel"
+msgstr "(c), 2020-2021 Laurent Montel"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -263,33 +256,32 @@ msgstr "匯入 / 匯出附加元件"
 #: src/contactinfoproxymodel.cpp:67
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "正在載入聯絡人詳細資料…"
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
-#| msgid "All EMails"
+#, kde-format
 msgid "Email: %1"
-msgstr "所有的電子郵件"
+msgstr "電子郵件：%1"
 
 #: src/contactinfoproxymodel.cpp:130
 #, kde-format
 msgid "Phone: %1"
-msgstr ""
+msgstr "電話：%1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
 #, kde-format
@@ -337,80 +329,80 @@ msgstr "%1 個，共 %2 個"
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
-msgstr ""
+msgstr "未定義"
 
 #: src/importexport/contactfields.cpp:39
 #, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
-msgstr ""
+msgstr "週年紀念日"
 
 #: src/importexport/contactfields.cpp:85
 #, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
-msgstr ""
+msgstr "偏好電子郵件"
 
 #: src/importexport/contactfields.cpp:87
 #, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
-msgstr ""
+msgstr "電子郵件 (2)"
 
 #: src/importexport/contactfields.cpp:89
 #, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
-msgstr ""
+msgstr "電子郵件 (3)"
 
 #: src/importexport/contactfields.cpp:91
 #, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
-msgstr ""
+msgstr "電子郵件 (4)"
 
 #: src/importexport/contactfields.cpp:107
 #, kde-format
 msgid "Profession"
-msgstr ""
+msgstr "工作"
 
 #: src/importexport/contactfields.cpp:109
 #, kde-format
 msgid "Office"
-msgstr ""
+msgstr "辦公室"
 
 #: src/importexport/contactfields.cpp:111
 #, kde-format
 msgid "Manager"
-msgstr ""
+msgstr "經理"
 
 #: src/importexport/contactfields.cpp:113
 #, kde-format
 msgid "Assistant"
-msgstr ""
+msgstr "助理"
 
 #: src/importexport/contactfields.cpp:115
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "配偶"
 
 #: src/importexport/contactselectiondialog.cpp:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr ""
+msgstr "選擇聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:115
 #, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr ""
+msgstr "所有聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:116
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr ""
+msgstr "您的所有通訊錄內的所有聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:118
 #, kde-format
@@ -418,19 +410,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
-msgstr ""
+msgstr "如果您要選取您所有通訊錄內的所有聯絡人，請選取此選項。"
 
 #: src/importexport/contactselectionwidget.cpp:121
 #, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr ""
+msgstr "已選聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:122
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr ""
+msgstr "僅目前選取的聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -438,19 +430,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
-msgstr ""
+msgstr "如果您只要在圖形介面中已經選取的聯絡人，請選取此選項。"
 
 #: src/importexport/contactselectionwidget.cpp:127
 #, kde-format
 msgctxt "@option:radio"
 msgid "All contacts from:"
-msgstr ""
+msgstr "一本通訊錄內的所有聯絡人："
 
 #: src/importexport/contactselectionwidget.cpp:128
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr ""
+msgstr "從一個選取的通訊錄來的所有聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -461,18 +453,20 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"如果您要選取一本通訊錄內的所有聯絡人，請選取此選項。點擊此選項後將會提供您下"
+"拉式選單，讓您從所有通訊錄中選一本您要的。"
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr ""
+msgstr "包含子資料夾"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "選擇所有子資料夾，包含頂端資料夾"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -482,65 +476,67 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"勾選此選項，會選擇所有這個資料夾內的聯絡人，包含子資料夾內的。如果您只想要頂"
+"端資料夾的聯絡人，請不要勾選此選項。"
 
 #: src/importexport/contactselectionwidget.cpp:170
 #, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
-msgstr ""
+msgstr "收集聯絡人"
 
 #: src/importexport/contactselectionwidget.cpp:173
 #, kde-format
 msgid "Fetch Contacts"
-msgstr ""
+msgstr "取得聯絡人"
 
 #: src/importexport/exportselectionwidget.cpp:21
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
-msgstr ""
+msgstr "私人欄位"
 
 #: src/importexport/exportselectionwidget.cpp:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
-msgstr ""
+msgstr "辦公室欄位"
 
 #: src/importexport/exportselectionwidget.cpp:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
-msgstr ""
+msgstr "其他欄位"
 
 #: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
-msgstr ""
+msgstr "加密金鑰"
 
 #: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
-msgstr ""
+msgstr "圖片"
 
 #: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "將顯示名稱視為全名"
 
 #: src/importexport/exportselectionwidget.cpp:30
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr ""
+msgstr "要匯出的欄位"
 
 #: src/importexport/exportselectionwidget.cpp:36
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
-msgstr ""
+msgstr "匯出私人欄位"
 
 #: src/importexport/exportselectionwidget.cpp:38
 #, kde-format
@@ -548,13 +544,13 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
-msgstr ""
+msgstr "勾選此選項，會匯出聯絡人的私人欄位到 vCard 輸出檔案裡。"
 
 #: src/importexport/exportselectionwidget.cpp:42
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
-msgstr ""
+msgstr "匯出辦公室欄位"
 
 #: src/importexport/exportselectionwidget.cpp:44
 #, kde-format
@@ -562,13 +558,13 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
-msgstr ""
+msgstr "勾選此選項，會匯出聯絡人的辦公室欄位到 vCard 輸出檔案裡。"
 
 #: src/importexport/exportselectionwidget.cpp:48
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
-msgstr ""
+msgstr "匯出其他欄位"
 
 #: src/importexport/exportselectionwidget.cpp:50
 #, kde-format
@@ -576,13 +572,13 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
-msgstr ""
+msgstr "勾選此選項，會匯出聯絡人的其他欄位到 vCard 輸出檔案裡。"
 
 #: src/importexport/exportselectionwidget.cpp:54
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
-msgstr ""
+msgstr "匯出加密金鑰"
 
 #: src/importexport/exportselectionwidget.cpp:56
 #, kde-format
@@ -590,13 +586,13 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
-msgstr ""
+msgstr "勾選此選項，會匯出聯絡人的加密金鑰到 vCard 輸出檔案裡。"
 
 #: src/importexport/exportselectionwidget.cpp:60
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr ""
+msgstr "匯出圖片"
 
 #: src/importexport/exportselectionwidget.cpp:62
 #, kde-format
@@ -604,19 +600,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
-msgstr ""
+msgstr "勾選此選項，會匯出聯絡人的圖片到 vCard 輸出檔案裡。"
 
 #: src/importexport/exportselectionwidget.cpp:66
 #, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr ""
+msgstr "匯出選項"
 
 #: src/importexport/exportselectionwidget.cpp:72
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "將顯示名稱匯出成全名"
 
 #: src/importexport/exportselectionwidget.cpp:74
 #, kde-format
@@ -626,31 +622,31 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"勾選此選項，會匯出聯絡人的顯示名稱到 vCard 的全名欄位裡。這可能需要勾選才能"
+"讓 GMail 或 Android 正常顯示名稱。"
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "通訊錄"
+msgstr "選擇通訊錄"
 
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr ""
+msgstr "選擇匯入的聯絡人要儲存到哪個通訊錄："
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "列印聯絡人"
+msgstr "匯入聯絡人"
 
 #: src/importexport/importexportengine.cpp:75
 #, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] ""
+msgstr[0] "正在匯入 %1 個聯絡人到 %2"
 
 #: src/kaddressbook_options.h:15
 #, kde-format
@@ -665,7 +661,7 @@ msgstr "開啟「新增聯絡人」對話框"
 #: src/kaddressbook_options.h:19
 #, kde-format
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "顯示指定的聯絡人（透過 URL）"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
@@ -675,12 +671,12 @@ msgstr "檔案或網址。使用者會被詢問是否要匯入。"
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "列出能用於使用者意見回應的選項"
 
 #: src/kaddressbookpart.cpp:56
 #, kde-format
 msgid "&Configure KAddressBook..."
-msgstr "設定 KAddressBook(&C)..."
+msgstr "設定 KDE 通訊錄(&C)..."
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -827,8 +823,7 @@ msgid "Serverside Subscription..."
 msgstr "服務端訂閱…"
 
 #: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "列印聯絡人"
@@ -997,10 +992,9 @@ msgstr "生日"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:82
 #: src/printing/compact/compactstyle.ui:85
-#, fuzzy, kde-format
-#| msgid "Print the e-mail and e-mail2 fields"
+#, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr "印出電子郵件地址的欄位"
+msgstr "印出偏好與次要的電子郵件欄位"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
@@ -1210,11 +1204,10 @@ msgid "Print Progress"
 msgstr "列印進度"
 
 #: src/printing/printprogress.cpp:24
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr "列印：進行中"
+msgstr "列印：進度"
 
 #: src/printing/printprogress.cpp:42
 #, kde-format
