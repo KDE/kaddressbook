@@ -28,6 +28,7 @@
         "Description[tr]": "Kontak K Adres Defteri Eklentisi",
         "Description[uk]": "Додаток адресної книги Kontact",
         "Description[x-test]": "xxKontact KAddressBook Pluginxx",
+        "Description[zh_TW]": "Kontact KDE 通訊錄外掛程式",
         "EnabledByDefault": true,
         "Icon": "view-pim-contacts",
         "Id": "kontact_kaddressbookplugin",
@@ -61,6 +62,7 @@
         "Name[tr]": "Kişiler",
         "Name[uk]": "Контакти",
         "Name[x-test]": "xxContactsxx",
+        "Name[zh_TW]": "聯絡人",
         "Version": "0.1"
     },
     "X-KDE-ConfigModuleNamespace": "pim@QT_MAJOR_VERSION@/kcms/kaddressbook/",
