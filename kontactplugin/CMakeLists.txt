@@ -19,7 +19,7 @@ target_sources(kontact_kaddressbookplugin PRIVATE ${kontact_kaddressbook_interfa
 
 
 target_link_libraries(kontact_kaddressbookplugin
-    KF5::I18n
+    KF${KF_MAJOR_VERSION}::I18n
     KF5::KontactInterface
 )
 

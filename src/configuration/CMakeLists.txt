@@ -18,11 +18,11 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook_config_plugins PROPERTIES UNITY_BUILD ON)
 endif()
 target_link_libraries(kaddressbook_config_plugins
-    KF5::KCMUtils
-    KF5::I18n
+    KF${KF_MAJOR_VERSION}::KCMUtils
+    KF${KF_MAJOR_VERSION}::I18n
     KF5::PimCommon
     kaddressbookprivate
-    KF5::XmlGui
+    KF${KF_MAJOR_VERSION}::XmlGui
     KPimAddressbookImportExport
     )
 
@@ -39,12 +39,12 @@ if (TARGET KUserFeedbackWidgets)
 
 
     target_link_libraries(kaddressbook_config_userfeedback
-        KF5::KCMUtils
-        KF5::I18n
+        KF${KF_MAJOR_VERSION}::KCMUtils
+        KF${KF_MAJOR_VERSION}::I18n
         KF5::PimCommon
         kaddressbookprivate
         KPimAddressbookImportExport
-        KF5::XmlGui
+        KF${KF_MAJOR_VERSION}::XmlGui
         KUserFeedbackWidgets
         )
 
