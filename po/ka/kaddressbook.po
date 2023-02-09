@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-28 00:50+0000\n"
-"PO-Revision-Date: 2023-01-21 19:30+0100\n"
+"PO-Revision-Date: 2023-02-08 11:57+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -464,7 +464,7 @@ msgstr "ქვესაქაღალდეების ჩათვლით"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "ყველა ქვესაქაღალდის მონიშვნა, ზედა დონის საქაღალდის ჩათვლით"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -628,7 +628,7 @@ msgstr "არჩიეთ მისამართების წიგნი"
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr ""
+msgstr "აირჩიეთ მისამართების წიგნი, სადაც შემოტანილი კონტაქტები შეინახება:"
 
 #: src/importexport/importexportengine.cpp:74
 #, kde-format
@@ -701,7 +701,7 @@ msgstr "&ჩვენება"
 #: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
 #, kde-format
 msgid "&Action"
-msgstr "_მოქმედება"
+msgstr "&ქმედება"
 
 #. i18n: ectx: Menu (tools)
 #: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
@@ -752,7 +752,7 @@ msgstr "თემები"
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
-msgstr ""
+msgstr "სრული მისამართების წიგნის ან მონიშნული კონტაქტების დაბეჭდვა."
 
 #: src/mainwidget.cpp:646
 #, kde-format
@@ -829,7 +829,7 @@ msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can configure the application-"
 "wide shortcuts."
-msgstr ""
+msgstr "გაჩვენებთ ფანჯარას, სადაც პროგრამის მალსახმობების მორგება შეგეძლებათ."
 
 #: src/mainwindow.cpp:170
 #, kde-format
@@ -949,7 +949,7 @@ msgstr "ველები"
 #: src/printing/compact/compactstyle.ui:46
 #, kde-format
 msgid "Print the home address, with home phone number and mobile phone number"
-msgstr ""
+msgstr "სახლის მისამართის დაბეჭდვა სახლისა და მობილური ტელეფონის ნომრებით"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
 #: src/printing/compact/compactstyle.ui:49
@@ -991,7 +991,7 @@ msgstr "დაბადების დღით"
 #: src/printing/compact/compactstyle.ui:85
 #, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr ""
+msgstr "რჩეული და მეორადი ელფოსტის ველების დაბეჭდვა"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
@@ -1005,7 +1005,7 @@ msgstr "ელფოსტით"
 #: src/printing/compact/compactstyle.ui:115
 #, kde-format
 msgid "the first color, if alternating color is checked"
-msgstr ""
+msgstr "პირველი ფერი, თუ ფერის ცვლილება ჩართულია"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
 #: src/printing/compact/compactstyle.ui:118
@@ -1019,7 +1019,7 @@ msgstr "პირველი ფერი"
 #: src/printing/compact/compactstyle.ui:128
 #, kde-format
 msgid "the second color, if alternating color is checked"
-msgstr ""
+msgstr "მეორე ფერი, თუ ფერის ცვლილება ჩართულია"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
@@ -1139,7 +1139,7 @@ msgstr "კონტაქტის თავსართები"
 #: src/printing/detailled/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
-msgstr ""
+msgstr "აირჩიეთ სათაურის ტესტის ფერის ფონი"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:122
@@ -1153,19 +1153,19 @@ msgstr ""
 #: src/printing/detailled/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
-msgstr ""
+msgstr "სათაურების ფონს ფერი:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
 #: src/printing/detailled/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
-msgstr ""
+msgstr "სათაურების ტექსტის ფერი:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:162
 #, kde-format
 msgid "Select the headline text color"
-msgstr ""
+msgstr "აირჩიეთ სათაურის ტექსტის ფერი"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:165
@@ -1227,7 +1227,7 @@ msgstr "კონტაქტის ტელეფონის ნომრე�
 #: src/printing/ringbinder/rbs_appearance.ui:44
 #, kde-format
 msgid "Check this box if you want contact phone numbers to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის ტელეფონის ნომრებიც დაიბეჭდოს."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
@@ -1245,7 +1245,7 @@ msgstr "კონტაქტის ელფოსტის მისამა�
 #: src/printing/ringbinder/rbs_appearance.ui:60
 #, kde-format
 msgid "Check this box if you want contact email addresses to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის ელფოსტის მისამართებიც დაიბეჭდოს."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
@@ -1263,7 +1263,7 @@ msgstr "კონტაქტის ქუჩის მისამართი�
 #: src/printing/ringbinder/rbs_appearance.ui:76
 #, kde-format
 msgid "Check this box if you want contact street addresses to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის სახლის მისამართებიც დაიბეჭდოს."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
@@ -1281,7 +1281,7 @@ msgstr "კონტაქტის ორგანიზაციების �
 #: src/printing/ringbinder/rbs_appearance.ui:92
 #, kde-format
 msgid "Check this box if you want contact organizations to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის ორგანიზაციაც დაიბეჭდოს."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:102
@@ -1293,7 +1293,7 @@ msgstr "კონტაქტის დაბადების დღეებ�
 #: src/printing/ringbinder/rbs_appearance.ui:105
 #, kde-format
 msgid "Check this box if you want contact birthdays to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის დაბადების დღეც დაიბეჭდოს."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:115
@@ -1305,7 +1305,7 @@ msgstr "კონტაქტის შენიშვნების დაბ�
 #: src/printing/ringbinder/rbs_appearance.ui:118
 #, kde-format
 msgid "Check this box if you want contact notes to be printed."
-msgstr ""
+msgstr "ჩართეთ, თუ გნებავთ, კონტაქტის შენიშვნებიც დაიბეჭდოს."
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:73
 #, kde-format
@@ -1359,6 +1359,10 @@ msgid ""
 "KAddressBook has several printing styles, designed for different purposes.\n"
 "Choose the style that suits your needs below."
 msgstr ""
+"როგორ უნდა გამოიყურებოდეს დაბეჭდილი?\n"
+"KAddressBook-ს ბეჭდვის რამდენიმე სტილი გააჩნია, რომელიც სხვადასხვა "
+"მიზნებისთვისაა განკუთვნილი.\n"
+"ქვემოთ შეგიძლიათ აირჩიოთ სტილი, რომელიც თქვენს საჭიროებებს შეესაბამება."
 
 #: src/printing/stylepage.cpp:121
 #, kde-format
