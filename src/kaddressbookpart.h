@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <KParts/Event>
+#include <KParts/GUIActivateEvent>
 #include <KParts/Part>
 #include <kparts/readonlypart.h>
 
