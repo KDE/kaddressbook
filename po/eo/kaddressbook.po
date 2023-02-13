@@ -1,6 +1,8 @@
 # translation of kaddressbook.po to Esperanto
 # Copyright (C) 2001 Free Software Foundation, Inc.
+# This file is distributed under the same license as kaddressbook package.
 # Wolfram Diestel <wolfram@steloj.de>, 2001.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2007, 2023.
 #
 # Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
 #
@@ -9,25 +11,27 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-28 00:50+0000\n"
-"PO-Revision-Date: 2007-11-27 21:26+0100\n"
+"PO-Revision-Date: 2023-02-12 19:23+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Wolfram Diestel,Steffen Pietsch"
+msgstr "Wolfram Diestel,Steffen Pietsch,Oliver Kellogg"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "wolfram@steloj.de,Steffen.Pietsch@BerlinOnline.de"
+msgstr ""
+"wolfram@steloj.de,Steffen.Pietsch@BerlinOnline.de,okellogg@users.sourceforge."
+"net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
 #: src/mainwidget.cpp:718 src/mainwidget.cpp:745
@@ -36,17 +40,13 @@ msgid "Address Book"
 msgstr "Adresaro"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Contains"
 msgid "Contact"
-msgstr "Enhavas"
+msgstr "Kontakto"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgid "Email"
 msgid "Emails"
-msgstr "Retpoŝto"
+msgstr "Retpoŝtoj"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -60,7 +60,7 @@ msgstr "Organizaĵo"
 #: src/printing/grantlee/themes/full/theme.html:58
 #: src/viewertemplates/contact_embedded.html:62
 msgid "Website"
-msgstr ""
+msgstr "Retejo"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
@@ -75,14 +75,11 @@ msgstr "Naskiĝdato"
 #: src/printing/grantlee/themes/default/theme.html:70
 #: src/printing/grantlee/themes/full/theme.html:70
 #: src/printing/ringbinder/rbs_appearance.ui:121
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Note"
-msgstr "Noto:"
+msgstr "Notu"
 
 #: src/printing/grantlee/themes/full/theme.html:76
-#, fuzzy
-#| msgid "Title"
 msgid "Title"
 msgstr "Titolo"
 
@@ -90,12 +87,10 @@ msgstr "Titolo"
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(Unun jaron aĝa)"
+msgstr[1] "(%1 jarojn aĝa)"
 
 #: src/viewertemplates/contact_embedded.html:47
-#, fuzzy
-#| msgid "Email"
 msgid "Email"
 msgstr "Retpoŝto"
 
@@ -103,7 +98,7 @@ msgstr "Retpoŝto"
 #: src/importexport/contactfields.cpp:105
 #, kde-format
 msgid "Blog Feed"
-msgstr ""
+msgstr "Bloga Fluo"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
 #: src/kaddressbookpart.cpp:29
@@ -112,25 +107,23 @@ msgid "KAddressBook"
 msgstr "Adresaro"
 
 #: kontactplugin/kaddressbook_plugin.cpp:33
-#, fuzzy, kde-format
-#| msgid "&New Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
-msgstr "&Nova kontakto..."
+msgstr "Nova Kontakto..."
 
 #. i18nc( "@info:status", "Create a new contact" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:39
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
-msgstr ""
+msgstr "Vi estos prezentita kun dialogo kie vi povas krei novan kontakton."
 
 #: kontactplugin/kaddressbook_plugin.cpp:42
-#, fuzzy, kde-format
-#| msgid "&New Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
-msgstr "&Nova kontakto..."
+msgstr "Nova Kontakta Grupo..."
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:48
@@ -139,17 +132,17 @@ msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can create a new contact group."
 msgstr ""
+"Vi estos prezentita kun dialogo kie vi povas krei novan kontaktogrupon."
 
 #: src/aboutdata.cpp:19
-#, fuzzy, kde-format
-#| msgid "The KDE Address Book"
+#, kde-format
 msgid "The KDE Address Book Application"
-msgstr "KDE-Adresaro"
+msgstr "La KDE-Adreslibro-Apliko"
 
 #: src/aboutdata.cpp:21
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr ""
+msgstr "Kopirajto © 2007–%1 KAdreslibro-aŭtoroj"
 
 #: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
 #: src/configuration/kaddressbook_config_userfeedback.cpp:35
@@ -163,72 +156,66 @@ msgid "Current maintainer"
 msgstr "Nuna zorganto"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgid "Tobias König"
-msgstr "Tobias Koenig"
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Current maintainer"
+#, kde-format
 msgid "Previous maintainer"
-msgstr "Nuna zorganto"
+msgstr "Antaŭa prizorganto"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Original author"
+#, kde-format
 msgid "Original Author (1998)"
-msgstr "Origina aŭtoro"
+msgstr "Origina verkinto (1998)"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Dokumentado (2019)"
 
 #: src/categoryselectwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
-msgstr "Uzu laste elektitan filtrilon"
+msgstr "Restarigi kategorifiltrilon"
 
 #: src/categoryselectwidget.cpp:101
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
-msgstr "Uzu laste elektitan filtrilon"
+msgstr "Klara kategoriofiltrilo"
 
 #: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
-msgstr ""
+msgstr "(Neetikedita)"
 
 #: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
-msgstr ""
+msgstr "(Grupoj)"
 
 #: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
-msgstr ""
+msgstr "(Ĉiuj)"
 
 #: src/categoryselectwidget.cpp:224
-#, fuzzy, kde-format
-#| msgid "None"
+#, kde-format
 msgid "(None)"
-msgstr "neniu"
+msgstr "(Neniu)"
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
@@ -238,83 +225,76 @@ msgstr ", "
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid "<qt>Category filter: %1"
-msgstr ""
+msgstr "<qt>Kategoria filtrilo: %1"
 
 #: src/configuration/kaddressbook_config_plugins.cpp:28
 #, kde-format
 msgid "Configure Plugins"
-msgstr ""
+msgstr "Agordi Kromaĵojn"
 
 #: src/configuration/kaddressbook_config_plugins.cpp:32
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgid "(c), 2016-2021 Laurent Montel"
-msgstr "Laurent Montel"
+msgstr "(c), 2016-2021 Laurent Montel"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:29
 #, kde-format
 msgid "Configure User FeedBack"
-msgstr ""
+msgstr "Agordi Uzantajn Rimarkojn"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:33
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgid "(c), 2020-2021 Laurent Montel"
-msgstr "Laurent Montel"
+msgstr "(c), 2020-2021 Laurent Montel"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
 msgid "Tools Plugins"
-msgstr ""
+msgstr "Iloj Kromaĵoj"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
 #, kde-format
 msgid "Import/Export Plugins"
-msgstr ""
+msgstr "Importi/Eksporti Kromaĵojn"
 
 #: src/contactinfoproxymodel.cpp:67
-#, fuzzy, kde-format
-#| msgid "Add..."
+#, kde-format
 msgid "..."
-msgstr "Aldoni..."
+msgstr "..."
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "Ŝarĝante kontaktdetalojn..."
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
-#| msgid "Email:"
+#, kde-format
 msgid "Email: %1"
-msgstr "Retpoŝto:"
+msgstr "Retpoŝto: %1"
 
 #: src/contactinfoproxymodel.cpp:130
-#, fuzzy, kde-format
-#| msgid "Phone"
+#, kde-format
 msgid "Phone: %1"
-msgstr "Telefono"
+msgstr "Telefono: %1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
-#, fuzzy, kde-format
-#| msgid "Text"
+#, kde-format
 msgctxt "@action:button Next contact"
 msgid "Next"
-msgstr "Teksto"
+msgstr "Poste"
 
 #: src/contactswitcher.cpp:19
-#, fuzzy, kde-format
-#| msgid "Previous"
+#, kde-format
 msgctxt "@action:button Previous contact"
 msgid "Previous"
 msgstr "Antaŭa"
@@ -323,73 +303,67 @@ msgstr "Antaŭa"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the previous contact in the list"
-msgstr ""
+msgstr "Movi al la antaŭa kontakto en la listo"
 
 #: src/contactswitcher.cpp:25
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the previous contact in the list."
-msgstr ""
+msgstr "Premu ĉi tiun butonon por movi al la antaŭa kontakto en la listo."
 
 #: src/contactswitcher.cpp:27
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the next contact in the list"
-msgstr ""
+msgstr "Movi al la sekva kontakto en la listo"
 
 #: src/contactswitcher.cpp:28
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the next contact in the list."
-msgstr ""
+msgstr "Premu ĉi tiun butonon por movi al la sekva kontakto en la listo."
 
 #: src/contactswitcher.cpp:106
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 out of %2"
-msgstr ""
+msgstr "%1 el %2"
 
 #: src/importexport/contactfields.cpp:20
-#, fuzzy, kde-format
-#| msgid "Undefined"
+#, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Nedifinita"
 
 #: src/importexport/contactfields.cpp:39
-#, fuzzy, kde-format
-#| msgid "Anniversary"
+#, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
 msgstr "Jubileo"
 
 #: src/importexport/contactfields.cpp:85
-#, fuzzy, kde-format
-#| msgid "Use Preferred"
+#, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
-msgstr "Uzi preferatan"
+msgstr "Retpoŝto (preferata)"
 
 #: src/importexport/contactfields.cpp:87
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
-msgstr "Retpoŝto"
+msgstr "Retpoŝto (2)"
 
 #: src/importexport/contactfields.cpp:89
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
-msgstr "Retpoŝto"
+msgstr "Retpoŝto (3)"
 
 #: src/importexport/contactfields.cpp:91
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
-msgstr "Retpoŝto"
+msgstr "Retpoŝto (4)"
 
 #: src/importexport/contactfields.cpp:107
 #, kde-format
@@ -402,65 +376,59 @@ msgid "Office"
 msgstr "Laborejo:"
 
 #: src/importexport/contactfields.cpp:111
-#, fuzzy, kde-format
-#| msgid "Myanmar"
+#, kde-format
 msgid "Manager"
-msgstr "Mjanmaro"
+msgstr "Administranto"
 
 #: src/importexport/contactfields.cpp:113
-#, fuzzy, kde-format
-#| msgid "Assistant's Name"
+#, kde-format
 msgid "Assistant"
-msgstr "Nomo de asistanto"
+msgstr "Asistanto"
 
 #: src/importexport/contactfields.cpp:115
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "Edzo"
 
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "&Elektitaj kontaktoj"
+msgstr "Elekti Kontaktojn"
 
 #: src/importexport/contactselectionwidget.cpp:115
-#, fuzzy, kde-format
-#| msgid "&All contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr "&Ĉiuj kontaktoj"
+msgstr "Ĉiuj kontaktoj"
 
 #: src/importexport/contactselectionwidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Do you want to import this contact in your address book?"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
+msgstr "Ĉiuj kontaktoj el ĉiuj viaj adreslibroj"
 
 #: src/importexport/contactselectionwidget.cpp:118
-#, fuzzy, kde-format
-#| msgid "Please select type of the new address book:"
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
-msgstr "Bonvolu elekti la tipon de la nova adresaro:"
+msgstr ""
+"Elektu ĉi tiun opcion vi volas elekti ĉiujn viajn kontaktojn el ĉiuj viaj "
+"adresaroj."
 
 #: src/importexport/contactselectionwidget.cpp:121
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr "&Elektitaj kontaktoj"
+msgstr "Elektitaj kontaktoj"
 
 #: src/importexport/contactselectionwidget.cpp:122
-#, fuzzy, kde-format
-#| msgid "&All contacts"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr "&Ĉiuj kontaktoj"
+msgstr "Nur la kontaktoj aktuale elektitaj"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -469,20 +437,20 @@ msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
 msgstr ""
+"Elektu ĉi tiun opcion se vi volas nur la kontaktojn, kiujn vi jam elektis en "
+"la grafika interfaco."
 
 #: src/importexport/contactselectionwidget.cpp:127
-#, fuzzy, kde-format
-#| msgid "&All contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts from:"
-msgstr "&Ĉiuj kontaktoj"
+msgstr "Ĉiuj kontaktoj de:"
 
 #: src/importexport/contactselectionwidget.cpp:128
-#, fuzzy, kde-format
-#| msgid "Do you want to import this contact in your address book?"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
+msgstr "Ĉiuj kontaktoj el elektita adreslibro"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -493,18 +461,22 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"Elektu ĉi tiun opcion se vi volas elekti ĉiujn kontaktojn el nur unu el viaj "
+"adresaroj. Post kiam ĉi tiu opcio estas klakita, vi ricevos falkeston "
+"listigante ĉiujn tiujn adreslibrojn kaj permesitaj elekti tiun, kiun vi "
+"volas."
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr ""
+msgstr "Inkluzivi Subdosierujojn"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "Elektu ĉiujn subdosierujojn inkluzive de la supranivela dosierujo"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -514,51 +486,47 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas elekti ĉiujn kontaktojn el ĉi tiu "
+"dosierujo, inkluzive de ĉiuj subdosierujoj. Se vi volas nur la kontaktojn el "
+"la plej alta dosierujo, tiam lasu ĉi tiun skatolon nemarkita."
 
 #: src/importexport/contactselectionwidget.cpp:170
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
-msgstr "&Elektitaj kontaktoj"
+msgstr "Kolekti Kontaktojn"
 
 #: src/importexport/contactselectionwidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgid "Fetch Contacts"
-msgstr "&Elektitaj kontaktoj"
+msgstr "Preni Kontaktojn"
 
 #: src/importexport/exportselectionwidget.cpp:21
-#, fuzzy, kde-format
-#| msgid "Private fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Privataj kampoj"
 
 #: src/importexport/exportselectionwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Laborejaj kampoj"
 
 #: src/importexport/exportselectionwidget.cpp:23
-#, fuzzy, kde-format
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Aliaj kampoj"
 
 #: src/importexport/exportselectionwidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Ĉifradoŝlosiloj"
 
 #: src/importexport/exportselectionwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Pictures"
+#, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Bildoj"
@@ -567,21 +535,19 @@ msgstr "Bildoj"
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "Montra nomo kiel plena nomo"
 
 #: src/importexport/exportselectionwidget.cpp:30
-#, fuzzy, kde-format
-#| msgid "File to import:"
+#, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr "Importenda dosiero:"
+msgstr "Eksportendaj kampoj"
 
 #: src/importexport/exportselectionwidget.cpp:36
-#, fuzzy, kde-format
-#| msgid "Private fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
-msgstr "Privataj kampoj"
+msgstr "Eksporti privatajn kampojn"
 
 #: src/importexport/exportselectionwidget.cpp:38
 #, kde-format
@@ -590,13 +556,14 @@ msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la privatajn kampojn de la "
+"kontakto al la eligdosiero de vCard."
 
 #: src/importexport/exportselectionwidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
-msgstr "Laborejaj kampoj"
+msgstr "Eksporti komercajn kampojn"
 
 #: src/importexport/exportselectionwidget.cpp:44
 #, kde-format
@@ -605,13 +572,14 @@ msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la komercajn kampojn de la "
+"kontakto al la eligdosiero de vCard."
 
 #: src/importexport/exportselectionwidget.cpp:48
-#, fuzzy, kde-format
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
-msgstr "Aliaj kampoj"
+msgstr "Eksporti aliajn kampojn"
 
 #: src/importexport/exportselectionwidget.cpp:50
 #, kde-format
@@ -620,13 +588,14 @@ msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la aliajn kampojn de la kontakto "
+"al la eligdosiero de vCard."
 
 #: src/importexport/exportselectionwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
-msgstr "Ĉifradoŝlosiloj"
+msgstr "Eksporti ĉifrajn ŝlosilojn"
 
 #: src/importexport/exportselectionwidget.cpp:56
 #, kde-format
@@ -635,13 +604,14 @@ msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la ĉifradajn ŝlosilojn de la "
+"kontakto al la eligdosiero de vCard."
 
 #: src/importexport/exportselectionwidget.cpp:60
-#, fuzzy, kde-format
-#| msgid "Pictures"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr "Bildoj"
+msgstr "Eksporti bildojn"
 
 #: src/importexport/exportselectionwidget.cpp:62
 #, kde-format
@@ -650,19 +620,20 @@ msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la bildon de la kontakto al la "
+"eligdosiero de vCard."
 
 #: src/importexport/exportselectionwidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Export to One File"
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr "Eksporti al unu dosiero"
+msgstr "Eksporto-opcioj"
 
 #: src/importexport/exportselectionwidget.cpp:72
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "Eksporti montran nomon kiel plenan nomon"
 
 #: src/importexport/exportselectionwidget.cpp:74
 #, kde-format
@@ -672,65 +643,64 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas eksporti la montran nomon de la kontakto "
+"en la plennoma kampo de la vCard. Ĉi tio povas esti bezonata por ke la nomo "
+"montriĝu ĝuste en GMail aŭ Android."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "Adresaro"
+msgstr "Elekti Adreslibron"
 
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr ""
+"Elektu la adreslibron, en kiu la importitaj kontaktoj estos konservitaj:"
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Importing contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Importante kontaktojn"
+msgstr "Importi Kontaktojn"
 
 #: src/importexport/importexportengine.cpp:75
-#, fuzzy, kde-format
-#| msgid "Importing contacts"
+#, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] "Importante kontaktojn"
-msgstr[1] "Importante kontaktojn"
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
-#| msgid "Import the given vCard"
+#, kde-format
 msgid "Import the given file"
-msgstr "Importi la donitan vCard"
+msgstr "Importi la donitan dosieron"
 
 #: src/kaddressbook_options.h:17
 #, kde-format
 msgid "Open the 'New Contact' dialog"
-msgstr ""
+msgstr "Malfermi la dialogon 'Nova Kontakto'"
 
 #: src/kaddressbook_options.h:19
 #, kde-format
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "Montri la specifitan kontakton (per URL)"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgid "Files or URLs. The user will be asked whether to import."
-msgstr ""
+msgstr "Dosieroj aŭ URL-oj. La uzanto estos demandita ĉu importi."
 
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "Listigas la disponeblajn opciojn por uzant-sugestoj"
 
 #: src/kaddressbookpart.cpp:56
-#, fuzzy, kde-format
-#| msgid "Import KDE 2 Addressbook..."
+#, kde-format
 msgid "&Configure KAddressBook..."
-msgstr "Importi KDE-2-adresaron..."
+msgstr "&Agordi KAdreslibron..."
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -740,10 +710,9 @@ msgstr "&Dosiero"
 
 #. i18n: ectx: Menu (file_new)
 #: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
-#, fuzzy, kde-format
-#| msgid "New"
+#, kde-format
 msgid "&New"
-msgstr "Nova"
+msgstr "&Nova"
 
 #. i18n: ectx: Menu (edit)
 #: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
@@ -759,10 +728,9 @@ msgstr "&Rigardi"
 
 #. i18n: ectx: Menu (action)
 #: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
-#, fuzzy, kde-format
-#| msgid "Latvia"
+#, kde-format
 msgid "&Action"
-msgstr "Latvujo"
+msgstr "&Ago"
 
 #. i18n: ectx: Menu (tools)
 #: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
@@ -794,40 +762,36 @@ msgid "Import"
 msgstr "Importi"
 
 #: src/mainwidget.cpp:360
-#, fuzzy, kde-format
-#| msgid "&Export"
+#, kde-format
 msgid "Export"
-msgstr "&Eksporti"
+msgstr "Eksporti"
 
 #: src/mainwidget.cpp:407
-#, fuzzy, kde-format
-#| msgid "Search"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
-msgstr "Serĉi"
+msgstr "Serĉi... <%1>"
 
 #: src/mainwidget.cpp:632
 #, kde-format
 msgid "&Themes"
-msgstr ""
+msgstr "E&tosoj"
 
 #: src/mainwidget.cpp:641
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
-msgstr ""
+msgstr "Presi la kompletan adreslibron aŭ elektitan nombron da kontaktoj."
 
 #: src/mainwidget.cpp:646
-#, fuzzy, kde-format
-#| msgid "Recursive search"
+#, kde-format
 msgid "Quick search"
-msgstr "Rekursiva serĉo"
+msgstr "Rapida serĉo"
 
 #: src/mainwidget.cpp:651
-#, fuzzy, kde-format
-#| msgid "Category &members"
+#, kde-format
 msgid "Category filter"
-msgstr "Kategori&membroj"
+msgstr "Kategoria filtrilo"
 
 #: src/mainwidget.cpp:656
 #, kde-format
@@ -835,61 +799,58 @@ msgid "Select All"
 msgstr "Elekti ĉion"
 
 #: src/mainwidget.cpp:658
-#, fuzzy, kde-format
-#| msgid "Do you want to import this contact in your address book?"
+#, kde-format
 msgid "Select all contacts in the current address book view."
-msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
+msgstr "Elekti ĉiujn kontaktojn en la nuna adreslibro-vido."
 
 #: src/mainwidget.cpp:662
 #, kde-format
 msgid "Show QR Codes"
-msgstr ""
+msgstr "Montri QR-kodojn"
 
 #: src/mainwidget.cpp:663
 #, kde-format
 msgid "Show QR Codes in the contact."
-msgstr ""
+msgstr "Montri QR-kodojn en la kontakto."
 
 #: src/mainwidget.cpp:668
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
-msgstr ""
+msgstr "Simpla (unu kolumno)"
 
 #: src/mainwidget.cpp:672
-#, fuzzy, kde-format
-#| msgid "Please select type of the new address book:"
+#, kde-format
 msgid "Show a simple mode of the address book view."
-msgstr "Bonvolu elekti la tipon de la nova adresaro:"
+msgstr "Montri simplan reĝimon de la adreslibrovido."
 
 #: src/mainwidget.cpp:675
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
-msgstr ""
+msgstr "Du Kolumnoj"
 
 #: src/mainwidget.cpp:681
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
-msgstr ""
+msgstr "Tri Kolumnoj"
 
 #: src/mainwidget.cpp:694
 #, kde-format
 msgid "Set Focus to Quick Search"
-msgstr ""
+msgstr "Meti Fokuson al Rapida Serĉo"
 
 #: src/mainwidget.cpp:707
 #, kde-format
 msgid "Serverside Subscription..."
-msgstr ""
+msgstr "Servila Abono..."
 
 #: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
-msgstr "Redakti kontakton"
+msgstr "Presi Kontaktojn"
 
 #: src/mainwindow.cpp:69
 #, kde-format
@@ -898,6 +859,8 @@ msgid ""
 "You will be presented with a dialog where you can configure the application-"
 "wide shortcuts."
 msgstr ""
+"Vi estos prezentita kun dialogo kie vi povas agordi la aplikaĵ-kovrantajn "
+"ŝparvojojn."
 
 #: src/mainwindow.cpp:170
 #, kde-format
@@ -905,19 +868,19 @@ msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
+"<qt>Ĉi tio tute kaŝos la menubreton. Vi povas montri ĝin denove tajpante %1."
+"</qt>"
 
 #: src/mainwindow.cpp:173
-#, fuzzy, kde-format
-#| msgid "Hide Jump Bar"
+#, kde-format
 msgid "Hide menu bar"
-msgstr "Kaŝi rapidbreton"
+msgstr "Kaŝi menubreton"
 
 #: src/manageshowcollectionproperties.cpp:83
-#, fuzzy, kde-format
-#| msgid "Edit Address Book Filter"
+#, kde-format
 msgctxt "@title:window"
 msgid "Properties of Address Book Folder %1"
-msgstr "Redaktu Adresaro-Filtrilojn"
+msgstr "Propraĵoj de Adreslibro Dosierujo %1"
 
 #: src/modelcolumnmanager.cpp:69
 #, kde-format
@@ -925,16 +888,14 @@ msgid "Full Name"
 msgstr "Plena nomo"
 
 #: src/modelcolumnmanager.cpp:74
-#, fuzzy, kde-format
-#| msgid "Family names:"
+#, kde-format
 msgid "Family Name"
-msgstr "Familia nomo:"
+msgstr "Familia nomo"
 
 #: src/modelcolumnmanager.cpp:78
-#, fuzzy, kde-format
-#| msgid "Given name:"
+#, kde-format
 msgid "Given Name"
-msgstr "Donita nomo:"
+msgstr "Antaŭnomo"
 
 #: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
 #, kde-format
@@ -942,34 +903,29 @@ msgid "Home Address"
 msgstr "Hejmadreso"
 
 #: src/modelcolumnmanager.cpp:90
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgid "Business Address"
-msgstr "Laborejaj kampoj"
+msgstr "Komerca Adreso"
 
 #: src/modelcolumnmanager.cpp:94
-#, fuzzy, kde-format
-#| msgid "Phone numbers"
+#, kde-format
 msgid "Phone Numbers"
-msgstr "Telefon-numeroj"
+msgstr "Telefonnumeroj"
 
 #: src/modelcolumnmanager.cpp:98
-#, fuzzy, kde-format
-#| msgid "Preferred address"
+#, kde-format
 msgid "Preferred EMail"
-msgstr "Preferata adreso"
+msgstr "Preferata Retpoŝto"
 
 #: src/modelcolumnmanager.cpp:102
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgid "All EMails"
-msgstr "Retpoŝto"
+msgstr "Ĉiuj retpoŝtoj"
 
 #: src/printing/compact/compactstyle.cpp:112
-#, fuzzy, kde-format
-#| msgid "Company"
+#, kde-format
 msgid "Compact Style"
-msgstr "Firmao"
+msgstr "Kompakta Stilo"
 
 #: src/printing/compact/compactstyle.cpp:166
 #: src/printing/detailled/detailledstyle.cpp:262
@@ -978,7 +934,7 @@ msgstr "Firmao"
 #: src/printing/ringbinder/ringbinderstyle.cpp:161
 #, kde-format
 msgid "Setting up document"
-msgstr ""
+msgstr "Agordi dokumenton"
 
 #: src/printing/compact/compactstyle.cpp:173
 #: src/printing/detailled/detailledstyle.cpp:269
@@ -994,8 +950,7 @@ msgstr "Presante"
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:198
-#, fuzzy, kde-format
-#| msgid "Done"
+#, kde-format
 msgctxt "Finished printing"
 msgid "Done"
 msgstr "Preta"
@@ -1003,7 +958,7 @@ msgstr "Preta"
 #: src/printing/compact/compactstyle.cpp:200
 #, kde-format
 msgid "Compact Printing Style"
-msgstr ""
+msgstr "Kompakta Presa Stilo"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
@@ -1025,14 +980,13 @@ msgstr "Kampoj"
 #: src/printing/compact/compactstyle.ui:46
 #, kde-format
 msgid "Print the home address, with home phone number and mobile phone number"
-msgstr ""
+msgstr "Presi la hejmadreson, kun hejma telefonnumero kaj poŝtelefonnumero"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
 #: src/printing/compact/compactstyle.ui:49
-#, fuzzy, kde-format
-#| msgid "Home Address"
+#, kde-format
 msgid "with home address"
-msgstr "Hejmadreso"
+msgstr "kun hejma adreso"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
@@ -1040,30 +994,27 @@ msgstr "Hejmadreso"
 #: src/printing/compact/compactstyle.ui:59
 #, kde-format
 msgid "print the business address, with business phone number"
-msgstr ""
+msgstr "presi la komercan adreson, kun komerca telefonnumero"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
 #: src/printing/compact/compactstyle.ui:62
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgid "with business address"
-msgstr "Laborejaj kampoj"
+msgstr "kun komerca adreso"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:69
 #: src/printing/compact/compactstyle.ui:72
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgid "Print the birthday"
-msgstr "Redakti kontakton"
+msgstr "Presi la naskiĝtagon"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:75
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgid "with birthday"
-msgstr "Naskiĝdato"
+msgstr "kun naskiĝtago"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
@@ -1071,14 +1022,13 @@ msgstr "Naskiĝdato"
 #: src/printing/compact/compactstyle.ui:85
 #, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr ""
+msgstr "Presi la preferatan kaj la malĉefajn retpoŝtajn kampojn"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
-#, fuzzy, kde-format
-#| msgid "Edit Email"
+#, kde-format
 msgid "with e-mail"
-msgstr "Redakti retpoŝton"
+msgstr "kun retpoŝto"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
@@ -1086,13 +1036,13 @@ msgstr "Redakti retpoŝton"
 #: src/printing/compact/compactstyle.ui:115
 #, kde-format
 msgid "the first color, if alternating color is checked"
-msgstr ""
+msgstr "la unua koloro, se alterna koloro estas kontrolita"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
 #: src/printing/compact/compactstyle.ui:118
 #, kde-format
 msgid "first color"
-msgstr ""
+msgstr "unua koloro"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
@@ -1100,14 +1050,13 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:128
 #, kde-format
 msgid "the second color, if alternating color is checked"
-msgstr ""
+msgstr "la dua koloro, se alterna koloro estas kontrolita"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
-#, fuzzy, kde-format
-#| msgid "Background Color"
+#, kde-format
 msgid "second color"
-msgstr "Fonkoloro"
+msgstr "dua koloro"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
@@ -1115,20 +1064,18 @@ msgstr "Fonkoloro"
 #: src/printing/compact/compactstyle.ui:141
 #, kde-format
 msgid "Change the background color of every row"
-msgstr ""
+msgstr "Ŝanĝu la fonkoloron de ĉiu vico"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
 #: src/printing/compact/compactstyle.ui:144
-#, fuzzy, kde-format
-#| msgid "Alternating backgrounds"
+#, kde-format
 msgid "Alternating the background color"
-msgstr "Ŝanĝantaj fonoj"
+msgstr "Alternante la fonkoloron"
 
 #: src/printing/detailled/detailledstyle.cpp:74
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "Organization:"
-msgstr "Organizaĵo"
+msgstr "Organizo:"
 
 #: src/printing/detailled/detailledstyle.cpp:82
 #, kde-format
@@ -1186,34 +1133,32 @@ msgid "Preferred Address"
 msgstr "Preferata adreso"
 
 #: src/printing/detailled/detailledstyle.cpp:148
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Notes:"
-msgstr "Noto:"
+msgstr "Notoj:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
 #: src/printing/detailled/detailledstyle.cpp:232
 #: src/printing/detailled/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
-msgstr ""
+msgstr "Detala Presa Stilo - Apero"
 
 #: src/printing/detailled/detailledstyle.cpp:245
-#, fuzzy, kde-format
-#| msgid "&Settings"
+#, kde-format
 msgid "Setting up colors"
-msgstr "&Agordo"
+msgstr "Agordi kolorojn"
 
 #: src/printing/detailled/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
-msgstr ""
+msgstr "Detala Stilo"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
 #: src/printing/detailled/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
-msgstr ""
+msgstr "Paĝo de Apero"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
 #: src/printing/detailled/ds_appearance.ui:77
@@ -1225,7 +1170,7 @@ msgstr "Kontaktokapoj"
 #: src/printing/detailled/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
-msgstr ""
+msgstr "Elekti la titolan tekstan fonkoloron"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:122
@@ -1234,25 +1179,26 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline background color."
 msgstr ""
+"Alklaku ĉi tiun butonon por komenci kolorelekton, kiu permesos al vi agordi "
+"la koloron por la titola fonkoloro."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
 #: src/printing/detailled/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
-msgstr ""
+msgstr "Fonkoloro de la titolo:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
 #: src/printing/detailled/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
-msgstr ""
+msgstr "Koloro de la teksttitolo:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:162
-#, fuzzy, kde-format
-#| msgid "%1 address book"
+#, kde-format
 msgid "Select the headline text color"
-msgstr "%1 adresaro"
+msgstr "Elekti la titolan tekstokoloron"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:165
@@ -1261,26 +1207,28 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline text."
 msgstr ""
+"Alklaku ĉi tiun butonon por komenci kolorelekton, kiu permesos al vi agordi "
+"la koloron por la titolteksto."
 
 #: src/printing/mike/mikesstyle.cpp:142
 #, kde-format
 msgid "Mike's Printing Style"
-msgstr ""
+msgstr "La Presostilo de Mike"
 
 #: src/printing/printingwizard.cpp:47
 #, kde-format
 msgid "Which contacts do you want to print?"
-msgstr ""
+msgstr "Kiujn kontaktojn vi volas presi?"
 
 #: src/printing/printingwizard.cpp:49
 #, kde-format
 msgid "Choose Contacts to Print"
-msgstr ""
+msgstr "Elekti Kontaktojn por Presi"
 
 #: src/printing/printingwizard.cpp:55
 #, kde-format
 msgid "Choose Printing Style"
-msgstr ""
+msgstr "Elekti Presan Stilon"
 
 #: src/printing/printingwizard.cpp:202
 #, kde-format
@@ -1288,8 +1236,7 @@ msgid "Print Progress"
 msgstr "Presprogreso"
 
 #: src/printing/printprogress.cpp:24
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "Presprogreso"
@@ -1303,20 +1250,20 @@ msgstr "Progreso"
 #: src/printing/ringbinder/rbs_appearance.ui:35
 #, kde-format
 msgid "Print Contact's Information"
-msgstr ""
+msgstr "Presi la Informojn de Kontakto"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:41
-#, fuzzy, kde-format
-#| msgid "Phone numbers"
+#, kde-format
 msgid "Print contact phone numbers"
-msgstr "Telefon-numeroj"
+msgstr "Presi kontaktajn telefonnumerojn"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:44
 #, kde-format
 msgid "Check this box if you want contact phone numbers to be printed."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas ke kontaktaj telefonnumeroj estu presitaj."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
@@ -1326,16 +1273,16 @@ msgstr "Telefon-numeroj"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:57
-#, fuzzy, kde-format
-#| msgid "Postal Address"
+#, kde-format
 msgid "Print contact email addresses"
-msgstr "Poŝtadreso"
+msgstr "Presi kontaktajn retadresojn"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:60
 #, kde-format
 msgid "Check this box if you want contact email addresses to be printed."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas ke kontaktaj retadresoj estu presitaj."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
@@ -1345,95 +1292,88 @@ msgstr "Retpoŝtaj adresoj"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:73
-#, fuzzy, kde-format
-#| msgid "Street addresses"
+#, kde-format
 msgid "Print contact street addresses"
-msgstr "Strat-adresoj"
+msgstr "Presi kontaktajn stratadresojn"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:76
 #, kde-format
 msgid "Check this box if you want contact street addresses to be printed."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas ke kontaktaj stratadresoj estu presitaj."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
-#, fuzzy, kde-format
-#| msgid "Postal Address"
+#, kde-format
 msgid "Postal addresses"
-msgstr "Poŝtadreso"
+msgstr "Poŝtaj adresoj"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:89
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgid "Print contact organizations"
-msgstr "Redakti kontakton"
+msgstr "Presi kontaktajn organizojn"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:92
 #, kde-format
 msgid "Check this box if you want contact organizations to be printed."
-msgstr ""
+msgstr "Marku ĉi tiun skatolon se vi volas ke kontaktorganizoj estu presitaj."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:102
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgid "Print contact birthdays"
-msgstr "Redakti kontakton"
+msgstr "Presi kontakton naskiĝtagoj"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:105
 #, kde-format
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
+"Marku ĉi tiun skatolon se vi volas, ke kontaktaj naskiĝtagoj estu presitaj."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:115
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgid "Print contact notes"
-msgstr "Redakti kontakton"
+msgstr "Presi kontaktajn notojn"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:118
 #, kde-format
 msgid "Check this box if you want contact notes to be printed."
-msgstr ""
+msgstr "Marku ĉi tiun skatolon se vi volas ke kontaktnotoj estu presitaj."
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:73
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Note: "
 msgstr "Noto:"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:129
 #, kde-format
 msgid "Ring Binder Printing Style - Appearance"
-msgstr ""
+msgstr "Ring Binder Presanta Stilo - Apero"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:145
-#, fuzzy, kde-format
-#| msgid "&Settings"
+#, kde-format
 msgid "Setting up fields"
-msgstr "&Agordo"
+msgstr "Agordi kampojn"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:213
 #, kde-format
 msgid "Printout for Ring Binders"
-msgstr ""
+msgstr "Presaĵo por Ringaj Binderoj"
 
 #: src/printing/stylepage.cpp:36
-#, fuzzy, kde-format
-#| msgid "Ascending"
+#, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "Kreskante"
 
 #: src/printing/stylepage.cpp:37
-#, fuzzy, kde-format
-#| msgid "Descending"
+#, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "Malkreskante"
@@ -1442,13 +1382,13 @@ msgstr "Malkreskante"
 #, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
-msgstr ""
+msgstr "(Neniu antaŭrigardo disponebla.)"
 
 #: src/printing/stylepage.cpp:109
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
-msgstr ""
+msgstr "Elekti Presan Stilon"
 
 #: src/printing/stylepage.cpp:114
 #, kde-format
@@ -1458,27 +1398,27 @@ msgid ""
 "KAddressBook has several printing styles, designed for different purposes.\n"
 "Choose the style that suits your needs below."
 msgstr ""
+"Kia aspektu la presaĵo?\n"
+"KAdreslibro havas plurajn presajn stilojn, desegnitajn por malsamaj celoj.\n"
+"Elektu la stilon, kiu konvenas al viaj bezonoj sube."
 
 #: src/printing/stylepage.cpp:121
-#, fuzzy, kde-format
-#| msgid "Sorting"
+#, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "Ordigante"
 
 #: src/printing/stylepage.cpp:126
-#, fuzzy, kde-format
-#| msgid "Criterion:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "Kriterio:"
 
 #: src/printing/stylepage.cpp:130
-#, fuzzy, kde-format
-#| msgid "Select incremental search field"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
-msgstr "Elekti kampon por iom-post-ioma serĉo"
+msgstr "Elekti la ĉefan ordigan kampon"
 
 #: src/printing/stylepage.cpp:132
 #, kde-format
@@ -1488,10 +1428,12 @@ msgid ""
 "the print output.  Use the sorting order option to determine if the sort "
 "will be in ascending or descending order."
 msgstr ""
+"El ĉi tiu listo vi povas elekti la kampon sur kiu viaj kontaktoj estas "
+"ordigitaj en la presa eligo. Uzu la opcion de ordigo por determini ĉu la "
+"ordigo estos en suprena aŭ malkreska ordo."
 
 #: src/printing/stylepage.cpp:137
-#, fuzzy, kde-format
-#| msgid "Order:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "Ordigo:"
@@ -1500,7 +1442,7 @@ msgstr "Ordigo:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
-msgstr ""
+msgstr "Elekti la ordigon"
 
 #: src/printing/stylepage.cpp:143
 #, kde-format
@@ -1510,19 +1452,21 @@ msgid ""
 "Use the sorting criterion option to specify on which contact field the "
 "sorting will be performed."
 msgstr ""
+"Elektu ĉu vi volas ordigi viajn kontaktojn en suprena aŭ malkreska ordo. Uzu "
+"la ordigan kriterio-opcion por specifi sur kiu kontakta kampo la ordigo "
+"estos farita."
 
 #: src/printing/stylepage.cpp:150
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr ""
+msgstr "Presa Stilo"
 
 #: src/printing/stylepage.cpp:155
-#, fuzzy, kde-format
-#| msgid "New Distribution List"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
-msgstr "Nova dissendolisto"
+msgstr "Elekti la presan stilon"
 
 #: src/printing/stylepage.cpp:156
 #, kde-format
@@ -1530,13 +1474,14 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr ""
+"Elektu vian deziratan presan stilon. Vidu la antaŭrigardan bildon por helpi "
+"vin decidi."
 
 #: src/widgets/quicksearchwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Search contacts in list"
-msgstr "&Elektitaj kontaktoj"
+msgstr "Serĉi kontaktojn en listo"
 
 #: src/widgets/quicksearchwidget.cpp:33
 #, kde-format
@@ -1546,2616 +1491,5 @@ msgid ""
 "that string will be displayed.  This is a quick way of searching for "
 "contacts of interest."
 msgstr ""
-
-#~ msgid "&Import"
-#~ msgstr "&Importi"
-
-#~ msgid "Import vCard..."
-#~ msgstr "Importu vCard..."
-
-#, fuzzy
-#~| msgid "Import Contacts?"
-#~ msgid "Import contacts from a vCard file."
-#~ msgstr "Ĉu importi kontaktojn?"
-
-#, fuzzy
-#~| msgid "Import CSV List..."
-#~ msgid "Import CSV file..."
-#~ msgstr "Import CSV-liston..."
-
-#, fuzzy
-#~| msgid "Import LDIF Addressbook..."
-#~ msgid "Import LDIF file..."
-#~ msgstr "Importi LDIF-adresaron..."
-
-#, fuzzy
-#~| msgid "Import Contacts?"
-#~ msgid "Import contacts from an LDIF file."
-#~ msgstr "Ĉu importi kontaktojn?"
-
-#, fuzzy
-#~| msgid "Import From Mobile Phone..."
-#~ msgid "Import From LDAP server..."
-#~ msgstr "Importi de poŝtelefono..."
-
-#, fuzzy
-#~| msgid "Import Contacts?"
-#~ msgid "Import contacts from an LDAP server."
-#~ msgstr "Ĉu importi kontaktojn?"
-
-#, fuzzy
-#~| msgid "Import All..."
-#~ msgid "Import GMX file..."
-#~ msgstr "Importi ĉiujn..."
-
-#, fuzzy
-#~| msgid "Do you want to import this contact in your address book?"
-#~ msgid "Import contacts from a GMX address book file."
-#~ msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
-
-#, fuzzy
-#~| msgid "Export vCard 3.0..."
-#~ msgid "Export vCard 4.0..."
-#~ msgstr "Eksporti vCard 3.0..."
-
-#, fuzzy
-#~| msgid "Export vCard 3.0..."
-#~ msgid "Export contacts to a vCard 4.0 file."
-#~ msgstr "Eksporti vCard 3.0..."
-
-#~ msgid "Export vCard 3.0..."
-#~ msgstr "Eksporti vCard 3.0..."
-
-#, fuzzy
-#~| msgid "Export vCard 3.0..."
-#~ msgid "Export contacts to a vCard 3.0 file."
-#~ msgstr "Eksporti vCard 3.0..."
-
-#~ msgid "Export vCard 2.1..."
-#~ msgstr "Eksporti vCard 2.1..."
-
-#, fuzzy
-#~| msgid "Export vCard 2.1..."
-#~ msgid "Export contacts to a vCard 2.1 file."
-#~ msgstr "Eksporti vCard 2.1..."
-
-#, fuzzy
-#~| msgid "Export CSV List..."
-#~ msgid "Export CSV file..."
-#~ msgstr "Eksporti CSV-liston..."
-
-#, fuzzy
-#~| msgid "Export LDIF Addressbook..."
-#~ msgid "Export LDIF file..."
-#~ msgstr "Importi LDIF-adresaron..."
-
-#, fuzzy
-#~| msgid "Export LDIF Addressbook..."
-#~ msgid "Export contacts to an LDIF file."
-#~ msgstr "Importi LDIF-adresaron..."
-
-#, fuzzy
-#~| msgid "Export GMX Address Book..."
-#~ msgid "Export GMX file..."
-#~ msgstr "Eksporti GMX-adresaron..."
-
-#, fuzzy
-#~| msgid "Do you want to import this contact in your address book?"
-#~ msgid "Export contacts to a GMX address book file."
-#~ msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
-
-#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
-#~ msgstr "<qt>Ne eblas malfermi dosieron <b>%1</b>.</qt>"
-
-#, fuzzy
-#~| msgid "CSV Import Dialog"
-#~ msgctxt "@title:window"
-#~ msgid "CSV Import Dialog"
-#~ msgstr "Dialogo pri CSV-importo"
-
-#, fuzzy
-#~| msgid "Importing contacts"
-#~ msgctxt "@label"
-#~ msgid "Importing contacts"
-#~ msgstr "Importante kontaktojn"
-
-#, fuzzy
-#~| msgid "File to import:"
-#~ msgctxt "@label"
-#~ msgid "File to import:"
-#~ msgstr "Importenda dosiero:"
-
-#, fuzzy
-#~| msgid "Select vCard to Import"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select a csv file to import"
-#~ msgstr "Importenda vCard-dosiero"
-
-#, fuzzy
-#~| msgid "Delimiter"
-#~ msgctxt "@title:group"
-#~ msgid "Delimiter"
-#~ msgstr "Apartigilo"
-
-#, fuzzy
-#~| msgid "Comma"
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Comma"
-#~ msgstr "Komo"
-
-#, fuzzy
-#~| msgid "Space"
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Space"
-#~ msgstr "Spacsigno"
-
-#, fuzzy
-#~| msgid "Other"
-#~ msgctxt "@option:radio Custum field separator"
-#~ msgid "Other"
-#~ msgstr "Aliaj"
-
-#, fuzzy
-#~| msgid "Textquote:"
-#~ msgctxt "@label:listbox"
-#~ msgid "Text quote:"
-#~ msgstr "Tekstcitaĵo:"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select the quote character"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#~ msgctxt "@item:inlistbox Qoute character option"
-#~ msgid "\""
-#~ msgstr "\""
-
-#~ msgctxt "@item:inlistbox Quote character option"
-#~ msgid "'"
-#~ msgstr "'"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "@item:inlistbox Quote character option"
-#~ msgid "None"
-#~ msgstr "neniu"
-
-#, fuzzy
-#~| msgid "Date format:"
-#~ msgctxt "@label:listbox"
-#~ msgid "Date format:"
-#~ msgstr "Datformato:"
-
-#, fuzzy
-#~| msgid "Textquote:"
-#~ msgctxt "@label:listbox"
-#~ msgid "Text codec:"
-#~ msgstr "Tekstcitaĵo:"
-
-#, fuzzy
-#~| msgid "%1 address book"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select the text codec"
-#~ msgstr "%1 adresaro"
-
-#, fuzzy
-#~| msgid "Apply Template..."
-#~ msgctxt "@action:button"
-#~ msgid "Apply Template..."
-#~ msgstr "Apliki ŝablonon..."
-
-#, fuzzy
-#~| msgid "Save Template..."
-#~ msgctxt "@action:button"
-#~ msgid "Save Template..."
-#~ msgstr "Konservi ŝablonon..."
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Latin1"
-#~ msgstr "Latin1"
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Unicode"
-#~ msgstr "Unicode"
-
-#, fuzzy
-#~| msgid "Template Name"
-#~ msgctxt "@title:window"
-#~ msgid "Template Name"
-#~ msgstr "Ŝablon-nomo"
-
-#, fuzzy
-#~| msgid "Please enter a name for the template:"
-#~ msgctxt "@info"
-#~ msgid "Please enter a name for the template:"
-#~ msgstr "Bonvolu doni nomon por la ŝablono:"
-
-#, fuzzy
-#~| msgid "Cannot open %1 for reading"
-#~ msgctxt "@info:status"
-#~ msgid "Cannot open input file."
-#~ msgstr "Ne eblas malfermi %1 por legado"
-
-#, fuzzy
-#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
-#~ msgctxt "@label"
-#~ msgid "Do you really want to delete template '%1'?"
-#~ msgstr "<qt>Ĉu vi certas ke vi volas forigi la adresaron <b>%1</b>?</qt>"
-
-#, fuzzy
-#~| msgid "Template Selection"
-#~ msgctxt "@title:window"
-#~ msgid "Template Selection"
-#~ msgstr "Elektado de ŝablono"
-
-#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
-#~ msgstr "<qt>Ne eblas malfermi <b>%1</b> por legado.</qt>"
-
-#, fuzzy
-#~| msgid "Export to One File"
-#~ msgctxt "@action:button"
-#~ msgid "Export to One File"
-#~ msgstr "Eksporti al unu dosiero"
-
-#, fuzzy
-#~| msgid "Export to One File"
-#~ msgctxt "@action:button"
-#~ msgid "Export to Several Files"
-#~ msgstr "Eksporti al unu dosiero"
-
-#, fuzzy
-#~| msgid "Select vCard to Import"
-#~ msgctxt "@title:window"
-#~ msgid "Select vCard to Import"
-#~ msgstr "Importenda vCard-dosiero"
-
-#, fuzzy
-#~| msgid "vCard Import Failed"
-#~ msgctxt "@title:window"
-#~ msgid "vCard Import Failed"
-#~ msgstr "vCard-Importo ne eblis"
-
-#, fuzzy
-#~| msgid "Import vCard"
-#~ msgctxt "@title:window"
-#~ msgid "Import vCard"
-#~ msgstr "Importi vCard"
-
-#, fuzzy
-#~| msgid "Do you want to import this contact in your address book?"
-#~ msgctxt "@info"
-#~ msgid "Do you want to import this contact into your address book?"
-#~ msgstr "Ĉu vi volas importi tiun kontakton en vian adresaron?"
-
-#, fuzzy
-#~| msgid "Import All..."
-#~ msgctxt "@action:button"
-#~ msgid "Import All..."
-#~ msgstr "Importi ĉiujn..."
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgctxt "@action:inmenu"
-#~ msgid "Sync Contacts"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Group"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Email address:"
-#~ msgid "Email address"
-#~ msgstr "Retpoŝta adreso:"
-
-#, fuzzy
-#~| msgid "Save Template..."
-#~ msgid "Save Image"
-#~ msgstr "Konservi ŝablonon..."
-
-#, fuzzy
-#~| msgid "Save Template..."
-#~ msgid "Save Image URL"
-#~ msgstr "Konservi ŝablonon..."
-
-#, fuzzy
-#~| msgid "&Search"
-#~ msgid "Search"
-#~ msgstr "&Serĉi"
-
-#, fuzzy
-#~| msgid "Send a mail to all selected contacts."
-#~ msgid "No email found for this contact."
-#~ msgstr "Sendi retpoŝton al ĉiuj elektitaj kontaktoj."
-
-#, fuzzy
-#~| msgid "&All contacts"
-#~ msgid "A contact group was selected."
-#~ msgstr "&Ĉiuj kontaktoj"
-
-#, fuzzy
-#~| msgid "Send &Contact..."
-#~ msgid "Send an email..."
-#~ msgstr "Sendi &kontakton..."
-
-#, fuzzy
-#~| msgid "Delete all selected contacts."
-#~ msgid "You have not selected any contacts."
-#~ msgstr "Forigi ĉiujn elektitajn kontaktojn"
-
-#, fuzzy
-#~| msgid "Send a mail to all selected contacts."
-#~ msgid "No emails found in selected contacts."
-#~ msgstr "Sendi retpoŝton al ĉiuj elektitaj kontaktoj."
-
-#, fuzzy
-#~| msgid "Import vCard..."
-#~ msgid "Send vCards..."
-#~ msgstr "Importu vCard..."
-
-#, fuzzy
-#~| msgid "&Merge Contacts"
-#~ msgid "Merge Contacts..."
-#~ msgstr "&Mergi kontaktojn"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "Search Duplicate Contacts..."
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "Select Contacts to merge"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "Select contacts that you really want to merge:"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "Merge"
-#~ msgid "merge"
-#~ msgstr "Mergi"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "Duplicate contact %1"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "Address Book"
-#~ msgid "Select AddressBook:"
-#~ msgstr "Adresaro"
-
-#, fuzzy
-#~| msgid "Merge"
-#~ msgid "Merge"
-#~ msgstr "Mergi"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "No duplicated contact found."
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "&All contacts"
-#~ msgid "No contacts selected."
-#~ msgstr "&Ĉiuj kontaktoj"
-
-#, fuzzy
-#~| msgid "Customer"
-#~ msgid "Customize"
-#~ msgstr "Kliento"
-
-#, fuzzy
-#~| msgid "Mobile Phone information:"
-#~ msgid "Missing Selected Information"
-#~ msgstr "Poŝtelefoninformo:"
-
-#, fuzzy
-#~| msgid "Undefined"
-#~ msgid "(Undefined)"
-#~ msgstr "Nedifinita"
-
-#, fuzzy
-#~| msgid "&Merge Contacts"
-#~ msgid "Merged Contact"
-#~ msgstr "&Mergi kontaktojn"
-
-#, fuzzy
-#~| msgid "Importing contacts"
-#~ msgid "Error while merging contacts."
-#~ msgstr "Importante kontaktojn"
-
-#, fuzzy
-#~| msgid "&Merge Contacts"
-#~ msgid "Merge contact"
-#~ msgstr "&Mergi kontaktojn"
-
-#, fuzzy
-#~| msgid "Select vCard Fields"
-#~ msgctxt "@title:window"
-#~ msgid "Select vCard Fields"
-#~ msgstr "Elektiti vCard-kampojn"
-
-#, fuzzy
-#~| msgid "&Selected contacts"
-#~ msgid "Potential Duplicate Contacts"
-#~ msgstr "&Elektitaj kontaktoj"
-
-#, fuzzy
-#~| msgid "Add Selected"
-#~ msgid "You selected %1"
-#~ msgstr "Aldonu elektitajn"
-
-#, fuzzy
-#~| msgid "Contact pinning"
-#~ msgid "Kontact integration"
-#~ msgstr "Kontaktfikso"
-
-#~ msgid "Department"
-#~ msgstr "Distrikto"
-
-#~ msgid "Manager's Name"
-#~ msgstr "Nomo de direktoro"
-
-#, fuzzy
-#~| msgid "Assistant's name:"
-#~ msgid "Assistant's Name"
-#~ msgstr "Nomo de asistanto:"
-
-#, fuzzy
-#~| msgid "Partner's Name"
-#~ msgid "Partner's Name"
-#~ msgstr "Nomo de pertnero"
-
-#~ msgid "IM Address"
-#~ msgstr "IM-adreso"
-
-#, fuzzy
-#~| msgid "Types"
-#~ msgctxt "Boolean value"
-#~ msgid "yes"
-#~ msgstr "Tipoj"
-
-#, fuzzy
-#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
-#~ msgctxt "@info"
-#~ msgid "Do you want to overwrite file \"%1\""
-#~ msgstr "<qt>Ĉu vi certas ke vi volas forigi la adresaron <b>%1</b>?</qt>"
-
-#, fuzzy
-#~| msgid "Address Books"
-#~ msgid "Show Address Books View"
-#~ msgstr "Adresaroj"
-
-#, fuzzy
-#~| msgid "Edit Address Book Filter"
-#~ msgid "Hide Address Books View"
-#~ msgstr "Redaktu Adresaro-Filtrilojn"
-
-#, fuzzy
-#~| msgid "Contains"
-#~ msgid "Show Contacts View"
-#~ msgstr "Enhavas"
-
-#, fuzzy
-#~| msgid "Edit Contact Name"
-#~ msgid "Hide Contacts View"
-#~ msgstr "Redaktu kontaktnomon"
-
-#, fuzzy
-#~| msgid "Show Details"
-#~ msgid "Show Details View"
-#~ msgstr "Montru detalojn"
-
-#, fuzzy
-#~| msgid "Hide Details"
-#~ msgid "Hide Details View"
-#~ msgstr "Kaŝi detalojn"
-
-#, fuzzy
-#~| msgid "Add Address Book"
-#~ msgid "Add Address Book Folder..."
-#~ msgstr "Aldoni adresaron"
-
-#, fuzzy
-#~| msgid "Edit Address Book Filter"
-#~ msgid "Copy Address Book Folder"
-#~ msgid_plural "Copy %1 Address Book Folders"
-#~ msgstr[0] "Redaktu Adresaro-Filtrilojn"
-#~ msgstr[1] "Redaktu Adresaro-Filtrilojn"
-
-#, fuzzy
-#~| msgid "Please select type of the new address book:"
-#~ msgid "Delete the selected address book folders from the address book."
-#~ msgstr "Bonvolu elekti la tipon de la nova adresaro:"
-
-#, fuzzy
-#~| msgid "Edit Address Book Filter"
-#~ msgid "Update Address Book Folder"
-#~ msgstr "Redaktu Adresaro-Filtrilojn"
-
-#, fuzzy
-#~| msgid "Please select type of the new address book:"
-#~ msgid "Update the content of the address book folder"
-#~ msgstr "Bonvolu elekti la tipon de la nova adresaro:"
-
-#, fuzzy
-#~| msgid "Edit Address Book Filter"
-#~ msgid "Cut Address Book Folder"
-#~ msgid_plural "Cut %1 Address Book Folders"
-#~ msgstr[0] "Redaktu Adresaro-Filtrilojn"
-#~ msgstr[1] "Redaktu Adresaro-Filtrilojn"
-
-#, fuzzy
-#~| msgid "Please select type of the new address book:"
-#~ msgid "Cut the selected address book folders from the address book."
-#~ msgstr "Bonvolu elekti la tipon de la nova adresaro:"
-
-#, fuzzy
-#~| msgid "St&ore Contact In..."
-#~ msgid "Copy Contact"
-#~ msgid_plural "Copy %1 Contacts"
-#~ msgstr[0] "K&onservi kontakton en..."
-#~ msgstr[1] "K&onservi kontakton en..."
-
-#~ msgid "Delete Contact"
-#~ msgid_plural "Delete %1 Contacts"
-#~ msgstr[0] "Forigi kontakton"
-#~ msgstr[1] "Forigi %1 kontaktojn"
-
-#, fuzzy
-#~| msgid "Please select type of the new address book:"
-#~ msgid "Delete the selected contacts from the address book."
-#~ msgstr "Bonvolu elekti la tipon de la nova adresaro:"
-
-#, fuzzy
-#~| msgid "St&ore Contact In..."
-#~ msgid "Cut Contact"
-#~ msgid_plural "Cut %1 Contacts"
-#~ msgstr[0] "K&onservi kontakton en..."
-#~ msgstr[1] "K&onservi kontakton en..."
-
-#, fuzzy
-#~| msgid "&Edit Contact..."
-#~ msgid "Edit Contact..."
-#~ msgstr "&Redakti kontakton..."
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Delete Group"
-#~ msgid_plural "Delete %1 Groups"
-#~ msgstr[0] "Forigi"
-#~ msgstr[1] "Forigi"
-
-#, fuzzy
-#~| msgid "Edit..."
-#~ msgid "Edit Group..."
-#~ msgstr "Redakti..."
-
-#~ msgid "Add Address Book"
-#~ msgstr "Aldoni adresaron"
-
-#, fuzzy
-#~| msgid "Add Address Book"
-#~ msgid "Could not add address book: %1"
-#~ msgstr "Aldoni adresaron"
-
-#, fuzzy
-#~| msgid "Add Address Book"
-#~ msgid "Adding Address Book failed"
-#~ msgstr "Aldoni adresaron"
-
-#, fuzzy
-#~| msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
-#~ msgid "Do you really want to delete address book '%1'?"
-#~ msgstr "<qt>Ĉu vi certas ke vi volas forigi la adresaron <b>%1</b>?</qt>"
-
-#, fuzzy
-#~| msgid "Address Book"
-#~ msgid "Delete Address Book?"
-#~ msgstr "Adresaro"
-
-#, fuzzy
-#~| msgid "New..."
-#~ msgid "New &Group..."
-#~ msgstr "Nova..."
-
-#, fuzzy
-#~| msgid "Add Address Book"
-#~ msgid "Add &Address Book..."
-#~ msgstr "Aldoni adresaron"
-
-#, fuzzy
-#~| msgid "Address Book"
-#~ msgid "&Delete Address Book"
-#~ msgstr "Adresaro"
-
-#, fuzzy
-#~| msgid "Address Book Browser"
-#~ msgid "Address Book Properties..."
-#~ msgstr "Adresaro-Rigardilo"
-
-#, fuzzy
-#~| msgid "Add Contact"
-#~ msgid "Add Host"
-#~ msgstr "Aldoni kontakton"
-
-#~ msgid "Home Number"
-#~ msgstr "Telefono"
-
-#~ msgid "Work Number"
-#~ msgstr "Labora telefono"
-
-#~ msgid "Mobile Number"
-#~ msgstr "Movebla telefon"
-
-#~ msgid "Fax Number"
-#~ msgstr "Faksnumero"
-
-#~ msgid "Pager"
-#~ msgstr "Mesaĝricevilo"
-
-#~ msgid "Street"
-#~ msgstr "Strato"
-
-#, fuzzy
-#~| msgid "State"
-#~ msgctxt "@item LDAP search key"
-#~ msgid "State"
-#~ msgstr "Ŝtato"
-
-#~ msgid "Country"
-#~ msgstr "Lando"
-
-#~ msgid "City"
-#~ msgstr "Urbo"
-
-#~ msgid "Zip Code"
-#~ msgstr "Urbokodo"
-
-#~ msgid "Description"
-#~ msgstr "Priskribo"
-
-#~ msgid "User ID"
-#~ msgstr "Uzant-ID"
-
-#, fuzzy
-#~| msgid "State"
-#~ msgctxt ""
-#~ "@title:column Column containing the residential state of the address"
-#~ msgid "State"
-#~ msgstr "Ŝtato"
-
-#, fuzzy
-#~| msgid "Title"
-#~ msgctxt "@title:column Column containing title of the person"
-#~ msgid "Title"
-#~ msgstr "Titolo"
-
-#, fuzzy
-#~| msgid "Import Contacts?"
-#~ msgid "Import Contacts from LDAP"
-#~ msgstr "Ĉu importi kontaktojn?"
-
-#~ msgid "Search for:"
-#~ msgstr "Serĉu por:"
-
-#, fuzzy
-#~| msgid "Name"
-#~ msgctxt "@item:inlistbox Name of the contact"
-#~ msgid "Name"
-#~ msgstr "Nomo"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@item:inlistbox email address of the contact"
-#~ msgid "Email"
-#~ msgstr "Retpoŝto"
-
-#, fuzzy
-#~| msgid "Home Number"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Home Number"
-#~ msgstr "Telefono"
-
-#, fuzzy
-#~| msgid "Work Number"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Work Number"
-#~ msgstr "Labora telefono"
-
-#~ msgid "Stop"
-#~ msgstr "Halti"
-
-#~ msgid "Recursive search"
-#~ msgstr "Rekursiva serĉo"
-
-#~ msgid "Contains"
-#~ msgstr "Enhavas"
-
-#~ msgid "Unselect All"
-#~ msgstr "Malelekti ĉion"
-
-#, fuzzy
-#~| msgid "&Configure Address Book..."
-#~ msgid "Configure LDAP Servers..."
-#~ msgstr "&Agordi adresaron..."
-
-#, fuzzy
-#~| msgid "Name"
-#~ msgctxt "Search attribute: Name of contact"
-#~ msgid "Name"
-#~ msgstr "Nomo"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "Search attribute: Email of the contact"
-#~ msgid "Email"
-#~ msgstr "Retpoŝto"
-
-#, fuzzy
-#~| msgid "Send a mail to all selected contacts."
-#~ msgid "Select a distribution list to add the selected contacts to."
-#~ msgstr "Sendi retpoŝton al ĉiuj elektitaj kontaktoj."
-
-#, fuzzy
-#~| msgid "&Configure Address Book..."
-#~ msgid "Configure the Address Book LDAP Settings"
-#~ msgstr "&Agordi adresaron..."
-
-#, fuzzy
-#~| msgid "Edit Contact"
-#~ msgid "Edit Host"
-#~ msgstr "Redakti kontakton"
-
-#, fuzzy
-#~| msgid "&Add..."
-#~ msgid "&Add Host..."
-#~ msgstr "&Aldonu..."
-
-#, fuzzy
-#~| msgid "&Edit..."
-#~ msgid "&Edit Host..."
-#~ msgstr "&Redaktu..."
-
-#, fuzzy
-#~| msgid "Remove List"
-#~ msgid "&Remove Host"
-#~ msgstr "Forigi liston..."
-
-#, fuzzy
-#~| msgid "(c) 1997-2005, The KDE PIM Team"
-#~ msgid "(c) 2007-2009 The KDE PIM Team"
-#~ msgstr "(c) 1997-2005, La KDE-PIM-Teamo"
-
-#, fuzzy
-#~| msgid "Address Books"
-#~ msgctxt "@title:column, address books overview"
-#~ msgid "Address Books"
-#~ msgstr "Adresaroj"
-
-#, fuzzy
-#~| msgid "Name"
-#~ msgctxt "@title:column, name of a person"
-#~ msgid "Name"
-#~ msgstr "Nomo"
-
-#, fuzzy
-#~| msgid "Phone numbers"
-#~ msgctxt "@title:column, phone numbers of a person"
-#~ msgid "Phone Numbers"
-#~ msgstr "Telefon-numeroj"
-
-#, fuzzy
-#~| msgid "Preferred address"
-#~ msgctxt "@title:column, the preferred email addresses of a person"
-#~ msgid "Preferred EMail"
-#~ msgstr "Preferata adreso"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@title:column, all email addresses of a person"
-#~ msgid "All EMails"
-#~ msgstr "Retpoŝto"
-
-#, fuzzy
-#~| msgid "&All contacts"
-#~ msgctxt "Name of toplevel contact collection"
-#~ msgid "All Contacts"
-#~ msgstr "&Ĉiuj kontaktoj"
-
-#, fuzzy
-#~| msgid "Manager's Name"
-#~ msgid "Short Name"
-#~ msgstr "Nomo de direktoro"
-
-#, fuzzy
-#~| msgid "Iceland"
-#~ msgid "Reload"
-#~ msgstr "Islando"
-
-#~ msgid "Font Settings"
-#~ msgstr "Tiparagordo"
-
-#~ msgid "Details font:"
-#~ msgstr "Tiparo de detaloj:"
-
-#~ msgid "Size:"
-#~ msgstr "Grandeco:"
-
-#~ msgid "Body font:"
-#~ msgstr "Korpa tiparo:"
-
-#~ msgid "Fixed font:"
-#~ msgstr "fiksita tiparo:"
-
-#~ msgid "Contact header font:"
-#~ msgstr "Kontaktotitola tiparo:"
-
-#~ msgid "Headlines:"
-#~ msgstr "Kapoj:"
-
-#~ msgid "(Deliver to:)"
-#~ msgstr "(Liveru al:)"
-
-#~ msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
-#~ msgstr "Printita je %1 de Adresaro (http://www.kde.org)"
-
-#~ msgid "Print the entire address book"
-#~ msgstr "Presi la kompletan adresaron"
-
-#, fuzzy
-#~| msgid "Do you want to import this contact in your address book?"
-#~ msgid "The following contact was imported into your address book:"
-#~ msgid_plural ""
-#~ "The following %1 contacts were imported into your address book:"
-#~ msgstr[0] "Ĉu vi volas importi tiun kontakton en vian adresaron?"
-#~ msgstr[1] "Ĉu vi volas importi tiun kontakton en vian adresaron?"
-
-#~ msgid "Edit Contact"
-#~ msgstr "Redakti kontakton"
-
-#, fuzzy
-#~| msgid "Add"
-#~ msgid "Add to:"
-#~ msgstr "Aldoni"
-
-#~ msgid "Play"
-#~ msgstr "Ludi"
-
-#, fuzzy
-#~| msgid "Change Type..."
-#~ msgid "Change..."
-#~ msgstr "Ŝanĝi tipon..."
-
-#, fuzzy
-#~| msgid "New..."
-#~ msgid "Save..."
-#~ msgstr "Nova..."
-
-#~ msgid "Remove"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Other..."
-#~ msgctxt "@item:inlistbox Category of contact info field"
-#~ msgid "Other..."
-#~ msgstr "Aliaj..."
-
-#~ msgid "Add"
-#~ msgstr "Aldoni"
-
-#~ msgid "Edit Phone Number"
-#~ msgstr "Redaktu telefon"
-
-#~ msgid "This is the preferred phone number"
-#~ msgstr "Tiu estas la preferata telefonnombro"
-
-#~ msgid "Edit Email Addresses"
-#~ msgstr "Redakti retpoŝtadresojn"
-
-#~ msgid "Edit..."
-#~ msgstr "Redakti..."
-
-#~ msgid "Set Standard"
-#~ msgstr "Difini aprioran"
-
-#~ msgid "Add Email"
-#~ msgstr "Aldoni retpoŝton"
-
-#~ msgid "New Email:"
-#~ msgstr "Nova retpoŝto:"
-
-#, fuzzy
-#~| msgid "Email:"
-#~ msgctxt "@label:textbox Inputfield for an email address"
-#~ msgid "Email:"
-#~ msgstr "Retpoŝto:"
-
-#~ msgid ""
-#~ "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
-#~ msgstr ""
-#~ "<qt>Ĉu vi estas certa ke vi volas forigi la retpoŝtadreson <b>%1</b>?</qt>"
-
-#~ msgid "Confirm Remove"
-#~ msgstr "Konfirmu forigon"
-
-#~ msgid "&Delete"
-#~ msgstr "&Forigi"
-
-#, fuzzy
-#~| msgid "Change Type..."
-#~ msgid "Change photo..."
-#~ msgstr "Ŝanĝi tipon..."
-
-#, fuzzy
-#~| msgid "Save Template..."
-#~ msgid "Save photo..."
-#~ msgstr "Konservi ŝablonon..."
-
-#, fuzzy
-#~| msgid "Remove List"
-#~ msgid "Remove photo"
-#~ msgstr "Forigi liston..."
-
-#, fuzzy
-#~| msgid "Change Email..."
-#~ msgid "Change logo..."
-#~ msgstr "Ŝanĝi retpoŝton..."
-
-#, fuzzy
-#~| msgid "Save Template..."
-#~ msgid "Save logo..."
-#~ msgstr "Konservi ŝablonon..."
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgid "Remove logo"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "New..."
-#~ msgctxt "street/postal"
-#~ msgid "New..."
-#~ msgstr "Nova..."
-
-#, fuzzy
-#~| msgid "Edit..."
-#~ msgctxt "street/postal"
-#~ msgid "Edit..."
-#~ msgstr "Redakti..."
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "street/postal"
-#~ msgid "Delete"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgctxt "Instant messaging"
-#~| msgid "Do you really want to delete the selected address?"
-#~| msgid_plural "Do you really want to delete the %1 selected addresses?"
-#~ msgid "Do you really want to delete this address?"
-#~ msgstr "Ĉu vi certas ke vi volas forigi la elektitan adreson?"
-
-#~ msgctxt "street/postal"
-#~ msgid "Edit Address"
-#~ msgstr "Redakti poŝtadreson"
-
-#~ msgid "Edit Label..."
-#~ msgstr "Redakti etikedon..."
-
-#~ msgctxt "street/postal"
-#~ msgid "This is the preferred address"
-#~ msgstr "Tiu estas la preferata adreso"
-
-#~ msgctxt "street/postal"
-#~ msgid "Edit Address Type"
-#~ msgstr "Redakti adrestipon"
-
-#~ msgctxt "street/postal"
-#~ msgid "Address Types"
-#~ msgstr "Adrestipoj"
-
-#, fuzzy
-#~| msgid "Simple Name"
-#~ msgid "Simple Name"
-#~ msgstr "Simpla nomo"
-
-#, fuzzy
-#~| msgid "Reverse Name with Comma"
-#~ msgid "Reverse Name with Comma"
-#~ msgstr "Inversigi nomon kon komo"
-
-#, fuzzy
-#~| msgid "Reverse Name"
-#~ msgid "Reverse Name"
-#~ msgstr "Inversigi nomon"
-
-#, fuzzy
-#~| msgid "Organization"
-#~ msgid "Organization Name"
-#~ msgstr "Organizaĵo"
-
-#, fuzzy
-#~| msgid "Custom"
-#~ msgid "Custom"
-#~ msgstr "Propra"
-
-#, fuzzy
-#~| msgid "Name"
-#~ msgid "Name"
-#~ msgstr "Nomo"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#~ msgid "Nickname:"
-#~ msgstr "Karesnomo:"
-
-#, fuzzy
-#~| msgid "Organization"
-#~ msgid "Pronunciation:"
-#~ msgstr "Organizaĵo"
-
-#, fuzzy
-#~| msgid "Web page:"
-#~ msgid "Homepage:"
-#~ msgstr "TTT-paĝo:"
-
-#, fuzzy
-#~| msgid "&Margin:"
-#~ msgid "Messaging:"
-#~ msgstr "&Marĝeno:"
-
-#, fuzzy
-#~| msgid "Addresses:"
-#~ msgid "Addresses"
-#~ msgstr "Adresoj:"
-
-#, fuzzy
-#~| msgid "Contains"
-#~ msgid "Coordinates"
-#~ msgstr "Enhavas"
-
-#, fuzzy
-#~| msgid "Business"
-#~ msgid "Business"
-#~ msgstr "Laboro"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgid "General"
-#~ msgstr "Ĝenerale"
-
-#~ msgid "Profession:"
-#~ msgstr "Profesio:"
-
-#, fuzzy
-#~| msgid "Title:"
-#~ msgid "Title:"
-#~ msgstr "Titolo:"
-
-#~ msgid "Department:"
-#~ msgstr "Distrikto:"
-
-#~ msgid "Office:"
-#~ msgstr "Laborejo:"
-
-#~ msgid "Manager's name:"
-#~ msgstr "Nomo de direktoro:"
-
-#, fuzzy
-#~| msgid "Date"
-#~ msgid "Dates"
-#~ msgstr "Dato"
-
-#, fuzzy
-#~| msgid "Family"
-#~ msgid "Family"
-#~ msgstr "Familio"
-
-#~ msgid "Birthdate:"
-#~ msgstr "Naskiĝdato:"
-
-#~ msgid "Anniversary:"
-#~ msgstr "Jubileo:"
-
-#, fuzzy
-#~| msgid "Partner's name:"
-#~ msgid "Partner's name:"
-#~ msgstr "Nomo de partnero:"
-
-#, fuzzy
-#~| msgid "Edit Contact"
-#~ msgid "Edit Contact Group"
-#~ msgstr "Redakti kontakton"
-
-#~ msgid "Custom Fields"
-#~ msgstr "Propraj kampoj"
-
-#~ msgid "Shows contact editor with given email address"
-#~ msgstr "Montras kontaktoredaktilon kun la donita retadreso"
-
-#~ msgid "Shows contact editor with given uid"
-#~ msgstr "Montras la kontaktoredaktilon kun la donita Uzanto-Id"
-
-#~ msgid "Launches in editor only mode"
-#~ msgstr "Lanĉas en nurredakta moduso"
-
-#~ msgid "Launches editor for the new contact"
-#~ msgstr "Lanĉas la redaktilon por la nova kontakto"
-
-#~ msgctxt "label (number)"
-#~ msgid "%1 (%2)"
-#~ msgstr "%1 (%2)"
-
-#~ msgctxt "street/postal"
-#~ msgid "&Edit Addresses..."
-#~ msgstr "R&edakti poŝtadresojn..."
-
-#~ msgid "Edit Contact '%1'"
-#~ msgstr "Redakti kontakton '%1'"
-
-#~ msgid "Contact Editor"
-#~ msgstr "Kontaktredaktilo"
-
-#~ msgctxt "<roleLabel>:"
-#~ msgid "%1:"
-#~ msgstr "%1:"
-
-#~ msgctxt "<organizationLabel>:"
-#~ msgid "%1:"
-#~ msgstr "%1:"
-
-#~ msgctxt "<urlLabel>:"
-#~ msgid "%1:"
-#~ msgstr "%1:"
-
-#~ msgctxt "<titleLabel>:"
-#~ msgid "%1:"
-#~ msgstr "%1:"
-
-#, fuzzy
-#~| msgid "&Details"
-#~ msgid "Details"
-#~ msgstr "&Detaloj"
-
-#~ msgid "Misc"
-#~ msgstr "Variaj"
-
-#~ msgid "Add View"
-#~ msgstr "Aldonu rigardon"
-
-#~ msgid "View name:"
-#~ msgstr "Rigardo nomo:"
-
-#~ msgid "View Type"
-#~ msgstr "Rigardo tipo"
-
-#~ msgid "Add Field"
-#~ msgstr "Aldoni kampon"
-
-#~ msgid "Type:"
-#~ msgstr "Tipo:"
-
-#~ msgid "Is available for all contacts"
-#~ msgstr "Haveblas por ĉiuj kontaktoj"
-
-#~ msgid "Boolean"
-#~ msgstr "Bulea"
-
-#~ msgid "Time"
-#~ msgstr "Tempo"
-
-#~ msgid "Remove Field"
-#~ msgstr "Forigi kampon"
-
-#~ msgid "Add Field..."
-#~ msgstr "Aldoni kampon..."
-
-#~ msgid "Remove Field..."
-#~ msgstr "Forigi kampon..."
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Edit Distribution List"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgctxt "@label:textbox Name of the distribution list"
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#, fuzzy
-#~| msgid "Distribution List Editor"
-#~ msgid "Distribution list members:"
-#~ msgstr "Dissendolista redaktilo"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "<b>Distribution list:</b>"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "Address Book"
-#~ msgid "<b>Address book:</b> %1"
-#~ msgstr "Adresaro"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Add New Distribution List"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "Rename Distribution List"
-#~ msgid "Enter a name for the new distribution list:"
-#~ msgstr "Alinomi dissendoliston"
-
-#~ msgid "Edit Email Addresses..."
-#~ msgstr "Redakti retpoŝtadresojn..."
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgctxt "@label:textbox Name of the filter"
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#~ msgid "Show only contacts matching the selected categories"
-#~ msgstr "Montru nur kontaktojn de la elektitaj kategorioj."
-
-#~ msgid "Show all contacts except those matching the selected categories"
-#~ msgstr "Montru nur kontaktojn, ne-kongrua al la elektitaj kategorioj."
-
-#~ msgid "Edit Address Book Filters"
-#~ msgstr "Redaktu Adresaro-Filtrilojn:"
-
-#~ msgid "&Remove"
-#~ msgstr "Fo&rigi"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtrilo:"
-
-#, fuzzy
-#~| msgid "Edit Geo Data..."
-#~ msgctxt "@action:button"
-#~ msgid "Edit Geo Data..."
-#~ msgstr "Redakti geodatumojn..."
-
-#, fuzzy
-#~| msgid "North"
-#~ msgctxt "@item:inlistbox Latitude direction"
-#~ msgid "North"
-#~ msgstr "Nordo"
-
-#, fuzzy
-#~| msgid "South"
-#~ msgctxt "@item:inlistbox Latitude direction"
-#~ msgid "South"
-#~ msgstr "Sudo"
-
-#, fuzzy
-#~| msgid "East"
-#~ msgctxt "@item:inlistbox Longtitude direction"
-#~ msgid "East"
-#~ msgstr "Oriento"
-
-#, fuzzy
-#~| msgid "West"
-#~ msgctxt "@item:inlistbox Longtitude direction"
-#~ msgid "West"
-#~ msgstr "Okcidento"
-
-#, fuzzy
-#~| msgid "Undefined"
-#~ msgctxt "@item:inlistbox Undefined location"
-#~ msgid "Undefined"
-#~ msgstr "Nedifinita"
-
-#~ msgid "IM address:"
-#~ msgstr "IM adreso:"
-
-#~ msgid "Edit IM Addresses..."
-#~ msgstr "&Redakti IM-poŝtadresojn..."
-
-#~ msgid "Visible Fields"
-#~ msgstr "Videblaj kampojn"
-
-#~ msgid "All Fields"
-#~ msgstr "Ĉiuj kampoj"
-
-#~ msgid "Co-maintainer, libkabc port, CSV import/export"
-#~ msgstr "Kun-fleganto, porto de libkabc, CSV-importo/eksporto"
-
-#~ msgid "DCOP interface"
-#~ msgstr "DCOP-interfaco"
-
-#~ msgid "LDAP Lookup"
-#~ msgstr "LDAP-serĉo"
-
-#, fuzzy
-#~| msgid "Do you really want to delete this contact?"
-#~| msgid_plural "Do you really want to delete these %1 contacts?"
-#~ msgid "Do you really want to delete this distribution list?"
-#~ msgid_plural "Do you really want to delete these %1 distribution lists?"
-#~ msgstr[0] "Ĉu vi certas ke vi volas forigi tiun kontakton?"
-#~ msgstr[1] "Ĉu vi certas ke vi volas forigi tiujn %1 kontaktojn?"
-
-#~ msgid "Do you really want to delete this contact?"
-#~ msgid_plural "Do you really want to delete these %1 contacts?"
-#~ msgstr[0] "Ĉu vi certas ke vi volas forigi tiun kontakton?"
-#~ msgstr[1] "Ĉu vi certas ke vi volas forigi tiujn %1 kontaktojn?"
-
-#~ msgid ""
-#~ "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
-#~ msgstr ""
-#~ "<qt>Ĉu vi estas certa ke vi volas uzi <b>%1</b> kiel via persona kontakto?"
-#~ "</qt>"
-
-#~ msgid "Use"
-#~ msgstr "Uzi"
-
-#~ msgid "Do Not Use"
-#~ msgstr "Ne uzi"
-
-#~ msgid "New Distribution List"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "New Distribution List (%1)"
-#~ msgstr "Nova dissendolisto"
-
-#~ msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
-#~ msgstr "<qt>Ne eblas konservi adresaron <b>%1</b>.</qt>"
-
-#~ msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
-#~ msgstr "<qt>Ne eblas akiri permeson por konservi adresaron <b>%1</b>.</qt>"
-
-#~ msgid "Print Addresses"
-#~ msgstr "Presi adreson"
-
-#~ msgid "&Send Email to Contact..."
-#~ msgstr "&Sendi retpoŝton al kontakto..."
-
-#, fuzzy
-#~| msgid "New"
-#~ msgctxt "@action:intoolbar Create new contact"
-#~ msgid "New"
-#~ msgstr "Nova"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "&New Distribution List..."
-#~ msgstr "Nova dissendolisto"
-
-#~ msgid "Start a chat with the selected contact."
-#~ msgstr "Ekbabiladi kun la elektita kontakto."
-
-#~ msgid "Edit"
-#~ msgstr "Redakti"
-
-#~ msgid "&Delete Contact"
-#~ msgstr "&Forigu kontakton"
-
-#, fuzzy
-#~| msgid "St&ore Contact In..."
-#~ msgid "&Move Contact To..."
-#~ msgstr "K&onservi kontakton en..."
-
-#~ msgid "Show Jump Bar"
-#~ msgstr "Montru rapidbreton"
-
-#~ msgid "LDAP &Lookup"
-#~ msgstr "&LDAP-serĉo"
-
-#~ msgid "Set as Personal Contact Data"
-#~ msgstr "Meti kiel personaj kontaktdatumoj"
-
-#~ msgid "Select Categories..."
-#~ msgstr "Elekti kategoriojn..."
-
-#~ msgid "Clear Search Bar"
-#~ msgstr "Viŝi serĉbreton"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Distribution List: %1"
-#~ msgstr "Nova dissendolisto"
-
-#~ msgid "Keys:"
-#~ msgstr "Klavoj:"
-
-#~ msgid "Export..."
-#~ msgstr "Eksporti..."
-
-#~ msgid "Key Type"
-#~ msgstr "Klavtipo"
-
-#~ msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
-#~ msgstr "<qt>Ĉu vi certas ke vi volas forigi la klavon <b>%1</b>?</qt>"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Add to Distribution List..."
-#~ msgstr "Nova dissendolisto"
-
-#~ msgid ""
-#~ "You must select a LDAP server before searching.\n"
-#~ "You can do this from the menu Settings/Configure KAddressBook."
-#~ msgstr ""
-#~ "Vi devas elekti LDAP-servilon antaŭ la serĉado.\n"
-#~ "Vi povas fari tiun kun menuo Agordo/Agordu Adresaron."
-
-#~ msgid "Formatted name:"
-#~ msgstr "Kunmetita nomo:"
-
-#~ msgid "Dr."
-#~ msgstr "D-ro"
-
-#~ msgid "Miss"
-#~ msgstr "Sinjorino"
-
-#~ msgid "Mr."
-#~ msgstr "S-ro"
-
-#~ msgid "Mrs."
-#~ msgstr "S-ino"
-
-#~ msgid "Ms."
-#~ msgstr "F-ino"
-
-#~ msgid "Prof."
-#~ msgstr "P-ro"
-
-#~ msgid "I"
-#~ msgstr "I"
-
-#~ msgid "II"
-#~ msgstr "II"
-
-#~ msgid "III"
-#~ msgstr "III"
-
-#~ msgid "Jr."
-#~ msgstr "Jn"
-
-#~ msgid "Sr."
-#~ msgstr "Mjn"
-
-#, fuzzy
-#~| msgid "Full Name"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Full Name"
-#~ msgstr "Plena nomo"
-
-#, fuzzy
-#~| msgid "Organization"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "Organization"
-#~ msgstr "Organizaĵo"
-
-#, fuzzy
-#~| msgid "Birthday"
-#~ msgid "Birthday:"
-#~ msgstr "Naskiĝdato"
-
-#, fuzzy
-#~| msgid "Partner's name:"
-#~ msgid "Partners name:"
-#~ msgstr "Nomo de partnero:"
-
-#~ msgid "Edit the contact's name"
-#~ msgstr "Redakti kontaktnomon"
-
-#~ msgid "Edit Name..."
-#~ msgstr "Redakti nomon..."
-
-#, fuzzy
-#~| msgid "&Remove"
-#~ msgid "&Role:"
-#~ msgstr "Fo&rigi"
-
-#, fuzzy
-#~| msgid "Organization"
-#~ msgid "&Organization"
-#~ msgstr "Organizaĵo"
-
-#~ msgid "Tools"
-#~ msgstr "Iloj"
-
-#~ msgctxt "Instant messaging"
-#~ msgid "&Edit..."
-#~ msgstr "&Redaktu..."
-
-#~ msgctxt "Instant messaging"
-#~ msgid "&Add..."
-#~ msgstr "&Aldonu..."
-
-#~ msgid "Honor KDE single click"
-#~ msgstr "Akceptu KDE-an unuopan klakon"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgctxt "@label:textbox Name of the contact"
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#, fuzzy
-#~| msgid "Email:"
-#~ msgctxt "@label:textbox Email address of the contact"
-#~ msgid "Email:"
-#~ msgstr "Retpoŝto:"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Delete Distribution List"
-#~ msgid_plural "Delete %1 Distribution Lists"
-#~ msgstr[0] "Nova dissendolisto"
-#~ msgstr[1] "Nova dissendolisto"
-
-#~ msgid "Select Fields to Display"
-#~ msgstr "Elektu kampojn montrendajn"
-
-#~ msgid "&Selected fields:"
-#~ msgstr "&Elektitaj kampoj:"
-
-#~ msgid "No default filter"
-#~ msgstr "Neniu apriora filtrilo"
-
-#~ msgid "Use filter:"
-#~ msgstr "Uzu filtrilon:"
-
-#~ msgid "Default Filter"
-#~ msgstr "Apriora filtrilo"
-
-#~ msgid "Modify View: "
-#~ msgstr "Ŝanĝu rigardon: "
-
-#, fuzzy
-#~| msgid "Delete View"
-#~ msgctxt "KAddressbook default view name"
-#~ msgid "Default Table View"
-#~ msgstr "Forigi rigardon"
-
-#~ msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
-#~ msgstr "<qt>Ĉu vi certas ke vi volas forigi la rigardon <b>%1</b>?</qt>"
-
-#~ msgid "Confirm Delete"
-#~ msgstr "Konfirmi forigon"
-
-#~ msgid "Do Not Import"
-#~ msgstr "Ne importi"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "Category to filter on"
-#~ msgid "None"
-#~ msgstr "neniu"
-
-#, fuzzy
-#~| msgid "Unfiled"
-#~ msgctxt "Category to filter on"
-#~ msgid "Unfiled"
-#~ msgstr "Nekonservita"
-
-#~ msgid "Select View"
-#~ msgstr "Elekti rigardon"
-
-#~ msgid "Modify View..."
-#~ msgstr "Ŝanĝi rigardon..."
-
-#~ msgid "Add View..."
-#~ msgstr "Aldonu rigardon..."
-
-#~ msgid "Delete View"
-#~ msgstr "Forigi rigardon"
-
-#~ msgid "Refresh View"
-#~ msgstr "Refreŝigu rigardon"
-
-#~ msgid "Edit &Filters..."
-#~ msgstr "Redaktu &filtrilojn..."
-
-#, fuzzy
-#~| msgid "Selection"
-#~ msgctxt "@title:group Selection of contacts that must be exported"
-#~ msgid "Selection"
-#~ msgstr "Elektado"
-
-#~ msgid "Export the entire address book"
-#~ msgstr "Eksporti la kompletan adresaron"
-
-#, fuzzy
-#~| msgid "School"
-#~ msgctxt "@item Contact category"
-#~ msgid "School"
-#~ msgstr "Lernejo"
-
-#, fuzzy
-#~| msgid "Friend"
-#~ msgctxt "@item Contact category"
-#~ msgid "Friend"
-#~ msgstr "Amiko"
-
-#~ msgid "Crypto Settings"
-#~ msgstr "Ĉifrad-agordo"
-
-#~ msgid "Allowed Protocols"
-#~ msgstr "Permesitaj protokoloj"
-
-#~ msgid "Message Preference"
-#~ msgstr "Mesaĝprefero"
-
-#~ msgid "Sign:"
-#~ msgstr "Subskribi:"
-
-#~ msgid "Encrypt:"
-#~ msgstr "Ĉifri:"
-
-#~ msgid "Edit Instant Messaging Address"
-#~ msgstr "Redakti rapidmesaĝilan adreson"
-
-#~ msgid "Distribution List Editor"
-#~ msgstr "Dissendolista redaktilo"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Distribution Lists"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Add distribution list"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "Edit distribution list"
-#~ msgstr "Nova dissendolisto"
-
-#, fuzzy
-#~| msgid "Rename Distribution List"
-#~ msgid "Remove distribution list"
-#~ msgstr "Alinomi dissendoliston"
-
-#, fuzzy
-#~| msgid "New Distribution List"
-#~ msgid "New Distribution List..."
-#~ msgstr "Nova dissendolisto"
-
-#~ msgid "%1 address book"
-#~ msgstr "%1 adresaro"
-
-#, fuzzy
-#~| msgid "Edit Address Book Filters"
-#~ msgid "Edit address book settings"
-#~ msgstr "Redaktu Adresaro-Filtrilojn:"
-
-#~ msgid "Look & Feel"
-#~ msgstr "Aspekto & Konduto"
-
-#~ msgid "Text Color"
-#~ msgstr "Tekstkoloro"
-
-#~ msgid "Header Text Color"
-#~ msgstr "Ĉapkoloro"
-
-#~ msgid "Highlight Color"
-#~ msgstr "Emfaziga koloro"
-
-#~ msgid "Highlighted Text Color"
-#~ msgstr "Koloro de emfazigita teksto"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "@title:group General layout settings"
-#~ msgid "General"
-#~ msgstr "Ĝenerale"
-
-#~ msgid "Draw &separators"
-#~ msgstr "Linio dividilo"
-
-#~ msgid "Separator &width:"
-#~ msgstr "&Larĝeco de apartigilo:"
-
-#~ msgid "Cards"
-#~ msgstr "Kartoj"
-
-#~ msgid "Draw &borders"
-#~ msgstr "&Pentri marĝenojn"
-
-#, fuzzy
-#~| msgid "Laos"
-#~ msgid "Layout"
-#~ msgstr "Laoso"
-
-#~ msgid "&Enable custom colors"
-#~ msgstr "&Enŝalti proprajn kolorojn"
-
-#, fuzzy
-#~| msgid "&Colors"
-#~ msgid "Colors"
-#~ msgstr "&Koloroj"
-
-#~ msgid "&Enable custom fonts"
-#~ msgstr "&Enŝalti proprajn tiparojn"
-
-#~ msgid "&Text font:"
-#~ msgstr "&Teksta tiparo:"
-
-#~ msgid "Choose..."
-#~ msgstr "Elekti..."
-
-#~ msgid "&Header font:"
-#~ msgstr "Ĉ&aptiparo:"
-
-#, fuzzy
-#~| msgid "Contains"
-#~ msgid "Fonts"
-#~ msgstr "Enhavas"
-
-#~ msgid "Show &empty fields"
-#~ msgstr "Montri malplenajn kampojn"
-
-#~ msgid "Show field &labels"
-#~ msgstr "Montri kamptito&lojn"
-
-#~ msgid "Row Separator"
-#~ msgstr "Linio dividilo"
-
-#~ msgid "Single line"
-#~ msgstr "Unulinia"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "@option:radio Row separator option."
-#~ msgid "None"
-#~ msgstr "neniu"
-
-#~ msgid "Enable background image:"
-#~ msgstr "Montru fonbildon:"
-
-#~ msgid "Enable contact tooltips"
-#~ msgstr "Enŝaltu kontaktohelpnotojn"
-
-#~ msgctxt "label: value"
-#~ msgid "%1: %2"
-#~ msgstr "%1: %2"
-
-#~ msgctxt "label: value"
-#~ msgid "%1: \n"
-#~ msgstr "%1: \n"
-
-#~ msgid "Card"
-#~ msgstr "Karto"
-
-#~ msgid "Icon"
-#~ msgstr "Piktogramo"
-
-#~ msgid "Table"
-#~ msgstr "Tabelo"
-
-#~ msgid "Export Bookmarks Menu..."
-#~ msgstr "Menuo pri eksportado de legosignoj..."
-
-#~ msgid "AddressBook"
-#~ msgstr "Adresaro"
-
-#, fuzzy
-#~| msgid "Start at line:"
-#~ msgctxt "@label:listbox"
-#~ msgid "Start at line:"
-#~ msgstr "Komenci ĉe linio:"
-
-#, fuzzy
-#~| msgid "Import Eudora Addressbook..."
-#~ msgid "Import Eudora Address Book..."
-#~ msgstr "Importi Eŭdora-adresaron..."
-
-#, fuzzy
-#~| msgid "Edit Address Book Filter"
-#~ msgid "Eudora Light Address Book (*.txt)"
-#~ msgstr "Redaktu Adresaro-Filtrilojn"
-
-#~ msgid "Import GMX Address Book..."
-#~ msgstr "Importi GMX-adresaron..."
-
-#~ msgid "Export to Mobile Phone..."
-#~ msgstr "Eksporti al poŝtelefono..."
-
-#~ msgid "Manufacturer"
-#~ msgstr "Produktinto"
-
-#~ msgid "Phone model"
-#~ msgstr "Telefonmodelo"
-
-#~ msgid "Mobile Phone Import"
-#~ msgstr "Poŝtelefon-importo"
-
-#~ msgid "&Stop Import"
-#~ msgstr "Ĉe&sigi importon"
-
-#~ msgid "Export to Mobile Phone"
-#~ msgstr "Eksporti al poŝtelefono"
-
-#~ msgid "&Stop Export"
-#~ msgstr "Ĉe&sigi eksporton"
-
-#~ msgid "&Stop Delete"
-#~ msgstr "Ĉe&sigi forigon"
-
-#~ msgid "Export to phone finished."
-#~ msgstr "Eksporto al telefono finiĝis."
-
-#~ msgid "<qt>Could not find a KDE 2 address book <b>%1</b>.</qt>"
-#~ msgstr "<qt>Ne troviĝis KDE-2-adresaro <b>%1</b>.</qt>"
-
-#~ msgid "Override previously imported entries?"
-#~ msgstr "Ĉu anstataŭigi antaŭe importitajn erojn?"
-
-#, fuzzy
-#~| msgid "Import KDE 2 Addressbook"
-#~ msgid "Import KDE 2 Address Book"
-#~ msgstr "Importu KDE-2-adresaron"
-
-#, fuzzy
-#~| msgid "Import Opera Addressbook..."
-#~ msgid "Import Opera Address Book..."
-#~ msgstr "Importi Opera-adresaron..."
-
-#~ msgid "Cannot open %1 for reading"
-#~ msgstr "Ne eblas malfermi %1 por legado"
-
-#~ msgid "Afghanistan"
-#~ msgstr "Afganujo"
-
-#~ msgid "Albania"
-#~ msgstr "Albanujo"
-
-#~ msgid "Algeria"
-#~ msgstr "Alĝerio"
-
-#~ msgid "American Samoa"
-#~ msgstr "Amerika Samoa"
-
-#~ msgid "Andorra"
-#~ msgstr "Andoro"
-
-#~ msgid "Angola"
-#~ msgstr "Angolo"
-
-#~ msgid "Anguilla"
-#~ msgstr "Angvilo"
-
-#~ msgid "Antarctica"
-#~ msgstr "Antarktiko"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "Antigvo kaj Barbudo"
-
-#~ msgid "Argentina"
-#~ msgstr "Argentino"
-
-#~ msgid "Armenia"
-#~ msgstr "Armenio"
-
-#~ msgid "Aruba"
-#~ msgstr "Arubo"
-
-#~ msgid "Ashmore and Cartier Islands"
-#~ msgstr "Aŝmoro kaj Kartier-insuloj"
-
-#~ msgid "Australia"
-#~ msgstr "Aŭstralio"
-
-#~ msgid "Austria"
-#~ msgstr "Aŭstrio"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "Azerbajĝano"
-
-#~ msgid "Bahamas"
-#~ msgstr "Bahamoj"
-
-#~ msgid "Bahrain"
-#~ msgstr "Barajno"
-
-#~ msgid "Bangladesh"
-#~ msgstr "Bangladeŝo"
-
-#~ msgid "Barbados"
-#~ msgstr "Babadoso"
-
-#~ msgid "Belarus"
-#~ msgstr "Belorusio"
-
-#~ msgid "Belgium"
-#~ msgstr "Belgio"
-
-#~ msgid "Belize"
-#~ msgstr "Belizo"
-
-#~ msgid "Benin"
-#~ msgstr "Benino"
-
-#~ msgid "Bermuda"
-#~ msgstr "Bermudoj"
-
-#~ msgid "Bhutan"
-#~ msgstr "Butano"
-
-#~ msgid "Bolivia"
-#~ msgstr "Bolivio"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "Bosnio kaj Hercegovino"
-
-#~ msgid "Botswana"
-#~ msgstr "Botsvano"
-
-#~ msgid "Brazil"
-#~ msgstr "Brazilo"
-
-#~ msgid "Brunei"
-#~ msgstr "Brunejo"
-
-#~ msgid "Bulgaria"
-#~ msgstr "Bulgarujo"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "Burkina-Faso"
-
-#~ msgid "Burundi"
-#~ msgstr "Burundio"
-
-#~ msgid "Cambodia"
-#~ msgstr "Kamboĝo"
-
-#~ msgid "Cameroon"
-#~ msgstr "Kameruno"
-
-#~ msgid "Canada"
-#~ msgstr "Kanado"
-
-#~ msgid "Cape Verde"
-#~ msgstr "Kabo-Verda"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "Kajmanaj insuloj"
-
-#~ msgid "Central African Republic"
-#~ msgstr "Centra Afrika Respubliko"
-
-#~ msgid "Chad"
-#~ msgstr "Ĉado"
-
-#~ msgid "Chile"
-#~ msgstr "Ĉilio"
-
-#~ msgid "China"
-#~ msgstr "Ĉinujo"
-
-#~ msgid "Colombia"
-#~ msgstr "Kolombio"
-
-#~ msgid "Comoros"
-#~ msgstr "Komoroso"
-
-#~ msgid "Congo"
-#~ msgstr "Kongo"
-
-#~ msgid "Congo, Dem. Rep."
-#~ msgstr "Kongo, Dem. Resp."
-
-#~ msgid "Costa Rica"
-#~ msgstr "Kostariko"
-
-#~ msgid "Croatia"
-#~ msgstr "Kroatujo"
-
-#~ msgid "Cuba"
-#~ msgstr "Kubo"
-
-#~ msgid "Cyprus"
-#~ msgstr "Cipro"
-
-#~ msgid "Czech Republic"
-#~ msgstr "Ĉeĥujo"
-
-#~ msgid "Denmark"
-#~ msgstr "Danlando"
-
-#~ msgid "Djibouti"
-#~ msgstr "Ĝibutio"
-
-#~ msgid "Dominica"
-#~ msgstr "Dominikio"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "Dominika Respubliko"
-
-#~ msgid "Ecuador"
-#~ msgstr "Ekvadoro"
-
-#~ msgid "Egypt"
-#~ msgstr "Egipto"
-
-#~ msgid "El Salvador"
-#~ msgstr "Elsalvadoro"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "Ekvatora Gineo"
-
-#~ msgid "Eritrea"
-#~ msgstr "Eritreo"
-
-#~ msgid "Estonia"
-#~ msgstr "Estlando"
-
-#~ msgid "England"
-#~ msgstr "Anglujo"
-
-#~ msgid "Ethiopia"
-#~ msgstr "Etiopio"
-
-#~ msgid "European Union"
-#~ msgstr "Eŭropa Unio"
-
-#~ msgid "Faroe Islands"
-#~ msgstr "Faroaj insuloj"
-
-#~ msgid "Fiji"
-#~ msgstr "Fiĝioj"
-
-#~ msgid "Finland"
-#~ msgstr "Finlando"
-
-#~ msgid "France"
-#~ msgstr "Francujo"
-
-#~ msgid "French Polynesia"
-#~ msgstr "Franca Polinezio"
-
-#~ msgid "Gabon"
-#~ msgstr "Gabono"
-
-#~ msgid "Gambia"
-#~ msgstr "Gambio"
-
-#~ msgid "Georgia"
-#~ msgstr "Georgio"
-
-#~ msgid "Germany"
-#~ msgstr "Germanujo"
-
-#~ msgid "Ghana"
-#~ msgstr "Gano"
-
-#~ msgid "Greece"
-#~ msgstr "Grekujo"
-
-#~ msgid "Greenland"
-#~ msgstr "Grenlando"
-
-#~ msgid "Grenada"
-#~ msgstr "Grenado"
-
-#~ msgid "Guam"
-#~ msgstr "Guamo"
-
-#~ msgid "Guatemala"
-#~ msgstr "Gvatemalo"
-
-#~ msgid "Guinea"
-#~ msgstr "Gineo"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "Gineo-Bisao"
-
-#~ msgid "Guyana"
-#~ msgstr "Gujano"
-
-#~ msgid "Haiti"
-#~ msgstr "Haitio"
-
-#~ msgid "Honduras"
-#~ msgstr "Honduraso"
-
-#~ msgid "Hong Kong"
-#~ msgstr "Honkongo"
-
-#~ msgid "Hungary"
-#~ msgstr "Hungarujo"
-
-#~ msgid "India"
-#~ msgstr "Hindujo"
-
-#~ msgid "Indonesia"
-#~ msgstr "Indonezio"
-
-#~ msgid "Iran"
-#~ msgstr "Irano"
-
-#~ msgid "Iraq"
-#~ msgstr "Irako"
-
-#~ msgid "Ireland"
-#~ msgstr "Irlando"
-
-#~ msgid "Israel"
-#~ msgstr "Israelo"
-
-#~ msgid "Italy"
-#~ msgstr "Italujo"
-
-#~ msgid "Ivory Coast"
-#~ msgstr "Ebura-Bordo"
-
-#~ msgid "Jamaica"
-#~ msgstr "Ĵamajko"
-
-#~ msgid "Japan"
-#~ msgstr "Japanujo"
-
-#~ msgid "Jordan"
-#~ msgstr "Jordano"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "Kazaĥujo"
-
-#~ msgid "Kenya"
-#~ msgstr "Kenio"
-
-#~ msgid "Kiribati"
-#~ msgstr "Kiribato"
-
-#~ msgid "Korea, North"
-#~ msgstr "Nordkoreo"
-
-#~ msgid "Korea, South"
-#~ msgstr "Sudkoreo"
-
-#~ msgid "Kuwait"
-#~ msgstr "Kuvajto"
-
-#~ msgid "Kyrgyzstan"
-#~ msgstr "Kirgisujo"
-
-#~ msgid "Laos"
-#~ msgstr "Laoso"
-
-#~ msgid "Latvia"
-#~ msgstr "Latvujo"
-
-#~ msgid "Lebanon"
-#~ msgstr "Libanono"
-
-#~ msgid "Lesotho"
-#~ msgstr "Lesoto"
-
-#~ msgid "Liberia"
-#~ msgstr "Liberio"
-
-#~ msgid "Libya"
-#~ msgstr "Libio"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "Liĥtenŝtejno"
-
-#~ msgid "Lithuania"
-#~ msgstr "Litovujo"
-
-#~ msgid "Luxembourg"
-#~ msgstr "Luksemburgo"
-
-#~ msgid "Macau"
-#~ msgstr "Makao"
-
-#~ msgid "Madagascar"
-#~ msgstr "Madagaskaro"
-
-#~ msgid "Malawi"
-#~ msgstr "Malavo"
-
-#~ msgid "Malaysia"
-#~ msgstr "Malajsio"
-
-#~ msgid "Maldives"
-#~ msgstr "Maledivoj"
-
-#~ msgid "Mali"
-#~ msgstr "Malio"
-
-#~ msgid "Malta"
-#~ msgstr "Malto"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "Marŝalinsuloj"
-
-#~ msgid "Martinique"
-#~ msgstr "Martiniko"
-
-#~ msgid "Mauritania"
-#~ msgstr "Maŭritanio"
-
-#~ msgid "Mauritius"
-#~ msgstr "Maŭricio"
-
-#~ msgid "Mexico"
-#~ msgstr "Meksikio"
-
-#~ msgid "Micronesia, Federated States Of"
-#~ msgstr "Mikronezio, Fed. Ŝtatoj de"
-
-#~ msgid "Moldova"
-#~ msgstr "Moldovo"
-
-#~ msgid "Monaco"
-#~ msgstr "Monako"
-
-#~ msgid "Mongolia"
-#~ msgstr "Mongolio"
-
-#~ msgid "Montserrat"
-#~ msgstr "Montserato"
-
-#~ msgid "Morocco"
-#~ msgstr "Moroko"
-
-#~ msgid "Mozambique"
-#~ msgstr "Mozambiko"
-
-#~ msgid "Namibia"
-#~ msgstr "Namibio"
-
-#~ msgid "Nauru"
-#~ msgstr "Naŭro"
-
-#~ msgid "Nepal"
-#~ msgstr "Nepalo"
-
-#~ msgid "Netherlands"
-#~ msgstr "Nederlando"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "Nederlandaj antiloj"
-
-#~ msgid "New Caledonia"
-#~ msgstr "Novkaledonio"
-
-#~ msgid "New Zealand"
-#~ msgstr "Novzelando"
-
-#~ msgid "Nicaragua"
-#~ msgstr "Nikaragvo"
-
-#~ msgid "Niger"
-#~ msgstr "Nigero"
-
-#~ msgid "Nigeria"
-#~ msgstr "Nigerio"
-
-#~ msgid "Niue"
-#~ msgstr "Niuo"
-
-#~ msgid "North Korea"
-#~ msgstr "Nordkoreo"
-
-#~ msgid "Northern Ireland"
-#~ msgstr "Nordirlando"
-
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "Nordaj Marianaj Insuloj"
-
-#~ msgid "Norway"
-#~ msgstr "Norvegujo"
-
-#~ msgid "Oman"
-#~ msgstr "Omano"
-
-#~ msgid "Pakistan"
-#~ msgstr "Pakistano"
-
-#~ msgid "Palau"
-#~ msgstr "Palao"
-
-#~ msgid "Palestinian"
-#~ msgstr "Palestino"
-
-#~ msgid "Panama"
-#~ msgstr "Panamo"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "Papuagineo"
-
-#~ msgid "Paraguay"
-#~ msgstr "Paragvajo"
-
-#~ msgid "Peru"
-#~ msgstr "Peruo"
-
-#~ msgid "Philippines"
-#~ msgstr "Filipinoj"
-
-#~ msgid "Poland"
-#~ msgstr "Pollando"
-
-#~ msgid "Portugal"
-#~ msgstr "Portugalo"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "Puertoriko"
-
-#~ msgid "Qatar"
-#~ msgstr "Kataro"
-
-#~ msgid "Romania"
-#~ msgstr "Rumanujo"
-
-#~ msgid "Russia"
-#~ msgstr "Rusujo"
-
-#~ msgid "Rwanda"
-#~ msgstr "Ruando"
-
-#~ msgid "St. Kitts and Nevis"
-#~ msgstr "St. Kitso kaj Neviso"
-
-#~ msgid "St. Lucia"
-#~ msgstr "St. Lucio"
-
-#~ msgid "St. Vincent and the Grenadines"
-#~ msgstr "St. Vincento kaj la Grenadinoj"
-
-#~ msgid "San Marino"
-#~ msgstr "Sanmarino"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "Sao-Tomeo kaj Principo"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "Saŭdarabio"
-
-#~ msgid "Senegal"
-#~ msgstr "Senegalo"
-
-#~ msgid "Serbia & Montenegro"
-#~ msgstr "Serbujo kaj Montenegro"
-
-#~ msgid "Seychelles"
-#~ msgstr "Sejĉeloj"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "Siera-Leono"
-
-#~ msgid "Singapore"
-#~ msgstr "Singapuro"
-
-#~ msgid "Slovakia"
-#~ msgstr "Slovakujo"
-
-#~ msgid "Slovenia"
-#~ msgstr "Slovenujo"
-
-#~ msgid "Solomon Islands"
-#~ msgstr "Solomoninsuloj"
-
-#~ msgid "Somalia"
-#~ msgstr "Somalio"
-
-#~ msgid "South Africa"
-#~ msgstr "Sudafriko"
-
-#~ msgid "South Korea"
-#~ msgstr "Sudkoreo"
-
-#~ msgid "Spain"
-#~ msgstr "Hispanujo"
-
-#~ msgid "Sri Lanka"
-#~ msgstr "Srilanko"
-
-#~ msgid "Sudan"
-#~ msgstr "Sudano"
-
-#~ msgid "Suriname"
-#~ msgstr "Surinamo"
-
-#~ msgid "Swaziland"
-#~ msgstr "Svazilando"
-
-#~ msgid "Sweden"
-#~ msgstr "Svedujo"
-
-#~ msgid "Switzerland"
-#~ msgstr "Svislando"
-
-#~ msgid "Syria"
-#~ msgstr "Sirio"
-
-#~ msgid "Taiwan"
-#~ msgstr "Tajvano"
-
-#~ msgid "Tajikistan"
-#~ msgstr "Taĝikujo"
-
-#~ msgid "Tanzania"
-#~ msgstr "Tanzanio"
-
-#~ msgid "Thailand"
-#~ msgstr "Tajlando"
-
-#~ msgid "Tibet"
-#~ msgstr "Tibeto"
-
-#~ msgid "Togo"
-#~ msgstr "Togo"
-
-#~ msgid "Tonga"
-#~ msgstr "Tongo"
-
-#~ msgid "Trinidad and Tobago"
-#~ msgstr "Trinidado kaj Tobago"
-
-#~ msgid "Tunisia"
-#~ msgstr "Tunizio"
-
-#~ msgid "Turkey"
-#~ msgstr "Turkujo"
-
-#~ msgid "Turkmenistan"
-#~ msgstr "Turkmenistano"
-
-#~ msgid "Turks and Caicos Islands"
-#~ msgstr "Turkaj kaj Kajkaj Insuloj"
-
-#~ msgid "Tuvalu"
-#~ msgstr "Tuvaluo"
-
-#~ msgid "Uganda"
-#~ msgstr "Ugando"
-
-#~ msgid "Ukraine"
-#~ msgstr "Ukrainio"
-
-#~ msgid "United Arab Emirates"
-#~ msgstr "Unuiĝintaj Arabaj Emiratoj"
-
-#~ msgid "United Kingdom"
-#~ msgstr "Brita"
-
-#~ msgid "United States"
-#~ msgstr "Usono"
-
-#~ msgid "Uruguay"
-#~ msgstr "Urugvajo"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "Uzbekistano"
-
-#~ msgid "Vanuatu"
-#~ msgstr "Vanuatuo"
-
-#~ msgid "Vatican City"
-#~ msgstr "Vatikanurbo"
-
-#~ msgid "Venezuela"
-#~ msgstr "Venezuelo"
-
-#~ msgid "Vietnam"
-#~ msgstr "Vjetnamo"
-
-#~ msgid "Western Samoa"
-#~ msgstr "Okcident-Samoo"
-
-#~ msgid "Yemen"
-#~ msgstr "Jemeno"
-
-#~ msgid "Yugoslavia"
-#~ msgstr "Jugoslavio"
-
-#~ msgid "Zaire"
-#~ msgstr "Zairo"
-
-#~ msgid "Zambia"
-#~ msgstr "Zambio"
-
-#~ msgid "Zimbabwe"
-#~ msgstr "Zimbabvo"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "@option:radio Row seperator option."
-#~ msgid "None"
-#~ msgstr "neniu"
-
-#, fuzzy
-#~| msgid "Title:"
-#~ msgctxt "@label:textbox Title of the contact"
-#~ msgid "Title:"
-#~ msgstr "Titolo:"
-
-#, fuzzy
-#~| msgid "Name"
-#~ msgctxt "@label Displays an image"
-#~ msgid "Name"
-#~ msgstr "Nomo"
-
-#, fuzzy
-#~| msgid "Email"
-#~ msgctxt "@label:textbox primary email address of the contact"
-#~ msgid "Email"
-#~ msgstr "Retpoŝto"
-
-#, fuzzy
-#~| msgid "Address:"
-#~ msgctxt "@label Displays an image"
-#~ msgid "Address"
-#~ msgstr "Adreso:"
-
-#~ msgid "Address:"
-#~ msgstr "Adreso:"
-
-#, fuzzy
-#~| msgid "New"
-#~ msgctxt "@action:intoolbar Create ne contact"
-#~ msgid "New"
-#~ msgstr "Nova"
-
-#~ msgid "&General"
-#~ msgstr "&Ĝenerale"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgid "TextLabel"
-#~ msgstr "Teksto"
-
-#, fuzzy
-#~| msgid "Distribution List Editor"
-#~ msgid "Distribution List Editor NG"
-#~ msgstr "Dissendolista redaktilo"
-
-#~ msgid "Yes"
-#~ msgstr "Jes"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid "New List..."
-#~ msgstr "Nova listo..."
-
-#~ msgid "Rename List..."
-#~ msgstr "Alinomi liston..."
-
-#~ msgid "Remove Contact"
-#~ msgstr "Forigi kontakton"
-
-#~ msgid "Please enter name:"
-#~ msgstr "Bonvolu doni nomon:"
-
-#~ msgid "The name already exists"
-#~ msgstr "La nomo jam ekzistas"
-
-#~ msgid "Rename Distribution List"
-#~ msgstr "Alinomi dissendoliston"
-
-#~ msgid "The name already exists."
-#~ msgstr "La nomo jam ekzistas."
-
-#~ msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
-#~ msgstr "<qt>Ĉu forigi dissendoliston <b>%1</b>?</qt>"
-
-#~ msgid "Select Email Address"
-#~ msgstr "Elekti retpoŝtadreson"
-
-#~ msgid "Email Addresses"
-#~ msgstr "Retpoŝtaj adresoj"
+"Komencu tajpi serĉĉenon en ĉi tiu skatolo kaj la listo de kontaktoj kongruaj "
+"kun tiu ĉeno aperos. Ĉi tio estas rapida maniero serĉi interesajn kontaktojn."
