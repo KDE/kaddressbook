@@ -24,7 +24,7 @@ class CategoryFilterProxyModelPrivate : public QObject
     Q_DECLARE_PUBLIC(CategoryFilterProxyModel)
 
 public:
-    CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent);
+    explicit CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent);
 
     QList<Tag> filterTagList;
     bool filterEnabled = false;

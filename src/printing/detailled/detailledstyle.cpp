@@ -214,7 +214,7 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
 class KABPrinting::AppearancePage : public QWidget, public Ui::AppearancePage_Base
 {
 public:
-    AppearancePage(QWidget *parent)
+    explicit AppearancePage(QWidget *parent)
         : QWidget(parent)
     {
         setupUi(this);

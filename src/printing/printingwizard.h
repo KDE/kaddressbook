@@ -95,7 +95,7 @@ protected:
     class PrintStyleDefinition
     {
     public:
-        PrintStyleDefinition(PrintStyleFactory *factory = nullptr, PrintStyle *style = nullptr)
+        explicit PrintStyleDefinition(PrintStyleFactory *factory = nullptr, PrintStyle *style = nullptr)
             : printstyleFactory(factory)
             , printStyle(style)
         {

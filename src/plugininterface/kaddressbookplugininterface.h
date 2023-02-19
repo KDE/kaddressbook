@@ -23,7 +23,7 @@ public:
 
     void setMainWidget(MainWidget *mainWidget);
 
-    bool initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *interface) override;
+    bool initializeInterfaceRequires(PimCommon::AbstractGenericPluginInterface *abstractInterface) override;
     static KAddressBookPluginInterface *self();
 
 private:
