@@ -23,6 +23,7 @@
         "Description[pl]": "Wtyczka Kontact do współpracy z Książką Adresową",
         "Description[pt]": "'Plugin' de KAddressBook do Kontact",
         "Description[pt_BR]": "Plugin do KAddressBook para o Kontact",
+        "Description[ru]": "Модуль KAddressBook для Kontact",
         "Description[sk]": "Kontact KAddressBook Plugin",
         "Description[sl]": "Vtičnik Kontact adresar",
         "Description[sv]": "Kontact-insticksprogram för adressbok",
