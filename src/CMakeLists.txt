@@ -106,12 +106,12 @@ target_link_libraries(kaddressbookprivate
     KF5::PimCommonAkonadi
     PRIVATE
     KPimAddressbookImportExport
-    KF5::Libkdepim
+    KPim${KF_MAJOR_VERSION}::Libkdepim
     KF5::AkonadiCore
     KF${KF_MAJOR_VERSION}::Contacts
     KF5::AkonadiContact
     KF${KF_MAJOR_VERSION}::KCMUtils
-    KF5::GrantleeTheme
+    KPim${KF_MAJOR_VERSION}::GrantleeTheme
     KF${KF_MAJOR_VERSION}::Completion
     KF${KF_MAJOR_VERSION}::XmlGui
     KF${KF_MAJOR_VERSION}::JobWidgets
@@ -157,7 +157,7 @@ endif()
 
 target_link_libraries(kaddressbook
     KF${KF_MAJOR_VERSION}::I18n
-    KF5::KontactInterface
+    KPim${KF_MAJOR_VERSION}::KontactInterface
     kaddressbookprivate
     KF${KF_MAJOR_VERSION}::Crash
     )
