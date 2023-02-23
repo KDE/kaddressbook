@@ -96,7 +96,7 @@ if (NOT KF5AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
-find_package(KF5AkonadiContact ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
+find_package(KPim${KF_MAJOR_VERSION}AkonadiContact ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
 find_package(KPim${KF_MAJOR_VERSION}GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})

@@ -109,7 +109,7 @@ target_link_libraries(kaddressbookprivate
     KPim${KF_MAJOR_VERSION}::Libkdepim
     KF5::AkonadiCore
     KF${KF_MAJOR_VERSION}::Contacts
-    KF5::AkonadiContact
+    KPim${KF_MAJOR_VERSION}::AkonadiContact
     KF${KF_MAJOR_VERSION}::KCMUtils
     KPim${KF_MAJOR_VERSION}::GrantleeTheme
     KF${KF_MAJOR_VERSION}::Completion
