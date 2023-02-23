@@ -127,7 +127,7 @@ endif()
 if (KF5AkonadiSearch_FOUND)
     target_link_libraries(kaddressbookprivate
         PRIVATE
-        KF5::AkonadiSearchDebug)
+        KPim${KF_MAJOR_VERSION}::AkonadiSearchDebug)
 endif()
 
 target_include_directories(kaddressbookprivate PUBLIC "$<BUILD_INTERFACE:${kaddressbook_SOURCE_DIR};${kaddressbook_BINARY_DIR}>")
