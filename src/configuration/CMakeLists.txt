@@ -23,7 +23,7 @@ target_link_libraries(kaddressbook_config_plugins
     KF5::PimCommon
     kaddressbookprivate
     KF${KF_MAJOR_VERSION}::XmlGui
-    KPimAddressbookImportExport
+    KPim${KF_MAJOR_VERSION}AddressbookImportExport
     )
 
 install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kcms/kaddressbook)
@@ -43,7 +43,7 @@ if (TARGET KUserFeedbackWidgets)
         KF${KF_MAJOR_VERSION}::I18n
         KF5::PimCommon
         kaddressbookprivate
-        KPimAddressbookImportExport
+        KPim${KF_MAJOR_VERSION}AddressbookImportExport
         KF${KF_MAJOR_VERSION}::XmlGui
         KUserFeedbackWidgets
         )

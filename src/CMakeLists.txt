@@ -105,7 +105,7 @@ target_link_libraries(kaddressbookprivate
     PUBLIC
     KF5::PimCommonAkonadi
     PRIVATE
-    KPimAddressbookImportExport
+    KPim${KF_MAJOR_VERSION}AddressbookImportExport
     KPim${KF_MAJOR_VERSION}::Libkdepim
     KF5::AkonadiCore
     KF${KF_MAJOR_VERSION}::Contacts
