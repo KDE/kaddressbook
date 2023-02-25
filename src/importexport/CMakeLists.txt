@@ -136,7 +136,7 @@ install(FILES
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR}
 )
 
-#if (QT_MAJOR_VERSION STREQUAL "5")
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatibility. Remove in next major version
 ##
@@ -164,5 +164,5 @@ install(EXPORT KPim${KF_MAJOR_VERSION}AddressbookImportExportTargets
     FILE KPimAddressbookImportExportTargets.cmake
     NAMESPACE KPim::
 )
-#endif()
+endif()
 
