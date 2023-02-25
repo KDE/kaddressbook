@@ -138,13 +138,13 @@ install(FILES
 
 #if (QT_MAJOR_VERSION STREQUAL "5")
 ##
-# TODO: Backwards compatiblity. Remove in next major version
+# TODO: Backwards compatibility. Remove in next major version
 ##
 set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPimAddressbookImportExport")
 set(IMPORTEXPORT_KF5_COMPAT TRUE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAddressbookImportExportConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AddressbookImportConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPimAddressbookImportExportConfig.cmake"
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
 )
 
