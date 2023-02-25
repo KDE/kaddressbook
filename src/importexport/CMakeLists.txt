@@ -44,7 +44,7 @@ endif()
 generate_export_header(KPim${KF_MAJOR_VERSION}AddressbookImportExport BASE_NAME kaddressbook_importexport)
 
 target_include_directories(KPim${KF_MAJOR_VERSION}AddressbookImportExport
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim;${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/;${KDE_INSTALL_INCLUDEDIR}/KPim/kaddressbookimportexport>"
+    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim;${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/;${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/kaddressbookimportexport>"
 )
 
 target_link_libraries(KPim${KF_MAJOR_VERSION}AddressbookImportExport
