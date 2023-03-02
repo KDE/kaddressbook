@@ -52,7 +52,7 @@ target_link_libraries(KPim${KF_MAJOR_VERSION}AddressbookImportExport
     KF${KF_MAJOR_VERSION}::Contacts
     KF5::PimCommon
     KF${KF_MAJOR_VERSION}::I18n
-    KF5::AkonadiWidgets
+    KPim${KF_MAJOR_VERSION}::AkonadiWidgets
 )
 
 set_target_properties(KPim${KF_MAJOR_VERSION}AddressbookImportExport PROPERTIES
