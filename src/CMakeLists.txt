@@ -76,7 +76,7 @@ ki18n_wrap_ui(kaddressbookprivate
     )
 
 
-if (TARGET KUserFeedbackWidgets)
+if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_sources(kaddressbookprivate PRIVATE
         userfeedback/userfeedbackmanager.cpp
         userfeedback/kaddressbookuserfeedbackprovider.cpp
@@ -120,7 +120,7 @@ target_link_libraries(kaddressbookprivate
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::Prison
     )
-if (TARGET KUserFeedbackWidgets)
+if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets)
 endif()
 
@@ -151,8 +151,8 @@ ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
-if (TARGET KUserFeedbackWidgets)
-    target_link_libraries(kaddressbook  KUserFeedbackWidgets)
+if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
+    target_link_libraries(kaddressbook  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
 endif()
 
 target_link_libraries(kaddressbook
