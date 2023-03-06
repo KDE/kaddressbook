@@ -105,7 +105,7 @@ find_package(KF${KF_MAJOR_VERSION}Prison ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 ecm_set_disabled_deprecation_versions(QT 6.4
-     KF 5.103.0
+     KF 5.104.0
 )
 
 set(KUSERFEEDBACK_SUFFIX)
