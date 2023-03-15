@@ -50,7 +50,7 @@ target_include_directories(KPim${KF_MAJOR_VERSION}AddressbookImportExport
 target_link_libraries(KPim${KF_MAJOR_VERSION}AddressbookImportExport
     PRIVATE
     KF${KF_MAJOR_VERSION}::Contacts
-    KF5::PimCommon
+    KPim${KF_MAJOR_VERSION}::PimCommon
     KF${KF_MAJOR_VERSION}::I18n
     KPim${KF_MAJOR_VERSION}::AkonadiWidgets
 )

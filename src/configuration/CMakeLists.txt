@@ -20,7 +20,7 @@ endif()
 target_link_libraries(kaddressbook_config_plugins
     KF${KF_MAJOR_VERSION}::KCMUtils
     KF${KF_MAJOR_VERSION}::I18n
-    KF5::PimCommon
+    KPim${KF_MAJOR_VERSION}::PimCommon
     kaddressbookprivate
     KF${KF_MAJOR_VERSION}::XmlGui
     KPim${KF_MAJOR_VERSION}AddressbookImportExport
@@ -41,7 +41,7 @@ if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_link_libraries(kaddressbook_config_userfeedback
         KF${KF_MAJOR_VERSION}::KCMUtils
         KF${KF_MAJOR_VERSION}::I18n
-        KF5::PimCommon
+        KPim${KF_MAJOR_VERSION}::PimCommon
         kaddressbookprivate
         KPim${KF_MAJOR_VERSION}AddressbookImportExport
         KF${KF_MAJOR_VERSION}::XmlGui

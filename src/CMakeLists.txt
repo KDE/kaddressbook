@@ -103,7 +103,7 @@ endif()
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
 target_link_libraries(kaddressbookprivate
     PUBLIC
-    KF5::PimCommonAkonadi
+    KPim${KF_MAJOR_VERSION}::PimCommonAkonadi
     PRIVATE
     KPim${KF_MAJOR_VERSION}AddressbookImportExport
     KPim${KF_MAJOR_VERSION}::Libkdepim
