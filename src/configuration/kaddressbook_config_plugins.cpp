@@ -17,30 +17,33 @@ using namespace KAddressBook;
 
 K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookPluginsConfig, "kaddressbook_config_plugins.json")
 
+#if KCMUTILS_VERSION < QT_VERSION_CHECK(5, 240, 0)
 KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QWidget *parent, const QVariantList &args)
     : KCModule(parent, args)
     , mConfigurePluginWidget(new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(this), this))
+#else
+KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+    : KCModule(parent, data, args)
+    , mConfigurePluginWidget(new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(widget()), widget()))
+#endif
 {
+#if KCMUTILS_VERSION < QT_VERSION_CHECK(5, 240, 0)
     auto lay = new QHBoxLayout(this);
+#else
+    auto lay = new QHBoxLayout(widget());
+#endif
     lay->setContentsMargins({});
-
-    auto about = new KAboutData(QStringLiteral("kcmakrpluginsconfig"),
-                                i18n("Configure Plugins"),
-                                QString(),
-                                QString(),
-                                KAboutLicense::GPL,
-                                i18n("(c), 2016-2021 Laurent Montel"));
-
-    about->addAuthor(i18n("Laurent Montel"), QString(), QStringLiteral("montel@kde.org"));
-
-    setAboutData(about);
     connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
     lay->addWidget(mConfigurePluginWidget);
 }
 
 void KCMKaddressbookPluginsConfig::slotConfigChanged()
 {
+#if KCMUTILS_VERSION < QT_VERSION_CHECK(5, 240, 0)
     Q_EMIT changed(true);
+#else
+    markAsChanged();
+#endif
 }
 
 void KCMKaddressbookPluginsConfig::save()
