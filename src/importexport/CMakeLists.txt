@@ -44,7 +44,7 @@ endif()
 generate_export_header(KPim${KF_MAJOR_VERSION}AddressbookImportExport BASE_NAME kaddressbook_importexport)
 
 target_include_directories(KPim${KF_MAJOR_VERSION}AddressbookImportExport
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION};${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/;${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/kaddressbookimportexport>"
+    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION};${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport;${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/kaddressbookimportexport>"
 )
 
 target_link_libraries(KPim${KF_MAJOR_VERSION}AddressbookImportExport
@@ -86,7 +86,7 @@ ecm_generate_pri_file(BASE_NAME KAddressbookImportExport
     DEPS ""
     FILENAME_VAR
     PRI_FILENAME
-    INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressbookImportExport
+    INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/KAddressBookImportExport
 )
 
 ######## CMake Config Files ##########
@@ -114,12 +114,12 @@ install(EXPORT KPim${KF_MAJOR_VERSION}AddressbookImportExportTargets
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/kaddressbookimportexport_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport COMPONENT Devel
 )
 
 install(FILES
     ${KaddressbookImportExport_CamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/KAddressBookImportExport
     COMPONENT Devel
 )
 
@@ -127,7 +127,7 @@ install(FILES
     ${KaddressbookImportExport_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook_importexport_export.h
     contactfields.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/kaddressbookimportexport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KAddressBookImportExport/kaddressbookimportexport
     COMPONENT Devel
 )
 
