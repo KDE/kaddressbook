@@ -124,7 +124,7 @@ if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
 endif()
 
-if (KF5AkonadiSearch_FOUND)
+if (KPim${KF_MAJOR_VERSION}AkonadiSearch_FOUND)
     target_link_libraries(kaddressbookprivate
         PRIVATE
         KPim${KF_MAJOR_VERSION}::AkonadiSearchDebug)
