@@ -34,7 +34,7 @@ include(ECMGeneratePriFile)
 
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION alpha)
+set(KDEPIM_DEV_VERSION rc)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
@@ -91,7 +91,7 @@ else()
         TYPE OPTIONAL PURPOSE "Provides search capabilities in KAddressbook and Akonadi (only debug)")
 endif()
 
-if (NOT KF5AkonadiSearch_FOUND)
+if (NOT KPim${KF_MAJOR_VERSION}AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
