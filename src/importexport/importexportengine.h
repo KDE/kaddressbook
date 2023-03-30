@@ -34,7 +34,7 @@ Q_SIGNALS:
     void finished();
 
 private:
-    void slotImportJobDone(KJob *);
+    KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void slotImportJobDone(KJob *);
     ContactList mContactsList;
     Akonadi::Collection mDefaultAddressBook;
     QWidget *mParentWidget = nullptr;

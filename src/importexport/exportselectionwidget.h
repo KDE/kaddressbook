@@ -35,8 +35,8 @@ public:
     Q_REQUIRED_RESULT ExportFields exportType() const;
 
 private:
-    void readSettings();
-    void writeSettings();
+    KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void readSettings();
+    KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void writeSettings();
     QCheckBox *const mPrivateBox;
     QCheckBox *const mBusinessBox;
     QCheckBox *const mOtherBox;

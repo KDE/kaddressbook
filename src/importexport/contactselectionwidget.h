@@ -63,15 +63,15 @@ public:
     Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
 
 private:
-    void initGui();
+    KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void initGui();
 
-    Q_REQUIRED_RESULT ContactList collectAllContacts() const;
-    Q_REQUIRED_RESULT ContactList collectSelectedContacts() const;
-    Q_REQUIRED_RESULT ContactList collectAddressBookContacts() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAllContacts() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectSelectedContacts() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAddressBookContacts() const;
 
-    Q_REQUIRED_RESULT Akonadi::Item::List collectAllItems() const;
-    Q_REQUIRED_RESULT Akonadi::Item::List collectSelectedItems() const;
-    Q_REQUIRED_RESULT Akonadi::Item::List collectAddressBookItems() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAllItems() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectSelectedItems() const;
+    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAddressBookItems() const;
 
     QItemSelectionModel *const mSelectionModel;
 
