@@ -23,8 +23,12 @@
 
 K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
 
-KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const QVariantList &)
+KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &data, const QVariantList &)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     : KParts::Part(parent)
+#else
+    : KParts::Part(parent, data)
+#endif
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
