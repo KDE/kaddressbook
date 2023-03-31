@@ -34,10 +34,10 @@
       <tr>
         <td align="right" valign="top" width="30%"><b><font color="grey">{{ phoneNumber.typeLabel }}</font></b></td>
         {% if phoneNumber.supportsSms %}
-          <td align="left" valign="top"><a href="phone:?index={{ forloop.counter0 }}">{{ phoneNumber.number }}</a></td>
-          <td align="left" valign="top"><a href="sms:?index={{ forloop.counter0 }}"><img src="sms_icon" align="top"/></a></td>
+          <td align="left" valign="top"><a href="tel:{{ phoneNumber.normalizedNumber }}">{{ phoneNumber.number }}</a></td>
+          <td align="left" valign="top"><a href="sms:{{ phoneNumber.normalizedNumber }}"><img src="sms_icon" align="top"/></a></td>
         {% else %}
-          <td align="left" valign="top" colspan="2"><a href="phone:?index={{ forloop.counter0 }}">{{ phoneNumber.number }}</a></td>
+          <td align="left" valign="top" colspan="2"><a href="tel:{{ phoneNumber.normalizedNumber }}">{{ phoneNumber.number }}</a></td>
         {% endif %}
       </tr>
       {% endfor %}
@@ -86,6 +86,9 @@
       {% for address in contact.addresses %}
       <tr>
          <td align="right" valign="top" width="30%"><b><font color="grey">{{ address.typeLabel }}</font></b></td>
+         <!-- TODO once we depend on KContacts 5.106 replace the following line with:
+         <td align="left" valign="top"><a href="{{ address.geoUri }}">
+         -->
          <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
          {% with address.formattedAddress as fa %}
            {% for line in fa.splitlines %}
@@ -94,6 +97,9 @@
            {% endfor %}
          {% endwith %}
          </a></td>
+         <!-- TODO once we depend on KContacts 5.106 replace the following line with:
+         <td align="left" valign="top"><a href="{{ address.geoUri }}">
+         -->
          <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
             <img src="map_icon" align="top"/>
          </a></td>
