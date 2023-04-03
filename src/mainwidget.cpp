@@ -253,7 +253,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mItemView->setRootIsDecorated(false);
     mItemView->header()->setDefaultAlignment(Qt::AlignCenter);
 
-    mActionManager = new Akonadi::StandardContactActionManager(guiClient->actionCollection(), this);
+    mActionManager = new ContactEditor::StandardContactActionManager(guiClient->actionCollection(), this);
     mActionManager->setCollectionSelectionModel(mCollectionView->selectionModel());
     mActionManager->setItemSelectionModel(mItemView->selectionModel());
 
@@ -270,11 +270,11 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
         mActionManager->createAction(standardAction);
     }
     guiClient->actionCollection()->setDefaultShortcut(mActionManager->action(Akonadi::StandardActionManager::DeleteItems), QKeySequence(Qt::Key_Delete));
-    QList<Akonadi::StandardContactActionManager::Type> contactActions;
-    contactActions << Akonadi::StandardContactActionManager::CreateContact << Akonadi::StandardContactActionManager::CreateContactGroup
-                   << Akonadi::StandardContactActionManager::EditItem;
+    QList<ContactEditor::StandardContactActionManager::Type> contactActions;
+    contactActions << ContactEditor::StandardContactActionManager::CreateContact << ContactEditor::StandardContactActionManager::CreateContactGroup
+                   << ContactEditor::StandardContactActionManager::EditItem;
 
-    for (Akonadi::StandardContactActionManager::Type contactAction : std::as_const(contactActions)) {
+    for (ContactEditor::StandardContactActionManager::Type contactAction : std::as_const(contactActions)) {
         mActionManager->createAction(contactAction);
     }
 
@@ -287,7 +287,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     connect(mItemView, qOverload<const Akonadi::Item &>(&Akonadi::EntityTreeView::currentChanged), this, &MainWidget::itemSelected);
     connect(mItemView,
             qOverload<const Akonadi::Item &>(&Akonadi::EntityTreeView::doubleClicked),
-            mActionManager->action(Akonadi::StandardContactActionManager::EditItem),
+            mActionManager->action(ContactEditor::StandardContactActionManager::EditItem),
             &QAction::trigger);
     connect(mItemView->selectionModel(), &QItemSelectionModel::currentChanged, this, &MainWidget::itemSelectionChanged);
 
@@ -564,11 +564,11 @@ void MainWidget::setupGui()
     detailsPaneLayout->addWidget(mDetailsViewStack);
 
     // the details widget for contacts
-    mContactDetails = new Akonadi::ContactViewer(mDetailsViewStack);
+    mContactDetails = new ContactEditor::ContactViewer(mDetailsViewStack);
     mDetailsViewStack->addWidget(mContactDetails);
 
     // the details widget for contact groups
-    mContactGroupDetails = new Akonadi::ContactGroupViewer(mDetailsViewStack);
+    mContactGroupDetails = new ContactEditor::ContactGroupViewer(mDetailsViewStack);
     mDetailsViewStack->addWidget(mContactGroupDetails);
 
     // the details widget for empty items
@@ -765,12 +765,12 @@ void MainWidget::print()
 
 void MainWidget::newContact()
 {
-    mActionManager->action(Akonadi::StandardContactActionManager::CreateContact)->trigger();
+    mActionManager->action(ContactEditor::StandardContactActionManager::CreateContact)->trigger();
 }
 
 void MainWidget::newGroup()
 {
-    mActionManager->action(Akonadi::StandardContactActionManager::CreateContactGroup)->trigger();
+    mActionManager->action(ContactEditor::StandardContactActionManager::CreateContactGroup)->trigger();
 }
 
 /**
