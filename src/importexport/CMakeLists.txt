@@ -136,33 +136,3 @@ install(FILES
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR}
 )
 
-if (QT_MAJOR_VERSION STREQUAL "5")
-##
-# TODO: Backwards compatibility. Remove in next major version
-##
-set(CMAKECONFIG_INSTALL_DIR_KF6 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPimAddressbookImportExport")
-set(IMPORTEXPORT_KF6_COMPAT TRUE)
-configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KPimAddressbookImportExportConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KPimAddressbookImportExportConfig.cmake"
-    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF6}
-)
-
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPimAddressbookImportExportConfig.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF6}"
-    COMPONENT Devel
-)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim6AddressbookImportExportConfigVersion.cmake"
-    RENAME "KPimAddressbookImportExportConfigVersion.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF6}"
-    COMPONENT Devel
-)
-install(EXPORT KPim6AddressbookImportExportTargets
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF6}"
-    FILE KPimAddressbookImportExportTargets.cmake
-    NAMESPACE KPim::
-)
-endif()
-

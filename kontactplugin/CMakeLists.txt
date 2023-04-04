@@ -23,4 +23,4 @@ target_link_libraries(kontact_kaddressbookplugin
     KPim6::KontactInterface
 )
 
-install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kontact)
+install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kontact)
