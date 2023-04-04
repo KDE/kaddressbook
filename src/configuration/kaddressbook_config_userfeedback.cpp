@@ -26,7 +26,7 @@ KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QObject *pa
     : KCModule(parent, data, args)
     , mUserFeedbackWidget(new KUserFeedback::FeedbackConfigWidget(widget()))
 {
-    auto lay = new QHBoxLayout(this);
+    auto lay = new QHBoxLayout(widget());
     lay->setContentsMargins({});
     connect(mUserFeedbackWidget, &KUserFeedback::FeedbackConfigWidget::configurationChanged, this, &KCMKaddressbookUserFeedBackConfig::markAsChanged);
 
