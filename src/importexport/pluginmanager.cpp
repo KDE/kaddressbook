@@ -57,8 +57,8 @@ public:
     }
 
     void loadPlugin(ImportExportInfo *item);
-    Q_REQUIRED_RESULT QVector<Plugin *> pluginsList() const;
-    Q_REQUIRED_RESULT QVector<PimCommon::PluginUtilData> pluginDataList() const;
+    Q_REQUIRED_RESULT QList<Plugin *> pluginsList() const;
+    Q_REQUIRED_RESULT QList<PimCommon::PluginUtilData> pluginDataList() const;
     bool initializePlugins();
 
     Q_REQUIRED_RESULT QString configGroupName() const;
@@ -66,15 +66,15 @@ public:
     Plugin *pluginFromIdentifier(const QString &id);
 
 private:
-    QVector<ImportExportInfo> mPluginList;
-    QVector<PimCommon::PluginUtilData> mPluginDataList;
+    QList<ImportExportInfo> mPluginList;
+    QList<PimCommon::PluginUtilData> mPluginDataList;
     PluginManager *const q = nullptr;
 };
 }
 
 bool PluginManagerPrivate::initializePlugins()
 {
-    const QVector<KPluginMetaData> plugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kaddressbook/importexportplugin"));
+    const QList<KPluginMetaData> plugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kaddressbook/importexportplugin"));
 
     const QPair<QStringList, QStringList> pair = PimCommon::PluginUtil::loadPluginSetting(configGroupName(), configPrefixSettingKey());
 
@@ -99,8 +99,8 @@ bool PluginManagerPrivate::initializePlugins()
             qCWarning(LIBKADDRESSBOOKIMPORTEXPORT_LOG) << "Plugin " << data.name() << " doesn't have correction plugin version. It will not be loaded.";
         }
     }
-    QVector<ImportExportInfo>::iterator end(mPluginList.end());
-    for (QVector<ImportExportInfo>::iterator it = mPluginList.begin(); it != end; ++it) {
+    QList<ImportExportInfo>::iterator end(mPluginList.end());
+    for (QList<ImportExportInfo>::iterator it = mPluginList.begin(); it != end; ++it) {
         loadPlugin(&(*it));
     }
     return true;
@@ -116,11 +116,11 @@ void PluginManagerPrivate::loadPlugin(ImportExportInfo *item)
     }
 }
 
-QVector<Plugin *> PluginManagerPrivate::pluginsList() const
+QList<Plugin *> PluginManagerPrivate::pluginsList() const
 {
-    QVector<Plugin *> lst;
-    QVector<ImportExportInfo>::ConstIterator end(mPluginList.constEnd());
-    for (QVector<ImportExportInfo>::ConstIterator it = mPluginList.constBegin(); it != end; ++it) {
+    QList<Plugin *> lst;
+    QList<ImportExportInfo>::ConstIterator end(mPluginList.constEnd());
+    for (QList<ImportExportInfo>::ConstIterator it = mPluginList.constBegin(); it != end; ++it) {
         if (auto plugin = (*it).plugin) {
             lst << plugin;
         }
@@ -128,7 +128,7 @@ QVector<Plugin *> PluginManagerPrivate::pluginsList() const
     return lst;
 }
 
-QVector<PimCommon::PluginUtilData> PluginManagerPrivate::pluginDataList() const
+QList<PimCommon::PluginUtilData> PluginManagerPrivate::pluginDataList() const
 {
     return mPluginDataList;
 }
@@ -145,8 +145,8 @@ QString PluginManagerPrivate::configPrefixSettingKey() const
 
 Plugin *PluginManagerPrivate::pluginFromIdentifier(const QString &id)
 {
-    QVector<ImportExportInfo>::ConstIterator end(mPluginList.constEnd());
-    for (QVector<ImportExportInfo>::ConstIterator it = mPluginList.constBegin(); it != end; ++it) {
+    QList<ImportExportInfo>::ConstIterator end(mPluginList.constEnd());
+    for (QList<ImportExportInfo>::ConstIterator it = mPluginList.constBegin(); it != end; ++it) {
         if ((*it).pluginData.mIdentifier == id) {
             return (*it).plugin;
         }
@@ -167,12 +167,12 @@ PluginManager *PluginManager::self()
     return sInstance->pluginManager.get();
 }
 
-QVector<Plugin *> PluginManager::pluginsList() const
+QList<Plugin *> PluginManager::pluginsList() const
 {
     return d->pluginsList();
 }
 
-QVector<PimCommon::PluginUtilData> PluginManager::pluginsDataList() const
+QList<PimCommon::PluginUtilData> PluginManager::pluginsDataList() const
 {
     return d->pluginDataList();
 }

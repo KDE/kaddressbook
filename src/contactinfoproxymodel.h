@@ -41,7 +41,7 @@ private:
     class ContactCacheData
     {
     public:
-        using List = QVector<ContactCacheData>;
+        using List = QList<ContactCacheData>;
         using ListIterator = ContactCacheData::List::iterator;
         using ConstListIterator = ContactCacheData::List::ConstIterator;
 
@@ -112,6 +112,6 @@ private:
     using Cache = QMap<Akonadi::Item::Id, ContactCacheData::List>;
     mutable Cache mGroupsCache;
     mutable QList<Akonadi::Item::Id> mPendingGroupItems;
-    const QVector<int> mKrole{PictureRole, InitialsRole, DescriptionRole};
+    const QList<int> mKrole{PictureRole, InitialsRole, DescriptionRole};
     Akonadi::Monitor *const mMonitor;
 };

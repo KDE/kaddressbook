@@ -25,9 +25,9 @@ public:
 
     static PluginManager *self();
 
-    Q_REQUIRED_RESULT QVector<Plugin *> pluginsList() const;
+    Q_REQUIRED_RESULT QList<Plugin *> pluginsList() const;
 
-    Q_REQUIRED_RESULT QVector<PimCommon::PluginUtilData> pluginsDataList() const;
+    Q_REQUIRED_RESULT QList<PimCommon::PluginUtilData> pluginsDataList() const;
 
     Q_REQUIRED_RESULT QString configGroupName() const;
     Q_REQUIRED_RESULT QString configPrefixSettingKey() const;

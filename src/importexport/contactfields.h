@@ -81,7 +81,7 @@ public:
     /**
      * Defines a list of Field enums.
      */
-    using Fields = QVector<Field>;
+    using Fields = QList<Field>;
 
     /**
      * Returns the i18n label for the @p field.

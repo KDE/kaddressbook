@@ -22,6 +22,6 @@ public:
 
 private:
     void slotConfigureClicked(const QString &configureGroupName, const QString &identifier);
-    QVector<PluginItem *> mPluginGenericItems;
-    QVector<PluginItem *> mPluginImportExportItems;
+    QList<PluginItem *> mPluginGenericItems;
+    QList<PluginItem *> mPluginImportExportItems;
 };

@@ -29,7 +29,7 @@ static const char ContactHeaderForeColor[] = "ContactHeaderForeColor";
 static const char ContactHeaderBGColor[] = "ContactHeaderBGColor";
 
 struct ContactBlock {
-    using List = QVector<ContactBlock>;
+    using List = QList<ContactBlock>;
 
     QString header;
     QStringList entries;

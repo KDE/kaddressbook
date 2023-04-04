@@ -328,7 +328,7 @@ void MainWidget::setFocusToTreeView()
 
 void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 {
-    const QVector<KAddressBookImportExport::Plugin *> listPlugins = KAddressBookImportExport::PluginManager::self()->pluginsList();
+    const QList<KAddressBookImportExport::Plugin *> listPlugins = KAddressBookImportExport::PluginManager::self()->pluginsList();
     QList<QAction *> importActions;
     QList<QAction *> exportActions;
     for (KAddressBookImportExport::Plugin *plugin : listPlugins) {
@@ -363,7 +363,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
-    const QVector<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
+    const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg->addModule(metaData);
     }
