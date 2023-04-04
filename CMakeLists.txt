@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 set(PIM_VERSION "5.23.40")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "23.07.40")
-set(KF_MIN_VERSION "5.105.0")
+set(KF_MIN_VERSION "5.240.0")
 
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -51,71 +51,58 @@ set(KDEPIM_LIB_VERSION "${PIM_VERSION}")
 set(KDEPIM_LIB_SOVERSION "5")
 
 
-set(QT_REQUIRED_VERSION "5.15.2")
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_REQUIRED_VERSION "6.4.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
-find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus PrintSupport)
+find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus PrintSupport)
 set(LIBKDEPIM_LIB_VERSION "5.23.40")
 set(LIBGRANTLEETHEME_LIB_VERSION "5.23.40")
 set(PIMCOMMON_LIB_VERSION "5.23.40")
 set(AKONADI_SEARCH_VERSION "5.23.40")
 set(AKONADI_CONTACT_VERSION "5.23.41")
 
-# Find KF5 package
-find_package(KF${KF_MAJOR_VERSION}DBusAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}KCMUtils ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}Crash ${KF_MIN_VERSION} REQUIRED)
+# Find KF6 package
+find_package(KF6DBusAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6CoreAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6KCMUtils ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6Crash ${KF_MIN_VERSION} REQUIRED)
 
-find_package(KF${KF_MAJOR_VERSION}DocTools ${KF_MIN_VERSION})
-set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
+find_package(KF6DocTools ${KF_MIN_VERSION})
+set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
 
-find_package(KPim${KF_MAJOR_VERSION}TextEdit ${KPIMTEXTEDIT_LIB_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6TextEdit ${KPIMTEXTEDIT_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
+find_package(KPim6KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 if (UNIX)
-    find_package(KPim${KF_MAJOR_VERSION}AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
+    find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
 else()
-    find_package(KPim${KF_MAJOR_VERSION}AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG)
-    set_package_properties(KPim${KF_MAJOR_VERSION}AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://invent.kde.org/pim/akonadi-search"
+    find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG)
+    set_package_properties(KPim6AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://invent.kde.org/pim/akonadi-search"
         TYPE OPTIONAL PURPOSE "Provides search capabilities in KAddressbook and Akonadi (only debug)")
 endif()
 
-if (NOT KPim${KF_MAJOR_VERSION}AkonadiSearch_FOUND)
+if (NOT KPim6AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
-find_package(KPim${KF_MAJOR_VERSION}AkonadiContact ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}ContactEditor ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6AkonadiContact ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
+find_package(KPim6ContactEditor ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
+find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 
-find_package(KF${KF_MAJOR_VERSION}Prison ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6Prison ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 ecm_set_disabled_deprecation_versions(QT 6.4
      KF 5.105.0
 )
 
-set(KUSERFEEDBACK_SUFFIX)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(KUSERFEEDBACK_SUFFIX "Qt6")
-    find_package(KUserFeedback${KUSERFEEDBACK_SUFFIX} 1.2.1 CONFIG)
-    add_definitions(-DUSE_KUSERFEEDBACK_QT6)
-else()
-    find_package(KUserFeedback${KUSERFEEDBACK_SUFFIX} 1.2.0 CONFIG)
-endif()
+set(KUSERFEEDBACK_SUFFIX "Qt6")
+find_package(KUserFeedback${KUSERFEEDBACK_SUFFIX} 1.2.1 CONFIG)
+add_definitions(-DUSE_KUSERFEEDBACK_QT6)
 set_package_properties(KUserFeedback${KUSERFEEDBACK_SUFFIX} PROPERTIES DESCRIPTION "User Feedback lib" TYPE OPTIONAL PURPOSE "Allow to send Telemetry Information (optional).")
 
 if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
@@ -141,7 +128,7 @@ ecm_qt_install_logging_categories(
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
-if(KF${KF_MAJOR_VERSION}DocTools_FOUND)
+if(KF6DocTools_FOUND)
     kdoctools_install(po)
     add_subdirectory(doc)
 endif()

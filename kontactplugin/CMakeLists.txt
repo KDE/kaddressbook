@@ -19,8 +19,8 @@ target_sources(kontact_kaddressbookplugin PRIVATE ${kontact_kaddressbook_interfa
 
 
 target_link_libraries(kontact_kaddressbookplugin
-    KF${KF_MAJOR_VERSION}::I18n
-    KPim${KF_MAJOR_VERSION}::KontactInterface
+    KF6::I18n
+    KPim6::KontactInterface
 )
 
 install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kontact)

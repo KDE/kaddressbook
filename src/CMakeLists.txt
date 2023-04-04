@@ -103,32 +103,32 @@ endif()
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
 target_link_libraries(kaddressbookprivate
     PUBLIC
-    KPim${KF_MAJOR_VERSION}::PimCommonAkonadi
+    KPim6::PimCommonAkonadi
     PRIVATE
-    KPim${KF_MAJOR_VERSION}AddressbookImportExport
-    KPim${KF_MAJOR_VERSION}::Libkdepim
-    KPim${KF_MAJOR_VERSION}::AkonadiCore
-    KF${KF_MAJOR_VERSION}::Contacts
-    KPim${KF_MAJOR_VERSION}::AkonadiContact
-    KPim${KF_MAJOR_VERSION}::ContactEditor
-    KF${KF_MAJOR_VERSION}::KCMUtils
-    KPim${KF_MAJOR_VERSION}::GrantleeTheme
-    KF${KF_MAJOR_VERSION}::Completion
-    KF${KF_MAJOR_VERSION}::XmlGui
-    KF${KF_MAJOR_VERSION}::JobWidgets
-    KF${KF_MAJOR_VERSION}::KIOWidgets
+    KPim6AddressbookImportExport
+    KPim6::Libkdepim
+    KPim6::AkonadiCore
+    KF6::Contacts
+    KPim6::AkonadiContact
+    KPim6::ContactEditor
+    KF6::KCMUtils
+    KPim6::GrantleeTheme
+    KF6::Completion
+    KF6::XmlGui
+    KF6::JobWidgets
+    KF6::KIOWidgets
     Qt::PrintSupport
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::Prison
+    KF6::I18n
+    KF6::Prison
     )
 if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
 endif()
 
-if (KPim${KF_MAJOR_VERSION}AkonadiSearch_FOUND)
+if (KPim6AkonadiSearch_FOUND)
     target_link_libraries(kaddressbookprivate
         PRIVATE
-        KPim${KF_MAJOR_VERSION}::AkonadiSearchDebug)
+        KPim6::AkonadiSearchDebug)
 endif()
 
 target_include_directories(kaddressbookprivate PUBLIC "$<BUILD_INTERFACE:${kaddressbook_SOURCE_DIR};${kaddressbook_BINARY_DIR}>")
@@ -157,10 +157,10 @@ if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
 endif()
 
 target_link_libraries(kaddressbook
-    KF${KF_MAJOR_VERSION}::I18n
-    KPim${KF_MAJOR_VERSION}::KontactInterface
+    KF6::I18n
+    KPim6::KontactInterface
     kaddressbookprivate
-    KF${KF_MAJOR_VERSION}::Crash
+    KF6::Crash
     )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -175,7 +175,7 @@ install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_ME
 add_library(kaddressbookpart MODULE)
 
 target_sources(kaddressbookpart PRIVATE kaddressbookpart.cpp kaddressbookpart.h kaddressbook_debug.cpp kaddressbook.qrc)
-target_link_libraries(kaddressbookpart  kaddressbookprivate KF${KF_MAJOR_VERSION}::I18n KF${KF_MAJOR_VERSION}::Parts)
+target_link_libraries(kaddressbookpart  kaddressbookprivate KF6::I18n KF6::Parts)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 install(FILES
