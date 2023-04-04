@@ -74,7 +74,7 @@ ki18n_wrap_ui(kaddressbookprivate
     )
 
 
-if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
+if (TARGET KUserFeedbackWidgetsQt6)
     target_sources(kaddressbookprivate PRIVATE
         userfeedback/userfeedbackmanager.cpp
         userfeedback/kaddressbookuserfeedbackprovider.cpp
@@ -119,8 +119,8 @@ target_link_libraries(kaddressbookprivate
     KF6::I18n
     KF6::Prison
     )
-if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
-    target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
+if (TARGET KUserFeedbackWidgetsQt6)
+    target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgetsQt6)
 endif()
 
 if (KPim6AkonadiSearch_FOUND)
@@ -150,8 +150,8 @@ ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
-if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
-    target_link_libraries(kaddressbook  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
+if (TARGET KUserFeedbackWidgetsQt6)
+    target_link_libraries(kaddressbook  KUserFeedbackWidgetsQt6)
 endif()
 
 target_link_libraries(kaddressbook

@@ -29,7 +29,7 @@ target_link_libraries(kaddressbook_config_plugins
 install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kcms/kaddressbook)
 
 ##################################################
-if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
+if (TARGET KUserFeedbackWidgetsQt6)
     add_library(kaddressbook_config_userfeedback MODULE)
 
     target_sources(kaddressbook_config_userfeedback PRIVATE
@@ -45,7 +45,7 @@ if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
         kaddressbookprivate
         KPim6AddressbookImportExport
         KF6::XmlGui
-        KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX}
+        KUserFeedbackWidgetsQt6
         )
 
     install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim${QT_MAJOR_VERSION}/kcms/kaddressbook)
