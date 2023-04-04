@@ -98,11 +98,7 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
                 const int idx = cat.indexOf(QLatin1String("?tag="));
                 if (idx >= 0) {
                     ++validCategories;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-                    Tag::Id id = cat.midRef(idx + 5).toInt();
-#else
                     Tag::Id id = QStringView(cat).mid(idx + 5).toInt();
-#endif
                     if (d->containsId(id)) {
                         return true; // a category matches filter
                     }

@@ -41,7 +41,6 @@ target_sources(kaddressbookprivate PRIVATE
     modelcolumnmanager.cpp
     stylecontactlistdelegate.cpp
     widgets/quicksearchwidget.cpp
-    kaddressbookmigrateapplication.cpp
     printing/detailled/detailledstyle.h
     printing/mike/mikesstyle.h
     printing/printingwizard.h
@@ -65,7 +64,6 @@ target_sources(kaddressbookprivate PRIVATE
     modelcolumnmanager.h
     stylecontactlistdelegate.h
     widgets/quicksearchwidget.h
-    kaddressbookmigrateapplication.h
 
     )
 

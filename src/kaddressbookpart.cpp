@@ -7,9 +7,6 @@
 */
 
 #include "kaddressbookpart.h"
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include "kaddressbookmigrateapplication.h"
-#endif
 #include "mainwidget.h"
 
 #include "kaddressbook_debug.h"
@@ -24,17 +21,9 @@
 K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
 
 KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &data, const QVariantList &)
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    : KParts::Part(parent)
-#else
     : KParts::Part(parent, data)
-#endif
 {
     setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    KAddressBookMigrateApplication migrate;
-    migrate.migrate();
-#endif
 
     // create a canvas to insert our widget
     auto canvas = new QWidget(parentWidget);

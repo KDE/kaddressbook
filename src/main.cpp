@@ -8,9 +8,6 @@
 
 #include "aboutdata.h"
 #include "kaddressbook_options.h"
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include "kaddressbookmigrateapplication.h"
-#endif
 #include "mainwidget.h"
 #include "mainwindow.h"
 
@@ -51,10 +48,6 @@ int KAddressBookApplication::activate(const QStringList &arguments, const QStrin
 
 int main(int argc, char **argv)
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-#endif
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
     app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
@@ -84,9 +77,5 @@ int main(int argc, char **argv)
         qCWarning(KADDRESSBOOK_LOG) << "kaddressbook is already running, exiting.";
         return 0;
     }
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    KAddressBookMigrateApplication migrate;
-    migrate.migrate();
-#endif
     return app.exec();
 }

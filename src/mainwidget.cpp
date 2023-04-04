@@ -305,9 +305,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     initializeImportExportPlugin(guiClient->actionCollection());
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
     updateQuickSearchText();
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    connect(qApp, &QApplication::paletteChanged, this, &MainWidget::slotGeneralPaletteChanged);
-#endif
 }
 
 void MainWidget::slotGeneralPaletteChanged()
@@ -318,11 +315,9 @@ void MainWidget::slotGeneralPaletteChanged()
 
 bool MainWidget::event(QEvent *e)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     if (e->type() == QEvent::ApplicationPaletteChange) {
         slotGeneralPaletteChanged();
     }
-#endif
     return QWidget::event(e);
 }
 
@@ -368,8 +363,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
-    const QVector<KPluginMetaData> availablePlugins =
-        KPluginMetaData::findPlugins(QStringLiteral("pim" QT_STRINGIFY(QT_VERSION_MAJOR)) + QStringLiteral("/kcms/kaddressbook"));
+    const QVector<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg->addModule(metaData);
     }
