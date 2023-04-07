@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 include_directories(${kaddressbook_SOURCE_DIR})
-configure_file(kaddressbookplugin.json.cmake ${CMAKE_CURRENT_BINARY_DIR}/kaddressbookplugin.json )
 add_library(kontact_kaddressbookplugin MODULE)
 
 target_sources(kontact_kaddressbookplugin PRIVATE
