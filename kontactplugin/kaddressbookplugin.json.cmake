@@ -33,7 +33,6 @@
         "Description[zh_TW]": "Kontact KDE 通訊錄外掛程式",
         "EnabledByDefault": true,
         "Icon": "view-pim-contacts",
-        "Id": "kontact_kaddressbookplugin",
         "License": "GPL",
         "Name": "Contacts",
         "Name[ar]": "المتراسلون",
