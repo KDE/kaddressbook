@@ -92,7 +92,6 @@ ecm_generate_pri_file(BASE_NAME KAddressbookImportExport
 ######## CMake Config Files ##########
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6AddressbookImportExport")
-set(IMPORTEXPORT_KF6_COMPAT FALSE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAddressbookImportExportConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AddressbookImportExportConfig.cmake"
