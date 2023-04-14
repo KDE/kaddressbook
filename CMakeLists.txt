@@ -97,7 +97,7 @@ find_package(KF6Prison ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 ecm_set_disabled_deprecation_versions(QT 6.4
-     KF 5.105.0
+     KF 5.240.0
 )
 
 find_package(KUserFeedbackQt6 1.2.1 CONFIG)
