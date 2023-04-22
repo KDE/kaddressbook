@@ -63,7 +63,7 @@ set_target_properties(KPim${KF_MAJOR_VERSION}AddressbookImportExport PROPERTIES
 
 install(TARGETS
     KPim${KF_MAJOR_VERSION}AddressbookImportExport
-    EXPORT KPim${KF_MAJOR_VERSION}AddressbookImportExportTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPim${KF_MAJOR_VERSION}AddressbookImportExportTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(KaddressbookImportExport_CamelCase_HEADERS
