@@ -625,17 +625,10 @@ void MainWidget::setupActions(KActionCollection *collection)
                                                             collection,
                                                             QStringLiteral("kaddressbook/viewertemplates/"),
                                                             this);
-    mGrantleeThemeManager->setDownloadNewStuffConfigFile(QStringLiteral(":/knsrc/data/kaddressbook_themes.knsrc"));
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
 
-    auto themeMenu = new KActionMenu(i18n("&Themes"), this);
-    collection->addAction(QStringLiteral("theme_menu"), themeMenu);
-
     initGrantleeThemeName();
-    auto group = new QActionGroup(this);
-    mGrantleeThemeManager->setThemeMenu(themeMenu);
-    mGrantleeThemeManager->setActionGroup(group);
 
     QAction *action = KStandardAction::print(this, &MainWidget::print, collection);
     action->setWhatsThis(i18nc("@info:whatsthis", "Print the complete address book or a selected number of contacts."));
