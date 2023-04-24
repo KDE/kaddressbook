@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-09 00:47+0000\n"
-"PO-Revision-Date: 2023-02-03 16:53+0100\n"
+"PO-Revision-Date: 2023-04-23 06:32+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -453,6 +453,10 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"ჩართეთ ეს პარამეტრი, თუ კონტაქტების არჩევა მხოლოდ თქვენი ერთ-ერთი "
+"მისამართების წიგნიდან გნებავთ.  როცა ამ პარამეტრს ჩართავთ, გაჩვენებთ სიას, "
+"რომელიც ყველა მისამართების წიგნს შეიცავს და შეგეძლებათ, აირჩიოთ, რომელიც "
+"გსურთ."
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
@@ -474,6 +478,9 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"ჩართეთ, თუ გნებავთ, ამ საქაღალდიდან, ქვესაქაღალდეების ჩათვლით, ყველა "
+"კონტაქტი მონიშნოთ.  თუ მხოლოდ ზედა-დონის საქაღალდის კონტაქტები გნებავთ, ეს "
+"გამორთული დატოვეთ."
 
 #: src/importexport/contactselectionwidget.cpp:170
 #, kde-format
@@ -541,6 +548,8 @@ msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
+"ჩართეთ, თუ vCard-ის გამოტანილ ფაილში კონტაქტის პირადი ველების გატანაც "
+"გნებავთ."
 
 #: src/importexport/exportselectionwidget.cpp:42
 #, kde-format
@@ -555,6 +564,8 @@ msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
+"ჩართეთ, თუ vCard-ის გამოტანილ ფაილში კონტაქტების ბიზნესის ველების გატანაც "
+"გნებავთ."
 
 #: src/importexport/exportselectionwidget.cpp:48
 #, kde-format
@@ -569,6 +580,7 @@ msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
+"ჩართეთ, თუ vCard-ს გაოტანილ ფაილში კონტაქტების სხვა ველების გატანაც გნებავთ."
 
 #: src/importexport/exportselectionwidget.cpp:54
 #, kde-format
@@ -583,6 +595,8 @@ msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
+"ჩართეთ, თუ vCard-ის გამოტანილ ფაილში კონტაქტის დაშიფვრის გასაღებების გატანაც "
+"გნებავთ."
 
 #: src/importexport/exportselectionwidget.cpp:60
 #, kde-format
@@ -597,6 +611,7 @@ msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
+"ჩართეთ, თუ გამოტანილ vCard-ის ფაილში კონტაქტის სურათების გატანაც გნებავთ."
 
 #: src/importexport/exportselectionwidget.cpp:66
 #, kde-format
@@ -618,6 +633,9 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"ჩართეთ, თუ vCard-ის საჩვენებელ სახელში კონტაქტის სრული სახელის დანახვა "
+"გნებავთ.  ეს შეიძლება GMail-ში და Android-ში სახელის სწორად საჩვენებლად "
+"დაგჭირდეთ."
 
 #: src/importexport/importexportengine.cpp:58
 #, kde-format
@@ -661,7 +679,7 @@ msgstr "მითითებული კონტაქტის ჩვენ�
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgid "Files or URLs. The user will be asked whether to import."
-msgstr ""
+msgstr "ფაილები ან ბმულები. შემოტანისას მომხმარებელს ვკითხავთ."
 
 #: src/kaddressbook_options.h:24
 #, kde-format
@@ -1148,6 +1166,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline background color."
 msgstr ""
+"ამ ღილაკზე დაწკაპუნებით გაიხსნება ფერების ამრჩევი, რომელიც სათაურის ფონის "
+"ფერის დაყენების საშუალებას გაძლევთ."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
 #: src/printing/detailled/ds_appearance.ui:139
@@ -1174,6 +1194,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline text."
 msgstr ""
+"ამ ღილაკზე დაწკაპუნებით გაიხსნება ფერების ამრჩევი, რომელიც სათაურის ტექსტის "
+"ფერის დაყენების საშუალებას გაძლევთ."
 
 #: src/printing/mike/mikesstyle.cpp:142
 #, kde-format
@@ -1315,7 +1337,7 @@ msgstr "შენიშვნა: "
 #: src/printing/ringbinder/ringbinderstyle.cpp:129
 #, kde-format
 msgid "Ring Binder Printing Style - Appearance"
-msgstr ""
+msgstr "რგოლის ბაინდერის ბეჭდვის სტილი - გარეგნობა"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:145
 #, kde-format
@@ -1325,7 +1347,7 @@ msgstr "ველების მორგება"
 #: src/printing/ringbinder/ringbinderstyle.cpp:213
 #, kde-format
 msgid "Printout for Ring Binders"
-msgstr ""
+msgstr "გამობეჭდვა რგოლის ბაინდერებისთვის"
 
 #: src/printing/stylepage.cpp:36
 #, kde-format
@@ -1390,6 +1412,9 @@ msgid ""
 "the print output.  Use the sorting order option to determine if the sort "
 "will be in ascending or descending order."
 msgstr ""
+"ამ სიიდან შეგიძლიათ აირჩიოთ ველი, რომლის მიხედვითაც კონტაქტებს ბეჭდვისას "
+"დავალაგებთ.  აირჩიეთ დალაგების მიმდევრობა, რომ განსაზღვროთ, ის აღმავალი "
+"იქნება, თუ დაღმავალი."
 
 #: src/printing/stylepage.cpp:137
 #, kde-format
@@ -1411,6 +1436,9 @@ msgid ""
 "Use the sorting criterion option to specify on which contact field the "
 "sorting will be performed."
 msgstr ""
+"აირჩიეთ, თქვენი კონტაქტები აღმავალი მიმდევრობით გნებავთ, დავალაგოთ, თუ "
+"დაღმავალი. იმისთვის, რომ განსაზღვროთ, დალაგება რომელი ველის მიხედვით "
+"მოხდება, დალაგების კრიტერიუმის პარამეტრი გამოიყენეთ."
 
 #: src/printing/stylepage.cpp:150
 #, kde-format
@@ -1430,6 +1458,8 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr ""
+"აირჩიეთ ბეჭდვის თქვენთვის სასურველი სტილი. მინიატურის გამოსახულება არჩევანში "
+"დაგეხმარებათ."
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
@@ -1445,3 +1475,5 @@ msgid ""
 "that string will be displayed.  This is a quick way of searching for "
 "contacts of interest."
 msgstr ""
+"დაიწყეთ ამ ზოლში საძებნი სტრიქონის აკრეფა და კონტაქტები, რომლებიც თქვენს "
+"სტრიქონს ემთხვევა, გამოჩნდება.  ეს კონტაქტების ძებნის სწრაფი გზაა."
