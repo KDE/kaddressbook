@@ -372,12 +372,7 @@ bool ContactInfoProxyModel::ContactCacheData::setData(const Akonadi::Item &item)
 
 bool ContactInfoProxyModel::ContactCacheData::validateItem(const Akonadi::Item &item) const
 {
-    bool result(true);
-    result |= item.isValid();
-    result |= mUid == QString::number(item.id());
-    result |= mGid == item.gid();
-    result |= item.hasPayload<KContacts::Addressee>();
-    return result;
+    return item.isValid() && mUid == QString::number(item.id()) && mGid == item.gid() && item.hasPayload<KContacts::Addressee>();
 }
 
 bool operator==(const ContactInfoProxyModel::ContactCacheData &lhs, const ContactInfoProxyModel::ContactCacheData &rhs)
