@@ -86,10 +86,7 @@
       {% for address in contact.addresses %}
       <tr>
          <td align="right" valign="top" width="30%"><b><font color="grey">{{ address.typeLabel }}</font></b></td>
-         <!-- TODO once we depend on KContacts 5.106 replace the following line with:
          <td align="left" valign="top"><a href="{{ address.geoUri }}">
-         -->
-         <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
          {% with address.formattedAddress as fa %}
            {% for line in fa.splitlines %}
              {{ line }}
@@ -97,10 +94,7 @@
            {% endfor %}
          {% endwith %}
          </a></td>
-         <!-- TODO once we depend on KContacts 5.106 replace the following line with:
          <td align="left" valign="top"><a href="{{ address.geoUri }}">
-         -->
-         <td align="left" valign="top"><a href="address:?index={{ forloop.counter0 }}">
             <img src="map_icon" align="top"/>
          </a></td>
       </tr>
