@@ -8,7 +8,6 @@
 
 #include <KCModule>
 
-#include "kcmutils_version.h"
 #include <QVariant>
 namespace KUserFeedback
 {
