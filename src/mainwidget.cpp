@@ -53,7 +53,6 @@
 #include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
 #include <QPointer>
 
-#include <Akonadi/ContactDefaultActions>
 #include <Akonadi/ContactGroupEditorDialog>
 #include <Akonadi/ContactGroupViewer>
 #include <Akonadi/ContactViewer>
@@ -82,6 +81,7 @@
 #include <KWindowStateSaver>
 #include <QActionGroup>
 #include <QDBusConnection>
+#include <QDesktopServices>
 #include <QHBoxLayout>
 #include <QHeaderView>
 #include <QPrintDialog>
@@ -565,10 +565,16 @@ void MainWidget::setupGui()
 
     // the details widget for contacts
     mContactDetails = new ContactEditor::ContactViewer(mDetailsViewStack);
+    connect(mContactDetails, &ContactEditor::ContactViewer::urlClicked, this, [](const QUrl &url) {
+        QDesktopServices::openUrl(url);
+    });
     mDetailsViewStack->addWidget(mContactDetails);
 
     // the details widget for contact groups
     mContactGroupDetails = new ContactEditor::ContactGroupViewer(mDetailsViewStack);
+    connect(mContactGroupDetails, &ContactEditor::ContactGroupViewer::urlClicked, this, [](const QUrl &url) {
+        QDesktopServices::openUrl(url);
+    });
     mDetailsViewStack->addWidget(mContactGroupDetails);
 
     // the details widget for empty items
@@ -587,10 +593,6 @@ void MainWidget::setupGui()
     // the category filter widget which is embedded in the toolbar action
     mCategorySelectWidget = new CategorySelectWidget;
 
-    // setup the default actions
-    auto actions = new Akonadi::ContactDefaultActions(this);
-    actions->connectToView(mContactDetails);
-    actions->connectToView(mContactGroupDetails);
     mFormatter = new KAddressBookGrantlee::GrantleeContactFormatter;
     mFormatter->setApplicationDomain("kaddressbook");
 
