@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:48+0000\n"
+"POT-Creation-Date: 2023-05-02 00:49+0000\n"
 "PO-Revision-Date: 2022-06-26 16:26+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: KDE\n"
@@ -43,7 +43,7 @@ msgstr ""
 "mattila@mbnet.fi, ilpo@iki.fi,mikko.piippo@helsinki.fi"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#: src/mainwidget.cpp:711 src/mainwidget.cpp:738
 #, kde-format
 msgid "Address Book"
 msgstr "Osoitekirja"
@@ -760,81 +760,76 @@ msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Etsi… <%1>"
 
-#: src/mainwidget.cpp:632
-#, kde-format
-msgid "&Themes"
-msgstr "&Teemat"
-
-#: src/mainwidget.cpp:641
+#: src/mainwidget.cpp:634
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Tulosta koko osoitekirja tai valitut yhteystiedot."
 
-#: src/mainwidget.cpp:646
+#: src/mainwidget.cpp:639
 #, kde-format
 msgid "Quick search"
 msgstr "Pikahaku"
 
-#: src/mainwidget.cpp:651
+#: src/mainwidget.cpp:644
 #, kde-format
 msgid "Category filter"
 msgstr "Luokkasuodatin"
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:649
 #, kde-format
 msgid "Select All"
 msgstr "Valitse kaikki"
 
-#: src/mainwidget.cpp:658
+#: src/mainwidget.cpp:651
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Valitsee kaikki nykyisen näkymän yhteystiedot."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:655
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Näytä QR-koodit"
 
-#: src/mainwidget.cpp:663
+#: src/mainwidget.cpp:656
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Näytä yhteystietojen QR-koodit."
 
-#: src/mainwidget.cpp:668
+#: src/mainwidget.cpp:661
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Pelkistetty (yksi sarake)"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Näyttää yksinkertaisen muunnelman osoitekirjanäkymästä."
 
-#: src/mainwidget.cpp:675
+#: src/mainwidget.cpp:668
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Kaksi saraketta"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:674
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Kolme saraketta"
 
-#: src/mainwidget.cpp:694
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr "Kohdista pikahakuun"
 
-#: src/mainwidget.cpp:707
+#: src/mainwidget.cpp:700
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr "Palvelinpuolen tilaus…"
 
-#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:744 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -1478,6 +1473,9 @@ msgid ""
 msgstr ""
 "Ala kirjoittaa hakujonoa tähän ruutuun, jolloin hakuun sopivat yhteystiedot "
 "näytetään. Tämä on nopea tapa etsiä yhteystietoja."
+
+#~ msgid "&Themes"
+#~ msgstr "&Teemat"
 
 #~ msgid "Configure Plugins"
 #~ msgstr "Liitännäisten asetukset"

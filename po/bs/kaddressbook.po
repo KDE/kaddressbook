@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-31 00:48+0000\n"
+"POT-Creation-Date: 2023-05-02 00:49+0000\n"
 "PO-Revision-Date: 2014-01-31 19:16+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 "vljubovic@smartnet.ba"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
+#: src/mainwidget.cpp:711 src/mainwidget.cpp:738
 #, kde-format
 msgid "Address Book"
 msgstr "Adresar"
@@ -783,81 +783,76 @@ msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Traži"
 
-#: src/mainwidget.cpp:632
-#, kde-format
-msgid "&Themes"
-msgstr "&Teme"
-
-#: src/mainwidget.cpp:641
+#: src/mainwidget.cpp:634
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Štampajte cjelokupan adresar ili odabrani broj kontakta."
 
-#: src/mainwidget.cpp:646
+#: src/mainwidget.cpp:639
 #, kde-format
 msgid "Quick search"
 msgstr "Brza pretraga"
 
-#: src/mainwidget.cpp:651
+#: src/mainwidget.cpp:644
 #, kde-format
 msgid "Category filter"
 msgstr ""
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:649
 #, kde-format
 msgid "Select All"
 msgstr "Izaberi sve"
 
-#: src/mainwidget.cpp:658
+#: src/mainwidget.cpp:651
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Označi sve kontakte u trenutnom prikazu adresara."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:655
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Prikaži QR kodove"
 
-#: src/mainwidget.cpp:663
+#: src/mainwidget.cpp:656
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Prikaži QR kodove u kontaktu."
 
-#: src/mainwidget.cpp:668
+#: src/mainwidget.cpp:661
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jedna kolona"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Prikazuje jednostavan režim prikaza adresara."
 
-#: src/mainwidget.cpp:675
+#: src/mainwidget.cpp:668
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dvije kolone"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:674
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tri kolone"
 
-#: src/mainwidget.cpp:694
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:707
+#: src/mainwidget.cpp:700
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr ""
 
-#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:744 src/printing/printingwizard.cpp:44
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
@@ -1511,6 +1506,9 @@ msgstr ""
 "Počnite upisivati traženi niz znakova u ovom unosnom polju i popis kontakata "
 "koji odogovaraju tom stringu će biti prikazan. Ovo je brz način potrage za "
 "kontaktima koji vas interesuju."
+
+#~ msgid "&Themes"
+#~ msgstr "&Teme"
 
 #, fuzzy
 #~| msgid "Laurent Montel"
