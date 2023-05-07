@@ -65,6 +65,7 @@
 #include <KActionMenu>
 #include <KCMultiDialog>
 #include <KCheckableProxyModel>
+#include <KColorSchemeMenu>
 #include <KContacts/ContactGroup>
 #include <KDescendantsProxyModel>
 #include <KLocalizedString>
@@ -698,7 +699,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
 
     auto manager = new KColorSchemeManager(this);
-    collection->addAction(QStringLiteral("colorscheme_menu"), manager->createSchemeSelectionMenu(this));
+    collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
 }
 
 void MainWidget::printPreview()
