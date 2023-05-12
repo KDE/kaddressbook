@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'macOS/Qt6']
+- 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'pim/akonadi' : '@latest-kf6'
@@ -12,7 +12,7 @@ Dependencies:
     'pim/libkdepim' : '@latest-kf6'
     'pim/pimcommon' : '@latest-kf6'
 
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'macOS/Qt6']
+- 'on': ['Linux', 'FreeBSD', 'macOS']
   'require':
     'pim/akonadi-search' : '@latest-kf6'
 
