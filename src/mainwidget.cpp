@@ -621,6 +621,7 @@ void MainWidget::setupActions(KActionCollection *collection)
                                                             QStringLiteral("theme.desktop"),
                                                             collection,
                                                             QStringLiteral("kaddressbook/viewertemplates/"),
+                                                            QString(),
                                                             this);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
