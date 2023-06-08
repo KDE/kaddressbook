@@ -1,18 +1,18 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Xosé <xosecalvo@gmail.com>, 2009, 2010.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009.
 # Xosé <xosecalvo@gmail.com>, 2009, 2012, 2013, 2014.
 # Marce Villarino <mvillarino@kde-espana.es>, 2012, 2013, 2014.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015, 2016, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-09 00:47+0000\n"
-"PO-Revision-Date: 2019-09-29 09:18+0200\n"
+"PO-Revision-Date: 2023-06-07 10:42+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -138,10 +138,9 @@ msgid "The KDE Address Book Application"
 msgstr "A aplicación de caderno de enderezos de KDE"
 
 #: src/aboutdata.cpp:21
-#, fuzzy, kde-format
-#| msgid "Copyright © 2007–2019 KAddressBook authors"
+#, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr "© 2007–2019 Autores de KAddressBook"
+msgstr "© 2007–%1 Autores de KAddressBook"
 
 #: src/aboutdata.cpp:23 src/configuration/kaddressbook_config_plugins.cpp:34
 #: src/configuration/kaddressbook_config_userfeedback.cpp:39
@@ -152,38 +151,37 @@ msgstr "Laurent Montel"
 #: src/aboutdata.cpp:23
 #, kde-format
 msgid "Current maintainer"
-msgstr "Mantedor actual"
+msgstr "Mantemento actual."
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgid "Tobias König"
-msgstr "Tobias Koenig"
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:24
 #, kde-format
 msgid "Previous maintainer"
-msgstr "Anterior mantedor"
+msgstr "Mantemento anterior."
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Original Author (1998)"
-msgstr ""
+msgstr "Autoría orixinal (1998)."
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Documentación (2019)."
 
 #: src/categoryselectwidget.cpp:94
 #, kde-format
@@ -233,21 +231,19 @@ msgid "Configure Plugins"
 msgstr "Configurar os complementos"
 
 #: src/configuration/kaddressbook_config_plugins.cpp:32
-#, fuzzy, kde-format
-#| msgid "(c), 2016-2019 Laurent Montel"
+#, kde-format
 msgid "(c), 2016-2021 Laurent Montel"
-msgstr "© 2016-2019 Laurent Montel"
+msgstr "© 2016-2021 Laurent Montel"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:33
 #, kde-format
 msgid "Configure User FeedBack"
-msgstr ""
+msgstr "Configurar os comentarios"
 
 #: src/configuration/kaddressbook_config_userfeedback.cpp:37
-#, fuzzy, kde-format
-#| msgid "(c), 2016-2019 Laurent Montel"
+#, kde-format
 msgid "(c), 2020-2021 Laurent Montel"
-msgstr "© 2016-2019 Laurent Montel"
+msgstr "© 2020-2021 Laurent Montel"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -262,33 +258,32 @@ msgstr "Complementos de importación e exportación"
 #: src/contactinfoproxymodel.cpp:67
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "Cargando os detalles do contacto…"
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgid "Email: %1"
-msgstr "Correo electrónico"
+msgstr "Correo electrónico: %1"
 
 #: src/contactinfoproxymodel.cpp:130
 #, kde-format
 msgid "Phone: %1"
-msgstr ""
+msgstr "Teléfono: %1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
 #, kde-format
@@ -394,11 +389,10 @@ msgid "Spouse"
 msgstr "Cónxuxe"
 
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
-#| msgid "Select Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "Seleccione contactos"
+msgstr "Seleccionar contactos"
 
 #: src/importexport/contactselectionwidget.cpp:115
 #, kde-format
@@ -480,7 +474,7 @@ msgstr "Incluír os subcartafoles"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr "Escoller todos os sub-cartafoles, incluíndo o de máximo nivel"
+msgstr "Escoller todos os subcartafoles, incluíndo o de máximo nivel"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -495,8 +489,7 @@ msgstr ""
 "nivel superior, deixe esta caixa sen marcar."
 
 #: src/importexport/contactselectionwidget.cpp:170
-#, fuzzy, kde-format
-#| msgid "Collect Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
 msgstr "Recoller contactos"
@@ -507,234 +500,174 @@ msgid "Fetch Contacts"
 msgstr "Obter contactos"
 
 #: src/importexport/exportselectionwidget.cpp:21
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Private fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Campos privados"
 
 #: src/importexport/exportselectionwidget.cpp:22
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Business fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Campos de negocios"
 
 #: src/importexport/exportselectionwidget.cpp:23
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Outros campos"
 
 #: src/importexport/exportselectionwidget.cpp:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Chaves de cifrado"
 
 #: src/importexport/exportselectionwidget.cpp:25
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Pictures"
+#, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Imaxes"
 
 #: src/importexport/exportselectionwidget.cpp:26
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Display name as full name"
+#, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr "Alcume como nome completo"
+msgstr "Nome para mostrar como nome completo"
 
 #: src/importexport/exportselectionwidget.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Fields to be exported"
+#, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Campos para exportar"
 
 #: src/importexport/exportselectionwidget.cpp:36
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export private fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Exportar campos privados"
 
 #: src/importexport/exportselectionwidget.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's private fields to the "
-#| "vCard output file."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
-"Escolla esta opción se desexa exportar os campos privados do contacto no "
+"Marque esta opción se quere exportar os campos privados do contacto no "
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export business fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Exportar os campos de negocios"
 
 #: src/importexport/exportselectionwidget.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's business fields to the "
-#| "vCard output file."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
-"Escolla esta opción se desexa exportar os campos de negocios do contacto no "
+"Marque esta opción se quere exportar os campos de negocios do contacto no "
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:48
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export other fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Exportar os outros campos"
 
 #: src/importexport/exportselectionwidget.cpp:50
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's other fields to the "
-#| "vCard output file."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
-"Escolla esta opción se desexa exportar os outros campos do contacto no "
+"Marque esta opción se quere exportar os outros campos do contacto no "
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:54
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export encryption keys"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Exportar as chaves de cifrado"
 
 #: src/importexport/exportselectionwidget.cpp:56
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's encryption keys to the "
-#| "vCard output file."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
-"Escolla esta opción se desexa exportar as claves de cifrado do contacto no "
+"Marque esta opción se quere exportar as claves de cifrado do contacto no "
 "ficheiro de saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:60
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export pictures"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Exportar as imaxes"
 
 #: src/importexport/exportselectionwidget.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's picture to the vCard "
-#| "output file."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
-"Escolla esta opción se desexa exportar a imaxe do contacto no ficheiro de "
+"Marque esta opción se quere exportar a imaxe do contacto no ficheiro de "
 "saída a vCard."
 
 #: src/importexport/exportselectionwidget.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Export options"
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Opcións da exportación"
 
 #: src/importexport/exportselectionwidget.cpp:72
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Export display name as full name"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr "Exportar o alcume como nome completo"
+msgstr "Exportar o nome para mostrar como nome completo"
 
 #: src/importexport/exportselectionwidget.cpp:74
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Check this box if you want to export the contact's display name in the "
-#| "vCard's full name field.  This may be required to get the name shown "
-#| "correctly in GMail or Android."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
-"Escolla esta opción se desexa exportar o alcume do contacto no campo de nome "
-"completo da vCard. Pode que isto sexa necesario para que o nome apareza "
-"correctamente en GMail ou Android."
+"Marque esta opción se quere exportar o nome para mostrar do contacto no "
+"campo de nome completo da vCard. Pode que isto sexa necesario para que o "
+"nome apareza correctamente en GMail ou Android."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Select Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "Escolla o caderno de enderezos"
+msgstr "Escoller unha axenda de enderezos"
 
 #: src/importexport/importexportengine.cpp:59
-#, fuzzy, kde-format
-#| msgid "Select the address book the imported contact(s) shall be saved in:"
+#, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr ""
-"Seleccione o caderno de enderezos no que quere gardar o(s) contacto(s) "
-"importado(s):"
+msgstr "Escolla a axenda de enderezos na que gardar os contactos importados:"
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Import Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Importar contactos"
+msgstr "Importar os contactos"
 
 #: src/importexport/importexportengine.cpp:75
-#, fuzzy, kde-format
-#| msgid "Importing one contact to %2"
-#| msgid_plural "Importing %1 contacts to %2"
+#, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] "Estase a importar un contacto a %2"
-msgstr[1] "Estanse a importar %1 contactos a %2"
+msgstr[0] "Importando un contacto en %2."
+msgstr[1] "Importando %1 contactos en %2."
 
 #: src/kaddressbook_options.h:15
 #, kde-format
@@ -749,7 +682,7 @@ msgstr "Abrir o diálogo de «Novo contracto»."
 #: src/kaddressbook_options.h:19
 #, kde-format
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "Amosar o contacto indicado (mediante un URL)"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
@@ -760,7 +693,7 @@ msgstr ""
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "Lista todas as opcións dispoñíbeis de comentarios."
 
 #: src/kaddressbookpart.cpp:56
 #, kde-format
@@ -914,11 +847,10 @@ msgid "Serverside Subscription..."
 msgstr "Subscrición da parte do servidor…"
 
 #: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
-msgstr "Imprimir os contactos"
+msgstr "Imprimir contactos"
 
 #: src/mainwindow.cpp:74
 #, kde-format
@@ -1085,15 +1017,13 @@ msgstr "Imprimir o aniversario"
 msgid "with birthday"
 msgstr "co aniversario"
 
-# skip-rule: anglicismo-email
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:82
 #: src/printing/compact/compactstyle.ui:85
-#, fuzzy, kde-format
-#| msgid "Print the e-mail and e-mail2 fields"
+#, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr "Imprimir os campos e-mail e e-mail2"
+msgstr "Imprimir os campos de correo electrónico principal e secundario."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
@@ -1307,11 +1237,10 @@ msgid "Print Progress"
 msgstr "Progreso da impresión"
 
 #: src/printing/printprogress.cpp:24
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr "Impresión: Progreso"
+msgstr "Progreso da impresión"
 
 #: src/printing/printprogress.cpp:42
 #, kde-format
