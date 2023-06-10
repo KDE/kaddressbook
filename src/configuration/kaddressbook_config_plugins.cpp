@@ -17,8 +17,8 @@ using namespace KAddressBook;
 
 K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookPluginsConfig, "kaddressbook_config_plugins.json")
 
-KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KCModule(parent, data, args)
+KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QObject *parent, const KPluginMetaData &data)
+    : KCModule(parent, data)
     , mConfigurePluginWidget(new PimCommon::ConfigurePluginsWidget(new KAddressBookConfigPluginListWidget(widget()), widget()))
 {
     auto lay = new QHBoxLayout(widget());

@@ -18,8 +18,8 @@ using namespace KAddressBook;
 
 K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookUserFeedBackConfig, "kaddressbook_config_userfeedback.json")
 
-KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KCModule(parent, data, args)
+KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QObject *parent, const KPluginMetaData &data)
+    : KCModule(parent, data)
     , mUserFeedbackWidget(new KUserFeedback::FeedbackConfigWidget(widget()))
 {
     auto lay = new QHBoxLayout(widget());
