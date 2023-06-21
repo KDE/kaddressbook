@@ -82,3 +82,5 @@ void QuickSearchWidget::updateQuickSearchText(const QString &text)
 {
     mEdit->setPlaceholderText(text);
 }
+
+#include "moc_quicksearchwidget.cpp"

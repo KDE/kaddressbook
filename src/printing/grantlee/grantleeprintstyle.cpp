@@ -70,3 +70,5 @@ QString GrantleeStyleFactory::description() const
 {
     return mName;
 }
+
+#include "moc_grantleeprintstyle.cpp"

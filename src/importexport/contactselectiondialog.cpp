@@ -72,3 +72,5 @@ void ContactSelectionDialog::setAddGroupContact(bool addGroupContact)
 {
     mSelectionWidget->setAddGroupContact(addGroupContact);
 }
+
+#include "moc_contactselectiondialog.cpp"

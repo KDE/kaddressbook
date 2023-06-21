@@ -379,3 +379,5 @@ bool operator==(const ContactInfoProxyModel::ContactCacheData &lhs, const Contac
 {
     return !lhs.gid().isEmpty() ? lhs.gid() == rhs.gid() : !lhs.uid().isEmpty() ? lhs.uid() == rhs.uid() : false;
 }
+
+#include "moc_contactinfoproxymodel.cpp"

@@ -85,3 +85,5 @@ void ManageShowCollectionProperties::slotCollectionPropertiesFinished(KJob *job)
     dlg->show();
     mHashDialogBox.insert(collection.id(), dlg);
 }
+
+#include "moc_manageshowcollectionproperties.cpp"

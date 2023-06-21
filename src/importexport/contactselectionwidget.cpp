@@ -312,3 +312,5 @@ ContactList ContactSelectionWidget::collectAddressBookContacts() const
 
     return contacts;
 }
+
+#include "moc_contactselectionwidget.cpp"

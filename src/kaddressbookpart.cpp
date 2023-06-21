@@ -70,3 +70,5 @@ void KAddressBookPart::guiActivateEvent(KParts::GUIActivateEvent *e)
 }
 
 #include "kaddressbookpart.moc"
+
+#include "moc_kaddressbookpart.cpp"

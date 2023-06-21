@@ -199,3 +199,5 @@ QString CompactStyleFactory::description() const
 {
     return i18n("Compact Printing Style");
 }
+
+#include "moc_compactstyle.cpp"

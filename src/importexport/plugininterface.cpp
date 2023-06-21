@@ -85,3 +85,5 @@ void PluginInterface::importData(const QByteArray &data)
 {
     Q_UNUSED(data)
 }
+
+#include "moc_plugininterface.cpp"

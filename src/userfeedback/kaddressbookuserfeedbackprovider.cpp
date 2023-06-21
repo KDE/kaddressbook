@@ -34,3 +34,5 @@ KAddressBookUserFeedbackProvider::KAddressBookUserFeedbackProvider(QObject *pare
 }
 
 KAddressBookUserFeedbackProvider::~KAddressBookUserFeedbackProvider() = default;
+
+#include "moc_kaddressbookuserfeedbackprovider.cpp"

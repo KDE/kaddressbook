@@ -116,3 +116,5 @@ void ImportExportEngine::slotImportJobDone(KJob *)
         deleteLater();
     }
 }
+
+#include "moc_importexportengine.cpp"

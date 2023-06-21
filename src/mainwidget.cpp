@@ -1063,3 +1063,5 @@ void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
     bool isOnline;
     mServerSideSubscription->setEnabled(PimCommon::MailUtil::isImapFolder(col, isOnline));
 }
+
+#include "moc_mainwidget.cpp"

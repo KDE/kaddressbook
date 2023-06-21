@@ -59,3 +59,5 @@ void PrintProgress::setProgress(int step)
     mProgressBar->setValue(step);
     qApp->processEvents();
 }
+
+#include "moc_printprogress.cpp"

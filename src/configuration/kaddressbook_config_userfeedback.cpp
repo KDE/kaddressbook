@@ -48,3 +48,5 @@ void KCMKaddressbookUserFeedBackConfig::defaults()
 }
 
 #include "kaddressbook_config_userfeedback.moc"
+
+#include "moc_kaddressbook_config_userfeedback.cpp"

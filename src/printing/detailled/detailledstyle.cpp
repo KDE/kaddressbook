@@ -287,3 +287,5 @@ QString DetailledPrintStyleFactory::description() const
 {
     return i18n("Detailed Style");
 }
+
+#include "moc_detailledstyle.cpp"

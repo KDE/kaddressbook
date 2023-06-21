@@ -147,3 +147,5 @@ int KAddressBookUniqueAppHandler::activate(const QStringList &arguments, const Q
 }
 
 #include "kaddressbook_plugin.moc"
+
+#include "moc_kaddressbook_plugin.cpp"

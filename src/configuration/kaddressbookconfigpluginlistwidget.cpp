@@ -93,3 +93,5 @@ void KAddressBookConfigPluginListWidget::slotConfigureClicked(const QString &con
         }
     }
 }
+
+#include "moc_kaddressbookconfigpluginlistwidget.cpp"

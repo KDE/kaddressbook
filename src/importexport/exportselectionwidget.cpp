@@ -133,3 +133,5 @@ ExportSelectionWidget::ExportFields ExportSelectionWidget::exportType() const
     }
     return type;
 }
+
+#include "moc_exportselectionwidget.cpp"

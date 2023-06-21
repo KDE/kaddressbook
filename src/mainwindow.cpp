@@ -178,3 +178,5 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
         Settings::self()->setShowMenuBar(mShowMenuBarAction->isChecked());
     }
 }
+
+#include "moc_mainwindow.cpp"

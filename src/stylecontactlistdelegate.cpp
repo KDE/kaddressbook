@@ -113,3 +113,5 @@ QSize StyleContactListDelegate::sizeHint(const QStyleOptionViewItem &option, con
 
     return size;
 }
+
+#include "moc_stylecontactlistdelegate.cpp"

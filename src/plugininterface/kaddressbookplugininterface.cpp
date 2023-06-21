@@ -58,3 +58,5 @@ void KAddressBookPluginInterface::setMainWidget(MainWidget *mainWidget)
 {
     mMainWidget = mainWidget;
 }
+
+#include "moc_kaddressbookplugininterface.cpp"

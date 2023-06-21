@@ -191,3 +191,5 @@ Plugin *PluginManager::pluginFromIdentifier(const QString &id)
 {
     return d->pluginFromIdentifier(id);
 }
+
+#include "moc_pluginmanager.cpp"

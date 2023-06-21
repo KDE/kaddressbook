@@ -114,3 +114,5 @@ PrintStyleFactory::PrintStyleFactory(PrintingWizard *parent)
 }
 
 PrintStyleFactory::~PrintStyleFactory() = default;
+
+#include "moc_printstyle.cpp"

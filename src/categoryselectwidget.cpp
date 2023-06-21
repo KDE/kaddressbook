@@ -278,3 +278,5 @@ QList<Akonadi::Tag> CategorySelectWidget::filterTags() const
 }
 
 #include "categoryselectwidget.moc"
+
+#include "moc_categoryselectwidget.cpp"

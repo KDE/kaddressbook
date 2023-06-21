@@ -144,3 +144,5 @@ void CategoryFilterProxyModel::setFilterEnabled(bool enable)
 }
 
 #include "categoryfilterproxymodel.moc"
+
+#include "moc_categoryfilterproxymodel.cpp"

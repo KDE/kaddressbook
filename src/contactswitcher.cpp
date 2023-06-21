@@ -108,3 +108,5 @@ void ContactSwitcher::updateStatus()
         mStatusLabel->clear();
     }
 }
+
+#include "moc_contactswitcher.cpp"

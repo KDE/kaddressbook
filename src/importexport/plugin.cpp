@@ -14,3 +14,5 @@ Plugin::Plugin(QObject *parent)
 }
 
 Plugin::~Plugin() = default;
+
+#include "moc_plugin.cpp"

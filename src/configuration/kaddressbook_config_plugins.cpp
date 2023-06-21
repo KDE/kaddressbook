@@ -48,3 +48,5 @@ void KCMKaddressbookPluginsConfig::defaults()
 }
 
 #include "kaddressbook_config_plugins.moc"
+
+#include "moc_kaddressbook_config_plugins.cpp"
