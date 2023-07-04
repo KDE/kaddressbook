@@ -107,8 +107,7 @@ target_link_libraries(kaddressbookprivate
     KPim6::Libkdepim
     KPim6::AkonadiCore
     KF6::Contacts
-    KPim6::AkonadiContact
-    KPim6::ContactEditor
+    KPim6::AkonadiContactWidgets
     KF6::KCMUtils
     KPim6::GrantleeTheme
     KF6::Completion

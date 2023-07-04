@@ -18,10 +18,11 @@ namespace GrantleeTheme
 class ThemeManager;
 }
 class QAction;
-namespace ContactEditor
+namespace Akonadi
 {
 class ContactViewer;
 class ContactGroupViewer;
+class StandardContactActionManager;
 }
 namespace Akonadi
 {
@@ -31,10 +32,6 @@ class EntityMimeTypeFilterModel;
 class EntityTreeView;
 class Item;
 class EntityTreeModel;
-}
-namespace ContactEditor
-{
-class StandardContactActionManager;
 }
 namespace PimCommon
 {
@@ -152,10 +149,10 @@ private:
 
     QSplitter *mMainWidgetSplitter1 = nullptr;
     QSplitter *mMainWidgetSplitter2 = nullptr;
-    ContactEditor::ContactViewer *mContactDetails = nullptr;
-    ContactEditor::ContactGroupViewer *mContactGroupDetails = nullptr;
+    Akonadi::ContactViewer *mContactDetails = nullptr;
+    Akonadi::ContactGroupViewer *mContactGroupDetails = nullptr;
     QWidget *mEmptyDetails = nullptr;
-    ContactEditor::StandardContactActionManager *mActionManager = nullptr;
+    Akonadi::StandardContactActionManager *mActionManager = nullptr;
     QItemSelectionModel *mCollectionSelectionModel = nullptr;
 
     QActionGroup *mViewModeGroup = nullptr;
