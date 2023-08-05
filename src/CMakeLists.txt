@@ -119,7 +119,6 @@ target_link_libraries(kaddressbookprivate
     KF${KF_MAJOR_VERSION}::KIOWidgets
     Qt::PrintSupport
     KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::Prison
     )
 if (TARGET KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgets${KUSERFEEDBACK_SUFFIX})
