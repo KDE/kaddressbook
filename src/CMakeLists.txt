@@ -116,7 +116,6 @@ target_link_libraries(kaddressbookprivate
     KF6::KIOWidgets
     Qt::PrintSupport
     KF6::I18n
-    KF6::Prison
     )
 if (TARGET KUserFeedbackWidgetsQt6)
     target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgetsQt6)
