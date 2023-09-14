@@ -5,17 +5,17 @@ Dependencies:
 - 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
-    'pim/akonadi' : '@latest-kf6'
-    'pim/akonadi-contacts' : '@latest-kf6'
-    'pim/grantleetheme' : '@latest-kf6'
-    'pim/kontactinterface' : '@latest-kf6'
-    'pim/libkdepim' : '@latest-kf6'
-    'pim/pimcommon' : '@latest-kf6'
+    'pim/akonadi' : '@same'
+    'pim/akonadi-contacts' : '@same'
+    'pim/grantleetheme' : '@same'
+    'pim/kontactinterface' : '@same'
+    'pim/libkdepim' : '@same'
+    'pim/pimcommon' : '@same'
     'libraries/kuserfeedback': '@latest-kf6'
 
 - 'on': ['Linux', 'FreeBSD', 'macOS']
   'require':
-    'pim/akonadi-search' : '@latest-kf6'
+    'pim/akonadi-search' : '@same'
 
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
