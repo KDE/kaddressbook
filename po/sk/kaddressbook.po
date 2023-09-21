@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-07 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2019-08-04 12:03+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -28,7 +28,7 @@ msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:713 src/mainwidget.cpp:740
+#: src/mainwidget.cpp:709 src/mainwidget.cpp:736
 #, kde-format
 msgid "Address Book"
 msgstr "Adresár"
@@ -96,7 +96,7 @@ msgid "Blog Feed"
 msgstr "Kanál blogu"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
-#: src/kaddressbookpart.cpp:33
+#: src/kaddressbookpart.cpp:26
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -677,7 +677,7 @@ msgstr "Súbory alebo URL. Používateľ bude opýtaný, či importovať."
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/kaddressbookpart.cpp:60
+#: src/kaddressbookpart.cpp:49
 #, kde-format
 msgid "&Configure KAddressBook..."
 msgstr "&Nastaviť KAddressBook..."
@@ -736,99 +736,99 @@ msgstr "&Exportovať"
 msgid "Main Toolbar"
 msgstr "Hlavný panel nástrojov"
 
-#: src/mainwidget.cpp:353
+#: src/mainwidget.cpp:349
 #, kde-format
 msgid "Import"
 msgstr "Importovať"
 
-#: src/mainwidget.cpp:360
+#: src/mainwidget.cpp:356
 #, kde-format
 msgid "Export"
 msgstr "Exportovať"
 
-#: src/mainwidget.cpp:407
+#: src/mainwidget.cpp:402
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Hľadať... <%1>"
 
-#: src/mainwidget.cpp:636
+#: src/mainwidget.cpp:632
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Vytlačiť kompletný adresár alebo zvolený počet kontaktov."
 
-#: src/mainwidget.cpp:641
+#: src/mainwidget.cpp:637
 #, kde-format
 msgid "Quick search"
 msgstr "Rýchle hľadanie"
 
-#: src/mainwidget.cpp:646
+#: src/mainwidget.cpp:642
 #, kde-format
 msgid "Category filter"
 msgstr "Filter kategórií"
 
-#: src/mainwidget.cpp:651
+#: src/mainwidget.cpp:647
 #, kde-format
 msgid "Select All"
 msgstr "Vybrať všetko"
 
-#: src/mainwidget.cpp:653
+#: src/mainwidget.cpp:649
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Vybrať všetky kontakty v aktuálnom zobrazení adresára."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:653
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Ukázať QR kódy"
 
-#: src/mainwidget.cpp:658
+#: src/mainwidget.cpp:654
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Ukázať QR kódy v kontakte."
 
-#: src/mainwidget.cpp:663
+#: src/mainwidget.cpp:659
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jednoduchý (jeden stĺpec)"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:663
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Ukázať jednoduchý režim zobrazenia adresára."
 
-#: src/mainwidget.cpp:670
+#: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dva stĺpce"
 
-#: src/mainwidget.cpp:676
+#: src/mainwidget.cpp:672
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tri stĺpce"
 
-#: src/mainwidget.cpp:689
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr "Nastaviť výber na rýchle hľadanie"
 
-#: src/mainwidget.cpp:702
+#: src/mainwidget.cpp:698
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr "Prihlásenie na strane servera..."
 
-#: src/mainwidget.cpp:746 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:742 src/printing/printingwizard.cpp:44
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Tlačiť kontakty"
 
-#: src/mainwindow.cpp:74
+#: src/mainwindow.cpp:69
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -836,7 +836,7 @@ msgid ""
 "wide shortcuts."
 msgstr "Bude zobrazený dialóg, kde môžete nastaviť skratky pre celú aplikáciu."
 
-#: src/mainwindow.cpp:175
+#: src/mainwindow.cpp:170
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -844,7 +844,7 @@ msgid ""
 msgstr ""
 "<qt>Toto skryje panel ponuky úplne. Môžete ju zobraziť zadaním %1.</qt>"
 
-#: src/mainwindow.cpp:178
+#: src/mainwindow.cpp:173
 #, kde-format
 msgid "Hide menu bar"
 msgstr "Skryť lištu ponuky"

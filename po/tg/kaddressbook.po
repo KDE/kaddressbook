@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-07 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2019-09-29 12:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 "org,,,,,,,,,,,,"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:713 src/mainwidget.cpp:740
+#: src/mainwidget.cpp:709 src/mainwidget.cpp:736
 #, fuzzy, kde-format
 msgid "Address Book"
 msgstr "Китобҳои адресӣ"
@@ -119,7 +119,7 @@ msgid "Blog Feed"
 msgstr ""
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
-#: src/kaddressbookpart.cpp:33
+#: src/kaddressbookpart.cpp:26
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -718,7 +718,7 @@ msgstr ""
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/kaddressbookpart.cpp:60
+#: src/kaddressbookpart.cpp:49
 #, fuzzy, kde-format
 #| msgid "Import KDE 2 Addressbook..."
 msgid "&Configure KAddressBook..."
@@ -780,106 +780,106 @@ msgstr "&Содирот"
 msgid "Main Toolbar"
 msgstr "Лавҳаи абзорҳои Алоқот"
 
-#: src/mainwidget.cpp:353
+#: src/mainwidget.cpp:349
 #, fuzzy, kde-format
 msgid "Import"
 msgstr "&Воридот"
 
-#: src/mainwidget.cpp:360
+#: src/mainwidget.cpp:356
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "&Содирот"
 
-#: src/mainwidget.cpp:407
+#: src/mainwidget.cpp:402
 #, fuzzy, kde-format
 #| msgid "Search:"
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Ҷустуҷӯ:"
 
-#: src/mainwidget.cpp:636
+#: src/mainwidget.cpp:632
 #, fuzzy, kde-format
 #| msgid "Set the categories for all selected contacts."
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Тағйироти гурӯҳҳое, ки метавон дар алоқотҳо интихоб кард."
 
-#: src/mainwidget.cpp:641
+#: src/mainwidget.cpp:637
 #, fuzzy, kde-format
 #| msgid "Recursive search"
 msgid "Quick search"
 msgstr "Ҷустуҷӯи рекурсивӣ"
 
-#: src/mainwidget.cpp:646
+#: src/mainwidget.cpp:642
 #, fuzzy, kde-format
 #| msgid "Category"
 msgid "Category filter"
 msgstr "Категория"
 
-#: src/mainwidget.cpp:651
+#: src/mainwidget.cpp:647
 #, fuzzy, kde-format
 msgid "Select All"
 msgstr "Барҳам додани интихоб"
 
-#: src/mainwidget.cpp:653
+#: src/mainwidget.cpp:649
 #, fuzzy, kde-format
 #| msgid "Selects all visible contacts from current view."
 msgid "Select all contacts in the current address book view."
 msgstr "Интихоби тамоми алоқаҳои намоён дар намудиравон."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:653
 #, kde-format
 msgid "Show QR Codes"
 msgstr ""
 
-#: src/mainwidget.cpp:658
+#: src/mainwidget.cpp:654
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: src/mainwidget.cpp:663
+#: src/mainwidget.cpp:659
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:663
 #, fuzzy, kde-format
 #| msgid "Please select type of the new address book:"
 msgid "Show a simple mode of the address book view."
 msgstr "Навъи китоби адресӣ:"
 
-#: src/mainwidget.cpp:670
+#: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:676
+#: src/mainwidget.cpp:672
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:689
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:702
+#: src/mainwidget.cpp:698
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr ""
 
-#: src/mainwidget.cpp:746 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:742 src/printing/printingwizard.cpp:44
 #, fuzzy, kde-format
 #| msgid "Edit Contact"
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Алоқа"
 
-#: src/mainwindow.cpp:74
+#: src/mainwindow.cpp:69
 #, fuzzy, kde-format
 #| msgid ""
 #| "You will be presented with a dialog, where you can configure the "
@@ -890,14 +890,14 @@ msgid ""
 "wide shortcuts."
 msgstr "Танзимоти тугмаҳои мутобиқшудаи барномот"
 
-#: src/mainwindow.cpp:175
+#: src/mainwindow.cpp:170
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: src/mainwindow.cpp:178
+#: src/mainwindow.cpp:173
 #, fuzzy, kde-format
 #| msgid "Hide Jump Bar"
 msgid "Hide menu bar"
