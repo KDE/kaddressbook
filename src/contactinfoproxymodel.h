@@ -61,45 +61,45 @@ private:
         {
         }
 
-        Q_REQUIRED_RESULT bool setData(const Akonadi::Item &item);
+        [[nodiscard]] bool setData(const Akonadi::Item &item);
 
         friend bool operator==(const ContactCacheData &lhs, const ContactCacheData &rhs);
 
-        Q_REQUIRED_RESULT QString uid() const
+        [[nodiscard]] QString uid() const
         {
             return mUid;
         }
-        Q_REQUIRED_RESULT QString gid() const
+        [[nodiscard]] QString gid() const
         {
             return mGid;
         }
-        Q_REQUIRED_RESULT QString name() const
+        [[nodiscard]] QString name() const
         {
             return mName;
         }
-        Q_REQUIRED_RESULT QString email() const
+        [[nodiscard]] QString email() const
         {
             return mEmail;
         }
 
     private:
-        Q_REQUIRED_RESULT bool validateItem(const Akonadi::Item &item) const;
+        [[nodiscard]] bool validateItem(const Akonadi::Item &item) const;
         QString mUid;
         QString mGid;
         QString mName;
         QString mEmail;
     };
 
-    Q_REQUIRED_RESULT QString getInitials(const KContacts::Addressee &contact) const;
-    Q_REQUIRED_RESULT QString getInitials(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
-    Q_REQUIRED_RESULT QString getDescription(const KContacts::Addressee &contact) const;
-    Q_REQUIRED_RESULT QString getDescription(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
-    Q_REQUIRED_RESULT QStringList getIdsContactGroup(const KContacts::ContactGroup &group) const;
-    Q_REQUIRED_RESULT QStringList getIdsCacheContactGroup(const Akonadi::Item::Id groupItemId) const;
-    Q_REQUIRED_RESULT bool isCacheItemToFetch(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &group) const;
-    Q_REQUIRED_RESULT ContactCacheData::ListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact);
-    Q_REQUIRED_RESULT ContactCacheData::ConstListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact) const;
-    Q_REQUIRED_RESULT QMap<const char *, QVariant> buildFetchProperties(const Akonadi::Item::Id groupItemId) const;
+    [[nodiscard]] QString getInitials(const KContacts::Addressee &contact) const;
+    [[nodiscard]] QString getInitials(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
+    [[nodiscard]] QString getDescription(const KContacts::Addressee &contact) const;
+    [[nodiscard]] QString getDescription(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
+    [[nodiscard]] QStringList getIdsContactGroup(const KContacts::ContactGroup &group) const;
+    [[nodiscard]] QStringList getIdsCacheContactGroup(const Akonadi::Item::Id groupItemId) const;
+    [[nodiscard]] bool isCacheItemToFetch(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &group) const;
+    [[nodiscard]] ContactCacheData::ListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact);
+    [[nodiscard]] ContactCacheData::ConstListIterator findCacheItem(const Akonadi::Item::Id groupItemId, const ContactCacheData &cacheContact) const;
+    [[nodiscard]] QMap<const char *, QVariant> buildFetchProperties(const Akonadi::Item::Id groupItemId) const;
 
     void resolveGroup(const Akonadi::Item::Id groupItemId, const KContacts::ContactGroup &groupContacts) const;
     void fetchItems(const Akonadi::Item::List &items, const QMap<const char *, QVariant> &properties) const;

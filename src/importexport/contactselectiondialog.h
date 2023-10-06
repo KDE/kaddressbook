@@ -55,12 +55,12 @@ public:
     /**
      * Returns the list of selected contacts.
      */
-    Q_REQUIRED_RESULT ContactList selectedContacts() const;
+    [[nodiscard]] ContactList selectedContacts() const;
 
-    Q_REQUIRED_RESULT ExportSelectionWidget::ExportFields exportType() const;
+    [[nodiscard]] ExportSelectionWidget::ExportFields exportType() const;
     void setAddGroupContact(bool addGroupContact);
 
-    Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
+    [[nodiscard]] Akonadi::Item::List selectedItems() const;
 
 private:
     ContactSelectionWidget *const mSelectionWidget;

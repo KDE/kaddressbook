@@ -36,10 +36,10 @@ public:
     explicit KAddressBookPlugin(KontactInterface::Core *core, const KPluginMetaData &data, const QVariantList &);
     ~KAddressBookPlugin() override;
 
-    Q_REQUIRED_RESULT bool isRunningStandalone() const override;
-    Q_REQUIRED_RESULT int weight() const override;
+    [[nodiscard]] bool isRunningStandalone() const override;
+    [[nodiscard]] int weight() const override;
 
-    Q_REQUIRED_RESULT QStringList invisibleToolbarActions() const override;
+    [[nodiscard]] QStringList invisibleToolbarActions() const override;
     void shortcutChanged() override;
 
 protected:

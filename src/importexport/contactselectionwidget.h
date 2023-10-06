@@ -57,21 +57,21 @@ public:
     /**
      * Returns the list of selected contacts.
      */
-    Q_REQUIRED_RESULT ContactList selectedContacts() const;
+    [[nodiscard]] ContactList selectedContacts() const;
 
     void setAddGroupContact(bool addGroupContact);
-    Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
+    [[nodiscard]] Akonadi::Item::List selectedItems() const;
 
 private:
     KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void initGui();
 
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAllContacts() const;
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectSelectedContacts() const;
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAddressBookContacts() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAllContacts() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectSelectedContacts() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT ContactList collectAddressBookContacts() const;
 
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAllItems() const;
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectSelectedItems() const;
-    Q_REQUIRED_RESULT KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAddressBookItems() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAllItems() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectSelectedItems() const;
+    [[nodiscard]] KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT Akonadi::Item::List collectAddressBookItems() const;
 
     QItemSelectionModel *const mSelectionModel;
 

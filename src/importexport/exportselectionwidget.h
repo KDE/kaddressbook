@@ -32,7 +32,7 @@ public:
     Q_ENUM(ExportField)
     Q_DECLARE_FLAGS(ExportFields, ExportField)
 
-    Q_REQUIRED_RESULT ExportFields exportType() const;
+    [[nodiscard]] ExportFields exportType() const;
 
 private:
     KADDRESSBOOK_IMPORTEXPORT_NO_EXPORT void readSettings();

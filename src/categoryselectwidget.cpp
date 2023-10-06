@@ -36,9 +36,9 @@ public:
     KPIM::KCheckComboBox *checkCombo = nullptr;
 
     void init();
-    Q_REQUIRED_RESULT QStandardItemModel *itemModel() const;
+    [[nodiscard]] QStandardItemModel *itemModel() const;
     void selectAll(Qt::CheckState state) const;
-    Q_REQUIRED_RESULT QList<Akonadi::Tag> filterTags() const;
+    [[nodiscard]] QList<Akonadi::Tag> filterTags() const;
 
 public Q_SLOTS:
     void slotSelectAll();

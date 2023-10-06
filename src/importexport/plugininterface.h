@@ -25,25 +25,25 @@ public:
 
     enum ImportExportAction { Import = 0, Export = 1 };
 
-    Q_REQUIRED_RESULT QList<QAction *> importActions() const;
+    [[nodiscard]] QList<QAction *> importActions() const;
     void setImportActions(const QList<QAction *> &importAction);
 
-    Q_REQUIRED_RESULT QList<QAction *> exportActions() const;
+    [[nodiscard]] QList<QAction *> exportActions() const;
     void setExportActions(const QList<QAction *> &exportAction);
 
-    Q_REQUIRED_RESULT ImportExportAction importExportAction() const;
+    [[nodiscard]] ImportExportAction importExportAction() const;
     void setImportExportAction(ImportExportAction importExportAction);
 
-    Q_REQUIRED_RESULT Akonadi::Collection defaultCollection() const;
+    [[nodiscard]] Akonadi::Collection defaultCollection() const;
     void setDefaultCollection(const Akonadi::Collection &defaultCollection);
 
-    Q_REQUIRED_RESULT QItemSelectionModel *itemSelectionModel() const;
+    [[nodiscard]] QItemSelectionModel *itemSelectionModel() const;
     void setItemSelectionModel(QItemSelectionModel *itemSelectionModel);
 
-    Q_REQUIRED_RESULT virtual bool canImportFileType(const QUrl &url);
+    [[nodiscard]] virtual bool canImportFileType(const QUrl &url);
     virtual void importFile(const QUrl &url);
 
-    Q_REQUIRED_RESULT virtual bool canImportData() const;
+    [[nodiscard]] virtual bool canImportData() const;
     virtual void importData(const QByteArray &data);
 
 protected:

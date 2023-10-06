@@ -19,16 +19,16 @@ class KADDRESSBOOK_IMPORTEXPORT_EXPORT ContactList
 public:
     explicit ContactList();
 
-    Q_REQUIRED_RESULT bool isEmpty() const;
-    Q_REQUIRED_RESULT int count() const;
+    [[nodiscard]] bool isEmpty() const;
+    [[nodiscard]] int count() const;
     void clear();
 
     void append(const KContacts::Addressee &addr);
     void append(const KContacts::ContactGroup &group);
 
-    Q_REQUIRED_RESULT KContacts::Addressee::List addressList() const;
+    [[nodiscard]] KContacts::Addressee::List addressList() const;
     void setAddressList(const KContacts::Addressee::List &value);
-    Q_REQUIRED_RESULT KContacts::ContactGroup::List contactGroupList() const;
+    [[nodiscard]] KContacts::ContactGroup::List contactGroupList() const;
     void setContactGroupList(const KContacts::ContactGroup::List &value);
 
 private:

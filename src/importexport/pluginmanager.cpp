@@ -57,12 +57,12 @@ public:
     }
 
     void loadPlugin(ImportExportInfo *item);
-    Q_REQUIRED_RESULT QList<Plugin *> pluginsList() const;
-    Q_REQUIRED_RESULT QList<PimCommon::PluginUtilData> pluginDataList() const;
+    [[nodiscard]] QList<Plugin *> pluginsList() const;
+    [[nodiscard]] QList<PimCommon::PluginUtilData> pluginDataList() const;
     bool initializePlugins();
 
-    Q_REQUIRED_RESULT QString configGroupName() const;
-    Q_REQUIRED_RESULT QString configPrefixSettingKey() const;
+    [[nodiscard]] QString configGroupName() const;
+    [[nodiscard]] QString configPrefixSettingKey() const;
     Plugin *pluginFromIdentifier(const QString &id);
 
 private:

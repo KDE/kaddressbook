@@ -86,12 +86,12 @@ public:
     /**
      * Returns the i18n label for the @p field.
      */
-    Q_REQUIRED_RESULT static QString label(Field field);
+    [[nodiscard]] static QString label(Field field);
 
     /**
      * Returns a list of all available fields.
      */
-    Q_REQUIRED_RESULT static Fields allFields();
+    [[nodiscard]] static Fields allFields();
 
     /**
      * Sets the @p value of the @p field for the @p contact.
@@ -101,6 +101,6 @@ public:
     /**
      * Returns the value for the @p field of the @p contact.
      */
-    Q_REQUIRED_RESULT static QString value(Field field, const KContacts::Addressee &contact);
+    [[nodiscard]] static QString value(Field field, const KContacts::Addressee &contact);
 };
 }

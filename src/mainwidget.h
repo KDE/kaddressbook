@@ -70,16 +70,16 @@ public:
     ~MainWidget() override;
 
     void updateQuickSearchText();
-    Q_REQUIRED_RESULT const Akonadi::Item::List collectSelectedAllContactsItem();
+    [[nodiscard]] const Akonadi::Item::List collectSelectedAllContactsItem();
 
     /**
      * Returns the address book collection that is currently
      * selected by the user or an invalid collection if no
      * address book is selected.
      */
-    Q_REQUIRED_RESULT Akonadi::Collection currentAddressBook() const;
+    [[nodiscard]] Akonadi::Collection currentAddressBook() const;
 
-    Q_REQUIRED_RESULT Akonadi::Item::List selectedItems(bool &canceled);
+    [[nodiscard]] Akonadi::Item::List selectedItems(bool &canceled);
     void initializePluginActions();
 
 public Q_SLOTS:
@@ -92,7 +92,7 @@ public Q_SLOTS:
     void handleCommandLine(const QStringList &arguments);
 
 protected:
-    Q_REQUIRED_RESULT bool event(QEvent *e) override;
+    [[nodiscard]] bool event(QEvent *e) override;
 
 private Q_SLOTS:
     void slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface);
