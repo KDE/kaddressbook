@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
-configure_file(kaddressbook-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h @ONLY)
+configure_file(kaddressbook-version.h.in ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h @ONLY)
 
 
 
