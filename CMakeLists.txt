@@ -90,6 +90,7 @@ find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
+add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 ecm_set_disabled_deprecation_versions(QT 6.5
      KF 5.240.0
 )
