@@ -25,7 +25,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -95,6 +96,8 @@ msgid "(One year old)"
 msgid_plural "(%1 years old)"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: src/viewertemplates/contact_embedded.html:47
 msgid "Email"
@@ -631,6 +634,8 @@ msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: src/kaddressbook_options.h:15
 #, fuzzy, kde-format
