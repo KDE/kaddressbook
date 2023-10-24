@@ -113,11 +113,11 @@ void MainWindow::updateHamburgerMenu()
     menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
     menu->addSeparator();
 
-    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Print))));
-    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::PrintPreview))));
+    menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::Print)));
+    menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::PrintPreview)));
     menu->addSeparator();
 
-    menu->addAction(actionCollection()->action(QLatin1String(KStandardAction::name(KStandardAction::Quit))));
+    menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::Quit)));
     mHamburgerMenu->setMenu(menu);
 }
 
