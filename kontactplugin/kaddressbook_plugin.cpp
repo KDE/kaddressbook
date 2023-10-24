@@ -91,8 +91,8 @@ KParts::Part *KAddressBookPlugin::createPart()
     }
 
     // disable the Ctrl+N shortcut, as it is used by Kontact already
-    if (part->action("akonadi_contact_create")) {
-        QAction *newAction = part->action("akonadi_contact_create");
+    if (part->action(QStringLiteral("akonadi_contact_create"))) {
+        QAction *newAction = part->action(QStringLiteral("akonadi_contact_create"));
         if (newAction) {
             newAction->setShortcut(QKeySequence());
         }
