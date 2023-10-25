@@ -52,7 +52,7 @@ int main(int argc, char **argv)
     KAddressBookApplication app(argc, &argv);
     app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
     KCrash::initialize();
-    KLocalizedString::setApplicationDomain("kaddressbook");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kaddressbook"));
 
     AboutData about;
     app.setAboutData(about);
