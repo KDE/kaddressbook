@@ -12,19 +12,20 @@
 # Diego Iastrubni <elcuco@kde.org>, 2005.
 # Diego Iastrubni <elcuco@kde.org>, 2005.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2023 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2017-05-16 07:05-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-l10n-he@kde.org>\n"
+"PO-Revision-Date: 2023-10-29 14:02+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -45,15 +46,13 @@ msgid "Address Book"
 msgstr "פנקס כתובות"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
 msgid "Contact"
-msgstr "עריכת איש קשר"
+msgstr "איש קשר"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
 msgid "Emails"
-msgstr "דוא\"ל"
+msgstr "כתובות דוא״ל"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -67,47 +66,47 @@ msgstr "ארגון"
 #: src/printing/grantlee/themes/full/theme.html:58
 #: src/viewertemplates/contact_embedded.html:62
 msgid "Website"
-msgstr ""
+msgstr "אתר"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
 #: src/viewertemplates/contact_embedded.html:26
 #: src/printing/ringbinder/rbs_appearance.ui:108
-#, fuzzy, kde-format
+#, kde-format
 msgid "Birthday"
-msgstr "יום הולדת:"
+msgstr "יום הולדת"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbNote)
 #: src/printing/grantlee/themes/default/theme.html:70
 #: src/printing/grantlee/themes/full/theme.html:70
 #: src/printing/ringbinder/rbs_appearance.ui:121
-#, fuzzy, kde-format
+#, kde-format
 msgid "Note"
-msgstr "הערה:"
+msgstr "הערה"
 
 #: src/printing/grantlee/themes/full/theme.html:76
 msgid "Title"
-msgstr ""
+msgstr "כותרת"
 
 #: src/viewertemplates/contact_embedded.html:28
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "(גיל שנה)"
+msgstr[1] "(גיל שנתיים)"
+msgstr[2] "(גיל %1 שנה)"
+msgstr[3] "(גיל %1 שנים)"
 
 #: src/viewertemplates/contact_embedded.html:47
 msgid "Email"
-msgstr ""
+msgstr "דוא״ל: "
 
 #: src/viewertemplates/contact_embedded.html:75
 #: src/importexport/contactfields.cpp:105
 #, kde-format
 msgid "Blog Feed"
-msgstr ""
+msgstr "היזן בלוג"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
 #: src/kaddressbookpart.cpp:26
@@ -116,23 +115,23 @@ msgid "KAddressBook"
 msgstr "KAddressBook"
 
 #: kontactplugin/kaddressbook_plugin.cpp:33
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
-msgstr "איש קשר &חדש..."
+msgstr "איש קשר חדש…"
 
 #. i18nc( "@info:status", "Create a new contact" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:39
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
-msgstr ""
+msgstr "תופיע בפניך חלונית בה ניתן ליצור איש קשר חדש."
 
 #: kontactplugin/kaddressbook_plugin.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
-msgstr "איש קשר חדש"
+msgstr "קבוצת קשר חדשה…"
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:48
@@ -140,22 +139,22 @@ msgstr "איש קשר חדש"
 msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can create a new contact group."
-msgstr ""
+msgstr "תופיע בפניך חלונית בה ניתן ליצור קבוצת קשר חדשה."
 
 #: src/aboutdata.cpp:19
-#, fuzzy, kde-format
+#, kde-format
 msgid "The KDE Address Book Application"
-msgstr "פנקס הכתובות של KDE"
+msgstr "יישום פנקס הכתובות של KDE"
 
 #: src/aboutdata.cpp:21
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr ""
+msgstr "כל הזכויות שמורות © 2007‏–%1 יוצרי KAddressBook"
 
 #: src/aboutdata.cpp:23
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "לורנט מונטל"
 
 #: src/aboutdata.cpp:23
 #, kde-format
@@ -165,235 +164,235 @@ msgstr "מתחזק נוכחי"
 #: src/aboutdata.cpp:24
 #, kde-format
 msgid "Tobias König"
-msgstr ""
+msgstr "טוביאס קוניג"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
+#, kde-format
 msgid "Previous maintainer"
-msgstr "מתחזק נוכחי"
+msgstr "מתחזק קודם"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "סטפן טפרנר"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Original Author (1998)"
-msgstr ""
+msgstr "יוצר מקורי (1998)"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "דיויד בריאנט"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "תיעוד (2019)"
 
 #: src/categoryselectwidget.cpp:94
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
-msgstr "השתמש במסנן הפעיל האחרון"
+msgstr "איפוס מסנן קטגוריות"
 
 #: src/categoryselectwidget.cpp:101
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
-msgstr "השתמש במסנן הפעיל האחרון"
+msgstr "פינוי מסנן הקטגוריות"
 
 #: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
-msgstr ""
+msgstr "(ללא תיוג)"
 
 #: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
-msgstr ""
+msgstr "(קבוצות)"
 
 #: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
-msgstr ""
+msgstr "(הכול)"
 
 #: src/categoryselectwidget.cpp:224
-#, fuzzy, kde-format
+#, kde-format
 msgid "(None)"
-msgstr "ללא"
+msgstr "(ללא)"
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid "<qt>Category filter: %1"
-msgstr ""
+msgstr "<qt>מסנן קטגוריות: %1"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
 msgid "Tools Plugins"
-msgstr ""
+msgstr "תוספי כלים"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
 #, kde-format
 msgid "Import/Export Plugins"
-msgstr ""
+msgstr "ייבוא/ייצוא תוספים"
 
 #: src/contactinfoproxymodel.cpp:67
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "פרטי הקשר נטענים…"
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
+#, kde-format
 msgid "Email: %1"
-msgstr "דוא\"ל"
+msgstr "דוא״ל: %1"
 
 #: src/contactinfoproxymodel.cpp:130
 #, kde-format
 msgid "Phone: %1"
-msgstr ""
+msgstr "טלפון: %1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button Next contact"
 msgid "Next"
-msgstr "טקסט"
+msgstr "הבא"
 
 #: src/contactswitcher.cpp:19
 #, kde-format
 msgctxt "@action:button Previous contact"
 msgid "Previous"
-msgstr ""
+msgstr "הקודם"
 
 #: src/contactswitcher.cpp:24
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the previous contact in the list"
-msgstr ""
+msgstr "מעבר לאיש הקשר הקודם ברשימה"
 
 #: src/contactswitcher.cpp:25
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the previous contact in the list."
-msgstr ""
+msgstr "לחיצה על הכפתור הזה תעביר לאיש הקשר הקודם ברשימה."
 
 #: src/contactswitcher.cpp:27
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the next contact in the list"
-msgstr ""
+msgstr "מעבר לאיש הקשר הבא ברשימה"
 
 #: src/contactswitcher.cpp:28
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the next contact in the list."
-msgstr ""
+msgstr "לחיצה על הכפתור הזה תעביר לאיש הקשר הבא ברשימה."
 
 #: src/contactswitcher.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:status"
 msgid "%1 out of %2"
-msgstr "%1 בשרת %2"
+msgstr "%1 מתוך %2"
 
 #: src/importexport/contactfields.cpp:20
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
-msgstr ""
+msgstr "לא מוגדר"
 
 #: src/importexport/contactfields.cpp:39
 #, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
-msgstr ""
+msgstr "יום נישואין"
 
 #: src/importexport/contactfields.cpp:85
 #, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
-msgstr ""
+msgstr "דוא״ל (מועדף)"
 
 #: src/importexport/contactfields.cpp:87
 #, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
-msgstr ""
+msgstr "דוא״ל (2)"
 
 #: src/importexport/contactfields.cpp:89
 #, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
-msgstr ""
+msgstr "דוא״ל (3)"
 
 #: src/importexport/contactfields.cpp:91
 #, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
-msgstr ""
+msgstr "דוא״ל (4)"
 
 #: src/importexport/contactfields.cpp:107
 #, kde-format
 msgid "Profession"
-msgstr ""
+msgstr "עיסוק"
 
 #: src/importexport/contactfields.cpp:109
 #, kde-format
 msgid "Office"
-msgstr ""
+msgstr "משרד"
 
 #: src/importexport/contactfields.cpp:111
 #, kde-format
 msgid "Manager"
-msgstr ""
+msgstr "מנהל/ת"
 
 #: src/importexport/contactfields.cpp:113
 #, kde-format
 msgid "Assistant"
-msgstr ""
+msgstr "עוזר/ת"
 
 #: src/importexport/contactfields.cpp:115
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "בן/ת־זוג"
 
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "עריכת איש קשר"
+msgstr "בחירת אנשי קשר"
 
 #: src/importexport/contactselectionwidget.cpp:115
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr "עריכת איש קשר"
+msgstr "כל אנשי הקשר"
 
 #: src/importexport/contactselectionwidget.cpp:116
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr "האם לייבא איש קשר אחד לתוך פנקס הכתובות שלך?"
+msgstr "כל אנשי הקשר מפנקס הכתובות שלך"
 
 #: src/importexport/contactselectionwidget.cpp:118
 #, kde-format
@@ -401,19 +400,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
-msgstr ""
+msgstr "סימון אפשרות זו מאפשר לבחור את כל אנשי הקשר שלך מכל פנקסי הכתובות שלך."
 
 #: src/importexport/contactselectionwidget.cpp:121
 #, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr ""
+msgstr "אנשי קשר שנבחרו"
 
 #: src/importexport/contactselectionwidget.cpp:122
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr ""
+msgstr "רק אנשי הקשר שכרגע בבחירה"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -421,19 +420,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
-msgstr ""
+msgstr "אפשר לבחור באפשרות זו אם נחוצים לך רק אנשי הקשר שבחרת במסך החזותי."
 
 #: src/importexport/contactselectionwidget.cpp:127
 #, kde-format
 msgctxt "@option:radio"
 msgid "All contacts from:"
-msgstr ""
+msgstr "כל אנשי הקשר מתוך:"
 
 #: src/importexport/contactselectionwidget.cpp:128
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "האם לייבא איש קשר אחד לתוך פנקס הכתובות שלך?"
+msgstr "כל אנשי הקשר מפנקס כתובות נבחר"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -444,18 +443,21 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"סימון אפשרות זו מאפשר לך לבחור את כל אנשי הקשר מאחד מפנקסי הכתובות שלך. לאחר "
+"לחיצה על אפשרות זו תופיע בפניך תיבת גרירה שמציגה את כל פנקסי הכתובות האלה עם "
+"אפשרות לבחור רק את זה שרצוי לך."
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr ""
+msgstr "כולל תת־תיקיות"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "בחירת כל התיקיות שתחת תיקיית העל"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -465,65 +467,68 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"סימון תיבה זו יאפשר לך לבחור את כל אנשי הקשר מהתיקייה הזאת, כולל כל תת־"
+"התיקיות. אם דרושים לך רק אנשי הקשר מהתיקייה ברמה העליונה יש להשאיר את התיבה "
+"הזאת לא מסומנת."
 
 #: src/importexport/contactselectionwidget.cpp:170
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
-msgstr "עריכת איש קשר"
+msgstr "איסוף אנשי קשר"
 
 #: src/importexport/contactselectionwidget.cpp:173
-#, fuzzy, kde-format
+#, kde-format
 msgid "Fetch Contacts"
-msgstr "עריכת איש קשר"
+msgstr "משיכת אנשי קשר"
 
 #: src/importexport/exportselectionwidget.cpp:21
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
-msgstr ""
+msgstr "שדרות פרטיים"
 
 #: src/importexport/exportselectionwidget.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
-msgstr "שדות עסקים"
+msgstr "שדות עסקיים"
 
 #: src/importexport/exportselectionwidget.cpp:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
-msgstr ""
+msgstr "שדות אחרים"
 
 #: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
-msgstr ""
+msgstr "מפתחות הצפנה"
 
 #: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
-msgstr ""
+msgstr "תמונות"
 
 #: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "הצגת שמות במלואם"
 
 #: src/importexport/exportselectionwidget.cpp:30
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr ""
+msgstr "שדות לייצוא"
 
 #: src/importexport/exportselectionwidget.cpp:36
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
-msgstr ""
+msgstr "ייצוא שדות פרטיים"
 
 #: src/importexport/exportselectionwidget.cpp:38
 #, kde-format
@@ -532,12 +537,13 @@ msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
+"יש לסמן תיבה זו כדי לייצא את השדות הפרטיים של איש הקשר בקובץ ה־vCard לייצוא."
 
 #: src/importexport/exportselectionwidget.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
-msgstr "שדות עסקים"
+msgstr "ייצוא שדות עסקיים"
 
 #: src/importexport/exportselectionwidget.cpp:44
 #, kde-format
@@ -546,12 +552,13 @@ msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
+"יש לסמן תיבה זו כדי לייצא את השדות העסקיים של איש הקשר בקובץ ה־vCard לייצוא."
 
 #: src/importexport/exportselectionwidget.cpp:48
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
-msgstr "ייבוא של vCard מסוים"
+msgstr "ייצוא שדות אחרים"
 
 #: src/importexport/exportselectionwidget.cpp:50
 #, kde-format
@@ -560,12 +567,13 @@ msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
+"יש לסמן תיבה זו כדי לייצא את השדות האחרים של איש הקשר בקובץ ה־vCard לייצוא."
 
 #: src/importexport/exportselectionwidget.cpp:54
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
-msgstr ""
+msgstr "ייצוא מפתחות הצפנה"
 
 #: src/importexport/exportselectionwidget.cpp:56
 #, kde-format
@@ -574,12 +582,13 @@ msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
+"יש לסמן תיבה זו כדי לייצא את מפתחות האבטחה של איש הקשר בקובץ ה־vCard לייצוא."
 
 #: src/importexport/exportselectionwidget.cpp:60
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr ""
+msgstr "ייצוא תמונות"
 
 #: src/importexport/exportselectionwidget.cpp:62
 #, kde-format
@@ -587,19 +596,19 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
-msgstr ""
+msgstr "יש לסמן תיבה זו כדי לייצא את התמונה של איש הקשר בקובץ ה־vCard לייצוא."
 
 #: src/importexport/exportselectionwidget.cpp:66
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr "ייצ&א"
+msgstr "אפשרויות ייצוא"
 
 #: src/importexport/exportselectionwidget.cpp:72
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "ייצוא שמות תצוגה כשמות מלאים"
 
 #: src/importexport/exportselectionwidget.cpp:74
 #, kde-format
@@ -609,208 +618,209 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"יש לסמן תיבה זו כדי לייצא את שם התצוגה של איש הקשר בשדה השם המלא ב־vCard. זה "
+"יכול להיות נחוץ כדי שהשם יוצג כראוי ב־GMail או ב־Android."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "פנקס כתובות"
+msgstr "בחירת פנקס כתובות"
 
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr ""
+msgstr "יש לבחור את פנקס הכתובות אליו ייובאו אנשי הקשר:"
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "עריכת איש קשר"
+msgstr "ייבוא אנשי קשר"
 
 #: src/importexport/importexportengine.cpp:75
 #, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "איש קשר אחד מיובא אל %2"
+msgstr[1] "שני אנשי קשר מיובאים אל %2"
+msgstr[2] "%1 אנשי קשר מיובאים אל %2"
+msgstr[3] "%1 אנשי קשר מיובאים אל %2"
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import the given file"
-msgstr "ייבוא של vCard מסוים"
+msgstr "ייבוא הקובץ שסופק"
 
 #: src/kaddressbook_options.h:17
 #, kde-format
 msgid "Open the 'New Contact' dialog"
-msgstr ""
+msgstr "פתיחת החלונית ‚איש קשר חדש’"
 
 #: src/kaddressbook_options.h:19
 #, kde-format
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "הצגת איש הקשר שצוין (בכתובת)"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgid "Files or URLs. The user will be asked whether to import."
-msgstr ""
+msgstr "קבצים או כתובות. למשתמש תופיע הצעה לייבא."
 
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "הצגת האפשרויות הזמינות למשוב משתמש"
 
 #: src/kaddressbookpart.cpp:49
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Configure KAddressBook..."
-msgstr "ייבוא פנקס כתובות של KDE 2..."
+msgstr "ה&גדרת KAddressBook..."
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
-#, fuzzy, kde-format
+#, kde-format
 msgid "&File"
-msgstr "מסנן:"
+msgstr "&קובץ"
 
 #. i18n: ectx: Menu (file_new)
 #: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
-#, fuzzy, kde-format
+#, kde-format
 msgid "&New"
-msgstr "חדש..."
+msgstr "&חדש"
 
 #. i18n: ectx: Menu (edit)
 #: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Edit"
-msgstr "&עריכה..."
+msgstr "ע&ריכה"
 
 #. i18n: ectx: Menu (view)
 #: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
-#, fuzzy, kde-format
+#, kde-format
 msgid "&View"
-msgstr "הוספת תצוגה"
+msgstr "ת&צוגה"
 
 #. i18n: ectx: Menu (action)
 #: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Action"
-msgstr "Latin1"
+msgstr "&פעולה"
 
 #. i18n: ectx: Menu (tools)
 #: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Tools"
-msgstr "כלים"
+msgstr "&כלים"
 
 #. i18n: ectx: Menu (settings)
 #: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Settings"
-msgstr "הגדרות גופנים"
+msgstr "ה&גדרות"
 
 #. i18n: ectx: Menu (file_export)
 #: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
 #, kde-format
 msgid "&Export"
-msgstr "ייצ&א"
+msgstr "יי&צוא"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
-#, fuzzy, kde-format
+#, kde-format
 msgid "Main Toolbar"
-msgstr "סרגל כלים איש קשר"
+msgstr "סרגל כלים ראשי"
 
 #: src/mainwidget.cpp:349
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import"
-msgstr "&ייבא"
+msgstr "ייבוא"
 
 #: src/mainwidget.cpp:356
-#, fuzzy, kde-format
+#, kde-format
 msgid "Export"
-msgstr "ייצ&א"
+msgstr "ייצוא"
 
 #: src/mainwidget.cpp:402
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
-msgstr "חפש:"
+msgstr "חיפוש… <%1>"
 
 #: src/mainwidget.cpp:632
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
-msgstr "הדפס מספר מיוחד של אנשי קשר."
+msgstr "הדפסת פנקס הכתובות במלואו או מספר מסוים של אנשי קשר."
 
 #: src/mainwidget.cpp:637
-#, fuzzy, kde-format
+#, kde-format
 msgid "Quick search"
-msgstr "חיפוש רקורסיבי"
+msgstr "חיפוש מהיר"
 
 #: src/mainwidget.cpp:642
-#, fuzzy, kde-format
+#, kde-format
 msgid "Category filter"
-msgstr "קטגוריה"
+msgstr "מסנן קטגוריות"
 
 #: src/mainwidget.cpp:647
-#, fuzzy, kde-format
+#, kde-format
 msgid "Select All"
-msgstr "אל תבחר כלום"
+msgstr "בחירה בהכול"
 
 #: src/mainwidget.cpp:649
-#, fuzzy, kde-format
+#, kde-format
 msgid "Select all contacts in the current address book view."
-msgstr "האם לייבא איש קשר אחד לתוך פנקס הכתובות שלך?"
+msgstr "בחירת כל אנשי הקשר בתצוגת פנקס הכתובות הנוכחית."
 
 #: src/mainwidget.cpp:653
 #, kde-format
 msgid "Show QR Codes"
-msgstr ""
+msgstr "הצגת קודים מסוג QR"
 
 #: src/mainwidget.cpp:654
 #, kde-format
 msgid "Show QR Codes in the contact."
-msgstr ""
+msgstr "הצגת קודים מסוג QR כחלק מאיש הקשר."
 
 #: src/mainwidget.cpp:659
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
-msgstr ""
+msgstr "פשוט (עמודה אחת)"
 
 #: src/mainwidget.cpp:663
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show a simple mode of the address book view."
-msgstr "אנא בחר את הסוג של פנקס הכתובות החדש:"
+msgstr "הצגת מצב פשוט של תצוגת פנקס הכתובות."
 
 #: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
-msgstr ""
+msgstr "שתי עמודות"
 
 #: src/mainwidget.cpp:672
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
-msgstr ""
+msgstr "שלוש עמודות"
 
 #: src/mainwidget.cpp:685
 #, kde-format
 msgid "Set Focus to Quick Search"
-msgstr ""
+msgstr "הגדרת המיקוד לחיפוש המהיר"
 
 #: src/mainwidget.cpp:698
 #, kde-format
 msgid "Serverside Subscription..."
-msgstr ""
+msgstr "מינוי מצד השרת…"
 
 #: src/mainwidget.cpp:742 src/printing/printingwizard.cpp:44
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
-msgstr "עריכת איש קשר"
+msgstr "הדפסת אנשי קשר"
 
 #: src/mainwindow.cpp:69
 #, kde-format
@@ -818,7 +828,7 @@ msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can configure the application-"
 "wide shortcuts."
-msgstr ""
+msgstr "תופיע בפניך חלונית בה ניתן להגדיר קיצורים שתקפים לכלל היישום."
 
 #: src/mainwindow.cpp:170
 #, kde-format
@@ -826,17 +836,19 @@ msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
+"<qt>פעולה זו תסתיר את סרגל התפריטים לחלוטין. אפשר להציג אותו שוב על ידי "
+"הקלדת %1.</qt>"
 
 #: src/mainwindow.cpp:173
-#, fuzzy, kde-format
+#, kde-format
 msgid "Hide menu bar"
-msgstr "הסתר סרגל קפיצה"
+msgstr "הסתרת סרגל תפריטים"
 
 #: src/manageshowcollectionproperties.cpp:83
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Properties of Address Book Folder %1"
-msgstr "עריכת מסנן של פנקס הכתובות"
+msgstr "מאפייני תיקיית פנקס הכתובות %1"
 
 #: src/modelcolumnmanager.cpp:69
 #, kde-format
@@ -844,14 +856,14 @@ msgid "Full Name"
 msgstr "שם מלא"
 
 #: src/modelcolumnmanager.cpp:74
-#, fuzzy, kde-format
+#, kde-format
 msgid "Family Name"
-msgstr "שמות משפחה:"
+msgstr "שם משפחה"
 
 #: src/modelcolumnmanager.cpp:78
-#, fuzzy, kde-format
+#, kde-format
 msgid "Given Name"
-msgstr "שם פרטי:"
+msgstr "שם פרטי"
 
 #: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
 #, kde-format
@@ -859,38 +871,38 @@ msgid "Home Address"
 msgstr "כתובת הבית"
 
 #: src/modelcolumnmanager.cpp:90
-#, fuzzy, kde-format
+#, kde-format
 msgid "Business Address"
-msgstr "שדות עסקים"
+msgstr "כתובת עסק"
 
 #: src/modelcolumnmanager.cpp:94
-#, fuzzy, kde-format
+#, kde-format
 msgid "Phone Numbers"
-msgstr "עריכת מספר טלפון"
+msgstr "מספרי טלפון"
 
 #: src/modelcolumnmanager.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 msgid "Preferred EMail"
-msgstr "כתובת מועדפת"
+msgstr "כתובת דוא״ל מועדפת"
 
 #: src/modelcolumnmanager.cpp:102
-#, fuzzy, kde-format
+#, kde-format
 msgid "All EMails"
-msgstr "דוא\"ל"
+msgstr "כל כתובות הדוא״ל"
 
 #: src/printing/compact/compactstyle.cpp:112
-#, fuzzy, kde-format
+#, kde-format
 msgid "Compact Style"
-msgstr "חברה"
+msgstr "סגנון מצומצם"
 
 #: src/printing/compact/compactstyle.cpp:166
 #: src/printing/detailled/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:161
-#, fuzzy, kde-format
+#, kde-format
 msgid "Setting up document"
-msgstr "מגדיר גופנים וצבעים"
+msgstr "מסמך מוגדר"
 
 #: src/printing/compact/compactstyle.cpp:173
 #: src/printing/detailled/detailledstyle.cpp:269
@@ -899,30 +911,30 @@ msgstr "מגדיר גופנים וצבעים"
 #: src/printing/ringbinder/ringbinderstyle.cpp:194
 #, kde-format
 msgid "Printing"
-msgstr "מדפיס"
+msgstr "הדפסה"
 
 #: src/printing/compact/compactstyle.cpp:177
 #: src/printing/detailled/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:198
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "Finished printing"
 msgid "Done"
 msgstr "הושלם"
 
 #: src/printing/compact/compactstyle.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 msgid "Compact Printing Style"
-msgstr "בחר סגנון הדפסה"
+msgstr "סגנון הדפסה מצומצם"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
 #: src/printing/compact/compactstyle.ui:14
 #: src/printing/ringbinder/rbs_appearance.ui:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Appearance"
-msgstr "דף מראה"
+msgstr "מראה"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbFields)
 #: src/printing/compact/compactstyle.ui:35
@@ -936,13 +948,13 @@ msgstr "שדות"
 #: src/printing/compact/compactstyle.ui:46
 #, kde-format
 msgid "Print the home address, with home phone number and mobile phone number"
-msgstr ""
+msgstr "הדפסת כתובת הבית, עם מספר הטלפון הביתי ואת מספר הטלפון הנייד"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
 #: src/printing/compact/compactstyle.ui:49
-#, fuzzy, kde-format
+#, kde-format
 msgid "with home address"
-msgstr "כתובת הבית"
+msgstr "עם כתובת בית"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
@@ -950,27 +962,27 @@ msgstr "כתובת הבית"
 #: src/printing/compact/compactstyle.ui:59
 #, kde-format
 msgid "print the business address, with business phone number"
-msgstr ""
+msgstr "הדפסת כתובת העסק, עם מספר הטלפון של העסק"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
 #: src/printing/compact/compactstyle.ui:62
-#, fuzzy, kde-format
+#, kde-format
 msgid "with business address"
-msgstr "שדות עסקים"
+msgstr "עם כתובת עסק"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:69
 #: src/printing/compact/compactstyle.ui:72
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print the birthday"
-msgstr "עריכת איש קשר"
+msgstr "הדפסת יום ההולדת"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:75
-#, fuzzy, kde-format
+#, kde-format
 msgid "with birthday"
-msgstr "יום הולדת:"
+msgstr "עם יום הולדת"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
@@ -978,13 +990,13 @@ msgstr "יום הולדת:"
 #: src/printing/compact/compactstyle.ui:85
 #, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr ""
+msgstr "הדפסת שדות כתובת הדוא״ל המועדף והמשני"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
-#, fuzzy, kde-format
+#, kde-format
 msgid "with e-mail"
-msgstr "ערוך דוא\"ל"
+msgstr "עם דוא״ל"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
@@ -992,13 +1004,13 @@ msgstr "ערוך דוא\"ל"
 #: src/printing/compact/compactstyle.ui:115
 #, kde-format
 msgid "the first color, if alternating color is checked"
-msgstr ""
+msgstr "הצבע הראשון, אם בחרת בצבעים לסירוגין"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
 #: src/printing/compact/compactstyle.ui:118
 #, kde-format
 msgid "first color"
-msgstr ""
+msgstr "הצבע הראשון"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
@@ -1006,42 +1018,42 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:128
 #, kde-format
 msgid "the second color, if alternating color is checked"
-msgstr ""
+msgstr "הצבע השני, אם סימנת צבעים לסירוגין"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
-#, fuzzy, kde-format
+#, kde-format
 msgid "second color"
-msgstr "צבע רקע"
+msgstr "צבע משני"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
 #: src/printing/compact/compactstyle.ui:138
 #: src/printing/compact/compactstyle.ui:141
-#, fuzzy, kde-format
+#, kde-format
 msgid "Change the background color of every row"
-msgstr "צבע רקע של שורות כותרת:"
+msgstr "החלפת צבע הרקע של כל שורה"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
 #: src/printing/compact/compactstyle.ui:144
-#, fuzzy, kde-format
+#, kde-format
 msgid "Alternating the background color"
-msgstr "צבעי רקע שונים"
+msgstr "החלפת צבע הרקע לסירוגין"
 
 #: src/printing/detailled/detailledstyle.cpp:74
-#, fuzzy, kde-format
+#, kde-format
 msgid "Organization:"
-msgstr "ארגון"
+msgstr "ארגון:"
 
 #: src/printing/detailled/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
-msgstr "כתובת דוא\"ל:"
+msgstr "כתובת דוא״ל:"
 
 #: src/printing/detailled/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
-msgstr "כתובות דוא\"ל:"
+msgstr "כתובות דוא״ל:"
 
 #: src/printing/detailled/detailledstyle.cpp:92
 #, kde-format
@@ -1089,9 +1101,9 @@ msgid "Preferred Address"
 msgstr "כתובת מועדפת"
 
 #: src/printing/detailled/detailledstyle.cpp:148
-#, fuzzy, kde-format
+#, kde-format
 msgid "Notes:"
-msgstr "הערה:"
+msgstr "הערות:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
 #: src/printing/detailled/detailledstyle.cpp:232
@@ -1101,9 +1113,9 @@ msgid "Detailed Print Style - Appearance"
 msgstr "סגנון הדפסה מפורט - מראה"
 
 #: src/printing/detailled/detailledstyle.cpp:245
-#, fuzzy, kde-format
+#, kde-format
 msgid "Setting up colors"
-msgstr "מגדיר גופנים וצבעים"
+msgstr "הגדרת צבעים"
 
 #: src/printing/detailled/detailledstyle.cpp:288
 #, kde-format
@@ -1124,9 +1136,9 @@ msgstr "כותרות אנשי קשר"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:119
-#, fuzzy, kde-format
+#, kde-format
 msgid "Select the headline text background color"
-msgstr "צבע רקע של שורות כותרת:"
+msgstr "נא לבחור את צבע רקע טקסט שורת הכותרת"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:122
@@ -1135,24 +1147,26 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline background color."
 msgstr ""
+"לחיצה על כפתור זה תפתח את בורר הצבעים שיאפשר לך להגדיר את צבע רקע שורת "
+"הכותרת."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
 #: src/printing/detailled/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
-msgstr "צבע רקע של שורות כותרת:"
+msgstr "צבע רקע שורות כותרת:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
 #: src/printing/detailled/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
-msgstr "צבע טקסט של שורות כותרת:"
+msgstr "צבע כתב שורות כותרת:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:162
-#, fuzzy, kde-format
+#, kde-format
 msgid "Select the headline text color"
-msgstr "צבע טקסט של שורות כותרת:"
+msgstr "נא לבחור את צבע כתב שורת הכותרת"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:165
@@ -1161,6 +1175,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline text."
 msgstr ""
+"לחיצה על כפתור זה תפתח את בורר הצבעים שיאפשר לך להגדיר את צבע כתב שורת "
+"הכותרת."
 
 #: src/printing/mike/mikesstyle.cpp:142
 #, kde-format
@@ -1170,17 +1186,17 @@ msgstr "סגנון ההדפסה של מייק"
 #: src/printing/printingwizard.cpp:47
 #, kde-format
 msgid "Which contacts do you want to print?"
-msgstr "איזה אנשי קשר ברצונך להדפיס?"
+msgstr "אילו אנשי קשר להדפיס?"
 
 #: src/printing/printingwizard.cpp:49
 #, kde-format
 msgid "Choose Contacts to Print"
-msgstr "בחר אנשי קשר להדפסה"
+msgstr "בחירת אנשי קשר להדפסה"
 
 #: src/printing/printingwizard.cpp:55
 #, kde-format
 msgid "Choose Printing Style"
-msgstr "בחר סגנון הדפסה"
+msgstr "בחירת סגנון הדפסה"
 
 #: src/printing/printingwizard.cpp:202
 #, kde-format
@@ -1188,11 +1204,10 @@ msgid "Print Progress"
 msgstr "התקדמות הדפסה"
 
 #: src/printing/printprogress.cpp:24
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr "מדפיס: התקדמות"
+msgstr "מודפס: התקדמות"
 
 #: src/printing/printprogress.cpp:42
 #, kde-format
@@ -1203,141 +1218,141 @@ msgstr "התקדמות"
 #: src/printing/ringbinder/rbs_appearance.ui:35
 #, kde-format
 msgid "Print Contact's Information"
-msgstr ""
+msgstr "הדפסת פרטי הקשר"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:41
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact phone numbers"
-msgstr "עריכת מספר טלפון"
+msgstr "הדפסת מספרי טלפון של אנשי קשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:44
 #, kde-format
 msgid "Check this box if you want contact phone numbers to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שמספרי הטלפון של איש הקשר יודפסו."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
-#, fuzzy, kde-format
+#, kde-format
 msgid "Phone numbers"
-msgstr "עריכת מספר טלפון"
+msgstr "מספרי טלפון"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:57
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact email addresses"
-msgstr "כתובת דואר"
+msgstr "הדפסת כתובות דוא״ל של אנשי קשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:60
 #, kde-format
 msgid "Check this box if you want contact email addresses to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שכתובות הדוא״ל של איש הקשר תודפסנה."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
-#, fuzzy, kde-format
+#, kde-format
 msgid "Email addresses"
-msgstr "כתובות דוא\"ל:"
+msgstr "כתובות דוא״ל"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:73
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact street addresses"
-msgstr "הדפס כתובות"
+msgstr "הדפסת הכתובות הפיזיות של אנשי הקשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:76
 #, kde-format
 msgid "Check this box if you want contact street addresses to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שהכתובות הפיזיות של איש הקשר תודפסנה."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
-#, fuzzy, kde-format
+#, kde-format
 msgid "Postal addresses"
-msgstr "כתובת דואר"
+msgstr "כתובות"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:89
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact organizations"
-msgstr "עריכת איש קשר"
+msgstr "הדפסת הארגונים של אנשי הקשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:92
 #, kde-format
 msgid "Check this box if you want contact organizations to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שהארגונים של איש הקשר יודפסו."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:102
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact birthdays"
-msgstr "עריכת איש קשר"
+msgstr "הדפסת ימי ההולדת של אנשי הקשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:105
 #, kde-format
 msgid "Check this box if you want contact birthdays to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שימי ההולדת של איש הקשר יודפסו."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:115
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print contact notes"
-msgstr "עריכת איש קשר"
+msgstr "הדפסת ההערות של אנשי הקשר"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:118
 #, kde-format
 msgid "Check this box if you want contact notes to be printed."
-msgstr ""
+msgstr "יש לסמן את התיבה הזאת כדי שההערות של איש הקשר יודפסו."
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:73
-#, fuzzy, kde-format
+#, kde-format
 msgid "Note: "
-msgstr "הערה:"
+msgstr "הערה: "
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:129
-#, fuzzy, kde-format
+#, kde-format
 msgid "Ring Binder Printing Style - Appearance"
-msgstr "סגנון הדפסה מפורט - מראה"
+msgstr "סגנון הדפסה לאוגדן טבעות - מראה"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:145
-#, fuzzy, kde-format
+#, kde-format
 msgid "Setting up fields"
-msgstr "מגדיר גופנים וצבעים"
+msgstr "הגדרת שדות"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:213
 #, kde-format
 msgid "Printout for Ring Binders"
-msgstr ""
+msgstr "תבנית הדפסה לאוגדן טבעות"
 
 #: src/printing/stylepage.cpp:36
 #, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
-msgstr ""
+msgstr "עולה"
 
 #: src/printing/stylepage.cpp:37
 #, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
-msgstr ""
+msgstr "יורד"
 
 #: src/printing/stylepage.cpp:47
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
 msgstr "(אין תצוגה מקדימה זמינה.)"
 
 #: src/printing/stylepage.cpp:109
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
-msgstr "בחר סגנון הדפסה"
+msgstr "בחירת סגנון הדפסה"
 
 #: src/printing/stylepage.cpp:114
 #, kde-format
@@ -1347,24 +1362,26 @@ msgid ""
 "KAddressBook has several printing styles, designed for different purposes.\n"
 "Choose the style that suits your needs below."
 msgstr ""
+"איך אמורה להיראות ההדפסה?\n"
+"ל־KAddressBook יש "
 
 #: src/printing/stylepage.cpp:121
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "מיון"
 
 #: src/printing/stylepage.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
-msgstr "קריטריון:"
+msgstr "תנאי:"
 
 #: src/printing/stylepage.cpp:130
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
-msgstr "בחר שדה לחיפוש חלקי"
+msgstr "בחירת שדה המיון העיקרי"
 
 #: src/printing/stylepage.cpp:132
 #, kde-format
@@ -1374,9 +1391,11 @@ msgid ""
 "the print output.  Use the sorting order option to determine if the sort "
 "will be in ascending or descending order."
 msgstr ""
+" מהרשימה הזאת אפשר לבחור את השדה לפיו יסודרו אנשי הקשר בפלט ההדפסה. אפשר "
+"להשתמש באפשרות סדר המיון כדי לקבוע אם הסדר יהיה עולה או יורד."
 
 #: src/printing/stylepage.cpp:137
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "סדר:"
@@ -1385,7 +1404,7 @@ msgstr "סדר:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
-msgstr ""
+msgstr "נא לבחור את סדר המיון"
 
 #: src/printing/stylepage.cpp:143
 #, kde-format
@@ -1395,31 +1414,33 @@ msgid ""
 "Use the sorting criterion option to specify on which contact field the "
 "sorting will be performed."
 msgstr ""
+"נא לבחור האם לסדר את אנשי הקשר בסדר עולה או יורד. אפשרות תנאי המיון נועדה "
+"לציין על איזה שדה יבוצע המיון."
 
 #: src/printing/stylepage.cpp:150
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "סגנון הדפסה"
 
 #: src/printing/stylepage.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
-msgstr "רשימת תפוצה חדשה"
+msgstr "בחירת סגנון ההדפסה"
 
 #: src/printing/stylepage.cpp:156
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
-msgstr ""
+msgstr "נא לבחור את סגנון ההדפסה הרצוי לך. התצוגה המקדימה תסייע לך להחליט."
 
 #: src/widgets/quicksearchwidget.cpp:31
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Search contacts in list"
-msgstr "&אנשי קשר נבחרים"
+msgstr "חיפוש אנשי קשר ברשימה"
 
 #: src/widgets/quicksearchwidget.cpp:33
 #, kde-format
@@ -1429,3 +1450,5 @@ msgid ""
 "that string will be displayed.  This is a quick way of searching for "
 "contacts of interest."
 msgstr ""
+"לאחר התחלת הקלדה בתיבה הזאת רשימת אנשי הקשר העונים למחרוזת תוצג. זו דרך "
+"מהירה לחפש אנשי קשר רצויים."
