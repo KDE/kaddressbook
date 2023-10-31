@@ -16,6 +16,45 @@
 #include <QPainter>
 #include <QPainterPath>
 
+namespace
+{
+// SPDX-SnippetBegin
+// SPDX-FileCopyrightText: 2020 Carson Black <uhhadd@gmail.com>
+// SPDX-License-Identifier: LGPL-2.0-or-later
+
+/* clang-format off */
+const QList<QColor> c_colors = {
+    QColor("#e93a9a"),
+    QColor("#e93d58"),
+    QColor("#e9643a"),
+    QColor("#ef973c"),
+    QColor("#e8cb2d"),
+    QColor("#b6e521"),
+    QColor("#3dd425"),
+    QColor("#00d485"),
+    QColor("#00d3b8"),
+    QColor("#3daee9"),
+    QColor("#b875dc"),
+    QColor("#926ee4"),
+};
+/* clang-format on */
+
+QColor colorsFromString(const QString &string)
+{
+    // We use a hash to get a "random" number that's always the same for
+    // a given string.
+    auto hash = qHash(string);
+    // hash modulo the length of the colors list minus one will always get us a valid
+    // index
+    auto index = hash % (c_colors.length() - 1);
+    // return a colour
+    return c_colors[index];
+}
+
+// SPDX-SnippetEnd
+
+}
+
 StyleContactListDelegate::StyleContactListDelegate(QObject *parent)
     : QStyledItemDelegate(parent)
     , mKImageSize(50, 50)
@@ -66,11 +105,13 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
             break;
         }
 
+        const auto name = index.data(Qt::DisplayRole).value<QString>();
+
         QPainterPath path;
         path.addEllipse(pictureRect);
         painter->save();
         painter->setClipPath(path);
-        painter->setPen(QPen(Qt::darkGray, qreal(4)));
+        painter->setPen(QPen(colorsFromString(name), qreal(4)));
         painter->setRenderHint(QPainter::Antialiasing);
         painter->drawPath(path);
         painter->setFont(QFont(option.font.family(), 12, QFont::Bold, true));
@@ -88,7 +129,6 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
 
         painter->restore();
 
-        const auto name = index.data(Qt::DisplayRole).value<QString>();
         if (!name.isEmpty()) {
             painter->setFont(QFont(option.font.family(), 11));
             painter->drawText(nameTextRect, Qt::AlignLeft | Qt::AlignVCenter, painter->fontMetrics().elidedText(name, Qt::ElideRight, nameTextRect.width()));
