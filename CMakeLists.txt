@@ -95,7 +95,7 @@ ecm_set_disabled_deprecation_versions(QT 6.6
      KF 5.240.0
 )
 
-find_package(KUserFeedbackQt6 1.2.1 CONFIG)
+find_package(KUserFeedbackQt6 1.3.0 CONFIG)
 set_package_properties(KUserFeedbackQt6 PROPERTIES DESCRIPTION "User Feedback lib" TYPE OPTIONAL PURPOSE "Allow to send Telemetry Information (optional).")
 
 if (TARGET KUserFeedbackWidgetsQt6)
