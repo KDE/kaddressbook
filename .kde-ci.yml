@@ -5,13 +5,13 @@ Dependencies:
 - 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
+    'frameworks/kuserfeedback': '@latest-kf6'
     'pim/akonadi' : '@same'
     'pim/akonadi-contacts' : '@same'
     'pim/grantleetheme' : '@same'
     'pim/kontactinterface' : '@same'
     'pim/libkdepim' : '@same'
     'pim/pimcommon' : '@same'
-    'libraries/kuserfeedback': '@latest-kf6'
 
 - 'on': ['Linux', 'FreeBSD', 'macOS']
   'require':
