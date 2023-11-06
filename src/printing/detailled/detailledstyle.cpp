@@ -231,7 +231,7 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
 
     addPage(mPageAppearance, i18n("Detailed Print Style - Appearance"));
 
-    KConfigGroup config(KSharedConfig::openConfig(), ConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(ConfigSectionName));
 
     mPageAppearance->kcbHeaderBGColor->setColor(config.readEntry(ContactHeaderBGColor, QColor(Qt::black)));
 
@@ -248,7 +248,7 @@ void DetailledPrintStyle::print(const KContacts::Addressee::List &contacts, Prin
     const QColor headerBackgroundColor = mPageAppearance->kcbHeaderBGColor->color();
     const QColor headerForegroundColor = mPageAppearance->kcbHeaderTextColor->color();
 
-    KConfigGroup config(KSharedConfig::openConfig(), ConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(ConfigSectionName));
     config.writeEntry(ContactHeaderForeColor, headerForegroundColor);
     config.writeEntry(ContactHeaderBGColor, headerBackgroundColor);
     config.sync();

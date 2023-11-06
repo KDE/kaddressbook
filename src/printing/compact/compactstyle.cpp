@@ -114,7 +114,7 @@ CompactStyle::CompactStyle(PrintingWizard *parent)
     connect(mPageSettings->cbAlternating, &QCheckBox::clicked, this, &CompactStyle::setAlternatingColors);
 
     // set the controls, with the values in config
-    KConfigGroup config(KSharedConfig::openConfig(), CompactStyleConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(CompactStyleConfigSectionName));
 
     withAlternating = config.readEntry(WithAlternating, true);
     withHomeAddress = config.readEntry(WithHomeAddress, true);
@@ -148,7 +148,7 @@ void CompactStyle::print(const KContacts::Addressee::List &contacts, PrintProgre
     withEMail = mPageSettings->cbWithEMail->isChecked();
 
     // to config
-    KConfigGroup config(KSharedConfig::openConfig(), CompactStyleConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(CompactStyleConfigSectionName));
 
     config.writeEntry(WithAlternating, withAlternating);
     config.writeEntry(FirstColor, firstColor);

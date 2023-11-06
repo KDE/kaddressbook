@@ -406,7 +406,7 @@ void MainWidget::delayedInit()
 {
     setViewMode(0); // get default from settings
 
-    const KConfigGroup group(Settings::self()->config(), "UiState_ContactView");
+    const KConfigGroup group(Settings::self()->config(), QLatin1String("UiState_ContactView"));
     KAddressBook::UiStateSaver::restoreState(mItemView, group);
 
     mXmlGuiClient->actionCollection()->action(QStringLiteral("options_show_qrcodes"))->setChecked(showQRCodes());
@@ -425,7 +425,7 @@ MainWidget::~MainWidget()
     mModelColumnManager->store();
     saveSplitterStates();
 
-    KConfigGroup group(Settings::self()->config(), "UiState_ContactView");
+    KConfigGroup group(Settings::self()->config(), QLatin1String("UiState_ContactView"));
     KAddressBook::UiStateSaver::saveState(mItemView, group);
 
     saveState();
@@ -443,7 +443,7 @@ void MainWidget::restoreState()
         auto saver = new Akonadi::ETMViewStateSaver;
         saver->setView(mCollectionView);
 
-        const KConfigGroup group(Settings::self()->config(), "CollectionViewState");
+        const KConfigGroup group(Settings::self()->config(), QLatin1String("CollectionViewState"));
         saver->restoreState(group);
     }
 
@@ -452,7 +452,7 @@ void MainWidget::restoreState()
         auto saver = new Akonadi::ETMViewStateSaver;
         saver->setSelectionModel(mCollectionSelectionModel);
 
-        const KConfigGroup group(Settings::self()->config(), "CollectionViewCheckState");
+        const KConfigGroup group(Settings::self()->config(), QLatin1String("CollectionViewCheckState"));
         saver->restoreState(group);
     }
 
@@ -467,7 +467,7 @@ void MainWidget::restoreState()
             saver->setCurrentItem(mPendingSelection);
             mPendingSelection = {};
         } else {
-            const KConfigGroup group(Settings::self()->config(), "ItemViewState");
+            const KConfigGroup group(Settings::self()->config(), QLatin1String("ItemViewState"));
             saver->restoreState(group);
         }
     }
@@ -480,7 +480,7 @@ void MainWidget::saveState()
         Akonadi::ETMViewStateSaver saver;
         saver.setView(mCollectionView);
 
-        KConfigGroup group(Settings::self()->config(), "CollectionViewState");
+        KConfigGroup group(Settings::self()->config(), QLatin1String("CollectionViewState"));
         saver.saveState(group);
         group.sync();
     }
@@ -490,7 +490,7 @@ void MainWidget::saveState()
         Akonadi::ETMViewStateSaver saver;
         saver.setSelectionModel(mCollectionSelectionModel);
 
-        KConfigGroup group(Settings::self()->config(), "CollectionViewCheckState");
+        KConfigGroup group(Settings::self()->config(), QLatin1String("CollectionViewCheckState"));
         saver.saveState(group);
         group.sync();
     }
@@ -501,7 +501,7 @@ void MainWidget::saveState()
         saver.setView(mItemView);
         saver.setSelectionModel(mItemView->selectionModel());
 
-        KConfigGroup group(Settings::self()->config(), "ItemViewState");
+        KConfigGroup group(Settings::self()->config(), QLatin1String("ItemViewState"));
         saver.saveState(group);
         group.sync();
     }
@@ -712,7 +712,7 @@ void MainWidget::printPreview()
     printer.setCollateCopies(true);
 
     QPointer<QPrintPreviewDialog> previewdlg = new QPrintPreviewDialog(&printer, this);
-    new KWindowStateSaver(previewdlg.data(), "KAddressBookPrintPreviewDialog");
+    new KWindowStateSaver(previewdlg.data(), QLatin1String("KAddressBookPrintPreviewDialog"));
 
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());

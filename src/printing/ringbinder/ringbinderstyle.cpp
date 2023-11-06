@@ -129,7 +129,7 @@ RingBinderPrintStyle::RingBinderPrintStyle(PrintingWizard *parent)
     addPage(mPageAppearance, i18n("Ring Binder Printing Style - Appearance"));
 
     // applying previous settings
-    KConfigGroup config(KSharedConfig::openConfig(), RingBinderConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(RingBinderConfigSectionName));
     mPageAppearance->cbPhoneNumbers->setChecked(config.readEntry(ShowPhoneNumbers, true));
     mPageAppearance->cbEmails->setChecked(config.readEntry(ShowEmailAddresses, true));
     mPageAppearance->cbStreetAddresses->setChecked(config.readEntry(ShowStreetAddresses, true));
@@ -146,7 +146,7 @@ void RingBinderPrintStyle::print(const KContacts::Addressee::List &contacts, Pri
     progress->setProgress(0);
 
     // first write current config settings
-    KConfigGroup config(KSharedConfig::openConfig(), RingBinderConfigSectionName);
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(RingBinderConfigSectionName));
     config.writeEntry(ShowPhoneNumbers, mPageAppearance->cbPhoneNumbers->isChecked());
     config.writeEntry(ShowEmailAddresses, mPageAppearance->cbEmails->isChecked());
     config.writeEntry(ShowStreetAddresses, mPageAppearance->cbStreetAddresses->isChecked());
