@@ -142,7 +142,7 @@ void MainWindow::configureKeyBindings()
 
 void MainWindow::configureToolbars()
 {
-    KConfigGroup grp = KSharedConfig::openConfig()->group(QLatin1String("MainWindow"));
+    KConfigGroup grp = KSharedConfig::openConfig()->group(QStringLiteral("MainWindow"));
     saveMainWindowSettings(grp);
 
     QPointer<KEditToolBar> dlg = new KEditToolBar(factory());
@@ -155,7 +155,7 @@ void MainWindow::newToolbarConfig()
 {
     createGUI(QStringLiteral("kaddressbookui.rc"));
 
-    applyMainWindowSettings(KSharedConfig::openConfig()->group(QLatin1String("MainWindow")));
+    applyMainWindowSettings(KSharedConfig::openConfig()->group(QStringLiteral("MainWindow")));
 }
 
 void MainWindow::slotToggleMenubar(bool dontShowWarning)
