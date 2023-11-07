@@ -363,13 +363,12 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
 void MainWidget::configure()
 {
-    QPointer<KCMultiDialog> dlg = new KCMultiDialog(this);
+    KCMultiDialog dlg(this);
     const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
-        dlg->addModule(metaData);
+        dlg.addModule(metaData);
     }
-    dlg->exec();
-    delete dlg;
+    dlg.exec();
 }
 
 void MainWidget::handleCommandLine(const QStringList &arguments)
