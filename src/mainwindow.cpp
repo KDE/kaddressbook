@@ -25,8 +25,8 @@
 #include <QPointer>
 #ifdef WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
-#include <KUserFeedbackQt6/NotificationPopup>
-#include <KUserFeedbackQt6/Provider>
+#include <KUserFeedback/NotificationPopup>
+#include <KUserFeedback/Provider>
 #endif
 
 MainWindow::MainWindow()

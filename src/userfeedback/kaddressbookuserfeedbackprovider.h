@@ -7,7 +7,7 @@
 #pragma once
 
 #include "kaddressbook_export.h"
-#include <KUserFeedbackQt6/Provider>
+#include <KUserFeedback/Provider>
 class KADDRESSBOOK_EXPORT KAddressBookUserFeedbackProvider : public KUserFeedback::Provider
 {
     Q_OBJECT

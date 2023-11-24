@@ -74,7 +74,7 @@ ki18n_wrap_ui(kaddressbookprivate
     )
 
 
-if (TARGET KUserFeedbackWidgetsQt6)
+if (TARGET KF6::UserFeedbackWidgets)
     target_sources(kaddressbookprivate PRIVATE
         userfeedback/userfeedbackmanager.cpp
         userfeedback/kaddressbookuserfeedbackprovider.cpp
@@ -117,8 +117,8 @@ target_link_libraries(kaddressbookprivate
     Qt::PrintSupport
     KF6::I18n
     )
-if (TARGET KUserFeedbackWidgetsQt6)
-    target_link_libraries(kaddressbookprivate PRIVATE  KUserFeedbackWidgetsQt6)
+if (TARGET KF6::UserFeedbackWidgets)
+    target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
 endif()
 
 if (KPim6AkonadiSearch_FOUND)
@@ -148,8 +148,8 @@ ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
-if (TARGET KUserFeedbackWidgetsQt6)
-    target_link_libraries(kaddressbook  KUserFeedbackWidgetsQt6)
+if (TARGET KF6::UserFeedbackWidgets)
+    target_link_libraries(kaddressbook KF6::UserFeedbackWidgets)
 endif()
 
 target_link_libraries(kaddressbook
