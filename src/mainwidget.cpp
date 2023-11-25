@@ -518,7 +518,7 @@ void MainWidget::setupGui()
     //   - details view stack on the top
     //   - contact switcher at the bottom
     mMainWidgetSplitter1 = new QSplitter(Qt::Horizontal);
-    mMainWidgetSplitter1->setObjectName(QStringLiteral("MainWidgetSplitter1"));
+    mMainWidgetSplitter1->setObjectName(QLatin1StringView("MainWidgetSplitter1"));
     layout->addWidget(mMainWidgetSplitter1);
 
     // Splitter 2 contains the remaining parts of the GUI:
@@ -527,7 +527,7 @@ void MainWidget::setupGui()
     // The orientation of this splitter is changed for either
     // a three or two column view;  in simple mode it is hidden.
     mMainWidgetSplitter2 = new QSplitter(Qt::Vertical);
-    mMainWidgetSplitter2->setObjectName(QStringLiteral("MainWidgetSplitter2"));
+    mMainWidgetSplitter2->setObjectName(QLatin1StringView("MainWidgetSplitter2"));
     mMainWidgetSplitter1->addWidget(mMainWidgetSplitter2);
 
     // the collection view
@@ -536,7 +536,7 @@ void MainWidget::setupGui()
 
     // the items view
     mItemView = new Akonadi::EntityTreeView();
-    mItemView->setObjectName(QStringLiteral("ContactView"));
+    mItemView->setObjectName(QLatin1StringView("ContactView"));
     mItemView->setDefaultPopupMenu(QStringLiteral("akonadi_itemview_contextmenu"));
     mItemView->setAlternatingRowColors(true);
     mMainWidgetSplitter2->addWidget(mItemView);

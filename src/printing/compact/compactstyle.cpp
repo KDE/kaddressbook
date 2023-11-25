@@ -41,7 +41,7 @@ public:
     explicit CompactStyleForm(QWidget *parent)
         : QWidget(parent)
     {
-        setObjectName(QStringLiteral("AppearancePage"));
+        setObjectName(QLatin1StringView("AppearancePage"));
         setupUi(this);
     }
 };

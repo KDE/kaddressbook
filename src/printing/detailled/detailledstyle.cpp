@@ -218,7 +218,7 @@ public:
         : QWidget(parent)
     {
         setupUi(this);
-        setObjectName(QStringLiteral("AppearancePage"));
+        setObjectName(QLatin1StringView("AppearancePage"));
     }
 };
 
