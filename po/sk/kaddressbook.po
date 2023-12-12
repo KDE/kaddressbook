@@ -1,20 +1,20 @@
 # translation of kaddressbook.po to Slovak
 # Richard Fric <Richard.Fric@kdemail.net>, 2009.
-# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# SPDX-FileCopyrightText: 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2023 Roman Paholík <wizzardsk@gmail.com>
 # Matej Mrenica <matejm98mthw@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 00:51+0000\n"
-"PO-Revision-Date: 2019-08-04 12:03+0200\n"
-"Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
-"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-12-11 18:17+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.07.90\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #, kde-format
@@ -134,10 +134,9 @@ msgid "The KDE Address Book Application"
 msgstr "Aplikácia KDE Address Book"
 
 #: src/aboutdata.cpp:21
-#, fuzzy, kde-format
-#| msgid "Copyright © 2007–2019 KAddressBook authors"
+#, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr "Copyright © 2007–2019 Autori KAddressBook"
+msgstr "Copyright © 2007–%1 Autori KAddressBook"
 
 #: src/aboutdata.cpp:23
 #, kde-format
@@ -150,10 +149,9 @@ msgid "Current maintainer"
 msgstr "Súčasný správca"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgid "Tobias König"
-msgstr "Tobias Koenig"
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:24
 #, kde-format
@@ -163,22 +161,22 @@ msgstr "Predošlý správca"
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:25
 #, kde-format
 msgid "Original Author (1998)"
-msgstr ""
+msgstr "Pôvodný autor (1998)"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Dokumentácia (2019)"
 
 #: src/categoryselectwidget.cpp:94
 #, kde-format
@@ -235,7 +233,7 @@ msgstr "Importné/exportné pluginy"
 #: src/contactinfoproxymodel.cpp:67
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
@@ -243,25 +241,24 @@ msgid "Loading contacts details ..."
 msgstr ""
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgid "Email: %1"
-msgstr "Email"
+msgstr "Email: %1"
 
 #: src/contactinfoproxymodel.cpp:130
 #, kde-format
 msgid "Phone: %1"
-msgstr ""
+msgstr "Telefón: %1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
 #, kde-format
@@ -626,8 +623,7 @@ msgstr ""
 "GMail alebo Android."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Select Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
 msgstr "Vybrať knihu adries"
@@ -638,11 +634,10 @@ msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr "Vyberte adresár, kam sa majú uložiť importované kontakty:"
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Import Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Importovať kontakty"
+msgstr "Importovať konta&kty"
 
 #: src/importexport/importexportengine.cpp:75
 #, kde-format
@@ -675,7 +670,7 @@ msgstr "Súbory alebo URL. Používateľ bude opýtaný, či importovať."
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "Uvádza dostupné možnosti spätnej väzby od používateľov"
 
 #: src/kaddressbookpart.cpp:60
 #, kde-format
