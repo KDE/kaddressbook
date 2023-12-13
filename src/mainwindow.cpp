@@ -42,6 +42,7 @@ MainWindow::MainWindow()
     auto mainWidget = new QWidget(this);
     auto mainWidgetLayout = new QVBoxLayout(mainWidget);
     mainWidgetLayout->setContentsMargins({});
+    mainWidgetLayout->setSpacing(0);
     if (PimCommon::NeedUpdateVersionUtils::checkVersion()) {
         const auto status = PimCommon::NeedUpdateVersionUtils::obsoleteVersionStatus(KAboutData::applicationData().version(), QDate::currentDate());
         if (status != PimCommon::NeedUpdateVersionUtils::ObsoleteVersion::NotObsoleteYet) {
