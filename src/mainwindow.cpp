@@ -9,6 +9,7 @@
 #include "mainwindow.h"
 #include "mainwidget.h"
 #include "settings.h"
+#include <KAboutData>
 #include <KActionCollection>
 #include <KConfigGroup>
 #include <KEditToolBar>
@@ -23,17 +24,35 @@
 #include <QFontDatabase>
 #include <QMenuBar>
 #include <QPointer>
+#include <QVBoxLayout>
+
 #ifdef WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
 #include <KUserFeedback/Provider>
 #endif
 
+#include <PimCommon/NeedUpdateVersionUtils>
+#include <PimCommon/NeedUpdateVersionWidget>
+
 MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)
     , mMainWidget(new MainWidget(this, this))
 {
-    setCentralWidget(mMainWidget);
+    auto mainWidget = new QWidget(this);
+    auto mainWidgetLayout = new QVBoxLayout(mainWidget);
+    mainWidgetLayout->setContentsMargins({});
+    if (PimCommon::NeedUpdateVersionUtils::checkVersion()) {
+        const auto status = PimCommon::NeedUpdateVersionUtils::obsoleteVersionStatus(KAboutData::applicationData().version(), QDate::currentDate());
+        if (status != PimCommon::NeedUpdateVersionUtils::ObsoleteVersion::NotObsoleteYet) {
+            auto needUpdateVersionWidget = new PimCommon::NeedUpdateVersionWidget(this);
+            mainWidgetLayout->addWidget(needUpdateVersionWidget);
+            needUpdateVersionWidget->setObsoleteVersion(status);
+        }
+    }
+    mainWidgetLayout->addWidget(mMainWidget);
+
+    setCentralWidget(mainWidget);
 
     setStandardToolBarMenuEnabled(true);
 
