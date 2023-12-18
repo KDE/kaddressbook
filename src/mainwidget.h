@@ -82,6 +82,8 @@ public:
     [[nodiscard]] Akonadi::Item::List selectedItems(bool &canceled);
     void initializePluginActions();
 
+    [[nodiscard]] bool canClose() const;
+
 public Q_SLOTS:
     void newContact();
     void newGroup();

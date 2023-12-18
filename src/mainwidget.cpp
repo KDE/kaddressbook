@@ -602,6 +602,12 @@ void MainWidget::initializePluginActions()
     KAddressBookPluginInterface::self()->initializePluginActions(QStringLiteral("kaddressbook"), mXmlGuiClient);
 }
 
+bool MainWidget::canClose() const
+{
+    // TODO
+    return true;
+}
+
 void MainWidget::slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface)
 {
     auto importExportInterface = static_cast<KAddressBookImportExport::PluginInterface *>(interface);
