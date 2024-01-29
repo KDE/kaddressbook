@@ -39,7 +39,7 @@ void PrintProgress::addMessage(const QString &msg)
 {
     mMessages.append(msg);
 
-    QString head = QLatin1String("<qt><b>") + i18n("Progress") + QLatin1String(":</b><ul>");
+    QString head = QLatin1StringView("<qt><b>") + i18n("Progress") + QLatin1String(":</b><ul>");
 
     const QString foot = QStringLiteral("</ul></qt>");
 
@@ -47,7 +47,7 @@ void PrintProgress::addMessage(const QString &msg)
     QStringList::ConstIterator it;
     QStringList::ConstIterator end(mMessages.constEnd());
     for (it = mMessages.constBegin(); it != end; ++it) {
-        body.append(QLatin1String("<li>") + (*it) + QLatin1String("</li>"));
+        body.append(QLatin1StringView("<li>") + (*it) + QLatin1String("</li>"));
     }
 
     mLogBrowser->setText(head + body + foot);

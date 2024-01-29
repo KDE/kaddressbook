@@ -43,26 +43,26 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 
     int counter = 0;
     QString content = QStringLiteral("<html>\n");
-    content += QLatin1String(" <body>\n");
+    content += QLatin1StringView(" <body>\n");
     for (const KContacts::Addressee &contact : contacts) {
         const int max = qMax(leftFields.count(), rightFields.count());
 
         const QString name = contact.realName();
 
         if (counter % 2) {
-            content += QLatin1String("  <br/><br/>\n");
+            content += QLatin1StringView("  <br/><br/>\n");
         }
 
         // start a new page after every second table
         const QString pageBreak = ((counter % 2) ? QStringLiteral("page-break-after: always;") : QString());
 
-        content += QLatin1String("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1String("\" width=\"100%\">\n");
-        content += QLatin1String("   <tr>\n");
-        content += QLatin1String(
+        content += QLatin1StringView("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1String("\" width=\"100%\">\n");
+        content += QLatin1StringView("   <tr>\n");
+        content += QLatin1StringView(
                        "    <th align=\"left\" style=\"color: black;\" bgcolor=\"gray\" "
                        "style=\"padding-left: 20px\" colspan=\"4\">")
-            + name + QLatin1String("</th>\n");
-        content += QLatin1String("   </tr>\n");
+            + name + QLatin1StringView("</th>\n");
+        content += QLatin1StringView("   </tr>\n");
 
         for (int i = 0; i < max; ++i) {
             QString leftTitle;
@@ -82,19 +82,19 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
                 rightValue = ContactFields::value(rightFields.at(i), contact);
             }
 
-            content += QLatin1String("   <tr>\n");
-            content += QLatin1String("    <td>") + leftTitle + QLatin1String("</td>\n");
-            content += QLatin1String("    <td>") + leftValue + QLatin1String("</td>\n");
-            content += QLatin1String("    <td>") + rightTitle + QLatin1String("</td>\n");
-            content += QLatin1String("    <td>") + rightValue + QLatin1String("</td>\n");
-            content += QLatin1String("   </tr>\n");
+            content += QLatin1StringView("   <tr>\n");
+            content += QLatin1StringView("    <td>") + leftTitle + QLatin1String("</td>\n");
+            content += QLatin1StringView("    <td>") + leftValue + QLatin1String("</td>\n");
+            content += QLatin1StringView("    <td>") + rightTitle + QLatin1String("</td>\n");
+            content += QLatin1StringView("    <td>") + rightValue + QLatin1String("</td>\n");
+            content += QLatin1StringView("   </tr>\n");
         }
-        content += QLatin1String("  </table>\n");
+        content += QLatin1StringView("  </table>\n");
 
         counter++;
     }
-    content += QLatin1String(" </body>\n");
-    content += QLatin1String("</html>\n");
+    content += QLatin1StringView(" </body>\n");
+    content += QLatin1StringView("</html>\n");
 
     return content;
 }

@@ -94,8 +94,8 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         int count = categories.count();
         for (int i = 0; i < count; ++i) {
             const QString cat = categories.at(i);
-            if (cat.startsWith(QLatin1String("akonadi:"))) {
-                const int idx = cat.indexOf(QLatin1String("?tag="));
+            if (cat.startsWith(QLatin1StringView("akonadi:"))) {
+                const int idx = cat.indexOf(QLatin1StringView("?tag="));
                 if (idx >= 0) {
                     ++validCategories;
                     Tag::Id id = QStringView(cat).mid(idx + 5).toInt();

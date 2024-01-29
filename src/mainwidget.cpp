@@ -717,7 +717,7 @@ void MainWidget::printPreview()
     printer.setCollateCopies(true);
 
     QPointer<QPrintPreviewDialog> previewdlg = new QPrintPreviewDialog(&printer, this);
-    new KWindowStateSaver(previewdlg.data(), QLatin1String("KAddressBookPrintPreviewDialog"));
+    new KWindowStateSaver(previewdlg.data(), QLatin1StringView("KAddressBookPrintPreviewDialog"));
 
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());

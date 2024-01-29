@@ -68,8 +68,8 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     }
 
     QString content = QStringLiteral("<html>\n");
-    content += QLatin1String(" <body>\n");
-    content += QLatin1String("  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n");
+    content += QLatin1StringView(" <body>\n");
+    content += QLatin1StringView("  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n");
 
     bool odd = false;
     for (const KContacts::Addressee &contact : contacts) {
@@ -83,21 +83,21 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
             }
         }
 
-        content += QLatin1String("   <tr>\n");
+        content += QLatin1StringView("   <tr>\n");
         QString style = QStringLiteral("background-color:");
         if (this->withAlternating) {
             style += (odd) ? this->firstColor.name() : this->secondColor.name();
         } else {
-            style += QLatin1String("#ffffff");
+            style += QLatin1StringView("#ffffff");
         }
-        content += QLatin1String("    <td style=\"") + style + QLatin1String(";\">") + values.join(QLatin1String("; ")) + QLatin1String("</td>\n");
-        content += QLatin1String("   </tr>\n");
+        content += QLatin1StringView("    <td style=\"") + style + QLatin1String(";\">") + values.join(QLatin1String("; ")) + QLatin1String("</td>\n");
+        content += QLatin1StringView("   </tr>\n");
         odd = !odd;
     }
 
-    content += QLatin1String("  </table>\n");
-    content += QLatin1String(" </body>\n");
-    content += QLatin1String("</html>\n");
+    content += QLatin1StringView("  </table>\n");
+    content += QLatin1StringView(" </body>\n");
+    content += QLatin1StringView("</html>\n");
 
     return content;
 }
@@ -114,7 +114,7 @@ CompactStyle::CompactStyle(PrintingWizard *parent)
     connect(mPageSettings->cbAlternating, &QCheckBox::clicked, this, &CompactStyle::setAlternatingColors);
 
     // set the controls, with the values in config
-    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(CompactStyleConfigSectionName));
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1StringView(CompactStyleConfigSectionName));
 
     withAlternating = config.readEntry(WithAlternating, true);
     withHomeAddress = config.readEntry(WithHomeAddress, true);
@@ -148,7 +148,7 @@ void CompactStyle::print(const KContacts::Addressee::List &contacts, PrintProgre
     withEMail = mPageSettings->cbWithEMail->isChecked();
 
     // to config
-    KConfigGroup config(KSharedConfig::openConfig(), QLatin1String(CompactStyleConfigSectionName));
+    KConfigGroup config(KSharedConfig::openConfig(), QLatin1StringView(CompactStyleConfigSectionName));
 
     config.writeEntry(WithAlternating, withAlternating);
     config.writeEntry(FirstColor, firstColor);
