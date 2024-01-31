@@ -8,8 +8,8 @@
 
 #include <QObject>
 
+#include "pimcommonakonadi/plugininterface.h"
 #include <PimCommonAkonadi/GenericPluginInterface>
-#include <pimcommonakonadi/plugininterface.h>
 class MainWidget;
 
 #include "kaddressbook_export.h"
