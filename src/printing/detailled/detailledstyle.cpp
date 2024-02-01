@@ -156,10 +156,10 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
             "  <table style=\"border-width: 0px; border-spacing: 0px; "
             "page-break-inside: avoid\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n");
         content += QLatin1StringView("   <tr>\n");
-        content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1String(";\" bgcolor=\"") + settings.headerBackgroundColor
-            + QLatin1StringView(R"(" style="padding-left: 20px">)") + name + QLatin1String("</td>\n");
-        content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1String(R"(;" align="right" bgcolor=")")
-            + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-right: 20px">)") + birthday + QLatin1String("</td>\n");
+        content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1StringView(";\" bgcolor=\"")
+            + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-left: 20px">)") + name + QLatin1StringView("</td>\n");
+        content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1StringView(R"(;" align="right" bgcolor=")")
+            + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-right: 20px">)") + birthday + QLatin1StringView("</td>\n");
         content += QLatin1StringView("   </tr>\n");
 
         for (int i = 0; i < blocks.count(); i += 2) {
@@ -174,8 +174,8 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
             const ContactBlock rightBlock = ((i + 1 < blocks.count()) ? blocks.at(i + 1) : ContactBlock());
 
             content += QLatin1StringView("   <tr>\n");
-            content += QLatin1StringView("    <td>") + leftBlock.header + QLatin1String("</td>\n");
-            content += QLatin1StringView("    <td>") + rightBlock.header + QLatin1String("</td>\n");
+            content += QLatin1StringView("    <td>") + leftBlock.header + QLatin1StringView("</td>\n");
+            content += QLatin1StringView("    <td>") + rightBlock.header + QLatin1StringView("</td>\n");
             content += QLatin1StringView("   </tr>\n");
 
             const int maxLines = qMax(leftBlock.entries.count(), rightBlock.entries.count());
@@ -192,8 +192,8 @@ QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSe
                 }
 
                 content += QLatin1StringView("   <tr>\n");
-                content += QLatin1StringView("    <td class=\"indented\">") + leftLine + QLatin1String("</td>\n");
-                content += QLatin1StringView("    <td class=\"indented\">") + rightLine + QLatin1String("</td>\n");
+                content += QLatin1StringView("    <td class=\"indented\">") + leftLine + QLatin1StringView("</td>\n");
+                content += QLatin1StringView("    <td class=\"indented\">") + rightLine + QLatin1StringView("</td>\n");
                 content += QLatin1StringView("   </tr>\n");
             }
         }

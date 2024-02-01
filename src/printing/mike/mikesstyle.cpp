@@ -56,7 +56,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
         // start a new page after every second table
         const QString pageBreak = ((counter % 2) ? QStringLiteral("page-break-after: always;") : QString());
 
-        content += QLatin1StringView("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1String("\" width=\"100%\">\n");
+        content += QLatin1StringView("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1StringView("\" width=\"100%\">\n");
         content += QLatin1StringView("   <tr>\n");
         content += QLatin1StringView(
                        "    <th align=\"left\" style=\"color: black;\" bgcolor=\"gray\" "
@@ -83,10 +83,10 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
             }
 
             content += QLatin1StringView("   <tr>\n");
-            content += QLatin1StringView("    <td>") + leftTitle + QLatin1String("</td>\n");
-            content += QLatin1StringView("    <td>") + leftValue + QLatin1String("</td>\n");
-            content += QLatin1StringView("    <td>") + rightTitle + QLatin1String("</td>\n");
-            content += QLatin1StringView("    <td>") + rightValue + QLatin1String("</td>\n");
+            content += QLatin1StringView("    <td>") + leftTitle + QLatin1StringView("</td>\n");
+            content += QLatin1StringView("    <td>") + leftValue + QLatin1StringView("</td>\n");
+            content += QLatin1StringView("    <td>") + rightTitle + QLatin1StringView("</td>\n");
+            content += QLatin1StringView("    <td>") + rightValue + QLatin1StringView("</td>\n");
             content += QLatin1StringView("   </tr>\n");
         }
         content += QLatin1StringView("  </table>\n");

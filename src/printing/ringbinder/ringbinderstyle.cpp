@@ -81,7 +81,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
                 const QString data = address.formatted(KContacts::AddressFormatStyle::Postal)
                                          .replace(QLatin1StringView("\n\n"), QStringLiteral("\n"))
                                          .replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
-                const QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1String("</p>");
+                const QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1StringView("</p>");
 
                 leftBlock.append(subBlock);
             }
@@ -95,7 +95,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         content += QLatin1StringView(
                        "    <td style=\"padding-left: 3px; padding-top: 3px; padding-right: 3px; "
                        "padding-bottom: 3px;\">")
-            + rightBlock.join(QLatin1StringView("<br/>")) + QLatin1String("</td>\n");
+            + rightBlock.join(QLatin1StringView("<br/>")) + QLatin1StringView("</td>\n");
         content += QLatin1StringView("   </tr>\n");
     }
     content += QLatin1StringView("  </table>\n");
