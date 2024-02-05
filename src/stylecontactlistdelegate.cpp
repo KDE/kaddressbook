@@ -66,7 +66,7 @@ void StyleContactListDelegate::paint(QPainter *painter, const QStyleOptionViewIt
     Q_ASSERT(index.isValid());
 
     if (Akonadi::ContactsTreeModel::Column::FullName == index.column()) {
-        QApplication::style()->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter);
+        QApplication::style()->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter, option.widget);
 
         const QRectF optionRect = option.rect.marginsRemoved(QMargins() + static_cast<int>(mKMargin));
 
