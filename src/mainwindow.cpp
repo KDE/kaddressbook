@@ -151,6 +151,7 @@ void MainWindow::slotFullScreen(bool t)
 
 void MainWindow::updateHamburgerMenu()
 {
+    delete mHamburgerMenu->menu();
     auto menu = new QMenu(this);
     menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
     menu->addSeparator();
