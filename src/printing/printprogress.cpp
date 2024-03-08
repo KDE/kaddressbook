@@ -28,6 +28,7 @@ PrintProgress::PrintProgress(QWidget *parent)
     topLayout->addWidget(mLogBrowser, 0, 0);
 
     mProgressBar->setValue(0);
+    mProgressBar->setFormat(i18nc("Percent value; %p is the value, % is the percent sign", "%p%"));
     topLayout->addWidget(mProgressBar, 1, 0);
 
     resize(QSize(370, 220).expandedTo(minimumSizeHint()));
