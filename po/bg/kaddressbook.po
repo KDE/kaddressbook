@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-15 02:21+0000\n"
+"POT-Creation-Date: 2024-03-13 02:23+0000\n"
 "PO-Revision-Date: 2022-09-01 08:56+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: \n"
@@ -1217,7 +1217,13 @@ msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "Печат: напредък"
 
-#: src/printing/printprogress.cpp:42
+#: src/printing/printprogress.cpp:31
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: src/printing/printprogress.cpp:43
 #, kde-format
 msgid "Progress"
 msgstr "Прогрес"

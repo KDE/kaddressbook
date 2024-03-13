@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-15 02:21+0000\n"
+"POT-Creation-Date: 2024-03-13 02:23+0000\n"
 "PO-Revision-Date: 2022-01-02 14:19+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -1207,7 +1207,13 @@ msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "Utskrift: Förlopp"
 
-#: src/printing/printprogress.cpp:42
+#: src/printing/printprogress.cpp:31
+#, kde-format
+msgctxt "Percent value; %p is the value, % is the percent sign"
+msgid "%p%"
+msgstr ""
+
+#: src/printing/printprogress.cpp:43
 #, kde-format
 msgid "Progress"
 msgstr "Förlopp"
