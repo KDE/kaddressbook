@@ -11,13 +11,13 @@
 #
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# Kishore G <kishore96@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-13 00:38+0000\n"
-"PO-Revision-Date: 2021-06-19 19:44+0530\n"
+"PO-Revision-Date: 2024-03-17 18:00+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.04.2\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -47,17 +47,13 @@ msgid "Address Book"
 msgstr "முகவரிபுத்தகம்"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Contains"
 msgid "Contact"
-msgstr "கொண்டுள்ளது"
+msgstr "தொடர்பு"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgid "Email"
 msgid "Emails"
-msgstr "மின்னஞ்சல்"
+msgstr "மின்னஞ்சல்கள்"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -71,42 +67,37 @@ msgstr "நிறுவனம்"
 #: src/printing/grantlee/themes/full/theme.html:58
 #: src/viewertemplates/contact_embedded.html:62
 msgid "Website"
-msgstr ""
+msgstr "இணையதளம்"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
 #: src/viewertemplates/contact_embedded.html:26
 #: src/printing/ringbinder/rbs_appearance.ui:108
-#, fuzzy, kde-format
+#, kde-format
 msgid "Birthday"
-msgstr "பிறந்தநாள்:"
+msgstr "பிறந்தநாள்"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbNote)
 #: src/printing/grantlee/themes/default/theme.html:70
 #: src/printing/grantlee/themes/full/theme.html:70
 #: src/printing/ringbinder/rbs_appearance.ui:121
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Note"
-msgstr "குறிப்பு:"
+msgstr "குறிப்பு"
 
 #: src/printing/grantlee/themes/full/theme.html:76
-#, fuzzy
-#| msgid "Title"
 msgid "Title"
-msgstr "தலையங்கம்"
+msgstr "தலைப்பு"
 
 #: src/viewertemplates/contact_embedded.html:28
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(ஒரு ஆண்டு பழையது)"
+msgstr[1] "(%1 ஆண்டு பழையது)"
 
 #: src/viewertemplates/contact_embedded.html:47
-#, fuzzy
-#| msgid "Email"
 msgid "Email"
 msgstr "மின்னஞ்சல்"
 
@@ -124,11 +115,10 @@ msgid "KAddressBook"
 msgstr "KAddressBook"
 
 #: kontactplugin/kaddressbook_plugin.cpp:33
-#, fuzzy, kde-format
-#| msgid "&New Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
-msgstr "&புதிய தொடர்பு..."
+msgstr "புதிய தொடர்பு..."
 
 #. i18nc( "@info:status", "Create a new contact" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:39
@@ -141,10 +131,10 @@ msgid "You will be presented with a dialog where you can create a new contact."
 msgstr "நிரலெங்கிலும் உபயோகப்படும் குறுக்குவழிகளை அமைக்க ஒரு உரையாடல் முன்வைக்கப்படும்"
 
 #: kontactplugin/kaddressbook_plugin.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
-msgstr "_n: Count: %1 contact"
+msgstr "புதிய தொடர்புக்குழு..."
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:48
