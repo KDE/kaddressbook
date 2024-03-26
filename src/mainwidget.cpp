@@ -398,7 +398,8 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
 
 void MainWidget::updateQuickSearchText()
 {
-    mQuickSearchWidget->updateQuickSearchText(i18nc("@label Search contacts in list", "Search... <%1>", mQuickSearchAction->shortcut().toString()));
+    mQuickSearchWidget->updateQuickSearchText(
+        i18nc("@label Search contacts in list", "Search... <%1>", mQuickSearchAction->shortcut().toString(QKeySequence::NativeText)));
 }
 
 void MainWidget::delayedInit()
