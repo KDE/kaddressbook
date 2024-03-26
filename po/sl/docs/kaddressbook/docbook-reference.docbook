@@ -1,0 +1,1401 @@
+<appendix id="docbook-reference">
+	
+<appendixinfo>
+	
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>Luka</firstname
+><surname
+>Puhar</surname
+><affiliation
+><address
+><email
+>puhar.luka@gmail.com</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>26.08.2019</date>
+<releaseinfo
+>5.10.3 (aplikacije 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>&kaddressbook; je zelo zapleten program z veliko vgrajenimi funkcijami. V tem dodatku so dokumentirane nekatere naprednejše funkcije programa &kaddressbook;, predvsem zato, da glavni dokument ne bi postal preobsežen in nepregleden. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>KAAddressBook</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>E-pošta</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>&kaddressbook; Referenčno poglavje o naprednih funkcijah</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>Pogovorno okno Nova skupina</title>
+    
+  <para
+>Ko prikličete funkcijo <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Nova skupina</guibutton
+>, se začne pogovorno okno, kot je prikazano spodaj.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>Posnetek zaslona pogovornega okna &kaddressbook; <quote
+>Nova skupina</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona pogovornega okna &kaddressbook; <quote
+>Nova skupina</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Nova skupina</quote
+> po izbiri <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Novo&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Nova skupina</guimenuitem
+></menuchoice
+> funkcija.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>S spustnim poljem <quote
+>Dodaj v:</quote
+> izberite imenik, v katerega bo dodana nova skupina. V polju <quote
+>Ime</quote
+> dajte novi skupini ime. V modro polje <quote
+>&plus;</quote
+> vnesite e-poštne naslove ali dele e-poštnih naslovov. Prikazal se bo seznam možnih zadetkov. Izberite element na seznamu, ki se prikaže, in na seznam bo dodano novo ime. Nadaljujte z dodajanjem posameznih stikov na seznam, dokler ni popoln, nato kliknite <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+> in dodajte to skupino v imenik. Če želite izbrisati ime s seznama, kliknite ikono <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>, ki je na desni strani določenega imena. Če morate skupino pozneje spremeniti, jo preprosto izberite in uporabite meni <quote
+>Uredi</quote
+> ali gumb <quote
+>Uredi stik</quote
+> v orodni vrstici, da odprete zelo podobno pogovorno okno, v katerem lahko vnesete želene spremembe.</para>
+
+  <para
+>Program &kmail; omogoča alternativni način ustvarjanja nove skupine v programu &kaddressbook;. Ko e-poštno sporočilo naslovite na več oseb, imate možnost, da v imenik dodate novo skupino, kot je prikazano spodaj.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>Posnetek zaslona pogovornega okna <quote
+>Nova skupina</quote
+> storitve &kmail;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona pogovornega okna <quote
+>Nova skupina</quote
+> storitve &kmail;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kmail;ovo pogovorno okno <quote
+>Nova skupina</quote
+> po izbiri funkcije <guibutton
+>&nbsp;Shrani seznam... &nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Ko naslovite sporočilo na skupino oseb, kliknite <guibutton
+>&nbsp;Shrani seznam...&nbsp;</guibutton
+> na desni strani vnosnega območja za naslov, se prikaže prikazano pogovorno okno. Seznamu dajte ime in levo kliknite <guibutton
+>&nbsp;Shrani seznam&nbsp;</guibutton
+>. Pojavilo se bo drugo pogovorno okno, v katerem boste morali izbrati imenik. Izberite ga in za vas bo ustvarjena nova skupina.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>Pogovorno okno Predogled za tiskanje</title>
+    
+  <para
+>funkcija <quote
+>Predogled za tiskanje</quote
+> v programu &kaddressbook; vam omogoča, da prilagodite tiskano kopijo podatkov iz imenika na poljuben način.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>Posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> storitve &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> storitve &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Predogled tiskanja</quote
+>. Izberete lahko enega ali več celotnih imenikov ali le nekaj posameznih stikov.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Najprej je treba izbrati stike, ki bodo vključeni v izpis. Če želite natisniti le nekaj posameznih stikov, morate izbrati stike, ki jih želite natisniti, preden sprožite pogovorno okno <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Predogled tiskanja</guisubmenu
+></menuchoice
+>. Če želite izbrati vse stike ali vse stike v določenem imeniku, lahko to storite tukaj. Kliknite <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Naprej</guibutton
+>, ko ste izbrali. Prikazalo se bo novo okno.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>Drugi posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> v &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> storitve &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Drugi posnetek zaslona v pogovornem oknu <quote
+>Predogled tiskanja</quote
+> v programu &kaddressbook;. Izberete lahko polje razvrščanja in smer razvrščanja (navzgor ali navzdol). Izbirate lahko tudi med sedmimi različnimi postavitvami tiskanja.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Tu lahko izberete polje za razvrščanje (katero koli od 47 poimenovanih polj v zapisu stika), smer razvrščanja in eno od sedmih različnih oblik poročila. Ko kliknete <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Naprej</guibutton
+>, boste lahko prilagodili barvno shemo, ki se bo uporabila.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>Tretji posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> v &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Tretji posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> v &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>Tretji posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> v &kaddressbook;. Tu lahko izberete barvno shemo.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Tukaj je slika dokončanega poročila. Zdaj je pripravljen za tiskanje.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>Posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> storitve &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona pogovornega okna <quote
+>Predogled tiskanja</quote
+> storitve &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Predogled tiskanja</quote
+>, ko je poročilo ustvarjeno in pripravljeno za tiskanje. V tem oknu lahko izberete različne usmeritve tiskanja (ležeče ali pokončno) in zaženete opravilo tiskanja.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+ 
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>Pogovorno okno Konfiguracija LDAP</title>
+    
+  <para
+>Tukaj je slika prvega konfiguracijskega zaslona, ki se prikaže, ko izberete tipko <guibutton
+>Konfiguriraj LDAP Strežnike...</guibutton
+> v <menuchoice
+><guimenu
+>Datoteka</guimenu
+> <guisubmenu
+>Uvoz&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Uvozi iz LDAP Strežnika...</guimenuitem
+> </menuchoice
+> pogovorni vrstici ali element menija &kaddressbook;...<menuchoice
+><guimenu
+>Nastavitve</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Konfiguriraj </guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>Zaslonska slika &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj LDAP strežnik</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Zaslonska slika &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj LDAP strežnik</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo <quote
+>Konfiguriraj LDAP strežnik</quote
+> pogovorno okno po izbiri funkcije <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Uvozi&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Uvozi iz LDAP strežnika...</guimenuitem
+></menuchoice
+> in levem kliku na <guibutton
+>Konfiguriraj LDAP strežnike...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Če ste že konfigurirali enega ali več strežnikov <acronym
+>LDAP</acronym
+>, na tem zaslonu izberite strežnike, po katerih naj se poizveduje pri iskanju imena ali e-poštnega naslova. Z gumbom <guibutton
+>Dodaj gostitelja...</guibutton
+> dodajte nov strežnik na seznam razpoložljivih gostiteljev <acronym
+>LDAP</acronym
+>. Z gumbom <guibutton
+>Uredi gostitelja...</guibutton
+> lahko znova konfigurirate strežnik, ki je že na seznamu, z gumbom <guibutton
+>Odstrani gostitelja</guibutton
+> pa izbrišete vnos, ki ga ne potrebujete več. Gumb <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Ponastavi</guibutton
+> lahko uporabite za razveljavitev zadnjega opravljenega dejanja <quote
+>Dodaj</quote
+> ali <quote
+>Odstrani</quote
+>. Gumb <quote
+>Privzete nastavitve</quote
+> v izdaji 5.10.3 ne deluje. Preostali gumbi (OK, Uveljavi, Prekliči) imajo običajne funkcije: uporabi spremembe in izstopi, uporabi spremembe in ostani tukaj ter izstopi iz pogovornega okna, ne da bi opravil kakršne koli spremembe.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Ko izberete gumb <guibutton
+>Dodaj gostitelja...</guibutton
+> ali <guibutton
+>Uredi gostitelja...</guibutton
+>, se prikaže naslednje pogovorno okno.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>Drug posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj LDAP strežnik</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Drug posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj LDAP strežnik</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo <quote
+>Konfiguriraj LDAP strežnik</quote
+> pogovorno okno po levem kliku na <guibutton
+>Dodaj gostitelja...</guibutton
+> ali <guibutton
+>Uredi gostitelja...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Prva štiri polja (<quote
+>Uporabnik:</quote
+>, <quote
+>Razločevalno ime DN:</quote
+>, <quote
+>Področje:</quote
+> in <quote
+>Geslo:</quote
+>) bodo vsa siva, razen če je potrebna overovitev. Te poverilnice pridobite od skrbnika strežnika LDAP. V polje <quote
+>Host:</quote
+> vnesite ustrezen &URI;. Privzete vrednosti za <quote
+>Vrata:</quote
+>, <quote
+>Omejitev velikosti:</quote
+>, &etc; bodo za večino uporabnikov delovale v redu. Za nastavitev polja <quote
+>DN:</quote
+> lahko uporabite gumb <guibutton
+>Poizvedovalni strežnik</guibutton
+>. Nimam pojma, čemu je namenjeno polje <quote
+>Filter:</quote
+>. Če boste to ugotovili, mi to sporočite (davidbryant AT gvtc.com).</para>
+
+  <para
+>V razdelku <quote
+>Varnost</quote
+> določite metodo šifriranja, ki jo želite uporabiti: <quote
+>Ne</quote
+> za nešifrirano povezavo, <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> za Transport Layer Security ali <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> za Secure Socket Layer. Z možnostmi <quote
+>Overitev</quote
+> določite, katero raven overitve zahteva strežnik: <quote
+>Anonimno</quote
+> za sploh brez imena ali gesla, <quote
+>Preprosto</quote
+>, če je treba navesti <quote
+>Vezni DN</quote
+> in <quote
+>Geslo</quote
+>, ter <glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (Simple Authentication and Security Layer) za celoten schmear (štiri podatkovne elemente). Če je izbrana možnost <quote
+>SASL</quote
+>, z gumbom <guibutton
+>Poizvedovalni strežnik</guibutton
+> nastavite napredne možnosti za tega gostitelja.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>Funkcija za uvoz datoteke CSV</title>
+    
+  <para
+>Ko izberete funkcijo <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Uvozi&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>Uvozi CSV datoteko...</guimenuitem
+></menuchoice
+>, se prikaže pogovorno okno. Ko kliknete gumb <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> in izberete datoteko za uvoz, bo zaslon videti takole.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Uvoz CSV datoteke</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Uvoz CSV datoteke</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Uvozi CSV datoteko</quote
+> po izbiri funkcije <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Uvozi&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Uvozi CSV datoteko...</guimenuitem
+></menuchoice
+> in izbiri datoteke za uvoz.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Z razdelkom <quote
+>Razmejilnik</quote
+> tega pogovornega okna določite, kateri ločilni znak določa konec polja v izbrani vhodni datoteki. Če se narekovaji uporabljajo za razmejitev polj z vstavljenimi ločilnimi znaki, lahko prek spustnega polja <quote
+>Citiranje besedila:</quote
+> določite uporabljeni slog (enojni ali dvojni narekovaj). Če vhodna datoteka vsebuje datume, uporabite polje <quote
+>Oblika datuma:</quote
+> za določitev načina kodiranja datumov. Privzeta vrednost je llll-mm-dd. Če je to napačna oblika, se s kazalcem pomaknite nad polje <quote
+>Oblika datuma:</quote
+> in prikazala se bodo priročna navodila za oblikovanje. Če vhodna datoteka ni kodirana v UTF-8, s spustnim poljem <quote
+>Kodek za besedilo:</quote
+> določite shemo binarnega kodiranja, ki naj se uporabi. Če prva vrstica datoteke vsebuje glave stolpcev, potrdite polje <quote
+>Preskoči prvo vrstico datoteke</quote
+>, da se izognete uvozu glav stolpcev kot podatkov. S polji <quote
+>Nedoločeno</quote
+> na vrhu vsakega stolpca določite, katera podatkovna polja se bodo uvozila in kam naj se shranijo, kot je prikazano spodaj.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>Drug posnetek &kaddressbook;ovega zaslona pogovornega okna <quote
+>Uvozi CSV datoteko</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Drug posnetek &kaddressbook;ovega zaslona pogovornega okna <quote
+>Uvozi CSV datoteko</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Uvozi CSV Datoteko</quote
+> po izbiri funkcije <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Uvozi&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Uvozi CSV datoteko...</guimenuitem
+></menuchoice
+>, izbiri datoteke za uvoz in začetku določanja polj za uvoz.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Če želite uvoziti vsebino trenutnega stolpca, izberite ciljno mesto s seznama imen polj, ki se prikaže pod modrim poljem <quote
+>Nedoločeno</quote
+>. Za seznam vnaprej določenih polj glejte <link linkend="export-csv-data"
+>v naslednjem razdelku</link
+>. Za ogled vseh stolpcev v vhodni datoteki uporabite vodoravno drsno vrstico na dnu pogovornega okna. Ko so izbire končane, kliknite gumb <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>. Če ste določili več imenikov, boste morali določiti, kateri imenik naj se uporabi. &kaddressbook; bo nato uvozil izbrane podatke kot nove stike.</para>
+
+  <para
+>Če nameravate kdaj v prihodnosti uvoziti dodatne podatkovne nize v istem formatu, lahko kliknete gumb <guibutton
+>Shrani predlogo...</guibutton
+> (glej prvo sliko v tem razdelku), da shranite opravljene izbire. Pozvan bo poziv za poimenovanje predloge. Kasneje, ko boste uvozili drugo datoteko z enako postavitvijo, lahko prihranite čas s klikom na gumb <guibutton
+>Apply template...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>Funkcija Izvoz CSV datoteke</title>
+    
+  <para
+>Ko prikličete funkcijo <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Izvoz&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>Izvoz CSV datoteke...</guimenuitem
+></menuchoice
+>, se pojavi pogovorno okno.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Izvoz CSV datoteke</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Izvoz CSV datoteke</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Izvozi CSV datoteko</quote
+> po izbiri <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Izvoz&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>Izvozi CSV datoteki...</guimenuitem
+></menuchoice
+> funkcije.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Izberete lahko vse podatke o stikih ali le del podatkov. Ko pritisnete gumb <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>, boste lahko izbrali ime ustvarjene datoteke in imenik, v katerega bo zapisana. Izhodna datoteka bo vsebovala naslednjih sedeminštirideset (47) izhodnih polj v tem vrstnem redu od leve proti desni. Ta seznam imen polj je vključen kot prvi zapis v datoteki.</para>
+
+  <para
+>Formatirano ime | Častne predpone | Ime | Dodatna imena | Družinsko ime | Častne pripone | Vzdevek | Rojstni dan | Obletnica | EMail (prednostno) | EMail (2) | EMail (3) | EMail (4) | Ulica domačega naslova | Poštni predal domačega naslova| Mesto domačega naslova | Domači naslov Država (state) | Domači naslov Poštna številka | Država domačega naslova | Oznaka domačega naslova | Ulica poslovnega naslova | Naslov poslovnega poštnega predal | Mesto poslovnega naslova| Poslovni naslov Država (state) | Poštna številka poslovnega naslova | Država domačega naslova | Oznaka domačega naslova | Poslovni telefon | Mobilni telefon | Domači faks | Poslovni faks | Avto-fon | ISDN | Pager | Mail Client | Naslov | Vloga | Organizacija | Opomba | Domača stran | Blog Feed | Poklic | Urad | Manager | Pomočnik | Soproga</para>
+
+  <para
+>Vsa polja so oblikovana kot podatki znakovnega razreda. Datumi (rojstni dan in obletnica, če sta prisotna) so kodirani kot llll-mm-dd (leto, mesec, dan).</para>
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>Funkcija Spremeni število stolpcev</title>
+    
+  <para
+>Ko odprete meni <menuchoice
+><guimenu
+>Ogled</guimenu
+></menuchoice
+>, se prikaže naslednji zaslon.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega <quote
+>Ogled</quote
+> menija.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega <quote
+>Ogled</quote
+> menija.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ov <quote
+>Ogled</quote
+> meni po izbiri <menuchoice
+><guimenu
+>Ogled</guimenu
+></menuchoice
+> menija na menijski vrstici.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Niste zadovoljni z zgornjo postavitvijo treh stolpcev? S tem minimalističnim pristopom nekoliko popestrite dogajanje.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>Posnetek zaslona z enojno postavitvijo plošče &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona z enojno postavitvijo plošče &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ova <quote
+>Enostavna (en stolpec)</quote
+> postavitev. Vidni so samo osnovni podatki o stikih.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Opazite, da informacije o tem, kateri imeniki obstajajo in so v uporabi, niso vidne, ko je v uporabi ta <quote
+>Enostavna</quote
+> postavitev. Prikažejo se samo stiki iz imenikov, ki so bili izbrani pred izbiro tega pogleda.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Če vam<quote
+>Enostavna</quote
+> postavitev ne ustreza, lahko poskusite s slogom <quote
+>Dva stolpca</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ove Dvo pultne postavitve.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ove Dvo pultne postavitve.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ova <quote
+>Dvo stolpična</quote
+> postavitev. Seznam imenikov je postavljen na vrh seznama stikov po abecednem redu.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>V podjetju &kde; je naš moto "Bodi svoboden!" Prizadevamo si, da bi vam omogočili čim večjo prilagodljivost pri prilagajanju in konfiguriranju naše programske opreme po vašem okusu. Poigravali smo se z idejo, da bi v &kaddressbook; dodali še več pogledov; (Štirje stolpci! Pet!), vendar smo na koncu sklenil, da dovolj pomeni dovolj.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>Možnost Konfiguriranja bližnjic</title>
+    
+  <para
+>Ko prvič izberete možnost <menuchoice
+><guimenu
+>Nastavitve</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Konfiguriranje bližnjic...</guisubmenu
+> </menuchoice
+>, boste videli naslednje.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriranje bližnjic</quote
+> .</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriranje bližnjic</quote
+> .</phrase>
+    </textobject>
+    <caption>
+      <para
+>Pogovorno okno <quote
+>Konfiguriranje bližnjic</quote
+> v &kaddressbook;. Uporabite polje <quote
+>Poišči</quote
+> ali navpično drsno vrstico, da poiščete dejanje, za katero želite določiti novo bližnjico na tipkovnici.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Dejavnosti, za katere so že določene bližnjice na tipkovnici, so jasno označene v stolpcu <quote
+>Bližnjica</quote
+>. Dodatne bližnjice lahko dodelite prek stolpcev <quote
+>Drugotno</quote
+>, <quote
+>Globalno</quote
+> in <quote
+>Globalno drugotno</quote
+> v tej tabeli ali pa dodelite novo bližnjico dejanju, za katero še ni bila določena bližnjica na tipkovnici. Izberite dejanje, ki ga želite konfigurirati, tako da kliknete njegovo ime, kot je prikazano zgoraj. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Ko z levim gumbom miške kliknete <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Brez</guibutton
+>, se njegovo ime spremeni v <quote
+>Vhod...</quote
+>; nato lahko zapišete kombinacijo pritiskov tipk, ki jo želite dodeliti izbranemu dejanju. (S kazalcem se pomaknite nad gumb <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Brez</guibutton
+> za prikaz priročnega namiga o tem postopku.) Program bo zabeležil, katere tipke ste pritisnili, in zapisal novo bližnjico na tipkovnici, kot je prikazano spodaj.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>Drug posnetek zaslona pogovornega okna <quote
+>Konfiguriranje bližnjic</quote
+> v &kaddressbook;.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Drug posnetek zaslona pogovornega okna <quote
+>Konfiguriranje bližnjic</quote
+> v &kaddressbook;.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo ogovorno okno <quote
+>Konfiguriranje bližnjic</quote
+> po vnosu nove bližnjice na tipkovnici, vendar pred shranjevanjem nove konfiguracije.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Kliknite <guibutton
+>&nbsp;✔&nbsp;OK&nbsp;</guibutton
+>, da shranite spremembe. Kliknite <guibutton
+>&nbsp;⦸&nbsp;Prekliči&nbsp;</guibutton
+> za izhod brez shranjevanja sprememb. Kliknite <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>Privzeto</guibutton
+>, da obnovite privzeti nabor bližnjic na tipkovnici &kaddressbook;. Izberite <guibutton
+>&nbsp;Upravljanje shem&nbsp;&gt;&gt;&nbsp;</guibutton
+>, če želite svoje naloge po meri vključiti v večjo shemo nalog z bližnjicami; glejte <ulink url="help:/fundamentals/config.html"
+>Prilagajanje programske opreme &kde;</ulink
+> poglavje priročnika Osnove &kde;.</para>
+
+  <para
+>Izberete lahko <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Natisni</guibutton
+>, če želite izdelati tiskano različico dodelitev tipkovnih bližnjic. Tukaj je vzorec iz natisnjene tabele.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>Posnetek zaslona &kaddressbook; <quote
+>Natisni</quote
+> .</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook; <quote
+>Natisni</quote
+> .</phrase>
+    </textobject>
+    <caption>
+      <para
+>Odlomek iz &kaddressbook;ovega natisnjenega seznama bližnjic na tipkovnici .</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>Možnost Konfiguriranje orodnih vrstic</title>
+    
+  <para
+>Tukaj je slika zaslona, ki se prikaže, ko kliknete na <menuchoice
+><guimenu
+>Nastavitve</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Konfiguracija orodnih vrstic...</guisubmenu
+></menuchoice
+> menijski element.</para>
+  
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriranje orodnih vrstic</quote
+>.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriranje orodnih vrstic</quote
+>.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Konfiguriranje orodnih vrstic</quote
+>. Dejanja, ki so že prikazana v orodni vrstici, so prikazana v velikem oknu na desni strani. Dejanja v levem oknu lahko dodate v orodno vrstico, kot je razloženo spodaj.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Z enim od polj <quote
+>Filter</quote
+> omejite obseg izbir, ki so prikazane v ustreznem oknu. Če želite v orodno vrstico dodati akcijo, jo izberite v levem oknu (kot je prikazano zgoraj). Z levim klikom na <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+></inlinemediaobject
+> </guibutton
+> dodate element na seznam v desno okno (in od tam v orodno vrstico &kaddressbook;). Če želite izbrisati element iz orodne vrstice, preprosto obrnite postopek: označite element, ki ga želite izbrisati, v desnem oknu in kliknite gumb <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-previous.png" format="PNG"/></imageobject
+> </inlinemediaobject
+></guibutton
+>. Izbrani element bo odstranjen iz orodne vrstice.</para>
+  
+  <para
+>Vrstni red prikazovanja izbranih elementov v orodni vrstici lahko prilagodite z vlečenjem in spuščanjem v desnem oknu. Vrstni red elementov v orodni vrstici od leve proti desni ustreza vrstnemu redu v oknu od zgoraj navzdol. Dodatne spremembe videza orodne vrstice lahko izvedete z gumbom <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Spremeni ikono...</guibutton
+> za spremembo ikone, povezane z določenim dejanjem. Podobno lahko spremenite opis vsakega elementa v orodni vrstici tako, da kliknete <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Spremeni besedilo...</guibutton
+>.</para>
+  
+  <para
+>Uporabite tipko <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>Privzeto</guibutton
+>, da obnovite privzete nastavitve orodne vrstice. Izberite <quote
+>OK</quote
+>, če želite shraniti spremembe in zapustiti pogovorno okno, <quote
+>Uveljavi</quote
+>, če želite uporabiti spremembe in pustiti odprto pogovorno okno, ali <quote
+>Prekliči</quote
+>, če želite zapustiti pogovorno okno brez shranjevanja sprememb. (Za podrobnejšo razlago tega postopka glejte <ulink url="help:/fundamentals/config.html"
+>Prilagajanje programske opreme &kde; </ulink
+> poglavje v Priročniku osnove &kde;.)</para>
+  
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>Možnost &kaddressbook; konfiguracije</title>
+    
+  <para
+>Ko je izbrana možnost <menuchoice
+><guimenu
+>Nastavitve</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Konfiguracija &kaddressbook;...</guisubmenu
+></menuchoice
+>, se pojavi ta zaslon.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>Posnetek zaslona &kaddressbook;ovega <quote
+>Konfiguriraj &kaddressbook;</quote
+> pogovornega okna.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Posnetek zaslona &kaddressbook;ovega <quote
+>Konfiguriraj &kaddressbook;</quote
+> pogovornega okna.</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Konfiguriraj dejanja stikov</quote
+>. Te funkcije so še vedno eksperimentalne in še ne delujejo v celoti.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Prvo prikazano pogovorno okno podpira eksperimentalne funkcije, ki še niso v celoti vključene. Izbirate lahko med več različnimi možnostmi pod naslovi <quote
+>Pokaži naslov</quote
+>, <quote
+>Pokliči telefonsko številko</quote
+> ali <quote
+>Pošlji SMS</quote
+>, vendar še ni programske opreme, ki bi z izbranimi možnostmi kar koli naredila.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>Naslednja možnost, <quote
+>Nastavitve strežnika LDAP</quote
+>, je isto pogovorno okno, ki je dokumentirano v prejšnjem razdelku z naslovom <link linkend="configure-ldap-server"
+><quote
+>Pogovorno okno Konfiguriraj LDAP</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>Drug posnetek &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj &kaddressbook;</quote
+> .</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Drug posnetek &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj &kaddressbook;</quote
+> .</phrase>
+    </textobject>
+    <caption>
+      <para
+>&kaddressbook;ovo pogovorno okno <quote
+>Nastavitve LDAP strežnika</quote
+>. To pogovorno okno in njegov podrejeni del sta dokumentirana v <link linkend="configure-ldap-server"
+>prejšnjem razdelku</link
+> tega dodatka.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  
+  <para
+>Zadnji nabor možnosti za konfiguracijo &kaddressbook; se pojavi, ko izberete <quote
+>Vstavki</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>Tretji posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj &kaddressbook;</quote
+> .</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>Tretji posnetek zaslona &kaddressbook;ovega pogovornega okna <quote
+>Konfiguriraj &kaddressbook;</quote
+> .</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>Vstavki</quote
+> v pogovornem oknu &kaddressbook;. Vseh vtičnikov je deset. Sedem jih je privzeto aktiviranih, kot je prikazano zgoraj.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>Dejavnosti, ki jih podpira sedem privzetih vtičnikov <quote
+>Vstavki</quote
+>, so dokumentirane v prejšnjih razdelkih tega priročnika. Akciji <quote
+>Uvozi Izvozi <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> in <quote
+>Uvozi/Izvozi<glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+> bosta ob aktiviranju prikazani kot del menija <menuchoice
+><guimenu
+>Datoteka</guimenu
+></menuchoice
+>. Element <quote
+>Preveri <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> bo prikazan v meniju <menuchoice
+><guimenu
+>Tools</guimenu
+> </menuchoice
+>, ko bo aktiviran. Upoštevajte, da je treba &kaddressbook; ustaviti in znova zagnati, preden začnejo veljati kakršne koli spremembe <quote
+>Vstavkov</quote
+>. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  
+  <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>Zasluge in licence</title>
+
+  <para
+>&kaddressbook; </para>
+  
+  <para
+>Avtorske pravice &copy; 2007-2019 KAddressBook avtorji <email
+>montel@kde.org</email
+> </para>
+  
+  <para
+>Avtorske pravice dokumentacije &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  <para
+>Prevod: Luka Puhar<email
+>puhar.luka@gmail.com</email
+></para
+> &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>Kliknite tukaj za vrnitev na kazalo vsebine tega dodatka.</link
+></para>
+
+</sect1>
+
+</appendix>
