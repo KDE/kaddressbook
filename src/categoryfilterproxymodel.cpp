@@ -5,6 +5,7 @@
 */
 
 #include "categoryfilterproxymodel.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 
@@ -94,8 +95,8 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         int count = categories.count();
         for (int i = 0; i < count; ++i) {
             const QString cat = categories.at(i);
-            if (cat.startsWith(QLatin1StringView("akonadi:"))) {
-                const int idx = cat.indexOf(QLatin1StringView("?tag="));
+            if (cat.startsWith("akonadi:"_L1)) {
+                const int idx = cat.indexOf("?tag="_L1);
                 if (idx >= 0) {
                     ++validCategories;
                     Tag::Id id = QStringView(cat).mid(idx + 5).toInt();

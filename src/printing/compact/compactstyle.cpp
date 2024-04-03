@@ -23,6 +23,7 @@
 
 using namespace KABPrinting;
 using namespace KAddressBookImportExport;
+using namespace Qt::Literals::StringLiterals;
 
 const char *CompactStyleConfigSectionName = "CompactStyle";
 const char *WithAlternating = "WithAlternating";
@@ -41,7 +42,7 @@ public:
     explicit CompactStyleForm(QWidget *parent)
         : QWidget(parent)
     {
-        setObjectName(QLatin1StringView("AppearancePage"));
+        setObjectName("AppearancePage"_L1);
         setupUi(this);
     }
 };
@@ -68,8 +69,8 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
     }
 
     QString content = QStringLiteral("<html>\n");
-    content += QLatin1StringView(" <body>\n");
-    content += QLatin1StringView("  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n");
+    content += " <body>\n"_L1;
+    content += "  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n"_L1;
 
     bool odd = false;
     for (const KContacts::Addressee &contact : contacts) {
@@ -83,22 +84,21 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
             }
         }
 
-        content += QLatin1StringView("   <tr>\n");
+        content += "   <tr>\n"_L1;
         QString style = QStringLiteral("background-color:");
         if (this->withAlternating) {
             style += (odd) ? this->firstColor.name() : this->secondColor.name();
         } else {
-            style += QLatin1StringView("#ffffff");
+            style += "#ffffff"_L1;
         }
-        content +=
-            QLatin1StringView("    <td style=\"") + style + QLatin1StringView(";\">") + values.join(QLatin1StringView("; ")) + QLatin1StringView("</td>\n");
-        content += QLatin1StringView("   </tr>\n");
+        content += QLatin1StringView("    <td style=\"") + style + QLatin1StringView(";\">") + values.join("; "_L1) + "</td>\n"_L1;
+        content += "   </tr>\n"_L1;
         odd = !odd;
     }
 
-    content += QLatin1StringView("  </table>\n");
-    content += QLatin1StringView(" </body>\n");
-    content += QLatin1StringView("</html>\n");
+    content += "  </table>\n"_L1;
+    content += " </body>\n"_L1;
+    content += "</html>\n"_L1;
 
     return content;
 }

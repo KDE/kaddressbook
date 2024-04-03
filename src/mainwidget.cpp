@@ -7,6 +7,7 @@
 */
 
 #include "mainwidget.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "categoryfilterproxymodel.h"
 #include "categoryselectwidget.h"
@@ -519,7 +520,7 @@ void MainWidget::setupGui()
     //   - details view stack on the top
     //   - contact switcher at the bottom
     mMainWidgetSplitter1 = new QSplitter(Qt::Horizontal);
-    mMainWidgetSplitter1->setObjectName(QLatin1StringView("MainWidgetSplitter1"));
+    mMainWidgetSplitter1->setObjectName("MainWidgetSplitter1"_L1);
     layout->addWidget(mMainWidgetSplitter1);
 
     // Splitter 2 contains the remaining parts of the GUI:
@@ -528,7 +529,7 @@ void MainWidget::setupGui()
     // The orientation of this splitter is changed for either
     // a three or two column view;  in simple mode it is hidden.
     mMainWidgetSplitter2 = new QSplitter(Qt::Vertical);
-    mMainWidgetSplitter2->setObjectName(QLatin1StringView("MainWidgetSplitter2"));
+    mMainWidgetSplitter2->setObjectName("MainWidgetSplitter2"_L1);
     mMainWidgetSplitter1->addWidget(mMainWidgetSplitter2);
 
     // the collection view
@@ -537,7 +538,7 @@ void MainWidget::setupGui()
 
     // the items view
     mItemView = new Akonadi::EntityTreeView();
-    mItemView->setObjectName(QLatin1StringView("ContactView"));
+    mItemView->setObjectName("ContactView"_L1);
     mItemView->setDefaultPopupMenu(QStringLiteral("akonadi_itemview_contextmenu"));
     mItemView->setAlternatingRowColors(true);
     mMainWidgetSplitter2->addWidget(mItemView);
@@ -718,7 +719,7 @@ void MainWidget::printPreview()
     printer.setCollateCopies(true);
 
     QPointer<QPrintPreviewDialog> previewdlg = new QPrintPreviewDialog(&printer, this);
-    new KWindowStateSaver(previewdlg.data(), QLatin1StringView("KAddressBookPrintPreviewDialog"));
+    new KWindowStateSaver(previewdlg.data(), "KAddressBookPrintPreviewDialog"_L1);
 
     KABPrinting::PrintingWizard wizard(&printer, mItemView->selectionModel(), this);
     wizard.setDefaultAddressBook(currentAddressBook());
