@@ -3,22 +3,22 @@
 # Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 # Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
-# Vit Pelcak <vit@pelcak.org>, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-27 00:38+0000\n"
-"PO-Revision-Date: 2023-02-22 14:30+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"POT-Creation-Date: 2024-04-04 00:38+0000\n"
+"PO-Revision-Date: 2024-04-03 11:48+0200\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 24.02.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "nene@wo.cz,lukas@kde.org,Ivo.Jansky@seznam.cz,koty@seznam.cz"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:715 src/mainwidget.cpp:742
+#: src/mainwidget.cpp:716 src/mainwidget.cpp:743
 #, kde-format
 msgid "Address Book"
 msgstr "Kniha adres"
@@ -718,92 +718,92 @@ msgstr "&Exportovat"
 msgid "Main Toolbar"
 msgstr "Hlavní panel nástrojů"
 
-#: src/mainwidget.cpp:349
+#: src/mainwidget.cpp:350
 #, kde-format
 msgid "Import"
 msgstr "Importovat"
 
-#: src/mainwidget.cpp:356
+#: src/mainwidget.cpp:357
 #, kde-format
 msgid "Export"
 msgstr "Exportovat"
 
-#: src/mainwidget.cpp:402
+#: src/mainwidget.cpp:403
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Hledat...<%1>"
 
-#: src/mainwidget.cpp:638
+#: src/mainwidget.cpp:639
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Vytisknout celou knihu adres, nebo zvolený počet kontaktů."
 
-#: src/mainwidget.cpp:643
+#: src/mainwidget.cpp:644
 #, kde-format
 msgid "Quick search"
 msgstr "Rychlé hledání"
 
-#: src/mainwidget.cpp:648
+#: src/mainwidget.cpp:649
 #, kde-format
 msgid "Category filter"
 msgstr "Filtr kategorií"
 
-#: src/mainwidget.cpp:653
+#: src/mainwidget.cpp:654
 #, kde-format
 msgid "Select All"
 msgstr "Označit vše"
 
-#: src/mainwidget.cpp:655
+#: src/mainwidget.cpp:656
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Vybrat všechny kontakty z aktuálního pohledu."
 
-#: src/mainwidget.cpp:659
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Zobrazit QR kódy"
 
-#: src/mainwidget.cpp:660
+#: src/mainwidget.cpp:661
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Zobrazit QR kódy v kontaktu."
 
-#: src/mainwidget.cpp:665
+#: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jednoduchý (jeden sloupec)"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Zvolit jednoduchý režim pohledu na knihu adres."
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:673
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dva sloupce"
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:679
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tři sloupce"
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:692
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr "Přejít do rychlého vyhledávání"
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:705
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr "Odběr na serveru..."
 
-#: src/mainwidget.cpp:748 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -1196,7 +1196,7 @@ msgstr "Tisk: průběh"
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: src/printing/printprogress.cpp:43
 #, kde-format
