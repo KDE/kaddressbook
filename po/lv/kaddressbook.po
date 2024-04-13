@@ -4,31 +4,32 @@
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008, 2010.
 # Viesturs Zariņš <viesturs.zarins@algorego.com>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:38+0000\n"
-"PO-Revision-Date: 2010-01-12 09:37+0200\n"
-"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-04-10 15:20+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Andris Maziks, Viesturs Zariņš"
+msgstr "Andris Maziks, Viesturs Zariņš, Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "andris.m@delfi.lv, viesturs.zarins@mi.lu.lv"
+msgstr "andris.m@delfi.lv, viesturs.zarins@mi.lu.lv, toms.trasuns@posteo.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
 #: src/mainwidget.cpp:716 src/mainwidget.cpp:743
@@ -37,18 +38,13 @@ msgid "Address Book"
 msgstr "Adrešu grāmata"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Contacts"
 msgid "Contact"
 msgstr "Kontakti"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgctxt "@item LDAP search key"
-#| msgid "Email"
 msgid "Emails"
-msgstr "E-pasts"
+msgstr "E-pasti"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -62,7 +58,7 @@ msgstr "Organizācija"
 #: src/printing/grantlee/themes/full/theme.html:58
 #: src/viewertemplates/contact_embedded.html:62
 msgid "Website"
-msgstr ""
+msgstr "Tīmekļa vietne"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
@@ -82,33 +78,26 @@ msgid "Note"
 msgstr "Piezīme"
 
 #: src/printing/grantlee/themes/full/theme.html:76
-#, fuzzy
-#| msgctxt "@item LDAP search key"
-#| msgid "Title"
 msgid "Title"
-msgstr "Tituls"
+msgstr "Uzruna"
 
 #: src/viewertemplates/contact_embedded.html:28
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "(%1 gadu vecs)"
+msgstr[1] "(%1 gadus vecs)"
+msgstr[2] "(%1 gadu vecs)"
 
 #: src/viewertemplates/contact_embedded.html:47
-#, fuzzy
-#| msgctxt "@title:column Column containing email addresses"
-#| msgid "Email"
 msgid "Email"
 msgstr "E-pasts"
 
 #: src/viewertemplates/contact_embedded.html:75
 #: src/importexport/contactfields.cpp:105
-#, fuzzy, kde-format
-#| msgid "&Blog feed:"
+#, kde-format
 msgid "Blog Feed"
-msgstr "Dienasgrāmatas &barotne:"
+msgstr "Emuāra plūsma"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
 #: src/kaddressbookpart.cpp:26
@@ -117,43 +106,31 @@ msgid "KAddressBook"
 msgstr "KAddressBook"
 
 #: kontactplugin/kaddressbook_plugin.cpp:33
-#, fuzzy, kde-format
-#| msgid "New &Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
-msgstr "Jauns &kontakts..."
+msgstr "Jauns kontakts..."
 
 #. i18nc( "@info:status", "Create a new contact" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:39
-#, fuzzy, kde-format
-#| msgid ""
-#| "You will be presented with a dialog where you can configure the "
-#| "application-wide shortcuts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
-msgstr ""
-"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
-"īsceļus."
+msgstr "Jums atvērsies logs, kurā varēsiet izveidot jaunu kontaktu."
 
 #: kontactplugin/kaddressbook_plugin.cpp:42
-#, fuzzy, kde-format
-#| msgid "New &Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
-msgstr "Jauns &kontakts..."
+msgstr "Jauna kontaktu grupa..."
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "You will be presented with a dialog where you can configure the "
-#| "application-wide shortcuts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can create a new contact group."
-msgstr ""
-"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
-"īsceļus."
+msgstr "Jums atvērsies logs, kurā varēsiet redzēt jaunu kontaktu grupu."
 
 #: src/aboutdata.cpp:19
 #, kde-format
@@ -163,7 +140,7 @@ msgstr "KDE adrešu grāmatas lietotne"
 #: src/aboutdata.cpp:21
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr ""
+msgstr "Autortiesības © 2007—%1 „KAddressBook“ autori"
 
 #: src/aboutdata.cpp:23
 #, kde-format
@@ -176,171 +153,155 @@ msgid "Current maintainer"
 msgstr "Pašreizējais uzturētājs"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgid "Tobias König"
-msgstr "Tobias Koenig"
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Current maintainer"
+#, kde-format
 msgid "Previous maintainer"
-msgstr "Pašreizējais uzturētājs"
+msgstr "Iepriekšējais uzturētājs"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Steffen Hansen"
+#, kde-format
 msgid "Stefan Taferner"
-msgstr "Steffen Hansen"
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Original author"
+#, kde-format
 msgid "Original Author (1998)"
-msgstr "Sākotnējais autors"
+msgstr "Sākotnējais autors (1998)"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Dokumentācija (2019)"
 
 #: src/categoryselectwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
-msgstr "Lietot pēdējo aktīvo filtru"
+msgstr "Atiestatīt kategoriju filtru"
 
 #: src/categoryselectwidget.cpp:101
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
-msgstr "Lietot pēdējo aktīvo filtru"
+msgstr "Notīrīt kategoriju filtru"
 
 #: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
-msgstr ""
+msgstr "(Bez birkas)"
 
 #: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
-msgstr ""
+msgstr "(Grupas)"
 
 #: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
-msgstr ""
+msgstr "(Visi)"
 
 #: src/categoryselectwidget.cpp:224
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Quote character option"
-#| msgid "None"
+#, kde-format
 msgid "(None)"
-msgstr "Nav"
+msgstr "(Neviens)"
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid "<qt>Category filter: %1"
-msgstr ""
+msgstr "<qt>Kategorijas filtrs: %1"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
 msgid "Tools Plugins"
-msgstr ""
+msgstr "Rīku spraudņi"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
 #, kde-format
 msgid "Import/Export Plugins"
-msgstr ""
+msgstr "Importa/eksporta spraudņi"
 
 #: src/contactinfoproxymodel.cpp:67
-#, fuzzy, kde-format
-#| msgid "Add..."
+#, kde-format
 msgid "..."
-msgstr "Pievienot..."
+msgstr "..."
 
 #: src/contactinfoproxymodel.cpp:69
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "Ielādē kontakta informāciju..."
 
 #: src/contactinfoproxymodel.cpp:122
-#, fuzzy, kde-format
-#| msgctxt "@label:textbox Inputfield for an email address"
-#| msgid "Email:"
+#, kde-format
 msgid "Email: %1"
-msgstr "E-pasts:"
+msgstr "E-pasts: %1"
 
 #: src/contactinfoproxymodel.cpp:130
-#, fuzzy, kde-format
-#| msgid "Phone"
+#, kde-format
 msgid "Phone: %1"
-msgstr "Telefons"
+msgstr "Tālrunis: %1"
 
 #: src/contactinfoproxymodel.cpp:136
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button Next contact"
 msgid "Next"
-msgstr "Nākamais"
+msgstr "Tālāk"
 
 #: src/contactswitcher.cpp:19
-#, fuzzy, kde-format
-#| msgid "Previous"
+#, kde-format
 msgctxt "@action:button Previous contact"
 msgid "Previous"
-msgstr "Iepriekšējais"
+msgstr "Atpakaļ"
 
 #: src/contactswitcher.cpp:24
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the previous contact in the list"
-msgstr ""
+msgstr "Pārvietoties uz nākamo kontaktu sarakstā"
 
 #: src/contactswitcher.cpp:25
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the previous contact in the list."
-msgstr ""
+msgstr "Spiediet šo pogu, lai ietu uz iepriekšējo kontaktu sarakstā."
 
 #: src/contactswitcher.cpp:27
-#, fuzzy, kde-format
-#| msgid "Copy the selected contacts to the clipboard."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the next contact in the list"
-msgstr "Kopēt izvēlētos kontaktus starpliktuvē."
+msgstr "Iet uz nākamo kontaktu sarakstā"
 
 #: src/contactswitcher.cpp:28
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the next contact in the list."
-msgstr ""
+msgstr "Spiediet šo pogu, lai pārvietotos uz nākamo kontaktu sarakstā."
 
 #: src/contactswitcher.cpp:106
-#, fuzzy, kde-format
-#| msgid "%1 out of %2"
+#, kde-format
 msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%1. no %2"
@@ -352,36 +313,31 @@ msgid "Undefined"
 msgstr "Nedefinēts"
 
 #: src/importexport/contactfields.cpp:39
-#, fuzzy, kde-format
-#| msgid "Anniversary"
+#, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
 msgstr "Gadadiena"
 
 #: src/importexport/contactfields.cpp:85
-#, fuzzy, kde-format
-#| msgid "EMail (preferred)"
+#, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
 msgstr "E-pasts (vēlamais)"
 
 #: src/importexport/contactfields.cpp:87
-#, fuzzy, kde-format
-#| msgid "EMail (2)"
+#, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
 msgstr "E-pasts (2)"
 
 #: src/importexport/contactfields.cpp:89
-#, fuzzy, kde-format
-#| msgid "EMail (3)"
+#, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
 msgstr "E-pasts (3)"
 
 #: src/importexport/contactfields.cpp:91
-#, fuzzy, kde-format
-#| msgid "EMail (4)"
+#, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "E-pasts (4)"
@@ -397,64 +353,59 @@ msgid "Office"
 msgstr "Birojs"
 
 #: src/importexport/contactfields.cpp:111
-#, fuzzy, kde-format
-#| msgid "Myanmar"
+#, kde-format
 msgid "Manager"
-msgstr "Maijanmara"
+msgstr "Vadītājs"
 
 #: src/importexport/contactfields.cpp:113
-#, fuzzy, kde-format
-#| msgid "Assistant's Name"
+#, kde-format
 msgid "Assistant"
-msgstr "Palīga vārds"
+msgstr "Asistents"
 
 #: src/importexport/contactfields.cpp:115
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "Laulātais partneris/-e"
 
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
-#| msgid "Select Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "Izvēlētos kontaktus"
+msgstr "Atlasīt kontaktus"
 
 #: src/importexport/contactselectionwidget.cpp:115
-#, fuzzy, kde-format
-#| msgid "All contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr "Visus kontaktus"
+msgstr "Visi kontakti"
 
 #: src/importexport/contactselectionwidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Import contacts from a GMX address book file."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr "Imoprtēt kontaktus no GMX adrešu grāmatas faila."
+msgstr "Visi kontakti no jūsu adrešu grāmatas"
 
 #: src/importexport/contactselectionwidget.cpp:118
-#, fuzzy, kde-format
-#| msgid "Cut the selected contacts from the address book."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
-msgstr "Izgriezt izvēlietos kontaktus no adrešu gramatas."
+msgstr ""
+"Izvēlieties šo opciju, ja vēlaties atlasītu visus adrešu grāmatā esošos "
+"kontaktus."
 
 #: src/importexport/contactselectionwidget.cpp:121
-#, fuzzy, kde-format
-#| msgid "Selected contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr "Izvēlētos kontaktus"
+msgstr "Atlasītie kontakti"
 
 #: src/importexport/contactselectionwidget.cpp:122
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr ""
+msgstr "Tikai atlasītie kontakti"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -463,20 +414,20 @@ msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
 msgstr ""
+"Atlasiet šo opciju, ja vēlaties tikai tos kontaktus, kas ir jau atlasīti "
+"grafiskajā saskarnē."
 
 #: src/importexport/contactselectionwidget.cpp:127
-#, fuzzy, kde-format
-#| msgid "All contacts from:"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts from:"
-msgstr "Visus kontaktus no:"
+msgstr "Visi kontakti no:"
 
 #: src/importexport/contactselectionwidget.cpp:128
-#, fuzzy, kde-format
-#| msgid "Import contacts from a GMX address book file."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "Imoprtēt kontaktus no GMX adrešu grāmatas faila."
+msgstr "Visi kontakti no izvēlētās adrešu grāmatas"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -487,19 +438,21 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"Atlasiet šo opciju, ja vēlaties atlasīt visus kontaktus no tikai vienas "
+"adrešu grāmatas. Kad ir atzīmēta šī opcija, parādīsies saraksts ar visām "
+"adrešu grāmatām, starp kurām varēsiet atlasīt vēlamo."
 
 #: src/importexport/contactselectionwidget.cpp:139
-#, fuzzy, kde-format
-#| msgid "Include Subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr "Iekļaujot apakšmapes"
+msgstr "Iekļaut apakšmapes"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "Atlasīt visas apakšmapes, ieskaitot augstākā līmeņa mapi"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -509,44 +462,41 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties atlasīt visus kontaktus no šīs mapes, "
+"ieskaitot visas apakšmapes. Ja vēlaties tikai kontaktus no augšējā līmeņa "
+"mapes, tad atstājiet šo lauciņu neatzīmētu."
 
 #: src/importexport/contactselectionwidget.cpp:170
-#, fuzzy, kde-format
-#| msgid "Select Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
-msgstr "Izvēlētos kontaktus"
+msgstr "Sakopot kontaktus"
 
 #: src/importexport/contactselectionwidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "Select Contacts"
+#, kde-format
 msgid "Fetch Contacts"
-msgstr "Izvēlētos kontaktus"
+msgstr "Iegūt kontaktus"
 
 #: src/importexport/exportselectionwidget.cpp:21
-#, fuzzy, kde-format
-#| msgid "Private fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Privāti lauki"
 
 #: src/importexport/exportselectionwidget.cpp:22
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Darba lauki"
 
 #: src/importexport/exportselectionwidget.cpp:23
-#, fuzzy, kde-format
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Citi lauki"
 
 #: src/importexport/exportselectionwidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Šifrēšanas atslēgtas"
@@ -555,28 +505,25 @@ msgstr "Šifrēšanas atslēgtas"
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
-msgstr ""
+msgstr "Attēli"
 
 #: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "Parādīt vārdu kā pilnu vārdu"
 
 #: src/importexport/exportselectionwidget.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "File to import:"
+#, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr "Importējamais fails:"
+msgstr "Eksportējamie lauki"
 
 #: src/importexport/exportselectionwidget.cpp:36
-#, fuzzy, kde-format
-#| msgid "Private fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
-msgstr "Privāti lauki"
+msgstr "Eksportēt privātos laukus"
 
 #: src/importexport/exportselectionwidget.cpp:38
 #, kde-format
@@ -585,13 +532,14 @@ msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties kā „vCard“ izvades datni eksportēt "
+"kontakta privātos laukus."
 
 #: src/importexport/exportselectionwidget.cpp:42
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
-msgstr "Darba lauki"
+msgstr "Eksportēt uzņēmējdarbības laukus"
 
 #: src/importexport/exportselectionwidget.cpp:44
 #, kde-format
@@ -600,13 +548,14 @@ msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties uz „vCard“ izvadi eksportēt kontakta "
+"darba laukus."
 
 #: src/importexport/exportselectionwidget.cpp:48
-#, fuzzy, kde-format
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
-msgstr "Citi lauki"
+msgstr "Eksportēt citu laukus"
 
 #: src/importexport/exportselectionwidget.cpp:50
 #, kde-format
@@ -615,13 +564,14 @@ msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties uz „vCard“ izvades datni eksportēt citus "
+"kontakta lauciņus."
 
 #: src/importexport/exportselectionwidget.cpp:54
-#, fuzzy, kde-format
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
-msgstr "Šifrēšanas atslēgtas"
+msgstr "Eksportēt šifrēšanas atslēgas"
 
 #: src/importexport/exportselectionwidget.cpp:56
 #, kde-format
@@ -630,13 +580,14 @@ msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties uz „vCard“ izvades datni eksportēt "
+"kontakta šifrēšanas atslēgas."
 
 #: src/importexport/exportselectionwidget.cpp:60
-#, fuzzy, kde-format
-#| msgid "Export to One File"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr "Eksportēt vienā failā"
+msgstr "Eksportēt attēlus"
 
 #: src/importexport/exportselectionwidget.cpp:62
 #, kde-format
@@ -645,19 +596,20 @@ msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties uz „vCard“ izvades datni eksportēt "
+"kontakta attēlu."
 
 #: src/importexport/exportselectionwidget.cpp:66
-#, fuzzy, kde-format
-#| msgid "Export to One File"
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr "Eksportēt vienā failā"
+msgstr "Eksportēšanas opcijas"
 
 #: src/importexport/exportselectionwidget.cpp:72
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "Eksportēt parādāmo vārdu kā pilnu vārdu"
 
 #: src/importexport/exportselectionwidget.cpp:74
 #, kde-format
@@ -667,74 +619,70 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"Atzīmējiet šo lauciņu, ja vēlaties „vCard“ pilna vārda lauciņā eksportēt "
+"kontakta parādāmo vārdu. Tas var būt nepieciešams, lai vārds pareizi "
+"parādītos „GMail“ vai „Android“."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Select Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "Izvēlēties adrešu grāmatu"
+msgstr "Atlasiet adrešu grāmatu"
 
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr "Izvēlieties adrešu grāmatu, kurā saglabāt importētos kontaktus:"
+msgstr "Atlasiet adrešu grāmatu, kurā saglabāt importētos kontaktus:"
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "Importing contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Importē kontaktus"
+msgstr "Importēt kontaktus"
 
 #: src/importexport/importexportengine.cpp:75
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "Importing contacts"
+#, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] "Importē kontaktus"
-msgstr[1] "Importē kontaktus"
-msgstr[2] "Importē kontaktus"
+msgstr[0] "Importēt %1 kontaktu uz %2"
+msgstr[1] "Importēt %1 kontaktus uz %2"
+msgstr[2] "Importēt %1 kontaktu uz %2"
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
-#| msgid "Import the given vCard"
+#, kde-format
 msgid "Import the given file"
-msgstr "Importēt doto vKarti..."
+msgstr "Importēt doto datni"
 
 #: src/kaddressbook_options.h:17
 #, kde-format
 msgid "Open the 'New Contact' dialog"
-msgstr ""
+msgstr "Atvērt „Jauns kontakts“ lodziņu"
 
 #: src/kaddressbook_options.h:19
 #, kde-format
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "Parāda norādīto kontaktu (pēc URL)"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgid "Files or URLs. The user will be asked whether to import."
-msgstr ""
+msgstr "Datnes vai URL. Lietotājam jautās, vai importēt."
 
 #: src/kaddressbook_options.h:24
 #, kde-format
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "Uzskaita pieejamās lietotāja atsauksmju opcijas"
 
 #: src/kaddressbookpart.cpp:49
-#, fuzzy, kde-format
-#| msgid "Import KDE 2 Address Book..."
+#, kde-format
 msgid "&Configure KAddressBook..."
-msgstr "Importēt KDE 2 adrešu grāmatu..."
+msgstr "&Konfigurēt „KAddressBook“..."
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
 #, kde-format
 msgid "&File"
-msgstr "&Fails"
+msgstr "&Datne"
 
 #. i18n: ectx: Menu (file_new)
 #: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
@@ -746,21 +694,19 @@ msgstr "&Jauns"
 #: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
 #, kde-format
 msgid "&Edit"
-msgstr "R&ediģēt"
+msgstr "&Rediģēt"
 
 #. i18n: ectx: Menu (view)
 #: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
 #, kde-format
 msgid "&View"
-msgstr "S&kats"
+msgstr "&Skats"
 
 #. i18n: ectx: Menu (action)
 #: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
-#, fuzzy, kde-format
-#| msgctxt "@title:group Selection of contacts that must be exported"
-#| msgid "Selection"
+#, kde-format
 msgid "&Action"
-msgstr "Izvēlētos"
+msgstr "&Darbība"
 
 #. i18n: ectx: Menu (tools)
 #: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
@@ -772,7 +718,7 @@ msgstr "&Rīki"
 #: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
 #, kde-format
 msgid "&Settings"
-msgstr "Ie&statījumi"
+msgstr "&Iestatījumi"
 
 #. i18n: ectx: Menu (file_export)
 #: src/kaddressbookui.rc:92 src/kaddressbookui_part.rc:90
@@ -792,24 +738,21 @@ msgid "Import"
 msgstr "Importēt"
 
 #: src/mainwidget.cpp:357
-#, fuzzy, kde-format
-#| msgid "&Export"
+#, kde-format
 msgid "Export"
-msgstr "&Eksportēt"
+msgstr "Eksportēt"
 
 #: src/mainwidget.cpp:403
-#, fuzzy, kde-format
-#| msgid "Search"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
-msgstr "Meklēt"
+msgstr "Meklēt...<%1>"
 
 #: src/mainwidget.cpp:639
-#, fuzzy, kde-format
-#| msgid "Print the complete address book or a selected number of contacts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
-msgstr "Izdrukāt visu adrešu gramatu vai izvēlētos kontaktus."
+msgstr "Izdrukāt visu adrešu grāmatu vai atlasītos kontaktus."
 
 #: src/mainwidget.cpp:644
 #, kde-format
@@ -817,83 +760,76 @@ msgid "Quick search"
 msgstr "Ātrā meklēšana"
 
 #: src/mainwidget.cpp:649
-#, fuzzy, kde-format
-#| msgid "Category &members"
+#, kde-format
 msgid "Category filter"
-msgstr "Ietil&pst kategorijā"
+msgstr "Kategorijas filtrs"
 
 #: src/mainwidget.cpp:654
 #, kde-format
 msgid "Select All"
-msgstr "Izvēlēties visus"
+msgstr "Atlasīt visus"
 
 #: src/mainwidget.cpp:656
 #, kde-format
 msgid "Select all contacts in the current address book view."
-msgstr "Izvēlas visus aktīvās adrešu grāmatas kontaktus."
+msgstr "Atlasīt visus aktīvās adrešu grāmatas kontaktus."
 
 #: src/mainwidget.cpp:660
 #, kde-format
 msgid "Show QR Codes"
-msgstr ""
+msgstr "Rādīt QR kodus"
 
 #: src/mainwidget.cpp:661
 #, kde-format
 msgid "Show QR Codes in the contact."
-msgstr ""
+msgstr "Rādīt QR kodus kontaktā."
 
 #: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
-msgstr ""
+msgstr "Vienkāršs (viena kolonna)"
 
 #: src/mainwidget.cpp:670
 #, kde-format
 msgid "Show a simple mode of the address book view."
-msgstr "Rāda adrešu gramatu vienkāršajā režīmā."
+msgstr "Rāda adrešu grāmatu vienkāršajā režīmā."
 
 #: src/mainwidget.cpp:673
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
-msgstr ""
+msgstr "Divas kolonnas"
 
 #: src/mainwidget.cpp:679
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
-msgstr ""
+msgstr "Trīs kolonnas"
 
 #: src/mainwidget.cpp:692
 #, kde-format
 msgid "Set Focus to Quick Search"
-msgstr ""
+msgstr "Iestatīt fokusu uz ātro meklēšanu"
 
 #: src/mainwidget.cpp:705
 #, kde-format
 msgid "Serverside Subscription..."
-msgstr ""
+msgstr "Servera puses abonoments..."
 
 #: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Drukāt kontaktus"
 
 #: src/mainwindow.cpp:111
-#, fuzzy, kde-format
-#| msgid ""
-#| "You will be presented with a dialog where you can configure the "
-#| "application-wide shortcuts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can configure the application-"
 "wide shortcuts."
-msgstr ""
-"Jums tiks parādīts logs, kurā varēsiet konfigurēt lietotnes tastatūras "
-"īsceļus."
+msgstr "Atvērsies lodziņš, kurā varēsiet konfigurēt programmas saīsnes."
 
 #: src/mainwindow.cpp:213
 #, kde-format
@@ -901,19 +837,19 @@ msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
+"<qt>Tas pilnībā paslēps izvēļņu joslu. Varat to atkal parādīt, spiežot „%1“."
+"</qt>"
 
 #: src/mainwindow.cpp:216
-#, fuzzy, kde-format
-#| msgid "Hide Jump Bar"
+#, kde-format
 msgid "Hide menu bar"
-msgstr "Slēpt lekšanas joslu"
+msgstr "Slēpt izvēļņu joslu"
 
 #: src/manageshowcollectionproperties.cpp:83
-#, fuzzy, kde-format
-#| msgid "Delete Address Book Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "Properties of Address Book Folder %1"
-msgstr "Dzēst adrešu grāmatas mapi"
+msgstr "Adrešu grāmatas mapes „%1“ īpašības"
 
 #: src/modelcolumnmanager.cpp:69
 #, kde-format
@@ -921,16 +857,14 @@ msgid "Full Name"
 msgstr "Pilns vārds"
 
 #: src/modelcolumnmanager.cpp:74
-#, fuzzy, kde-format
-#| msgid "Family names:"
+#, kde-format
 msgid "Family Name"
-msgstr "Uzvārdi:"
+msgstr "Uzvārds"
 
 #: src/modelcolumnmanager.cpp:78
-#, fuzzy, kde-format
-#| msgid "Given name:"
+#, kde-format
 msgid "Given Name"
-msgstr "Vārds:"
+msgstr "Vārds"
 
 #: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
 #, kde-format
@@ -950,7 +884,7 @@ msgstr "Tālruņu numuri"
 #: src/modelcolumnmanager.cpp:98
 #, kde-format
 msgid "Preferred EMail"
-msgstr "Vēlamais e-pasts"
+msgstr "Galvenais e-pasts"
 
 #: src/modelcolumnmanager.cpp:102
 #, kde-format
@@ -958,10 +892,9 @@ msgid "All EMails"
 msgstr "Visi e-pasti"
 
 #: src/printing/compact/compactstyle.cpp:113
-#, fuzzy, kde-format
-#| msgid "Company"
+#, kde-format
 msgid "Compact Style"
-msgstr "Firma"
+msgstr "Kompaktais stils"
 
 #: src/printing/compact/compactstyle.cpp:167
 #: src/printing/detailled/detailledstyle.cpp:262
@@ -986,17 +919,15 @@ msgstr "Drukā"
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:198
-#, fuzzy, kde-format
-#| msgid "Done"
+#, kde-format
 msgctxt "Finished printing"
 msgid "Done"
 msgstr "Pabeigts"
 
 #: src/printing/compact/compactstyle.cpp:201
-#, fuzzy, kde-format
-#| msgid "Choose Printing Style"
+#, kde-format
 msgid "Compact Printing Style"
-msgstr "Izvēlieties krukāšanas stilu"
+msgstr "Kompaktais drukāšanas stils"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
@@ -1018,14 +949,13 @@ msgstr "Lauki"
 #: src/printing/compact/compactstyle.ui:46
 #, kde-format
 msgid "Print the home address, with home phone number and mobile phone number"
-msgstr ""
+msgstr "Drukāt mājas adresi ar mājas tālruņa numuru un mobilā tālruņa numuru"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
 #: src/printing/compact/compactstyle.ui:49
-#, fuzzy, kde-format
-#| msgid "Home Address"
+#, kde-format
 msgid "with home address"
-msgstr "Mājas adrese"
+msgstr "ar mājas adresi"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
@@ -1033,30 +963,27 @@ msgstr "Mājas adrese"
 #: src/printing/compact/compactstyle.ui:59
 #, kde-format
 msgid "print the business address, with business phone number"
-msgstr ""
+msgstr "drukāt darba adresi ar darba tālruņa numuru"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
 #: src/printing/compact/compactstyle.ui:62
-#, fuzzy, kde-format
-#| msgid "Business Address"
+#, kde-format
 msgid "with business address"
-msgstr "Darba adreses"
+msgstr "ar darba adresi"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:69
 #: src/printing/compact/compactstyle.ui:72
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgid "Print the birthday"
-msgstr "Drukāt kontaktus"
+msgstr "Drukāt dzimšanas dienu"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBirthday)
 #: src/printing/compact/compactstyle.ui:75
-#, fuzzy, kde-format
-#| msgid "Birthday"
+#, kde-format
 msgid "with birthday"
-msgstr "Dzimšanas diena"
+msgstr "ar dzimšanas dienu"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithEMail)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
@@ -1064,14 +991,13 @@ msgstr "Dzimšanas diena"
 #: src/printing/compact/compactstyle.ui:85
 #, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr ""
+msgstr "Drukāt galveno un sekundāro e-pasta lauku"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
-#, fuzzy, kde-format
-#| msgid "Edit Email"
+#, kde-format
 msgid "with e-mail"
-msgstr "Rediģēt e-pastu"
+msgstr "ar e-pastu"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbFirst)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbFirst)
@@ -1079,13 +1005,13 @@ msgstr "Rediģēt e-pastu"
 #: src/printing/compact/compactstyle.ui:115
 #, kde-format
 msgid "the first color, if alternating color is checked"
-msgstr ""
+msgstr "pirmā krāsa, ja ir atzīmēta alternatīvā krāsa"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
 #: src/printing/compact/compactstyle.ui:118
 #, kde-format
 msgid "first color"
-msgstr ""
+msgstr "pirmā krāsa"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
@@ -1093,36 +1019,32 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:128
 #, kde-format
 msgid "the second color, if alternating color is checked"
-msgstr ""
+msgstr "otrā krāsa, ja ir atzīmēta alternatīvā krāsa"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
-#, fuzzy, kde-format
-#| msgid "Background Color"
+#, kde-format
 msgid "second color"
-msgstr "Fona krāsa"
+msgstr "otrā krāsa"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
 #: src/printing/compact/compactstyle.ui:138
 #: src/printing/compact/compactstyle.ui:141
-#, fuzzy, kde-format
-#| msgid "Headline background color:"
+#, kde-format
 msgid "Change the background color of every row"
-msgstr "Virsrakstu fona krāsa:"
+msgstr "Mainīt katras rindas fona krāsu"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAlternating)
 #: src/printing/compact/compactstyle.ui:144
-#, fuzzy, kde-format
-#| msgid "Alternating backgrounds"
+#, kde-format
 msgid "Alternating the background color"
-msgstr "Pamīšus mainīgs fons"
+msgstr "Fona krāsas mainīšana"
 
 #: src/printing/detailled/detailledstyle.cpp:74
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "Organization:"
-msgstr "Organizācija"
+msgstr "Organizācija:"
 
 #: src/printing/detailled/detailledstyle.cpp:82
 #, kde-format
@@ -1137,12 +1059,12 @@ msgstr "E-pasta adreses:"
 #: src/printing/detailled/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
-msgstr "Telefons:"
+msgstr "Tālrunis:"
 
 #: src/printing/detailled/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
-msgstr "Telefoni:"
+msgstr "Tālruņi:"
 
 #: src/printing/detailled/detailledstyle.cpp:104
 #, kde-format
@@ -1157,7 +1079,7 @@ msgstr "Mājas adrese"
 #: src/printing/detailled/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
-msgstr "Starptautiska adrese"
+msgstr "Starptautiskā adrese"
 
 #: src/printing/detailled/detailledstyle.cpp:124
 #, kde-format
@@ -1177,7 +1099,7 @@ msgstr "Darba adrese"
 #: src/printing/detailled/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
-msgstr "Vēlamā adrese"
+msgstr "Galvenā adrese"
 
 #: src/printing/detailled/detailledstyle.cpp:148
 #, kde-format
@@ -1189,7 +1111,7 @@ msgstr "Piezīmes:"
 #: src/printing/detailled/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
-msgstr "Noklusētais drukāšanas stils - izskats"
+msgstr "Sīkāks drukāšanas stils — izskats"
 
 #: src/printing/detailled/detailledstyle.cpp:245
 #, kde-format
@@ -1199,7 +1121,7 @@ msgstr "Krāsu iestatījumi"
 #: src/printing/detailled/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
-msgstr "Detalizēts stils"
+msgstr "Sīkāks stils"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
 #: src/printing/detailled/ds_appearance.ui:14
@@ -1215,19 +1137,19 @@ msgstr "Kontaktu galvenes"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:119
-#, fuzzy, kde-format
-#| msgid "Headline background color:"
+#, kde-format
 msgid "Select the headline text background color"
-msgstr "Virsrakstu fona krāsa:"
+msgstr "Atlasīt virsrakstu fona krāsu"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
 #: src/printing/detailled/ds_appearance.ui:122
-#, fuzzy, kde-format
-#| msgid "Click on the color button to change the header's background color."
+#, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline background color."
-msgstr "Nospiediet uz krāsas pogas, lai izmainītu galvenes fona krāsu."
+msgstr ""
+"Spiediet uz šīs pogas, lai palaistu krāsas atlasītāju, kas jaus izvēlēties "
+"krāsu virsrakstu fonam."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
 #: src/printing/detailled/ds_appearance.ui:139
@@ -1243,10 +1165,9 @@ msgstr "Virsrakstu teksta krāsa:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:162
-#, fuzzy, kde-format
-#| msgid "Headline text color:"
+#, kde-format
 msgid "Select the headline text color"
-msgstr "Virsrakstu teksta krāsa:"
+msgstr "Atlasīt virsrakstu teksta krāsu"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
 #: src/printing/detailled/ds_appearance.ui:165
@@ -1255,6 +1176,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline text."
 msgstr ""
+"Spiediet uz šīs pogas, lai palaistu krāsas atlasītāju, kas jaus izvēlēties "
+"krāsu virsrakstu tekstam."
 
 #: src/printing/mike/mikesstyle.cpp:142
 #, kde-format
@@ -1274,7 +1197,7 @@ msgstr "Izvēlieties drukājamos kontaktus"
 #: src/printing/printingwizard.cpp:55
 #, kde-format
 msgid "Choose Printing Style"
-msgstr "Izvēlieties krukāšanas stilu"
+msgstr "Izvēlieties drukāšanas stilu"
 
 #: src/printing/printingwizard.cpp:202
 #, kde-format
@@ -1282,17 +1205,16 @@ msgid "Print Progress"
 msgstr "Drukāšanas progress"
 
 #: src/printing/printprogress.cpp:24
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr "Drukā: Progress"
+msgstr "Drukāšanas progress"
 
 #: src/printing/printprogress.cpp:31
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p %"
 
 #: src/printing/printprogress.cpp:43
 #, kde-format
@@ -1303,39 +1225,37 @@ msgstr "Progress"
 #: src/printing/ringbinder/rbs_appearance.ui:35
 #, kde-format
 msgid "Print Contact's Information"
-msgstr "Drukāt kontakta informāciju"
+msgstr "Drukāt kontaktu informāciju"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:41
-#, fuzzy, kde-format
-#| msgid "Phone numbers"
+#, kde-format
 msgid "Print contact phone numbers"
-msgstr "Telefona numuri"
+msgstr "Drukāt kontaktu tālruņa numurus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:44
 #, kde-format
 msgid "Check this box if you want contact phone numbers to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties drukāt kontaktu tālruņa numurus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
 #, kde-format
 msgid "Phone numbers"
-msgstr "Telefona numuri"
+msgstr "Tālruņa numuri"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:57
-#, fuzzy, kde-format
-#| msgid "Postal addresses"
+#, kde-format
 msgid "Print contact email addresses"
-msgstr "Pasta adreses"
+msgstr "Drukāt kontaktu e-pasta adreses"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:60
 #, kde-format
 msgid "Check this box if you want contact email addresses to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties drukāt kontaktu e-pasta adreses."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
@@ -1345,16 +1265,15 @@ msgstr "E-pasta adreses"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:73
-#, fuzzy, kde-format
-#| msgid "Street addresses"
+#, kde-format
 msgid "Print contact street addresses"
-msgstr "Pasta adreses"
+msgstr "Drukāt kontaktu adreses"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:76
 #, kde-format
 msgid "Check this box if you want contact street addresses to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties izdrukāt kontaktu adresi."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
@@ -1364,99 +1283,86 @@ msgstr "Pasta adreses"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:89
-#, fuzzy, kde-format
-#| msgid "Print Contact's Information"
+#, kde-format
 msgid "Print contact organizations"
-msgstr "Drukāt kontakta informāciju"
+msgstr "Drukāt kontaktu organizācijas"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:92
 #, kde-format
 msgid "Check this box if you want contact organizations to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties drukāt kontaktu organizācijas."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:102
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgid "Print contact birthdays"
-msgstr "Drukāt kontaktus"
+msgstr "Drukāt kontaktu dzimšanas dienas"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:105
 #, kde-format
 msgid "Check this box if you want contact birthdays to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties drukāt kontaktu dzimšanas dienas."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:115
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgid "Print contact notes"
-msgstr "Drukāt kontaktus"
+msgstr "Drukāt kontaktu piezīmes"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:118
 #, kde-format
 msgid "Check this box if you want contact notes to be printed."
-msgstr ""
+msgstr "Atzīmējiet šo lauciņu, ja vēlaties drukāt kontaktu piezīmes."
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:73
-#, fuzzy, kde-format
-#| msgid "Notes:"
+#, kde-format
 msgid "Note: "
-msgstr "Piezīmes:"
+msgstr "Piezīme:"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:129
 #, kde-format
 msgid "Ring Binder Printing Style - Appearance"
-msgstr "Ātrušuvēju drukšanas stils - izskats"
+msgstr "Dokumentu mapes drukāšanas stils — izskats"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:145
 #, kde-format
 msgid "Setting up fields"
-msgstr "Sagatavo laukus"
+msgstr "Lauku sagatavošana"
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:213
 #, kde-format
 msgid "Printout for Ring Binders"
-msgstr "Izdrukāt iesiešanai ar ātršuvējiem"
+msgstr "Izdruka dokumentu mapei"
 
 #: src/printing/stylepage.cpp:36
-#, fuzzy, kde-format
-#| msgid "Ascending"
+#, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "Augoši"
 
 #: src/printing/stylepage.cpp:37
-#, fuzzy, kde-format
-#| msgid "Descending"
+#, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "Dilstoši"
 
 #: src/printing/stylepage.cpp:47
-#, fuzzy, kde-format
-#| msgid "(No preview available.)"
+#, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
 msgstr "(Priekšskatījums nav pieejams.)"
 
 #: src/printing/stylepage.cpp:109
-#, fuzzy, kde-format
-#| msgid "Choose Printing Style"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
-msgstr "Izvēlieties krukāšanas stilu"
+msgstr "Izvēlieties drukāšanas stilu"
 
 #: src/printing/stylepage.cpp:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "What should the print look like?\n"
-#| "KAddressBook has several printing styles, designed for different "
-#| "purposes.\n"
-#| "Choose the style that suits your needs below."
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "What should the print look like?\n"
@@ -1464,30 +1370,26 @@ msgid ""
 "Choose the style that suits your needs below."
 msgstr ""
 "Kā izskatīsies izdruka?\n"
-"KAddressBook ir pieejami vairādi drukāšanas stili, paredzēti dažādiem "
-"mērķiem.\n"
+"„KAddressBook“ ir pieejami vairāki drukāšanas stili dažādiem nolūkiem.\n"
 "Izvēlieties jūsu vajadzībām atbilstošu stilu."
 
 #: src/printing/stylepage.cpp:121
-#, fuzzy, kde-format
-#| msgid "Sorting"
+#, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "Kārtošana"
 
 #: src/printing/stylepage.cpp:126
-#, fuzzy, kde-format
-#| msgid "Criterion:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "Kritērijs:"
 
 #: src/printing/stylepage.cpp:130
-#, fuzzy, kde-format
-#| msgid "Select incremental search field"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
-msgstr "Norādiet inkrementālās meklēšanas lauku"
+msgstr "Atlasiet primāro kārtošanas lauku"
 
 #: src/printing/stylepage.cpp:132
 #, kde-format
@@ -1497,10 +1399,12 @@ msgid ""
 "the print output.  Use the sorting order option to determine if the sort "
 "will be in ascending or descending order."
 msgstr ""
+"Šajā sarakstā varat atlasīt lauku, pēc kura izdrukā būs kārtoti kontakti. "
+"Lietojiet kārtošanas opciju, lai noteiktu, vai kārtošanai jābūt augošai vai "
+"dilstošai."
 
 #: src/printing/stylepage.cpp:137
-#, fuzzy, kde-format
-#| msgid "Order:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "Kārtība:"
@@ -1509,7 +1413,7 @@ msgstr "Kārtība:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
-msgstr ""
+msgstr "Atlasīt kārtošanas secību"
 
 #: src/printing/stylepage.cpp:143
 #, kde-format
@@ -1519,20 +1423,21 @@ msgid ""
 "Use the sorting criterion option to specify on which contact field the "
 "sorting will be performed."
 msgstr ""
+"Atlasiet, ja vēlaties kontaktus kārtot augošā vai dilstošā secībā. "
+"Izmantojiet šo kārtošanas opciju, lai precizētu, pēc kura kontaktu lauka "
+"vēlaties kārtošanu veikt."
 
 #: src/printing/stylepage.cpp:150
-#, fuzzy, kde-format
-#| msgid "Print Style"
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Drukāšanas stils"
 
 #: src/printing/stylepage.cpp:155
-#, fuzzy, kde-format
-#| msgid "Select the key type:"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
-msgstr "Izvēlieties atslēgas tipu:"
+msgstr "Atlasiet drukāšanas stilu"
 
 #: src/printing/stylepage.cpp:156
 #, kde-format
@@ -1540,13 +1445,14 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr ""
+"Izvēlieties vēlamo drukāšanas stilu. Skatiet iepriekšējo attēlu, lai "
+"atvieglotu izvēli."
 
 #: src/widgets/quicksearchwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "Selected contacts"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Search contacts in list"
-msgstr "Izvēlētos kontaktus"
+msgstr "Meklēt kontaktus sarakstā"
 
 #: src/widgets/quicksearchwidget.cpp:33
 #, kde-format
@@ -1556,6 +1462,8 @@ msgid ""
 "that string will be displayed.  This is a quick way of searching for "
 "contacts of interest."
 msgstr ""
+"Sāciet lauciņā rakstīt meklējamo tekstu, lai programma varētu parādīt tam "
+"atbilstošos kontaktus. Šis ir ātrs veids, kā atrast vajadzīgo kontaktu."
 
 #, fuzzy
 #~| msgid "Laurent Montel"
