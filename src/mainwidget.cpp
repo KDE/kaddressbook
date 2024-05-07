@@ -400,7 +400,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
 void MainWidget::updateQuickSearchText()
 {
     mQuickSearchWidget->updateQuickSearchText(
-        i18nc("@label Search contacts in list", "Search... <%1>", mQuickSearchAction->shortcut().toString(QKeySequence::NativeText)));
+        i18nc("@label Search contacts in list", "Search… <%1>", mQuickSearchAction->shortcut().toString(QKeySequence::NativeText)));
 }
 
 void MainWidget::delayedInit()
@@ -698,11 +698,11 @@ void MainWidget::setupActions(KActionCollection *collection)
     if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
         action = collection->addAction(QStringLiteral("debug_akonadi_search"));
         // Don't translate it. It's just for debug
-        action->setText(QStringLiteral("Debug Akonadi Search..."));
+        action->setText(QStringLiteral("Debug Akonadi Search…"));
         connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
 #endif
-    mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription..."), this);
+    mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription…"), this);
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
 

@@ -46,7 +46,7 @@ void KAddressBookPart::updateQuickSearchText()
 
 void KAddressBookPart::initAction()
 {
-    auto action = new QAction(QIcon::fromTheme(QStringLiteral("configure")), i18n("&Configure KAddressBook..."), this);
+    auto action = new QAction(QIcon::fromTheme(QStringLiteral("configure")), i18n("&Configure KAddressBook…"), this);
     actionCollection()->addAction(QStringLiteral("kaddressbook_configure"), action);
     connect(action, &QAction::triggered, mMainWidget, &MainWidget::configure);
 }
