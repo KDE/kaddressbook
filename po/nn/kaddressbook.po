@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-04 00:38+0000\n"
+"POT-Creation-Date: 2024-05-08 00:38+0000\n"
 "PO-Revision-Date: 2023-03-11 23:32+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -653,9 +653,10 @@ msgid "Lists the available options for user feedback"
 msgstr ""
 
 #: src/kaddressbookpart.cpp:49
-#, kde-format
-msgid "&Configure KAddressBook..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "KAddressBook"
+msgid "&Configure KAddressBook…"
+msgstr "KDE-adressebok"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -722,9 +723,11 @@ msgid "Export"
 msgstr "Eksporter"
 
 #: src/mainwidget.cpp:403
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label Search contacts in list"
+#| msgid "Search... <%1>"
 msgctxt "@label Search contacts in list"
-msgid "Search... <%1>"
+msgid "Search… <%1>"
 msgstr "Søk … <%1>"
 
 #: src/mainwidget.cpp:639
@@ -793,7 +796,7 @@ msgstr "Fokuser på snøggsøk"
 
 #: src/mainwidget.cpp:705
 #, kde-format
-msgid "Serverside Subscription..."
+msgid "Serverside Subscription…"
 msgstr ""
 
 #: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44

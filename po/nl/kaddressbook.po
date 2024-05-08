@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-04 00:38+0000\n"
+"POT-Creation-Date: 2024-05-08 00:38+0000\n"
 "PO-Revision-Date: 2024-03-13 11:14+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -691,8 +691,9 @@ msgstr ""
 "Geeft een lijst met de beschikbare opties voor terugkoppeling van gebruiker"
 
 #: src/kaddressbookpart.cpp:49
-#, kde-format
-msgid "&Configure KAddressBook..."
+#, fuzzy, kde-format
+#| msgid "&Configure KAddressBook..."
+msgid "&Configure KAddressBook…"
 msgstr "KAddressBook &instellen..."
 
 #. i18n: ectx: Menu (file)
@@ -760,9 +761,11 @@ msgid "Export"
 msgstr "Exporteren"
 
 #: src/mainwidget.cpp:403
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label Search contacts in list"
+#| msgid "Search... <%1>"
 msgctxt "@label Search contacts in list"
-msgid "Search... <%1>"
+msgid "Search… <%1>"
 msgstr "Zoeken naar...<%1>"
 
 #: src/mainwidget.cpp:639
@@ -832,8 +835,9 @@ msgid "Set Focus to Quick Search"
 msgstr "Focus op snelzoeken"
 
 #: src/mainwidget.cpp:705
-#, kde-format
-msgid "Serverside Subscription..."
+#, fuzzy, kde-format
+#| msgid "Serverside Subscription..."
+msgid "Serverside Subscription…"
 msgstr "Inschrijving aan de kant van de server..."
 
 #: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44
