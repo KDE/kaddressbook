@@ -689,7 +689,7 @@ void MainWidget::setupActions(KActionCollection *collection)
         actTheme->setChecked(true);
     }
 
-    mQuickSearchAction = new QAction(i18n("Set Focus to Quick Search"), this);
+    mQuickSearchAction = new QAction(i18nc("@action", "Set Focus to Quick Search"), this);
     // If change shortcut change in quicksearchwidget->lineedit->setPlaceholderText
     collection->addAction(QStringLiteral("focus_to_quickseach"), mQuickSearchAction);
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
