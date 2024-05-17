@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
-"PO-Revision-Date: 2024-05-09 09:48+0400\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
+"PO-Revision-Date: 2024-05-16 11:46+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -149,7 +149,9 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "الحقوق محفوظة © 2007-%1 لمؤلّفي «دفتر عناوينك»"
 
 #: src/aboutdata.cpp:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
@@ -159,7 +161,9 @@ msgid "Current maintainer"
 msgstr "المصين الحاليّ"
 
 #: src/aboutdata.cpp:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tobias König"
+msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
 
@@ -169,7 +173,9 @@ msgid "Previous maintainer"
 msgstr "المصين السّابق"
 
 #: src/aboutdata.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Stefan Taferner"
+msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
 
@@ -179,11 +185,13 @@ msgid "Original Author (1998)"
 msgstr "المؤلف الأصلي (1998)"
 
 #: src/aboutdata.cpp:26
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "David Bryant"
+msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr "David Bryant"
 
-#: src/aboutdata.cpp:26
+#: src/aboutdata.cpp:27
 #, kde-format
 msgid "Documentation (2019)"
 msgstr "التّوثيق"
@@ -806,8 +814,7 @@ msgid "Three Columns"
 msgstr "ثلاث أعمدة"
 
 #: src/mainwidget.cpp:692
-#, fuzzy, kde-format
-#| msgid "Set Focus to Quick Search"
+#, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "اضبط التّركيز على البحث السّريع"

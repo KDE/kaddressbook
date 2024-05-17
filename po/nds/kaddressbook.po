@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2014-08-13 00:58+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -166,7 +166,9 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © 2007–2014, de Schrieverslüüd vun KAddressBook"
 
 #: src/aboutdata.cpp:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
@@ -178,6 +180,7 @@ msgstr "Aktuell Pleger"
 #: src/aboutdata.cpp:24
 #, fuzzy, kde-format
 #| msgid "Tobias Koenig"
+msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias Koenig"
 
@@ -188,6 +191,7 @@ msgstr "Verleden Pleger"
 
 #: src/aboutdata.cpp:25
 #, kde-format
+msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr ""
 
@@ -198,10 +202,11 @@ msgstr ""
 
 #: src/aboutdata.cpp:26
 #, kde-format
+msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr ""
 
-#: src/aboutdata.cpp:26
+#: src/aboutdata.cpp:27
 #, kde-format
 msgid "Documentation (2019)"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-05-17 00:39+0000\n"
 "PO-Revision-Date: 2013-11-08 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -162,7 +162,9 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © 2007–2013 KAddressBook авторлары"
 
 #: src/aboutdata.cpp:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Laurent Montel"
+msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
@@ -174,6 +176,7 @@ msgstr "Қазіргі жетілдірушісі"
 #: src/aboutdata.cpp:24
 #, fuzzy, kde-format
 #| msgid "Tobias Koenig"
+msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias Koenig"
 
@@ -185,6 +188,7 @@ msgstr "Қазіргі жетілдірушісі"
 
 #: src/aboutdata.cpp:25
 #, kde-format
+msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr ""
 
@@ -196,10 +200,11 @@ msgstr "Бастапқы авторы"
 
 #: src/aboutdata.cpp:26
 #, kde-format
+msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr ""
 
-#: src/aboutdata.cpp:26
+#: src/aboutdata.cpp:27
 #, kde-format
 msgid "Documentation (2019)"
 msgstr ""
