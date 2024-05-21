@@ -142,6 +142,9 @@ target_sources(kaddressbook PRIVATE
     main.cpp
     kaddressbook.qrc
     )
+if(TARGET KF6::IconThemes)
+    target_link_libraries(kaddressbook KF6::IconThemes)
+endif()
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
 ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
