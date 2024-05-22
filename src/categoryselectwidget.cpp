@@ -226,7 +226,7 @@ void CategorySelectWidgetPrivate::slotCheckedItemsTimer()
 
     const QStringList checkedList = checkCombo->checkedItems();
     if (!checkedList.isEmpty()) {
-        checkCombo->setToolTip(i18n("<qt>Category filter: %1", checkedList.join(i18n(", "))));
+        checkCombo->setToolTip(i18nc("@info:tooltip", "<qt>Category filter: %1", checkedList.join(i18n(", "))));
     } else {
         checkCombo->setToolTip(QString());
     }
