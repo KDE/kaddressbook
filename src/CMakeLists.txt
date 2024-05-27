@@ -83,10 +83,30 @@ if (TARGET KF6::UserFeedbackWidgets)
         )
 endif()
 
+if (TARGET Plasma::Activities)
+    target_sources(kaddressbookprivate PRIVATE
+        activities/activitiesmanager.h
+        activities/activitiesmanager.cpp
+
+        activities/ldapactivities.cpp
+        activities/ldapactivities.h
+
+        activities/accountactivities.h
+        activities/accountactivities.cpp
+    )
+    if (BUILD_TESTING)
+       add_subdirectory(activities/autotests)
+    endif()
+endif()
 
 ecm_qt_declare_logging_category(kaddressbookprivate HEADER kaddressbook_debug.h IDENTIFIER KADDRESSBOOK_LOG CATEGORY_NAME org.kde.pim.kaddressbook
         DESCRIPTION "kaddressbook (kaddressbook)"
         OLD_CATEGORY_NAMES log_kaddressbook
+        EXPORT KADDRESSBOOK
+    )
+
+ecm_qt_declare_logging_category(kaddressbookprivate HEADER kaddressbook_activities_debug.h IDENTIFIER KADDRESSBOOK_ACTIVITIES_LOG CATEGORY_NAME org.kde.pim.kaddressbook.activities
+        DESCRIPTION "kaddressbook activities (kaddressbook)"
         EXPORT KADDRESSBOOK
     )
 
@@ -119,6 +139,9 @@ target_link_libraries(kaddressbookprivate
     )
 if (TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
+endif()
+if (TARGET Plasma::Activities)
+	target_link_libraries(kaddressbookprivate PRIVATE Plasma::Activities KPim6::LdapCore)
 endif()
 
 if (KPim6AkonadiSearch_FOUND)

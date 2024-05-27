@@ -17,8 +17,6 @@ void ActivitiesManagerTest::shouldHaveDefaultValues()
 {
     ActivitiesManager w;
     QVERIFY(!w.enabled());
-    QVERIFY(w.transportActivities());
-    QVERIFY(w.identityActivities());
     QVERIFY(w.ldapActivities());
 }
 

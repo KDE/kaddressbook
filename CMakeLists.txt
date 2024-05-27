@@ -75,6 +75,7 @@ set_package_properties(KF6UserFeedback PROPERTIES DESCRIPTION "User Feedback lib
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(KPim6KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
+find_package(KPim6LdapCore ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 if (UNIX)
     find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
