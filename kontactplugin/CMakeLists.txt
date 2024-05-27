@@ -20,7 +20,7 @@ target_sources(kontact_kaddressbookplugin PRIVATE ${kontact_kaddressbook_interfa
 target_link_libraries(kontact_kaddressbookplugin
     KF6::I18n
     KPim6::KontactInterface
-    Qt6::DBus
+    Qt::DBus
 )
 
 install(TARGETS kontact_kaddressbookplugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kontact)
