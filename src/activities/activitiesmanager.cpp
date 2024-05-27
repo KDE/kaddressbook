@@ -5,6 +5,7 @@
 */
 
 #include "activitiesmanager.h"
+#include "accountactivities.h"
 #include "kaddressbook_activities_debug.h"
 #include "ldapactivities.h"
 
@@ -14,6 +15,7 @@ ActivitiesManager::ActivitiesManager(QObject *parent)
     : QObject{parent}
     , mLdapActivities(new LdapActivities(this))
     , mActivitiesConsumer(new KActivities::Consumer(this))
+    , mAccountActivities(new AccountActivities(this))
 {
     connect(mActivitiesConsumer, &KActivities::Consumer::currentActivityChanged, this, [this](const QString &activityId) {
         qCDebug(KADDRESSBOOK_ACTIVITIES_LOG) << " switch to activity " << activityId;
@@ -29,6 +31,7 @@ ActivitiesManager::ActivitiesManager(QObject *parent)
     }
     connect(this, &ActivitiesManager::activitiesChanged, this, [this]() {
         Q_EMIT mLdapActivities->activitiesChanged();
+        Q_EMIT mAccountActivities->activitiesChanged();
     });
 }
 
@@ -82,6 +85,11 @@ QString ActivitiesManager::currentActivity() const
 LdapActivities *ActivitiesManager::ldapActivities() const
 {
     return mLdapActivities;
+}
+
+AccountActivities *ActivitiesManager::accountActivities() const
+{
+    return mAccountActivities;
 }
 
 #include "moc_activitiesmanager.cpp"

@@ -11,9 +11,8 @@ namespace KActivities
 {
 class Consumer;
 }
-class TransportActivities;
-class IdentityActivities;
 class LdapActivities;
+class AccountActivities;
 class KADDRESSBOOK_EXPORT ActivitiesManager : public QObject
 {
     Q_OBJECT
@@ -30,11 +29,14 @@ public:
     [[nodiscard]] QString currentActivity() const;
     [[nodiscard]] LdapActivities *ldapActivities() const;
 
+    AccountActivities *accountActivities() const;
+
 Q_SIGNALS:
     void activitiesChanged();
 
 private:
     LdapActivities *const mLdapActivities;
     KActivities::Consumer *const mActivitiesConsumer;
+    AccountActivities *const mAccountActivities;
     bool mEnabled = false;
 };
