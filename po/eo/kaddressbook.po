@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-06-06 00:39+0000\n"
 "PO-Revision-Date: 2024-05-23 05:51+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -657,27 +657,37 @@ msgstr[0] "Importante unu kontakton al %2"
 msgstr[1] "Importante %1 kontaktojn al %2"
 
 #: src/kaddressbook_options.h:15
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import the given file"
+msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "Importi la donitan dosieron"
 
 #: src/kaddressbook_options.h:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open the 'New Contact' dialog"
+msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "Malfermi la dialogon 'Nova Kontakto'"
 
 #: src/kaddressbook_options.h:19
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Display the specified contact (by URL)"
+msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr "Montri la specifitan kontakton (per URL)"
 
-#: src/kaddressbook_options.h:21
-#, kde-format
+#: src/kaddressbook_options.h:22
+#, fuzzy, kde-format
+#| msgid "Files or URLs. The user will be asked whether to import."
+msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr "Dosieroj aŭ URL-oj. La uzanto estos demandita ĉu importi."
 
-#: src/kaddressbook_options.h:24
-#, kde-format
+#: src/kaddressbook_options.h:26
+#, fuzzy, kde-format
+#| msgid "Lists the available options for user feedback"
+msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Listigas la disponeblajn opciojn por uzant-sugestoj"
 

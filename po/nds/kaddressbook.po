@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-06-06 00:39+0000\n"
 "PO-Revision-Date: 2014-08-13 00:58+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -688,28 +688,34 @@ msgstr[0] "Een Kontakt warrt na %2 importeert."
 msgstr[1] "%1 Kontakten warrt na %2 importeert."
 
 #: src/kaddressbook_options.h:15
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import the given file"
+msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "Angeven Datei importeren"
 
 #: src/kaddressbook_options.h:17
 #, kde-format
+msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr ""
 
 #: src/kaddressbook_options.h:19
 #, kde-format
+msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr ""
 
-#: src/kaddressbook_options.h:21
+#: src/kaddressbook_options.h:22
 #, fuzzy, kde-format
 #| msgid "files or urls. The user will be asked whether to import."
+msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr "Dateien oder URLs. De Bruker warrt fraagt, wat he de importeren will."
 
-#: src/kaddressbook_options.h:24
+#: src/kaddressbook_options.h:26
 #, kde-format
+msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr ""
 

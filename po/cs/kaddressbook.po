@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-23 00:39+0000\n"
+"POT-Creation-Date: 2024-06-06 00:39+0000\n"
 "PO-Revision-Date: 2024-05-29 11:30+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -640,27 +640,35 @@ msgstr[1] "Importování %1 kontaktů do %2"
 msgstr[2] "Importování %1 kontaktů do %2"
 
 #: src/kaddressbook_options.h:15
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Import the given file"
+msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "Importovat daný soubor"
 
 #: src/kaddressbook_options.h:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open the 'New Contact' dialog"
+msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "Otevřít dialog pro 'Nový kontakt'"
 
 #: src/kaddressbook_options.h:19
 #, kde-format
+msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr ""
 
-#: src/kaddressbook_options.h:21
+#: src/kaddressbook_options.h:22
 #, kde-format
+msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr ""
 
-#: src/kaddressbook_options.h:24
-#, kde-format
+#: src/kaddressbook_options.h:26
+#, fuzzy, kde-format
+#| msgid "Lists the available options for user feedback"
+msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Seznam dostupných voleb pro uživatelskou zpětnou vazbu"
 
