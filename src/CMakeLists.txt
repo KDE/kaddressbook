@@ -6,7 +6,7 @@ configure_file(kaddressbook-version.h.in ${CMAKE_CURRENT_BINARY_DIR}/kaddressboo
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/printing/
-    )
+   )
 
 
 add_subdirectory(icons)
@@ -65,25 +65,25 @@ target_sources(kaddressbookprivate PRIVATE
     stylecontactlistdelegate.h
     widgets/quicksearchwidget.h
 
-    )
+   )
 
 ki18n_wrap_ui(kaddressbookprivate
     printing/ringbinder/rbs_appearance.ui
     printing/detailled/ds_appearance.ui
     printing/compact/compactstyle.ui
-    )
+   )
 
 
-if (TARGET KF6::UserFeedbackWidgets)
+if(TARGET KF6::UserFeedbackWidgets)
     target_sources(kaddressbookprivate PRIVATE
         userfeedback/userfeedbackmanager.cpp
         userfeedback/kaddressbookuserfeedbackprovider.cpp
         userfeedback/userfeedbackmanager.h
         userfeedback/kaddressbookuserfeedbackprovider.h
-        )
+       )
 endif()
 
-if (TARGET Plasma::Activities)
+if(TARGET Plasma::Activities)
     target_sources(kaddressbookprivate PRIVATE
         activities/activitiesmanager.h
         activities/activitiesmanager.cpp
@@ -93,8 +93,8 @@ if (TARGET Plasma::Activities)
 
         activities/accountactivities.h
         activities/accountactivities.cpp
-    )
-    if (BUILD_TESTING)
+   )
+    if(BUILD_TESTING)
        add_subdirectory(activities/autotests)
     endif()
 endif()
@@ -103,19 +103,19 @@ ecm_qt_declare_logging_category(kaddressbookprivate HEADER kaddressbook_debug.h 
         DESCRIPTION "kaddressbook (kaddressbook)"
         OLD_CATEGORY_NAMES log_kaddressbook
         EXPORT KADDRESSBOOK
-    )
+   )
 
 ecm_qt_declare_logging_category(kaddressbookprivate HEADER kaddressbook_activities_debug.h IDENTIFIER KADDRESSBOOK_ACTIVITIES_LOG CATEGORY_NAME org.kde.pim.kaddressbook.activities
         DESCRIPTION "kaddressbook activities (kaddressbook)"
         EXPORT KADDRESSBOOK
-    )
+   )
 
 
-qt_add_dbus_adaptor( kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.h MainWidget)
+qt_add_dbus_adaptor(kaddressbook_LIB_SRCS org.kde.kaddressbook.xml mainwidget.h MainWidget)
 target_sources(kaddressbookprivate PRIVATE ${kaddressbook_LIB_SRCS})
 
 kconfig_add_kcfg_files(kaddressbookprivate settings/settings.kcfgc)
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbookprivate PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
@@ -136,15 +136,15 @@ target_link_libraries(kaddressbookprivate
     KF6::KIOWidgets
     Qt::PrintSupport
     KF6::I18n
-    )
-if (TARGET KF6::UserFeedbackWidgets)
+   )
+if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
 endif()
-if (TARGET Plasma::Activities)
+if(TARGET Plasma::Activities)
 	target_link_libraries(kaddressbookprivate PRIVATE Plasma::Activities KPim6::LdapCore)
 endif()
 
-if (KPim6AkonadiSearch_FOUND)
+if(KPim6AkonadiSearch_FOUND)
     target_link_libraries(kaddressbookprivate
         PRIVATE
         KPim6::AkonadiSearchDebug)
@@ -164,17 +164,17 @@ target_sources(kaddressbook PRIVATE
     mainwindow.h
     main.cpp
     kaddressbook.qrc
-    )
+   )
 if(TARGET KF6::IconThemes)
     target_link_libraries(kaddressbook KF6::IconThemes)
 endif()
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
 ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
 endif()
-if (TARGET KF6::UserFeedbackWidgets)
+if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbook KF6::UserFeedbackWidgets)
 endif()
 
@@ -183,7 +183,7 @@ target_link_libraries(kaddressbook
     KPim6::KontactInterface
     kaddressbookprivate
     KF6::Crash
-    )
+   )
 
 install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS
@@ -210,7 +210,7 @@ install(FILES
     viewertemplates/contactgroup_memberrow.html
     viewertemplates/theme.desktop
     DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/viewertemplates/default/
-    )
+   )
 
-install(DIRECTORY printing/grantlee/themes/ DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/ )
+install(DIRECTORY printing/grantlee/themes/ DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/)
 

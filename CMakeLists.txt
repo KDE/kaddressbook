@@ -78,7 +78,7 @@ find_package(KPim6KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIR
 find_package(KPim6Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6LdapCore ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommonAkonadi ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
-if (UNIX)
+if(UNIX)
     find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
 else()
     find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG)
@@ -86,7 +86,7 @@ else()
         TYPE OPTIONAL PURPOSE "Provides search capabilities in KAddressbook and Akonadi (only debug)")
 endif()
 
-if (NOT KPim6AkonadiSearch_FOUND)
+if(NOT KPim6AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
@@ -103,36 +103,36 @@ ecm_set_disabled_deprecation_versions(QT 6.7
 
 
 
-if (TARGET KF6::UserFeedbackWidgets)
+if(TARGET KF6::UserFeedbackWidgets)
     add_definitions(-DWITH_KUSERFEEDBACK)
 endif()
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
-if (USE_UNITY_CMAKE_SUPPORT)
+if(USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
     add_definitions(-DCOMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 
 option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" OFF)
-if (OPTION_USE_PLASMA_ACTIVITIES)
-    if (NOT WIN32 AND NOT APPLE)
+if(OPTION_USE_PLASMA_ACTIVITIES)
+    if(NOT WIN32 AND NOT APPLE)
        set(OPTION_USE_PLASMA_ACTIVITIES true)
     else()
        set(OPTION_USE_PLASMA_ACTIVITIES false)
     endif()
 endif()
-if (OPTION_USE_PLASMA_ACTIVITIES)
-    if (NOT WIN32 AND NOT APPLE)
+if(OPTION_USE_PLASMA_ACTIVITIES)
+    if(NOT WIN32 AND NOT APPLE)
        find_package(PlasmaActivities "6.1.0")
     endif()
 endif()
 
-if (TARGET Plasma::Activities)
+if(TARGET Plasma::Activities)
     set(HAVE_ACTIVITY_SUPPORT TRUE)
 endif()
 
-configure_file(config-kaddressbook.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h )
+configure_file(config-kaddressbook.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h)
 
 add_subdirectory(src)
 add_subdirectory(kontactplugin)
@@ -141,7 +141,7 @@ ecm_qt_install_logging_categories(
         EXPORT KADDRESSBOOK
         FILE kaddressbook.categories
         DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
-        )
+       )
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)

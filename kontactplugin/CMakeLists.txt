@@ -11,7 +11,7 @@ ecm_qt_declare_logging_category(kontact_kaddressbookplugin HEADER kaddressbookpl
         DESCRIPTION "kaddressbook (kaddressbook kontact plugins)"
         OLD_CATEGORY_NAMES log_kaddressbook_plugin
         EXPORT KADDRESSBOOK
-    )
+   )
 set(kontact_kaddressbook_interface_SRCS)
 qt_add_dbus_interfaces(kontact_kaddressbook_interface_SRCS ../src/org.kde.kaddressbook.xml)
 target_sources(kontact_kaddressbookplugin PRIVATE ${kontact_kaddressbook_interface_SRCS})

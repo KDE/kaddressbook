@@ -37,7 +37,7 @@ ecm_qt_declare_logging_category(KPim6AddressbookImportExport
 )
 
 
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6AddressbookImportExport PROPERTIES UNITY_BUILD ON)
 endif()
 
