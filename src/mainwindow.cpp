@@ -219,6 +219,7 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
             menuBar()->hide();
         }
         Settings::self()->setShowMenuBar(mShowMenuBarAction->isChecked());
+        Settings::self()->save();
     }
 }
 
