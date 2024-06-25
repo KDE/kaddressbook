@@ -158,9 +158,6 @@ void MainWindow::updateHamburgerMenu()
 
     menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::Print)));
     menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::PrintPreview)));
-    menu->addSeparator();
-
-    menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::Quit)));
     mHamburgerMenu->setMenu(menu);
 }
 
