@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-26 00:39+0000\n"
-"PO-Revision-Date: 2024-03-17 10:38+0100\n"
+"PO-Revision-Date: 2024-07-14 13:08+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -25,6 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -155,8 +156,7 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © 2007–%1 Autorzy Książki Adresowej"
 
 #: src/aboutdata.cpp:23
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
@@ -167,8 +167,7 @@ msgid "Current maintainer"
 msgstr "Obecny opiekun"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias König"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
@@ -179,8 +178,7 @@ msgid "Previous maintainer"
 msgstr "Poprzedni opiekun"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Stefan Taferner"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
@@ -191,8 +189,7 @@ msgid "Original Author (1998)"
 msgstr "Autor pierwszej wersji (1998)"
 
 #: src/aboutdata.cpp:26
-#, fuzzy, kde-format
-#| msgid "David Bryant"
+#, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr "David Bryant"
@@ -240,8 +237,7 @@ msgid ", "
 msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
-#, fuzzy, kde-format
-#| msgid "<qt>Category filter: %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>Filtr kategorii: %1"
@@ -675,45 +671,39 @@ msgstr[1] "Importowanie %1 kontaktów do %2"
 msgstr[2] "Importowanie %1 kontaktów do %2"
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
-#| msgid "Import the given file"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "Zaimportuj dany plik"
 
 #: src/kaddressbook_options.h:17
-#, fuzzy, kde-format
-#| msgid "Open the 'New Contact' dialog"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "Otwórz okno dialogowe 'Nowy kontakt'"
 
 #: src/kaddressbook_options.h:19
-#, fuzzy, kde-format
-#| msgid "Display the specified contact (by URL)"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr "Wyświetl dany kontakt (poprzez URL)"
 
 #: src/kaddressbook_options.h:22
-#, fuzzy, kde-format
-#| msgid "Files or URLs. The user will be asked whether to import."
+#, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr "Pliki lub adresy URL. Użytkownik zostanie zapytany czy zaimportować."
 
 #: src/kaddressbook_options.h:26
-#, fuzzy, kde-format
-#| msgid "Lists the available options for user feedback"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Wymień dostępne możliwości informacji zwrotnej"
 
 #: src/kaddressbookpart.cpp:49
-#, fuzzy, kde-format
-#| msgid "&Configure KAddressBook..."
+#, kde-format
 msgid "&Configure KAddressBook…"
-msgstr "&Ustaw Książkę adresową..."
+msgstr "&Ustawienia Książki Adresowej…"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -780,12 +770,10 @@ msgid "Export"
 msgstr "Wyeksportuj"
 
 #: src/mainwidget.cpp:403
-#, fuzzy, kde-format
-#| msgctxt "@label Search contacts in list"
-#| msgid "Search... <%1>"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
-msgstr "Znajdź...<%1>"
+msgstr "Poszukaj… <%1>"
 
 #: src/mainwidget.cpp:639
 #, kde-format
@@ -847,17 +835,15 @@ msgid "Three Columns"
 msgstr "Trzy kolumny"
 
 #: src/mainwidget.cpp:692
-#, fuzzy, kde-format
-#| msgid "Set Focus to Quick Search"
+#, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
-msgstr "Uaktywnij pole szybkiego wyszukiwania"
+msgstr "Przejdź do pola szybkiego wyszukiwania"
 
 #: src/mainwidget.cpp:705
-#, fuzzy, kde-format
-#| msgid "Serverside Subscription..."
+#, kde-format
 msgid "Serverside Subscription…"
-msgstr "Subskrybowanie na serwerze..."
+msgstr "Subskrybowanie na serwerze…"
 
 #: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44
 #, kde-format
@@ -971,7 +957,7 @@ msgstr "Gotowe"
 #: src/printing/compact/compactstyle.cpp:201
 #, kde-format
 msgid "Compact Printing Style"
-msgstr "Kompaktowy styl drukowania"
+msgstr "Zwarty sposób wydruku"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
