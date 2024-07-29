@@ -69,7 +69,7 @@ void CategorySelectWidgetPrivate::init()
     hbox->setSpacing(0);
     hbox->setContentsMargins({});
 
-    checkCombo = new KPIM::KCheckComboBox;
+    checkCombo = new KPIM::KCheckComboBox(q);
     checkCombo->setMinimumWidth(150);
     checkCombo->setSqueezeText(true);
     connect(checkCombo, &KPIM::KCheckComboBox::checkedItemsChanged, this, &CategorySelectWidgetPrivate::slotCheckedItemsChanged);
