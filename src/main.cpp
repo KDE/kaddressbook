@@ -64,7 +64,6 @@ int main(int argc, char **argv)
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
     app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
-    KCrash::initialize();
 #if HAVE_STYLE_MANAGER
     KStyleManager::initStyle();
 #else // !HAVE_STYLE_MANAGER
@@ -76,6 +75,8 @@ int main(int argc, char **argv)
 
     AboutData about;
     app.setAboutData(about);
+    KCrash::initialize();
+
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kaddressbook")));
     QCommandLineParser *cmdArgs = app.cmdArgs();
     kaddressbook_options(cmdArgs);
