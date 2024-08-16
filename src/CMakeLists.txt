@@ -83,7 +83,7 @@ if(TARGET KF6::UserFeedbackWidgets)
        )
 endif()
 
-if(TARGET Plasma::Activities)
+if(HAVE_ACTIVITY_SUPPORT)
     target_sources(kaddressbookprivate PRIVATE
         activities/activitiesmanager.h
         activities/activitiesmanager.cpp
@@ -140,8 +140,12 @@ target_link_libraries(kaddressbookprivate
 if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
 endif()
-if(TARGET Plasma::Activities)
-	target_link_libraries(kaddressbookprivate PRIVATE Plasma::Activities KPim6::LdapCore)
+
+if(HAVE_ACTIVITY_SUPPORT)
+    target_link_libraries(kaddressbookprivate
+        PRIVATE
+        KPim6::PimCommonActivities  KPim6::LdapCore
+    )
 endif()
 
 if(KPim6AkonadiSearch_FOUND)

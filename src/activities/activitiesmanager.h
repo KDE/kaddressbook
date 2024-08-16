@@ -6,6 +6,7 @@
 
 #pragma once
 #include "kaddressbook_export.h"
+#include <PimCommonActivities/ActivitiesBaseManager>
 #include <QObject>
 namespace KActivities
 {
@@ -13,7 +14,7 @@ class Consumer;
 }
 class LdapActivities;
 class AccountActivities;
-class KADDRESSBOOK_EXPORT ActivitiesManager : public QObject
+class KADDRESSBOOK_EXPORT ActivitiesManager : public PimCommonActivities::ActivitiesBaseManager
 {
     Q_OBJECT
 public:
@@ -25,14 +26,9 @@ public:
     [[nodiscard]] bool enabled() const;
     void setEnabled(bool newEnabled);
 
-    [[nodiscard]] bool isInCurrentActivity(const QStringList &lst) const;
-    [[nodiscard]] QString currentActivity() const;
     [[nodiscard]] LdapActivities *ldapActivities() const;
 
     AccountActivities *accountActivities() const;
-
-Q_SIGNALS:
-    void activitiesChanged();
 
 private:
     LdapActivities *const mLdapActivities;
