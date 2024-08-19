@@ -209,6 +209,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mCollectionTree->addMimeTypeInclusionFilter(Akonadi::Collection::mimeType());
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
 
+    // TODO add filtersortproxy model for account activity
+
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
     auto checkableProxyModel = new StructuralCollectionsNotCheckableProxy(this);
     checkableProxyModel->setSelectionModel(mCollectionSelectionModel);
