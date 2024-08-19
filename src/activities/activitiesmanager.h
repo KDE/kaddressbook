@@ -23,7 +23,7 @@ public:
     explicit ActivitiesManager(QObject *parent = nullptr);
     ~ActivitiesManager() override;
 
-    [[nodiscard]] bool enabled() const;
+    [[nodiscard]] bool enabled() const override;
     void setEnabled(bool newEnabled);
 
     [[nodiscard]] LdapActivities *ldapActivities() const;
