@@ -1,14 +1,14 @@
 # Korean messages for kaddressbook
 # Copyright (C) 2001, 2007 Free Software Foundation, Inc.
 # KIM HyoungSuk <mire@mizi.com>, 2001.
-# Shinjo Park <kde@peremen.name>, 2007, 2009, 2011, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2007, 2009, 2011, 2019, 2020, 2021, 2022, 2023, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:41+0000\n"
-"PO-Revision-Date: 2023-07-23 20:26+0200\n"
+"POT-Creation-Date: 2024-08-20 00:40+0000\n"
+"PO-Revision-Date: 2024-08-19 22:32+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -29,7 +29,7 @@ msgid "Your emails"
 msgstr "kde@peremen.name"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:716 src/mainwidget.cpp:743
+#: src/mainwidget.cpp:718 src/mainwidget.cpp:745
 #, kde-format
 msgid "Address Book"
 msgstr "주소록"
@@ -138,8 +138,7 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © 2007–%1 KAddressBook authors"
 
 #: src/aboutdata.cpp:23
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
@@ -150,8 +149,7 @@ msgid "Current maintainer"
 msgstr "현재 관리자"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias König"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
@@ -162,8 +160,7 @@ msgid "Previous maintainer"
 msgstr "이전 관리자"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Stefan Taferner"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
@@ -174,8 +171,7 @@ msgid "Original Author (1998)"
 msgstr "원 작성자(1998년)"
 
 #: src/aboutdata.cpp:26
-#, fuzzy, kde-format
-#| msgid "David Bryant"
+#, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr "David Bryant"
@@ -223,8 +219,7 @@ msgid ", "
 msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
-#, fuzzy, kde-format
-#| msgid "<qt>Category filter: %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>분류 필터: %1"
@@ -637,45 +632,39 @@ msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "연락처 %1명을 %2(으)로 가져오는 중"
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
-#| msgid "Import the given file"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "지정한 파일 가져오기"
 
 #: src/kaddressbook_options.h:17
-#, fuzzy, kde-format
-#| msgid "Open the 'New Contact' dialog"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "'새 연락처' 대화 상자 열기"
 
 #: src/kaddressbook_options.h:19
-#, fuzzy, kde-format
-#| msgid "Display the specified contact (by URL)"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr "URL로 지정한 연락처 표시"
 
 #: src/kaddressbook_options.h:22
-#, fuzzy, kde-format
-#| msgid "Files or URLs. The user will be asked whether to import."
+#, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr "파일이나 URL입니다. 사용자에게 가져올지 여부를 물어봅니다."
 
 #: src/kaddressbook_options.h:26
-#, fuzzy, kde-format
-#| msgid "Lists the available options for user feedback"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "사용자 피드백 옵션을 표시합니다"
 
 #: src/kaddressbookpart.cpp:49
-#, fuzzy, kde-format
-#| msgid "&Configure KAddressBook..."
+#, kde-format
 msgid "&Configure KAddressBook…"
-msgstr "KAddressBook 설정(&C)..."
+msgstr "KAddressBook 설정(&C)…"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -731,97 +720,93 @@ msgstr "내보내기(&E)"
 msgid "Main Toolbar"
 msgstr "주 도구 모음"
 
-#: src/mainwidget.cpp:350
+#: src/mainwidget.cpp:352
 #, kde-format
 msgid "Import"
 msgstr "가져오기"
 
-#: src/mainwidget.cpp:357
+#: src/mainwidget.cpp:359
 #, kde-format
 msgid "Export"
 msgstr "내보내기"
 
-#: src/mainwidget.cpp:403
-#, fuzzy, kde-format
-#| msgctxt "@label Search contacts in list"
-#| msgid "Search... <%1>"
+#: src/mainwidget.cpp:405
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
-msgstr "찾기... <%1>"
+msgstr "검색… <%1>"
 
-#: src/mainwidget.cpp:639
+#: src/mainwidget.cpp:641
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "전체 주소록을 인쇄하거나 일부만 인쇄할 수 있습니다."
 
-#: src/mainwidget.cpp:644
+#: src/mainwidget.cpp:646
 #, kde-format
 msgid "Quick search"
 msgstr "빠른 찾기"
 
-#: src/mainwidget.cpp:649
+#: src/mainwidget.cpp:651
 #, kde-format
 msgid "Category filter"
 msgstr "분류 필터"
 
-#: src/mainwidget.cpp:654
+#: src/mainwidget.cpp:656
 #, kde-format
 msgid "Select All"
 msgstr "모두 선택"
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:658
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "현재 주소록 보기의 모든 연락처를 선택합니다."
 
-#: src/mainwidget.cpp:660
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR 코드 표시"
 
-#: src/mainwidget.cpp:661
+#: src/mainwidget.cpp:663
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "연락처의 QR 코드를 표시합니다."
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:668
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "간단히(1열)"
 
-#: src/mainwidget.cpp:670
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "주소록 보기의 간단한 모드를 사용합니다."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:675
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "2열"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:681
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "3열"
 
-#: src/mainwidget.cpp:692
-#, fuzzy, kde-format
-#| msgid "Set Focus to Quick Search"
+#: src/mainwidget.cpp:694
+#, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "빠른 검색에 포커스 맞추기"
 
-#: src/mainwidget.cpp:705
-#, fuzzy, kde-format
-#| msgid "Serverside Subscription..."
+#: src/mainwidget.cpp:707
+#, kde-format
 msgid "Serverside Subscription…"
-msgstr "서버 측 구독..."
+msgstr "서버 측 구독…"
 
-#: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:751 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -844,8 +829,7 @@ msgstr ""
 "<qt>메뉴 표시줄을 완전히 숨깁니다. %1 키를 눌러서 다시 볼 수 있습니다.</qt>"
 
 #: src/mainwindow.cpp:213
-#, fuzzy, kde-format
-#| msgid "Hide menu bar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
 msgstr "메뉴 표시줄 숨기기"
@@ -1215,7 +1199,7 @@ msgstr "인쇄: 진행 중"
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: src/printing/printprogress.cpp:43
 #, kde-format
