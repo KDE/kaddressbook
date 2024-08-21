@@ -64,6 +64,8 @@ target_sources(kaddressbookprivate PRIVATE
     modelcolumnmanager.h
     stylecontactlistdelegate.h
     widgets/quicksearchwidget.h
+    contactentitymimetypefiltermodel.h
+    contactentitymimetypefiltermodel.cpp
 
    )
 
