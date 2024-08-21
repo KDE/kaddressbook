@@ -11,6 +11,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include "categoryfilterproxymodel.h"
 #include "categoryselectwidget.h"
+#include "config-kaddressbook.h"
 #include "contactinfoproxymodel.h"
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
@@ -28,6 +29,7 @@ using namespace Qt::Literals::StringLiterals;
 #include "importexport/plugininterface.h"
 #include "importexport/pluginmanager.h"
 
+#include "contactentitymimetypefiltermodel.h"
 #include <Akonadi/GrantleeContactFormatter>
 #include <Akonadi/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
@@ -93,7 +95,10 @@ using namespace Qt::Literals::StringLiterals;
 #include <QStackedWidget>
 
 #include "plugininterface/kaddressbookplugininterface.h"
-
+#if HAVE_ACTIVITY_SUPPORT
+#include "activities/accountactivities.h"
+#include "activities/activitiesmanager.h"
+#endif
 namespace
 {
 static bool isStructuralCollection(const Akonadi::Collection &collection)
@@ -202,14 +207,12 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
      *                                   address books
      */
 
-    mCollectionTree = new Akonadi::EntityMimeTypeFilterModel(this);
+    mCollectionTree = new ContactEntityMimeTypeFilterModel(this);
     mCollectionTree->setDynamicSortFilter(true);
     mCollectionTree->setSortCaseSensitivity(Qt::CaseInsensitive);
     mCollectionTree->setSourceModel(GlobalContactModel::instance()->model());
     mCollectionTree->addMimeTypeInclusionFilter(Akonadi::Collection::mimeType());
     mCollectionTree->setHeaderGroup(Akonadi::EntityTreeModel::CollectionTreeHeaders);
-
-    // TODO add filtersortproxy model for account activity
 
     mCollectionSelectionModel = new QItemSelectionModel(mCollectionTree);
     auto checkableProxyModel = new StructuralCollectionsNotCheckableProxy(this);

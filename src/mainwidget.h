@@ -12,6 +12,7 @@
 #include <Akonadi/Item>
 #include <QItemSelection>
 #include <QWidget>
+class ContactEntityMimeTypeFilterModel;
 
 namespace GrantleeTheme
 {
@@ -134,7 +135,7 @@ private:
 
     QAbstractItemModel *allContactsModel();
 
-    Akonadi::EntityMimeTypeFilterModel *mCollectionTree = nullptr;
+    ContactEntityMimeTypeFilterModel *mCollectionTree = nullptr;
     Akonadi::EntityMimeTypeFilterModel *mItemTree = nullptr;
     Akonadi::EntityMimeTypeFilterModel *mAllContactsModel = nullptr;
     Akonadi::ContactsFilterProxyModel *mContactsFilterModel = nullptr;
