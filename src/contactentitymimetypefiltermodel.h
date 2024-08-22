@@ -23,6 +23,9 @@ public:
 
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *account);
 
+protected:
+    [[nodiscard]] bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
+
 private:
     Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
 };

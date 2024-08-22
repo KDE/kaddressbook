@@ -27,4 +27,10 @@ void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActi
     }
 }
 
+bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
+{
+    // TODO
+    return Akonadi::EntityMimeTypeFilterModel::filterAcceptsRow(sourceRow, sourceParent);
+}
+
 #include "moc_contactentitymimetypefiltermodel.cpp"
