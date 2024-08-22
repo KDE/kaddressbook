@@ -7,6 +7,7 @@
 */
 
 #include "contactentitymimetypefiltermodel.h"
+#include <Akonadi/AccountActivitiesAbstract>
 
 ContactEntityMimeTypeFilterModel::ContactEntityMimeTypeFilterModel(QObject *parent)
     : Akonadi::EntityMimeTypeFilterModel{parent}
@@ -17,8 +18,13 @@ ContactEntityMimeTypeFilterModel::~ContactEntityMimeTypeFilterModel() = default;
 
 void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
 {
+    if (mAccountActivities) {
+        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::invalidateFilter);
+    }
     mAccountActivities = accountActivities;
-    // TODO
+    if (mAccountActivities) {
+        connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::invalidateFilter);
+    }
 }
 
 #include "moc_contactentitymimetypefiltermodel.cpp"
