@@ -8,6 +8,8 @@
 
 #include "contactentitymimetypefiltermodel.h"
 #include <Akonadi/AccountActivitiesAbstract>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
 
 ContactEntityMimeTypeFilterModel::ContactEntityMimeTypeFilterModel(QObject *parent)
     : Akonadi::EntityMimeTypeFilterModel{parent}
@@ -29,7 +31,15 @@ void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActi
 
 bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
-    // TODO
+    if (mAccountActivities) {
+        const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
+
+        const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
+        const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
+        if (instance.activitiesEnabled()) {
+            return mAccountActivities->filterAcceptsRow(instance.activities());
+        }
+    }
     return Akonadi::EntityMimeTypeFilterModel::filterAcceptsRow(sourceRow, sourceParent);
 }
 
