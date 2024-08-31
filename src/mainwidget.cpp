@@ -17,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 #include "globalcontactmodel.h"
 #include "kaddressbook_options.h"
 #include "kaddressbookadaptor.h"
+#include "kcolorscheme_version.h"
 #include "manageshowcollectionproperties.h"
 #include "modelcolumnmanager.h"
 #include "printing/printingwizard.h"
@@ -714,7 +715,11 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
 
+#if KCOLORSCHEME_VERSION < QT_VERSION_CHECK(6, 6, 0)
     auto manager = new KColorSchemeManager(this);
+#else
+    auto manager = KColorSchemeManager::instance();
+#endif
     collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
 }
 
