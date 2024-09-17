@@ -17,7 +17,6 @@ using namespace Qt::Literals::StringLiterals;
 #include "globalcontactmodel.h"
 #include "kaddressbook_options.h"
 #include "kaddressbookadaptor.h"
-#include "kcolorscheme_version.h"
 #include "manageshowcollectionproperties.h"
 #include "modelcolumnmanager.h"
 #include "printing/printingwizard.h"
