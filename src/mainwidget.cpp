@@ -211,7 +211,6 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 #if HAVE_ACTIVITY_SUPPORT
     mCollectionTree->setAccountActivities(ActivitiesManager::self()->accountActivities());
 #endif
-    mCollectionTree->setDynamicSortFilter(true);
     mCollectionTree->setSortCaseSensitivity(Qt::CaseInsensitive);
     mCollectionTree->setSourceModel(GlobalContactModel::instance()->model());
     mCollectionTree->addMimeTypeInclusionFilter(Akonadi::Collection::mimeType());

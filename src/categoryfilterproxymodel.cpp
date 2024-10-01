@@ -63,7 +63,6 @@ CategoryFilterProxyModel::CategoryFilterProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent)
     , d_ptr(new CategoryFilterProxyModelPrivate(this))
 {
-    setDynamicSortFilter(true);
 }
 
 CategoryFilterProxyModel::~CategoryFilterProxyModel() = default;
