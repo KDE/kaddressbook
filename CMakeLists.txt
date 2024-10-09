@@ -29,7 +29,7 @@ include(FeatureSummary)
 include(KDEGitCommitHooks)
 
 include(KDEClangFormat)
-file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h *.c)
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/*.cpp src/*.h kontactplugin/*.cpp kontactplugin/*.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 include(CheckFunctionExists)
 
@@ -160,5 +160,5 @@ if(KF6DocTools_FOUND)
 endif()
 
 ecm_feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-file(GLOB_RECURSE ALL_SOURCE_FILES src/*.cpp src/*.h)
+file(GLOB_RECURSE ALL_SOURCE_FILES src/*.cpp src/*.h kontactplugin/*.cpp kontactplugin/*.h)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
