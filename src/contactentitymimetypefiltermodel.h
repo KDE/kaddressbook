@@ -23,9 +23,17 @@ public:
 
     void setAccountActivities(Akonadi::AccountActivitiesAbstract *account);
 
+    [[nodiscard]] Akonadi::AccountActivitiesAbstract *accountActivities() const;
+
+    /// @since 6.3
+    [[nodiscard]] bool enablePlasmaActivities() const;
+    /// @since 6.3
+    void setEnablePlasmaActivities(bool newEnablePlasmaActivities);
+
 protected:
     [[nodiscard]] bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
     Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
+    bool mEnablePlasmaActivities = false;
 };

@@ -31,7 +31,7 @@ void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActi
 
 bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
-    if (mAccountActivities) {
+    if (mAccountActivities && mEnablePlasmaActivities) {
         const QModelIndex modelIndex = sourceModel()->index(sourceRow, 0, sourceParent);
 
         const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
@@ -41,6 +41,24 @@ bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QMo
         }
     }
     return Akonadi::EntityMimeTypeFilterModel::filterAcceptsRow(sourceRow, sourceParent);
+}
+
+Akonadi::AccountActivitiesAbstract *ContactEntityMimeTypeFilterModel::accountActivities() const
+{
+    return mAccountActivities;
+}
+
+bool ContactEntityMimeTypeFilterModel::enablePlasmaActivities() const
+{
+    return mEnablePlasmaActivities;
+}
+
+void ContactEntityMimeTypeFilterModel::setEnablePlasmaActivities(bool newEnablePlasmaActivities)
+{
+    if (mEnablePlasmaActivities != newEnablePlasmaActivities) {
+        mEnablePlasmaActivities = newEnablePlasmaActivities;
+        invalidateFilter();
+    }
 }
 
 #include "moc_contactentitymimetypefiltermodel.cpp"
