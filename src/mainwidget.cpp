@@ -210,7 +210,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mCollectionTree = new ContactEntityMimeTypeFilterModel(this);
 #if HAVE_ACTIVITY_SUPPORT
     mCollectionTree->setAccountActivities(ActivitiesManager::self()->accountActivities());
-    // TODO mCollectionTree->setEnablePlasmaActivities();
+    mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());
 #endif
     mCollectionTree->setSortCaseSensitivity(Qt::CaseInsensitive);
     mCollectionTree->setSourceModel(GlobalContactModel::instance()->model());
