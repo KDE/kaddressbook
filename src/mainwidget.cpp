@@ -377,7 +377,12 @@ void MainWidget::configure()
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg.addModule(metaData);
     }
-    dlg.exec();
+    if (dlg.exec()) {
+#if HAVE_ACTIVITY_SUPPORT
+        mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());
+        Settings::self()->save();
+#endif
+    }
 }
 
 void MainWidget::handleCommandLine(const QStringList &arguments)

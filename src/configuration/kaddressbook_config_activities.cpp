@@ -5,6 +5,7 @@
 */
 
 #include "kaddressbook_config_activities.h"
+#include "settings.h"
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <QCheckBox>
@@ -32,14 +33,17 @@ void KCMKaddressbookActivitiesConfig::slotConfigChanged()
 
 void KCMKaddressbookActivitiesConfig::save()
 {
+    Settings::self()->setEnabledActivities(mActivities->isChecked());
 }
 
 void KCMKaddressbookActivitiesConfig::load()
 {
+    mActivities->setChecked(Settings::self()->enabledActivities());
 }
 
 void KCMKaddressbookActivitiesConfig::defaults()
 {
+    mActivities->setChecked(false);
 }
 
 #include "kaddressbook_config_activities.moc"
