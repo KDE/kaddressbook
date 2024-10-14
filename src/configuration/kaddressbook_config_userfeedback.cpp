@@ -5,14 +5,11 @@
 */
 
 #include "kaddressbook_config_userfeedback.h"
-#include <KAboutData>
+#include "userfeedback/userfeedbackmanager.h"
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <QHBoxLayout>
-#ifdef WITH_KUSERFEEDBACK
-#include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/FeedbackConfigWidget>
-#endif
+#include <QHBoxLayout>
 
 using namespace KAddressBook;
 
