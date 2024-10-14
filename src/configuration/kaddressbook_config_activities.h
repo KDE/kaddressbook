@@ -9,6 +9,7 @@
 #include <KCModule>
 
 #include <QVariant>
+class QCheckBox;
 namespace KAddressBook
 {
 class KCMKaddressbookActivitiesConfig : public KCModule
@@ -22,5 +23,6 @@ public:
 
 private:
     void slotConfigChanged();
+    QCheckBox *const mActivities;
 };
 }

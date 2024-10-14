@@ -5,12 +5,10 @@
 */
 
 #include "kaddressbook_config_activities.h"
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <PimCommon/ConfigurePluginsListWidget>
-#include <PimCommon/ConfigurePluginsWidget>
-#include <QHBoxLayout>
+#include <QCheckBox>
+#include <QVBoxLayout>
 
 using namespace KAddressBook;
 
@@ -18,9 +16,13 @@ K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookActivitiesConfig, "kaddressbook_config_a
 
 KCMKaddressbookActivitiesConfig::KCMKaddressbookActivitiesConfig(QObject *parent, const KPluginMetaData &data)
     : KCModule(parent, data)
+    , mActivities(new QCheckBox(i18n("Enabled"), widget()))
 {
-    auto lay = new QHBoxLayout(widget());
+    auto lay = new QVBoxLayout(widget());
     lay->setContentsMargins({});
+    lay->addWidget(mActivities);
+    lay->addStretch(1);
+    connect(mActivities, &QCheckBox::clicked, this, &KCMKaddressbookActivitiesConfig::slotConfigChanged);
 }
 
 void KCMKaddressbookActivitiesConfig::slotConfigChanged()
