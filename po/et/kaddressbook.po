@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-11 00:40+0000\n"
+"POT-Creation-Date: 2024-10-15 00:40+0000\n"
 "PO-Revision-Date: 2020-05-10 10:04+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -29,7 +29,7 @@ msgid "Your emails"
 msgstr "qiilaq69@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:728 src/mainwidget.cpp:755
+#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
 #, kde-format
 msgid "Address Book"
 msgstr "Aadressiraamat"
@@ -228,6 +228,11 @@ msgstr ", "
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>Kategooriafilter: %1"
+
+#: src/configuration/kaddressbook_config_activities.cpp:20
+#, kde-format
+msgid "Enabled"
+msgstr ""
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -749,7 +754,7 @@ msgstr "Import"
 msgid "Export"
 msgstr "Eksport"
 
-#: src/mainwidget.cpp:411
+#: src/mainwidget.cpp:416
 #, fuzzy, kde-format
 #| msgctxt "@label Search contacts in list"
 #| msgid "Search... <%1>"
@@ -757,79 +762,79 @@ msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Otsing... <%1>"
 
-#: src/mainwidget.cpp:647
+#: src/mainwidget.cpp:652
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Kogu aadressiraamatu või määratud arvu kontaktide trükkimine."
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:657
 #, kde-format
 msgid "Quick search"
 msgstr "Kiirotsing"
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Category filter"
 msgstr "Kategooriafilter"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:667
 #, kde-format
 msgid "Select All"
 msgstr "Vali kõik"
 
-#: src/mainwidget.cpp:664
+#: src/mainwidget.cpp:669
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Kõigi aktiivse aadressiraamatu vaate kontaktide valimine."
 
-#: src/mainwidget.cpp:668
+#: src/mainwidget.cpp:673
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR-koodi näitamine"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "QR-koodi näitamine kontakti juures."
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:679
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Lihtne (üks veerg)"
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:683
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Aadressiraamatu vaate lihtsa režiimi näitamine."
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:686
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Kaks veergu"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:692
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Kolm veergu"
 
-#: src/mainwidget.cpp:700
+#: src/mainwidget.cpp:705
 #, fuzzy, kde-format
 #| msgid "Set Focus to Quick Search"
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Fookus kiirotsingule"
 
-#: src/mainwidget.cpp:713
+#: src/mainwidget.cpp:718
 #, fuzzy, kde-format
 #| msgid "Serverside Subscription..."
 msgid "Serverside Subscription…"
 msgstr "Serveripoolne tellimine..."
 
-#: src/mainwidget.cpp:761 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"

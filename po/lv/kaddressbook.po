@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-11 00:40+0000\n"
+"POT-Creation-Date: 2024-10-15 00:40+0000\n"
 "PO-Revision-Date: 2024-05-28 10:01+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgid "Your emails"
 msgstr "andris.m@delfi.lv, viesturs.zarins@mi.lu.lv, toms.trasuns@posteo.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:728 src/mainwidget.cpp:755
+#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
 #, kde-format
 msgid "Address Book"
 msgstr "Adrešu grāmata"
@@ -228,6 +228,12 @@ msgstr ", "
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>Kategorijas filtrs: %1"
+
+#: src/configuration/kaddressbook_config_activities.cpp:20
+#, fuzzy, kde-format
+#| msgid "Table"
+msgid "Enabled"
+msgstr "Tabula"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -757,83 +763,83 @@ msgstr "Importēt"
 msgid "Export"
 msgstr "Eksportēt"
 
-#: src/mainwidget.cpp:411
+#: src/mainwidget.cpp:416
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Meklēt…<%1>"
 
-#: src/mainwidget.cpp:647
+#: src/mainwidget.cpp:652
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Izdrukāt visu adrešu grāmatu vai atlasītos kontaktus."
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:657
 #, kde-format
 msgid "Quick search"
 msgstr "Ātrā meklēšana"
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Category filter"
 msgstr "Kategorijas filtrs"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:667
 #, kde-format
 msgid "Select All"
 msgstr "Atlasīt visus"
 
-#: src/mainwidget.cpp:664
+#: src/mainwidget.cpp:669
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Atlasīt visus aktīvās adrešu grāmatas kontaktus."
 
-#: src/mainwidget.cpp:668
+#: src/mainwidget.cpp:673
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Rādīt QR kodus"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Rādīt QR kodus kontaktā."
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:679
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Vienkāršs (viena kolonna)"
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:683
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Rāda adrešu grāmatu vienkāršajā režīmā."
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:686
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Divas kolonnas"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:692
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Trīs kolonnas"
 
-#: src/mainwidget.cpp:700
+#: src/mainwidget.cpp:705
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Iestatīt fokusu uz ātro meklēšanu"
 
-#: src/mainwidget.cpp:713
+#: src/mainwidget.cpp:718
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr "Servera puses abonements…"
 
-#: src/mainwidget.cpp:761 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -3862,9 +3868,6 @@ msgstr ""
 
 #~ msgid "Icons represent contacts. Very simple view."
 #~ msgstr "Ikonas apzīmē konktaktus. Ļoti vienkāršs skats."
-
-#~ msgid "Table"
-#~ msgstr "Tabula"
 
 #~ msgid ""
 #~ "A listing of contacts in a table. Each cell of the table holds a field of "
