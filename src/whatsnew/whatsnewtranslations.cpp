@@ -27,6 +27,7 @@ QList<PimCommon::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo() const
             lst += l.toString();
         }
         info.setNewFeatures(lst);
+        info.setBugFixings({i18n("Restore configure dialog size.")});
         info.setVersion(QStringLiteral("6.3.0"));
         listInfo.append(std::move(info));
     }
