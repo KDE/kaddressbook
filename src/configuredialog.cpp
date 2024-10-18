@@ -19,12 +19,17 @@ static const char myConfigureDialogConfigGroupName[] = "ConfigureDialog";
 ConfigureDialog::ConfigureDialog(QWidget *parent)
     : KCMultiDialog(parent)
 {
-    readConfig();
 }
 
 ConfigureDialog::~ConfigureDialog()
 {
     writeConfig();
+}
+
+void ConfigureDialog::showEvent(QShowEvent *ev)
+{
+    KPageDialog::showEvent(ev);
+    readConfig();
 }
 
 void ConfigureDialog::readConfig()

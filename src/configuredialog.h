@@ -14,6 +14,9 @@ public:
     explicit ConfigureDialog(QWidget *parent = nullptr);
     ~ConfigureDialog() override;
 
+protected:
+    void showEvent(QShowEvent *ev) override;
+
 private:
     void writeConfig();
     void readConfig();
