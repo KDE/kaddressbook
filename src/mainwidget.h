@@ -121,19 +121,20 @@ private Q_SLOTS:
     void setFocusToTreeView();
 
 private:
-    const Akonadi::Item::List collectSelectedAllContactsItem(QItemSelectionModel *model);
-    void initGrantleeThemeName();
-    void setupGui();
-    void setupActions(KActionCollection *);
-    bool showQRCodes();
-    void setViewMode(int mode);
-    void saveSplitterStates() const;
-    void restoreSplitterStates();
-    void initializeImportExportPlugin(KActionCollection *collection);
-    void slotGeneralPaletteChanged();
-    Akonadi::EntityTreeModel *entityTreeModel() const;
+    KADDRESSBOOK_NO_EXPORT const Akonadi::Item::List collectSelectedAllContactsItem(QItemSelectionModel *model);
+    KADDRESSBOOK_NO_EXPORT void initGrantleeThemeName();
+    KADDRESSBOOK_NO_EXPORT void setupGui();
+    KADDRESSBOOK_NO_EXPORT void setupActions(KActionCollection *);
+    KADDRESSBOOK_NO_EXPORT bool showQRCodes();
+    KADDRESSBOOK_NO_EXPORT void setViewMode(int mode);
+    KADDRESSBOOK_NO_EXPORT void saveSplitterStates() const;
+    KADDRESSBOOK_NO_EXPORT void restoreSplitterStates();
+    KADDRESSBOOK_NO_EXPORT void initializeImportExportPlugin(KActionCollection *collection);
+    KADDRESSBOOK_NO_EXPORT void slotGeneralPaletteChanged();
+    KADDRESSBOOK_NO_EXPORT void slotWhatsNew();
+    KADDRESSBOOK_NO_EXPORT Akonadi::EntityTreeModel *entityTreeModel() const;
 
-    QAbstractItemModel *allContactsModel();
+    KADDRESSBOOK_NO_EXPORT QAbstractItemModel *allContactsModel();
 
     ContactEntityMimeTypeFilterModel *mCollectionTree = nullptr;
     Akonadi::EntityMimeTypeFilterModel *mItemTree = nullptr;

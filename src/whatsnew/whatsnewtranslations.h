@@ -4,10 +4,10 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 #pragma once
-
+#include "kaddressbook_export.h"
 #include <PimCommon/WhatsNewTranslationsBase>
 
-class WhatsNewTranslations : public PimCommon::WhatsNewTranslationsBase
+class KADDRESSBOOK_EXPORT WhatsNewTranslations : public PimCommon::WhatsNewTranslationsBase
 {
 public:
     WhatsNewTranslations();

@@ -69,6 +69,9 @@ target_sources(kaddressbookprivate PRIVATE
 
     configuredialog.h
     configuredialog.cpp
+    whatsnew/whatsnewtranslations.cpp
+    whatsnew/whatsnewtranslations.h
+
    )
 
 ki18n_wrap_ui(kaddressbookprivate
@@ -170,8 +173,6 @@ target_sources(kaddressbook PRIVATE
     kaddressbook_debug.cpp
     mainwindow.cpp
     mainwindow.h
-    whatsnew/whatsnewtranslations.cpp
-    whatsnew/whatsnewtranslations.h
     main.cpp
     kaddressbook.qrc
    )

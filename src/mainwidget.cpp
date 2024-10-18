@@ -37,6 +37,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include "uistatesaver.h"
 
+#include <PimCommon/WhatsNewDialog>
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
 
@@ -81,6 +82,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QApplication>
 #include <QTextBrowser>
 
+#include "whatsnew/whatsnewtranslations.h"
 #include <Akonadi/ItemModifyJob>
 #include <KColorSchemeManager>
 #include <KWindowStateSaver>
@@ -726,6 +728,18 @@ void MainWidget::setupActions(KActionCollection *collection)
     auto manager = KColorSchemeManager::instance();
 #endif
     collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
+
+    auto showWhatsNewAction = new QAction(QIcon::fromTheme(QStringLiteral("kaddressbook")), i18n("What's new"), this);
+    collection->addAction(QStringLiteral("whatsnew"), showWhatsNewAction);
+    connect(showWhatsNewAction, &QAction::triggered, this, &MainWidget::slotWhatsNew);
+}
+
+void MainWidget::slotWhatsNew()
+{
+    WhatsNewTranslations translations;
+    PimCommon::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this);
+    dlg.updateInformations();
+    dlg.exec();
 }
 
 void MainWidget::printPreview()
