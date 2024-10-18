@@ -9,6 +9,7 @@
 #include "mainwindow.h"
 #include "mainwidget.h"
 #include "settings.h"
+#include "whatsnew/whatsnewtranslations.h"
 #include <KAboutData>
 #include <KActionCollection>
 #include <KConfigGroup>
@@ -20,6 +21,7 @@
 #include <KStandardAction>
 #include <KToggleFullScreenAction>
 #include <KToolBar>
+#include <PimCommon/WhatsNewMessageWidget>
 #include <QAction>
 #include <QFontDatabase>
 #include <QMenuBar>
@@ -73,8 +75,22 @@ MainWindow::MainWindow()
             needUpdateVersionWidget->setObsoleteVersion(status);
         }
     }
-    mainWidgetLayout->addWidget(mMainWidget);
 
+    WhatsNewTranslations translations;
+    const QString newFeaturesMD5 = translations.newFeaturesMD5();
+    if (!newFeaturesMD5.isEmpty()) {
+        const bool hasNewFeature = (Settings::self()->previousNewFeaturesMD5() != newFeaturesMD5);
+        if (hasNewFeature) {
+            auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this);
+            whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
+            whatsNewMessageWidget->setObjectName(QStringLiteral("whatsNewMessageWidget"));
+            mainWidgetLayout->addWidget(whatsNewMessageWidget);
+            Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
+            whatsNewMessageWidget->animatedShow();
+        }
+    }
+
+    mainWidgetLayout->addWidget(mMainWidget);
     setCentralWidget(mainWidget);
 
     setStandardToolBarMenuEnabled(true);
