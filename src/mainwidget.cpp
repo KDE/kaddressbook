@@ -12,6 +12,7 @@ using namespace Qt::Literals::StringLiterals;
 #include "categoryfilterproxymodel.h"
 #include "categoryselectwidget.h"
 #include "config-kaddressbook.h"
+#include "configuredialog.h"
 #include "contactinfoproxymodel.h"
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
@@ -372,7 +373,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
 void MainWidget::configure()
 {
-    KCMultiDialog dlg(this);
+    ConfigureDialog dlg(this);
     const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg.addModule(metaData);

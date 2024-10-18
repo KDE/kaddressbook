@@ -67,6 +67,8 @@ target_sources(kaddressbookprivate PRIVATE
     contactentitymimetypefiltermodel.h
     contactentitymimetypefiltermodel.cpp
 
+    configuredialog.h
+    configuredialog.cpp
    )
 
 ki18n_wrap_ui(kaddressbookprivate
