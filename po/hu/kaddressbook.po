@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.3\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-15 00:40+0000\n"
+"POT-Creation-Date: 2024-10-19 00:40+0000\n"
 "PO-Revision-Date: 2024-09-30 22:14+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 "kelemeng@gnome.hu,ulysses@fsf.hu,lutring.mark@gmail.com,tszanto@interware.hu"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
+#: src/mainwidget.cpp:748 src/mainwidget.cpp:775
 #, kde-format
 msgid "Address Book"
 msgstr "Címjegyzék"
@@ -743,105 +743,116 @@ msgstr "&Beállítások"
 msgid "&Export"
 msgstr "&Exportálás"
 
-#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Fő eszköztár"
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:361
 #, kde-format
 msgid "Import"
 msgstr "Importálás"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:368
 #, kde-format
 msgid "Export"
 msgstr "Exportálás"
 
-#: src/mainwidget.cpp:416
+#: src/mainwidget.cpp:419
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Keresés… <%1>"
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:655
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "A teljes címjegyzék vagy a kiválasztott névjegyek nyomtatása."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Quick search"
 msgstr "Gyorskeresés"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Category filter"
 msgstr "Kategóriaszűrő"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select All"
 msgstr "Minden kijelölése"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Az aktuális nézetben látható összes névjegy kiválasztása."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR kódok megjelenítése"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "QR kódok megjelenítése a névjegyben."
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:682
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Egyszerű (egy oszlopos)"
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "A címjegyzék nézet egyszerű módjának megjelenítése."
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:689
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Két oszlopos"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:695
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Három oszlopos"
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:708
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Fókusz a gyorskeresőre"
 
-#: src/mainwidget.cpp:718
+#: src/mainwidget.cpp:721
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr "Szerveroldali feliratkozás…"
 
-#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:732
+#, kde-format
+msgid "What's new"
+msgstr ""
+
+#: src/mainwidget.cpp:781 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Névjegyek nyomtatása"
 
-#: src/mainwindow.cpp:111
+#: src/mainwindow.cpp:127
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -851,7 +862,7 @@ msgstr ""
 "Megjelenik egy párbeszédablak, ahol módosíthatja az alkalmazás-szintű "
 "gyorsbillentyűket."
 
-#: src/mainwindow.cpp:210
+#: src/mainwindow.cpp:226
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -860,7 +871,7 @@ msgstr ""
 "<qt>Teljesen elrejti a menüsávot. A(z) %1 begépelésével jelenítheti meg "
 "ismét.</qt>"
 
-#: src/mainwindow.cpp:213
+#: src/mainwindow.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1479,6 +1490,15 @@ msgid ""
 msgstr ""
 "Válassza ki a kívánt nyomtatási stílust. Nézze meg az előnézeti képet, hogy "
 "segítsen döntést hozni."
+
+#: src/whatsnew/whatsnewtranslations.cpp:16
+msgid "Add new whatsnew widget."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:30
+#, kde-format
+msgid "Restore configure dialog size."
+msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format

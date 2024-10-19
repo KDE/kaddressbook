@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-15 00:40+0000\n"
+"POT-Creation-Date: 2024-10-19 00:40+0000\n"
 "PO-Revision-Date: 2009-06-22 16:49+0200\n"
 "Last-Translator: ivan <admin@linuxzasve.com>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -36,7 +36,7 @@ msgstr ""
 "lokalizacija@linux.hr, lokalizacija@linux.hr, lokalizacija@linux.hr"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
+#: src/mainwidget.cpp:748 src/mainwidget.cpp:775
 #, fuzzy, kde-format
 msgid "Address Book"
 msgstr "KAdresar"
@@ -760,109 +760,120 @@ msgstr "Postavke pisma"
 msgid "&Export"
 msgstr "&Izvoz"
 
-#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
 #, fuzzy, kde-format
 msgid "Main Toolbar"
 msgstr "Kontakt alatna traka"
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:361
 #, fuzzy, kde-format
 msgid "Import"
 msgstr "&Uvoz"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:368
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "&Izvoz"
 
-#: src/mainwidget.cpp:416
+#: src/mainwidget.cpp:419
 #, fuzzy, kde-format
 #| msgid "Search:"
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Traži:"
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:655
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Postavi kategorije za sve odabrane kontakte."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:660
 #, fuzzy, kde-format
 #| msgid "Recursive search"
 msgid "Quick search"
 msgstr "Rekurzivno traženje"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:665
 #, fuzzy, kde-format
 #| msgid "Category"
 msgid "Category filter"
 msgstr "Kategorija"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:670
 #, fuzzy, kde-format
 msgid "Select All"
 msgstr "Poništi Odabir za Sve"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:672
 #, fuzzy, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Izabira sve vidljive kontakte iz trenutnog pogleda."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show QR Codes"
 msgstr ""
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:682
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:686
 #, fuzzy, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Odispiši cijeli adresar"
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:689
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:695
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:708
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:718
+#: src/mainwidget.cpp:721
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr ""
 
-#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:732
+#, kde-format
+msgid "What's new"
+msgstr ""
+
+#: src/mainwidget.cpp:781 src/printing/printingwizard.cpp:44
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Uredi kontakt"
 
-#: src/mainwindow.cpp:111
+#: src/mainwindow.cpp:127
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -871,14 +882,14 @@ msgid ""
 msgstr ""
 "Pojaviće se dijalog u kome možete da podesite kratice u okviru programa."
 
-#: src/mainwindow.cpp:210
+#: src/mainwindow.cpp:226
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: src/mainwindow.cpp:213
+#: src/mainwindow.cpp:229
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1500,6 +1511,15 @@ msgstr "Odaberite vrstu ključa:"
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:16
+msgid "Add new whatsnew widget."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:30
+#, kde-format
+msgid "Restore configure dialog size."
 msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31

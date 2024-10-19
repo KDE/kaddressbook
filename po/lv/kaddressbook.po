@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-15 00:40+0000\n"
+"POT-Creation-Date: 2024-10-19 00:40+0000\n"
 "PO-Revision-Date: 2024-05-28 10:01+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgid "Your emails"
 msgstr "andris.m@delfi.lv, viesturs.zarins@mi.lu.lv, toms.trasuns@posteo.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
+#: src/mainwidget.cpp:748 src/mainwidget.cpp:775
 #, kde-format
 msgid "Address Book"
 msgstr "Adrešu grāmata"
@@ -747,105 +747,116 @@ msgstr "&Iestatījumi"
 msgid "&Export"
 msgstr "&Eksportēt"
 
-#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Galvenā rīkjosla "
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:361
 #, kde-format
 msgid "Import"
 msgstr "Importēt"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:368
 #, kde-format
 msgid "Export"
 msgstr "Eksportēt"
 
-#: src/mainwidget.cpp:416
+#: src/mainwidget.cpp:419
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Meklēt…<%1>"
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:655
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Izdrukāt visu adrešu grāmatu vai atlasītos kontaktus."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Quick search"
 msgstr "Ātrā meklēšana"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Category filter"
 msgstr "Kategorijas filtrs"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select All"
 msgstr "Atlasīt visus"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Atlasīt visus aktīvās adrešu grāmatas kontaktus."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Rādīt QR kodus"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Rādīt QR kodus kontaktā."
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:682
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Vienkāršs (viena kolonna)"
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Rāda adrešu grāmatu vienkāršajā režīmā."
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:689
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Divas kolonnas"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:695
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Trīs kolonnas"
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:708
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Iestatīt fokusu uz ātro meklēšanu"
 
-#: src/mainwidget.cpp:718
+#: src/mainwidget.cpp:721
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr "Servera puses abonements…"
 
-#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:732
+#, kde-format
+msgid "What's new"
+msgstr ""
+
+#: src/mainwidget.cpp:781 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Drukāt kontaktus"
 
-#: src/mainwindow.cpp:111
+#: src/mainwindow.cpp:127
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -853,7 +864,7 @@ msgid ""
 "wide shortcuts."
 msgstr "Atvērsies lodziņš, kurā varēsiet konfigurēt programmas saīsnes."
 
-#: src/mainwindow.cpp:210
+#: src/mainwindow.cpp:226
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -862,7 +873,7 @@ msgstr ""
 "<qt>Tas pilnībā paslēps izvēļņu joslu. Varat to atkal parādīt, spiežot „%1“."
 "</qt>"
 
-#: src/mainwindow.cpp:213
+#: src/mainwindow.cpp:229
 #, fuzzy, kde-format
 #| msgid "Hide menu bar"
 msgctxt "@title:window"
@@ -1471,6 +1482,15 @@ msgid ""
 msgstr ""
 "Izvēlieties vēlamo drukāšanas stilu. Skatiet iepriekšējo attēlu, lai "
 "atvieglotu izvēli."
+
+#: src/whatsnew/whatsnewtranslations.cpp:16
+msgid "Add new whatsnew widget."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:30
+#, kde-format
+msgid "Restore configure dialog size."
+msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format

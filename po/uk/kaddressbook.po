@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-15 00:40+0000\n"
+"POT-Creation-Date: 2024-10-19 00:40+0000\n"
 "PO-Revision-Date: 2024-10-15 20:19+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -32,7 +32,7 @@ msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
+#: src/mainwidget.cpp:748 src/mainwidget.cpp:775
 #, kde-format
 msgid "Address Book"
 msgstr "Адресна книга"
@@ -751,105 +751,116 @@ msgstr "П&араметри"
 msgid "&Export"
 msgstr "&Експортувати"
 
-#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Головний пенал"
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:361
 #, kde-format
 msgid "Import"
 msgstr "Імпорт"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:368
 #, kde-format
 msgid "Export"
 msgstr "Експорт"
 
-#: src/mainwidget.cpp:416
+#: src/mainwidget.cpp:419
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Шукати… <%1>"
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:655
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Надрукувати всю адресну книгу або позначені записи контактів."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Quick search"
 msgstr "Швидкий пошук"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Category filter"
 msgstr "Фільтрування категорій"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select All"
 msgstr "Вибрати всі"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Позначити всі контакти у поточному перегляді адресної книги."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Показати коди QR"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Показати коди QR у записі контакту."
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:682
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Просте (у один стовпчик)"
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Простий режим перегляду адресної книги."
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:689
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "У два стовпчики"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:695
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "У три стовпчики"
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:708
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Перевести фокус на швидкий пошук"
 
-#: src/mainwidget.cpp:718
+#: src/mainwidget.cpp:721
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr "Підписка з боку сервера…"
 
-#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:732
+#, kde-format
+msgid "What's new"
+msgstr ""
+
+#: src/mainwidget.cpp:781 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Друк записів контактів"
 
-#: src/mainwindow.cpp:111
+#: src/mainwindow.cpp:127
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -859,7 +870,7 @@ msgstr ""
 "Буде показано нове вікно, у якому ви зможете налаштувати загальні для "
 "програми клавіатурні скорочення."
 
-#: src/mainwindow.cpp:210
+#: src/mainwindow.cpp:226
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -868,7 +879,7 @@ msgstr ""
 "<qt>У результаті виконання цієї дії смужку меню буде повністю приховано. Щоб "
 "відновити її показ, скористайтеся натисканням комбінації клавіш %1.</qt>"
 
-#: src/mainwindow.cpp:213
+#: src/mainwindow.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1491,6 +1502,15 @@ msgid ""
 msgstr ""
 "Виберіть потрібний вам формат друку. Показаний зразок зображення допоможе "
 "вам у виборі."
+
+#: src/whatsnew/whatsnewtranslations.cpp:16
+msgid "Add new whatsnew widget."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:30
+#, kde-format
+msgid "Restore configure dialog size."
+msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format

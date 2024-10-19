@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-15 00:40+0000\n"
+"POT-Creation-Date: 2024-10-19 00:40+0000\n"
 "PO-Revision-Date: 2024-06-07 11:09+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "nene@wo.cz,lukas@kde.org,Ivo.Jansky@seznam.cz,koty@seznam.cz"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:733 src/mainwidget.cpp:760
+#: src/mainwidget.cpp:748 src/mainwidget.cpp:775
 #, kde-format
 msgid "Address Book"
 msgstr "Kniha adres"
@@ -231,7 +231,7 @@ msgstr "<qt>Filtr kategorií: %1"
 #: src/configuration/kaddressbook_config_activities.cpp:20
 #, kde-format
 msgid "Enabled"
-msgstr ""
+msgstr "Povoleno"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -727,105 +727,116 @@ msgstr "Na&stavení"
 msgid "&Export"
 msgstr "&Exportovat"
 
-#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
+#, kde-format
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Hlavní panel nástrojů"
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:361
 #, kde-format
 msgid "Import"
 msgstr "Importovat"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:368
 #, kde-format
 msgid "Export"
 msgstr "Exportovat"
 
-#: src/mainwidget.cpp:416
+#: src/mainwidget.cpp:419
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Hledat… <%1>"
 
-#: src/mainwidget.cpp:652
+#: src/mainwidget.cpp:655
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Vytisknout celou knihu adres, nebo zvolený počet kontaktů."
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Quick search"
 msgstr "Rychlé hledání"
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:665
 #, kde-format
 msgid "Category filter"
 msgstr "Filtr kategorií"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select All"
 msgstr "Označit vše"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Vybrat všechny kontakty z aktuálního pohledu."
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Zobrazit QR kódy"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Zobrazit QR kódy v kontaktu."
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:682
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jednoduchý (jeden sloupec)"
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Zvolit jednoduchý režim pohledu na knihu adres."
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:689
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dva sloupce"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:695
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tři sloupce"
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:708
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Přejít do rychlého vyhledávání"
 
-#: src/mainwidget.cpp:718
+#: src/mainwidget.cpp:721
 #, kde-format
 msgid "Serverside Subscription…"
 msgstr "Odběr na serveru…"
 
-#: src/mainwidget.cpp:766 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:732
+#, kde-format
+msgid "What's new"
+msgstr ""
+
+#: src/mainwidget.cpp:781 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Tisknout kontakty"
 
-#: src/mainwindow.cpp:111
+#: src/mainwindow.cpp:127
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -833,7 +844,7 @@ msgid ""
 "wide shortcuts."
 msgstr "Zobrazí se dialogové okno pro nastavení klávesových zkratek."
 
-#: src/mainwindow.cpp:210
+#: src/mainwindow.cpp:226
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -842,7 +853,7 @@ msgstr ""
 "<qt>Toto úplně skryje panel nabídky. Můžete ji opětovně zobrazit pomocí %1.</"
 "qt>"
 
-#: src/mainwindow.cpp:213
+#: src/mainwindow.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1434,6 +1445,15 @@ msgstr ""
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:16
+msgid "Add new whatsnew widget."
+msgstr ""
+
+#: src/whatsnew/whatsnewtranslations.cpp:30
+#, kde-format
+msgid "Restore configure dialog size."
 msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
