@@ -97,30 +97,29 @@ public Q_SLOTS:
 protected:
     [[nodiscard]] bool event(QEvent *e) override;
 
-private Q_SLOTS:
-    void slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface);
-    void delayedInit();
-
-    void itemSelected(const Akonadi::Item &item);
-    void itemSelectionChanged(const QModelIndex &, const QModelIndex &);
-    void selectFirstItem();
-
-    void setActivateViewMode(QAction *action);
-    void setQRCodeShow(bool on);
-
-    void restoreState();
-    void saveState();
-
-    void slotGrantleeThemeSelected();
-    void slotGrantleeThemesUpdated();
-    void slotCheckNewCalendar(const QModelIndex &parent, int begin, int end);
-
-    void slotDebugAkonadiSearch();
-    void slotServerSideSubscription();
-    void slotCurrentCollectionChanged(const Akonadi::Collection &col);
-    void setFocusToTreeView();
-
 private:
+    KADDRESSBOOK_NO_EXPORT void slotImportExportActivated(PimCommon::AbstractGenericPluginInterface *interface);
+    KADDRESSBOOK_NO_EXPORT void delayedInit();
+
+    KADDRESSBOOK_NO_EXPORT void itemSelected(const Akonadi::Item &item);
+    KADDRESSBOOK_NO_EXPORT void itemSelectionChanged(const QModelIndex &, const QModelIndex &);
+    KADDRESSBOOK_NO_EXPORT void selectFirstItem();
+
+    KADDRESSBOOK_NO_EXPORT void setActivateViewMode(QAction *action);
+    KADDRESSBOOK_NO_EXPORT void setQRCodeShow(bool on);
+
+    KADDRESSBOOK_NO_EXPORT void restoreState();
+    KADDRESSBOOK_NO_EXPORT void saveState();
+
+    KADDRESSBOOK_NO_EXPORT void slotGrantleeThemeSelected();
+    KADDRESSBOOK_NO_EXPORT void slotGrantleeThemesUpdated();
+    KADDRESSBOOK_NO_EXPORT void slotCheckNewCalendar(const QModelIndex &parent, int begin, int end);
+
+    KADDRESSBOOK_NO_EXPORT void slotDebugAkonadiSearch();
+    KADDRESSBOOK_NO_EXPORT void slotServerSideSubscription();
+    KADDRESSBOOK_NO_EXPORT void slotCurrentCollectionChanged(const Akonadi::Collection &col);
+    KADDRESSBOOK_NO_EXPORT void setFocusToTreeView();
+
     KADDRESSBOOK_NO_EXPORT const Akonadi::Item::List collectSelectedAllContactsItem(QItemSelectionModel *model);
     KADDRESSBOOK_NO_EXPORT void initGrantleeThemeName();
     KADDRESSBOOK_NO_EXPORT void setupGui();
