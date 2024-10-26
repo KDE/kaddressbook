@@ -722,11 +722,7 @@ void MainWidget::setupActions(KActionCollection *collection)
     collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
     connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
 
-#if KCOLORSCHEME_VERSION < QT_VERSION_CHECK(6, 6, 0)
-    auto manager = new KColorSchemeManager(this);
-#else
     auto manager = KColorSchemeManager::instance();
-#endif
     collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
 
     auto showWhatsNewAction = new QAction(QIcon::fromTheme(QStringLiteral("kaddressbook")), i18n("What's new"), this);
