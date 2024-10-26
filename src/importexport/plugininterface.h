@@ -23,7 +23,10 @@ public:
     explicit PluginInterface(QObject *parent = nullptr);
     ~PluginInterface() override;
 
-    enum ImportExportAction { Import = 0, Export = 1 };
+    enum ImportExportAction {
+        Import = 0,
+        Export = 1
+    };
 
     [[nodiscard]] QList<QAction *> importActions() const;
     void setImportActions(const QList<QAction *> &importAction);

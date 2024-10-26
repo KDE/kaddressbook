@@ -30,7 +30,14 @@ static const char ShowOrganization[] = "ShowOrganization";
 static const char ShowBirthday[] = "ShowBirthday";
 static const char ShowNote[] = "ShowNote";
 
-enum PrintField { PhoneNumbers = 1, Emails = 2, Addresses = 4, Organization = 8, Birthday = 16, Note = 32 };
+enum PrintField {
+    PhoneNumbers = 1,
+    Emails = 2,
+    Addresses = 4,
+    Organization = 8,
+    Birthday = 16,
+    Note = 32
+};
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fields)
 {
