@@ -119,15 +119,15 @@ MainWidget *MainWindow::mainWidget() const
 
 void MainWindow::initActions()
 {
-    KStandardAction::quit(this, &MainWindow::close, actionCollection());
+    KStandardActions::quit(this, &MainWindow::close, actionCollection());
     mShowMenuBarAction = KStandardAction::showMenubar(this, &MainWindow::slotToggleMenubar, actionCollection());
 
-    QAction *action = KStandardAction::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
+    QAction *action = KStandardActions::keyBindings(this, &MainWindow::configureKeyBindings, actionCollection());
     action->setWhatsThis(i18nc("@info:whatsthis",
                                "You will be presented with a dialog where you can configure "
                                "the application-wide shortcuts."));
-    KStandardAction::configureToolbars(this, &MainWindow::configureToolbars, actionCollection());
-    KStandardAction::preferences(this, &MainWindow::configure, actionCollection());
+    KStandardActions::configureToolbars(this, &MainWindow::configureToolbars, actionCollection());
+    KStandardActions::preferences(this, &MainWindow::configure, actionCollection());
     if (menuBar()) {
         mHamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
         mHamburgerMenu->setShowMenuBarAction(mShowMenuBarAction);

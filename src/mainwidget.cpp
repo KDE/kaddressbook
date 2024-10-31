@@ -651,10 +651,10 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     initGrantleeThemeName();
 
-    QAction *action = KStandardAction::print(this, &MainWidget::print, collection);
+    QAction *action = KStandardActions::print(this, &MainWidget::print, collection);
     action->setWhatsThis(i18nc("@info:whatsthis", "Print the complete address book or a selected number of contacts."));
 
-    KStandardAction::printPreview(this, &MainWidget::printPreview, collection);
+    KStandardActions::printPreview(this, &MainWidget::printPreview, collection);
 
     auto quicksearch = new QWidgetAction(this);
     quicksearch->setText(i18n("Quick search"));
