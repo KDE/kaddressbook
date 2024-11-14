@@ -5,7 +5,7 @@
 */
 
 #pragma once
-
+#include "config-kaddressbook.h"
 #include <KLocalizedString>
 #include <QCommandLineOption>
 #include <QCommandLineParser>
@@ -22,7 +22,7 @@ static void kaddressbook_options(QCommandLineParser *parser)
                                   i18nc("@info:shell", "Files or URLs. The user will be asked whether to import."),
                                   QStringLiteral("[urls...]"));
 
-#ifdef WITH_KUSERFEEDBACK
+#if KADDRESSBOOK_WITH_KUSERFEEDBACK
     parser->addOption(QCommandLineOption(QStringLiteral("feedback"), i18nc("@info:shell", "Lists the available options for user feedback")));
 #endif
 }

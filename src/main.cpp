@@ -7,6 +7,7 @@
 */
 
 #include "aboutdata.h"
+#include "config-kaddressbook.h"
 #include "kaddressbook_options.h"
 #include "mainwidget.h"
 #include "mainwindow.h"
@@ -16,7 +17,7 @@
 
 #include "kaddressbook_debug.h"
 #include <kontactinterface/pimuniqueapplication.h>
-#ifdef WITH_KUSERFEEDBACK
+#if KADDRESSBOOK_WITH_KUSERFEEDBACK
 #include "userfeedback/kaddressbookuserfeedbackprovider.h"
 #endif
 
@@ -85,7 +86,7 @@ int main(int argc, char **argv)
     cmdArgs->process(args);
     about.processCommandLine(cmdArgs);
 
-#ifdef WITH_KUSERFEEDBACK
+#if KADDRESSBOOK_WITH_KUSERFEEDBACK
     if (cmdArgs->isSet(QStringLiteral("feedback"))) {
         auto userFeedBack = new KAddressBookUserFeedbackProvider(nullptr);
         QTextStream(stdout) << userFeedBack->describeDataSources() << '\n';

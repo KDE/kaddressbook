@@ -7,6 +7,7 @@
 */
 
 #include "mainwindow.h"
+#include "config-kaddressbook.h"
 #include "mainwidget.h"
 #include "settings.h"
 #include "whatsnew/whatsnewtranslations.h"
@@ -35,7 +36,7 @@
 #include <unistd.h>
 #endif
 
-#ifdef WITH_KUSERFEEDBACK
+#if KADDRESSBOOK_WITH_KUSERFEEDBACK
 #include "userfeedback/userfeedbackmanager.h"
 #include <KUserFeedback/NotificationPopup>
 #include <KUserFeedback/Provider>
@@ -104,7 +105,7 @@ MainWindow::MainWindow()
 
     mShowMenuBarAction->setChecked(Settings::self()->showMenuBar());
     slotToggleMenubar(true);
-#ifdef WITH_KUSERFEEDBACK
+#if KADDRESSBOOK_WITH_KUSERFEEDBACK
     auto userFeedBackNotificationPopup = new KUserFeedback::NotificationPopup(this);
     userFeedBackNotificationPopup->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 #endif
