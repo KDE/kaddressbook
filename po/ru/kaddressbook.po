@@ -10,13 +10,13 @@
 # Julia Dronova <juliette.tux@gmail.com>, 2012.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
 # Alexander Yavorsky <kekcuha@gmail.com>, 2019, 2020, 2021.
-# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:40+0000\n"
-"PO-Revision-Date: 2022-10-10 09:32+0300\n"
+"PO-Revision-Date: 2024-11-15 14:40+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -157,8 +157,7 @@ msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "© Авторы KAddressBook, 2007–%1"
 
 #: src/aboutdata.cpp:23
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
@@ -169,8 +168,7 @@ msgid "Current maintainer"
 msgstr "Сопровождающий"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Tobias König"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
@@ -181,8 +179,7 @@ msgid "Previous maintainer"
 msgstr "Предыдущий сопровождающий"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Stefan Taferner"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
@@ -193,8 +190,7 @@ msgid "Original Author (1998)"
 msgstr "Первоначальный автор (1998)"
 
 #: src/aboutdata.cpp:26
-#, fuzzy, kde-format
-#| msgid "David Bryant"
+#, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
 msgstr "David Bryant"
@@ -243,8 +239,7 @@ msgstr ", "
 
 # BUGME: Better add "</qt>" to this string. It works as is, but it is not a clean solution. --aspotashev
 #: src/categoryselectwidget.cpp:229
-#, fuzzy, kde-format
-#| msgid "<qt>Category filter: %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>Фильтр категорий: %1"
@@ -252,7 +247,7 @@ msgstr "<qt>Фильтр категорий: %1"
 #: src/configuration/kaddressbook_config_activities.cpp:20
 #, kde-format
 msgid "Enabled"
-msgstr ""
+msgstr "Включено"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
@@ -665,47 +660,41 @@ msgstr[2] "Импорт %1 контактов в %2"
 msgstr[3] "Импорт одного контакта в %2"
 
 #: src/kaddressbook_options.h:15
-#, fuzzy, kde-format
-#| msgid "Import the given file"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
-msgstr "Импортировать указанный файл."
+msgstr "Импортировать указанный файл"
 
 #: src/kaddressbook_options.h:17
-#, fuzzy, kde-format
-#| msgid "Open the 'New Contact' dialog"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
-msgstr "Открыть диалог «Создание контакта»."
+msgstr "Открыть диалог «Создание контакта»"
 
 #: src/kaddressbook_options.h:19
-#, fuzzy, kde-format
-#| msgid "Display the specified contact (by URL)"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
-msgstr "Показать указанный контакт (используется URL)."
+msgstr "Показать указанный контакт (используется URL)"
 
 #: src/kaddressbook_options.h:22
-#, fuzzy, kde-format
-#| msgid "Files or URLs. The user will be asked whether to import."
+#, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr ""
-"Файлы или адреса URL. Пользователю будет показан диалог с вопросом — нужно "
+"Файлы или URL-адреса. Пользователю будет показан диалог с вопросом — нужно "
 "ли выполнить импорт."
 
 #: src/kaddressbook_options.h:26
-#, fuzzy, kde-format
-#| msgid "Lists the available options for user feedback"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
-msgstr "Показать список данных обратной связи."
+msgstr "Показать доступные варианты обратной связи"
 
 #: src/kaddressbookpart.cpp:49
-#, fuzzy, kde-format
-#| msgid "&Configure KAddressBook..."
+#, kde-format
 msgid "&Configure KAddressBook…"
-msgstr "Нас&троить KAddressBook..."
+msgstr "Нас&троить KAddressBook…"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -759,7 +748,7 @@ msgstr "&Экспорт"
 #: src/kaddressbookui.rc:116 src/kaddressbookui_part.rc:114
 #, kde-format
 msgid "&Help"
-msgstr ""
+msgstr "&Справка"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
@@ -778,12 +767,10 @@ msgid "Export"
 msgstr "Экспорт"
 
 #: src/mainwidget.cpp:419
-#, fuzzy, kde-format
-#| msgctxt "@label Search contacts in list"
-#| msgid "Search... <%1>"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
-msgstr "Поиск... <%1>"
+msgstr "Поиск… <%1>"
 
 #: src/mainwidget.cpp:655
 #, kde-format
@@ -845,22 +832,20 @@ msgid "Three Columns"
 msgstr "Три колонки"
 
 #: src/mainwidget.cpp:708
-#, fuzzy, kde-format
-#| msgid "Set Focus to Quick Search"
+#, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Перевести фокус на поле быстрого поиска"
 
 #: src/mainwidget.cpp:721
-#, fuzzy, kde-format
-#| msgid "Serverside Subscription..."
+#, kde-format
 msgid "Serverside Subscription…"
-msgstr "Подписка на сервере..."
+msgstr "Подписка на сервере…"
 
 #: src/mainwidget.cpp:728
 #, kde-format
 msgid "What's new"
-msgstr ""
+msgstr "Что нового?"
 
 #: src/mainwidget.cpp:777 src/printing/printingwizard.cpp:44
 #, kde-format
@@ -888,11 +873,10 @@ msgstr ""
 "</qt>"
 
 #: src/mainwindow.cpp:229
-#, fuzzy, kde-format
-#| msgid "Hide menu bar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
-msgstr "Скрыть строку меню"
+msgstr "Скрытие строки меню"
 
 #: src/manageshowcollectionproperties.cpp:83
 #, kde-format
@@ -1259,7 +1243,7 @@ msgstr "Печать"
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: src/printing/printprogress.cpp:43
 #, kde-format
@@ -1494,12 +1478,12 @@ msgstr ""
 
 #: src/whatsnew/whatsnewtranslations.cpp:16
 msgid "Add new whatsnew widget."
-msgstr ""
+msgstr "Добавление нового виджета «Что нового?»."
 
 #: src/whatsnew/whatsnewtranslations.cpp:30
 #, kde-format
 msgid "Restore configure dialog size."
-msgstr ""
+msgstr "Восстановление размера диалогового окна настройки."
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
