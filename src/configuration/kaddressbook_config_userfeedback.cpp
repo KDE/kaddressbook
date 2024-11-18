@@ -24,18 +24,19 @@ KCMKaddressbookUserFeedBackConfig::KCMKaddressbookUserFeedBackConfig(QObject *pa
     connect(mUserFeedbackWidget, &KUserFeedback::FeedbackConfigWidget::configurationChanged, this, &KCMKaddressbookUserFeedBackConfig::markAsChanged);
 
     lay->addWidget(mUserFeedbackWidget);
-    mUserFeedbackWidget->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
 }
 
 void KCMKaddressbookUserFeedBackConfig::save()
 {
     UserFeedBackManager::self()->userFeedbackProvider()->setTelemetryMode(mUserFeedbackWidget->telemetryMode());
     UserFeedBackManager::self()->userFeedbackProvider()->setSurveyInterval(mUserFeedbackWidget->surveyInterval());
+    setNeedsSave(false);
 }
 
 void KCMKaddressbookUserFeedBackConfig::load()
 {
     mUserFeedbackWidget->setFeedbackProvider(UserFeedBackManager::self()->userFeedbackProvider());
+    setNeedsSave(false);
 }
 
 void KCMKaddressbookUserFeedBackConfig::defaults()
