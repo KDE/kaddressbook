@@ -22,7 +22,9 @@ KCMKaddressbookPluginsConfig::KCMKaddressbookPluginsConfig(QObject *parent, cons
 {
     auto lay = new QHBoxLayout(widget());
     lay->setContentsMargins({});
-    connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::changed, this, &KCMKaddressbookPluginsConfig::slotConfigChanged);
+    connect(mConfigurePluginWidget, &PimCommon::ConfigurePluginsWidget::wasChanged, this, [this](bool state) {
+        setNeedsSave(state);
+    });
     lay->addWidget(mConfigurePluginWidget);
 }
 
