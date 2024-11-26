@@ -21,15 +21,9 @@
 #include "userfeedback/kaddressbookuserfeedbackprovider.h"
 #endif
 
-#define HAVE_KICONTHEME __has_include(<KIconTheme>)
-#if HAVE_KICONTHEME
 #include <KIconTheme>
-#endif
 
-#define HAVE_STYLE_MANAGER __has_include(<KStyleManager>)
-#if HAVE_STYLE_MANAGER
 #include <KStyleManager>
-#endif
 
 //-----------------------------------------------------------------------------
 
@@ -59,19 +53,11 @@ int KAddressBookApplication::activate(const QStringList &arguments, const QStrin
 
 int main(int argc, char **argv)
 {
-#if HAVE_KICONTHEME
     KIconTheme::initTheme();
-#endif
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
     app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
-#if HAVE_STYLE_MANAGER
     KStyleManager::initStyle();
-#else // !HAVE_STYLE_MANAGER
-#if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
-    QApplication::setStyle(QStringLiteral("breeze"));
-#endif // defined(Q_OS_MACOS) || defined(Q_OS_WIN)
-#endif // HAVE_STYLE_MANAGER
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("kaddressbook"));
 
     AboutData about;
