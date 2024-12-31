@@ -25,7 +25,6 @@ include(ECMCheckOutboundLicense)
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
 
-include(FeatureSummary)
 include(KDEGitCommitHooks)
 
 include(KDEClangFormat)
