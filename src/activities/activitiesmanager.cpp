@@ -9,7 +9,6 @@
 #include "kaddressbook_activities_debug.h"
 #include "ldapactivities.h"
 
-#include <PimCommonActivities/ActivitiesBaseManager>
 #include <PlasmaActivities/Consumer>
 
 ActivitiesManager::ActivitiesManager(QObject *parent)
