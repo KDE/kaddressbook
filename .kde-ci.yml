@@ -2,26 +2,26 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
-- 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
-  'require':
+ - 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
+   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'frameworks/kuserfeedback': '@latest-kf6'
-    'pim/akonadi' : '@same'
-    'pim/akonadi-contacts' : '@same'
-    'pim/grantleetheme' : '@same'
-    'pim/kontactinterface' : '@same'
-    'pim/libkdepim' : '@same'
-    'pim/pimcommon' : '@same'
+    'pim/akonadi': '@same'
+    'pim/akonadi-contacts': '@same'
+    'pim/grantleetheme': '@same'
+    'pim/kontactinterface': '@same'
+    'pim/libkdepim': '@same'
+    'pim/pimcommon': '@same'
     'frameworks/kiconthemes': '@latest-kf6'
 
-- 'on': ['Linux', 'FreeBSD', 'macOS']
-  'require':
-    'pim/akonadi-search' : '@same'
+ - 'on': ['Linux', 'FreeBSD', 'macOS']
+   'require':
+    'pim/akonadi-search': '@same'
 
 
-- 'on': ['Linux', 'FreeBSD']
-  'require':
+ - 'on': ['Linux', 'FreeBSD']
+   'require':
     'plasma/plasma-activities': '@latest-kf6'
 
 Options:
-  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
+ require-passing-tests-on: ['Linux', 'FreeBSD']
