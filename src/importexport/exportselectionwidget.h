@@ -20,7 +20,7 @@ public:
     explicit ExportSelectionWidget(QWidget *parent = nullptr);
     ~ExportSelectionWidget() override;
 
-    enum ExportField {
+    enum ExportField : uint8_t {
         None = 0,
         Private = 1,
         Business = 2,
