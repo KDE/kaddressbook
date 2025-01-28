@@ -23,7 +23,7 @@ public:
     explicit PluginInterface(QObject *parent = nullptr);
     ~PluginInterface() override;
 
-    enum ImportExportAction {
+    enum class ImportExportAction : uint8_t {
         Import = 0,
         Export = 1
     };
@@ -52,7 +52,7 @@ public:
 protected:
     QList<QAction *> mImportActions;
     QList<QAction *> mExportActions;
-    ImportExportAction mImportExportAction = Import;
+    ImportExportAction mImportExportAction = ImportExportAction::Import;
     Akonadi::Collection mDefaultCollection;
     QItemSelectionModel *mItemSelectionModel = nullptr;
 };
