@@ -3,6 +3,9 @@
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 set(PIM_VERSION "6.3.41")
 project(kaddressbook VERSION ${PIM_VERSION})
+# Update it for each release
+set(KADDRESSBOOK_RELEASE_VERSION_DATE "25.01.30") # yy.MM.dd
+
 set(RELEASE_SERVICE_VERSION "25.03.40")
 set(KF_MIN_VERSION "6.9.0")
 
