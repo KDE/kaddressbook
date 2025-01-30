@@ -7,6 +7,7 @@
 */
 
 #include "mainwindow.h"
+#include "config-kaddressbook.h"
 #include "mainwidget.h"
 #include "settings.h"
 #include "whatsnew/whatsnewtranslations.h"
