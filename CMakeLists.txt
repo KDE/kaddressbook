@@ -5,6 +5,8 @@ set(PIM_VERSION "6.3.2")
 project(kaddressbook VERSION ${PIM_VERSION})
 set(RELEASE_SERVICE_VERSION "24.12.2")
 set(KF_MIN_VERSION "6.6.0")
+# Update it for each release
+set(KADDRESSBOOK_RELEASE_VERSION_DATE "25.02.03") # yy.MM.dd
 
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
