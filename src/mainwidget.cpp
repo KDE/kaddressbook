@@ -375,6 +375,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
 void MainWidget::configure()
 {
+    // TODO add ldap activities support
     ConfigureDialog dlg(this);
     const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
