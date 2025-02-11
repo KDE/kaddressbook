@@ -381,6 +381,7 @@ void MainWidget::configure()
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg.addModule(metaData);
     }
+    dlg.addModule(KPluginMetaData(QStringLiteral("pim6/kcms/common/kcm_ldap")));
     if (dlg.exec()) {
 #if HAVE_ACTIVITY_SUPPORT
         mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());
