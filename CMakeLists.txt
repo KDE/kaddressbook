@@ -101,7 +101,7 @@ include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.8.1
+ecm_set_disabled_deprecation_versions(QT 6.9.0
      KF 6.11.0
 )
 
