@@ -375,13 +375,11 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
 void MainWidget::configure()
 {
-    // TODO add ldap activities support
     ConfigureDialog dlg(this);
     const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg.addModule(metaData);
     }
-    dlg.addModule(KPluginMetaData(QStringLiteral("pim6/kcms/common/kcm_ldap")));
     if (dlg.exec()) {
 #if HAVE_ACTIVITY_SUPPORT
         mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());

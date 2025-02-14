@@ -79,3 +79,24 @@ if(TARGET KF6::UserFeedbackWidgets)
     install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
 
 endif()
+######################################################
+
+add_library(kaddressbook_config_ldap MODULE)
+
+target_sources(kaddressbook_config_ldap PRIVATE
+    kaddressbook_config_ldap.h
+    kaddressbook_config_ldap.cpp
+   )
+
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+    set_target_properties(kaddressbook_config_ldap PROPERTIES UNITY_BUILD ON)
+endif()
+target_link_libraries(kaddressbook_config_ldap
+    KF6::KCMUtils
+    KF6::I18n
+    KPim6::PimCommon
+    kaddressbookprivate
+    KF6::XmlGui
+   )
+
+install(TARGETS kaddressbook_config_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
