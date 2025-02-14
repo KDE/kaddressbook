@@ -9,6 +9,11 @@
 #include <KCModule>
 
 #include <QVariant>
+namespace KLDAPWidgets
+{
+class LdapConfigureWidgetNg;
+}
+
 namespace KAddressBook
 {
 class KCMKaddressbookLdapConfig : public KCModule
@@ -19,5 +24,8 @@ public:
     void load() override;
     void save() override;
     void defaults() override;
+
+private:
+    KLDAPWidgets::LdapConfigureWidgetNg *const mLdapConfigureWidget;
 };
 }

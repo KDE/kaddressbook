@@ -5,6 +5,7 @@
 */
 
 #include "kaddressbook_config_ldap.h"
+#include <KLDAPWidgets/LdapConfigureWidgetNg>
 #include <KPluginFactory>
 #include <QCheckBox>
 #include <QVBoxLayout>
@@ -13,11 +14,11 @@ K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookLdapConfig, "kaddressbook_config_ldap.js
 
 KCMKaddressbookLdapConfig::KCMKaddressbookLdapConfig(QObject *parent, const KPluginMetaData &data)
     : KCModule(parent, data)
+    , mLdapConfigureWidget(new KLDAPWidgets::LdapConfigureWidgetNg(widget()))
 {
     auto lay = new QVBoxLayout(widget());
     lay->setContentsMargins({});
-    // lay->addWidget(mActivities);
-    // lay->addStretch(1);
+    lay->addWidget(mLdapConfigureWidget);
 }
 
 /*
@@ -29,17 +30,16 @@ void KCMKaddressbookLdapConfig::slotConfigChanged()
 
 void KCMKaddressbookLdapConfig::save()
 {
-    // Settings::self()->setEnabledActivities(mActivities->isChecked());
+    mLdapConfigureWidget->save();
 }
 
 void KCMKaddressbookLdapConfig::load()
 {
-    // mActivities->setChecked(Settings::self()->enabledActivities());
+    mLdapConfigureWidget->load();
 }
 
 void KCMKaddressbookLdapConfig::defaults()
 {
-    // mActivities->setChecked(false);
 }
 
 #include "kaddressbook_config_ldap.moc"

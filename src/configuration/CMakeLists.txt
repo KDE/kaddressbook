@@ -97,6 +97,7 @@ target_link_libraries(kaddressbook_config_ldap
     KPim6::PimCommon
     kaddressbookprivate
     KF6::XmlGui
+    KPim6::LdapWidgets
    )
 
 install(TARGETS kaddressbook_config_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
