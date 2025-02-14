@@ -20,9 +20,7 @@ endif()
 target_link_libraries(kaddressbook_config_plugins
     KF6::KCMUtils
     KF6::I18n
-    KPim6::PimCommon
     kaddressbookprivate
-    KF6::XmlGui
     KPim6AddressbookImportExport
    )
 
@@ -50,7 +48,6 @@ target_link_libraries(kaddressbook_config_activities
     KF6::I18n
     kaddressbookprivate
     KPim6::PimCommonActivities
-    KF6::XmlGui
 )
 
 install(TARGETS kaddressbook_config_activities DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
@@ -70,9 +67,7 @@ if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbook_config_userfeedback
         KF6::KCMUtils
         KF6::I18n
-        KPim6::PimCommon
         kaddressbookprivate
-        KF6::XmlGui
         KF6::UserFeedbackWidgets
        )
 
@@ -94,9 +89,7 @@ endif()
 target_link_libraries(kaddressbook_config_ldap
     KF6::KCMUtils
     KF6::I18n
-    KPim6::PimCommon
     kaddressbookprivate
-    KF6::XmlGui
     KPim6::LdapWidgets
    )
 
