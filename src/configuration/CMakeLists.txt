@@ -72,7 +72,6 @@ if(TARGET KF6::UserFeedbackWidgets)
         KF6::I18n
         KPim6::PimCommon
         kaddressbookprivate
-        KPim6AddressbookImportExport
         KF6::XmlGui
         KF6::UserFeedbackWidgets
        )
