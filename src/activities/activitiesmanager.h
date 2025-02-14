@@ -8,10 +8,6 @@
 #include "kaddressbook_export.h"
 #include <PimCommonActivities/ActivitiesBaseManager>
 #include <QObject>
-namespace KActivities
-{
-class Consumer;
-}
 class LdapActivities;
 class AccountActivities;
 class KADDRESSBOOK_EXPORT ActivitiesManager : public PimCommonActivities::ActivitiesBaseManager
@@ -32,7 +28,6 @@ public:
 
 private:
     LdapActivities *const mLdapActivities;
-    KActivities::Consumer *const mActivitiesConsumer;
     AccountActivities *const mAccountActivities;
     bool mEnabled = false;
 };

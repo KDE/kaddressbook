@@ -14,7 +14,6 @@
 ActivitiesManager::ActivitiesManager(QObject *parent)
     : PimCommonActivities::ActivitiesBaseManager{parent}
     , mLdapActivities(new LdapActivities(this))
-    , mActivitiesConsumer(new KActivities::Consumer(this))
     , mAccountActivities(new AccountActivities(this))
 {
     connect(this, &ActivitiesManager::activitiesChanged, this, [this]() {
