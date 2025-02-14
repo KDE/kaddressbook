@@ -6,7 +6,7 @@
 
 #include "activitiesmanager.h"
 #include "accountactivities.h"
-#include "kaddressbook_activities_debug.h"
+// #include "kaddressbook_activities_debug.h"
 #include "ldapactivities.h"
 
 #include <PlasmaActivities/Consumer>

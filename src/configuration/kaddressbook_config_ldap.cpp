@@ -11,6 +11,12 @@
 #include <KPluginFactory>
 #include <QCheckBox>
 #include <QVBoxLayout>
+
+#if HAVE_ACTIVITY_SUPPORT
+#include "activities/activitiesmanager.h"
+#include "activities/ldapactivities.h"
+#endif
+
 using namespace KAddressBook;
 K_PLUGIN_CLASS_WITH_JSON(KCMKaddressbookLdapConfig, "kaddressbook_config_ldap.json")
 
@@ -23,7 +29,7 @@ KCMKaddressbookLdapConfig::KCMKaddressbookLdapConfig(QObject *parent, const KPlu
     lay->addWidget(mLdapConfigureWidget);
 #if HAVE_ACTIVITY_SUPPORT
     mLdapConfigureWidget->setEnablePlasmaActivities(Settings::self()->enabledActivities());
-    // mLdapConfigureWidget->setLdapActivitiesAbstract(ActivitiesManager::self()->ldapActivities());
+    mLdapConfigureWidget->setLdapActivitiesAbstract(ActivitiesManager::self()->ldapActivities());
 #endif
 }
 
