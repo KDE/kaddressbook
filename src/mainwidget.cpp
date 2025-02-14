@@ -212,6 +212,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
 
     mCollectionTree = new ContactEntityMimeTypeFilterModel(this);
 #if HAVE_ACTIVITY_SUPPORT
+    ActivitiesManager::self()->setEnabled(Settings::self()->enabledActivities());
     mCollectionTree->setAccountActivities(ActivitiesManager::self()->accountActivities());
     mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());
 #endif
