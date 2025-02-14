@@ -5,6 +5,8 @@
 */
 
 #include "kaddressbook_config_ldap.h"
+#include "config-kaddressbook.h"
+#include "settings.h"
 #include <KLDAPWidgets/LdapConfigureWidgetNg>
 #include <KPluginFactory>
 #include <QCheckBox>
@@ -19,6 +21,10 @@ KCMKaddressbookLdapConfig::KCMKaddressbookLdapConfig(QObject *parent, const KPlu
     auto lay = new QVBoxLayout(widget());
     lay->setContentsMargins({});
     lay->addWidget(mLdapConfigureWidget);
+#if HAVE_ACTIVITY_SUPPORT
+    mLdapConfigureWidget->setEnablePlasmaActivities(Settings::self()->enabledActivities());
+    // mLdapConfigureWidget->setLdapActivitiesAbstract(ActivitiesManager::self()->ldapActivities());
+#endif
 }
 
 /*
