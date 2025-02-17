@@ -30,19 +30,6 @@ ActivitiesManager *ActivitiesManager::self()
     return &s_self;
 }
 
-bool ActivitiesManager::enabled() const
-{
-    return mEnabled;
-}
-
-void ActivitiesManager::setEnabled(bool newEnabled)
-{
-    if (mEnabled != newEnabled) {
-        mEnabled = newEnabled;
-        Q_EMIT activitiesChanged();
-    }
-}
-
 LdapActivities *ActivitiesManager::ldapActivities() const
 {
     return mLdapActivities;
