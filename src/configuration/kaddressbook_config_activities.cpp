@@ -20,7 +20,6 @@ KCMKaddressbookActivitiesConfig::KCMKaddressbookActivitiesConfig(QObject *parent
     , mActivities(new QCheckBox(i18n("Enabled"), widget()))
 {
     auto lay = new QVBoxLayout(widget());
-    lay->setContentsMargins({});
     lay->addWidget(mActivities);
     lay->addStretch(1);
     connect(mActivities, &QCheckBox::clicked, this, &KCMKaddressbookActivitiesConfig::slotConfigChanged);
