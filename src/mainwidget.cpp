@@ -384,6 +384,7 @@ void MainWidget::configure()
     if (dlg.exec()) {
 #if HAVE_ACTIVITY_SUPPORT
         mCollectionTree->setEnablePlasmaActivities(Settings::self()->enabledActivities());
+        ActivitiesManager::self()->setEnabled(Settings::self()->enabledActivities());
         Settings::self()->save();
 #endif
     }
