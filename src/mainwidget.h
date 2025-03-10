@@ -116,7 +116,6 @@ private:
     KADDRESSBOOK_NO_EXPORT void slotCheckNewCalendar(const QModelIndex &parent, int begin, int end);
 
     KADDRESSBOOK_NO_EXPORT void slotDebugAkonadiSearch();
-    KADDRESSBOOK_NO_EXPORT void slotServerSideSubscription();
     KADDRESSBOOK_NO_EXPORT void slotCurrentCollectionChanged(const Akonadi::Collection &col);
     KADDRESSBOOK_NO_EXPORT void setFocusToTreeView();
 
@@ -166,7 +165,6 @@ private:
     KAddressBookGrantlee::GrantleeContactGroupFormatter *mGroupFormatter = nullptr;
     GrantleeTheme::ThemeManager *mGrantleeThemeManager = nullptr;
     QAction *mQuickSearchAction = nullptr;
-    QAction *mServerSideSubscription = nullptr;
     QList<KAddressBookImportExport::PluginInterface *> mImportExportPluginInterfaceList;
     ManageShowCollectionProperties *mManageShowCollectionProperties = nullptr;
 

@@ -55,7 +55,6 @@ using namespace Qt::Literals::StringLiterals;
 #endif
 #include <KContacts/Addressee>
 #include <PimCommon/PimUtil>
-#include <PimCommonAkonadi/ManageServerSideSubscriptionJob>
 #include <QPointer>
 
 #include <Akonadi/ContactGroupEditorDialog>
@@ -720,9 +719,6 @@ void MainWidget::setupActions(KActionCollection *collection)
         connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
 #endif
-    mServerSideSubscription = new QAction(QIcon::fromTheme(QStringLiteral("folder-bookmarks")), i18n("Serverside Subscription…"), this);
-    collection->addAction(QStringLiteral("serverside_subscription"), mServerSideSubscription);
-    connect(mServerSideSubscription, &QAction::triggered, this, &MainWidget::slotServerSideSubscription);
 
     auto manager = KColorSchemeManager::instance();
     collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
@@ -1081,24 +1077,11 @@ const Akonadi::Item::List MainWidget::collectSelectedAllContactsItem(QItemSelect
     return lst;
 }
 
-void MainWidget::slotServerSideSubscription()
-{
-    Akonadi::Collection collection = currentAddressBook();
-    if (collection.isValid()) {
-        auto job = new PimCommon::ManageServerSideSubscriptionJob(this);
-        job->setCurrentCollection(collection);
-        job->setParentWidget(this);
-        job->start();
-    }
-}
-
 void MainWidget::slotCurrentCollectionChanged(const Akonadi::Collection &col)
 {
     for (auto interface : std::as_const(mImportExportPluginInterfaceList)) {
         interface->setDefaultCollection(col);
     }
-    bool isOnline;
-    mServerSideSubscription->setEnabled(PimCommon::MailUtil::isImapFolder(col, isOnline));
 }
 
 #include "moc_mainwidget.cpp"
