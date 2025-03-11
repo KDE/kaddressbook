@@ -13,30 +13,36 @@ using namespace Qt::Literals::StringLiterals;
 #include "categoryselectwidget.h"
 #include "config-kaddressbook.h"
 #include "configuredialog.h"
+#include "contactentitymimetypefiltermodel.h"
 #include "contactinfoproxymodel.h"
 #include "contactswitcher.h"
 #include "globalcontactmodel.h"
-#include "kaddressbook_options.h"
-#include "kaddressbookadaptor.h"
-#include "manageshowcollectionproperties.h"
-#include "modelcolumnmanager.h"
-#include "printing/printingwizard.h"
-#include "settings.h"
-#include "stylecontactlistdelegate.h"
-#include "widgets/quicksearchwidget.h"
-
 #include "importexport/contactselectiondialog.h"
 #include "importexport/plugin.h"
 #include "importexport/plugininterface.h"
 #include "importexport/pluginmanager.h"
+#include "kaddressbook_debug.h"
+#include "kaddressbook_options.h"
+#include "kaddressbookadaptor.h"
+#include "manageshowcollectionproperties.h"
+#include "modelcolumnmanager.h"
+#include "plugininterface/kaddressbookplugininterface.h"
+#include "printing/printingwizard.h"
+#include "settings.h"
+#include "stylecontactlistdelegate.h"
+#include "uistatesaver.h"
+#include "whatsnew/whatsnewtranslations.h"
+#include "widgets/quicksearchwidget.h"
+#if HAVE_ACTIVITY_SUPPORT
+#include "activities/accountactivities.h"
+#include "activities/activitiesmanager.h"
+#endif
 
-#include "contactentitymimetypefiltermodel.h"
 #include <Akonadi/GrantleeContactFormatter>
 #include <Akonadi/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
 
-#include "uistatesaver.h"
-
+#include <PimCommon/PimUtil>
 #include <PimCommon/WhatsNewDialog>
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
@@ -62,14 +68,24 @@ using namespace Qt::Literals::StringLiterals;
 #include <Akonadi/ContactViewer>
 #include <Akonadi/ContactsFilterProxyModel>
 #include <Akonadi/ContactsTreeModel>
+#include <Akonadi/ControlGui>
+#include <Akonadi/ETMViewStateSaver>
+#include <Akonadi/EntityMimeTypeFilterModel>
+#include <Akonadi/EntityTreeView>
+#include <Akonadi/ItemModifyJob>
+#include <Akonadi/MimeTypeChecker>
 #include <Akonadi/StandardContactActionManager>
+#ifndef FORCE_DISABLE_AKONADI_SEARCH
+#include <Debug/akonadisearchdebugdialog.h>
+#endif
 
-#include "kaddressbook_debug.h"
 #include <KActionCollection>
 #include <KActionMenu>
 #include <KCMultiDialog>
 #include <KCheckableProxyModel>
+#include <KColorSchemeManager>
 #include <KColorSchemeMenu>
+#include <KContacts/Addressee>
 #include <KContacts/ContactGroup>
 #include <KDescendantsProxyModel>
 #include <KLocalizedString>
@@ -77,31 +93,24 @@ using namespace Qt::Literals::StringLiterals;
 #include <KPluginMetaData>
 #include <KSelectionProxyModel>
 #include <KToggleAction>
-#include <KXMLGUIClient>
-#include <QAction>
-#include <QApplication>
-#include <QTextBrowser>
-
-#include "whatsnew/whatsnewtranslations.h"
-#include <Akonadi/ItemModifyJob>
-#include <KColorSchemeManager>
 #include <KWindowStateSaver>
+#include <KXMLGUIClient>
+
+#include <QAction>
 #include <QActionGroup>
+#include <QApplication>
 #include <QDBusConnection>
 #include <QDesktopServices>
 #include <QHBoxLayout>
 #include <QHeaderView>
+#include <QPointer>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
 #include <QPrinter>
 #include <QSplitter>
 #include <QStackedWidget>
+#include <QTextBrowser>
 
-#include "plugininterface/kaddressbookplugininterface.h"
-#if HAVE_ACTIVITY_SUPPORT
-#include "activities/accountactivities.h"
-#include "activities/activitiesmanager.h"
-#endif
 namespace
 {
 static bool isStructuralCollection(const Akonadi::Collection &collection)
