@@ -73,6 +73,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KContacts/ContactGroup>
 #include <KDescendantsProxyModel>
 #include <KLocalizedString>
+#include <KMessageBox>
 #include <KPluginMetaData>
 #include <KSelectionProxyModel>
 #include <KToggleAction>
@@ -151,6 +152,10 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     mManageShowCollectionProperties = new ManageShowCollectionProperties(this, this);
 
     Akonadi::AttributeFactory::registerAttribute<PimCommon::ImapAclAttribute>();
+    const auto entityTreeModel = GlobalContactModel::instance()->model();
+    connect(entityTreeModel, &Akonadi::EntityTreeModel::errorOccurred, this, [this](const QString &message) {
+        KMessageBox::error(this, message);
+    });
 
     KAddressBookPluginInterface::self()->setActionCollection(guiClient->actionCollection());
     KAddressBookPluginInterface::self()->initializePlugins();
