@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-13 00:42+0000\n"
 "PO-Revision-Date: 2018-01-06 09:21+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "slsimic@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:746 src/mainwidget.cpp:773
+#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
 #, kde-format
 msgid "Address Book"
 msgstr "Adresar"
@@ -769,17 +769,17 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "Glavna traka"
 
-#: src/mainwidget.cpp:362
+#: src/mainwidget.cpp:375
 #, kde-format
 msgid "Import"
 msgstr "Uvezi"
 
-#: src/mainwidget.cpp:369
+#: src/mainwidget.cpp:382
 #, kde-format
 msgid "Export"
 msgstr "Izvezi"
 
-#: src/mainwidget.cpp:421
+#: src/mainwidget.cpp:434
 #, fuzzy, kde-format
 #| msgctxt "@label Search contacts in list"
 #| msgid "Search...<%1>"
@@ -787,85 +787,79 @@ msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Traži... <%1>"
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:670
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Odštampajte ceo adresar ili samo izabrane kontakte."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:675
 #, kde-format
 msgid "Quick search"
 msgstr "Brza pretraga"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:680
 #, kde-format
 msgid "Category filter"
 msgstr "Filter kategorija"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Select All"
 msgstr "Izaberi sve"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Izaberite sve kontakte u tekućem prikazu adresara."
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:691
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Prikaži QR kodove"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:692
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Prikaz QR kodova u kontaktu."
 
-#: src/mainwidget.cpp:684
+#: src/mainwidget.cpp:697
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jednostavno (jedna kolona)"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:701
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Jednostavan režim prikaza adresara."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:704
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dve kolone"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:710
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tri kolone"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:723
 #, fuzzy, kde-format
 #| msgid "Set Focus to Quick Search"
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Fokus na brzu pretragu"
 
-#: src/mainwidget.cpp:723
-#, fuzzy, kde-format
-#| msgid "Serverside Subscription..."
-msgid "Serverside Subscription…"
-msgstr "Pretplata na strani servera..."
-
-#: src/mainwidget.cpp:730
+#: src/mainwidget.cpp:740
 #, kde-format
 msgid "What's new"
 msgstr ""
 
 # >> @title:window
-#: src/mainwidget.cpp:779 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:44
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
@@ -1544,6 +1538,11 @@ msgstr ""
 "Počnite da kucate u ovom polju nisku za traženje, i dobićete spisak "
 "kontakata koji se poklapaju. Ovo je brz način za nalaženje željenih "
 "kontakata."
+
+#, fuzzy
+#~| msgid "Serverside Subscription..."
+#~ msgid "Serverside Subscription…"
+#~ msgstr "Pretplata na strani servera..."
 
 #~ msgid "Configure Plugins"
 #~ msgstr "Podešavanje priključaka"

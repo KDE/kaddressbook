@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-13 00:42+0000\n"
 "PO-Revision-Date: 2024-10-19 11:12+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -42,7 +42,7 @@ msgid "Your emails"
 msgstr ",rinse@kde.nl,,bramschoenmakers@kde.nl,freekdekruijf@kde.nl"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:746 src/mainwidget.cpp:773
+#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
 #, kde-format
 msgid "Address Book"
 msgstr "Adresboek"
@@ -770,100 +770,95 @@ msgstr "&Help"
 msgid "Main Toolbar"
 msgstr "Hoofdwerkbalk"
 
-#: src/mainwidget.cpp:362
+#: src/mainwidget.cpp:375
 #, kde-format
 msgid "Import"
 msgstr "Importeren"
 
-#: src/mainwidget.cpp:369
+#: src/mainwidget.cpp:382
 #, kde-format
 msgid "Export"
 msgstr "Exporteren"
 
-#: src/mainwidget.cpp:421
+#: src/mainwidget.cpp:434
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Zoeken… <%1>"
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:670
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr ""
 "Druk het complete adresboek af of een geselecteerd aantal contactpersonen."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:675
 #, kde-format
 msgid "Quick search"
 msgstr "Snelle zoekactie"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:680
 #, kde-format
 msgid "Category filter"
 msgstr "Categoriefilter"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Select All"
 msgstr "Alles selecteren"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr ""
 "Selecteert alle contactpersonen in de huidige weergave van het adresboek."
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:691
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR-codes tonen"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:692
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "QR-codes in de contactpersoon tonen."
 
-#: src/mainwidget.cpp:684
+#: src/mainwidget.cpp:697
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Eenvoudig (één kolom)"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:701
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Toon een eenvoudige modus van de adresboekweergave."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:704
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Twee kolommen"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:710
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Drie kolommen"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:723
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Focus instellen op Snel zoeken"
 
-#: src/mainwidget.cpp:723
-#, kde-format
-msgid "Serverside Subscription…"
-msgstr "Inschrijving aan de kant van de server…"
-
-#: src/mainwidget.cpp:730
+#: src/mainwidget.cpp:740
 #, kde-format
 msgid "What's new"
 msgstr "Wat is nieuw"
 
-#: src/mainwidget.cpp:779 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:44
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -1537,6 +1532,9 @@ msgstr ""
 "contactpersonen overeenkomend met die tekenreeks zal worden getoond. Dit is "
 "een snelle manier van zoeken naar contactpersonen waarin u bent "
 "geïnteresseerd."
+
+#~ msgid "Serverside Subscription…"
+#~ msgstr "Inschrijving aan de kant van de server…"
 
 #~ msgid "&Themes"
 #~ msgstr "&Thema's"
