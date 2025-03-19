@@ -329,7 +329,7 @@ void MainWidget::slotGeneralPaletteChanged()
 
 bool MainWidget::event(QEvent *e)
 {
-    if (e->type() == QEvent::ApplicationPaletteChange) {
+    if (e->type() == QEvent::PaletteChange) {
         slotGeneralPaletteChanged();
     }
     return QWidget::event(e);
