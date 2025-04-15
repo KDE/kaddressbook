@@ -54,8 +54,7 @@ private:
 };
 
 CategoryFilterProxyModelPrivate::CategoryFilterProxyModelPrivate(CategoryFilterProxyModel *parent)
-    : QObject()
-    , q_ptr(parent)
+    : q_ptr(parent)
 {
 }
 

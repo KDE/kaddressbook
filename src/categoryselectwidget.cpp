@@ -56,8 +56,7 @@ private:
 };
 
 CategorySelectWidgetPrivate::CategorySelectWidgetPrivate(CategorySelectWidget *parent)
-    : QObject()
-    , q_ptr(parent)
+    : q_ptr(parent)
 {
 }
 
