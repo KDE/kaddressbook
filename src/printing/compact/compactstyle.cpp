@@ -25,14 +25,14 @@ using namespace KABPrinting;
 using namespace KAddressBookImportExport;
 using namespace Qt::Literals::StringLiterals;
 
-const char *CompactStyleConfigSectionName = "CompactStyle";
-const char *WithAlternating = "WithAlternating";
-const char *WithHomeAddress = "WithHomeAddress";
-const char *WithBusinessAddress = "WithBusinessAddress";
-const char *WithBirthday = "WithBirthday";
-const char *WithEMail = "WithEMail";
-const char *FirstColor = "FirstColor";
-const char *SecondColor = "SecondColor";
+static const char *CompactStyleConfigSectionName = "CompactStyle";
+static const char *WithAlternating = "WithAlternating";
+static const char *WithHomeAddress = "WithHomeAddress";
+static const char *WithBusinessAddress = "WithBusinessAddress";
+static const char *WithBirthday = "WithBirthday";
+static const char *WithEMail = "WithEMail";
+static const char *FirstColor = "FirstColor";
+static const char *SecondColor = "SecondColor";
 
 namespace KABPrinting
 {

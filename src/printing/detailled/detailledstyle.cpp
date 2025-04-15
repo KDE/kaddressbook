@@ -40,7 +40,7 @@ struct ColorSettings {
     QString headerBackgroundColor;
 };
 
-QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSettings &settings)
+static QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSettings &settings)
 {
     QString content = QStringLiteral("<html>\n");
     content += QLatin1StringView(" <head>\n");
