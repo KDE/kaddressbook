@@ -143,6 +143,7 @@ target_link_libraries(kaddressbookprivate
     KF6::KIOWidgets
     Qt::PrintSupport
     KF6::I18n
+    KF6::ColorScheme
    )
 if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
