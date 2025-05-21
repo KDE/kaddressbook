@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui name="kaddressbook" version="47" translationDomain="kaddressbook">
+<gui name="kaddressbook" version="48" translationDomain="kaddressbook">
 
   <MenuBar>
     <Menu name="file"><text>&amp;File</text>
@@ -62,6 +62,11 @@
     <Menu name="settings"><text>&amp;Settings</text>
       <Action name="kaddressbook_configure" />
     </Menu>
+  <Menu name="help">
+   <text>&amp;Help</text>
+   <Action name="whatsnew" />
+   <Separator/>
+  </Menu>
   </MenuBar>
 
   <Menu name="akonadi_collectionview_contextmenu">
@@ -109,11 +114,6 @@
     <Action name="akonadi_item_delete"/>
     <Separator/>
     <Action name="debug_akonadi_search"/>
-  </Menu>
-  <Menu name="help">
-   <text>&amp;Help</text>
-   <Action name="whatsnew" />
-   <Separator/>
   </Menu>
 
   <ToolBar name="mainToolBar" noMerge="1"><text>Main Toolbar</text>
