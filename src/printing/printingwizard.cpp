@@ -18,7 +18,7 @@
 
 // including the styles
 #include "compact/compactstyle.h"
-#include "detailled/detailledstyle.h"
+#include "detailed/detailledstyle.h"
 #include "mike/mikesstyle.h"
 #include "printing/grantlee/grantleeprintstyle.h"
 #include "ringbinder/ringbinderstyle.h"
