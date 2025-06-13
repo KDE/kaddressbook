@@ -13,7 +13,6 @@ find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(ECMInstallIcons)
 
-
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -31,10 +30,15 @@ include(ECMGenerateHeaders)
 include(KDEGitCommitHooks)
 
 include(KDEClangFormat)
-file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/*.cpp src/*.h kontactplugin/*.cpp kontactplugin/*.h)
+file(
+    GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
+    src/*.cpp
+    src/*.h
+    kontactplugin/*.cpp
+    kontactplugin/*.h
+)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 include(CheckFunctionExists)
-
 
 # Do NOT add quote
 set(KDEPIM_DEV_VERSION alpha)
@@ -44,7 +48,9 @@ if(DEFINED KDEPIM_DEV_VERSION)
     set(KDEPIM_DEV_VERSION " ${KDEPIM_DEV_VERSION}")
 endif()
 
-set(KDEPIM_VERSION "${PIM_VERSION}${KDEPIM_DEV_VERSION} (${RELEASE_SERVICE_VERSION})")
+set(KDEPIM_VERSION
+    "${PIM_VERSION}${KDEPIM_DEV_VERSION} (${RELEASE_SERVICE_VERSION})"
+)
 
 set(AKONADI_VERSION "6.4.41")
 set(KONTACTINTERFACE_LIB_VERSION "6.4.40")
@@ -52,8 +58,12 @@ set(KONTACTINTERFACE_LIB_VERSION "6.4.40")
 set(KDEPIM_LIB_VERSION "${PIM_VERSION}")
 set(KDEPIM_LIB_SOVERSION "6")
 
-
-find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test DBus PrintSupport)
+find_package(
+    Qt6
+    ${QT_REQUIRED_VERSION}
+    CONFIG
+    REQUIRED Widgets Test DBus PrintSupport
+)
 set(LIBKDEPIM_LIB_VERSION "6.4.40")
 set(LIBGRANTLEETHEME_LIB_VERSION "6.4.40")
 set(PIMCOMMON_LIB_VERSION "6.4.40")
@@ -69,16 +79,27 @@ find_package(KF6Crash ${KF_MIN_VERSION} REQUIRED)
 find_package(KF6IconThemes ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6ColorScheme ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6DocTools ${KF_MIN_VERSION})
-set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
-    "Tools to generate documentation"
-    TYPE OPTIONAL
+set_package_properties(
+    KF6DocTools
+    PROPERTIES DESCRIPTION "Tools to generate documentation" TYPE OPTIONAL
 )
 
 find_package(KF6UserFeedback ${KF_MIN_VERSION})
-set_package_properties(KF6UserFeedback PROPERTIES DESCRIPTION "User Feedback lib" TYPE OPTIONAL PURPOSE "Allow to send Telemetry Information (optional).")
+set_package_properties(
+    KF6UserFeedback
+    PROPERTIES
+        DESCRIPTION "User Feedback lib"
+        TYPE OPTIONAL
+        PURPOSE "Allow to send Telemetry Information (optional)."
+)
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
-find_package(KPim6KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIRED)
+find_package(
+    KPim6KontactInterface
+    ${KONTACTINTERFACE_LIB_VERSION}
+    CONFIG
+    REQUIRED
+)
 find_package(KPim6Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6LdapCore ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6LdapWidgets ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
@@ -88,15 +109,27 @@ if(UNIX)
     find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG REQUIRED)
 else()
     find_package(KPim6AkonadiSearch ${AKONADI_SEARCH_VERSION} CONFIG)
-    set_package_properties(KPim6AkonadiSearch PROPERTIES DESCRIPTION "The Akonadi Search libraries" URL "https://invent.kde.org/pim/akonadi-search"
-        TYPE OPTIONAL PURPOSE "Provides search capabilities in KAddressbook and Akonadi (only debug)")
+    set_package_properties(
+        KPim6AkonadiSearch
+        PROPERTIES
+            DESCRIPTION "The Akonadi Search libraries"
+            URL "https://invent.kde.org/pim/akonadi-search"
+            TYPE OPTIONAL
+            PURPOSE
+                "Provides search capabilities in KAddressbook and Akonadi (only debug)"
+    )
 endif()
 
 if(NOT KPim6AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
-find_package(KPim6AkonadiContactWidgets ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
+find_package(
+    KPim6AkonadiContactWidgets
+    ${AKONADI_CONTACT_VERSION}
+    CONFIG
+    REQUIRED
+)
 find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 
 include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
@@ -107,13 +140,15 @@ ecm_set_disabled_deprecation_versions(QT 6.10.0
      KF 6.15.0
 )
 
-
-
 if(TARGET KF6::UserFeedbackWidgets)
     set(KADDRESSBOOK_WITH_KUSERFEEDBACK true)
 endif()
 
-option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
+option(
+    USE_UNITY_CMAKE_SUPPORT
+    "Use UNITY cmake support (speedup compile time)"
+    OFF
+)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -121,22 +156,27 @@ if(USE_UNITY_CMAKE_SUPPORT)
     add_definitions(-DCOMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 
-
 if(TARGET KPim6::PimCommonActivities)
-    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" ON)
+    option(
+        OPTION_USE_PLASMA_ACTIVITIES
+        "Activate plasma activities (experimental)"
+        ON
+    )
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             set(OPTION_USE_PLASMA_ACTIVITIES true)
         else()
-            set(OPTION_USE_PLASMA_ACTIVITIES false) 
+            set(OPTION_USE_PLASMA_ACTIVITIES false)
         endif()
     endif()
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             find_package(PlasmaActivities "6.3.0")
-            set_package_properties(PlasmaActivities PROPERTIES DESCRIPTION
-                "Allow to compile with plasma activities"
-                TYPE OPTIONAL
+            set_package_properties(
+                PlasmaActivities
+                PROPERTIES
+                    DESCRIPTION "Allow to compile with plasma activities"
+                    TYPE OPTIONAL
             )
         endif()
 
@@ -146,7 +186,10 @@ if(TARGET KPim6::PimCommonActivities)
     endif()
 endif()
 
-configure_file(config-kaddressbook.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h)
+configure_file(
+    config-kaddressbook.h.in
+    ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h
+)
 
 add_subdirectory(src)
 add_subdirectory(kontactplugin)
@@ -155,7 +198,7 @@ ecm_qt_install_logging_categories(
         EXPORT KADDRESSBOOK
         FILE kaddressbook.categories
         DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
-       )
+)
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
@@ -165,5 +208,11 @@ if(KF6DocTools_FOUND)
 endif()
 
 ecm_feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-file(GLOB_RECURSE ALL_SOURCE_FILES src/*.cpp src/*.h kontactplugin/*.cpp kontactplugin/*.h)
+file(
+    GLOB_RECURSE ALL_SOURCE_FILES
+    src/*.cpp
+    src/*.h
+    kontactplugin/*.cpp
+    kontactplugin/*.h
+)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})

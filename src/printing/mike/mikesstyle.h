@@ -1,7 +1,7 @@
 /*
   This file is part of KAddressBook.
   SPDX-FileCopyrightText: 1996-2002 Mirko Boehm <mirko@kde.org>
-  SPDX-FileCopyrightText: 2002 Mike Pilone <mpilone@slac.com>
+  SPDX-FileCopyrightText: 2002 Mike Pilone <mpilone@slack.com>
 
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */

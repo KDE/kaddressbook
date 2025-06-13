@@ -43,7 +43,7 @@ KADDRESSBOOK_EXPORT void saveState(QWidget *widget, KConfigGroup &config);
 /**
  * Restores the UI state of @p widget and all its sub-widgets from @p config.
  * @param widget The top-level widget which state should be restored.
- * @param config The config gorup the settings should be read from.
+ * @param config The config group the settings should be read from.
  */
 KADDRESSBOOK_EXPORT void restoreState(QWidget *widget, const KConfigGroup &config);
 }
