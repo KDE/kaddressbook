@@ -2,7 +2,7 @@
 # Translation of kaddressbook.po to Slovenian
 # SLOVENIAN TRANSLATION OF KADDRESSBOOK.
 # Copyright (C) 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
-# $Id: kaddressbook.po 1709437 2025-05-22 01:22:36Z scripty $
+# $Id: kaddressbook.po 1711133 2025-06-14 01:23:32Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2002.
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-22 00:43+0000\n"
+"POT-Creation-Date: 2025-06-14 00:43+0000\n"
 "PO-Revision-Date: 2024-10-19 07:16+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -902,7 +902,7 @@ msgstr "Priimek"
 msgid "Given Name"
 msgstr "Osebno ime"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Domači naslov"
@@ -933,7 +933,7 @@ msgid "Compact Style"
 msgstr "Strnjen slog"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/detailed/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:168
@@ -942,7 +942,7 @@ msgid "Setting up document"
 msgstr "Nastavljanje dokumenta"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/detailed/detailledstyle.cpp:269
 #: src/printing/grantlee/grantleeprintstyle.cpp:50
 #: src/printing/mike/mikesstyle.cpp:123
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
@@ -951,7 +951,7 @@ msgid "Printing"
 msgstr "Tiskanje"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:205
@@ -1077,108 +1077,108 @@ msgstr "Spremeni barvo ozadja vsake vrstice"
 msgid "Alternating the background color"
 msgstr "Izmenjevanje barve ozadja"
 
-#: src/printing/detailled/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:74
 #, kde-format
 msgid "Organization:"
 msgstr "Organizacija:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
 msgstr "E-poštni naslov:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
 msgstr "E-poštni naslovi:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
 msgstr "Telefon:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
 msgstr "Telefoni:"
 
-#: src/printing/detailled/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:104
 #, kde-format
 msgid "Web page:"
 msgstr "Spletna stran:"
 
-#: src/printing/detailled/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Domači naslov"
 
-#: src/printing/detailled/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Mednarodni naslov"
 
-#: src/printing/detailled/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Poštni naslov"
 
-#: src/printing/detailled/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Naslov za paketno dostavo"
 
-#: src/printing/detailled/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Službeni naslov"
 
-#: src/printing/detailled/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Prednostni naslov"
 
-#: src/printing/detailled/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:148
 #, kde-format
 msgid "Notes:"
 msgstr "Opombe:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailled/detailledstyle.cpp:232
-#: src/printing/detailled/ds_appearance.ui:58
+#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Podroben slog tiskanja – videz"
 
-#: src/printing/detailled/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:245
 #, kde-format
 msgid "Setting up colors"
 msgstr "Nastavljanje barv"
 
-#: src/printing/detailled/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
 msgstr "Podroben slog"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: src/printing/detailled/ds_appearance.ui:14
+#: src/printing/detailed/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
 msgstr "Stran videza"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: src/printing/detailled/ds_appearance.ui:77
+#: src/printing/detailed/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
 msgstr "Glave stika"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:119
+#: src/printing/detailed/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
 msgstr "Izberite barvo ozadja naslovnega besedila"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:122
+#: src/printing/detailed/ds_appearance.ui:122
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
@@ -1188,25 +1188,25 @@ msgstr ""
 "barvo ozadja naslova."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: src/printing/detailled/ds_appearance.ui:139
+#: src/printing/detailed/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
 msgstr "Barva ozadja naslova:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: src/printing/detailled/ds_appearance.ui:149
+#: src/printing/detailed/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
 msgstr "Barva besedila naslova:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:162
+#: src/printing/detailed/ds_appearance.ui:162
 #, kde-format
 msgid "Select the headline text color"
 msgstr "Izberite barvo besedila naslova"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:165
+#: src/printing/detailed/ds_appearance.ui:165
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "

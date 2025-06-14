@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-22 00:43+0000\n"
+"POT-Creation-Date: 2025-06-14 00:43+0000\n"
 "PO-Revision-Date: 2002-10-12 14:50+0200\n"
 "Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -897,7 +897,7 @@ msgstr "Amagama osapho:"
 msgid "Given Name"
 msgstr "Igama elinikiweyo:"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Idilesi Yasekhaya"
@@ -930,7 +930,7 @@ msgid "Compact Style"
 msgstr "Inkampani"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/detailed/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:168
@@ -940,7 +940,7 @@ msgid "Setting up document"
 msgstr "Ukucwangcisa uhlobo lwamgama kunye nemibala"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/detailed/detailledstyle.cpp:269
 #: src/printing/grantlee/grantleeprintstyle.cpp:50
 #: src/printing/mike/mikesstyle.cpp:123
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
@@ -949,7 +949,7 @@ msgid "Printing"
 msgstr "Iyashicilela"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:205
@@ -1080,112 +1080,112 @@ msgstr "Ingongoma yombala wendawo yangasemva:"
 msgid "Alternating the background color"
 msgstr "Iindawo zangasemva ezitshintshiselanayo"
 
-#: src/printing/detailled/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:74
 #, fuzzy, kde-format
 #| msgid "Organization"
 msgid "Organization:"
 msgstr "Umbutho"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
 msgstr "Idilesi ye Email:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
 msgstr "Iidilesi ze email:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
 msgstr "Imfono-mfono:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
 msgstr "Iimfono-mfono:"
 
-#: src/printing/detailled/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:104
 #, kde-format
 msgid "Web page:"
 msgstr "Iphepha le web:"
 
-#: src/printing/detailled/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Idilesi Yasekhaya"
 
-#: src/printing/detailled/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Idilesi Yelizwe"
 
-#: src/printing/detailled/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Idilesi Yeposi"
 
-#: src/printing/detailled/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Idilesi Yempahla"
 
-#: src/printing/detailled/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Idilesi Yomsebenzi"
 
-#: src/printing/detailled/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Idilesi Ekhethiweyo"
 
-#: src/printing/detailled/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:148
 #, fuzzy, kde-format
 #| msgid "Note:"
 msgid "Notes:"
 msgstr "Qaphela:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailled/detailledstyle.cpp:232
-#: src/printing/detailled/ds_appearance.ui:58
+#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Uhlobo Loshicilelo Oluneenkcukacha - Imbhonakalo yangaphandle"
 
-#: src/printing/detailled/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:245
 #, fuzzy, kde-format
 #| msgid "Setting up fonts and colors"
 msgid "Setting up colors"
 msgstr "Ukucwangcisa uhlobo lwamgama kunye nemibala"
 
-#: src/printing/detailled/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
 msgstr "Uhlobo Lwenkcukacha"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: src/printing/detailled/ds_appearance.ui:14
+#: src/printing/detailed/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
 msgstr "Iphepha Lembhonakalo yangaphandle"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: src/printing/detailled/ds_appearance.ui:77
+#: src/printing/detailed/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
 msgstr "Iziqhagamshelwano Zokubhaliwe phezulu ephepheni"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:119
+#: src/printing/detailed/ds_appearance.ui:119
 #, fuzzy, kde-format
 #| msgid "Headline background color:"
 msgid "Select the headline text background color"
 msgstr "Ingongoma yombala wendawo yangasemva:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:122
+#: src/printing/detailed/ds_appearance.ui:122
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
@@ -1193,26 +1193,26 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: src/printing/detailled/ds_appearance.ui:139
+#: src/printing/detailed/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
 msgstr "Ingongoma yombala wendawo yangasemva:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: src/printing/detailled/ds_appearance.ui:149
+#: src/printing/detailed/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
 msgstr "Ingongoma yombala wombhalo:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:162
+#: src/printing/detailed/ds_appearance.ui:162
 #, fuzzy, kde-format
 #| msgid "Headline text color:"
 msgid "Select the headline text color"
 msgstr "Ingongoma yombala wombhalo:"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:165
+#: src/printing/detailed/ds_appearance.ui:165
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "

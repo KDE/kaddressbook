@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-22 00:43+0000\n"
+"POT-Creation-Date: 2025-06-14 00:43+0000\n"
 "PO-Revision-Date: 2025-04-07 14:23+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -866,7 +866,7 @@ msgstr "姓氏"
 msgid "Given Name"
 msgstr "指定名稱"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "住家地址"
@@ -897,7 +897,7 @@ msgid "Compact Style"
 msgstr "簡潔樣式"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/detailed/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:168
@@ -906,7 +906,7 @@ msgid "Setting up document"
 msgstr "設定文件中"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/detailed/detailledstyle.cpp:269
 #: src/printing/grantlee/grantleeprintstyle.cpp:50
 #: src/printing/mike/mikesstyle.cpp:123
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
@@ -915,7 +915,7 @@ msgid "Printing"
 msgstr "列印中"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:205
@@ -1041,108 +1041,108 @@ msgstr "變更每一列的背景顏色"
 msgid "Alternating the background color"
 msgstr "變更背景顏色"
 
-#: src/printing/detailled/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:74
 #, kde-format
 msgid "Organization:"
 msgstr "組織:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
 msgstr "電子郵件位址："
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
 msgstr "電子郵件位址："
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
 msgstr "電話："
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
 msgstr "電話："
 
-#: src/printing/detailled/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:104
 #, kde-format
 msgid "Web page:"
 msgstr "網頁："
 
-#: src/printing/detailled/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "國內地址"
 
-#: src/printing/detailled/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "國際地址"
 
-#: src/printing/detailled/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "郵寄地址"
 
-#: src/printing/detailled/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "小包裹地址"
 
-#: src/printing/detailled/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "辦公室地址"
 
-#: src/printing/detailled/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "預設地址"
 
-#: src/printing/detailled/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:148
 #, kde-format
 msgid "Notes:"
 msgstr "備忘："
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailled/detailledstyle.cpp:232
-#: src/printing/detailled/ds_appearance.ui:58
+#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "詳細的列印風格 ─ 外觀"
 
-#: src/printing/detailled/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:245
 #, kde-format
 msgid "Setting up colors"
 msgstr "設定顏色中"
 
-#: src/printing/detailled/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
 msgstr "詳細的列印風格"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: src/printing/detailled/ds_appearance.ui:14
+#: src/printing/detailed/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
 msgstr "外觀頁面"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: src/printing/detailled/ds_appearance.ui:77
+#: src/printing/detailed/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
 msgstr "聯絡人標題"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:119
+#: src/printing/detailed/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
 msgstr "設定標題文字背景顏色"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:122
+#: src/printing/detailed/ds_appearance.ui:122
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
@@ -1150,25 +1150,25 @@ msgid ""
 msgstr "點擊此按鍵會開啟顏色選擇器，讓您設定標題文字背景顏色。"
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: src/printing/detailled/ds_appearance.ui:139
+#: src/printing/detailed/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
 msgstr "標題背景顏色："
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: src/printing/detailled/ds_appearance.ui:149
+#: src/printing/detailed/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
 msgstr "標題文字顏色："
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:162
+#: src/printing/detailed/ds_appearance.ui:162
 #, kde-format
 msgid "Select the headline text color"
 msgstr "設定標題文字顏色"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:165
+#: src/printing/detailed/ds_appearance.ui:165
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "

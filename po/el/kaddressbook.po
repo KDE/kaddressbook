@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-22 00:43+0000\n"
+"POT-Creation-Date: 2025-06-14 00:43+0000\n"
 "PO-Revision-Date: 2023-01-05 09:29+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -895,7 +895,7 @@ msgstr "Επώνυμο"
 msgid "Given Name"
 msgstr "Όνομα"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Διεύθυνση οικίας"
@@ -926,7 +926,7 @@ msgid "Compact Style"
 msgstr "Συμπαγές στιλ"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/detailed/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:168
@@ -935,7 +935,7 @@ msgid "Setting up document"
 msgstr "Ρύθμιση εγγράφου"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/detailed/detailledstyle.cpp:269
 #: src/printing/grantlee/grantleeprintstyle.cpp:50
 #: src/printing/mike/mikesstyle.cpp:123
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
@@ -944,7 +944,7 @@ msgid "Printing"
 msgstr "Εκτύπωση"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:205
@@ -1071,108 +1071,108 @@ msgstr "Να αλλάξει το χρώμα του φόντου σε κάθε γ
 msgid "Alternating the background color"
 msgstr "Εναλλάσσει το χρώμα του φόντου"
 
-#: src/printing/detailled/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:74
 #, kde-format
 msgid "Organization:"
 msgstr "Οργανισμός:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
 msgstr "Διεύθυνση ηλ. αλληλογραφίας:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
 msgstr "Διευθύνσεις ηλ. αλληλογραφίας:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
 msgstr "Τηλέφωνο:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
 msgstr "Τηλέφωνα:"
 
-#: src/printing/detailled/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:104
 #, kde-format
 msgid "Web page:"
 msgstr "Ιστοσελίδα:"
 
-#: src/printing/detailled/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Διεύθυνση κατοικίας"
 
-#: src/printing/detailled/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Διεύθυνση στο εξωτερικό"
 
-#: src/printing/detailled/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Ταχυδρομική διεύθυνση"
 
-#: src/printing/detailled/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Διεύθυνση αποστολής δεμάτων"
 
-#: src/printing/detailled/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Διεύθυνση εργασίας"
 
-#: src/printing/detailled/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Προτιμώμενη διεύθυνση"
 
-#: src/printing/detailled/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:148
 #, kde-format
 msgid "Notes:"
 msgstr "Σημειώσεις:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailled/detailledstyle.cpp:232
-#: src/printing/detailled/ds_appearance.ui:58
+#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Λεπτομερές στιλ εκτύπωσης - Εμφάνιση"
 
-#: src/printing/detailled/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:245
 #, kde-format
 msgid "Setting up colors"
 msgstr "Ρύθμιση χρωμάτων"
 
-#: src/printing/detailled/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
 msgstr "Λεπτομερές στυλ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: src/printing/detailled/ds_appearance.ui:14
+#: src/printing/detailed/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
 msgstr "Σελίδα εμφάνισης"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: src/printing/detailled/ds_appearance.ui:77
+#: src/printing/detailed/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
 msgstr "Κεφαλίδες επαφής"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:119
+#: src/printing/detailed/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
 msgstr "Επιλογή χρώματος φόντου του κειμένου της επικεφαλίδας"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:122
+#: src/printing/detailed/ds_appearance.ui:122
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
@@ -1182,25 +1182,25 @@ msgstr ""
 "επιτρέψει να ορίσετε χρώμα το χρώμα του φόντου της επικεφαλίδας."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: src/printing/detailled/ds_appearance.ui:139
+#: src/printing/detailed/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
 msgstr "Χρώμα φόντου επικεφαλίδας:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: src/printing/detailled/ds_appearance.ui:149
+#: src/printing/detailed/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
 msgstr "Χρώμα γραμματοσειράς επικεφαλίδας:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:162
+#: src/printing/detailed/ds_appearance.ui:162
 #, kde-format
 msgid "Select the headline text color"
 msgstr "Επιλογή χρώματος του κειμένου της επικεφαλίδας"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:165
+#: src/printing/detailed/ds_appearance.ui:165
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-22 00:43+0000\n"
+"POT-Creation-Date: 2025-06-14 00:43+0000\n"
 "PO-Revision-Date: 2024-12-29 19:47+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -893,7 +893,7 @@ msgstr "Familia nomo"
 msgid "Given Name"
 msgstr "Antaŭnomo"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailled/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Hejmadreso"
@@ -924,7 +924,7 @@ msgid "Compact Style"
 msgstr "Kompakta Stilo"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailled/detailledstyle.cpp:262
+#: src/printing/detailed/detailledstyle.cpp:262
 #: src/printing/grantlee/grantleeprintstyle.cpp:41
 #: src/printing/mike/mikesstyle.cpp:116
 #: src/printing/ringbinder/ringbinderstyle.cpp:168
@@ -933,7 +933,7 @@ msgid "Setting up document"
 msgstr "Agordi dokumenton"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailled/detailledstyle.cpp:269
+#: src/printing/detailed/detailledstyle.cpp:269
 #: src/printing/grantlee/grantleeprintstyle.cpp:50
 #: src/printing/mike/mikesstyle.cpp:123
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
@@ -942,7 +942,7 @@ msgid "Printing"
 msgstr "Presante"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailled/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:273
 #: src/printing/grantlee/grantleeprintstyle.cpp:54
 #: src/printing/mike/mikesstyle.cpp:127
 #: src/printing/ringbinder/ringbinderstyle.cpp:205
@@ -1068,108 +1068,108 @@ msgstr "Ŝanĝu la fonkoloron de ĉiu vico"
 msgid "Alternating the background color"
 msgstr "Alternante la fonkoloron"
 
-#: src/printing/detailled/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:74
 #, kde-format
 msgid "Organization:"
 msgstr "Organizo:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email address:"
 msgstr "Retpoŝta adreso:"
 
-#: src/printing/detailled/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:82
 #, kde-format
 msgid "Email addresses:"
 msgstr "Retpoŝtaj adresoj:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephone:"
 msgstr "Telefono:"
 
-#: src/printing/detailled/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:92
 #, kde-format
 msgid "Telephones:"
 msgstr "Telefonoj:"
 
-#: src/printing/detailled/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:104
 #, kde-format
 msgid "Web page:"
 msgstr "TTT-paĝo:"
 
-#: src/printing/detailled/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Hejmadreso"
 
-#: src/printing/detailled/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Internacia adreso"
 
-#: src/printing/detailled/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Poŝtadreso"
 
-#: src/printing/detailled/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Pakaĵadreso"
 
-#: src/printing/detailled/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Laboradreso"
 
-#: src/printing/detailled/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Preferata adreso"
 
-#: src/printing/detailled/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:148
 #, kde-format
 msgid "Notes:"
 msgstr "Notoj:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailled/detailledstyle.cpp:232
-#: src/printing/detailled/ds_appearance.ui:58
+#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Detala Presa Stilo - Apero"
 
-#: src/printing/detailled/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:245
 #, kde-format
 msgid "Setting up colors"
 msgstr "Agordi kolorojn"
 
-#: src/printing/detailled/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:288
 #, kde-format
 msgid "Detailed Style"
 msgstr "Detala Stilo"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: src/printing/detailled/ds_appearance.ui:14
+#: src/printing/detailed/ds_appearance.ui:14
 #, kde-format
 msgid "Appearance Page"
 msgstr "Paĝo de Apero"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: src/printing/detailled/ds_appearance.ui:77
+#: src/printing/detailed/ds_appearance.ui:77
 #, kde-format
 msgid "Contact Headers"
 msgstr "Kontaktokapoj"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:119
+#: src/printing/detailed/ds_appearance.ui:119
 #, kde-format
 msgid "Select the headline text background color"
 msgstr "Elekti la titolan tekstan fonkoloron"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderBGColor)
-#: src/printing/detailled/ds_appearance.ui:122
+#: src/printing/detailed/ds_appearance.ui:122
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
@@ -1179,25 +1179,25 @@ msgstr ""
 "la koloron por la titola fonkoloro."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: src/printing/detailled/ds_appearance.ui:139
+#: src/printing/detailed/ds_appearance.ui:139
 #, kde-format
 msgid "Headline background color:"
 msgstr "Fonkoloro de la titolo:"
 
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: src/printing/detailled/ds_appearance.ui:149
+#: src/printing/detailed/ds_appearance.ui:149
 #, kde-format
 msgid "Headline text color:"
 msgstr "Koloro de la teksttitolo:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:162
+#: src/printing/detailed/ds_appearance.ui:162
 #, kde-format
 msgid "Select the headline text color"
 msgstr "Elekti la titolan tekstokoloron"
 
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcbHeaderTextColor)
-#: src/printing/detailled/ds_appearance.ui:165
+#: src/printing/detailed/ds_appearance.ui:165
 #, kde-format
 msgid ""
 "Click this button to start a color chooser that will allow you set to the "
