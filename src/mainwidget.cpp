@@ -745,7 +745,7 @@ void MainWidget::setupActions(KActionCollection *collection)
 void MainWidget::slotWhatsNew()
 {
     WhatsNewTranslations translations;
-    PimCommon::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this);
+    PimCommon::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this, i18n("KAddressBook"));
     dlg.updateInformations();
     dlg.exec();
 }

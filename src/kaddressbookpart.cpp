@@ -8,14 +8,18 @@
 
 #include "kaddressbookpart.h"
 #include "mainwidget.h"
+#include "settings.h"
+#include "whatsnew/whatsnewtranslations.h"
 
 #include "kaddressbook_debug.h"
+
+#include <PimCommon/WhatsNewMessageWidget>
+
 #include <KActionCollection>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <QAction>
 #include <QIcon>
-
 #include <QVBoxLayout>
 
 K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
@@ -31,11 +35,26 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     setWidget(canvas);
     auto topLayout = new QVBoxLayout(canvas);
 
+    const WhatsNewTranslations translations;
+    const QString newFeaturesMD5 = translations.newFeaturesMD5();
+    if (!newFeaturesMD5.isEmpty()) {
+        const bool hasNewFeature = (Settings::self()->previousNewFeaturesMD5() != newFeaturesMD5);
+        if (hasNewFeature) {
+            auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(parentWidget, i18n("KAddressBook"));
+            whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
+            whatsNewMessageWidget->setObjectName(QStringLiteral("whatsNewMessageWidget"));
+            topLayout->addWidget(whatsNewMessageWidget);
+            Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
+            whatsNewMessageWidget->animatedShow();
+        }
+    }
+
     mMainWidget = new MainWidget(this, canvas);
     initAction();
 
     topLayout->addWidget(mMainWidget);
     topLayout->setContentsMargins({});
+
     setXMLFile(QStringLiteral("kaddressbookui_part.rc"));
 }
 

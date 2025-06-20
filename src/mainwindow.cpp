@@ -82,7 +82,7 @@ MainWindow::MainWindow()
     if (!newFeaturesMD5.isEmpty()) {
         const bool hasNewFeature = (Settings::self()->previousNewFeaturesMD5() != newFeaturesMD5);
         if (hasNewFeature) {
-            auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this);
+            auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this, i18n("KAddressBook"));
             whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
             whatsNewMessageWidget->setObjectName(QStringLiteral("whatsNewMessageWidget"));
             mainWidgetLayout->addWidget(whatsNewMessageWidget);
