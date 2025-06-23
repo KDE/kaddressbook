@@ -5,6 +5,8 @@
 */
 
 #include "kaddressbookuserfeedbackprovider.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include <KUserFeedback/ApplicationVersionSource>
 #include <KUserFeedback/LocaleInfoSource>
 #include <KUserFeedback/PlatformInfoSource>
@@ -16,8 +18,8 @@
 KAddressBookUserFeedbackProvider::KAddressBookUserFeedbackProvider(QObject *parent)
     : KUserFeedback::Provider(parent)
 {
-    setProductIdentifier(QStringLiteral("org.kde.kaddressbook"));
-    setFeedbackServer(QUrl(QStringLiteral("https://telemetry.kde.org/")));
+    setProductIdentifier(u"org.kde.kaddressbook"_s);
+    setFeedbackServer(QUrl(u"https://telemetry.kde.org/"_s));
     setSubmissionInterval(7);
     setApplicationStartsUntilEncouragement(5);
     setEncouragementDelay(30);

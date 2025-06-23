@@ -5,6 +5,8 @@
 */
 
 #include "kaddressbookconfigpluginlistwidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "../importexport/plugin.h"
 #include "../importexport/pluginmanager.h"
 #include "../plugininterface/kaddressbookplugininterface.h"
@@ -17,12 +19,12 @@ namespace
 {
 QString kaddressbookPluginToolsGroupName()
 {
-    return QStringLiteral("kaddressbookplugintoolsgroupname");
+    return u"kaddressbookplugintoolsgroupname"_s;
 }
 
 QString kaddressbookImportExportGroupName()
 {
-    return QStringLiteral("kaddressbookpluginimportexportgroupname");
+    return u"kaddressbookpluginimportexportgroupname"_s;
 }
 }
 

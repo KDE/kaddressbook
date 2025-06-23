@@ -5,6 +5,8 @@
 */
 
 #include "grantleeprintstyle.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
@@ -24,7 +26,7 @@ GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard 
     : PrintStyle(parent)
     , m_themePath(themePath)
 {
-    QFile previewFile(QString(themePath + QStringLiteral("/preview.png")));
+    QFile previewFile(QString(themePath + u"/preview.png"_s));
     if (previewFile.exists()) {
         setPreview(previewFile.fileName());
     }

@@ -7,6 +7,8 @@
 */
 
 #include "kaddressbookpart.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mainwidget.h"
 #include "settings.h"
 #include "whatsnew/whatsnewtranslations.h"
@@ -27,7 +29,7 @@ K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
 KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &data, const QVariantList &)
     : KParts::Part(parent, data)
 {
-    setComponentName(QStringLiteral("kaddressbook"), i18n("KAddressBook"));
+    setComponentName(u"kaddressbook"_s, i18n("KAddressBook"));
 
     // create a canvas to insert our widget
     auto canvas = new QWidget(parentWidget);
@@ -42,7 +44,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
         if (hasNewFeature) {
             auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(parentWidget, i18n("KAddressBook"));
             whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
-            whatsNewMessageWidget->setObjectName(QStringLiteral("whatsNewMessageWidget"));
+            whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
             topLayout->addWidget(whatsNewMessageWidget);
             Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
             whatsNewMessageWidget->animatedShow();
@@ -55,7 +57,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     topLayout->addWidget(mMainWidget);
     topLayout->setContentsMargins({});
 
-    setXMLFile(QStringLiteral("kaddressbookui_part.rc"));
+    setXMLFile(u"kaddressbookui_part.rc"_s);
 }
 
 void KAddressBookPart::updateQuickSearchText()
@@ -65,8 +67,8 @@ void KAddressBookPart::updateQuickSearchText()
 
 void KAddressBookPart::initAction()
 {
-    auto action = new QAction(QIcon::fromTheme(QStringLiteral("configure")), i18n("&Configure KAddressBook…"), this);
-    actionCollection()->addAction(QStringLiteral("kaddressbook_configure"), action);
+    auto action = new QAction(QIcon::fromTheme(u"configure"_s), i18n("&Configure KAddressBook…"), this);
+    actionCollection()->addAction(u"kaddressbook_configure"_s, action);
     connect(action, &QAction::triggered, mMainWidget, &MainWidget::configure);
 }
 

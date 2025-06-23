@@ -7,6 +7,7 @@
 */
 
 #include "contactfields.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QUrl>
@@ -162,7 +163,7 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
         contact.setBirthday(QDate::fromString(value, Qt::ISODate));
         break;
     case ContactFields::Anniversary:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-Anniversary"_s, value);
         break;
     case ContactFields::PreferredEmail: {
         KContacts::Email email(value);
@@ -330,22 +331,22 @@ void ContactFields::setValue(Field field, const QString &value, KContacts::Addre
         break;
     }
     case BlogFeed:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("BlogFeed"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"BlogFeed"_s, value);
         break;
     case Profession:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Profession"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-Profession"_s, value);
         break;
     case Office:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Office"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-Office"_s, value);
         break;
     case Manager:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-ManagersName"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-ManagersName"_s, value);
         break;
     case Assistant:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-AssistantsName"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-AssistantsName"_s, value);
         break;
     case Spouse:
-        contact.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"), value);
+        contact.insertCustom(u"KADDRESSBOOK"_s, u"X-SpousesName"_s, value);
         break;
     }
 }
@@ -378,7 +379,7 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
         }
     }
     case Anniversary:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-Anniversary"_s);
     case HomeAddressStreet: {
         const KContacts::Address address = contact.address(KContacts::Address::Home);
         return address.street();
@@ -496,17 +497,17 @@ QString ContactFields::value(Field field, const KContacts::Addressee &contact)
     case Homepage:
         return contact.url().url().url();
     case BlogFeed:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("BlogFeed"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"BlogFeed"_s);
     case Profession:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Profession"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-Profession"_s);
     case Office:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Office"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-Office"_s);
     case Manager:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-ManagersName"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-ManagersName"_s);
     case Assistant:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-AssistantsName"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-AssistantsName"_s);
     case Spouse:
-        return contact.custom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"));
+        return contact.custom(u"KADDRESSBOOK"_s, u"X-SpousesName"_s);
     }
 
     return {};

@@ -7,26 +7,24 @@
 */
 
 #include "aboutdata.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook-version.h"
 
 #include <KLocalizedString>
 
 AboutData::AboutData()
-    : KAboutData(QStringLiteral("kaddressbook"),
+    : KAboutData(u"kaddressbook"_s,
                  i18n("KAddressBook"),
                  QStringLiteral(KADDRESSBOOK_VERSION),
                  i18n("The KDE Address Book Application"),
                  KAboutLicense::GPL_V2,
-                 i18n("Copyright © 2007–%1 KAddressBook authors", QStringLiteral("2025")))
+                 i18n("Copyright © 2007–%1 KAddressBook authors", u"2025"_s))
 {
-    addAuthor(i18nc("@info:credit", "Laurent Montel"), i18n("Current maintainer"), QStringLiteral("montel@kde.org"));
-    addAuthor(i18nc("@info:credit", "Tobias König"), i18n("Previous maintainer"), QStringLiteral("tokoe@kde.org"));
-    addAuthor(i18nc("@info:credit", "Stefan Taferner"), i18n("Original Author (1998)"), QStringLiteral("taferner@kde.org"));
-    addAuthor(i18nc("@info:credit", "David Bryant"),
-              i18n("Documentation (2019)"),
-              QStringLiteral("davidbryant@gvtc.com"),
-              QStringLiteral("https://davidcbryant.net"));
+    addAuthor(i18nc("@info:credit", "Laurent Montel"), i18n("Current maintainer"), u"montel@kde.org"_s);
+    addAuthor(i18nc("@info:credit", "Tobias König"), i18n("Previous maintainer"), u"tokoe@kde.org"_s);
+    addAuthor(i18nc("@info:credit", "Stefan Taferner"), i18n("Original Author (1998)"), u"taferner@kde.org"_s);
+    addAuthor(i18nc("@info:credit", "David Bryant"), i18n("Documentation (2019)"), u"davidbryant@gvtc.com"_s, u"https://davidcbryant.net"_s);
 }
 
 AboutData::~AboutData() = default;

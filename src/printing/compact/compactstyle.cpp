@@ -68,7 +68,7 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
         fields << ContactFields::Birthday;
     }
 
-    QString content = QStringLiteral("<html>\n");
+    QString content = u"<html>\n"_s;
     content += " <body>\n"_L1;
     content += "  <table style=\"font-size:50%; border-width: 0px; \"width=\"100%\">\n"_L1;
 
@@ -85,7 +85,7 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
         }
 
         content += "   <tr>\n"_L1;
-        QString style = QStringLiteral("background-color:");
+        QString style = u"background-color:"_s;
         if (this->withAlternating) {
             style += (odd) ? this->firstColor.name() : this->secondColor.name();
         } else {
@@ -107,7 +107,7 @@ CompactStyle::CompactStyle(PrintingWizard *parent)
     : PrintStyle(parent)
     , mPageSettings(new CompactStyleForm(parent))
 {
-    setPreview(QStringLiteral("compact-style.png"));
+    setPreview(u"compact-style.png"_s);
     setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
 
     addPage(mPageSettings, i18n("Compact Style"));

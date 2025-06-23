@@ -7,6 +7,8 @@
 */
 
 #include "aboutdata.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "config-kaddressbook.h"
 #include "kaddressbook_options.h"
 #include "mainwidget.h"
@@ -56,7 +58,7 @@ int main(int argc, char **argv)
     KIconTheme::initTheme();
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     KAddressBookApplication app(argc, &argv);
-    app.setDesktopFileName(QStringLiteral("org.kde.kaddressbook"));
+    app.setDesktopFileName(u"org.kde.kaddressbook"_s);
     KStyleManager::initStyle();
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("kaddressbook"));
 
@@ -64,7 +66,7 @@ int main(int argc, char **argv)
     app.setAboutData(about);
     KCrash::initialize();
 
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kaddressbook")));
+    app.setWindowIcon(QIcon::fromTheme(u"kaddressbook"_s));
     QCommandLineParser *cmdArgs = app.cmdArgs();
     kaddressbook_options(cmdArgs);
 
@@ -73,7 +75,7 @@ int main(int argc, char **argv)
     about.processCommandLine(cmdArgs);
 
 #if KADDRESSBOOK_WITH_KUSERFEEDBACK
-    if (cmdArgs->isSet(QStringLiteral("feedback"))) {
+    if (cmdArgs->isSet(u"feedback"_s)) {
         auto userFeedBack = new KAddressBookUserFeedbackProvider(nullptr);
         QTextStream(stdout) << userFeedBack->describeDataSources() << '\n';
         delete userFeedBack;

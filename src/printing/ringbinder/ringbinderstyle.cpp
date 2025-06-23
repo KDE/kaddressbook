@@ -7,6 +7,8 @@
 */
 
 #include "ringbinderstyle.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "printingwizard.h"
 #include "printprogress.h"
 #include "ui_rbs_appearance.h"
@@ -41,7 +43,7 @@ enum PrintField {
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fields)
 {
-    QString content = QStringLiteral("<html>\n");
+    QString content = u"<html>\n"_s;
     content += QLatin1StringView(" <body>\n");
     content += QLatin1StringView(
         "  <table style=\"border-width: 1px; border-style: solid; "
@@ -51,7 +53,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
 
         if (fields & Organization) {
             if (!contact.organization().isEmpty()) {
-                nameString += QLatin1StringView(" (") + contact.organization() + QLatin1Char(')');
+                nameString += QLatin1StringView(" (") + contact.organization() + u')';
             }
         }
 
@@ -77,7 +79,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         }
         if (fields & Note) {
             if (!contact.note().isEmpty()) {
-                const QString note = i18n("Note: ") + contact.note().replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString note = i18n("Note: ") + contact.note().replace(u'\n', u"<br/>"_s);
 
                 rightBlock.append(note);
             }
@@ -85,9 +87,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
             for (const KContacts::Address &address : addresses) {
-                const QString data = address.formatted(KContacts::AddressFormatStyle::Postal)
-                                         .replace(QLatin1StringView("\n\n"), QStringLiteral("\n"))
-                                         .replace(QLatin1Char('\n'), QStringLiteral("<br/>"));
+                const QString data =
+                    address.formatted(KContacts::AddressFormatStyle::Postal).replace(QLatin1StringView("\n\n"), u"\n"_s).replace(u'\n', u"<br/>"_s);
                 const QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1StringView("</p>");
 
                 leftBlock.append(subBlock);
@@ -130,7 +131,7 @@ RingBinderPrintStyle::RingBinderPrintStyle(PrintingWizard *parent)
     : PrintStyle(parent)
     , mPageAppearance(new RingBinderStyleAppearanceForm(parent))
 {
-    setPreview(QStringLiteral("ringbinder-style.png"));
+    setPreview(u"ringbinder-style.png"_s);
     setPreferredSortOptions(KAddressBookImportExport::ContactFields::FamilyName, Qt::AscendingOrder);
 
     addPage(mPageAppearance, i18n("Ring Binder Printing Style - Appearance"));

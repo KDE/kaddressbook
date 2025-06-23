@@ -6,6 +6,7 @@
 */
 
 #include "printprogress.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QApplication>
@@ -42,7 +43,7 @@ void PrintProgress::addMessage(const QString &msg)
 
     QString head = QLatin1StringView("<qt><b>") + i18n("Progress") + QLatin1StringView(":</b><ul>");
 
-    const QString foot = QStringLiteral("</ul></qt>");
+    const QString foot = u"</ul></qt>"_s;
 
     QString body;
     QStringList::ConstIterator it;

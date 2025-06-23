@@ -5,6 +5,8 @@
 */
 
 #include "pluginmanager.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "libkaddressbookexportimport_debug.h"
 #include "plugin.h"
 
@@ -41,7 +43,7 @@ namespace
 {
 QString pluginVersion()
 {
-    return QStringLiteral("1.0");
+    return u"1.0"_s;
 }
 }
 
@@ -74,7 +76,7 @@ private:
 
 bool PluginManagerPrivate::initializePlugins()
 {
-    const QList<KPluginMetaData> plugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kaddressbook/importexportplugin"));
+    const QList<KPluginMetaData> plugins = KPluginMetaData::findPlugins(u"pim6/kaddressbook/importexportplugin"_s);
 
     const QPair<QStringList, QStringList> pair = PimCommon::PluginUtil::loadPluginSetting(configGroupName(), configPrefixSettingKey());
 
@@ -135,12 +137,12 @@ QList<PimCommon::PluginUtilData> PluginManagerPrivate::pluginDataList() const
 
 QString PluginManagerPrivate::configGroupName() const
 {
-    return QStringLiteral("KAddressBookPluginImportExport");
+    return u"KAddressBookPluginImportExport"_s;
 }
 
 QString PluginManagerPrivate::configPrefixSettingKey() const
 {
-    return QStringLiteral("KAddressBookImportExportPlugin");
+    return u"KAddressBookImportExportPlugin"_s;
 }
 
 Plugin *PluginManagerPrivate::pluginFromIdentifier(const QString &id)

@@ -5,6 +5,8 @@
 */
 
 #include "manageshowcollectionproperties.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
 #include <PimCommonAkonadi/CollectionAclPage>
@@ -28,8 +30,8 @@ ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainW
         Akonadi::CollectionPropertiesDialog::registerPage(new Akonadi::CollectionMaintenancePageFactory);
         pageRegistered = true;
     }
-    mPages = QStringList() << QStringLiteral("Akonadi::CollectionGeneralPropertiesPage") << QStringLiteral("Akonadi::CachePolicyPage")
-                           << QStringLiteral("PimCommon::CollectionAclPage") << QStringLiteral("Akonadi::CollectionMaintenancePage");
+    mPages = QStringList() << u"Akonadi::CollectionGeneralPropertiesPage"_s << u"Akonadi::CachePolicyPage"_s << u"PimCommon::CollectionAclPage"_s
+                           << u"Akonadi::CollectionMaintenancePage"_s;
 }
 
 ManageShowCollectionProperties::~ManageShowCollectionProperties() = default;

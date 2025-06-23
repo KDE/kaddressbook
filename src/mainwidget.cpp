@@ -156,7 +156,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     , mXmlGuiClient(guiClient)
 {
     (void)new KaddressbookAdaptor(this);
-    QDBusConnection::sessionBus().registerObject(QStringLiteral("/KAddressBook"), this);
+    QDBusConnection::sessionBus().registerObject(u"/KAddressBook"_s, this);
 
     mManageShowCollectionProperties = new ManageShowCollectionProperties(this, this);
 
@@ -373,14 +373,14 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 
     if (!importActions.isEmpty()) {
         auto importMenu = new KActionMenu(i18n("Import"), this);
-        collection->addAction(QStringLiteral("import_menu"), importMenu);
+        collection->addAction(u"import_menu"_s, importMenu);
         for (QAction *act : std::as_const(importActions)) {
             importMenu->addAction(act);
         }
     }
     if (!exportActions.isEmpty()) {
         auto exportMenu = new KActionMenu(i18n("Export"), this);
-        collection->addAction(QStringLiteral("export_menu"), exportMenu);
+        collection->addAction(u"export_menu"_s, exportMenu);
         for (QAction *act : std::as_const(exportActions)) {
             exportMenu->addAction(act);
         }
@@ -390,7 +390,7 @@ void MainWidget::initializeImportExportPlugin(KActionCollection *collection)
 void MainWidget::configure()
 {
     ConfigureDialog dlg(this);
-    const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(QStringLiteral("pim6/kcms/kaddressbook"));
+    const QList<KPluginMetaData> availablePlugins = KPluginMetaData::findPlugins(u"pim6/kcms/kaddressbook"_s);
     for (const KPluginMetaData &metaData : availablePlugins) {
         dlg.addModule(metaData);
     }
@@ -409,7 +409,7 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
     kaddressbook_options(&parser);
     parser.process(arguments);
 
-    if (parser.isSet(QStringLiteral("import"))) {
+    if (parser.isSet(u"import"_s)) {
         const QStringList lst = parser.positionalArguments();
         for (const QString &urlStr : lst) {
             const QUrl url(QUrl::fromUserInput(urlStr));
@@ -420,10 +420,10 @@ void MainWidget::handleCommandLine(const QStringList &arguments)
                 }
             }
         }
-    } else if (parser.isSet(QStringLiteral("newcontact"))) {
+    } else if (parser.isSet(u"newcontact"_s)) {
         newContact();
-    } else if (parser.isSet(QStringLiteral("view"))) {
-        const auto url = QUrl{parser.value(QStringLiteral("view"))};
+    } else if (parser.isSet(u"view"_s)) {
+        const auto url = QUrl{parser.value(u"view"_s)};
         mPendingSelection = Akonadi::Item::fromUrl(url);
     }
 }
@@ -438,10 +438,10 @@ void MainWidget::delayedInit()
 {
     setViewMode(0); // get default from settings
 
-    const KConfigGroup group(Settings::self()->config(), QStringLiteral("UiState_ContactView"));
+    const KConfigGroup group(Settings::self()->config(), u"UiState_ContactView"_s);
     KAddressBook::UiStateSaver::restoreState(mItemView, group);
 
-    mXmlGuiClient->actionCollection()->action(QStringLiteral("options_show_qrcodes"))->setChecked(showQRCodes());
+    mXmlGuiClient->actionCollection()->action(u"options_show_qrcodes"_s)->setChecked(showQRCodes());
 
     connect(GlobalContactModel::instance()->model(), &QAbstractItemModel::modelAboutToBeReset, this, &MainWidget::saveState);
     connect(GlobalContactModel::instance()->model(), &QAbstractItemModel::modelReset, this, &MainWidget::restoreState);
@@ -457,7 +457,7 @@ MainWidget::~MainWidget()
     mModelColumnManager->store();
     saveSplitterStates();
 
-    KConfigGroup group(Settings::self()->config(), QStringLiteral("UiState_ContactView"));
+    KConfigGroup group(Settings::self()->config(), u"UiState_ContactView"_s);
     KAddressBook::UiStateSaver::saveState(mItemView, group);
 
     saveState();
@@ -475,7 +475,7 @@ void MainWidget::restoreState()
         auto saver = new Akonadi::ETMViewStateSaver;
         saver->setView(mCollectionView);
 
-        const KConfigGroup group(Settings::self()->config(), QStringLiteral("CollectionViewState"));
+        const KConfigGroup group(Settings::self()->config(), u"CollectionViewState"_s);
         saver->restoreState(group);
     }
 
@@ -484,7 +484,7 @@ void MainWidget::restoreState()
         auto saver = new Akonadi::ETMViewStateSaver;
         saver->setSelectionModel(mCollectionSelectionModel);
 
-        const KConfigGroup group(Settings::self()->config(), QStringLiteral("CollectionViewCheckState"));
+        const KConfigGroup group(Settings::self()->config(), u"CollectionViewCheckState"_s);
         saver->restoreState(group);
     }
 
@@ -499,7 +499,7 @@ void MainWidget::restoreState()
             saver->setCurrentItem(mPendingSelection);
             mPendingSelection = {};
         } else {
-            const KConfigGroup group(Settings::self()->config(), QStringLiteral("ItemViewState"));
+            const KConfigGroup group(Settings::self()->config(), u"ItemViewState"_s);
             saver->restoreState(group);
         }
     }
@@ -512,7 +512,7 @@ void MainWidget::saveState()
         Akonadi::ETMViewStateSaver saver;
         saver.setView(mCollectionView);
 
-        KConfigGroup group(Settings::self()->config(), QStringLiteral("CollectionViewState"));
+        KConfigGroup group(Settings::self()->config(), u"CollectionViewState"_s);
         saver.saveState(group);
         group.sync();
     }
@@ -522,7 +522,7 @@ void MainWidget::saveState()
         Akonadi::ETMViewStateSaver saver;
         saver.setSelectionModel(mCollectionSelectionModel);
 
-        KConfigGroup group(Settings::self()->config(), QStringLiteral("CollectionViewCheckState"));
+        KConfigGroup group(Settings::self()->config(), u"CollectionViewCheckState"_s);
         saver.saveState(group);
         group.sync();
     }
@@ -533,7 +533,7 @@ void MainWidget::saveState()
         saver.setView(mItemView);
         saver.setSelectionModel(mItemView->selectionModel());
 
-        KConfigGroup group(Settings::self()->config(), QStringLiteral("ItemViewState"));
+        KConfigGroup group(Settings::self()->config(), u"ItemViewState"_s);
         saver.saveState(group);
         group.sync();
     }
@@ -570,7 +570,7 @@ void MainWidget::setupGui()
     // the items view
     mItemView = new Akonadi::EntityTreeView();
     mItemView->setObjectName("ContactView"_L1);
-    mItemView->setDefaultPopupMenu(QStringLiteral("akonadi_itemview_contextmenu"));
+    mItemView->setDefaultPopupMenu(u"akonadi_itemview_contextmenu"_s);
     mItemView->setAlternatingRowColors(true);
     mMainWidgetSplitter2->addWidget(mItemView);
 
@@ -632,7 +632,7 @@ void MainWidget::setupGui()
 
 void MainWidget::initializePluginActions()
 {
-    KAddressBookPluginInterface::self()->initializePluginActions(QStringLiteral("kaddressbook"), mXmlGuiClient);
+    KAddressBookPluginInterface::self()->initializePluginActions(u"kaddressbook"_s, mXmlGuiClient);
 }
 
 bool MainWidget::canClose() const
@@ -655,12 +655,8 @@ void MainWidget::setupActions(KActionCollection *collection)
     KAddressBookPluginInterface::self()->setMainWidget(this);
     KAddressBookPluginInterface::self()->createPluginInterface();
 
-    mGrantleeThemeManager = new GrantleeTheme::ThemeManager(QStringLiteral("addressbook"),
-                                                            QStringLiteral("theme.desktop"),
-                                                            collection,
-                                                            QStringLiteral("kaddressbook/viewertemplates/"),
-                                                            QString(),
-                                                            this);
+    mGrantleeThemeManager =
+        new GrantleeTheme::ThemeManager(u"addressbook"_s, u"theme.desktop"_s, collection, u"kaddressbook/viewertemplates/"_s, QString(), this);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::grantleeThemeSelected, this, &MainWidget::slotGrantleeThemeSelected);
     connect(mGrantleeThemeManager, &GrantleeTheme::ThemeManager::updateThemes, this, &MainWidget::slotGrantleeThemesUpdated);
 
@@ -674,20 +670,20 @@ void MainWidget::setupActions(KActionCollection *collection)
     auto quicksearch = new QWidgetAction(this);
     quicksearch->setText(i18n("Quick search"));
     quicksearch->setDefaultWidget(mQuickSearchWidget);
-    collection->addAction(QStringLiteral("quick_search"), quicksearch);
+    collection->addAction(u"quick_search"_s, quicksearch);
 
     auto categoryFilter = new QWidgetAction(this);
     categoryFilter->setText(i18n("Category filter"));
     categoryFilter->setDefaultWidget(mCategorySelectWidget);
-    collection->addAction(QStringLiteral("category_filter"), categoryFilter);
+    collection->addAction(u"category_filter"_s, categoryFilter);
 
-    action = collection->addAction(QStringLiteral("select_all"));
+    action = collection->addAction(u"select_all"_s);
     action->setText(i18n("Select All"));
     collection->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_A));
     action->setWhatsThis(i18n("Select all contacts in the current address book view."));
     connect(action, &QAction::triggered, mItemView, &Akonadi::EntityTreeView::selectAll);
 
-    auto qrtoggleAction = collection->add<KToggleAction>(QStringLiteral("options_show_qrcodes"));
+    auto qrtoggleAction = collection->add<KToggleAction>(u"options_show_qrcodes"_s);
     qrtoggleAction->setText(i18n("Show QR Codes"));
     qrtoggleAction->setWhatsThis(i18n("Show QR Codes in the contact."));
     connect(qrtoggleAction, &KToggleAction::toggled, this, &MainWidget::setQRCodeShow);
@@ -699,19 +695,19 @@ void MainWidget::setupActions(KActionCollection *collection)
     act->setData(1);
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_1));
     act->setWhatsThis(i18n("Show a simple mode of the address book view."));
-    collection->addAction(QStringLiteral("view_mode_simple"), act);
+    collection->addAction(u"view_mode_simple"_s, act);
 
     act = new QAction(i18nc("@action:inmenu", "Two Columns"), mViewModeGroup);
     act->setCheckable(true);
     act->setData(2);
-    collection->addAction(QStringLiteral("view_mode_2columns"), act);
+    collection->addAction(u"view_mode_2columns"_s, act);
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_2));
 
     act = new QAction(i18nc("@action:inmenu", "Three Columns"), mViewModeGroup);
     act->setCheckable(true);
     act->setData(3);
     collection->setDefaultShortcut(act, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_3));
-    collection->addAction(QStringLiteral("view_mode_3columns"), act);
+    collection->addAction(u"view_mode_3columns"_s, act);
 
     connect(mViewModeGroup, &QActionGroup::triggered, this, &MainWidget::setActivateViewMode);
 
@@ -722,23 +718,23 @@ void MainWidget::setupActions(KActionCollection *collection)
 
     mQuickSearchAction = new QAction(i18nc("@action", "Set Focus to Quick Search"), this);
     // If change shortcut change in quicksearchwidget->lineedit->setPlaceholderText
-    collection->addAction(QStringLiteral("focus_to_quickseach"), mQuickSearchAction);
+    collection->addAction(u"focus_to_quickseach"_s, mQuickSearchAction);
     connect(mQuickSearchAction, &QAction::triggered, mQuickSearchWidget, &QuickSearchWidget::slotFocusQuickSearch);
     collection->setDefaultShortcut(mQuickSearchAction, QKeySequence(Qt::ALT | Qt::Key_Q));
 #ifndef FORCE_DISABLE_AKONADI_SEARCH
     if (!qEnvironmentVariableIsEmpty("KDEPIM_DEBUGGING")) {
-        action = collection->addAction(QStringLiteral("debug_akonadi_search"));
+        action = collection->addAction(u"debug_akonadi_search"_s);
         // Don't translate it. It's just for debug
-        action->setText(QStringLiteral("Debug Akonadi Search…"));
+        action->setText(u"Debug Akonadi Search…"_s);
         connect(action, &QAction::triggered, this, &MainWidget::slotDebugAkonadiSearch);
     }
 #endif
 
     auto manager = KColorSchemeManager::instance();
-    collection->addAction(QStringLiteral("colorscheme_menu"), KColorSchemeMenu::createMenu(manager, this));
+    collection->addAction(u"colorscheme_menu"_s, KColorSchemeMenu::createMenu(manager, this));
 
-    auto showWhatsNewAction = new QAction(QIcon::fromTheme(QStringLiteral("kaddressbook")), i18n("What's new"), this);
-    collection->addAction(QStringLiteral("whatsnew"), showWhatsNewAction);
+    auto showWhatsNewAction = new QAction(QIcon::fromTheme(u"kaddressbook"_s), i18n("What's new"), this);
+    collection->addAction(u"whatsnew"_s, showWhatsNewAction);
     connect(showWhatsNewAction, &QAction::triggered, this, &MainWidget::slotWhatsNew);
 }
 
@@ -849,16 +845,16 @@ void MainWidget::selectFirstItem()
 
 bool MainWidget::showQRCodes()
 {
-    KConfig config(QStringLiteral("akonadi_contactrc"));
-    KConfigGroup group(&config, QStringLiteral("View"));
+    KConfig config(u"akonadi_contactrc"_s);
+    KConfigGroup group(&config, u"View"_s);
     return group.readEntry("QRCodes", true);
 }
 
 void MainWidget::setQRCodeShow(bool on)
 {
     // must write the configuration setting first before updating the view.
-    KConfig config(QStringLiteral("akonadi_contactrc"));
-    KConfigGroup group(&config, QStringLiteral("View"));
+    KConfig config(u"akonadi_contactrc"_s);
+    KConfigGroup group(&config, u"View"_s);
     group.writeEntry("QRCodes", on);
     group.sync();
     if (mDetailsViewStack->currentWidget() == mContactDetails) {
@@ -964,7 +960,7 @@ void MainWidget::saveSplitterStates() const
         return;
     }
 
-    const QString groupName = QStringLiteral("UiState_MainWidgetSplitter_%1").arg(currentMode);
+    const QString groupName = u"UiState_MainWidgetSplitter_%1"_s.arg(currentMode);
     // qCDebug(KADDRESSBOOK_LOG) << "saving to group" << groupName;
     KConfigGroup group(Settings::self()->config(), groupName);
     KAddressBook::UiStateSaver::saveState(mMainWidgetSplitter1, group);
@@ -980,7 +976,7 @@ void MainWidget::restoreSplitterStates()
         return;
     }
 
-    const QString groupName = QStringLiteral("UiState_MainWidgetSplitter_%1").arg(currentMode);
+    const QString groupName = u"UiState_MainWidgetSplitter_%1"_s.arg(currentMode);
     // qCDebug(KADDRESSBOOK_LOG) << "restoring from group" << groupName;
     KConfigGroup group(Settings::self()->config(), groupName);
     KAddressBook::UiStateSaver::restoreState(mMainWidgetSplitter1, group);
@@ -991,7 +987,7 @@ void MainWidget::initGrantleeThemeName()
 {
     QString themeName = mGrantleeThemeManager->configuredThemeName();
     if (themeName.isEmpty()) {
-        themeName = QStringLiteral("default");
+        themeName = u"default"_s;
     }
     mFormatter->setGrantleeTheme(mGrantleeThemeManager->theme(themeName));
     mGroupFormatter->setGrantleeTheme(mGrantleeThemeManager->theme(themeName));

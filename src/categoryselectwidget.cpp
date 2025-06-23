@@ -5,6 +5,7 @@
 */
 
 #include "categoryselectwidget.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 #include <Akonadi/Monitor>
@@ -89,14 +90,14 @@ void CategorySelectWidgetPrivate::init()
 
     auto but = new QToolButton(q);
     but->setAutoRaise(true);
-    but->setIcon(QIcon::fromTheme(QStringLiteral("edit-undo")));
+    but->setIcon(QIcon::fromTheme(u"edit-undo"_s));
     but->setToolTip(i18nc("@action:button", "Reset category filter"));
     connect(but, &QToolButton::clicked, this, &CategorySelectWidgetPrivate::slotSelectAll);
     hbox->addWidget(but);
 
     but = new QToolButton(q);
     but->setAutoRaise(true);
-    but->setIcon(QIcon::fromTheme(QStringLiteral("edit-clear")));
+    but->setIcon(QIcon::fromTheme(u"edit-clear"_s));
     but->setToolTip(i18nc("@action:button", "Clear category filter"));
     connect(but, &QToolButton::clicked, this, &CategorySelectWidgetPrivate::slotSelectNone);
     hbox->addWidget(but);

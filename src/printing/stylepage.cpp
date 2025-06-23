@@ -7,6 +7,7 @@
 */
 
 #include "stylepage.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <QGridLayout>
 #include <QGroupBox>

@@ -7,6 +7,8 @@
 */
 
 #include "mainwindow.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "config-kaddressbook.h"
 #include "mainwidget.h"
 #include "settings.h"
@@ -84,7 +86,7 @@ MainWindow::MainWindow()
         if (hasNewFeature) {
             auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this, i18n("KAddressBook"));
             whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
-            whatsNewMessageWidget->setObjectName(QStringLiteral("whatsNewMessageWidget"));
+            whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
             mainWidgetLayout->addWidget(whatsNewMessageWidget);
             Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
             whatsNewMessageWidget->animatedShow();
@@ -99,7 +101,7 @@ MainWindow::MainWindow()
     toolBar()->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
     initActions();
-    setupGUI(Save | Create, QStringLiteral("kaddressbookui.rc"));
+    setupGUI(Save | Create, u"kaddressbookui.rc"_s);
 
     setAutoSaveSettings();
 
@@ -170,7 +172,7 @@ void MainWindow::updateHamburgerMenu()
 {
     delete mHamburgerMenu->menu();
     auto menu = new QMenu(this);
-    menu->addAction(actionCollection()->action(QStringLiteral("akonadi_resource_create")));
+    menu->addAction(actionCollection()->action(u"akonadi_resource_create"_s));
     menu->addSeparator();
 
     menu->addAction(actionCollection()->action(KStandardAction::name(KStandardAction::Print)));
@@ -199,7 +201,7 @@ void MainWindow::configureKeyBindings()
 
 void MainWindow::configureToolbars()
 {
-    KConfigGroup grp = KSharedConfig::openConfig()->group(QStringLiteral("MainWindow"));
+    KConfigGroup grp = KSharedConfig::openConfig()->group(u"MainWindow"_s);
     saveMainWindowSettings(grp);
 
     QPointer<KEditToolBar> dlg = new KEditToolBar(factory());
@@ -210,9 +212,9 @@ void MainWindow::configureToolbars()
 
 void MainWindow::newToolbarConfig()
 {
-    createGUI(QStringLiteral("kaddressbookui.rc"));
+    createGUI(u"kaddressbookui.rc"_s);
 
-    applyMainWindowSettings(KSharedConfig::openConfig()->group(QStringLiteral("MainWindow")));
+    applyMainWindowSettings(KSharedConfig::openConfig()->group(u"MainWindow"_s));
 }
 
 void MainWindow::slotToggleMenubar(bool dontShowWarning)
@@ -228,7 +230,7 @@ void MainWindow::slotToggleMenubar(bool dontShowWarning)
                                               " You can show it again by typing %1.</qt>",
                                               accel),
                                          i18nc("@title:window", "Hide menu bar"),
-                                         QStringLiteral("HideMenuBarWarning"));
+                                         u"HideMenuBarWarning"_s);
             }
             menuBar()->hide();
         }

@@ -7,6 +7,7 @@
 */
 
 #include "detailledstyle.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "printingwizard.h"
 #include "printprogress.h"
@@ -42,7 +43,7 @@ struct ColorSettings {
 
 static QString contactsToHtml(const KContacts::Addressee::List &contacts, const ColorSettings &settings)
 {
-    QString content = QStringLiteral("<html>\n");
+    QString content = u"<html>\n"_s;
     content += QLatin1StringView(" <head>\n");
     content += QLatin1StringView("  <style type=\"text/css\">\n");
     content += QLatin1StringView("    td.indented {\n");
@@ -64,7 +65,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             if (!contact.role().isEmpty()) {
                 contentAddress << contact.role();
             }
-            name += QStringLiteral(" (%1)").arg(contentAddress.join(QStringLiteral(", ")));
+            name += u" (%1)"_s.arg(contentAddress.join(u", "_s));
         }
 
         const QString birthday = QLocale().toString(contact.birthday().date(), QLocale::ShortFormat);
@@ -136,9 +137,9 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
                 default:
                     block.header = i18n("Preferred Address");
                 }
-                block.header += QLatin1Char(':');
+                block.header += u':';
 
-                block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).split(QLatin1Char('\n'), Qt::KeepEmptyParts);
+                block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).split(u'\n', Qt::KeepEmptyParts);
                 blocks.append(block);
             }
         }
@@ -146,7 +147,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
         if (!contact.note().isEmpty()) {
             ContactBlock block;
             block.header = i18n("Notes:");
-            block.entries = contact.note().split(QLatin1Char('\n'), Qt::KeepEmptyParts);
+            block.entries = contact.note().split(u'\n', Qt::KeepEmptyParts);
 
             blocks.append(block);
         }
@@ -226,7 +227,7 @@ DetailledPrintStyle::DetailledPrintStyle(PrintingWizard *parent)
     : PrintStyle(parent)
     , mPageAppearance(new AppearancePage(parent))
 {
-    setPreview(QStringLiteral("detailed-style.png"));
+    setPreview(u"detailed-style.png"_s);
     setPreferredSortOptions(KAddressBookImportExport::ContactFields::FormattedName, Qt::AscendingOrder);
 
     addPage(mPageAppearance, i18n("Detailed Print Style - Appearance"));

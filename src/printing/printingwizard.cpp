@@ -8,6 +8,8 @@
 */
 
 #include "printingwizard.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "settings.h"
 
 #include "contactsorter.h"
@@ -74,14 +76,14 @@ void PrintingWizard::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(300, 200));
-    KConfigGroup group(KSharedConfig::openStateConfig(), QStringLiteral("PrintingWizard"));
+    KConfigGroup group(KSharedConfig::openStateConfig(), u"PrintingWizard"_s);
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void PrintingWizard::writeConfig()
 {
-    KConfigGroup grp(KSharedConfig::openStateConfig(), QStringLiteral("PrintingWizard"));
+    KConfigGroup grp(KSharedConfig::openStateConfig(), u"PrintingWizard"_s);
     KWindowConfig::saveWindowSize(windowHandle(), grp);
     grp.sync();
 }
@@ -100,11 +102,11 @@ void PrintingWizard::accept()
 
 void PrintingWizard::loadGrantleeStyle()
 {
-    const QString relativePath = QStringLiteral("kaddressbook/printing/themes/");
+    const QString relativePath = u"kaddressbook/printing/themes/"_s;
     QStringList themesDirectories = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, relativePath, QStandardPaths::LocateDirectory);
     if (themesDirectories.count() < 2) {
         // Make sure to add local directory
-        const QString localDirectory = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + relativePath;
+        const QString localDirectory = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u'/' + relativePath;
         if (!themesDirectories.contains(localDirectory)) {
             themesDirectories.append(localDirectory);
         }
@@ -115,9 +117,9 @@ void PrintingWizard::loadGrantleeStyle()
         QStringList alreadyLoadedThemeName;
         while (dirIt.hasNext()) {
             dirIt.next();
-            const QString themeInfoFile = dirIt.filePath() + QStringLiteral("/theme.desktop");
+            const QString themeInfoFile = dirIt.filePath() + u"/theme.desktop"_s;
             KConfig config(themeInfoFile);
-            KConfigGroup group(&config, QStringLiteral("Desktop Entry"));
+            KConfigGroup group(&config, u"Desktop Entry"_s);
             QString name = group.readEntry("Name", QString());
             if (name.isEmpty()) {
                 continue;
@@ -126,11 +128,11 @@ void PrintingWizard::loadGrantleeStyle()
                 int i = 2;
                 const QString originalName(name);
                 while (alreadyLoadedThemeName.contains(name)) {
-                    name = originalName + QStringLiteral(" (%1)").arg(i);
+                    name = originalName + u" (%1)"_s.arg(i);
                     ++i;
                 }
             }
-            const QString printThemePath(dirIt.filePath() + QLatin1Char('/'));
+            const QString printThemePath(dirIt.filePath() + u'/');
             if (!printThemePath.isEmpty()) {
                 alreadyLoadedThemeName << name;
                 mPrintStyleDefinition.append(new PrintStyleDefinition(new GrantleeStyleFactory(name, printThemePath, this)));

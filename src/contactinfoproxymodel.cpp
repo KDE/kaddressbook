@@ -7,6 +7,7 @@
 */
 
 #include "contactinfoproxymodel.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 
@@ -130,7 +131,7 @@ QString ContactInfoProxyModel::getDescription(const KContacts::Addressee &contac
         phone = i18n("Phone: %1", (*itPhone).number());
     }
     if (!emailAddress.isEmpty() && !phone.isEmpty()) {
-        dataSeparator = QStringLiteral(",");
+        dataSeparator = u","_s;
     }
 
     return i18n("%1%2 %3", emailAddress, dataSeparator, phone).trimmed();
@@ -144,7 +145,7 @@ QString ContactInfoProxyModel::getDescription(const Akonadi::Item::Id groupItemI
     for (int idx = 0; idx < groupContacts.dataCount(); idx++) {
         QString dataSeparator;
         if (!groupContacts.data(idx).name().isEmpty() && !groupContacts.data(idx).email().isEmpty()) {
-            dataSeparator = QStringLiteral("-");
+            dataSeparator = u"-"_s;
         }
         contactDescription = i18n("%1 %2 %3", groupContacts.data(idx).name(), dataSeparator, groupContacts.data(idx).email());
         groupDescription << contactDescription.trimmed();
@@ -161,14 +162,14 @@ QString ContactInfoProxyModel::getDescription(const Akonadi::Item::Id groupItemI
             if (it->name().isEmpty() && email.isEmpty()) {
                 continue;
             } else if (!it->name().isEmpty() && !email.isEmpty()) {
-                cacheSeparator = QStringLiteral("-");
+                cacheSeparator = u"-"_s;
             }
             contactDescription = i18n("%1 %2 %3", it->name(), cacheSeparator, email);
             groupDescription << contactDescription.trimmed();
             contactDescription.clear();
         }
     }
-    return groupDescription.join(QStringLiteral(", "));
+    return groupDescription.join(u", "_s);
 }
 
 QStringList ContactInfoProxyModel::getIdsContactGroup(const KContacts::ContactGroup &group) const
@@ -292,7 +293,7 @@ void ContactInfoProxyModel::slotFetchJobFinished(KJob *job)
             if (it_contact->setData(item)) {
                 mMonitor->setItemMonitored(item);
             } else {
-                qCWarning(KADDRESSBOOK_LOG) << QStringLiteral("item with id %1 cannot be saved into cache").arg(item.id());
+                qCWarning(KADDRESSBOOK_LOG) << u"item with id %1 cannot be saved into cache"_s.arg(item.id());
             }
         }
     }
@@ -319,7 +320,7 @@ void ContactInfoProxyModel::slotItemChanged(const Akonadi::Item &item, const QSe
                     const QModelIndex index = Akonadi::EntityTreeModel::modelIndexesForItem(this, Akonadi::Item(it_group.key())).constFirst();
                     Q_EMIT dataChanged(index, index, mKrole);
                 } else {
-                    qCWarning(KADDRESSBOOK_LOG) << QStringLiteral("changed item with id %1 cannot be saved into cache").arg(item.id());
+                    qCWarning(KADDRESSBOOK_LOG) << u"changed item with id %1 cannot be saved into cache"_s.arg(item.id());
                 }
             }
         }

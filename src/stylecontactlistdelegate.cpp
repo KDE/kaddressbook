@@ -7,6 +7,8 @@
 */
 
 #include "stylecontactlistdelegate.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "contactinfoproxymodel.h"
 
 #include <Akonadi/ContactsTreeModel>

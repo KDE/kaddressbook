@@ -7,6 +7,7 @@
 */
 
 #include "contactsorter.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KContacts/Addressee>
 

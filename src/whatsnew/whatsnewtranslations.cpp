@@ -5,6 +5,7 @@
 */
 
 #include "whatsnewtranslations.h"
+using namespace Qt::Literals::StringLiterals;
 
 WhatsNewTranslations::WhatsNewTranslations() = default;
 
@@ -28,7 +29,7 @@ QList<PimCommon::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo() const
         }
         info.setNewFeatures(lst);
         info.setBugFixings({i18n("Restore configure dialog size.")});
-        info.setVersion(QStringLiteral("6.3.0"));
+        info.setVersion(u"6.3.0"_s);
         listInfo.append(std::move(info));
     }
     return listInfo;

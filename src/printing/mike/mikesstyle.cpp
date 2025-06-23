@@ -8,6 +8,8 @@
 */
 
 #include "mikesstyle.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
 #include "printprogress.h"
@@ -42,7 +44,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
     }
 
     int counter = 0;
-    QString content = QStringLiteral("<html>\n");
+    QString content = u"<html>\n"_s;
     content += QLatin1StringView(" <body>\n");
     for (const KContacts::Addressee &contact : contacts) {
         const int max = qMax(leftFields.count(), rightFields.count());
@@ -54,7 +56,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
         }
 
         // start a new page after every second table
-        const QString pageBreak = ((counter % 2) ? QStringLiteral("page-break-after: always;") : QString());
+        const QString pageBreak = ((counter % 2) ? u"page-break-after: always;"_s : QString());
 
         content += QLatin1StringView("  <table style=\"border-width: 0px; ") + pageBreak + QLatin1StringView("\" width=\"100%\">\n");
         content += QLatin1StringView("   <tr>\n");
@@ -71,14 +73,14 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
             QString rightValue;
 
             if (i < leftFields.count()) {
-                leftTitle = ContactFields::label(leftFields.at(i)) + QLatin1Char(':');
-                leftTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
+                leftTitle = ContactFields::label(leftFields.at(i)) + u':';
+                leftTitle.replace(u' ', u"&nbsp;"_s);
                 leftValue = ContactFields::value(leftFields.at(i), contact);
             }
 
             if (i < rightFields.count()) {
-                rightTitle = ContactFields::label(rightFields.at(i)) + QLatin1Char(':');
-                rightTitle.replace(QLatin1Char(' '), QStringLiteral("&nbsp;"));
+                rightTitle = ContactFields::label(rightFields.at(i)) + u':';
+                rightTitle.replace(u' ', u"&nbsp;"_s);
                 rightValue = ContactFields::value(rightFields.at(i), contact);
             }
 
@@ -102,7 +104,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
 MikesStyle::MikesStyle(PrintingWizard *parent)
     : PrintStyle(parent)
 {
-    setPreview(QStringLiteral("mike-style.png"));
+    setPreview(u"mike-style.png"_s);
     setPreferredSortOptions(ContactFields::FormattedName, Qt::AscendingOrder);
 }
 

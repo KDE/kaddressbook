@@ -5,6 +5,7 @@
 */
 
 #include "kaddressbookplugininterface.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
@@ -14,8 +15,8 @@
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent)
 {
-    setPluginName(QStringLiteral("kaddressbook"));
-    setPluginDirectory(QStringLiteral("pim6/kaddressbook/mainview"));
+    setPluginName(u"kaddressbook"_s);
+    setPluginDirectory(u"pim6/kaddressbook/mainview"_s);
 }
 
 KAddressBookPluginInterface::~KAddressBookPluginInterface() = default;

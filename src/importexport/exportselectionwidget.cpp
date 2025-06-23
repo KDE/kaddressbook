@@ -5,6 +5,7 @@
 */
 
 #include "exportselectionwidget.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 
@@ -86,8 +87,8 @@ ExportSelectionWidget::~ExportSelectionWidget()
 
 void ExportSelectionWidget::readSettings()
 {
-    KConfig config(QStringLiteral("kaddressbookrc"));
-    const KConfigGroup group(&config, QStringLiteral("XXPortVCard"));
+    KConfig config(u"kaddressbookrc"_s);
+    const KConfigGroup group(&config, u"XXPortVCard"_s);
 
     mPrivateBox->setChecked(group.readEntry("ExportPrivateFields", true));
     mBusinessBox->setChecked(group.readEntry("ExportBusinessFields", true));
@@ -99,8 +100,8 @@ void ExportSelectionWidget::readSettings()
 
 void ExportSelectionWidget::writeSettings()
 {
-    KConfig config(QStringLiteral("kaddressbookrc"));
-    KConfigGroup group(&config, QStringLiteral("XXPortVCard"));
+    KConfig config(u"kaddressbookrc"_s);
+    KConfigGroup group(&config, u"XXPortVCard"_s);
 
     group.writeEntry("ExportPrivateFields", mPrivateBox->isChecked());
     group.writeEntry("ExportBusinessFields", mBusinessBox->isChecked());
