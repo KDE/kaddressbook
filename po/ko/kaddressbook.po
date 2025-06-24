@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-21 00:43+0000\n"
+"POT-Creation-Date: 2025-06-24 00:43+0000\n"
 "PO-Revision-Date: 2025-04-06 22:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -29,7 +29,7 @@ msgid "Your emails"
 msgstr "kde@peremen.name"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
+#: src/mainwidget.cpp:752 src/mainwidget.cpp:779
 #, kde-format
 msgid "Address Book"
 msgstr "주소록"
@@ -89,14 +89,14 @@ msgid "Email"
 msgstr "이메일"
 
 #: src/viewertemplates/contact_embedded.html:75
-#: src/importexport/contactfields.cpp:105
+#: src/importexport/contactfields.cpp:106
 #, kde-format
 msgid "Blog Feed"
 msgstr "블로그 피드"
 
-#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
-#: src/kaddressbookpart.cpp:30 src/kaddressbookpart.cpp:43
-#: src/mainwidget.cpp:748 src/mainwindow.cpp:85
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
+#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:45
+#: src/mainwidget.cpp:744 src/mainwindow.cpp:87
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -128,50 +128,50 @@ msgid ""
 "You will be presented with a dialog where you can create a new contact group."
 msgstr "새 연락처 그룹을 만들 수 있는 대화 상자가 표시됩니다."
 
-#: src/aboutdata.cpp:19
+#: src/aboutdata.cpp:20
 #, kde-format
 msgid "The KDE Address Book Application"
 msgstr "KDE 주소록 앱"
 
-#: src/aboutdata.cpp:21
+#: src/aboutdata.cpp:22
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © 2007–%1 KAddressBook authors"
 
-#: src/aboutdata.cpp:23
+#: src/aboutdata.cpp:24
 #, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/aboutdata.cpp:23
+#: src/aboutdata.cpp:24
 #, kde-format
 msgid "Current maintainer"
 msgstr "현재 관리자"
 
-#: src/aboutdata.cpp:24
+#: src/aboutdata.cpp:25
 #, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
 
-#: src/aboutdata.cpp:24
+#: src/aboutdata.cpp:25
 #, kde-format
 msgid "Previous maintainer"
 msgstr "이전 관리자"
 
-#: src/aboutdata.cpp:25
+#: src/aboutdata.cpp:26
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
 
-#: src/aboutdata.cpp:25
+#: src/aboutdata.cpp:26
 #, kde-format
 msgid "Original Author (1998)"
 msgstr "원 작성자(1998년)"
 
-#: src/aboutdata.cpp:26
+#: src/aboutdata.cpp:27
 #, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
@@ -182,44 +182,44 @@ msgstr "David Bryant"
 msgid "Documentation (2019)"
 msgstr "문서화(2019년)"
 
-#: src/categoryselectwidget.cpp:93
+#: src/categoryselectwidget.cpp:94
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
 msgstr "분류 필터 초기화"
 
-#: src/categoryselectwidget.cpp:100
+#: src/categoryselectwidget.cpp:101
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
 msgstr "분류 필터 삭제"
 
-#: src/categoryselectwidget.cpp:104
+#: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
 msgstr "(태그 없음)"
 
-#: src/categoryselectwidget.cpp:109
+#: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
 msgstr "(그룹)"
 
-#: src/categoryselectwidget.cpp:115 src/categoryselectwidget.cpp:220
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
 msgstr "(모두)"
 
-#: src/categoryselectwidget.cpp:223
+#: src/categoryselectwidget.cpp:224
 #, kde-format
 msgid "(None)"
 msgstr "(없음)"
 
-#: src/categoryselectwidget.cpp:228
+#: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid ", "
 msgstr ", "
 
-#: src/categoryselectwidget.cpp:228
+#: src/categoryselectwidget.cpp:229
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
@@ -230,42 +230,42 @@ msgstr "<qt>분류 필터: %1"
 msgid "Enabled"
 msgstr "사용함"
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:68
 #, kde-format
 msgid "Tools Plugins"
 msgstr "도구 플러그인"
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:75
 #, kde-format
 msgid "Import/Export Plugins"
 msgstr "가져오기/내보내기 플러그인"
 
-#: src/contactinfoproxymodel.cpp:67
+#: src/contactinfoproxymodel.cpp:68
 #, kde-format
 msgid "..."
 msgstr "..."
 
-#: src/contactinfoproxymodel.cpp:69
+#: src/contactinfoproxymodel.cpp:70
 #, kde-format
 msgid "Loading contacts details ..."
 msgstr "연락처 정보 불러오는 중..."
 
-#: src/contactinfoproxymodel.cpp:122
+#: src/contactinfoproxymodel.cpp:123
 #, kde-format
 msgid "Email: %1"
 msgstr "이메일: %1"
 
-#: src/contactinfoproxymodel.cpp:130
+#: src/contactinfoproxymodel.cpp:131
 #, kde-format
 msgid "Phone: %1"
 msgstr "전화: %1"
 
-#: src/contactinfoproxymodel.cpp:136
+#: src/contactinfoproxymodel.cpp:137
 #, kde-format
 msgid "%1%2 %3"
 msgstr "%1%2 %3"
 
-#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#: src/contactinfoproxymodel.cpp:150 src/contactinfoproxymodel.cpp:167
 #, kde-format
 msgid "%1 %2 %3"
 msgstr "%1 %2 %3"
@@ -312,63 +312,63 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%2 중 %1"
 
-#: src/importexport/contactfields.cpp:20
+#: src/importexport/contactfields.cpp:21
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "정의되지 않음"
 
-#: src/importexport/contactfields.cpp:39
+#: src/importexport/contactfields.cpp:40
 #, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
 msgstr "기념일"
 
-#: src/importexport/contactfields.cpp:85
+#: src/importexport/contactfields.cpp:86
 #, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
 msgstr "이메일(선호)"
 
-#: src/importexport/contactfields.cpp:87
+#: src/importexport/contactfields.cpp:88
 #, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
 msgstr "이메일(2)"
 
-#: src/importexport/contactfields.cpp:89
+#: src/importexport/contactfields.cpp:90
 #, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
 msgstr "이메일(3)"
 
-#: src/importexport/contactfields.cpp:91
+#: src/importexport/contactfields.cpp:92
 #, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "이메일(4)"
 
-#: src/importexport/contactfields.cpp:107
+#: src/importexport/contactfields.cpp:108
 #, kde-format
 msgid "Profession"
 msgstr "직업"
 
-#: src/importexport/contactfields.cpp:109
+#: src/importexport/contactfields.cpp:110
 #, kde-format
 msgid "Office"
 msgstr "직장"
 
-#: src/importexport/contactfields.cpp:111
+#: src/importexport/contactfields.cpp:112
 #, kde-format
 msgid "Manager"
 msgstr "관리자"
 
-#: src/importexport/contactfields.cpp:113
+#: src/importexport/contactfields.cpp:114
 #, kde-format
 msgid "Assistant"
 msgstr "비서"
 
-#: src/importexport/contactfields.cpp:115
+#: src/importexport/contactfields.cpp:116
 #, kde-format
 msgid "Spouse"
 msgstr "배우자"
@@ -478,55 +478,55 @@ msgstr "연락처 수집"
 msgid "Fetch Contacts"
 msgstr "연락처 가져오기"
 
-#: src/importexport/exportselectionwidget.cpp:21
+#: src/importexport/exportselectionwidget.cpp:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "개인 필드"
 
-#: src/importexport/exportselectionwidget.cpp:22
+#: src/importexport/exportselectionwidget.cpp:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "직장 필드"
 
-#: src/importexport/exportselectionwidget.cpp:23
+#: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "기타 필드"
 
-#: src/importexport/exportselectionwidget.cpp:24
+#: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "암호화 키"
 
-#: src/importexport/exportselectionwidget.cpp:25
+#: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "그림"
 
-#: src/importexport/exportselectionwidget.cpp:26
+#: src/importexport/exportselectionwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "전체 이름으로 표시 이름 지정"
 
-#: src/importexport/exportselectionwidget.cpp:30
+#: src/importexport/exportselectionwidget.cpp:31
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "내보낼 필드"
 
-#: src/importexport/exportselectionwidget.cpp:36
+#: src/importexport/exportselectionwidget.cpp:37
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "개인 필드 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:38
+#: src/importexport/exportselectionwidget.cpp:39
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -534,13 +534,13 @@ msgid ""
 "vCard output file."
 msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 개인 필드를 내보냅니다."
 
-#: src/importexport/exportselectionwidget.cpp:42
+#: src/importexport/exportselectionwidget.cpp:43
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "직장 필드 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:44
+#: src/importexport/exportselectionwidget.cpp:45
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -548,13 +548,13 @@ msgid ""
 "vCard output file."
 msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 직장 필드를 내보냅니다."
 
-#: src/importexport/exportselectionwidget.cpp:48
+#: src/importexport/exportselectionwidget.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "기타 필드 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:50
+#: src/importexport/exportselectionwidget.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -562,13 +562,13 @@ msgid ""
 "output file."
 msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 기타 필드를 내보냅니다."
 
-#: src/importexport/exportselectionwidget.cpp:54
+#: src/importexport/exportselectionwidget.cpp:55
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "암호화 키 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:56
+#: src/importexport/exportselectionwidget.cpp:57
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -576,13 +576,13 @@ msgid ""
 "vCard output file."
 msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처의 암호화 키를 내보냅니다."
 
-#: src/importexport/exportselectionwidget.cpp:60
+#: src/importexport/exportselectionwidget.cpp:61
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "그림 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:62
+#: src/importexport/exportselectionwidget.cpp:63
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -590,19 +590,19 @@ msgid ""
 "output file."
 msgstr "이 옵션을 선택하면 vCard 출력 파일로 연락처 그림을 내보냅니다."
 
-#: src/importexport/exportselectionwidget.cpp:66
+#: src/importexport/exportselectionwidget.cpp:67
 #, kde-format
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "내보내기 옵션"
 
-#: src/importexport/exportselectionwidget.cpp:72
+#: src/importexport/exportselectionwidget.cpp:73
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "표시 이름을 연락처 전체 이름으로 내보내기"
 
-#: src/importexport/exportselectionwidget.cpp:74
+#: src/importexport/exportselectionwidget.cpp:75
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -637,25 +637,25 @@ msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "연락처 %1명을 %2(으)로 가져오는 중"
 
-#: src/kaddressbook_options.h:15
+#: src/kaddressbook_options.h:17
 #, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "지정한 파일 가져오기"
 
-#: src/kaddressbook_options.h:17
+#: src/kaddressbook_options.h:19
 #, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "'새 연락처' 대화 상자 열기"
 
-#: src/kaddressbook_options.h:19
+#: src/kaddressbook_options.h:21
 #, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr "URL로 지정한 연락처 표시"
 
-#: src/kaddressbook_options.h:22
+#: src/kaddressbook_options.h:23
 #, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
@@ -667,7 +667,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "사용자 피드백 옵션을 표시합니다"
 
-#: src/kaddressbookpart.cpp:68
+#: src/kaddressbookpart.cpp:70
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "KAddressBook 설정(&C)…"
@@ -748,83 +748,83 @@ msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "검색… <%1>"
 
-#: src/mainwidget.cpp:670
+#: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "전체 주소록을 인쇄하거나 일부만 인쇄할 수 있습니다."
 
-#: src/mainwidget.cpp:675
+#: src/mainwidget.cpp:671
 #, kde-format
 msgid "Quick search"
 msgstr "빠른 찾기"
 
-#: src/mainwidget.cpp:680
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Category filter"
 msgstr "분류 필터"
 
-#: src/mainwidget.cpp:685
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Select All"
 msgstr "모두 선택"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:683
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "현재 주소록 보기의 모든 연락처를 선택합니다."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR 코드 표시"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "연락처의 QR 코드를 표시합니다."
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:693
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "간단히(1열)"
 
-#: src/mainwidget.cpp:701
+#: src/mainwidget.cpp:697
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "주소록 보기의 간단한 모드를 사용합니다."
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:700
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "2열"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:706
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "3열"
 
-#: src/mainwidget.cpp:723
+#: src/mainwidget.cpp:719
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "빠른 검색에 포커스 맞추기"
 
-#: src/mainwidget.cpp:740
+#: src/mainwidget.cpp:736
 #, kde-format
 msgid "What's new"
 msgstr "새로운 기능"
 
-#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:785 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "연락처 인쇄"
 
-#: src/mainwindow.cpp:128
+#: src/mainwindow.cpp:130
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -832,7 +832,7 @@ msgid ""
 "wide shortcuts."
 msgstr "앱별 단축키를 설정할 수 있는 대화 상자가 열립니다."
 
-#: src/mainwindow.cpp:227
+#: src/mainwindow.cpp:229
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -840,13 +840,13 @@ msgid ""
 msgstr ""
 "<qt>메뉴 표시줄을 완전히 숨깁니다. %1 키를 눌러서 다시 볼 수 있습니다.</qt>"
 
-#: src/mainwindow.cpp:230
+#: src/mainwindow.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
 msgstr "메뉴 표시줄 숨기기"
 
-#: src/manageshowcollectionproperties.cpp:83
+#: src/manageshowcollectionproperties.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Address Book Folder %1"
@@ -867,7 +867,7 @@ msgstr "성"
 msgid "Given Name"
 msgstr "이름"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:131
 #, kde-format
 msgid "Home Address"
 msgstr "집 주소"
@@ -898,28 +898,28 @@ msgid "Compact Style"
 msgstr "간략한 스타일"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailed/detailledstyle.cpp:262
-#: src/printing/grantlee/grantleeprintstyle.cpp:41
-#: src/printing/mike/mikesstyle.cpp:116
-#: src/printing/ringbinder/ringbinderstyle.cpp:168
+#: src/printing/detailed/detailledstyle.cpp:263
+#: src/printing/grantlee/grantleeprintstyle.cpp:43
+#: src/printing/mike/mikesstyle.cpp:118
+#: src/printing/ringbinder/ringbinderstyle.cpp:169
 #, kde-format
 msgid "Setting up document"
 msgstr "문서 설정"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailed/detailledstyle.cpp:269
-#: src/printing/grantlee/grantleeprintstyle.cpp:50
-#: src/printing/mike/mikesstyle.cpp:123
-#: src/printing/ringbinder/ringbinderstyle.cpp:201
+#: src/printing/detailed/detailledstyle.cpp:270
+#: src/printing/grantlee/grantleeprintstyle.cpp:52
+#: src/printing/mike/mikesstyle.cpp:125
+#: src/printing/ringbinder/ringbinderstyle.cpp:202
 #, kde-format
 msgid "Printing"
 msgstr "인쇄 중"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailed/detailledstyle.cpp:273
-#: src/printing/grantlee/grantleeprintstyle.cpp:54
-#: src/printing/mike/mikesstyle.cpp:127
-#: src/printing/ringbinder/ringbinderstyle.cpp:205
+#: src/printing/detailed/detailledstyle.cpp:274
+#: src/printing/grantlee/grantleeprintstyle.cpp:56
+#: src/printing/mike/mikesstyle.cpp:129
+#: src/printing/ringbinder/ringbinderstyle.cpp:206
 #, kde-format
 msgctxt "Finished printing"
 msgid "Done"
@@ -1042,84 +1042,84 @@ msgstr "매 줄마다 배경색 변경"
 msgid "Alternating the background color"
 msgstr "매 줄마다 배경색 변경"
 
-#: src/printing/detailed/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:75
 #, kde-format
 msgid "Organization:"
 msgstr "조직:"
 
-#: src/printing/detailed/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:83
 #, kde-format
 msgid "Email address:"
 msgstr "이메일 주소:"
 
-#: src/printing/detailed/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:83
 #, kde-format
 msgid "Email addresses:"
 msgstr "이메일 주소:"
 
-#: src/printing/detailed/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephone:"
 msgstr "전화번호:"
 
-#: src/printing/detailed/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephones:"
 msgstr "전화번호:"
 
-#: src/printing/detailed/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:105
 #, kde-format
 msgid "Web page:"
 msgstr "홈페이지:"
 
-#: src/printing/detailed/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:119
 #, kde-format
 msgid "Domestic Address"
 msgstr "국내 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:122
 #, kde-format
 msgid "International Address"
 msgstr "국제 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:125
 #, kde-format
 msgid "Postal Address"
 msgstr "우편 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:128
 #, kde-format
 msgid "Parcel Address"
 msgstr "소포 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:134
 #, kde-format
 msgid "Work Address"
 msgstr "회사 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:138
 #, kde-format
 msgid "Preferred Address"
 msgstr "선호하는 주소"
 
-#: src/printing/detailed/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:149
 #, kde-format
 msgid "Notes:"
 msgstr "메모:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/detailledstyle.cpp:233
 #: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "자세한 인쇄 스타일 - 모양"
 
-#: src/printing/detailed/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:246
 #, kde-format
 msgid "Setting up colors"
 msgstr "색 설정"
 
-#: src/printing/detailed/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:289
 #, kde-format
 msgid "Detailed Style"
 msgstr "자세한 스타일"
@@ -1176,44 +1176,44 @@ msgid ""
 "color for the headline text."
 msgstr "이 단추를 클릭하면 머리글 글자색을 변경할 수 있는 색 선택기를 엽니다."
 
-#: src/printing/mike/mikesstyle.cpp:142
+#: src/printing/mike/mikesstyle.cpp:144
 #, kde-format
 msgid "Mike's Printing Style"
 msgstr "Mike의 인쇄 스타일"
 
-#: src/printing/printingwizard.cpp:47
+#: src/printing/printingwizard.cpp:49
 #, kde-format
 msgid "Which contacts do you want to print?"
 msgstr "어떤 연락처를 인쇄하시겠습니까?"
 
-#: src/printing/printingwizard.cpp:49
+#: src/printing/printingwizard.cpp:51
 #, kde-format
 msgid "Choose Contacts to Print"
 msgstr "인쇄할 연락처 선택"
 
-#: src/printing/printingwizard.cpp:55
+#: src/printing/printingwizard.cpp:57
 #, kde-format
 msgid "Choose Printing Style"
 msgstr "인쇄 스타일 선택"
 
-#: src/printing/printingwizard.cpp:202
+#: src/printing/printingwizard.cpp:204
 #, kde-format
 msgid "Print Progress"
 msgstr "인쇄 진행"
 
-#: src/printing/printprogress.cpp:24
+#: src/printing/printprogress.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "인쇄: 진행 중"
 
-#: src/printing/printprogress.cpp:31
+#: src/printing/printprogress.cpp:32
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p%"
 
-#: src/printing/printprogress.cpp:43
+#: src/printing/printprogress.cpp:44
 #, kde-format
 msgid "Progress"
 msgstr "진행"
@@ -1314,51 +1314,51 @@ msgstr "연락처 메모 인쇄"
 msgid "Check this box if you want contact notes to be printed."
 msgstr "연락처 메모를 인쇄하려면 선택하십시오."
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:80
+#: src/printing/ringbinder/ringbinderstyle.cpp:82
 #, kde-format
 msgid "Note: "
 msgstr "메모:"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:136
+#: src/printing/ringbinder/ringbinderstyle.cpp:137
 #, kde-format
 msgid "Ring Binder Printing Style - Appearance"
 msgstr "링 바인더 인쇄 스타일 - 모양"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:152
+#: src/printing/ringbinder/ringbinderstyle.cpp:153
 #, kde-format
 msgid "Setting up fields"
 msgstr "필드 설정"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:220
+#: src/printing/ringbinder/ringbinderstyle.cpp:221
 #, kde-format
 msgid "Printout for Ring Binders"
 msgstr "링 바인더용으로 인쇄"
 
-#: src/printing/stylepage.cpp:36
+#: src/printing/stylepage.cpp:37
 #, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "오름차순"
 
-#: src/printing/stylepage.cpp:37
+#: src/printing/stylepage.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "내림차순"
 
-#: src/printing/stylepage.cpp:47
+#: src/printing/stylepage.cpp:48
 #, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
 msgstr "(미리 볼 수 없습니다.)"
 
-#: src/printing/stylepage.cpp:109
+#: src/printing/stylepage.cpp:110
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
 msgstr "인쇄 스타일 선택"
 
-#: src/printing/stylepage.cpp:114
+#: src/printing/stylepage.cpp:115
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -1371,25 +1371,25 @@ msgstr ""
 "다.\n"
 "필요한 스타일을 선택하십시오."
 
-#: src/printing/stylepage.cpp:121
+#: src/printing/stylepage.cpp:122
 #, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "정렬"
 
-#: src/printing/stylepage.cpp:126
+#: src/printing/stylepage.cpp:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "기준:"
 
-#: src/printing/stylepage.cpp:130
+#: src/printing/stylepage.cpp:131
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
 msgstr "주 정렬 필드 선택"
 
-#: src/printing/stylepage.cpp:132
+#: src/printing/stylepage.cpp:133
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1400,19 +1400,19 @@ msgstr ""
 "인쇄물에서 연락처를 정렬할 필드를 이 목록에서 선택하십시오. 정렬 순서 옵션을 "
 "사용하여 오름차순 및 내림차순 정렬을 결정할 수 있습니다."
 
-#: src/printing/stylepage.cpp:137
+#: src/printing/stylepage.cpp:138
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "순서:"
 
-#: src/printing/stylepage.cpp:141
+#: src/printing/stylepage.cpp:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
 msgstr "정렬 순서 선택"
 
-#: src/printing/stylepage.cpp:143
+#: src/printing/stylepage.cpp:144
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1423,30 +1423,30 @@ msgstr ""
 "연락처를 오름차순 및 내림차순으로 정렬할 것인지 선택하십시오. 정렬 기준 옵션"
 "을 사용하여 정렬할 때 사용할 필드를 지정하십시오."
 
-#: src/printing/stylepage.cpp:150
+#: src/printing/stylepage.cpp:151
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "인쇄 스타일"
 
-#: src/printing/stylepage.cpp:155
+#: src/printing/stylepage.cpp:156
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
 msgstr "인쇄 스타일 선택"
 
-#: src/printing/stylepage.cpp:156
+#: src/printing/stylepage.cpp:157
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr "인쇄 스타일을 선택하십시오. 미리 보기 그림을 참조할 수 있습니다."
 
-#: src/whatsnew/whatsnewtranslations.cpp:16
+#: src/whatsnew/whatsnewtranslations.cpp:17
 msgid "Add new whatsnew widget."
 msgstr "새 새로운 항목 위젯을 추가합니다."
 
-#: src/whatsnew/whatsnewtranslations.cpp:30
+#: src/whatsnew/whatsnewtranslations.cpp:31
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr "설정 대화 상자 크기를 복원합니다."

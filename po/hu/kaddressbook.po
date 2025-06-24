@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.3\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-21 00:43+0000\n"
+"POT-Creation-Date: 2025-06-24 00:43+0000\n"
 "PO-Revision-Date: 2025-01-27 21:09+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 "kelemeng@gnome.hu,ulysses@fsf.hu,lutring.mark@gmail.com,tszanto@interware.hu"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
+#: src/mainwidget.cpp:752 src/mainwidget.cpp:779
 #, kde-format
 msgid "Address Book"
 msgstr "Címjegyzék"
@@ -91,14 +91,14 @@ msgid "Email"
 msgstr "E-mail cím"
 
 #: src/viewertemplates/contact_embedded.html:75
-#: src/importexport/contactfields.cpp:105
+#: src/importexport/contactfields.cpp:106
 #, kde-format
 msgid "Blog Feed"
 msgstr "Hírcsatorna"
 
-#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:17
-#: src/kaddressbookpart.cpp:30 src/kaddressbookpart.cpp:43
-#: src/mainwidget.cpp:748 src/mainwindow.cpp:85
+#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
+#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:45
+#: src/mainwidget.cpp:744 src/mainwindow.cpp:87
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -130,50 +130,50 @@ msgid ""
 "You will be presented with a dialog where you can create a new contact group."
 msgstr "Megjelenik egy párbeszédablak, ahol új névjegycsoport hozhat létre."
 
-#: src/aboutdata.cpp:19
+#: src/aboutdata.cpp:20
 #, kde-format
 msgid "The KDE Address Book Application"
 msgstr "A KDE címjegyzék-alkalmazása"
 
-#: src/aboutdata.cpp:21
+#: src/aboutdata.cpp:22
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
 msgstr "Copyright © A KAddressBook szerzői, 2007-%1."
 
-#: src/aboutdata.cpp:23
+#: src/aboutdata.cpp:24
 #, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/aboutdata.cpp:23
+#: src/aboutdata.cpp:24
 #, kde-format
 msgid "Current maintainer"
 msgstr "Jelenlegi karbantartó"
 
-#: src/aboutdata.cpp:24
+#: src/aboutdata.cpp:25
 #, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Tobias König"
 
-#: src/aboutdata.cpp:24
+#: src/aboutdata.cpp:25
 #, kde-format
 msgid "Previous maintainer"
 msgstr "Előző karbantartó"
 
-#: src/aboutdata.cpp:25
+#: src/aboutdata.cpp:26
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
 msgstr "Stefan Taferner"
 
-#: src/aboutdata.cpp:25
+#: src/aboutdata.cpp:26
 #, kde-format
 msgid "Original Author (1998)"
 msgstr "Eredeti szerző (1998)"
 
-#: src/aboutdata.cpp:26
+#: src/aboutdata.cpp:27
 #, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
@@ -184,44 +184,44 @@ msgstr "David Bryant"
 msgid "Documentation (2019)"
 msgstr "Dokumentáció (2019)"
 
-#: src/categoryselectwidget.cpp:93
+#: src/categoryselectwidget.cpp:94
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
 msgstr "Kategóriaszűrő visszaállítása"
 
-#: src/categoryselectwidget.cpp:100
+#: src/categoryselectwidget.cpp:101
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
 msgstr "Kategóriaszűrő törlése"
 
-#: src/categoryselectwidget.cpp:104
+#: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
 msgstr "(Címkézetlen)"
 
-#: src/categoryselectwidget.cpp:109
+#: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
 msgstr "(Csoportok)"
 
-#: src/categoryselectwidget.cpp:115 src/categoryselectwidget.cpp:220
+#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
 msgstr "(Mind)"
 
-#: src/categoryselectwidget.cpp:223
+#: src/categoryselectwidget.cpp:224
 #, kde-format
 msgid "(None)"
 msgstr "(Nincs)"
 
-#: src/categoryselectwidget.cpp:228
+#: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid ", "
 msgstr ", "
 
-#: src/categoryselectwidget.cpp:228
+#: src/categoryselectwidget.cpp:229
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
@@ -232,42 +232,42 @@ msgstr "<qt>Kategóriaszűrő: %1"
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:68
 #, kde-format
 msgid "Tools Plugins"
 msgstr "Eszköztár-bővítmények"
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:75
 #, kde-format
 msgid "Import/Export Plugins"
 msgstr "Import/export bővítmények"
 
-#: src/contactinfoproxymodel.cpp:67
+#: src/contactinfoproxymodel.cpp:68
 #, kde-format
 msgid "..."
 msgstr "…"
 
-#: src/contactinfoproxymodel.cpp:69
+#: src/contactinfoproxymodel.cpp:70
 #, kde-format
 msgid "Loading contacts details ..."
 msgstr "Válasszon névjegyeket ..."
 
-#: src/contactinfoproxymodel.cpp:122
+#: src/contactinfoproxymodel.cpp:123
 #, kde-format
 msgid "Email: %1"
 msgstr "E-mail cím: %1"
 
-#: src/contactinfoproxymodel.cpp:130
+#: src/contactinfoproxymodel.cpp:131
 #, kde-format
 msgid "Phone: %1"
 msgstr "Telefon: %1"
 
-#: src/contactinfoproxymodel.cpp:136
+#: src/contactinfoproxymodel.cpp:137
 #, kde-format
 msgid "%1%2 %3"
 msgstr "%1%2 %3"
 
-#: src/contactinfoproxymodel.cpp:149 src/contactinfoproxymodel.cpp:166
+#: src/contactinfoproxymodel.cpp:150 src/contactinfoproxymodel.cpp:167
 #, kde-format
 msgid "%1 %2 %3"
 msgstr "%1 %2 %3"
@@ -314,63 +314,63 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%1, összesen: %2"
 
-#: src/importexport/contactfields.cpp:20
+#: src/importexport/contactfields.cpp:21
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Nem ismert"
 
-#: src/importexport/contactfields.cpp:39
+#: src/importexport/contactfields.cpp:40
 #, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
 msgstr "Évforduló"
 
-#: src/importexport/contactfields.cpp:85
+#: src/importexport/contactfields.cpp:86
 #, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
 msgstr "E-mail (előnyben részesített)"
 
-#: src/importexport/contactfields.cpp:87
+#: src/importexport/contactfields.cpp:88
 #, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
 msgstr "E-mail (2)"
 
-#: src/importexport/contactfields.cpp:89
+#: src/importexport/contactfields.cpp:90
 #, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
 msgstr "E-mail (3)"
 
-#: src/importexport/contactfields.cpp:91
+#: src/importexport/contactfields.cpp:92
 #, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "E-mail (4)"
 
-#: src/importexport/contactfields.cpp:107
+#: src/importexport/contactfields.cpp:108
 #, kde-format
 msgid "Profession"
 msgstr "Foglalkozás"
 
-#: src/importexport/contactfields.cpp:109
+#: src/importexport/contactfields.cpp:110
 #, kde-format
 msgid "Office"
 msgstr "Munkahely"
 
-#: src/importexport/contactfields.cpp:111
+#: src/importexport/contactfields.cpp:112
 #, kde-format
 msgid "Manager"
 msgstr "Főnök"
 
-#: src/importexport/contactfields.cpp:113
+#: src/importexport/contactfields.cpp:114
 #, kde-format
 msgid "Assistant"
 msgstr "Asszisztens"
 
-#: src/importexport/contactfields.cpp:115
+#: src/importexport/contactfields.cpp:116
 #, kde-format
 msgid "Spouse"
 msgstr "Házastárs"
@@ -486,55 +486,55 @@ msgstr "Névjegyek gyűjtése"
 msgid "Fetch Contacts"
 msgstr "Névjegyek beolvasása"
 
-#: src/importexport/exportselectionwidget.cpp:21
+#: src/importexport/exportselectionwidget.cpp:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Személyes mezők"
 
-#: src/importexport/exportselectionwidget.cpp:22
+#: src/importexport/exportselectionwidget.cpp:23
 #, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Üzleti mezők"
 
-#: src/importexport/exportselectionwidget.cpp:23
+#: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Egyéb mezők"
 
-#: src/importexport/exportselectionwidget.cpp:24
+#: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Titkosítási kulcsok"
 
-#: src/importexport/exportselectionwidget.cpp:25
+#: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Képek"
 
-#: src/importexport/exportselectionwidget.cpp:26
+#: src/importexport/exportselectionwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "Név megjelenítése teljes névként"
 
-#: src/importexport/exportselectionwidget.cpp:30
+#: src/importexport/exportselectionwidget.cpp:31
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Exportálandó mezők"
 
-#: src/importexport/exportselectionwidget.cpp:36
+#: src/importexport/exportselectionwidget.cpp:37
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Személyes mezők exportálása"
 
-#: src/importexport/exportselectionwidget.cpp:38
+#: src/importexport/exportselectionwidget.cpp:39
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -544,13 +544,13 @@ msgstr ""
 "Jelölje be ezt a négyzetet, ha exportálni szeretné a névjegy személyes "
 "mezőit a kimeneti vCard fájlba."
 
-#: src/importexport/exportselectionwidget.cpp:42
+#: src/importexport/exportselectionwidget.cpp:43
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Üzleti mezők exportálása"
 
-#: src/importexport/exportselectionwidget.cpp:44
+#: src/importexport/exportselectionwidget.cpp:45
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -560,13 +560,13 @@ msgstr ""
 "Jelölje be ezt a négyzetet, ha exportálni szeretné a névjegy üzleti mezőit a "
 "kimeneti vCard fájlba."
 
-#: src/importexport/exportselectionwidget.cpp:48
+#: src/importexport/exportselectionwidget.cpp:49
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Egyéb mezők exportálása"
 
-#: src/importexport/exportselectionwidget.cpp:50
+#: src/importexport/exportselectionwidget.cpp:51
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -576,13 +576,13 @@ msgstr ""
 "Jelölje be ezt a négyzetet, ha exportálni szeretné a névjegy egyéb mezőit a "
 "kimeneti vCard fájlba."
 
-#: src/importexport/exportselectionwidget.cpp:54
+#: src/importexport/exportselectionwidget.cpp:55
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Titkosítási kulcsok exportálása"
 
-#: src/importexport/exportselectionwidget.cpp:56
+#: src/importexport/exportselectionwidget.cpp:57
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -592,13 +592,13 @@ msgstr ""
 "Jelölje be ezt a négyzetet, ha exportálni szeretné a névjegy titkosítási "
 "kulcsait a kimeneti vCard fájlba."
 
-#: src/importexport/exportselectionwidget.cpp:60
+#: src/importexport/exportselectionwidget.cpp:61
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Képek exportálása"
 
-#: src/importexport/exportselectionwidget.cpp:62
+#: src/importexport/exportselectionwidget.cpp:63
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -608,19 +608,19 @@ msgstr ""
 "Jelölje be ezt a négyzetet, ha exportálni szeretné a névjegy képeit a "
 "kimeneti vCard fájlba."
 
-#: src/importexport/exportselectionwidget.cpp:66
+#: src/importexport/exportselectionwidget.cpp:67
 #, kde-format
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Exportálási beállítások"
 
-#: src/importexport/exportselectionwidget.cpp:72
+#: src/importexport/exportselectionwidget.cpp:73
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "A megjelenített név exportálása teljes névként"
 
-#: src/importexport/exportselectionwidget.cpp:74
+#: src/importexport/exportselectionwidget.cpp:75
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -658,25 +658,25 @@ msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "Névjegy importálása ebbe: %2"
 msgstr[1] "%1 névjegy importálása ebbe: %2"
 
-#: src/kaddressbook_options.h:15
+#: src/kaddressbook_options.h:17
 #, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "A megadott fájl importálása"
 
-#: src/kaddressbook_options.h:17
+#: src/kaddressbook_options.h:19
 #, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
 msgstr "Az „Új névjegy” ablak megnyitása"
 
-#: src/kaddressbook_options.h:19
+#: src/kaddressbook_options.h:21
 #, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
 msgstr "A megadott névjegy megjelenítése (URL-címmel)"
 
-#: src/kaddressbook_options.h:22
+#: src/kaddressbook_options.h:23
 #, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
@@ -690,7 +690,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Felsorolja a felhasználói visszajelzés lehetőségeit"
 
-#: src/kaddressbookpart.cpp:68
+#: src/kaddressbookpart.cpp:70
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "A KAddressBook &beállítása…"
@@ -771,83 +771,83 @@ msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Keresés… <%1>"
 
-#: src/mainwidget.cpp:670
+#: src/mainwidget.cpp:666
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "A teljes címjegyzék vagy a kiválasztott névjegyek nyomtatása."
 
-#: src/mainwidget.cpp:675
+#: src/mainwidget.cpp:671
 #, kde-format
 msgid "Quick search"
 msgstr "Gyorskeresés"
 
-#: src/mainwidget.cpp:680
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Category filter"
 msgstr "Kategóriaszűrő"
 
-#: src/mainwidget.cpp:685
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Select All"
 msgstr "Minden kijelölése"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:683
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Az aktuális nézetben látható összes névjegy kiválasztása."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:687
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR kódok megjelenítése"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "QR kódok megjelenítése a névjegyben."
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:693
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Egyszerű (egy oszlopos)"
 
-#: src/mainwidget.cpp:701
+#: src/mainwidget.cpp:697
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "A címjegyzék nézet egyszerű módjának megjelenítése."
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:700
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Két oszlopos"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:706
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Három oszlopos"
 
-#: src/mainwidget.cpp:723
+#: src/mainwidget.cpp:719
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Fókusz a gyorskeresőre"
 
-#: src/mainwidget.cpp:740
+#: src/mainwidget.cpp:736
 #, kde-format
 msgid "What's new"
 msgstr "Újdonságok"
 
-#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:44
+#: src/mainwidget.cpp:785 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Névjegyek nyomtatása"
 
-#: src/mainwindow.cpp:128
+#: src/mainwindow.cpp:130
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -857,7 +857,7 @@ msgstr ""
 "Megjelenik egy párbeszédablak, ahol módosíthatja az alkalmazás-szintű "
 "gyorsbillentyűket."
 
-#: src/mainwindow.cpp:227
+#: src/mainwindow.cpp:229
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -866,13 +866,13 @@ msgstr ""
 "<qt>Teljesen elrejti a menüsávot. A(z) %1 begépelésével jelenítheti meg "
 "ismét.</qt>"
 
-#: src/mainwindow.cpp:230
+#: src/mainwindow.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
 msgstr "Menüsáv elrejtése"
 
-#: src/manageshowcollectionproperties.cpp:83
+#: src/manageshowcollectionproperties.cpp:85
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Address Book Folder %1"
@@ -893,7 +893,7 @@ msgstr "Vezetéknév"
 msgid "Given Name"
 msgstr "Utónév"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:131
 #, kde-format
 msgid "Home Address"
 msgstr "Postai cím (otthoni)"
@@ -924,28 +924,28 @@ msgid "Compact Style"
 msgstr "Kompakt stílus"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailed/detailledstyle.cpp:262
-#: src/printing/grantlee/grantleeprintstyle.cpp:41
-#: src/printing/mike/mikesstyle.cpp:116
-#: src/printing/ringbinder/ringbinderstyle.cpp:168
+#: src/printing/detailed/detailledstyle.cpp:263
+#: src/printing/grantlee/grantleeprintstyle.cpp:43
+#: src/printing/mike/mikesstyle.cpp:118
+#: src/printing/ringbinder/ringbinderstyle.cpp:169
 #, kde-format
 msgid "Setting up document"
 msgstr "Dokumentum beállítása"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailed/detailledstyle.cpp:269
-#: src/printing/grantlee/grantleeprintstyle.cpp:50
-#: src/printing/mike/mikesstyle.cpp:123
-#: src/printing/ringbinder/ringbinderstyle.cpp:201
+#: src/printing/detailed/detailledstyle.cpp:270
+#: src/printing/grantlee/grantleeprintstyle.cpp:52
+#: src/printing/mike/mikesstyle.cpp:125
+#: src/printing/ringbinder/ringbinderstyle.cpp:202
 #, kde-format
 msgid "Printing"
 msgstr "Nyomtatás"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailed/detailledstyle.cpp:273
-#: src/printing/grantlee/grantleeprintstyle.cpp:54
-#: src/printing/mike/mikesstyle.cpp:127
-#: src/printing/ringbinder/ringbinderstyle.cpp:205
+#: src/printing/detailed/detailledstyle.cpp:274
+#: src/printing/grantlee/grantleeprintstyle.cpp:56
+#: src/printing/mike/mikesstyle.cpp:129
+#: src/printing/ringbinder/ringbinderstyle.cpp:206
 #, kde-format
 msgctxt "Finished printing"
 msgid "Done"
@@ -1069,84 +1069,84 @@ msgstr "A háttérszín megváltoztatása minden sornál"
 msgid "Alternating the background color"
 msgstr "Váltakozó háttérszín"
 
-#: src/printing/detailed/detailledstyle.cpp:74
+#: src/printing/detailed/detailledstyle.cpp:75
 #, kde-format
 msgid "Organization:"
 msgstr "Szervezet:"
 
-#: src/printing/detailed/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:83
 #, kde-format
 msgid "Email address:"
 msgstr "E-mail cím:"
 
-#: src/printing/detailed/detailledstyle.cpp:82
+#: src/printing/detailed/detailledstyle.cpp:83
 #, kde-format
 msgid "Email addresses:"
 msgstr "E-mail címek:"
 
-#: src/printing/detailed/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephone:"
 msgstr "Telefon:"
 
-#: src/printing/detailed/detailledstyle.cpp:92
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephones:"
 msgstr "Telefonszámok:"
 
-#: src/printing/detailed/detailledstyle.cpp:104
+#: src/printing/detailed/detailledstyle.cpp:105
 #, kde-format
 msgid "Web page:"
 msgstr "Weboldal:"
 
-#: src/printing/detailed/detailledstyle.cpp:118
+#: src/printing/detailed/detailledstyle.cpp:119
 #, kde-format
 msgid "Domestic Address"
 msgstr "Cím (belföldi)"
 
-#: src/printing/detailed/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:122
 #, kde-format
 msgid "International Address"
 msgstr "Cím (nemzetközi)"
 
-#: src/printing/detailed/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:125
 #, kde-format
 msgid "Postal Address"
 msgstr "Postai cím"
 
-#: src/printing/detailed/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:128
 #, kde-format
 msgid "Parcel Address"
 msgstr "Kézbesítési cím"
 
-#: src/printing/detailed/detailledstyle.cpp:133
+#: src/printing/detailed/detailledstyle.cpp:134
 #, kde-format
 msgid "Work Address"
 msgstr "Munkahelyi cím"
 
-#: src/printing/detailed/detailledstyle.cpp:137
+#: src/printing/detailed/detailledstyle.cpp:138
 #, kde-format
 msgid "Preferred Address"
 msgstr "Az elsődleges cím"
 
-#: src/printing/detailed/detailledstyle.cpp:148
+#: src/printing/detailed/detailledstyle.cpp:149
 #, kde-format
 msgid "Notes:"
 msgstr "Megjegyzések:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailed/detailledstyle.cpp:232
+#: src/printing/detailed/detailledstyle.cpp:233
 #: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Részletes nyomtatási stílus - Megjelenés"
 
-#: src/printing/detailed/detailledstyle.cpp:245
+#: src/printing/detailed/detailledstyle.cpp:246
 #, kde-format
 msgid "Setting up colors"
 msgstr "Színek beállítása"
 
-#: src/printing/detailed/detailledstyle.cpp:288
+#: src/printing/detailed/detailledstyle.cpp:289
 #, kde-format
 msgid "Detailed Style"
 msgstr "Részletes stílus"
@@ -1207,44 +1207,44 @@ msgstr ""
 "Kattintson erre a gombra a színválasztó elindításához, amely lehetővé teszi "
 "a fejléc szöveg színének beállítását."
 
-#: src/printing/mike/mikesstyle.cpp:142
+#: src/printing/mike/mikesstyle.cpp:144
 #, kde-format
 msgid "Mike's Printing Style"
 msgstr "Mike nyomtatási stílusa"
 
-#: src/printing/printingwizard.cpp:47
+#: src/printing/printingwizard.cpp:49
 #, kde-format
 msgid "Which contacts do you want to print?"
 msgstr "Mely névjegyeket szeretné kinyomtatni?"
 
-#: src/printing/printingwizard.cpp:49
+#: src/printing/printingwizard.cpp:51
 #, kde-format
 msgid "Choose Contacts to Print"
 msgstr "Válassza ki a kinyomtatni kívánt névjegyeket"
 
-#: src/printing/printingwizard.cpp:55
+#: src/printing/printingwizard.cpp:57
 #, kde-format
 msgid "Choose Printing Style"
 msgstr "Válassza ki a nyomtatási stílust"
 
-#: src/printing/printingwizard.cpp:202
+#: src/printing/printingwizard.cpp:204
 #, kde-format
 msgid "Print Progress"
 msgstr "A nyomtatás állása"
 
-#: src/printing/printprogress.cpp:24
+#: src/printing/printprogress.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "Nyomtatás: állapot"
 
-#: src/printing/printprogress.cpp:31
+#: src/printing/printprogress.cpp:32
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
 msgstr "%p%"
 
-#: src/printing/printprogress.cpp:43
+#: src/printing/printprogress.cpp:44
 #, kde-format
 msgid "Progress"
 msgstr "Állapot"
@@ -1353,51 +1353,51 @@ msgid "Check this box if you want contact notes to be printed."
 msgstr ""
 "Jelölje be ezt a négyzetet, ha ki szeretné nyomtatni a partner jegyzeteit."
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:80
+#: src/printing/ringbinder/ringbinderstyle.cpp:82
 #, kde-format
 msgid "Note: "
 msgstr "Megjegyzés:"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:136
+#: src/printing/ringbinder/ringbinderstyle.cpp:137
 #, kde-format
 msgid "Ring Binder Printing Style - Appearance"
 msgstr "Részletes nyomtatási stílus - Megjelenés"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:152
+#: src/printing/ringbinder/ringbinderstyle.cpp:153
 #, kde-format
 msgid "Setting up fields"
 msgstr "Mezők beállítása"
 
-#: src/printing/ringbinder/ringbinderstyle.cpp:220
+#: src/printing/ringbinder/ringbinderstyle.cpp:221
 #, kde-format
 msgid "Printout for Ring Binders"
 msgstr "Részletes megjelenési stílus"
 
-#: src/printing/stylepage.cpp:36
+#: src/printing/stylepage.cpp:37
 #, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "Növekvő"
 
-#: src/printing/stylepage.cpp:37
+#: src/printing/stylepage.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "Csökkenő"
 
-#: src/printing/stylepage.cpp:47
+#: src/printing/stylepage.cpp:48
 #, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
 msgstr "(Nem áll rendelkezésre előnézet.)"
 
-#: src/printing/stylepage.cpp:109
+#: src/printing/stylepage.cpp:110
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
 msgstr "Válassza ki a nyomtatási stílust"
 
-#: src/printing/stylepage.cpp:114
+#: src/printing/stylepage.cpp:115
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -1410,25 +1410,25 @@ msgstr ""
 "rendelkezik.\n"
 "Válassza ki a megfelelő stílust az alábbiak közül."
 
-#: src/printing/stylepage.cpp:121
+#: src/printing/stylepage.cpp:122
 #, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "Rendezés"
 
-#: src/printing/stylepage.cpp:126
+#: src/printing/stylepage.cpp:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "Feltétel:"
 
-#: src/printing/stylepage.cpp:130
+#: src/printing/stylepage.cpp:131
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
 msgstr "Válassza ki az elsődleges rendezőmezőt"
 
-#: src/printing/stylepage.cpp:132
+#: src/printing/stylepage.cpp:133
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1441,19 +1441,19 @@ msgstr ""
 "annak meghatározásához, hogy a rendezés növekvő vagy csökkenő sorrendben "
 "legyen."
 
-#: src/printing/stylepage.cpp:137
+#: src/printing/stylepage.cpp:138
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "Sorrend:"
 
-#: src/printing/stylepage.cpp:141
+#: src/printing/stylepage.cpp:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
 msgstr "Rendezési sorrend kiválasztása"
 
-#: src/printing/stylepage.cpp:143
+#: src/printing/stylepage.cpp:144
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1465,19 +1465,19 @@ msgstr ""
 "rendezni. Használja a rendezési feltétel lehetőséget annak megadásához, hogy "
 "mely névjegymező szerint legyen a rendezés végrehajtva."
 
-#: src/printing/stylepage.cpp:150
+#: src/printing/stylepage.cpp:151
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Nyomtatási stílus"
 
-#: src/printing/stylepage.cpp:155
+#: src/printing/stylepage.cpp:156
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
 msgstr "Nyomtatási stílus kiválasztása"
 
-#: src/printing/stylepage.cpp:156
+#: src/printing/stylepage.cpp:157
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1486,11 +1486,11 @@ msgstr ""
 "Válassza ki a kívánt nyomtatási stílust. Nézze meg az előnézeti képet, hogy "
 "segítsen döntést hozni."
 
-#: src/whatsnew/whatsnewtranslations.cpp:16
+#: src/whatsnew/whatsnewtranslations.cpp:17
 msgid "Add new whatsnew widget."
 msgstr "Újdonságok elem hozzáadása."
 
-#: src/whatsnew/whatsnewtranslations.cpp:30
+#: src/whatsnew/whatsnewtranslations.cpp:31
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr "Beállítóablak méretének visszaállítása."
