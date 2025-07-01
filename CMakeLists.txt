@@ -59,9 +59,7 @@ if(DEFINED KDEPIM_DEV_VERSION)
     set(KDEPIM_DEV_VERSION " ${KDEPIM_DEV_VERSION}")
 endif()
 
-set(KDEPIM_VERSION
-    "${PIM_VERSION}${KDEPIM_DEV_VERSION} (${RELEASE_SERVICE_VERSION})"
-)
+set(KDEPIM_VERSION "${PIM_VERSION}${KDEPIM_DEV_VERSION} (${RELEASE_SERVICE_VERSION})")
 
 set(AKONADI_VERSION "6.4.41")
 set(KONTACTINTERFACE_LIB_VERSION "6.4.40")
@@ -73,7 +71,11 @@ find_package(
     Qt6
     ${QT_REQUIRED_VERSION}
     CONFIG
-    REQUIRED Widgets Test DBus PrintSupport
+    REQUIRED
+        Widgets
+        Test
+        DBus
+        PrintSupport
 )
 set(LIBKDEPIM_LIB_VERSION "6.4.40")
 set(LIBGRANTLEETHEME_LIB_VERSION "6.4.40")
@@ -92,25 +94,27 @@ find_package(KF6ColorScheme ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6DocTools ${KF_MIN_VERSION})
 set_package_properties(
     KF6DocTools
-    PROPERTIES DESCRIPTION "Tools to generate documentation" TYPE OPTIONAL
+    PROPERTIES
+        DESCRIPTION
+            "Tools to generate documentation"
+        TYPE
+            OPTIONAL
 )
 
 find_package(KF6UserFeedback ${KF_MIN_VERSION})
 set_package_properties(
     KF6UserFeedback
     PROPERTIES
-        DESCRIPTION "User Feedback lib"
-        TYPE OPTIONAL
-        PURPOSE "Allow to send Telemetry Information (optional)."
+        DESCRIPTION
+            "User Feedback lib"
+        TYPE
+            OPTIONAL
+        PURPOSE
+            "Allow to send Telemetry Information (optional)."
 )
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
-find_package(
-    KPim6KontactInterface
-    ${KONTACTINTERFACE_LIB_VERSION}
-    CONFIG
-    REQUIRED
-)
+find_package(KPim6KontactInterface ${KONTACTINTERFACE_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6Libkdepim ${LIBKDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6LdapCore ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6LdapWidgets ${KLDAP_LIB_VERSION} CONFIG REQUIRED)
@@ -123,9 +127,12 @@ else()
     set_package_properties(
         KPim6AkonadiSearch
         PROPERTIES
-            DESCRIPTION "The Akonadi Search libraries"
-            URL "https://invent.kde.org/pim/akonadi-search"
-            TYPE OPTIONAL
+            DESCRIPTION
+                "The Akonadi Search libraries"
+            URL
+                "https://invent.kde.org/pim/akonadi-search"
+            TYPE
+                OPTIONAL
             PURPOSE
                 "Provides search capabilities in KAddressbook and Akonadi (only debug)"
     )
@@ -135,15 +142,13 @@ if(NOT KPim6AkonadiSearch_FOUND)
     add_definitions(-DFORCE_DISABLE_AKONADI_SEARCH)
 endif()
 
-find_package(
-    KPim6AkonadiContactWidgets
-    ${AKONADI_CONTACT_VERSION}
-    CONFIG
-    REQUIRED
-)
+find_package(KPim6AkonadiContactWidgets ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
 find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 
-include_directories(${kaddressbook_SOURCE_DIR} ${kaddressbook_BINARY_DIR})
+include_directories(
+    ${kaddressbook_SOURCE_DIR}
+    ${kaddressbook_BINARY_DIR}
+)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kaddressbook\")
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
@@ -155,11 +160,7 @@ if(TARGET KF6::UserFeedbackWidgets)
     set(KADDRESSBOOK_WITH_KUSERFEEDBACK true)
 endif()
 
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -168,11 +169,7 @@ if(USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 if(TARGET KPim6::PimCommonActivities)
-    option(
-        OPTION_USE_PLASMA_ACTIVITIES
-        "Activate plasma activities (experimental)"
-        ON
-    )
+    option(OPTION_USE_PLASMA_ACTIVITIES "Activate plasma activities (experimental)" ON)
     if(OPTION_USE_PLASMA_ACTIVITIES)
         if(NOT WIN32 AND NOT APPLE)
             set(OPTION_USE_PLASMA_ACTIVITIES true)
@@ -186,8 +183,10 @@ if(TARGET KPim6::PimCommonActivities)
             set_package_properties(
                 PlasmaActivities
                 PROPERTIES
-                    DESCRIPTION "Allow to compile with plasma activities"
-                    TYPE OPTIONAL
+                    DESCRIPTION
+                        "Allow to compile with plasma activities"
+                    TYPE
+                        OPTIONAL
             )
         endif()
 
@@ -197,10 +196,7 @@ if(TARGET KPim6::PimCommonActivities)
     endif()
 endif()
 
-configure_file(
-    config-kaddressbook.h.in
-    ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h
-)
+configure_file(config-kaddressbook.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kaddressbook.h)
 
 add_subdirectory(src)
 add_subdirectory(kontactplugin)

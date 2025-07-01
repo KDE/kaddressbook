@@ -15,7 +15,12 @@ ecm_qt_declare_logging_category(kaddressbook_config_plugins HEADER kaddressbook_
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(kaddressbook_config_plugins PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        kaddressbook_config_plugins
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 target_link_libraries(
     kaddressbook_config_plugins
@@ -25,10 +30,7 @@ target_link_libraries(
     KPim6AddressbookImportExport
 )
 
-install(
-    TARGETS kaddressbook_config_plugins
-    DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook
-)
+install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
 
 if(HAVE_ACTIVITY_SUPPORT)
     add_library(kaddressbook_config_activities MODULE)
@@ -48,7 +50,9 @@ if(HAVE_ACTIVITY_SUPPORT)
     if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
         set_target_properties(
             kaddressbook_config_activities
-            PROPERTIES UNITY_BUILD ON
+            PROPERTIES
+                UNITY_BUILD
+                    ON
         )
     endif()
     target_link_libraries(
@@ -59,10 +63,7 @@ if(HAVE_ACTIVITY_SUPPORT)
         KPim6::PimCommonActivities
     )
 
-    install(
-        TARGETS kaddressbook_config_activities
-        DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook
-    )
+    install(TARGETS kaddressbook_config_activities DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
 endif()
 
 ##################################################
@@ -84,10 +85,7 @@ if(TARGET KF6::UserFeedbackWidgets)
         KF6::UserFeedbackWidgets
     )
 
-    install(
-        TARGETS kaddressbook_config_userfeedback
-        DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook
-    )
+    install(TARGETS kaddressbook_config_userfeedback DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)
 endif()
 ######################################################
 
@@ -95,11 +93,18 @@ add_library(kaddressbook_config_ldap MODULE)
 
 target_sources(
     kaddressbook_config_ldap
-    PRIVATE kaddressbook_config_ldap.h kaddressbook_config_ldap.cpp
+    PRIVATE
+        kaddressbook_config_ldap.h
+        kaddressbook_config_ldap.cpp
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(kaddressbook_config_ldap PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        kaddressbook_config_ldap
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 target_link_libraries(
     kaddressbook_config_ldap
@@ -112,7 +117,4 @@ target_link_libraries(
 if(TARGET KPim6::PimCommonActivities)
     target_link_libraries(kaddressbook_config_ldap KPim6::PimCommonActivities)
 endif()
-install(
-    TARGETS kaddressbook_config_ldap
-    DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook
-)
+install(TARGETS kaddressbook_config_ldap DESTINATION ${KDE_INSTALL_PLUGINDIR}/pim6/kcms/kaddressbook)

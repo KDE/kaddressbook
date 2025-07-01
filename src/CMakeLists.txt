@@ -1,10 +1,6 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
-configure_file(
-    kaddressbook-version.h.in
-    ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h
-    @ONLY
-)
+configure_file(kaddressbook-version.h.in ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook-version.h @ONLY)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/printing/)
 
@@ -121,12 +117,18 @@ target_sources(kaddressbookprivate PRIVATE ${kaddressbook_LIB_SRCS})
 
 kconfig_add_kcfg_files(kaddressbookprivate settings/settings.kcfgc)
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(kaddressbookprivate PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        kaddressbookprivate
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 generate_export_header(kaddressbookprivate BASE_NAME kaddressbook)
 target_link_libraries(
     kaddressbookprivate
-    PUBLIC KPim6::PimCommonAkonadi
+    PUBLIC
+        KPim6::PimCommonAkonadi
     PRIVATE
         KPim6AddressbookImportExport
         KPim6::Libkdepim
@@ -150,7 +152,9 @@ endif()
 if(HAVE_ACTIVITY_SUPPORT)
     target_link_libraries(
         kaddressbookprivate
-        PRIVATE KPim6::PimCommonActivities KPim6::LdapCore
+        PRIVATE
+            KPim6::PimCommonActivities
+            KPim6::LdapCore
     )
 endif()
 
@@ -166,11 +170,18 @@ target_include_directories(
 
 set_target_properties(
     kaddressbookprivate
-    PROPERTIES VERSION ${KDEPIM_LIB_VERSION} SOVERSION ${KDEPIM_LIB_SOVERSION}
+    PROPERTIES
+        VERSION
+            ${KDEPIM_LIB_VERSION}
+        SOVERSION
+            ${KDEPIM_LIB_SOVERSION}
 )
 install(
-    TARGETS kaddressbookprivate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-    LIBRARY NAMELINK_SKIP
+    TARGETS
+        kaddressbookprivate
+        ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+    LIBRARY
+        NAMELINK_SKIP
 )
 
 ########### next target ###############
@@ -189,13 +200,15 @@ if(TARGET KF6::IconThemes)
     target_link_libraries(kaddressbook KF6::IconThemes)
 endif()
 
-file(
-    GLOB ICONS_SRCS
-    "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png"
-)
+file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*-apps-kaddressbook.png")
 ecm_add_app_icon(kaddressbook ICONS ${ICONS_SRCS})
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(kaddressbook PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        kaddressbook
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbook KF6::UserFeedbackWidgets)
@@ -209,7 +222,11 @@ target_link_libraries(
     KF6::Crash
 )
 
-install(TARGETS kaddressbook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(
+    TARGETS
+        kaddressbook
+        ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+)
 install(
     PROGRAMS
         data/org.kde.kaddressbook.desktop
@@ -217,10 +234,7 @@ install(
         data/kaddressbook-importer.desktop
     DESTINATION ${KDE_INSTALL_APPDIR}
 )
-install(
-    FILES data/org.kde.kaddressbook.appdata.xml
-    DESTINATION ${KDE_INSTALL_METAINFODIR}
-)
+install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 ####################################"
 add_library(kaddressbookpart MODULE)
@@ -233,7 +247,12 @@ target_sources(
         kaddressbook_debug.cpp
         kaddressbook.qrc
 )
-target_link_libraries(kaddressbookpart kaddressbookprivate KF6::I18n KF6::Parts)
+target_link_libraries(
+    kaddressbookpart
+    kaddressbookprivate
+    KF6::I18n
+    KF6::Parts
+)
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 install(
@@ -249,7 +268,4 @@ install(
     DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/viewertemplates/default/
 )
 
-install(
-    DIRECTORY printing/grantlee/themes/
-    DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/
-)
+install(DIRECTORY printing/grantlee/themes/ DESTINATION ${KDE_INSTALL_DATADIR}/kaddressbook/printing/themes/)

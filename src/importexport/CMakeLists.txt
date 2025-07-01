@@ -41,14 +41,13 @@ ecm_qt_declare_logging_category(KPim6AddressbookImportExport
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(
         KPim6AddressbookImportExport
-        PROPERTIES UNITY_BUILD ON
+        PROPERTIES
+            UNITY_BUILD
+                ON
     )
 endif()
 
-generate_export_header(
-    KPim6AddressbookImportExport
-    BASE_NAME kaddressbook_importexport
-)
+generate_export_header(KPim6AddressbookImportExport BASE_NAME kaddressbook_importexport)
 
 target_include_directories(
     KPim6AddressbookImportExport
@@ -58,19 +57,27 @@ target_include_directories(
 
 target_link_libraries(
     KPim6AddressbookImportExport
-    PRIVATE KF6::Contacts KPim6::PimCommon KF6::I18n KPim6::AkonadiWidgets
+    PRIVATE
+        KF6::Contacts
+        KPim6::PimCommon
+        KF6::I18n
+        KPim6::AkonadiWidgets
 )
 
 set_target_properties(
     KPim6AddressbookImportExport
     PROPERTIES
-        VERSION ${KDEPIM_LIB_VERSION}
-        SOVERSION ${KDEPIM_LIB_SOVERSION}
-        EXPORT_NAME AddressbookImportExport
+        VERSION
+            ${KDEPIM_LIB_VERSION}
+        SOVERSION
+            ${KDEPIM_LIB_SOVERSION}
+        EXPORT_NAME
+            AddressbookImportExport
 )
 
 install(
-    TARGETS KPim6AddressbookImportExport
+    TARGETS
+        KPim6AddressbookImportExport
     EXPORT KPim6AddressbookImportExportTargets
     ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
@@ -92,9 +99,7 @@ ecm_generate_headers(KaddressbookImportExport_CamelCase_HEADERS
 
 ######## CMake Config Files ##########
 
-set(CMAKECONFIG_INSTALL_DIR
-    "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6AddressbookImportExport"
-)
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6AddressbookImportExport")
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAddressbookImportExportConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AddressbookImportExportConfig.cmake"
@@ -117,15 +122,16 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/kaddressbookimportexport_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/kaddressbookimportexport_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KAddressBookImportExport
     COMPONENT Devel
 )
 
 install(
-    FILES ${KaddressbookImportExport_CamelCase_HEADERS}
-    DESTINATION
-        ${KDE_INSTALL_INCLUDEDIR}/KPim6/KAddressBookImportExport/KAddressBookImportExport
+    FILES
+        ${KaddressbookImportExport_CamelCase_HEADERS}
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KAddressBookImportExport/KAddressBookImportExport
     COMPONENT Devel
 )
 
@@ -134,7 +140,6 @@ install(
         ${KaddressbookImportExport_HEADERS}
         ${CMAKE_CURRENT_BINARY_DIR}/kaddressbook_importexport_export.h
         contactfields.h
-    DESTINATION
-        ${KDE_INSTALL_INCLUDEDIR}/KPim6/KAddressBookImportExport/kaddressbookimportexport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KAddressBookImportExport/kaddressbookimportexport
     COMPONENT Devel
 )
