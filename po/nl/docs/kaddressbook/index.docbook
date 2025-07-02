@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd"
   [
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % Dutch "INCLUDE">
@@ -12,7 +12,7 @@
 
 <title
 >Het handboek van &kaddressbook;</title>
-    
+
 <authorgroup>
 
   <author
@@ -76,7 +76,7 @@
 
   <para
 >&kaddressbook; is een onderdeel van de suite &kde; voor beheer van persoonlijke informatie (&PIM;) programma's. &kaddressbook; is primair een beheerder van e-mailadressen, maar het kan daarnaast u ook helpen telefoonnummers, websites, social media connecties, postadressen en meer van uw vrienden en kennissen te volgen. Het is uw one-stop shop voor het volgen van alle mensen die u kent! </para>
-  
+
   <screenshot id="screenshot-primary">
   <screeninfo
 >Een schermafdruk van de primaire &GUI; van het interface van &kaddressbook;</screeninfo>
@@ -94,16 +94,16 @@
     </caption>
   </mediaobject>
   </screenshot>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >&kaddressbook; is geïntegreerd in de structuur van <glossterm linkend="gloss-kmail"
 >&kmail;</glossterm
 >, de &kde; e-mailclient. Dus wanneer u de naam van een contactpersoon aan &kaddressbook; toevoegt, u kunt een e-mailbericht aan die persoon sturen door slechts een gedeelte van zijn naam in te typen. Of als u een e-mailbericht van een nieuwe persoon ontvangt, kunt u hem/haar aan uw adresboek met slechts een paar klikken met uw muis. </para>
-  
+
   <para
 >&kaddressbook; biedt u ook om meerdere aparte contactlijsten in een brede variëteit van populaire adreslijstformaten, ofwel op uw locale vaste schijf of via een hulpbron die in de cloud verblijft. Het ondersteunt importeren en exporteren van contactgegevens in <glossterm linkend="gloss-csv"
 ><filename class="extension"
@@ -134,7 +134,7 @@
 >Dit is een plaatje van het primaire gebruikersinterface van &kaddressbook; voordat enige adresgegevens zijn ingevoerd. Het eerste ding dat u zou willen doen is het aanmaken van en adresboek. Merk op dat het adresboek <quote
 >Persoonlijke contactpersonen</quote
 > standaard aanwezig is. </para>
- 
+
   <screenshot id="screenshot-blank">
       <screeninfo
 >Een schermafdruk van het <quote
@@ -158,17 +158,17 @@
     </caption>
   </mediaobject>
   </screenshot>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <sect1 id="how-to-add-a-new-address-book">
   <title
 >Hoe een nieuw adresboek toevoegen</title>
-  
+
   <procedure id="procedure-add-a-new-addressbook">
-    
+
   <step id="new-addressbook-dialog-step"
 ><para
 >Open de dialoog van &kaddressbook; Adresboek toevoegen met de optie <menuchoice
@@ -184,7 +184,7 @@
 >Adresboek toevoegen...</guimenuitem
 ></menuchoice
 >. Er zal een dialoogvak verschijnen. </para>
-  
+
   <para>
   <screenshot id="screenshot-add-an-address-book">
   <screeninfo
@@ -208,7 +208,7 @@
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
   </step>
-  
+
   <step id="select-a-format-step"
 ><para
 >Kies een van de opties die in de dialoog verschijnen. een aantal van deze opties koppelen naar gegevensverzamelingen die in de cloud verblijven: <glossterm linkend="gloss-dav"
@@ -224,7 +224,7 @@
 > &nbsp;(Exchange Web Services, op servers die MS software draaien) en <glossterm linkend="gloss-group"
 >Open-Xchange &nbsp;Groupware &nbsp;Server</glossterm
 > &nbsp;&nbsp;(een open-source alternatief voor MS EWS). Als u al toegang hebt tot een of meer van deze op cloud gebaseerde hulpbronnen, dan kunt u die gegevens integreren in &nbsp;&kaddressbook; door eenvoudig de optie te selecteren en dan uw aanmeldgegevens in te voeren.</para>
-  
+
   <para
 >De overblijvende opties in de dialoog (Persoonlijke contacten, vCard Directory en vCard-bestand) maken allen gegevenssets aan die worden opgeslagen op een lokaal opslagapparaat. Elk van deze opties gebruikt hetzelfde gegevensformaat (<filename class="extension"
 >.vcf</filename
@@ -238,7 +238,7 @@
 >Persoonlijke contacten</quote
 >. U zult niet meer adresboeken nodig hebben tenzij u een uitgebreide lijst met contacten hebt die u gescheiden wilt houden. </para
 ></step>
-  
+
   <step id="add-a-cloud-based-service-step"
 ><para
 >Nadat u uw selectie hebt gemaakt, klik op OK. Als u een <glossterm linkend="gloss-cloud"
@@ -246,7 +246,7 @@
 > hebt geselecteerd zal een korte dialoog verschijnen om de communicatie tussen <glossterm linkend="gloss-akonadi"
 >&akonadi;</glossterm
 > (de &PIM; cross-desktop opslagservice) en de geselecteerde cloud-server op te zetten. Dit is hoe de dialoog er uit ziet voor een Google (gmail.com)-account. De andere op cloud gebaseerd services zijn een beetje anders, maar soortgelijk. </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service">
   <screeninfo
@@ -272,7 +272,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-step2">
   <screeninfo
@@ -294,7 +294,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-step3">
   <screeninfo
@@ -320,17 +320,17 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Voer uw aanmeldgegevens in zoals boven geïllustreerd en zeg OK. Voila! Uw op de cloud gebaseerde contactpersonenlijst is nu geïntegreerd in &kaddressbook;. </para>
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-completed">
   <screeninfo
@@ -350,27 +350,26 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
->Zoals de voorgaande schermafdruk aangeeft, nadat u &kaddressbook; als een vertrouwdw hulpbron hebt geregistreerd kunt u uw gmail-contactpersonen bekijken en bewerken met &kaddressbook;. Natuurlijk kunt u ook, als u dat wilt, doorgaan om uw contactpersonen te onderhouden door een webbrowser te gebruiken. </para
-> 
-  
+>Zoals de voorgaande schermafdruk aangeeft, nadat u &kaddressbook; als een vertrouwdw hulpbron hebt geregistreerd kunt u uw gmail-contactpersonen bekijken en bewerken met &kaddressbook;. Natuurlijk kunt u ook, als u dat wilt, doorgaan om uw contactpersonen te onderhouden door een webbrowser te gebruiken. </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   </step>
-   
+
   <step id="add-a-local-addressbook-step"
 ><para
 >Als u een van de lokale adresboekopties in <link linkend="select-a-format-step"
 >stap 2</link
 > boven hebt geselecteerd, zal een andere dialoog verschijnen. </para>
-      
+
   <para>
   <screenshot id="screenshot-add-a-personal-addressbook">
       <screeninfo
@@ -396,18 +395,18 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Maak elke wijziging die u nodig meent te hebben in de dialoog <quote
 >Persoonlijke contacten</quote
 >, klik daarna op <guibutton
 >&nbsp;✔&nbsp;OK&nbsp;</guibutton
 >. Een nieuw adresboek zal in het hoofdvenster van &kaddressbook; verschijnen, zoals onderstaand getoond. </para>
-  
+
   <para>
   <screenshot id="screenshot-personal-addressbook-has-been-added">
       <screeninfo
@@ -433,29 +432,27 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  </step
->    
-  
+  </step>
+
   </procedure>
   </sect1>
-  
+
   <sect1 id="how-to-add-a-new-contact">
   <title
->Hoe een nieuwe contactpersoon toe te voegen</title
->    
-  
+>Hoe een nieuwe contactpersoon toe te voegen</title>
+
   <procedure id="procedure-add-a-new-contact">
-    
+
   <step id="new-contact-dialog-step-1"
 ><para
 >Open de dialoog Nieuw contactpersoon van &kaddressbook; door op de knop <guibutton
 >&nbsp;&plus;&nbsp;Nieuw contactpersoon&nbsp;</guibutton
 > in de werkbalk te klikken. Er zal een dialoogvak verschijnen.</para>
-      
+
   <para>
   <screenshot id="screenshot-new-contact-dialog">
       <screeninfo
@@ -483,13 +480,13 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
- 
+
   </step>
-  
+
   <step id="procedure-new-contact-data-items"
 ><para
 >Zoals u kunt zien in de voorgaande schermafdruk biedt de dialoog <quote
@@ -511,9 +508,8 @@
 >. Voor nu, laten we ons concentreren op het toevoegen van de <quote
 >Contact</quote
 >-items die verschenen in de vorige illustratie.</para>
-  </step
->    
-  
+  </step>
+
   <step id="procedure-entering-basic-new-contact-data"
 ><para
 >Als u meer dan één adresboek hebt aangemaakt, gebruik de afrollijst met label <quote
@@ -533,9 +529,8 @@
 > en een ander invoerveld voor E-mailadres zal gegenereerd worden. Om een E-mailadres te verwijderen, klik op de bijbehorende knop <guibutton
 >&nbsp;&minus;&nbsp;</guibutton
 >. </para
-></step
->    
-  
+></step>
+
   <step id="procedure-additional-new-contact-data"
 ><para
 >U kunt ook een schermnaam, een of meer telefoonnummers, meerdere instant messaging services en verschillende websites met elk contactpersoon in een adresboek associëren, zoals uitgelegd in <link linkend="editing-contact-data"
@@ -550,28 +545,27 @@
 ></step>
 
   <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
-  
+
   </procedure>
   </sect1>
-  
+
 </chapter>
 
 <chapter id="integration-with-other-kde-programs">
 <title
 >Integratie met andere &kde;-programma's</title>
-  
+
   <sect1 id="integration-overview">
   <title
 >Integratie-overzicht -- &kmail;</title>
-  
+
   <para
->Omdat &kaddressbook; -- een essentieel deel van &PIM;, de suite van &kde; van programma's voor Beheer van persoonlijke informatie -- is het de centrale opslagruimte voor informatie over al uw contactpersonen, het is geïntegreerd in &nbsp;&kmail; an ook in &korganizer;. Hier is een snelle blik op het interface tussen &kaddressbook; en deze twee programma's. </para
->    
+>Omdat &kaddressbook; -- een essentieel deel van &PIM;, de suite van &kde; van programma's voor Beheer van persoonlijke informatie -- is het de centrale opslagruimte voor informatie over al uw contactpersonen, het is geïntegreerd in &nbsp;&kmail; an ook in &korganizer;. Hier is een snelle blik op het interface tussen &kaddressbook; en deze twee programma's. </para>
 
   <sect2 id="starting-kaddressbook-from-kmail-tools">
   <title
 >&kaddressbook; starten vanuit het menu Hulpmiddelen van &kmail;</title>
-  
+
   <para>
   <screenshot id="screenshot-kmail-tools-menu">
       <screeninfo
@@ -613,11 +607,11 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Dit interface is het voorbeeld van eenvoud. Hebt u het nodig om de gegevens van een van uw contactpersonen te raadplegen of bij te werken terwijl u een e-mailbericht aan het lezen of samenstellen bent met &kmail;? Klik links op <menuchoice
 ><guimenu
@@ -630,17 +624,17 @@
 >Adresboek</guimenuitem
 > </menuchoice
 > en de toepassing &kaddressbook; zal automatisch gestart worden, die u een snelle toegang biedt tot de contactgegevens die u wilt bekijken of wijzigen.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="autocompletion-feature-on-new-email">
   <title
 >&kaddressbook; afvragen vanuit het venster voor Opstellen van bericht van &kmail;</title>
-  
+
   <para>
   <screenshot id="screenshot-autocompletion-feature">
       <screeninfo
@@ -660,24 +654,24 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Wanneer u een nieuw e-mailbericht opstelt zal &kmail; u helpen bij het vinden van het complete e-mailadres van de ontvanger door een lijst me mogelijke overeenkomsten genomen uit de inhoud van &kaddressbook; en uit uw e-mailarchieven, zoals bovenstaand geïllustreerd. Klik links op een item in de lijst om dat e-mailadres te gebruiken.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2  id="recipient-selection-dialog">
   <title
 >Dialoog van &kmail; voor de selectie van een ontvanger</title>
-  
+
   <para>
   <screenshot id="screenshot-recipient-selection">
       <screeninfo
@@ -697,11 +691,11 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Wanneer u een nieuw e-mailbericht aan meerdere ontvangers adresseert, levert &kmail; een gemakkelijke methode om meerdere geadresseerden uit de contactpersonen die u hebt opgeslagen in &kaddressbook; te kiezen. Klik eenvoudig links op de knop <guibutton
 >&nbsp;Selecteren ...&nbsp;</guibutton
@@ -718,17 +712,17 @@
 > om dit adres in uw bericht als een tag <quote
 >Antwoorden aan</quote
 > toe te voegen.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="new-contact-creation-interface">
   <title
 >Interface van &kmail; voor aanmaken van een nieuw contactpersoon</title>
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation">
       <screeninfo
@@ -748,7 +742,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -761,7 +755,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next picture @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation-step2">
       <screeninfo
@@ -781,7 +775,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -790,7 +784,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next picture @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation-step3">
       <screeninfo
@@ -810,7 +804,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -823,21 +817,21 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-    
+
   </sect1>
-  
+
   <sect1 id="korganizer-overview">
   <title
 >Interface van &kaddressbook; met &korganizer;</title>
-  
+
   <para
 >&korganizer;, het programma voor planning en agendabeheer van &kde;, biedt u het verzenden van e-mailberichten aan mensen die u wilt uitnodigen voor een bijeenkomst en levert, in deze omgeving, twee interfaces met &kaddressbook;.</para>
   <para
 >&nbsp;</para
-> <!-- add more white space before next section @dcb --> 
-  
+> <!-- add more white space before next section @dcb -->
+
   <para>
   <screenshot id="screenshot-inviting-one-attendee">
       <screeninfo
@@ -856,21 +850,19 @@
     </caption>
   </mediaobject>
   </screenshot>
-  </para
->   
-      
+  </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
   <para
 >Het eerste interface is gewoon gelijk aan de <link linkend="autocompletion-feature-on-new-email"
 >functie automatisch aanvullen</link
-> geleverd door &kmail;: begin met de naam van de persson te typen die u wilt uitnodigen en u zult een lijst van mogelijke overeenkomsten krijgen, zoals bovenstaand geïllustreerd.</para
->  
+> geleverd door &kmail;: begin met de naam van de persson te typen die u wilt uitnodigen en u zult een lijst van mogelijke overeenkomsten krijgen, zoals bovenstaand geïllustreerd.</para>
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-inviting-multiple-attendees">
       <screeninfo
@@ -889,9 +881,8 @@
     </caption>
   </mediaobject>
   </screenshot>
-  </para
->   
-  
+  </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -901,9 +892,9 @@
 > &nbsp;geleverd door &kmail;: wanneer u links klikt op de knop <guibutton
 >&nbsp;Deelnemers selecteren ...&nbsp;</guibutton
 >, er zal een te doorzoeken lijst met de contactpersonen in al uw adresboeken verschijnen, zoals de voorgaande schermafdruk toont.</para>
-  
+
   </sect1>
-  
+
 </chapter>
 
 <chapter id="editing-contact-data">
@@ -913,7 +904,7 @@
   <sect1 id="edit-basic-info">
   <title
 >Grondbeginselen</title>
-  
+
   <para
 >Wanneer u voor het eerst op de knop <guibutton
 ><inlinemediaobject
@@ -968,11 +959,11 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <sect2 id="edit-contact-tab">
   <title
 >Het tabblad Contactpersoon</title>
-  
+
   <para
 >We hebben al gezien (in <link linkend="how-to-add-a-new-contact"
 >Hoe een nieuw contactpersoon toevoegen</link
@@ -985,9 +976,9 @@
 ></inlinemediaobject
 >Contactpersoon toevoegen&nbsp;&nbsp;</guibutton
 >.</para>
-  
+
   <variablelist>
-      
+
     <varlistentry
 ><term
 >Telefoon</term
@@ -1014,7 +1005,7 @@
 >, &etc;)</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Messaging</term
@@ -1053,7 +1044,7 @@
 >, Skype, Twitter en Yahoo. (MSN Messenger is nog steeds op de lijst van IM services in versie 5.10.3; het werkt niet meer sinds 2014.)</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Website</term
@@ -1072,7 +1063,7 @@
 > biedt u het identificeren van drie verschillende soorten van Webadressen: Thuis, Werk en Anderen.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Tags</term
@@ -1083,10 +1074,9 @@
 > om de dialoog voor het aanmaken en configureren van tags, zoals onderstaand geïllustreerd in te gaan.</para
 ></listitem>
     </varlistentry>
-      
-  </variablelist
-> 
-  
+
+  </variablelist>
+
   <para>
   <screenshot id="screenshot-add-tags-dialog">
       <screeninfo
@@ -1120,7 +1110,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
     <varlistentry
 ><term
@@ -1134,7 +1124,7 @@
 > om de geselecteerde tags aan deze contactpersoon toe te voegen.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Blogfeed</term
@@ -1143,7 +1133,7 @@
 >Dit veld gebruiken om de &URL; geassocieerd met de weblog of blog van deze contactpersoon op te nemen.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Berichten tonen ...</term
@@ -1160,7 +1150,7 @@
 > als u over het standaard gedrag van &kmail; heen wilt gaan wanneer u een bericht van deze persoon ontvangt.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Inhoud op afstand toestaan ...</term
@@ -1171,7 +1161,7 @@
 > heen wilt gaan wanneer u een bericht van deze persoon ontvangt.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1188,7 +1178,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1207,23 +1197,23 @@
 >.</para
 ></listitem>
     </varlistentry>
-  
+
   </variablelist>
   <para
 >&nbsp;</para
 > <!-- add more white space after variablelist @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="edit-location-tab">
   <title
 >Het tabblad Locatie</title>
-  
+
   <para
 >De invoervelden voor gegevens in het tabblad <quote
 >Locatie</quote
 >, zoals onderstaand getoond, associeert een of meer papieren postadressen met deze persoon.</para>
-      
+
   <para>
   <screenshot id="screenshot-location-tab">
       <screeninfo
@@ -1255,7 +1245,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
- 
+
   <variablelist>
     <varlistentry
 ><term
@@ -1271,7 +1261,7 @@
 >, &etc;</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Straat / Postbox / Postcode / Plaats / Regio</term
@@ -1280,7 +1270,7 @@
 >Deze vrije-vorm gegevensvelden gebruiken om postadresgegevens: Straatadres, PO Box, ZIP Code, City en Staat, respectievelijk, voor adressen in de VS.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Land</term
@@ -1289,7 +1279,7 @@
 >Dit afrolvak gebruiken om een land te selecteren, van Afghanistan tot Zimbabwe.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Dit adres heeft de voorkeur</term
@@ -1298,7 +1288,7 @@
 >Dit vakje activeren om het postadres te markeren als voorkeur of standaard.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1309,7 +1299,7 @@
 >Wanneer u het invoeren van adresgegevens hebt voltooid, klik links op deze knop om een nieuw adres toe te voegen aan de set van opgeslagen adressen die verschijnen in het grote venster rechts.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Pictogram<inlinemediaobject
@@ -1322,7 +1312,7 @@
 >Klik links op dit pictogram om de bijbehorende adresgegevens te bewerken.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Pictogram<inlinemediaobject
@@ -1335,24 +1325,24 @@
 >Klik links op dit pictogram om de bijbehorende adresgegevens te verwijderen.</para
 ></listitem>
     </varlistentry>
-  
+
   </variablelist>
   <para
 >&nbsp;</para
 > <!-- add more white space after variablelist @dcb -->
   </sect2>
-  
+
   <sect2 id="edit-business-tab">
   <title
 >De tabbladen Zakelijk, Persoonlijk en Notities</title>
-  
+
   <para
 >De volgende drie tabbladen in de dialoog <quote
 >Contactpersoon toevoegen</quote
 > zijn nog eenvoudiger dan het tabblad <quote
 >Locatie</quote
 >. Ze bieden u, respectievelijk, het opslaan van enige informatie over de zakelijke en professionele betrekkingen van deze persoon, een paar persoonlijke details en diverse notities in vrije vorm.</para>
-  
+
   <para>
   <screenshot id="screenshot-business-tab">
       <screeninfo
@@ -1380,11 +1370,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het bovenstaand getoonde tabblad <quote
 >Zakelijk</quote
@@ -1397,7 +1387,7 @@
 > zal een zoekdialoog naar een bestand openen, waarmee het makkelijk is om een bestandsnaam met de <quote
 >Vrij/bezet</quote
 > planning van deze persoon te associëren, als u dat wilt.</para>
-  
+
   <para
 >Merk op dat u het telefoonnummer van uw zakelijke partner als een telefoonnummer onder het tabblad <quote
 ><link linkend="edit-contact-tab"
@@ -1407,9 +1397,8 @@
 >Locatie</quote
 >, zoals beschreven in <link linkend="edit-location-tab"
 >de voorgaande sectie</link
->.</para
->    
-  
+>.</para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
@@ -1440,11 +1429,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Dit tabblad gebruiken om een paar persoonlijke details op te slaan: verjaardag van deze persoon, zijn/haar trouwdag en de naam van de partner of belangrijke ander. Klik op een van de knoppen (&eg;, <guibutton
 ><inlinemediaobject
@@ -1453,7 +1442,7 @@
 ></inlinemediaobject
 ></guibutton
 >&nbsp;) om geboortedatum of trouwdatum in te voeren. </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
@@ -1484,26 +1473,24 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het tabblad <quote
 >Notities</quote
 > biedt een invoerveld in geheel vrije vorm waarin u elk gegeven dat u met deze persoon wilt associëren invoert.</para>
-      
-  </sect2
->    
 
-  </sect1
->  
+  </sect2>
+
+  </sect1>
 
   <sect1 id="edit-advanced-info">
   <title
 >De moeilijke zaken</title>
-  
+
   <para
 >&kaddressbook; biedt een aantal complexere opslagfuncties van gegevens, naast de eenvoudige functies beschreven in de voorgaande sectie.</para>
 
@@ -1515,7 +1502,7 @@
 >Niet gelukkig met de vele mogelijkheden van gegevensitems die al voor u zijn voorgeprogrammeerd in &kaddressbook;? Wel, u hebt geluk. Eens -- misschien binnenkort -- kunt u de onderstaand getoonde dialoog <quote
 >Aangepaste velden</quote
 > gebruiken om zoveel als u wenst extra gegevensvelden te definiëren en bevolken.</para>
-  
+
   <para>
   <screenshot id="screenshot-custom-tab">
       <screeninfo
@@ -1543,27 +1530,27 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Dit is een experimentele functie die nog niets doet om over te praten. Dus doen we er verder het zwijgen toe.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="edit-crypto-tab">
   <title
 >Het tabblad Instellingen voor versleuteling</title>
-  
+
   <para
 >Hebt u het nodig vertrouwelijke e-mailberichten te versturen die niet gelezen behoren te worden door priemende ogen? &kaddressbook; biedt u een eenvoudige manier om cryptografische sleutels met elke persoon in uw e-maillijst te associëren.</para>
-  
+
   <para>
   <screenshot id="screenshot-crypto-tab">
       <screeninfo
@@ -1591,11 +1578,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
 <variablelist>
     <varlistentry
 ><term
@@ -1673,32 +1660,31 @@
 >Gebruik dit afrolvak om te specificeren wanneer berichten geadresseerd aan deze persoon versleutelt moeten worden door het geselecteerde protocol en sleutel: Nooit / Altijd / Indien mogelijk / Vragen.</para
 ></listitem>
     </varlistentry>
-    
-</variablelist
->  
-  
+
+</variablelist>
+
   </sect2>
 
   </sect1>
-  
+
 </chapter>
 
 <chapter id="commands">
 <title
 >Overzicht van de opdrachten</title>
-    
+
   <sect1 id="menu-bar-items">
   <title
 >De menubalk</title>
-  
+
   <para
 >Hier is een opsomming van de zeven menu's die verschijnen op de menubalk van &kaddressbook;.</para>
-  
+
 
   <sect2 id="the-file-menu">
   <title
 >Het menu Bestand</title>
-  
+
   <para>
   <screenshot id="screenshot-file-menu">
       <screeninfo
@@ -1738,8 +1724,7 @@
 ><guimenu
 >Bestand</guimenu
 ></menuchoice
-> biedt u toegang tot zes hoofdfuncties, drie ervan hebben verschillende opties.</para
-> 
+> biedt u toegang tot zes hoofdfuncties, drie ervan hebben verschillende opties.</para>
 
   <para
 >&nbsp;</para
@@ -1775,9 +1760,8 @@
 >bovenstaand hoofdstuk 2</link
 > voor volledige details.</para
 ></listitem>
-    </varlistentry
-> 
-    
+    </varlistentry>
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1806,7 +1790,7 @@
 > voor een gedetailleerde uitleg van deze functie.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1831,7 +1815,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1852,7 +1836,7 @@
 > voor volledige details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1873,7 +1857,7 @@
 > voor een meer gedetailleerde uitleg.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1894,7 +1878,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1915,7 +1899,7 @@
 > voor een lijst met deze gegevensvelden.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1936,7 +1920,7 @@
 > voor meer informatie.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1956,8 +1940,7 @@
 >vCard 4.0</acronym
 >.</para
 ></listitem>
-    </varlistentry
->    
+    </varlistentry>
 
     <varlistentry>
     <term
@@ -1979,7 +1962,7 @@
 >.</para
 ></listitem>
     </varlistentry>
- 
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2013,8 +1996,7 @@
 ></listitem>
     </varlistentry>
 
-    <varlistentry
->    
+    <varlistentry>
     <term
 ><menuchoice
 ><guimenu
@@ -2034,7 +2016,7 @@
 > voor verdere details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2059,20 +2041,19 @@
 >Sluit de toepassing &kaddressbook;.</para
 ></listitem>
     </varlistentry>
- 
+
   </variablelist>
 
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
-  </sect2
->  
+
+  </sect2>
 
   <sect2 id="the-edit-menu">
   <title
 >Het menu Bewerken</title>
-  
+
   <para>
   <screenshot id="screenshot-edit-menu">
       <screeninfo
@@ -2106,19 +2087,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het menu <menuchoice
 ><guimenu
 >Bewerken</guimenu
 ></menuchoice
 > biedt u toegang tot acht hoofdfuncties, twee ervan hebben meerdere opties.</para>
- 
+
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb --> 
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2141,7 +2122,7 @@
 > voor volledige details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2176,7 +2157,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2195,7 +2176,7 @@
 >Plaatst een kopie van deze contactpersoon op het klembord, zodat u het ergens anders kunt plakken.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2228,7 +2209,7 @@
 > bestand in uw persoonlijke map).</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2253,7 +2234,7 @@
 > in een enkele klik met de &LMB;. De getoonde lijst met bestemmingen hangt af van hoeveel adresboeken u hebt aangemaakt.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2280,7 +2261,7 @@
 > combineert in een enkele klik met de &LMB;.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2303,7 +2284,7 @@
 >De geselecteerde contactpersoon verwijderen uit het huidige adresboek.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2326,21 +2307,19 @@
 >) en de echte gegevens zullen niet veranderd worden. Het is echter waarschijnlijk wijzer om ergens een reservekopie van dit adresboek te maken voordat u het verwijdert.</para
 ></listitem>
     </varlistentry>
-    
-  </variablelist
->  
-  
+
+  </variablelist>
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
-  <sect2 id="the-view-menu"
-> 
+
+  <sect2 id="the-view-menu">
   <title
 >Het menu Beeld</title>
-  
+
   <para>
   <screenshot id="screenshot-view-menu">
       <screeninfo
@@ -2374,19 +2353,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het menu <menuchoice
 ><guimenu
 >Beeld</guimenu
 ></menuchoice
 > biedt u toegang tot vier hoofdfuncties en één experimentele functie die op dit moment nog niet echt iets doet.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2403,7 +2382,7 @@
 > openen, maar die dialoog is in uitgave 5.10.3 gebroken.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2430,7 +2409,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-        
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2457,7 +2436,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2482,7 +2461,7 @@
 >Schakelt terug naar de standaard indeling met drie panelen.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2501,7 +2480,7 @@
 >Activeer dit vakje om contactpersooninformatie als een QR-code te tonen. Deactiveer het om QR-codes te onderdrukken.</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   <para
@@ -2509,12 +2488,11 @@
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-action-menu"
-> 
+
+  <sect2 id="the-action-menu">
   <title
 >Het menu Actie</title>
-  
+
   <para>
   <screenshot id="screenshot-action-menu">
       <screeninfo
@@ -2548,7 +2526,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het menu <menuchoice
 ><guimenu
@@ -2558,9 +2536,9 @@
 
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb -->  
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2581,7 +2559,7 @@
 >, onderstaand, behalve dat u eerst enige contactpersonen hebt geselecteerd met &Ctrl; en uw muis, het venster voor maken van een bericht zal openen met een lege lijst met geadresseerden en met bijgevoegde bestanden (de geselecteerde contactpersonen, in vCard 3.0 formaat). Dit maakt het gemakkelijk om geselecteerde informatie uit &kaddressbook; te delen met uw vrienden en zakelijke bekenden.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2604,20 +2582,19 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-tools-menu"
-> 
+
+  <sect2 id="the-tools-menu">
   <title
 >Het menu Hulpmiddelen</title>
-  
+
   <para>
   <screenshot id="screenshot-tools-menu">
       <screeninfo
@@ -2651,19 +2628,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het menu <menuchoice
 ><guimenu
 >Hulpmiddelen</guimenu
 ></menuchoice
 > biedt u toegang tot twee beheerfuncties.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2680,7 +2657,7 @@
 > om de handeling te voltooien.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2696,18 +2673,17 @@
 ></listitem>
     </varlistentry>
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-settings-menu"
-> 
+
+  <sect2 id="the-settings-menu">
   <title
 >Het menu Instellingen</title>
-  
+
   <para>
   <screenshot id="screenshot-settings-menu">
       <screeninfo
@@ -2741,7 +2717,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-    
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
@@ -2752,12 +2728,12 @@
 >Instellingen</guimenu
 ></menuchoice
 > biedt u vijf opties voor fijn afstemmen van de manier waarop &kaddressbook; werkt.</para>
- 
+
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb --> 
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2803,7 +2779,7 @@
 >Deze optie laat u de werkbalk tonen of verbergen.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2824,7 +2800,7 @@
 > voor meer details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2870,20 +2846,19 @@
 > voor meer details.</para
 ></listitem>
     </varlistentry>
- 
+
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-help-menu"
-> 
+
+  <sect2 id="the-help-menu">
   <title
 >Het menu Help</title>
-  
+
   <para>
   <screenshot id="screenshot-help-menu">
       <screeninfo
@@ -2917,19 +2892,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Het menu <menuchoice
 ><guimenu
 >Help</guimenu
 ></menuchoice
 > biedt zeven opties.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2954,7 +2929,7 @@
 > via het hulpprogramma &khelpcenter;.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2977,7 +2952,7 @@
 >Dit is het ingebouwde helpprogramma van &kaddressbook;. Klik links op deze optie, verplaats uw cursor en klik op een van de eerste vier items op de werkbalk. Een korte beschrijving van de functie van dat hulpmiddel zal getoond worden.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2998,7 +2973,7 @@
 >, de hoofdpagina van het bug volgsysteem van &kde;.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3019,7 +2994,7 @@
 > in uw browser, waar u geld kunt doneren om &kde; te ondersteunen. We accepteren euro's, dollars, roebels, ponden, yen, yuan, pesos, &etc;</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3038,7 +3013,7 @@
 >Deze optie laat u de taal wijzigen die wordt gebruikt om de verschillende menu-items te labelen en voor ingebouwde helpschermen. U moet &kaddressbook; verlaten en herstarten voordat de nieuwe taal effect heeft.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3057,7 +3032,7 @@
 >Klik op dit item om te weten welke uitgave van &kaddressbook; u gebruikt, welke bibliotheken zijn gebruikt om de uitvoerbare code te compileren/ te bouwen en wie de hoofdprogrammeur van &kde; is.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3076,17 +3051,17 @@
 >Deze optie toont informatie over &kde;. Wees vrij!</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   </sect2>
-  
+
   </sect1>
-  
+
   <sect1 id="tool-bar-items">
   <title
 >De werkbalk</title>
-  
+
   <para
 >Er zijn vijf aparte hulpmiddelen beschikbaar op de werkbalk van &kaddressbook;: <quote
 >Nieuw contactpersoon</quote
@@ -3101,7 +3076,7 @@
 >Instellingen</quote
 ></link
 > te gebruiken, als u dat wenst.)</para>
-  
+
   <para>
   <screenshot id="screenshot-tool-bar">
       <screeninfo
@@ -3121,19 +3096,19 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="list-add.png" 
+><imagedata fileref="list-add.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Nieuw contactpersoon</guibutton
@@ -3147,13 +3122,13 @@
 >, hier boven.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="user-group-new.png" 
+><imagedata fileref="user-group-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Nieuwe groep</guibutton
@@ -3167,13 +3142,13 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="document-edit.png" 
+><imagedata fileref="document-edit.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Contactpersoon bewerken</guibutton
@@ -3187,7 +3162,7 @@
 >, hier boven.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 >[ Zoeken...&nbsp;<keycombo action="simul"
@@ -3208,7 +3183,7 @@
 > kan niet alleen Andy Brown en Andrew Jones geven, maar ook Bill Smith (die toevallig werkt voor Brown and Root Construction Company).</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   <para>
@@ -3240,9 +3215,9 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 >[ (Alles)&nbsp;<inlinemediaobject
@@ -3283,10 +3258,9 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
-  </variablelist
->  
-  
+
+  </variablelist>
+
   <para>
   <screenshot id="toolbar-filter">
       <screeninfo
@@ -3312,20 +3286,20 @@
   </mediaobject>
   </screenshot>
   </para>
-     
+
   </sect1>
-  
+
   <sect1 id="context-menus">
   <title
 >De contextmenu's</title>
-  
+
   <para
 >Wanneer u ergens in het hoofdtekstgebied klikt met de &RMB;, zal er een contextmenu verschijnen, zoals onderstaand geïllustreerd. Het specifieke menu dat verschijnt hangt af van zowel het paneel waarin de klik met rechts gebeurde en het specifieke gegevensitem dat was geselecteerd, indien zo.</para>
-  
+
   <sect2 id="the-addressbook-panel">
   <title
 >Het Contextmenu Adresboek </title>
-  
+
   <para>
   <screenshot id="addressbook-context-menu">
       <screeninfo
@@ -3351,20 +3325,20 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="folder-new.png" 
+><imagedata fileref="folder-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Adresboekmap toevoegen...</guimenu
@@ -3375,14 +3349,14 @@
 >Deze optie van het contextmenu doet geen nuttige functie in uitgave 5.10.3.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="edit-delete.png" 
+><imagedata fileref="edit-delete.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Adresboekmap verwijderen</guimenu
@@ -3393,14 +3367,14 @@
 >Deze optie van het contextmenu doet geen nuttige functie in uitgave 5.10.3.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="folder-new.png" 
+><imagedata fileref="folder-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Adresboek toevoegen...</guimenu
@@ -3415,14 +3389,14 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="edit-delete.png" 
+><imagedata fileref="edit-delete.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Adresboek verwijderen</guimenu
@@ -3433,7 +3407,7 @@
 >Deze optie in het contextmenu zal het geselecteerde adresboek verwijderen. Wees voorzichtig!</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3456,14 +3430,14 @@
 >Deze optie in het contextmenu dwingt het opnieuw laden van de contactgegevens behorende bij het geselecteerde adresboek af.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="configure.png" 
+><imagedata fileref="configure.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Mapeigenschappen...</guimenu
@@ -3474,14 +3448,14 @@
 >Deze optie in het contextmenu toont beknopte informatie over het geselecteerde adresboek.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="configure.png" 
+><imagedata fileref="configure.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Adresboekeigenschappen...</guimenu
@@ -3492,14 +3466,14 @@
 >Deze optie in het contextmenu toont beknopte informatie over het geselecteerde adresboek.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="document-open.png" 
+><imagedata fileref="document-open.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Inschrijving aan de kant van de server...</guimenu
@@ -3512,17 +3486,17 @@
     </varlistentry>
 
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="the-contactslist-panel">
   <title
 >Het contextmenu Lijst met contactpersonen</title>
-  
+
   <para>
   <screenshot id="contactlist-context-menu">
       <screeninfo
@@ -3548,13 +3522,13 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-  
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3580,9 +3554,8 @@
 >bovenstaand hoofdstuk 2</link
 > voor volledige details.</para
 ></listitem>
-    </varlistentry
-> 
-    
+    </varlistentry>
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3607,7 +3580,7 @@
 > voor een gedetailleerde uitleg van deze functie.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3633,7 +3606,7 @@
 > voor volledige details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3650,7 +3623,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3667,7 +3640,7 @@
 >Deze keuze in het contextmenu laat u de geselecteerde contactperso(o)n(en) kopiëren naar een variabele bestemming. De lijst met getoonde bestemmingen wanneer deze optie is gekozen hangt af hoeveel adresboeken u hebt aangemaakt.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3686,7 +3659,7 @@
 >, in plaats van er een extra kopie van te maken.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3718,8 +3691,7 @@
 ></listitem>
     </varlistentry>
 
-    <varlistentry
->    
+    <varlistentry>
     <term
 ><menuchoice
 ><guimenu
@@ -3738,7 +3710,7 @@
 > voor verdere details.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3759,20 +3731,19 @@
 >De geselecteerde contactperso(o)n(en) verwijderen uit het huidige adresboek.</para
 ></listitem>
     </varlistentry>
-        
-  </variablelist
->    
-  
+
+  </variablelist>
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="the-individualcontact-panel">
   <title
 >Het contextmenu van Individueel contactpersoon</title>
-  
+
   <para>
   <screenshot id="individualcontact-context-menu">
       <screeninfo
@@ -3798,24 +3769,24 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Afhankelijk van welke gegevensitem u selecteert, kan het opschrift in dit contextmenu variëren. Maar in elk geval is de functie hetzelfde: het geselecteerd gegevensitem wordt gekopieerd naar het klembord.</para>
-      
+
   </sect2>
-  
+
   </sect1>
-  
+
 </chapter>
 
 <glossary>
-   
+
 <!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
-    
+
   <glossentry id="gloss-aim">
   <glossterm
 ><acronym
@@ -3830,7 +3801,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-akonadi">
   <glossterm
 >&akonadi;</glossterm>
@@ -3841,7 +3812,7 @@
 > in in een consolevenster om meer te weten te komen.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-cloud">
   <glossterm
 >Op de cloud gebaseerde service</glossterm>
@@ -3864,9 +3835,8 @@
 >.csv</filename
 > dateert uit de vroege dagen van computeren. Het is nog steeds breed in gebruik, hoofdzakelijk omdat het concept zo eenvoudig is.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-dav">
   <glossterm
 ><acronym
@@ -3896,7 +3866,7 @@
 > om meer hierover te weten te komen.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-ews">
   <glossterm
 ><acronym
@@ -3911,7 +3881,7 @@
 > biedt vergelijkbare functionaliteit.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-gadu-gadu">
   <glossterm
 >Gadu-Gadu</glossterm>
@@ -3946,7 +3916,7 @@
 >Een Gravatar of Globally Recognized Avatar, is een grafische afbeelding geassocieerd met een e-mailadres van een gebruiker van WordPress. Het wordt gewoonlijk getoond als een 80px X 80px grafische afbeelding. Omdat veel bloggers WordPress-software gebruiken, is de Gravatar breed beschikbaar.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-gpws">
   <glossterm
 >GroupWise</glossterm>
@@ -3989,7 +3959,7 @@
 > beschikbaar voor downloaden.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-imap">
   <glossterm
 >&IMAP;</glossterm>
@@ -3998,7 +3968,7 @@
 >&IMAP; staat voor Internet Message Access Protocol, een breed beschikbare methode voor beheren van e-mailberichten. &IMAP; onderhoudt en synchroniseert locale en kopieën op afstand van een set berichten -- met andere woorden, de lokaal opgeslagen gegevens voor een &IMAP;-account zijn een gespiegelde image van de berichten op de server.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-inline-pgp">
   <glossterm
 >Inline OpenPGP</glossterm>
@@ -4007,7 +3977,7 @@
 >Inline OpenPGP is een versleutelingsprotocol waarin PGP handtekeningen direct ingebed zijn in de inhoud van het e-mailbericht. Dit protocol is afgekeurd vanwege technische moeilijkheden veroorzaakt door het niet onderscheidende gebruik van niet-ASCII tekens in e-mailberichten met platte tekst.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-irc">
   <glossterm
 >&irc;</glossterm>
@@ -4018,7 +3988,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-isdn">
   <glossterm
 ><acronym
@@ -4033,7 +4003,7 @@
 > was onvermijdelijk in de vroege dagen van het internet, maar is later vervangen door meer robuuste technologieën die niet geschakelde verbindingen over netwerken bieden die optische glasvezelkabels, satellieten en microgolfzenders/ontvangers met zeer hoge frequentie gebruiken. Het wordt nog steeds breed gebruikt in een paar industriële toepassingen waar een directe point-to-point verbinding nodig is, maar is aa het verdwijnen in de brede consumentenmarkt.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-jabber">
   <glossterm
 >Jabber</glossterm>
@@ -4052,7 +4022,7 @@
 > voor meer informatie.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-kmail">
   <glossterm
 >&kmail;</glossterm>
@@ -4060,9 +4030,8 @@
 ><para
 >Het e-mailbeheerprogramma van &kde;. Biedt een volledig geïntegreerde omgeving voor het verznden en ontvangen van e-mailberichten uit een (of meer) e-mailaccount(s), naast het onderhouden van zoveel e-mailidentiteiten als u wilt hebben, organiseren en archiveren van uw oude e-mailberichten en beheren van uw persoonlijke sleutels voor e-mailversleuteling.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-kolab">
   <glossterm
 >Kolab</glossterm>
@@ -4073,7 +4042,7 @@
 > &nbsp;levert gelijkwaardige, hoewel geheel gesloten, softwarepakketten.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-ldap">
   <glossterm
 ><acronym
@@ -4085,9 +4054,8 @@
 >ldap</acronym
 >) is een standaard protocol of methode voor het delen van enige specifieke klassen van informatie over de vele servercomputers die samen het internet vormen.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-ldif">
   <glossterm
 >.ldif</glossterm>
@@ -4101,8 +4069,7 @@
 >.ldif</filename
 >) bestand is een type bestand met platte tekst ontworpen voor uitwisselen van directory-informatie tussen de verschillende servers in een gedistribueerd netwerk.</para
 ></glossdef>
-  </glossentry
-> 
+  </glossentry>
 
   <glossentry id="gloss-mnwhl">
   <glossterm
@@ -4131,7 +4098,7 @@
 >-codering, &etc; De oorspronkelijke conventies voor codering van e-mail ondersteunde niets naast berichten in platte tekst (of versleuteld) geschreven met 7-bit ASCII code. Bijna alle huidige e-mailberichten zijn &MIME; gecodeerd.</para
 ></glossdef>
   </glossentry>
-   
+
   <glossentry id="gloss-open-pgp">
   <glossterm
 >OpenPGP/&MIME;</glossterm>
@@ -4142,7 +4109,7 @@
 > gecodeerde e-mailberichten. Een speciale set &MIME;-headers zijn rond de PGP ondertekening geplaatst, waarmee een e-mailclientprogramma de handtekening kan verbergen bij het tonen van het bericht.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-group">
   <glossterm
 >Open-Xchange-groupware-server</glossterm>
@@ -4155,7 +4122,7 @@
 > leveren vergelijkbare softwarepakketten.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-pcs">
   <glossterm
 ><acronym
@@ -4170,7 +4137,7 @@
 >-telefoons werken in een hogere frequentieband dan traditionele mobiele telefoons, wat inhoudt dat ze meer bandbreedte dan oudere mobiele telefoons bieden.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-pgp">
   <glossterm
 ><acronym
@@ -4183,7 +4150,7 @@
 > staat voor Pretty Good Privacy, een versleutelingsprogramma voor gegevens dat is uitgegeven door Philip Zimmerman in 1991. De meeste vandaag in gebruik zijnde e-mailversleutelingssoftware gebruikt een variant van PGP om te versleutelen, ontcijferen en cryptografisch berichten te ondertekenen.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-pim">
   <glossterm
 >&PIM;</glossterm>
@@ -4191,9 +4158,8 @@
 ><para
 >Het Personal Information Management systeem van &kde;, een samenstel van programma's om u te helpen bij het beheer van uw contacten en uw agenda. &PIM; omvat &kontact;, &nbsp;&kmail;, &nbsp;&kaddressbook;, &nbsp;&korganizer;, &nbsp;&akregator;, en &nbsp;&akonadi;. Ook meer algemeen gebruikt om elk systeem voor beheer van persoonlijke informatie zoals namen, adressen, telefoonnummers, &etc; te beschrijven.</para
 ></glossdef>
-  </glossentry
->  
-  
+  </glossentry>
+
   <glossentry id="gloss-qrcode">
   <glossterm
 >QR-code</glossterm>
@@ -4215,7 +4181,7 @@
 > staat voor Simple Authentication and Security Layer, een framework voor authenticatie van client (wachtwoorden en gebruikersnamen) en beveiliging van gegevens (versleutelde verbinding). Het ondersteunt meer dan tien verschillende protocollen.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-mime">
   <glossterm
 ><acronym
@@ -4253,7 +4219,7 @@
 > formaat zoals boven gedefinieerd, maar de gehele inhoud van het bericht is opgerold in een enkel &MIME;-object. (De meeste &MIME; gecodeerde e-mailberichten bestaan uit twee of meer gescheiden &MIME;-objecten.)</para
 ></glossdef>
   </glossentry>
- 
+
   <glossentry id="gloss-sms">
   <glossterm
 ><acronym
@@ -4296,7 +4262,7 @@
 > is de zwakste koppeling in de ketting van een clientprogramma om met een veilige (versleutelde) internetservice te verbinden. Het is het doel van verschillende hackpogingen geweest en het is verschillende keren herzien in antwoord op zulke aanvallen.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-vcf">
   <glossterm
 >.vcf</glossterm>
@@ -4324,7 +4290,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   </glossary>
 
 &docbook-reference;
