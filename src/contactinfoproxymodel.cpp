@@ -33,8 +33,8 @@ ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
 QVariant ContactInfoProxyModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid()) {
-        return {};
         qCWarning(KADDRESSBOOK_LOG) << "invalid index!";
+        return {};
     }
     if (role >= Roles::PictureRole && role <= Roles::DescriptionRole) {
         const auto item = index.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();

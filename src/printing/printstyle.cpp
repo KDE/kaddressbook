@@ -40,15 +40,15 @@ void PrintStyle::setPreview(const QPixmap &image)
 
 bool PrintStyle::setPreview(const QString &fileName)
 {
-    QPixmap preview;
+    QPixmap previewImg;
 
     const QString path = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kaddressbook/printing/"_L1 + fileName);
     if (path.isEmpty()) {
         qCDebug(KADDRESSBOOK_LOG) << "cannot locate preview image " << fileName << " in appdata";
         return false;
     } else {
-        if (preview.load(path)) {
-            setPreview(preview);
+        if (previewImg.load(path)) {
+            setPreview(previewImg);
             return true;
         } else {
             qCDebug(KADDRESSBOOK_LOG) << "preview at '" << path << "' cannot be loaded.";
