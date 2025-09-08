@@ -82,14 +82,19 @@ MainWindow::MainWindow()
     WhatsNewTranslations translations;
     const QString newFeaturesMD5 = translations.newFeaturesMD5();
     if (!newFeaturesMD5.isEmpty()) {
-        const bool hasNewFeature = (Settings::self()->previousNewFeaturesMD5() != newFeaturesMD5);
-        if (hasNewFeature) {
-            auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this, i18n("KAddressBook"));
-            whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
-            whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
-            mainWidgetLayout->addWidget(whatsNewMessageWidget);
+        const QString previousNewFeaturesMD5 = Settings::self()->previousNewFeaturesMD5();
+        if (!previousNewFeaturesMD5.isEmpty()) {
+            const bool hasNewFeature = (previousNewFeaturesMD5 != newFeaturesMD5);
+            if (hasNewFeature) {
+                auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this, i18n("KAddressBook"));
+                whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
+                whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
+                mainWidgetLayout->addWidget(whatsNewMessageWidget);
+                Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
+                whatsNewMessageWidget->animatedShow();
+            }
+        } else {
             Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
-            whatsNewMessageWidget->animatedShow();
         }
     }
 
