@@ -146,6 +146,14 @@ endif()
 find_package(KPim6AkonadiContactWidgets ${AKONADI_CONTACT_VERSION} CONFIG REQUIRED)
 find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 
+set(KTEXTADDONS_MIN_VERSION "1.8.0")
+
+find_package(KF6TextAddonsWidgets ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
+
+if(${KF6TextAddonsWidgets_VERSION} VERSION_GREATER_EQUAL 1.8.44)
+    set(HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT TRUE)
+endif()
+
 include_directories(
     ${kaddressbook_SOURCE_DIR}
     ${kaddressbook_BINARY_DIR}
