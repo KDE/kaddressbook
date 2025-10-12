@@ -144,6 +144,7 @@ target_link_libraries(
         Qt::PrintSupport
         KF6::I18n
         KF6::ColorScheme
+        KF6::TextAddonsWidgets
 )
 if(TARGET KF6::UserFeedbackWidgets)
     target_link_libraries(kaddressbookprivate PRIVATE KF6::UserFeedbackWidgets)
@@ -220,6 +221,7 @@ target_link_libraries(
     KPim6::KontactInterface
     kaddressbookprivate
     KF6::Crash
+    KF6::TextAddonsWidgets
 )
 
 install(
@@ -252,6 +254,7 @@ target_link_libraries(
     kaddressbookprivate
     KF6::I18n
     KF6::Parts
+    KF6::TextAddonsWidgets
 )
 install(TARGETS kaddressbookpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
 

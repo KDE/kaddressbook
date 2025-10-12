@@ -43,9 +43,14 @@ using namespace Qt::Literals::StringLiterals;
 #include <GrantleeTheme/GrantleeThemeManager>
 
 #include <PimCommon/PimUtil>
-#include <PimCommon/WhatsNewDialog>
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
+
+#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
+#include <TextAddonsWidgets/WhatsNewDialog>
+#else
+#include <PimCommon/WhatsNewDialog>
+#endif
 
 #include <Akonadi/AttributeFactory>
 #include <Akonadi/CollectionFilterProxyModel>
@@ -741,7 +746,11 @@ void MainWidget::setupActions(KActionCollection *collection)
 void MainWidget::slotWhatsNew()
 {
     WhatsNewTranslations translations;
+#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
+    TextAddonsWidgets::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this, i18n("KAddressBook"));
+#else
     PimCommon::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this, i18n("KAddressBook"));
+#endif
     dlg.updateInformations();
     dlg.exec();
 }
