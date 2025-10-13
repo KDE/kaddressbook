@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-09-09 00:57+0000\n"
+"POT-Creation-Date: 2025-10-13 00:42+0000\n"
 "PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -28,7 +28,7 @@ msgid "Your emails"
 msgstr "आपके ईमेल"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:752 src/mainwidget.cpp:779
+#: src/mainwidget.cpp:761 src/mainwidget.cpp:788
 #, kde-format
 msgid "Address Book"
 msgstr "पता पुस्तिका"
@@ -95,8 +95,9 @@ msgid "Blog Feed"
 msgstr "ब्लॉग फ़ीड"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
-#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:744 src/mainwindow.cpp:89
+#: src/kaddressbookpart.cpp:36 src/kaddressbookpart.cpp:52
+#: src/kaddressbookpart.cpp:54 src/mainwidget.cpp:750 src/mainwidget.cpp:752
+#: src/mainwindow.cpp:107 src/mainwindow.cpp:109
 #, kde-format
 msgid "KAddressBook"
 msgstr "केएड्रेसबुक"
@@ -683,7 +684,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "उपयोगकर्ता फ़ीडबैक के लिए उपलब्ध विकल्पों की सूची बनाता है"
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:83
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "&KAddressBook कॉन्फ़िगर करें…"
@@ -748,99 +749,99 @@ msgstr "&निर्यात"
 msgid "Main Toolbar"
 msgstr "मुख्य टूलबार"
 
-#: src/mainwidget.cpp:375
+#: src/mainwidget.cpp:380
 #, kde-format
 msgid "Import"
 msgstr "आयात"
 
-#: src/mainwidget.cpp:382
+#: src/mainwidget.cpp:387
 #, kde-format
 msgid "Export"
 msgstr "निर्यात"
 
-#: src/mainwidget.cpp:434
+#: src/mainwidget.cpp:439
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "खोजें… <%1>"
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:671
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "संपूर्ण पता पुस्तिका या चयनित संपर्कों की संख्या प्रिंट करें।"
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Quick search"
 msgstr "त्वरित खोज"
 
-#: src/mainwidget.cpp:676
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Category filter"
 msgstr "श्रेणी फ़िल्टर"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Select All"
 msgstr "सबका चयन करें"
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "वर्तमान पता पुस्तिका दृश्य में सभी संपर्कों का चयन करें."
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:692
 #, kde-format
 msgid "Show QR Codes"
 msgstr "क्यूआर कोड दिखाएं"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:693
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "संपर्क में QR कोड दिखाएँ."
 
-#: src/mainwidget.cpp:693
+#: src/mainwidget.cpp:698
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "सरल (एक कॉलम)"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:702
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "पता पुस्तिका दृश्य का सरल मोड दिखाएँ."
 
-#: src/mainwidget.cpp:700
+#: src/mainwidget.cpp:705
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "दो कॉलम"
 
-#: src/mainwidget.cpp:706
+#: src/mainwidget.cpp:711
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "तीन कॉलम"
 
-#: src/mainwidget.cpp:719
+#: src/mainwidget.cpp:724
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "फोकस को त्वरित खोज पर सेट करें"
 
-#: src/mainwidget.cpp:736
+#: src/mainwidget.cpp:741
 #, kde-format
 msgid "What's new"
 msgstr "नया क्या है"
 
-#: src/mainwidget.cpp:785 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:794 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "संपर्क प्रिंट करें"
 
-#: src/mainwindow.cpp:135
+#: src/mainwindow.cpp:156
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -850,7 +851,7 @@ msgstr ""
 "आपके सामने एक संवाद प्रस्तुत किया जाएगा जहां आप एप्लिकेशन-व्यापी शॉर्टकट कॉन्फ़िगर कर सकते "
 "हैं।"
 
-#: src/mainwindow.cpp:234
+#: src/mainwindow.cpp:255
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -858,7 +859,7 @@ msgid ""
 msgstr ""
 "<qt>इससे मेनू बार पूरी तरह छिप जाएगा। आप %1 लिखकर इसे फिर से दिखा सकते हैं।</qt>"
 
-#: src/mainwindow.cpp:237
+#: src/mainwindow.cpp:258
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1469,7 +1470,7 @@ msgstr "अपनी मनचाही प्रिंटिंग शैली
 msgid "Add new whatsnew widget."
 msgstr "नया whatsnew विजेट जोड़ें."
 
-#: src/whatsnew/whatsnewtranslations.cpp:31
+#: src/whatsnew/whatsnewtranslations.cpp:43
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr "कॉन्फ़िगर संवाद आकार पुनर्स्थापित करें."
