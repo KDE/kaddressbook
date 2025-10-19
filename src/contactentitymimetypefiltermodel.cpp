@@ -27,6 +27,7 @@ void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActi
     if (mAccountActivities) {
         connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::slotInvalidateFilter);
     }
+    slotInvalidateFilter();
 }
 
 void ContactEntityMimeTypeFilterModel::slotInvalidateFilter()
