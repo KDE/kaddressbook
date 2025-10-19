@@ -34,6 +34,7 @@ protected:
     [[nodiscard]] bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
 
 private:
+    void slotInvalidateFilter();
     Akonadi::AccountActivitiesAbstract *mAccountActivities = nullptr;
     bool mEnablePlasmaActivities = false;
 };

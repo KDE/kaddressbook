@@ -21,12 +21,22 @@ ContactEntityMimeTypeFilterModel::~ContactEntityMimeTypeFilterModel() = default;
 void ContactEntityMimeTypeFilterModel::setAccountActivities(Akonadi::AccountActivitiesAbstract *accountActivities)
 {
     if (mAccountActivities) {
-        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::invalidateFilter);
+        disconnect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::slotInvalidateFilter);
     }
     mAccountActivities = accountActivities;
     if (mAccountActivities) {
-        connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::invalidateFilter);
+        connect(mAccountActivities, &Akonadi::AccountActivitiesAbstract::activitiesChanged, this, &ContactEntityMimeTypeFilterModel::slotInvalidateFilter);
     }
+}
+
+void ContactEntityMimeTypeFilterModel::slotInvalidateFilter()
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+    beginFilterChange();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
+    invalidateFilter();
+#endif
 }
 
 bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
@@ -56,8 +66,15 @@ bool ContactEntityMimeTypeFilterModel::enablePlasmaActivities() const
 void ContactEntityMimeTypeFilterModel::setEnablePlasmaActivities(bool newEnablePlasmaActivities)
 {
     if (mEnablePlasmaActivities != newEnablePlasmaActivities) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        beginFilterChange();
+#endif
         mEnablePlasmaActivities = newEnablePlasmaActivities;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
         invalidateFilter();
+#endif
     }
 }
 

@@ -127,8 +127,15 @@ void CategoryFilterProxyModel::setFilterCategories(const QList<Akonadi::Tag> &ta
     Q_D(CategoryFilterProxyModel);
 
     if (tagList != d->filterTagList) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        beginFilterChange();
+#endif
         d->filterTagList = tagList;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
         invalidateFilter();
+#endif
     }
 }
 
@@ -137,8 +144,15 @@ void CategoryFilterProxyModel::setFilterEnabled(bool enable)
     Q_D(CategoryFilterProxyModel);
 
     if (enable != d->filterEnabled) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        beginFilterChange();
+#endif
         d->filterEnabled = enable;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+        endFilterChange(QSortFilterProxyModel::Direction::Rows);
+#else
         invalidateFilter();
+#endif
     }
 }
 
