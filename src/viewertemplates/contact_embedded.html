@@ -72,7 +72,13 @@
 
       {% for website in contact.extraUrls %}
       <tr>
-        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Website" %}</font></b></td>
+        <td align="right" valign="top" width="30%"><b><font color="grey">
+        {% if website.resourceLabel %}
+        {{ website.resourceLabel }}
+        {% else %}
+        {% i18n "Website" %}
+        {% endif %}
+        </font></b></td>
         <td align="left" valign="top" colspan="2">
         {% if website.url.scheme %}
             <a href="{{ website.url }}">
