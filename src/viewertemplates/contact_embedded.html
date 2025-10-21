@@ -53,7 +53,9 @@
       <tr>
           <td align="right" valign="top" width="30%"><b><font color="grey">{{ imAddress.serviceLabel }}</font></b></td>
           <td align="left" valign="top">{{ imAddress.address.path|safe }}</td>
-          <td align="left" valign="top">{% icon imAddress.serviceIcon small %}</td>
+          {% if imAddress.serviceIcon %}
+            <td align="left" valign="top">{% icon imAddress.serviceIcon small %}</td>
+          {% endif %}
       </tr>
       {% endfor %}
 
