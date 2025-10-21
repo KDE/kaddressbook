@@ -70,6 +70,20 @@
       </tr>
       {% endfor %}
 
+      {% for website in contact.extraUrls %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Website" %}</font></b></td>
+        <td align="left" valign="top" colspan="2">
+        {% if website.url.scheme %}
+            <a href="{{ website.url }}">
+        {% else %}
+            <a href="https://{{ website.url }}">
+        {% endif %}
+        {{ website.url }}</a></td>
+      </tr>
+      {% endfor %}
+
+
       {% if contact.blogFeed %}
       <tr>
         <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Blog Feed" %}</font></b></td>
