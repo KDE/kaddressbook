@@ -43,15 +43,9 @@ using namespace Qt::Literals::StringLiterals;
 #include <KUserFeedback/Provider>
 #endif
 
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
 #include <TextAddonsWidgets/NeedUpdateVersionUtils>
 #include <TextAddonsWidgets/NeedUpdateVersionWidget>
 #include <TextAddonsWidgets/WhatsNewMessageWidget>
-#else
-#include <PimCommon/NeedUpdateVersionUtils>
-#include <PimCommon/NeedUpdateVersionWidget>
-#include <PimCommon/WhatsNewMessageWidget>
-#endif
 
 MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)
@@ -76,7 +70,6 @@ MainWindow::MainWindow()
     auto mainWidgetLayout = new QVBoxLayout(mainWidget);
     mainWidgetLayout->setContentsMargins({});
     mainWidgetLayout->setSpacing(0);
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
     if (TextAddonsWidgets::NeedUpdateVersionUtils::checkVersion()) {
         const auto status =
             TextAddonsWidgets::NeedUpdateVersionUtils::obsoleteVersionStatus(QLatin1String(KADDRESSBOOK_RELEASE_VERSION_DATE), QDate::currentDate());
@@ -86,16 +79,6 @@ MainWindow::MainWindow()
             needUpdateVersionWidget->setObsoleteVersion(status);
         }
     }
-#else
-    if (PimCommon::NeedUpdateVersionUtils::checkVersion()) {
-        const auto status = PimCommon::NeedUpdateVersionUtils::obsoleteVersionStatus(QLatin1String(KADDRESSBOOK_RELEASE_VERSION_DATE), QDate::currentDate());
-        if (status != PimCommon::NeedUpdateVersionUtils::ObsoleteVersion::NotObsoleteYet) {
-            auto needUpdateVersionWidget = new PimCommon::NeedUpdateVersionWidget(this);
-            mainWidgetLayout->addWidget(needUpdateVersionWidget);
-            needUpdateVersionWidget->setObsoleteVersion(status);
-        }
-    }
-#endif
     WhatsNewTranslations translations;
     const QString newFeaturesMD5 = translations.newFeaturesMD5();
     if (!newFeaturesMD5.isEmpty()) {
@@ -103,11 +86,7 @@ MainWindow::MainWindow()
         if (!previousNewFeaturesMD5.isEmpty()) {
             const bool hasNewFeature = (previousNewFeaturesMD5 != newFeaturesMD5);
             if (hasNewFeature) {
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
                 auto whatsNewMessageWidget = new TextAddonsWidgets::WhatsNewMessageWidget(this, i18n("KAddressBook"));
-#else
-                auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(this, i18n("KAddressBook"));
-#endif
                 whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
                 whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
                 mainWidgetLayout->addWidget(whatsNewMessageWidget);

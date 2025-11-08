@@ -18,23 +18,11 @@ QList<KLazyLocalizedString> WhatsNewTranslations::lastNewFeatures() const
     return info;
 }
 
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
 QList<TextAddonsWidgets::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo() const
-#else
-QList<PimCommon::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo() const
-#endif
 {
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
     QList<TextAddonsWidgets::WhatsNewInfo> listInfo;
-#else
-    QList<PimCommon::WhatsNewInfo> listInfo;
-#endif
     {
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
         TextAddonsWidgets::WhatsNewInfo info;
-#else
-        PimCommon::WhatsNewInfo info;
-#endif
         QStringList lst;
         for (const KLazyLocalizedString &l : lastNewFeatures()) {
             lst += l.toString();

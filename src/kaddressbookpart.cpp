@@ -15,11 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
 #include <TextAddonsWidgets/WhatsNewMessageWidget>
-#else
-#include <PimCommon/WhatsNewMessageWidget>
-#endif
 
 #include <KActionCollection>
 #include <KLocalizedString>
@@ -48,11 +44,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
         if (!previousNewFeaturesMD5.isEmpty()) {
             const bool hasNewFeature = (previousNewFeaturesMD5 != newFeaturesMD5);
             if (hasNewFeature) {
-#if HAVE_TEXTUTILS_HAS_WHATSNEW_SUPPORT
                 auto whatsNewMessageWidget = new TextAddonsWidgets::WhatsNewMessageWidget(parentWidget, i18n("KAddressBook"));
-#else
-                auto whatsNewMessageWidget = new PimCommon::WhatsNewMessageWidget(parentWidget, i18n("KAddressBook"));
-#endif
                 whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
                 whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
                 topLayout->addWidget(whatsNewMessageWidget);
