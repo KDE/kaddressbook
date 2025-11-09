@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-10-22 00:44+0000\n"
+"POT-Creation-Date: 2025-11-09 00:43+0000\n"
 "PO-Revision-Date: 2014-09-23 00:51-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -30,7 +30,7 @@ msgid "Your emails"
 msgstr "ybando@k6.dion.ne.jp,democtezuma@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:761 src/mainwidget.cpp:788
+#: src/mainwidget.cpp:753 src/mainwidget.cpp:780
 #, kde-format
 msgid "Address Book"
 msgstr "アドレス帳"
@@ -101,9 +101,8 @@ msgid "Blog Feed"
 msgstr "ブログフィード"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
-#: src/kaddressbookpart.cpp:36 src/kaddressbookpart.cpp:52
-#: src/kaddressbookpart.cpp:54 src/mainwidget.cpp:750 src/mainwidget.cpp:752
-#: src/mainwindow.cpp:107 src/mainwindow.cpp:109
+#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
+#: src/mainwidget.cpp:745 src/mainwindow.cpp:89
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -684,7 +683,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/kaddressbookpart.cpp:83
+#: src/kaddressbookpart.cpp:75
 #, fuzzy, kde-format
 #| msgid "&Configure KAddressBook..."
 msgid "&Configure KAddressBook…"
@@ -750,19 +749,19 @@ msgstr "エクスポート(&E)"
 msgid "Main Toolbar"
 msgstr "メインツールバー"
 
-#: src/mainwidget.cpp:380
+#: src/mainwidget.cpp:376
 #, fuzzy, kde-format
 #| msgid "&Import"
 msgid "Import"
 msgstr "インポート(&I)"
 
-#: src/mainwidget.cpp:387
+#: src/mainwidget.cpp:383
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "エクスポート(&E)"
 
-#: src/mainwidget.cpp:439
+#: src/mainwidget.cpp:435
 #, fuzzy, kde-format
 #| msgctxt "@label Search contacts in list"
 #| msgid "Search...<%1>"
@@ -770,85 +769,85 @@ msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "検索...<%1>"
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:667
 #, fuzzy, kde-format
 #| msgid "Print the complete address book or a selected number of contacts."
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "アドレス帳全体または選択した連絡先を印刷します。"
 
-#: src/mainwidget.cpp:676
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Quick search"
 msgstr "クイック検索"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:677
 #, kde-format
 msgid "Category filter"
 msgstr "カテゴリフィルタ"
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:682
 #, kde-format
 msgid "Select All"
 msgstr "すべて選択"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:684
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "現在のアドレス帳ビューのすべての連絡先を選択します。"
 
-#: src/mainwidget.cpp:692
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show QR Codes"
 msgstr ""
 
-#: src/mainwidget.cpp:693
+#: src/mainwidget.cpp:689
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: src/mainwidget.cpp:698
+#: src/mainwidget.cpp:694
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: src/mainwidget.cpp:702
+#: src/mainwidget.cpp:698
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "アドレス帳を簡易ビューで表示します。"
 
-#: src/mainwidget.cpp:705
+#: src/mainwidget.cpp:701
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:711
+#: src/mainwidget.cpp:707
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:724
+#: src/mainwidget.cpp:720
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:741
+#: src/mainwidget.cpp:737
 #, kde-format
 msgid "What's new"
 msgstr ""
 
-#: src/mainwidget.cpp:794 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:786 src/printing/printingwizard.cpp:46
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "連絡先を印刷"
 
-#: src/mainwindow.cpp:156
+#: src/mainwindow.cpp:135
 #, fuzzy, kde-format
 #| msgid ""
 #| "You will be presented with a dialog where you can configure the "
@@ -860,14 +859,14 @@ msgid ""
 msgstr ""
 "ダイアログでアプリケーションで使用するキーボードショートカットを設定します。"
 
-#: src/mainwindow.cpp:255
+#: src/mainwindow.cpp:234
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: src/mainwindow.cpp:258
+#: src/mainwindow.cpp:237
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1501,7 +1500,7 @@ msgstr ""
 msgid "Add new whatsnew widget."
 msgstr ""
 
-#: src/whatsnew/whatsnewtranslations.cpp:43
+#: src/whatsnew/whatsnewtranslations.cpp:31
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr ""
