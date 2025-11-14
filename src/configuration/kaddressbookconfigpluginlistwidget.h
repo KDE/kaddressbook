@@ -5,10 +5,9 @@
 */
 
 #pragma once
+#include <PimCommon/ConfigurePluginsWidget>
 
-#include <PimCommon/ConfigurePluginsListWidget>
-
-class KAddressBookConfigPluginListWidget : public PimCommon::ConfigurePluginsListWidget
+class KAddressBookConfigPluginListWidget : public TextAddonsWidgets::ConfigurePluginsWidget
 {
     Q_OBJECT
 public:

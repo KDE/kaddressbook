@@ -7,8 +7,8 @@
 #pragma once
 
 #include "kaddressbook_importexport_export.h"
-#include <PimCommon/PluginUtil>
 #include <QObject>
+#include <TextAddonsWidgets/PluginUtil>
 
 namespace KAddressBookImportExport
 {
@@ -27,7 +27,7 @@ public:
 
     [[nodiscard]] QList<Plugin *> pluginsList() const;
 
-    [[nodiscard]] QList<PimCommon::PluginUtilData> pluginsDataList() const;
+    [[nodiscard]] QList<TextAddonsWidgets::PluginUtilData> pluginsDataList() const;
 
     [[nodiscard]] QString configGroupName() const;
     [[nodiscard]] QString configPrefixSettingKey() const;
