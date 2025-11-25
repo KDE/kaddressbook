@@ -6,19 +6,19 @@
 
 #pragma once
 #include "config-kaddressbook.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QCommandLineOption>
 #include <QCommandLineParser>
 
+using namespace Qt::Literals::StringLiterals;
 static void kaddressbook_options(QCommandLineParser *parser)
 {
     parser->addOption(QCommandLineOption(u"import"_s, i18nc("@info:shell", "Import the given file")));
 
     parser->addOption(QCommandLineOption(u"newcontact"_s, i18nc("@info:shell", "Open the 'New Contact' dialog")));
 
-    parser->addOption(QCommandLineOption(u"view"_s, i18nc("@info:shell", "Display the specified contact (by URL)"), u"url"_s));
+    parser->addOption(QCommandLineOption(u"view"_s, i18nc("@info:shell", "Display the specified contact (by URL)"), i18n("Url")));
 
     parser->addPositionalArgument(u"urls"_s, i18nc("@info:shell", "Files or URLs. The user will be asked whether to import."), u"[urls...]"_s);
 
