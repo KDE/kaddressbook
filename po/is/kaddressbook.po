@@ -7,19 +7,20 @@
 # Þröstur Svanbergsson <throstur@bylur.net>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2004, 2005.
 #
+# SPDX-FileCopyrightText: 2025 Sveinn í Felli <sv1@fellsnet.is>
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-26 00:44+0000\n"
-"PO-Revision-Date: 2006-02-16 19:41+0100\n"
-"Last-Translator: Arnar Leósson <leosson@frisurf.no>\n"
-"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"PO-Revision-Date: 2025-12-05 15:09+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -41,17 +42,13 @@ msgid "Address Book"
 msgstr "Vistfangaskrá"
 
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Contains"
 msgid "Contact"
-msgstr "Inniheldur"
+msgstr "Tengiliður"
 
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgid "Email"
 msgid "Emails"
-msgstr "Netfang"
+msgstr "Tölvupóstföng"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -66,29 +63,26 @@ msgstr "Stofnun/félag"
 #: src/viewertemplates/contact_embedded.html:64
 #: src/viewertemplates/contact_embedded.html:81
 msgid "Website"
-msgstr ""
+msgstr "Vefsvæði"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
 #: src/viewertemplates/contact_embedded.html:26
 #: src/printing/ringbinder/rbs_appearance.ui:108
-#, fuzzy, kde-format
+#, kde-format
 msgid "Birthday"
-msgstr "Afmælisdagur:"
+msgstr "Afmælisdagur"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbNote)
 #: src/printing/grantlee/themes/default/theme.html:70
 #: src/printing/grantlee/themes/full/theme.html:70
 #: src/printing/ringbinder/rbs_appearance.ui:121
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Note"
-msgstr "Athugasemd:"
+msgstr "Minnispunktur"
 
 #: src/printing/grantlee/themes/full/theme.html:76
-#, fuzzy
-#| msgid "Title"
 msgid "Title"
 msgstr "Titill"
 
@@ -96,21 +90,18 @@ msgstr "Titill"
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(eins árs gamalt)"
+msgstr[1] "(%1 ára gamalt)"
 
 #: src/viewertemplates/contact_embedded.html:47
-#, fuzzy
-#| msgid "Email"
 msgid "Email"
-msgstr "Netfang"
+msgstr "Tölvupóstfang"
 
 #: src/viewertemplates/contact_embedded.html:97
 #: src/importexport/contactfields.cpp:106
-#, fuzzy, kde-format
-#| msgid "Blog feed:"
+#, kde-format
 msgid "Blog Feed"
-msgstr "Blogg straumur:"
+msgstr "Bloggfærslur"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
 #: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
@@ -120,55 +111,47 @@ msgid "KAddressBook"
 msgstr "KAddressBook"
 
 #: kontactplugin/kaddressbook_plugin.cpp:33
-#, fuzzy, kde-format
-#| msgid "&New Contact..."
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
-msgstr "&Nýr tengiliður..."
+msgstr "Nýr tengiliður..."
 
 #. i18nc( "@info:status", "Create a new contact" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:39
-#, fuzzy, kde-format
-#| msgid ""
-#| "You will be presented with a dialog, where you can configure the "
-#| "application wide shortcuts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
-msgstr "Gluggi birtist sem leyfir þér að stilla flýtilykla forritsins"
+msgstr "Þú færð upp svarglugga þar sem þú getur bætt við nýjum tengilið."
 
 #: kontactplugin/kaddressbook_plugin.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
-msgstr "Nýr tengiliður"
+msgstr "Nýr tengiliðahópur..."
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
 #: kontactplugin/kaddressbook_plugin.cpp:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "You will be presented with a dialog, where you can configure the "
-#| "application wide shortcuts."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "You will be presented with a dialog where you can create a new contact group."
-msgstr "Gluggi birtist sem leyfir þér að stilla flýtilykla forritsins"
+msgstr "Þú færð upp svarglugga þar sem þú getur bætt við nýjum tengiliðahóp."
 
 #: src/aboutdata.cpp:20
-#, fuzzy, kde-format
-#| msgid "The KDE Address Book"
+#, kde-format
 msgid "The KDE Address Book Application"
-msgstr "KDE vistfangaskráin"
+msgstr "KDE-nafnaskráin"
 
 #: src/aboutdata.cpp:22
 #, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr ""
+msgstr "Höfundarréttur © 2007–%1 KAddressBook höfundarnir"
 
 #: src/aboutdata.cpp:24
 #, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: src/aboutdata.cpp:24
 #, kde-format
@@ -179,89 +162,82 @@ msgstr "Núverandi umsjónaraðili"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
-msgstr ""
+msgstr "Tobias König"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Current maintainer"
+#, kde-format
 msgid "Previous maintainer"
-msgstr "Núverandi umsjónaraðili"
+msgstr "Fyrrum umsjónaraðili"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Stefan Taferner"
 
 #: src/aboutdata.cpp:26
-#, fuzzy, kde-format
-#| msgid "Original author"
+#, kde-format
 msgid "Original Author (1998)"
-msgstr "Upprunalegur höfundur"
+msgstr "Upprunalegur höfundur (1998)"
 
 #: src/aboutdata.cpp:27
 #, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:27
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Hjálparskjöl (2019)"
 
 #: src/categoryselectwidget.cpp:94
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
-msgstr "Nota síðustu virku síu"
+msgstr "Núllstilla flokkasíu"
 
 #: src/categoryselectwidget.cpp:101
-#, fuzzy, kde-format
-#| msgid "Use last active filter"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
-msgstr "Nota síðustu virku síu"
+msgstr "Hreinsa flokkasíu"
 
 #: src/categoryselectwidget.cpp:105
 #, kde-format
 msgid "(Untagged)"
-msgstr ""
+msgstr "(Ómerkt)"
 
 #: src/categoryselectwidget.cpp:110
 #, kde-format
 msgid "(Groups)"
-msgstr ""
+msgstr "(Hópar)"
 
 #: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
 #, kde-format
 msgid "(All)"
-msgstr ""
+msgstr "(Allt)"
 
 #: src/categoryselectwidget.cpp:224
-#, fuzzy, kde-format
-#| msgid "None"
+#, kde-format
 msgid "(None)"
-msgstr "Engin"
+msgstr "(ekkert)"
 
 #: src/categoryselectwidget.cpp:229
 #, kde-format
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
-#, fuzzy, kde-format
-#| msgid "Category"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
-msgstr "Flokkur"
+msgstr "<qt>Flokkasía: %1"
 
 #: src/configuration/kaddressbook_config_activities.cpp:20
-#, fuzzy, kde-format
-#| msgid "Table"
+#, kde-format
 msgid "Enabled"
-msgstr "Tafla"
+msgstr "Virkt"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:70
 #, kde-format
@@ -274,10 +250,9 @@ msgid "Import/Export Plugins"
 msgstr ""
 
 #: src/contactinfoproxymodel.cpp:68
-#, fuzzy, kde-format
-#| msgid "Add..."
+#, kde-format
 msgid "..."
-msgstr "Bæta við..."
+msgstr "..."
 
 #: src/contactinfoproxymodel.cpp:70
 #, kde-format
@@ -285,39 +260,36 @@ msgid "Loading contacts details ..."
 msgstr ""
 
 #: src/contactinfoproxymodel.cpp:123
-#, fuzzy, kde-format
-#| msgid "Email:"
+#, kde-format
 msgid "Email: %1"
-msgstr "Netfang:"
+msgstr "Tölvupóstfang: %1"
 
 #: src/contactinfoproxymodel.cpp:131
-#, fuzzy, kde-format
-#| msgid "Phone"
+#, kde-format
 msgid "Phone: %1"
-msgstr "Sími"
+msgstr "Sími: %1"
 
 #: src/contactinfoproxymodel.cpp:137
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:150 src/contactinfoproxymodel.cpp:167
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
-#, fuzzy, kde-format
-#| msgid "Text"
+#, kde-format
 msgctxt "@action:button Next contact"
 msgid "Next"
-msgstr "Texti"
+msgstr "Næsta"
 
 #: src/contactswitcher.cpp:19
 #, kde-format
 msgctxt "@action:button Previous contact"
 msgid "Previous"
-msgstr ""
+msgstr "Fyrra"
 
 #: src/contactswitcher.cpp:24
 #, kde-format
@@ -347,12 +319,10 @@ msgid "Press this button to move to the next contact in the list."
 msgstr ""
 
 #: src/contactswitcher.cpp:106
-#, fuzzy, kde-format
-#| msgctxt "<nickname> on <server>"
-#| msgid "%1 on %2"
+#, kde-format
 msgctxt "@info:status"
 msgid "%1 out of %2"
-msgstr "%1 á %2"
+msgstr "%1 af %2"
 
 #: src/importexport/contactfields.cpp:21
 #, fuzzy, kde-format
@@ -501,7 +471,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr ""
+msgstr "Hafa með undirmöppur"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
@@ -748,53 +718,51 @@ msgstr "Flytja inn KDE 2 vistfangaskrá..."
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
-#, fuzzy, kde-format
+#, kde-format
 msgid "&File"
-msgstr "Sía:"
+msgstr "&Skrá"
 
 #. i18n: ectx: Menu (file_new)
 #: src/kaddressbookui.rc:7 src/kaddressbookui_part.rc:7
-#, fuzzy, kde-format
-#| msgid "New..."
+#, kde-format
 msgid "&New"
-msgstr "Nýtt..."
+msgstr "&Nýtt"
 
 #. i18n: ectx: Menu (edit)
 #: src/kaddressbookui.rc:25 src/kaddressbookui_part.rc:25
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Edit"
-msgstr "Sýs&l..."
+msgstr "Br&eyta"
 
 #. i18n: ectx: Menu (view)
 #: src/kaddressbookui.rc:41 src/kaddressbookui_part.rc:41
-#, fuzzy, kde-format
+#, kde-format
 msgid "&View"
-msgstr "Bæta við sýn"
+msgstr "S&koða"
 
 #. i18n: ectx: Menu (action)
 #: src/kaddressbookui.rc:54 src/kaddressbookui_part.rc:54
-#, fuzzy, kde-format
-#| msgid "Latin1"
+#, kde-format
 msgid "&Action"
-msgstr "Latin1"
+msgstr "&Aðgerð"
 
 #. i18n: ectx: Menu (tools)
 #: src/kaddressbookui.rc:58 src/kaddressbookui_part.rc:58
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Tools"
-msgstr "Tól"
+msgstr "&Verkfæri"
 
 #. i18n: ectx: Menu (settings)
 #: src/kaddressbookui.rc:62 src/kaddressbookui_part.rc:62
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Settings"
-msgstr "Leturstillingar"
+msgstr "&Stillingar"
 
 #. i18n: ectx: Menu (help)
 #: src/kaddressbookui.rc:68 src/kaddressbookui_part.rc:66
 #, kde-format
 msgid "&Help"
-msgstr ""
+msgstr "&Hjálp"
 
 #. i18n: ectx: Menu (file_export)
 #: src/kaddressbookui.rc:97 src/kaddressbookui_part.rc:95
@@ -804,27 +772,25 @@ msgstr "Flytja ú&t"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: src/kaddressbookui.rc:121 src/kaddressbookui_part.rc:119
-#, fuzzy, kde-format
+#, kde-format
 msgid "Main Toolbar"
-msgstr "Tengiliðaslá"
+msgstr "Aðalverkfærastika"
 
 #: src/mainwidget.cpp:376
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import"
-msgstr "&Flytja inn"
+msgstr "Flytja inn"
 
 #: src/mainwidget.cpp:383
-#, fuzzy, kde-format
-#| msgid "&Export"
+#, kde-format
 msgid "Export"
-msgstr "Flytja ú&t"
+msgstr "Flytja út"
 
 #: src/mainwidget.cpp:435
-#, fuzzy, kde-format
-#| msgid "Search:"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
-msgstr "Leita:"
+msgstr "Leita… <%1>"
 
 #: src/mainwidget.cpp:667
 #, fuzzy, kde-format
@@ -834,10 +800,9 @@ msgid "Print the complete address book or a selected number of contacts."
 msgstr "Velja flokka fyrir alla valda tengiliði."
 
 #: src/mainwidget.cpp:672
-#, fuzzy, kde-format
-#| msgid "Recursive search"
+#, kde-format
 msgid "Quick search"
-msgstr "Ítruð leit"
+msgstr "Flýtileit"
 
 #: src/mainwidget.cpp:677
 #, fuzzy, kde-format
@@ -859,12 +824,12 @@ msgstr "Velur alla sjáanlega tengiliði úr virkum glugga."
 #: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show QR Codes"
-msgstr ""
+msgstr "Birta QR-kóða"
 
 #: src/mainwidget.cpp:689
 #, kde-format
 msgid "Show QR Codes in the contact."
-msgstr ""
+msgstr "Birta QR-kóða í skráningu tengiliðar."
 
 #: src/mainwidget.cpp:694
 #, kde-format
@@ -899,14 +864,13 @@ msgstr ""
 #: src/mainwidget.cpp:737
 #, kde-format
 msgid "What's new"
-msgstr ""
+msgstr "Nýtt á döfinni"
 
 #: src/mainwidget.cpp:786 src/printing/printingwizard.cpp:46
-#, fuzzy, kde-format
-#| msgid "Edit Contact"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
-msgstr "Breyta tengilið"
+msgstr "Prenta tengiliði"
 
 #: src/mainwindow.cpp:135
 #, fuzzy, kde-format
@@ -927,11 +891,10 @@ msgid ""
 msgstr ""
 
 #: src/mainwindow.cpp:237
-#, fuzzy, kde-format
-#| msgid "Hide Jump Bar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
-msgstr "Fela stökkslá"
+msgstr "Fela valmyndastiku"
 
 #: src/manageshowcollectionproperties.cpp:85
 #, fuzzy, kde-format
@@ -946,16 +909,14 @@ msgid "Full Name"
 msgstr "Fullt nafn"
 
 #: src/modelcolumnmanager.cpp:74
-#, fuzzy, kde-format
-#| msgid "Family names:"
+#, kde-format
 msgid "Family Name"
-msgstr "Fjölskyldunöfn:"
+msgstr "Kenninafn"
 
 #: src/modelcolumnmanager.cpp:78
-#, fuzzy, kde-format
-#| msgid "Given name:"
+#, kde-format
 msgid "Given Name"
-msgstr "Eiginnafn:"
+msgstr "Eiginnafn"
 
 #: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:131
 #, kde-format
@@ -1015,8 +976,7 @@ msgstr "Prentun"
 #: src/printing/grantlee/grantleeprintstyle.cpp:56
 #: src/printing/mike/mikesstyle.cpp:129
 #: src/printing/ringbinder/ringbinderstyle.cpp:206
-#, fuzzy, kde-format
-#| msgid "Done"
+#, kde-format
 msgctxt "Finished printing"
 msgid "Done"
 msgstr "Búið"
@@ -1113,7 +1073,7 @@ msgstr ""
 #: src/printing/compact/compactstyle.ui:118
 #, kde-format
 msgid "first color"
-msgstr ""
+msgstr "fyrsti litur"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, lbCbSecond)
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCbSecond)
@@ -1125,10 +1085,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
-#, fuzzy, kde-format
-#| msgid "Background Color"
+#, kde-format
 msgid "second color"
-msgstr "Bakgrunnslitur"
+msgstr "seinni litur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbAlternating)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlternating)
@@ -1147,10 +1106,9 @@ msgid "Alternating the background color"
 msgstr "Víxlaður bakgrunnur"
 
 #: src/printing/detailed/detailledstyle.cpp:75
-#, fuzzy, kde-format
-#| msgid "Organization"
+#, kde-format
 msgid "Organization:"
-msgstr "Stofnun/félag"
+msgstr "Fyrirtæki/Stofnun/Samtök/Félag:"
 
 #: src/printing/detailed/detailledstyle.cpp:83
 #, kde-format
@@ -1208,10 +1166,9 @@ msgid "Preferred Address"
 msgstr "Sjálfgefið póstfang"
 
 #: src/printing/detailed/detailledstyle.cpp:149
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Notes:"
-msgstr "Athugasemd:"
+msgstr "Minnispunktar:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
 #: src/printing/detailed/detailledstyle.cpp:233
@@ -1311,17 +1268,16 @@ msgid "Print Progress"
 msgstr "Prentstaða"
 
 #: src/printing/printprogress.cpp:25
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
-msgstr "Prentun: staða"
+msgstr "Prentun: Í gangi"
 
 #: src/printing/printprogress.cpp:32
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: src/printing/printprogress.cpp:44
 #, kde-format
@@ -1385,10 +1341,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
-#, fuzzy, kde-format
-#| msgid "Postal Address"
+#, kde-format
 msgid "Postal addresses"
-msgstr "Póstfang"
+msgstr "Póstföng"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbOrganization)
 #: src/printing/ringbinder/rbs_appearance.ui:89
@@ -1430,10 +1385,9 @@ msgid "Check this box if you want contact notes to be printed."
 msgstr ""
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:82
-#, fuzzy, kde-format
-#| msgid "Note:"
+#, kde-format
 msgid "Note: "
-msgstr "Athugasemd:"
+msgstr "Minnispunktur: "
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:137
 #, fuzzy, kde-format
@@ -1452,40 +1406,31 @@ msgid "Printout for Ring Binders"
 msgstr ""
 
 #: src/printing/stylepage.cpp:37
-#, fuzzy, kde-format
-#| msgid "Ascending"
+#, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "Hækkandi"
 
 #: src/printing/stylepage.cpp:38
-#, fuzzy, kde-format
-#| msgid "Descending"
+#, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "Lækkandi"
 
 #: src/printing/stylepage.cpp:48
-#, fuzzy, kde-format
-#| msgid "(No preview available.)"
+#, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
-msgstr "(Engin forsýning fáanleg)"
+msgstr "(Engin forskoðun fáanleg.)"
 
 #: src/printing/stylepage.cpp:110
-#, fuzzy, kde-format
-#| msgid "Choose Printing Style"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
-msgstr "Veldu prentstíl"
+msgstr "Veldu stíl prentunar"
 
 #: src/printing/stylepage.cpp:115
-#, fuzzy, kde-format
-#| msgid ""
-#| "What should the print look like?\n"
-#| "KAddressBook has several printing styles, designed for different "
-#| "purposes.\n"
-#| "Choose the style that suits your needs below."
+#, kde-format
 msgctxt "@label:textbox"
 msgid ""
 "What should the print look like?\n"
@@ -1498,25 +1443,22 @@ msgstr ""
 "Veldu það snið sem hentar þínum þörfum hér fyrir neðan."
 
 #: src/printing/stylepage.cpp:122
-#, fuzzy, kde-format
-#| msgid "Sorting"
+#, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
-msgstr "Flokkun"
+msgstr "Röðun"
 
 #: src/printing/stylepage.cpp:127
-#, fuzzy, kde-format
-#| msgid "Criterion:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "Skilyrði:"
 
 #: src/printing/stylepage.cpp:131
-#, fuzzy, kde-format
-#| msgid "Select incremental search field"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
-msgstr "Veldu stigvaxandi leitarsvæði"
+msgstr "Veldu aðallykil röðunar"
 
 #: src/printing/stylepage.cpp:133
 #, kde-format
@@ -1528,11 +1470,10 @@ msgid ""
 msgstr ""
 
 #: src/printing/stylepage.cpp:138
-#, fuzzy, kde-format
-#| msgid "Order:"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
-msgstr "Röðun:"
+msgstr "Röð:"
 
 #: src/printing/stylepage.cpp:142
 #, kde-format
@@ -1550,18 +1491,16 @@ msgid ""
 msgstr ""
 
 #: src/printing/stylepage.cpp:151
-#, fuzzy, kde-format
-#| msgid "Print Style"
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Prentstíll"
 
 #: src/printing/stylepage.cpp:156
-#, fuzzy, kde-format
-#| msgid "Select the key type:"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
-msgstr "Veldu tegund lykils:"
+msgstr "Veldu stíl prentunar"
 
 #: src/printing/stylepage.cpp:157
 #, kde-format
@@ -1580,11 +1519,10 @@ msgid "Restore configure dialog size."
 msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Search contacts in list"
-msgstr "&Valda tengiliði"
+msgstr "Leita að tengiliðum í lista"
 
 #: src/widgets/quicksearchwidget.cpp:33
 #, kde-format
