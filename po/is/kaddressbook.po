@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2025-12-05 15:09+0000\n"
+"PO-Revision-Date: 2025-12-06 09:54+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -28,18 +28,18 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Pjetur G. Hjaltason,Arnar Leósson"
+msgstr "Pjetur G. Hjaltason, Arnar Leósson, Sveinn í Felli"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "pjetur@pjetur.net,leosson@frisurf.no"
+msgstr "pjetur@pjetur.net, leosson@frisurf.no, sv1@fellsnet.is"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
 #: src/mainwidget.cpp:761 src/mainwidget.cpp:788
 #, kde-format
 msgid "Address Book"
-msgstr "Vistfangaskrá"
+msgstr "Nafnaskrá"
 
 #: src/printing/grantlee/themes/default/theme.html:35
 msgid "Contact"
@@ -141,7 +141,7 @@ msgstr "Þú færð upp svarglugga þar sem þú getur bætt við nýjum tengili
 #: src/aboutdata.cpp:20
 #, kde-format
 msgid "The KDE Address Book Application"
-msgstr "KDE-nafnaskráin"
+msgstr "KDE-nafnaskráaforritið"
 
 #: src/aboutdata.cpp:22
 #, kde-format
@@ -243,12 +243,12 @@ msgstr "Virkt"
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:68
 #, kde-format
 msgid "Tools Plugins"
-msgstr ""
+msgstr "Verkfæraviðbætur"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:75
 #, kde-format
 msgid "Import/Export Plugins"
-msgstr ""
+msgstr "Inn-/Útflutnings-viðbætur"
 
 #: src/contactinfoproxymodel.cpp:68
 #, kde-format
@@ -258,7 +258,7 @@ msgstr "..."
 #: src/contactinfoproxymodel.cpp:70
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "Hleð inn nánari upplýsingum um tengilið  ..."
 
 #: src/contactinfoproxymodel.cpp:123
 #, kde-format
@@ -326,46 +326,40 @@ msgid "%1 out of %2"
 msgstr "%1 af %2"
 
 #: src/importexport/contactfields.cpp:21
-#, fuzzy, kde-format
-#| msgid "Undefined"
+#, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Óskilgreint"
 
 #: src/importexport/contactfields.cpp:40
-#, fuzzy, kde-format
-#| msgid "Anniversary"
+#, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
 msgstr "Afmæli"
 
 #: src/importexport/contactfields.cpp:86
-#, fuzzy, kde-format
-#| msgid "Use Preferred"
+#, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
-msgstr "Nota sjálfgefið"
+msgstr "Tölvupóstfang (æskilegt)"
 
 #: src/importexport/contactfields.cpp:88
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
-msgstr "Netfang"
+msgstr "Tölvupóstfang (2)"
 
 #: src/importexport/contactfields.cpp:90
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
-msgstr "Netfang"
+msgstr "Tölvupóstfang (3)"
 
 #: src/importexport/contactfields.cpp:92
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
-msgstr "Netfang"
+msgstr "Tölvupóstfang (4)"
 
 #: src/importexport/contactfields.cpp:108
 #, kde-format
@@ -378,57 +372,53 @@ msgid "Office"
 msgstr "Skrifstofa"
 
 #: src/importexport/contactfields.cpp:112
-#, fuzzy, kde-format
-#| msgid "Myanmar"
+#, kde-format
 msgid "Manager"
-msgstr "Myanmar"
+msgstr "Stjórnandi"
 
 #: src/importexport/contactfields.cpp:114
-#, fuzzy, kde-format
-#| msgid "Assistant's Name"
+#, kde-format
 msgid "Assistant"
-msgstr "Nafn aðstoðarmanns"
+msgstr "Aðstoðarmaður"
 
 #: src/importexport/contactfields.cpp:116
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "Maki"
 
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "&Valda tengiliði"
+msgstr "Veldu tengiliði"
 
 #: src/importexport/contactselectionwidget.cpp:115
-#, fuzzy, kde-format
-#| msgid "&All contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr "&Alla tengiliði"
+msgstr "Allir tengiliðir"
 
 #: src/importexport/contactselectionwidget.cpp:116
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr "%1 vistfangaskrá"
+msgstr "Allir tengiliðir úr öllum nafnaskránum þínum"
 
 #: src/importexport/contactselectionwidget.cpp:118
-#, fuzzy, kde-format
-#| msgid "Please select type of the new address book:"
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
-msgstr "Veldu tegund nýrrar vistfangaskrár:"
+msgstr ""
+"Veldu þennan valkost ef þú vilt velja alla tengiliðina þína úr öllum "
+"nafnaskránum þínum"
 
 #: src/importexport/contactselectionwidget.cpp:121
-#, fuzzy, kde-format
-#| msgid "&Selected contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr "&Valda tengiliði"
+msgstr "Valdir tengiliðir"
 
 #: src/importexport/contactselectionwidget.cpp:122
 #, fuzzy, kde-format
@@ -453,10 +443,10 @@ msgid "All contacts from:"
 msgstr "&Alla tengiliði"
 
 #: src/importexport/contactselectionwidget.cpp:128
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "%1 vistfangaskrá"
+msgstr "Allir tengiliðir úr valinni nafnaskrá"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -517,25 +507,22 @@ msgid "Business fields"
 msgstr "Atvinnusvæði"
 
 #: src/importexport/exportselectionwidget.cpp:24
-#, fuzzy, kde-format
-#| msgid "Other fields"
+#, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
-msgstr "Önnur svæði"
+msgstr "Aðrir reitir"
 
 #: src/importexport/exportselectionwidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "Encryption keys"
+#, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Dulritunarlyklar"
 
 #: src/importexport/exportselectionwidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Picture"
+#, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
-msgstr "Mynd"
+msgstr "Myndir"
 
 #: src/importexport/exportselectionwidget.cpp:27
 #, kde-format
@@ -611,11 +598,10 @@ msgid ""
 msgstr ""
 
 #: src/importexport/exportselectionwidget.cpp:61
-#, fuzzy, kde-format
-#| msgid "Picture"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr "Mynd"
+msgstr "Flytja út myndir"
 
 #: src/importexport/exportselectionwidget.cpp:63
 #, kde-format
@@ -626,11 +612,10 @@ msgid ""
 msgstr ""
 
 #: src/importexport/exportselectionwidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Export to One File"
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr "Flytja út í eina skrá"
+msgstr "Útflutningsvalkostir"
 
 #: src/importexport/exportselectionwidget.cpp:73
 #, kde-format
@@ -648,11 +633,10 @@ msgid ""
 msgstr ""
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "Vistfangaskrá"
+msgstr "Veldu nafnaskrá"
 
 #: src/importexport/importexportengine.cpp:59
 #, fuzzy, kde-format
@@ -661,11 +645,10 @@ msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr "Velja flokka fyrir alla valda tengiliði."
 
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Importing contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Flyt inn tengiliði"
+msgstr "Flytja inn tengiliði"
 
 #: src/importexport/importexportengine.cpp:75
 #, fuzzy, kde-format
@@ -676,11 +659,10 @@ msgstr[0] "Flyt inn tengiliði"
 msgstr[1] "Flyt inn tengiliði"
 
 #: src/kaddressbook_options.h:17
-#, fuzzy, kde-format
-#| msgid "Import the given vCard"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
-msgstr "Flytja inn vCard"
+msgstr "Flytja inn uppgefna skrá"
 
 #: src/kaddressbook_options.h:19
 #, kde-format
@@ -707,10 +689,9 @@ msgid "Lists the available options for user feedback"
 msgstr ""
 
 #: src/kaddressbookpart.cpp:83
-#, fuzzy, kde-format
-#| msgid "Import KDE 2 Addressbook..."
+#, kde-format
 msgid "&Configure KAddressBook…"
-msgstr "Flytja inn KDE 2 vistfangaskrá..."
+msgstr "&Grunnstilla KAddressBook…"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -801,15 +782,14 @@ msgid "Quick search"
 msgstr "Flýtileit"
 
 #: src/mainwidget.cpp:681
-#, fuzzy, kde-format
-#| msgid "Category"
+#, kde-format
 msgid "Category filter"
-msgstr "Flokkur"
+msgstr "Flokkasía"
 
 #: src/mainwidget.cpp:686
-#, fuzzy, kde-format
+#, kde-format
 msgid "Select All"
-msgstr "Afvelja allt"
+msgstr "Velja allt"
 
 #: src/mainwidget.cpp:688
 #, fuzzy, kde-format
@@ -831,7 +811,7 @@ msgstr "Birta QR-kóða í skráningu tengiliðar."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
-msgstr ""
+msgstr "Einfalt (einn dálkur)"
 
 #: src/mainwidget.cpp:702
 #, fuzzy, kde-format
@@ -843,13 +823,13 @@ msgstr "Veldu tegund nýrrar vistfangaskrár:"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
-msgstr ""
+msgstr "Tveir dálkar"
 
 #: src/mainwidget.cpp:711
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
-msgstr ""
+msgstr "Þrír dálkar"
 
 #: src/mainwidget.cpp:724
 #, kde-format
@@ -920,33 +900,29 @@ msgid "Home Address"
 msgstr "Heimilisfang"
 
 #: src/modelcolumnmanager.cpp:90
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgid "Business Address"
-msgstr "Atvinnusvæði"
+msgstr "Vinnustaður"
 
 #: src/modelcolumnmanager.cpp:94
-#, fuzzy, kde-format
+#, kde-format
 msgid "Phone Numbers"
-msgstr "Breyta símanúmeri"
+msgstr "Símanúmer"
 
 #: src/modelcolumnmanager.cpp:98
-#, fuzzy, kde-format
-#| msgid "Preferred address"
+#, kde-format
 msgid "Preferred EMail"
-msgstr "Sjálfgefið netfang"
+msgstr "Æskilegt tölvupóstfang"
 
 #: src/modelcolumnmanager.cpp:102
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgid "All EMails"
-msgstr "Netfang"
+msgstr "Öll tölvupóstföng"
 
 #: src/printing/compact/compactstyle.cpp:113
-#, fuzzy, kde-format
-#| msgid "Company"
+#, kde-format
 msgid "Compact Style"
-msgstr "Fyrirtæki"
+msgstr "Þjappaður stíll"
 
 #: src/printing/compact/compactstyle.cpp:167
 #: src/printing/detailed/detailledstyle.cpp:263
@@ -978,18 +954,17 @@ msgid "Done"
 msgstr "Búið"
 
 #: src/printing/compact/compactstyle.cpp:201
-#, fuzzy, kde-format
-#| msgid "Choose Printing Style"
+#, kde-format
 msgid "Compact Printing Style"
-msgstr "Veldu prentstíl"
+msgstr "Þjappaður prentstíll"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CompactStyleForm_Base)
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
 #: src/printing/compact/compactstyle.ui:14
 #: src/printing/ringbinder/rbs_appearance.ui:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Appearance"
-msgstr "Útlitssíða"
+msgstr "Útlit"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbFields)
 #: src/printing/compact/compactstyle.ui:35
@@ -1007,10 +982,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithHomeAddress)
 #: src/printing/compact/compactstyle.ui:49
-#, fuzzy, kde-format
-#| msgid "Home Address"
+#, kde-format
 msgid "with home address"
-msgstr "Heimilisfang"
+msgstr "með heimilisfangi"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBusinessAddress)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBusinessAddress)
@@ -1022,10 +996,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithBusinessAddress)
 #: src/printing/compact/compactstyle.ui:62
-#, fuzzy, kde-format
-#| msgid "Business fields"
+#, kde-format
 msgid "with business address"
-msgstr "Atvinnusvæði"
+msgstr "með vinnustað"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbWithBirthday)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithBirthday)
@@ -1300,9 +1273,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
-#, fuzzy, kde-format
+#, kde-format
 msgid "Phone numbers"
-msgstr "Breyta símanúmeri"
+msgstr "Símanúmer"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:57
@@ -1319,9 +1292,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
-#, fuzzy, kde-format
+#, kde-format
 msgid "Email addresses"
-msgstr "Netföng:"
+msgstr "Tölvupóstföng"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:73
@@ -1475,7 +1448,7 @@ msgstr "Röð:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
-msgstr ""
+msgstr "Veldu röðunarátt"
 
 #: src/printing/stylepage.cpp:144
 #, kde-format
