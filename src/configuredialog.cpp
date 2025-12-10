@@ -34,7 +34,7 @@ void ConfigureDialog::showEvent(QShowEvent *ev)
 
 void ConfigureDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myConfigureDialogConfigGroupName));
+    const KConfigGroup group(KSharedConfig::openStateConfig(), QLatin1StringView(myConfigureDialogConfigGroupName));
     const QSize size = group.readEntry("Size", QSize(600, 400));
     if (size.isValid()) {
         resize(size);

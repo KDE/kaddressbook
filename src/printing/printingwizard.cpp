@@ -76,7 +76,7 @@ void PrintingWizard::readConfig()
 {
     create(); // ensure a window is created
     windowHandle()->resize(QSize(300, 200));
-    KConfigGroup group(KSharedConfig::openStateConfig(), u"PrintingWizard"_s);
+    const KConfigGroup group(KSharedConfig::openStateConfig(), u"PrintingWizard"_s);
     KWindowConfig::restoreWindowSize(windowHandle(), group);
     resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
