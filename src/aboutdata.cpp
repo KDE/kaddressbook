@@ -1,7 +1,7 @@
 /*
   This file is part of KAddressBook.
 
-  SPDX-FileCopyrightText: 2009-2025 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2009-2026 Laurent Montel <montel@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
@@ -19,7 +19,7 @@ AboutData::AboutData()
                  QStringLiteral(KADDRESSBOOK_VERSION),
                  i18n("The KDE Address Book Application"),
                  KAboutLicense::GPL_V2,
-                 i18n("Copyright © 2007–%1 KAddressBook authors", u"2025"_s))
+                 i18n("Copyright © 2007–%1 KAddressBook authors", u"2026"_s))
 {
     addAuthor(i18nc("@info:credit", "Laurent Montel"), i18n("Current maintainer"), u"montel@kde.org"_s);
     addAuthor(i18nc("@info:credit", "Tobias König"), i18n("Previous maintainer"), u"tokoe@kde.org"_s);
