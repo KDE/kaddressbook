@@ -2,7 +2,7 @@
   This file is part of KAddressBook.
   SPDX-FileCopyrightText: 1996-2002 Mirko Boehm <mirko@kde.org>
 
-  SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
+  SPDX-License-Identifier: GPL-2.0-or-later WITH LicenseRef-Qt-Commercial-exception-1.0
 */
 
 #pragma once
