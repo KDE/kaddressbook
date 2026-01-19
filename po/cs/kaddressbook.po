@@ -1,6 +1,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2025 Vít Pelčák <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2025, 2026 Vít Pelčák <vit@pelcak.org>
 # Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
@@ -10,15 +10,15 @@ msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2024-06-07 11:09+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-01-15 08:43+0100\n"
+"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -292,25 +292,25 @@ msgstr "Předchozí"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the previous contact in the list"
-msgstr ""
+msgstr "Přejít na předchozí kontakt v seznamu"
 
 #: src/contactswitcher.cpp:25
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the previous contact in the list."
-msgstr ""
+msgstr "Stisknutím tohoto tlačítka přejdete na předchozí kontakt v seznamu."
 
 #: src/contactswitcher.cpp:27
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move to the next contact in the list"
-msgstr ""
+msgstr "Přejít na další kontakt v seznamu"
 
 #: src/contactswitcher.cpp:28
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to move to the next contact in the list."
-msgstr ""
+msgstr "Stisknutím tohoto tlačítka přejdete na další kontakt v seznamu."
 
 #: src/contactswitcher.cpp:106
 #, kde-format
@@ -395,7 +395,7 @@ msgstr "Všechny kontakty"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr ""
+msgstr "Všechny kontakty ze všech vašich knih adres"
 
 #: src/importexport/contactselectionwidget.cpp:118
 #, kde-format
@@ -404,6 +404,8 @@ msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
 msgstr ""
+"Vyberte tuto možnost, pokud chcete vybrat všechny kontakty ze všech knih "
+"adres."
 
 #: src/importexport/contactselectionwidget.cpp:121
 #, kde-format
@@ -415,7 +417,7 @@ msgstr "Vybrané kontakty"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr ""
+msgstr "Pouze aktuálně vybrané kontakty"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -424,6 +426,8 @@ msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
 msgstr ""
+"Tuto možnost vyberte, pokud chcete pouze kontakty, které jste již vybrali v "
+"grafickém rozhraní."
 
 #: src/importexport/contactselectionwidget.cpp:127
 #, kde-format
@@ -446,6 +450,9 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"Tuto možnost vyberte, pokud chcete vybrat všechny kontakty pouze z jedné "
+"knihy adres.  Po kliknutí na tuto možnost se zobrazí rozevírací seznam všech "
+"knih adres, ze kterého můžete vybrat tu, kterou chcete."
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
@@ -457,7 +464,7 @@ msgstr "Včetně podsložek"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "Vyberte všechny podsložky včetně složky nejvyšší úrovně"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -467,6 +474,9 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete vybrat všechny kontakty z této složky, "
+"včetně všech podsložek.  Pokud chcete pouze kontakty z nejvyšší úrovně "
+"složky, nechte toto políčko nezaškrtnuté."
 
 #: src/importexport/contactselectionwidget.cpp:170
 #, kde-format
@@ -477,7 +487,7 @@ msgstr "Sbírat kontakty"
 #: src/importexport/contactselectionwidget.cpp:173
 #, kde-format
 msgid "Fetch Contacts"
-msgstr ""
+msgstr "Načíst kontakty"
 
 #: src/importexport/exportselectionwidget.cpp:22
 #, kde-format
@@ -611,7 +621,7 @@ msgstr "Možnosti exportu"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "Exportovat zobrazované jméno jako celé jméno"
 
 #: src/importexport/exportselectionwidget.cpp:75
 #, kde-format
@@ -621,6 +631,9 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete exportovat zobrazované jméno kontaktu "
+"do pole pro celé jméno v kartě vCard.  To může být nutné, aby se jméno "
+"správně zobrazovalo v GMailu nebo Androidu."
 
 #: src/importexport/importexportengine.cpp:58
 #, kde-format
@@ -663,7 +676,7 @@ msgstr "Otevřít dialog pro 'Nový kontakt'"
 #, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "Zobrazit zadaný kontakt (podle URL)"
 
 #: src/kaddressbook_options.h:23
 #, kde-format
@@ -1017,7 +1030,7 @@ msgstr "s e-mailem"
 #: src/printing/compact/compactstyle.ui:115
 #, kde-format
 msgid "the first color, if alternating color is checked"
-msgstr ""
+msgstr "první barva, pokud je zaškrtnuto střídání barev"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbFirst)
 #: src/printing/compact/compactstyle.ui:118
@@ -1031,7 +1044,7 @@ msgstr "první barva"
 #: src/printing/compact/compactstyle.ui:128
 #, kde-format
 msgid "the second color, if alternating color is checked"
-msgstr ""
+msgstr "druhá barva, pokud je zaškrtnuto střídání barev"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCbSecond)
 #: src/printing/compact/compactstyle.ui:131
@@ -1160,6 +1173,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline background color."
 msgstr ""
+"Kliknutím na toto tlačítko spustíte výběr barev, který vám umožní nastavit "
+"barvu pozadí nadpisu."
 
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
 #: src/printing/detailed/ds_appearance.ui:139
@@ -1186,6 +1201,8 @@ msgid ""
 "Click this button to start a color chooser that will allow you set to the "
 "color for the headline text."
 msgstr ""
+"Kliknutím na toto tlačítko spustíte výběr barev, který vám umožní nastavit "
+"barvu textu nadpisu."
 
 #: src/printing/mike/mikesstyle.cpp:144
 #, kde-format
@@ -1246,6 +1263,8 @@ msgstr "Vytisknout telefonní čísla"
 #, kde-format
 msgid "Check this box if you want contact phone numbers to be printed."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete, aby se vytiskla kontaktní telefonní "
+"čísla."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
 #: src/printing/ringbinder/rbs_appearance.ui:47
@@ -1264,6 +1283,8 @@ msgstr "Vytisknout e-maily"
 #, kde-format
 msgid "Check this box if you want contact email addresses to be printed."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete, aby se tiskly kontaktní e-mailové "
+"adresy."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
 #: src/printing/ringbinder/rbs_appearance.ui:63
@@ -1281,7 +1302,7 @@ msgstr "Vytisknout poštovní adresy"
 #: src/printing/ringbinder/rbs_appearance.ui:76
 #, kde-format
 msgid "Check this box if you want contact street addresses to be printed."
-msgstr ""
+msgstr "Zaškrtněte toto políčko, pokud chcete, aby se tiskly kontaktní adresy."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
 #: src/printing/ringbinder/rbs_appearance.ui:79
@@ -1300,6 +1321,7 @@ msgstr "Vytisknout organizace"
 #, kde-format
 msgid "Check this box if you want contact organizations to be printed."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete, aby se tiskly kontaktní organizace."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbBirthday)
 #: src/printing/ringbinder/rbs_appearance.ui:102
@@ -1312,6 +1334,7 @@ msgstr "Vytisknout narozeniny kontaktu"
 #, kde-format
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
+"Zaškrtněte toto políčko, pokud chcete tisknout data narozenin kontaktů."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: src/printing/ringbinder/rbs_appearance.ui:115
@@ -1323,7 +1346,7 @@ msgstr "Vytisknout poznámky"
 #: src/printing/ringbinder/rbs_appearance.ui:118
 #, kde-format
 msgid "Check this box if you want contact notes to be printed."
-msgstr ""
+msgstr "Zaškrtněte toto políčko, pokud chcete tisknout poznámky ke kontaktům."
 
 #: src/printing/ringbinder/ringbinderstyle.cpp:82
 #, kde-format
@@ -1377,6 +1400,9 @@ msgid ""
 "KAddressBook has several printing styles, designed for different purposes.\n"
 "Choose the style that suits your needs below."
 msgstr ""
+"Jak by měl tisk vypadat?\n"
+"KAddressBook nabízí několik stylů tisku, které jsou určeny pro různé účely.\n"
+"Vyberte si níže styl, který vyhovuje vašim potřebám."
 
 #: src/printing/stylepage.cpp:122
 #, kde-format
@@ -1394,7 +1420,7 @@ msgstr "Kritérium:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
-msgstr ""
+msgstr "Vyberte primární pole pro řazení"
 
 #: src/printing/stylepage.cpp:133
 #, kde-format
@@ -1404,6 +1430,9 @@ msgid ""
 "the print output.  Use the sorting order option to determine if the sort "
 "will be in ascending or descending order."
 msgstr ""
+"Z tohoto seznamu můžete vybrat pole, podle kterého budou vaše kontakty "
+"seřazeny v tiskovém výstupu.  Pomocí možnosti pořadí řazení určete, zda bude "
+"řazení vzestupné nebo sestupné."
 
 #: src/printing/stylepage.cpp:138
 #, kde-format
@@ -1415,7 +1444,7 @@ msgstr "Pořadí:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
-msgstr ""
+msgstr "Vybrat pořadí řazení"
 
 #: src/printing/stylepage.cpp:144
 #, kde-format
@@ -1425,6 +1454,9 @@ msgid ""
 "Use the sorting criterion option to specify on which contact field the "
 "sorting will be performed."
 msgstr ""
+"Vyberte, zda chcete kontakty seřadit vzestupně nebo sestupně. Pomocí "
+"možnosti kritéria řazení určete, podle kterého pole kontaktu bude řazení "
+"provedeno."
 
 #: src/printing/stylepage.cpp:151
 #, kde-format
@@ -1436,7 +1468,7 @@ msgstr "Styl tisku"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
-msgstr ""
+msgstr "Vyberte styl tisku"
 
 #: src/printing/stylepage.cpp:157
 #, kde-format
@@ -1444,15 +1476,16 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr ""
+"Vyberte požadovaný styl tisku. Při rozhodování vám pomůže náhledový obrázek."
 
 #: src/whatsnew/whatsnewtranslations.cpp:17
 msgid "Add new whatsnew widget."
-msgstr ""
+msgstr "Přidat nový widget „Co je nového“."
 
 #: src/whatsnew/whatsnewtranslations.cpp:43
 #, kde-format
 msgid "Restore configure dialog size."
-msgstr ""
+msgstr "Obnovit velikost dialogového okna."
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
@@ -1468,3 +1501,6 @@ msgid ""
 "that string will be displayed.  This is a quick way of searching for "
 "contacts of interest."
 msgstr ""
+"Začněte psát hledaný řetězec do tohoto pole a zobrazí se seznam kontaktů "
+"odpovídajících tomuto řetězci.  Jedná se o rychlý způsob vyhledávání "
+"kontaktů, které vás zajímají."
