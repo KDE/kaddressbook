@@ -26,18 +26,18 @@ namespace
 
 /* clang-format off */
 const QList<QColor> c_colors = {
-    QColor("#e93a9a"),
-    QColor("#e93d58"),
-    QColor("#e9643a"),
-    QColor("#ef973c"),
-    QColor("#e8cb2d"),
-    QColor("#b6e521"),
-    QColor("#3dd425"),
-    QColor("#00d485"),
-    QColor("#00d3b8"),
-    QColor("#3daee9"),
-    QColor("#b875dc"),
-    QColor("#926ee4"),
+    QColor(0xe93a9a),
+    QColor(0xe93d58),
+    QColor(0xe9643a),
+    QColor(0xef973c),
+    QColor(0xe8cb2d),
+    QColor(0xb6e521),
+    QColor(0x3dd425),
+    QColor(0x00d485),
+    QColor(0x00d3b8),
+    QColor(0x3daee9),
+    QColor(0xb875dc),
+    QColor(0x926ee4),
 };
 /* clang-format on */
 

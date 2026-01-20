@@ -188,7 +188,8 @@ QStringList ContactInfoProxyModel::getIdsCacheContactGroup(const Akonadi::Item::
 {
     QStringList groupCacheRefIds;
     groupCacheRefIds.reserve(mGroupsCache[groupItemId].size());
-    for (const auto &cacheContact : mGroupsCache[groupItemId]) {
+    const auto grps = mGroupsCache[groupItemId];
+    for (const auto &cacheContact : grps) {
         groupCacheRefIds += cacheContact.gid().isEmpty() ? cacheContact.uid() : cacheContact.gid();
     }
     return groupCacheRefIds;

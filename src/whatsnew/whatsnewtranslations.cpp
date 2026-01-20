@@ -24,7 +24,8 @@ QList<TextAddonsWidgets::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo(
     {
         TextAddonsWidgets::WhatsNewInfo info;
         QStringList lst;
-        for (const KLazyLocalizedString &l : lastNewFeatures()) {
+        const auto features = lastNewFeatures();
+        for (const KLazyLocalizedString &l : features) {
             lst += l.toString();
         }
         info.setNewFeatures(lst);
