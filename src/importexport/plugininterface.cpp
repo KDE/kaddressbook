@@ -65,15 +65,13 @@ void PluginInterface::setItemSelectionModel(QItemSelectionModel *itemSelectionMo
     mItemSelectionModel = itemSelectionModel;
 }
 
-bool PluginInterface::canImportFileType(const QUrl &url)
+bool PluginInterface::canImportFileType([[maybe_unused]] const QUrl &url)
 {
-    Q_UNUSED(url)
     return false;
 }
 
-void PluginInterface::importFile(const QUrl &url)
+void PluginInterface::importFile([[maybe_unused]] const QUrl &url)
 {
-    Q_UNUSED(url)
 }
 
 bool PluginInterface::canImportData() const
@@ -81,9 +79,8 @@ bool PluginInterface::canImportData() const
     return false;
 }
 
-void PluginInterface::importData(const QByteArray &data)
+void PluginInterface::importData([[maybe_unused]] const QByteArray &data)
 {
-    Q_UNUSED(data)
 }
 
 #include "moc_plugininterface.cpp"
