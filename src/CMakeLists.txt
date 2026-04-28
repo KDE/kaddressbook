@@ -238,6 +238,7 @@ install(
     DESTINATION ${KDE_INSTALL_APPDIR}
 )
 install(FILES data/org.kde.kaddressbook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES settings/kaddressbook.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 ####################################"
 add_library(kaddressbookpart MODULE)
