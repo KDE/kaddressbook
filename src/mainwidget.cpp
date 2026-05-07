@@ -42,7 +42,6 @@ using namespace Qt::Literals::StringLiterals;
 #include <Akonadi/GrantleeContactGroupFormatter>
 #include <GrantleeTheme/GrantleeThemeManager>
 
-#include <PimCommon/PimUtil>
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
 
@@ -52,17 +51,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <Akonadi/CollectionFilterProxyModel>
 #include <Akonadi/CollectionMaintenancePage>
 #include <Akonadi/CollectionPropertiesDialog>
-#include <Akonadi/ControlGui>
-#include <Akonadi/ETMViewStateSaver>
-#include <Akonadi/EntityMimeTypeFilterModel>
-#include <Akonadi/EntityTreeView>
-#include <Akonadi/MimeTypeChecker>
-#ifndef FORCE_DISABLE_AKONADI_SEARCH
-#include <Debug/akonadisearchdebugdialog.h>
-#endif
-#include <KContacts/Addressee>
 #include <PimCommon/PimUtil>
-#include <QPointer>
 
 #include <Akonadi/ContactGroupEditorDialog>
 #include <Akonadi/ContactGroupViewer>
