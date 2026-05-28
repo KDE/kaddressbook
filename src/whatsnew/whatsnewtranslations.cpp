@@ -14,7 +14,7 @@ WhatsNewTranslations::~WhatsNewTranslations() = default;
 // Use by newFeaturesMD5
 QList<KLazyLocalizedString> WhatsNewTranslations::lastNewFeatures() const
 {
-    const QList<KLazyLocalizedString> info{kli18n("Add new whatsnew widget.")};
+    const QList<KLazyLocalizedString> info{};
     return info;
 }
 
@@ -23,12 +23,7 @@ QList<TextAddonsWidgets::WhatsNewInfo> WhatsNewTranslations::createWhatsNewInfo(
     QList<TextAddonsWidgets::WhatsNewInfo> listInfo;
     {
         TextAddonsWidgets::WhatsNewInfo info;
-        QStringList lst;
-        const auto features = lastNewFeatures();
-        for (const KLazyLocalizedString &l : features) {
-            lst += l.toString();
-        }
-        info.setNewFeatures(lst);
+        info.setNewFeatures({i18n("Add new whatsnew widget.")});
         info.setBugFixings({i18n("Restore configure dialog size.")});
         info.setVersion(u"6.3.0"_s);
         listInfo.append(std::move(info));
