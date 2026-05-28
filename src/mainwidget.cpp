@@ -739,7 +739,7 @@ void MainWidget::setupActions(KActionCollection *collection)
 void MainWidget::slotWhatsNew()
 {
 #if HAVE_WHATSNEWSNGSUPPORT
-    TextAddonsWidgets::WhatsNewNgDialog dlg(this);
+    TextAddonsWidgets::WhatsNewNgDialog dlg(i18n("KAddressBook"), this);
     dlg.setReleases(mReleasesInfo);
     dlg.exec();
 #else
