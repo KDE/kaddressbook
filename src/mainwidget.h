@@ -8,10 +8,14 @@
 
 #pragma once
 
+#include "config-kaddressbook.h"
 #include "kaddressbook_export.h"
 #include <Akonadi/Item>
 #include <QItemSelection>
 #include <QWidget>
+#if HAVE_WHATSNEWSNGSUPPORT
+#include <KAboutData>
+#endif
 class ContactEntityMimeTypeFilterModel;
 
 namespace GrantleeTheme
@@ -169,4 +173,7 @@ private:
     ManageShowCollectionProperties *mManageShowCollectionProperties = nullptr;
 
     Akonadi::Item mPendingSelection;
+#if HAVE_WHATSNEWSNGSUPPORT
+    QList<KAboutRelease> mReleasesInfo;
+#endif
 };

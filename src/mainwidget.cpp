@@ -7,7 +7,6 @@
 */
 
 #include "mainwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "categoryfilterproxymodel.h"
 #include "categoryselectwidget.h"
@@ -31,7 +30,6 @@ using namespace Qt::Literals::StringLiterals;
 #include "settings.h"
 #include "stylecontactlistdelegate.h"
 #include "uistatesaver.h"
-#include "whatsnew/whatsnewtranslations.h"
 #include "widgets/quicksearchwidget.h"
 #if HAVE_ACTIVITY_SUPPORT
 #include "activities/accountactivities.h"
@@ -45,7 +43,12 @@ using namespace Qt::Literals::StringLiterals;
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
 
+#if HAVE_WHATSNEWSNGSUPPORT
+#include <TextAddonsWidgets/WhatsNewNgDialog>
+#else
+#include "whatsnew/whatsnewtranslations.h"
 #include <TextAddonsWidgets/WhatsNewDialog>
+#endif
 
 #include <Akonadi/AttributeFactory>
 #include <Akonadi/CollectionFilterProxyModel>
@@ -100,6 +103,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QTextBrowser>
+using namespace Qt::Literals::StringLiterals;
 
 namespace
 {
@@ -322,6 +326,10 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     initializeImportExportPlugin(guiClient->actionCollection());
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
     updateQuickSearchText();
+#if HAVE_WHATSNEWSNGSUPPORT
+    const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
+    mReleasesInfo = aboutData.releases();
+#endif
 }
 
 void MainWidget::slotGeneralPaletteChanged()
@@ -730,10 +738,16 @@ void MainWidget::setupActions(KActionCollection *collection)
 
 void MainWidget::slotWhatsNew()
 {
+#if HAVE_WHATSNEWSNGSUPPORT
+    TextAddonsWidgets::WhatsNewNgDialog dlg(this);
+    dlg.setReleases(mReleasesInfo);
+    dlg.exec();
+#else
     WhatsNewTranslations translations;
     TextAddonsWidgets::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this, i18n("KAddressBook"));
     dlg.updateInformations();
     dlg.exec();
+#endif
 }
 
 void MainWidget::printPreview()

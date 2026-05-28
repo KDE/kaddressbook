@@ -194,6 +194,17 @@ set(KTEXTADDONS_MIN_VERSION "2.0.2")
 
 find_package(KF6TextAddonsWidgets ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
 
+if(
+    ${KF6CoreAddons_VERSION}
+        VERSION_GREATER_EQUAL
+        6.26.0
+    AND ${KF6TextAddonsWidgets_VERSION}
+        VERSION_GREATER_EQUAL
+        2.0.68
+)
+    set(HAVE_WHATSNEWSNGSUPPORT TRUE)
+endif()
+
 include_directories(
     ${kaddressbook_SOURCE_DIR}
     ${kaddressbook_BINARY_DIR}
