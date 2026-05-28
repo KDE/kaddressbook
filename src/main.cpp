@@ -7,7 +7,6 @@
 */
 
 #include "aboutdata.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "config-kaddressbook.h"
 #include "kaddressbook_options.h"
@@ -27,6 +26,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <KStyleManager>
 
+using namespace Qt::Literals::StringLiterals;
 //-----------------------------------------------------------------------------
 
 class KAddressBookApplication : public KontactInterface::PimUniqueApplication
