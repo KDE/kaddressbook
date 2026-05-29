@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-08 00:45+0000\n"
+"POT-Creation-Date: 2026-05-29 00:44+0000\n"
 "PO-Revision-Date: 2025-12-23 18:46+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -45,7 +45,7 @@ msgstr ""
 "shafff@ukr.net,kolyadas89@gmail.com,gammaray@basealt.ru"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
+#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
 #, kde-format
 msgid "Address Book"
 msgstr "Адресная книга"
@@ -116,7 +116,7 @@ msgstr "Блог"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
 #: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:734 src/mainwindow.cpp:89
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -763,93 +763,93 @@ msgstr "&Экспорт"
 msgid "Main Toolbar"
 msgstr "Основная панель инструментов"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:373
 #, kde-format
 msgid "Import"
 msgstr "Импорт"
 
-#: src/mainwidget.cpp:372
+#: src/mainwidget.cpp:380
 #, kde-format
 msgid "Export"
 msgstr "Экспорт"
 
-#: src/mainwidget.cpp:424
+#: src/mainwidget.cpp:432
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Поиск… <%1>"
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:664
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Печать всей адресной книги или выбранных контактов."
 
-#: src/mainwidget.cpp:661
+#: src/mainwidget.cpp:669
 #, kde-format
 msgid "Quick search"
 msgstr "Быстрый поиск"
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Category filter"
 msgstr "Фильтр категорий"
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Select All"
 msgstr "Выбрать всё"
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Выбрать все показываемые контакты"
 
-#: src/mainwidget.cpp:677
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Показать QR-коды"
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Показать QR-коды в контакте."
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Простой (одна колонка)"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:695
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Режим простого просмотра адресной книги."
 
-#: src/mainwidget.cpp:690
+#: src/mainwidget.cpp:698
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Две колонки"
 
-#: src/mainwidget.cpp:696
+#: src/mainwidget.cpp:704
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Три колонки"
 
-#: src/mainwidget.cpp:709
+#: src/mainwidget.cpp:717
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Перевести фокус на поле быстрого поиска"
 
-#: src/mainwidget.cpp:726
+#: src/mainwidget.cpp:734
 #, kde-format
 msgid "What's new"
 msgstr "Что нового?"
 
-#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -1478,11 +1478,12 @@ msgstr ""
 "Выберите понравившийся формат печати. Картинка предварительного просмотра "
 "поможет сделать выбор."
 
-#: src/whatsnew/whatsnewtranslations.cpp:17
+#: src/whatsnew/whatsnewtranslations.cpp:26
+#, kde-format
 msgid "Add new whatsnew widget."
 msgstr "Добавление нового виджета «Что нового?»."
 
-#: src/whatsnew/whatsnewtranslations.cpp:32
+#: src/whatsnew/whatsnewtranslations.cpp:27
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr "Восстановление размера диалогового окна настройки."

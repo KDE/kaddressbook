@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-08 00:45+0000\n"
+"POT-Creation-Date: 2026-05-29 00:44+0000\n"
 "PO-Revision-Date: 2010-02-01 21:44+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
@@ -30,7 +30,7 @@ msgid "Your emails"
 msgstr "aalam@users.sf.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
+#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
 #, kde-format
 msgid "Address Book"
 msgstr "ਐਡਰੈੱਸ ਬੁੱਕ"
@@ -111,7 +111,7 @@ msgstr "ਬਲੌਗ ਫੀਡ(&B):"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
 #: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:734 src/mainwindow.cpp:89
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
 #, kde-format
 msgid "KAddressBook"
 msgstr "ਕੇਐਡਰੈੱਸ ਬੁੱਕ"
@@ -803,98 +803,98 @@ msgstr "ਐਕਸਪੋਰਟ(&E)"
 msgid "Main Toolbar"
 msgstr "ਮੁੱਖ ਟੂਲਬਾਰ"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:373
 #, kde-format
 msgid "Import"
 msgstr "ਇੰਪੋਰਟ"
 
-#: src/mainwidget.cpp:372
+#: src/mainwidget.cpp:380
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "ਐਕਸਪੋਰਟ(&E)"
 
-#: src/mainwidget.cpp:424
+#: src/mainwidget.cpp:432
 #, fuzzy, kde-format
 #| msgid "Search"
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "ਖੋਜ"
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:664
 #, fuzzy, kde-format
 #| msgid "Set the categories for all selected contacts."
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "ਸਭ ਚੁਣੇ ਸੰਪਰਕਾਂ ਲਈ ਕੈਟਾਗਰੀਆਂ ਸੈੱਟ ਕਰੋ।"
 
-#: src/mainwidget.cpp:661
+#: src/mainwidget.cpp:669
 #, kde-format
 msgid "Quick search"
 msgstr "ਤੁਰੰਤ ਖੋਜ"
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:674
 #, fuzzy, kde-format
 #| msgid "Category &members"
 msgid "Category filter"
 msgstr "ਕੈਟਾਗਰੀ ਮੈਂਬਰ(&m)"
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Select All"
 msgstr "ਸਭ ਚੁਣੋ"
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "ਆਪਣੀ ਮੌਜੂਦਾ ਐਡਰੈੱਸਬੁੱਕ ਝਲਕ ਵਿੱਚ ਸਭ ਸੰਪਰਕ ਚੁਣੋ।"
 
-#: src/mainwidget.cpp:677
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Show QR Codes"
 msgstr ""
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:695
 #, fuzzy, kde-format
 #| msgid "Please select type of the new address book:"
 msgid "Show a simple mode of the address book view."
 msgstr "ਨਵੀਂ ਐਡਰੈੱਸ ਬੁੱਕ ਲਈ ਟਾਈਪ ਚੁਣੋ:"
 
-#: src/mainwidget.cpp:690
+#: src/mainwidget.cpp:698
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:696
+#: src/mainwidget.cpp:704
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:709
+#: src/mainwidget.cpp:717
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:726
+#: src/mainwidget.cpp:734
 #, kde-format
 msgid "What's new"
 msgstr ""
 
-#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
@@ -1546,11 +1546,12 @@ msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr ""
 
-#: src/whatsnew/whatsnewtranslations.cpp:17
+#: src/whatsnew/whatsnewtranslations.cpp:26
+#, kde-format
 msgid "Add new whatsnew widget."
 msgstr ""
 
-#: src/whatsnew/whatsnewtranslations.cpp:32
+#: src/whatsnew/whatsnewtranslations.cpp:27
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr ""

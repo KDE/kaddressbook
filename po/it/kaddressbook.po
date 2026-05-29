@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-08 00:45+0000\n"
+"POT-Creation-Date: 2026-05-29 00:44+0000\n"
 "PO-Revision-Date: 2025-11-29 18:56+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 "rizzi@kde.org,emanuele.tatti@libero.it"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
+#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
 #, kde-format
 msgid "Address Book"
 msgstr "Rubrica indirizzi"
@@ -108,7 +108,7 @@ msgstr "Fonte blog"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
 #: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:734 src/mainwindow.cpp:89
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -773,95 +773,95 @@ msgstr "&Esporta"
 msgid "Main Toolbar"
 msgstr "Barra degli strumenti principale"
 
-#: src/mainwidget.cpp:365
+#: src/mainwidget.cpp:373
 #, kde-format
 msgid "Import"
 msgstr "Importa"
 
-#: src/mainwidget.cpp:372
+#: src/mainwidget.cpp:380
 #, kde-format
 msgid "Export"
 msgstr "Esporta"
 
-#: src/mainwidget.cpp:424
+#: src/mainwidget.cpp:432
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Cerca… <%1>"
 
-#: src/mainwidget.cpp:656
+#: src/mainwidget.cpp:664
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr ""
 "Stampa la rubrica degli indirizzi completa o solo i contatti selezionati."
 
-#: src/mainwidget.cpp:661
+#: src/mainwidget.cpp:669
 #, kde-format
 msgid "Quick search"
 msgstr "Ricerca veloce"
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Category filter"
 msgstr "Filtro categoria"
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Select All"
 msgstr "Seleziona tutto"
 
-#: src/mainwidget.cpp:673
+#: src/mainwidget.cpp:681
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr ""
 "Seleziona tutti contatti visibili nella rubrica degli indirizzi corrente."
 
-#: src/mainwidget.cpp:677
+#: src/mainwidget.cpp:685
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Mostra codici QR"
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:686
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Mostra i codici QR nel contatto."
 
-#: src/mainwidget.cpp:683
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Semplice (una colonna)"
 
-#: src/mainwidget.cpp:687
+#: src/mainwidget.cpp:695
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Mostra una vista semplificata della rubrica degli indirizzi."
 
-#: src/mainwidget.cpp:690
+#: src/mainwidget.cpp:698
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Due colonne"
 
-#: src/mainwidget.cpp:696
+#: src/mainwidget.cpp:704
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tre colonne"
 
-#: src/mainwidget.cpp:709
+#: src/mainwidget.cpp:717
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Rendi attiva la ricerca rapida"
 
-#: src/mainwidget.cpp:726
+#: src/mainwidget.cpp:734
 #, kde-format
 msgid "What's new"
 msgstr "Novità"
 
-#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
@@ -1500,11 +1500,12 @@ msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr "Scegli lo stile di stampa. L'anteprima immagine ti facilita la scelta."
 
-#: src/whatsnew/whatsnewtranslations.cpp:17
+#: src/whatsnew/whatsnewtranslations.cpp:26
+#, kde-format
 msgid "Add new whatsnew widget."
 msgstr "Aggiungi un nuovo oggetto Novità."
 
-#: src/whatsnew/whatsnewtranslations.cpp:32
+#: src/whatsnew/whatsnewtranslations.cpp:27
 #, kde-format
 msgid "Restore configure dialog size."
 msgstr "Ripristina la dimensione della finestra di dialogo di configurazione."
