@@ -91,10 +91,12 @@ MainWindow::MainWindow()
                 whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
                 mainWidgetLayout->addWidget(whatsNewMessageWidget);
                 Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
+                Settings::self()->save();
                 whatsNewMessageWidget->animatedShow();
             }
         } else {
             Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);
+            Settings::self()->save();
         }
     }
 
