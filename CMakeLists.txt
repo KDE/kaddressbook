@@ -7,7 +7,7 @@ project(kaddressbook VERSION ${PIM_VERSION})
 set(KADDRESSBOOK_RELEASE_VERSION_DATE "26.07.10") # yy.MM.dd
 
 set(RELEASE_SERVICE_VERSION "26.11.40")
-set(KF_MIN_VERSION "6.25.0")
+set(KF_MIN_VERSION "6.26.0")
 set(QT_REQUIRED_VERSION "6.9.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -192,17 +192,6 @@ find_package(KPim6GrantleeTheme ${LIBGRANTLEETHEME_LIB_VERSION} CONFIG REQUIRED)
 set(KTEXTADDONS_MIN_VERSION "2.1.0")
 
 find_package(KF6TextAddonsWidgets ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
-
-if(
-    ${KF6CoreAddons_VERSION}
-        VERSION_GREATER_EQUAL
-        6.26.0
-    AND ${KF6TextAddonsWidgets_VERSION}
-        VERSION_GREATER_EQUAL
-        2.0.69
-)
-    set(HAVE_WHATSNEWSNGSUPPORT TRUE)
-endif()
 
 include_directories(
     ${kaddressbook_SOURCE_DIR}

@@ -64,8 +64,6 @@ target_sources(
         contactentitymimetypefiltermodel.cpp
         configuredialog.h
         configuredialog.cpp
-        whatsnew/whatsnewtranslations.cpp
-        whatsnew/whatsnewtranslations.h
         kaddressbook_options.h
 )
 

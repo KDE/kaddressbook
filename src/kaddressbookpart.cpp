@@ -7,15 +7,11 @@
 */
 
 #include "kaddressbookpart.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mainwidget.h"
 #include "settings.h"
-#include "whatsnew/whatsnewtranslations.h"
 
 #include "kaddressbook_debug.h"
-
-#include <TextAddonsWidgets/WhatsNewMessageWidget>
 
 #include <KActionCollection>
 #include <KLocalizedString>
@@ -23,7 +19,10 @@ using namespace Qt::Literals::StringLiterals;
 #include <QAction>
 #include <QIcon>
 #include <QVBoxLayout>
+#include <TextAddonsWidgets/WhatsNewMessageNgWidget>
+#include <TextAddonsWidgets/WhatsNewNgDialog>
 
+using namespace Qt::Literals::StringLiterals;
 K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
 
 KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &data, const QVariantList &)
@@ -37,15 +36,19 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     setWidget(canvas);
     auto topLayout = new QVBoxLayout(canvas);
 
-    const WhatsNewTranslations translations;
-    const QString newFeaturesMD5 = translations.newFeaturesMD5();
+    const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
+    QString newFeaturesMD5;
+    auto releasesInfo = aboutData.releases();
+    if (!releasesInfo.isEmpty()) {
+        newFeaturesMD5 = releasesInfo.constFirst().untranslatedDescription();
+    }
     if (!newFeaturesMD5.isEmpty()) {
         const QString previousNewFeaturesMD5 = Settings::self()->previousNewFeaturesMD5();
         if (!previousNewFeaturesMD5.isEmpty()) {
             const bool hasNewFeature = (previousNewFeaturesMD5 != newFeaturesMD5);
             if (hasNewFeature) {
-                auto whatsNewMessageWidget = new TextAddonsWidgets::WhatsNewMessageWidget(parentWidget, i18n("KAddressBook"));
-                whatsNewMessageWidget->setWhatsNewInfos(translations.createWhatsNewInfo());
+                auto whatsNewMessageWidget = new TextAddonsWidgets::WhatsNewMessageNgWidget(i18n("KAddressBook"), parentWidget);
+                whatsNewMessageWidget->setReleases(releasesInfo);
                 whatsNewMessageWidget->setObjectName(u"whatsNewMessageWidget"_s);
                 topLayout->addWidget(whatsNewMessageWidget);
                 Settings::self()->setPreviousNewFeaturesMD5(newFeaturesMD5);

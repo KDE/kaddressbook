@@ -43,12 +43,7 @@
 #include <PimCommonAkonadi/ImapAclAttribute>
 #include <PimCommonAkonadi/MailUtil>
 
-#if HAVE_WHATSNEWSNGSUPPORT
 #include <TextAddonsWidgets/WhatsNewNgDialog>
-#else
-#include "whatsnew/whatsnewtranslations.h"
-#include <TextAddonsWidgets/WhatsNewDialog>
-#endif
 
 #include <Akonadi/AttributeFactory>
 #include <Akonadi/CollectionFilterProxyModel>
@@ -326,10 +321,8 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     initializeImportExportPlugin(guiClient->actionCollection());
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
     updateQuickSearchText();
-#if HAVE_WHATSNEWSNGSUPPORT
     const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
     mReleasesInfo = aboutData.releases();
-#endif
 }
 
 void MainWidget::slotGeneralPaletteChanged()
@@ -738,16 +731,9 @@ void MainWidget::setupActions(KActionCollection *collection)
 
 void MainWidget::slotWhatsNew()
 {
-#if HAVE_WHATSNEWSNGSUPPORT
     TextAddonsWidgets::WhatsNewNgDialog dlg(i18n("KAddressBook"), this);
     dlg.setReleases(mReleasesInfo);
     dlg.exec();
-#else
-    WhatsNewTranslations translations;
-    TextAddonsWidgets::WhatsNewDialog dlg(translations.createWhatsNewInfo(), this, i18n("KAddressBook"));
-    dlg.updateInformations();
-    dlg.exec();
-#endif
 }
 
 void MainWidget::printPreview()
