@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-02 00:44+0000\n"
+"POT-Creation-Date: 2026-07-07 00:44+0000\n"
 "PO-Revision-Date: 2025-11-28 19:55+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -30,7 +30,7 @@ msgid "Your emails"
 msgstr "kerat@mail.bg,mkondarev@yahoo.de"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
 #, kde-format
 msgid "Address Book"
 msgstr "Адресник"
@@ -98,8 +98,8 @@ msgid "Blog Feed"
 msgstr "Блог емисия"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
-#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
+#: src/kaddressbookpart.cpp:31 src/kaddressbookpart.cpp:50
+#: src/mainwidget.cpp:734 src/mainwindow.cpp:93
 #, kde-format
 msgid "KAddressBook"
 msgstr "KAddressBook"
@@ -698,7 +698,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Списък на наличните опции за обратна връзка от потребителите"
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:78
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "&Конфигуриране на  KAddressBook…"
@@ -763,99 +763,99 @@ msgstr "&Експортиране"
 msgid "Main Toolbar"
 msgstr "Основна лента с инструменти"
 
-#: src/mainwidget.cpp:373
+#: src/mainwidget.cpp:366
 #, kde-format
 msgid "Import"
 msgstr "Импортиране"
 
-#: src/mainwidget.cpp:380
+#: src/mainwidget.cpp:373
 #, kde-format
 msgid "Export"
 msgstr "Експортиране"
 
-#: src/mainwidget.cpp:432
+#: src/mainwidget.cpp:425
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Търсене… < %1>"
 
-#: src/mainwidget.cpp:664
+#: src/mainwidget.cpp:657
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Отпечатайте пълната адресна книга или избран брой контакти."
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Quick search"
 msgstr "Бързо търсене"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:667
 #, kde-format
 msgid "Category filter"
 msgstr "Категоричен филтър"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select All"
 msgstr "Маркиране на всичко"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Изберете всички контакти в текущия изглед на адресната книга."
 
-#: src/mainwidget.cpp:685
+#: src/mainwidget.cpp:678
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Показване на QR кодове"
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Показване на QR кодове в контакта."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:684
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Една колона"
 
-#: src/mainwidget.cpp:695
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Показване на опростен изглед на адресната книга."
 
-#: src/mainwidget.cpp:698
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Две колони"
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:697
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Три колони"
 
-#: src/mainwidget.cpp:717
+#: src/mainwidget.cpp:710
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Фокусиране на бързо търсене"
 
-#: src/mainwidget.cpp:734
+#: src/mainwidget.cpp:727
 #, kde-format
 msgid "What's new"
 msgstr "Какво ново"
 
-#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Печат на контакти"
 
-#: src/mainwindow.cpp:137
+#: src/mainwindow.cpp:141
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -865,7 +865,7 @@ msgstr ""
 "Ще ви бъде представен диалогов прозорец, където можете да конфигурирате "
 "клавишни комбинации за цялото приложение."
 
-#: src/mainwindow.cpp:236
+#: src/mainwindow.cpp:240
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -874,7 +874,7 @@ msgstr ""
 "<qt>Това напълно ще скрие менюто. Можете да го накарате да се покаже отново "
 "като напишете: %1.</qt>"
 
-#: src/mainwindow.cpp:239
+#: src/mainwindow.cpp:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1498,16 +1498,6 @@ msgstr ""
 "Изберете желания от вас стил на печат. Вижте изображението за предварителен "
 "преглед, за да ви помогне да решите."
 
-#: src/whatsnew/whatsnewtranslations.cpp:26
-#, kde-format
-msgid "Add new whatsnew widget."
-msgstr "Добавяне на нов уиджет \"Какво ново\"."
-
-#: src/whatsnew/whatsnewtranslations.cpp:27
-#, kde-format
-msgid "Restore configure dialog size."
-msgstr "Възстановяване на размера на диалоговия прозорец за конфигуриране."
-
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
 msgctxt "@info:tooltip"
@@ -1525,3 +1515,9 @@ msgstr ""
 "Започнете да пишете низ за търсене в това поле и ще се покаже списъкът с "
 "контакти, съответстващи на този низ. Това е бърз начин за търсене на "
 "контакти, представляващи интерес."
+
+#~ msgid "Add new whatsnew widget."
+#~ msgstr "Добавяне на нов уиджет \"Какво ново\"."
+
+#~ msgid "Restore configure dialog size."
+#~ msgstr "Възстановяване на размера на диалоговия прозорец за конфигуриране."

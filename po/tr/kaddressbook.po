@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-02 00:44+0000\n"
+"POT-Creation-Date: 2026-07-07 00:44+0000\n"
 "PO-Revision-Date: 2026-05-10 13:24+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 "ozerkavak@hotmail.com, volkangezer@gmail.com, emir_sari@icloud.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
 #, kde-format
 msgid "Address Book"
 msgstr "Adres Defteri"
@@ -107,8 +107,8 @@ msgid "Blog Feed"
 msgstr "Günlük Beslemesi"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
-#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
+#: src/kaddressbookpart.cpp:31 src/kaddressbookpart.cpp:50
+#: src/mainwidget.cpp:734 src/mainwindow.cpp:93
 #, kde-format
 msgid "KAddressBook"
 msgstr "K Adres Defteri"
@@ -702,7 +702,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Kullanıcı geri bildirimi için kullanılabilir seçenekleri listeler"
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:78
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "K Adres Defteri Uygulamasını&Yapılandır…"
@@ -767,99 +767,99 @@ msgstr "&Dışa Aktar"
 msgid "Main Toolbar"
 msgstr "Ana Araç Çubuğu"
 
-#: src/mainwidget.cpp:373
+#: src/mainwidget.cpp:366
 #, kde-format
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: src/mainwidget.cpp:380
+#: src/mainwidget.cpp:373
 #, kde-format
 msgid "Export"
 msgstr "Dışa Aktar"
 
-#: src/mainwidget.cpp:432
+#: src/mainwidget.cpp:425
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Ara… <%1>"
 
-#: src/mainwidget.cpp:664
+#: src/mainwidget.cpp:657
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Tüm adres defterini veya belirlenen bir sayıdaki kişileri yazdır."
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Quick search"
 msgstr "Tez arama"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:667
 #, kde-format
 msgid "Category filter"
 msgstr "Kategori süzgeci"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select All"
 msgstr "Tümünü Seç"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Geçerli adres defteri görünümündeki tüm kişileri seç."
 
-#: src/mainwidget.cpp:685
+#: src/mainwidget.cpp:678
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Kare Kodları Göster"
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Kişi bilgilerinde kare kodu göster"
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:684
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Basit (Bir Sütun)"
 
-#: src/mainwidget.cpp:695
+#: src/mainwidget.cpp:688
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Adres defterinin basit bir görünümünü göster."
 
-#: src/mainwidget.cpp:698
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "İki Sütun"
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:697
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Üç Sütun"
 
-#: src/mainwidget.cpp:717
+#: src/mainwidget.cpp:710
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Tez Aramaya Odaklan"
 
-#: src/mainwidget.cpp:734
+#: src/mainwidget.cpp:727
 #, kde-format
 msgid "What's new"
 msgstr "Neler Yeni"
 
-#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Kişileri Yazdır"
 
-#: src/mainwindow.cpp:137
+#: src/mainwindow.cpp:141
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -869,7 +869,7 @@ msgstr ""
 "Uygulama çapındaki kısayolları ayarlayabileceğiniz bir iletişim kutusuyla "
 "karşılaşacaksınız."
 
-#: src/mainwindow.cpp:236
+#: src/mainwindow.cpp:240
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -878,7 +878,7 @@ msgstr ""
 "<qt>Bu, menü çubuğunu tümüyle gizleyecektir. %1 ile yeniden "
 "gösterebilirsiniz.</qt>"
 
-#: src/mainwindow.cpp:239
+#: src/mainwindow.cpp:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -1494,16 +1494,6 @@ msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
 msgstr "Yazdırma biçemini seçin. Karar vermek için önizlemeye bakabilirsiniz."
 
-#: src/whatsnew/whatsnewtranslations.cpp:26
-#, kde-format
-msgid "Add new whatsnew widget."
-msgstr "Artık bir Neler Yeni araç takımı var"
-
-#: src/whatsnew/whatsnewtranslations.cpp:27
-#, kde-format
-msgid "Restore configure dialog size."
-msgstr "Yapılandırma iletişim kutusu boyutlarını geri yükle"
-
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
 msgctxt "@info:tooltip"
@@ -1521,3 +1511,9 @@ msgstr ""
 "Siz bu kutuya aranacak metni yazarken, aşağıda yazılan metni içeren "
 "kişilerin listesi belirecek. Bu, aradığınız kişileri bulmanın tez bir "
 "yoludur."
+
+#~ msgid "Add new whatsnew widget."
+#~ msgstr "Artık bir Neler Yeni araç takımı var"
+
+#~ msgid "Restore configure dialog size."
+#~ msgstr "Yapılandırma iletişim kutusu boyutlarını geri yükle"

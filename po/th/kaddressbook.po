@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-02 00:44+0000\n"
+"POT-Creation-Date: 2026-07-07 00:44+0000\n"
 "PO-Revision-Date: 2010-03-25 14:22+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -29,7 +29,7 @@ msgid "Your emails"
 msgstr "donga.nb@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:756 src/mainwidget.cpp:783
+#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
 #, kde-format
 msgid "Address Book"
 msgstr "สมุดที่อยู่"
@@ -108,8 +108,8 @@ msgid "Blog Feed"
 msgstr "แหล่งป้อนบล็อก:"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
-#: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:747 src/mainwindow.cpp:89
+#: src/kaddressbookpart.cpp:31 src/kaddressbookpart.cpp:50
+#: src/mainwidget.cpp:734 src/mainwindow.cpp:93
 #, kde-format
 msgid "KAddressBook"
 msgstr "สมุดที่อยู่-K"
@@ -742,7 +742,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:78
 #, fuzzy, kde-format
 #| msgid "Import KDE 2 Addressbook..."
 msgid "&Configure KAddressBook…"
@@ -809,107 +809,107 @@ msgstr "&ส่งออก"
 msgid "Main Toolbar"
 msgstr "แถบเครื่องมือหลัก"
 
-#: src/mainwidget.cpp:373
+#: src/mainwidget.cpp:366
 #, kde-format
 msgid "Import"
 msgstr "นำเข้า"
 
-#: src/mainwidget.cpp:380
+#: src/mainwidget.cpp:373
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "&ส่งออก"
 
-#: src/mainwidget.cpp:432
+#: src/mainwidget.cpp:425
 #, fuzzy, kde-format
 #| msgid "Search"
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "ค้นหา"
 
-#: src/mainwidget.cpp:664
+#: src/mainwidget.cpp:657
 #, fuzzy, kde-format
 #| msgid "Set the categories for all selected contacts."
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "ตั้งหมวดหมู่ให้ที่อยู่ติดต่อที่เลือกไว้ทั้งหมด"
 
-#: src/mainwidget.cpp:669
+#: src/mainwidget.cpp:662
 #, fuzzy, kde-format
 #| msgid "Recursive search"
 msgid "Quick search"
 msgstr "ค้นหาในรายการย่อยด้วย"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:667
 #, fuzzy, kde-format
 #| msgid "Category"
 msgid "Category filter"
 msgstr "หมวดหมู่"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:672
 #, kde-format
 msgid "Select All"
 msgstr "เลือกทั้งหมด"
 
-#: src/mainwidget.cpp:681
+#: src/mainwidget.cpp:674
 #, fuzzy, kde-format
 #| msgid "Selects all visible contacts from current view."
 msgid "Select all contacts in the current address book view."
 msgstr "เลือกที่อยู่ติดต่อทั้งหมดที่ปรากฏอยู่ในมุมมองปัจจุบัน"
 
-#: src/mainwidget.cpp:685
+#: src/mainwidget.cpp:678
 #, kde-format
 msgid "Show QR Codes"
 msgstr ""
 
-#: src/mainwidget.cpp:686
+#: src/mainwidget.cpp:679
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr ""
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:684
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr ""
 
-#: src/mainwidget.cpp:695
+#: src/mainwidget.cpp:688
 #, fuzzy, kde-format
 #| msgid "Please select type of the new address book:"
 msgid "Show a simple mode of the address book view."
 msgstr "โปรดเลือกประเภทของสมุดที่อยู่ใหม่:"
 
-#: src/mainwidget.cpp:698
+#: src/mainwidget.cpp:691
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:704
+#: src/mainwidget.cpp:697
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr ""
 
-#: src/mainwidget.cpp:717
+#: src/mainwidget.cpp:710
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:734
+#: src/mainwidget.cpp:727
 #, kde-format
 msgid "What's new"
 msgstr ""
 
-#: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
 #, fuzzy, kde-format
 #| msgid "Edit Contact"
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "แก้ไขที่อยู่ติดต่อ"
 
-#: src/mainwindow.cpp:137
+#: src/mainwindow.cpp:141
 #, fuzzy, kde-format
 #| msgid ""
 #| "You will be presented with a dialog, where you can configure the "
@@ -920,14 +920,14 @@ msgid ""
 "wide shortcuts."
 msgstr "คุณจะพบกล่องโต้ตอบ ที่จะให้คุณได้ทำการปรับแต่งค่าแป้นพิมพ์ลัดของโปรแกรม"
 
-#: src/mainwindow.cpp:236
+#: src/mainwindow.cpp:240
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: src/mainwindow.cpp:239
+#: src/mainwindow.cpp:243
 #, fuzzy, kde-format
 #| msgid "Hide Jump Bar"
 msgctxt "@title:window"
@@ -1557,16 +1557,6 @@ msgstr "เลือกชนิดของปุ่มพิมพ์:"
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose your desired printing style. See the preview image to help you decide."
-msgstr ""
-
-#: src/whatsnew/whatsnewtranslations.cpp:26
-#, kde-format
-msgid "Add new whatsnew widget."
-msgstr ""
-
-#: src/whatsnew/whatsnewtranslations.cpp:27
-#, kde-format
-msgid "Restore configure dialog size."
 msgstr ""
 
 #: src/widgets/quicksearchwidget.cpp:31
