@@ -20,7 +20,6 @@
 #include <QIcon>
 #include <QVBoxLayout>
 #include <TextAddonsWidgets/WhatsNewMessageNgWidget>
-#include <TextAddonsWidgets/WhatsNewNgDialog>
 
 using namespace Qt::Literals::StringLiterals;
 K_PLUGIN_FACTORY(KAddressBookFactory, registerPlugin<KAddressBookPart>();)
