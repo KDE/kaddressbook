@@ -321,7 +321,7 @@ MainWidget::MainWidget(KXMLGUIClient *guiClient, QWidget *parent)
     initializeImportExportPlugin(guiClient->actionCollection());
     QMetaObject::invokeMethod(this, &MainWidget::delayedInit, Qt::QueuedConnection);
     updateQuickSearchText();
-    const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
+    const KAboutData aboutData = KAboutData::fromAppStreamId(u"org.kde.kaddressbook"_s);
     mReleasesInfo = aboutData.releases();
 }
 
