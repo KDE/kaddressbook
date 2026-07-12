@@ -79,7 +79,7 @@ MainWindow::MainWindow()
             needUpdateVersionWidget->setObsoleteVersion(status);
         }
     }
-    const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
+    const KAboutData aboutData = KAboutData::fromAppStreamId(u"org.kde.kaddressbook"_s);
     QString newFeaturesMD5;
     auto releasesInfo = aboutData.releases();
     if (!releasesInfo.isEmpty()) {

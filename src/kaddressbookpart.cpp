@@ -35,7 +35,7 @@ KAddressBookPart::KAddressBookPart(QWidget *parentWidget, QObject *parent, const
     setWidget(canvas);
     auto topLayout = new QVBoxLayout(canvas);
 
-    const KAboutData aboutData = KAboutData::fromAppStreamForApplication();
+    const KAboutData aboutData = KAboutData::fromAppStreamId(u"org.kde.kaddressbook"_s);
     QString newFeaturesMD5;
     auto releasesInfo = aboutData.releases();
     if (!releasesInfo.isEmpty()) {
