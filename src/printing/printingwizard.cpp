@@ -48,7 +48,7 @@ PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selection
     mSelectionPage = new KAddressBookImportExport::ContactSelectionWidget(selectionModel, this);
     mSelectionPage->setMessageText(i18n("Which contacts do you want to print?"));
 
-    auto mSelectionPageItem = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
+    mSelectionPageItem = new KPageWidgetItem(mSelectionPage, i18n("Choose Contacts to Print"));
     addPage(mSelectionPageItem);
     setAppropriate(mSelectionPageItem, true);
 
@@ -213,7 +213,7 @@ void PrintingWizard::print()
 
     qCDebug(KADDRESSBOOK_LOG) << "printing" << contacts.count() << "contacts.";
     // ... print:
-    backButton()->setEnabled(false);
+    setValid(mSelectionPageItem, false);
 
     button(QDialogButtonBox::Cancel)->setEnabled(false);
     mStyle->print(contacts, mProgress);

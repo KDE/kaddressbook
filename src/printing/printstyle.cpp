@@ -83,8 +83,7 @@ void PrintStyle::showPages()
         mWizard->setAppropriate(mPageItems[wdg2], true);
         wdg = wdg2;
     }
-    mWizard->nextButton()->setEnabled(wdg);
-    mWizard->finishButton()->setEnabled(!wdg);
+    mWizard->setValid(mPageItems[wdg], true);
 }
 
 void PrintStyle::hidePages()

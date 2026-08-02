@@ -126,5 +126,6 @@ private:
     void writeConfig();
     void readConfig();
     void loadGrantleeStyle();
+    KPageWidgetItem *mSelectionPageItem = nullptr;
 };
 }
