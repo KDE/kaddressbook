@@ -46,9 +46,6 @@ public:
     [[nodiscard]] virtual bool canImportFileType(const QUrl &url);
     virtual void importFile(const QUrl &url);
 
-    [[nodiscard]] virtual bool canImportData() const;
-    virtual void importData(const QByteArray &data);
-
 protected:
     QList<QAction *> mImportActions;
     QList<QAction *> mExportActions;

@@ -74,13 +74,4 @@ void PluginInterface::importFile([[maybe_unused]] const QUrl &url)
 {
 }
 
-bool PluginInterface::canImportData() const
-{
-    return false;
-}
-
-void PluginInterface::importData([[maybe_unused]] const QByteArray &data)
-{
-}
-
 #include "moc_plugininterface.cpp"
