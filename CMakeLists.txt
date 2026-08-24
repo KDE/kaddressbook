@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.29)
-set(PIM_VERSION "6.8.0")
+set(PIM_VERSION "6.8.1")
 project(kaddressbook VERSION ${PIM_VERSION})
 # Update it for each release
-set(KADDRESSBOOK_RELEASE_VERSION_DATE "26.08.20") # yy.MM.dd
+set(KADDRESSBOOK_RELEASE_VERSION_DATE "26.09.10") # yy.MM.dd
 
 set(RELEASE_SERVICE_VERSION "26.08.1")
 set(KF_MIN_VERSION "6.25.0")
