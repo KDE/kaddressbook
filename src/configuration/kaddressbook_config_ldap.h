@@ -26,6 +26,7 @@ public:
     void defaults() override;
 
 private:
+    void slotConfigChanged();
     KLDAPWidgets::LdapConfigureWidgetNg *const mLdapConfigureWidget;
 };
 }

@@ -31,14 +31,13 @@ KCMKaddressbookLdapConfig::KCMKaddressbookLdapConfig(QObject *parent, const KPlu
     mLdapConfigureWidget->setEnablePlasmaActivities(Settings::self()->enabledActivities());
     mLdapConfigureWidget->setLdapActivitiesAbstract(ActivitiesManager::self()->ldapActivities());
 #endif
+    connect(mLdapConfigureWidget, &KLDAPWidgets::LdapConfigureWidgetNg::changed, this, &KCMKaddressbookLdapConfig::slotConfigChanged);
 }
 
-/*
 void KCMKaddressbookLdapConfig::slotConfigChanged()
 {
     markAsChanged();
 }
-*/
 
 void KCMKaddressbookLdapConfig::save()
 {
