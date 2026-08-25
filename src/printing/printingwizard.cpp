@@ -216,7 +216,9 @@ void PrintingWizard::print()
     setValid(mSelectionPageItem, false);
 
     button(QDialogButtonBox::Cancel)->setEnabled(false);
-    mStyle->print(contacts, mProgress);
+    if (mStyle) {
+        mStyle->print(contacts, mProgress);
+    }
 }
 
 #include "moc_printingwizard.cpp"
