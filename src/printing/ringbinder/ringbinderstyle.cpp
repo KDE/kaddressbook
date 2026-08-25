@@ -13,11 +13,10 @@ using namespace Qt::Literals::StringLiterals;
 #include "printprogress.h"
 #include "ui_rbs_appearance.h"
 
-#include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
-
 #include <KSharedConfig>
+
 #include <QLocale>
 #include <QPrinter>
 #include <QTextDocument>
