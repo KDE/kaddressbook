@@ -62,13 +62,13 @@ PrintingWizard *PrintStyle::wizard() const
     return mWizard;
 }
 
-void PrintStyle::addPage(QWidget *page, const QString &title)
+void PrintStyle::addPage(QWidget *page, QString title)
 {
     if (!mPageList.contains(page)) { // not yet in the list
-        mPageList.append(page);
-        mPageTitles.append(title);
-
         auto item = new KPageWidgetItem(page, title);
+        mPageList.append(page);
+        mPageTitles.append(std::move(title));
+
         mPageItems.insert(page, item);
         mWizard->addPage(item);
         mWizard->setAppropriate(item, false);

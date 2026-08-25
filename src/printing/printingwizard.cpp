@@ -106,9 +106,9 @@ void PrintingWizard::loadGrantleeStyle()
     QStringList themesDirectories = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, relativePath, QStandardPaths::LocateDirectory);
     if (themesDirectories.count() < 2) {
         // Make sure to add local directory
-        const QString localDirectory = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u'/' + relativePath;
+        QString localDirectory = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u'/' + relativePath;
         if (!themesDirectories.contains(localDirectory)) {
-            themesDirectories.append(localDirectory);
+            themesDirectories.append(std::move(localDirectory));
         }
     }
 
@@ -132,10 +132,10 @@ void PrintingWizard::loadGrantleeStyle()
                     ++i;
                 }
             }
-            const QString printThemePath(dirIt.filePath() + u'/');
+            QString printThemePath(dirIt.filePath() + u'/');
             if (!printThemePath.isEmpty()) {
                 alreadyLoadedThemeName << name;
-                mPrintStyleDefinition.append(new PrintStyleDefinition(new GrantleeStyleFactory(name, printThemePath, this)));
+                mPrintStyleDefinition.append(new PrintStyleDefinition(new GrantleeStyleFactory(std::move(name), std::move(printThemePath), this)));
             }
         }
     }

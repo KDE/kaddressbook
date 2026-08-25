@@ -255,7 +255,7 @@ void ContactInfoProxyModel::resolveGroup(const Akonadi::Item::Id groupItemId, co
             } else {
                 newItem.setGid(contactRef.gid());
             }
-            groupItemsList << newItem;
+            groupItemsList << std::move(newItem);
         }
     }
     if (!groupItemsList.isEmpty()) {

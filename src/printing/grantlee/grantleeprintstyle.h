@@ -21,7 +21,7 @@ class GrantleePrintStyle : public PrintStyle
 {
     Q_OBJECT
 public:
-    explicit GrantleePrintStyle(const QString &themePath, PrintingWizard *parent);
+    explicit GrantleePrintStyle(QString themePath, PrintingWizard *parent);
     ~GrantleePrintStyle() override;
 
     void print(const KContacts::Addressee::List &, PrintProgress *) override;
@@ -33,7 +33,7 @@ private:
 class GrantleeStyleFactory : public PrintStyleFactory
 {
 public:
-    explicit GrantleeStyleFactory(const QString &name, const QString &themePath, PrintingWizard *parent);
+    explicit GrantleeStyleFactory(QString name, QString themePath, PrintingWizard *parent);
 
     PrintStyle *create() const override;
     QString description() const override;

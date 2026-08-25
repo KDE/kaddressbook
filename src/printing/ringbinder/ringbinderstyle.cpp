@@ -79,9 +79,9 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         }
         if (fields & Note) {
             if (!contact.note().isEmpty()) {
-                const QString note = i18n("Note: ") + contact.note().replace(u'\n', u"<br/>"_s);
+                QString note = i18n("Note: ") + contact.note().replace(u'\n', u"<br/>"_s);
 
-                rightBlock.append(note);
+                rightBlock.append(std::move(note));
             }
         }
         if (fields & Addresses) {
@@ -89,9 +89,9 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
             for (const KContacts::Address &address : addresses) {
                 const QString data =
                     address.formatted(KContacts::AddressFormatStyle::Postal).replace(QLatin1StringView("\n\n"), u"\n"_s).replace(u'\n', u"<br/>"_s);
-                const QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1StringView("</p>");
+                QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1StringView("</p>");
 
-                leftBlock.append(subBlock);
+                leftBlock.append(std::move(subBlock));
             }
         }
 

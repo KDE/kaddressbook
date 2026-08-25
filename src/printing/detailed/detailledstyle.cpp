@@ -75,7 +75,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = i18n("Organization:");
             block.entries.append(contact.organization());
 
-            blocks.append(block);
+            blocks.append(std::move(block));
         }
 
         if (!contact.emails().isEmpty()) {
@@ -83,7 +83,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = (contact.emails().count() == 1 ? i18n("Email address:") : i18n("Email addresses:"));
             block.entries = contact.emails();
 
-            blocks.append(block);
+            blocks.append(std::move(block));
         }
 
         if (!contact.phoneNumbers().isEmpty()) {
@@ -93,11 +93,11 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = (numbers.count() == 1 ? i18n("Telephone:") : i18n("Telephones:"));
 
             for (const KContacts::PhoneNumber &number : numbers) {
-                const QString line = number.typeLabel() + QLatin1StringView(": ") + number.number();
-                block.entries.append(line);
+                QString line = number.typeLabel() + QLatin1StringView(": ") + number.number();
+                block.entries.append(std::move(line));
             }
 
-            blocks.append(block);
+            blocks.append(std::move(block));
         }
 
         if (contact.url().isValid()) {
@@ -105,7 +105,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = i18n("Web page:");
             block.entries.append(contact.url().url().toDisplayString());
 
-            blocks.append(block);
+            blocks.append(std::move(block));
         }
 
         if (!contact.addresses().isEmpty()) {
@@ -140,7 +140,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
                 block.header += u':';
 
                 block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).split(u'\n', Qt::KeepEmptyParts);
-                blocks.append(block);
+                blocks.append(std::move(block));
             }
         }
 
@@ -149,7 +149,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = i18n("Notes:");
             block.entries = contact.note().split(u'\n', Qt::KeepEmptyParts);
 
-            blocks.append(block);
+            blocks.append(std::move(block));
         }
 
         // add header

@@ -99,7 +99,7 @@ bool PluginManagerPrivate::initializePlugins()
         info.data = data;
         if (pluginVersion() == data.version()) {
             info.plugin = nullptr;
-            mPluginList.push_back(info);
+            mPluginList.push_back(std::move(info));
         } else {
             qCWarning(LIBKADDRESSBOOKIMPORTEXPORT_LOG) << "Plugin " << data.name() << " doesn't have correction plugin version. It will not be loaded.";
         }

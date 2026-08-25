@@ -133,7 +133,7 @@ protected:
      * @param page The page widget.
      * @param title The page title.
      */
-    void addPage(QWidget *page, const QString &title);
+    void addPage(QWidget *page, QString title);
 
 private:
     PrintingWizard *mWizard = nullptr;

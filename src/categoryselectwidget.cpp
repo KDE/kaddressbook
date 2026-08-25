@@ -245,7 +245,7 @@ QList<Akonadi::Tag> CategorySelectWidgetPrivate::filterTags() const
             Tag tag(it->data(FILTER_ROLE).toInt());
             tag.setName(it->text());
             if (tag.id() != 0) {
-                filter.append(tag);
+                filter.append(std::move(tag));
             }
         } else {
             allOn = false;

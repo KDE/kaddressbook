@@ -22,11 +22,11 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace KABPrinting;
 
-GrantleePrintStyle::GrantleePrintStyle(const QString &themePath, PrintingWizard *parent)
+GrantleePrintStyle::GrantleePrintStyle(QString themePath, PrintingWizard *parent)
     : PrintStyle(parent)
-    , m_themePath(themePath)
+    , m_themePath(std::move(themePath))
 {
-    QFile previewFile(QString(themePath + u"/preview.png"_s));
+    QFile previewFile(QString(m_themePath + u"/preview.png"_s));
     if (previewFile.exists()) {
         setPreview(previewFile.fileName());
     }
@@ -56,10 +56,10 @@ void GrantleePrintStyle::print(const KContacts::Addressee::List &contacts, Print
     progress->addMessage(i18nc("Finished printing", "Done"));
 }
 
-GrantleeStyleFactory::GrantleeStyleFactory(const QString &name, const QString &themePath, PrintingWizard *parent)
+GrantleeStyleFactory::GrantleeStyleFactory(QString name, QString themePath, PrintingWizard *parent)
     : PrintStyleFactory(parent)
-    , mThemePath(themePath)
-    , mName(name)
+    , mThemePath(std::move(themePath))
+    , mName(std::move(name))
 {
 }
 

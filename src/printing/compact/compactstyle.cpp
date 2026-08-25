@@ -78,9 +78,9 @@ QString CompactStyle::contactsToHtml(const KContacts::Addressee::List &contacts)
         QStringList values;
         for (const ContactFields::Field &field : std::as_const(fields)) {
             // we need only values with content
-            const QString value = ContactFields::value(field, contact).trimmed();
+            QString value = ContactFields::value(field, contact).trimmed();
             if (!value.isEmpty()) {
-                values << value;
+                values << std::move(value);
             }
         }
 
