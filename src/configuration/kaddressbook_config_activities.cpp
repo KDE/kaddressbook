@@ -33,6 +33,7 @@ void KCMKaddressbookActivitiesConfig::slotConfigChanged()
 void KCMKaddressbookActivitiesConfig::save()
 {
     Settings::self()->setEnabledActivities(mActivities->isChecked());
+    Settings::self()->save();
     setNeedsSave(false);
 }
 
