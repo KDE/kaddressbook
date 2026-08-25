@@ -847,8 +847,8 @@ void MainWidget::setQRCodeShow(bool on)
     KConfigGroup group(&config, u"View"_s);
     group.writeEntry("QRCodes", on);
     group.sync();
+    mFormatter->setShowQRCode(on);
     if (mDetailsViewStack->currentWidget() == mContactDetails) {
-        mFormatter->setShowQRCode(on);
         mContactDetails->setShowQRCode(on);
     }
 }
