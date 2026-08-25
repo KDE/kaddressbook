@@ -49,11 +49,11 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         "  <table style=\"border-width: 1px; border-style: solid; "
         "border-color: gray;\" width=\"100%\" cellspacing=\"0\">\n");
     for (const KContacts::Addressee &contact : contacts) {
-        QString nameString = contact.familyName() + QLatin1StringView(", ") + contact.givenName();
+        QString nameString = contact.familyName().toHtmlEscaped() + QLatin1StringView(", ") + contact.givenName().toHtmlEscaped();
 
         if (fields & Organization) {
             if (!contact.organization().isEmpty()) {
-                nameString += QLatin1StringView(" (") + contact.organization() + u')';
+                nameString += QLatin1StringView(" (") + contact.organization().toHtmlEscaped() + u')';
             }
         }
 
@@ -68,18 +68,18 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & PhoneNumbers) {
             const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
             for (const KContacts::PhoneNumber &number : numbers) {
-                rightBlock.append(number.typeLabel() + QLatin1StringView(": ") + number.number());
+                rightBlock.append(number.typeLabel().toHtmlEscaped() + QLatin1StringView(": ") + number.number().toHtmlEscaped());
             }
         }
         if (fields & Emails) {
             const QStringList emails = contact.emails();
             for (const QString &email : emails) {
-                rightBlock.append(email);
+                rightBlock.append(email.toHtmlEscaped());
             }
         }
         if (fields & Note) {
             if (!contact.note().isEmpty()) {
-                QString note = i18n("Note: ") + contact.note().replace(u'\n', u"<br/>"_s);
+                QString note = i18n("Note: ") + contact.note().toHtmlEscaped().replace(u'\n', u"<br/>"_s);
 
                 rightBlock.append(std::move(note));
             }
@@ -87,8 +87,10 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, int fi
         if (fields & Addresses) {
             const KContacts::Address::List addresses = contact.addresses();
             for (const KContacts::Address &address : addresses) {
-                const QString data =
-                    address.formatted(KContacts::AddressFormatStyle::Postal).replace(QLatin1StringView("\n\n"), u"\n"_s).replace(u'\n', u"<br/>"_s);
+                const QString data = address.formatted(KContacts::AddressFormatStyle::Postal)
+                                         .toHtmlEscaped()
+                                         .replace(QLatin1StringView("\n\n"), u"\n"_s)
+                                         .replace(u'\n', u"<br/>"_s);
                 QString subBlock = QLatin1StringView("<p style=\"margin-top: 0px; margin-left: 20px\">") + data + QLatin1StringView("</p>");
 
                 leftBlock.append(std::move(subBlock));

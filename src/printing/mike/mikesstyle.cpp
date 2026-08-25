@@ -49,7 +49,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
     for (const KContacts::Addressee &contact : contacts) {
         const int max = qMax(leftFields.count(), rightFields.count());
 
-        const QString name = contact.realName();
+        const QString name = contact.realName().toHtmlEscaped();
 
         if (counter % 2) {
             content += QLatin1StringView("  <br/><br/>\n");
@@ -75,13 +75,13 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
             if (i < leftFields.count()) {
                 leftTitle = ContactFields::label(leftFields.at(i)) + u':';
                 leftTitle.replace(u' ', u"&nbsp;"_s);
-                leftValue = ContactFields::value(leftFields.at(i), contact);
+                leftValue = ContactFields::value(leftFields.at(i), contact).toHtmlEscaped();
             }
 
             if (i < rightFields.count()) {
                 rightTitle = ContactFields::label(rightFields.at(i)) + u':';
                 rightTitle.replace(u' ', u"&nbsp;"_s);
-                rightValue = ContactFields::value(rightFields.at(i), contact);
+                rightValue = ContactFields::value(rightFields.at(i), contact).toHtmlEscaped();
             }
 
             content += QLatin1StringView("   <tr>\n");

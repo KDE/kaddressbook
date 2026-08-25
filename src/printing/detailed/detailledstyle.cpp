@@ -73,15 +73,19 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
         if (!contact.organization().isEmpty()) {
             ContactBlock block;
             block.header = i18n("Organization:");
-            block.entries.append(contact.organization());
+            block.entries.append(contact.organization().toHtmlEscaped());
 
             blocks.append(std::move(block));
         }
 
-        if (!contact.emails().isEmpty()) {
+        const QStringList emails = contact.emails();
+        if (!emails.isEmpty()) {
             ContactBlock block;
-            block.header = (contact.emails().count() == 1 ? i18n("Email address:") : i18n("Email addresses:"));
-            block.entries = contact.emails();
+            block.header = (emails.count() == 1 ? i18n("Email address:") : i18n("Email addresses:"));
+            block.entries.reserve(emails.count());
+            for (const QString &email : emails) {
+                block.entries.append(email.toHtmlEscaped());
+            }
 
             blocks.append(std::move(block));
         }
@@ -93,7 +97,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             block.header = (numbers.count() == 1 ? i18n("Telephone:") : i18n("Telephones:"));
 
             for (const KContacts::PhoneNumber &number : numbers) {
-                QString line = number.typeLabel() + QLatin1StringView(": ") + number.number();
+                QString line = number.typeLabel().toHtmlEscaped() + QLatin1StringView(": ") + number.number().toHtmlEscaped();
                 block.entries.append(std::move(line));
             }
 
@@ -103,7 +107,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
         if (contact.url().isValid()) {
             ContactBlock block;
             block.header = i18n("Web page:");
-            block.entries.append(contact.url().url().toDisplayString());
+            block.entries.append(contact.url().url().toDisplayString().toHtmlEscaped());
 
             blocks.append(std::move(block));
         }
@@ -139,7 +143,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
                 }
                 block.header += u':';
 
-                block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).split(u'\n', Qt::KeepEmptyParts);
+                block.entries = address.formatted(KContacts::AddressFormatStyle::Postal).toHtmlEscaped().split(u'\n', Qt::KeepEmptyParts);
                 blocks.append(std::move(block));
             }
         }
@@ -147,7 +151,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
         if (!contact.note().isEmpty()) {
             ContactBlock block;
             block.header = i18n("Notes:");
-            block.entries = contact.note().split(u'\n', Qt::KeepEmptyParts);
+            block.entries = contact.note().toHtmlEscaped().split(u'\n', Qt::KeepEmptyParts);
 
             blocks.append(std::move(block));
         }
@@ -158,7 +162,7 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             "page-break-inside: avoid\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n");
         content += QLatin1StringView("   <tr>\n");
         content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1StringView(";\" bgcolor=\"")
-            + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-left: 20px">)") + name + QLatin1StringView("</td>\n");
+            + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-left: 20px">)") + name.toHtmlEscaped() + QLatin1StringView("</td>\n");
         content += QLatin1StringView("    <td style=\"color: ") + settings.headerTextColor + QLatin1StringView(R"(;" align="right" bgcolor=")")
             + settings.headerBackgroundColor + QLatin1StringView(R"(" style="padding-right: 20px">)") + birthday + QLatin1StringView("</td>\n");
         content += QLatin1StringView("   </tr>\n");
