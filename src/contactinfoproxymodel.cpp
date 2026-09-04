@@ -152,7 +152,7 @@ QString ContactInfoProxyModel::getDescription(const Akonadi::Item::Id groupItemI
         contactDescription.clear();
     }
     for (int idx = 0; idx < groupContacts.contactReferenceCount(); idx++) {
-        const KContacts::ContactGroup::ContactReference contactRef = groupContacts.contactReference(idx);
+        const KContacts::ContactGroup::ContactReference &contactRef = groupContacts.contactReference(idx);
 
         ContactCacheData::ConstListIterator it = findCacheItem(groupItemId, contactRef);
         if (it != mGroupsCache[groupItemId].end()) {
@@ -244,7 +244,7 @@ void ContactInfoProxyModel::resolveGroup(const Akonadi::Item::Id groupItemId, co
     Akonadi::Item::List groupItemsList;
 
     for (int idx = 0; idx < groupContacts.contactReferenceCount(); idx++) {
-        const KContacts::ContactGroup::ContactReference contactRef = groupContacts.contactReference(idx);
+        const KContacts::ContactGroup::ContactReference &contactRef = groupContacts.contactReference(idx);
 
         if (findCacheItem(groupItemId, contactRef) == mGroupsCache[groupItemId].cend()) {
             mGroupsCache[groupItemId].push_back(contactRef);

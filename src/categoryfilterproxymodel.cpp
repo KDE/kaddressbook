@@ -92,7 +92,7 @@ bool CategoryFilterProxyModel::filterAcceptsRow(int row, const QModelIndex &pare
         int validCategories = 0;
         int count = categories.count();
         for (int i = 0; i < count; ++i) {
-            const QString cat = categories.at(i);
+            const QString &cat = categories.at(i);
             if (cat.startsWith("akonadi:"_L1)) {
                 const int idx = cat.indexOf("?tag="_L1);
                 if (idx >= 0) {

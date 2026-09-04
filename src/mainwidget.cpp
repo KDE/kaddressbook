@@ -104,7 +104,7 @@ namespace
 {
 static bool isStructuralCollection(const Akonadi::Collection &collection)
 {
-    const QStringList mimeTypes = {KContacts::Addressee::mimeType(), KContacts::ContactGroup::mimeType()};
+    const static QStringList mimeTypes = {KContacts::Addressee::mimeType(), KContacts::ContactGroup::mimeType()};
     const QStringList collectionMimeTypes = collection.contentMimeTypes();
     for (const QString &mimeType : mimeTypes) {
         if (collectionMimeTypes.contains(mimeType)) {

@@ -90,9 +90,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             blocks.append(std::move(block));
         }
 
-        if (!contact.phoneNumbers().isEmpty()) {
-            const KContacts::PhoneNumber::List numbers = contact.phoneNumbers();
-
+        const auto numbers = contact.phoneNumbers();
+        if (!numbers.isEmpty()) {
             ContactBlock block;
             block.header = (numbers.count() == 1 ? i18n("Telephone:") : i18n("Telephones:"));
 
@@ -112,9 +111,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             blocks.append(std::move(block));
         }
 
-        if (!contact.addresses().isEmpty()) {
-            const KContacts::Address::List addresses = contact.addresses();
-
+        const auto addresses = contact.addresses();
+        if (!addresses.isEmpty()) {
             for (const KContacts::Address &address : addresses) {
                 ContactBlock block;
 
@@ -148,10 +146,11 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts, const 
             }
         }
 
-        if (!contact.note().isEmpty()) {
+        const QString note = contact.note();
+        if (!note.isEmpty()) {
             ContactBlock block;
             block.header = i18n("Notes:");
-            block.entries = contact.note().toHtmlEscaped().split(u'\n', Qt::KeepEmptyParts);
+            block.entries = note.toHtmlEscaped().split(u'\n', Qt::KeepEmptyParts);
 
             blocks.append(std::move(block));
         }

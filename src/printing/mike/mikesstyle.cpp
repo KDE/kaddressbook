@@ -46,9 +46,8 @@ static QString contactsToHtml(const KContacts::Addressee::List &contacts)
     int counter = 0;
     QString content = u"<html>\n"_s;
     content += QLatin1StringView(" <body>\n");
+    const int max = qMax(leftFields.count(), rightFields.count());
     for (const KContacts::Addressee &contact : contacts) {
-        const int max = qMax(leftFields.count(), rightFields.count());
-
         const QString name = contact.realName().toHtmlEscaped();
 
         if (counter % 2) {
