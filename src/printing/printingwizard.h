@@ -11,6 +11,9 @@
 
 #include <KAssistantDialog>
 
+#include <memory>
+#include <vector>
+
 namespace KAddressBookImportExport
 {
 class ContactSelectionWidget;
@@ -92,20 +95,13 @@ protected Q_SLOTS:
     void slotStyleSelected(int);
 
 protected:
-    class PrintStyleDefinition
-    {
-    public:
-        explicit PrintStyleDefinition(PrintStyleFactory *factory = nullptr, PrintStyle *style = nullptr)
-            : printstyleFactory(factory)
-            , printStyle(style)
-        {
-        }
-
-        PrintStyleFactory *printstyleFactory = nullptr;
+    struct PrintStyleDefinition {
+        std::unique_ptr<PrintStyleFactory> printstyleFactory;
         PrintStyle *printStyle = nullptr;
     };
 
-    QList<PrintStyleDefinition *> mPrintStyleDefinition;
+    // std::vector and not QList: PrintStyleDefinition is move-only.
+    std::vector<PrintStyleDefinition> mPrintStyleDefinition;
     QPrinter *mPrinter = nullptr;
     PrintStyle *mStyle = nullptr;
     PrintProgress *mProgress = nullptr;
