@@ -1,6 +1,24 @@
 add_library(KPim6AddressbookImportExport)
 add_library(KPim6::AddressbookImportExport ALIAS KPim6AddressbookImportExport)
 
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        KPim6AddressbookImportExport
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QList>
+            <QWidget>
+            <QVBoxLayout>
+            <KLocalizedString>
+            <KSharedConfig>
+            <KConfigGroup>
+            <memory>
+    )
+endif()
+
 ecm_setup_version(PROJECT VARIABLE_PREFIX KADDRESSBOOKIMPORTEXPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kaddressbookimportexport_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6AddressbookImportExportConfigVersion.cmake"

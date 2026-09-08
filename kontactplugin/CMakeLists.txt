@@ -3,6 +3,20 @@
 include_directories(${kaddressbook_SOURCE_DIR})
 add_library(kontact_kaddressbookplugin MODULE)
 
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kontact_kaddressbookplugin
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QAction>
+            <KLocalizedString>
+            <memory>
+    )
+endif()
+
 target_sources(
     kontact_kaddressbookplugin
     PRIVATE

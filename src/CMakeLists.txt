@@ -11,6 +11,31 @@ add_subdirectory(importexport)
 
 add_library(kaddressbookprivate)
 
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kaddressbookprivate
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QList>
+            <QVariant>
+            <QWidget>
+            <QAction>
+            <QLabel>
+            <QCheckBox>
+            <QPushButton>
+            <QVBoxLayout>
+            <QHBoxLayout>
+            <QPointer>
+            <KLocalizedString>
+            <KSharedConfig>
+            <KConfigGroup>
+            <memory>
+    )
+endif()
+
 target_sources(
     kaddressbookprivate
     PRIVATE
@@ -187,6 +212,21 @@ install(
 ########### next target ###############
 
 add_executable(kaddressbook)
+
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kaddressbook
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QWidget>
+            <QAction>
+            <KLocalizedString>
+            <memory>
+    )
+endif()
 target_sources(
     kaddressbook
     PRIVATE
@@ -240,6 +280,22 @@ install(FILES settings/kaddressbook.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 ####################################"
 add_library(kaddressbookpart MODULE)
+
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kaddressbookpart
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QWidget>
+            <QAction>
+            <QVBoxLayout>
+            <KLocalizedString>
+            <memory>
+    )
+endif()
 
 target_sources(
     kaddressbookpart

@@ -1,5 +1,21 @@
 add_library(kaddressbook_config_plugins MODULE)
 
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kaddressbook_config_plugins
+        PRIVATE
+            <QObject>
+            <QString>
+            <QStringList>
+            <QWidget>
+            <QVBoxLayout>
+            <KLocalizedString>
+            <KPluginFactory>
+            <memory>
+    )
+endif()
+
 target_sources(
     kaddressbook_config_plugins
     PRIVATE
@@ -34,6 +50,21 @@ install(TARGETS kaddressbook_config_plugins DESTINATION ${KDE_INSTALL_PLUGINDIR}
 
 if(HAVE_ACTIVITY_SUPPORT)
     add_library(kaddressbook_config_activities MODULE)
+
+    # precompiled headers support
+    if(ENABLE_PCH)
+        target_precompile_headers(
+            kaddressbook_config_activities
+            PRIVATE
+                <QObject>
+                <QString>
+                <QWidget>
+                <QVBoxLayout>
+                <KLocalizedString>
+                <KPluginFactory>
+                <memory>
+        )
+    endif()
 
     target_sources(
         kaddressbook_config_activities
@@ -70,6 +101,21 @@ endif()
 if(TARGET KF6::UserFeedbackWidgets)
     add_library(kaddressbook_config_userfeedback MODULE)
 
+    # precompiled headers support
+    if(ENABLE_PCH)
+        target_precompile_headers(
+            kaddressbook_config_userfeedback
+            PRIVATE
+                <QObject>
+                <QString>
+                <QWidget>
+                <QVBoxLayout>
+                <KLocalizedString>
+                <KPluginFactory>
+                <memory>
+        )
+    endif()
+
     target_sources(
         kaddressbook_config_userfeedback
         PRIVATE
@@ -90,6 +136,21 @@ endif()
 ######################################################
 
 add_library(kaddressbook_config_ldap MODULE)
+
+# precompiled headers support
+if(ENABLE_PCH)
+    target_precompile_headers(
+        kaddressbook_config_ldap
+        PRIVATE
+            <QObject>
+            <QString>
+            <QWidget>
+            <QVBoxLayout>
+            <KLocalizedString>
+            <KPluginFactory>
+            <memory>
+    )
+endif()
 
 target_sources(
     kaddressbook_config_ldap
