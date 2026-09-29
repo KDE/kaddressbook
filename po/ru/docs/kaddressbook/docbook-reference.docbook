@@ -1,7 +1,7 @@
 <appendix id="docbook-reference">
-	
+
 <appendixinfo>
-	
+
 <authorgroup>
 
   <author
@@ -99,7 +99,7 @@
 <sect1 id="file-new-group">
 <title
 >Диалог «Создание группы контактов»</title>
-    
+
   <para
 >Этот диалог появляется при использовании функции <guibutton
 ><inlinemediaobject
@@ -140,7 +140,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -202,7 +202,7 @@
 <sect1 id="file-print-preview">
 <title
 >Диалог предварительного просмотра</title>
-    
+
   <para
 >Функция «Предварительный просмотр» &kaddressbook; позволяет оформить печатную копию данных адресной книги по своему вкусу.</para>
 
@@ -231,7 +231,15 @@
 > <!-- add more white space after screenshot @dcb -->
 
   <para
->Сначала следует выбрать контакты, которые нужно распечатать. Если требуется распечатать только некоторые контакты, перед использованием функции «Предварительный просмотр» выделите их в списке контактов. Если требуется распечатать все контакты, выберите вариант «Все контакты» в диалоге «Печать контактов». Сделав выбор, нажмите кнопку <guibutton
+>Сначала следует выбрать контакты, которые нужно распечатать. Если требуется распечатать только некоторые контакты, выделите их до вызова диалога <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>Предварительный просмотр</guisubmenu
+></menuchoice
+>. Если требуется выбрать все контакты или все контакты определённой адресной книги, это можно сделать здесь. Сделав выбор, нажмите кнопку <guibutton
 ><inlinemediaobject
 ><imageobject
 ><imagedata fileref="go-next.png" format="PNG"/></imageobject
@@ -291,7 +299,7 @@
   </mediaobject>
   </screenshot>
   </para>
- 
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -318,7 +326,7 @@
   </mediaobject>
   </screenshot>
   </para>
- 
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -333,7 +341,7 @@
 <sect1 id="configure-ldap-server">
 <title
 >Диалог настройки LDAP</title>
-    
+
   <para
 >Это первая страница диалога настройки, который появляется либо при нажатии кнопки <guibutton
 >Настроить серверы LDAP...</guibutton
@@ -493,7 +501,7 @@
 <sect1 id="import-csv-data">
 <title
 >Функция «Импорт CSV-файла...»</title>
-    
+
   <para
 >Этот диалог появится при выборе пункта меню <menuchoice
 ><guimenu
@@ -602,7 +610,7 @@
 <sect1 id="export-csv-data">
 <title
 >Функция «Экспорт в CSV-файл»</title>
-    
+
   <para
 >При выборе пункта меню <menuchoice
 ><guimenu
@@ -668,7 +676,7 @@
 <sect1 id="view-change-columns">
 <title
 >Функция изменения количества колонок</title>
-    
+
   <para
 >Так выглядит меню <menuchoice
 ><guimenu
@@ -778,7 +786,7 @@
 <sect1 id="settings-configure-shortcuts">
 <title
 >Функция настройки комбинаций клавиш</title>
-    
+
   <para
 >Этот диалог появится при выборе пунта меню <menuchoice
 ><guimenu
@@ -928,7 +936,7 @@
 <sect1 id="settings-configure-toolbars">
 <title
 >Функция настройки панели инструментов</title>
-    
+
   <para
 >Этот диалог появляется при выборе пункта меню <menuchoice
 ><guimenu
@@ -941,7 +949,7 @@
 >Панели инструментов...</guisubmenu
 ></menuchoice
 >.</para>
-  
+
   <para>
   <screenshot id="screenshot-config-toolbars">
       <screeninfo
@@ -965,7 +973,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Поле <quote
 >Фильтр</quote
@@ -982,7 +990,7 @@
 > </inlinemediaobject
 ></guibutton
 >. Действие будет удалено с панели инструментов.</para>
-  
+
   <para
 >Чтобы настроить порядок, в котором выбранные элементы должны отображаться на панели инструментов, воспользуйтесь возможностью перетаскивания в правой области. Порядок элементов на панели инструментов (слева направо) соответствует порядку в области (сверху вниз). Чтобы внести дополнительные изменения во внешний вид панели инструментов — изменить значок, связанный с определённым действием — нажмите кнопку <guibutton
 ><inlinemediaobject
@@ -997,7 +1005,7 @@
 > </inlinemediaobject
 >Изменить текст...</guibutton
 >.</para>
-  
+
   <para
 >Чтобы восстановить параметры панели инструментов по умолчанию, нажмите кнопку <guibutton
 ><inlinemediaobject
@@ -1008,7 +1016,7 @@
 >. Чтобы сохранить изменения и закрыть диалог, нажмите кнопку «ОК», чтобы сохранить изменения и не закрывать диалог — кнопку «Применить», а чтобы закрыть диалог без сохранения изменений — кнопку «Отмена» (более подробные сведения об этих действиях доступны в главе <ulink url="help:/fundamentals/config.html"
 >«Настройка программ &kde;»</ulink
 > «Основ &kde;»).</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
@@ -1023,7 +1031,7 @@
 <sect1 id="settings-configure-kaddressbook">
 <title
 >Функция настройки &kaddressbook;</title>
-    
+
   <para
 >Этот диалог появляется при выборе пункта меню <menuchoice
 ><guimenu
@@ -1060,7 +1068,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >В первом разделе настройки приложения представлены экспериментальные функции, которые ещё не до конца реализованы. Возможно выбирать различные варианты значений параметров «Просмотр адреса», «Приложение для набора номера» и «Приложение для отправки SMS», но программное обеспечение для работы с этими параметрами пока отсутствует.</para>
 
@@ -1098,7 +1106,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Последний набор параметров настройки &kaddressbook; появляется при выборе раздела «Модули».</para>
 
@@ -1150,7 +1158,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
-  
+
   <para
 ><link linkend="docbook-reference"
 >Чтобы вернуться к содержанию этого приложения к руководству пользователя &kaddressbook;, нажмите здесь.</link
@@ -1164,12 +1172,12 @@
 
   <para
 >&kaddressbook; </para>
-  
+
   <para
 >Авторское право &copy; Авторы KAddressBook <email
 >montel@kde.org</email
 >, 2007–2019 </para>
-  
+
   <para
 >Авторское право на документацию &copy; David C. Bryant <email
 >davidbryant@gvtc.com</email

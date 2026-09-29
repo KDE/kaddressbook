@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" 
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd"
   [
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % Russian "INCLUDE">
@@ -12,7 +12,7 @@
 
 <title
 >Руководство пользователя &kaddressbook;</title>
-    
+
 <authorgroup>
 
   <author
@@ -104,7 +104,7 @@
 
   <para
 >&kaddressbook; — это часть пакета программ управления личной информацией (&PIM;) &kde;. &kaddressbook; — это в первую очередь диспетчер адресов электронной почты, однако это приложение также позволяет хранить данные о телефонных номерах и веб-сайтах друзей и знакомых, ссылки на их социальные сети и многое другое. Это универсальное приложение, в котором доступны для просмотра все способы связи с друзьями и знакомыми. </para>
-  
+
   <screenshot id="screenshot-primary">
   <screeninfo
 >Основное окно интерфейса пользователя &kaddressbook;</screeninfo>
@@ -122,16 +122,16 @@
     </caption>
   </mediaobject>
   </screenshot>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >&kaddressbook; интегрирован в структуру <glossterm linkend="gloss-kmail"
 >&kmail;</glossterm
 > (почтовый клиент &kde;). Если контакт был добавлен в &kaddressbook;, будет возможно адресовать ему письмо по электронной почте, просто набрав часть его имени в строке адреса. Либо, если было получено письмо от нового человека, возможно сразу же добавить соответствующий контакт в адресную книгу всего за несколько щелчков мышью. </para>
-  
+
   <para
 >&kaddressbook; также предоставляет возможность хранить (на жёстком диске или на облачном ресурсе) несколько отдельных списков контактов в самых разных популярных форматах списков адресов. Приложение также поддерживает импорт и экспорт контактов в форматах <glossterm linkend="gloss-csv"
 ><filename class="extension"
@@ -160,7 +160,7 @@
 
   <para
 >Ниже представлено изображение основного окна &kaddressbook; без контактных данных. Рекомендуется начать с создания адресной книги. Обратите внимание, что адресная книга «Личные контакты» создаётся автоматически по умолчанию. </para>
- 
+
   <screenshot id="screenshot-blank">
       <screeninfo
 >«Пустое» окно &kaddressbook;</screeninfo>
@@ -178,17 +178,17 @@
     </caption>
   </mediaobject>
   </screenshot>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <sect1 id="how-to-add-a-new-address-book">
   <title
 >Добавление адресной книги</title>
-  
+
   <procedure id="procedure-add-a-new-addressbook">
-    
+
   <step id="new-addressbook-dialog-step"
 ><para
 >Чтобы добавить новую адресную книгу, воспользуйтесь пунктом меню <menuchoice
@@ -204,7 +204,7 @@
 >Добавить адресную книгу...</guimenuitem
 ></menuchoice
 >. Откроется диалог. </para>
-  
+
   <para>
   <screenshot id="screenshot-add-an-address-book">
   <screeninfo
@@ -228,7 +228,7 @@
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
   </step>
-  
+
   <step id="select-a-format-step"
 ><para
 >Выберите один из доступных вариантов. Некоторые из них связаны с коллекциями данных, хранящимися в облаке: источник данных совместной работы <glossterm linkend="gloss-dav"
@@ -244,13 +244,13 @@
 > (веб-службы Exchange на серверах с программным обеспечением MS) и <glossterm linkend="gloss-group"
 >Open-Xchange&nbsp;Groupware&nbsp;Server</glossterm
 > (альтернатива MS EWS с открытым исходным кодом). Если один или несколько облачных сервисов из этого списка уже используются, их данные возможно интегрировать в &kaddressbook; посредством выбора нужного облачного сервиса и ввода своих учётных данных.</para>
-  
+
   <para
 >Остальные варианты, представленные в диалоге («Личные контакты», «Каталог с файлами vCard» и «Файл vCard») создают наборы данных, которые сохраняются на локальном запоминающем устройстве. В каждом из этих вариантов используется один и тот же формат данных (<filename class="extension"
 >.vcf</filename
 >, формат Virtual Card), разница лишь в том, в каком именно каталоге будут храниться данные. При выборе варианта «Личные контакты» или «Каталог с файлами vCard» для каждого сохранённого контакта будет создаваться отдельный файл; при выборе варианта «Файл vCard» все данные будут сохранены в один файл. Проще всего начать с доступной по умолчанию адресной книги «Личные контакты». Другие адресные книги могут и не понадобиться, пока не потребуется сохранить конкретные контакты отдельным списком. </para
 ></step>
-  
+
   <step id="add-a-cloud-based-service-step"
 ><para
 >Сделав выбор, нажмите кнопку «ОК». Если был выбран один из вариантов <glossterm linkend="gloss-cloud"
@@ -258,7 +258,7 @@
 >, появится небольшой диалог для установки связи между <glossterm linkend="gloss-akonadi"
 >&akonadi;</glossterm
 > (служба хранения данных &PIM; для настольных компьютеров) и выбранным облачным сервером. На снимке экрана в качестве примера представлен диалог для учётной записи Google (gmail.com). Для других облачных сервисов диалоги будут немного другие, но похожие. </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service">
   <screeninfo
@@ -280,7 +280,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-step2">
   <screeninfo
@@ -302,7 +302,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-step3">
   <screeninfo
@@ -326,17 +326,17 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Введите учётные данные для входа, как показано выше, и нажмите кнопку «ОК». Теперь облачный список контактов интегрирован в &kaddressbook;. </para>
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-add-a-cloud-based-service-completed">
   <screeninfo
@@ -356,27 +356,26 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
->После указания &kaddressbook; в качестве надёжного ресурса с его помощью будет возможно просматривать и редактировать контакты из учётной записи gmail. Также останется возможность делать это и в веб-браузере. </para
-> 
-  
+>После указания &kaddressbook; в качестве надёжного ресурса с его помощью будет возможно просматривать и редактировать контакты из учётной записи gmail. Также останется возможность делать это и в веб-браузере. </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   </step>
-   
+
   <step id="add-a-local-addressbook-step"
 ><para
 >Если на <link linkend="select-a-format-step"
 >втором шаге </link
 > добавления адресной книги был выбран один из вариантов локальной адресной книги, появится другой диалог. </para>
-      
+
   <para>
   <screenshot id="screenshot-add-a-personal-addressbook">
       <screeninfo
@@ -396,16 +395,16 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Внесите все требуемые изменения в диалоге добавления адресной книги из «Личных контактов» и нажмите кнопку <guibutton
 >&nbsp;✔&nbsp;OK&nbsp;</guibutton
 >. Новая адресная книга появится в главном окне &kaddressbook;. </para>
-  
+
   <para>
   <screenshot id="screenshot-personal-addressbook-has-been-added">
       <screeninfo
@@ -425,29 +424,27 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  </step
->    
-  
+  </step>
+
   </procedure>
   </sect1>
-  
+
   <sect1 id="how-to-add-a-new-contact">
   <title
->Добавление контакта</title
->    
-  
+>Добавление контакта</title>
+
   <procedure id="procedure-add-a-new-contact">
-    
+
   <step id="new-contact-dialog-step-1"
 ><para
 >Чтобы открыть диалог добавления нового контакта, нажмите кнопку <guibutton
 >&nbsp;&plus;&nbsp;Создать контакт...&nbsp;</guibutton
 > на панели инструментов.</para>
-      
+
   <para>
   <screenshot id="screenshot-new-contact-dialog">
       <screeninfo
@@ -469,21 +466,20 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
- 
+
   </step>
-  
+
   <step id="procedure-new-contact-data-items"
 ><para
 >Диалог «Создание контакта» позволяет добавить различные типы данных. Дополнительные данные возможно ввести на вкладках «Адреса», «Работа», «Личное», «Примечания», «Нестандартные поля» и «Параметры шифрования». Более подробные сведения о них доступны в <link linkend="editing-contact-data"
 >четвёртой главе</link
 > данного руководства пользователя. Сейчас же рассмотрим подробнее элементы вкладки «Контакт».</para>
-  </step
->    
-  
+  </step>
+
   <step id="procedure-entering-basic-new-contact-data"
 ><para
 >Если создано более одной адресной книги, воспользуйтесь раскрывающимся списком под названием «Добавить в», чтобы выбрать набор данных, в который следует добавить новый контакт. Затем введите имя контакта в поле ввода «Имя» и адрес электронной почты в поле ввода «Адреса электронной почты». Если нужно указать специальные параметры форматирования для данных имени этого контакта, нажмите кнопку <guibutton
@@ -493,9 +489,8 @@
 >, расположенную справа от поля ввода «Адреса электронной почты»: будет добавлено ещё одно поле ввода электронной почты. Чтобы удалить адрес электронной почты, нажмите соответствующую кнопку (<guibutton
 >&nbsp;&minus;&nbsp;</guibutton
 >). </para
-></step
->    
-  
+></step>
+
   <step id="procedure-additional-new-contact-data"
 ><para
 >Для каждого контакта из адресной книги возможно добавить ник, один или несколько телефонных номеров, различные службы мгновенных сообщений и несколько веб-сайтов, как описано в <link linkend="editing-contact-data"
@@ -506,28 +501,27 @@
 ></step>
 
   <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
-  
+
   </procedure>
   </sect1>
-  
+
 </chapter>
 
 <chapter id="integration-with-other-kde-programs">
 <title
 >Интеграция с другими приложениями &kde;</title>
-  
+
   <sect1 id="integration-overview">
   <title
 >Интеграция с &kmail;</title>
-  
+
   <para
->Так как &kaddressbook; — неотъемлемая часть пакета программ управления личной информацией (&PIM;) &kde; — представляет собой главное хранилище данных о контактах, он был интегрирован в &kmail; и &korganizer;. Далее представлен краткий обзор интерфейса между &kaddressbook; и этими двумя приложениями. </para
->    
+>Так как &kaddressbook; — неотъемлемая часть пакета программ управления личной информацией (&PIM;) &kde; — представляет собой главное хранилище данных о контактах, он был интегрирован в &kmail; и &korganizer;. Далее представлен краткий обзор интерфейса между &kaddressbook; и этими двумя приложениями. </para>
 
   <sect2 id="starting-kaddressbook-from-kmail-tools">
   <title
 >Запуск &kaddressbook; с помощью меню &kmail; «Сервис»</title>
-  
+
   <para>
   <screenshot id="screenshot-kmail-tools-menu">
       <screeninfo
@@ -569,11 +563,11 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Этот интерфейс — воплощение простоты. Чтобы просмотреть запись контакта или обновить её во время чтения или создания сообщений электронной почты в &kmail;, воспользуйтесь пунктом меню <menuchoice
 ><guimenu
@@ -586,17 +580,17 @@
 >Адресная книга</guimenuitem
 > </menuchoice
 >: приложение &kaddressbook; запустится автоматически. Это позволит получить быстрый доступ к контактным данным, которые требуется просмотреть или отредактировать.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="autocompletion-feature-on-new-email">
   <title
 >Вызов &kaddressbook; из окна создания письма &kmail;</title>
-  
+
   <para>
   <screenshot id="screenshot-autocompletion-feature">
       <screeninfo
@@ -616,24 +610,24 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >При создании нового сообщения электронной почты &kmail; помогает найти полный адрес адресата путём отображения списка возможных совпадений, составленного на основе данных из &kaddressbook; и архивов сообщений электронной почты. Чтобы добавить нужный адрес, просто выберите соответствующий вариант в списке.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2  id="recipient-selection-dialog">
   <title
 >Диалог выбора получателей &kmail;</title>
-  
+
   <para>
   <screenshot id="screenshot-recipient-selection">
       <screeninfo
@@ -653,26 +647,26 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >При добавлении нескольких получателей в &kmail; доступен удобный способ выбора нескольких адресов, сохранённых в &kaddressbook;. Достаточно просто нажать кнопку <guibutton
 >&nbsp;Выбрать...&nbsp;</guibutton
 >, чтобы появился раскрывающийся список со всеми контактами из выбранной адресной книги. Прокрутите список (или воспользуйтесь удобным полем «Искать»), выберите нужного получателя и нажмите кнопку «Добавить получателя», «Добавить копию» или «Добавить скрытую копию», чтобы добавить контакт в список получателей нового письма. Нажмите кнопку «Добавить адрес для ответа», чтобы присвоить этому адресу в письме метку «Адрес для ответа».</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="new-contact-creation-interface">
   <title
 >Интерфейс добавления нового контакта &kmail;</title>
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation">
       <screeninfo
@@ -692,7 +686,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -705,7 +699,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next picture @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation-step2">
       <screeninfo
@@ -725,7 +719,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -734,7 +728,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next picture @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-new-contact-creation-step3">
       <screeninfo
@@ -754,7 +748,7 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -767,21 +761,21 @@
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   </sect2>
-    
+
   </sect1>
-  
+
   <sect1 id="korganizer-overview">
   <title
 >Взаимодействие &kaddressbook; с &korganizer;</title>
-  
+
   <para
 >&korganizer;, программа &kde; для планирования и управления календарём, позволяет приглашать людей на собрания по электронной почте и предоставляет для этого два интерфейса, связанных с &kaddressbook;.</para>
   <para
 >&nbsp;</para
-> <!-- add more white space before next section @dcb --> 
-  
+> <!-- add more white space before next section @dcb -->
+
   <para>
   <screenshot id="screenshot-inviting-one-attendee">
       <screeninfo
@@ -800,21 +794,19 @@
     </caption>
   </mediaobject>
   </screenshot>
-  </para
->   
-      
+  </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
   <para
 >Первое окно аналогично окну функции <link linkend="autocompletion-feature-on-new-email"
 >«автодополнение контактов»</link
-> в &kmail;: просто начните вводить имя человека, которого требуется пригласить, и в окне отобразится список возможных совпадений.</para
->  
+> в &kmail;: просто начните вводить имя человека, которого требуется пригласить, и в окне отобразится список возможных совпадений.</para>
   <para
 >&nbsp;</para
 > <!-- add more white space before next section @dcb -->
-  
+
   <para>
   <screenshot id="screenshot-inviting-multiple-attendees">
       <screeninfo
@@ -833,9 +825,8 @@
     </caption>
   </mediaobject>
   </screenshot>
-  </para
->   
-  
+  </para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
@@ -845,9 +836,9 @@
 > в &kmail;: при нажатии кнопки <guibutton
 >&nbsp;Выбрать участников...&nbsp;</guibutton
 > появится доступный для поиска список контактов из всех адресных книг.</para>
-  
+
   </sect1>
-  
+
 </chapter>
 
 <chapter id="editing-contact-data">
@@ -857,7 +848,7 @@
   <sect1 id="edit-basic-info">
   <title
 >Основы</title>
-  
+
   <para
 >При первом нажатии кнопки <guibutton
 ><inlinemediaobject
@@ -902,11 +893,11 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <sect2 id="edit-contact-tab">
   <title
 >Вкладка «Контакт»</title>
-  
+
   <para
 >Ранее (в разделе <link linkend="how-to-add-a-new-contact"
 >«Добавление контакта»</link
@@ -917,9 +908,9 @@
 ></inlinemediaobject
 >Создать контакт...&nbsp;&nbsp;</guibutton
 >.</para>
-  
+
   <variablelist>
-      
+
     <varlistentry
 ><term
 >Телефонные номера</term
@@ -946,7 +937,7 @@
 > и так далее).</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Мгновенные сообщения</term
@@ -985,7 +976,7 @@
 >, Skype, Twitter и Yahoo (MSN Messenger по-прежнему находится в списке служб мгновенных сообщений, однако он не поддерживается с 2014 года).</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Веб-сайты</term
@@ -1004,7 +995,7 @@
 > позволяет установить один из трёх видов веб-адресов: «Домашний», «Служебный» и «Другой».</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Метки</term
@@ -1015,10 +1006,9 @@
 >, расположенную рядом с полем ввода меток.</para
 ></listitem>
     </varlistentry>
-      
-  </variablelist
-> 
-  
+
+  </variablelist>
+
   <para>
   <screenshot id="screenshot-add-tags-dialog">
       <screeninfo
@@ -1044,7 +1034,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
     <varlistentry
 ><term
@@ -1058,7 +1048,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Блог</term
@@ -1067,7 +1057,7 @@
 >В этом поле ввода возможно указать &URL;-адрес личного веб-журнала или блога этого контакта.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Показывать письма от этого контакта в формате</term
@@ -1078,7 +1068,7 @@
 >. Чтобы оставить значение, установленное в &kmail;, выберите вариант «По умолчанию». Чтобы изменить поведение &kmail;, установленное по умолчанию, при получении письма от этого контакта, выберите вариант «Простой текст» или «HTML».</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Разрешить ссылки на содержимое в сети в письмах в HTML</term
@@ -1089,7 +1079,7 @@
 >, при получении письма от этого контакта.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1106,7 +1096,7 @@
 ></para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1123,21 +1113,21 @@
 > без применения изменений. Эта кнопка работает одинаково на всех семи вкладках диалога создания контакта.</para
 ></listitem>
     </varlistentry>
-  
+
   </variablelist>
   <para
 >&nbsp;</para
 > <!-- add more white space after variablelist @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="edit-location-tab">
   <title
 >Вкладка «Адреса»</title>
-  
+
   <para
 >Чтобы указать для контакта один или несколько адресов обычной почты, используйте поля ввода данных на вкладке «Адреса».</para>
-      
+
   <para>
   <screenshot id="screenshot-location-tab">
       <screeninfo
@@ -1161,7 +1151,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
- 
+
   <variablelist>
     <varlistentry
 ><term
@@ -1171,7 +1161,7 @@
 >Этот список категорий позволяет определить тип каждого почтового адреса создаваемого или редактируемого контакта. Доступные варианты: «Домашний адрес», «Служебный адрес», «Международный адрес» и так далее.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Улица / Абонентский ящик / Почтовый индекс / Населённый пункт / Область</term
@@ -1180,7 +1170,7 @@
 >Эти поля позволяют в свободной форме указать данные почтового адреса: улицу, абонентский ящик, почтовый индекс, населённый пункт и область.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Страна</term
@@ -1189,7 +1179,7 @@
 >Этот раскрывающийся список позволяет указать страну.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Это основной адрес</term
@@ -1198,7 +1188,7 @@
 >Установите этот флажок, чтобы указать, что адрес является основным и будет использоваться по умолчанию.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 ><guibutton
@@ -1209,7 +1199,7 @@
 >Закончив ввод данных, нажмите эту кнопку, чтобы добавить новый адрес к списку сохранённых адресов, отображаемых в большой области в правой части диалога.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Значок <inlinemediaobject
@@ -1222,7 +1212,7 @@
 >Этот значок позволяет отредактировать адрес.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry
 ><term
 >Значок <inlinemediaobject
@@ -1235,20 +1225,20 @@
 >Этот значок позволяет удалить адрес.</para
 ></listitem>
     </varlistentry>
-  
+
   </variablelist>
   <para
 >&nbsp;</para
 > <!-- add more white space after variablelist @dcb -->
   </sect2>
-  
+
   <sect2 id="edit-business-tab">
   <title
 >Вкладки «Работа», «Личное» и «Примечания»</title>
-  
+
   <para
 >Следующие три вкладки диалога «Создание контакта» заполнить ещё проще, чем вкладку «Адреса». Эти вкладки позволяют сохранить, соответственно, некоторую информацию о деловых и профессиональных связях этого человека, некоторые личные данные и различные заметки в произвольной форме.</para>
-  
+
   <para>
   <screenshot id="screenshot-business-tab">
       <screeninfo
@@ -1268,11 +1258,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Вкладка «Работа» позволяет добавлять дополнительную информацию о профессиональных и деловых связях человека. Все поля ввода допускают указание данных в свободной форме; в каждом из них возможно вводить любые текстовые данные. Маленькая кнопка <guibutton
 ><inlinemediaobject
@@ -1281,15 +1271,14 @@
 ></inlinemediaobject
 ></guibutton
 > откроет диалог поиска файла, позволяющего указать занятое время человека.</para>
-  
+
   <para
 >Обратите внимание, что рабочий телефон своего делового партнёра следует вводить на вкладке «<link linkend="edit-contact-tab"
 >Контакт</link
 >», а служебный адрес — на вкладке «Адреса», как было описано <link linkend="edit-location-tab"
 >ранее</link
->.</para
->    
-  
+>.</para>
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
@@ -1312,11 +1301,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >На этой вкладке возможно записать некоторые личные сведения: например, дату рождения человека, годовщину свадьбы или имя супруга (супруги). Чтобы добавить эти данные, нажмите соответствующую кнопку (например, <guibutton
 ><inlinemediaobject
@@ -1325,7 +1314,7 @@
 ></inlinemediaobject
 ></guibutton
 >). </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space before next screenshot @dcb -->
@@ -1348,24 +1337,22 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Вкладка «Примечания» представляет собой область ввода текста в произвольной форме, позволяющую ввести любые дополнительные данные контакта.</para>
-      
-  </sect2
->    
 
-  </sect1
->  
+  </sect2>
+
+  </sect1>
 
   <sect1 id="edit-advanced-info">
   <title
 >Дополнительные параметры</title>
-  
+
   <para
 >&kaddressbook; предоставляет несколько более сложных функций хранения данных в дополнение к описанным в предыдущем разделе стандартным функциям.</para>
 
@@ -1375,7 +1362,7 @@
 
   <para
 >Если широкого спектра элементов данных, использующихся в &kaddressbook; по умолчанию, недостаточно, воспользуйтесь диалогом «Нестандартные поля» для создания и заполнения необходимого количества дополнительных полей данных.</para>
-  
+
   <para>
   <screenshot id="screenshot-custom-tab">
       <screeninfo
@@ -1395,27 +1382,27 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Это экспериментальная функция, которая ещё не реализована, поэтому она не рассматривается в данном руководстве.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="edit-crypto-tab">
   <title
 >Вкладка «Параметры шифрования»</title>
-  
+
   <para
 >&kaddressbook; также предоставляет возможность связать криптографические ключи с каждым человеком в списке рассылки, чтобы обеспечить конфиденциальность отправляемых данных.</para>
-  
+
   <para>
   <screenshot id="screenshot-crypto-tab">
       <screeninfo
@@ -1435,11 +1422,11 @@
   </mediaobject>
   </screenshot>
   </para>
-      
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
 <variablelist>
     <varlistentry
 ><term
@@ -1517,32 +1504,31 @@
 >Этот раскрывающийся список позволяет указать, следует ли шифровать сообщения для этого контакта выбранным протоколом и ключом: Не шифровать / Шифровать всегда / Шифровать, если возможно / Спрашивать.</para
 ></listitem>
     </varlistentry>
-    
-</variablelist
->  
-  
+
+</variablelist>
+
   </sect2>
 
   </sect1>
-  
+
 </chapter>
 
 <chapter id="commands">
 <title
 >Список команд</title>
-    
+
   <sect1 id="menu-bar-items">
   <title
 >Панель меню</title>
-  
+
   <para
 >Ниже приведено краткое описание семи меню, расположенных на панели меню &kaddressbook;.</para>
-  
+
 
   <sect2 id="the-file-menu">
   <title
 >Меню «Файл»</title>
-  
+
   <para>
   <screenshot id="screenshot-file-menu">
       <screeninfo
@@ -1576,8 +1562,7 @@
 ><guimenu
 >Файл</guimenu
 ></menuchoice
-> предоставляет доступ к шести основным функциям, три из которых имеют дополнительные параметры.</para
-> 
+> предоставляет доступ к шести основным функциям, три из которых имеют дополнительные параметры.</para>
 
   <para
 >&nbsp;</para
@@ -1613,9 +1598,8 @@
 >второй главе</link
 > данного руководства пользователя.</para
 ></listitem>
-    </varlistentry
-> 
-    
+    </varlistentry>
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1644,7 +1628,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1667,7 +1651,7 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1688,7 +1672,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1709,7 +1693,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1730,7 +1714,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1751,7 +1735,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1772,7 +1756,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1792,8 +1776,7 @@
 >vCard 4.0</acronym
 >.</para
 ></listitem>
-    </varlistentry
->    
+    </varlistentry>
 
     <varlistentry>
     <term
@@ -1815,7 +1798,7 @@
 >.</para
 ></listitem>
     </varlistentry>
- 
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1849,8 +1832,7 @@
 ></listitem>
     </varlistentry>
 
-    <varlistentry
->    
+    <varlistentry>
     <term
 ><menuchoice
 ><guimenu
@@ -1870,7 +1852,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1895,20 +1877,19 @@
 >Закрывает приложение &kaddressbook;.</para
 ></listitem>
     </varlistentry>
- 
+
   </variablelist>
 
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
-  </sect2
->  
+
+  </sect2>
 
   <sect2 id="the-edit-menu">
   <title
 >Меню «Правка»</title>
-  
+
   <para>
   <screenshot id="screenshot-edit-menu">
       <screeninfo
@@ -1936,19 +1917,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Меню <menuchoice
 ><guimenu
 >Правка</guimenu
 ></menuchoice
 > предоставляет доступ к восьми основным функциям, две из которых имеют дополнительные параметры.</para>
- 
+
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb --> 
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -1971,7 +1952,7 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2000,7 +1981,7 @@
 > помещается в буфер обмена. Операция «Вырезать» будет завершена после вставки контакта из буфера обмена в другое место.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2019,7 +2000,7 @@
 >Помещает копию контакта в буфер обмена, позволяя вставить контакт в другое место.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2046,7 +2027,7 @@
 > в домашнюю папку).</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2067,7 +2048,7 @@
 >Позволяет выполнить операции копирования и вставки одним щелчком левой кнопкой мыши. Список отображаемых расположений зависит от того, сколько адресных книг было создано.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2088,7 +2069,7 @@
 >Аналогично пункту меню «Копировать контакт в» за исключением того, что это действие не позволяет выполнить операции копирования и вставки одним щелчком левой кнопкой мыши.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2111,7 +2092,7 @@
 >Удаляет выбранный контакт из текущей адресной книги.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2134,21 +2115,19 @@
 >), а сами данные остаются без изменений. Однако всё же рекомендуется сделать резервную копию адресной книги перед её удалением.</para
 ></listitem>
     </varlistentry>
-    
-  </variablelist
->  
-  
+
+  </variablelist>
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
-  <sect2 id="the-view-menu"
-> 
+
+  <sect2 id="the-view-menu">
   <title
 >Меню «Вид»</title>
-  
+
   <para>
   <screenshot id="screenshot-view-menu">
       <screeninfo
@@ -2176,19 +2155,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Меню <menuchoice
 ><guimenu
 >Вид</guimenu
 ></menuchoice
 > предоставляет доступ к четырём основным функциям и одной экспериментальной, которая пока не работает.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2203,7 +2182,7 @@
 >Этот пункт меню должен открывать диалог «Оформления», но он не работает надлежащим образом с версии 5.10.3.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2230,7 +2209,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-        
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2257,7 +2236,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2282,7 +2261,7 @@
 >Возвращает в режим трёх колонок, установленный по умолчанию.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2301,7 +2280,7 @@
 >Установите этот флажок для отображения контактной информации в виде QR-кода. Чтобы скрыть QR-коды, снимите флажок.</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   <para
@@ -2309,12 +2288,11 @@
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-action-menu"
-> 
+
+  <sect2 id="the-action-menu">
   <title
 >Меню «Действия»</title>
-  
+
   <para>
   <screenshot id="screenshot-action-menu">
       <screeninfo
@@ -2342,7 +2320,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Меню <menuchoice
 ><guimenu
@@ -2352,9 +2330,9 @@
 
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb -->  
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2373,7 +2351,7 @@
 >Этот пункт меню аналогичен следующему за ним пункту «Написать письмо...» за исключением того, что после выбора нескольких контактов (выбирайте контакты левой кнопкой мыши, удерживая нажатой клавишу &Ctrl;), откроется окно создания сообщения с пустым списком адресатов и прикреплёнными файлами (выбранные контакты в формате vCard 3.0). Это упрощает обмен выбранной информацией из адресной книги с друзьями и деловыми партнёрами.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2392,20 +2370,19 @@
 >Этот пункт меню предоставляет альтернативный способ создания нового списка получателей. Удерживая нажатой клавишу &Ctrl; (или &Shift;), с помощью левой кнопки мыши выберите контакты, которые следует включить в список получателей. Затем выберите пункт меню «Написать письмо...»; откроется окно &kmail; для создания письма. Все выбранные контакты будут указаны как адресаты в поле «Кому».</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-tools-menu"
-> 
+
+  <sect2 id="the-tools-menu">
   <title
 >Меню «Сервис»</title>
-  
+
   <para>
   <screenshot id="screenshot-tools-menu">
       <screeninfo
@@ -2433,19 +2410,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Меню <menuchoice
 ><guimenu
 >Сервис</guimenu
 ></menuchoice
 > предоставляет доступ к двум функциям управления данными.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2460,7 +2437,7 @@
 >Этот инструмент позволяет объединить содержимое двух или более записей &kaddressbook;. Чтобы воспользоваться этой функцией, сначала выделите как минимум два контакта (удерживайте нажатой клавишу &Ctrl; или &Shift; и выберите нужные контакты левой кнопкой мыши). Появится диалоговое окно, в котором следует выбрать контакты для объединения и расположение, в котором они будут сохранены. Чтобы завершить операцию, нажмите кнопку «Объединить».</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2476,18 +2453,17 @@
 ></listitem>
     </varlistentry>
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-settings-menu"
-> 
+
+  <sect2 id="the-settings-menu">
   <title
 >Меню «Настройка»</title>
-  
+
   <para>
   <screenshot id="screenshot-settings-menu">
       <screeninfo
@@ -2515,7 +2491,7 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-    
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
@@ -2526,12 +2502,12 @@
 >Настройка</guimenu
 ></menuchoice
 > предоставляет доступ к пяти параметрам для настройки работы &kaddressbook;.</para>
- 
+
   <para
 >&nbsp;</para
-> <!-- add more white space @dcb --> 
+> <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2577,7 +2553,7 @@
 >Этот пункт меню позволяет показать или скрыть панель инструментов.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2598,7 +2574,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2644,20 +2620,19 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
- 
+
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
 
   </sect2>
-  
-  <sect2 id="the-help-menu"
-> 
+
+  <sect2 id="the-help-menu">
   <title
 >Меню «Справка»</title>
-  
+
   <para>
   <screenshot id="screenshot-help-menu">
       <screeninfo
@@ -2685,19 +2660,19 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Меню <menuchoice
 ><guimenu
 >Справка</guimenu
 ></menuchoice
 > предоставляет доступ к семи пунктам со справочной информацией.</para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space @dcb -->
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2720,7 +2695,7 @@
 >Этот пункт меню отображает «Руководство пользователя &kaddressbook;» с помощью вспомогательной программы &khelpcenter;.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2743,7 +2718,7 @@
 >Это встроенный справочный инструмент &kaddressbook;. Выберите этот пункт меню, а затем — один из четырёх первых элементов на панели инструментов. Отобразится краткое описание функции этого элемента.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2764,7 +2739,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2785,7 +2760,7 @@
 >, на которой возможно пожертвовать деньги в поддержку &kde;. Принимаются евро, доллары, рубли, фунты стерлингов, иены, юани, песо и так далее.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2804,7 +2779,7 @@
 >Этот пункт меню позволяет сменить язык, используемый для обозначения различных пунктов меню и встроенных справочных экранов. Чтобы изменения вступили в силу, необходимо перезапустить &kaddressbook;.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2823,7 +2798,7 @@
 >Этот пункт меню предоставляет информацию о текущей версии &kaddressbook;, библиотеках, использованных для сборки, и об авторах программы.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -2842,22 +2817,22 @@
 >Этот пункт меню показывает информацию о &kde;.</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   </sect2>
-  
+
   </sect1>
-  
+
   <sect1 id="tool-bar-items">
   <title
 >Панель инструментов</title>
-  
+
   <para
 >На панели инструментов &kaddressbook; доступны пять функций: «Создать контакт...», «Создать группу контактов...», «Изменить контакт...», «Поиск...» и фильтр по категориям. Ниже представлен снимок экрана, на котором показано расположение этих функций. (Так выглядит панель инструментов &kaddressbook;, установленная по умолчанию. Панель возможно настроить на свой вкус с помощью меню <link linkend="the-settings-menu"
 >«Настройка»</link
 >.)</para>
-  
+
   <para>
   <screenshot id="screenshot-tool-bar">
       <screeninfo
@@ -2877,19 +2852,19 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="list-add.png" 
+><imagedata fileref="list-add.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Создать контакт...</guibutton
@@ -2901,13 +2876,13 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="user-group-new.png" 
+><imagedata fileref="user-group-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Создать группу контактов...</guibutton
@@ -2919,13 +2894,13 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><guibutton
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="document-edit.png" 
+><imagedata fileref="document-edit.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Изменить контакт...</guibutton
@@ -2937,7 +2912,7 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 >[ Поиск...&nbsp;<keycombo action="simul"
@@ -2954,7 +2929,7 @@
 > поместит курсор в поле «Поиск...». Обратите внимание, что этот инструмент производит поиск по всем типам данных, введённых в поле; поисковой запрос «21» отобразит контакты, где цифра 21 используется, например, в адресе электронной почты, почтовом индексе, номере телефона или дате рождения.</para
 ></listitem>
     </varlistentry>
-    
+
   </variablelist>
 
   <para>
@@ -2980,9 +2955,9 @@
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 >[ (выбраны все)&nbsp;<inlinemediaobject
@@ -3013,10 +2988,9 @@
 > переключит фильтр в режим «выбраны все».</para
 ></listitem>
     </varlistentry>
-    
-  </variablelist
->  
-  
+
+  </variablelist>
+
   <para>
   <screenshot id="toolbar-filter">
       <screeninfo
@@ -3036,20 +3010,20 @@
   </mediaobject>
   </screenshot>
   </para>
-     
+
   </sect1>
-  
+
   <sect1 id="context-menus">
   <title
 >Контекстные меню</title>
-  
+
   <para
 >Чтобы появилось контекстное меню, щёлкните правой кнопкой мыши в любом месте внутри основной области текста. Конкретное отображаемое меню зависит как от панели, на которой производился щелчок правой кнопкой мыши, так и от конкретного выбранного элемента данных, если таковой имеется.</para>
-  
+
   <sect2 id="the-addressbook-panel">
   <title
 >Контекстное меню адресной книги</title>
-  
+
   <para>
   <screenshot id="addressbook-context-menu">
       <screeninfo
@@ -3069,20 +3043,20 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="folder-new.png" 
+><imagedata fileref="folder-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Добавить папку в адресную книгу...</guimenu
@@ -3093,14 +3067,14 @@
 >Этот пункт контекстного меню не работает должным образом с версии 5.10.3.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="edit-delete.png" 
+><imagedata fileref="edit-delete.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Удалить папку адресной книги</guimenu
@@ -3111,14 +3085,14 @@
 >Этот пункт контекстного меню не работает должным образом с версии 5.10.3.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="folder-new.png" 
+><imagedata fileref="folder-new.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Добавить адресную книгу...</guimenu
@@ -3131,14 +3105,14 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="edit-delete.png" 
+><imagedata fileref="edit-delete.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Удалить адресную книгу</guimenu
@@ -3149,7 +3123,7 @@
 >Этот пункт контекстного меню удаляет выбранную адресную книгу. Будьте внимательны!</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3172,14 +3146,14 @@
 >Этот пункт контекстного меню обновляет контактные данные, связанные с выбранной адресной книгой.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="configure.png" 
+><imagedata fileref="configure.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Свойства папки...</guimenu
@@ -3190,14 +3164,14 @@
 >Этот пункт контекстного меню отображает сводную информацию о выбранной адресной книге.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="configure.png" 
+><imagedata fileref="configure.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Свойства адресной книги...</guimenu
@@ -3208,14 +3182,14 @@
 >Этот пункт контекстного меню отображает сводную информацию о выбранной адресной книге.</para
 ></listitem>
     </varlistentry>
-      
+
     <varlistentry>
     <term
 ><menuchoice
 ><guimenu
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="document-open.png" 
+><imagedata fileref="document-open.png"
     format="PNG"/></imageobject
 ></inlinemediaobject
 >Подписка на сервере...</guimenu
@@ -3228,17 +3202,17 @@
     </varlistentry>
 
   </variablelist>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="the-contactslist-panel">
   <title
 >Контекстное меню списка контактов</title>
-  
+
   <para>
   <screenshot id="contactlist-context-menu">
       <screeninfo
@@ -3258,13 +3232,13 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <variablelist>
-  
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3290,9 +3264,8 @@
 >второй главе</link
 > данного руководства пользователя.</para
 ></listitem>
-    </varlistentry
-> 
-    
+    </varlistentry>
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3317,7 +3290,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3343,7 +3316,7 @@
 > данного руководства пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3360,7 +3333,7 @@
 >.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3377,7 +3350,7 @@
 >Этот пункт контекстного меню позволяет скопировать выбранный контакт (или несколько) в указанное расположение. Список доступных расположений зависит от количества созданных адресных книг.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3394,7 +3367,7 @@
 >Функция, аналогичная описанному выше пункту меню «Копировать контакт в» за исключением того, что это действие удаляет исходные данные, а не создаёт их копию.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3426,8 +3399,7 @@
 ></listitem>
     </varlistentry>
 
-    <varlistentry
->    
+    <varlistentry>
     <term
 ><menuchoice
 ><guimenu
@@ -3446,7 +3418,7 @@
 > к данному руководству пользователя.</para
 ></listitem>
     </varlistentry>
-    
+
     <varlistentry>
     <term
 ><menuchoice
@@ -3467,20 +3439,19 @@
 >Удаляет выбранный контакт (или несколько) из текущей адресной книги.</para
 ></listitem>
     </varlistentry>
-        
-  </variablelist
->    
-  
+
+  </variablelist>
+
   <para
 >&nbsp;</para
 > <!-- add more white space between sections @dcb -->
-  
+
   </sect2>
-  
+
   <sect2 id="the-individualcontact-panel">
   <title
 >Контекстное меню отдельного контакта</title>
-  
+
   <para>
   <screenshot id="individualcontact-context-menu">
       <screeninfo
@@ -3500,24 +3471,24 @@
   </mediaobject>
   </screenshot>
   </para>
-  
+
   <para
 >&nbsp;</para
 > <!-- add more white space after screenshot @dcb -->
-  
+
   <para
 >Заголовок в контекстном меню зависит от выбранного элемента. В любом случае, функция одна и та же: выбранный элемент данных копируется в буфер обмена.</para>
-      
+
   </sect2>
-  
+
   </sect1>
-  
+
 </chapter>
 
 <glossary>
-   
+
 <!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
-    
+
   <glossentry id="gloss-aim">
   <glossterm
 ><acronym
@@ -3530,7 +3501,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-akonadi">
   <glossterm
 >&akonadi;</glossterm>
@@ -3539,7 +3510,7 @@
 >Расширяемая служба хранения данных и метаданных &PIM; для настольных компьютеров, обеспечивающая одновременный доступ для чтения, записи и запросов. &akonadi; возможно управлять с помощью команды akonadictl: чтобы получить более подробную информацию, введите «akonadictl --help» в окне терминала.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-cloud">
   <glossterm
 >Облачный сервис</glossterm>
@@ -3558,9 +3529,8 @@
 >.csv</filename
 > был создан на заре развития компьютеров. Он до сих пор широко используется, главным образом потому, что концептуально очень прост.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-dav">
   <glossterm
 ><acronym
@@ -3584,7 +3554,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-ews">
   <glossterm
 ><acronym
@@ -3597,7 +3567,7 @@
 > предоставляет похожий функционал.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-gadu-gadu">
   <glossterm
 >Gadu-Gadu</glossterm>
@@ -3630,7 +3600,7 @@
 >Сокращение от Globally Recognized Avatar («глобально распознаваемый аватар») — графическое изображение, привязанное к электронному адресу пользователя WordPress. Обычно отображается как изображение размером 80х80. Так как многие люди пользуются программным обеспечением WordPress, Gravatar доступен на большом количестве ресурсов.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-gpws">
   <glossterm
 >GroupWise</glossterm>
@@ -3667,7 +3637,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-imap">
   <glossterm
 >&IMAP;</glossterm>
@@ -3676,7 +3646,7 @@
 >Internet Message Access Protocol — широко распространённый способ управления сообщениями электронной почты. &IMAP; обслуживает и синхронизирует локальные и удалённые экземпляры набора сообщений электронной почты. Другими словами, локально сохранённые данные для учётной записи &IMAP; являются зеркалом писем на сервере.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-inline-pgp">
   <glossterm
 >Inline OpenPGP</glossterm>
@@ -3685,7 +3655,7 @@
 >Протокол шифрования, в котором подписи PGP встраиваются непосредственно в тело сообщения электронной почты. Этот протокол не рекомендуется использовать из-за технических трудностей, вызванных неизбирательным использованием символов, отличных от ASCII, в сообщениях электронной почты с обычным текстом.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-irc">
   <glossterm
 >&irc;</glossterm>
@@ -3696,7 +3666,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-isdn">
   <glossterm
 ><acronym
@@ -3709,7 +3679,7 @@
 > было невозможно обойтись, однако в последнее время он был вытеснен более надёжными технологиями, которые разрешают некоммутируемые соединения по сетям, использующим оптоволоконные кабели, спутники и сверхвысокочастотные микроволновые передатчики и приёмники. Он по-прежнему широко используется в нескольких промышленных приложениях, где необходимо прямое двухточечное соединение, но постепенно исчезает на более широком потребительском рынке.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-jabber">
   <glossterm
 >Jabber</glossterm>
@@ -3726,7 +3696,7 @@
 >.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-kmail">
   <glossterm
 >&kmail;</glossterm>
@@ -3734,9 +3704,8 @@
 ><para
 >Программа &kde; для управления электронной почтой. Предоставляет полностью интегрированную среду для отправки и получения сообщений из одной или нескольких учётных записей, поддержки любого количества учётных записей электронной почты, организации и архивирования старых сообщений электронной почты и управления личными ключами шифрования электронной почты.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-kolab">
   <glossterm
 >Kolab</glossterm>
@@ -3747,7 +3716,7 @@
 > предоставляет аналогичные, но полностью проприетарные программные пакеты.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-ldap">
   <glossterm
 ><acronym
@@ -3757,9 +3726,8 @@
 ><para
 >Аббревиатура от Lightweight Directory Access Protocol («легковесный протокол доступа к каталогам») — стандартный протокол или метод для совместного использования некоторых определённых классов информации множеством серверных компьютеров, которые и составляют Интернет.</para
 ></glossdef>
-  </glossentry
-> 
-  
+  </glossentry>
+
   <glossentry id="gloss-ldif">
   <glossterm
 >.ldif</glossterm>
@@ -3771,8 +3739,7 @@
 ></glossterm
 > представляет собой простой текстовый файл, предназначенный для обмена информацией каталога между различными серверами в распределённой сети.</para
 ></glossdef>
-  </glossentry
-> 
+  </glossentry>
 
   <glossentry id="gloss-mnwhl">
   <glossterm
@@ -3795,7 +3762,7 @@
 >Аббревиатура от Multipurpose Internet Mail Extensions («многоцелевые расширения интернет-почты») — набор соглашений о кодировании, призванный сделать оформление сообщений электронной почты более гибким за счёт использования таких функций, как расширенные наборы символов, встроенные изображения, текст с форматированием и так далее. Первоначальные соглашения о кодировании сообщений электронной почты не поддерживали ничего, кроме обычных текстовых (или зашифрованных) сообщений, написанных с помощью 7-битного кода ASCII. Почти все современные сообщений электронной почты закодированы в формате &MIME;.</para
 ></glossdef>
   </glossentry>
-   
+
   <glossentry id="gloss-open-pgp">
   <glossterm
 >OpenPGP/&MIME;</glossterm>
@@ -3806,7 +3773,7 @@
 >. PGP-подпись оборачивается специальным набором заголовков &MIME;, который позволяет программе почтового клиента скрыть подпись при отображении сообщения.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-group">
   <glossterm
 >Сервер совместной работы Open-Xchange</glossterm>
@@ -3819,7 +3786,7 @@
 > предоставляют аналогичные программные пакеты.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-pcs">
   <glossterm
 ><acronym
@@ -3832,7 +3799,7 @@
 > работают в более высокой полосе частот, чем традиционные сотовые телефоны, что означает, что они могут обеспечить большую пропускную способность.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-pgp">
   <glossterm
 ><acronym
@@ -3843,7 +3810,7 @@
 >Созданная в 1991 году программа шифрования данных, автором которой является Philip Zimmerman. В большинстве используемых сегодня программ для шифрования электронной почты используется тот или иной вариант PGP для шифрования, расшифровки и криптографической подписи сообщений.</para
 ></glossdef>
   </glossentry>
-    
+
   <glossentry id="gloss-pim">
   <glossterm
 >&PIM;</glossterm>
@@ -3851,9 +3818,8 @@
 ><para
 >Система управления персональной информацией пользователя &kde;, набор программ для управления контактами и расписанием. &PIM; включает в себя такие программы как &kontact;, &kmail;, &kaddressbook;, &korganizer;, &akregator; и &akonadi;. Этот термин также используется в более общем смысле для описания любой системы управления личной информацией, такой как имена, адреса, номера телефонов и так далее.</para
 ></glossdef>
-  </glossentry
->  
-  
+  </glossentry>
+
   <glossentry id="gloss-qrcode">
   <glossterm
 >QR-код</glossterm>
@@ -3873,7 +3839,7 @@
 >Аббревиатура от Simple Authentication and Security Layer («простой уровень аутентификации и безопасности») — структура для аутентификации клиентов (пароли и имена пользователей) и безопасности данных (зашифрованные соединения). Она поддерживает более десятка различных протоколов.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-mime">
   <glossterm
 ><acronym
@@ -3905,7 +3871,7 @@
 > — это «прозрачная» версия Secure / Multipurpose Internet Mail Extensions. Аналогично описанному выше «S/MIME», однако всё содержимое электронного письма записывается в один объект &MIME; (большинство сообщений электронной почты, закодированных в &MIME;, состоят из двух или более отдельных объектов &MIME;).</para
 ></glossdef>
   </glossentry>
- 
+
   <glossentry id="gloss-sms">
   <glossterm
 ><acronym
@@ -3942,7 +3908,7 @@
 > является самым слабым звеном в цепочке, соединяющей клиентскую программу с безопасным (зашифрованным) интернет-сервисом. Он стал целью нескольких хакерских атак и несколько раз пересматривался в ответ на эти атаки.</para
 ></glossdef>
   </glossentry>
-  
+
   <glossentry id="gloss-vcf">
   <glossterm
 >.vcf</glossterm>
@@ -3962,7 +3928,7 @@
 >Аббревиатура от Extensible Messaging and Presence Protocol («расширяемый протокол обмена сообщениями и информацией о присутствии») — базовая технологическая основа службы обмена мгновенными сообщениями «Jabber».</para
 ></glossdef>
   </glossentry>
-  
+
   </glossary>
 
 &docbook-reference;
