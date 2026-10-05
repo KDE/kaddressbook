@@ -7,7 +7,6 @@
 */
 
 #include "stylepage.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <QGridLayout>
 #include <QGroupBox>
@@ -18,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KLocalizedString>
 #include <QComboBox>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;
 
 // helper method to sort contact fields by field label

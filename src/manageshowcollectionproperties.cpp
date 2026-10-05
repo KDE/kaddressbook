@@ -5,7 +5,6 @@
 */
 
 #include "manageshowcollectionproperties.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
@@ -18,6 +17,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <Akonadi/CollectionPropertiesDialog>
 
 #include <KLocalizedString>
+
+using namespace Qt::Literals::StringLiterals;
 
 ManageShowCollectionProperties::ManageShowCollectionProperties(MainWidget *mainWidget, QObject *parent)
     : QObject(parent)

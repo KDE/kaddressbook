@@ -5,7 +5,6 @@
 */
 
 #include "pluginmanager.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "libkaddressbookexportimport_debug.h"
 #include "plugin.h"
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KPluginMetaData>
 #include <QFileInfo>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;
 
 class PluginManagerHolder

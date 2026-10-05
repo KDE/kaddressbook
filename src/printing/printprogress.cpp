@@ -6,7 +6,6 @@
 */
 
 #include "printprogress.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QApplication>
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QGridLayout>
 #include <QProgressBar>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 
 PrintProgress::PrintProgress(QWidget *parent)

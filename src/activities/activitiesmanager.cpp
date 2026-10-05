@@ -5,13 +5,14 @@
 */
 
 #include "activitiesmanager.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "accountactivities.h"
 // #include "kaddressbook_activities_debug.h"
 #include "ldapactivities.h"
 
 #include <PlasmaActivities/Consumer>
+
+using namespace Qt::Literals::StringLiterals;
 
 ActivitiesManager::ActivitiesManager(QObject *parent)
     : PimCommonActivities::ActivitiesBaseManager{parent}

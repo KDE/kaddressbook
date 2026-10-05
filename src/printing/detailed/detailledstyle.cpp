@@ -7,7 +7,6 @@
 */
 
 #include "detailledstyle.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "printingwizard.h"
 #include "printprogress.h"
@@ -23,6 +22,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPrinter>
 #include <QTextDocument>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 
 static const char ConfigSectionName[] = "DetailedPrintStyle";

@@ -5,7 +5,6 @@
 */
 
 #include "grantleeprintstyle.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
@@ -20,6 +19,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPrinter>
 #include <QTextDocument>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 
 GrantleePrintStyle::GrantleePrintStyle(QString themePath, PrintingWizard *parent)

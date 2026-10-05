@@ -6,7 +6,6 @@
 */
 
 #include "printstyle.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "printingwizard.h"
 
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPushButton>
 #include <QStandardPaths>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 using namespace KAddressBookImportExport;
 

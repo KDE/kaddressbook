@@ -7,7 +7,6 @@
 */
 
 #include "mainwindow.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "config-kaddressbook.h"
 #include "mainwidget.h"
@@ -46,6 +45,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <TextAddonsWidgets/NeedUpdateVersionWidget>
 #include <TextAddonsWidgets/WhatsNewMessageNgWidget>
 #include <TextAddonsWidgets/WhatsNewNgDialog>
+
+using namespace Qt::Literals::StringLiterals;
 
 MainWindow::MainWindow()
     : KXmlGuiWindow(nullptr)

@@ -7,10 +7,10 @@
 */
 
 #include "contactsorter.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KContacts/Addressee>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;
 
 class ContactSortHelper

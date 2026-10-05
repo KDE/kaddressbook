@@ -5,7 +5,6 @@
 */
 
 #include "exportselectionwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QGridLayout>
 #include <QGroupBox>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;
 
 ExportSelectionWidget::ExportSelectionWidget(QWidget *parent)

@@ -7,7 +7,6 @@
 */
 
 #include "stylecontactlistdelegate.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "contactinfoproxymodel.h"
 
@@ -17,6 +16,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <QImage>
 #include <QPainter>
 #include <QPainterPath>
+
+using namespace Qt::Literals::StringLiterals;
 
 namespace
 {

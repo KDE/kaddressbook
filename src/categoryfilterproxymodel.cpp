@@ -5,7 +5,6 @@
 */
 
 #include "categoryfilterproxymodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include "categoryselectwidget.h"
 
+using namespace Qt::Literals::StringLiterals;
 using namespace Akonadi;
 
 class CategoryFilterProxyModelPrivate : public QObject

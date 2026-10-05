@@ -5,12 +5,13 @@
 */
 
 #include "kaddressbookplugininterface.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
 
 #include <PimCommon/GenericPlugin>
+
+using namespace Qt::Literals::StringLiterals;
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)
     : PimCommon::PluginInterface(parent)

@@ -7,7 +7,6 @@
 */
 
 #include "contactinfoproxymodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 
@@ -19,6 +18,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <KLocalizedString>
 
 #include <KJob>
+
+using namespace Qt::Literals::StringLiterals;
 
 ContactInfoProxyModel::ContactInfoProxyModel(QObject *parent)
     : QIdentityProxyModel(parent)

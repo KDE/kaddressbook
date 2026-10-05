@@ -8,7 +8,6 @@
 */
 
 #include "mikesstyle.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "importexport/contactfields.h"
 #include "printingwizard.h"
@@ -21,6 +20,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPrinter>
 #include <QTextDocument>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 using namespace KAddressBookImportExport;
 

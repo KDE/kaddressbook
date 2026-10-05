@@ -7,11 +7,11 @@
 */
 
 #include "contactfields.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QUrl>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;
 
 QString ContactFields::label(Field field)

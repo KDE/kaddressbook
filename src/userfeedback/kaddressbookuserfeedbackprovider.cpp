@@ -5,7 +5,6 @@
 */
 
 #include "kaddressbookuserfeedbackprovider.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KUserFeedback/ApplicationVersionSource>
 #include <KUserFeedback/LocaleInfoSource>
@@ -14,6 +13,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <KUserFeedback/ScreenInfoSource>
 #include <KUserFeedback/StartCountSource>
 #include <KUserFeedback/UsageTimeSource>
+
+using namespace Qt::Literals::StringLiterals;
 
 KAddressBookUserFeedbackProvider::KAddressBookUserFeedbackProvider(QObject *parent)
     : KUserFeedback::Provider(parent)

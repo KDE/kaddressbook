@@ -5,7 +5,6 @@
 */
 
 #include "categoryselectwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook_debug.h"
 #include <Akonadi/Monitor>
@@ -18,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <Libkdepim/KCheckComboBox>
 #include <chrono>
+using namespace Qt::Literals::StringLiterals;
 using namespace std::chrono_literals;
 using namespace Akonadi;
 

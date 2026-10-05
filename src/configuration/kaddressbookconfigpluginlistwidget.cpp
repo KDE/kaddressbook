@@ -5,7 +5,6 @@
 */
 
 #include "kaddressbookconfigpluginlistwidget.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "../importexport/plugin.h"
 #include "../importexport/pluginmanager.h"
@@ -14,6 +13,8 @@ using namespace Qt::Literals::StringLiterals;
 #include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
+
+using namespace Qt::Literals::StringLiterals;
 
 namespace
 {

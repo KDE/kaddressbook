@@ -8,7 +8,6 @@
 */
 
 #include "printingwizard.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "settings.h"
 
@@ -37,6 +36,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QStandardPaths>
 #include <QWindow>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KABPrinting;
 
 PrintingWizard::PrintingWizard(QPrinter *printer, QItemSelectionModel *selectionModel, QWidget *parent)

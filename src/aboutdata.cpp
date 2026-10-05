@@ -7,11 +7,12 @@
 */
 
 #include "aboutdata.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbook-version.h"
 
 #include <KLocalizedString>
+
+using namespace Qt::Literals::StringLiterals;
 
 AboutData::AboutData()
     : KAboutData(u"kaddressbook"_s,

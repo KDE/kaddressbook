@@ -5,9 +5,10 @@
 */
 
 #include "userfeedbackmanager.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kaddressbookuserfeedbackprovider.h"
+
+using namespace Qt::Literals::StringLiterals;
 
 UserFeedBackManager::UserFeedBackManager(QObject *parent)
     : QObject(parent)
