@@ -10,7 +10,6 @@
 
 #include <KParts/GUIActivateEvent>
 #include <KParts/Part>
-#include <kparts/readonlypart.h>
 
 class MainWidget;
 

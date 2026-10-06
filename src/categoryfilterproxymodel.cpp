@@ -6,8 +6,6 @@
 
 #include "categoryfilterproxymodel.h"
 
-#include "kaddressbook_debug.h"
-
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/Item>
 

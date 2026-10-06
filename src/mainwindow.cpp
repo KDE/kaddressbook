@@ -32,7 +32,6 @@
 #ifdef Q_OS_UNIX
 #include <KSignalHandler>
 #include <csignal>
-#include <unistd.h>
 #endif
 
 #if KADDRESSBOOK_WITH_KUSERFEEDBACK

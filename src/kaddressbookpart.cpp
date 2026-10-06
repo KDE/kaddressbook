@@ -11,8 +11,6 @@
 #include "mainwidget.h"
 #include "settings.h"
 
-#include "kaddressbook_debug.h"
-
 #include <KActionCollection>
 #include <KLocalizedString>
 #include <KPluginFactory>
