@@ -1,13 +1,14 @@
 # Translation of kaddressbook.po into Serbian.
 # Slobodan Simic <slsimic@gmail.com>, 2009.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-02 00:44+0000\n"
-"PO-Revision-Date: 2018-01-06 09:21+0100\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-05 12:49+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -23,12 +24,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Слободан Симић"
+msgstr "Слободан Симић,Немања Хиршл"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "slsimic@gmail.com"
+msgstr "slsimic@gmail.com,nemhirsl@gmail.com"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
 #: src/mainwidget.cpp:756 src/mainwidget.cpp:783
@@ -38,18 +39,14 @@ msgstr "Адресар"
 
 # >> @title:window
 #: src/printing/grantlee/themes/default/theme.html:35
-#, fuzzy
-#| msgid "Print Contacts"
 msgid "Contact"
-msgstr "Штампање контаката"
+msgstr "Контакт"
 
 # >> @option:check
 #: src/printing/grantlee/themes/default/theme.html:42
 #: src/printing/grantlee/themes/full/theme.html:42
-#, fuzzy
-#| msgid "All EMails"
 msgid "Emails"
-msgstr "све е‑поште"
+msgstr "Адресе е‑поште"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
 #: src/printing/grantlee/themes/default/theme.html:52
@@ -64,7 +61,7 @@ msgstr "Организација"
 #: src/viewertemplates/contact_embedded.html:64
 #: src/viewertemplates/contact_embedded.html:81
 msgid "Website"
-msgstr ""
+msgstr "Веб сајт"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
@@ -85,26 +82,26 @@ msgstr "Белешке"
 
 #: src/printing/grantlee/themes/full/theme.html:76
 msgid "Title"
-msgstr ""
+msgstr "Титула"
 
 #: src/viewertemplates/contact_embedded.html:28
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "(%1 година)"
+msgstr[1] "(%1 године)"
+msgstr[2] "(%1 година)"
+msgstr[3] "(једна година)"
 
 #: src/viewertemplates/contact_embedded.html:47
 msgid "Email"
-msgstr ""
+msgstr "Е‑пошта"
 
 #: src/viewertemplates/contact_embedded.html:97
 #: src/importexport/contactfields.cpp:106
 #, kde-format
 msgid "Blog Feed"
-msgstr ""
+msgstr "довод блога"
 
 #: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:18
 #: src/kaddressbookpart.cpp:32 src/kaddressbookpart.cpp:47
@@ -146,14 +143,12 @@ msgid "The KDE Address Book Application"
 msgstr "Програм КДЕ‑овог адресара"
 
 #: src/aboutdata.cpp:22
-#, fuzzy, kde-format
-#| msgid "Copyright © 2007–2018 KAddressBook authors"
+#, kde-format
 msgid "Copyright © 2007–%1 KAddressBook authors"
-msgstr "© 2007–2018, аутори К‑адресара"
+msgstr "© 2007–%1, аутори К‑адресара"
 
 #: src/aboutdata.cpp:24
-#, fuzzy, kde-format
-#| msgid "Laurent Montel"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Laurent Montel"
 msgstr "Лорен Монтел"
@@ -164,8 +159,7 @@ msgid "Current maintainer"
 msgstr "Тренутни одржавалац"
 
 #: src/aboutdata.cpp:25
-#, fuzzy, kde-format
-#| msgid "Tobias Koenig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Tobias König"
 msgstr "Тобијас Кениг"
@@ -179,23 +173,23 @@ msgstr "Претходни одржавалац"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stefan Taferner"
-msgstr ""
+msgstr "Штефан Тафернер"
 
 #: src/aboutdata.cpp:26
 #, kde-format
 msgid "Original Author (1998)"
-msgstr ""
+msgstr "Првобитни аутор (1998)"
 
 #: src/aboutdata.cpp:27
 #, kde-format
 msgctxt "@info:credit"
 msgid "David Bryant"
-msgstr ""
+msgstr "David Bryant"
 
 #: src/aboutdata.cpp:27
 #, kde-format
 msgid "Documentation (2019)"
-msgstr ""
+msgstr "Документација (2019)"
 
 #: src/categoryselectwidget.cpp:94
 #, kde-format
@@ -235,8 +229,7 @@ msgid ", "
 msgstr ", "
 
 #: src/categoryselectwidget.cpp:229
-#, fuzzy, kde-format
-#| msgid "<qt>Category filter: %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1"
 msgstr "<qt>Филтер категорија: %1</qt>"
@@ -244,7 +237,7 @@ msgstr "<qt>Филтер категорија: %1</qt>"
 #: src/configuration/kaddressbook_config_activities.cpp:20
 #, kde-format
 msgid "Enabled"
-msgstr ""
+msgstr "Укључено"
 
 #: src/configuration/kaddressbookconfigpluginlistwidget.cpp:70
 #, kde-format
@@ -259,34 +252,33 @@ msgstr "Прикључци за извоз/увоз"
 #: src/contactinfoproxymodel.cpp:68
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: src/contactinfoproxymodel.cpp:70
 #, kde-format
 msgid "Loading contacts details ..."
-msgstr ""
+msgstr "Учитавам детаље контаката ..."
 
 # >> @option:check
 #: src/contactinfoproxymodel.cpp:123
-#, fuzzy, kde-format
-#| msgid "All EMails"
+#, kde-format
 msgid "Email: %1"
-msgstr "све е‑поште"
+msgstr "Е‑пошта: %1"
 
 #: src/contactinfoproxymodel.cpp:131
 #, kde-format
 msgid "Phone: %1"
-msgstr ""
+msgstr "Телефон: %1"
 
 #: src/contactinfoproxymodel.cpp:137
 #, kde-format
 msgid "%1%2 %3"
-msgstr ""
+msgstr "%1%2 %3"
 
 #: src/contactinfoproxymodel.cpp:150 src/contactinfoproxymodel.cpp:167
 #, kde-format
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: src/contactswitcher.cpp:18
 #, kde-format
@@ -334,85 +326,80 @@ msgstr "%1 од %2"
 #, kde-format
 msgctxt "@item Undefined import field type"
 msgid "Undefined"
-msgstr ""
+msgstr "недефинисано"
 
 #: src/importexport/contactfields.cpp:40
 #, kde-format
 msgctxt "The wedding anniversary of a contact"
 msgid "Anniversary"
-msgstr ""
+msgstr "годишњица"
 
 #: src/importexport/contactfields.cpp:86
 #, kde-format
 msgctxt "Preferred email address"
 msgid "EMail (preferred)"
-msgstr ""
+msgstr "е‑пошта (пожељна)"
 
 #: src/importexport/contactfields.cpp:88
 #, kde-format
 msgctxt "Second email address"
 msgid "EMail (2)"
-msgstr ""
+msgstr "е‑пошта (2)"
 
 #: src/importexport/contactfields.cpp:90
 #, kde-format
 msgctxt "Third email address"
 msgid "EMail (3)"
-msgstr ""
+msgstr "е‑пошта (3)"
 
 #: src/importexport/contactfields.cpp:92
 #, kde-format
 msgctxt "Fourth email address"
 msgid "EMail (4)"
-msgstr ""
+msgstr "е‑пошта (4)"
 
 #: src/importexport/contactfields.cpp:108
 #, kde-format
 msgid "Profession"
-msgstr ""
+msgstr "струка"
 
 #: src/importexport/contactfields.cpp:110
 #, kde-format
 msgid "Office"
-msgstr ""
+msgstr "канцеларија"
 
 #: src/importexport/contactfields.cpp:112
 #, kde-format
 msgid "Manager"
-msgstr ""
+msgstr "менаџер"
 
 #: src/importexport/contactfields.cpp:114
 #, kde-format
 msgid "Assistant"
-msgstr ""
+msgstr "асистент"
 
 #: src/importexport/contactfields.cpp:116
 #, kde-format
 msgid "Spouse"
-msgstr ""
+msgstr "супружник"
 
-# >> @title:window
 #: src/importexport/contactselectiondialog.cpp:22
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Contacts"
-msgstr "Штампање контаката"
+msgstr "Избор контаката"
 
-# >> @title:window
 #: src/importexport/contactselectionwidget.cpp:115
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@option:radio"
 msgid "All contacts"
-msgstr "Штампање контаката"
+msgstr "Сви контакти"
 
 #: src/importexport/contactselectionwidget.cpp:116
-#, fuzzy, kde-format
-#| msgid "Select all contacts in the current address book view."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from all your address books"
-msgstr "Изаберите све контакте у текућем приказу адресара."
+msgstr "Сви контакти из свих ваших адресара"
 
 #: src/importexport/contactselectionwidget.cpp:118
 #, kde-format
@@ -421,18 +408,20 @@ msgid ""
 "Choose this option you want to select all your contacts from all your "
 "address books."
 msgstr ""
+"Изаберите ову опцију ако желите да изаберете све своје контакте из свих "
+"својих адресара."
 
 #: src/importexport/contactselectionwidget.cpp:121
 #, kde-format
 msgctxt "@option:radio"
 msgid "Selected contacts"
-msgstr ""
+msgstr "Изабрани контакти"
 
 #: src/importexport/contactselectionwidget.cpp:122
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Only the contacts currently selected"
-msgstr ""
+msgstr "Само тренутно изабрани контакти"
 
 #: src/importexport/contactselectionwidget.cpp:124
 #, kde-format
@@ -441,19 +430,20 @@ msgid ""
 "Choose this option if you want only the contacts you have already selected "
 "in the graphical interface."
 msgstr ""
+"Изаберите ову опцију ако желите само контакте које сте већ изабрали у "
+"графичком сучељу."
 
 #: src/importexport/contactselectionwidget.cpp:127
 #, kde-format
 msgctxt "@option:radio"
 msgid "All contacts from:"
-msgstr ""
+msgstr "Сви контакти из:"
 
 #: src/importexport/contactselectionwidget.cpp:128
-#, fuzzy, kde-format
-#| msgid "Select all contacts in the current address book view."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "All contacts from a chosen address book"
-msgstr "Изаберите све контакте у текућем приказу адресара."
+msgstr "Сви контакти из изабраног адресара"
 
 #: src/importexport/contactselectionwidget.cpp:130
 #, kde-format
@@ -464,18 +454,21 @@ msgid ""
 "down box listing all those address books and permitted to select the one you "
 "want."
 msgstr ""
+"Изаберите ову опцију ако желите да изаберете све контакте из само једног од "
+"својих адресара. Када кликнете на ову опцију, добићете падајући списак свих "
+"адресара, у којем можете изабрати онај који желите."
 
 #: src/importexport/contactselectionwidget.cpp:139
 #, kde-format
 msgctxt "@option:check"
 msgid "Include Subfolders"
-msgstr ""
+msgstr "Укључи потфасцикле"
 
 #: src/importexport/contactselectionwidget.cpp:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select all subfolders including the top-level folder"
-msgstr ""
+msgstr "Бира све потфасцикле, укључујући и фасциклу највишег нивоа"
 
 #: src/importexport/contactselectionwidget.cpp:142
 #, kde-format
@@ -485,155 +478,155 @@ msgid ""
 "including all subfolders.  If you only want the contacts from the top-level "
 "folder then leave this box unchecked."
 msgstr ""
+"Попуните ову кућицу ако желите да изаберете све контакте из ове фасцикле, "
+"укључујући све потфасцикле. Ако желите само контакте из фасцикле највишег "
+"нивоа, оставите кућицу празном."
 
-# >> @title:window
 #: src/importexport/contactselectionwidget.cpp:170
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Collect Contacts"
-msgstr "Штампање контаката"
+msgstr "Прикупљање контаката"
 
-# >> @title:window
 #: src/importexport/contactselectionwidget.cpp:173
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgid "Fetch Contacts"
-msgstr "Штампање контаката"
+msgstr "Добављање контаката"
 
 #: src/importexport/exportselectionwidget.cpp:22
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
-msgstr ""
+msgstr "Приватна поља"
 
 # >> @option:check
 #: src/importexport/exportselectionwidget.cpp:23
-#, fuzzy, kde-format
-#| msgid "Business Address"
+#, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
-msgstr "пословна адреса"
+msgstr "Пословна поља"
 
 #: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
-msgstr ""
+msgstr "Остала поља"
 
 #: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
-msgstr ""
+msgstr "Шифрарски кључеви"
 
 #: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
-msgstr ""
+msgstr "Слике"
 
 #: src/importexport/exportselectionwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
-msgstr ""
+msgstr "Приказно име као пуно име"
 
 #: src/importexport/exportselectionwidget.cpp:31
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
-msgstr ""
+msgstr "Поља за извоз"
 
 #: src/importexport/exportselectionwidget.cpp:37
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
-msgstr ""
+msgstr "Извози приватна поља"
 
 #: src/importexport/exportselectionwidget.cpp:39
-#, fuzzy, kde-format
-#| msgid "Check this box if you want contact organizations to be printed."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
-msgstr "Попуните ову кућицу да би се штампале организације контаката."
+msgstr ""
+"Попуните ову кућицу ако желите да извезете приватна поља контакта у излазни "
+"в‑кард фајл."
 
 #: src/importexport/exportselectionwidget.cpp:43
-#, fuzzy, kde-format
-#| msgid "with business address"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
-msgstr "Са пословном адресом"
+msgstr "Извози пословна поља"
 
 #: src/importexport/exportselectionwidget.cpp:45
-#, fuzzy, kde-format
-#| msgid "Check this box if you want contact notes to be printed."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
-msgstr "Попуните ову кућицу да би се штампале белешке контакта."
+msgstr ""
+"Попуните ову кућицу ако желите да извезете пословна поља контакта у излазни "
+"в‑кард фајл."
 
 #: src/importexport/exportselectionwidget.cpp:49
-#, fuzzy, kde-format
-#| msgid "Import the given file"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
-msgstr "Увези дати фајл"
+msgstr "Извози остала поља"
 
 #: src/importexport/exportselectionwidget.cpp:51
-#, fuzzy, kde-format
-#| msgid "Check this box if you want contact notes to be printed."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
-msgstr "Попуните ову кућицу да би се штампале белешке контакта."
+msgstr ""
+"Попуните ову кућицу ако желите да извезете остала поља контакта у излазни "
+"в‑кард фајл."
 
 #: src/importexport/exportselectionwidget.cpp:55
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
-msgstr ""
+msgstr "Извози шифрарске кључеве"
 
 #: src/importexport/exportselectionwidget.cpp:57
-#, fuzzy, kde-format
-#| msgid "Check this box if you want contact notes to be printed."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
-msgstr "Попуните ову кућицу да би се штампале белешке контакта."
+msgstr ""
+"Попуните ову кућицу ако желите да извезете шифрарске кључеве контакта у "
+"излазни в‑кард фајл."
 
 #: src/importexport/exportselectionwidget.cpp:61
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
-msgstr ""
+msgstr "Извози слике"
 
 #: src/importexport/exportselectionwidget.cpp:63
-#, fuzzy, kde-format
-#| msgid "Check this box if you want contact notes to be printed."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
-msgstr "Попуните ову кућицу да би се штампале белешке контакта."
+msgstr ""
+"Попуните ову кућицу ако желите да извезете слику контакта у излазни в‑кард "
+"фајл."
 
 #: src/importexport/exportselectionwidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "Export"
+#, kde-format
 msgctxt "@title:group"
 msgid "Export options"
-msgstr "Извези"
+msgstr "Опције извоза"
 
 #: src/importexport/exportselectionwidget.cpp:73
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
-msgstr ""
+msgstr "Извози приказно име као пуно име"
 
 #: src/importexport/exportselectionwidget.cpp:75
 #, kde-format
@@ -643,39 +636,39 @@ msgid ""
 "vCard's full name field.  This may be required to get the name shown "
 "correctly in GMail or Android."
 msgstr ""
+"Попуните ову кућицу ако желите да извезете приказно име контакта у в‑кард "
+"поље пуног имена. Ово може бити неопходно да би се име исправно приказало на "
+"Г‑мејлу или Андроиду."
 
 #: src/importexport/importexportengine.cpp:58
-#, fuzzy, kde-format
-#| msgid "Address Book"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Address Book"
-msgstr "Адресар"
+msgstr "Избор адресара"
 
 #: src/importexport/importexportengine.cpp:59
 #, kde-format
 msgid "Select the address book the imported contact(s) shall be saved in:"
-msgstr ""
+msgstr "Изаберите адресар у који треба уписати увезене контакте:"
 
 # >> @title:window
 #: src/importexport/importexportengine.cpp:74
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Import Contacts"
-msgstr "Штампање контаката"
+msgstr "Увоз контаката"
 
 #: src/importexport/importexportengine.cpp:75
 #, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Увозим %1 контакт у %2"
+msgstr[1] "Увозим %1 контакта у %2"
+msgstr[2] "Увозим %1 контаката у %2"
+msgstr[3] "Увозим један контакт у %2"
 
 #: src/kaddressbook_options.h:17
-#, fuzzy, kde-format
-#| msgid "Import the given file"
+#, kde-format
 msgctxt "@info:shell"
 msgid "Import the given file"
 msgstr "Увези дати фајл"
@@ -684,22 +677,21 @@ msgstr "Увези дати фајл"
 #, kde-format
 msgctxt "@info:shell"
 msgid "Open the 'New Contact' dialog"
-msgstr ""
+msgstr "Отвори дијалог „Нови контакт“"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgctxt "@info:shell"
 msgid "Display the specified contact (by URL)"
-msgstr ""
+msgstr "Прикажи контакт задат УРЛ‑ом"
 
 #: src/kaddressbook_options.h:21
 #, kde-format
 msgid "Url"
-msgstr ""
+msgstr "УРЛ"
 
 #: src/kaddressbook_options.h:23
-#, fuzzy, kde-format
-#| msgid "Files or URLs. The user will be asked whether to import."
+#, kde-format
 msgctxt "@info:shell"
 msgid "Files or URLs. The user will be asked whether to import."
 msgstr "Фајлови или УРЛ‑ови. Корисник се пита да ли да се увезе."
@@ -708,13 +700,12 @@ msgstr "Фајлови или УРЛ‑ови. Корисник се пита д
 #, kde-format
 msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
-msgstr ""
+msgstr "Наброји доступне опције повратних информација корисника"
 
 #: src/kaddressbookpart.cpp:75
-#, fuzzy, kde-format
-#| msgid "&Configure KAddressBook..."
+#, kde-format
 msgid "&Configure KAddressBook…"
-msgstr "&Подеси К‑адресар..."
+msgstr "&Подеси К‑адресар…"
 
 #. i18n: ectx: Menu (file)
 #: src/kaddressbookui.rc:5 src/kaddressbookui_part.rc:5
@@ -762,7 +753,7 @@ msgstr "&Подешавање"
 #: src/kaddressbookui.rc:68 src/kaddressbookui_part.rc:66
 #, kde-format
 msgid "&Help"
-msgstr ""
+msgstr "По&моћ"
 
 #. i18n: ectx: Menu (file_export)
 #: src/kaddressbookui.rc:97 src/kaddressbookui_part.rc:95
@@ -787,12 +778,10 @@ msgid "Export"
 msgstr "Извези"
 
 #: src/mainwidget.cpp:432
-#, fuzzy, kde-format
-#| msgctxt "@label Search contacts in list"
-#| msgid "Search...<%1>"
+#, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
-msgstr "Тражи... <%1>"
+msgstr "Тражи… <%1>"
 
 #: src/mainwidget.cpp:664
 #, kde-format
@@ -854,21 +843,19 @@ msgid "Three Columns"
 msgstr "Три колоне"
 
 #: src/mainwidget.cpp:717
-#, fuzzy, kde-format
-#| msgid "Set Focus to Quick Search"
+#, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
-msgstr "Фокус на брзу претрагу"
+msgstr "Фокусирај брзу претрагу"
 
 #: src/mainwidget.cpp:734
 #, kde-format
 msgid "What's new"
-msgstr ""
+msgstr "Шта је ново"
 
 # >> @title:window
 #: src/mainwidget.cpp:789 src/printing/printingwizard.cpp:46
-#, fuzzy, kde-format
-#| msgid "Print Contacts"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Штампање контаката"
@@ -893,8 +880,7 @@ msgstr ""
 
 # >> @title:window
 #: src/mainwindow.cpp:239
-#, fuzzy, kde-format
-#| msgid "Hide menu bar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
 msgstr "Сакривање траке менија"
@@ -1054,10 +1040,9 @@ msgstr "Са рођенданом"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:82
 #: src/printing/compact/compactstyle.ui:85
-#, fuzzy, kde-format
-#| msgid "Print the e-mail and e-mail2 fields"
+#, kde-format
 msgid "Print the preferred and the secondary e-mail fields"
-msgstr "Штампа поља е‑поште и е‑поште 2."
+msgstr "Штампа поља пожељне и споредне е‑поште"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbWithEMail)
 #: src/printing/compact/compactstyle.ui:88
@@ -1276,8 +1261,7 @@ msgstr "Напредак штампања"
 
 # >> @title:window
 #: src/printing/printprogress.cpp:25
-#, fuzzy, kde-format
-#| msgid "Printing: Progress"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing: Progress"
 msgstr "Напредак штампања"
@@ -1286,7 +1270,7 @@ msgstr "Напредак штампања"
 #, kde-format
 msgctxt "Percent value; %p is the value, % is the percent sign"
 msgid "%p%"
-msgstr ""
+msgstr "%p%"
 
 #: src/printing/printprogress.cpp:44
 #, kde-format
@@ -1521,12 +1505,12 @@ msgstr ""
 #: src/whatsnew/whatsnewtranslations.cpp:26
 #, kde-format
 msgid "Add new whatsnew widget."
-msgstr ""
+msgstr "Додат нови виџет „Шта је ново“."
 
 #: src/whatsnew/whatsnewtranslations.cpp:27
 #, kde-format
 msgid "Restore configure dialog size."
-msgstr ""
+msgstr "Враћена величина дијалога за подешавање."
 
 #: src/widgets/quicksearchwidget.cpp:31
 #, kde-format
@@ -1544,24 +1528,3 @@ msgid ""
 msgstr ""
 "Почните да куцате у овом пољу ниску за тражење, и добићете списак контаката "
 "који се поклапају. Ово је брз начин за налажење жељених контаката."
-
-#, fuzzy
-#~| msgid "Serverside Subscription..."
-#~ msgid "Serverside Subscription…"
-#~ msgstr "Претплата на страни сервера..."
-
-#~ msgid "Configure Plugins"
-#~ msgstr "Подешавање прикључака"
-
-#, fuzzy
-#~| msgid "(c), 2016-2018 Laurent Montel"
-#~ msgid "(c), 2016-2020 Laurent Montel"
-#~ msgstr "© 2016–2018, Лорен Монтел"
-
-#, fuzzy
-#~| msgid "(c), 2016-2018 Laurent Montel"
-#~ msgid "(c), 2020 Laurent Montel"
-#~ msgstr "© 2016–2018, Лорен Монтел"
-
-#~ msgid "&Themes"
-#~ msgstr "&Теме"
