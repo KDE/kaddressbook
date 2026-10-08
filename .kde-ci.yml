@@ -14,7 +14,7 @@ Dependencies:
     'pim/libkdepim' : '@same'
     'pim/pimcommon' : '@same'
     'frameworks/kiconthemes': 'Frameworks/6.24'
-    'libraries/ktextaddons': '@latest-kf6'
+    'libraries/ktextaddons': '1.9'
 
 - 'on': ['Linux', 'FreeBSD', 'macOS']
   'require':
@@ -23,7 +23,7 @@ Dependencies:
 
 - 'on': ['Linux', 'FreeBSD']
   'require':
-    'plasma/plasma-activities': '@latest-kf6'
+    'plasma/plasma-activities': 'Plasma/6.6'
 
 Options:
   require-passing-tests-on: [ '@all' ]
