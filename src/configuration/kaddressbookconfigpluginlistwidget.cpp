@@ -13,6 +13,7 @@
 #include "kaddressbook_configure_debug.h"
 #include <KLocalizedString>
 #include <PimCommon/GenericPlugin>
+#include <PimCommon/PluginUtil>
 
 using namespace Qt::Literals::StringLiterals;
 
