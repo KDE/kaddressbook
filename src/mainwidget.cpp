@@ -102,7 +102,7 @@ using namespace Qt::Literals::StringLiterals;
 
 namespace
 {
-static bool isStructuralCollection(const Akonadi::Collection &collection)
+bool isStructuralCollection(const Akonadi::Collection &collection)
 {
     const static QStringList mimeTypes = {KContacts::Addressee::mimeType(), KContacts::ContactGroup::mimeType()};
     const QStringList collectionMimeTypes = collection.contentMimeTypes();

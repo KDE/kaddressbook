@@ -13,7 +13,7 @@
 
 namespace
 {
-static const char myConfigureDialogConfigGroupName[] = "ConfigureDialog";
+const char myConfigureDialogConfigGroupName[] = "ConfigureDialog";
 }
 
 ConfigureDialog::ConfigureDialog(QWidget *parent)
