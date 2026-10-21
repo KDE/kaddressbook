@@ -21,6 +21,13 @@
         <td align="left" colspan="2">{{ contact.organization }}</td>
       </tr>
 
+      {% if contact.nickName %}
+      <tr>
+        <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Nickname" %}</font></b></td>
+        <td align="left" valign="top" colspan="2">{{ contact.nickName }}</td>
+      </tr>
+      {% endif %}
+
       {% if contact.birthday %}
       <tr>
         <td align="right" valign="top" width="30%"><b><font color="grey">{% i18n "Birthday" %}</font></b></td>
