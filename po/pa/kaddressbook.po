@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:48+0000\n"
+"POT-Creation-Date: 2026-10-22 00:51+0000\n"
 "PO-Revision-Date: 2010-02-01 21:44+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: ਪੰਜਾਬੀ <punjabi-users@lists.sf.net>\n"
@@ -59,15 +59,15 @@ msgstr "ਸੰਸਥਾ"
 
 #: src/printing/grantlee/themes/default/theme.html:58
 #: src/printing/grantlee/themes/full/theme.html:58
-#: src/viewertemplates/contact_embedded.html:64
-#: src/viewertemplates/contact_embedded.html:81
+#: src/viewertemplates/contact_embedded.html:71
+#: src/viewertemplates/contact_embedded.html:88
 msgid "Website"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
-#: src/viewertemplates/contact_embedded.html:26
+#: src/viewertemplates/contact_embedded.html:33
 #: src/printing/ringbinder/rbs_appearance.ui:108
 #, kde-format
 msgid "Birthday"
@@ -88,21 +88,27 @@ msgstr "ਨੋਟ"
 msgid "Title"
 msgstr "ਟਾਈਟਲ"
 
-#: src/viewertemplates/contact_embedded.html:28
+#: src/viewertemplates/contact_embedded.html:26
+#, fuzzy
+#| msgid "Nickname:"
+msgid "Nickname"
+msgstr "ਛੋਟਾ ਨਾਂ:"
+
+#: src/viewertemplates/contact_embedded.html:35
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/viewertemplates/contact_embedded.html:47
+#: src/viewertemplates/contact_embedded.html:54
 #, fuzzy
 #| msgctxt "@title:column Column containing email addresses"
 #| msgid "Email"
 msgid "Email"
 msgstr "ਈਮੇਲ"
 
-#: src/viewertemplates/contact_embedded.html:97
+#: src/viewertemplates/contact_embedded.html:104
 #: src/importexport/contactfields.cpp:106
 #, fuzzy, kde-format
 #| msgid "&Blog feed:"
@@ -2676,9 +2682,6 @@ msgstr ""
 #~| msgid "Name:"
 #~ msgid "Name:"
 #~ msgstr "ਨਾਂ:"
-
-#~ msgid "Nickname:"
-#~ msgstr "ਛੋਟਾ ਨਾਂ:"
 
 #, fuzzy
 #~| msgid "Organization"

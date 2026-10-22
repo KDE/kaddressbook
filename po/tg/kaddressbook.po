@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:48+0000\n"
+"POT-Creation-Date: 2026-10-22 00:51+0000\n"
 "PO-Revision-Date: 2019-09-29 12:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -71,15 +71,15 @@ msgstr "Ташкилот"
 
 #: src/printing/grantlee/themes/default/theme.html:58
 #: src/printing/grantlee/themes/full/theme.html:58
-#: src/viewertemplates/contact_embedded.html:64
-#: src/viewertemplates/contact_embedded.html:81
+#: src/viewertemplates/contact_embedded.html:71
+#: src/viewertemplates/contact_embedded.html:88
 msgid "Website"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
-#: src/viewertemplates/contact_embedded.html:26
+#: src/viewertemplates/contact_embedded.html:33
 #: src/printing/ringbinder/rbs_appearance.ui:108
 #, fuzzy, kde-format
 msgid "Birthday"
@@ -100,20 +100,26 @@ msgstr "Нишонот:"
 msgid "Title"
 msgstr "Ном"
 
-#: src/viewertemplates/contact_embedded.html:28
+#: src/viewertemplates/contact_embedded.html:26
+#, fuzzy
+#| msgid "Nickname:"
+msgid "Nickname"
+msgstr "Тахаллус:"
+
+#: src/viewertemplates/contact_embedded.html:35
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/viewertemplates/contact_embedded.html:47
+#: src/viewertemplates/contact_embedded.html:54
 #, fuzzy
 #| msgid "Email"
 msgid "Email"
 msgstr "Почтаи электронӣ"
 
-#: src/viewertemplates/contact_embedded.html:97
+#: src/viewertemplates/contact_embedded.html:104
 #: src/importexport/contactfields.cpp:106
 #, kde-format
 msgid "Blog Feed"
@@ -2925,9 +2931,6 @@ msgstr ""
 #~| msgid "Name:"
 #~ msgid "Name:"
 #~ msgstr "Ном:"
-
-#~ msgid "Nickname:"
-#~ msgstr "Тахаллус:"
 
 #, fuzzy
 #~| msgid "Organization"

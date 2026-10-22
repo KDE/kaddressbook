@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:48+0000\n"
+"POT-Creation-Date: 2026-10-22 00:51+0000\n"
 "PO-Revision-Date: 2007-02-28 13:59+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -57,15 +57,15 @@ msgstr "Организација"
 
 #: src/printing/grantlee/themes/default/theme.html:58
 #: src/printing/grantlee/themes/full/theme.html:58
-#: src/viewertemplates/contact_embedded.html:64
-#: src/viewertemplates/contact_embedded.html:81
+#: src/viewertemplates/contact_embedded.html:71
+#: src/viewertemplates/contact_embedded.html:88
 msgid "Website"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
-#: src/viewertemplates/contact_embedded.html:26
+#: src/viewertemplates/contact_embedded.html:33
 #: src/printing/ringbinder/rbs_appearance.ui:108
 #, fuzzy, kde-format
 msgid "Birthday"
@@ -86,7 +86,13 @@ msgstr "Белешка:"
 msgid "Title"
 msgstr "Наслов"
 
-#: src/viewertemplates/contact_embedded.html:28
+#: src/viewertemplates/contact_embedded.html:26
+#, fuzzy
+#| msgid "Nickname:"
+msgid "Nickname"
+msgstr "Прекар:"
+
+#: src/viewertemplates/contact_embedded.html:35
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
@@ -94,13 +100,13 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/viewertemplates/contact_embedded.html:47
+#: src/viewertemplates/contact_embedded.html:54
 #, fuzzy
 #| msgid "Email"
 msgid "Email"
 msgstr "Е-пошта"
 
-#: src/viewertemplates/contact_embedded.html:97
+#: src/viewertemplates/contact_embedded.html:104
 #: src/importexport/contactfields.cpp:106
 #, fuzzy, kde-format
 #| msgid "Blog feed:"
@@ -3019,9 +3025,6 @@ msgstr ""
 #~| msgid "Name:"
 #~ msgid "Name:"
 #~ msgstr "Име:"
-
-#~ msgid "Nickname:"
-#~ msgstr "Прекар:"
 
 #, fuzzy
 #~| msgid "Organization"

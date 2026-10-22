@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-16 00:48+0000\n"
+"POT-Creation-Date: 2026-10-22 00:51+0000\n"
 "PO-Revision-Date: 2010-03-25 14:22+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -58,15 +58,15 @@ msgstr "องค์กร"
 
 #: src/printing/grantlee/themes/default/theme.html:58
 #: src/printing/grantlee/themes/full/theme.html:58
-#: src/viewertemplates/contact_embedded.html:64
-#: src/viewertemplates/contact_embedded.html:81
+#: src/viewertemplates/contact_embedded.html:71
+#: src/viewertemplates/contact_embedded.html:88
 msgid "Website"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
 #: src/printing/grantlee/themes/default/theme.html:64
 #: src/printing/grantlee/themes/full/theme.html:64
-#: src/viewertemplates/contact_embedded.html:26
+#: src/viewertemplates/contact_embedded.html:33
 #: src/printing/ringbinder/rbs_appearance.ui:108
 #, kde-format
 msgid "Birthday"
@@ -87,20 +87,26 @@ msgstr "บันทึกย่อ"
 msgid "Title"
 msgstr "ตำแหน่ง"
 
-#: src/viewertemplates/contact_embedded.html:28
+#: src/viewertemplates/contact_embedded.html:26
+#, fuzzy
+#| msgid "Nickname:"
+msgid "Nickname"
+msgstr "ชื่อเล่น:"
+
+#: src/viewertemplates/contact_embedded.html:35
 #, kde-format
 msgid "(One year old)"
 msgid_plural "(%1 years old)"
 msgstr[0] ""
 
-#: src/viewertemplates/contact_embedded.html:47
+#: src/viewertemplates/contact_embedded.html:54
 #, fuzzy
 #| msgctxt "@title:column Column containing email addresses"
 #| msgid "Email"
 msgid "Email"
 msgstr "อีเมล"
 
-#: src/viewertemplates/contact_embedded.html:97
+#: src/viewertemplates/contact_embedded.html:104
 #: src/importexport/contactfields.cpp:106
 #, fuzzy, kde-format
 #| msgid "Blog feed:"
@@ -2890,9 +2896,6 @@ msgstr ""
 #~| msgid "Name:"
 #~ msgid "Name:"
 #~ msgstr "ชื่อ:"
-
-#~ msgid "Nickname:"
-#~ msgstr "ชื่อเล่น:"
 
 #, fuzzy
 #~| msgid "Organization"
