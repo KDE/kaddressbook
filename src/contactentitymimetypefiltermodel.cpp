@@ -14,6 +14,11 @@
 ContactEntityMimeTypeFilterModel::ContactEntityMimeTypeFilterModel(QObject *parent)
     : Akonadi::EntityMimeTypeFilterModel{parent}
 {
+    connect(Akonadi::AgentManager::self(), &Akonadi::AgentManager::instanceActivitiesChanged, this, [this]() {
+        if (mAccountActivities && mEnablePlasmaActivities) {
+            slotInvalidateFilter();
+        }
+    });
 }
 
 ContactEntityMimeTypeFilterModel::~ContactEntityMimeTypeFilterModel() = default;
