@@ -45,6 +45,7 @@ void KCMKaddressbookActivitiesConfig::load()
 void KCMKaddressbookActivitiesConfig::defaults()
 {
     mActivities->setChecked(false);
+    markAsChanged();
 }
 
 #include "kaddressbook_config_activities.moc"
