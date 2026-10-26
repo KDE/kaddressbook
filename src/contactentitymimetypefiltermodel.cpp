@@ -47,8 +47,8 @@ bool ContactEntityMimeTypeFilterModel::filterAcceptsRow(int sourceRow, const QMo
 
         const auto collection = sourceModel()->data(modelIndex, Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
         const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(collection.resource());
-        if (instance.activitiesEnabled()) {
-            return mAccountActivities->filterAcceptsRow(instance.activities());
+        if (instance.activitiesEnabled() && !mAccountActivities->filterAcceptsRow(instance.activities())) {
+            return false;
         }
     }
     return Akonadi::EntityMimeTypeFilterModel::filterAcceptsRow(sourceRow, sourceParent);
