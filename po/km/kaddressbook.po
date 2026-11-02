@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-22 00:51+0000\n"
+"POT-Creation-Date: 2026-11-02 00:55+0000\n"
 "PO-Revision-Date: 2012-12-26 08:41+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -247,10 +247,11 @@ msgid ", "
 msgstr ""
 
 #: src/categoryselectwidget.cpp:229
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to open file <b>%1</b></qt>"
 msgctxt "@info:tooltip"
-msgid "<qt>Category filter: %1"
-msgstr ""
+msgid "<qt>Category filter: %1</qt>"
+msgstr "<qt>មិនអាច​បើក​ឯកសារ <b>%1</b></qt> បាន​ទេ"
 
 #: src/configuration/kaddressbook_config_activities.cpp:20
 #, kde-format
@@ -1586,9 +1587,6 @@ msgstr ""
 
 #~ msgid "Export contacts to a GMX address book file."
 #~ msgstr "នាំចេញ​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​សៀវភៅ​អាសយដ្ឋាន GMX ។"
-
-#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
-#~ msgstr "<qt>មិនអាច​បើក​ឯកសារ <b>%1</b></qt> បាន​ទេ"
 
 #~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
 #~ msgstr "<qt>មិន​អាច​បើក​ឯកសារ <b>%1</b>បាន​ទេ ។</qt>"

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontactmanager\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-22 00:51+0000\n"
+"POT-Creation-Date: 2026-11-02 00:55+0000\n"
 "PO-Revision-Date: 2026-10-22 05:22+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -245,9 +245,11 @@ msgstr ", "
 
 # BUGME: Better add "</qt>" to this string. It works as is, but it is not a clean solution. --aspotashev
 #: src/categoryselectwidget.cpp:229
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "<qt>Category filter: %1"
 msgctxt "@info:tooltip"
-msgid "<qt>Category filter: %1"
+msgid "<qt>Category filter: %1</qt>"
 msgstr "<qt>Фильтр категорий: %1"
 
 #: src/configuration/kaddressbook_config_activities.cpp:20
