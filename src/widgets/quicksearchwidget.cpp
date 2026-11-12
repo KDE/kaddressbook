@@ -55,7 +55,6 @@ void QuickSearchWidget::slotFocusQuickSearch()
 
 void QuickSearchWidget::resetTimer()
 {
-    mTimer->stop();
     mTimer->start(500ms);
 }
 
