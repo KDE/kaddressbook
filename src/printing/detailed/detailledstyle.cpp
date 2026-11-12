@@ -10,14 +10,11 @@
 
 #include "printingwizard.h"
 #include "printprogress.h"
-#include "printstyle.h"
 #include "ui_ds_appearance.h"
 
-#include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
-#include <QCheckBox>
 #include <QLocale>
 #include <QPrinter>
 #include <QTextDocument>

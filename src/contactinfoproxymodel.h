@@ -11,7 +11,6 @@
 #include <Akonadi/EntityTreeModel>
 #include <KContacts/ContactGroup>
 #include <QIdentityProxyModel>
-#include <QObject>
 
 namespace Akonadi
 {
@@ -22,7 +21,6 @@ class Monitor;
 namespace KContacts
 {
 class Addressee;
-class ContactGroup;
 }
 class ContactInfoProxyModel : public QIdentityProxyModel
 {

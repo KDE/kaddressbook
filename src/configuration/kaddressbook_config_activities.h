@@ -8,7 +8,6 @@
 
 #include <KCModule>
 
-#include <QVariant>
 class QCheckBox;
 namespace KAddressBook
 {

@@ -11,7 +11,6 @@
 
 #include "kaddressbook_debug.h"
 
-#include <QPushButton>
 #include <QStandardPaths>
 
 using namespace Qt::Literals::StringLiterals;

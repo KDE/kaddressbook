@@ -6,7 +6,6 @@
 
 #include "kaddressbook_config_userfeedback.h"
 #include "userfeedback/userfeedbackmanager.h"
-#include <KLocalizedString>
 #include <KPluginFactory>
 #include <KUserFeedback/FeedbackConfigWidget>
 #include <QHBoxLayout>

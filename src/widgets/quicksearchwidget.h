@@ -11,6 +11,7 @@
 #include <QWidget>
 
 class QLineEdit;
+class QTimer;
 
 /**
  * @short The quick search widget from the toolbar

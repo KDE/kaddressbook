@@ -8,12 +8,8 @@
 
 #pragma once
 
+#include <KontactInterface/Plugin>
 #include <KontactInterface/UniqueAppHandler>
-
-namespace KontactInterface
-{
-class Plugin;
-}
 
 class KAddressBookUniqueAppHandler : public KontactInterface::UniqueAppHandler
 {

@@ -8,15 +8,8 @@
 
 #include "printstyle.h"
 
-namespace KAddressBookGrantlee
-{
-class GrantleePrint;
-}
-
 namespace KABPrinting
 {
-class PrintProgress;
-
 class GrantleePrintStyle : public PrintStyle
 {
     Q_OBJECT

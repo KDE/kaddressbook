@@ -7,10 +7,10 @@
 
 #pragma once
 
+#include <QStringList>
 #include <QWidget>
 
 class QProgressBar;
-class QString;
 
 class QTextBrowser;
 

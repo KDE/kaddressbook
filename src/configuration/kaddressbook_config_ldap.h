@@ -8,7 +8,6 @@
 
 #include <KCModule>
 
-#include <QVariant>
 namespace KLDAPWidgets
 {
 class LdapConfigureWidgetNg;

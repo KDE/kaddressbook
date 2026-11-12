@@ -9,8 +9,6 @@
 #include "kaddressbook_debug.h"
 #include "mainwidget.h"
 
-#include <PimCommon/GenericPlugin>
-
 using namespace Qt::Literals::StringLiterals;
 
 KAddressBookPluginInterface::KAddressBookPluginInterface(QObject *parent)

@@ -8,11 +8,9 @@
 
 #pragma once
 
-#include "config-kaddressbook.h"
 #include "kaddressbook_export.h"
 #include <Akonadi/Item>
 #include <KAboutData>
-#include <QItemSelection>
 #include <QWidget>
 class ContactEntityMimeTypeFilterModel;
 
@@ -26,14 +24,10 @@ namespace Akonadi
 class ContactViewer;
 class ContactGroupViewer;
 class StandardContactActionManager;
-}
-namespace Akonadi
-{
 class Collection;
 class ContactsFilterProxyModel;
 class EntityMimeTypeFilterModel;
 class EntityTreeView;
-class Item;
 class EntityTreeModel;
 }
 namespace PimCommon

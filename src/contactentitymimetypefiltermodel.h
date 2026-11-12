@@ -9,7 +9,6 @@
 #pragma once
 
 #include <Akonadi/EntityMimeTypeFilterModel>
-#include <QObject>
 namespace Akonadi
 {
 class AccountActivitiesAbstract;

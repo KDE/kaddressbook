@@ -12,6 +12,7 @@
 #include <QList>
 
 class QItemSelectionModel;
+class QUrl;
 
 namespace KAddressBookImportExport
 {

@@ -9,7 +9,6 @@
 #include "settings.h"
 #include <KLDAPWidgets/LdapConfigureWidgetNg>
 #include <KPluginFactory>
-#include <QCheckBox>
 #include <QVBoxLayout>
 
 #if HAVE_ACTIVITY_SUPPORT

@@ -23,9 +23,12 @@
 #include <KToggleFullScreenAction>
 #include <KToolBar>
 #include <QAction>
+#include <QDate>
 #include <QFontDatabase>
+#include <QMenu>
 #include <QMenuBar>
 #include <QPointer>
+#include <QToolButton>
 #include <QVBoxLayout>
 
 // signal handler for SIGINT & SIGTERM
@@ -43,7 +46,6 @@
 #include <TextAddonsWidgets/NeedUpdateVersionUtils>
 #include <TextAddonsWidgets/NeedUpdateVersionWidget>
 #include <TextAddonsWidgets/WhatsNewMessageNgWidget>
-#include <TextAddonsWidgets/WhatsNewNgDialog>
 
 using namespace Qt::Literals::StringLiterals;
 

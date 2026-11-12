@@ -6,7 +6,6 @@
 
 #include "kaddressbook_config_plugins.h"
 #include "kaddressbookconfigpluginlistwidget.h"
-#include <KLocalizedString>
 #include <KPluginFactory>
 #include <PimCommon/ConfigurePluginsWidget>
 #include <QHBoxLayout>

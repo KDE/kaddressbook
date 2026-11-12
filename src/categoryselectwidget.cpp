@@ -11,6 +11,7 @@
 #include <Akonadi/TagModel>
 #include <KLocalizedString>
 #include <QHBoxLayout>
+#include <QIcon>
 #include <QStandardItemModel>
 #include <QTimer>
 #include <QToolButton>

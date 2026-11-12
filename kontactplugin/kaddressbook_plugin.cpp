@@ -21,7 +21,6 @@
 
 #include <QDBusConnection>
 #include <QDBusReply>
-#include <QStandardPaths>
 
 EXPORT_KONTACT_PLUGIN_WITH_JSON(KAddressBookPlugin, "kaddressbookplugin.json")
 

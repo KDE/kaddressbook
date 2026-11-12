@@ -15,6 +15,8 @@
 
 #include <KCrash>
 #include <QCommandLineParser>
+#include <QIcon>
+#include <QTextStream>
 
 #include "kaddressbook_debug.h"
 #include <kontactinterface/pimuniqueapplication.h>

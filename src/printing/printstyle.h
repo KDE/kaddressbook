@@ -12,11 +12,12 @@
 #include <KContacts/Addressee>
 
 #include <QHash>
+#include <QObject>
 #include <QPixmap>
 #include <QStringList>
-#include <QWidget>
 
 class KPageWidgetItem;
+class QWidget;
 
 namespace KABPrinting
 {

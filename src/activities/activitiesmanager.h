@@ -7,7 +7,6 @@
 #pragma once
 #include "kaddressbook_export.h"
 #include <PimCommonActivities/ActivitiesBaseManager>
-#include <QObject>
 class LdapActivities;
 class AccountActivities;
 class KADDRESSBOOK_EXPORT ActivitiesManager : public PimCommonActivities::ActivitiesBaseManager

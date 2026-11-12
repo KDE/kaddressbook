@@ -5,7 +5,7 @@
 */
 
 #pragma once
-#include <PimCommon/ConfigurePluginsWidget>
+#include <TextAddonsWidgets/ConfigurePluginsWidget>
 
 class KAddressBookConfigPluginListWidget : public TextAddonsWidgets::ConfigurePluginsWidget
 {

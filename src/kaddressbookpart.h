@@ -8,8 +8,12 @@
 
 #pragma once
 
-#include <KParts/GUIActivateEvent>
 #include <KParts/Part>
+
+namespace KParts
+{
+class GUIActivateEvent;
+}
 
 class MainWidget;
 

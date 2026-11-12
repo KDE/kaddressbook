@@ -41,17 +41,11 @@
 #include <GrantleeTheme/GrantleeThemeManager>
 
 #include <PimCommonAkonadi/ImapAclAttribute>
-#include <PimCommonAkonadi/MailUtil>
 
 #include <TextAddonsWidgets/WhatsNewNgDialog>
 
 #include <Akonadi/AttributeFactory>
-#include <Akonadi/CollectionFilterProxyModel>
-#include <Akonadi/CollectionMaintenancePage>
-#include <Akonadi/CollectionPropertiesDialog>
-#include <PimCommon/PimUtil>
 
-#include <Akonadi/ContactGroupEditorDialog>
 #include <Akonadi/ContactGroupViewer>
 #include <Akonadi/ContactViewer>
 #include <Akonadi/ContactsFilterProxyModel>
@@ -60,7 +54,6 @@
 #include <Akonadi/ETMViewStateSaver>
 #include <Akonadi/EntityMimeTypeFilterModel>
 #include <Akonadi/EntityTreeView>
-#include <Akonadi/ItemModifyJob>
 #include <Akonadi/MimeTypeChecker>
 #include <Akonadi/StandardContactActionManager>
 #ifndef FORCE_DISABLE_AKONADI_SEARCH
@@ -69,7 +62,6 @@
 
 #include <KActionCollection>
 #include <KActionMenu>
-#include <KCMultiDialog>
 #include <KCheckableProxyModel>
 #include <KColorSchemeManager>
 #include <KColorSchemeMenu>
@@ -80,10 +72,12 @@
 #include <KMessageBox>
 #include <KPluginMetaData>
 #include <KSelectionProxyModel>
+#include <KStandardActions>
 #include <KToggleAction>
 #include <KWindowStateSaver>
 #include <KXMLGUIClient>
 
+#include <QAbstractProxyModel>
 #include <QAction>
 #include <QActionGroup>
 #include <QApplication>
@@ -98,6 +92,8 @@
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QTextBrowser>
+#include <QVBoxLayout>
+#include <QWidgetAction>
 using namespace Qt::Literals::StringLiterals;
 
 namespace

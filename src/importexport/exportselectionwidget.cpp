@@ -13,6 +13,8 @@
 #include <QCheckBox>
 #include <QGridLayout>
 #include <QGroupBox>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 
 using namespace Qt::Literals::StringLiterals;
 using namespace KAddressBookImportExport;

@@ -12,7 +12,6 @@ namespace Akonadi
 {
 class ChangeRecorder;
 class ContactsTreeModel;
-class Monitor;
 class Session;
 }
 

@@ -11,8 +11,10 @@
 #include "mainwidget.h"
 #include "settings.h"
 
+#include <KAboutData>
 #include <KActionCollection>
 #include <KLocalizedString>
+#include <KParts/GUIActivateEvent>
 #include <KPluginFactory>
 #include <QAction>
 #include <QIcon>

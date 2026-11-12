@@ -6,10 +6,7 @@
 
 #pragma once
 
-#include <QObject>
-
-#include "pimcommonakonadi/plugininterface.h"
-#include <PimCommonAkonadi/GenericPluginInterface>
+#include <PimCommonAkonadi/PluginInterface>
 class MainWidget;
 
 #include "kaddressbook_export.h"
