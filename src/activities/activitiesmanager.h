@@ -20,7 +20,7 @@ public:
 
     [[nodiscard]] LdapActivities *ldapActivities() const;
 
-    AccountActivities *accountActivities() const;
+    [[nodiscard]] AccountActivities *accountActivities() const;
 
 private:
     LdapActivities *const mLdapActivities;
