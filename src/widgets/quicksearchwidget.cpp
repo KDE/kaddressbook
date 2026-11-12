@@ -33,7 +33,6 @@ QuickSearchWidget::QuickSearchWidget(QWidget *parent)
                               "Start typing a search string in this box and the list of contacts "
                               "matching that string will be displayed.  This is a quick way of searching "
                               "for contacts of interest."));
-    mEdit->installEventFilter(this);
 
     layout->addWidget(mEdit);
 
