@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-02 00:55+0000\n"
+"POT-Creation-Date: 2026-11-13 00:59+0000\n"
 "PO-Revision-Date: 2015-02-07 19:09+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@nuug.no>\n"
@@ -37,7 +37,7 @@ msgid "Your emails"
 msgstr "knut.yrvin@gmail.com,slx@nilsk.net"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
+#: src/mainwidget.cpp:738 src/mainwidget.cpp:765
 #, kde-format
 msgid "Address Book"
 msgstr "Adressebok"
@@ -108,34 +108,34 @@ msgstr ""
 msgid "Blog Feed"
 msgstr ""
 
-#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:19
-#: src/kaddressbookpart.cpp:28 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:734 src/mainwindow.cpp:93
+#: kontactplugin/kaddressbook_plugin.cpp:30 src/aboutdata.cpp:19
+#: src/kaddressbookpart.cpp:30 src/kaddressbookpart.cpp:49
+#: src/mainwidget.cpp:730 src/mainwindow.cpp:95
 #, kde-format
 msgid "KAddressBook"
 msgstr "KDE-adressebok"
 
-#: kontactplugin/kaddressbook_plugin.cpp:33
+#: kontactplugin/kaddressbook_plugin.cpp:32
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
 msgstr ""
 
 #. i18nc( "@info:status", "Create a new contact" ) );
-#: kontactplugin/kaddressbook_plugin.cpp:39
+#: kontactplugin/kaddressbook_plugin.cpp:38
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
 msgstr ""
 
-#: kontactplugin/kaddressbook_plugin.cpp:42
+#: kontactplugin/kaddressbook_plugin.cpp:41
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
 msgstr ""
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
-#: kontactplugin/kaddressbook_plugin.cpp:48
+#: kontactplugin/kaddressbook_plugin.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -196,44 +196,44 @@ msgstr ""
 msgid "Documentation (2019)"
 msgstr ""
 
-#: src/categoryselectwidget.cpp:94
+#: src/categoryselectwidget.cpp:95
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
 msgstr "Tilbakestill kategorifilter"
 
-#: src/categoryselectwidget.cpp:101
+#: src/categoryselectwidget.cpp:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
 msgstr "Tøm kategorifilter"
 
-#: src/categoryselectwidget.cpp:105
+#: src/categoryselectwidget.cpp:106
 #, kde-format
 msgid "(Untagged)"
 msgstr "(Uten etikett)"
 
-#: src/categoryselectwidget.cpp:110
+#: src/categoryselectwidget.cpp:111
 #, kde-format
 msgid "(Groups)"
 msgstr "(Grupper)"
 
-#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#: src/categoryselectwidget.cpp:117 src/categoryselectwidget.cpp:222
 #, kde-format
 msgid "(All)"
 msgstr "(Alle)"
 
-#: src/categoryselectwidget.cpp:224
+#: src/categoryselectwidget.cpp:225
 #, kde-format
 msgid "(None)"
 msgstr "(Ingen)"
 
-#: src/categoryselectwidget.cpp:229
+#: src/categoryselectwidget.cpp:230
 #, kde-format
 msgid ", "
 msgstr ", "
 
-#: src/categoryselectwidget.cpp:229
+#: src/categoryselectwidget.cpp:230
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1</qt>"
@@ -487,55 +487,55 @@ msgstr ""
 msgid "Fetch Contacts"
 msgstr ""
 
-#: src/importexport/exportselectionwidget.cpp:22
+#: src/importexport/exportselectionwidget.cpp:24
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Private felter"
 
-#: src/importexport/exportselectionwidget.cpp:23
+#: src/importexport/exportselectionwidget.cpp:25
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Forretningsfelter"
 
-#: src/importexport/exportselectionwidget.cpp:24
+#: src/importexport/exportselectionwidget.cpp:26
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Andre felter"
 
-#: src/importexport/exportselectionwidget.cpp:25
+#: src/importexport/exportselectionwidget.cpp:27
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Krypteringsnøkler"
 
-#: src/importexport/exportselectionwidget.cpp:26
+#: src/importexport/exportselectionwidget.cpp:28
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Bilder"
 
-#: src/importexport/exportselectionwidget.cpp:27
+#: src/importexport/exportselectionwidget.cpp:29
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "Visningsnavn som fullt navn"
 
-#: src/importexport/exportselectionwidget.cpp:31
+#: src/importexport/exportselectionwidget.cpp:33
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Felter som skal eksporteres"
 
-#: src/importexport/exportselectionwidget.cpp:37
+#: src/importexport/exportselectionwidget.cpp:39
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Eksporter private felter"
 
-#: src/importexport/exportselectionwidget.cpp:39
+#: src/importexport/exportselectionwidget.cpp:41
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -544,13 +544,13 @@ msgid ""
 msgstr ""
 "Velg dette hvis du vil eksportere kontaktens private felter til vCard-fila."
 
-#: src/importexport/exportselectionwidget.cpp:43
+#: src/importexport/exportselectionwidget.cpp:45
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Eksporter forretningsfelter"
 
-#: src/importexport/exportselectionwidget.cpp:45
+#: src/importexport/exportselectionwidget.cpp:47
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -560,13 +560,13 @@ msgstr ""
 "Kryss av her hvis du vil eksportere kontaktens forretningsfelter til vCard-"
 "fila."
 
-#: src/importexport/exportselectionwidget.cpp:49
+#: src/importexport/exportselectionwidget.cpp:51
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Eksporter andre felter"
 
-#: src/importexport/exportselectionwidget.cpp:51
+#: src/importexport/exportselectionwidget.cpp:53
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -575,13 +575,13 @@ msgid ""
 msgstr ""
 "Kryss av her hvis du vil eksportere kontaktens andre felter til vCard-fila."
 
-#: src/importexport/exportselectionwidget.cpp:55
+#: src/importexport/exportselectionwidget.cpp:57
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Eksporter krypteringsnøkler"
 
-#: src/importexport/exportselectionwidget.cpp:57
+#: src/importexport/exportselectionwidget.cpp:59
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -591,13 +591,13 @@ msgstr ""
 "Kryss av her hvis du vil eksportere kontaktens krypteringsnøkler til vCard-"
 "fila."
 
-#: src/importexport/exportselectionwidget.cpp:61
+#: src/importexport/exportselectionwidget.cpp:63
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Eksporter bilder"
 
-#: src/importexport/exportselectionwidget.cpp:63
+#: src/importexport/exportselectionwidget.cpp:65
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -605,19 +605,19 @@ msgid ""
 "output file."
 msgstr "Kryss av her hvis du vil eksportere kontaktens bilde til vCard-fila."
 
-#: src/importexport/exportselectionwidget.cpp:67
+#: src/importexport/exportselectionwidget.cpp:69
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Eksportvalg"
 
-#: src/importexport/exportselectionwidget.cpp:73
+#: src/importexport/exportselectionwidget.cpp:75
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "Eksporter visningsnavn som fullt navn"
 
-#: src/importexport/exportselectionwidget.cpp:75
+#: src/importexport/exportselectionwidget.cpp:77
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -688,7 +688,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr ""
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:77
 #, fuzzy, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "&Sett opp KAddressBook …"
@@ -753,99 +753,99 @@ msgstr "&Eksporter"
 msgid "Main Toolbar"
 msgstr "Hovedverktøylinje"
 
-#: src/mainwidget.cpp:366
+#: src/mainwidget.cpp:362
 #, kde-format
 msgid "Import"
 msgstr ""
 
-#: src/mainwidget.cpp:373
+#: src/mainwidget.cpp:369
 #, kde-format
 msgid "Export"
 msgstr "Eksporter"
 
-#: src/mainwidget.cpp:425
+#: src/mainwidget.cpp:421
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr ""
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:653
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Skriv ut hele adresseboka eller et antall utvalgte kontakter."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:658
 #, kde-format
 msgid "Quick search"
 msgstr "Hurtigsøk"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:663
 #, kde-format
 msgid "Category filter"
 msgstr "Kategorifilter"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:668
 #, kde-format
 msgid "Select All"
 msgstr "Velg alt"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Velg alle kontakter i gjeldende adressebokvisning."
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Vis QR-koder"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:675
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Vis QR-koder i kontakten."
 
-#: src/mainwidget.cpp:684
+#: src/mainwidget.cpp:680
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Enkel (en kolonne)"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:684
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Vis enkel visningsmåte for adresseboka."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:687
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "To kolonner"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:693
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tre kolonner"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:706
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Sett fokus til hurtigsøk"
 
-#: src/mainwidget.cpp:727
+#: src/mainwidget.cpp:723
 #, kde-format
 msgid "What's new"
 msgstr ""
 
-#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:771 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr ""
 
-#: src/mainwindow.cpp:141
+#: src/mainwindow.cpp:143
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -855,7 +855,7 @@ msgstr ""
 "Du vil få opp et dialogvindu, der du kan stille inn hurtigtaster for hele "
 "programmet."
 
-#: src/mainwindow.cpp:242
+#: src/mainwindow.cpp:244
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -863,7 +863,7 @@ msgid ""
 msgstr ""
 "<qt>Dette gjemmer menylinja helt. Du kan vise den igjen ved å taste %1.</qt> "
 
-#: src/mainwindow.cpp:245
+#: src/mainwindow.cpp:247
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -890,7 +890,7 @@ msgstr "Etternavn"
 msgid "Given Name"
 msgstr "Fornavn"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:133
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Hjemmeadresse"
@@ -921,7 +921,7 @@ msgid "Compact Style"
 msgstr "Kompakt stil"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailed/detailledstyle.cpp:266
+#: src/printing/detailed/detailledstyle.cpp:263
 #: src/printing/grantlee/grantleeprintstyle.cpp:43
 #: src/printing/mike/mikesstyle.cpp:117
 #: src/printing/ringbinder/ringbinderstyle.cpp:170
@@ -930,7 +930,7 @@ msgid "Setting up document"
 msgstr "Setter opp dokumentet"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailed/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:270
 #: src/printing/grantlee/grantleeprintstyle.cpp:52
 #: src/printing/mike/mikesstyle.cpp:124
 #: src/printing/ringbinder/ringbinderstyle.cpp:203
@@ -939,7 +939,7 @@ msgid "Printing"
 msgstr "Skriver ut"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailed/detailledstyle.cpp:277
+#: src/printing/detailed/detailledstyle.cpp:274
 #: src/printing/grantlee/grantleeprintstyle.cpp:56
 #: src/printing/mike/mikesstyle.cpp:128
 #: src/printing/ringbinder/ringbinderstyle.cpp:207
@@ -1065,84 +1065,84 @@ msgstr "Endre bakgrunnsfarge for hver rad"
 msgid "Alternating the background color"
 msgstr "Vekslende bakgrunnsfarge"
 
-#: src/printing/detailed/detailledstyle.cpp:75
+#: src/printing/detailed/detailledstyle.cpp:72
 #, kde-format
 msgid "Organization:"
 msgstr "Organisasjon:"
 
-#: src/printing/detailed/detailledstyle.cpp:84
+#: src/printing/detailed/detailledstyle.cpp:81
 #, kde-format
 msgid "Email address:"
 msgstr "E-postadresse:"
 
-#: src/printing/detailed/detailledstyle.cpp:84
+#: src/printing/detailed/detailledstyle.cpp:81
 #, kde-format
 msgid "Email addresses:"
 msgstr "E-postadresser:"
 
-#: src/printing/detailed/detailledstyle.cpp:96
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephone:"
 msgstr "Telefon:"
 
-#: src/printing/detailed/detailledstyle.cpp:96
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephones:"
 msgstr "Telefoner:"
 
-#: src/printing/detailed/detailledstyle.cpp:108
+#: src/printing/detailed/detailledstyle.cpp:105
 #, kde-format
 msgid "Web page:"
 msgstr "Nettside:"
 
-#: src/printing/detailed/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Hjemadresse"
 
-#: src/printing/detailed/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Internasjonal adresse"
 
-#: src/printing/detailed/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Postadresse"
 
-#: src/printing/detailed/detailledstyle.cpp:130
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Gateadresse"
 
-#: src/printing/detailed/detailledstyle.cpp:136
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Arbeidsadresse"
 
-#: src/printing/detailed/detailledstyle.cpp:140
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Foretrukket adresse"
 
-#: src/printing/detailed/detailledstyle.cpp:152
+#: src/printing/detailed/detailledstyle.cpp:149
 #, kde-format
 msgid "Notes:"
 msgstr "Merknader:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailed/detailledstyle.cpp:236
+#: src/printing/detailed/detailledstyle.cpp:233
 #: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Detaljert utskriftsoppsett – utseende"
 
-#: src/printing/detailed/detailledstyle.cpp:249
+#: src/printing/detailed/detailledstyle.cpp:246
 #, kde-format
 msgid "Setting up colors"
 msgstr "Oppsett av farger"
 
-#: src/printing/detailed/detailledstyle.cpp:292
+#: src/printing/detailed/detailledstyle.cpp:289
 #, kde-format
 msgid "Detailed Style"
 msgstr "Detaljert stil"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-02 00:55+0000\n"
+"POT-Creation-Date: 2026-11-13 00:59+0000\n"
 "PO-Revision-Date: 2026-11-02 23:54+0100\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgid "Your emails"
 msgstr "nene@wo.cz,lukas@kde.org,Ivo.Jansky@seznam.cz,koty@seznam.cz"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:742 src/mainwidget.cpp:769
+#: src/mainwidget.cpp:738 src/mainwidget.cpp:765
 #, kde-format
 msgid "Address Book"
 msgstr "Kniha adres"
@@ -104,34 +104,34 @@ msgstr "E-mail"
 msgid "Blog Feed"
 msgstr "Kanál blogu"
 
-#: kontactplugin/kaddressbook_plugin.cpp:31 src/aboutdata.cpp:19
-#: src/kaddressbookpart.cpp:28 src/kaddressbookpart.cpp:47
-#: src/mainwidget.cpp:734 src/mainwindow.cpp:93
+#: kontactplugin/kaddressbook_plugin.cpp:30 src/aboutdata.cpp:19
+#: src/kaddressbookpart.cpp:30 src/kaddressbookpart.cpp:49
+#: src/mainwidget.cpp:730 src/mainwindow.cpp:95
 #, kde-format
 msgid "KAddressBook"
 msgstr "Kniha adres"
 
-#: kontactplugin/kaddressbook_plugin.cpp:33
+#: kontactplugin/kaddressbook_plugin.cpp:32
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact..."
 msgstr "Nový kontakt..."
 
 #. i18nc( "@info:status", "Create a new contact" ) );
-#: kontactplugin/kaddressbook_plugin.cpp:39
+#: kontactplugin/kaddressbook_plugin.cpp:38
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can create a new contact."
 msgstr "Zobrazí se vám okno, kde budete moci vytvořit nový kontakt."
 
-#: kontactplugin/kaddressbook_plugin.cpp:42
+#: kontactplugin/kaddressbook_plugin.cpp:41
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
 msgstr "Nová skupina kontaktů..."
 
 #. i18nc( "@info:status", "Create a new contact group" ) );
-#: kontactplugin/kaddressbook_plugin.cpp:48
+#: kontactplugin/kaddressbook_plugin.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -192,44 +192,44 @@ msgstr "David Bryant"
 msgid "Documentation (2019)"
 msgstr "Dokumentace (2019)"
 
-#: src/categoryselectwidget.cpp:94
+#: src/categoryselectwidget.cpp:95
 #, kde-format
 msgctxt "@action:button"
 msgid "Reset category filter"
 msgstr "Obnovit filtr kategorií"
 
-#: src/categoryselectwidget.cpp:101
+#: src/categoryselectwidget.cpp:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear category filter"
 msgstr "Vyčistit filtr kategorií"
 
-#: src/categoryselectwidget.cpp:105
+#: src/categoryselectwidget.cpp:106
 #, kde-format
 msgid "(Untagged)"
 msgstr "(Neoznačené)"
 
-#: src/categoryselectwidget.cpp:110
+#: src/categoryselectwidget.cpp:111
 #, kde-format
 msgid "(Groups)"
 msgstr "(Skupiny)"
 
-#: src/categoryselectwidget.cpp:116 src/categoryselectwidget.cpp:221
+#: src/categoryselectwidget.cpp:117 src/categoryselectwidget.cpp:222
 #, kde-format
 msgid "(All)"
 msgstr "(Vše)"
 
-#: src/categoryselectwidget.cpp:224
+#: src/categoryselectwidget.cpp:225
 #, kde-format
 msgid "(None)"
 msgstr "(Nic)"
 
-#: src/categoryselectwidget.cpp:229
+#: src/categoryselectwidget.cpp:230
 #, kde-format
 msgid ", "
 msgstr ", "
 
-#: src/categoryselectwidget.cpp:229
+#: src/categoryselectwidget.cpp:230
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Category filter: %1</qt>"
@@ -493,55 +493,55 @@ msgstr "Sbírat kontakty"
 msgid "Fetch Contacts"
 msgstr "Načíst kontakty"
 
-#: src/importexport/exportselectionwidget.cpp:22
+#: src/importexport/exportselectionwidget.cpp:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Soukromá pole"
 
-#: src/importexport/exportselectionwidget.cpp:23
+#: src/importexport/exportselectionwidget.cpp:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Obchodní pole"
 
-#: src/importexport/exportselectionwidget.cpp:24
+#: src/importexport/exportselectionwidget.cpp:26
 #, kde-format
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Jiná pole"
 
-#: src/importexport/exportselectionwidget.cpp:25
+#: src/importexport/exportselectionwidget.cpp:27
 #, kde-format
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Šifrovací klíče"
 
-#: src/importexport/exportselectionwidget.cpp:26
+#: src/importexport/exportselectionwidget.cpp:28
 #, kde-format
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Obrázky"
 
-#: src/importexport/exportselectionwidget.cpp:27
+#: src/importexport/exportselectionwidget.cpp:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "Zobrazit jméno jako celé jméno"
 
-#: src/importexport/exportselectionwidget.cpp:31
+#: src/importexport/exportselectionwidget.cpp:33
 #, kde-format
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Pole, jež mají být exportována"
 
-#: src/importexport/exportselectionwidget.cpp:37
+#: src/importexport/exportselectionwidget.cpp:39
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Exportovat soukromá pole"
 
-#: src/importexport/exportselectionwidget.cpp:39
+#: src/importexport/exportselectionwidget.cpp:41
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -551,13 +551,13 @@ msgstr ""
 "Zaškrtněte, pokud si nepřejete exportovat soukromá pole kontaktu do "
 "výstupního souboru vCard."
 
-#: src/importexport/exportselectionwidget.cpp:43
+#: src/importexport/exportselectionwidget.cpp:45
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Exportovat obchodní pole"
 
-#: src/importexport/exportselectionwidget.cpp:45
+#: src/importexport/exportselectionwidget.cpp:47
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -567,13 +567,13 @@ msgstr ""
 "Zaškrtněte, pokud si nepřejete exportovat pracovní pole kontaktu do "
 "výstupního souboru vCard."
 
-#: src/importexport/exportselectionwidget.cpp:49
+#: src/importexport/exportselectionwidget.cpp:51
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Exportovat jiná pole"
 
-#: src/importexport/exportselectionwidget.cpp:51
+#: src/importexport/exportselectionwidget.cpp:53
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -583,13 +583,13 @@ msgstr ""
 "Zaškrtněte, pokud si nepřejete exportovat jiná pole kontaktu do výstupního "
 "souboru vCard."
 
-#: src/importexport/exportselectionwidget.cpp:55
+#: src/importexport/exportselectionwidget.cpp:57
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Exportovat šifrovací klíče"
 
-#: src/importexport/exportselectionwidget.cpp:57
+#: src/importexport/exportselectionwidget.cpp:59
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -599,13 +599,13 @@ msgstr ""
 "Zaškrtněte, pokud si nepřejete exportovat šifrovací klíče kontaktu do "
 "výstupního souboru vCard."
 
-#: src/importexport/exportselectionwidget.cpp:61
+#: src/importexport/exportselectionwidget.cpp:63
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Exportovat obrázky"
 
-#: src/importexport/exportselectionwidget.cpp:63
+#: src/importexport/exportselectionwidget.cpp:65
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -615,19 +615,19 @@ msgstr ""
 "Zaškrtněte, pokud si nepřejete exportovat obrázek kontaktu do výstupního "
 "souboru vCard."
 
-#: src/importexport/exportselectionwidget.cpp:67
+#: src/importexport/exportselectionwidget.cpp:69
 #, kde-format
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Možnosti exportu"
 
-#: src/importexport/exportselectionwidget.cpp:73
+#: src/importexport/exportselectionwidget.cpp:75
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "Exportovat zobrazované jméno jako celé jméno"
 
-#: src/importexport/exportselectionwidget.cpp:75
+#: src/importexport/exportselectionwidget.cpp:77
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -699,7 +699,7 @@ msgctxt "@info:shell"
 msgid "Lists the available options for user feedback"
 msgstr "Seznam dostupných voleb pro uživatelskou zpětnou vazbu"
 
-#: src/kaddressbookpart.cpp:75
+#: src/kaddressbookpart.cpp:77
 #, kde-format
 msgid "&Configure KAddressBook…"
 msgstr "Nastavit k&nihu adres…"
@@ -764,99 +764,99 @@ msgstr "&Exportovat"
 msgid "Main Toolbar"
 msgstr "Hlavní panel nástrojů"
 
-#: src/mainwidget.cpp:366
+#: src/mainwidget.cpp:362
 #, kde-format
 msgid "Import"
 msgstr "Importovat"
 
-#: src/mainwidget.cpp:373
+#: src/mainwidget.cpp:369
 #, kde-format
 msgid "Export"
 msgstr "Exportovat"
 
-#: src/mainwidget.cpp:425
+#: src/mainwidget.cpp:421
 #, kde-format
 msgctxt "@label Search contacts in list"
 msgid "Search… <%1>"
 msgstr "Hledat… <%1>"
 
-#: src/mainwidget.cpp:657
+#: src/mainwidget.cpp:653
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Vytisknout celou knihu adres, nebo zvolený počet kontaktů."
 
-#: src/mainwidget.cpp:662
+#: src/mainwidget.cpp:658
 #, kde-format
 msgid "Quick search"
 msgstr "Rychlé hledání"
 
-#: src/mainwidget.cpp:667
+#: src/mainwidget.cpp:663
 #, kde-format
 msgid "Category filter"
 msgstr "Filtr kategorií"
 
-#: src/mainwidget.cpp:672
+#: src/mainwidget.cpp:668
 #, kde-format
 msgid "Select All"
 msgstr "Označit vše"
 
-#: src/mainwidget.cpp:674
+#: src/mainwidget.cpp:670
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Vybrat všechny kontakty z aktuálního pohledu."
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:674
 #, kde-format
 msgid "Show QR Codes"
 msgstr "Zobrazit QR kódy"
 
-#: src/mainwidget.cpp:679
+#: src/mainwidget.cpp:675
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Zobrazit QR kódy v kontaktu."
 
-#: src/mainwidget.cpp:684
+#: src/mainwidget.cpp:680
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Jednoduchý (jeden sloupec)"
 
-#: src/mainwidget.cpp:688
+#: src/mainwidget.cpp:684
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Zvolit jednoduchý režim pohledu na knihu adres."
 
-#: src/mainwidget.cpp:691
+#: src/mainwidget.cpp:687
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Dva sloupce"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:693
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Tři sloupce"
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:706
 #, kde-format
 msgctxt "@action"
 msgid "Set Focus to Quick Search"
 msgstr "Přejít do rychlého vyhledávání"
 
-#: src/mainwidget.cpp:727
+#: src/mainwidget.cpp:723
 #, kde-format
 msgid "What's new"
 msgstr "Co je nového"
 
-#: src/mainwidget.cpp:775 src/printing/printingwizard.cpp:46
+#: src/mainwidget.cpp:771 src/printing/printingwizard.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Contacts"
 msgstr "Tisknout kontakty"
 
-#: src/mainwindow.cpp:141
+#: src/mainwindow.cpp:143
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -864,7 +864,7 @@ msgid ""
 "wide shortcuts."
 msgstr "Zobrazí se dialogové okno pro nastavení klávesových zkratek."
 
-#: src/mainwindow.cpp:242
+#: src/mainwindow.cpp:244
 #, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing "
@@ -873,7 +873,7 @@ msgstr ""
 "<qt>Toto úplně skryje panel nabídky. Můžete ji opětovně zobrazit pomocí %1.</"
 "qt>"
 
-#: src/mainwindow.cpp:245
+#: src/mainwindow.cpp:247
 #, kde-format
 msgctxt "@title:window"
 msgid "Hide menu bar"
@@ -900,7 +900,7 @@ msgstr "Příjmení"
 msgid "Given Name"
 msgstr "Jméno"
 
-#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:133
+#: src/modelcolumnmanager.cpp:86 src/printing/detailed/detailledstyle.cpp:130
 #, kde-format
 msgid "Home Address"
 msgstr "Adresa domů"
@@ -931,7 +931,7 @@ msgid "Compact Style"
 msgstr "Kompaktní styl"
 
 #: src/printing/compact/compactstyle.cpp:167
-#: src/printing/detailed/detailledstyle.cpp:266
+#: src/printing/detailed/detailledstyle.cpp:263
 #: src/printing/grantlee/grantleeprintstyle.cpp:43
 #: src/printing/mike/mikesstyle.cpp:117
 #: src/printing/ringbinder/ringbinderstyle.cpp:170
@@ -940,7 +940,7 @@ msgid "Setting up document"
 msgstr "Nastavuji dokument"
 
 #: src/printing/compact/compactstyle.cpp:174
-#: src/printing/detailed/detailledstyle.cpp:273
+#: src/printing/detailed/detailledstyle.cpp:270
 #: src/printing/grantlee/grantleeprintstyle.cpp:52
 #: src/printing/mike/mikesstyle.cpp:124
 #: src/printing/ringbinder/ringbinderstyle.cpp:203
@@ -949,7 +949,7 @@ msgid "Printing"
 msgstr "Probíhá tisk"
 
 #: src/printing/compact/compactstyle.cpp:178
-#: src/printing/detailed/detailledstyle.cpp:277
+#: src/printing/detailed/detailledstyle.cpp:274
 #: src/printing/grantlee/grantleeprintstyle.cpp:56
 #: src/printing/mike/mikesstyle.cpp:128
 #: src/printing/ringbinder/ringbinderstyle.cpp:207
@@ -1075,84 +1075,84 @@ msgstr "Změnit barvu pozadí pro každý řádek"
 msgid "Alternating the background color"
 msgstr "Mění se barva pozadí"
 
-#: src/printing/detailed/detailledstyle.cpp:75
+#: src/printing/detailed/detailledstyle.cpp:72
 #, kde-format
 msgid "Organization:"
 msgstr "Organizace:"
 
-#: src/printing/detailed/detailledstyle.cpp:84
+#: src/printing/detailed/detailledstyle.cpp:81
 #, kde-format
 msgid "Email address:"
 msgstr "E-mailová adresa:"
 
-#: src/printing/detailed/detailledstyle.cpp:84
+#: src/printing/detailed/detailledstyle.cpp:81
 #, kde-format
 msgid "Email addresses:"
 msgstr "E-mailové adresy:"
 
-#: src/printing/detailed/detailledstyle.cpp:96
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephone:"
 msgstr "Telefon:"
 
-#: src/printing/detailed/detailledstyle.cpp:96
+#: src/printing/detailed/detailledstyle.cpp:93
 #, kde-format
 msgid "Telephones:"
 msgstr "Telefony:"
 
-#: src/printing/detailed/detailledstyle.cpp:108
+#: src/printing/detailed/detailledstyle.cpp:105
 #, kde-format
 msgid "Web page:"
 msgstr "Webová stránka:"
 
-#: src/printing/detailed/detailledstyle.cpp:121
+#: src/printing/detailed/detailledstyle.cpp:118
 #, kde-format
 msgid "Domestic Address"
 msgstr "Adresa domů"
 
-#: src/printing/detailed/detailledstyle.cpp:124
+#: src/printing/detailed/detailledstyle.cpp:121
 #, kde-format
 msgid "International Address"
 msgstr "Mezinárodní adresa"
 
-#: src/printing/detailed/detailledstyle.cpp:127
+#: src/printing/detailed/detailledstyle.cpp:124
 #, kde-format
 msgid "Postal Address"
 msgstr "Poštovní adresa"
 
-#: src/printing/detailed/detailledstyle.cpp:130
+#: src/printing/detailed/detailledstyle.cpp:127
 #, kde-format
 msgid "Parcel Address"
 msgstr "Adresa pro balík"
 
-#: src/printing/detailed/detailledstyle.cpp:136
+#: src/printing/detailed/detailledstyle.cpp:133
 #, kde-format
 msgid "Work Address"
 msgstr "Adresa do práce"
 
-#: src/printing/detailed/detailledstyle.cpp:140
+#: src/printing/detailed/detailledstyle.cpp:137
 #, kde-format
 msgid "Preferred Address"
 msgstr "Preferovaná adresa"
 
-#: src/printing/detailed/detailledstyle.cpp:152
+#: src/printing/detailed/detailledstyle.cpp:149
 #, kde-format
 msgid "Notes:"
 msgstr "Poznámky:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: src/printing/detailed/detailledstyle.cpp:236
+#: src/printing/detailed/detailledstyle.cpp:233
 #: src/printing/detailed/ds_appearance.ui:58
 #, kde-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Podrobný tiskový styl - vzhled"
 
-#: src/printing/detailed/detailledstyle.cpp:249
+#: src/printing/detailed/detailledstyle.cpp:246
 #, kde-format
 msgid "Setting up colors"
 msgstr "Nastavují se barvy"
 
-#: src/printing/detailed/detailledstyle.cpp:292
+#: src/printing/detailed/detailledstyle.cpp:289
 #, kde-format
 msgid "Detailed Style"
 msgstr "Podrobný styl"
