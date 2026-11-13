@@ -1,0 +1,4306 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd"
+  [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE">
+  <!ENTITY docbook-reference SYSTEM "docbook-reference.docbook">
+  ]>
+
+<book id="kaddressbook" lang="&language;">
+
+<bookinfo>
+
+<title
+>دليل دفتر عناوينك</title>
+
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-07-20</date>
+<releaseinfo
+>5.10.3 (تطبيقات 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>دفتر عناوينك هو جزء من حزمة كيدي لبرامج إدارة المعلومات الشخصية (<glossterm linkend="gloss-pim"
+>PIM</glossterm
+>). يُعد دفتر عناوينك مديرًا لعناوين البريد الإلكتروني في المقام الأول، ولكن يمكنه أيضًا مساعدتك في تتبع أرقام هواتف أصدقائك وزملائك، ومواقع الويب، واتصالات الوسائط الاجتماعية، وعناوين البريد العادي، وغير ذلك الكثير. إنه متجرك الشامل لتتبع جميع الأشخاص الذين تعرفهم. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>كيدي</keyword>
+  <keyword
+>دفتر عناوينك</keyword>
+  <keyword
+>إدارة معلومات كيدي الشخصية</keyword>
+  <keyword
+>بريد إلكتروني</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>مقدمة</title>
+
+  <para
+>دفتر عناوينك هو جزء من حزمة كيدي لبرامج إدارة المعلومات الشخصية (&PIM;). يُعد دفتر عناوينك مديرًا لعناوين البريد الإلكتروني في المقام الأول، ولكن يمكنه أيضًا مساعدتك في تتبع أرقام هواتف أصدقائك وزملائك، ومواقع الويب، واتصالات الوسائط الاجتماعية، وعناوين البريد العادي، والمزيد غير ذلك. إنه متجرك الشامل لتتبع جميع الأشخاص الذين تعرفهم! </para>
+
+  <screenshot id="screenshot-primary">
+  <screeninfo
+>لقطة شاشة لواجهة دفتر عناوينك الرئاسة</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook00.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لواجهة دفتر عناوينك الرئاسة</phrase>
+    </textobject>
+    <caption>
+      <para
+>عرض دفتر عناوينك الرئيس. شريط القوائم في الأعلى، يليه شريط الأدوات، وهناك ثلاث لوحات للبيانات في منطقة النص في الأسفل.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>دُمج دفتر عناوينك في بنية <glossterm linkend="gloss-kmail"
+>بريدك</glossterm
+>، عميل البريد الإلكتروني لكيدي. لذا بمجرد إضافة اسم متراسل إلى دفتر عناوينك، يمكنك عنونة رسالة بريد إلكتروني إلى هذا الشخص بمجرد كتابة جزء من اسمه. أو إذا تلقيت رسالة بريد إلكتروني من شخص جديد، يمكنك إضافته إلى دفتر عناوينك ببضع نقرات بالفقرة. </para>
+
+  <para
+>يسمح لك دفتر عناوينك أيضًا بصيانة قوائم متراسلين متعددة ومنفصلة في مجموعة واسعة من تنسيقات قوائم العناوين الشائعة، إما على قرصك الصلب المحلي، أو عبر مورد موجود في السحابة. كما يدعم استيراد وتصدير بيانات المتراسلين بتنسيقات سجلات <glossterm linkend="gloss-csv"
+><filename class="extension"
+>.csv</filename
+></glossterm
+> (قيم مفصولة بفاصلة)، و <glossterm linkend="gloss-ldif"
+><filename class="extension"
+>.ldif</filename
+></glossterm
+> (تنسيق تبادل بيانات <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+>)، و <glossterm linkend="gloss-vcf"
+><filename class="extension"
+>.vcf</filename
+></glossterm
+> (تنسيق بطاقة العمل الافتراضية). </para>
+
+<!--TODO Insert additional information about problem reporting here -->
+</chapter>
+
+<chapter id="getting-started">
+<title
+>البدء</title>
+
+  <para
+>هنا صورة لواجهة مستخدم دفتر عناوينك الرئاسة قبل إدخال أي بيانات عناوين. أول شيء قد ترغب في فعله هو إنشاء دفتر عناوين. لاحظ أن دفتر عناوين <quote
+>المتراسلين الشخصيين</quote
+> موجود مبدئيًا. </para>
+
+  <screenshot id="screenshot-blank">
+      <screeninfo
+>لقطة شاشة لواجهة دفتر عناوينك <quote
+>الفارغة</quote
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook10.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لواجهة دفتر عناوينك <quote
+>الفارغة</quote
+></phrase>
+    </textobject>
+    <caption>
+        <para
+>واجهة دفتر عناوينك الرسومية <quote
+>الفارغة</quote
+>، قبل إنشاء أي دفاتر عناوين إضافية. يتوفر دفتر عناوين <quote
+>المتراسلين الشخصيين</quote
+> عند تثبيت دفتر عناوينك لأول مرة.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <sect1 id="how-to-add-a-new-address-book">
+  <title
+>كيفية إضافة دفتر عناوين جديد</title>
+
+  <procedure id="procedure-add-a-new-addressbook">
+
+  <step id="new-addressbook-dialog-step"
+><para
+>افتح مربع حوار إضافة دفتر عناوين في دفتر عناوينك باستخدام خيار <menuchoice
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+>جديد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أضف دفتر عناوين...</guimenuitem
+></menuchoice
+>. سيظهر مربع حوار. </para>
+
+  <para>
+  <screenshot id="screenshot-add-an-address-book">
+  <screeninfo
+>لقطة شاشة لمربع حوار إضافة دفتر عناوين في دفتر عناوينك</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook20.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار إضافة دفتر عناوين في دفتر عناوينك</phrase>
+    </textobject>
+    <caption>
+      <para
+>مربع حوار إضافة دفتر عناوين في دفتر عناوينك. تُدعم خمس خدمات سحابية، بالإضافة إلى ثلاثة خيارات تخزين محلية.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+
+  <step id="select-a-format-step"
+><para
+>اختر أحد الخيارات التي تظهر في المربع الحواري. ترتبط العديد من هذه الخيارات بمجموعات بيانات موجودة في السحابة: برمجيات مجموعات <glossterm linkend="gloss-dav"
+><acronym
+>DAV</acronym
+></glossterm
+> (التأليف والتوزيع الموزع، RFC4918)، ومتراسلين جوجل (حساب gmail.com الخاص بك)، خادم برمجيات المجموعات <glossterm linkend="gloss-kolab"
+>Kolab</glossterm
+> (التعاون عبر <glossterm linkend="gloss-imap"
+>IMAP</glossterm
+>)، و &Microsoft; Exchange Server <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> (خدمات ويب Exchange، على الخوادم التي تشغل برمجيات MS)، و <glossterm linkend="gloss-group"
+>Open-Xchange Groupware Server</glossterm
+> (بديل مفتوح المصدر لـ MS EWS). إذا كان لديك وصول بالفعل إلى واحد أو أكثر من هذه الموارد القائمة على السحابة، يمكنك دمج تلك البيانات في دفتر عناوينك بمجرد تحديد الخيار ثم إدخال بيانات الاستيثاق الخاصة بك.</para>
+
+  <para
+>تنشئ الخيارات المتبقية في المربع الحواري (المتراسلين الشخصيين، ودليل vCard، وملف vCard) مجموعات بيانات تُحفظ على جهاز تخزين محلي. يستخدم كل خيار من هذه الخيارات نفس تنسيق البيانات (<filename class="extension"
+>.vcf</filename
+>، أو تنسيق البطاقة الافتراضية)، والفرق الوحيد هو الدليل المحدد الذي تُحفظ فيه البيانات. ينشئ خيارا <quote
+>المتراسلين الشخصيين</quote
+> و <quote
+>دليل vCard</quote
+> ملفًا منفصلًا لكل متراسل مسمى تحفظه؛ أما خيار <quote
+>ملف vCard</quote
+> فيضع جميع البيانات في ملف واحد. ربما يكون من الأسهل البدء بدفتر عناوين <quote
+>المتراسلين الشخصيين</quote
+> المحدد مسبقًا. لن تحتاج إلى مزيد من دفاتر العناوين إلا إذا كانت لديك قوائم متراسلين واسعة تود الاحتفاظ بها منفصلة. </para
+></step>
+
+  <step id="add-a-cloud-based-service-step"
+><para
+>بمجرد إجراء اختيارك، انقر فوق موافق. إذا اخترت <glossterm linkend="gloss-cloud"
+>خدمة قائمة على السحابة</glossterm
+>، فسيتبع ذلك حوار قصير لإنشاء اتصالات بين <glossterm linkend="gloss-akonadi"
+>أكونادي</glossterm
+> (خدمة تخزين PIM عبر أسطح المكتب) وخادم السحابة المحدد. إليك كيف يبدو مربع الحوار لحساب جوجل (gmail.com). الخدمات الأخرى القائمة على السحابة مختلفة قليلًا، لكنها متشابهة. </para>
+
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service">
+  <screeninfo
+>لقطة شاشة لمربع حوار ربط حساب جيميل في دفتر عناوينك</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook30.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار ربط حساب جيميل في دفتر عناوينك</phrase>
+    </textobject>
+    <caption>
+      <para
+>مربع حوار ربط حساب جيميل في دفتر عناوينك. ابدأ بالنقر فوق <quote
+>أضف</quote
+>. سيظهر مربع حوار جديد. بمجرد قبول بيانات الاستيثاق الخاصة بك، ستظهر هذه الشاشة مرة أخرى، وستنقر فوق <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+>. إذا كنت ترغب في أن يقوم دفتر عناوينك بتحديث نسخة الخبيئة المحلية لقائمة المتراسلين آليًا، فافعل ذلك هنا، قبل النقر فوق <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step2">
+  <screeninfo
+>لقطة شاشة ثانية لمربع حوار ربط حساب جيميل في دفتر عناوينك</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook31.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة ثانية لمربع حوار ربط حساب جيميل في دفتر عناوينك</phrase>
+    </textobject>
+    <caption>
+      <para
+>صورة أخرى لمربع حوار ربط حساب جيميل في دفتر عناوينك. أدخل عنوان gmail.com الخاص بك وانقر فوق <guibutton
+>&nbsp;التالي&nbsp;</guibutton
+>. سيُطلب منك إدخال كلمة سر جيميل الخاصة بك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-step3">
+  <screeninfo
+>لقطة شاشة ثالثة لمربع حوار ربط حساب جيميل في دفتر عناوينك</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook32.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة ثالثة لمربع حوار ربط حساب جيميل في دفتر عناوينك</phrase>
+    </textobject>
+    <caption>
+      <para
+>صورة أخرى لمربع حوار ربط حساب جيميل في دفتر عناوينك. قُبل اسم حسابك وكلمة السر بواسطة خادم جوجل. اقرأ إشعار الخصوصية واضغط <guibutton
+>&nbsp;السماح&nbsp;</guibutton
+>، ثم <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+> في مربع الحوار <quote
+>&nbsp;أضف&nbsp;</quote
+> الذي بدأت به.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>أدخل بيانات الاستيثاق الخاصة بك كما هو موضح أعلاه واضغط موافق. ها قد أصبحت قائمة متراسليك القائمة على السحابة مدمجة الآن في دفتر عناوينك. </para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+
+  <para>
+  <screenshot id="screenshot-add-a-cloud-based-service-completed">
+  <screeninfo
+>نافذة دفتر عناوينك بعد إضافة حساب gmail.com.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook33.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>نافذة دفتر عناوينك بعد إضافة حساب gmail.com.</phrase>
+    </textobject>
+    <caption>
+      <para
+>صورة أخرى لنافذة دفتر عناوينك، بعد إضافة حساب gmail.com. يمكنك الآن إدارة متراسلي جيميل عبر دفتر عناوينك، إذا أردت.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>كما تشير لقطة الشاشة السابقة، بمجرد تسجيل دفتر عناوينك كمورد موثوق به، يمكنك عرض وتحرير متراسلي جيميل باستخدام دفتر عناوينك. بالطبع، يمكنك أيضًا الاستمرار في صيانة متراسليك باستخدام متصفح الويب، إذا رغبت في ذلك. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  </step>
+
+  <step id="add-a-local-addressbook-step"
+><para
+>إذا اخترت أحد خيارات دفتر العناوين المحلي في <link linkend="select-a-format-step"
+>الخطوة 2</link
+> أعلاه، فسيتبع ذلك مربع حوار مختلف. </para>
+
+  <para>
+  <screenshot id="screenshot-add-a-personal-addressbook">
+      <screeninfo
+>لقطة شاشة لمربع حوار <quote
+>المتراسلين الشخصيين</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook34.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار <quote
+>المتراسلين الشخصيين</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>مربع حوار <quote
+>المتراسلين الشخصيين</quote
+> في دفتر عناوينك. يمكنك تحديد الدليل الذي سيحتوي على بياناتك، وما إذا كان لديك وصول للكتابة إلى هذا المورد أم لا. بالنسبة لمعظم الأشخاص، تعمل التحديدات المبدئية (كما هو موضح أعلاه) بشكل جيد.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>أجرِ أي تعديلات تراها ضرورية في مربع حوار <quote
+>المتراسلين الشخصيين</quote
+>، ثم انقر فوق <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+>. سيظهر دفتر عناوين جديد في نافذة واجهة دفتر عناوينك الرئيسة، كما هو موضح أدناه. </para>
+
+  <para>
+  <screenshot id="screenshot-personal-addressbook-has-been-added">
+      <screeninfo
+>لقطة شاشة لنافذة دفتر عناوينك الرئيسة مع دفتر عناوين <quote
+>متراسلين شخصيين</quote
+> فارغ.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook35.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لنافذة دفتر عناوينك الرئيسة مع دفتر عناوين <quote
+>متراسلين شخصيين</quote
+> فارغ.</phrase>
+    </textobject>
+    <caption>
+      <para
+>نافذة دفتر عناوينك الرئيسة بعد إعادة إنشاء دفتر عناوين <quote
+>المتراسلين الشخصيين</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  </step>
+
+  </procedure>
+  </sect1>
+
+  <sect1 id="how-to-add-a-new-contact">
+  <title
+>كيفية إضافة متراسل جديد</title>
+
+  <procedure id="procedure-add-a-new-contact">
+
+  <step id="new-contact-dialog-step-1"
+><para
+>افتح مربع حوار متراسل جديد في دفتر عناوينك بالنقر فوق زر <guibutton
+>&nbsp;&plus;&nbsp;متراسل جديد&nbsp;</guibutton
+> في شريط الأدوات. سيظهر مربع حوار.</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog">
+      <screeninfo
+>لقطة شاشة لمربع حوار <quote
+>متراسل جديد</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار <quote
+>متراسل جديد</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+    <para
+>مربع حوار <quote
+>متراسل جديد</quote
+> في دفتر عناوينك بعد النقر فوق زر <guibutton
+>&nbsp;&plus;&nbsp;متراسل جديد&nbsp;</guibutton
+> في شريط الأدوات.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  </step>
+
+  <step id="procedure-new-contact-data-items"
+><para
+>كما ترى من لقطة الشاشة السابقة، يسمح مربع حوار <quote
+>متراسل جديد</quote
+> بإدخال عدة عناصر بيانات مختلفة. يمكن إدخال بيانات إضافية عبر مربعات الحوار الفرعية <quote
+>الموقع</quote
+>، و <quote
+>العمل</quote
+>، و <quote
+>شخصي</quote
+>، و <quote
+>ملاحظات</quote
+>، و <quote
+>حقول مخصصة</quote
+>، و <quote
+>إعدادات التعمية</quote
+>، كما هو موضح بتفصيل أكبر في <link linkend="editing-contact-data"
+>الفصل 4</link
+> أدناه. في الوقت الحالي، دعنا نركز على إضافة عناصر بيانات <quote
+>المتراسل</quote
+> التي تظهر في الرسم التوضيحي السابق.</para>
+  </step>
+
+  <step id="procedure-entering-basic-new-contact-data"
+><para
+>إذا كنت قد أنشأت أكثر من دفتر عناوين، فاستخدم القائمة المنسدلة المسماة <quote
+>أضف إلى:</quote
+> لتحديد مجموعة البيانات التي سيُضاف إليها المتراسل الجديد. ثم أدخل اسم المتراسل الجديد في حقل الإدخال المميز بـ <quote
+>الاسم</quote
+>، واكتب عنوان بريده الإلكتروني في حقل الإدخال المسمى <quote
+>البريد الإلكتروني</quote
+>. إذا كنت تريد تحديد خيارات تنسيق خاصة لبيانات اسم هذا المتراسل، فانقر فوق زر <guibutton
+>&nbsp;...&nbsp;</guibutton
+> على يمين حقل إدخال <quote
+>الاسم</quote
+> واتبع المطالبات. إذا كنت ترغب في إضافة المزيد من عناوين البريد الإلكتروني لهذا الشخص، فانقر فوق زر <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> على يمين حقل إدخال <quote
+>البريد الإلكتروني</quote
+> وسيُنشأ حقل إدخال بريد إلكتروني آخر. لحذف عنوان بريد إلكتروني، انقر فوق زر <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> المرتبط به. </para
+></step>
+
+  <step id="procedure-additional-new-contact-data"
+><para
+>يمكنك أيضًا ربط لقب، ورقم هاتف واحد أو أكثر، وخدمات مراسلة فورية متعددة، وعدة مواقع ويب بكل متراسل في دفتر العناوين، كما هو موضح في <link linkend="editing-contact-data"
+>الفصل 4</link
+>. يمكنك أيضًا استخدام خياري <quote
+>أظهر الرسائل ...</quote
+> و <quote
+>اسمح بالمحتوى البعيد ...</quote
+> لضبط الطريقة التي يتعامل بها بريدك مع البريد الإلكتروني الذي تتلقاه من كل متراسل. راجع <link linkend="integration-with-other-kde-programs"
+>الفصل 3</link
+> للحصول على شرح أكثر اكتمالًا. </para
+></step>
+
+  <!--TODO Note to myself: need to add an explanation of overriding KMail defaults -->
+
+  </procedure>
+  </sect1>
+
+</chapter>
+
+<chapter id="integration-with-other-kde-programs">
+<title
+>التكامل مع برامج كيدي الأخرى</title>
+
+  <sect1 id="integration-overview">
+  <title
+>نظرة عامة على التكامل -- بريدك</title>
+
+  <para
+>نظرًا لأن دفتر عناوينك -- وهو جزء أساس من PIM، حزمة كيدي لبرامج إدارة المعلومات الشخصية -- هو المستودع المركزي للمعلومات عن جميع متراسليك، فقد دُمج في بريدك وأيضًا في منظمك. إليك نظرة سريعة على الواجهة بين دفتر عناوينك وهذين البرنامجين. </para>
+
+  <sect2 id="starting-kaddressbook-from-kmail-tools">
+  <title
+>بدء دفتر عناوينك من قائمة أدوات بريدك</title>
+
+  <para>
+  <screenshot id="screenshot-kmail-tools-menu">
+      <screeninfo
+>لقطة شاشة لخيار <menuchoice
+><guimenu
+>أدوات</guimenu
+><guimenuitem
+>دفتر العناوين</guimenuitem
+></menuchoice
+> في بريدك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook50.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لخيار <menuchoice
+><guimenu
+>أدوات</guimenu
+><guimenuitem
+>دفتر العناوين</guimenuitem
+></menuchoice
+> في بريدك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>إطلاق دفتر عناوينك من خيار قائمة <menuchoice
+><guimenu
+>أدوات</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>دفتر العناوين</guimenuitem
+></menuchoice
+> في بريدك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تُعد هذه الواجهة مثالًا للبساطة. هل تحتاج إلى مراجعة مدخلة أحد متراسليك أو تحديثها أثناء قراءة رسالة بريد إلكتروني أو تأليفها باستخدام بريدك؟ انقر بالزر الأيسر فوق <menuchoice
+><guimenu
+>أدوات</guimenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="address-book-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>دفتر العناوين</guimenuitem
+></menuchoice
+>، وسيُطلق تطبيق دفتر عناوينك آليًا، مما يتيح وصولًا سريعًا إلى بيانات المتراسل التي تريد عرضها أو تعديلها.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  </sect2>
+
+  <sect2 id="autocompletion-feature-on-new-email">
+  <title
+>الاستعلام في دفتر عناوينك من نافذة تأليف الرسائل في بريدك</title>
+
+  <para>
+  <screenshot id="screenshot-autocompletion-feature">
+      <screeninfo
+>لقطة شاشة للإكمال الآلي من داخل نافذة تأليف الرسائل في بريدك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook51.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة للإكمال الآلي من داخل نافذة تأليف الرسائل في بريدك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>استخدام ميزة الإكمال الآلي لدفتر عناوينك من داخل نافذة تأليف الرسائل في بريدك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>عندما تقوم بتأليف رسالة بريد إلكتروني جديدة، يساعدك بريدك في العثور على عنوان البريد الإلكتروني الكامل للمستلم من خلال تقديم قائمة من المطابقات المحتملة المستمدة من محتويات دفتر عناوينك ومن أرشيف بريدك الإلكتروني، كما هو موضح أعلاه. فقط انقر بالزر الأيسر على عنصر في القائمة لاستخدام عنوان البريد الإلكتروني هذا.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  </sect2>
+
+  <sect2  id="recipient-selection-dialog">
+  <title
+>مربع حوار اختيار المستلمين في بريدك</title>
+
+  <para>
+  <screenshot id="screenshot-recipient-selection">
+      <screeninfo
+>لقطة شاشة لمربع حوار اختيار المستلمين داخل نافذة تأليف الرسائل في بريدك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook52.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار اختيار المستلمين داخل نافذة تأليف الرسائل في بريدك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>اختيار مرسل إليهم متعددين باستخدام مربع حوار اختيار المستلمين داخل نافذة تأليف الرسائل في بريدك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>عندما تقوم بعنونة رسالة بريد إلكتروني جديدة إلى مستلمين متعددين، يوفر بريدك طريقة مريحة لاختيار مرسل إليهم متعددين من المتراسلين الذين حفظتهم في دفتر عناوينك. ما عليك سوى النقر بالزر الأيسر فوق زر <guibutton
+>&nbsp;اختر ...&nbsp;</guibutton
+> لفتح قائمة منسدلة تسرد جميع المتراسلين في دفاتر العناوين المحددة. ثم قم بالتمرير عبر القائمة (أو استخدم مربع <quote
+>البحث:</quote
+> السهل)، واختر المستلم الذي تريده، وانقر بالزر الأيسر فوق <guibutton
+>&nbsp;أضف كـ إلى&nbsp;</guibutton
+>، أو <guibutton
+>&nbsp;أضف كـ نسخة&nbsp;</guibutton
+>، أو <guibutton
+>&nbsp;أضف كـ نسخة مخفية&nbsp;</guibutton
+> لإضافة هذا الشخص إلى قائمة مستلمي البريد الإلكتروني لرسالتك الجديدة. اختر <guibutton
+>&nbsp;أضف كـ رد إلى&nbsp;</guibutton
+> لإدراج هذا العنوان في رسالتك كوسم <quote
+>رد إلى</quote
+>.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  </sect2>
+
+  <sect2 id="new-contact-creation-interface">
+  <title
+>واجهة إنشاء متراسل جديد في بريدك</title>
+
+  <para>
+  <screenshot id="screenshot-new-contact-creation">
+      <screeninfo
+>لقطة شاشة لواجهة إنشاء متراسل جديد داخل نافذة عرض الرسائل في بريدك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook53.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لواجهة إنشاء متراسل جديد داخل نافذة عرض الرسائل في بريدك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>استدعاء مربع حوار إنشاء متراسل جديد من نافذة عرض الرسائل في بريدك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>عندما تتلقى رسالة بريد إلكتروني من شخص ليس موجودًا بعد في دفتر عناوينك، يجعل بريدك إنشاء متراسل جديد أمرًا سهلًا للغاية. ما عليك سوى توجيه المؤشر إلى عنوان البريد الإلكتروني الذي تريد حفظه، ثم انقر بزر الفأرة الأيمن وستظهر قائمة سياقية (انظر أعلاه). اختر <guimenuitem
+>&nbsp;&plus; أضف إلى دفتر العناوين&nbsp;</guimenuitem
+> لإضافة عنوان البريد الإلكتروني المحدد إلى أحد دفاتر عناوينك. إذا كنت تعرف هذا الشخص كشخص موجود بالفعل في دفتر عناوينك، وكان يستخدم عنوان بريد إلكتروني جديد، يمكنك النقر فوق <guimenuitem
+>&nbsp;&plus; أضف إلى متراسل موجود&nbsp;</guimenuitem
+> بدلًا من ذلك -- سيؤدي هذا إلى الدخول في حوار سيوجه دفتر عناوينك إلى المكان الذي تريد إدراج عنوان البريد الإلكتروني الجديد فيه.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step2">
+      <screeninfo
+>لقطة شاشة لمربع حوار إنشاء متراسل جديد الناتج.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook54.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار إنشاء متراسل جديد الناتج.</phrase>
+    </textobject>
+    <caption>
+        <para
+>اختيار دفتر العناوين الذي سيُنشأ فيه المتراسل الجديد.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>سيطلب منك بريدك اختيار دفتر العناوين الذي يجب إضافة المتراسل الجديد إليه.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next picture @dcb -->
+
+  <para>
+  <screenshot id="screenshot-new-contact-creation-step3">
+      <screeninfo
+>لقطة شاشة أخرى لمربع حوار إنشاء متراسل جديد الناتج.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook55.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة أخرى لمربع حوار إنشاء متراسل جديد الناتج.</phrase>
+    </textobject>
+    <caption>
+        <para
+>تحديد ما إذا كنت ترغب في تحرير المتراسل المنشأ حديثًا الآن أو لاحقًا.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>سيطلب منك بريدك أيضًا ما إذا كنت ترغب في <link linkend="editing-contact-data"
+>تحرير المتراسل الجديد</link
+> الذي أُضيف للتو. اضغط <guibutton
+>&nbsp;✔&nbsp;نعم&nbsp;</guibutton
+> إذا كنت تريد إضافة المزيد من البيانات إلى المدخلة الجديدة على الفور.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  </sect2>
+
+  </sect1>
+
+  <sect1 id="korganizer-overview">
+  <title
+>واجهة دفتر عناوينك مع منظمك</title>
+
+  <para
+>منظمك، برنامج جدولة كيدي وإدارة التقاويم، يسمح لك بإرسال رسائل بريد إلكتروني إلى الأشخاص الذين تريد دعوتهم إلى اجتماع، ويوفر واجهتين مع دفتر عناوينك في هذا الصدد.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  <para>
+  <screenshot id="screenshot-inviting-one-attendee">
+      <screeninfo
+>لقطة شاشة للسان الحاضرين في منظمك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook60.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة للسان الحاضرين في منظمك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>إضافة حاضر واحد إلى اجتماع مجدول في منظمك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>الواجهة الأولى تشبه تمامًا <link linkend="autocompletion-feature-on-new-email"
+>ميزة الإكمال الآلي</link
+> التي يوفرها بريدك: ما عليك سوى البدء في كتابة اسم الشخص الذي تريد دعوته، وستُعرض عليك قائمة بالمطابقات المحتملة، كما هو موضح أعلاه.</para>
+  <para
+>&nbsp;</para
+> <!-- add more white space before next section @dcb -->
+
+  <para>
+  <screenshot id="screenshot-inviting-multiple-attendees">
+      <screeninfo
+>لقطة شاشة للسان الحاضرين في منظمك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook61.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان الحاضرين في منظمك.</phrase>
+    </textobject>
+    <caption>
+        <para
+>إضافة حاضرين متعددين إلى اجتماع مجدول في منظمك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+  <para
+>الواجهة الثانية تشبه تمامًا <link linkend="recipient-selection-dialog"
+>مربع حوار اختيار المستلمين</link
+> الذي يوفره بريدك: عندما تنقر بالزر الأيسر فوق زر <guibutton
+>&nbsp;اختر الحاضرين ...&nbsp;</guibutton
+>، ستظهر قائمة قابلة للبحث للمتراسلين في جميع دفاتر عناوينك، كما تظهر لقطة الشاشة السابقة.</para>
+
+  </sect1>
+
+</chapter>
+
+<chapter id="editing-contact-data">
+<title
+>إضافة أو تحرير بيانات المتراسل</title>
+
+  <sect1 id="edit-basic-info">
+  <title
+>الأساسيات</title>
+
+  <para
+>عند النقر لأول مرة على زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أضف متراسلًا&nbsp;&nbsp;</guibutton
+> في شريط أدوات دفتر عناوينك، ستظهر هذه الشاشة. (إذا نقرت على زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>حرر المتراسل&nbsp;&nbsp;</guibutton
+>، ستظهر شاشة مماثلة، والفرق الوحيد هو أن القائمة المنسدلة المسماة <quote
+>أضف إلى:</quote
+> لن تظهر كجزء من مربع حوار <quote
+>التحرير</quote
+>. ولهذا السبب شُرحت كلتا الوظيفتين في هذا الفصل: فهما متطابقتان عمليًا.)</para>
+
+  <para>
+  <screenshot id="screenshot-new-contact-dialog-2">
+      <screeninfo
+>لقطة شاشة لمربع حوار <quote
+>متراسل جديد</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook40.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لقطة شاشة لمربع حوار <quote
+>متراسل جديد</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>مربع حوار <quote
+>أضف متراسلًا</quote
+> في دفتر عناوينك بعد النقر فوق زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>أضف متراسلًا&nbsp;&nbsp;</guibutton
+> في شريط الأدوات.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <sect2 id="edit-contact-tab">
+  <title
+>لسان المتراسل</title>
+
+  <para
+>لقد رأينا بالفعل (في <link linkend="how-to-add-a-new-contact"
+>كيفية إضافة متراسل جديد</link
+>) كيفية إدخال البيانات الأساسية مثل الاسم والبريد الإلكتروني عند إنشاء سجل متراسل جديد. إليك وصف للطرق العديدة لاستخدام بقية حقول البيانات التي يمكن الوصول إليها من لسان <quote
+>المتراسل</quote
+> في مربع حوار <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>أضف متراسلًا&nbsp;&nbsp;</guibutton
+>.</para>
+
+  <variablelist>
+
+    <varlistentry
+><term
+>الهاتف</term
+><listitem
+><para
+>يمكنك ربط رقم هاتف واحد أو أكثر بهذا الشخص. استخدم زري <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> و <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> لإضافة أو حذف حقول أرقام الهاتف. تتيح لك القائمة المنسدلة <guibutton
+>&nbsp;المنزل<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> تحديد خمس عشرة فئة من أرقام الهواتف (منزل، عمل، هاتف محمول، سيارة، <glossterm linkend="gloss-isdn"
+><acronym
+>ISDN</acronym
+></glossterm
+>، <glossterm linkend="gloss-pcs"
+><acronym
+>PCS</acronym
+></glossterm
+>، إلخ.)</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>المراسلة</term
+><listitem
+><para
+>يمكنك ربط هوية خدمة مراسلة فورية واحدة أو أكثر بهذا الشخص. استخدم زري <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> و <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> لإضافة أو حذف حقول خدمة المراسلة. تتيح لك القائمة المنسدلة <guibutton
+>&nbsp;اختر ...<inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> تحديد ثلاث عشرة فئة من خدمات المراسلة الفورية: <glossterm linkend="gloss-aim"
+>AIM</glossterm
+>، و فيسبوك، و <glossterm linkend="gloss-gadu-gadu"
+>Gadu-Gadu</glossterm
+>، و Google Talk، و <glossterm linkend="gloss-gpws"
+>GroupWise</glossterm
+>، و <glossterm linkend="gloss-icq"
+><acronym
+>ICQ</acronym
+></glossterm
+>، و <glossterm linkend="gloss-irc"
+>آي آر سي</glossterm
+>، و <glossterm linkend="gloss-jabber"
+>Jabber</glossterm
+>، و <glossterm linkend="gloss-mnwhl"
+>Meanwhile</glossterm
+>، و <glossterm linkend="gloss-sms"
+><acronym
+>SMS</acronym
+></glossterm
+>، و سكايب، و تويتر، و ياهو. (لا يزال MSN Messenger مدرجًا في قائمة خدمات المراسلة الفورية في الإصدار 5.10.3؛ مع أنه متوقف منذ عام 2014.)</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>الويب</term
+><listitem
+><para
+>يمكنك ربط عنوان URL لموقع ويب واحد أو أكثر بهذا الشخص. استخدم زري <guibutton
+>&nbsp;&plus;&nbsp;</guibutton
+> و <guibutton
+>&nbsp;&minus;&nbsp;</guibutton
+> لإضافة أو حذف حقول عناوين الويب. تتيح لك القائمة المنسدلة <guibutton
+>&nbsp;اختر ...<inlinemediaobject
+><imageobject
+> <imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> تحديد ثلاثة أنواع مختلفة من عناوين الويب: منزل، وعمل، وأخرى.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>الوسوم</term
+><listitem
+><para
+>يمكنك ربط وسم واحد أو أكثر من ابتكارك الخاص بهذا الشخص. استخدم زر <guibutton
+>&nbsp;...&nbsp;</guibutton
+> للدخول إلى مربع حوار إنشاء وضبط الوسوم الموضح أدناه.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para>
+  <screenshot id="screenshot-add-tags-dialog">
+      <screeninfo
+>مربع حوار <quote
+>الوسوم</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook71.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>مربع حوار <quote
+>الوسوم</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>مربع حوار <quote
+>إدارة الوسوم</quote
+> في دفتر عناوينك بعد النقر فوق زر <guibutton
+>&nbsp;...&nbsp;</guibutton
+> بجانب <quote
+>الوسوم</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+    <varlistentry
+><term
+>الوسوم (تابع)</term
+><listitem
+><para
+>استخدم زر <guibutton
+>&nbsp;أنشئ وسمًا جديدًا&nbsp;</guibutton
+> وحقل إدخال البيانات الموجود على اليسار لبناء قائمتك المخصصة من الوسوم. اختر الوسوم المرتبطة بهذا الشخص من القائمة التي تظهر في نافذة الضبط. اضغط زر <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+> لإضافة الوسوم المحددة إلى هذا المتراسل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>تلقيمة المدونة</term
+><listitem
+><para
+>استخدم هذا الحقل لتسجيل عنوان URL المرتبط بمدونة هذا المتراسل على الويب.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>أظهر الرسائل ...</term
+><listitem
+><para
+>استخدم هذه القائمة المنسدلة لتجاوز خيار عرض الرسائل المقابل في قائمة ضبط <guibutton
+>&nbsp;الخصوصية والأمان&nbsp;</guibutton
+> في بريدك. اختر <quote
+>مبدئي</quote
+> لترك الأمر لبريدك. اختر <quote
+>نص مجرد</quote
+> أو <quote
+>HTML</quote
+> إذا كنت تريد تجاوز سلوك بريدك المبدئي عند تلقي رسالة من هذا الشخص.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>اسمح بالمحتوى البعيد ...</term
+><listitem
+><para
+>اختر هذا الخيار إذا كنت تريد تجاوز خيار عرض الرسائل المقابل في قائمة ضبط <guibutton
+>&nbsp;الخصوصية والأمان&nbsp;</guibutton
+> في بريدك عند تلقي رسالة من هذا الشخص.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+><guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+></term
+><listitem
+><para
+>اختر هذا الخيار لحفظ التغييرات التي أجريتها. يؤدي هذا الزر الوظيفة نفسها في جميع الألسنة السبعة التي تظهر في مربع حوار <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أضف متراسلًا&nbsp;&nbsp;</guibutton
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+><guibutton
+>&nbsp;⦸&nbsp;ألغِ&nbsp;</guibutton
+></term
+><listitem
+><para
+>اختر هذا الخيار لمغادرة مربع حوار <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>أضف متراسلًا&nbsp;&nbsp;</guibutton
+> دون حفظ تغييراتك. يؤدي هذا الزر الوظيفة نفسها في جميع الألسنة السبعة التي تظهر في مربع حوار <quote
+>أضف متراسلًا</quote
+>.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+
+  </sect2>
+
+  <sect2 id="edit-location-tab">
+  <title
+>لسان الموقع</title>
+
+  <para
+>استخدم حقول إدخال البيانات في لسان <quote
+>الموقع</quote
+> الموضح أدناه لربط عنوان بريد عادي واحد أو أكثر بهذا الشخص.</para>
+
+  <para>
+  <screenshot id="screenshot-location-tab">
+      <screeninfo
+>لسان <quote
+>الموقع</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook72.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>الموقع</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>الموقع</quote
+> في دفتر عناوينك، وهو جزء من مربع حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+    <varlistentry
+><term
+>قائمة منسدلة (بدون تسمية)</term
+><listitem
+><para
+>استخدم قائمة الفئات هذه لوصف كل عنوان بريدي لهذا المتراسل. تشمل الخيارات المتاحة <quote
+>منزل</quote
+>، و <quote
+>عمل</quote
+>، و <quote
+>بريدي</quote
+>، إلخ.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>الشارع / صندوق البريد / الرمز البريدي / المحلة / المنطقة</term
+><listitem
+><para
+>استخدم حقول البيانات ذات التنسيق الحر هذه لإدخال بيانات العنوان البريدي: عنوان الشارع، وصندوق البريد، والرمز البريدي، والمدينة، والولاية، على التوالي، للعناوين في الولايات المتحدة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>البلد</term
+><listitem
+><para
+>استخدم هذه القائمة المنسدلة لاختيار بلد، من أفغانستان إلى زيمبابوي.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>هذا هو العنوان المفضل</term
+><listitem
+><para
+>أشر إلى هذا المربع لتعيين العنوان البريدي المفضل، أو المبدئي.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+><guibutton
+>&nbsp;أضف عنوانًا&nbsp;</guibutton
+></term
+><listitem
+><para
+>عند الانتهاء من إدخال بيانات العنوان، انقر بالزر الأيسر فوق هذا الزر لإضافة عنوان جديد إلى مجموعة العناوين المحفوظة التي تظهر في نافذة العرض الكبيرة على اليمين.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>أيقونة <inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+> في نافذة العرض الكبيرة</term>
+    <listitem
+><para
+>انقر بالزر الأيسر فوق هذه الأيقونة لتحرير بيانات العنوان المرتبطة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>أيقونة <inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+> في نافذة العرض الكبيرة</term>
+    <listitem
+><para
+>انقر بالزر الأيسر فوق هذه الأيقونة لحذف بيانات العنوان المرتبطة.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+  <para
+>&nbsp;</para
+> <!-- add more white space after variablelist @dcb -->
+  </sect2>
+
+  <sect2 id="edit-business-tab">
+  <title
+>ألسنة العمل، وشخصي، وملاحظات</title>
+
+  <para
+>ألسنة الثلاثة التالية في مربع حوار <quote
+>أضف متراسلًا</quote
+> أبسط حتى من لسان <quote
+>الموقع</quote
+>. وهي تسمح لك بحفظ بعض المعلومات حول انتماءات هذا الشخص التجارية والمهنية، وبعض التفاصيل الشخصية، وملاحظات متنوعة ذات تنسيق حر، على التوالي.</para>
+
+  <para>
+  <screenshot id="screenshot-business-tab">
+      <screeninfo
+>لسان <quote
+>العمل</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook73.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>العمل</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>العمل</quote
+> في دفتر عناوينك، وهو جزء من مربع حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>يتيح لك لسان <quote
+>العمل</quote
+>، الموضح أعلاه، حفظ بعض التفاصيل الإضافية حول الارتباطات المهنية والتجارية لهذا الشخص. جميع حقول الإدخال ذات تنسيق حر؛ يمكنك إدخال أي نوع من البيانات النصية في كل حقل. سيفتح زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> الصغير مربع حوار بحث عن ملف، مما يسهل ربط اسم ملف بجدول <quote
+>متوفر/مشغول</quote
+> لهذا الشخص، إذا رغبت في ذلك.</para>
+
+  <para
+>لاحظ أنه يجب عليك إدخال هاتف زميل العمل كرقم هاتف تحت لسان <quote
+><link linkend="edit-contact-tab"
+>المتراسل</link
+></quote
+>. وبالمثل، يُدخل عنوان مكتبه عبر لسان <quote
+>الموقع</quote
+>، كما هو موضح في <link linkend="edit-location-tab"
+>القسم السابق</link
+>.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-personal-tab">
+      <screeninfo
+>لسان <quote
+>شخصي</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook74.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>شخصي</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>شخصي</quote
+> في دفتر عناوينك، وهو جزء من حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>استخدم هذا اللسان لتخزين بعض التفاصيل الشخصية: عيد ميلاد هذا الشخص، وذكرى زواجه، واسم شريكه أو شريكته. انقر فوق أحد الأزرار (مثل: <guibutton
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="view-calendar-birthday.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+>&nbsp;) لإدخال تاريخ ميلاده، أو ذكرى زواجه. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space before next screenshot @dcb -->
+  <para>
+  <screenshot id="screenshot-notes-tab">
+      <screeninfo
+>لسان <quote
+>ملاحظات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook75.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>ملاحظات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>ملاحظات</quote
+> في دفتر عناوينك، وهو جزء من حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>يوفر لسان <quote
+>ملاحظات</quote
+> منطقة إدخال حرة تمامًا يمكنك فيها إدخال أي بيانات تريد ربطها بهذا الشخص.</para>
+
+  </sect2>
+
+  </sect1>
+
+  <sect1 id="edit-advanced-info">
+  <title
+>الأشياء المعقدة</title>
+
+  <para
+>يوفر دفتر عناوينك ميزتين إضافيتين لتخزين البيانات أكثر تعقيدًا، بالإضافة إلى الوظائف البسيطة الموضحة في القسم السابق.</para>
+
+  <sect2 id="edit-custom-tab">
+  <title
+>لسان الحقول المخصصة</title>
+
+  <para
+>ألست راضيًا عن المجموعة الواسعة من عناصر البيانات التي برمجها دفتر عناوينك لك مسبقًا؟ حسنًا، أنت محظوظ. يوما ما -- ربما قريبًا -- قد تستخدم حوار <quote
+>حقول مخصصة</quote
+> الموضح أدناه لتعريف وملء عدد من حقول البيانات الإضافية بقدر ما تستطيع استخدامه.</para>
+
+  <para>
+  <screenshot id="screenshot-custom-tab">
+      <screeninfo
+>لسان <quote
+>حقول مخصصة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook76.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>حقول مخصصة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>حقول مخصصة</quote
+> في دفتر عناوينك، وهو جزء من حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>هذه ميزة تجريبية لا تفعل شيئًا يستحق الحديث عنه بعد. لذا لن أقول أي شيء آخر عنها.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="edit-crypto-tab">
+  <title
+>لسان إعدادات التعمية</title>
+
+  <para
+>هل تحتاج إلى إرسال رسالة بريد إلكتروني سرية لا ينبغي أن تقرأها الأعين المتطفلة؟ يوفر دفتر عناوينك طريقة بسيطة لربط مفاتيح التعمية مع كل شخص في قائمة مراسلاتك.</para>
+
+  <para>
+  <screenshot id="screenshot-crypto-tab">
+      <screeninfo
+>لسان <quote
+>إعدادات التعمية</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook77.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>لسان <quote
+>إعدادات التعمية</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>لسان <quote
+>إعدادات التعمية</quote
+> في دفتر عناوينك، وهو جزء من حوار <quote
+>أضف متراسلًا</quote
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+<variablelist>
+    <varlistentry
+><term
+>البروتوكولات المسموح بها</term
+><listitem
+><para
+>اختر وضع التعمية الذي ترغب في استخدامه عند إرسال رسالة إلى هذا الشخص: <glossterm linkend="gloss-inline-pgp"
+>Inline OpenPGP</glossterm
+>، أو <glossterm linkend="gloss-open-pgp"
+>OpenPGP/MIME</glossterm
+>، أو <glossterm linkend="gloss-mime"
+><acronym
+>S/MIME</acronym
+></glossterm
+>، أو <glossterm linkend="gloss-opaque"
+><acronym
+>S/MIME</acronym
+> مُعتم</glossterm
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>مفتاح تعمية OpenPGP المفضل:</term
+><listitem
+><para
+>استخدم زر <guibutton
+>&nbsp;غيّر...&nbsp;</guibutton
+> للاختيار من قائمة مفاتيح Open<glossterm linkend="gloss-pgp"
+>PGP</glossterm
+> المتاحة، إذا كنت قد اخترت تعمية OpenPGP. استخدم زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> لمسح مفتاح اختير مسبقًا.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>شهادة تعمية <acronym
+>S/MIME</acronym
+> المفضلة:</term>
+    <listitem
+><para
+>استخدم زر <guibutton
+>&nbsp;غيّر...&nbsp;</guibutton
+> للاختيار من قائمة الشهادات المتاحة، إذا كنت تستخدم مفتاحًا موثقًا. استخدم زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> لمسح مفتاح اختير مسبقًا.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>تفضيلات الرسالة / التوقيع:</term
+><listitem
+><para
+>استخدم هذا المربع المنسدل لتحديد متى يجب أن تحمل الرسائل الموجهة لهذا الشخص توقيعك التعموي: أبدًا / دائمًا / إن أمكن / اسأل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry
+><term
+>تفضيلات الرسالة / التعمية:</term
+><listitem
+><para
+>استخدم هذا المربع المنسدل لتحديد متى يجب تعمية الرسائل الموجهة لهذا الشخص باستخدام البروتوكول والمفتاح المختارين: أبدًا / دائمًا / إن أمكن / اسأل.</para
+></listitem>
+    </varlistentry>
+
+</variablelist>
+
+  </sect2>
+
+  </sect1>
+
+</chapter>
+
+<chapter id="commands">
+<title
+>مرجع الأوامر</title>
+
+  <sect1 id="menu-bar-items">
+  <title
+>شريط القوائم</title>
+
+  <para
+>إليك ملخص للقوائم السبع التي تظهر في شريط قوائم دفتر عناوينك.</para>
+
+
+  <sect2 id="the-file-menu">
+  <title
+>قائمة ملف</title>
+
+  <para>
+  <screenshot id="screenshot-file-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>ملف</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook80.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>ملف</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>ملف</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>ملف</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تتيح لك قائمة <menuchoice
+><guimenu
+>ملف</guimenu
+></menuchoice
+> الوصول إلى ست وظائف رئيسة، ثلاث منها لديها عدة خيارات.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+>جديد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/></imageobject
+></inlinemediaobject
+>متراسل جديد</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>هذا له نفس التأثير تمامًا مثل النقر فوق زر <guibutton
+>&nbsp;+&nbsp;متراسل جديد&nbsp;</guibutton
+> في شريط الأدوات. انظر <link linkend="how-to-add-a-new-contact"
+>الفصل 2 أعلاه</link
+> للحصول على كامل التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+>جديد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>مجموعة جديدة</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح حوارًا يمكنك من خلاله تعريف مجموعة جديدة أو قائمة مراسلات. انظر <link linkend="file-new-group"
+>الملحق</link
+> للحصول على شرح مفصل لهذه الوظيفة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>جديد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="folder-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أضف دفتر عناوين</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح هذا حوار <quote
+>أضف دفتر عناوين</quote
+>، الموثق بالكامل في <link linkend="how-to-add-a-new-address-book"
+>الفصل 2 أعلاه</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استورد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد من خادوم LDAP ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة استيراد البيانات من خادوم <acronym
+>LDAP</acronym
+>. يجب أن يُضبط الخادوم قبل أن تتمكن من استخدام هذه الوظيفة. انظر <link linkend="configure-ldap-server"
+>الملحق</link
+> للحصول على كامل التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استورد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد ملف CSV ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة استيراد بيانات المتراسلين من ملف قيم مفصولة بفواصل (<acronym
+>csv</acronym
+>). يتبع ذلك حوار يمكنك فيه ربط كل حقل في ملف الإدخال بحقل مسمى في سجل التخزين الداخلي لدفتر عناوينك. انظر <link linkend="import-csv-data"
+>الملحق</link
+> للحصول على شرح أكثر تفصيلًا.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استورد&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد vCard ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تسهل هذه الوظيفة استيراد بيانات <acronym
+>vcf</acronym
+> أو vCard. جميع إصدارات vCard الثلاثة مدعومة. يمكنك معرفة المزيد عن تنسيقات vCard <ulink url="https://en.wikipedia.org/wiki/VCard"
+>في هذا الموقع الإلكتروني</ulink
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>صدّر&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدّر ملف CSV ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة تصدير بيانات المتراسلين المحددة كملف قيم مفصولة بفواصل (<acronym
+>csv</acronym
+>). يوجد 47 حقلًا في سجل الإخراج. يرجى الرجوع إلى <link linkend="export-csv-data"
+>الملحق</link
+> للحصول على قائمة بحقول البيانات تلك.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>صدّر&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدّر vCard 4.0 ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة تصدير بيانات المتراسلين المحددة كملف بتنسيق <acronym
+>vCard 4.0</acronym
+>. انظر <ulink url="https://en.wikipedia.org/wiki/VCard"
+>مقالة ويكيبيديا هذه</ulink
+> لمزيد من المعلومات.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>صدّر&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدّر vCard 3.0 ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة تصدير بيانات المتراسلين المحددة كملف بتنسيق <acronym
+>vCard 3.0</acronym
+>. هذا التنسيق مشابه لتنسيق <acronym
+>vCard 4.0</acronym
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>صدّر&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدّر vCard 2.1 ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>تتيح لك هذه الوظيفة تصدير بيانات المتراسلين المحددة كملف بتنسيق <acronym
+>vCard 2.1</acronym
+>. هذا التنسيق مشابه لتنسيق <acronym
+>vCard 3.0</acronym
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>اطبع</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح حوار اختيار الطابعة. استخدم حوار <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>معاينة الطباعة</guisubmenu
+></menuchoice
+> أدناه لضبط نطاق الأسماء وتنسيق الطباعة قبل اختيار هذه الوظيفة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>معاينة الطباعة</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح حوار معاينة الطباعة، والذي يسمح لك أيضًا بتنسيق التقرير، واختيار العناصر التي تريد تضمينها، وتحديد ترتيب الفرز، إلخ. انظر <link linkend="file-print-preview"
+>الملحق</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-exit.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>أنهِ</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يغلق تطبيق دفتر عناوينك.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-edit-menu">
+  <title
+>قائمة حرر</title>
+
+  <para>
+  <screenshot id="screenshot-edit-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>حرر</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook81.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>حرر</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>حرر</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>حرر</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تتيح لك قائمة <menuchoice
+><guimenu
+>حرر</guimenu
+></menuchoice
+> الوصول إلى ثماني وظائف رئيسة، اثنتان منها لديها خيارات متعددة.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>حرر المتراسل ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>هذا له نفس التأثير تقريبًا مثل النقر فوق زر <guibutton
+>&nbsp;+&nbsp;متراسل جديد&nbsp;</guibutton
+> في شريط الأدوات. الفرق هو أن عنصر القائمة هذا يسمح لك بتحرير سجل متراسل موجود بالفعل، بدلًا من إنشاء سجل جديد تمامًا. انظر <link linkend="how-to-add-a-new-contact"
+>الفصل 2 أعلاه</link
+> للحصول على كامل التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+></shortcut
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-cut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>قص المتراسل ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>ينفذ عملية <quote
+>قص</quote
+> على المتراسل المختار. توضع نسخة من هذا المتراسل، بتنسيق <glossterm linkend="gloss-vcf"
+><acronym
+>vCard 3.0</acronym
+></glossterm
+>، في الحافظة. ستكتمل عملية <quote
+>القص</quote
+> عندما تقوم بـ <quote
+>لصق</quote
+> هذا المتراسل في مكان ما.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>انسخ المتراسل ...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يضع نسخة من هذا المتراسل في الحافظة، لكي تتمكن من لصقها في مكان آخر.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-paste.png" format="PNG"/></imageobject
+></inlinemediaobject
+>الصق</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يقوم بـ <quote
+>لصق</quote
+> المتراسل المقصوص أو المنسوخ في الموقع الحالي. قد يكون هذا في نفس دفتر العناوين الذي قمت بـ <quote
+>القص</quote
+> أو <quote
+>النسخ</quote
+> منه، أو في دفتر عناوين آخر. بما أن العمليات السابقة وضعت معلومات المتراسل في حافظة النظام، يمكنك أيضًا لصقها في مكان آخر غير دفتر عناوينك (مثل: في محرر نصوص، أو كملف <acronym
+>vCard 3.0</acronym
+> في مجلدك المنزلي).</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>انسخ المتراسل إلى &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(قائمة متغيرة)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>يدمج عمليتي <quote
+>النسخ</quote
+> و <quote
+>اللصق</quote
+> في نقرة واحدة بزر الفأرة الأيسر. تعتمد قائمة الوجهات المعروضة على عدد دفاتر العناوين التي أنشأتها.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>انقل المتراسل إلى &nbsp; &gt;</guisubmenu
+><guimenuitem
+>(قائمة متغيرة)</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>يعمل تمامًا مثل عملية <quote
+>انسخ المتراسل إلى</quote
+> الموضحة أعلاه، إلا أنه يدمج <quote
+>القص</quote
+> و <quote
+>اللصق</quote
+> في نقرة واحدة بزر الفأرة الأيسر.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>احذف المتراسل</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>احذف المتراسل المختار من دفتر العناوين الحالي.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حرر</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>احذف دفتر العناوين</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>احذف دفتر العناوين الحالي. كن حذرًا مع هذا الأمر -- فقد تفقد بعض البيانات! من الناحية النظرية، تزيل هذه الوظيفة ببساطة الوصلة الرمزية بين دفتر عناوينك وملف أو دليل <acronym
+>vCard</acronym
+> المرتبط به (أو الارتباط التشعبي لخدمة سحابية)، ولن تُعدّل البيانات الحقيقية. ومع ذلك، فمن الحكمة على الأرجح عمل نسخة احتياطية من دفتر العناوين هذا في مكان ما قبل حذفه.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-view-menu">
+  <title
+>قائمة عرض</title>
+
+  <para>
+  <screenshot id="screenshot-view-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>عرض</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>عرض</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>عرض</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>عرض</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تتيح لك قائمة <menuchoice
+><guimenu
+>عرض</guimenu
+></menuchoice
+> الوصول إلى أربع وظائف رئيسة، وميزة تجريبية واحدة لا تفعل أي شيء حقًا بعد.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>عرض</guimenu
+><guisubmenu
+>السمات &nbsp; &gt;</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>عنصر القائمة هذا لا يفعل شيئًا حقًا. سيفتح حوار <quote
+>السمات</quote
+>، لكن هذا الحوار معطل في الإصدار 5.10.3.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>1</keycap
+></keycombo
+></shortcut
+> <guimenu
+>عرض</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>بسيط (عمود واحد)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يغير تخطيط اللوحات الثلاث المبدئي إلى عمود واحد. لمزيد من التفاصيل، انظر <link linkend="view-change-columns"
+>الملحق</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>2</keycap
+></keycombo
+></shortcut
+> <guimenu
+>عرض</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>عمودان</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يغير تخطيط اللوحات الثلاث المبدئي إلى لوحتين. لمزيد من التفاصيل، انظر <link linkend="view-change-columns"
+>الملحق</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>3</keycap
+></keycombo
+></shortcut
+> <guimenu
+>عرض</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-circle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>ثلاثة أعمدة</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يعود إلى تخطيط اللوحات الثلاث المبدئي.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>عرض</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أظهر رموز الاستجابة السريعة (QR)</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>حدد هذا المربع لعرض معلومات المتراسل كرمز استجابة سريعة. ألغِ تحديده لإخفاء رموز الاستجابة السريعة.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-action-menu">
+  <title
+>قائمة إجراء</title>
+
+  <para>
+  <screenshot id="screenshot-action-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>إجراء</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook83.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>إجراء</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>إجراء</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>إجراء</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تتيح لك قائمة <menuchoice
+><guimenu
+>إجراء</guimenu
+></menuchoice
+> الوصول إلى وظيفتين لنقل البيانات.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إجراء</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أرسل vCards...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>هذا الخيار مشابه لـ <quote
+>أرسل بريدًا إلكترونيًا...</quote
+> أدناه، إلا أنه بعد اختيار بعض المتراسلين باستخدام مفتاح &Ctrl; والفأرة، ستفتح نافذة إنشاء الرسائل مع قائمة فارغة من المرسلين إليهم، ومع ملفات مرفقة (المتراسلون المختارون بتنسيق vCard 3.0). وهذا يسهل مشاركة معلومات محددة من دفتر عناوينك مع أصدقائك وشركائك في العمل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إجراء</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="mail-message-new.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أرسل بريدًا إلكترونيًا...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يوفر هذا الخيار طريقة بديلة لتعيين قائمة مستلمي رسالة بريد إلكتروني جديدة. اضغط على &Ctrl; (أو &Shift;) واختر الأشخاص الذين ترغب في إرسال الرسالة الجديدة إليهم باستخدام زر الفأرة الأيسر. ثم انقر فوق <quote
+>أرسل بريدًا إلكترونيًا...</quote
+>؛ سيؤدي هذا إلى فتح نافذة إنشاء بريدك. سيُدرج جميع المتراسلين المختارين في خانة المستلم <quote
+>إلى</quote
+>.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-tools-menu">
+  <title
+>قائمة أدوات</title>
+
+  <para>
+  <screenshot id="screenshot-tools-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>أدوات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook84.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>أدوات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>أدوات</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>أدوات</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تتيح لك قائمة <menuchoice
+><guimenu
+>أدوات</guimenu
+></menuchoice
+> الوصول إلى وظيفتين لإدارة البيانات.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>أدوات</guimenu
+><guisubmenu
+>ادمج المتراسلين...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>تسمح لك هذه الأداة بدمج محتويات سجلين أو أكثر من سجلات دفتر عناوينك. لتنشيطها، يجب أولًا اختيار متراسلين أو أكثر (استمر في الضغط على &Ctrl; أو &Shift; وانقر بزر الفأرة الأيسر على المتراسلين لإجراء اختيارك). سيظهر مربع حوار يطلب منك التحقق من المتراسلين الذين ترغب في دمجهم، ومكان حفظ السجل المدمج. انقر فوق <quote
+>ادمج</quote
+> لإكمال العملية.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>أدوات</guimenu
+><guisubmenu
+>ابحث عن متراسلين مكررين...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>ستبحث هذه الأداة في دفتر عناوين واحد أو أكثر عن المدخلات المكررة، وتعرض عليك خيار دمج أي سجلات مكررة تجدها.</para
+></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-settings-menu">
+  <title
+>قائمة إعدادات</title>
+
+  <para>
+  <screenshot id="screenshot-settings-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>إعدادات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook85.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>إعدادات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>إعدادات</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>إعدادات</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  <para
+>تقدم لك قائمة <menuchoice
+><guimenu
+>إعدادات</guimenu
+></menuchoice
+> خمسة خيارات لضبط الطريقة التي يعمل بها دفتر عناوينك بدقة.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+><inlinemediaobject
+><imageobject
+><imagedata fileref="show-menu.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أظهر شريط القوائم</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>يسمح لك هذا الخيار بإظهار شريط القوائم أو إخفائه.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="draw-rectangle.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أظهر شريط الأدوات</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يسمح لك هذا الخيار بإظهار شريط الأدوات أو إخفائه.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط الاختصارات...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يسمح لك هذا الخيار بتخصيص اختصارات لوحة المفاتيح المتاحة داخل دفتر عناوينك. انظر <link linkend="settings-configure-shortcuts"
+>الملحق</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط أشرطة الأدوات...</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يسمح لك هذا الخيار بتخصيص محتويات شريط أدوات دفتر عناوينك. انظر <link linkend="settings-configure-toolbars"
+>الملحق</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط دفتر عناوينك...</guisubmenu
+></menuchoice
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>,</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>يسمح لك هذا الخيار بضبط العديد من خيارات دفتر عناوينك المتقدمة. انظر <link linkend="settings-configure-kaddressbook"
+>الملحق</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-help-menu">
+  <title
+>قائمة مساعدة</title>
+
+  <para>
+  <screenshot id="screenshot-help-menu">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>مساعدة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook86.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>مساعدة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>مساعدة</quote
+> في دفتر عناوينك بعد النقر فوق زر <menuchoice
+><guimenu
+>مساعدة</guimenu
+></menuchoice
+> في شريط القوائم.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تقدم قائمة <menuchoice
+><guimenu
+>مساعدة</guimenu
+></menuchoice
+> سبعة خيارات.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="system-help.png" format="PNG"/></imageobject
+></inlinemediaobject
+>كتيب دفتر عناوينك</guisubmenu
+></menuchoice
+> <keycombo action="press"
+><keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>يعرض هذا الخيار نسخة من <quote
+>كتيب دفتر عناوينك</quote
+> عبر برنامج مركز مساعدة كيدي المساعد.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="help-about.png" format="PNG"/></imageobject
+></inlinemediaobject
+>ما هذا؟</guisubmenu
+></menuchoice
+><keycombo action="simul"
+>&Shift; <keycap
+>F1</keycap
+></keycombo
+></term>
+    <listitem
+><para
+>هذه هي أداة المساعدة المدمجة في دفتر عناوينك. انقر بزر الفأرة الأيسر على هذا الخيار، ثم حرك المؤشر وانقر فوق أي من العناصر الأربعة الأولى في شريط الأدوات. سيُعرض وصف موجز لوظيفة تلك الأداة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="tools-report-bug.png" format="PNG"/></imageobject
+></inlinemediaobject
+>أبلغ عن علة</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح هذا الخيار حوارًا يساعدك في تقديم تقرير عن علة في bugs.kde.org، صفحة تتبع العلل الرئيسة في كيدي.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="application-x-ms-shortcut.png" format="PNG"/></imageobject
+></inlinemediaobject
+>تبرع</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح هذا صفحة ويب في متصفحك، حيث يمكنك التبرع بالمال لدعم كيدي. نحن نقبل اليورو والدولار والروبل والاسترليني والين واليوان والبيزو وغيرها.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-language.png" format="PNG"/></imageobject
+></inlinemediaobject
+>بدل لغة التطبيق</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يتيح لك هذا الخيار تغيير اللغة المستخدمة لتسمية عناصر القوائم المختلفة وشاشات المساعدة المدمجة. يجب عليك إنهاء دفتر عناوينك وإعادة تشغيله قبل أن تدخل اللغة الجديدة حيز التنفيذ.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="kaddressbook.png" format="PNG"/></imageobject
+></inlinemediaobject
+>عن دفتر عناوينك</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>انقر فوق هذا العنصر لمعرفة إصدار دفتر عناوينك الذي تقوم بتشغيله، والمكتبات التي استخدمت لتصريف / بناء التعليمات البرمجية القابلة للتنفيذ، ومن هو مبرمج كيدي الرائد.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="KDE_logo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>عن كيدي</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يعرض هذا الخيار معلومات عن كيدي. كن حرًا!</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  </sect2>
+
+  </sect1>
+
+  <sect1 id="tool-bar-items">
+  <title
+>شريط الأدوات</title>
+
+  <para
+>هناك خمس أدوات منفصلة متاحة في شريط أدوات دفتر عناوينك: <quote
+>متراسل جديد</quote
+>، و<quote
+>مجموعة جديدة</quote
+>، و<quote
+>حرر المتراسل</quote
+>، و<quote
+>ابحث...</quote
+>، ومرشح فئات. إليك صورة. (لاحظ أنني وثقت فقط النسخة المبدئية لشريط أدوات دفتر عناوينك. يمكنك تغيير تخطيط شريط الأدوات باستخدام قائمة <link linkend="the-settings-menu"
+> <quote
+>إعدادات</quote
+></link
+> إذا كنت ترغب في ذلك.)</para>
+
+  <para>
+  <screenshot id="screenshot-tool-bar">
+      <screeninfo
+>لقطة مقربة لشريط أدوات دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook87.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة مقربة لشريط أدوات دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>شريط أدوات دفتر عناوينك القياسي، عن قرب وبشكل شخصي.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>متراسل جديد</guibutton
+></term>
+    <listitem
+><para
+>يفتح زر شريط الأدوات هذا حوار <quote
+>أضف متراسلًا جديدًا</quote
+> الموثق في <link linkend="edit-basic-info"
+>الفصل 4</link
+> أعلاه.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>مجموعة جديدة</guibutton
+></term>
+    <listitem
+><para
+>يفتح زر شريط الأدوات هذا حوار <quote
+>أضف مجموعة جديدة</quote
+> الموثق في <link linkend="file-new-group"
+>الملحق</link
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>حرّر المتراسل</guibutton
+></term>
+    <listitem
+><para
+>يفتح زر شريط الأدوات هذا حوار <quote
+>حرّر المتراسل</quote
+> الموثق في <link linkend="edit-basic-info"
+>الفصل 4</link
+> أعلاه.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>[ ابحث...&nbsp;<keycombo action="simul"
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ]</term>
+    <listitem
+><para
+>تبحث هذه الأداة في كافة المتراسلين في دفاتر العناوين المحددة أثناء الكتابة. يؤدي الضغط على <keycombo
+>&Alt;<keycap
+>Q</keycap
+></keycombo
+> ببساطة إلى وضع المؤشر داخل مربع <quote
+>ابحث...</quote
+>. انتبه إلى أن هذه الوظيفة تبحث في كامل سجل المتراسل؛ فالبحث عن <quote
+>and</quote
+> قد يعيد ليس فقط Andy Brown و Andrew Jones، بل وأيضًا Bill Smith (الذي يعمل في شركة Brown and Root Construction Company).</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-search">
+      <screeninfo
+>لقطة شاشة لوظيفة <quote
+>البحث</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook91.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لوظيفة <quote
+>البحث</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>وظيفة <quote
+>البحث</quote
+> في دفتر عناوينك قيد العمل.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+
+    <varlistentry>
+    <term
+>[ (الكل)&nbsp;<inlinemediaobject
+><imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-down.png" format="PNG"/></imageobject
+></inlinemediaobject
+>]</term>
+    <listitem
+><para
+>تؤدي هذه الأداة وظيفة تصفية بناءً على الفئات. الفئتان المبدئيتان هما <quote
+>بلا وسوم</quote
+> و <quote
+>مجموعات</quote
+>. يمكنك إنشاء فئات جديدة عبر ربط <quote
+>وسوم</quote
+> من ابتكارك بسجلات متراسلين معينة (انظر <link linkend="edit-basic-info"
+>أضف متراسل جديد</link
+> في الفصل 4 أعلاه). النقر على أي من أزرار <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> سيضبط الفئات المحددة إلى <quote
+>لا شيء</quote
+>؛ بينما سيعيد زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> ضبط معايير الاختيار إلى <quote
+>الكل</quote
+>.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para>
+  <screenshot id="toolbar-filter">
+      <screeninfo
+>لقطة شاشة لوظيفة <quote
+>التصفية</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook92.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لوظيفة <quote
+>التصفية</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>وظيفة <quote
+>التصفية</quote
+> في دفتر عناوينك قيد العمل.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  </sect1>
+
+  <sect1 id="context-menus">
+  <title
+>القوائم السياقية</title>
+
+  <para
+>عند النقر بزر الفأرة الأيمن في أي مكان داخل منطقة النص الرئيسة، ستظهر قائمة سياقية كما هو موضح أدناه. تعتمد القائمة التي تظهر على كل من اللوحة التي حدث فيها النقر الأيمن وعنصر البيانات المحدد، إن وُجد.</para>
+
+  <sect2 id="the-addressbook-panel">
+  <title
+>القائمة السياقية لدفتر العناوين</title>
+
+  <para>
+  <screenshot id="addressbook-context-menu">
+      <screeninfo
+>لقطة شاشة للقائمة السياقية لـ <quote
+>دفتر العناوين</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook93.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة للقائمة السياقية لـ <quote
+>دفتر العناوين</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>القائمة السياقية لـ <quote
+>دفتر العناوين</quote
+> في دفتر عناوينك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>أضف مجلد دفتر عناوين...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>لا يؤدي خيار القائمة السياقية هذا وظيفة مفيدة في الإصدار 5.10.3.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>احذف مجلد دفتر عناوين</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>لا يؤدي خيار القائمة السياقية هذا وظيفة مفيدة في الإصدار 5.10.3.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="folder-new.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>أضف دفتر عناوين...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يطلق خيار القائمة السياقية هذا حوار <quote
+>أضف دفتر عناوين</quote
+> الموثق في <link linkend="how-to-add-a-new-address-book"
+>الفصل 2</link
+> أعلاه.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>احذف دفتر عناوين</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>سيؤدي اختيار خيار القائمة السياقية هذا إلى حذف دفتر العناوين المحدد. كن حذرًا!</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+><keycap
+>F5</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="view-refresh.png" format="PNG"/></imageobject
+></inlinemediaobject
+>حدّث مجلد دفتر العناوين</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يجبر خيار القائمة السياقية هذا دفتر عناوينك على إعادة تحميل بيانات المتراسل المرتبطة بدفتر العناوين المحدد.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>خصائص المجلد...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يعرض خيار القائمة السياقية هذا معلومات ملخصة حول دفتر العناوين المحدد.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>خصائص دفتر العناوين...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يعرض خيار القائمة السياقية هذا معلومات ملخصة حول دفتر العناوين المحدد.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png"
+    format="PNG"/></imageobject
+></inlinemediaobject
+>اشتراك من جانب الخادم...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>قد يؤدي خيار القائمة السياقية هذا وظيفة مفيدة أو لا في الإصدار 5.10.3؛ وحسبما أرى، فإنه معطل بشكل دائم. إذا كنت تفهم ما يفعله، يرجى إعلامي (davidbryant AT gvtc.com).</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-contactslist-panel">
+  <title
+>القائمة السياقية لقائمة المتراسلين</title>
+
+  <para>
+  <screenshot id="contactlist-context-menu">
+      <screeninfo
+>لقطة شاشة للقائمة السياقية لـ <quote
+>قائمة المتراسلين</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook94.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة للقائمة السياقية لـ <quote
+>قائمة المتراسلين</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>القائمة السياقية لـ <quote
+>قائمة المتراسلين</quote
+> في دفتر عناوينك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <variablelist>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="list-add.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>متراسل جديد</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يؤدي اختيار خيار القائمة السياقية هذا نفس تأثير النقر على زر <guibutton
+>&nbsp;&plus;&nbsp;متراسل جديد&nbsp;</guibutton
+> في شريط الأدوات تمامًا. انظر <link linkend="how-to-add-a-new-contact"
+>الفصل 2 أعلاه</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>G</keycap
+></keycombo
+></shortcut
+> <guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>مجموعة جديدة</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح اختيار خيار القائمة السياقية هذا حوارًا يمكنك فيه تعريف مجموعة جديدة، أو قائمة بريدية. انظر &nbsp;<link linkend="file-new-group"
+>الملحق</link
+> لشرح مفصل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>حرّر المتراسل...</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يؤدي اختيار خيار القائمة السياقية هذا نفس تأثير النقر على زر <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>حرّر المتراسل...</guibutton
+> في شريط الأدوات تمامًا. انظر <link linkend="how-to-add-a-new-contact"
+>الفصل 2 أعلاه</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>صدّر&nbsp;&nbsp;&gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>تسمح لك وظيفة القائمة السياقية هذه بتصدير بيانات المتراسلين المحددة بتنسيق <acronym
+>vCard</acronym
+> أو <acronym
+>csv</acronym
+>.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-copy.png" format="PNG"/></imageobject
+></inlinemediaobject
+>انسخ المتراسل إلى &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يتيح لك خيار القائمة السياقية هذا نسخ المتراسل (أو المتراسلين) المحددين إلى وجهة متغيرة. تعتمد قائمة الوجهات المعروضة عند اختيار هذا الخيار على عدد دفاتر العناوين التي أنشأتها.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-jump.png" format="PNG"/></imageobject
+></inlinemediaobject
+>انقل المتراسل إلى &nbsp; &gt;</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>تعمل تمامًا مثل عملية <quote
+>انسخ المتراسل إلى</quote
+> الموضحة أعلاه، باستثناء أنها تحذف البيانات المصدر، بدلًا من إنشاء نسخة إضافية منها.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اطبع</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح اختيار عنصر القائمة السياقية هذا حوار اختيار الطابعة. استخدم حوار <menuchoice
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>معاينة الطباعة</guisubmenu
+> </menuchoice
+> أدناه لإعداد نطاق الأسماء وتنسيق الطباعة قبل تحديد هذه الوظيفة.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/>
+    </imageobject
+></inlinemediaobject
+>معاينة الطباعة</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>يفتح خيار القائمة السياقية هذا حوار معاينة الطباعة، والذي يسمح لك أيضًا بتنسيق التقرير، واختيار العناصر المراد تضمينها، وتحديد ترتيب الفرز، وما إلى ذلك. انظر &nbsp;<link linkend="file-print-preview"
+>الملحق</link
+> لمزيد من التفاصيل.</para
+></listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="press"
+>&Del;</keycombo
+></shortcut
+><guimenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-delete.png" format="PNG"/></imageobject
+></inlinemediaobject
+>احذف المتراسل</guimenu
+></menuchoice
+></term>
+    <listitem
+><para
+>احذف المتراسل (أو المتراسلين) المحددين من دفتر العناوين الحالي.</para
+></listitem>
+    </varlistentry>
+
+  </variablelist>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space between sections @dcb -->
+
+  </sect2>
+
+  <sect2 id="the-individualcontact-panel">
+  <title
+>القائمة السياقية للمتراسل الفردي</title>
+
+  <para>
+  <screenshot id="individualcontact-context-menu">
+      <screeninfo
+>لقطة شاشة للقائمة السياقية لـ <quote
+>المتراسل الفردي</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook95.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة للقائمة السياقية لـ <quote
+>المتراسل الفردي</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>القائمة السياقية لـ <quote
+>المتراسل الفردي</quote
+> في دفتر عناوينك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>اعتمادًا على عنصر البيانات الذي تحدده، قد يختلف العنوان في هذه القائمة السياقية. ولكن في كل حالة، تكون الوظيفة هي نفسها: يُنسخ عنصر البيانات المحدد إلى الحافظة.</para>
+
+  </sect2>
+
+  </sect1>
+
+</chapter>
+
+<glossary>
+
+<!-- Note to proofreaders: I'm still building the glossary. @dcb2019223 -->
+
+  <glossentry id="gloss-aim">
+  <glossterm
+><acronym
+>AIM</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>AIM</acronym
+> إلى America Online Instant Messaging. كان AIM رائدًا مبكرًا في سوق المراسلة الفورية التنافسي، لكنه فقد شعبيته مع تراجع شعبية AOL نفسها. توقفت الخدمة الأصلية في عام 2017، لكن المعجبين أبقوا عليها تعمل <ulink url="http://iwarg.ddns.net/aim/"
+>في هذا الموقع</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-akonadi">
+  <glossterm
+>أكونادي</glossterm>
+  <glossdef
+><para
+>خدمة تخزين قابلة للتوسيع ومتعددة أسطح المكتب لبيانات ووصيفات بيانات نظام إدارة المعلومات الشخصية توفر وصولًا متزامنًا للقراءة والكتابة والاستعلام. &nbsp;&nbsp;&nbsp;يمكن التحكم في أكونادي عبر أمر akonadictl: أدخل <quote
+>akonadictl --help</quote
+> في نافذة طرفية لتعلم المزيد.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-cloud">
+  <glossterm
+>خدمة مستندة إلى السحاب</glossterm>
+  <glossdef
+><para
+>أي مزود لتخزين البيانات وموارد معالجة البيانات الموجودة في <quote
+>سحابة</quote
+> من الخوادم التي يمكن للمرء الوصول إليها عبر الإنترنت.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-csv">
+  <glossterm
+>.csv</glossterm>
+  <glossdef
+><para
+>ملف القيم المفصولة بفواصل (أو <filename class="extension"
+>.csv</filename
+>) هو وثيقة نصية بسيطة ينقسم فيها كل سطر أو سجل إلى حقول بواسطة حرف فاصل محدد، عادة ما يكون الفاصلة. يعود تاريخ تنسيق <filename class="extension"
+>.csv</filename
+> إلى الأيام الأولى للحوسبة. ولا يزال مستخدمًا على نطاق واسع، ويرجع ذلك أساسًا إلى بساطته المفاهيمية.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-dav">
+  <glossterm
+><acronym
+>DAV</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>DAV</acronym
+> إلى التأليف والتوزيع الموزع، والذي يوجد بعدة <quote
+>نكهات</quote
+>، مثل WebDAV (لإنشاء صفحات على الإنترنت)، و GroupDAV (للبرامج الجماعية، وهي برمجيات مفتوحة المصدر يؤلفها مجموعة من المتعاونين)، و CalDAV (إدارة التقاويم للمجموعات)، وكل منها يساعد في ربط العملاء مفتوحي المصدر بالخوادم مفتوحة المصدر.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-digest">
+  <glossterm
+><acronym
+>DIGEST-MD5</acronym
+></glossterm>
+  <glossdef
+><para
+><acronym
+>DIGEST-MD5</acronym
+> هي تقنية استيثاق تستخدم لإعداد اتصالات آمنة بين عميل وخدمة إنترنت. استمدت اسمها من دالة التجزئة MD5 المستخدمة لتشفير بيانات اعتماد العميل. راجع <ulink url="https://en.wikipedia.org/wiki/Digest_access_authentication"
+>مقال ويكيبيديا هذا</ulink
+> لمعرفة المزيد عنها.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ews">
+  <glossterm
+><acronym
+>EWS</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>EWS</acronym
+> إلى خدمات ويب إكستشينج، وهي مجموعة بروتوكولات خاصة بشركة مايكروسوفت لتبادل البيانات الشخصية بين خوادم الإنترنت والمستخدمين النهائيين أو العملاء. &nbsp;&nbsp;يوفر <glossterm linkend="gloss-kolab"
+>كولاب</glossterm
+> وظائف مماثلة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gadu-gadu">
+  <glossterm
+>Gadu-Gadu</glossterm>
+  <glossdef
+><para
+>تطبيق Gadu-Gadu (المعروف أيضًا بـ GG) هو أشهر تطبيق مراسلة فورية في بولندا.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gmx">
+  <glossterm
+><acronym
+>GMX</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>GMX</acronym
+> إلى التبادل العالمي للبريد (أو في ألمانيا، التبادل العالمي للرسائل)، وهي خدمة بريد إلكتروني مجانية مدعومة بالإعلانات. زر إما <ulink url="https://www.gmx.net/"
+>هذا الموقع</ulink
+> أو <ulink url="https://www.gmx.com/"
+>هذا الآخر</ulink
+> لمعرفة المزيد.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gravatar">
+  <glossterm
+>Gravatar</glossterm>
+  <glossdef
+><para
+>الـ Gravatar، أو الأفاتار المعترف به عالميًا، هو صورة رسومية مرتبطة بعنوان البريد الإلكتروني لمستخدم ووردبريس. تظهر عادةً كصورة رسومية بمقاس 80 بكسل × 80 بكسل. وبما أن العديد من المدونين يستخدمون برنامج ووردبريس، فإن الـ Gravatar متاح على نطاق واسع.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gpws">
+  <glossterm
+>GroupWise</glossterm>
+  <glossdef
+><para
+>مراسل GroupWise هو خدمة مراسلة فورية برعاية شركة Micro Focus International plc، وهي شركة برمجيات تقع في نيوبوري، بيركشاير، إنجلترا. يمكنك الحصول على نسخة من برنامج المراسل من <ulink url="https://mail.dcbe.org:8300/"
+>هذا الموقع</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-gssapi">
+  <glossterm
+><acronym
+>GSSAPI</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>GSSAPI</acronym
+> إلى واجهة برمجة تطبيقات خدمة الأمن العامة، وهي نوع من <quote
+>القاموس</quote
+> للعديد من البروتوكولات الأمنية المستخدمة على الإنترنت. تتكون من مكتبة برمجية ومجموعة من استدعاءات الروتين الفرعي القياسية التي تسمح لعميل الإنترنت بتحديد البروتوكول الأمني المحدد الذي تستخدمه خدمة الإنترنت، ومن ثم تشفير/فك ترميز بيانات اعتماد المستخدم بشكل مناسب.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-icq">
+  <glossterm
+><acronym
+>ICQ</acronym
+></glossterm>
+  <glossdef
+><para
+>الـ <acronym
+>ICQ</acronym
+> ليس اختصارًا دقيقًا: إنه تلاعب بالألفاظ يقصد به أن يبدو مثل <quote
+>I Seek You</quote
+>. وهو أحد منصات المراسلة الفورية الأصلية، وظهر لأول مرة على الإنترنت في عام 1996. البرنامج متاح للتحميل <ulink url="https://icq.com/linux/en"
+>هنا</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-imap">
+  <glossterm
+>IMAP</glossterm>
+  <glossdef
+><para
+>يرمز IMAP إلى بروتوكول الوصول إلى رسائل الإنترنت، وهو وسيلة متاحة على نطاق واسع لإدارة رسائل البريد الإلكتروني. يحافظ IMAP على نسخ محلية وبعيدة لمجموعة من الرسائل ويزامنها -- بعبارة أخرى، البيانات المخزنة محليًا لحساب IMAP هي صورة مرآة للرسائل الموجودة على الخادم.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-inline-pgp">
+  <glossterm
+>OpenPGP المضمن</glossterm>
+  <glossdef
+><para
+>الـ OpenPGP المضمن هو بروتوكول تعمية تدمج فيه تواقيع PGP مباشرة في متن رسالة البريد الإلكتروني. هذا البروتوكول مهمل بسبب الصعوبات التقنية الناتجة عن الاستخدام غير المنتظم للأحرف غير المنتمية لـ ASCII في رسائل البريد الإلكتروني النصية البسيطة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-irc">
+  <glossterm
+>الدردشة المرحّلة عبر الإنترنت (IRC)</glossterm>
+  <glossdef
+><para
+>ترمز IRC إلى الدردشة المرحّلة عبر الإنترنت، وهي خدمة مراسلة فورية لها جذور في سلف فنلندي للويب العالمي يدعى OuluBox (1988). وتفقد IRC مستخدميها بثبات منذ سنوات مع ازدياد شعبية منصات التواصل الاجتماعي مثل فيسبوك. إحدى الشبكات الكبيرة المتبقية هي Libera Chat؛ ويمكن الوصول إليها <ulink url="https://web.libera.chat/"
+>عبر هذا الموقع</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-isdn">
+  <glossterm
+><acronym
+>ISDN</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>ISDN</acronym
+> إلى الشبكة الرقمية للخدمات المتكاملة، وهي أول مجموعة من معايير الاتصالات التي سمحت بالبث المتزامن لإشارات الصوت التماثلية وإشارات البيانات الرقمية عبر شبكة محولة من الأسلاك النحاسية (أي نظام الهاتف القديم). كان <acronym
+>ISDN</acronym
+> لا مفر منه في الأيام الأولى للإنترنت، لكنه استبدل مؤخرًا بتقنيات أكثر قوة تسمح باتصالات غير محولة عبر شبكات تستخدم كبلات الألياف الضوئية والأقمار الصناعية وأجهزة إرسال/استقبال الميكروويف ذات التردد العالي جدًا. ولا يزال مستخدمًا على نطاق واسع في بعض التطبيقات الصناعية التي تتطلب اتصالًا مباشرًا من نقطة لنقطة، ولكنه في طريقه للانحسار في سوق المستهلكين الأوسع.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-jabber">
+  <glossterm
+>Jabber</glossterm>
+  <glossdef
+><para
+>الـ Jabber هو خدمة مراسلة فورية تعتمد على بروتوكول <glossterm linkend="gloss-xmpp"
+><acronym
+>XMPP</acronym
+> </glossterm
+>. موقع <quote
+>Jabber</quote
+> الأصلي لم يعد يقبل تسجيلات جديدة، لكن بروتوكول <acronym
+>XMPP</acronym
+> مستخدم على نطاق واسع. انظر <ulink url="https://xmpp.org/about/"
+>هذا الموقع</ulink
+> لمزيد من المعلومات.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-kmail">
+  <glossterm
+>بريدك</glossterm>
+  <glossdef
+><para
+>برنامج إدارة البريد الإلكتروني من كيدي. يوفر بيئة متكاملة تمامًا لإرسال واستقبال رسائل البريد الإلكتروني من حساب بريد واحد (أو أكثر)، والحفاظ على أكبر عدد تريده من هويات البريد، وتنظيم وأرشفة رسائلك القديمة، وإدارة مفاتيح تعمية البريد الشخصية.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-kolab">
+  <glossterm
+>كولاب</glossterm>
+  <glossdef
+><para
+>Kolab Systems AG هي شركة مقرها زيورخ، سويسرا توفر أدوات برمجية خاصة ومفتوحة المصدر لتسهيل التعاون بين مجموعات من الناس الذين يتشاركون البيانات والرسائل وموارد التقويم/الجدولة عبر الإنترنت. &nbsp;يوفر <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> حزمًا برمجية مماثلة، وإن كانت خاصة بالكامل.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ldap">
+  <glossterm
+><acronym
+>LDAP</acronym
+></glossterm>
+  <glossdef
+><para
+>بروتوكول الوصول إلى الدليل الخفيف (أو &nbsp;<acronym
+>ldap</acronym
+>) هو بروتوكول قياسي، أو وسيلة، لمشاركة أصناف معينة من المعلومات بين حواسيب الخادم العديدة التي يتكون منها الإنترنت.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ldif">
+  <glossterm
+>.ldif</glossterm>
+  <glossdef
+><para
+>ملف تنسيق تبادل بيانات <glossterm linkend="gloss-ldap"
+><acronym
+>LDAP</acronym
+></glossterm
+> (أو <filename class="extension"
+>.ldif</filename
+>) هو نوع من الملفات النصية البسيطة المصممة لتبادل معلومات الدليل بين الخوادم المختلفة في شبكة موزعة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-mnwhl">
+  <glossterm
+>Meanwhile</glossterm>
+  <glossdef
+><para
+><quote
+>Meanwhile</quote
+> هو برنامج مفتوح المصدر مصمم للتواصل مع برنامج المراسلة الفورية <quote
+>Sametime</quote
+> من IBM. راجع <ulink url="https://github.com/obriencj/meanwhile"
+>هذا الموقع</ulink
+> إذا كنت تريد معرفة المزيد عنه.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-acro-mime">
+  <glossterm
+>MIME</glossterm>
+  <glossdef
+><para
+>ترمز MIME إلى امتدادات بريد الإنترنت متعددة الأغراض، وهي مجموعة من اصطلاحات الترميز المصممة لجعل رسائل البريد الإلكتروني أكثر مرونة عبر تمكين ميزات مثل مجموعات الأحرف الموسعة، والصور المدمجة، وترميز <quote
+>النص الغني</quote
+>، وغير ذلك. لم تكن اصطلاحات ترميز البريد الأصلية تدعم سوى الرسائل النصية البسيطة (أو المعماة) المكتوبة برمز ASCII ذي الـ 7 بتات. وجميع رسائل البريد المعاصرة تقريبًا مرمزة بـ MIME.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-open-pgp">
+  <glossterm
+>OpenPGP/MIME</glossterm>
+  <glossdef
+><para
+>يشير OpenPGP/MIME إلى اصطلاح تعمية لرسائل البريد الإلكتروني المرمزة بـ <glossterm linkend="gloss-acro-mime"
+>MIME</glossterm
+>. تلتف مجموعة خاصة من ترويسات MIME حول توقيع PGP، مما يسمح لبرنامج عميل البريد بإخفاء التوقيع عند عرض الرسالة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-group">
+  <glossterm
+>خادم البرمجيات الجماعية أوبن إكستشينج</glossterm>
+  <glossdef
+><para
+>Open-Xchange AG هي شركة مقرها كولونيا، ألمانيا توفر أدوات برمجية خاصة ومفتوحة المصدر لتسهيل التعاون بين مجموعات من الناس الذين يتشاركون البيانات والرسائل وموارد التقويم/الجدولة عبر الإنترنت. &nbsp;يوفر كل من <glossterm linkend="gloss-ews"
+>EWS</glossterm
+> و <glossterm linkend="gloss-kolab"
+>كولاب</glossterm
+> حزمًا برمجية مماثلة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-pcs">
+  <glossterm
+><acronym
+>PCS</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>PCS</acronym
+> إلى خدمة الاتصالات الشخصية، وهي أساسًا هاتف محمول مدمج به بعض الوظائف الإضافية. تعمل هواتف <acronym
+>PCS</acronym
+> على نطاق ترددي أعلى من الهواتف المحمولة التقليدية، مما يعني أنها يمكن أن توفر عرض نطاق ترددي أكبر من الهواتف القديمة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-pgp">
+  <glossterm
+><acronym
+>PGP</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>PGP</acronym
+> إلى Pretty Good Privacy، وهو برنامج لتعمية البيانات أصدره فيليب زيمرمان في عام 1991. تستخدم معظم برامج تعمية البريد الإلكتروني المستخدمة اليوم نوعًا من أنواع PGP لتعمية وفك تعمية الرسائل وتوقيعها رقميًا.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-pim">
+  <glossterm
+>PIM</glossterm>
+  <glossdef
+><para
+>نظام كيدي لإدارة المعلومات الشخصية، وهو حزمة من البرامج لمساعدتك في إدارة متراسليك وجدولك الزمني. يتضمن PIM كلًا من متصلك، وبريدك، ودفتر عناوينك، ومنظمك، وأكريغاتور، وأكونادي. ويُستخدم أيضًا بشكل عام لوصف أي نظام لإدارة المعلومات الشخصية مثل الأسماء، والعناوين، وأرقام الهواتف، وما إلى ذلك.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-qrcode">
+  <glossterm
+>رمز الاستجابة السريعة (QR Code)</glossterm>
+  <glossdef
+><para
+>يرمز QR Code إلى رمز الاستجابة السريعة، وهو باركود ثنائي الأبعاد يستخدم لتمثيل البيانات الرقمية. اخترع في اليابان في عام 1994 لاستخدامه من قبل مصنعي السيارات، ولكنه انتشر على نطاق واسع حتى أصبح موجودًا في كل مكان اليوم.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sasl">
+  <glossterm
+><acronym
+>SASL</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>SASL</acronym
+> إلى طبقة الاستيثاق والأمن البسيطة، وهي إطار عمل لاستيثاق العميل (كلمات المرور وأسماء المستخدمين) وأمن البيانات (الاتصالات المعماة). وهو يدعم أكثر من عشرة بروتوكولات مختلفة.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-mime">
+  <glossterm
+><acronym
+>S/MIME</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>S/MIME</acronym
+> إلى امتدادات بريد الإنترنت الآمنة/متعددة الأغراض، وهي طريقة تعمية قياسية لتوقيع وتعمية وفك تعمية رسائل البريد الإلكتروني. وخلافًا لـ <glossterm linkend="gloss-pgp"
+><acronym
+>PGP</acronym
+></glossterm
+> الذي يستخدم مفاتيح خاصة، يستخدم <acronym
+>S/MIME</acronym
+> مفاتيح تعمية منشورة علنًا ومعتمدة من قبل سلطة شهادات، مثل <ulink url="https://www.verisign.com/"
+>Verisign</ulink
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-opaque">
+  <glossterm
+><acronym
+>S/MIME</acronym
+> معتم</glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>S/MIME</acronym
+> Opaque إلى النسخة <quote
+>المعتمة</quote
+> من امتدادات بريد الإنترنت الآمنة/متعددة الأغراض. وهو مشابه لتنسيق <quote
+>S/MIME</quote
+> المعرف أعلاه، ولكن تُجمع كامل محتويات الرسالة في كائن MIME واحد. (تتكون معظم رسائل البريد المرمزة بـ MIME من كائني MIME منفصلين أو أكثر).</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-sms">
+  <glossterm
+><acronym
+>SMS</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>SMS</acronym
+> إلى خدمة الرسائل القصيرة، وهي خدمة رسائل نصية مدمجة في معظم شبكات الاتصال الهاتفية والإنترنت وأجهزة المحمول. وهي تسهل تبادل الرسائل النصية التي يقل طولها عن 161 بايت.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-ssl">
+  <glossterm
+><acronym
+>SSL</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>SSL</acronym
+> إلى طبقة المقابس الآمنة، وهو بروتوكول تعمية مهمل استبدل إلى حد كبير بـ <acronym
+>TLS</acronym
+>.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-tls">
+  <glossterm
+><acronym
+>TLS</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>TLS</acronym
+> إلى أمن طبقة النقل، وهو بروتوكول تعمية مستخدم على نطاق واسع لتأمين اتصالات الإنترنت. وظيفتها الرئيسة هي السماح للعميل والخادم بتبادل معلومات كافية بشكل آمن تمكنهما من إعداد زوج من مفاتيح التعمية وفك التعمية لاستخدامها خلال بقية جلسة الإنترنت. يعد <acronym
+>TLS</acronym
+> أضعف حلقة في السلسلة التي تربط برنامج العميل بخدمة إنترنت آمنة (معماة). وقد كان هدفًا للعديد من عمليات الاختراق، وجرىت مراجعته عدة مرات استجابة لتلك الهجمات.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-vcf">
+  <glossterm
+>.vcf</glossterm>
+  <glossdef
+><para
+>تنسيق بطاقة (الأعمال) الافتراضية (أو <filename class="extension"
+>.vcf</filename
+>) هو تنسيق لتبادل البيانات موجه بالكلمات المفتاحية مر بعدة تكرارات (2.0، 2.1، 3.0، &nbsp;إلخ) منذ تقديمه &nbsp;<emphasis
+>حوالي</emphasis
+> عام 1990. أحدث إصدار هو vCard 4.0.</para
+></glossdef>
+  </glossentry>
+
+  <glossentry id="gloss-xmpp">
+  <glossterm
+><acronym
+>XMPP</acronym
+></glossterm>
+  <glossdef
+><para
+>يرمز <acronym
+>XMPP</acronym
+> إلى بروتوكول المراسلة والحضور القابل للتوسيع، وهو الركيزة التكنولوجية الأساسية لخدمة المراسلة الفورية <quote
+>Jabber</quote
+>.</para
+></glossdef>
+  </glossentry>
+
+  </glossary>
+
+&docbook-reference;
+
+</book>

@@ -1,0 +1,1407 @@
+<appendix id="docbook-reference">
+
+<appendixinfo>
+
+<authorgroup>
+
+  <author
+><firstname
+>David</firstname
+> <othername
+>C.</othername
+> <surname
+>Bryant</surname
+> <affiliation
+><address
+><email
+>davidbryant@gvtc.com</email
+></address
+></affiliation>
+  </author>
+
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+  <year
+>2019</year>
+  <holder
+>David C. Bryant</holder>
+</copyright>
+
+<legalnotice
+>&CCBYSA4Notice;</legalnotice>
+
+<date
+>2019-08-26</date>
+<releaseinfo
+>5.10.3 (تطبيقات 18.12.3)</releaseinfo>
+
+<abstract>
+  <para
+>دفتر عناوينك برنامج معقد للغاية يحتوي على الكثير من الميزات المدمجة. وُثقت بعض الميزات المتقدمة لدفتر عناوينك في هذا الملحق، وذلك أساسًا لمنع الوثيقة الرئيسة من أن تصبح كبيرة جدًا وصعبة التداول. </para>
+</abstract>
+
+<!--TODO Note to self: add more keywords later. -->
+<keywordset>
+  <keyword
+>كيدي</keyword>
+  <keyword
+>دفتر عناوينك</keyword>
+  <keyword
+>kdepim</keyword>
+  <keyword
+>بريد إلكتروني</keyword>
+</keywordset>
+
+</appendixinfo>
+
+<title
+>قسم مرجع ميزات دفتر عناوينك المتقدمة</title>
+
+<sect1 id="placeholder">
+<title
+></title>
+<para
+></para>
+</sect1
+>          <!-- Force a page break after Table of Contents.  dcb -->
+
+<sect1 id="file-new-group">
+<title
+>حوار مجموعة جديدة</title>
+
+  <para
+>عند استدعاء وظيفة <guibutton
+>	<inlinemediaobject
+>		<imageobject
+>			<imagedata fileref="user-group-new.png" format="PNG"/>		</imageobject
+>		</inlinemediaobject
+>مجموعة جديدة	</guibutton
+>، سيبدأ حوار كما هو موضح أدناه.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>مجموعة جديدة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook101.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>مجموعة جديدة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>مجموعة جديدة</quote
+> في دفتر عناوينك بعد اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>جديد&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+><inlinemediaobject
+><imageobject
+><imagedata fileref="user-group-new.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>مجموعة جديدة</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>استخدم مربع القائمة المنسدلة <quote
+>أضف إلى:</quote
+> لاختيار دفتر العناوين الذي ستُضاف إليه المجموعة الجديدة. استخدم حقل <quote
+>الاسم</quote
+> لتسمية المجموعة الجديدة. أدخل عناوين البريد الإلكتروني، أو أجزاء منها، في المنطقة الزرقاء <quote
+>&plus;</quote
+>. ستظهر قائمة بالمطابقات المحتملة. اختر عنصرًا من القائمة التي ستنبثق، وسيُضاف اسم جديد إلى القائمة. استمر في إضافة المتراسلين المنفردين إلى القائمة حتى تكتمل، ثم انقر فوق زر <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+> لإضافة هذه المجموعة إلى دفتر عناوينك. إذا أردت حذف اسم من القائمة، فانقر فوق أيقونة <inlinemediaobject
+><imageobject
+><imagedata fileref="list-remove.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> الموجودة على يمين ذلك الاسم. إذا كنت بحاجة إلى إجراء تغييرات على المجموعة لاحقًا، فما عليك سوى اختيار المجموعة واستخدام قائمة <quote
+>تحرير</quote
+>، أو زر <quote
+>حرّر متراسلًا</quote
+> في شريط الأدوات، لفتح حوار مشابه يتيح لك إجراء التغييرات المطلوبة.</para>
+
+  <para
+>يوفر برنامج بريدك طريقة بديلة لإنشاء مجموعة جديدة في دفتر عناوينك. بعد توجيه رسالة بريد إلكتروني إلى عدة أشخاص، سيُعطى خيار إضافة مجموعة جديدة إلى دفتر عناوينك، كما هو موضح أدناه.</para>
+
+  <para>
+  <screenshot id="screenshot-new-group-via-kmail">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>مجموعة جديدة</quote
+> في بريدك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook102.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>مجموعة جديدة</quote
+> في بريدك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>مجموعة جديدة</quote
+> في بريدك بعد اختيار وظيفة <guibutton
+>&nbsp;احفظ القائمة... &nbsp;</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>بعد توجيه رسالة إلى مجموعة من الأشخاص، سيؤدي النقر فوق زر <guibutton
+>&nbsp;احفظ القائمة...&nbsp;</guibutton
+> الموجود على يمين منطقة إدخال العنوان إلى ظهور مربع الحوار الموضح. سمّ القائمة وانقر بزر الفأرة الأيسر فوق زر <guibutton
+>&nbsp;احفظ القائمة&nbsp;</guibutton
+>. سيظهر مربع حوار آخر يطلب منك اختيار دفتر عناوين. قم بالاختيار، وستُنشأ مجموعة جديدة لك.</para>
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="file-print-preview">
+<title
+>حوار معاينة الطباعة</title>
+
+  <para
+>تتيح لك وظيفة <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك تفصيل نسخة ورقية من بيانات دفتر عناوينك بأي طريقة تريدها تقريبًا.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-a">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook120.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك. يمكنك اختيار دفتر عناوين كامل أو أكثر، أو مجرد مجموعة من المتراسلين المنفردين.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>الخطوة الأولى هي اختيار المتراسلين المراد تضمينهم في المطبوعة. إذا كنت ترغب في طباعة مجرد مجموعة من المتراسلين المنفردين، فيجب عليك اختيار المتراسلين المراد طباعتهم قبل استدعاء حوار <menuchoice
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-preview-archive.png" format="PNG"/></imageobject
+></inlinemediaobject
+>معاينة الطباعة</guisubmenu
+></menuchoice
+>. إذا كنت ترغب في اختيار جميع المتراسلين، أو جميع المتراسلين في دفتر عناوين معين، فيمكنك القيام بذلك هنا. انقر فوق <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>التالي</guibutton
+> عندما تنتهي من اختيارك. ستظهر شاشة جديدة.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-b">
+      <screeninfo
+>لقطة شاشة ثانية لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook121.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>الشاشة الثانية في حوار <quote
+>معاينة الطباعة</quote
+> لدفتر عناوينك. يمكنك اختيار حقل فرز واتجاه فرز (لأعلى أو لأسفل). يمكنك أيضًا الاختيار من بين سبعة تخطيطات طباعة مختلفة.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>هنا يمكنك اختيار حقل فرز (أي واحد من 47 حقلًا مسمى في سجل المتراسل)، واتجاه الفرز، وأي تنسيق من تنسيقات التقارير السبعة المختلفة. عندما تنقر فوق <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="go-next.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>التالي</guibutton
+>، ستُعطى فرصة لتفصيل نظام الألوان المراد استخدامه.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-c">
+      <screeninfo
+>لقطة شاشة ثالثة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook122.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثالثة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>الشاشة الثالثة في حوار <quote
+>معاينة الطباعة</quote
+> لدفتر عناوينك. يمكنك اختيار نظام ألوان هنا.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>هذه صورة للتقرير المكتمل. إنه جاهز الآن للطباعة.</para>
+
+  <para>
+  <screenshot id="screenshot-print-preview-d">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook123.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>معاينة الطباعة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+><quote
+>معاينة الطباعة</quote
+> لدفتر عناوينك بعد توليد التقرير وأصبح جاهزًا للطباعة. يمكنك اختيار اتجاهات طباعة بديلة (أفقي أو عمودي) وإطلاق مهمة الطباعة من هذه النافذة.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="configure-ldap-server">
+<title
+>حوار اضبط LDAP</title>
+
+  <para
+>هذه صورة لشاشة الضبط الأولى التي تظهر عند اختيار إما زر <guibutton
+>اضبط خوادم LDAP...</guibutton
+> في حوار <menuchoice
+><guimenu
+>ملف</guimenu
+> <guisubmenu
+>استيراد&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد من خادم LDAP...</guimenuitem
+> </menuchoice
+> أو عنصر قائمة <menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط دفتر عناوينك...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap1">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook131.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك بعد اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استيراد&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد من خادم LDAP...</guimenuitem
+></menuchoice
+> والنقر بزر الفأرة الأيسر فوق زر <guibutton
+>اضبط خوادم LDAP...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>إذا قمت بالفعل بضبط خادم <acronym
+>LDAP</acronym
+> أو أكثر، فاستخدم هذه الشاشة لاختيار الخوادم التي سيُستعلم منها عند البحث عن اسم أو عنوان بريد إلكتروني. استخدم زر <guibutton
+>أضف مضيفًا...</guibutton
+> لإضافة خادم جديد إلى قائمة مضيفي <acronym
+>LDAP</acronym
+> المتاحة. استخدم زر <guibutton
+>حرّر المضيف...</guibutton
+> لإعادة ضبط خادم موجود بالفعل في القائمة، وزر <guibutton
+>أزل المضيف</guibutton
+> لحذف مدخل لم تعد بحاجة إليه. يمكن استخدام زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="edit-undo.png" format="PNG"/></imageobject
+></inlinemediaobject
+>صفر</guibutton
+> للتراجع عن آخر إجراء <quote
+>إضافة</quote
+> أو <quote
+>إزالة</quote
+> أُجري. زر <quote
+>المبدئيات</quote
+> لا يعمل في الإصدار 5.10.3. بقية الأزرار (موافق، طبق، ألغِ) لها وظائفها العادية: تطبيق التغييرات والخروج، تطبيق التغييرات والبقاء هنا، والخروج من الحوار دون إجراء أي تغييرات، على التوالي.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>عند اختيار إما زر <guibutton
+>أضف مضيفًا...</guibutton
+> أو زر <guibutton
+>حرّر المضيف...</guibutton
+>، سيظهر الحوار التالي.</para>
+
+  <para>
+  <screenshot id="screenshot-ldap2">
+      <screeninfo
+>لقطة شاشة ثانية لحوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook132.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثانية لحوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط خادم LDAP</quote
+> في دفتر عناوينك بعد النقر بزر الفأرة الأيسر فوق زر <guibutton
+>أضف مضيفًا...</guibutton
+> أو زر <guibutton
+>حرّر المضيف...</guibutton
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>الحقول الأربعة الأولى (<quote
+>المستخدم:</quote
+>، و<quote
+>Bind DN:</quote
+>، و<quote
+>المجال:</quote
+>، و<quote
+>كلمة السر:</quote
+>) ستكون جميعها معطلة ما لم يكن الاستيثاق مطلوبًا. احصل على هذه الاعتمادات من مدير خادم LDAP. أدخل المعرف الموحد للموارد &URI; المناسب في حقل <quote
+>المضيف:</quote
+>. القيم المبدئية لـ <quote
+>المنفذ:</quote
+>، و<quote
+>حد الحجم:</quote
+>، وما إلى ذلك ستعمل بشكل جيد لمعظم المستخدمين. يمكنك استخدام زر <guibutton
+>استعلم من الخادم</guibutton
+> لضبط حقل <quote
+>DN:</quote
+>. ليس لدي أي فكرة عما يستخدم حقل <quote
+>المرشح:</quote
+> له. إذا عرفت ذلك، يرجى إعلامي (davidbryant AT gvtc.com).</para>
+
+  <para
+>استخدم قسم <quote
+>الأمن</quote
+> لتحديد طريقة التعمية المراد استخدامها: <quote
+>لا</quote
+> لاتصال غير معمى، أو <glossterm linkend="gloss-tls"
+><acronym
+>TLS</acronym
+></glossterm
+> لأمن طبقة النقل، أو <glossterm linkend="gloss-ssl"
+><acronym
+>SSL</acronym
+></glossterm
+> لطبقة المقابس الآمنة. استخدم خيارات <quote
+>الاستيثاق</quote
+> لتحديد مستوى الاستيثاق الذي يتطلبه الخادم: <quote
+>مجهول</quote
+> لعدم وجود اسم أو كلمة سر على الإطلاق، <quote
+>بسيط</quote
+> إذا كان يجب تقديم <quote
+>Bind DN</quote
+> و<quote
+>كلمة السر</quote
+>، و<glossterm linkend="gloss-sasl"
+><acronym
+>SASL</acronym
+></glossterm
+> (طبقة الاستيثاق والأمن البسيطة) للمجموعة الكاملة (أربعة عناصر بيانات). إذا اختير <quote
+>SASL</quote
+>، فاستخدم زر <guibutton
+>استعلم من الخادم</guibutton
+> لضبط الخيارات المتقدمة لهذا المضيف.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="import-csv-data">
+<title
+>وظيفة استيراد ملف CSV</title>
+
+  <para
+>عند اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استيراد&nbsp; &nbsp;&gt;</guisubmenu
+> <guimenuitem
+>استورد ملف CSV...</guimenuitem
+></menuchoice
+>، سيُعرض عليك حوار. بعد النقر فوق زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></guibutton
+> واختيار الملف المراد استيراده، ستظهر الشاشة بهذا الشكل.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook103.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك بعد اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استيراد&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد ملف CSV...</guimenuitem
+></menuchoice
+> واختيار الملف المراد استيراده.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>استخدم قسم <quote
+>المحدد</quote
+> في هذا الحوار لتحديد حرف الفاصل الذي يعرّف نهاية الحقل في ملف الإدخال المختار. إذا استُخدمت علامات الاقتباس لتحديد الحقول التي تحتوي على أحرف فاصلة مدمجة، فيمكنك تحديد النمط (اقتباس مفرد أو مزدوج) المستخدم عبر مربع القائمة المنسدلة <quote
+>اقتباس النص:</quote
+>. إذا كان ملف الإدخال يحتوي على تواريخ، فاستخدم حقل <quote
+>تنسيق التاريخ:</quote
+> لتعريف الطريقة التي رُمزت بها التواريخ. المبدئي هو yyyy-mm-dd. إذا كان هذا التنسيق خاطئًا، فمرر المؤشر فوق مربع <quote
+>تنسيق التاريخ:</quote
+> وستُعرض مجموعة مفيدة من تعليمات التنسيق. إذا لم يكن ملف الإدخال مرموزًا بـ UTF-8، فاستخدم مربع القائمة المنسدلة <quote
+>مرمز النص:</quote
+> لتحديد مخطط الترميز الثنائي المراد استخدامه. إذا كان الصف الأول من الملف يحتوي على ترويسات الأعمدة، فحدد مربع <quote
+>تخطَّ الصف الأول من الملف</quote
+> لتجنب استيراد ترويسات الأعمدة كبيانات. استخدم مربعات <quote
+>غير محدد</quote
+> في الجزء العلوي من كل عمود لتحديد حقول البيانات المراد استيرادها، ومكان تخزينها، كما هو موضح أدناه.</para>
+
+  <para>
+  <screenshot id="screenshot-import-csv-2">
+      <screeninfo
+>لقطة شاشة ثانية لحوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook104.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثانية لحوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>استورد ملف CSV</quote
+> في دفتر عناوينك بعد اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>استيراد&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>استورد ملف CSV...</guimenuitem
+></menuchoice
+>، واختيار الملف المراد استيراده، والبدء في تعريف الحقول المراد استيرادها.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>إذا كنت ترغب في استيراد محتويات العمود الحالي، فاختر وجهة من قائمة أسماء الحقول التي تظهر تحت المربع الأزرق <quote
+>غير محدد</quote
+>. انظر <link linkend="export-csv-data"
+>القسم التالي</link
+> للحصول على قائمة بالحقول المعرفة مسبقًا. استخدم شريط التمرير الأفقي بالقرب من أسفل الحوار لعرض جميع الأعمدة في ملف الإدخال. عند اكتمال اختياراتك، انقر فوق زر <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+>. إذا قمت بضبط عدة دفاتر عناوين، فسيُطلب منك تحديد دفتر العناوين المراد استخدامه. سيقوم دفتر عناوينك بعد ذلك باستيراد البيانات المختارة كمتراسلين جدد.</para>
+
+  <para
+>إذا كنت تنوي استيراد مجموعات بيانات إضافية بنفس التنسيق في وقت ما في المستقبل، فيمكنك النقر فوق زر <guibutton
+>احفظ القالب...</guibutton
+> (انظر الرسم التوضيحي الأول في هذا القسم) لحفظ الاختيارات التي قمت بها. سيُطلب منك تسمية القالب. لاحقًا، عندما تستورد ملفًا آخر بنفس التخطيط، يمكنك توفير الوقت بالنقر فوق زر <guibutton
+>طبق القالب...</guibutton
+>.</para>
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="export-csv-data">
+<title
+>وظيفة تصدير ملف CSV</title>
+
+  <para
+>عند استدعاء وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>تصدير&nbsp;&nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدر ملف CSV ...</guimenuitem
+></menuchoice
+>، يظهر مربع حوار.</para>
+
+  <para>
+  <screenshot id="screenshot-export-csv">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>صدر ملف CSV</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook100.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>صدر ملف CSV</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>صدر ملف CSV</quote
+> في دفتر عناوينك بعد اختيار وظيفة <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>تصدير&nbsp; &nbsp;&gt;</guisubmenu
+><guimenuitem
+>صدر ملف CSV ...</guimenuitem
+></menuchoice
+>.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>يمكنك اختيار جميع بيانات المتراسلين، أو جزء منها فقط. عندما تضغط على زر <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+>، سيُسمح لك باختيار اسم الملف المولد، والدليل الذي سيُكتب فيه. سيحتوي ملف الإخراج على السبعة والأربعين (47) حقل إخراج التالية، بهذا الترتيب، من اليسار إلى اليمين. أُدرجت قائمة أسماء الحقول هذه كأول سجل في الملف.</para>
+
+  <para
+>الاسم المنسق | سوابق تشريفية | الاسم المعطى | أسماء إضافية | اسم العائلة | لواحق تشريفية | الاسم المستعار | يوم الميلاد | ذكرى سنوية | البريد الإلكتروني (المفضل) | البريد الإلكتروني (2) | البريد الإلكتروني (3) | البريد الإلكتروني (4) | شارع عنوان المنزل | صندوق بريد عنوان المنزل | مدينة عنوان المنزل | ولاية عنوان المنزل | الرمز البريدي لعنوان المنزل | بلد عنوان المنزل | تسمية عنوان المنزل | شارع عنوان العمل | صندوق بريد عنوان العمل | مدينة عنوان العمل | ولاية عنوان العمل | الرمز البريدي لعنوان العمل | بلد عنوان العمل | تسمية عنوان العمل | هاتف المنزل | هاتف العمل | هاتف محمول | فاكس المنزل | فاكس العمل | هاتف السيارة | ISDN | جهاز نداء | عميل البريد | المسمى الوظيفي | الدور | المنظمة | ملاحظة | الصفحة الرئيسية | تغذية المدونة | المهنة | المكتب | المدير | المساعد | الزوج</para>
+
+  <para
+>نُسقت جميع الحقول كبيانات فئة الأحرف. رُمزت التواريخ (يوم الميلاد والذكرى السنوية، إن وجدت) كـ yyyy-mm-dd (سنة، شهر، يوم).</para>
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+
+</sect1>
+
+<sect1 id="view-change-columns">
+<title
+>وظيفة تغيير عدد الأعمدة</title>
+
+  <para
+>عند فتح قائمة <menuchoice
+><guimenu
+>عرض</guimenu
+></menuchoice
+>، تظهر الشاشة التالية.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix">
+      <screeninfo
+>لقطة شاشة لقائمة <quote
+>عرض</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook82.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لقائمة <quote
+>عرض</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>قائمة <quote
+>عرض</quote
+> في دفتر عناوينك بعد اختيار قائمة <menuchoice
+><guimenu
+>عرض</guimenu
+></menuchoice
+> في شريط القوائم الرئيس.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>لست سعيدًا بتخطيط الأعمدة الثلاثة الرتيب الذي يظهر أعلاه؟ أضف بعض الحيوية مع هذا النهج التبسيطي.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-2">
+      <screeninfo
+>لقطة شاشة لتخطيط اللوحة الواحدة في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook110.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لتخطيط اللوحة الواحدة في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>تخطيط <quote
+>بسيط (عمود واحد)</quote
+> لدفتر عناوينك. تظهر بيانات المتراسلين الأساسية فقط.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>لاحظ أن المعلومات المتعلقة بدفاتر العناوين الموجودة والمستخدمة لا تظهر عند تفعيل تخطيط <quote
+>بسيط</quote
+>. تُعرض فقط المتراسلين من دفاتر العناوين التي اختيرت قبل اختيار هذا العرض.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>إذا لم يعجبك تخطيط <quote
+>بسيط</quote
+>، فقد ترغب في تجربة نمط <quote
+>عمودان</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-view-menu-appendix-3">
+      <screeninfo
+>لقطة شاشة لتخطيط اللوحة المزدوجة في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook111.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لتخطيط اللوحة المزدوجة في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>تخطيط <quote
+>عمودان</quote
+> لدفتر عناوينك. تكدس قائمة دفاتر العناوين فوق قائمة المتراسلين المرتبة أبجديًا.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>في كيدي، شعارنا هو "كن حرًا!" نحن نهدف إلى منحك أقصى قدر من المرونة عندما يتعلق الأمر بتفصيل وبرمجياتنا وضبطها لتناسب أذواقك. لقد فكرنا في فكرة إضافة المزيد من العروض إلى دفتر عناوينك (أربعة أعمدة! خمسة!)، لكننا خلصنا في النهاية إلى أن هذا كافٍ.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-shortcuts">
+<title
+>خيار اضبط الاختصارات</title>
+
+  <para
+>عند اختيار خيار <menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+> <imagedata fileref="input-keyboard.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط الاختصارات...</guisubmenu
+> </menuchoice
+> لأول مرة، هذا ما ستراه.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut1">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook112.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك. استخدم حقل <quote
+>البحث</quote
+>، أو شريط التمرير العمودي، لتحديد الإجراء الذي سيُعرف له اختصار لوحة مفاتيح جديد.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>إجراءات دفتر عناوينك التي عُرفت لها اختصارات لوحة مفاتيح بالفعل محددة بوضوح في عمود <quote
+>الاختصار</quote
+>. يمكنك إما تعيين اختصارات إضافية عبر أعمدة <quote
+>بديل</quote
+>، و<quote
+>عام</quote
+>، و<quote
+>بديل عام</quote
+> في هذا الجدول، أو تعيين اختصار جديد لإجراء لم يُعرف له اختصار لوحة مفاتيح بعد. اختر الإجراء المراد ضبطه بالنقر فوق اسمه، كما هو موضح أعلاه. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>عند النقر بزر الفأرة الأيسر فوق زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>لا شيء</guibutton
+>، سيتغير اسمه إلى <quote
+>إدخال...</quote
+>؛ يمكنك حينئذٍ تسجيل مزيج ضربات المفاتيح التي ترغب في تعيينها للإجراء المختار. (مرر المؤشر فوق زر <guibutton
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>لا شيء</guibutton
+> لعرض تلميح مفيد حول هذا الإجراء.) سيلاحظ البرنامج المفاتيح التي ضغطت عليها، ويسجل اختصار لوحة المفاتيح الجديد، كما هو موضح أدناه. إذا اخترت مزيجًا يتعارض مع تعيين اختصار موجود، فسترى رسالة خطأ، وسيُطلب منك إجراء اختيار مختلف. يمكنك استخدام زر <guibutton
+><inlinemediaobject
+> <imageobject
+><imagedata fileref="edit-clear.png" format="PNG"/></imageobject
+></inlinemediaobject
+></guibutton
+> لمسح اختيارك.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut2">
+      <screeninfo
+>لقطة شاشة ثانية لحوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook113.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثانية لحوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط الاختصارات</quote
+> في دفتر عناوينك بعد إدخال اختصار لوحة مفاتيح جديد، ولكن قبل حفظ الضبط الجديد.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>انقر فوق زر <guibutton
+>&nbsp;✔&nbsp;موافق&nbsp;</guibutton
+> لحفظ تغييراتك. انقر فوق <guibutton
+>&nbsp;⦸&nbsp;ألغِ&nbsp;</guibutton
+> للخروج دون حفظ تغييراتك. انقر فوق <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>المبدئيات</guibutton
+> لاستعادة مجموعة اختصارات لوحة المفاتيح المبدئية لدفتر عناوينك. اختر <guibutton
+>&nbsp;إدارة المخططات&nbsp;&gt;&gt;&nbsp;</guibutton
+> لدمج تعييناتك المخصصة في مخطط أكبر لتعيينات الاختصارات؛ راجع فصل <ulink url="help:/fundamentals/config.html"
+>تخصيص برمجيات كيدي</ulink
+> في كتيب أساسيات كيدي.</para>
+
+  <para
+>يمكنك اختيار زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-print.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اطبع</guibutton
+> لإنتاج نسخة ورقية من تعيينات اختصارات لوحة المفاتيح. هنا عينة من الجدول المطبوع.</para>
+
+  <para>
+  <screenshot id="screenshot-config-shortcut3">
+      <screeninfo
+>لقطة شاشة لمخرجات <quote
+>الطباعة</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook114.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لمخرجات <quote
+>الطباعة</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>مقتطف من قائمة اختصارات لوحة المفاتيح المطبوعة لدفتر عناوينك.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-toolbars">
+<title
+>خيار اضبط أشرطة الأدوات</title>
+
+  <para
+>هذه صورة للشاشة التي تظهر عند النقر فوق عنصر قائمة <menuchoice
+><guimenu
+>إعدادات</guimenu
+> <guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>اضبط أشرطة الأدوات...</guisubmenu
+></menuchoice
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-toolbars">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>اضبط أشرطة الأدوات</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook130.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>اضبط أشرطة الأدوات</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط أشرطة الأدوات</quote
+> في دفتر عناوينك. تظهر الإجراءات المعروضة بالفعل على شريط الأدوات في النافذة الكبيرة على اليمين. الإجراءات في النافذة اليسرى يمكن إضافتها إلى شريط الأدوات، كما هو موضح أدناه.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>استخدم أيًا من حقول <quote
+>المرشح</quote
+> لتقييد نطاق الخيارات المعروضة في النافذة المقابلة. اختر إجراءً في النافذة اليسرى (كما هو موضح أعلاه) إذا كنت ترغب في إضافته إلى شريط الأدوات. انقر بزر الفأرة الأيسر فوق زر <guibutton
+>	<inlinemediaobject
+>		<imageobject
+>			<imagedata fileref="go-next.png" format="PNG"/>        </imageobject
+>    </inlinemediaobject
+></guibutton
+> لإضافة العنصر إلى القائمة في النافذة اليمنى (وبالتالي إلى شريط أدوات دفتر عناوينك). إذا أردت حذف عنصر من شريط الأدوات، فما عليك سوى عكس الإجراء: حدد العنصر المراد حذفه من النافذة اليمنى وانقر فوق زر <guibutton
+>		<inlinemediaobject
+>			<imageobject
+>				<imagedata fileref="go-previous.png" format="PNG"/>			</imageobject
+>		</inlinemediaobject
+></guibutton
+>. سيُزال العنصر المختار من شريط الأدوات.</para>
+
+  <para
+>يمكنك تفصيل الترتيب الذي تظهر به العناصر المختارة على شريط الأدوات باستخدام السحب والإفلات داخل النافذة اليمنى. ترتيب العناصر على شريط الأدوات، من اليسار إلى اليمين، يتوافق مع الترتيب في النافذة، من الأعلى إلى الأسفل. يمكنك إجراء تغييرات إضافية على مظهر شريط الأدوات باستخدام زر<guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="change-icon.png" format="PNG"/></imageobject
+></inlinemediaobject
+>غيّر الأيقونة...</guibutton
+> لتغيير الأيقونة المرتبطة بإجراء معين. وبالمثل، يمكنك تغيير وصف كل عنصر في شريط الأدوات بالنقر فوق زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-edit.png" format="PNG"/></imageobject
+></inlinemediaobject
+>غيّر النص...</guibutton
+>.</para>
+
+  <para
+>استخدم زر <guibutton
+><inlinemediaobject
+><imageobject
+><imagedata fileref="document-revert.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>المبدئيات</guibutton
+> لاستعادة إعدادات شريط الأدوات المبدئية. اختر <quote
+>موافق</quote
+> لحفظ تغييراتك والخروج من الحوار، أو <quote
+>طبق</quote
+> لتطبيق تغييراتك مع إبقاء الحوار مفتوحًا، أو <quote
+>ألغِ</quote
+> للخروج من الحوار دون حفظ تغييراتك. (راجع فصل <ulink url="help:/fundamentals/config.html"
+>تخصيص برمجيات كيدي</ulink
+> في كتيب أساسيات كيدي للحصول على شرح مفصل لهذا الإجراء.)</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="settings-configure-kaddressbook">
+<title
+>خيار اضبط دفتر عناوينك</title>
+
+  <para
+>عند اختيار خيار <menuchoice
+><guimenu
+>إعدادات</guimenu
+><guisubmenu
+><inlinemediaobject
+><imageobject
+><imagedata fileref="configure.png" format="PNG"/></imageobject
+></inlinemediaobject
+>اضبط دفتر عناوينك...</guisubmenu
+></menuchoice
+>، ستظهر هذه الشاشة.</para>
+
+  <para>
+  <screenshot id="screenshot-config-general">
+      <screeninfo
+>لقطة شاشة لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook133.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>اضبط إجراءات المتراسلين</quote
+> في دفتر عناوينك. هذه الميزات لا تزال تجريبية، ولم تعمل بالكامل بعد.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>الحوار الأول الذي يظهر يدعم ميزات تجريبية لم تُنفذ بالكامل بعد. يمكنك الاختيار من بين عدة خيارات مختلفة تحت عناوين <quote
+>أظهر العنوان</quote
+>، أو <quote
+>اتصل برقم الهاتف</quote
+>، أو <quote
+>أرسل رسالة نصية SMS</quote
+>، ولكن لا يوجد حتى الآن أي برمجيات للقيام بأي شيء بالخيارات التي تختارها.</para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+>الخيار التالي، <quote
+>إعدادات خادم LDAP</quote
+>، هو نفس الحوار الذي وُثق في القسم السابق المعنون <link linkend="configure-ldap-server"
+><quote
+>حوار اضبط LDAP</quote
+></link
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-ldap">
+      <screeninfo
+>لقطة شاشة ثانية لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook134.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثانية لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>إعدادات خادم LDAP</quote
+> لدفتر عناوينك. هذا الحوار، والتابع له، وُثقا في <link linkend="configure-ldap-server"
+>قسم سابق</link
+> من هذا الملحق.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>تظهر المجموعة النهائية من خيارات ضبط دفتر عناوينك عند اختيار <quote
+>الملحقات</quote
+>.</para>
+
+  <para>
+  <screenshot id="screenshot-config-plugins">
+      <screeninfo
+>لقطة شاشة ثالثة لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="addressbook135.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+        <phrase
+>لقطة شاشة ثالثة لحوار <quote
+>اضبط دفتر عناوينك</quote
+> في دفتر عناوينك.</phrase>
+    </textobject>
+    <caption>
+      <para
+>حوار <quote
+>الملحقات</quote
+> في دفتر عناوينك. هناك عشرة ملحقات إجمالًا. نُشطت سبعة منها مبدئيًا، كما هو موضح أعلاه.</para>
+    </caption>
+  </mediaobject>
+  </screenshot>
+  </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space after screenshot @dcb -->
+
+  <para
+>الإجراءات التي تدعمها <quote
+>الملحقات</quote
+> السبعة المبدئية وُثقت في الأقسام السابقة من هذا الدليل. إجراءات <quote
+>استيراد وتصدير <glossterm linkend="gloss-gmx"
+><acronym
+>GMX</acronym
+></glossterm
+></quote
+> و<quote
+>استيراد/تصدير <glossterm linkend="gloss-ldif"
+><acronym
+>LDIF</acronym
+></glossterm
+></quote
+> ستظهر كجزء من قائمة <menuchoice
+><guimenu
+>ملف</guimenu
+></menuchoice
+> عند تنشيطها. عنصر <quote
+>تحقق من <glossterm linkend="gloss-gravatar"
+>Gravatar</glossterm
+></quote
+> سيظهر في قائمة <menuchoice
+><guimenu
+>أدوات</guimenu
+> </menuchoice
+> عندما يُنشط. لاحظ أنه يجب إيقاف دفتر عناوينك وإعادة تشغيله قبل أن تدخل أي تغييرات على <quote
+>الملحقات</quote
+> حيز التنفيذ. </para>
+
+  <para
+>&nbsp;</para
+> <!-- add more white space @dcb -->
+
+  <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+<sect1 id="credits-and-licenses">
+<title
+>الحقوق والتراخيص</title>
+
+  <para
+>دفتر عناوينك </para>
+
+  <para
+>حقوق النشر &copy; 2007–2019 مؤلفو دفتر عناوينك <email
+>montel@kde.org</email
+> </para>
+
+  <para
+>حقوق نشر التوثيق &copy; 2019 David C. Bryant <email
+>davidbryant@gvtc.com</email
+> </para>
+
+  <para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underCCBYSA4; <para
+><link linkend="docbook-reference"
+>انقر هنا للعودة إلى جدول المحتويات لهذا الملحق.</link
+></para>
+
+</sect1>
+
+</appendix>
