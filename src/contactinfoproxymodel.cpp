@@ -313,9 +313,7 @@ void ContactInfoProxyModel::slotItemChanged(const Akonadi::Item &item, const QSe
     Q_ASSERT(item.isValid());
 
     if (item.hasPayload<KContacts::Addressee>()) {
-        QMapIterator<Akonadi::Item::Id, ContactCacheData::List> it_group(mGroupsCache);
-        while (it_group.hasNext()) {
-            it_group.next();
+        for (auto it_group = mGroupsCache.begin(), end = mGroupsCache.end(); it_group != end; ++it_group) {
             ContactCacheData::ListIterator it_contact = findCacheItem(it_group.key(), item);
             if (it_contact != mGroupsCache[it_group.key()].end()) {
                 if (it_contact->setData(item)) {
@@ -345,9 +343,7 @@ void ContactInfoProxyModel::slotRowsAboutToBeRemoved(const QModelIndex &parent, 
         const auto item = this->index(idx, 0, parent).data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
         Q_ASSERT(item.isValid());
         if (item.hasPayload<KContacts::Addressee>()) {
-            QMapIterator<Akonadi::Item::Id, ContactCacheData::List> it_group(mGroupsCache);
-            while (it_group.hasNext()) {
-                it_group.next();
+            for (auto it_group = mGroupsCache.begin(), end = mGroupsCache.end(); it_group != end; ++it_group) {
                 ContactCacheData::List::iterator it_contact = findCacheItem(it_group.key(), item);
                 if (it_contact != mGroupsCache[it_group.key()].end()) {
                     mGroupsCache[it_group.key()].erase(it_contact);
