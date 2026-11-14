@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: none
 cmake_minimum_required(VERSION 3.29)
-set(PIM_VERSION "6.8.80")
+set(PIM_VERSION "6.8.90")
 project(kaddressbook VERSION ${PIM_VERSION})
 
 option(USE_MOLD_LINKER "Use the mold linker when available (much faster link times)" ON)
@@ -12,9 +12,9 @@ if(USE_MOLD_LINKER AND NOT DEFINED CMAKE_LINKER_TYPE)
     endif()
 endif()
 # Update it for each release
-set(KADDRESSBOOK_RELEASE_VERSION_DATE "26.11.12") # yy.MM.dd
+set(KADDRESSBOOK_RELEASE_VERSION_DATE "26.11.26") # yy.MM.dd
 
-set(RELEASE_SERVICE_VERSION "26.11.80")
+set(RELEASE_SERVICE_VERSION "26.11.90")
 set(KF_MIN_VERSION "6.30.0")
 set(QT_REQUIRED_VERSION "6.9.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
@@ -104,7 +104,7 @@ endif()
 include(CheckFunctionExists)
 
 # Do NOT add quote
-set(KDEPIM_DEV_VERSION beta1)
+set(KDEPIM_DEV_VERSION rc)
 
 # add an extra space
 if(DEFINED KDEPIM_DEV_VERSION)
