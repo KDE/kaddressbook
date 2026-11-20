@@ -11,6 +11,7 @@
 #include <Akonadi/EntityTreeModel>
 #include <KContacts/ContactGroup>
 #include <QIdentityProxyModel>
+#include <QMap>
 
 namespace Akonadi
 {
